@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Transact-SQL - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Transact-SQL","wgTitle":"Transact-SQL","wgCurRevisionId":745380654,"wgRevisionId":745380654,"wgArticleId":295710,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles lacking sources from August 2014","All articles lacking sources","SQL","Data-centric programming languages"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Transact-SQL","wgRelevantArticleId":295710,"wgRequestId":"WI7JUQpAAEMAAIPEMYsAAACT","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":true},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q1411245","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.pygments":"ready","ext.cite.styles":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.legacy.wikibits","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.pygments%2CwikimediaBadges%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.29.0-wmf.9"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Transact-SQL"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Transact-SQL&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Transact-SQL&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Transact-SQL"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Transact-SQL rootpage-Transact-SQL skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Transact-SQL</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><script>function mfTempOpenSection(id){var block=document.getElementById("mf-section-"+id);block.className+=" open-block";block.previousSibling.className+=" open-block";}</script><div role="note" class="hatnote">"TSQL" redirects here. For the proposed temporal extension of SQL, see <a href="/wiki/TSQL2" class="mw-redirect" title="TSQL2">TSQL2</a>.</div>
+<table class="plainlinks metadata ambox ambox-content ambox-Unreferenced" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><a href="/wiki/File:Question_book-new.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" width="50" height="39" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/75px-Question_book-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/100px-Question_book-new.svg.png 2x" data-file-width="512" data-file-height="399" /></a></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">This article <b>does not <a href="/wiki/Wikipedia:Citing_sources" title="Wikipedia:Citing sources">cite</a> any <a href="/wiki/Wikipedia:Verifiability" title="Wikipedia:Verifiability">sources</a></b>. <span class="hide-when-compact">Please help <a class="external text" href="//en.wikipedia.org/w/index.php?title=Transact-SQL&amp;action=edit">improve this article</a> by <a href="/wiki/Help:Introduction_to_referencing_with_Wiki_Markup/1" title="Help:Introduction to referencing with Wiki Markup/1">adding citations to reliable sources</a>. Unsourced material may be challenged and <a href="/wiki/Wikipedia:Verifiability#Burden_of_evidence" title="Wikipedia:Verifiability">removed</a>.</span> <small><i>(August 2014)</i></small> <small class="hide-when-compact"><i>(<a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove this template message</a>)</i></small></span></td>
+</tr>
+</table>
+<p><b>Transact-SQL</b> (<b>T-SQL</b>) is <a href="/wiki/Microsoft" title="Microsoft">Microsoft</a>'s and <a href="/wiki/Sybase" title="Sybase">Sybase</a>'s proprietary extension to the <a href="/wiki/SQL" title="SQL">SQL</a> (Structured Query Language) used to interact with <a href="/wiki/Relational_database" title="Relational database">relational databases</a>.</p>
+<p>T-SQL expands on the SQL standard to include <a href="/wiki/Procedural_programming" title="Procedural programming">procedural</a> programming, <a href="/wiki/Local_variable" title="Local variable">local variables</a>, various support functions for string processing, date processing, mathematics, etc. and changes to the <a href="/wiki/Delete_(SQL)" title="Delete (SQL)">DELETE</a> and <a href="/wiki/Update_(SQL)" title="Update (SQL)">UPDATE</a> statements.</p>
+<p>Transact-SQL is central to using <a href="/wiki/Microsoft_SQL_Server" title="Microsoft SQL Server">Microsoft SQL Server</a>. All applications that communicate with an instance of SQL Server do so by sending Transact-SQL statements to the server, regardless of the user interface of the application.</p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Variables"><span class="tocnumber">1</span> <span class="toctext">Variables</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Flow_control"><span class="tocnumber">2</span> <span class="toctext">Flow control</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Changes_to_DELETE_and_UPDATE_statements"><span class="tocnumber">3</span> <span class="toctext">Changes to DELETE and UPDATE statements</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#BULK_INSERT"><span class="tocnumber">4</span> <span class="toctext">BULK INSERT</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#TRY_CATCH"><span class="tocnumber">5</span> <span class="toctext">TRY CATCH</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#References"><span class="tocnumber">7</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#External_links"><span class="tocnumber">8</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Variables">Variables</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Transact-SQL&amp;action=edit&amp;section=1" title="Edit section: Variables">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Transact-SQL provides the following statements to declare and set local variables: <code>DECLARE</code>, <code>SET</code> and <code>SELECT</code>.</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="k">DECLARE</span> <span class="o">@</span><span class="n">var1</span> <span class="n">NVARCHAR</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span>    
+<span class="k">SET</span> <span class="o">@</span><span class="n">var1</span> <span class="o">=</span> <span class="s1">'Some Name'</span>       
+<span class="k">SELECT</span> <span class="o">@</span><span class="n">var1</span> <span class="o">=</span> <span class="n">Name</span>       
+<span class="k">FROM</span> <span class="n">Sales</span><span class="p">.</span><span class="n">Store</span>       
+<span class="k">WHERE</span> <span class="n">CustomerID</span> <span class="o">=</span> <span class="mi">100</span>
+</pre></div>
+<h2><span class="mw-headline" id="Flow_control">Flow control</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Transact-SQL&amp;action=edit&amp;section=2" title="Edit section: Flow control">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Keywords for flow control in Transact-SQL include <code>BEGIN</code> and <code>END</code>, <code>BREAK</code>, <code>CONTINUE</code>, <code>GOTO</code>, <code>IF</code> and <code>ELSE</code>, <code>RETURN</code>, <code>WAITFOR</code>, and <code>WHILE</code>.</p>
+<p><code>IF</code> and <code>ELSE</code> allow conditional execution. This batch statement will print "It is the weekend" if the current date is a weekend day, or "It is a weekday" if the current date is a weekday. (Note: This code assumes that Sunday is configured as the first day of the week in the <code>@@DATEFIRST</code> setting.)</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="n">IF</span> <span class="n">DATEPART</span><span class="p">(</span><span class="n">dw</span><span class="p">,</span> <span class="n">GETDATE</span><span class="p">())</span> <span class="o">=</span> <span class="mi">7</span> <span class="k">OR</span> <span class="n">DATEPART</span><span class="p">(</span><span class="n">dw</span><span class="p">,</span> <span class="n">GETDATE</span><span class="p">())</span> <span class="o">=</span> <span class="mi">1</span>
+   <span class="n">PRINT</span> <span class="s1">'It is the weekend.'</span>
+<span class="k">ELSE</span>
+   <span class="n">PRINT</span> <span class="s1">'It is a weekday.'</span>
+</pre></div>
+<p><code>BEGIN</code> and <code>END</code> mark a <a href="/wiki/Block_of_statements" class="mw-redirect" title="Block of statements">block of statements</a>. If more than one statement is to be controlled by the conditional in the example above, we can use <code>BEGIN</code> and <code>END</code> like this:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="n">IF</span> <span class="n">DATEPART</span><span class="p">(</span><span class="n">dw</span><span class="p">,</span> <span class="n">GETDATE</span><span class="p">())</span> <span class="o">=</span> <span class="mi">7</span> <span class="k">OR</span> <span class="n">DATEPART</span><span class="p">(</span><span class="n">dw</span><span class="p">,</span> <span class="n">GETDATE</span><span class="p">())</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="k">BEGIN</span>
+   <span class="n">PRINT</span> <span class="s1">'It is the weekend.'</span>
+   <span class="n">PRINT</span> <span class="s1">'Get some rest on the weekend!'</span>
+<span class="k">END</span>
+<span class="k">ELSE</span>
+<span class="k">BEGIN</span>
+   <span class="n">PRINT</span> <span class="s1">'It is a weekday.'</span>
+   <span class="n">PRINT</span> <span class="s1">'Get to work on a weekday!'</span>
+<span class="k">END</span>
+</pre></div>
+<p><code>WAITFOR</code> will wait for a given amount of time, or until a particular time of day. The statement can be used for delays or to block execution until the set time.</p>
+<p><code>RETURN</code> is used to immediately return from a <a href="/wiki/Stored_procedure" title="Stored procedure">stored procedure</a> or function.</p>
+<p><code>BREAK</code> ends the enclosing <code>WHILE</code> loop, while <code>CONTINUE</code> causes the next iteration of the loop to execute. An example of a <code>WHILE</code> loop is given below.</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="k">DECLARE</span> <span class="o">@</span><span class="n">i</span> <span class="nb">INT</span>
+<span class="k">SET</span> <span class="o">@</span><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="n">WHILE</span> <span class="o">@</span><span class="n">i</span> <span class="o">&lt;</span> <span class="mi">5</span>
+<span class="k">BEGIN</span>
+   <span class="n">PRINT</span> <span class="s1">'Hello world.'</span>
+   <span class="k">SET</span> <span class="o">@</span><span class="n">i</span> <span class="o">=</span> <span class="o">@</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span>
+<span class="k">END</span>
+</pre></div>
+<h2><span class="mw-headline" id="Changes_to_DELETE_and_UPDATE_statements">Changes to DELETE and UPDATE statements</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Transact-SQL&amp;action=edit&amp;section=3" title="Edit section: Changes to DELETE and UPDATE statements">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>In Transact-SQL, both the <code>DELETE</code> and <code>UPDATE</code> statements allow a <code>FROM</code> clause to be added, which allows joins to be included.</p>
+<p>This example deletes all <code>users</code> who have been flagged with the 'Idle' flag.</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="k">DELETE</span> <span class="n">u</span>
+  <span class="k">FROM</span> <span class="n">users</span> <span class="k">AS</span> <span class="n">u</span>
+  <span class="k">INNER</span> <span class="k">JOIN</span> <span class="n">user_flags</span> <span class="k">AS</span> <span class="n">f</span>
+    <span class="k">ON</span> <span class="n">u</span><span class="p">.</span><span class="n">id</span> <span class="o">=</span> <span class="n">f</span><span class="p">.</span><span class="n">id</span>
+    <span class="k">WHERE</span> <span class="n">f</span><span class="p">.</span><span class="n">name</span> <span class="o">=</span> <span class="s1">'idle'</span>
+</pre></div>
+<h2><span class="mw-headline" id="BULK_INSERT">BULK INSERT</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Transact-SQL&amp;action=edit&amp;section=4" title="Edit section: BULK INSERT">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p><code>BULK</code> is a Transact-SQL statement that implements a bulk data-loading process, inserting multiple rows into a table, reading data from an external sequential file. Use of <code>BULK INSERT</code> results in better performance than processes that issue individual <code>INSERT</code> statements for each row to be added. Additional details are available <a rel="nofollow" class="external text" href="http://msdn2.microsoft.com/en-us/library/ms188365.aspx">in MSDN</a>.</p>
+<h2><span class="mw-headline" id="TRY_CATCH">TRY CATCH</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Transact-SQL&amp;action=edit&amp;section=5" title="Edit section: TRY CATCH">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Beginning with SQL Server 2005,<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">[1]</a></sup> Microsoft introduced additional <code>TRY CATCH</code> logic to support exception type behaviour. This behaviour enables developers to simplify their code and leave out <code>@@ERROR</code> checking after each SQL execution statement.</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="c1">-- begin transaction</span>
+<span class="k">BEGIN</span> <span class="n">TRAN</span>
+
+<span class="k">BEGIN</span> <span class="n">TRY</span>
+   <span class="c1">-- execute each statement</span>
+   <span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">MYTABLE</span><span class="p">(</span><span class="n">NAME</span><span class="p">)</span> <span class="k">VALUES</span> <span class="p">(</span><span class="s1">'ABC'</span><span class="p">)</span>
+   <span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">MYTABLE</span><span class="p">(</span><span class="n">NAME</span><span class="p">)</span> <span class="k">VALUES</span> <span class="p">(</span><span class="s1">'123'</span><span class="p">)</span>
+
+   <span class="c1">-- commit the transaction</span>
+   <span class="k">COMMIT</span> <span class="n">TRAN</span>
+<span class="k">END</span> <span class="n">TRY</span>
+<span class="k">BEGIN</span> <span class="n">CATCH</span>
+   <span class="c1">-- rollback the transaction because of error</span>
+   <span class="k">ROLLBACK</span> <span class="n">TRAN</span>
+<span class="k">END</span> <span class="n">CATCH</span>
+</pre></div>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Transact-SQL&amp;action=edit&amp;section=6" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a href="/wiki/Adaptive_Server_Enterprise" title="Adaptive Server Enterprise">Adaptive Server Enterprise (Sybase)</a></li>
+<li><a href="/wiki/PL/SQL" title="PL/SQL">PL/SQL (Oracle)</a></li>
+<li><a href="/wiki/PL/pgSQL" title="PL/pgSQL">PL/pgSQL (PostgreSQL)</a></li>
+<li><a href="/wiki/SQL/PSM" title="SQL/PSM">SQL/PSM</a> (ISO standard)</li>
+<li><a href="/wiki/Sys.sysobjects" class="mw-redirect" title="Sys.sysobjects">Sys.sysobjects</a></li>
+</ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Transact-SQL&amp;action=edit&amp;section=7" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://www.infoq.com/news/2012/03/T-SQL-2012">"T-SQL Improvements in SQL Server 2012"</a>, Jonathan Allen on Mar 19, 2012, infoq.com</span></li>
+</ol>
+</div>
+<ul>
+<li><a rel="nofollow" class="external text" href="https://msdn.microsoft.com/en-us/library/bb510741.aspx">Transact-SQL Reference (Database Engine)</a></li>
+</ul>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Transact-SQL&amp;action=edit&amp;section=8" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://infocenter.sybase.com/help/index.jsp?topic=/com.sybase.help.ase_15.0.sqlug/html/sqlug/title.htm">Sybase Transact-SQL User's Guide</a></li>
+<li><a rel="nofollow" class="external text" href="http://msdn2.microsoft.com/en-us/library/aa260642(SQL.80).aspx">Transact-SQL Reference for SQL Server 2000 (MSDN)</a></li>
+<li><a rel="nofollow" class="external text" href="http://msdn2.microsoft.com/en-us/library/ms189826.aspx">Transact-SQL Reference for SQL Server 2005 (MSDN)</a></li>
+<li><a rel="nofollow" class="external text" href="http://msdn.microsoft.com/en-us/library/bb510741(SQL.100).aspx">Transact-SQL Reference for SQL Server 2008 (MSDN)</a></li>
+<li><a rel="nofollow" class="external text" href="http://msdn.microsoft.com/en-us/library/bb510741.aspx">Transact-SQL Reference for SQL Server 2012 (MSDN)</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.tsql.info">Transact-SQL examples</a></li>
+</ul>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1201
+Cached time: 20170119152352
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.080 seconds
+Real time usage: 0.112 seconds
+Preprocessor visited node count: 192/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 4392/2097152 bytes
+Template argument size: 11/2097152 bytes
+Highest expansion depth: 6/40
+Expensive parser function count: 2/500
+Lua time usage: 0.030/10.000 seconds
+Lua memory usage: 848 KB/50 MB
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%   83.038      1 - -total
+ 48.45%   40.231      1 - Template:Unreferenced
+ 39.99%   33.207      1 - Template:Redirect
+ 39.10%   32.466      1 - Template:Ambox
+  5.17%    4.289      1 - Template:Reflist
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:295710-0!*!0!!en!4!* and timestamp 20170119152352 and revision id 745380654
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Transact-SQL&amp;oldid=745380654">https://en.wikipedia.org/w/index.php?title=Transact-SQL&amp;oldid=745380654</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:SQL" title="Category:SQL">SQL</a></li><li><a href="/wiki/Category:Data-centric_programming_languages" title="Category:Data-centric programming languages">Data-centric programming languages</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Articles_lacking_sources_from_August_2014" title="Category:Articles lacking sources from August 2014">Articles lacking sources from August 2014</a></li><li><a href="/wiki/Category:All_articles_lacking_sources" title="Category:All articles lacking sources">All articles lacking sources</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Transact-SQL" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Transact-SQL" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/Transact-SQL"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:Transact-SQL"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/Transact-SQL" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=Transact-SQL&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Transact-SQL&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Transact-SQL" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Transact-SQL" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Transact-SQL&amp;oldid=745380654" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Transact-SQL&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q1411245" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Transact-SQL&amp;id=745380654" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Transact-SQL">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Transact-SQL&amp;returnto=Transact-SQL&amp;oldid=745380654&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Transact-SQL&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-ar"><a href="https://ar.wikipedia.org/wiki/%D8%AA%D9%8A-%D8%B3%D9%83%D9%8A%D9%88%D9%84" title="تي-سكيول – Arabic" lang="ar" hreflang="ar" class="interlanguage-link-target">العربية</a></li><li class="interlanguage-link interwiki-cs"><a href="https://cs.wikipedia.org/wiki/Transact-SQL" title="Transact-SQL – Czech" lang="cs" hreflang="cs" class="interlanguage-link-target">Čeština</a></li><li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/Transact-SQL" title="Transact-SQL – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-es"><a href="https://es.wikipedia.org/wiki/Transact-SQL" title="Transact-SQL – Spanish" lang="es" hreflang="es" class="interlanguage-link-target">Español</a></li><li class="interlanguage-link interwiki-fa"><a href="https://fa.wikipedia.org/wiki/%D8%AA%DB%8C_%D8%A7%D8%B3_%DA%A9%DB%8C%D9%88_%D8%A7%D9%84" title="تی اس کیو ال – Persian" lang="fa" hreflang="fa" class="interlanguage-link-target">فارسی</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/Transact-SQL" title="Transact-SQL – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-ko"><a href="https://ko.wikipedia.org/wiki/%ED%8A%B8%EB%9E%9C%EC%9E%AD%ED%8A%B8_SQL" title="트랜잭트 SQL – Korean" lang="ko" hreflang="ko" class="interlanguage-link-target">한국어</a></li><li class="interlanguage-link interwiki-id"><a href="https://id.wikipedia.org/wiki/Transact-SQL" title="Transact-SQL – Indonesian" lang="id" hreflang="id" class="interlanguage-link-target">Bahasa Indonesia</a></li><li class="interlanguage-link interwiki-is"><a href="https://is.wikipedia.org/wiki/Transact-SQL" title="Transact-SQL – Icelandic" lang="is" hreflang="is" class="interlanguage-link-target">Íslenska</a></li><li class="interlanguage-link interwiki-it"><a href="https://it.wikipedia.org/wiki/Transact-SQL" title="Transact-SQL – Italian" lang="it" hreflang="it" class="interlanguage-link-target">Italiano</a></li><li class="interlanguage-link interwiki-he"><a href="https://he.wikipedia.org/wiki/Transact-SQL" title="Transact-SQL – Hebrew" lang="he" hreflang="he" class="interlanguage-link-target">עברית</a></li><li class="interlanguage-link interwiki-ms"><a href="https://ms.wikipedia.org/wiki/Transact-SQL" title="Transact-SQL – Malay" lang="ms" hreflang="ms" class="interlanguage-link-target">Bahasa Melayu</a></li><li class="interlanguage-link interwiki-ja"><a href="https://ja.wikipedia.org/wiki/Transact-SQL" title="Transact-SQL – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target">日本語</a></li><li class="interlanguage-link interwiki-pl"><a href="https://pl.wikipedia.org/wiki/Transact-SQL" title="Transact-SQL – Polish" lang="pl" hreflang="pl" class="interlanguage-link-target">Polski</a></li><li class="interlanguage-link interwiki-pt"><a href="https://pt.wikipedia.org/wiki/Transact-SQL" title="Transact-SQL – Portuguese" lang="pt" hreflang="pt" class="interlanguage-link-target">Português</a></li><li class="interlanguage-link interwiki-ru"><a href="https://ru.wikipedia.org/wiki/Transact-SQL" title="Transact-SQL – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li><li class="interlanguage-link interwiki-ta"><a href="https://ta.wikipedia.org/wiki/%E0%AE%B0%E0%AF%80-%E0%AE%9A%E0%AF%80%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AF%81%E0%AE%B5%E0%AE%B2%E0%AF%8D" title="ரீ-சீக்குவல் – Tamil" lang="ta" hreflang="ta" class="interlanguage-link-target">தமிழ்</a></li><li class="interlanguage-link interwiki-zh"><a href="https://zh.wikipedia.org/wiki/Transact-SQL" title="Transact-SQL – Chinese" lang="zh" hreflang="zh" class="interlanguage-link-target">中文</a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q1411245#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 20 October 2016, at 19:46.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Transact-SQL&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":71,"wgHostname":"mw1272"});});</script>
+	</body>
+</html>

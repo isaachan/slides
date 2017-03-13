@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>CoffeeScript - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"CoffeeScript","wgTitle":"CoffeeScript","wgCurRevisionId":760561013,"wgRevisionId":760561013,"wgArticleId":27403236,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Wikipedia articles needing copy edit from November 2016","All articles needing copy edit","Pages using deprecated image syntax","All articles with unsourced statements","Articles with unsourced statements from January 2016","Dynamic programming languages","JavaScript programming language family","Prototype-based programming languages","Software using the MIT license","Source-to-source compilers"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"CoffeeScript","wgRelevantArticleId":27403236,"wgRequestId":"WI4LjwpAAD4AAAFY2IEAAABE","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":true},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q1106819","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.cite.styles":"ready","ext.pygments":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.legacy.wikibits","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.pygments%2CwikimediaBadges%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.29.0-wmf.9"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/CoffeeScript"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=CoffeeScript&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=CoffeeScript&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/CoffeeScript"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-CoffeeScript rootpage-CoffeeScript skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">CoffeeScript</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><script>function mfTempOpenSection(id){var block=document.getElementById("mf-section-"+id);block.className+=" open-block";block.previousSibling.className+=" open-block";}</script><table class="plainlinks metadata ambox ambox-style ambox-Copy_edit" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/5/52/Acap.svg/36px-Acap.svg.png" width="36" height="40" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/5/52/Acap.svg/54px-Acap.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/5/52/Acap.svg/72px-Acap.svg.png 2x" data-file-width="45" data-file-height="50" /></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">This article <b>may require <a href="/wiki/Wikipedia:Basic_copyediting" title="Wikipedia:Basic copyediting">copy editing</a> for grammar, style, cohesion, tone, or spelling</b>. <span class="hide-when-compact">You can assist by <a class="external text" href="//en.wikipedia.org/w/index.php?title=CoffeeScript&amp;action=edit">editing it</a>.</span> <small><i>(November 2016)</i></small> <small class="hide-when-compact"><i>(<a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove this template message</a>)</i></small></span></td>
+</tr>
+</table>
+<table class="infobox vevent" style="width:22em">
+<caption class="summary">CoffeeScript</caption>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/File:CoffeeScript-logo.png" class="image"><img alt="CoffeeScript-logo.png" src="//upload.wikimedia.org/wikipedia/en/1/1c/CoffeeScript-logo.png" width="250" height="67" data-file-width="250" data-file-height="67" /></a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Programming_paradigm" title="Programming paradigm">Paradigm</a></th>
+<td><a href="/wiki/Multi-paradigm" class="mw-redirect" title="Multi-paradigm">Multi-paradigm</a>: <a href="/wiki/Prototype-based_programming" title="Prototype-based programming">prototype-based</a>, <a href="/wiki/Functional_programming" title="Functional programming">functional</a>, <a href="/wiki/Imperative_programming" title="Imperative programming">imperative</a>, <a href="/wiki/Scripting_language" title="Scripting language">scripting</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_design" title="Software design">Designed&#160;by</a></th>
+<td><a href="/wiki/Jeremy_Ashkenas" title="Jeremy Ashkenas">Jeremy Ashkenas</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_developer" title="Software developer">Developer</a></th>
+<td class="organiser">Jeremy Ashkenas, Colin Runciman, et al.</td>
+</tr>
+<tr>
+<th scope="row">First&#160;appeared</th>
+<td>December&#160;13, 2009<span class="noprint">; 7 years ago</span><span style="display:none">&#160;(<span class="bday dtstart published updated">2009-12-13</span>)</span></td>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Software_release_life_cycle" title="Software release life cycle">Stable release</a></th>
+<td>
+<div style="margin:0px;">1.12.2 / December&#160;16, 2016<span class="noprint">; 44 days ago</span><span style="display:none">&#160;(<span class="bday dtstart published updated">2016-12-16</span>)</span></div>
+</td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Operating_system" title="Operating system">OS</a></th>
+<td><a href="/wiki/Cross-platform" title="Cross-platform">Cross-platform</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_license" title="Software license">License</a></th>
+<td><a href="/wiki/MIT_License" title="MIT License">MIT License</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Filename_extension" title="Filename extension">Filename extensions</a></th>
+<td>.coffee, .litcoffee</td>
+</tr>
+<tr>
+<th scope="row">Website</th>
+<td><span class="url"><a rel="nofollow" class="external text" href="http://coffeescript.org">coffeescript<wbr />.org</a></span></td>
+</tr>
+<tr>
+<th colspan="2" style="text-align:center;background-color: #eee;">Influenced by</th>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/Haskell_(programming_language)" title="Haskell (programming language)">Haskell</a>, <a href="/wiki/JavaScript" title="JavaScript">JavaScript</a>, <a href="/wiki/Perl" title="Perl">Perl</a>,<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (January 2016)">citation needed</span></a></i>]</sup> <a href="/wiki/Python_(programming_language)" title="Python (programming language)">Python</a>,<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">[1]</a></sup> <a href="/wiki/Ruby_(programming_language)" title="Ruby (programming language)">Ruby</a>, <a href="/wiki/YAML" title="YAML">YAML</a><sup id="cite_ref-smell_2-0" class="reference"><a href="#cite_note-smell-2">[2]</a></sup></td>
+</tr>
+<tr>
+<th colspan="2" style="text-align:center;background-color: #eee;">Influenced</th>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"><a rel="nofollow" class="external text" href="http://moonscript.org/">MoonScript</a>, <a href="/wiki/LiveScript" title="LiveScript">LiveScript</a></td>
+</tr>
+</table>
+<p><b>CoffeeScript</b> is a programming language that <a href="/wiki/Source-to-source_compiler" title="Source-to-source compiler">transcompiles</a> to <a href="/wiki/JavaScript" title="JavaScript">JavaScript</a>. It adds <a href="/wiki/Syntactic_sugar" title="Syntactic sugar">syntactic sugar</a> inspired by <a href="/wiki/Ruby_(programming_language)" title="Ruby (programming language)">Ruby</a>, <a href="/wiki/Python_(programming_language)" title="Python (programming language)">Python</a> and <a href="/wiki/Haskell_(programming_language)" title="Haskell (programming language)">Haskell</a> in an effort to enhance JavaScript's brevity and readability.<sup id="cite_ref-thelittlebookoncoffeescript_3-0" class="reference"><a href="#cite_note-thelittlebookoncoffeescript-3">[3]</a></sup> Specific additional features include <a href="/wiki/List_comprehension" title="List comprehension">list comprehension</a> and <a href="/wiki/Pattern_matching" title="Pattern matching">pattern matching</a>.</p>
+<p>CoffeeScript support is included in <a href="/wiki/Ruby_on_Rails" title="Ruby on Rails">Ruby on Rails</a> version 3.1<sup id="cite_ref-4" class="reference"><a href="#cite_note-4">[4]</a></sup> and <a href="/wiki/Play_Framework" title="Play Framework">Play Framework</a>.<sup id="cite_ref-5" class="reference"><a href="#cite_note-5">[5]</a></sup> In 2011, <a href="/wiki/Brendan_Eich" title="Brendan Eich">Brendan Eich</a> referenced CoffeeScript as an influence on his thoughts about the future of JavaScript.<sup id="cite_ref-6" class="reference"><a href="#cite_note-6">[6]</a></sup><sup id="cite_ref-7" class="reference"><a href="#cite_note-7">[7]</a></sup></p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#History"><span class="tocnumber">1</span> <span class="toctext">History</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Syntax"><span class="tocnumber">2</span> <span class="toctext">Syntax</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Examples"><span class="tocnumber">3</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="#Interval_test"><span class="tocnumber">3.1</span> <span class="toctext">Interval test</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Loops_and_comprehensions"><span class="tocnumber">3.2</span> <span class="toctext">Loops and comprehensions</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Functions_and_jQuery"><span class="tocnumber">3.3</span> <span class="toctext">Functions and jQuery</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#String_interpolation"><span class="tocnumber">3.4</span> <span class="toctext">String interpolation</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-8"><a href="#Compiling"><span class="tocnumber">4</span> <span class="toctext">Compiling</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#Latest_additions"><span class="tocnumber">5</span> <span class="toctext">Latest additions</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#Adoption"><span class="tocnumber">6</span> <span class="toctext">Adoption</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#See_also"><span class="tocnumber">7</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="#References"><span class="tocnumber">8</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="#Further_reading"><span class="tocnumber">9</span> <span class="toctext">Further reading</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="#External_links"><span class="tocnumber">10</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="History">History</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=CoffeeScript&amp;action=edit&amp;section=1" title="Edit section: History">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>On December 13, 2009, <a href="/wiki/Jeremy_Ashkenas" title="Jeremy Ashkenas">Jeremy Ashkenas</a> made the first <a href="/wiki/Git_(software)" class="mw-redirect" title="Git (software)">Git</a> commit of CoffeeScript with the comment: "initial commit of the mystery language."<sup id="cite_ref-8" class="reference"><a href="#cite_note-8">[8]</a></sup> The compiler was written in Ruby. On December 24, he made the first tagged and documented release, 0.1.0. On February 21, 2010, he committed version 0.5, which replaced the Ruby compiler with a <a href="/wiki/Self-hosting" title="Self-hosting">self-hosting</a> version in pure CoffeeScript. By that time the project had attracted several other contributors on <a href="/wiki/GitHub" title="GitHub">GitHub</a>, and was receiving over 300 page hits per day.</p>
+<p>On December 24, 2010, Ashkenas announced the release of stable 1.0.0 to <a href="/wiki/Hacker_News" title="Hacker News">Hacker News</a>, the site where the project was announced for the first time.<sup id="cite_ref-9" class="reference"><a href="#cite_note-9">[9]</a></sup><sup id="cite_ref-10" class="reference"><a href="#cite_note-10">[10]</a></sup></p>
+<h2><span class="mw-headline" id="Syntax">Syntax</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=CoffeeScript&amp;action=edit&amp;section=2" title="Edit section: Syntax">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Almost everything is an expression in CoffeeScript, for example <code>if</code>, <code>switch</code> and <code>for</code> expressions (which have no return value in JavaScript) return a value. As in <a href="/wiki/Perl" title="Perl">Perl</a>, these control statements also have postfix versions; for example, <code>if</code> can also be written after the conditional statement.</p>
+<p>Many unnecessary parentheses and braces can be omitted; for example, blocks of code can be denoted by indentation instead of braces, function calls are implicit, and object literals are often detected automatically.</p>
+<h2><span class="mw-headline" id="Examples">Examples</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=CoffeeScript&amp;action=edit&amp;section=3" title="Edit section: Examples">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="Interval_test">Interval test</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=CoffeeScript&amp;action=edit&amp;section=4" title="Edit section: Interval test">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>To compute the <a href="/wiki/Body_mass_index" title="Body mass index">body mass index</a>, one may do (here in <a href="/wiki/JavaScript" title="JavaScript">JavaScript</a>):</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="kd">var</span> <span class="nx">mass</span> <span class="o">=</span> <span class="mi">72</span>
+<span class="kd">var</span> <span class="nx">height</span> <span class="o">=</span> <span class="mf">1.78</span>
+<span class="kd">var</span> <span class="nx">BMI</span> <span class="o">=</span> <span class="nx">mass</span> <span class="o">/</span> <span class="p">(</span><span class="nx">height</span> <span class="o">*</span> <span class="nx">height</span><span class="p">)</span>
+<span class="k">if</span> <span class="p">(</span><span class="mf">18.5</span> <span class="o">&lt;</span> <span class="nx">BMI</span> <span class="o">&amp;&amp;</span> <span class="nx">BMI</span> <span class="o">&lt;</span> <span class="mi">25</span><span class="p">)</span> <span class="nx">alert</span><span class="p">(</span><span class="s1">'You are healthy!'</span><span class="p">)</span>
+</pre></div>
+<p>With CoffeeScript the interval is directly described:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="nv">mass = </span><span class="mi">72</span>
+<span class="nv">height = </span><span class="mf">1.78</span>
+<span class="nv">BMI = </span><span class="nx">mass</span> <span class="o">/</span> <span class="nx">height</span><span class="o">**</span><span class="mi">2</span>
+<span class="nx">alert</span> <span class="s">'You are healthy!'</span> <span class="k">if</span> <span class="mf">18.5</span> <span class="o">&lt;</span> <span class="nx">BMI</span> <span class="o">&lt;</span> <span class="mi">25</span>
+</pre></div>
+<h3><span class="mw-headline" id="Loops_and_comprehensions">Loops and comprehensions</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=CoffeeScript&amp;action=edit&amp;section=5" title="Edit section: Loops and comprehensions">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>To compute the <a href="/wiki/Greatest_common_divisor" title="Greatest common divisor">greatest common divisor</a> of two integers with the <a href="/wiki/Euclidean_algorithm" title="Euclidean algorithm">euclidean algorithm</a>, in JavaScript one usually needs a <i>while</i> loop:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="kd">function</span> <span class="nx">gcd</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kd">var</span> <span class="nx">z</span>
+  <span class="k">do</span> <span class="p">{</span>
+    <span class="nx">z</span> <span class="o">=</span> <span class="nx">x</span> <span class="o">%</span> <span class="nx">y</span>
+    <span class="nx">x</span> <span class="o">=</span> <span class="nx">y</span>
+    <span class="nx">y</span> <span class="o">=</span> <span class="nx">z</span>
+  <span class="p">}</span> <span class="k">while</span> <span class="p">(</span><span class="nx">y</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">)</span>
+  <span class="k">return</span> <span class="nx">x</span>
+<span class="p">}</span>
+</pre></div>
+<p>Whereas in CoffeeScript one can use <code>until</code> and pattern-matching instead:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="nv">gcd = </span><span class="nf">(x, y) -&gt;</span>
+  <span class="p">[</span><span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="nx">y</span><span class="p">,</span> <span class="nx">x</span><span class="o">%</span><span class="nx">y</span><span class="p">]</span> <span class="k">until</span> <span class="nx">y</span> <span class="o">is</span> <span class="mi">0</span>
+  <span class="nx">x</span>
+</pre></div>
+<p>Any <i>for</i> loop can be replaced by a <a href="/wiki/List_comprehension" title="List comprehension">list comprehension</a>; so that to compute the squares of the positive odd numbers smaller than ten (i.e. numbers which remainder modulo 2 is 1), one can do:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="nx">alert</span> <span class="nx">n</span><span class="o">*</span><span class="nx">n</span> <span class="k">for</span> <span class="nx">n</span> <span class="k">in</span> <span class="p">[</span><span class="mi">1</span><span class="p">..</span><span class="mi">10</span><span class="p">]</span> <span class="k">when</span> <span class="nx">n</span><span class="o">%</span><span class="mi">2</span> <span class="o">is</span> <span class="mi">1</span>
+</pre></div>
+<p>Alternatively, there is:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="nx">alert</span> <span class="nx">n</span><span class="o">*</span><span class="nx">n</span> <span class="k">for</span> <span class="nx">n</span> <span class="k">in</span> <span class="p">[</span><span class="mi">1</span><span class="p">..</span><span class="mi">10</span><span class="p">]</span> <span class="k">by</span> <span class="mi">2</span>
+</pre></div>
+<p>You can implement a <a href="/wiki/Linear_search" title="Linear search">linear search</a> with a one-liner using the when keyword:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="nv">names = </span><span class="p">[</span><span class="s">"Ivan"</span><span class="p">,</span> <span class="s">"Joanna"</span><span class="p">,</span> <span class="s">"Nikolay"</span><span class="p">,</span> <span class="s">"Mihaela"</span><span class="p">]</span>
+<span class="nv">linearSearch = </span><span class="nf">(searchName) -&gt;</span> <span class="nx">alert</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span> <span class="k">for</span> <span class="nx">name</span> <span class="k">in</span> <span class="nx">names</span> <span class="k">when</span> <span class="nx">name</span> <span class="o">is</span> <span class="nx">searchName</span>
+</pre></div>
+<p>The <code>for ... in</code> syntax allows you to loop over arrays while the <code>for ... of</code> syntax allows you to loop over objects.</p>
+<p>You can use the <code>?</code> keyword to quickly check if a variable is <code>null</code> or <code>undefined</code>&#160;:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="nv">personCheck = </span><span class="nf">-&gt;</span>
+  <span class="k">if</span> <span class="o">not</span> <span class="nx">person</span><span class="o">?</span> <span class="k">then</span> <span class="nx">alert</span><span class="p">(</span><span class="s">"No person"</span><span class="p">)</span> <span class="k">else</span> <span class="nx">alert</span><span class="p">(</span><span class="s">"Have person"</span><span class="p">)</span>
+<span class="nv">person = </span><span class="kc">null</span>
+<span class="nx">personCheck</span><span class="p">()</span> 
+<span class="nv">person = </span><span class="s">"Ivan"</span>
+<span class="nx">personCheck</span><span class="p">()</span>
+</pre></div>
+<p>This would alert "No person" if the variable is <code>null</code> or <code>undefined</code> and "Have person" if there is something there.</p>
+<h3><span class="mw-headline" id="Functions_and_jQuery">Functions and jQuery</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=CoffeeScript&amp;action=edit&amp;section=6" title="Edit section: Functions and jQuery">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>A common JavaScript snippet using the <a href="/wiki/JQuery" title="JQuery">jQuery</a> library is:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+  <span class="c1">// Initialization code goes here</span>
+<span class="p">})</span>
+</pre></div>
+<p>Or even just:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="nx">$</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+  <span class="c1">// Initialization code goes here</span>
+<span class="p">})</span>
+</pre></div>
+<p>In CoffeeScript, the <code>function</code> keyword is replaced by the <code>-&gt;</code> symbol, and indentation is used instead of curly braces, as in other <a href="/wiki/Off-side_rule" title="Off-side rule">off-side rule</a> languages such as Python and Haskell. Also, parentheses can usually be omitted, using indentation level instead to denote a function or block. Thus, the CoffeeScript equivalent of the snippet above is:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span> <span class="nf">-&gt;</span>
+  <span class="c1"># Initialization code goes here</span>
+</pre></div>
+<p>Or just:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="nx">$</span> <span class="nf">-&gt;</span>
+  <span class="c1"># Initialization code goes here</span>
+</pre></div>
+<h3><span class="mw-headline" id="String_interpolation">String interpolation</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=CoffeeScript&amp;action=edit&amp;section=7" title="Edit section: String interpolation">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Ruby-style string interpolation is included in CoffeeScript. Double-quoted strings allow for interpolated values, using #{ ... }, and single-quoted strings are literal.<sup id="cite_ref-11" class="reference"><a href="#cite_note-11">[11]</a></sup></p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="nv">author = </span><span class="s">"Wittgenstein"</span>
+<span class="nv">quote  = </span><span class="s">"A picture is a fact. -- </span><span class="si">#{</span> <span class="nx">author</span> <span class="si">}</span><span class="s">"</span>
+
+<span class="nv">sentence = </span><span class="s">"</span><span class="si">#{</span> <span class="mi">22</span> <span class="o">/</span> <span class="mi">7</span> <span class="si">}</span><span class="s"> is a decent approximation of π"</span>
+</pre></div>
+<h2><span class="mw-headline" id="Compiling">Compiling</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=CoffeeScript&amp;action=edit&amp;section=8" title="Edit section: Compiling">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The CoffeeScript compiler has been <a href="/wiki/Self-hosting" title="Self-hosting">written in CoffeeScript</a> since version 0.5 and is available as a <a href="/wiki/Node.js" title="Node.js">Node.js</a> utility; however, the core compiler does not rely on Node.js and can be run in any <a href="/wiki/JavaScript" title="JavaScript">JavaScript</a> environment.<sup id="cite_ref-12" class="reference"><a href="#cite_note-12">[12]</a></sup> One alternative to the <a href="/wiki/Node.js" title="Node.js">Node.js</a> utility is the <a rel="nofollow" class="external text" href="https://github.com/talios/coffee-maven-plugin">Coffee Maven Plugin</a>, a plugin for the popular <a href="/wiki/Apache_Maven" title="Apache Maven">Apache Maven</a> build system. The plugin uses the <a href="/wiki/Rhino_(JavaScript_engine)" title="Rhino (JavaScript engine)">Rhino</a> JavaScript engine written in <a href="/wiki/Java_(programming_language)" title="Java (programming language)">Java</a>.</p>
+<p>The official site at CoffeeScript.org has a "Try CoffeeScript" button in the menu bar; clicking it opens a modal window in which users can enter CoffeeScript, see the JavaScript output, and run it directly in the browser. The js2coffee<sup id="cite_ref-13" class="reference"><a href="#cite_note-13">[13]</a></sup> site provides bi-directional translation.</p>
+<h2><span class="mw-headline" id="Latest_additions">Latest additions</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=CoffeeScript&amp;action=edit&amp;section=9" title="Edit section: Latest additions">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li>Source maps allow users to de-bug their CoffeeScript code directly, supporting CoffeeScript tracebacks on run time errors.</li>
+<li>CoffeeScript <a rel="nofollow" class="external text" href="http://coffeescript.org/#literate">supports</a> a form of <a href="/wiki/Literate_Programming" class="mw-redirect" title="Literate Programming">Literate Programming</a>, using the <code>.coffee.md</code> or <code>.litcoffee</code> file extension. This allows CoffeeScript source code to be written in <a href="/wiki/Markdown" title="Markdown">Markdown</a>. The compiler will treat any indented blocks (Markdown's way of indicating source code) as code, and ignore the rest as comments.</li>
+</ul>
+<h2><span class="mw-headline" id="Adoption">Adoption</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=CoffeeScript&amp;action=edit&amp;section=10" title="Edit section: Adoption">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>On September 13, 2012, <a href="/wiki/Dropbox_(service)" title="Dropbox (service)">Dropbox</a> announced that their browser-side code base has been rewritten from <a href="/wiki/JavaScript" title="JavaScript">JavaScript</a> to CoffeeScript.<sup id="cite_ref-14" class="reference"><a href="#cite_note-14">[14]</a></sup></p>
+<p><a href="/wiki/GitHub" title="GitHub">GitHub</a>'s internal style guide once said "write new JS in CoffeeScript", and while it no longer does, all the advice in the style guide references how to write good CoffeeScript,<sup id="cite_ref-15" class="reference"><a href="#cite_note-15">[15]</a></sup> and their <a href="/wiki/Atom_(text_editor)" title="Atom (text editor)">Atom text editor</a> is also written in the language.<sup id="cite_ref-16" class="reference"><a href="#cite_note-16">[16]</a></sup></p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=CoffeeScript&amp;action=edit&amp;section=11" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div role="navigation" aria-label="Portals" class="noprint portal plainlist tright" style="margin:0.5em 0 0.5em 1em;border:solid #aaa 1px">
+<ul style="display:table;box-sizing:border-box;padding:0.1em;max-width:175px;background:#f9f9f9;font-size:85%;line-height:110%;font-style:italic;font-weight:bold">
+<li style="display:table-row"><span style="display:table-cell;padding:0.2em;vertical-align:middle;text-align:center"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/3/31/Free_and_open-source_software_logo_%282009%29.svg/28px-Free_and_open-source_software_logo_%282009%29.svg.png" width="28" height="28" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/3/31/Free_and_open-source_software_logo_%282009%29.svg/42px-Free_and_open-source_software_logo_%282009%29.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/3/31/Free_and_open-source_software_logo_%282009%29.svg/56px-Free_and_open-source_software_logo_%282009%29.svg.png 2x" data-file-width="512" data-file-height="512" /></span><span style="display:table-cell;padding:0.2em 0.2em 0.2em 0.3em;vertical-align:middle"><a href="/wiki/Portal:Free_software" class="mw-redirect" title="Portal:Free software">Free software portal</a></span></li>
+</ul>
+</div>
+<ul>
+<li><a href="/wiki/Amber_Smalltalk" title="Amber Smalltalk">Amber Smalltalk</a></li>
+<li><a href="/wiki/Elm_(programming_language)" title="Elm (programming language)">Elm (programming language)</a>, a compile-to-JavaScript functional language with static typing</li>
+<li><a href="/wiki/Haxe" title="Haxe">Haxe</a></li>
+<li><a href="/wiki/Dart_(programming_language)" title="Dart (programming language)">Dart</a></li>
+<li><a href="/wiki/Opa_(programming_language)" title="Opa (programming language)">Opa</a></li>
+<li><a href="/wiki/TypeScript" title="TypeScript">TypeScript</a>, an open-source, strict superset of Javascript language from <a href="/wiki/Microsoft" title="Microsoft">Microsoft</a></li>
+<li><a rel="nofollow" class="external text" href="http://rapydscript.pyjeon.com/">RapydScript</a>,<sup id="cite_ref-17" class="reference"><a href="#cite_note-17">[17]</a></sup> a translator with a more Pythonic syntax</li>
+<li><a href="/wiki/LiveScript" title="LiveScript">LiveScript</a></li>
+<li><a rel="nofollow" class="external text" href="http://ckknight.github.io/gorillascript/">GorillaScript</a>, which offers additional type checking and syntactic sugar for common JS patterns such as inline callbacks</li>
+</ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=CoffeeScript&amp;action=edit&amp;section=12" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist columns references-column-width" style="-moz-column-width: 30em; -webkit-column-width: 30em; column-width: 30em; list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://coffeescript.org/">http://coffeescript.org/</a> "CoffeeScript borrows chained comparisons from Python"</span></li>
+<li id="cite_note-smell-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-smell_2-0">^</a></b></span> <span class="reference-text"><cite class="citation news">Heller, Martin (18 October 2011). <a rel="nofollow" class="external text" href="http://www.javaworld.com/javaworld/jw-10-2011/111018-coffeescript-vs-dart.html">"up your nose at Dart and smell the CoffeeScript"</a>. <i>JavaWorld</i>. InfoWorld<span class="reference-accessdate">. Retrieved <span class="nowrap">2012-02-09</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACoffeeScript&amp;rft.atitle=up+your+nose+at+Dart+and+smell+the+CoffeeScript&amp;rft.aufirst=Martin&amp;rft.aulast=Heller&amp;rft.date=2011-10-18&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fwww.javaworld.com%2Fjavaworld%2Fjw-10-2011%2F111018-coffeescript-vs-dart.html&amp;rft.jtitle=JavaWorld&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-thelittlebookoncoffeescript-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-thelittlebookoncoffeescript_3-0">^</a></b></span> <span class="reference-text"><cite class="citation book">Alex MacCaw (January 2012). <i>The Little Book on CoffeScript</i>. <a href="/wiki/O%27Reilly_Media" title="O'Reilly Media">O'Reilly Media</a>. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-1-4493-2105-5" title="Special:BookSources/978-1-4493-2105-5">978-1-4493-2105-5</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACoffeeScript&amp;rft.au=Alex+MacCaw&amp;rft.btitle=The+Little+Book+on+CoffeScript&amp;rft.date=2012-01&amp;rft.genre=book&amp;rft.isbn=978-1-4493-2105-5&amp;rft.pub=O%27Reilly+Media&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text">, Joshua. <a rel="nofollow" class="external text" href="http://twitter.com/joshpeek/status/58184348742074368">Tweet by Rails Core Team Member</a> on Apr 13, 2011</span></li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://www.playframework.com/documentation/2.5.x/AssetsCoffeeScript">"AssetsCoffeeScript - 2.5.x"</a>. <i>www.playframework.com</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2016-10-31</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACoffeeScript&amp;rft.atitle=AssetsCoffeeScript++-+2.5.x&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fwww.playframework.com%2Fdocumentation%2F2.5.x%2FAssetsCoffeeScript&amp;rft.jtitle=www.playframework.com&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text">Eich, Brendan. "<a rel="nofollow" class="external text" href="http://brendaneich.com/2011/01/harmony-of-my-dreams/">Harmony of My Dreams</a>"</span></li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text">Eich, Brendan. "<a rel="nofollow" class="external text" href="http://brendaneich.com/2011/05/my-jsconf-us-presentation/">My JSConf.US Presentation</a>"</span></li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text">Github. <a rel="nofollow" class="external text" href="https://github.com/jashkenas/coffee-script/commit/8e9d637985d2dc9b44922076ad54ffef7fa8e9c2">'initial commit of the mystery language'</a></span></li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-9">^</a></b></span> <span class="reference-text">Hacker News. <a rel="nofollow" class="external text" href="https://news.ycombinator.com/item?id=2037801">CoffeeScript 1.0.0 announcement</a> posted by Jeremy Ashkenas on Dec 24, 2010</span></li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-10">^</a></b></span> <span class="reference-text">Hacker News. <a rel="nofollow" class="external text" href="https://news.ycombinator.com/item?id=1014080">Original CoffeeScript announcement</a> posted by Jeremy Ashkenas on Dec 24, 2009</span></li>
+<li id="cite_note-11"><span class="mw-cite-backlink"><b><a href="#cite_ref-11">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://coffeescript.org">"Official CoffeeScript Page"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">20 November</span> 2013</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACoffeeScript&amp;rft.btitle=Official+CoffeeScript+Page&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fcoffeescript.org&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-12"><span class="mw-cite-backlink"><b><a href="#cite_ref-12">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://jashkenas.github.com/coffee-script/#installation">CoffeeScript</a>. Jashkenas.github.com. Retrieved on 2013-07-21.</span></li>
+<li id="cite_note-13"><span class="mw-cite-backlink"><b><a href="#cite_ref-13">^</a></b></span> <span class="reference-text"><cite class="citation web">Sta Cruz, Rico. <a rel="nofollow" class="external text" href="http://js2.coffee">"js2coffee"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">11 May</span> 2014</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACoffeeScript&amp;rft.aufirst=Rico&amp;rft.aulast=Sta+Cruz&amp;rft.btitle=js2coffee&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fjs2.coffee&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-14"><span class="mw-cite-backlink"><b><a href="#cite_ref-14">^</a></b></span> <span class="reference-text"><cite class="citation web">Wheeler, Dan; Mahkovec, Ziga; Varenhorst, Chris (13 September 2012). <a rel="nofollow" class="external text" href="https://tech.dropbox.com/?p=361">"Dropbox dives into CoffeeScript"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">11 May</span> 2013</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACoffeeScript&amp;rft.aufirst=Dan&amp;rft.aulast=Wheeler&amp;rft.au=Mahkovec%2C+Ziga&amp;rft.au=Varenhorst%2C+Chris&amp;rft.btitle=Dropbox+dives+into+CoffeeScript&amp;rft.date=2012-09-13&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Ftech.dropbox.com%2F%3Fp%3D361&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-15"><span class="mw-cite-backlink"><b><a href="#cite_ref-15">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://github.com/styleguide/javascript">"JavaScript · Styleguide · GitHub"</a>. Github.com. <a rel="nofollow" class="external text" href="https://web.archive.org/web/20130815075924/https://github.com/styleguide/javascript">Archived</a> from the original on 2013-08-15<span class="reference-accessdate">. Retrieved <span class="nowrap">2015-11-30</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACoffeeScript&amp;rft.btitle=JavaScript+%B7+Styleguide+%B7+GitHub&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fgithub.com%2Fstyleguide%2Fjavascript&amp;rft.pub=Github.com&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-16"><span class="mw-cite-backlink"><b><a href="#cite_ref-16">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/atom/atom/tree/master/src">Atom source code</a>. github.com. Retrieved on 2015-07-22.</span></li>
+<li id="cite_note-17"><span class="mw-cite-backlink"><b><a href="#cite_ref-17">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://bitbucket.org/pyjeon/rapydscript">"Rapydscript bitbucket repository"</a>. <i>Atlassian Bitbucket</i>. 3 Apr 2013<span class="reference-accessdate">. Retrieved <span class="nowrap">11 May</span> 2014</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACoffeeScript&amp;rft.atitle=Rapydscript+bitbucket+repository&amp;rft.date=2013-04-03&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fbitbucket.org%2Fpyjeon%2Frapydscript&amp;rft.jtitle=Atlassian+Bitbucket&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="Further_reading">Further reading</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=CoffeeScript&amp;action=edit&amp;section=13" title="Edit section: Further reading">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><cite class="citation journal">Lee, Patrick (May 14, 2014). <a rel="nofollow" class="external text" href="http://www.amazon.com/dp/1617290629">"CoffeeScript in Action"</a> (First ed.). <a href="/wiki/Manning_Publications" title="Manning Publications">Manning Publications</a>: 432. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-1617290626" title="Special:BookSources/978-1617290626">978-1617290626</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACoffeeScript&amp;rft.atitle=CoffeeScript+in+Action&amp;rft.aufirst=Patrick&amp;rft.aulast=Lee&amp;rft.date=2014-05-14&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fwww.amazon.com%2Fdp%2F1617290629&amp;rft.isbn=978-1617290626&amp;rft.pages=432&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation journal">Grosenbach, Geoffrey (May 12, 2011). <a rel="nofollow" class="external text" href="https://peepcode.com/products/coffeescript">"Meet CoffeeScript"</a> (First ed.). <a href="/w/index.php?title=PeepCode&amp;action=edit&amp;redlink=1" class="new" title="PeepCode (page does not exist)">PeepCode</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACoffeeScript&amp;rft.atitle=Meet+CoffeeScript&amp;rft.aufirst=Geoffrey&amp;rft.aulast=Grosenbach&amp;rft.date=2011-05-12&amp;rft.genre=article&amp;rft_id=https%3A%2F%2Fpeepcode.com%2Fproducts%2Fcoffeescript&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation journal">Bates, Mark (May 31, 2012). <a rel="nofollow" class="external text" href="http://my.safaribooksonline.com/book/-/9780132946155">"Programming in CoffeeScript"</a> (First ed.). <a href="/wiki/Addison-Wesley" title="Addison-Wesley">Addison-Wesley</a>: 350. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-321-82010-X" title="Special:BookSources/0-321-82010-X">0-321-82010-X</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACoffeeScript&amp;rft.atitle=Programming+in+CoffeeScript&amp;rft.aufirst=Mark&amp;rft.aulast=Bates&amp;rft.date=2012-05-31&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fmy.safaribooksonline.com%2Fbook%2F-%2F9780132946155&amp;rft.isbn=0-321-82010-X&amp;rft.pages=350&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation journal">MacCaw, Alex (January 31, 2012). <a rel="nofollow" class="external text" href="http://arcturo.github.com/library/coffeescript/">"The Little Book on CoffeeScript"</a> (First ed.). <a href="/wiki/O%27Reilly_Media" title="O'Reilly Media">O'Reilly Media</a>: 62. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-1449321055" title="Special:BookSources/978-1449321055">978-1449321055</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACoffeeScript&amp;rft.atitle=The+Little+Book+on+CoffeeScript&amp;rft.aufirst=Alex&amp;rft.aulast=MacCaw&amp;rft.date=2012-01-31&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Farcturo.github.com%2Flibrary%2Fcoffeescript%2F&amp;rft.isbn=978-1449321055&amp;rft.pages=62&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation journal">Burnham, Trevor (August 3, 2011). <a rel="nofollow" class="external text" href="http://pragprog.com/book/tbcoffee/coffeescript">"CoffeeScript: Accelerated JavaScript Development"</a> (First ed.). <a href="/wiki/Pragmatic_Bookshelf" class="mw-redirect" title="Pragmatic Bookshelf">Pragmatic Bookshelf</a>: 138. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-1934356784" title="Special:BookSources/978-1934356784">978-1934356784</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACoffeeScript&amp;rft.atitle=CoffeeScript%3A+Accelerated+JavaScript+Development&amp;rft.aufirst=Trevor&amp;rft.aulast=Burnham&amp;rft.date=2011-08-03&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fpragprog.com%2Fbook%2Ftbcoffee%2Fcoffeescript&amp;rft.isbn=978-1934356784&amp;rft.pages=138&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+</ul>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=CoffeeScript&amp;action=edit&amp;section=14" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><span class="official-website"><span class="url"><a rel="nofollow" class="external text" href="http://coffeescript.org">Official website</a></span></span></li>
+<li><a rel="nofollow" class="external text" href="https://github.com/jashkenas/coffee-script">coffee-script</a> on <a href="/wiki/GitHub" title="GitHub">GitHub</a></li>
+<li><a rel="nofollow" class="external text" href="https://github.com/tcorral/CoffeeScript-Syntax-Definition">CoffeeScript syntax definition</a> to highlight your CoffeeScript code in <a href="/wiki/Crucible_(software)" title="Crucible (software)">Atlassian Crucible</a> by Tomás Corral</li>
+</ul>
+<div role="navigation" class="navbox" aria-labelledby="Programming_languages" style="padding:3px">
+<table class="nowraplinks hlist collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:Programming_languages" title="Template:Programming languages"><abbr title="View this template" style=";;background:none transparent;border:none;">v</abbr></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:Programming_languages" title="Template talk:Programming languages"><abbr title="Discuss this template" style=";;background:none transparent;border:none;">t</abbr></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:Programming_languages&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;">e</abbr></a></li>
+</ul>
+</div>
+<div id="Programming_languages" style="font-size:114%"><a href="/wiki/Programming_language" title="Programming language">Programming languages</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" colspan="2">
+<div>
+<ul>
+<li><a href="/wiki/Comparison_of_programming_languages" title="Comparison of programming languages">Comparison</a></li>
+<li><a href="/wiki/Timeline_of_programming_languages" title="Timeline of programming languages">Timeline</a></li>
+<li><a href="/wiki/History_of_programming_languages" title="History of programming languages">History</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Assembly_language" title="Assembly language">Assembly</a></li>
+<li><a href="/wiki/BASIC" title="BASIC">BASIC</a></li>
+<li><a href="/wiki/C_(programming_language)" title="C (programming language)">C</a></li>
+<li><a href="/wiki/C%2B%2B" title="C++">C++</a></li>
+<li><a href="/wiki/C_Sharp_(programming_language)" title="C Sharp (programming language)">C#</a></li>
+<li><a href="/wiki/COBOL" title="COBOL">COBOL</a></li>
+<li><a href="/wiki/Fortran" title="Fortran">Fortran</a></li>
+<li><a href="/wiki/Go_(programming_language)" title="Go (programming language)">Go</a></li>
+<li><a href="/wiki/Haskell_(programming_language)" title="Haskell (programming language)">Haskell</a></li>
+<li><a href="/wiki/Java_(programming_language)" title="Java (programming language)">Java</a></li>
+<li><a href="/wiki/JavaScript" title="JavaScript">JavaScript</a> (JS)</li>
+<li><a href="/wiki/Lisp_(programming_language)" title="Lisp (programming language)">Lisp</a></li>
+<li><a href="/wiki/Lua_(programming_language)" title="Lua (programming language)">Lua</a></li>
+<li><a href="/wiki/Objective-C" title="Objective-C">Objective-C</a></li>
+<li><a href="/wiki/Pascal_(programming_language)" title="Pascal (programming language)">Pascal</a></li>
+<li><a href="/wiki/Perl" title="Perl">Perl</a></li>
+<li><a href="/wiki/PHP" title="PHP">PHP</a></li>
+<li><a href="/wiki/Python_(programming_language)" title="Python (programming language)">Python</a></li>
+<li><a href="/wiki/Ruby_(programming_language)" title="Ruby (programming language)">Ruby</a></li>
+<li><a href="/wiki/Shell_script" title="Shell script">Shell</a></li>
+<li><a href="/wiki/Smalltalk" title="Smalltalk">Smalltalk</a></li>
+<li><a href="/wiki/Swift_(programming_language)" title="Swift (programming language)">Swift</a></li>
+<li><a href="/wiki/Visual_Basic_.NET" title="Visual Basic .NET">Visual Basic .NET</a> (VB.NET)</li>
+<li><i><a href="/wiki/List_of_programming_languages" title="List of programming languages">more...</a></i></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" colspan="2">
+<div>
+<ul>
+<li><img alt="Category" src="//upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/16px-Folder_Hexagonal_Icon.svg.png" title="Category" width="16" height="14" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/24px-Folder_Hexagonal_Icon.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/32px-Folder_Hexagonal_Icon.svg.png 2x" data-file-width="36" data-file-height="31" /> <b><a href="/wiki/Category:Programming_languages" title="Category:Programming languages">Category</a></b></li>
+<li><img alt="Non-article page" src="//upload.wikimedia.org/wikipedia/en/thumb/8/89/Symbol_neutral_vote.svg/16px-Symbol_neutral_vote.svg.png" title="Non-article page" width="16" height="16" srcset="//upload.wikimedia.org/wikipedia/en/thumb/8/89/Symbol_neutral_vote.svg/23px-Symbol_neutral_vote.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/8/89/Symbol_neutral_vote.svg/31px-Symbol_neutral_vote.svg.png 2x" data-file-width="180" data-file-height="185" /> <b><a href="/wiki/Comparison_of_programming_languages" title="Comparison of programming languages">Comparison</a></b></li>
+<li><img alt="List-Class article" src="//upload.wikimedia.org/wikipedia/en/thumb/d/db/Symbol_list_class.svg/16px-Symbol_list_class.svg.png" title="List-Class article" width="16" height="16" srcset="//upload.wikimedia.org/wikipedia/en/thumb/d/db/Symbol_list_class.svg/23px-Symbol_list_class.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/d/db/Symbol_list_class.svg/31px-Symbol_list_class.svg.png 2x" data-file-width="180" data-file-height="185" /> <b>Lists</b>
+<ul>
+<li><a href="/wiki/List_of_programming_languages" title="List of programming languages">Alphabetical</a></li>
+<li><a href="/wiki/Categorical_list_of_programming_languages" class="mw-redirect" title="Categorical list of programming languages">Categorical</a></li>
+<li><a href="/wiki/Generational_list_of_programming_languages" title="Generational list of programming languages">Generational</a></li>
+<li><a href="/wiki/Non-English-based_programming_languages" title="Non-English-based programming languages">Non-English-based</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div role="navigation" class="navbox" aria-labelledby="JavaScript" style="padding:3px">
+<table class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:JavaScript" title="Template:JavaScript"><abbr title="View this template" style=";;background:none transparent;border:none;">v</abbr></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:JavaScript" title="Template talk:JavaScript"><abbr title="Discuss this template" style=";;background:none transparent;border:none;">t</abbr></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:JavaScript&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;">e</abbr></a></li>
+</ul>
+</div>
+<div id="JavaScript" style="font-size:114%"><a href="/wiki/JavaScript" title="JavaScript">JavaScript</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Static_code_analysis" class="mw-redirect" title="Static code analysis">Code analysis</a></th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/JSHint" title="JSHint">JSHint</a></li>
+<li><a href="/wiki/JSLint" title="JSLint">JSLint</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Compiler" title="Compiler">Compilers</a></th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><strong class="selflink">CoffeeScript</strong></li>
+<li><a href="/wiki/Dart_(programming_language)" title="Dart (programming language)">Dart</a></li>
+<li><a href="/wiki/Emscripten" title="Emscripten">Emscripten</a></li>
+<li><a href="/wiki/Google_Closure_Compiler" class="mw-redirect" title="Google Closure Compiler">Google Closure Compiler</a></li>
+<li><a href="/wiki/Google_Web_Toolkit" title="Google Web Toolkit">Google Web Toolkit</a></li>
+<li><a href="/wiki/Morfik" title="Morfik">Morfik</a></li>
+<li><a href="/wiki/TypeScript" title="TypeScript">TypeScript</a></li>
+<li><a href="/wiki/AtScript" title="AtScript">AtScript</a></li>
+<li><a href="/wiki/Opa_(programming_language)" title="Opa (programming language)">Opa</a></li>
+<li><a href="/wiki/Haxe" title="Haxe">Haxe</a></li>
+<li><a href="/wiki/ClojureScript" class="mw-redirect" title="ClojureScript">ClojureScript</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Concepts</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Ajax_(programming)" title="Ajax (programming)">Ajax</a></li>
+<li><a href="/wiki/Client-side_JavaScript" class="mw-redirect" title="Client-side JavaScript">Client-side</a></li>
+<li><a href="/wiki/Dynamic_HTML" title="Dynamic HTML">Dynamic HTML</a></li>
+<li><a href="/wiki/JavaScript_library" title="JavaScript library">JavaScript library</a></li>
+<li><a href="/wiki/JavaScript_syntax" title="JavaScript syntax">JavaScript syntax</a></li>
+<li><a href="/wiki/Unobtrusive_JavaScript" title="Unobtrusive JavaScript">Unobtrusive JavaScript</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Debugger" title="Debugger">Debuggers</a></th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Firebug_(software)" title="Firebug (software)">Firebug</a></li>
+<li><a href="/wiki/Komodo_IDE" title="Komodo IDE">Komodo IDE</a></li>
+<li><a href="/wiki/Microsoft_Script_Debugger" title="Microsoft Script Debugger">Microsoft Script Debugger</a></li>
+<li><a href="/wiki/Microsoft_Script_Editor" title="Microsoft Script Editor">Microsoft Script Editor</a></li>
+<li><a href="/wiki/Opera_Dragonfly" title="Opera Dragonfly">Opera Dragonfly</a></li>
+<li><a href="/wiki/Venkman" title="Venkman">Venkman</a></li>
+<li><a href="/wiki/Web_Inspector" class="mw-redirect" title="Web Inspector">Web Inspector</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Documentation_generator" title="Documentation generator">Doc generators</a></th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/JSDoc" title="JSDoc">JSDoc</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Editors (<span style="font-weight:normal"><a href="/wiki/Comparison_of_JavaScript-based_source_code_editors" title="Comparison of JavaScript-based source code editors">comparison</a></span>)</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Ace_(editor)" title="Ace (editor)">Ace</a></li>
+<li><a href="/wiki/Atom_(text_editor)" title="Atom (text editor)">Atom</a></li>
+<li><a href="/wiki/Cloud9_IDE" title="Cloud9 IDE">Cloud9 IDE</a></li>
+<li><a href="/wiki/CodeMirror" title="CodeMirror">CodeMirror</a></li>
+<li><a href="/wiki/Koding" title="Koding">Koding</a></li>
+<li><a href="/wiki/Light_Table_(software)" title="Light Table (software)">Light Table</a></li>
+<li><a href="/wiki/List_of_Eclipse_projects#Top-level_sub-projects" title="List of Eclipse projects">Orion</a></li>
+<li><a href="/wiki/Microsoft_Visual_Studio" title="Microsoft Visual Studio">Visual Studio</a>
+<ul>
+<li><a href="/wiki/Microsoft_Visual_Studio_Express" title="Microsoft Visual Studio Express">Visual Studio Express</a></li>
+</ul>
+</li>
+<li><a href="/wiki/Visual_Studio_Code" title="Visual Studio Code">Visual Studio Code</a></li>
+<li><a href="/wiki/Visual_Studio#Visual_Studio_Online" class="mw-redirect" title="Visual Studio">Visual Studio Online</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Engines</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Comparison_of_layout_engines_(ECMAScript)" title="Comparison of layout engines (ECMAScript)">Comparison of layout engines</a></li>
+<li><a href="/wiki/List_of_ECMAScript_engines" title="List of ECMAScript engines">List of ECMAScript engines</a></li>
+<li><a href="/wiki/JavaScript_engine#JavaScript_engines" title="JavaScript engine">List of JavaScript engines</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Software_framework" title="Software framework">Frameworks</a></th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Comparison_of_JavaScript_frameworks" title="Comparison of JavaScript frameworks">Comparison of JavaScript frameworks</a></li>
+<li><a href="/wiki/List_of_JavaScript_libraries" title="List of JavaScript libraries">List of JavaScript libraries</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Related <a href="/wiki/Technology" title="Technology">technologies</a></th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Cascading_Style_Sheets" title="Cascading Style Sheets">Cascading Style Sheets</a></li>
+<li><a href="/wiki/Document_Object_Model" title="Document Object Model">Document Object Model</a></li>
+<li><a href="/wiki/HTML" title="HTML">HTML</a></li>
+<li><a href="/wiki/JSON" title="JSON">JSON</a></li>
+<li><a href="/wiki/WebAssembly" title="WebAssembly">WebAssembly</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Package_manager" title="Package manager">Package managers</a></th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Npm_(software)" title="Npm (software)">npm</a></li>
+<li><a href="/wiki/NuGet" title="NuGet">NuGet</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Server-side_JavaScript" class="mw-redirect" title="Server-side JavaScript">Server-side</a></th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Active_Server_Pages" title="Active Server Pages">Active Server Pages</a></li>
+<li><a href="/wiki/CommonJS" title="CommonJS">CommonJS</a></li>
+<li><a href="/wiki/JSGI" title="JSGI">JSGI</a></li>
+<li><a href="/wiki/Node.js" title="Node.js">Node.js</a></li>
+<li><a href="/wiki/Wakanda_(software)" title="Wakanda (software)">Wakanda</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Unit_testing" title="Unit testing">Unit testing</a></th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Jasmine_(JavaScript_framework)" class="mw-redirect" title="Jasmine (JavaScript framework)">Jasmine</a></li>
+<li><a href="/wiki/Mocha_(JavaScript_framework)" title="Mocha (JavaScript framework)">Mocha</a></li>
+<li><a href="/wiki/QUnit" title="QUnit">QUnit</a></li>
+<li><a href="/wiki/List_of_unit_testing_frameworks#JavaScript" title="List of unit testing frameworks">List of JavaScript unit testing frameworks</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">People</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Douglas_Crockford" title="Douglas Crockford">Douglas Crockford</a></li>
+<li><a href="/wiki/Brendan_Eich" title="Brendan Eich">Brendan Eich</a></li>
+<li><a href="/wiki/John_Resig" title="John Resig">John Resig</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div role="navigation" class="navbox" aria-labelledby="Node.js" style="padding:3px">
+<table class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="3">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:NodeJs" title="Template:NodeJs"><abbr title="View this template" style=";;background:none transparent;border:none;">v</abbr></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:NodeJs" title="Template talk:NodeJs"><abbr title="Discuss this template" style=";;background:none transparent;border:none;">t</abbr></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:NodeJs&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;">e</abbr></a></li>
+</ul>
+</div>
+<div id="Node.js" style="font-size:114%"><a href="/wiki/Node.js" title="Node.js">Node.js</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Platform</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Node.js" title="Node.js">Node.js</a></li>
+<li><a href="/wiki/Npm_(software)" title="Npm (software)">NPM</a></li>
+<li><a href="/wiki/V8_(JavaScript_engine)" title="V8 (JavaScript engine)">V8</a></li>
+<li><a href="/wiki/CommonJS" title="CommonJS">CommonJS</a></li>
+</ul>
+</div>
+</td>
+<td class="navbox-image" rowspan="9" style="width:0%;padding:0px 0px 0px 2px">
+<div><a href="/wiki/File:Node.js_logo.svg" class="image"><img alt="Node.js logo.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/100px-Node.js_logo.svg.png" width="100" height="61" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/150px-Node.js_logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/200px-Node.js_logo.svg.png 2x" data-file-width="553" data-file-height="339" /></a></div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Frameworks</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/MEAN_(software_bundle)" title="MEAN (software bundle)">MEAN</a>
+<ul>
+<li><a href="/wiki/MongoDB" title="MongoDB">MongoDB</a></li>
+<li><a href="/wiki/Express.js" title="Express.js">Express.js</a></li>
+<li><a href="/wiki/AngularJS" title="AngularJS">AngularJS</a></li>
+</ul>
+</li>
+<li>MEEN (substituted with <a href="/wiki/Ember.js" title="Ember.js">Ember.js</a>)</li>
+<li><a href="/wiki/Backbone.js" title="Backbone.js">Backbone.js</a></li>
+<li><a href="/wiki/Meteor_(web_framework)" title="Meteor (web framework)">Meteor</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Libraries</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Lodash" title="Lodash">Lodash</a></li>
+<li><a href="/wiki/Underscore.js" title="Underscore.js">Underscore.js</a></li>
+<li><a href="/wiki/React.js" class="mw-redirect" title="React.js">React.js</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Languages</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/JavaScript" title="JavaScript">JavaScript</a></li>
+<li><strong class="selflink">CoffeeScript</strong></li>
+<li><a href="/wiki/TypeScript" title="TypeScript">TypeScript</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Hosts</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Joyent" title="Joyent">Joyent</a></li>
+<li><a href="/wiki/Nodejitsu" title="Nodejitsu">Nodejitsu</a></li>
+<li><a href="/wiki/OpenShift" title="OpenShift">OpenShift</a></li>
+<li><a href="/wiki/Linode" title="Linode">Linode</a></li>
+<li><a href="/wiki/DigitalOcean" title="DigitalOcean">DigitalOcean</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1178
+Cached time: 20170129153423
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.332 seconds
+Real time usage: 0.831 seconds
+Preprocessor visited node count: 1936/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 73112/2097152 bytes
+Template argument size: 3514/2097152 bytes
+Highest expansion depth: 25/40
+Expensive parser function count: 4/500
+Lua time usage: 0.159/10.000 seconds
+Lua memory usage: 4.96 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  765.967      1 -total
+ 14.83%  113.600      2 Template:Infobox
+ 13.22%  101.298      1 Template:Infobox_programming_language
+ 10.93%   83.746      1 Template:Reflist
+  5.72%   43.828      1 Template:Copy_edit
+  4.21%   32.284      1 Template:Cite_news
+  3.58%   27.408      1 Template:Ambox
+  3.56%   27.293      1 Template:Citation_needed
+  3.34%   25.605      6 Template:Cite_web
+  3.34%   25.592      1 Template:Official_website
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:27403236-0!*!0!!en!4!* and timestamp 20170129153423 and revision id 760561013
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=CoffeeScript&amp;oldid=760561013">https://en.wikipedia.org/w/index.php?title=CoffeeScript&amp;oldid=760561013</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Dynamic_programming_languages" title="Category:Dynamic programming languages">Dynamic programming languages</a></li><li><a href="/wiki/Category:JavaScript_programming_language_family" title="Category:JavaScript programming language family">JavaScript programming language family</a></li><li><a href="/wiki/Category:Prototype-based_programming_languages" title="Category:Prototype-based programming languages">Prototype-based programming languages</a></li><li><a href="/wiki/Category:Software_using_the_MIT_license" title="Category:Software using the MIT license">Software using the MIT license</a></li><li><a href="/wiki/Category:Source-to-source_compilers" title="Category:Source-to-source compilers">Source-to-source compilers</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Wikipedia_articles_needing_copy_edit_from_November_2016" title="Category:Wikipedia articles needing copy edit from November 2016">Wikipedia articles needing copy edit from November 2016</a></li><li><a href="/wiki/Category:All_articles_needing_copy_edit" title="Category:All articles needing copy edit">All articles needing copy edit</a></li><li><a href="/wiki/Category:Pages_using_deprecated_image_syntax" title="Category:Pages using deprecated image syntax">Pages using deprecated image syntax</a></li><li><a href="/wiki/Category:All_articles_with_unsourced_statements" title="Category:All articles with unsourced statements">All articles with unsourced statements</a></li><li><a href="/wiki/Category:Articles_with_unsourced_statements_from_January_2016" title="Category:Articles with unsourced statements from January 2016">Articles with unsourced statements from January 2016</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=CoffeeScript" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=CoffeeScript" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/CoffeeScript"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:CoffeeScript"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/CoffeeScript" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=CoffeeScript&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=CoffeeScript&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/CoffeeScript" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/CoffeeScript" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=CoffeeScript&amp;oldid=760561013" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=CoffeeScript&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q1106819" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=CoffeeScript&amp;id=760561013" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=CoffeeScript">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=CoffeeScript&amp;returnto=CoffeeScript&amp;oldid=760561013&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=CoffeeScript&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-als"><a href="https://als.wikipedia.org/wiki/CoffeeScript" title="CoffeeScript – Alemannisch" lang="als" hreflang="als" class="interlanguage-link-target">Alemannisch</a></li><li class="interlanguage-link interwiki-ca"><a href="https://ca.wikipedia.org/wiki/CoffeeScript" title="CoffeeScript – Catalan" lang="ca" hreflang="ca" class="interlanguage-link-target">Català</a></li><li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/CoffeeScript" title="CoffeeScript – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-es"><a href="https://es.wikipedia.org/wiki/CoffeeScript" title="CoffeeScript – Spanish" lang="es" hreflang="es" class="interlanguage-link-target">Español</a></li><li class="interlanguage-link interwiki-fa"><a href="https://fa.wikipedia.org/wiki/%DA%A9%D8%A7%D9%81%DB%8C%E2%80%8C%D8%A7%D8%B3%DA%A9%D8%B1%DB%8C%D9%BE%D8%AA" title="کافی‌اسکریپت – Persian" lang="fa" hreflang="fa" class="interlanguage-link-target">فارسی</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/CoffeeScript" title="CoffeeScript – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-ko"><a href="https://ko.wikipedia.org/wiki/%EC%BB%A4%ED%94%BC%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8" title="커피스크립트 – Korean" lang="ko" hreflang="ko" class="interlanguage-link-target">한국어</a></li><li class="interlanguage-link interwiki-it"><a href="https://it.wikipedia.org/wiki/CoffeeScript" title="CoffeeScript – Italian" lang="it" hreflang="it" class="interlanguage-link-target">Italiano</a></li><li class="interlanguage-link interwiki-ja"><a href="https://ja.wikipedia.org/wiki/CoffeeScript" title="CoffeeScript – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target">日本語</a></li><li class="interlanguage-link interwiki-pl"><a href="https://pl.wikipedia.org/wiki/CoffeeScript" title="CoffeeScript – Polish" lang="pl" hreflang="pl" class="interlanguage-link-target">Polski</a></li><li class="interlanguage-link interwiki-pt"><a href="https://pt.wikipedia.org/wiki/CoffeeScript" title="CoffeeScript – Portuguese" lang="pt" hreflang="pt" class="interlanguage-link-target">Português</a></li><li class="interlanguage-link interwiki-ru"><a href="https://ru.wikipedia.org/wiki/CoffeeScript" title="CoffeeScript – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li><li class="interlanguage-link interwiki-tt"><a href="https://tt.wikipedia.org/wiki/CoffeeScript" title="CoffeeScript – Tatar" lang="tt" hreflang="tt" class="interlanguage-link-target">Татарча/tatarça</a></li><li class="interlanguage-link interwiki-tr"><a href="https://tr.wikipedia.org/wiki/CoffeeScript" title="CoffeeScript – Turkish" lang="tr" hreflang="tr" class="interlanguage-link-target">Türkçe</a></li><li class="interlanguage-link interwiki-uk"><a href="https://uk.wikipedia.org/wiki/CoffeeScript" title="CoffeeScript – Ukrainian" lang="uk" hreflang="uk" class="interlanguage-link-target">Українська</a></li><li class="interlanguage-link interwiki-zh"><a href="https://zh.wikipedia.org/wiki/CoffeeScript" title="CoffeeScript – Chinese" lang="zh" hreflang="zh" class="interlanguage-link-target">中文</a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q1106819#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 17 January 2017, at 19:21.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=CoffeeScript&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.332","walltime":"0.831","ppvisitednodes":{"value":1936,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":73112,"limit":2097152},"templateargumentsize":{"value":3514,"limit":2097152},"expansiondepth":{"value":25,"limit":40},"expensivefunctioncount":{"value":4,"limit":500},"entityaccesscount":{"value":1,"limit":400},"timingprofile":["100.00%  765.967      1 -total"," 14.83%  113.600      2 Template:Infobox"," 13.22%  101.298      1 Template:Infobox_programming_language"," 10.93%   83.746      1 Template:Reflist","  5.72%   43.828      1 Template:Copy_edit","  4.21%   32.284      1 Template:Cite_news","  3.58%   27.408      1 Template:Ambox","  3.56%   27.293      1 Template:Citation_needed","  3.34%   25.605      6 Template:Cite_web","  3.34%   25.592      1 Template:Official_website"]},"scribunto":{"limitreport-timeusage":{"value":"0.159","limit":"10.000"},"limitreport-memusage":{"value":5196856,"limit":52428800}},"cachereport":{"origin":"mw1178","timestamp":"20170129153423","ttl":2592000,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":70,"wgHostname":"mw1267"});});</script>
+	</body>
+</html>

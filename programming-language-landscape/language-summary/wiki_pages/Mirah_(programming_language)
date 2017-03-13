@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Mirah (programming language) - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Mirah_(programming_language)","wgTitle":"Mirah (programming language)","wgCurRevisionId":763260349,"wgRevisionId":763260349,"wgArticleId":27970668,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles containing Javanese-language text","JVM programming languages","Scripting languages","Object-oriented programming languages","Java programming language family","Software using the Apache license","Programming languages created in 2008"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Mirah_(programming_language)","wgRelevantArticleId":27970668,"wgRequestId":"WJbfZgpAAEYAAWLvK3gAAAAH","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":true},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q3858763","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.cite.styles":"ready","ext.pygments":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.legacy.wikibits","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.pygments%2CwikimediaBadges%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.29.0-wmf.10"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Mirah_(programming_language)"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Mirah_(programming_language)&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Mirah_(programming_language)&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Mirah_(programming_language)"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Mirah_programming_language rootpage-Mirah_programming_language skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Mirah (programming language)</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><table class="infobox vevent" style="width:22em">
+<caption class="summary">Mirah</caption>
+<tr>
+<th scope="row"><a href="/wiki/Programming_paradigm" title="Programming paradigm">Paradigm</a></th>
+<td><a href="/wiki/Object-oriented_programming_language" class="mw-redirect" title="Object-oriented programming language">object-oriented</a>, <a href="/wiki/Imperative_programming" title="Imperative programming">imperative</a></td>
+</tr>
+<tr>
+<th scope="row">First&#160;appeared</th>
+<td>2008</td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Type_system" title="Type system">Typing discipline</a></th>
+<td><a href="/wiki/Type_system" title="Type system">static, with dynamic features</a>, <a href="/wiki/Strongly-typed_programming_language" class="mw-redirect" title="Strongly-typed programming language">strong</a>, <a href="/wiki/Type_inference" title="Type inference">inferred</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_license" title="Software license">License</a></th>
+<td><a href="/wiki/Apache_license" class="mw-redirect" title="Apache license">Apache 2.0</a></td>
+</tr>
+<tr>
+<th scope="row">Website</th>
+<td><a rel="nofollow" class="external free" href="http://www.mirah.org/">http://www.mirah.org/</a></td>
+</tr>
+<tr>
+<th colspan="2" style="text-align:center;background-color: #eee;">Influenced by</th>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/Ruby_(programming_language)" title="Ruby (programming language)">Ruby</a>, <a href="/wiki/Java_(programming_language)" title="Java (programming language)">Java</a>, <a href="/wiki/Boo_(programming_language)" title="Boo (programming language)">Boo</a></td>
+</tr>
+</table>
+<div role="navigation" aria-label="Portals" class="noprint portal plainlist tright" style="margin:0.5em 0 0.5em 1em;border:solid #aaa 1px">
+<ul style="display:table;box-sizing:border-box;padding:0.1em;max-width:175px;background:#f9f9f9;font-size:85%;line-height:110%;font-style:italic;font-weight:bold">
+<li style="display:table-row"><span style="display:table-cell;padding:0.2em;vertical-align:middle;text-align:center"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/3/31/Free_and_open-source_software_logo_%282009%29.svg/28px-Free_and_open-source_software_logo_%282009%29.svg.png" width="28" height="28" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/3/31/Free_and_open-source_software_logo_%282009%29.svg/42px-Free_and_open-source_software_logo_%282009%29.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/3/31/Free_and_open-source_software_logo_%282009%29.svg/56px-Free_and_open-source_software_logo_%282009%29.svg.png 2x" data-file-width="512" data-file-height="512" /></span><span style="display:table-cell;padding:0.2em 0.2em 0.2em 0.3em;vertical-align:middle"><a href="/wiki/Portal:Free_software" class="mw-redirect" title="Portal:Free software">Free software portal</a></span></li>
+</ul>
+</div>
+<p><b>Mirah</b> (formerly known as <i>Duby</i>) is a <a href="/wiki/Programming_language" title="Programming language">programming language</a> based on <a href="/wiki/Ruby_(programming_language)" title="Ruby (programming language)">Ruby</a> syntax, local <a href="/wiki/Type_inference" title="Type inference">type inference</a>, hybrid static/dynamic <a href="/wiki/Type_system" title="Type system">type system</a>, and a pluggable compiler toolchain. Mirah was created by <a href="/w/index.php?title=Charles_Oliver_Nutter&amp;action=edit&amp;redlink=1" class="new" title="Charles Oliver Nutter (page does not exist)">Charles Oliver Nutter</a> to be "a 'Ruby-like' language, probably a subset of Ruby syntax, that [could] compile to solid, fast, idiomatic <a href="/wiki/Java_bytecode" title="Java bytecode">JVM bytecode</a>."<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">[1]</a></sup> The word <i><span lang="jv" xml:lang="jv">mirah</span></i> refers to the <a href="/wiki/Ruby" title="Ruby">gemstone ruby</a> in the <a href="/wiki/Javanese_language" title="Javanese language">Javanese language</a>, a play on the concept of Ruby in Java.<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">[2]</a></sup></p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#History"><span class="tocnumber">1</span> <span class="toctext">History</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Design"><span class="tocnumber">2</span> <span class="toctext">Design</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#No_runtime_library"><span class="tocnumber">2.1</span> <span class="toctext">No runtime library</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Type_system"><span class="tocnumber">2.2</span> <span class="toctext">Type system</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="#Syntax"><span class="tocnumber">3</span> <span class="toctext">Syntax</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Status"><span class="tocnumber">4</span> <span class="toctext">Status</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#Frameworks"><span class="tocnumber">5</span> <span class="toctext">Frameworks</span></a>
+<ul>
+<li class="toclevel-2 tocsection-8"><a href="#Dubious"><span class="tocnumber">5.1</span> <span class="toctext">Dubious</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-9"><a href="#References"><span class="tocnumber">6</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#External_links"><span class="tocnumber">7</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="History">History</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Mirah_(programming_language)&amp;action=edit&amp;section=1" title="Edit section: History">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>In order to foster more participation in the <a href="/wiki/JRuby" title="JRuby">JRuby</a> project from Ruby community members, Nutter began to explore the possibility of presenting Ruby syntax, but with a <a href="/wiki/Type_system#Static_typing" title="Type system">static</a> type model and direct-to-native compilation. In this context, "native" meant primarily the <a href="/wiki/Java_Virtual_Machine" class="mw-redirect" title="Java Virtual Machine">JVM</a>, but Mirah has been designed around the possibility of having alternative backends for other object-oriented runtimes like the <a href="/wiki/Common_Language_Runtime" title="Common Language Runtime">CLR</a>. The language needed to look and feel like Ruby, but without introducing any new library dependencies into JRuby (which ruled out most other <a href="/wiki/List_of_JVM_languages" title="List of JVM languages">JVM languages</a>) and without suffering a performance penalty (which meant writing in Ruby itself was out).</p>
+<p>Early versions of Mirah (then Duby) focused mostly on mathematical performance, where <a href="/wiki/Dynamic_programming_language" title="Dynamic programming language">dynamic languages</a> often pay the highest cost. Since then it has evolved into a full-fledged JVM language, with several users and real-world applications using it for core components.</p>
+<h2><span class="mw-headline" id="Design">Design</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Mirah_(programming_language)&amp;action=edit&amp;section=2" title="Edit section: Design">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Mirah is largely just a pluggable compiler toolchain. The primary elements of this toolchain are:</p>
+<ol>
+<li>A <a href="/wiki/Parsing" title="Parsing">parser</a>, based on JRuby's parser, that produces a Ruby <a href="/wiki/Abstract_syntax_tree" title="Abstract syntax tree">AST</a></li>
+<li>A transformer that converts the Ruby AST into a Mirah AST</li>
+<li>A type inferrer that decorates the Mirah AST with appropriate typing information for the target backend</li>
+<li>A backend <a href="/wiki/Code_generation_(compiler)" title="Code generation (compiler)">code generator</a></li>
+</ol>
+<p>Of these phases, only the last two require specific knowledge of the eventual target platform. This makes Mirah suitable for many backends, and also makes it possible to write language plugins for Mirah's transformation phase that will apply to all supported backends equally.</p>
+<p>For simple pieces of code and the JVM bytecode backend, the Mirah compiler will produce nearly the same instructions as standard <a href="/wiki/Javac_compiler" class="mw-redirect" title="Javac compiler">javac compilers</a>.</p>
+<h3><span class="mw-headline" id="No_runtime_library">No runtime library</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Mirah_(programming_language)&amp;action=edit&amp;section=3" title="Edit section: No runtime library">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Because Mirah is just a compiler, it ships no <a href="/wiki/Standard_library" title="Standard library">standard library</a>. The intent is that Mirah users will choose what libraries they want to use, perhaps write plugins for the Mirah compiler to support them, and the compiler will do the rest. This is an explicit design goal, avoid introducing a requirement on any new external library. The standard library for Mirah, then, is whatever the standard library for the current backend is, and emphasis is placed on writing compiler plugins rather than libraries to extend and enhance the language.</p>
+<h3><span class="mw-headline" id="Type_system">Type system</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Mirah_(programming_language)&amp;action=edit&amp;section=4" title="Edit section: Type system">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Mirah does not impose a specific type system on users, instead relying on whatever the target backend provides. On the JVM, the type system is largely Java's type system, and <a href="/wiki/Declaration_(computer_science)" class="mw-redirect" title="Declaration (computer science)">type declarations</a> refer to JVM classes, primitives, and interfaces.</p>
+<p>Mirah is primarily a statically-typed language, but support is in development to allow dynamic typing as well. The mechanism is similar to that provided in <a href="/wiki/C_Sharp_(programming_language)" title="C Sharp (programming language)">C#</a> 4, with a special "dynamic" type indicating all dispatches against that <a href="/wiki/Variable_(programming)" class="mw-redirect" title="Variable (programming)">variable</a>'s value should be done dynamically. Dynamic type support is currently planned only for <a href="/wiki/Java_version_history#Java_SE_7.0" title="Java version history">Java 7</a> and higher, using the new invokedynamic bytecode.</p>
+<h2><span class="mw-headline" id="Syntax">Syntax</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Mirah_(programming_language)&amp;action=edit&amp;section=5" title="Edit section: Syntax">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The syntax of Mirah is largely the same as the syntax of <a href="/wiki/Ruby_(programming_language)" title="Ruby (programming language)">Ruby</a>, but with a few modifications to support static typing:</p>
+<ul>
+<li>Method parameters usually need to have their types declared:
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="k">def</span> <span class="nf">foo</span><span class="p">(</span><span class="ss">a</span><span class="p">:</span><span class="nb">String</span><span class="p">,</span> <span class="ss">b</span><span class="p">:</span><span class="n">int</span><span class="p">)</span>
+</pre></div>
+</li>
+<li>Because several transformations occur in the Mirah compiler toolchain, some strings that are valid identifiers in Ruby are treated as keywords in Mirah, such as the word "interface" used to specify a JVM-style interface.</li>
+</ul>
+<p>Outside of these differences, Mirah code generally looks like Ruby code:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="k">def</span> <span class="nf">fib</span><span class="p">(</span><span class="ss">a</span><span class="p">:</span><span class="n">int</span><span class="p">)</span>
+  <span class="k">if</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="mi">2</span>
+    <span class="n">a</span>
+  <span class="k">else</span>
+    <span class="n">fib</span><span class="p">(</span><span class="n">a</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="n">fib</span><span class="p">(</span><span class="n">a</span> <span class="o">-</span> <span class="mi">2</span><span class="p">)</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</pre></div>
+<h2><span class="mw-headline" id="Status">Status</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Mirah_(programming_language)&amp;action=edit&amp;section=6" title="Edit section: Status">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Currently Mirah is under development, but there are developers using Mirah for production applications on a limited scope.</p>
+<h2><span class="mw-headline" id="Frameworks">Frameworks</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Mirah_(programming_language)&amp;action=edit&amp;section=7" title="Edit section: Frameworks">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="Dubious">Dubious</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Mirah_(programming_language)&amp;action=edit&amp;section=8" title="Edit section: Dubious">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Dubious is a project for running Mirah on <a href="/wiki/Google_App_Engine" title="Google App Engine">Google App Engine</a>. Dubious provide a way to build apps in Mirah, with conventions familiar to Rails and Sinatra developers. Since everything is compiled ahead-of-time Mirah apps have none of the initialization costs associated with JRuby. Dubious supports <a href="/wiki/ERuby" title="ERuby">ERb</a> and has a simple datastore adapter that uses a syntax similar to <a href="/wiki/Datamapper" class="mw-redirect" title="Datamapper">Datamapper</a>.</p>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Mirah_(programming_language)&amp;action=edit&amp;section=9" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist columns references-column-width" style="-moz-column-width: 30em; -webkit-column-width: 30em; column-width: 30em; list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://blog.headius.com/2008/03/duby-type-inferred-ruby-like-jvm.html">Duby: A Type-Inferred Ruby-Like JVM Language</a></span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.mirah.org/">Mirah official website</a></span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Mirah_(programming_language)&amp;action=edit&amp;section=10" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><span class="official-website"><span class="url"><a rel="nofollow" class="external text" href="http://www.mirah.org">Official website</a></span></span></li>
+<li><a rel="nofollow" class="external text" href="http://drdobbs.com/java/229400307">Introduction to Mirah by Charles Nutter</a> - Dr. Dobb's, March 25, 2011</li>
+<li><a rel="nofollow" class="external text" href="http://cogitations.arbia.co.uk/post/3984477935/fun-java-with-mirah">Breaking the Rules - Making Java Fun with Mirah</a> - Roja Buck, Mar 20, 2011</li>
+<li><a rel="nofollow" class="external text" href="http://www.infoq.com/articles/mirah-interview">A Blend of Java and Ruby - The Mirah Language</a> - InfoQ, July 27, 2010</li>
+<li><a rel="nofollow" class="external text" href="http://www.infoworld.com/d/developer-world/mirah-brings-ruby-niceties-java-430">Mirah brings Ruby niceties to Java</a> - InfoWorld. July 23, 2010</li>
+<li><a rel="nofollow" class="external text" href="http://broadcast.oreilly.com/2010/07/mirah-hacking-ruby-to-boost-pe.html">"Mirah: Taking Performance to the Next Level with Java's Ruby"</a> - O'Reilly Media, July, 2010</li>
+<li><a rel="nofollow" class="external text" href="https://www.youtube.com/watch?v=08rNKxW0PPo">Introducing Duby, Ryan Brown</a></li>
+<li><a rel="nofollow" class="external text" href="http://rubyconf2009.confreaks.com/21-nov-2009-14-10-ruby-mutants-charles-nutter.html">"Ruby Mutants Presentation", Railsconf 2009</a></li>
+<li><a rel="nofollow" class="external text" href="https://github.com/mirah/dubious">Dubious framework</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.infoq.com/presentations/nutter-jruby-duby-juby">Video presentation: JRuby, Duby, and Surinx: Building a Better Ruby</a></li>
+<li><a rel="nofollow" class="external text" href="http://skillsmatter.com/podcast/ajax-ria/charles-nutter-duby-and-juby-languages">Video Lightning talk: Rails Underground 2009 - Charles Nutter on Charles Nutter - Duby and Juby Languages</a></li>
+<li><a rel="nofollow" class="external text" href="https://stackoverflow.com/questions/4252063/what-does-mirah-offer-over-jruby-groovy-and-scala">What does Mirah offer over JRuby,Groovy and Scala?</a></li>
+</ul>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1230
+Cached time: 20170202053737
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.076 seconds
+Real time usage: 0.381 seconds
+Preprocessor visited node count: 431/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 5446/2097152 bytes
+Template argument size: 643/2097152 bytes
+Highest expansion depth: 10/40
+Expensive parser function count: 4/500
+Lua time usage: 0.031/10.000 seconds
+Lua memory usage: 1.13 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  360.522      1 -total
+  9.48%   34.191      1 Template:Infobox_programming_language
+  8.43%   30.397      1 Template:Infobox
+  8.36%   30.157      1 Template:Official_website
+  6.45%   23.246      1 Template:Lang
+  5.83%   21.016      1 Template:Category_handler
+  1.76%    6.330      1 Template:Portal
+  1.54%    5.569      1 Template:Reflist
+  1.01%    3.629      1 Template:Infobox_software/simple
+  0.55%    1.983      2 Template:ISO_639_name
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:27970668-0!*!0!!en!4!* and timestamp 20170202053747 and revision id 763260349
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Mirah_(programming_language)&amp;oldid=763260349">https://en.wikipedia.org/w/index.php?title=Mirah_(programming_language)&amp;oldid=763260349</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:JVM_programming_languages" title="Category:JVM programming languages">JVM programming languages</a></li><li><a href="/wiki/Category:Scripting_languages" title="Category:Scripting languages">Scripting languages</a></li><li><a href="/wiki/Category:Object-oriented_programming_languages" title="Category:Object-oriented programming languages">Object-oriented programming languages</a></li><li><a href="/wiki/Category:Java_programming_language_family" title="Category:Java programming language family">Java programming language family</a></li><li><a href="/wiki/Category:Software_using_the_Apache_license" title="Category:Software using the Apache license">Software using the Apache license</a></li><li><a href="/wiki/Category:Programming_languages_created_in_2008" title="Category:Programming languages created in 2008">Programming languages created in 2008</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Articles_containing_Javanese-language_text" title="Category:Articles containing Javanese-language text">Articles containing Javanese-language text</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Mirah+%28programming+language%29" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Mirah+%28programming+language%29" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/Mirah_(programming_language)"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:Mirah_(programming_language)"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/Mirah_(programming_language)" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=Mirah_(programming_language)&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Mirah_(programming_language)&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Mirah_(programming_language)" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Mirah_(programming_language)" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Mirah_(programming_language)&amp;oldid=763260349" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Mirah_(programming_language)&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q3858763" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Mirah_%28programming_language%29&amp;id=763260349" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Mirah+%28programming+language%29">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Mirah+%28programming+language%29&amp;returnto=Mirah+%28programming+language%29&amp;oldid=763260349&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Mirah_(programming_language)&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+											</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-add wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q3858763#sitelinks-wikipedia" title="Add interlanguage links" class="wbc-editpage">Add links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 2 February 2017, at 05:37.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Mirah_(programming_language)&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.076","walltime":"0.381","ppvisitednodes":{"value":431,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":5446,"limit":2097152},"templateargumentsize":{"value":643,"limit":2097152},"expansiondepth":{"value":10,"limit":40},"expensivefunctioncount":{"value":4,"limit":500},"entityaccesscount":{"value":1,"limit":400},"timingprofile":["100.00%  360.522      1 -total","  9.48%   34.191      1 Template:Infobox_programming_language","  8.43%   30.397      1 Template:Infobox","  8.36%   30.157      1 Template:Official_website","  6.45%   23.246      1 Template:Lang","  5.83%   21.016      1 Template:Category_handler","  1.76%    6.330      1 Template:Portal","  1.54%    5.569      1 Template:Reflist","  1.01%    3.629      1 Template:Infobox_software/simple","  0.55%    1.983      2 Template:ISO_639_name"]},"scribunto":{"limitreport-timeusage":{"value":"0.031","limit":"10.000"},"limitreport-memusage":{"value":1184488,"limit":52428800}},"cachereport":{"origin":"mw1230","timestamp":"20170202053737","ttl":2592000,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":58,"wgHostname":"mw1275"});});</script>
+	</body>
+</html>

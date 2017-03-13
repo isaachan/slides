@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Pike (programming language) - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Pike_(programming_language)","wgTitle":"Pike (programming language)","wgCurRevisionId":758245497,"wgRevisionId":758245497,"wgArticleId":86780,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles needing additional references from June 2013","All articles needing additional references","Class-based programming languages","Scripting languages","Free compilers and interpreters","Cross-platform software","Object-oriented programming languages","Software using the Mozilla license","Software using the GPL license","Software using the LGPL license"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Pike_(programming_language)","wgRelevantArticleId":86780,"wgRequestId":"WI2yeApAIC8AAGEBqR0AAAAF","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":true},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q1572341","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.cite.styles":"ready","ext.pygments":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.legacy.wikibits","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.pygments%2CwikimediaBadges%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.29.0-wmf.9"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Pike_(programming_language)"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Pike_(programming_language)&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Pike_(programming_language)&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Pike_(programming_language)"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Pike_programming_language rootpage-Pike_programming_language skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Pike (programming language)</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><script>function mfTempOpenSection(id){var block=document.getElementById("mf-section-"+id);block.className+=" open-block";block.previousSibling.className+=" open-block";}</script><table class="plainlinks metadata ambox ambox-content ambox-one_source" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><a href="/wiki/File:Question_book-new.svg" class="image"><img alt="Question book-new.svg" src="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" width="50" height="39" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/75px-Question_book-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/100px-Question_book-new.svg.png 2x" data-file-width="512" data-file-height="399" /></a></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">This article <b>relies largely or entirely upon a single <a href="/wiki/Wikipedia:Identifying_reliable_sources" title="Wikipedia:Identifying reliable sources">source</a></b>. <span class="hide-when-compact">Relevant discussion may be found on the <a href="/wiki/Talk:Pike_(programming_language)#.23" title="Talk:Pike (programming language)">talk page</a>. Please help <a class="external text" href="//en.wikipedia.org/w/index.php?title=Pike_(programming_language)&amp;action=edit">improve this article</a> by introducing <a href="/wiki/Wikipedia:Citing_sources" title="Wikipedia:Citing sources">citations</a> to additional sources.</span> <small><i>(June 2013)</i></small></span></td>
+</tr>
+</table>
+<table class="infobox vevent" style="width:22em">
+<caption class="summary">Pike</caption>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/File:Pike_Programming_Language_Logo.svg" class="image" title="Logo for the Pike programming language."><img alt="Logo for the Pike programming language." src="//upload.wikimedia.org/wikipedia/commons/thumb/3/32/Pike_Programming_Language_Logo.svg/220px-Pike_Programming_Language_Logo.svg.png" width="220" height="50" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/3/32/Pike_Programming_Language_Logo.svg/330px-Pike_Programming_Language_Logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/3/32/Pike_Programming_Language_Logo.svg/440px-Pike_Programming_Language_Logo.svg.png 2x" data-file-width="213" data-file-height="48" /></a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Programming_paradigm" title="Programming paradigm">Paradigm</a></th>
+<td><a href="/wiki/Multi-paradigm_programming_language" class="mw-redirect" title="Multi-paradigm programming language">multi-paradigm</a>: <a href="/wiki/Object-oriented_programming" title="Object-oriented programming">object-oriented</a>, <a href="/wiki/Functional_programming" title="Functional programming">functional</a>, <a href="/wiki/Procedural_programming" title="Procedural programming">procedural</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_design" title="Software design">Designed&#160;by</a></th>
+<td>Fredrik Hübinette</td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_developer" title="Software developer">Developer</a></th>
+<td class="organiser">Pike development team supported by the Software and Systems division of the Department of Computer and Information Science (IDA) at Linköping University</td>
+</tr>
+<tr>
+<th scope="row">First&#160;appeared</th>
+<td>1994<span class="noprint">; 23&#160;years ago</span><span style="display:none">&#160;(<span class="bday dtstart published updated">1994</span>)</span></td>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Software_release_life_cycle" title="Software release life cycle">Stable release</a></th>
+<td>
+<div style="margin:0px;">8.0.388 / January&#160;2, 2017<span class="noprint">; 27 days ago</span><span style="display:none">&#160;(<span class="bday dtstart published updated">2017-01-02</span>)</span></div>
+</td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Type_system" title="Type system">Typing discipline</a></th>
+<td><a href="/wiki/Static_typing" class="mw-redirect" title="Static typing">static</a>, <a href="/wiki/Dynamic_typing" class="mw-redirect" title="Dynamic typing">dynamic</a>, <a href="/wiki/Manifest_typing" title="Manifest typing">manifest</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Operating_system" title="Operating system">OS</a></th>
+<td>Any <a href="/wiki/Unix-like" title="Unix-like">Unix-like</a>, <a href="/wiki/Microsoft_Windows" title="Microsoft Windows">Windows</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_license" title="Software license">License</a></th>
+<td><a href="/wiki/GNU_General_Public_License" title="GNU General Public License">GPL</a>/<a href="/wiki/GNU_Lesser_General_Public_License" title="GNU Lesser General Public License">LGPL</a>/<a href="/wiki/Mozilla_Public_License" title="Mozilla Public License">MPL</a></td>
+</tr>
+<tr>
+<th scope="row">Website</th>
+<td><span class="url"><a rel="nofollow" class="external text" href="https://pike.lysator.liu.se/">pike<wbr />.lysator<wbr />.liu<wbr />.se</a></span></td>
+</tr>
+<tr>
+<th colspan="2" style="text-align:center;background-color: #eee;">Major <a href="/wiki/Programming_language_implementation" title="Programming language implementation">implementations</a></th>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center">Pike</td>
+</tr>
+<tr>
+<th colspan="2" style="text-align:center;background-color: #eee;">Influenced by</th>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/LPC_(programming_language)" title="LPC (programming language)">LPC</a>, <a href="/wiki/C_(programming_language)" title="C (programming language)">C</a>, <a href="/wiki/C%2B%2B" title="C++">C++</a></td>
+</tr>
+</table>
+<p><b>Pike</b> is an <a href="/wiki/Interpreter_(computer_software)" class="mw-redirect" title="Interpreter (computer software)">interpreted</a>, <a href="/wiki/General-purpose_programming_language" title="General-purpose programming language">general-purpose</a>, <a href="/wiki/High_level_programming_language" class="mw-redirect" title="High level programming language">high-level</a>, <a href="/wiki/Cross-platform" title="Cross-platform">cross-platform</a>, <a href="/wiki/Dynamic_programming_language" title="Dynamic programming language">dynamic programming language</a>, with a syntax similar to that of <a href="/wiki/C_(programming_language)" title="C (programming language)">C</a>. Unlike many other dynamic languages, Pike is both statically and dynamically typed, and requires explicit type definitions. It features a flexible type system that allows the rapid development and flexible code of dynamically typed languages, while still providing some of the benefits of a statically typed language.</p>
+<p>Pike features <a href="/wiki/Garbage_collection_(computer_science)" title="Garbage collection (computer science)">garbage collection</a>, advanced data types, and first-class anonymous functions, with support for many programming paradigms, including <a href="/wiki/Object-oriented_programming" title="Object-oriented programming">object-oriented</a>, <a href="/wiki/Functional_programming" title="Functional programming">functional</a> and <a href="/wiki/Imperative_programming" title="Imperative programming">imperative programming</a>. Pike is <a href="/wiki/Free_software" title="Free software">free software</a>, released under the <a href="/wiki/GNU_General_Public_License" title="GNU General Public License">GPL</a>, <a href="/wiki/LGPL" class="mw-redirect" title="LGPL">LGPL</a> and <a href="/wiki/Mozilla_Public_License" title="Mozilla Public License">MPL</a> licenses.</p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#History"><span class="tocnumber">1</span> <span class="toctext">History</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Syntax_highlights"><span class="tocnumber">2</span> <span class="toctext">Syntax highlights</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Hello_World"><span class="tocnumber">2.1</span> <span class="toctext">Hello World</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Data_types"><span class="tocnumber">2.2</span> <span class="toctext">Data types</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="#See_also"><span class="tocnumber">3</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#References"><span class="tocnumber">4</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#External_links"><span class="tocnumber">5</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="History">History</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Pike_(programming_language)&amp;action=edit&amp;section=1" title="Edit section: History">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Pike has its roots in <a href="/wiki/LPC_(programming_language)" title="LPC (programming language)">LPC</a>, which was a language developed for <a href="/wiki/MUD" title="MUD">MUDs</a>. Programmers at <a href="/wiki/Lysator" title="Lysator">Lysator</a> in <a href="/wiki/Link%C3%B6ping" title="Linköping">Linköping</a>, Sweden, most notably Fredrik Hübinette and Per Hedbor,<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">[1]</a></sup> separated the language and virtual machine from the rest of the MUD driver, and used it as a rapid prototyping language for various applications, calling it LPC4.</p>
+<p>LPC's license did not allow use for commercial purposes, and so a new GPL implementation was written in 1994, called µLPC (micro LPC).</p>
+<p>In 1996, µLPC was renamed to Pike in order to provide a more commercially viable name. Although the name of the company has changed over the years, the company now known as Roxen Internet Software employed many Pike developers, and provided resources for Pike's development. <a href="/wiki/Roxen_(web_server)" title="Roxen (web server)">Roxen</a> is also the name of a web server developed by the company in Pike. In 2002, the programming environment laboratory at <a href="/wiki/Link%C3%B6ping_University" title="Linköping University">Linköping University</a> took over maintenance of Pike from Roxen. Several Pike programmers have found their way to the Linköping office of <a href="/wiki/Opera_Software" title="Opera Software">Opera Software</a>, where the language plays a central role in the server/gateway parts of the <a href="/wiki/Opera_Mini" title="Opera Mini">Opera Mini</a> application.<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">[2]</a></sup></p>
+<h2><span class="mw-headline" id="Syntax_highlights">Syntax highlights</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Pike_(programming_language)&amp;action=edit&amp;section=2" title="Edit section: Syntax highlights">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="Hello_World">Hello World</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Pike_(programming_language)&amp;action=edit&amp;section=3" title="Edit section: Hello World">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<dl>
+<dd><i>For an explanation of the tradition of programming "Hello World", see <a href="/wiki/Hello_world_program" class="mw-redirect" title="Hello world program">Hello world program</a>.</i></dd>
+</dl>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">write</span><span class="p">(</span><span class="s">"Hello world!</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+<p>The syntax above requires some explanation. Those who are familiar with <a href="/wiki/C_programing_language" class="mw-redirect" title="C programing language">C</a> or <a href="/wiki/C%2B%2B" title="C++">C++</a> should pick it up right away.</p>
+<ul>
+<li>The first line contains the <a href="/wiki/Main_function" class="mw-redirect" title="Main function">main function</a>. This is the first function executed when a program starts. The "int" in front of it tells that a number of type <a href="/wiki/Integer" title="Integer">Integer</a> will be returned when the function ends.</li>
+<li>The write function sends a <a href="/wiki/String_literal" title="String literal">string literal</a> to the standard output buffer, which in most cases is a <a href="/wiki/Command_line_interface" class="mw-redirect" title="Command line interface">command line interface</a>.</li>
+<li>The third line returns a number to the caller of a function, in this case the <a href="/wiki/Command_line_interface" class="mw-redirect" title="Command line interface">command line interface</a> where zero usually means the program executed without error.</li>
+<li>The curly brackets enclose the function and the semicolon separates statements (meaning the <a href="/wiki/Function_(programming)" class="mw-redirect" title="Function (programming)">function</a> could have been written on a single line: <code class="nowrap"><code class="mw-highlight" dir="ltr"><span class="kt">int</span> <span class="nf">main</span><span class="p">(){</span><span class="n">write</span><span class="p">(</span><span class="s">"Hello world!</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span><span class="k">return</span> <span class="mi">0</span><span class="p">;}</span></code></code>)</li>
+<li>The "\n" after "Hello world!" is a <a href="/wiki/Newline" title="Newline">newline</a> character.</li>
+</ul>
+<h3><span class="mw-headline" id="Data_types">Data types</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Pike_(programming_language)&amp;action=edit&amp;section=4" title="Edit section: Data types">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The following list shows all the standard data types that Pike provides. Advanced data types such as sequences, queues, heaps, stacks, etc. are available in the ADT module which is included with Pike.</p>
+<p>Basic data types:</p>
+<ul>
+<li>int</li>
+<li>float</li>
+<li>string</li>
+</ul>
+<p>Container types:</p>
+<ul>
+<li>array</li>
+<li>mapping</li>
+<li><a href="/wiki/Multiset" title="Multiset">multiset</a></li>
+</ul>
+<p>Other types:</p>
+<ul>
+<li>program (the compiled representation of a class)</li>
+<li>object (an instance of a class)</li>
+<li>function</li>
+</ul>
+<p>Pike requires explicit type definitions for all variables. It uses this information to report type errors at compile time. The following code will cause a compile error because the value of the variable "number" must be an integer but the code is attempting to assign floating point and string values to it.</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="kt">int</span> <span class="n">number</span><span class="p">;</span>     <span class="c1">// integer variable, it only accepts integers</span>
+<span class="n">number</span> <span class="o">=</span> <span class="mf">5.5</span><span class="p">;</span>   <span class="c1">// 5.5 is a floating point value, error</span>
+<span class="n">number</span> <span class="o">=</span> <span class="s">"5"</span><span class="p">;</span>   <span class="c1">// "5" is a string, not the integer value 5, error</span>
+</pre></div>
+<p>That kind of behavior is traditionally considered restrictive and limiting by proponents of dynamically typed languages. However unlike C, C++, and Java, Pike uses a more flexible type system—specifically, a system of <a href="/wiki/Tagged_union" title="Tagged union">tagged unions</a>. The system allows programmers to declare variables that may contain values of multiple types, something impossible in most of the C-family languages without straying from the bounds of <a href="/wiki/Union_(computer_science)#C.2FC.2B.2B" class="mw-redirect" title="Union (computer science)">safe usage</a>.</p>
+<p>The following demonstrates a variable that can hold either an integer or a floating point number.</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="kt">int</span><span class="o">|</span><span class="kt">float</span> <span class="n">number</span><span class="p">;</span> <span class="c1">// integer OR float variable</span>
+<span class="n">number</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>       <span class="c1">// this is legal</span>
+<span class="n">number</span> <span class="o">=</span> <span class="mf">5.5</span><span class="p">;</span>     <span class="c1">// this is also legal</span>
+</pre></div>
+<p>Because a variable can be declared as holding many different data types, functions are provided to determine what type of data is currently stored. These functions are all of the form typenamep, as in intp, floatp, stringp, etc.</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="kt">int</span><span class="o">|</span><span class="kt">float</span> <span class="n">number</span><span class="p">;</span>
+<span class="n">number</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
+<span class="n">intp</span><span class="p">(</span><span class="n">number</span><span class="p">);</span>      <span class="c1">// returns true because number holds an int</span>
+<span class="n">floatp</span><span class="p">(</span><span class="n">number</span><span class="p">);</span>    <span class="c1">// returns false</span>
+<span class="n">number</span> <span class="o">=</span> <span class="mf">5.5</span><span class="p">;</span>
+<span class="n">floatp</span><span class="p">(</span><span class="n">number</span><span class="p">);</span>    <span class="c1">// returns true because number now holds a float</span>
+</pre></div>
+<p>Additionally, there is a special "mixed" data type. That definition allows a variable to hold any kind of data type.</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="kt">mixed</span> <span class="n">anything</span><span class="p">;</span>
+<span class="n">anything</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>    <span class="c1">// anything is now the integer value 5</span>
+<span class="n">anything</span> <span class="o">=</span> <span class="mf">5.5</span><span class="p">;</span>  <span class="c1">// anything is now the float value 5.5</span>
+<span class="n">anything</span> <span class="o">=</span> <span class="s">"5"</span><span class="p">;</span>  <span class="c1">// anything is now the string value "5"</span>
+</pre></div>
+<p>In order to convert a value from one type to another, Pike can use an explicit cast:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="kt">mixed</span> <span class="n">anything</span><span class="p">;</span>
+<span class="n">anything</span> <span class="o">=</span> <span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="mf">5.5</span><span class="p">;</span>         <span class="c1">// anything is now the integer value 5</span>
+<span class="n">anything</span> <span class="o">=</span> <span class="p">(</span><span class="kt">string</span><span class="p">)</span><span class="n">anything</span><span class="p">;</span> <span class="c1">// anything is now the string value "5"</span>
+</pre></div>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Pike_(programming_language)&amp;action=edit&amp;section=5" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div role="navigation" aria-label="Portals" class="noprint portal plainlist tright" style="margin:0.5em 0 0.5em 1em;border:solid #aaa 1px">
+<ul style="display:table;box-sizing:border-box;padding:0.1em;max-width:175px;background:#f9f9f9;font-size:85%;line-height:110%;font-style:italic;font-weight:bold">
+<li style="display:table-row"><span style="display:table-cell;padding:0.2em;vertical-align:middle;text-align:center"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/3/31/Free_and_open-source_software_logo_%282009%29.svg/28px-Free_and_open-source_software_logo_%282009%29.svg.png" width="28" height="28" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/3/31/Free_and_open-source_software_logo_%282009%29.svg/42px-Free_and_open-source_software_logo_%282009%29.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/3/31/Free_and_open-source_software_logo_%282009%29.svg/56px-Free_and_open-source_software_logo_%282009%29.svg.png 2x" data-file-width="512" data-file-height="512" /></span><span style="display:table-cell;padding:0.2em 0.2em 0.2em 0.3em;vertical-align:middle"><a href="/wiki/Portal:Free_software" class="mw-redirect" title="Portal:Free software">Free software portal</a></span></li>
+</ul>
+</div>
+<ul>
+<li><a href="/wiki/LPMud_family_tree" class="mw-redirect" title="LPMud family tree">LPMud family tree</a></li>
+</ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Pike_(programming_language)&amp;action=edit&amp;section=6" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist columns references-column-width" style="-moz-column-width: 30em; -webkit-column-width: 30em; column-width: 30em; list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://pike.lysator.liu.se/about/pike/history.xml">"The history of pike"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APike+%28programming+language%29&amp;rft.btitle=The+history+of+pike&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fpike.lysator.liu.se%2Fabout%2Fpike%2Fhistory.xml&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><cite class="citation web">Lextrait, Vincent (January 2010). <a rel="nofollow" class="external text" href="http://www.lextrait.com/Vincent/implementations.html">"The Programming Languages Beacon, v10.0"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">14 March</span> 2010</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APike+%28programming+language%29&amp;rft.aufirst=Vincent&amp;rft.aulast=Lextrait&amp;rft.btitle=The+Programming+Languages+Beacon%2C+v10.0&amp;rft.date=2010-01&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.lextrait.com%2FVincent%2Fimplementations.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Pike_(programming_language)&amp;action=edit&amp;section=7" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><span class="official-website"><span class="url"><a rel="nofollow" class="external text" href="https://pike.lysator.liu.se/">Official website</a></span></span></li>
+<li><a rel="nofollow" class="external text" href="http://www.gotpike.org/">Community Page</a></li>
+</ul>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1271
+Cached time: 20170129080829
+Cache expiry: 86400
+Dynamic content: true
+CPU time usage: 0.156 seconds
+Real time usage: 0.357 seconds
+Preprocessor visited node count: 975/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 19314/2097152 bytes
+Template argument size: 2126/2097152 bytes
+Highest expansion depth: 25/40
+Expensive parser function count: 4/500
+Lua time usage: 0.065/10.000 seconds
+Lua memory usage: 2.61 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  327.815      1 -total
+ 22.36%   73.297      2 Template:Infobox
+ 18.67%   61.197      1 Template:Infobox_programming_language
+ 15.13%   49.607      1 Template:Reflist
+ 14.56%   47.742      1 Template:One_source
+ 12.84%   42.090      2 Template:Cite_web
+  9.80%   32.139      1 Template:Ambox
+  5.86%   19.211      1 Template:Infobox_software/simple
+  4.94%   16.193      2 Template:Start_date_and_age
+  4.77%   15.652      1 Template:Official_URL
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:86780-0!*!0!!en!4!* and timestamp 20170129080829 and revision id 758245497
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Pike_(programming_language)&amp;oldid=758245497">https://en.wikipedia.org/w/index.php?title=Pike_(programming_language)&amp;oldid=758245497</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Class-based_programming_languages" title="Category:Class-based programming languages">Class-based programming languages</a></li><li><a href="/wiki/Category:Scripting_languages" title="Category:Scripting languages">Scripting languages</a></li><li><a href="/wiki/Category:Free_compilers_and_interpreters" title="Category:Free compilers and interpreters">Free compilers and interpreters</a></li><li><a href="/wiki/Category:Cross-platform_software" title="Category:Cross-platform software">Cross-platform software</a></li><li><a href="/wiki/Category:Object-oriented_programming_languages" title="Category:Object-oriented programming languages">Object-oriented programming languages</a></li><li><a href="/wiki/Category:Software_using_the_Mozilla_license" title="Category:Software using the Mozilla license">Software using the Mozilla license</a></li><li><a href="/wiki/Category:Software_using_the_GPL_license" title="Category:Software using the GPL license">Software using the GPL license</a></li><li><a href="/wiki/Category:Software_using_the_LGPL_license" title="Category:Software using the LGPL license">Software using the LGPL license</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Articles_needing_additional_references_from_June_2013" title="Category:Articles needing additional references from June 2013">Articles needing additional references from June 2013</a></li><li><a href="/wiki/Category:All_articles_needing_additional_references" title="Category:All articles needing additional references">All articles needing additional references</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Pike+%28programming+language%29" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Pike+%28programming+language%29" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/Pike_(programming_language)"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:Pike_(programming_language)"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/Pike_(programming_language)" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=Pike_(programming_language)&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Pike_(programming_language)&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Pike_(programming_language)" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Pike_(programming_language)" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Pike_(programming_language)&amp;oldid=758245497" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Pike_(programming_language)&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q1572341" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Pike_%28programming_language%29&amp;id=758245497" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Pike+%28programming+language%29">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Pike+%28programming+language%29&amp;returnto=Pike+%28programming+language%29&amp;oldid=758245497&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Pike_(programming_language)&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-ca"><a href="https://ca.wikipedia.org/wiki/Pike_(llenguatge_de_programaci%C3%B3)" title="Pike (llenguatge de programació) – Catalan" lang="ca" hreflang="ca" class="interlanguage-link-target">Català</a></li><li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/Pike_(Programmiersprache)" title="Pike (Programmiersprache) – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/Pike_(langage)" title="Pike (langage) – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-id"><a href="https://id.wikipedia.org/wiki/Pike_(bahasa_pemrograman)" title="Pike (bahasa pemrograman) – Indonesian" lang="id" hreflang="id" class="interlanguage-link-target">Bahasa Indonesia</a></li><li class="interlanguage-link interwiki-ja"><a href="https://ja.wikipedia.org/wiki/Pike" title="Pike – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target">日本語</a></li><li class="interlanguage-link interwiki-no"><a href="https://no.wikipedia.org/wiki/Pike_(programmeringsspr%C3%A5k)" title="Pike (programmeringsspråk) – Norwegian" lang="no" hreflang="no" class="interlanguage-link-target">Norsk bokmål</a></li><li class="interlanguage-link interwiki-pl"><a href="https://pl.wikipedia.org/wiki/Pike" title="Pike – Polish" lang="pl" hreflang="pl" class="interlanguage-link-target">Polski</a></li><li class="interlanguage-link interwiki-ru"><a href="https://ru.wikipedia.org/wiki/Pike" title="Pike – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li><li class="interlanguage-link interwiki-sv"><a href="https://sv.wikipedia.org/wiki/Pike" title="Pike – Swedish" lang="sv" hreflang="sv" class="interlanguage-link-target">Svenska</a></li><li class="interlanguage-link interwiki-tg"><a href="https://tg.wikipedia.org/wiki/Pike" title="Pike – Tajik" lang="tg" hreflang="tg" class="interlanguage-link-target">Тоҷикӣ</a></li><li class="interlanguage-link interwiki-zh"><a href="https://zh.wikipedia.org/wiki/Pike" title="Pike – Chinese" lang="zh" hreflang="zh" class="interlanguage-link-target">中文</a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q1572341#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 4 January 2017, at 08:53.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Pike_(programming_language)&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.156","walltime":"0.357","ppvisitednodes":{"value":975,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":19314,"limit":2097152},"templateargumentsize":{"value":2126,"limit":2097152},"expansiondepth":{"value":25,"limit":40},"expensivefunctioncount":{"value":4,"limit":500},"entityaccesscount":{"value":1,"limit":400},"timingprofile":["100.00%  327.815      1 -total"," 22.36%   73.297      2 Template:Infobox"," 18.67%   61.197      1 Template:Infobox_programming_language"," 15.13%   49.607      1 Template:Reflist"," 14.56%   47.742      1 Template:One_source"," 12.84%   42.090      2 Template:Cite_web","  9.80%   32.139      1 Template:Ambox","  5.86%   19.211      1 Template:Infobox_software/simple","  4.94%   16.193      2 Template:Start_date_and_age","  4.77%   15.652      1 Template:Official_URL"]},"scribunto":{"limitreport-timeusage":{"value":"0.065","limit":"10.000"},"limitreport-memusage":{"value":2740341,"limit":52428800}},"cachereport":{"origin":"mw1271","timestamp":"20170129080829","ttl":86400,"transientcontent":true}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":63,"wgHostname":"mw1177"});});</script>
+	</body>
+</html>

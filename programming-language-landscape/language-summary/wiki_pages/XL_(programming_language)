@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>XL (programming language) - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"XL_(programming_language)","wgTitle":"XL (programming language)","wgCurRevisionId":743811448,"wgRevisionId":743811448,"wgArticleId":2855241,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Extensible syntax programming languages"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"XL_(programming_language)","wgRelevantArticleId":2855241,"wgRequestId":"WI4PxApAADoAAjFAsxUAAACS","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":true},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q1859276","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.cite.styles":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.legacy.wikibits","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.29.0-wmf.9"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/XL_(programming_language)"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=XL_(programming_language)&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=XL_(programming_language)&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/XL_(programming_language)"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-XL_programming_language rootpage-XL_programming_language skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">XL (programming language)</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><script>function mfTempOpenSection(id){var block=document.getElementById("mf-section-"+id);block.className+=" open-block";block.previousSibling.className+=" open-block";}</script><div role="note" class="hatnote">Not to be confused with <a href="/wiki/XL_(XML_programming_language)" title="XL (XML programming language)">XL (XML programming language)</a>.</div>
+<table class="infobox vevent" style="width:22em">
+<caption class="summary">XL</caption>
+<tr>
+<th scope="row"><a href="/wiki/Programming_paradigm" title="Programming paradigm">Paradigm</a></th>
+<td><a href="/wiki/Multi-paradigm_programming_language" class="mw-redirect" title="Multi-paradigm programming language">Multi-paradigm</a>, <a href="/wiki/Concept_programming" title="Concept programming">Concept-oriented</a>, <a href="/wiki/Imperative_programming" title="Imperative programming">imperative</a>, <a href="/wiki/Functional_programming" title="Functional programming">functional</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_design" title="Software design">Designed&#160;by</a></th>
+<td><a href="/wiki/Christophe_de_Dinechin" title="Christophe de Dinechin">Christophe de Dinechin</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_developer" title="Software developer">Developer</a></th>
+<td class="organiser">Christophe de Dinechin</td>
+</tr>
+<tr>
+<th scope="row">First&#160;appeared</th>
+<td>2000</td>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Software_release_life_cycle" title="Software release life cycle">Stable release</a></th>
+<td>
+<div style="margin:0px;">0.1 / February&#160;2010<span class="noprint">; 6&#160;years ago</span><span style="display:none">&#160;(<span class="bday dtstart published updated">2010-02</span>)</span></div>
+</td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Type_system" title="Type system">Typing discipline</a></th>
+<td><a href="/wiki/Strong_typing" class="mw-redirect" title="Strong typing">strong</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Operating_system" title="Operating system">OS</a></th>
+<td><a href="/wiki/Unix-like" title="Unix-like">Unix-like</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_license" title="Software license">License</a></th>
+<td><a href="/wiki/GPLv2" class="mw-redirect" title="GPLv2">GPLv2</a></td>
+</tr>
+<tr>
+<th scope="row">Website</th>
+<td><span class="url"><a rel="nofollow" class="external text" href="http://xlr.sf.net">xlr<wbr />.sf<wbr />.net</a></span></td>
+</tr>
+<tr>
+<th colspan="2" style="text-align:center;background-color: #eee;">Influenced by</th>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/Ada_(programming_language)" title="Ada (programming language)">Ada</a>, <a href="/wiki/C%2B%2B" title="C++">C++</a></td>
+</tr>
+</table>
+<div role="navigation" aria-label="Portals" class="noprint portal plainlist tright" style="margin:0.5em 0 0.5em 1em;border:solid #aaa 1px">
+<ul style="display:table;box-sizing:border-box;padding:0.1em;max-width:175px;background:#f9f9f9;font-size:85%;line-height:110%;font-style:italic;font-weight:bold">
+<li style="display:table-row"><span style="display:table-cell;padding:0.2em;vertical-align:middle;text-align:center"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/3/31/Free_and_open-source_software_logo_%282009%29.svg/28px-Free_and_open-source_software_logo_%282009%29.svg.png" width="28" height="28" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/3/31/Free_and_open-source_software_logo_%282009%29.svg/42px-Free_and_open-source_software_logo_%282009%29.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/3/31/Free_and_open-source_software_logo_%282009%29.svg/56px-Free_and_open-source_software_logo_%282009%29.svg.png 2x" data-file-width="512" data-file-height="512" /></span><span style="display:table-cell;padding:0.2em 0.2em 0.2em 0.3em;vertical-align:middle"><a href="/wiki/Portal:Free_software" class="mw-redirect" title="Portal:Free software">Free software portal</a></span></li>
+</ul>
+</div>
+<p><b>XL</b> stands for eXtensible Language. It is the first and so far the only <a href="/wiki/Computer" title="Computer">computer</a> <a href="/wiki/Programming_language" title="Programming language">programming language</a> designed to support <a href="/wiki/Concept_programming" title="Concept programming">concept programming</a>.<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">[1]</a></sup></p>
+<p>XL features programmer-reconfigurable syntax and semantics. Compiler <i>plug-ins</i> can be used to add new features to the language. A base set of plug-ins implements a relatively standard <a href="/wiki/Imperative_programming" title="Imperative programming">imperative language</a>. Programmers can write their own plug-ins to implement application-specific notations, such as <a href="/wiki/Derivative" title="Derivative">symbolic differentiation</a>, which can then be used as readily as built-in language features.</p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Language"><span class="tocnumber">1</span> <span class="toctext">Language</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Syntax"><span class="tocnumber">2</span> <span class="toctext">Syntax</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Semantics_of_XL1"><span class="tocnumber">3</span> <span class="toctext">Semantics of XL1</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="#Type_system"><span class="tocnumber">3.1</span> <span class="toctext">Type system</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Type-safe_variable_argument_lists"><span class="tocnumber">3.2</span> <span class="toctext">Type-safe variable argument lists</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Expression_reduction:_operator_overloading"><span class="tocnumber">3.3</span> <span class="toctext">Expression reduction: operator overloading</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Iterators"><span class="tocnumber">3.4</span> <span class="toctext">Iterators</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-8"><a href="#Development_status_and_history"><span class="tocnumber">4</span> <span class="toctext">Development status and history</span></a>
+<ul>
+<li class="toclevel-2 tocsection-9"><a href="#Ancestry"><span class="tocnumber">4.1</span> <span class="toctext">Ancestry</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-10"><a href="#Semantics"><span class="tocnumber">5</span> <span class="toctext">Semantics</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#References"><span class="tocnumber">6</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="#External_links"><span class="tocnumber">7</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Language">Language</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=XL_(programming_language)&amp;action=edit&amp;section=1" title="Edit section: Language">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>XL is defined at four different levels:</p>
+<ul>
+<li>XL0 defines how an input text is transformed into a <a href="/wiki/Parse_tree" title="Parse tree">parse tree</a>.</li>
+<li>XL1 defines a base language with features comparable to <a href="/wiki/C%2B%2B" title="C++">C++</a>.</li>
+<li>XL2 defines the standard library, which includes common data types and operators.</li>
+<li>XLR defines a dynamic runtime for XL based on XL0.</li>
+</ul>
+<p>XL has no <a href="/wiki/Primitive_types" class="mw-redirect" title="Primitive types">primitive types</a> nor keywords. All useful operators and data types, like integers or addition, are defined in the standard library (XL2). XL1 is <a href="/wiki/Porting" title="Porting">portable</a> between different execution environments. There is no such guarantee for XL2: if a particular <a href="/wiki/Central_processing_unit" title="Central processing unit">CPU</a> does not implement floating-point multiplication, the corresponding operator definition may be missing from the standard library, and using a floating-point multiply may result in a <a href="/wiki/Compile-time" class="mw-redirect" title="Compile-time">compile-time</a> error.</p>
+<p>The <a href="/wiki/Hello_World" class="mw-redirect" title="Hello World">Hello World</a> program in XL looks like the following:</p>
+<pre>
+ use XL.TEXT_IO
+ WriteLn "Hello World"
+</pre>
+<p>An alternative form in a style more suitable for large-scale programs would be:</p>
+<pre>
+ import IO = XL.TEXT_IO
+ IO.WriteLn "Hello World"
+</pre>
+<p>A recursive implementation of <a href="/wiki/Factorial" title="Factorial">factorial</a> in XLR looks like the following:</p>
+<pre>
+ 0! -&gt; 1
+ N! -&gt; N * (N-1)!
+</pre>
+<h2><span class="mw-headline" id="Syntax">Syntax</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=XL_(programming_language)&amp;action=edit&amp;section=2" title="Edit section: Syntax">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Syntax is defined at the XL0 level. The XL0 phase of the compiler can be configured using a syntax description file, where properties like the text representation and precedence of operators are defined. A basic syntax file defines common mathematical notations, like + for addition, with the usually accepted <a href="/wiki/Order_of_operations" title="Order of operations">order of operations</a>.</p>
+<p>The parse tree consists of 7 node types, 4 <a href="/wiki/Leaf_node" class="mw-redirect" title="Leaf node">leaf node</a> types (integer, real, text and symbol) and 3 <a href="/wiki/Internal_node" class="mw-redirect" title="Internal node">internal node</a> types (infix, prefix and block).</p>
+<ul>
+<li><i>integer</i> nodes represent an integer <a href="/wiki/Literal_(computer_science)" class="mw-redirect" title="Literal (computer science)">literal</a>, such as <code>2</code>. The <code>#</code> sign can be used to specify a base other than 10, as in (<code>2#1001</code>). A separating underscore can be used to improve readability, as in <code>1_000_000</code>.</li>
+<li><i>real</i> nodes represent non-integral numbers, such as <code>2.5</code>. Based-notations and separators can be used, as for integer nodes, for example <code>16#F.FFF#E-10</code> is a valid real literal.</li>
+<li><i>text</i> nodes represent textual contents. They are normally surrounded by simple or double quotes, like <code>"Hello"</code> or <code>'a'</code>, but the syntax file can be used to add other separators, including for multi-line textual contents.</li>
+<li><i>symbol</i> nodes represent names or operators. Names are sequence of alphanumeric characters beginning with a letter, like <code>Hello</code>. XL0 preserves case, but XL1 ignores case and underscores, so that <code>JohnDoe</code> and <code>john_doe</code> are the same name. Operators are sequences of non-alphanumeric characters, like <code>*</code> or <code>=/=</code>.</li>
+<li><i>infix</i> nodes represent two nodes related by an infix symbol, like <code>A+1</code> or <code>2 and 3</code>. Infix nodes are in particular used to separate lines, with an infix "new-line" symbol.</li>
+<li><i>prefix</i> nodes represent two consecutive nodes, like <code>Write "Hello"</code>. It is also used for postfix notations, like <code>3!</code> or <code>Open?</code>.</li>
+<li><i>block</i> nodes represent a node surrounded by grouping symbols, like <code>(A)</code>, <code>[Index]</code>. Indentation is internally represented by a block node.</li>
+</ul>
+<p>With the default syntax file, the following is valid XL0, irrespective of any semantics.</p>
+<pre>
+A = B + "Hello"
+</pre>
+<p>It parses as:</p>
+<pre>
+infix("=",
+      symbol("A"),
+      infix("+",
+            symbol("B"), text("Hello")))
+</pre>
+<h2><span class="mw-headline" id="Semantics_of_XL1">Semantics of XL1</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=XL_(programming_language)&amp;action=edit&amp;section=3" title="Edit section: Semantics of XL1">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The XL1 phase is defined as a sequence of operations on the XL0 parse tree. These operations are provided by various compiler plug-ins, that are triggered based on the shape of the parse tree.</p>
+<p>Special constructs, <code>translate</code> and <code>translation</code>, are provided by a plug-in designed to facilitate the writing of other plug-ins. The <code>quote</code> construct generates a parse tree. Here is how these notations can be used to implement a plug-in called <code>ZeroRemoval</code> that eliminates superfluous additions and multiplications by zero.</p>
+<pre>
+translation ZeroRemoval
+  when
+    'X' + 0
+  then
+    return X
+  when
+    'X' * 0
+  then
+    return parse_tree(0)
+</pre>
+<p>A plug-in can be invoked on a whole file from the command line, or more locally in the source code using the <i>pragma</i> notation, as follows:</p>
+<pre>
+X := {Differentiate} d(sin(omega * T) * exp(-T/T0)) / dT
+</pre>
+<p>The XL1 phase contains a large set of plug-ins, notably <code>XLSemantics</code>, that provide common abstractions like <a href="/wiki/Subroutine" title="Subroutine">subroutine</a>, <a href="/wiki/Data_type" title="Data type">data type</a> and <a href="/wiki/Variable_(programming)" class="mw-redirect" title="Variable (programming)">variable</a> <a href="/wiki/Declaration_(computer_science)" class="mw-redirect" title="Declaration (computer science)">declaration</a> and <a href="/wiki/Definition" title="Definition">definition</a>, as well as basic <a href="/wiki/Structured_programming" title="Structured programming">structured programming</a> statements, like conditionals or loops.</p>
+<h3><span class="mw-headline" id="Type_system">Type system</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=XL_(programming_language)&amp;action=edit&amp;section=4" title="Edit section: Type system">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>XL1 type checking is <a href="/wiki/Data_type" title="Data type">static</a>, with <a href="/wiki/Generic_programming" title="Generic programming">generic programming</a> abilities that are beyond those of languages like Ada or C++. Types like arrays or pointers, which are primitive in languages like C++, are declared in the library in XL. For instance, a one-dimensional array type could be defined as follows:</p>
+<pre>
+generic [Item : type; Size : integer] type array
+</pre>
+<p>A <i>validated generic type</i> is a generic type where a condition indicates how the type can be used. Such types need not have generic parameters. For instance, one can declare that a type is <code>ordered</code> if it has a less-than operator as follows:</p>
+<pre>
+// A type is ordered if it has a less-than relationship
+generic type ordered if
+  A, B : ordered
+  Test : boolean := A &lt; B
+</pre>
+<p>It is then possible to declare a function that is implicitly generic because the type <code>ordered</code> itself is generic.</p>
+<pre>
+// Generic function for the minimum of one item
+function Min(X : ordered) return ordered is
+  ... compute Y of type ordered ... 
+  return Y
+</pre>
+<p>This also applies to generic types that have parameters, such as <code>array</code>. A function computing the sum of the elements in any array can be written as follows:</p>
+<pre>
+function Sum(A : array) return array.Item is
+  for I in 0..array.Size-1 loop
+    result += A[I]
+</pre>
+<h3><span class="mw-headline" id="Type-safe_variable_argument_lists">Type-safe variable argument lists</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=XL_(programming_language)&amp;action=edit&amp;section=5" title="Edit section: Type-safe variable argument lists">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Functions can be <a href="/wiki/Polymorphism_(computer_science)" title="Polymorphism (computer science)">overloaded</a>. A function can be declared to use a variable number of arguments by using <code>...</code> in the parameter list (historically, the keyword <code>other</code> was used for that purpose). In such a function, <code>...</code> can be used to pass the variable number of arguments to another subroutine, a feature now called <a href="/wiki/Variadic_templates" class="mw-redirect" title="Variadic templates">Variadic templates</a>:</p>
+<pre>
+// Generic function for the minimum of N item
+function Min(X : ordered; ...) return ordered is
+  result := Min(...)
+  if X &lt; result then
+    result := X
+</pre>
+<p>When such a function is called, the compiler recursively instantiates functions to match the parameter list:</p>
+<pre>
+// Examples of use of the Min just declared
+X : real := Min(1.3, 2.56, 7.21)
+Y : integer := Min(1, 3, 6, 7, 1, 2)
+</pre>
+<h3><span class="mw-headline" id="Expression_reduction:_operator_overloading">Expression reduction: operator overloading</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=XL_(programming_language)&amp;action=edit&amp;section=6" title="Edit section: Expression reduction: operator overloading">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Operators can be defined using the <code>written</code> form of function declarations. Below is the code that would declare the addition of integers:</p>
+<pre>
+function Add(X, Y: integer) return integer written X+Y
+</pre>
+<p>Such <i>written forms</i> can have more than two parameters. For instance, a matrix linear transform can be written as:</p>
+<pre>
+function Linear(A, B, C : matrix) return matrix written A+B*C
+</pre>
+<p>A written form can use constants, and such a form is more specialized than a form without constants. For example:</p>
+<pre>
+function Equal(A, B : matrix) return boolean written A=B
+function IsNull(A : matrix) return boolean written A=0
+function IsUnity(A : matrix) return boolean written A=1
+</pre>
+<p>The mechanism is used to implement all basic operators. An expression is progressively reduced to function calls using written forms. For that reason, the mechanism is referred to as <i>expression reduction</i> rather than operator overloading.</p>
+<h3><span class="mw-headline" id="Iterators">Iterators</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=XL_(programming_language)&amp;action=edit&amp;section=7" title="Edit section: Iterators">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>XL iterators allow programmers to implement both <a href="/wiki/Generator_(computer_science)" class="mw-redirect" title="Generator (computer science)">generators</a> and <a href="/wiki/Iterators" class="mw-redirect" title="Iterators">iterators</a>.</p>
+<pre>
+<b>import</b> IO = XL.UI.CONSOLE
+
+<b>iterator</b> IntegerIterator (<b>var out</b> Counter : <b>integer</b>; Low, High : <b>integer</b>) <b>written</b> Counter <b>in</b> Low..High <b>is</b>
+    Counter := Low
+    <b>while</b> Counter &lt;= High <b>loop</b>
+        <b>yield</b>
+        Counter += 1
+
+<i>// Note that I needs not be declared, because declared 'var out' in the iterator</i>
+<i>// An implicit declaration of I as an integer is therefore made here</i>
+<b>for</b> I <b>in</b> 1..5 <b>loop</b>
+    IO.WriteLn "I=", I
+</pre>
+<h2><span class="mw-headline" id="Development_status_and_history">Development status and history</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=XL_(programming_language)&amp;action=edit&amp;section=8" title="Edit section: Development status and history">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>XL is the result of a long language design work that began around 1992. The language was designed and implemented primarily by <a href="/wiki/Christophe_de_Dinechin" title="Christophe de Dinechin">Christophe de Dinechin</a>.</p>
+<p>Historically, the XL compiler was written in C++. It had achieved a point where most of the features described above worked correctly, but writing plug-ins was a nightmare, because C++ itself is not extensible, so implementing <code>translate</code>-like statements was impossible. The parse tree was more complicated, with dozens of node types, because it was designed for cross-language support. Moka was a Java-to-Java extensible compiler using the same infrastructure.</p>
+<p>Abandoning the cross-language objectives and complex parse-tree structure, a <a href="/wiki/Rewrite_(programming)" title="Rewrite (programming)">complete rewrite</a> of the compiler was started in 2003. The parse tree was vastly simplified down to the seven XL0 nodes types now in use. This new compiler <a href="/wiki/Bootstrapping_(compilers)" title="Bootstrapping (compilers)">bootstrapped</a> in 2004, and all new development is now written in XL. However, this new compiler still has somewhat incomplete XL1 support, although its abilities already exceed C++ in a few areas.</p>
+<h3><span class="mw-headline" id="Ancestry">Ancestry</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=XL_(programming_language)&amp;action=edit&amp;section=9" title="Edit section: Ancestry">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>XL1 was inspired by a large number of other languages. In alphabetical order:</p>
+<ul>
+<li><a href="/wiki/Ada_(programming_language)" title="Ada (programming language)">Ada</a> inspired some of large-scale program support, <a href="/wiki/Exception_handling" title="Exception handling">exception handling</a>, tasking, and supportability aspects.</li>
+<li><a href="/wiki/BASIC" title="BASIC">BASIC</a> the more modern variants that dispense of line numbers and support structured programming, showed how simple the syntax of a programming language could be.</li>
+<li><a href="/wiki/C_(programming_language)" title="C (programming language)">C</a> was used as the standard to expect in terms of runtime and machine-level support. XL will not require a virtual machine to run.</li>
+<li><a href="/wiki/C%2B%2B" title="C++">C++</a> and the <a href="/wiki/Standard_template_library" class="mw-redirect" title="Standard template library">standard template library</a> demonstrated the need for good support of generic types, including implicit instantiation of generics (which Ada lacks).</li>
+<li><a href="/wiki/Fortran" title="Fortran">Fortran</a>'s continued performance lead over C and C++ for numerical-intensive applications helped identify which language constructs would prevent useful optimizations.</li>
+<li><a href="/wiki/Java_(programming_language)" title="Java (programming language)">Java</a> demonstrated the importance of a large, portable support library. Java containers also showed the limitations of an approach not based on generic programming. Interfacing with Java code remains an interesting challenge for XL.</li>
+<li><a href="/wiki/Lisp_(programming_language)" title="Lisp (programming language)">Lisp</a> extensibility was considered as a key factor in its survival and relevance to this day. Lisp was the first language to normalize object-oriented features, despite having been designed years before object-oriented ideas were invented.</li>
+<li><a href="/wiki/Prolog" title="Prolog">Prolog</a> demonstrated that alternative programming models are sometimes useful and highly productive. Every effort was made to ensure that a Prolog-style plug-in could be written for XL.</li>
+<li><a href="/wiki/Visual_Basic" title="Visual Basic">Visual Basic</a> showed how the parse tree representation can be dissociated from its visual presentation. Few people edit VB Forms textually. It is expected that XL edit-time plug-ins will one day provide similar abilities, by directly manipulating the parse tree.</li>
+</ul>
+<h2><span class="mw-headline" id="Semantics">Semantics</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=XL_(programming_language)&amp;action=edit&amp;section=10" title="Edit section: Semantics">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>XLR is a dynamic language, originally intended as a back-end for the XL1 compiler, hence the name, which stands for XL runtime. It shares the basic XL0 syntax with XL1, but its behavior is much closer to a functional language, whereas XL1 is intended to look mostly like an imperative language. XLR has practically only one built-in operator, "-&gt;", which denotes a rewrite. The notation on the left of the rewrite is transformed into the notation on the right of the rewrite.</p>
+<p>This mechanism is used to implement standard notations:</p>
+<pre>
+ if true then TrueBody else FalseBody -&gt; TrueBody
+ if false then TrueBody else FalseBody -&gt; FalseBody
+</pre>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=XL_(programming_language)&amp;action=edit&amp;section=11" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><cite class="citation news">Manchester, Phil (2008-01-16). <a rel="nofollow" class="external text" href="http://www.theregister.co.uk/2008/01/16/concept_programming">"Dip into Concept Programming"</a>. The Register<span class="reference-accessdate">. Retrieved <span class="nowrap">2010-02-03</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AXL+%28programming+language%29&amp;rft.atitle=Dip+into+Concept+Programming&amp;rft.aufirst=Phil&amp;rft.aulast=Manchester&amp;rft.date=2008-01-16&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fwww.theregister.co.uk%2F2008%2F01%2F16%2Fconcept_programming&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=XL_(programming_language)&amp;action=edit&amp;section=12" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><span class="official-website"><span class="url"><a rel="nofollow" class="external text" href="http://xlr.sf.net">Official website</a></span></span></li>
+<li><a rel="nofollow" class="external text" href="http://mozart-dev.sf.net">The historical development site</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.theregister.co.uk/2008/01/16/concept_programming/">Coverage on XL and Concept programming at The Register</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.grnlight.net/index.php/programming-articles/98-xl-and-concept-programming">Article from Byte (Copy)</a></li>
+<li><a rel="nofollow" class="external text" href="http://xlr.sourceforge.net/Concept%20Programming%20Presentation.pdf">Slides presenting XL and Concept Programming</a></li>
+</ul>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1263
+Cached time: 20170129155236
+Cache expiry: 86400
+Dynamic content: true
+CPU time usage: 0.092 seconds
+Real time usage: 0.127 seconds
+Preprocessor visited node count: 713/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 10777/2097152 bytes
+Template argument size: 1266/2097152 bytes
+Highest expansion depth: 24/40
+Expensive parser function count: 2/500
+Lua time usage: 0.039/10.000 seconds
+Lua memory usage: 1.83 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  106.714      1 -total
+ 48.72%   51.986      2 Template:Infobox
+ 36.94%   39.425      1 Template:Infobox_programming_language
+ 26.24%   28.007      1 Template:Reflist
+ 23.66%   25.253      1 Template:Cite_news
+ 17.97%   19.172      1 Template:Infobox_software/simple
+ 17.09%   18.242      1 Template:Distinguish
+ 13.83%   14.758      1 Template:Official_website
+  8.85%    9.445      1 Template:Start_date_and_age
+  4.69%    5.009      1 Template:Portal
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:2855241-0!*!0!!en!4!* and timestamp 20170129155236 and revision id 743811448
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=XL_(programming_language)&amp;oldid=743811448">https://en.wikipedia.org/w/index.php?title=XL_(programming_language)&amp;oldid=743811448</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Extensible_syntax_programming_languages" title="Category:Extensible syntax programming languages">Extensible syntax programming languages</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=XL+%28programming+language%29" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=XL+%28programming+language%29" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/XL_(programming_language)"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:XL_(programming_language)"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/XL_(programming_language)" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=XL_(programming_language)&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=XL_(programming_language)&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/XL_(programming_language)" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/XL_(programming_language)" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=XL_(programming_language)&amp;oldid=743811448" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=XL_(programming_language)&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q1859276" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=XL_%28programming_language%29&amp;id=743811448" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=XL+%28programming+language%29">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=XL+%28programming+language%29&amp;returnto=XL+%28programming+language%29&amp;oldid=743811448&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=XL_(programming_language)&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/XL_(Programmiersprache)" title="XL (Programmiersprache) – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-fa"><a href="https://fa.wikipedia.org/wiki/%D8%A7%DB%8C%DA%A9%D8%B3_%D8%A7%D9%84_(%D8%B2%D8%A8%D8%A7%D9%86_%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C)" title="ایکس ال (زبان برنامه‌نویسی) – Persian" lang="fa" hreflang="fa" class="interlanguage-link-target">فارسی</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/XL_(langage)" title="XL (langage) – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-ja"><a href="https://ja.wikipedia.org/wiki/XL_(%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E8%A8%80%E8%AA%9E)" title="XL (プログラミング言語) – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target">日本語</a></li><li class="interlanguage-link interwiki-pt"><a href="https://pt.wikipedia.org/wiki/XL_(linguagem_de_programa%C3%A7%C3%A3o)" title="XL (linguagem de programação) – Portuguese" lang="pt" hreflang="pt" class="interlanguage-link-target">Português</a></li><li class="interlanguage-link interwiki-ru"><a href="https://ru.wikipedia.org/wiki/XL_(%D1%8F%D0%B7%D1%8B%D0%BA_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F)" title="XL (язык программирования) – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li><li class="interlanguage-link interwiki-fi"><a href="https://fi.wikipedia.org/wiki/XL_(ohjelmointikieli)" title="XL (ohjelmointikieli) – Finnish" lang="fi" hreflang="fi" class="interlanguage-link-target">Suomi</a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q1859276#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 11 October 2016, at 11:37.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=XL_(programming_language)&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.092","walltime":"0.127","ppvisitednodes":{"value":713,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":10777,"limit":2097152},"templateargumentsize":{"value":1266,"limit":2097152},"expansiondepth":{"value":24,"limit":40},"expensivefunctioncount":{"value":2,"limit":500},"entityaccesscount":{"value":1,"limit":400},"timingprofile":["100.00%  106.714      1 -total"," 48.72%   51.986      2 Template:Infobox"," 36.94%   39.425      1 Template:Infobox_programming_language"," 26.24%   28.007      1 Template:Reflist"," 23.66%   25.253      1 Template:Cite_news"," 17.97%   19.172      1 Template:Infobox_software/simple"," 17.09%   18.242      1 Template:Distinguish"," 13.83%   14.758      1 Template:Official_website","  8.85%    9.445      1 Template:Start_date_and_age","  4.69%    5.009      1 Template:Portal"]},"scribunto":{"limitreport-timeusage":{"value":"0.039","limit":"10.000"},"limitreport-memusage":{"value":1923267,"limit":52428800}},"cachereport":{"origin":"mw1263","timestamp":"20170129155236","ttl":86400,"transientcontent":true}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":196,"wgHostname":"mw1263"});});</script>
+	</body>
+</html>

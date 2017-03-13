@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>JASS - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"JASS","wgTitle":"JASS","wgCurRevisionId":754888776,"wgRevisionId":754888776,"wgArticleId":3115483,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles with topics of unclear notability from September 2016","All articles with topics of unclear notability","All articles with unsourced statements","Articles with unsourced statements from March 2011","Wikipedia external links cleanup from July 2016","Wikipedia spam cleanup from July 2016","Warcraft","StarCraft","Scripting languages"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"JASS","wgRelevantArticleId":3115483,"wgRequestId":"WI14rQpAEK8AAHrw8g8AAAAB","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":true},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q1649380","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.cite.styles":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.legacy.wikibits","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.29.0-wmf.9"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/JASS"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=JASS&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=JASS&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/JASS"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-JASS rootpage-JASS skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">JASS</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><script>function mfTempOpenSection(id){var block=document.getElementById("mf-section-"+id);block.className+=" open-block";block.previousSibling.className+=" open-block";}</script><div role="note" class="hatnote">This article is about the programming language. For the Vietnamese charity, see <a href="/wiki/Japanese_Association_of_Supporting_Streetchildren" title="Japanese Association of Supporting Streetchildren">Japanese Association of Supporting Streetchildren</a>.</div>
+<table class="plainlinks metadata ambox ambox-content ambox-Notability" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ambox_important.svg/40px-Ambox_important.svg.png" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ambox_important.svg/60px-Ambox_important.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ambox_important.svg/80px-Ambox_important.svg.png 2x" data-file-width="40" data-file-height="40" /></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">The topic of this article <b>may not meet Wikipedia's <a href="/wiki/Wikipedia:Notability" title="Wikipedia:Notability">general notability guideline</a></b>. <span class="hide-when-compact">Please help to establish notability by citing <a href="/wiki/Wikipedia:Identifying_reliable_sources" title="Wikipedia:Identifying reliable sources">reliable secondary sources</a> that are <a href="/wiki/Wikipedia:Independent_sources" class="mw-redirect" title="Wikipedia:Independent sources">independent</a> of the topic and provide significant coverage of it beyond its mere trivial mention. If notability cannot be established, the article is likely to be <a href="/wiki/Wikipedia:Merging" title="Wikipedia:Merging">merged</a>, <a href="/wiki/Wikipedia:Redirect" title="Wikipedia:Redirect">redirected</a>, or <a href="/wiki/Wikipedia:Deletion_policy" title="Wikipedia:Deletion policy">deleted</a>.<br />
+<small><span class="plainlinks"><i>Find sources:</i>&#160;<a rel="nofollow" class="external text" href="//www.google.com/search?as_eq=wikipedia&amp;q=%22JASS%22&amp;num=50">"JASS"</a>&#160;–&#160;<a rel="nofollow" class="external text" href="//www.google.com/search?q=%22JASS%22&amp;tbm=nws">news</a>&#160;<b>·</b> <a rel="nofollow" class="external text" href="//www.google.com/search?&amp;q=%22JASS%22+site:news.google.com/newspapers&amp;source=newspapers">newspapers</a>&#160;<b>·</b> <a rel="nofollow" class="external text" href="//www.google.com/search?tbs=bks:1&amp;q=%22JASS%22">books</a>&#160;<b>·</b> <a rel="nofollow" class="external text" href="//scholar.google.com/scholar?q=%22JASS%22">scholar</a>&#160;<b>·</b> <a rel="nofollow" class="external text" href="http://www.jstor.org/action/doBasicSearch?Query=%22JASS%22&amp;acc=on&amp;wc=on">JSTOR</a>&#160;<b>·</b> <a rel="nofollow" class="external text" href="//www.google.com/images?safe=off&amp;tbm=isch&amp;tbs=sur:fmc&amp;q=%22JASS%22+-site:wikipedia.org+-site:wikimedia.org">free images</a></span></small></span> <small><i>(September 2016)</i></small> <small class="hide-when-compact"><i>(<a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove this template message</a>)</i></small></span></td>
+</tr>
+</table>
+<p><b>JASS</b> and <b>JASS2</b> (sometimes said to stand for <b>Just Another Scripting Syntax</b><sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (March 2011)">citation needed</span></a></i>]</sup>) is a <a href="/wiki/Scripting_language" title="Scripting language">scripting language</a> provided with an <a href="/wiki/Event-driven_programming" title="Event-driven programming">event-driven</a> <a href="/wiki/API" class="mw-redirect" title="API">API</a> created by <a href="/wiki/Blizzard_Entertainment" title="Blizzard Entertainment">Blizzard Entertainment</a>. It is used extensively by their games <i><a href="/wiki/Warcraft_III:_Reign_of_Chaos" title="Warcraft III: Reign of Chaos">Warcraft III</a></i> (JASS2) and <i><a href="/wiki/StarCraft" title="StarCraft">StarCraft</a></i> (JASS) for scripting events in the game world. Map creators can use it in the <a href="/wiki/Warcraft_III_World_Editor" class="mw-redirect" title="Warcraft III World Editor"><i>Warcraft III</i> World Editor</a> and the <i>Starcraft</i> Editor to create scripts for triggers and AI (<a href="/wiki/Artificial_intelligence_(video_games)" title="Artificial intelligence (video games)">artificial intelligence</a>) in custom maps and campaigns.</p>
+<p>Blizzard Entertainment has replaced JASS with <b>Galaxy</b> in <i><a href="/wiki/Starcraft_II" class="mw-redirect" title="Starcraft II">Starcraft II</a></i>.</p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Features"><span class="tocnumber">1</span> <span class="toctext">Features</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Sample_code"><span class="tocnumber">1.1</span> <span class="toctext">Sample code</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Basic_syntax"><span class="tocnumber">1.2</span> <span class="toctext">Basic syntax</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Types"><span class="tocnumber">1.3</span> <span class="toctext">Types</span></a>
+<ul>
+<li class="toclevel-3 tocsection-5"><a href="#agent"><span class="tocnumber">1.3.1</span> <span class="toctext">agent</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-6"><a href="#Type_casting"><span class="tocnumber">1.4</span> <span class="toctext">Type casting</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Arrays"><span class="tocnumber">1.5</span> <span class="toctext">Arrays</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-8"><a href="#Return_Bug_Security_Vulnerability_and_Patch_1.24"><span class="tocnumber">2</span> <span class="toctext">Return Bug Security Vulnerability and Patch 1.24</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#vJass"><span class="tocnumber">3</span> <span class="toctext">vJass</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#Known_issues"><span class="tocnumber">4</span> <span class="toctext">Known issues</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#Preload_exploit"><span class="tocnumber">5</span> <span class="toctext">Preload exploit</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="#References"><span class="tocnumber">6</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="#External_links"><span class="tocnumber">7</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Features">Features</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=JASS&amp;action=edit&amp;section=1" title="Edit section: Features">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The language provides an extensive <a href="/wiki/Application_programming_interface" title="Application programming interface">API</a> that gives programmers control over nearly every aspect of the game world. It can, for example, execute simple GUI functions such as giving orders to units, changing the weather and time of day, playing sounds and displaying text to the player, and manipulating the terrain. JASS can also create powerful functions such as trackables, which detect if a mouse goes over or hits a position, GetLocalPlayer(), which can cause disconnects if used improperly (such as using handles with GetLocalPlayer() ). It has a <a href="/wiki/Syntax" title="Syntax">syntax</a> similar to <a href="/wiki/Turing_programming_language" class="mw-redirect" title="Turing programming language">Turing</a> and <a href="/wiki/Delphi_programming_language" class="mw-redirect" title="Delphi programming language">Delphi</a>, but unlike those languages, it is case sensitive. JASS primarily uses <a href="/wiki/Procedural_programming" title="Procedural programming">procedural programming</a> concepts, though popular user-made modifications to Blizzard's World Editor program have since added <a href="/wiki/C%2B%2B" title="C++">C++</a>-like <a href="/wiki/Object-Oriented_Programming" class="mw-redirect" title="Object-Oriented Programming">object-oriented programming</a> features to the syntax of JASS.</p>
+<h3><span class="mw-headline" id="Sample_code">Sample code</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=JASS&amp;action=edit&amp;section=2" title="Edit section: Sample code">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The following <a href="/wiki/Subroutine" title="Subroutine">function</a> creates a <a href="/wiki/String_(computer_science)" title="String (computer science)">string</a> containing the message "<a href="/wiki/Hello,_world!" class="mw-redirect" title="Hello, world!">Hello, world!</a>" and displays it to all players:</p>
+<pre>
+function Trig_JASS_test_Actions takes nothing returns nothing
+ call DisplayTextToPlayer(GetLocalPlayer(), 0, 0, "Hello, world!")
+endfunction
+</pre>
+<p>or if you want this only for one player:</p>
+<pre>
+function Trig_JASS_test_Actions takes player p returns nothing
+ call DisplayTextToPlayer(p, 0,0, "Hello, world!")
+endfunction
+</pre>
+<p>And if you want to print the message 90 times and show the iterator:</p>
+<pre>
+function Trig_JASS_test_Actions takes player p returns nothing
+ local integer i=0
+ loop
+   exitwhen i==90
+   call DisplayTextToPlayer(p, 0,0, "Hello, world! "+I2S(i))
+   set i=i+1
+ endloop
+endfunction
+</pre>
+<h3><span class="mw-headline" id="Basic_syntax">Basic syntax</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=JASS&amp;action=edit&amp;section=3" title="Edit section: Basic syntax">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p><a href="/wiki/Syntax" title="Syntax">Syntax</a> of JASS is similar to <a href="/wiki/Turing_programming_language" class="mw-redirect" title="Turing programming language">Turing</a>. It is <a href="/wiki/Context-free_grammar" title="Context-free grammar">context free</a>. Examples of basic syntax are shown below:</p>
+<pre>
+<b>function</b> syntax_Example_Sum <b>takes integer</b> i, <b>real</b> r <b>returns real</b>  <i>//function declaration must include: the keyword "function",</i>
+                                                                 <i>//the function name, parameters (if any) and return type (if</i>
+                                                                 <i>//it returns something)</i>
+  <b>return</b> i + r <i>//return statements must begin with the keyword "return"</i>
+<b>endfunction</b> <i>//the keyword "endfunction" signals the end of a function block</i>
+
+<b>function</b> syntax_Example <b>takes nothing returns nothing</b>
+  <b>local integer</b> i <i>//declaring a local variable requires the modifier "local", the variable's data type, and the variable name</i>
+  <b>local real</b> r = 5.0 <i>//local variable declarations must come before anything else in a function and variables may be</i>
+                     <i>//initialized on declaration</i>
+
+  <i>//separated statements MUST be placed on separate lines</i>
+
+  <b>set</b> i = 6 <i>//the keyword "set" is used to rebind variables</i>
+  <b>call</b> syntax_Example_Sum( i, r ) <i>//function calls must be preceded by the keyword "call"</i>
+  <b>set</b> r = syntax_Example_Sum( i, r ) <i>//the "call" keyword is omitted when accessing a function's return value</i>
+<b>endfunction</b>
+</pre>
+<h3><span class="mw-headline" id="Types">Types</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=JASS&amp;action=edit&amp;section=4" title="Edit section: Types">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>JASS is <a href="/wiki/Static_types" class="mw-redirect" title="Static types">statically-typed</a>, and its <a href="/wiki/Data_type" title="Data type">types</a> can be separated into two classes: natives and handles. The native types are:</p>
+<ul>
+<li>integer (32-bit signed)</li>
+<li>real (32-bit floating point numbers, similar to the float type in <a href="/wiki/Java_(programming_language)" title="Java (programming language)">Java</a>)</li>
+<li>string (limit is 1023 characters, actually to provide save/load compatibility it's required to use only 1013 characters)</li>
+<li>boolean</li>
+<li>code</li>
+</ul>
+<p>All other types are considered non-native. The native types behave very similarly to <a href="/wiki/Primitive_Type" class="mw-redirect" title="Primitive Type">primitive types</a> in other programming languages. Handle types, however, behave more like <a href="/wiki/Object_(computer_science)" title="Object (computer science)">objects</a>. Handle types often represent an "object" within the game (units, players, special effects, etc.). Similarly to how <a href="/wiki/Java_(programming_language)" title="Java (programming language)">Java</a> treats Objects, all variables and parameters in JASS of handle types are treated as values, but in reality those values are nothing but <a href="/wiki/Reference_(computer_science)" title="Reference (computer science)">references</a> to the handle objects. This becomes important when dealing with <a href="/wiki/Garbage_collection_(computer_science)" title="Garbage collection (computer science)">garbage collection</a> because handles, if not properly cleaned up, can cause significant performance issues. Additionally, local variables do not properly dereference handles when they go out of scope. If they are not nullified properly, handle indices will not be garbage collected and will eventually leak. Also, any references to handles themselves take up some memory space. Users may experience reduced performance if they are not nullified, though on a much smaller scale.</p>
+<pre>
+<b>function</b> garbage_Collection_Example <b>takes</b> string effectPath, real x, real y <b>returns nothing</b>
+ <b>local</b> effect specialEffect = AddSpecialEffect( effectPath, x, y ) <i>//uncleaned handle types will continue to take up system resources</i>
+<b>endfunction</b>
+
+<b>function</b> garbage_Collection_Example2 <b>takes</b> string effectPath, real x, real y <b>returns nothing</b>
+ <b>local</b> effect specialEffect = AddSpecialEffect( effectPath, x, y )
+
+ <b>set</b> specialEffect = null <i>//setting the variable to null is not enough, since it is only a reference to the handle;</i>
+                          <i>//the handle still exists</i>
+<b>endfunction</b>
+
+<b>function</b> garbage_Collection_Example3 <b>takes</b> string effectPath, real x, real y <b>returns nothing</b>
+ <b>local</b> effect specialEffect = AddSpecialEffect( effectPath, x, y )
+
+ <b>call</b> DestroyEffect( specialEffect ) <i>//we destroy (clean up) the handle to free up memory</i>
+ <b>set</b> specialEffect = null
+<b>endfunction</b>
+
+<b>function</b> garbage_Collection_Example4 <b>takes</b> effect e <b>returns nothing</b>
+  <i>//do stuff</i>
+  <b>call</b> DestroyEffect( e )
+  <i>//parameters do not have to be nullified</i>
+<b>endfunction</b>
+</pre>
+<p>Another property of handle types worth noting is that all handle types are treated as if they were children of the "handle" type. Some of these children types have their own children types, and so on. Handle variables may reference its own specific handle type or any children type. For example:</p>
+<pre>
+<b>function</b> Trig_JASS_handle_Example_Child <b>takes</b> widget w, widget w2 <b>returns nothing</b>
+  <i>//do stuff</i>
+<b>endfunction</b>
+
+<b>function</b> handle_Example <b>takes</b> real x, real y <b>returns nothing</b>
+  <b>local</b> widget w <i>//widget is a handle type with children type unit and destructible</i>
+  <b>local</b> unit u = CreateUnit( 'hfoo', x, y )
+  <b>local</b> destructible d = CreateDestructible( 'ATtr', x, y )
+  
+  <b>set</b> w = u <i>//acceptable</i>
+  <b>call</b> Trig_JASS_handle_Example_Child( w, d ) <i>//acceptable</i>
+  <i>//Don't forget to null every extends agent variable.</i>
+  <b>set</b> u = null
+  <b>set</b> d = null
+  <b>set</b> w = null
+<b>endfunction</b>
+</pre>
+<h4><span class="mw-headline" id="agent">agent</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=JASS&amp;action=edit&amp;section=5" title="Edit section: agent">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>Since patch 1.24b there is a new handle-based type called "agent" which has been introduced to separate handle types of which objects has to be deleted manually (<a href="/wiki/Dynamic_memory_allocation" class="mw-redirect" title="Dynamic memory allocation">Dynamic memory allocation</a>) and handle types of which objects are deleted automatically (<a href="/wiki/Stack-based_memory_allocation" title="Stack-based memory allocation">Stack-based memory allocation</a>). For example, types "unit", "rect" or "destructable" which refer to dynamic allocated objects do extend type "agent" now whereas types such as "race" or "alliancetype" which actually are only some kind of wrappers for the native type "integer" and can be compared to <a href="/wiki/Enumerated_type" title="Enumerated type">enumerated types</a> do still extend type "handle".</p>
+<h3><span class="mw-headline" id="Type_casting">Type casting</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=JASS&amp;action=edit&amp;section=6" title="Edit section: Type casting">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Of the primitive types, <a href="/wiki/Type_conversion" title="Type conversion">type casting</a> between integer, real, and string is officially supported by the language. JASS supports both <a href="/wiki/Implicit_type_conversion" class="mw-redirect" title="Implicit type conversion">implicit</a> and <a href="/wiki/Type_conversion#Explicit_type_conversion" title="Type conversion">explicit</a> type casting.</p>
+<p>Implicit casting only occurs from integer to real. For example:</p>
+<pre>
+<b>function</b> type_Casting_Example <b>takes nothing returns real</b>
+  <b>local integer</b> i = 4
+  <b>local real</b> r = 5 <i>//implicit cast of 5 to real to satisfy variable type</i>
+  
+  <b>if</b> ( i &lt; r ) <b>then</b> <i>//implicit cast of i to real</i>
+    <b>set</b> r = r / i <i>//implicit cast of i to real in order to carry out real division</i>
+  <b>endif</b>
+  
+  <b>return</b> i <i>//XXX: NOT allowed; JASS does not allow implicit casting from integer to real to satisfy return types</i>
+<b>endfunction</b>
+</pre>
+<p>The JASS library provides several functions for explicit type casting:</p>
+<ul>
+<li>I2R(): casts integer to real</li>
+<li>R2I(): casts real to integer</li>
+<li>I2S(): casts integer to string</li>
+<li>R2S(): casts real to string</li>
+<li>S2I(): casts string to integer</li>
+</ul>
+<p>An important property of handle types related to type casting is that since all variables of handles are just <a href="/wiki/Reference_(computer_science)" title="Reference (computer science)">references</a>, they can all be treated (and are treated) as integers. Each instance of a handle is assigned a unique integer value that essentially acts as an identifier for the handle. Therefore, type casting from handles to integers, although technically not supported by JASS, is possible in practice because implicit casting from handle types to integer can and will occur if the code is written in a certain way, for example:</p>
+<pre>
+<b>function</b> H2I <b>takes handle</b> h <b>returns integer</b>
+  <b>return</b> h
+<b>endfunction</b>
+</pre>
+<p>If the game ever reached the line "return h", it would in fact actually cast the handle to an integer and return the value. However, <a href="/wiki/Blizzard_Entertainment" title="Blizzard Entertainment">Blizzard</a> never intended for JASS to be used this way, and so the JASS <a href="/wiki/Compiler" title="Compiler">compiler</a> will actually throw an error, warning the programmer that the function isn't returning the correct type. However, JASS programmers have found and exploited a now famous bug in the JASS compiler's syntax checker: the so-called "return bug". Essentially, the compiler will only make sure that the last return statement in a function returns the correct type. Therefore, the following code compiles without error and can be used to cast handles to integers</p>
+<pre>
+<b>function</b> H2I <b>takes handle</b> h <b>returns integer</b>
+  <b>return</b> h <i>//the function will stop executing after the first return statement, i.e. this one</i>
+  <b>return</b> 0 <i>//the compiler will only check this statement for syntax accuracy, but it is in reality unreachable code</i>
+<b>endfunction</b>
+</pre>
+<p>This bug has been fixed in patch 1.23b, although it was not completely fixed until patch 1.24b. Users have to use new hashtable natives instead of their return bug counterparts. While this bug has been fixed in patch 1.24b, another return bug has been discovered by users, known as the Return Nothing bug. The Return Nothing bug has been fixed by <a href="/wiki/Blizzard_Entertainment" title="Blizzard Entertainment">Blizzard</a> in patch 1.23c.</p>
+<p>The return nothing bug lets the user get the last value returned by any function, even as another type. To properly utilize the bug, the desired return must be made in a separate function and a return in the calling function should be made impossible.</p>
+<pre>
+<b>function</b> ReturnHandle <b>takes handle</b> h <b>returns handle</b>
+   <b>return</b> h
+<b>endfunction</b>
+
+<b>function</b> H2I <b>takes handle</b> h <b>returns integer</b>
+   <b>call</b> ReturnHandle(h) <i>//This sets the last returned value to 'h'.</i>
+   <b>if false then</b>
+       <b>return</b> 0 <i>//This can never occur, so the game uses the last returned value as this function's returned value instead.</i>
+       <i>//It will even return the last returned value as a different type, in this case an integer.</i>
+   <b>endif</b>
+<b>endfunction</b>
+</pre>
+<h3><span class="mw-headline" id="Arrays">Arrays</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=JASS&amp;action=edit&amp;section=7" title="Edit section: Arrays">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>JASS supports one-dimensional <a href="/wiki/Array_data_structure" title="Array data structure">arrays</a> of any type (excluding <b>code</b>). The syntax to declare arrays and access members in an array is outlined in the code below.</p>
+<pre>
+<b>function</b> array_Example <b>takes nothing returns nothing</b>
+  <i>//arrays cannot be initialized at declaration and their members will hold arbitrary values</i>
+  <b>local</b> integer array numbers
+  <b>local unit array units</b>
+  <b>local</b> boolean array booleans
+  <b>local</b> integer i = 1
+  
+  <b>set</b> numbers[0] = 1 <i>//the syntax to initialize an array member is identical to that for any other variable, only a set of</i>
+                     <i>//brackets: [] must immediately follow the variable name with the index value of the specific member</i>
+                     <i>//to initialize inside the brackets</i>
+  <b>set</b> units[0] = CreateUnit( 'hfoo', 0, 0 ) <i>//indexes for arrays always start at 0</i>
+  
+  <b>loop</b>
+    <b>exitwhen</b> ( i &gt; 8191 ) <i>//the maximum size for arrays in JASS is 8192, which means that the last index of any array can</i>
+                          <i>//only be 8191,  to provide save/load compatibility it's required to use maximum index 8190</i>
+    <b>set</b> numbers[i] = i    <i>//variables can substitute for constants when specifying the index value in the brackets</i>
+    <b>set</b> units[numbers[i]] = null <i>//array members can also substitute</i>
+    <b>set</b> booleans[i-1] = true <i>//arithmetic (or functional) operations are also acceptable</i>
+    <b>set</b> i = i + 1 <i>//increments the index value</i>
+  <b>endloop</b>
+  
+  <b>if</b> booleans[200] <b>then</b> <i>//to access an array member, again the syntax is the same as for normal variables, only</i>
+                                   <i>//with the addition of the brackets with the index value inside</i>
+    <b>set</b> numbers[200] = -200 <i>//you can re-assign members of the array to different values</i>
+  <b>endif</b>
+<b>endfunction</b>
+</pre>
+<p>One limitation of arrays in JASS is that they cannot be returned by functions or passed as parameters to other functions, though array members may be returned (in a function that returns a unit, u[0] may be returned if u is an array of type unit).</p>
+<h2><span class="mw-headline" id="Return_Bug_Security_Vulnerability_and_Patch_1.24">Return Bug Security Vulnerability and Patch 1.24</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=JASS&amp;action=edit&amp;section=8" title="Edit section: Return Bug Security Vulnerability and Patch 1.24">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>In 2009 the return bug was shown to allow arbitrary code execution, a registered security vulnerability.<sup id="cite_ref-CVE-2009-4768_1-0" class="reference"><a href="#cite_note-CVE-2009-4768-1">[1]</a></sup> Blizzard Entertainment shortly thereafter released patch 1.24 which fixed the vulnerability and the JASS bug. Once the patch is deployed, any map that contains the script code with returns bugs will not run properly. All maps using return bugs therefore need to be re-written to use the newly available hashtable natives.</p>
+<p>The patch is currently applied on all Battle.net servers.</p>
+<h2><span class="mw-headline" id="vJass">vJass</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=JASS&amp;action=edit&amp;section=9" title="Edit section: vJass">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>vJass is a set of user-made extensions to JASS. It introduces <a href="/wiki/Object-Oriented_Programming" class="mw-redirect" title="Object-Oriented Programming">object-oriented programming</a> features to the language, such as <a href="/wiki/Object_composition" title="Object composition">structs</a>, <a href="/wiki/Information_hiding" title="Information hiding">encapsulation</a>, and <a href="/wiki/Polymorphism_in_object-oriented_programming" class="mw-redirect" title="Polymorphism in object-oriented programming">polymorphism</a>.<sup id="cite_ref-vJass_Documentation_2-0" class="reference"><a href="#cite_note-vJass_Documentation-2">[2]</a></sup> Strictly speaking, vJass does not add anything to the JASS library but instead mostly uses JASS arrays and integers used as their indices. The extension relies on a custom-made <a href="/wiki/Compiler" title="Compiler">compiler</a> that compiles vJass code to strict JASS code. In this manner, no additional <a href="/wiki/Mod_(computer_gaming)" class="mw-redirect" title="Mod (computer gaming)">mods</a> for either the World Editor program or <a href="/wiki/Warcraft_III" class="mw-redirect" title="Warcraft III">Warcraft III</a> are required, and maps made using vJass code are fully compatible with any copy of the game, even those without the compiler. The most convenient tool for this purpose is the Jass NewGen Pack (JNGP), which includes several enhancements for the Warcraft III world editor including a vJass precompiler.</p>
+<h2><span class="mw-headline" id="Known_issues">Known issues</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=JASS&amp;action=edit&amp;section=10" title="Edit section: Known issues">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The JASS interpreter of Warcraft III up to version 1.23 doesn't check memory region boundaries. This allows execution of arbitrary bytecode through a map, meaning that practically anything, including malware (viruses, trojans, etc.), can be engineered into a map to be executed and infect a computer. Blizzard Entertainment is aware of this issue and applied a temporary workaround to games hosted on Battle.net. They are also preparing a permanent fix for LAN and single-player games.<sup id="cite_ref-Battle.net_Forums_-_Warcraft_III_Custom_Map_Security_Warning_3-0" class="reference"><a href="#cite_note-Battle.net_Forums_-_Warcraft_III_Custom_Map_Security_Warning-3">[3]</a></sup> This issue was addressed with the release of version 1.24.<sup id="cite_ref-Dota_Allstars_Blog_-_Warcraft_III_version_1.24_changelog_4-0" class="reference"><a href="#cite_note-Dota_Allstars_Blog_-_Warcraft_III_version_1.24_changelog-4">[4]</a></sup></p>
+<h2><span class="mw-headline" id="Preload_exploit">Preload exploit</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=JASS&amp;action=edit&amp;section=11" title="Edit section: Preload exploit">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>It is possible to exploit the I/O capabilities of the Preload JASS native (Commonly used to preload files during initialization to prevent in-game lag) to indirectly run code on a computer having certain builds of the Windows Operating System via writing batch files to the Startup folder. This exploit is rather limited however, as it requires a path, which is impossible to retrieve since reading environment variables is impossible. Despite the limitations, it is possible to use the Preload native along with its corresponding natives such as PreloadGenEnd to write files to a player's computer.</p>
+<p><b>Sample code</b></p>
+<p>The following <a href="/wiki/Subroutine" title="Subroutine">function</a> creates an empty file in redist\miles folder. After that, Warcraft III runs with an error.</p>
+<pre>
+function Trig_JASS_testPreloadExploit_Actions takes nothing returns nothing
+ call PreloadGenEnd(".\\redist\\miles\\Mp3enc.asi")
+endfunction
+</pre>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=JASS&amp;action=edit&amp;section=12" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-CVE-2009-4768-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-CVE-2009-4768_1-0">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.cvedetails.com/cve/CVE-2009-4768/">"CVE-2009-4768&#160;: Unspecified vulnerability in the JASS script interpreter in Warcraft III: The Frozen Throne 1.24b and earlier allows use"</a>. <i>Cvedetails.com</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2016-07-02</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJASS&amp;rft.atitle=CVE-2009-4768+%3A+Unspecified+vulnerability+in+the+JASS+script+interpreter+in+Warcraft+III%3A+The+Frozen+Throne+1.24b+and+earlier+allows+use&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.cvedetails.com%2Fcve%2FCVE-2009-4768%2F&amp;rft.jtitle=Cvedetails.com&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-vJass_Documentation-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-vJass_Documentation_2-0">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.wc3c.net/vexorian/jasshelpermanual.html#interfs">"JassHelper 0.A.0.0"</a>. <i>Wc3c.net</i>. 2007-06-26<span class="reference-accessdate">. Retrieved <span class="nowrap">2016-07-02</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJASS&amp;rft.atitle=JassHelper+0.A.0.0&amp;rft.date=2007-06-26&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.wc3c.net%2Fvexorian%2Fjasshelpermanual.html%23interfs&amp;rft.jtitle=Wc3c.net&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-Battle.net_Forums_-_Warcraft_III_Custom_Map_Security_Warning-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-Battle.net_Forums_-_Warcraft_III_Custom_Map_Security_Warning_3-0">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://forums.battle.net/thread.html?topicId=16888549346&amp;sid=3000">"Battle.net Forums"</a>. <i>Forums.battle.net</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2016-07-02</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJASS&amp;rft.atitle=Battle.net+Forums&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fforums.battle.net%2Fthread.html%3FtopicId%3D16888549346%26sid%3D3000&amp;rft.jtitle=Forums.battle.net&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-Dota_Allstars_Blog_-_Warcraft_III_version_1.24_changelog-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-Dota_Allstars_Blog_-_Warcraft_III_version_1.24_changelog_4-0">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://dota-allstars-blog.blogspot.com/2009/08/patch-124-warcraft-tft-is-released.html">"Patch 1.24 Warcraft TFT is Released! - DotA-Blog"</a>. <i>Dota-allstars-blog.blogspot.com</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2016-07-02</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJASS&amp;rft.atitle=Patch+1.24+Warcraft+TFT+is+Released%21+-+DotA-Blog&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fdota-allstars-blog.blogspot.com%2F2009%2F08%2Fpatch-124-warcraft-tft-is-released.html&amp;rft.jtitle=Dota-allstars-blog.blogspot.com&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=JASS&amp;action=edit&amp;section=13" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<table class="plainlinks metadata ambox ambox-style ambox-external_links" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/40px-Edit-clear.svg.png" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/60px-Edit-clear.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/80px-Edit-clear.svg.png 2x" data-file-width="48" data-file-height="48" /></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">This article's <b>use of <a href="/wiki/Wikipedia:External_links" title="Wikipedia:External links">external links</a> may not follow Wikipedia's policies or guidelines</b>. <span class="hide-when-compact">Please <a class="external text" href="//en.wikipedia.org/w/index.php?title=JASS&amp;action=edit">improve this article</a> by removing <a href="/wiki/Wikipedia:What_Wikipedia_is_not#Wikipedia_is_not_a_mirror_or_a_repository_of_links.2C_images.2C_or_media_files" title="Wikipedia:What Wikipedia is not">excessive</a> or <a href="/wiki/Wikipedia:External_links" title="Wikipedia:External links">inappropriate</a> external links, and converting useful links where appropriate into <a href="/wiki/Wikipedia:Citing_sources" title="Wikipedia:Citing sources">footnote references</a>.</span> <small><i>(July 2016)</i></small> <small class="hide-when-compact"><i>(<a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove this template message</a>)</i></small></span></td>
+</tr>
+</table>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.wc3c.net/showthread.php?t=74894">An Introduction To JASS</a> – A beginner's guide to the language, covering its basic features and capabilities.
+<ul>
+<li><a rel="nofollow" class="external text" href="http://wc3c.net/showthread.php?t=80051">JassCraft</a> – <a href="/wiki/Source_code_editor" title="Source code editor">Editor</a> for JASS scripts.</li>
+<li><a rel="nofollow" class="external text" href="http://www.wc3c.net/tutorials.php?f=650">wc3c JASS Tutorials</a> – Tutorials from Wc3c.net</li>
+<li><a rel="nofollow" class="external text" href="http://www.wc3c.net/showthread.php?t=88142">JassHelper</a> – A vJass to Jass compiler.</li>
+</ul>
+</li>
+<li><a rel="nofollow" class="external text" href="http://www.thehelper.net/forums/showthread.php?t=125565">vJASS - Uncomplicating the Complicated</a> – Another beginner's guide to the language, with a different learning approach. Covers some basic vJass to start coding.
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.thehelper.net/forums/showthread.php?t=41495">Thehelper JASS tutorials</a> – Tutorials from Thehelper.net</li>
+</ul>
+</li>
+<li><a rel="nofollow" class="external text" href="http://www.wc3jass.com">The Jass Vault</a> – Contains a large collection of sample scripts.</li>
+<li><a rel="nofollow" class="external text" href="http://jass.sourceforge.net/">JASS Tools</a> – Includes a syntax checker.</li>
+<li><a rel="nofollow" class="external text" href="http://wc3modding.info/4263/the-jass-newgen-pack-jngp-1-5e/">Jass New Generation Pack (JNGP)</a> – A <a href="/wiki/Warcraft_III_World_Editor" class="mw-redirect" title="Warcraft III World Editor">World Editor</a> <a href="/wiki/Mod_(computer_gaming)" class="mw-redirect" title="Mod (computer gaming)">mod</a> that allows vJass compilation and adds debugging capabilities among other features.</li>
+<li><a rel="nofollow" class="external text" href="http://cjass.xgm.ru/">AdicHelper</a> - A cJass to vJass/Jass compiler.</li>
+<li><a rel="nofollow" class="external text" href="https://github.com/Ruk33/vrJASS">vrJASS</a> - Project aiming to replace vJASS fixing issues and implementing new features.</li>
+</ul>
+<div role="navigation" class="navbox" aria-labelledby="Warcraft" style="padding:3px">
+<table class="nowraplinks hlist collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:Warcraft_universe" title="Template:Warcraft universe"><abbr title="View this template" style=";;background:none transparent;border:none;">v</abbr></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:Warcraft_universe" title="Template talk:Warcraft universe"><abbr title="Discuss this template" style=";;background:none transparent;border:none;">t</abbr></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:Warcraft_universe&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;">e</abbr></a></li>
+</ul>
+</div>
+<div id="Warcraft" style="font-size:114%"><a href="/wiki/Warcraft" title="Warcraft">Warcraft</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" colspan="2">
+<div><a href="/wiki/Blizzard_Entertainment" title="Blizzard Entertainment">Blizzard Entertainment</a></div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><i>Warcraft</i></th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><i><a href="/wiki/Warcraft:_Orcs_%26_Humans" title="Warcraft: Orcs &amp; Humans">Orcs &amp; Humans</a></i></li>
+<li><i><a href="/wiki/Warcraft_II:_Tides_of_Darkness" title="Warcraft II: Tides of Darkness">II: Tides of Darkness</a></i>
+<ul>
+<li><i><a href="/wiki/Warcraft_II:_Beyond_the_Dark_Portal" title="Warcraft II: Beyond the Dark Portal">Beyond the Dark Portal</a></i></li>
+</ul>
+</li>
+<li><i><a href="/wiki/Warcraft_Adventures:_Lord_of_the_Clans" title="Warcraft Adventures: Lord of the Clans">Adventures: Lord of the Clans</a></i></li>
+<li><i><a href="/wiki/Warcraft_III:_Reign_of_Chaos" title="Warcraft III: Reign of Chaos">III: Reign of Chaos</a></i>
+<ul>
+<li><i><a href="/wiki/Warcraft_III:_The_Frozen_Throne" title="Warcraft III: The Frozen Throne">The Frozen Throne</a></i></li>
+</ul>
+</li>
+<li><i><a href="/wiki/Hearthstone_(video_game)" title="Hearthstone (video game)">Hearthstone</a></i></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><i>World of Warcraft</i></th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><i><a href="/wiki/World_of_Warcraft" title="World of Warcraft">World of Warcraft</a></i>
+<ul>
+<li><a href="/wiki/Gameplay_of_World_of_Warcraft" title="Gameplay of World of Warcraft">gameplay</a></li>
+</ul>
+</li>
+<li><i><a href="/wiki/World_of_Warcraft:_The_Burning_Crusade" title="World of Warcraft: The Burning Crusade">The Burning Crusade</a></i></li>
+<li><i><a href="/wiki/World_of_Warcraft:_Wrath_of_the_Lich_King" title="World of Warcraft: Wrath of the Lich King">Wrath of the Lich King</a></i></li>
+<li><i><a href="/wiki/World_of_Warcraft:_Cataclysm" title="World of Warcraft: Cataclysm">Cataclysm</a></i></li>
+<li><i><a href="/wiki/World_of_Warcraft:_Mists_of_Pandaria" title="World of Warcraft: Mists of Pandaria">Mists of Pandaria</a></i></li>
+<li><i><a href="/wiki/World_of_Warcraft:_Warlords_of_Draenor" title="World of Warcraft: Warlords of Draenor">Warlords of Draenor</a></i></li>
+<li><i><a href="/wiki/World_of_Warcraft:_Legion" title="World of Warcraft: Legion">Legion</a></i></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Tabletop games</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><i><a href="/wiki/Warcraft:_The_Board_Game" title="Warcraft: The Board Game">The Board Game</a></i></li>
+<li><i><a href="/wiki/Warcraft:_The_Roleplaying_Game" title="Warcraft: The Roleplaying Game">The Roleplaying Game</a></i></li>
+<li><i><a href="/wiki/World_of_Warcraft:_The_Board_Game" title="World of Warcraft: The Board Game">World of Warcraft: The Board Game</a></i></li>
+<li><i><a href="/wiki/World_of_Warcraft_Trading_Card_Game" title="World of Warcraft Trading Card Game">World of Warcraft Trading Card Game</a></i></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Books</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><i><a href="/wiki/Warcraft:_Of_Blood_and_Honor" title="Warcraft: Of Blood and Honor">Of Blood and Honor</a></i></li>
+<li><i><a href="/wiki/Warcraft:_Day_of_the_Dragon" title="Warcraft: Day of the Dragon">Day of the Dragon</a></i></li>
+<li><i><a href="/wiki/Warcraft:_Lord_of_the_Clans" title="Warcraft: Lord of the Clans">Lord of the Clans</a></i></li>
+<li><i><a href="/wiki/Warcraft:_The_Last_Guardian" title="Warcraft: The Last Guardian">The Last Guardian</a></i></li>
+<li><i><a href="/wiki/Warcraft:_War_of_the_Ancients_Trilogy" title="Warcraft: War of the Ancients Trilogy">War of the Ancients Trilogy</a></i></li>
+<li><i><a href="/wiki/World_of_Warcraft:_Rise_of_the_Horde" title="World of Warcraft: Rise of the Horde">Rise of the Horde</a></i></li>
+<li><i><a href="/wiki/World_of_Warcraft:_Tides_of_Darkness" title="World of Warcraft: Tides of Darkness">Tides of Darkness</a></i></li>
+<li><i><a href="/wiki/World_of_Warcraft:_Beyond_the_Dark_Portal" title="World of Warcraft: Beyond the Dark Portal">Beyond the Dark Portal</a></i></li>
+<li><i><a href="/wiki/World_of_Warcraft:_Arthas:_Rise_of_the_Lich_King" title="World of Warcraft: Arthas: Rise of the Lich King">Arthas: Rise of the Lich King</a></i></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Graphic novels</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><i><a href="/wiki/Warcraft:_The_Sunwell_Trilogy" title="Warcraft: The Sunwell Trilogy">The Sunwell Trilogy</a></i></li>
+<li><i><a href="/wiki/World_of_Warcraft_(comics)" title="World of Warcraft (comics)">World of Warcraft</a></i></li>
+<li><i><a href="/wiki/Warcraft:_Legends" title="Warcraft: Legends">Legends</a></i></li>
+<li><i><a href="/wiki/Warcraft:_Dragons_of_Outland" title="Warcraft: Dragons of Outland">Dragons of Outland</a></i></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Other licensed media</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><i><a href="/wiki/Azeroth_Choppers" title="Azeroth Choppers">Azeroth Choppers</a></i></li>
+<li><i><a href="/wiki/Heroes_of_the_Storm" title="Heroes of the Storm">Heroes of the Storm</a></i></li>
+<li><a href="/wiki/Warcraft_(film)" title="Warcraft (film)">Film</a>
+<ul>
+<li><a href="/wiki/Warcraft_(soundtrack)" title="Warcraft (soundtrack)">soundtrack</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Universe</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks navbox-subgroup" style="border-spacing:0">
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Characters_of_Warcraft" title="Characters of Warcraft">Characters</a></th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Sylvanas_Windrunner" title="Sylvanas Windrunner">Sylvanas Windrunner</a></li>
+<li><a href="/wiki/Jaina_Proudmoore" title="Jaina Proudmoore">Jaina Proudmoore</a></li>
+<li><a href="/wiki/Arthas_Menethil" title="Arthas Menethil">Arthas Menethil</a></li>
+<li><a href="/wiki/Illidan_Stormrage" title="Illidan Stormrage">Illidan Stormrage</a></li>
+<li><a href="/wiki/Tyrande_Whisperwind" title="Tyrande Whisperwind">Tyrande Whisperwind</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-even" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/List_of_Warcraft_creatures" title="List of Warcraft creatures">Creatures</a></li>
+<li><a href="/wiki/List_of_Warcraft_locations" title="List of Warcraft locations">Locations</a></li>
+<li><a href="/wiki/Races_and_factions_of_Warcraft" title="Races and factions of Warcraft">Races and factions</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Related articles</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks navbox-subgroup" style="border-spacing:0">
+<tr>
+<td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Corrupted_Blood_incident" title="Corrupted Blood incident">Corrupted Blood incident</a></li>
+<li><i><a href="/wiki/Defense_of_the_Ancients" title="Defense of the Ancients">Defense of the Ancients</a></i></li>
+<li><a href="/wiki/Glider_(bot)" title="Glider (bot)">Glider</a></li>
+<li><a href="/wiki/Leeroy_Jenkins" title="Leeroy Jenkins">Leeroy Jenkins</a></li>
+<li>"<a href="/wiki/Make_Love,_Not_Warcraft" title="Make Love, Not Warcraft">Make Love, Not Warcraft</a>"</li>
+<li><a href="/wiki/Professional_Warcraft_III_competition" title="Professional Warcraft III competition">Professional <i>Warcraft III</i> competition</a>
+<ul>
+<li><a href="/wiki/Professional_Korean_Warcraft_III_competition" title="Professional Korean Warcraft III competition">Korean</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Editing</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><strong class="selflink">JASS</strong></li>
+<li><a href="/wiki/.MDX" title=".MDX">MDX (file format)</a></li>
+<li><a href="/wiki/MPQ" title="MPQ">MPQ (file format)</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Websites</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Wowhead" title="Wowhead">Wowhead</a></li>
+<li><a href="/wiki/WoWWiki" title="WoWWiki">WoWWiki</a></li>
+<li><a href="/wiki/Thottbot" title="Thottbot">Thottbot</a></li>
+<li><a href="/wiki/Allakhazam" title="Allakhazam">Allakhazam</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" colspan="2" style="font-weight: bold;">
+<div>
+<ul>
+<li><img alt="Category" src="//upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/16px-Folder_Hexagonal_Icon.svg.png" title="Category" width="16" height="14" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/24px-Folder_Hexagonal_Icon.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/32px-Folder_Hexagonal_Icon.svg.png 2x" data-file-width="36" data-file-height="31" /> <a href="/wiki/Category:Warcraft" title="Category:Warcraft">Category:Warcraft</a></li>
+<li><img alt="Wikipedia book" src="//upload.wikimedia.org/wikipedia/commons/thumb/8/89/Symbol_book_class2.svg/16px-Symbol_book_class2.svg.png" title="Wikipedia book" width="16" height="16" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/89/Symbol_book_class2.svg/23px-Symbol_book_class2.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/8/89/Symbol_book_class2.svg/31px-Symbol_book_class2.svg.png 2x" data-file-width="180" data-file-height="185" /> <a href="/wiki/Book:Warcraft" title="Book:Warcraft">Book:Warcraft</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div role="navigation" class="navbox" aria-labelledby="StarCraft" style="padding:3px">
+<table class="nowraplinks hlist collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:StarCraft_series" title="Template:StarCraft series"><abbr title="View this template" style=";;background:none transparent;border:none;">v</abbr></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:StarCraft_series" title="Template talk:StarCraft series"><abbr title="Discuss this template" style=";;background:none transparent;border:none;">t</abbr></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:StarCraft_series&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;">e</abbr></a></li>
+</ul>
+</div>
+<div id="StarCraft" style="font-size:114%"><i><a href="/wiki/StarCraft" title="StarCraft">StarCraft</a></i></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Video games</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><i><a href="/wiki/StarCraft_(video_game)" title="StarCraft (video game)">StarCraft</a></i>
+<ul>
+<li><i><a href="/wiki/StarCraft:_Insurrection" title="StarCraft: Insurrection">Insurrection</a></i></li>
+<li><i><a href="/wiki/StarCraft:_Brood_War" title="StarCraft: Brood War">Brood War</a></i></li>
+</ul>
+</li>
+<li><i><a href="/wiki/StarCraft:_Ghost" title="StarCraft: Ghost">StarCraft: Ghost</a></i></li>
+<li><i><a href="/wiki/StarCraft_II:_Wings_of_Liberty" title="StarCraft II: Wings of Liberty">StarCraft II: Wings of Liberty</a></i>
+<ul>
+<li><i><a href="/wiki/StarCraft_II:_Heart_of_the_Swarm" title="StarCraft II: Heart of the Swarm">Heart of the Swarm</a></i></li>
+<li><i><a href="/wiki/StarCraft_II:_Legacy_of_the_Void" title="StarCraft II: Legacy of the Void">Legacy of the Void</a></i></li>
+<li><i><a href="/wiki/StarCraft_II:_Nova_Covert_Ops" title="StarCraft II: Nova Covert Ops">Nova Covert Ops</a></i></li>
+</ul>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Universe</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Races_of_StarCraft" title="Races of StarCraft">Races</a></li>
+<li><a href="/wiki/Characters_of_StarCraft" title="Characters of StarCraft">Characters</a>
+<ul>
+<li><a href="/wiki/Jim_Raynor" title="Jim Raynor">Jim Raynor</a></li>
+<li><a href="/wiki/Sarah_Kerrigan" title="Sarah Kerrigan">Sarah Kerrigan</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Miscellaneous</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/List_of_StarCraft_media" title="List of StarCraft media">Media</a>
+<ul>
+<li><i><a href="/wiki/StarCraft:_The_Board_Game" title="StarCraft: The Board Game">The Board Game</a></i></li>
+</ul>
+</li>
+<li><i><a href="/wiki/Heroes_of_the_Storm" title="Heroes of the Storm">Heroes of the Storm</a></i></li>
+<li><a href="/wiki/Chris_Metzen" title="Chris Metzen">Chris Metzen</a></li>
+<li><a href="/wiki/MPQ" title="MPQ">MPQ file format</a></li>
+<li><a href="/wiki/Professional_StarCraft_competition" title="Professional StarCraft competition">Professional competition</a></li>
+<li><a href="/wiki/Blizzard_Entertainment" title="Blizzard Entertainment">Blizzard Entertainment</a></li>
+<li><a href="/wiki/Battle.net" title="Battle.net">Battle.net</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" colspan="2">
+<div>
+<ul>
+<li><b><img alt="Wikipedia book" src="//upload.wikimedia.org/wikipedia/commons/thumb/8/89/Symbol_book_class2.svg/16px-Symbol_book_class2.svg.png" title="Wikipedia book" width="16" height="16" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/89/Symbol_book_class2.svg/23px-Symbol_book_class2.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/8/89/Symbol_book_class2.svg/31px-Symbol_book_class2.svg.png 2x" data-file-width="180" data-file-height="185" /> <a href="/wiki/Book:StarCraft" title="Book:StarCraft">Book:StarCraft</a></b></li>
+<li><b><img alt="Category" src="//upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/16px-Folder_Hexagonal_Icon.svg.png" title="Category" width="16" height="14" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/24px-Folder_Hexagonal_Icon.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/32px-Folder_Hexagonal_Icon.svg.png 2x" data-file-width="36" data-file-height="31" /> <a href="/wiki/Category:StarCraft" title="Category:StarCraft">Category:StarCraft</a></b></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1272
+Cached time: 20161231042526
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.196 seconds
+Real time usage: 0.260 seconds
+Preprocessor visited node count: 785/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 56892/2097152 bytes
+Template argument size: 493/2097152 bytes
+Highest expansion depth: 11/40
+Expensive parser function count: 4/500
+Lua time usage: 0.099/10.000 seconds
+Lua memory usage: 3.66 MB/50 MB
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  208.521      1 - -total
+ 29.62%   61.770      1 - Template:Notability
+ 28.80%   60.063      2 - Template:Ambox
+ 24.90%   51.924      1 - Template:Reflist
+ 21.30%   44.420      4 - Template:Cite_web
+ 15.61%   32.558      4 - Template:Navbox
+ 12.72%   26.533      1 - Template:Find_sources_mainspace
+ 12.44%   25.932      1 - Template:Citation_needed
+ 12.41%   25.868      1 - Template:Warcraft_universe
+ 12.12%   25.264      1 - Template:About
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:3115483-0!*!0!!en!4!* and timestamp 20161231042526 and revision id 754888776
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=JASS&amp;oldid=754888776">https://en.wikipedia.org/w/index.php?title=JASS&amp;oldid=754888776</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Warcraft" title="Category:Warcraft">Warcraft</a></li><li><a href="/wiki/Category:StarCraft" title="Category:StarCraft">StarCraft</a></li><li><a href="/wiki/Category:Scripting_languages" title="Category:Scripting languages">Scripting languages</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Articles_with_topics_of_unclear_notability_from_September_2016" title="Category:Articles with topics of unclear notability from September 2016">Articles with topics of unclear notability from September 2016</a></li><li><a href="/wiki/Category:All_articles_with_topics_of_unclear_notability" title="Category:All articles with topics of unclear notability">All articles with topics of unclear notability</a></li><li><a href="/wiki/Category:All_articles_with_unsourced_statements" title="Category:All articles with unsourced statements">All articles with unsourced statements</a></li><li><a href="/wiki/Category:Articles_with_unsourced_statements_from_March_2011" title="Category:Articles with unsourced statements from March 2011">Articles with unsourced statements from March 2011</a></li><li><a href="/wiki/Category:Wikipedia_external_links_cleanup_from_July_2016" title="Category:Wikipedia external links cleanup from July 2016">Wikipedia external links cleanup from July 2016</a></li><li><a href="/wiki/Category:Wikipedia_spam_cleanup_from_July_2016" title="Category:Wikipedia spam cleanup from July 2016">Wikipedia spam cleanup from July 2016</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=JASS" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=JASS" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/JASS"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:JASS"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/JASS" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=JASS&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=JASS&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/JASS" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/JASS" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=JASS&amp;oldid=754888776" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=JASS&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q1649380" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=JASS&amp;id=754888776" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=JASS">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=JASS&amp;returnto=JASS&amp;oldid=754888776&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=JASS&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-id"><a href="https://id.wikipedia.org/wiki/JASS" title="JASS – Indonesian" lang="id" hreflang="id" class="interlanguage-link-target">Bahasa Indonesia</a></li><li class="interlanguage-link interwiki-it"><a href="https://it.wikipedia.org/wiki/JASS" title="JASS – Italian" lang="it" hreflang="it" class="interlanguage-link-target">Italiano</a></li><li class="interlanguage-link interwiki-ru"><a href="https://ru.wikipedia.org/wiki/Jass" title="Jass – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q1649380#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 15 December 2016, at 01:45.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=JASS&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":64,"wgHostname":"mw1220"});});</script>
+	</body>
+</html>

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Joy (programming language) - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Joy_(programming_language)","wgTitle":"Joy (programming language)","wgCurRevisionId":744872760,"wgRevisionId":744872760,"wgArticleId":696166,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles that may contain original research from May 2009","All articles that may contain original research","Concatenative programming languages","Stack-oriented programming languages","Functional languages","Academic programming languages"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Joy_(programming_language)","wgRelevantArticleId":696166,"wgRequestId":"WIzqGwpAEKcAABVyL7MAAAAR","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":true},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q1265107","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.cite.styles":"ready","ext.pygments":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.legacy.wikibits","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.pygments%2CwikimediaBadges%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.29.0-wmf.9"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Joy_(programming_language)"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Joy_(programming_language)&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Joy_(programming_language)&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Joy_(programming_language)"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Joy_programming_language rootpage-Joy_programming_language skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Joy (programming language)</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><script>function mfTempOpenSection(id){var block=document.getElementById("mf-section-"+id);block.className+=" open-block";block.previousSibling.className+=" open-block";}</script><table class="plainlinks metadata ambox ambox-content ambox-Original_research" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ambox_important.svg/40px-Ambox_important.svg.png" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ambox_important.svg/60px-Ambox_important.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ambox_important.svg/80px-Ambox_important.svg.png 2x" data-file-width="40" data-file-height="40" /></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">This article <b>possibly contains <a href="/wiki/Wikipedia:No_original_research" title="Wikipedia:No original research">original research</a></b>. <span class="hide-when-compact">Please <a class="external text" href="//en.wikipedia.org/w/index.php?title=Joy_(programming_language)&amp;action=edit">improve it</a> by <a href="/wiki/Wikipedia:Verifiability" title="Wikipedia:Verifiability">verifying</a> the claims made and adding <a href="/wiki/Wikipedia:Citing_sources#Inline_citations" title="Wikipedia:Citing sources">inline citations</a>. Statements consisting only of original research should be removed.</span> <small><i>(May 2009)</i></small> <small class="hide-when-compact"><i>(<a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove this template message</a>)</i></small></span></td>
+</tr>
+</table>
+<table class="infobox vevent" style="width:22em">
+<caption class="summary">Joy</caption>
+<tr>
+<th scope="row"><a href="/wiki/Programming_paradigm" title="Programming paradigm">Paradigm</a></th>
+<td><a href="/wiki/Multi-paradigm_programming_language" class="mw-redirect" title="Multi-paradigm programming language">multi-paradigm</a>: <a href="/wiki/Functional_programming" title="Functional programming">functional</a>, <a href="/wiki/Concatenative_programming_language" title="Concatenative programming language">concatenative</a>, <a href="/wiki/Stack-oriented_programming_language" title="Stack-oriented programming language">stack-oriented</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_design" title="Software design">Designed&#160;by</a></th>
+<td>Manfred von Thun</td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_developer" title="Software developer">Developer</a></th>
+<td class="organiser">Manfred von Thun, John Cowan</td>
+</tr>
+<tr>
+<th scope="row">First&#160;appeared</th>
+<td>2001</td>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Software_release_life_cycle" title="Software release life cycle">Stable release</a></th>
+<td>
+<div style="margin:0px;">March 17, 2003 / March 17, 2003</div>
+</td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Type_system" title="Type system">Typing discipline</a></th>
+<td><a href="/wiki/Strong_typing" class="mw-redirect" title="Strong typing">strong</a>, <a href="/wiki/Dynamic_typing" class="mw-redirect" title="Dynamic typing">dynamic</a></td>
+</tr>
+<tr>
+<th colspan="2" style="text-align:center;background-color: #eee;">Major <a href="/wiki/Programming_language_implementation" title="Programming language implementation">implementations</a></th>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center">Joy0, Joy1, "Current Joy", "John Cowan's Joy", "JoyJ (Joy in jvmm)"</td>
+</tr>
+<tr>
+<th colspan="2" style="text-align:center;background-color: #eee;">Influenced by</th>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/Scheme_(programming_language)" title="Scheme (programming language)">Scheme</a>, <a href="/wiki/FP_(programming_language)" title="FP (programming language)">FP</a></td>
+</tr>
+<tr>
+<th colspan="2" style="text-align:center;background-color: #eee;">Influenced</th>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/Factor_(programming_language)" title="Factor (programming language)">Factor</a>, <a href="/w/index.php?title=Cat_(programming_language)&amp;action=edit&amp;redlink=1" class="new" title="Cat (programming language) (page does not exist)">Cat</a>, <a href="/w/index.php?title=V_(programming_language)&amp;action=edit&amp;redlink=1" class="new" title="V (programming language) (page does not exist)">V</a>, <a href="/w/index.php?title=Trith_(programming_language)&amp;action=edit&amp;redlink=1" class="new" title="Trith (programming language) (page does not exist)">Trith</a></td>
+</tr>
+</table>
+<p>The <b>Joy programming language</b> in <a href="/wiki/Computer_science" title="Computer science">computer science</a> is a <a href="/wiki/Purely_functional_programming_language" class="mw-redirect" title="Purely functional programming language">purely functional programming language</a> that was produced by Manfred von Thun of <a href="/wiki/La_Trobe_University" title="La Trobe University">La Trobe University</a> in <a href="/wiki/Melbourne" title="Melbourne">Melbourne</a>, <a href="/wiki/Australia" title="Australia">Australia</a>. Joy is based on composition of functions rather than <a href="/wiki/Lambda_calculus" title="Lambda calculus">lambda calculus</a>. It has turned out to have many similarities to <a href="/wiki/Forth_(programming_language)" title="Forth (programming language)">Forth</a>, due not to design but to a sort of parallel evolution and convergence. It was also inspired by the <a href="/wiki/Function-level_programming" title="Function-level programming">function-level programming style</a> of <a href="/wiki/John_Backus" title="John Backus">Backus's</a> <a href="/wiki/FP_(programming_language)" title="FP (programming language)">FP</a>.<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">[1]</a></sup></p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#How_it_works"><span class="tocnumber">1</span> <span class="toctext">How it works</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Mathematical_purity"><span class="tocnumber">2</span> <span class="toctext">Mathematical purity</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#References"><span class="tocnumber">3</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#External_links"><span class="tocnumber">4</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="How_it_works">How it works</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Joy_(programming_language)&amp;action=edit&amp;section=1" title="Edit section: How it works">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Joy is unusual (except for <a href="/wiki/Function-level_programming" title="Function-level programming">function-level programming</a> languages and some esoteric ones, such as <a href="/wiki/Unlambda" title="Unlambda">unlambda</a>) in its lack of a <a href="/wiki/Lambda_calculus" title="Lambda calculus">lambda</a> operator, and therefore lack of <a href="/wiki/Parameter_(computer_science)" class="mw-redirect" title="Parameter (computer science)">formal parameters</a>. To illustrate this with a common example, here is how the square function might be defined in an <a href="/wiki/Imperative_programming_language" class="mw-redirect" title="Imperative programming language">imperative programming language</a> (<a href="/wiki/C_(programming_language)" title="C (programming language)">C</a>):</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="kt">int</span> <span class="nf">square</span><span class="p">(</span><span class="kt">int</span> <span class="n">x</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="k">return</span> <span class="n">x</span> <span class="o">*</span> <span class="n">x</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+<p>The variable x is a formal parameter which is replaced by the actual value to be squared when the function is called. In a <a href="/wiki/Functional_programming" title="Functional programming">functional</a> language (<a href="/wiki/Scheme_(programming_language)" title="Scheme (programming language)">Scheme</a>) the same function could be defined:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="p">(</span><span class="k">define </span><span class="nv">square</span>
+  <span class="p">(</span><span class="k">lambda </span><span class="p">(</span><span class="nf">x</span><span class="p">)</span> 
+    <span class="p">(</span><span class="nb">* </span><span class="nv">x</span> <span class="nv">x</span><span class="p">)))</span>
+</pre></div>
+<p>This is different in many ways, but it still uses the formal parameter x in the same way. In Joy the square function is defined:</p>
+<pre>
+DEFINE square == dup * .
+</pre>
+<p>In Joy, everything is a function that takes a <a href="/wiki/Stack_(data_structure)" class="mw-redirect" title="Stack (data structure)">stack</a> as an argument and returns a stack as a result. For instance, the numeral '5' does not represent an integer constant, but instead a short program that pushes the number 5 onto the stack.</p>
+<ul>
+<li>The <b>dup</b> operator simply duplicates the top element of the stack by pushing a copy of it.</li>
+<li>The <b>*</b> operator pops two numbers off the stack and pushes their product.</li>
+</ul>
+<p>So the square function makes a copy of the top element, and then multiplies the two top elements of the stack, leaving the square of the original top element at the top of the stack, with no need for a formal parameter. This makes Joy concise, as illustrated by this definition of <a href="/wiki/Quicksort" title="Quicksort">quicksort</a>:</p>
+<pre>
+
+ DEFINE qsort ==
+   [small]
+   []
+   [uncons [&gt;] split]
+   [enconcat]
+   binrec.
+
+</pre>
+<p>"binrec" is one of Joy's many <a href="/wiki/Recursion" title="Recursion">recursive</a> <a href="/wiki/Combinator" class="mw-redirect" title="Combinator">combinators</a>, implementing binary recursion. It expects four quoted programs on top of the stack which represent:</p>
+<ul>
+<li>the termination condition (if a list is "small" (1 or 0 elements) it is already sorted),</li>
+<li>what to do if the termination condition is met (in this case nothing),</li>
+<li>what to do by default (split the list into two halves by comparing each element with the pivot), and finally</li>
+<li>what to do at the end (insert the pivot between the two sorted halves).</li>
+</ul>
+<h2><span class="mw-headline" id="Mathematical_purity">Mathematical purity</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Joy_(programming_language)&amp;action=edit&amp;section=2" title="Edit section: Mathematical purity">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>In Joy, the <a href="/wiki/Eval" title="Eval">meaning function</a> is a <a href="/wiki/Homomorphism" title="Homomorphism">homomorphism</a> from the <a href="/wiki/Syntax" title="Syntax">syntactic</a> <a href="/wiki/Monoid" title="Monoid">monoid</a> onto the <a href="/wiki/Semantics" title="Semantics">semantic</a> <a href="/wiki/Monoid" title="Monoid">monoid</a>. That is, the syntactic relation of <a href="/wiki/Concatenation" title="Concatenation">concatenation</a> of <a href="/wiki/Symbol" title="Symbol">symbols</a> maps directly onto the semantic relation of <a href="/wiki/Function_composition" title="Function composition">composition</a> of <a href="/wiki/Function_(mathematics)" title="Function (mathematics)">functions</a>. It is a <a href="/wiki/Homomorphism" title="Homomorphism">homomorphism</a> rather than an <a href="/wiki/Isomorphism" title="Isomorphism">isomorphism</a>, because it is <a href="/wiki/Onto" class="mw-redirect" title="Onto">onto</a> but not <a href="/wiki/Bijection" title="Bijection">one-to-one</a>; that is, no symbol has more than one meaning, but some sequences of symbols have the same meaning (e.g. "dup +" and "2 *").</p>
+<p>Joy is a <a href="/wiki/Concatenative_programming_language" title="Concatenative programming language">concatenative programming language</a>: "The concatenation of two programs denotes the composition of the functions denoted by the two programs".<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">[2]</a></sup></p>
+<p>Its library routines mirror those of ISO <a href="/wiki/C_(programming_language)" title="C (programming language)">C</a>, though the current implementation is not easily extensible with functions written in C.</p>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Joy_(programming_language)&amp;action=edit&amp;section=3" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><cite class="citation web">Manfred von Thun (December 12, 2003). <a rel="nofollow" class="external text" href="http://www.nsl.com/papers/interview.htm">"A Conversation with Manfred von Thun"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">May 31,</span> 2013</span>. <q>In the early 1980's I came across the famous Backus paper "Can programming be liberated from the von Neumann style," and I was immediately intrigued by the higher level of programming in his FP.</q></cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJoy+%28programming+language%29&amp;rft.au=Manfred+von+Thun&amp;rft.btitle=A+Conversation+with+Manfred+von+Thun&amp;rft.date=2003-12-12&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.nsl.com%2Fpapers%2Finterview.htm&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://web.archive.org/web/20111007025556/http://www.latrobe.edu.au/phimvt/joy/j02maf.html">"Mathematical Foundations of Joy"</a>. Archived from <a rel="nofollow" class="external text" href="http://www.latrobe.edu.au/phimvt/joy/j02maf.html">the original</a> on October 7, 2011.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJoy+%28programming+language%29&amp;rft.btitle=Mathematical+Foundations+of+Joy&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.latrobe.edu.au%2Fphimvt%2Fjoy%2Fj02maf.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+</ol>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Joy_(programming_language)&amp;action=edit&amp;section=4" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.latrobe.edu.au/humanities/research/research-projects/past-projects/joy-programming-language">Official Joy Programming Language Website (La Trobe University)</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.kevinalbrecht.com/code/joy-mirror/index.html">Joy homepage mirror</a></li>
+<li><cite class="citation journal"><a href="/w/index.php?title=Paul_Freneger&amp;action=edit&amp;redlink=1" class="new" title="Paul Freneger (page does not exist)">Freneger, Paul</a> (August 2003). <a rel="nofollow" class="external text" href="http://portal.acm.org/citation.cfm?id=944579.944583">"The JOY of forth"</a>. <i><a href="/wiki/ACM_SIGPLAN_Notices" class="mw-redirect" title="ACM SIGPLAN Notices">ACM SIGPLAN Notices</a></i>. <b>38</b> (8).</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJoy+%28programming+language%29&amp;rft.atitle=The+JOY+of+forth&amp;rft.aufirst=Paul&amp;rft.aulast=Freneger&amp;rft.date=2003-08&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fportal.acm.org%2Fcitation.cfm%3Fid%3D944579.944583&amp;rft.issue=8&amp;rft.jtitle=ACM+SIGPLAN+Notices&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=38" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation journal"><a href="/w/index.php?title=Manfred_von_Tuhn&amp;action=edit&amp;redlink=1" class="new" title="Manfred von Tuhn (page does not exist)">von Thun, Manfred</a>; <a href="/w/index.php?title=Reuben_Thomas&amp;action=edit&amp;redlink=1" class="new" title="Reuben Thomas (page does not exist)">Thomas, Reuben</a> (October 9, 2001). <a rel="nofollow" class="external text" href="http://www.complang.tuwien.ac.at/anton/euroforth/ef01/thomas01a.pdf">"Joy: Forth's Functional Cousin"</a> <span style="font-size:85%;">(PDF)</span>. <i>Proceedings of the 17th EuroForth Conference</i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJoy+%28programming+language%29&amp;rft.atitle=Joy%3A+Forth%99s+Functional+Cousin&amp;rft.aufirst=Manfred&amp;rft.aulast=von+Thun&amp;rft.au=Thomas%2C+Reuben&amp;rft.date=2001-10-09&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fwww.complang.tuwien.ac.at%2Fanton%2Feuroforth%2Fef01%2Fthomas01a.pdf&amp;rft.jtitle=Proceedings+of+the+17th+EuroForth+Conference&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation web">Christopher Diggins (December 31, 2008). <a rel="nofollow" class="external text" href="http://www.drdobbs.com/architecture-and-design/228701299">"What is a Concatenative Language"</a>. Dr. Dobbs.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJoy+%28programming+language%29&amp;rft.au=Christopher+Diggins&amp;rft.btitle=What+is+a+Concatenative+Language&amp;rft.date=2008-12-31&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.drdobbs.com%2Farchitecture-and-design%2F228701299&amp;rft.pub=Dr.+Dobbs&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation journal">Apter, Stevan. <a rel="nofollow" class="external text" href="http://www.vector.org.uk/archive/v214/joy214.htm">"Functional Programming in Joy and K"</a>. <i>Vector</i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJoy+%28programming+language%29&amp;rft.atitle=Functional+Programming+in+Joy+and+K&amp;rft.aufirst=Stevan&amp;rft.aulast=Apter&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fwww.vector.org.uk%2Farchive%2Fv214%2Fjoy214.htm&amp;rft.jtitle=Vector&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><a rel="nofollow" class="external text" href="https://www.heise.de/download/product/mjoy">mjoy, an interpreter in Delphi for machine drawing</a> (Subset of Joy)</li>
+</ul>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1256
+Cached time: 20161230192854
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.108 seconds
+Real time usage: 0.154 seconds
+Preprocessor visited node count: 599/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 18721/2097152 bytes
+Template argument size: 1084/2097152 bytes
+Highest expansion depth: 17/40
+Expensive parser function count: 3/500
+Lua time usage: 0.057/10.000 seconds
+Lua memory usage: 2.77 MB/50 MB
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  133.156      1 - -total
+ 42.17%   56.146      2 - Template:Infobox
+ 36.75%   48.933      1 - Template:Infobox_programming_language
+ 27.16%   36.170      1 - Template:Original_research
+ 24.13%   32.124      3 - Template:Cite_web
+ 18.29%   24.360      1 - Template:Ambox
+ 10.34%   13.767      1 - Template:Infobox_software/simple
+  8.23%   10.964      3 - Template:Cite_journal
+  2.02%    2.692      1 - Template:Yesno-no
+  1.05%    1.401      1 - Template:Yesno
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:696166-0!*!0!!en!4!* and timestamp 20161230192854 and revision id 744872760
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Joy_(programming_language)&amp;oldid=744872760">https://en.wikipedia.org/w/index.php?title=Joy_(programming_language)&amp;oldid=744872760</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Concatenative_programming_languages" title="Category:Concatenative programming languages">Concatenative programming languages</a></li><li><a href="/wiki/Category:Stack-oriented_programming_languages" title="Category:Stack-oriented programming languages">Stack-oriented programming languages</a></li><li><a href="/wiki/Category:Functional_languages" title="Category:Functional languages">Functional languages</a></li><li><a href="/wiki/Category:Academic_programming_languages" title="Category:Academic programming languages">Academic programming languages</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Articles_that_may_contain_original_research_from_May_2009" title="Category:Articles that may contain original research from May 2009">Articles that may contain original research from May 2009</a></li><li><a href="/wiki/Category:All_articles_that_may_contain_original_research" title="Category:All articles that may contain original research">All articles that may contain original research</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Joy+%28programming+language%29" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Joy+%28programming+language%29" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/Joy_(programming_language)"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:Joy_(programming_language)"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/Joy_(programming_language)" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=Joy_(programming_language)&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Joy_(programming_language)&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Joy_(programming_language)" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Joy_(programming_language)" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Joy_(programming_language)&amp;oldid=744872760" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Joy_(programming_language)&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q1265107" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Joy_%28programming_language%29&amp;id=744872760" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Joy+%28programming+language%29">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Joy+%28programming+language%29&amp;returnto=Joy+%28programming+language%29&amp;oldid=744872760&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Joy_(programming_language)&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/Joy_(Programmiersprache)" title="Joy (Programmiersprache) – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-es"><a href="https://es.wikipedia.org/wiki/Joy_(lenguaje_de_programaci%C3%B3n)" title="Joy (lenguaje de programación) – Spanish" lang="es" hreflang="es" class="interlanguage-link-target">Español</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/Joy_(langage)" title="Joy (langage) – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-pt"><a href="https://pt.wikipedia.org/wiki/Joy_(linguagem_de_programa%C3%A7%C3%A3o)" title="Joy (linguagem de programação) – Portuguese" lang="pt" hreflang="pt" class="interlanguage-link-target">Português</a></li><li class="interlanguage-link interwiki-ru"><a href="https://ru.wikipedia.org/wiki/Joy_(%D1%8F%D0%B7%D1%8B%D0%BA_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F)" title="Joy (язык программирования) – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q1265107#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 17 October 2016, at 23:25.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Joy_(programming_language)&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":60,"wgHostname":"mw1212"});});</script>
+	</body>
+</html>

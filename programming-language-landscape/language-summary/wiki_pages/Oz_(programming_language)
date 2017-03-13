@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Oz (programming language) - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Oz_(programming_language)","wgTitle":"Oz (programming language)","wgCurRevisionId":749834991,"wgRevisionId":749834991,"wgArticleId":256916,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Use dmy dates from May 2012","All articles with unsourced statements","Articles with unsourced statements from June 2007","All articles with failed verification","Articles with failed verification from February 2014","Official website different in Wikidata and Wikipedia","Multi-paradigm programming languages","Functional logic programming languages","Logic programming languages","Dynamically typed programming languages","Prototype-based programming languages","Concurrent programming languages","Educational programming languages","Programming languages created in 1991"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Oz_(programming_language)","wgRelevantArticleId":256916,"wgRequestId":"WIpVowpAIDIAADtkvxkAAABX","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":true},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q1208217","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.cite.styles":"ready","ext.pygments":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.legacy.wikibits","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.centralauth.centralautologin","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.pygments%2CwikimediaBadges%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.29.0-wmf.8"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Oz_(programming_language)"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Oz_(programming_language)&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Oz_(programming_language)&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Oz_(programming_language)"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Oz_programming_language rootpage-Oz_programming_language skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Oz (programming language)</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><script>function mfTempOpenSection(id){var block=document.getElementById("mf-section-"+id);block.className+=" open-block";block.previousSibling.className+=" open-block";}</script><table class="infobox vevent" style="width:22em">
+<caption class="summary">Oz</caption>
+<tr>
+<th scope="row"><a href="/wiki/Programming_paradigm" title="Programming paradigm">Paradigm</a></th>
+<td><a href="/wiki/Multi-paradigm_programming_language" class="mw-redirect" title="Multi-paradigm programming language">multi-paradigm</a>: <a href="/wiki/Logic_programming" title="Logic programming">logic</a>, <a href="/wiki/Functional_programming" title="Functional programming">functional</a>, <a href="/wiki/Imperative_programming" title="Imperative programming">imperative</a>, <a href="/wiki/Object-oriented_programming" title="Object-oriented programming">object-oriented</a>, <a href="/wiki/Constraint_programming" title="Constraint programming">constraint</a>, <a href="/wiki/Distributed_programming" class="mw-redirect" title="Distributed programming">distributed</a>, <a href="/wiki/Concurrent_programming_language" class="mw-redirect" title="Concurrent programming language">concurrent</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_design" title="Software design">Designed&#160;by</a></th>
+<td>Gert Smolka, his students</td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_developer" title="Software developer">Developer</a></th>
+<td class="organiser">Mozart Consortium</td>
+</tr>
+<tr>
+<th scope="row">First&#160;appeared</th>
+<td>1991<span class="noprint">; 26&#160;years ago</span><span style="display:none">&#160;(<span class="bday dtstart published updated">1991</span>)</span></td>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Software_release_life_cycle" title="Software release life cycle">Stable release</a></th>
+<td>
+<div style="margin:0px;">Oz 1.4.0 (final), Mozart 2 / 3&#160;July 2008<span class="noprint">; 8 years ago</span><span style="display:none">&#160;(<span class="bday dtstart published updated">2008-07-03</span>)</span></div>
+</td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Type_system" title="Type system">Typing discipline</a></th>
+<td><a href="/wiki/Dynamic_typing" class="mw-redirect" title="Dynamic typing">dynamic</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_license" title="Software license">License</a></th>
+<td><a href="/wiki/MIT_License" title="MIT License">MIT X11</a><sup id="cite_ref-1" class="reference"><a href="#cite_note-1">[1]</a></sup></td>
+</tr>
+<tr>
+<th scope="row">Website</th>
+<td><span class="url"><a rel="nofollow" class="external text" href="http://mozart.github.io">mozart<wbr />.github<wbr />.io</a></span></td>
+</tr>
+<tr>
+<th colspan="2" style="text-align:center;background-color: #eee;">Major <a href="/wiki/Programming_language_implementation" title="Programming language implementation">implementations</a></th>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center">Mozart Programming System</td>
+</tr>
+<tr>
+<th colspan="2" style="text-align:center;background-color: #eee;"><a href="/wiki/Dialect_(computing)" title="Dialect (computing)">Dialects</a></th>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center">Oz, Mozart</td>
+</tr>
+<tr>
+<th colspan="2" style="text-align:center;background-color: #eee;">Influenced by</th>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/Erlang_(programming_language)" title="Erlang (programming language)">Erlang</a>, <a href="/wiki/Lisp_(programming_language)" title="Lisp (programming language)">Lisp</a>, <a href="/wiki/Prolog" title="Prolog">Prolog</a></td>
+</tr>
+<tr>
+<th colspan="2" style="text-align:center;background-color: #eee;">Influenced</th>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/Alice_(programming_language)" title="Alice (programming language)">Alice</a>, <a href="/wiki/Scala_(programming_language)" title="Scala (programming language)">Scala</a></td>
+</tr>
+</table>
+<p><b>Oz</b> is a <a href="/wiki/Multiparadigm_programming_language" class="mw-redirect" title="Multiparadigm programming language">multiparadigm programming language</a>, developed in the Programming Systems Lab at <a href="/wiki/Universit%C3%A9_catholique_de_Louvain" title="Université catholique de Louvain">Université catholique de Louvain</a>, for programming language education. It has a canonical textbook: <a href="/wiki/Concepts,_Techniques,_and_Models_of_Computer_Programming" title="Concepts, Techniques, and Models of Computer Programming">Concepts, Techniques, and Models of Computer Programming</a>.</p>
+<p>Oz was first designed by Gert Smolka and his students in 1991. In 1996, development of Oz continued in cooperation with the research group of Seif Haridi and Peter Van Roy at the <a href="/wiki/Swedish_Institute_of_Computer_Science" title="Swedish Institute of Computer Science">Swedish Institute of Computer Science</a>. Since 1999, Oz has been continually developed by an international group, the Mozart Consortium, which originally consisted of <a href="/wiki/Saarland_University" title="Saarland University">Saarland University</a>, the <a href="/wiki/Swedish_Institute_of_Computer_Science" title="Swedish Institute of Computer Science">Swedish Institute of Computer Science</a>, and the <a href="/wiki/Universit%C3%A9_catholique_de_Louvain" title="Université catholique de Louvain">Université catholique de Louvain</a>. In 2005, the responsibility for managing Mozart development was transferred to a core group, the Mozart Board, with the express purpose of opening Mozart development to a larger community.</p>
+<p>The Mozart Programming System is the primary implementation of Oz. It is released with an <a href="/wiki/Open_source" class="mw-redirect" title="Open source">open source</a> license by the Mozart Consortium. Mozart has been ported to different flavors of <a href="/wiki/Unix" title="Unix">Unix</a>, <a href="/wiki/FreeBSD" title="FreeBSD">FreeBSD</a>, <a href="/wiki/Linux" title="Linux">Linux</a>, <a href="/wiki/Microsoft_Windows" title="Microsoft Windows">Windows</a>, and <a href="/wiki/OS_X" class="mw-redirect" title="OS X">OS X</a>.</p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Language_features"><span class="tocnumber">1</span> <span class="toctext">Language features</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Language_overview"><span class="tocnumber">2</span> <span class="toctext">Language overview</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Data_structures"><span class="tocnumber">2.1</span> <span class="toctext">Data structures</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Functions"><span class="tocnumber">2.2</span> <span class="toctext">Functions</span></a>
+<ul>
+<li class="toclevel-3 tocsection-5"><a href="#Higher-order_programming"><span class="tocnumber">2.2.1</span> <span class="toctext">Higher-order programming</span></a></li>
+<li class="toclevel-3 tocsection-6"><a href="#Anonymous_functions"><span class="tocnumber">2.2.2</span> <span class="toctext">Anonymous functions</span></a></li>
+<li class="toclevel-3 tocsection-7"><a href="#Procedures"><span class="tocnumber">2.2.3</span> <span class="toctext">Procedures</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-8"><a href="#Dataflow_variables_and_declarative_concurrency"><span class="tocnumber">2.3</span> <span class="toctext">Dataflow variables and declarative concurrency</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Example:_Trial_division_sieve"><span class="tocnumber">2.4</span> <span class="toctext">Example: Trial division sieve</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Laziness"><span class="tocnumber">2.5</span> <span class="toctext">Laziness</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#Message_passing_concurrency"><span class="tocnumber">2.6</span> <span class="toctext">Message passing concurrency</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#State_and_objects"><span class="tocnumber">2.7</span> <span class="toctext">State and objects</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-13"><a href="#Execution_speed"><span class="tocnumber">3</span> <span class="toctext">Execution speed</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="#See_also"><span class="tocnumber">4</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-15"><a href="#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-16"><a href="#External_links"><span class="tocnumber">6</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Language_features">Language features</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Oz_(programming_language)&amp;action=edit&amp;section=1" title="Edit section: Language features">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Oz<sup id="cite_ref-Oz_programming_model_2-0" class="reference"><a href="#cite_note-Oz_programming_model-2">[2]</a></sup> contains most of the concepts of the major <a href="/wiki/Programming_paradigm" title="Programming paradigm">programming paradigms</a>, including logic, functional (both <a href="/wiki/Lazy_evaluation" title="Lazy evaluation">lazy evaluation</a> and <a href="/wiki/Eager_evaluation" title="Eager evaluation">eager evaluation</a>), imperative, object-oriented, constraint, distributed, and concurrent programming. Oz has both a simple formal semantics (see chapter 13 of the book mentioned below) and an efficient implementation.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (June 2007)">citation needed</span></a></i>]</sup> Oz is a <a href="/wiki/Concurrency_(computer_science)" title="Concurrency (computer science)">concurrency</a>-oriented language, as the term was introduced by Joe Armstrong, the main designer of the <a href="/wiki/Erlang_(programming_language)" title="Erlang (programming language)">Erlang language</a>. A concurrency-oriented language makes concurrency easy to use and efficient. Oz supports a canonical <a href="/wiki/Graphical_user_interface" title="Graphical user interface">graphical user interface</a> (GUI) language QTk.<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">[3]</a></sup></p>
+<p>In addition to multi-paradigm programming, the major strengths of Oz are in <a href="/wiki/Constraint_programming" title="Constraint programming">constraint programming</a> and <a href="/wiki/Distributed_programming" class="mw-redirect" title="Distributed programming">distributed programming</a>. Due to its factored design, Oz is able to successfully implement a network-transparent distributed programming model. This model makes it easy to program open, <a href="/wiki/Fault_tolerance" title="Fault tolerance">fault-tolerant</a> applications within the language. For constraint programming, Oz introduces the idea of <i>computation spaces</i>, which allow user-defined search and distribution strategies <a href="/wiki/Orthogonal#Computer_science" class="mw-redirect" title="Orthogonal">orthogonal</a> to the constraint domain.</p>
+<h2><span class="mw-headline" id="Language_overview">Language overview</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Oz_(programming_language)&amp;action=edit&amp;section=2" title="Edit section: Language overview">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="Data_structures">Data structures</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Oz_(programming_language)&amp;action=edit&amp;section=3" title="Edit section: Data structures">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Oz is based on a core language with very few datatypes that can be extended into more practical ones through <a href="/wiki/Syntactic_sugar" title="Syntactic sugar">syntactic sugar</a>.</p>
+<p>Basic data structures:</p>
+<ul>
+<li>Numbers: floating point or integer (real integer)</li>
+<li>Records: for grouping data&#160;: <code>circle(x:0 y:1 radius:3 color:blue style:dots)</code>. Here the terms x,y, radius etc. are called features and the data associated with the features (in this case 0,1,3 etc.) are the values.</li>
+<li>Tuples: Records with integer features in ascending order: <code>circle(1:0 2:1 3:3 4:blue 5:dots)</code> .</li>
+<li>Lists: a simple linear structure</li>
+</ul>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="nf">'|'</span><span class="p">(</span><span class="mi">2</span> <span class="n">'|'</span><span class="p">(</span><span class="mi">4</span> <span class="n">'|'</span><span class="p">(</span><span class="mi">6</span> <span class="n">'|'</span><span class="p">(</span><span class="mi">8</span> <span class="n">nil</span><span class="p">))))</span> <span class="c">% as a record.</span>
+<span class="mi">2</span><span class="p">|(</span><span class="mi">4</span><span class="p">|(</span><span class="mi">6</span><span class="p">|(</span><span class="mi">8</span><span class="p">|</span><span class="n">nil</span><span class="p">)))</span> <span class="c">% with some syntactic sugar</span>
+<span class="mi">2</span><span class="p">|</span><span class="mi">4</span><span class="p">|</span><span class="mi">6</span><span class="p">|</span><span class="mi">8</span><span class="p">|</span><span class="n">nil</span> <span class="c">% more syntactic sugar</span>
+<span class="p">[</span><span class="mi">2</span> <span class="mi">4</span> <span class="mi">6</span> <span class="mi">8</span><span class="p">]</span> <span class="c">% even more syntactic sugar</span>
+</pre></div>
+<p>Those data structures are values (constant), <a href="/wiki/First-class_object" class="mw-redirect" title="First-class object">first class</a> and <a href="/wiki/Dynamic_typing" class="mw-redirect" title="Dynamic typing">dynamically type checked</a>. Variable names in Oz start with an uppercase letter to distinguish them from <a href="/wiki/Literal_(computer_programming)" title="Literal (computer programming)">literals</a><sup id="cite_ref-4" class="reference"><a href="#cite_note-4">[4]</a></sup> which always begin with lowercase letter.</p>
+<h3><span class="mw-headline" id="Functions">Functions</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Oz_(programming_language)&amp;action=edit&amp;section=4" title="Edit section: Functions">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Functions<sup id="cite_ref-Advanced_Functional_Programming_in_Oz_5-0" class="reference"><a href="#cite_note-Advanced_Functional_Programming_in_Oz-5">[5]</a></sup> are first class values, allowing <a href="/wiki/Higher-order_programming" title="Higher-order programming">higher order functional</a> programming:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="k">fun</span> <span class="p">{</span><span class="nv">Fact</span> <span class="nv">N</span><span class="p">}</span>
+   <span class="k">if</span> <span class="nv">N</span> <span class="o">=&lt;</span> <span class="mi">0</span> <span class="n">then</span> <span class="mi">1</span> <span class="n">else</span> <span class="nv">N</span><span class="o">*</span><span class="p">{</span><span class="nv">Fact</span> <span class="nv">N</span><span class="o">-</span><span class="mi">1</span><span class="p">}</span> <span class="k">end</span>
+<span class="k">end</span>
+</pre></div>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="k">fun</span> <span class="p">{</span><span class="nv">Comb</span> <span class="nv">N</span> <span class="nv">K</span><span class="p">}</span>
+   <span class="p">{</span><span class="nv">Fact</span> <span class="nv">N</span><span class="p">}</span> <span class="ow">div</span> <span class="p">({</span><span class="nv">Fact</span> <span class="nv">K</span><span class="p">}</span> <span class="o">*</span> <span class="p">{</span><span class="nv">Fact</span> <span class="nv">N</span><span class="o">-</span><span class="nv">K</span><span class="p">})</span> <span class="c">% integers can't overflow in Oz (unless no memory is left)</span>
+<span class="k">end</span>
+
+<span class="k">fun</span> <span class="p">{</span><span class="nv">SumList</span> <span class="nv">List</span><span class="p">}</span>
+   <span class="k">case</span> <span class="nv">List</span> <span class="k">of</span> <span class="n">nil</span> <span class="n">then</span> <span class="mi">0</span>
+   <span class="p">[]</span> <span class="nv">H</span><span class="p">|</span><span class="nv">T</span> <span class="n">then</span> <span class="nv">H</span><span class="o">+</span><span class="p">{</span><span class="nv">SumList</span> <span class="nv">T</span><span class="p">}</span> <span class="c">% pattern matching on lists</span>
+   <span class="k">end</span>
+<span class="k">end</span>
+</pre></div>
+<p>Functions may be used with both free and bound variables. Free variable values is found using static <a href="/wiki/Scope_(computer_science)" title="Scope (computer science)">lexical scoping</a>.<sup id="cite_ref-Scoping_6-0" class="reference"><a href="#cite_note-Scoping-6">[6]</a></sup></p>
+<h4><span class="mw-headline" id="Higher-order_programming">Higher-order programming</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Oz_(programming_language)&amp;action=edit&amp;section=5" title="Edit section: Higher-order programming">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>Functions are like other Oz objects. A function can be passed as an attribute to other functions or can be returned in a function.</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="k">fun</span> <span class="p">{</span><span class="nv">Square</span> <span class="nv">N</span><span class="p">}</span>  <span class="c">% A general function</span>
+   <span class="nv">N</span><span class="o">*</span><span class="nv">N</span>
+<span class="k">end</span>
+
+<span class="k">fun</span> <span class="p">{</span><span class="nv">Map</span> <span class="nv">F</span> <span class="nv">Xs</span><span class="p">}</span>  <span class="c">% F is a function here - higher order programming</span>
+   <span class="k">case</span> <span class="nv">Xs</span>
+      <span class="k">of</span> <span class="n">nil</span> <span class="n">then</span> <span class="n">nil</span>
+      <span class="p">[]</span> <span class="nv">X</span><span class="p">|</span><span class="nv">Xr</span> <span class="n">then</span> <span class="p">{</span><span class="nv">F</span> <span class="nv">X</span><span class="p">}|{</span><span class="nv">Map</span> <span class="nv">F</span> <span class="nv">Xr</span><span class="p">}</span>
+   <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="c">%usage</span>
+<span class="p">{</span><span class="nv">Browse</span> <span class="p">{</span><span class="nv">Map</span> <span class="nv">Square</span> <span class="p">[</span><span class="mi">1</span> <span class="mi">2</span> <span class="mi">3</span><span class="p">]}}</span>  <span class="c">%browses [1 4 9]</span>
+</pre></div>
+<h4><span class="mw-headline" id="Anonymous_functions">Anonymous functions</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Oz_(programming_language)&amp;action=edit&amp;section=6" title="Edit section: Anonymous functions">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>Like many other functional languages, Oz supports use of anonymous functions (i.e. functions which do not have a name) with higher order programming. The symbol $ is used to denote these.</p>
+<p>In the following, the square function is defined anonymously and passed, causing <code>[1 4 9]</code> to be browsed.</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="p">{</span><span class="nv">Browse</span> <span class="p">{</span><span class="nv">Map</span> <span class="k">fun</span> <span class="p">{</span><span class="sc">$ </span><span class="nv">N</span><span class="p">}</span> <span class="nv">N</span><span class="o">*</span><span class="nv">N</span> <span class="k">end</span> <span class="p">[</span><span class="mi">1</span> <span class="mi">2</span> <span class="mi">3</span><span class="p">]}}</span>
+</pre></div>
+<p>Since, anonymous functions don't possess a name, it is not possible to define recursive anonymous functions.</p>
+<h4><span class="mw-headline" id="Procedures">Procedures</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Oz_(programming_language)&amp;action=edit&amp;section=7" title="Edit section: Procedures">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>Functions in Oz are supposed to return a value at the last statement encountered in the body of the function during its execution. In the example below, the function Ret returns 5 if X &gt; 0 and -5 otherwise.</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="n">declare</span>
+<span class="k">fun</span> <span class="p">{</span><span class="nv">Ret</span> <span class="nv">X</span><span class="p">}</span>
+   <span class="k">if</span> <span class="nv">X</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="n">then</span> <span class="mi">5</span> <span class="n">else</span> <span class="err">~</span><span class="mi">5</span> <span class="k">end</span>
+<span class="k">end</span>
+</pre></div>
+<p>But Oz also provides a facility in case a function must not return values. Such functions are called procedures.<sup id="cite_ref-7" class="reference"><a href="#cite_note-7">[7]</a></sup> Procedures are defined using the construct "proc" as follows</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="n">declare</span>
+<span class="n">proc</span> <span class="p">{</span><span class="nv">Ret</span> <span class="nv">X</span><span class="p">}</span>
+   <span class="k">if</span> <span class="nv">X</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="n">then</span> <span class="p">{</span><span class="nv">Browse</span> <span class="mi">5</span><span class="p">}</span> <span class="n">else</span> <span class="p">{</span><span class="nv">Browse</span> <span class="err">~</span><span class="mi">5</span><span class="p">}</span> <span class="k">end</span>
+<span class="k">end</span>
+</pre></div>
+<p>The above example doesn't return any value, it just prints 5 or -5 in the Oz browser depending on the sign of X.</p>
+<h3><span class="mw-headline" id="Dataflow_variables_and_declarative_concurrency">Dataflow variables and declarative concurrency</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Oz_(programming_language)&amp;action=edit&amp;section=8" title="Edit section: Dataflow variables and declarative concurrency">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>When the program encounters an unbound variable it waits for a value. For example, below, the thread will wait until both X and Y are bound to a value before showing the value of Z.</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="n">thread</span> 
+   <span class="nv">Z</span> <span class="o">=</span> <span class="nv">X</span><span class="o">+</span><span class="nv">Y</span>
+   <span class="p">{</span><span class="nv">Browse</span> <span class="nv">Z</span><span class="p">}</span>
+<span class="k">end</span>
+<span class="n">thread</span> <span class="nv">X</span> <span class="o">=</span> <span class="mi">40</span> <span class="k">end</span>
+<span class="n">thread</span> <span class="nv">Y</span> <span class="o">=</span> <span class="mi">2</span> <span class="k">end</span>
+</pre></div>
+<p>The value of a dataflow variable cannot be changed once it is bound:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="nv">X</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="nv">X</span> <span class="o">=</span> <span class="mi">2</span> <span class="c">% error</span>
+</pre></div>
+<p>Dataflow variables make it easy to create concurrent stream agents:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="k">fun</span> <span class="p">{</span><span class="nv">Ints</span> <span class="nv">N</span> <span class="nv">Max</span><span class="p">}</span>
+   <span class="k">if</span> <span class="nv">N</span> <span class="o">==</span> <span class="nv">Max</span> <span class="n">then</span> <span class="n">nil</span>
+   <span class="n">else</span> 
+      <span class="p">{</span><span class="nv">Delay</span> <span class="mi">1000</span><span class="p">}</span>
+      <span class="nv">N</span><span class="p">|{</span><span class="nv">Ints</span> <span class="nv">N</span><span class="o">+</span><span class="mi">1</span> <span class="nv">Max</span><span class="p">}</span>
+   <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="k">fun</span> <span class="p">{</span><span class="nv">Sum</span> <span class="nv">S</span> <span class="nv">Stream</span><span class="p">}</span>
+   <span class="k">case</span> <span class="nv">Stream</span> <span class="k">of</span> <span class="n">nil</span> <span class="n">then</span> <span class="nv">S</span>
+   <span class="p">[]</span> <span class="nv">H</span><span class="p">|</span><span class="nv">T</span> <span class="n">then</span> <span class="nv">S</span><span class="p">|{</span><span class="nv">Sum</span> <span class="nv">H</span><span class="o">+</span><span class="nv">S</span> <span class="nv">T</span><span class="p">}</span> <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="n">local</span> <span class="nv">X</span> <span class="nv">Y</span> <span class="n">in</span>
+   <span class="n">thread</span> <span class="nv">X</span> <span class="o">=</span> <span class="p">{</span><span class="nv">Ints</span> <span class="mi">0</span> <span class="mi">1000</span><span class="p">}</span> <span class="k">end</span>
+   <span class="n">thread</span> <span class="nv">Y</span> <span class="o">=</span> <span class="p">{</span><span class="nv">Sum</span> <span class="mi">0</span> <span class="nv">X</span><span class="p">}</span> <span class="k">end</span>
+   <span class="p">{</span><span class="nv">Browse</span> <span class="nv">Y</span><span class="p">}</span>
+<span class="k">end</span>
+</pre></div>
+<p>Because of the way dataflow variables work, it is possible to put threads anywhere in a program and guaranteed that it will have the same result. This makes concurrent programming very easy. Threads are very cheap: it is possible to have 100,000 threads running at once.<sup id="cite_ref-8" class="reference"><a href="#cite_note-8">[8]</a></sup></p>
+<h3><span class="mw-headline" id="Example:_Trial_division_sieve">Example: Trial division sieve</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Oz_(programming_language)&amp;action=edit&amp;section=9" title="Edit section: Example: Trial division sieve">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>This example computes a stream of prime numbers using the <a href="/wiki/Trial_division" title="Trial division">trial division</a> algorithm by recursively creating concurrent stream agents that filter out non-prime numbers:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="k">fun</span> <span class="p">{</span><span class="nv">Sieve</span> <span class="nv">Xs</span><span class="p">}</span>
+   <span class="k">case</span> <span class="nv">Xs</span> <span class="k">of</span> <span class="n">nil</span> <span class="n">then</span> <span class="n">nil</span>
+   <span class="p">[]</span> <span class="nv">X</span><span class="p">|</span><span class="nv">Xr</span> <span class="n">then</span> <span class="nv">Ys</span> <span class="n">in</span>
+      <span class="n">thread</span> <span class="nv">Ys</span> <span class="o">=</span> <span class="p">{</span><span class="nv">Filter</span> <span class="nv">Xr</span> <span class="k">fun</span> <span class="p">{</span><span class="sc">$ </span><span class="nv">Y</span><span class="p">}</span> <span class="nv">Y</span> <span class="n">mod</span> <span class="nv">X</span> <span class="err">\</span><span class="o">=</span> <span class="mi">0</span> <span class="k">end</span><span class="p">}</span> <span class="k">end</span>
+      <span class="nv">X</span><span class="p">|{</span><span class="nv">Sieve</span> <span class="nv">Ys</span><span class="p">}</span>
+   <span class="k">end</span>
+<span class="k">end</span>
+</pre></div>
+<h3><span class="mw-headline" id="Laziness">Laziness</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Oz_(programming_language)&amp;action=edit&amp;section=10" title="Edit section: Laziness">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Oz uses <a href="/wiki/Eager_evaluation" title="Eager evaluation">eager evaluation</a> by default, but <a href="/wiki/Lazy_evaluation" title="Lazy evaluation">lazy evaluation</a><sup id="cite_ref-Lazy_Programming_9-0" class="reference"><a href="#cite_note-Lazy_Programming-9">[9]</a></sup> is possible. Below, the fact is only computed when value of X is needed to compute the value of Y.</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="k">fun</span> <span class="n">lazy</span> <span class="p">{</span><span class="nv">Fact</span> <span class="nv">N</span><span class="p">}</span>
+   <span class="k">if</span> <span class="nv">N</span> <span class="o">=&lt;</span> <span class="mi">0</span> <span class="n">then</span> <span class="mi">1</span> <span class="n">else</span> <span class="nv">N</span><span class="o">*</span><span class="p">{</span><span class="nv">Fact</span> <span class="nv">N</span><span class="o">-</span><span class="mi">1</span><span class="p">}</span> <span class="k">end</span>
+<span class="k">end</span>
+<span class="n">local</span> <span class="nv">X</span> <span class="nv">Y</span> <span class="n">in</span>
+  <span class="nv">X</span> <span class="o">=</span> <span class="p">{</span><span class="nv">Fact</span> <span class="mi">100</span><span class="p">}</span> 
+  <span class="nv">Y</span> <span class="o">=</span> <span class="nv">X</span> <span class="o">+</span> <span class="mi">1</span>
+<span class="k">end</span>
+</pre></div>
+<p><a href="/wiki/Lazy_evaluation" title="Lazy evaluation">lazy evaluation</a> gives the possibility of storing truly infinite data structures in Oz. The power of lazy evaluation can be seen from the following code sample:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="n">declare</span>
+<span class="k">fun</span> <span class="n">lazy</span> <span class="p">{</span><span class="nv">Merge</span> <span class="nv">Xs</span> <span class="nv">Ys</span><span class="p">}</span>
+   <span class="k">case</span> <span class="nv">Xs</span><span class="err">#</span><span class="nv">Ys</span>
+   <span class="k">of</span> <span class="p">(</span><span class="nv">X</span><span class="p">|</span><span class="nv">Xr</span><span class="p">)</span><span class="err">#</span><span class="p">(</span><span class="nv">Y</span><span class="p">|</span><span class="nv">Yr</span><span class="p">)</span> <span class="n">then</span>
+      <span class="k">if</span> <span class="nv">X</span> <span class="o">&lt;</span> <span class="nv">Y</span> <span class="n">then</span> <span class="nv">X</span><span class="p">|{</span><span class="nv">Merge</span> <span class="nv">Xr</span> <span class="nv">Ys</span><span class="p">}</span>
+      <span class="n">elseif</span> <span class="nv">X</span><span class="o">&gt;</span><span class="nv">Y</span> <span class="n">then</span> <span class="nv">Y</span><span class="p">|{</span><span class="nv">Merge</span> <span class="nv">Xs</span> <span class="nv">Yr</span><span class="p">}</span>
+      <span class="n">else</span> <span class="nv">X</span><span class="p">|{</span><span class="nv">Merge</span> <span class="nv">Xr</span> <span class="nv">Yr</span><span class="p">}</span>
+      <span class="k">end</span>
+   <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="k">fun</span> <span class="n">lazy</span> <span class="p">{</span><span class="nv">Times</span> <span class="nv">N</span> <span class="nv">Xs</span><span class="p">}</span>
+   <span class="k">case</span> <span class="nv">Xs</span>
+   <span class="k">of</span> <span class="n">nil</span> <span class="n">then</span> <span class="n">nil</span>
+   <span class="p">[]</span> <span class="nv">X</span><span class="p">|</span><span class="nv">Xr</span> <span class="n">then</span> <span class="nv">N</span><span class="o">*</span><span class="nv">X</span><span class="p">|{</span><span class="nv">Times</span> <span class="nv">N</span> <span class="nv">Xr</span><span class="p">}</span>
+   <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="n">declare</span> <span class="nv">H</span>
+<span class="nv">H</span> <span class="o">=</span> <span class="mi">1</span> <span class="p">|</span> <span class="p">{</span><span class="nv">Merge</span> <span class="p">{</span><span class="nv">Times</span> <span class="mi">2</span> <span class="nv">H</span><span class="p">}</span> <span class="p">{</span><span class="nv">Merge</span> <span class="p">{</span><span class="nv">Times</span> <span class="mi">3</span> <span class="nv">H</span><span class="p">}</span> <span class="p">{</span><span class="nv">Times</span> <span class="mi">5</span> <span class="nv">H</span><span class="p">}}}</span>
+<span class="p">{</span><span class="nv">Browse</span> <span class="p">{</span><span class="nv">List</span><span class="p">.</span><span class="n">take</span> <span class="nv">H</span> <span class="mi">6</span><span class="p">}}</span>
+</pre></div>
+<p>The code above elegantly computes all the <a href="/wiki/Regular_Number" class="mw-redirect" title="Regular Number">Regular Numbers</a><sup id="cite_ref-Hamming_Numbers_10-0" class="reference"><a href="#cite_note-Hamming_Numbers-10">[10]</a></sup> in an infinite list. The actual numbers are computed only when they are needed.</p>
+<h3><span class="mw-headline" id="Message_passing_concurrency">Message passing concurrency</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Oz_(programming_language)&amp;action=edit&amp;section=11" title="Edit section: Message passing concurrency">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The declarative concurrent model can be extended with message passing via simple semantics:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="n">declare</span>
+<span class="n">local</span> <span class="nv">Stream</span> <span class="nv">Port</span> <span class="n">in</span>
+   <span class="nv">Port</span> <span class="o">=</span> <span class="p">{</span><span class="nv">NewPort</span> <span class="nv">Stream</span><span class="p">}</span>
+   <span class="p">{</span><span class="nv">Send</span> <span class="nv">Port</span> <span class="mi">1</span><span class="p">}</span> <span class="c">% Stream is now 1|_ ('_' indicates an unbound and unnamed variable)</span>
+   <span class="p">{</span><span class="nv">Send</span> <span class="nv">Port</span> <span class="mi">2</span><span class="p">}</span> <span class="c">% Stream is now 1|2|_ </span>
+   <span class="p">...</span>
+   <span class="p">{</span><span class="nv">Send</span> <span class="nv">Port</span> <span class="n">n</span><span class="p">}</span> <span class="c">% Stream is now 1|2| .. |n|_</span>
+<span class="k">end</span>
+</pre></div>
+<p>With a port and a thread, asynchronous agents can be defined:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="k">fun</span> <span class="p">{</span><span class="nv">NewAgent</span> <span class="nv">Init</span> <span class="nv">Fun</span><span class="p">}</span>
+   <span class="nv">Msg</span> <span class="nv">Out</span> <span class="n">in</span>
+   <span class="n">thread</span> <span class="p">{</span><span class="nv">FoldL</span> <span class="nv">Msg</span> <span class="nv">Fun</span> <span class="nv">Init</span> <span class="nv">Out</span><span class="p">}</span> <span class="k">end</span>
+   <span class="p">{</span><span class="nv">NewPort</span> <span class="nv">Msg</span><span class="p">}</span>
+<span class="k">end</span>
+</pre></div>
+<h3><span class="mw-headline" id="State_and_objects">State and objects</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Oz_(programming_language)&amp;action=edit&amp;section=12" title="Edit section: State and objects">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>It is again possible to extend the declarative model to support state and object-oriented programming with very simple semantics. To create a new mutable data structure called Cells:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="n">local</span> <span class="nv">A</span> <span class="nv">X</span> <span class="n">in</span>
+   <span class="nv">A</span> <span class="o">=</span> <span class="p">{</span><span class="nv">NewCell</span> <span class="mi">0</span><span class="p">}</span>
+   <span class="nv">A</span> <span class="p">:</span><span class="o">=</span> <span class="mi">1</span>  <span class="c">% changes the value of A to 1</span>
+   <span class="nv">X</span> <span class="o">=</span> <span class="p">@</span><span class="nv">A</span>  <span class="c">% @ is used to access the value of A</span>
+<span class="k">end</span>
+</pre></div>
+<p>With these simple semantic changes, the whole object-oriented paradigm can be supported. With a little syntactic sugar, OOP becomes well integrated in Oz.</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="n">class</span> <span class="nv">Counter</span>
+   <span class="n">attr</span> <span class="n">val</span>
+   <span class="n">meth</span> <span class="n">init</span><span class="p">(</span><span class="nv">Value</span><span class="p">)</span>
+      <span class="nn">val</span><span class="p">:</span><span class="o">=</span><span class="nv">Value</span>
+   <span class="k">end</span>
+   <span class="n">meth</span> <span class="n">browse</span>
+      <span class="p">{</span><span class="nv">Browse</span> <span class="p">@</span><span class="n">val</span><span class="p">}</span>
+   <span class="k">end</span>
+   <span class="n">meth</span> <span class="n">inc</span><span class="p">(</span><span class="nv">Value</span><span class="p">)</span>
+      <span class="n">val</span> <span class="p">:</span><span class="o">=</span><span class="p">@</span><span class="n">val</span><span class="o">+</span><span class="nv">Value</span>
+   <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="n">local</span> <span class="nv">C</span> <span class="n">in</span>
+   <span class="nv">C</span> <span class="o">=</span> <span class="p">{</span><span class="nv">New</span> <span class="nv">Counter</span> <span class="n">init</span><span class="p">(</span><span class="mi">0</span><span class="p">)}</span>
+   <span class="p">{</span><span class="nv">C</span> <span class="n">inc</span><span class="p">(</span><span class="mi">6</span><span class="p">)}</span>
+   <span class="p">{</span><span class="nv">C</span> <span class="n">browse</span><span class="p">}</span>
+<span class="k">end</span>
+</pre></div>
+<h2><span class="mw-headline" id="Execution_speed">Execution speed</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Oz_(programming_language)&amp;action=edit&amp;section=13" title="Edit section: Execution speed">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The execution speed of a program produced by the Mozart compiler (version 1.4.0 implementing Oz 3) is very slow. On a set of benchmarks it averages about 50 times slower than that of the <a href="/wiki/GNU_Compiler_Collection" title="GNU Compiler Collection">GNU Compiler Collection</a> (GCC) for the C language, solving the benchmarks-tasks.<sup id="cite_ref-11" class="reference"><a href="#cite_note-11">[11]</a></sup><sup class="noprint Inline-Template" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Verifiability" title="Wikipedia:Verifiability"><span title="The material near this tag failed verification of its source citation(s). (February 2014)">not in citation given</span></a></i>]</sup></p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Oz_(programming_language)&amp;action=edit&amp;section=14" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a href="/wiki/Alice_(programming_language)" title="Alice (programming language)">Alice (programming language)</a>, a concurrent functional constraint language from Saarland University</li>
+<li><a href="/wiki/Dataflow_programming" title="Dataflow programming">Dataflow programming</a></li>
+<li><a href="/wiki/Category:Functional_logic_programming_languages" title="Category:Functional logic programming languages">Functional logic programming languages</a>
+<ul>
+<li><a href="/wiki/Curry_(programming_language)" title="Curry (programming language)">Curry (programming language)</a></li>
+<li><a href="/wiki/Mercury_(programming_language)" title="Mercury (programming language)">Mercury (programming language)</a></li>
+<li><a href="/wiki/Visual_Prolog" title="Visual Prolog">Visual Prolog</a>, an object-oriented, functional, logic language</li>
+</ul>
+</li>
+</ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Oz_(programming_language)&amp;action=edit&amp;section=15" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li>Peter Van Roy and Seif Haridi (2004). <i><a href="/wiki/Concepts,_Techniques,_and_Models_of_Computer_Programming" title="Concepts, Techniques, and Models of Computer Programming">Concepts, Techniques, and Models of Computer Programming</a></i>. MIT Press. There is <a rel="nofollow" class="external text" href="http://www.info.ucl.ac.be/~pvr/book.html">online supporting material</a> for this book. The book, an introduction to the principles of programming languages, uses Oz as its preferred idiom for examples.</li>
+</ul>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://mozart.github.io/license-info/">"Mozart Oz License Info"</a>. 2014-01-16<span class="reference-accessdate">. Retrieved <span class="nowrap">2014-01-16</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AOz+%28programming+language%29&amp;rft.btitle=Mozart+Oz+License+Info&amp;rft.date=2014-01-16&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fmozart.github.io%2Flicense-info%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-Oz_programming_model-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-Oz_programming_model_2-0">^</a></b></span> <span class="reference-text"><cite class="citation journal">Gert Smolka (1995). <a rel="nofollow" class="external text" href="https://www.ps.uni-saarland.de/Publications/documents/Vol1000.pdf">"The Oz Programming Model"</a> <span style="font-size:85%;">(PDF)</span>. <i>Lecture Notes in Computer Science</i>. <b>1000</b>: 324–343.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AOz+%28programming+language%29&amp;rft.atitle=The+Oz+Programming+Model&amp;rft.au=Gert+Smolka&amp;rft.date=1995&amp;rft.genre=article&amp;rft_id=https%3A%2F%2Fwww.ps.uni-saarland.de%2FPublications%2Fdocuments%2FVol1000.pdf&amp;rft.jtitle=Lecture+Notes+in+Computer+Science&amp;rft.pages=324-343&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=1000" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.mozart-oz.org/home/doc/mozart-stdlib/wp/qtk/html/">QTk</a></span></li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="https://mozart.github.io/mozart-v1/doc-1.4.0/tutorial/node3.html#label18">https://mozart.github.io/mozart-v1/doc-1.4.0/tutorial/node3.html#label18</a></span></li>
+<li id="cite_note-Advanced_Functional_Programming_in_Oz-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-Advanced_Functional_Programming_in_Oz_5-0">^</a></b></span> <span class="reference-text"><cite class="citation book">Leif Grönqvist. "Higher Order Functions". <a rel="nofollow" class="external text" href="http://www2.gslt.hum.gu.se/~leifg/gslt/doc/ozfunpaper.ps"><i>Advanced Functional Programming in Oz</i></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AOz+%28programming+language%29&amp;rft.atitle=Higher+Order+Functions&amp;rft.au=Leif+Gr%C3%B6nqvist&amp;rft.btitle=Advanced+Functional+Programming+in+Oz&amp;rft.genre=bookitem&amp;rft_id=http%3A%2F%2Fwww2.gslt.hum.gu.se%2F~leifg%2Fgslt%2Fdoc%2Fozfunpaper.ps&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-Scoping-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-Scoping_6-0">^</a></b></span> <span class="reference-text"><cite class="citation book">Robert Gentleman; Ross Ihaka (Sep 2000). <a rel="nofollow" class="external text" href="https://www.stat.auckland.ac.nz/~ihaka/downloads/lexical.pdf"><i>Lexical Scope in Statistical Computing</i></a> <span style="font-size:85%;">(PDF)</span>. <i>Journal of Computational and Graphical Statistics</i>. <b>9</b>. pp.&#160;491–508.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AOz+%28programming+language%29&amp;rft.au=Robert+Gentleman&amp;rft.au=Ross+Ihaka&amp;rft.btitle=Lexical+Scope+in+Statistical+Computing&amp;rft.date=2000-09&amp;rft.genre=book&amp;rft_id=https%3A%2F%2Fwww.stat.auckland.ac.nz%2F~ihaka%2Fdownloads%2Flexical.pdf&amp;rft.pages=491-508&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="https://mozart.github.io/mozart-v1/doc-1.4.0/tutorial/node5.html#control.procedure">https://mozart.github.io/mozart-v1/doc-1.4.0/tutorial/node5.html#control.procedure</a></span></li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://www.mozart-oz.org/documentation/tutorial/node8.html#chapter.concurrency">http://www.mozart-oz.org/documentation/tutorial/node8.html#chapter.concurrency</a></span></li>
+<li id="cite_note-Lazy_Programming-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-Lazy_Programming_9-0">^</a></b></span> <span class="reference-text"><cite class="citation journal"><a href="/wiki/Paul_Hudak" title="Paul Hudak">Paul Hudak</a>. "Conception, evolution, and application of functional programming languages". <i>ACM Computing Surveys</i>. <b>21</b> (3): 359–411. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1145%2F72551.72554">10.1145/72551.72554</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AOz+%28programming+language%29&amp;rft.atitle=Conception%2C+evolution%2C+and+application+of+functional+programming+languages&amp;rft.au=Paul+Hudak&amp;rft.genre=article&amp;rft_id=info%3Adoi%2F10.1145%2F72551.72554&amp;rft.issue=3&amp;rft.jtitle=ACM+Computing+Surveys&amp;rft.pages=359-411&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=21" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-Hamming_Numbers-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-Hamming_Numbers_10-0">^</a></b></span> <span class="reference-text"><cite class="citation journal">Rao, AC &amp; Varada Raju, D (1991). "Application of the Hamming number technique to detect isomorphism among kinematic chains and inversions". <i>Mechanism and Machine theory</i>. <b>26</b> (1): 55–75. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1016%2F0094-114x%2891%2990022-v">10.1016/0094-114x(91)90022-v</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AOz+%28programming+language%29&amp;rft.atitle=Application+of+the+Hamming+number+technique+to+detect+isomorphism+among+kinematic+chains+and+inversions&amp;rft.au=Rao%2C+AC&amp;rft.au=Varada+Raju%2C+D&amp;rft.date=1991&amp;rft.genre=article&amp;rft_id=info%3Adoi%2F10.1016%2F0094-114x%2891%2990022-v&amp;rft.issue=1&amp;rft.jtitle=Mechanism+and+Machine+theory&amp;rft.pages=55-75&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=26" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-11"><span class="mw-cite-backlink"><b><a href="#cite_ref-11">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://shootout.alioth.debian.org/u32/which-programming-languages-are-fastest.php?calc=chart&amp;gcc=on&amp;oz=on">The Computer Language Benchmarks Game</a></span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Oz_(programming_language)&amp;action=edit&amp;section=16" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><span class="official-website"><span class="url"><a rel="nofollow" class="external text" href="http://mozart.github.io">Official website</a></span></span></li>
+<li><a rel="nofollow" class="external text" href="http://mozart.github.io/mozart-v1/doc-1.4.0/tutorial/index.html">Tutorial of Oz</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.info.ucl.ac.be/people/PVR/distribution.html">Programming Language Research at UCL</a>: One of the core developers of Mozart/Oz, this group does research using Mozart/Oz as the vehicle</li>
+<li><a rel="nofollow" class="external text" href="http://www.informatik.uni-trier.de/~ley/db/conf/moz/moz2004.html"><i>Multiparadigm Programming in Mozart/Oz: Proceedings of MOZ 2004</i></a>: Conference which gives a snapshot of the work being done with Mozart/Oz</li>
+<li><a rel="nofollow" class="external text" href="http://people.cis.ksu.edu/~xou/505f10/slides/oz.pdf">Programming in Oz</a></li>
+<li><a rel="nofollow" class="external text" href="http://strasheela.sourceforge.net/strasheela/doc/01-Basics.html">Oz Basics</a></li>
+</ul>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1209
+Cached time: 20170126124310
+Cache expiry: 86400
+Dynamic content: true
+CPU time usage: 0.216 seconds
+Real time usage: 1.003 seconds
+Preprocessor visited node count: 1494/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 24839/2097152 bytes
+Template argument size: 3197/2097152 bytes
+Highest expansion depth: 25/40
+Expensive parser function count: 5/500
+Lua time usage: 0.098/10.000 seconds
+Lua memory usage: 3.17 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  971.446      1 -total
+  9.44%   91.688      2 Template:Infobox
+  7.36%   71.461      1 Template:Infobox_programming_language
+  6.75%   65.528      1 Template:Reflist
+  4.70%   45.667      2 Template:Fix
+  3.29%   31.931      1 Template:Citation_needed
+  3.24%   31.473      1 Template:Cite_web
+  2.82%   27.386      1 Template:Infobox_software/simple
+  2.39%   23.178      2 Template:Delink
+  2.27%   22.019      2 Template:Start_date_and_age
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:256916-0!*!0!!en!*!* and timestamp 20170126124309 and revision id 749834991
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Oz_(programming_language)&amp;oldid=749834991">https://en.wikipedia.org/w/index.php?title=Oz_(programming_language)&amp;oldid=749834991</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Multi-paradigm_programming_languages" title="Category:Multi-paradigm programming languages">Multi-paradigm programming languages</a></li><li><a href="/wiki/Category:Functional_logic_programming_languages" title="Category:Functional logic programming languages">Functional logic programming languages</a></li><li><a href="/wiki/Category:Logic_programming_languages" title="Category:Logic programming languages">Logic programming languages</a></li><li><a href="/wiki/Category:Dynamically_typed_programming_languages" title="Category:Dynamically typed programming languages">Dynamically typed programming languages</a></li><li><a href="/wiki/Category:Prototype-based_programming_languages" title="Category:Prototype-based programming languages">Prototype-based programming languages</a></li><li><a href="/wiki/Category:Concurrent_programming_languages" title="Category:Concurrent programming languages">Concurrent programming languages</a></li><li><a href="/wiki/Category:Educational_programming_languages" title="Category:Educational programming languages">Educational programming languages</a></li><li><a href="/wiki/Category:Programming_languages_created_in_1991" title="Category:Programming languages created in 1991">Programming languages created in 1991</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Use_dmy_dates_from_May_2012" title="Category:Use dmy dates from May 2012">Use dmy dates from May 2012</a></li><li><a href="/wiki/Category:All_articles_with_unsourced_statements" title="Category:All articles with unsourced statements">All articles with unsourced statements</a></li><li><a href="/wiki/Category:Articles_with_unsourced_statements_from_June_2007" title="Category:Articles with unsourced statements from June 2007">Articles with unsourced statements from June 2007</a></li><li><a href="/wiki/Category:All_articles_with_failed_verification" title="Category:All articles with failed verification">All articles with failed verification</a></li><li><a href="/wiki/Category:Articles_with_failed_verification_from_February_2014" title="Category:Articles with failed verification from February 2014">Articles with failed verification from February 2014</a></li><li><a href="/wiki/Category:Official_website_different_in_Wikidata_and_Wikipedia" title="Category:Official website different in Wikidata and Wikipedia">Official website different in Wikidata and Wikipedia</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Oz+%28programming+language%29" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Oz+%28programming+language%29" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/Oz_(programming_language)"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:Oz_(programming_language)"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/Oz_(programming_language)" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=Oz_(programming_language)&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Oz_(programming_language)&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Oz_(programming_language)" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Oz_(programming_language)" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Oz_(programming_language)&amp;oldid=749834991" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Oz_(programming_language)&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q1208217" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Oz_%28programming_language%29&amp;id=749834991" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Oz+%28programming+language%29">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Oz+%28programming+language%29&amp;returnto=Oz+%28programming+language%29&amp;oldid=749834991&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Oz_(programming_language)&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/Oz_(Programmiersprache)" title="Oz (Programmiersprache) – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-es"><a href="https://es.wikipedia.org/wiki/Oz_(lenguaje_de_programaci%C3%B3n)" title="Oz (lenguaje de programación) – Spanish" lang="es" hreflang="es" class="interlanguage-link-target">Español</a></li><li class="interlanguage-link interwiki-fa"><a href="https://fa.wikipedia.org/wiki/Oz_(%D8%B2%D8%A8%D8%A7%D9%86_%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C)" title="Oz (زبان برنامه‌نویسی) – Persian" lang="fa" hreflang="fa" class="interlanguage-link-target">فارسی</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/Oz_(langage)" title="Oz (langage) – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-gl"><a href="https://gl.wikipedia.org/wiki/Linguaxe_de_programaci%C3%B3n_Oz" title="Linguaxe de programación Oz – Galician" lang="gl" hreflang="gl" class="interlanguage-link-target">Galego</a></li><li class="interlanguage-link interwiki-ko"><a href="https://ko.wikipedia.org/wiki/%EC%98%A4%EC%A6%88_(%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D_%EC%96%B8%EC%96%B4)" title="오즈 (프로그래밍 언어) – Korean" lang="ko" hreflang="ko" class="interlanguage-link-target">한국어</a></li><li class="interlanguage-link interwiki-nl"><a href="https://nl.wikipedia.org/wiki/Oz_(programmeertaal)" title="Oz (programmeertaal) – Dutch" lang="nl" hreflang="nl" class="interlanguage-link-target">Nederlands</a></li><li class="interlanguage-link interwiki-ja"><a href="https://ja.wikipedia.org/wiki/Oz_(%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E8%A8%80%E8%AA%9E)" title="Oz (プログラミング言語) – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target">日本語</a></li><li class="interlanguage-link interwiki-pl"><a href="https://pl.wikipedia.org/wiki/Oz_(j%C4%99zyk_programowania)" title="Oz (język programowania) – Polish" lang="pl" hreflang="pl" class="interlanguage-link-target">Polski</a></li><li class="interlanguage-link interwiki-pt"><a href="https://pt.wikipedia.org/wiki/Oz_(linguagem_de_programa%C3%A7%C3%A3o)" title="Oz (linguagem de programação) – Portuguese" lang="pt" hreflang="pt" class="interlanguage-link-target">Português</a></li><li class="interlanguage-link interwiki-ru"><a href="https://ru.wikipedia.org/wiki/Oz_(%D1%8F%D0%B7%D1%8B%D0%BA_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F)" title="Oz (язык программирования) – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li><li class="interlanguage-link interwiki-sv"><a href="https://sv.wikipedia.org/wiki/Oz_(programspr%C3%A5k)" title="Oz (programspråk) – Swedish" lang="sv" hreflang="sv" class="interlanguage-link-target">Svenska</a></li><li class="interlanguage-link interwiki-tg"><a href="https://tg.wikipedia.org/wiki/Oz" title="Oz – Tajik" lang="tg" hreflang="tg" class="interlanguage-link-target">Тоҷикӣ</a></li><li class="interlanguage-link interwiki-zh"><a href="https://zh.wikipedia.org/wiki/Oz_(%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80)" title="Oz (编程语言) – Chinese" lang="zh" hreflang="zh" class="interlanguage-link-target">中文</a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q1208217#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 16 November 2016, at 11:52.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Oz_(programming_language)&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.216","walltime":"1.003","ppvisitednodes":{"value":1494,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":24839,"limit":2097152},"templateargumentsize":{"value":3197,"limit":2097152},"expansiondepth":{"value":25,"limit":40},"expensivefunctioncount":{"value":5,"limit":500},"entityaccesscount":{"value":1,"limit":400},"timingprofile":["100.00%  971.446      1 -total","  9.44%   91.688      2 Template:Infobox","  7.36%   71.461      1 Template:Infobox_programming_language","  6.75%   65.528      1 Template:Reflist","  4.70%   45.667      2 Template:Fix","  3.29%   31.931      1 Template:Citation_needed","  3.24%   31.473      1 Template:Cite_web","  2.82%   27.386      1 Template:Infobox_software/simple","  2.39%   23.178      2 Template:Delink","  2.27%   22.019      2 Template:Start_date_and_age"]},"scribunto":{"limitreport-timeusage":{"value":"0.098","limit":"10.000"},"limitreport-memusage":{"value":3325835,"limit":52428800}},"cachereport":{"origin":"mw1209","timestamp":"20170126124310","ttl":86400,"transientcontent":true}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":60,"wgHostname":"mw1180"});});</script>
+	</body>
+</html>

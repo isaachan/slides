@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Whiley (programming language) - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Whiley_(programming_language)","wgTitle":"Whiley (programming language)","wgCurRevisionId":763273221,"wgRevisionId":763273221,"wgArticleId":48747326,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Pages with syntax highlighting errors","Pages using deprecated image syntax","Experimental programming languages","Statically typed programming languages"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Whiley_(programming_language)","wgRelevantArticleId":48747326,"wgRequestId":"WJLqDApAMCYAAE3N@zMAAAGU","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":true},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q23653623","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.cite.styles":"ready","ext.pygments":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.legacy.wikibits","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.pygments%2CwikimediaBadges%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.29.0-wmf.9"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Whiley_(programming_language)"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Whiley_(programming_language)&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Whiley_(programming_language)&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Whiley_(programming_language)"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Whiley_programming_language rootpage-Whiley_programming_language skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Whiley (programming language)</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><script>function mfTempOpenSection(id){var block=document.getElementById("mf-section-"+id);block.className+=" open-block";block.previousSibling.className+=" open-block";}</script><table class="infobox vevent" style="width:22em">
+<caption class="summary">Whiley</caption>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/File:Whiley_Logo.png" class="image"><img alt="Whiley Logo.png" src="//upload.wikimedia.org/wikipedia/commons/c/cd/Whiley_Logo.png" width="250" height="250" data-file-width="250" data-file-height="250" /></a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Programming_paradigm" title="Programming paradigm">Paradigm</a></th>
+<td><a href="/wiki/Imperative_programming" title="Imperative programming">Imperative</a>, <a href="/wiki/Functional_programming_language" class="mw-redirect" title="Functional programming language">Functional</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_design" title="Software design">Designed&#160;by</a></th>
+<td>David J. Pearce</td>
+</tr>
+<tr>
+<th scope="row">First&#160;appeared</th>
+<td>2009</td>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Software_release_life_cycle" title="Software release life cycle">Stable release</a></th>
+<td>
+<div style="margin:0px;">0.3.40 / May&#160;28, 2016<span class="noprint">; 8 months ago</span><span style="display:none">&#160;(<span class="bday dtstart published updated">2016-05-28</span>)</span></div>
+</td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Type_system" title="Type system">Typing discipline</a></th>
+<td><a href="/wiki/Type_system" title="Type system">Static, strong, safe, structural, flow-sensitive</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_license" title="Software license">License</a></th>
+<td><a href="/wiki/BSD" class="mw-redirect" title="BSD">BSD</a></td>
+</tr>
+<tr>
+<th scope="row">Website</th>
+<td><span class="url"><a rel="nofollow" class="external text" href="http://whiley.org">whiley<wbr />.org</a></span></td>
+</tr>
+<tr>
+<th colspan="2" style="text-align:center;background-color: #eee;">Influenced by</th>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/Java_(programming_language)" title="Java (programming language)">Java</a>, <a href="/wiki/C_(programming_language)" title="C (programming language)">C</a>, <a href="/wiki/Python_(programming_language)" title="Python (programming language)">Python</a>, <a href="/wiki/Rust_(programming_language)" title="Rust (programming language)">Rust</a></td>
+</tr>
+</table>
+<p><b>Whiley</b> is a general purpose <a href="/wiki/Multi-paradigm_programming_language" class="mw-redirect" title="Multi-paradigm programming language">multi-paradigm</a>, <a href="/wiki/Compiled_programming_language" class="mw-redirect" title="Compiled programming language">compiled language</a> developed by David Pearce.<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">[1]</a></sup> The language combines features from the <a href="/wiki/Functional_programming" title="Functional programming">Functional</a> and <a href="/wiki/Imperative_programming" title="Imperative programming">Imperative</a> paradigms, is <a href="/wiki/Type_system#Static_type-checking" title="Type system">statically typed</a> and supports <a href="/wiki/Formal_specification" title="Formal specification">formal specification</a> through function <a href="/wiki/Preconditions" class="mw-redirect" title="Preconditions">preconditions</a>, <a href="/wiki/Postconditions" class="mw-redirect" title="Postconditions">postconditions</a> and <a href="/wiki/Loop_invariant" title="Loop invariant">loop invariants</a>. The language is also notable for the use of <a href="/wiki/Flow-sensitive_typing" title="Flow-sensitive typing">flow-sensitive typing</a>, also known as "flow typing".</p>
+<p>The Whiley project began in 2009 in response to the "Verifying Compiler Grand Challenge" put forward by <a href="/wiki/Tony_Hoare" title="Tony Hoare">Tony Hoare</a> in 2003.<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">[2]</a></sup> The first public release of Whiley was made in June, 2010.<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">[3]</a></sup></p>
+<p>Although Whiley is primarily developed by David Pearce, it is an open source project that has attracted contributions from a small community. The system has been used for a number of student research projects and also in teaching undergraduate classes.<sup id="cite_ref-4" class="reference"><a href="#cite_note-4">[4]</a></sup> The project was also supported between 2012 and 2014 by the Royal Society of New Zealand's Marsden Fund.<sup id="cite_ref-5" class="reference"><a href="#cite_note-5">[5]</a></sup></p>
+<p>The Whiley compiler currently generates code for the <a href="/wiki/Java_virtual_machine" title="Java virtual machine">Java virtual machine</a> and can thus inter-operate with Java and other JVM based languages.</p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Design"><span class="tocnumber">2</span> <span class="toctext">Design</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Example"><span class="tocnumber">3</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#History"><span class="tocnumber">4</span> <span class="toctext">History</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Influences"><span class="tocnumber">5</span> <span class="toctext">Influences</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#References"><span class="tocnumber">6</span> <span class="toctext">References</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Overview">Overview</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Whiley_(programming_language)&amp;action=edit&amp;section=1" title="Edit section: Overview">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The goal of Whiley is to provide a realistic programming language where verification is used routinely and without thought. The idea of such a tool has a long history, but was strongly promoted in the early 2000s through <a href="/wiki/Tony_Hoare" title="Tony Hoare">Hoare's</a> Verifying Compiler Grand Challenge. The purpose of this challenge was to spur new efforts to develop a <i>verifying compiler</i>, roughly described as follows:<sup id="cite_ref-6" class="reference"><a href="#cite_note-6">[6]</a></sup></p>
+<blockquote class="templatequote">
+<p>A verifying compiler uses mathematical and logical reasoning to check the correctness of the programs that it compiles.</p>
+<div class="templatequotecite"><cite>— Tony Hoare</cite></div>
+</blockquote>
+<p>The primary purpose of such a tool is to improve <a href="/wiki/Software_quality" title="Software quality">software quality</a> by ensuring a program meets a <a href="/wiki/Formal_specification" title="Formal specification">formal specification</a>. In other words, to help identify and eliminate <a href="/wiki/Software_bugs" class="mw-redirect" title="Software bugs">software bug</a> in the programs being developed. Whiley follows many attempts to develop such tools, including notable efforts such as <a href="/wiki/SPARK_(programming_language)" title="SPARK (programming language)">SPARK/Ada</a>, <a href="/wiki/ESC/Java" title="ESC/Java">ESC/Java</a>, <a href="/wiki/Spec_Sharp" title="Spec Sharp">Spec#</a>, Dafny,<sup id="cite_ref-7" class="reference"><a href="#cite_note-7">[7]</a></sup> Why3<sup id="cite_ref-8" class="reference"><a href="#cite_note-8">[8]</a></sup> and <a href="/wiki/Frama-C" title="Frama-C">Frama-C</a>.</p>
+<p>Most previous attempts to develop a verifying compiler focused on extending existing programming languages with constructs for writing specifications. For example, <a href="/wiki/ESC/Java" title="ESC/Java">ESC/Java</a> and the <a href="/wiki/Java_Modeling_Language" title="Java Modeling Language">Java Modeling Language</a> add annotations for specifying preconditions and postconditions to <a href="/wiki/Java_(programming_language)" title="Java (programming language)">Java</a>. Likewise, <a href="/wiki/Spec_Sharp" title="Spec Sharp">Spec#</a> and <a href="/wiki/Frama-C" title="Frama-C">Frama-C</a> add similar constructs to the <a href="/wiki/C_Sharp_(programming_language)" title="C Sharp (programming language)">C#</a> and <a href="/wiki/C_(programming_language)" title="C (programming language)">C</a> programming languages. However, these languages are known to contain numerous features which pose difficult or insurmountable problems for verification.<sup id="cite_ref-9" class="reference"><a href="#cite_note-9">[9]</a></sup> In contrast, the Whiley language was designed from scratch in an effort to avoid common pitfalls and make verification more tractable.<sup id="cite_ref-10" class="reference"><a href="#cite_note-10">[10]</a></sup></p>
+<h2><span class="mw-headline" id="Design">Design</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Whiley_(programming_language)&amp;action=edit&amp;section=2" title="Edit section: Design">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The syntax of Whiley follows the general appearance of imperative or object-oriented languages. Indentation syntax is chosen over the use of braces to delineate statement blocks, given a strong resemblance to <a href="/wiki/Python_(programming_language)" title="Python (programming language)">Python</a>. However, the imperative look of Whiley is somewhat misleading as the language core is <a href="/wiki/Functional_programming" title="Functional programming">functional</a> and <a href="/wiki/Pure_function" title="Pure function">pure</a>.</p>
+<p>Whiley distinguishes a <code>function</code> (which is <a href="/wiki/Pure_function" title="Pure function">pure</a>) from a <code>method</code> (which may have <a href="/wiki/Side_effect_(computer_science)" title="Side effect (computer science)">side-effects</a>). This distinction is necessary as it allows functions to be used in specifications. A familiar set of primitive data types is available including <code>bool</code>, <code>int</code>, arrays (e.g. <code>int[]</code>) and records (e.g. <code>{int x, int y</code>). However, unlike most programming languages the integer data type, <code>int</code>, is unbounded and does not correspond to a fixed-width representation such as 32-bit <a href="/wiki/Two%27s_complement" title="Two's complement">two's complement</a>. Thus, an unconstrained integer in Whiley can take on any possible integer value, subject to the memory constraints of the host environment. This choice simplifies verification, as reasoning about modulo arithmetic is a known and hard problem. Compound objects (e.g. arrays or records) are not references to values on the heap as they are in languages such as <a href="/wiki/Java_(programming_language)" title="Java (programming language)">Java</a> or <a href="/wiki/C_Sharp_(programming_language)" title="C Sharp (programming language)">C#</a> but, instead, are <a href="/wiki/Immutable_object" title="Immutable object">immutable</a> values.</p>
+<p>Whiley takes an unusual approach to type checking referred to as "Flow Typing". In this scheme, variables can have different static types at different points in a function or method. Furthermore, on the true branch of a runtime type test, the variable being tested is retyped automatically (rather than requiring an explicit cast). Flow typing is similar to <i>occurrence typing</i> as found in <a href="/wiki/Racket_(programming_language)" title="Racket (programming language)">Racket</a>.<sup id="cite_ref-11" class="reference"><a href="#cite_note-11">[11]</a></sup> To aid flow typing, Whiley supports <a href="/wiki/Union_type" title="Union type">union</a>, <a href="/wiki/Type_system#Intersection_types" title="Type system">intersection</a> and negation types.<sup id="cite_ref-12" class="reference"><a href="#cite_note-12">[12]</a></sup> Union types are comparable to <a href="/wiki/Tagged_union" title="Tagged union">sum types</a> found in functional languages like <a href="/wiki/Haskell_(programming_language)" title="Haskell (programming language)">Haskell</a> but, in Whiley, they are not disjoint. Intersection and negation types are used in the context of flow typing to determine the type of a variable on the true and false branches of a runtime type test. For example, suppose a variable <code>x</code> of type <code>T</code> and a runtime type test <code>x is S</code>. On the true branch, the type of <code>x</code> becomes <code>T &amp; S</code> whilst, on the false branch, it becomes <code>T &amp;&#160;!S</code>. Whiley is also unusual in employing a <a href="/wiki/Structural_type_system" title="Structural type system">structural</a> rather than <a href="/wiki/Nominative_type_system" class="mw-redirect" title="Nominative type system">nominal</a> type system. <a href="/wiki/Modula-3" title="Modula-3">Modula-3</a>, <a href="/wiki/Go_(programming_language)" title="Go (programming language)">Go</a> and <a href="/wiki/Ceylon_(programming_language)" title="Ceylon (programming language)">Ceylon</a> are examples of other languages which support structural typing in some form.</p>
+<p>Whiley also supports <i>reference lifetimes</i> which are similar to those found in <a href="/wiki/Rust_(programming_language)" title="Rust (programming language)">Rust</a>. Lifetimes can be given when allocating new objects to indicate when they can be safely deallocated. References to such objects must then include lifetime identifier to prevent <a href="/wiki/Dangling_pointer" title="Dangling pointer">dangling references</a>. Every method has an implicit lifetime referred to by <code>this</code>. A variable of type <code>&amp;this:T</code> represents a reference to an object of type <code>T</code> which is deallocated with the enclosing method. Subtyping between lifetimes is determined by the <i>outlives</i> relation. Thus, <code>&amp;l1:T</code> is a subtype of <code>&amp;l2:T</code> if lifetime <code>l1</code> statically outlives lifetime <code>l2</code>. A lifetime whose scope encloses another is said to outlive it. Lifetimes in Whiley differ from Rust in that they do not currently include a concept of <i>ownership</i>.</p>
+<p>At the time of writing, Whiley has no built-in support for concurrency and no formal memory model to determine how reading/writing to shared mutable state should be interpreted.</p>
+<h2><span class="mw-headline" id="Example">Example</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Whiley_(programming_language)&amp;action=edit&amp;section=3" title="Edit section: Example">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The following example illustrates many of the interesting features in Whiley, including the use of postconditions, loop invariants, type invariants, union types and flow typing. The function is intended to return the first index of an integer <code>item</code> in an array of integer <code>items</code>. If no such index exists, then <code>null</code> is returned.</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+// Define the type of natural numbers
+type nat is (int x) where x &gt;= 0
+
+public function indexOf(int[] items, int item) -&gt; (int|null index)
+// If int returned, element at this position matches item
+ensures index is int ==&gt; items[index] == item
+// If int returned, element at this position is first match
+ensures index is int ==&gt; no { i in 0 .. index | items[i] == item }
+// If null returned, no element in items matches item
+ensures index is null ==&gt; no { i in 0 .. |items| | items[i] == item }:
+    //
+    nat i = 0
+    //
+    while i &lt; |items|
+    // No element seen so far matches item
+    where no { j in 0 .. i | items[j] == item }:
+        //
+        if items[i] == item:
+            return i
+        i = i + 1
+    //
+    return null
+</pre></div>
+<p>In the above, the function's declared return type is given the union type <code>int|null</code> which indicates that <i>either</i> an <code>int</code> value is returned or <code>null</code> is returned. The function's <a href="/wiki/Postcondition" title="Postcondition">postcondition</a> is made of three <code>ensures</code> clauses, each of which describe different properties that must hold of the returned <code>index</code>. Flow typing is employed in these clauses through the runtime type test operator, <code>is</code>. For example, in the first <code>ensures</code> clause, the variable <code>index</code> is retyped from <code>int|null</code> to just <code>int</code> on the right-hand side of the implication operator (i.e. <code>==&gt;</code>).</p>
+<p>The above example also illustrates the use of an inductive <a href="/wiki/Loop_invariant" title="Loop invariant">loop invariant</a>. The loop invariant must be shown to hold on entry to the loop, for any given iteration of the loop and when the loop exits. In this case, the loop invariant states what is known about the elements of the <code>items</code> examined so far — namely, that none of them matches the given <code>item</code>. The loop invariant does not affect the meaning of the program and, in some sense, might be considered as unnecessary. However, the loop invariant is required to help the automated verifier using in the Whiley Compiler to prove this function meets its specification.</p>
+<p>The above example also defines the type <code>nat</code> with an appropriate <a href="/wiki/Class_invariant" title="Class invariant">type invariant</a>. This type is used to declare variable <code>i</code> and indicate that it can never hold a negative value. In this case, the declaration prevents the need for an additional loop invariant of the form <code>where i &gt;= 0</code> which would otherwise be necessary.</p>
+<h2><span class="mw-headline" id="History">History</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Whiley_(programming_language)&amp;action=edit&amp;section=4" title="Edit section: History">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Whiley began in 2009 with the first public release, <code>v0.2.27</code> following in June 2010 and <code>v0.3.0</code> in September that year. The language has evolved slowly with numerous syntactical changes being made to-date. Versions prior <code>v0.3.33</code> supported first-class <code>string</code> and <code>char</code> data types, but these were removed in favour of representing strings as constrained <code>int[]</code> arrays. Likewise, versions prior to <code>v0.3.35</code> supported first-class set (e.g. <code>{int}</code>), dictionary (e.g. <code>{int=&gt;bool}</code>) and resizeable list <code>[int]</code>), but these were dropped in favour of simple arrays (e.g. <code>int[]</code>). Perhaps most controversial was the removal of the <code>real</code> datatype in version <code>v0.3.38</code>. Many of these changes were motivated by a desire to simply the language and make compiler development more manageable.</p>
+<p>Another important milestone in the evolution of Whiley came in version <code>v0.3.40</code> with the inclusion of reference lifetimes, developed by Sebastian Schweizer as part of his <a href="/wiki/Master%27s_degree" title="Master's degree">Master's Thesis</a> at the <a href="/wiki/University_of_kaiserslautern" class="mw-redirect" title="University of kaiserslautern">University of Kaiserslautern</a>.</p>
+<h2><span class="mw-headline" id="Influences">Influences</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Whiley_(programming_language)&amp;action=edit&amp;section=5" title="Edit section: Influences">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Whiley was one of the early pioneers of flow typing, a concept later picked up by other programming languages like <a href="/wiki/Ceylon_(programming_language)" title="Ceylon (programming language)">Ceylon</a>, <a href="/wiki/TypeScript" title="TypeScript">TypeScript</a> and the Facebook Flow.</p>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Whiley_(programming_language)&amp;action=edit&amp;section=6" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://whiley.org/">"Whiley Homepage"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AWhiley+%28programming+language%29&amp;rft.btitle=Whiley+Homepage&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwhiley.org%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://dx.doi.org/10.1145/602382.602403">"The Verifying Compiler: A Grand Challenge for Computing Research"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AWhiley+%28programming+language%29&amp;rft.btitle=The+Verifying+Compiler%3A+A+Grand+Challenge+for+Computing+Research&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fdx.doi.org%2F10.1145%2F602382.602403&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://whiley.org/2010/06/24/whiley-v0-2-7-released/">"Whiley v0.2.27 Released!"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AWhiley+%28programming+language%29&amp;rft.btitle=Whiley+v0.2.27+Released%21&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwhiley.org%2F2010%2F06%2F24%2Fwhiley-v0-2-7-released%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://whiley.org/people/">"whiley.org/people"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AWhiley+%28programming+language%29&amp;rft.btitle=whiley.org%2Fpeople&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwhiley.org%2Fpeople%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.royalsociety.org.nz/programmes/funds/marsden/">"Marsden Fund"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AWhiley+%28programming+language%29&amp;rft.btitle=Marsden+Fund&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.royalsociety.org.nz%2Fprogrammes%2Ffunds%2Fmarsden%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://dx.doi.org/10.1145/602382.602403">"The Verifying Compiler: A Grand Challenge for Computing Research"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AWhiley+%28programming+language%29&amp;rft.btitle=The+Verifying+Compiler%3A+A+Grand+Challenge+for+Computing+Research&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fdx.doi.org%2F10.1145%2F602382.602403&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://research.microsoft.com/en-us/projects/dafny/">"Dafny: a language and program verifier for functional correctness"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AWhiley+%28programming+language%29&amp;rft.btitle=Dafny%3A+a+language+and+program+verifier+for+functional+correctness&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fresearch.microsoft.com%2Fen-us%2Fprojects%2Fdafny%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://why3.lri.fr/">"Why3 --- Where Programs Meet Provers"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AWhiley+%28programming+language%29&amp;rft.btitle=Why3+---+Where+Programs+Meet+Provers&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwhy3.lri.fr%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-9">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://dx.doi.org/10.1145/1953122.1953145">"Specification and verification: the Spec# experience"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AWhiley+%28programming+language%29&amp;rft.btitle=Specification+and+verification%3A+the+Spec%23+experience&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fdx.doi.org%2F10.1145%2F1953122.1953145&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-10">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://dx.doi.org/10.1016/j.scico.2015.09.006">"Designing a Verifying Compiler: Lessons Learned from Developing Whiley"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AWhiley+%28programming+language%29&amp;rft.btitle=Designing+a+Verifying+Compiler%3A+Lessons+Learned+from+Developing+Whiley&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fdx.doi.org%2F10.1016%2Fj.scico.2015.09.006&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-11"><span class="mw-cite-backlink"><b><a href="#cite_ref-11">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://docs.racket-lang.org/ts-guide/occurrence-typing.html">"Occurrence Typing"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AWhiley+%28programming+language%29&amp;rft.btitle=Occurrence+Typing&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fdocs.racket-lang.org%2Fts-guide%2Foccurrence-typing.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-12"><span class="mw-cite-backlink"><b><a href="#cite_ref-12">^</a></b></span> <span class="reference-text"><cite class="citation web">Pearce, David (2013). <a rel="nofollow" class="external text" href="http://homepages.ecs.vuw.ac.nz/~djp/files/VMCAI13.pdf">"Sound and Complete Flow Typing with Unions, Intersections and Negations."</a> <span style="font-size:85%;">(PDF)</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AWhiley+%28programming+language%29&amp;rft.aufirst=David&amp;rft.aulast=Pearce&amp;rft.btitle=Sound+and+Complete+Flow+Typing+with+Unions%2C+Intersections+and+Negations.&amp;rft.date=2013&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fhomepages.ecs.vuw.ac.nz%2F~djp%2Ffiles%2FVMCAI13.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+</ol>
+</div>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1200
+Cached time: 20170202081225
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.152 seconds
+Real time usage: 0.189 seconds
+Preprocessor visited node count: 998/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 19643/2097152 bytes
+Template argument size: 1567/2097152 bytes
+Highest expansion depth: 25/40
+Expensive parser function count: 2/500
+Lua time usage: 0.071/10.000 seconds
+Lua memory usage: 3.74 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  162.431      1 -total
+ 57.98%   94.178      2 Template:Infobox
+ 44.38%   72.084      1 Template:Reflist
+ 43.00%   69.840      1 Template:Infobox_programming_language
+ 36.87%   59.885     12 Template:Cite_web
+ 20.18%   32.772      1 Template:Infobox_software/simple
+ 11.37%   18.462      1 Template:Start_date_and_age
+  7.95%   12.921      1 Template:Quote
+  6.47%   10.517      1 Template:Comma_separated_entries
+  5.48%    8.909      1 Template:Time_ago
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:48747326-0!*!0!!en!4!* and timestamp 20170202081248 and revision id 763273221
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Whiley_(programming_language)&amp;oldid=763273221">https://en.wikipedia.org/w/index.php?title=Whiley_(programming_language)&amp;oldid=763273221</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Experimental_programming_languages" title="Category:Experimental programming languages">Experimental programming languages</a></li><li><a href="/wiki/Category:Statically_typed_programming_languages" title="Category:Statically typed programming languages">Statically typed programming languages</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Pages_with_syntax_highlighting_errors" title="Category:Pages with syntax highlighting errors">Pages with syntax highlighting errors</a></li><li><a href="/wiki/Category:Pages_using_deprecated_image_syntax" title="Category:Pages using deprecated image syntax">Pages using deprecated image syntax</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Whiley+%28programming+language%29" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Whiley+%28programming+language%29" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/Whiley_(programming_language)"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk" class="new"><span><a href="/w/index.php?title=Talk:Whiley_(programming_language)&amp;action=edit&amp;redlink=1"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/Whiley_(programming_language)" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=Whiley_(programming_language)&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Whiley_(programming_language)&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Whiley_(programming_language)" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Whiley_(programming_language)" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Whiley_(programming_language)&amp;oldid=763273221" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Whiley_(programming_language)&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q23653623" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Whiley_%28programming_language%29&amp;id=763273221" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Whiley+%28programming+language%29">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Whiley+%28programming+language%29&amp;returnto=Whiley+%28programming+language%29&amp;oldid=763273221&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Whiley_(programming_language)&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-es"><a href="https://es.wikipedia.org/wiki/Whiley_(lenguaje_de_programaci%C3%B3n)" title="Whiley (lenguaje de programación) – Spanish" lang="es" hreflang="es" class="interlanguage-link-target">Español</a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q23653623#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 2 February 2017, at 08:12.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Whiley_(programming_language)&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.152","walltime":"0.189","ppvisitednodes":{"value":998,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":19643,"limit":2097152},"templateargumentsize":{"value":1567,"limit":2097152},"expansiondepth":{"value":25,"limit":40},"expensivefunctioncount":{"value":2,"limit":500},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  162.431      1 -total"," 57.98%   94.178      2 Template:Infobox"," 44.38%   72.084      1 Template:Reflist"," 43.00%   69.840      1 Template:Infobox_programming_language"," 36.87%   59.885     12 Template:Cite_web"," 20.18%   32.772      1 Template:Infobox_software/simple"," 11.37%   18.462      1 Template:Start_date_and_age","  7.95%   12.921      1 Template:Quote","  6.47%   10.517      1 Template:Comma_separated_entries","  5.48%    8.909      1 Template:Time_ago"]},"scribunto":{"limitreport-timeusage":{"value":"0.071","limit":"10.000"},"limitreport-memusage":{"value":3924571,"limit":52428800}},"cachereport":{"origin":"mw1200","timestamp":"20170202081225","ttl":2592000,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":56,"wgHostname":"mw1210"});});</script>
+	</body>
+</html>

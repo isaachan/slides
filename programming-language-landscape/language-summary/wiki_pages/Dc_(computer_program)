@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>dc (computer program) - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Dc_(computer_program)","wgTitle":"Dc (computer program)","wgCurRevisionId":753743945,"wgRevisionId":753743945,"wgArticleId":562904,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Cross-platform software","Unix software","Software calculators","Free mathematics software","Numerical programming languages","Stack-oriented programming languages"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Dc_(computer_program)","wgRelevantArticleId":562904,"wgRequestId":"WI8-RgpAAEMAAC9@isoAAABL","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":true},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q344670","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.cite.styles":"ready","ext.pygments":"ready","ext.math.styles":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["ext.cite.a11y","ext.math.scripts","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.legacy.wikibits","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.centralauth.centralautologin","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.math.styles%7Cext.pygments%2CwikimediaBadges%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.29.0-wmf.9"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Dc_(computer_program)"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Dc_(computer_program)&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Dc_(computer_program)&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Dc_(computer_program)"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Dc_computer_program rootpage-Dc_computer_program skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">dc (computer program)</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><script>function mfTempOpenSection(id){var block=document.getElementById("mf-section-"+id);block.className+=" open-block";block.previousSibling.className+=" open-block";}</script><p><b>dc</b> is a <a href="/wiki/Cross-platform" title="Cross-platform">cross-platform</a> <a href="/wiki/Reverse_Polish_notation" title="Reverse Polish notation">reverse-polish</a> <b>d</b>esk <b>c</b>alculator which supports <a href="/wiki/Arbitrary-precision_arithmetic" title="Arbitrary-precision arithmetic">arbitrary-precision arithmetic</a>.<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">[1]</a></sup> It is one of the oldest <a href="/wiki/Unix" title="Unix">Unix</a> utilities, predating even the invention of the <a href="/wiki/C_(programming_language)" title="C (programming language)">C programming language</a>. Like other utilities of that vintage, it has a powerful set of features but an extremely terse syntax.<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">[2]</a></sup><sup id="cite_ref-3" class="reference"><a href="#cite_note-3">[3]</a></sup> Traditionally, the <a href="/wiki/Bc_programming_language" class="mw-redirect" title="Bc programming language">bc</a> calculator program (with <a href="/wiki/Infix_notation" title="Infix notation">infix notation</a>) was implemented on top of dc.</p>
+<p>This article provides some examples in an attempt to give a general flavour of the language; for a complete list of commands and syntax, one should consult the <a href="/wiki/Man_page" title="Man page">man page</a> for one's specific implementation.</p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#History"><span class="tocnumber">1</span> <span class="toctext">History</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Basic_operations"><span class="tocnumber">2</span> <span class="toctext">Basic operations</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Input.2FOutput"><span class="tocnumber">3</span> <span class="toctext">Input/Output</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Language_Features"><span class="tocnumber">4</span> <span class="toctext">Language Features</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="#Registers"><span class="tocnumber">4.1</span> <span class="toctext">Registers</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Strings"><span class="tocnumber">4.2</span> <span class="toctext">Strings</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Macros"><span class="tocnumber">4.3</span> <span class="toctext">Macros</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Conditionals"><span class="tocnumber">4.4</span> <span class="toctext">Conditionals</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Loops"><span class="tocnumber">4.5</span> <span class="toctext">Loops</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-10"><a href="#Examples"><span class="tocnumber">5</span> <span class="toctext">Examples</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="#References"><span class="tocnumber">7</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="#External_links"><span class="tocnumber">8</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="History">History</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Dc_(computer_program)&amp;action=edit&amp;section=1" title="Edit section: History">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p><tt>dc</tt> is the oldest surviving <a href="/wiki/Unix" title="Unix">Unix</a> language. When its home <a href="/wiki/Bell_Labs" title="Bell Labs">Bell Labs</a> received a <a href="/wiki/PDP-11" title="PDP-11">PDP-11</a>, <tt>dc</tt>—written in <a href="/wiki/B_(computer_language)" class="mw-redirect" title="B (computer language)">B</a>—was the first language to run on the new computer, even before an assembler.<sup id="cite_ref-reader_4-0" class="reference"><a href="#cite_note-reader-4">[4]</a></sup></p>
+<h2><span class="mw-headline" id="Basic_operations">Basic operations</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Dc_(computer_program)&amp;action=edit&amp;section=2" title="Edit section: Basic operations">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>To multiply four and five in dc (note that most of the whitespace is optional):</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="gp">$</span> cat cal.txt
+<span class="go">4 5 *</span>
+<span class="go">p</span>
+<span class="gp">$</span> dc cal.txt
+<span class="go">20</span>
+<span class="gp">$</span>
+</pre></div>
+<p>You can also get the result with the commands:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="gp">$</span> <span class="nb">echo</span> <span class="s2">"4 5 * p"</span> <span class="p">|</span>dc
+</pre></div>
+<p>or</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="gp">$</span> dc -
+<span class="go">4 5*pq</span>
+<span class="go">20</span>
+<span class="gp">$</span> dc
+<span class="go">4 5 *</span>
+<span class="go">p</span>
+<span class="go">20</span>
+<span class="go">q</span>
+</pre></div>
+<p>This translates into "push four and five onto the stack, then, with the multiplication operator, pop two elements from the stack, multiply them and push the result back on the stack." Then the 'p' command is used to examine (print out to the screen) the top element on the stack. The 'q' command quits the invoked instance of dc. Note that numbers must be spaced from each other even as some operators need not be.</p>
+<p>The <a href="/wiki/Arithmetic_precision" class="mw-redirect" title="Arithmetic precision">arithmetic precision</a> is changed with the command 'k', which sets the number of fractional digits (the number of digits following the <a href="/wiki/Radix_point" title="Radix point">point</a>) to be used for arithmetic operations. Since the default precision is zero, this sequence of commands produces '0' as a result:</p>
+<pre>
+2 3 / p
+</pre>
+<p>By adjusting the precision with 'k', arbitrary number of decimal places can be produced. This command sequence outputs '.66666'.</p>
+<pre>
+5 k
+2 3 / p
+</pre>
+<p>To evaluate <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" >
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <msqrt>
+            <mfrac>
+              <mrow>
+                <mo>(</mo>
+                <mn>12</mn>
+                <mo>+</mo>
+                <msup>
+                  <mrow>
+                    <mo>(</mo>
+                    <mo>&#x2212;<!-- − --></mo>
+                    <mn>3</mn>
+                    <mo>)</mo>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>4</mn>
+                  </mrow>
+                </msup>
+                <mo>)</mo>
+              </mrow>
+              <mn>11</mn>
+            </mfrac>
+          </msqrt>
+        </mrow>
+        <mo>&#x2212;<!-- − --></mo>
+        <mn>22</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\sqrt {\left(12+\left(-3\right)^{4}\right) \over 11}}-22}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/87d86498eee6f8a2b1148e2978cb2aa3b16e8fdb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:22.373ex; height:8.176ex;" alt="{\displaystyle {\sqrt {\left(12+\left(-3\right)^{4}\right) \over 11}}-22}" /></span>: ('v' computes the square root of the top of the stack and '_' is used to input a negative number):</p>
+<pre>
+12 _3 4 ^ + 11 / v 22 -
+p
+</pre>
+<p>To swap the top two elements of the stack, use the 'r' command. To duplicate the top element, use the 'd' command.</p>
+<h2><span class="mw-headline" id="Input.2FOutput">Input/Output</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Dc_(computer_program)&amp;action=edit&amp;section=3" title="Edit section: Input/Output">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>To read a line from <a href="/wiki/Stdin" class="mw-redirect" title="Stdin">stdin</a>, use the '?' command. This will evaluate the line as if it were a <i>dc</i> command, and so it is necessary that it be syntactically correct and potentially be a security problem since the '!' <i>dc</i> command will allow arbitrary command execution.</p>
+<p>As mentioned above, 'p' will print the top of the stack with a newline after it. 'n' will pop the top of the stack and output it without a trailing newline. 'f' will dump the entire stack with one entry per line.</p>
+<p><i>dc</i> also supports arbitrary input and output <a href="/wiki/Radix" title="Radix">radices</a>. The 'i' command will pop the top of the stack and use it for the input base. Hex digits must be in upper case to avoid collisions with <i>dc</i> commands and are not limited to A-F if the input radix is larger than 16. The 'o' command does the same for the output base, but keep in mind that the input base will affect the parsing of every numeric value afterwards so it is usually advisable to set the output base first. To read the values, the 'K', 'I' and 'O' commands will push the current precision, input radix and output radix on to the top of the stack.</p>
+<p>As an example, to convert from hex to binary:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="gp">$</span> <span class="nb">echo</span> 16i2o DEADBEEFp <span class="p">|</span> dc
+<span class="go">11011110101011011011111011101111</span>
+</pre></div>
+<h2><span class="mw-headline" id="Language_Features">Language Features</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Dc_(computer_program)&amp;action=edit&amp;section=4" title="Edit section: Language Features">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="Registers">Registers</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Dc_(computer_program)&amp;action=edit&amp;section=5" title="Edit section: Registers">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>In addition to these basic arithmetic and stack operations, dc includes support for <a href="/wiki/Macro_(computer_science)" title="Macro (computer science)">macros</a>, conditionals and storing of results for later retrieval.</p>
+<p>The mechanism underlying macros and conditionals is the <b>register</b>, which in dc is a storage location with a single character name which can be stored to and retrieved from: 'sc' pops the top of the stack and stores it in register c, and 'lc' pushes the value of register c onto the stack. For example:</p>
+<pre>
+3 sc 4 lc * p
+</pre>
+<p>Registers can also be treated as secondary stacks, so values can be pushed and popped between them and the main stack using the 'S' and 'L' commands.</p>
+<h3><span class="mw-headline" id="Strings">Strings</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Dc_(computer_program)&amp;action=edit&amp;section=6" title="Edit section: Strings">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>String values are enclosed in '[' and ']' characters and may be pushed on the stack and stored in registers. The 'a' command will convert the low order byte of the numeric value into an <a href="/wiki/ASCII#ASCII_printable_characters" title="ASCII">ASCII</a> character, or if the top of the stack is a string it will replace it with the first character of the string. There are no ways to build up strings or perform string manipulation other than executing it with the 'x' command, or printing it with the 'P' command.</p>
+<p>The '#' character begins a comment to the end of the line.</p>
+<h3><span class="mw-headline" id="Macros">Macros</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Dc_(computer_program)&amp;action=edit&amp;section=7" title="Edit section: Macros">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Macros are then implemented by allowing registers and stack entries to be strings as well as numbers. A string can be printed, but it can also be executed (i.e. processed as a sequence of dc commands). So for instance we can store a macro to add one and then multiply by 2 into register m:</p>
+<pre>
+[1 + 2 *] sm
+</pre>
+<p>and then (using the 'x' command which executes the top of the stack) we can use it like this:</p>
+<pre>
+3 lm x p
+</pre>
+<h3><span class="mw-headline" id="Conditionals">Conditionals</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Dc_(computer_program)&amp;action=edit&amp;section=8" title="Edit section: Conditionals">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Finally, we can use this macro mechanism to provide conditionals. The command '=r' will pop two values from the stack, and execute the macro stored in register 'r' only if they are equal. So this will print the string 'equal' only if the top of the stack is equal to 5:</p>
+<pre>
+[[equal]p] sm 5 =m
+</pre>
+<p>Other conditionals are '&gt;', '!&gt;', '&lt;', '!&lt;', '!=', which will execute the specified macro if the top two values on the stack are greater, less than or equal to ("not greater"), less than, greater than or equal to ("not less than"), and not equals, respectively.</p>
+<h3><span class="mw-headline" id="Loops">Loops</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Dc_(computer_program)&amp;action=edit&amp;section=9" title="Edit section: Loops">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Looping is then possible by defining a macro which (conditionally) reinvokes itself. A simple factorial of the top of the stack might be implemented as:</p>
+<pre>
+# F(x): return x!
+# if x-1 &gt; 1
+#    return x * F(x-1)
+# otherwise
+#    return x
+[d1-d1&lt;F*]dsFxp
+</pre>
+<p>The '1Q' command will exit from a macro, allowing an early return. 'q' will quit from two levels of macros (and <i>dc</i> itself if there are less than two levels on the call stack). 'z' will push the current stack depth before the 'z' operation.</p>
+<h2><span class="mw-headline" id="Examples">Examples</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Dc_(computer_program)&amp;action=edit&amp;section=10" title="Edit section: Examples">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Print prime numbers&#160;:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+ <span class="nb">echo</span> <span class="s1">'2p3p[dl!d2+s!%0=@l!l^!&lt;#]s#[s/0ds^]s@[p]s&amp;[ddvs^3s!l#x0&lt;&amp;2+l.x]ds.x'</span><span class="p">|</span>dc
+</pre></div>
+<p>As an example of a relatively simple program in dc, this command (in 1 line):</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+ dc -e <span class="s1">'[[Enter a number (metres), or 0 to exit]psj]sh[q]sz[lhx?d0=z10k39.370079*.5+0k12~1/rn[ feet ]Pn[ inches]P10Pdx]dx'</span>
+</pre></div>
+<p>will convert distances from metres to feet and inches; the bulk of it is concerned with prompting for input, printing output in a suitable format and looping round to convert another number.</p>
+<p>As an example, here is an implementation of the <a href="/wiki/Euclidean_algorithm" title="Euclidean algorithm">Euclidean algorithm</a> to find the <a href="/wiki/Greatest_common_divisor" title="Greatest common divisor">GCD</a>:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+ dc -e <span class="s1">'??[dSarLa%d0&lt;a]dsax+p'</span>                   <span class="c1"># shortest</span>
+ dc -e <span class="s1">'[a=]P?[b=]P?[dSarLa%d0&lt;a]dsax+[GCD:]Pp'</span>  <span class="c1"># easier-to-read version</span>
+</pre></div>
+<p>Computing the <a href="/wiki/Factorial" title="Factorial">factorial</a> of an input value, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" >
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+        <mo>!</mo>
+        <mo>=</mo>
+        <munderover>
+          <mo>&#x220F;<!-- ∏ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+            <mo>=</mo>
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </munderover>
+        <mi>i</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n!=\prod _{i=1}^{n}i}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ece82c3b0fa93f49025e38f8377e90e76d1bedf6" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:9.351ex; height:7.009ex;" alt="n!=\prod _{i=1}^{n}i" /></span></p>
+<pre>
+dc -e '?[q]sQ[d1=Qd1-lFx*]dsFxp'
+</pre>
+<p>A more complex example of dc use embedded in a perl script performs a <a href="/wiki/Diffie-Hellman_key_exchange" class="mw-redirect" title="Diffie-Hellman key exchange">Diffie-Hellman key exchange</a>. This was popular as a <a href="/wiki/Signature_block" title="Signature block">signature block</a> among <a href="/wiki/Cypherpunk" title="Cypherpunk">cypherpunks</a> during the <a href="/wiki/ITAR" class="mw-redirect" title="ITAR">ITAR</a> debates, where the short script could be run with only perl and dc, ubiquitous programs on unix-like operating systems:<sup id="cite_ref-5" class="reference"><a href="#cite_note-5">[5]</a></sup></p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+ <span class="c1">#!/usr/bin/perl -- -export-a-crypto-system-sig Diffie-Hellman-2-lines</span>
+ <span class="p">(</span><span class="nv">$g</span><span class="p">,</span><span class="nv">$e</span><span class="p">,</span><span class="nv">$m</span><span class="p">)</span><span class="o">=</span><span class="nv">@ARGV</span><span class="p">,</span><span class="nv">$m</span><span class="o">||</span><span class="nb">die</span><span class="s">"$0 gen exp mod\n"</span><span class="p">;</span>
+ <span class="k">print</span><span class="sb">`echo "16dio1[d2%Sa2/d0&lt;X+d*La1=z\U$m%0]SX$e"[$g*]\EszlXx+p|dc`</span>
+</pre></div>
+<p>A commented version is slightly easier to understand and shows how to use loops, conditionals, and the 'q' command to return from a macro. With the GNU version of dc, the '|' command can be used to do arbitrary precision modular exponentiation without needing to write the X function.</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="ch">#!/usr/bin/perl</span>
+
+<span class="k">my</span> <span class="p">(</span><span class="nv">$g</span><span class="p">,</span><span class="nv">$e</span><span class="p">,</span><span class="nv">$m</span><span class="p">)</span> <span class="o">=</span> <span class="nb">map</span> <span class="p">{</span> <span class="s">"\U$_"</span> <span class="p">}</span> <span class="nv">@ARGV</span><span class="p">;</span>
+<span class="nb">die</span> <span class="s">"$0 gen exp mod\n"</span> <span class="k">unless</span> <span class="nv">$m</span><span class="p">;</span>
+
+<span class="k">print</span> <span class="s">"echo $g $e $m | dc -e "</span>
+<span class="c1"># Hex input and output</span>
+<span class="mi">16</span><span class="n">dio</span>
+<span class="c1"># Read m, e and g from stdin on one line</span>
+<span class="p">?</span><span class="n">SmSeSg</span>
+
+<span class="c1"># Function z: return g * top of stack</span>
+<span class="p">[</span><span class="n">lg</span><span class="o">*</span><span class="p">]</span><span class="n">sz</span>
+
+<span class="c1"># Function Q: remove the top of the stack and return 1</span>
+<span class="p">[</span><span class="n">sb1q</span><span class="p">]</span><span class="n">sQ</span>
+
+<span class="c1"># Function X(e): recursively compute g^e % m</span>
+<span class="c1"># It is the same as Sm^Lm%, but handles arbitrarily large exponents.</span>
+<span class="c1"># Stack at entry: e</span>
+<span class="c1"># Stack at exit: g^e % m</span>
+<span class="c1"># Since e may be very large, this uses the property that g^e % m == </span>
+<span class="c1">#	if( e == 0 )</span>
+<span class="c1">#		return 1</span>
+<span class="c1">#	x = (g^(e/2)) ^ 2</span>
+<span class="c1">#	if( e % 2 == 1 )</span>
+<span class="c1">#		x *= g</span>
+<span class="c1">#	return x %</span>
+<span class="p">[</span>
+	<span class="n">d</span> <span class="mi">0</span><span class="o">=</span><span class="n">Q</span>		<span class="c1"># return 1 if e==0 (otherwise, stack: e)</span>
+	<span class="n">d</span> <span class="mi">2</span><span class="nv">%</span> <span class="nv">Sa</span>		<span class="c1"># Store e%2 in a (stack: e)</span>
+	<span class="mi">2</span><span class="sr">/		# compute e/</span><span class="mi">2</span>
+	<span class="n">lXx</span>		<span class="c1"># call X(e/2)</span>
+	<span class="n">d</span><span class="o">*</span>		<span class="c1"># compute X(e/2)^2</span>
+	<span class="n">La1</span><span class="o">=</span><span class="n">z</span>		<span class="c1"># multiply by g if e%2==1</span>
+	<span class="n">lm</span> <span class="nv">%</span>		<span class="err">#</span> <span class="nv">compute</span> <span class="p">(</span><span class="n">g</span><span class="o">^</span><span class="n">e</span><span class="p">)</span> <span class="nv">%</span> <span class="nv">m</span>
+<span class="p">]</span> <span class="n">SX</span>
+
+<span class="ow">le</span>	<span class="c1"># Load e from the register</span>
+<span class="n">lXx</span>	<span class="c1"># compute g^e % m</span>
+<span class="n">p</span>	<span class="c1"># Print the result</span>
+<span class="err">'`</span><span class="p">;</span>
+</pre></div>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Dc_(computer_program)&amp;action=edit&amp;section=11" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a href="/wiki/Bc_programming_language" class="mw-redirect" title="Bc programming language">bc programming language</a></li>
+<li><a href="/wiki/Calculator_input_methods" title="Calculator input methods">Calculator input methods</a></li>
+<li><a href="/wiki/HP_calculators" title="HP calculators">HP calculators</a></li>
+<li><a href="/wiki/Stack_machine" title="Stack machine">Stack machine</a></li>
+</ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Dc_(computer_program)&amp;action=edit&amp;section=12" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><span class="plainlinksneverexpand"><code><a rel="nofollow" class="external text" href="https://linux.die.net/man/1/dc">dc(1)</a></code></span>:&#160;an arbitrary precision calculator&#160;–&#160;<a href="/wiki/Linux" title="Linux">Linux</a> User Commands <a href="/wiki/Manual_page_(Unix)" class="mw-redirect" title="Manual page (Unix)">Manual</a></span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://plan9.bell-labs.com/7thEdMan/vol2/dc">"The sources for the manual page for 7th Edition Unix dc"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ADc+%28computer+program%29&amp;rft.btitle=The+sources+for+the+manual+page+for+7th+Edition+Unix+dc&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fplan9.bell-labs.com%2F7thEdMan%2Fvol2%2Fdc&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><cite class="citation web">Ritchie, Dennis M. (Sep 1979). <a rel="nofollow" class="external text" href="https://web.archive.org/web/20150408054606/http://cm.bell-labs.com/cm/cs/who/dmr/hist.html">"The Evolution of the Unix Timesharing System"</a>. Archived from <a rel="nofollow" class="external text" href="http://cm.bell-labs.com/cm/cs/who/dmr/hist.html">the original</a> on 2015-04-08.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ADc+%28computer+program%29&amp;rft.au=Ritchie%2C+Dennis+M.&amp;rft.btitle=The+Evolution+of+the+Unix+Timesharing+System&amp;rft.date=1979-09&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fcm.bell-labs.com%2Fcm%2Fcs%2Fwho%2Fdmr%2Fhist.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-reader-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-reader_4-0">^</a></b></span> <span class="reference-text"><cite class="citation techreport"><a href="/wiki/Doug_McIlroy" class="mw-redirect" title="Doug McIlroy">McIlroy, M. D.</a> (1987). <a rel="nofollow" class="external text" href="http://www.cs.dartmouth.edu/~doug/reader.pdf"><i>A Research Unix reader: annotated excerpts from the Programmer's Manual, 1971–1986</i></a> <span style="font-size:85%;">(PDF)</span> (Technical report). CSTR. Bell Labs. 139.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ADc+%28computer+program%29&amp;rft.aufirst=M.+D.&amp;rft.aulast=McIlroy&amp;rft.btitle=A+Research+Unix+reader%3A+annotated+excerpts+from+the+Programmer%27s+Manual%2C+1971%931986&amp;rft.date=1987&amp;rft.genre=report&amp;rft_id=http%3A%2F%2Fwww.cs.dartmouth.edu%2F~doug%2Freader.pdf&amp;rft.pub=Bell+Labs&amp;rft.series=CSTR&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text"><cite class="citation web">Adam Back. <a rel="nofollow" class="external text" href="http://www.cypherspace.org/adam/rsa/perl-dh.html">"Diffie-Hellman in 2 lines of Perl"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">5 Jan</span> 2009</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ADc+%28computer+program%29&amp;rft.au=Adam+Back&amp;rft.btitle=Diffie-Hellman+in+2+lines+of+Perl&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.cypherspace.org%2Fadam%2Frsa%2Fperl-dh.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Dc_(computer_program)&amp;action=edit&amp;section=13" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li>Package <a rel="nofollow" class="external text" href="http://packages.debian.org/search?keywords=dc&amp;searchon=names&amp;exact=1&amp;suite=all&amp;section=all">dc</a> in <a href="/wiki/Debian_GNU/Linux" class="mw-redirect" title="Debian GNU/Linux">Debian GNU/Linux</a> repositories</li>
+<li><a rel="nofollow" class="external text" href="http://gnuwin32.sourceforge.net/packages/bc.htm">Native Windows port</a> of <i><a href="/wiki/Bc_programming_language" class="mw-redirect" title="Bc programming language">bc</a></i>, which includes <i>dc</i>.</li>
+</ul>
+<div role="navigation" class="navbox" aria-labelledby="Unix_command-line_interface_programs_and_shell_builtins" style="padding:3px">
+<table class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:Unix_commands" title="Template:Unix commands"><abbr title="View this template" style=";;background:none transparent;border:none;">v</abbr></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:Unix_commands" title="Template talk:Unix commands"><abbr title="Discuss this template" style=";;background:none transparent;border:none;">t</abbr></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:Unix_commands&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;">e</abbr></a></li>
+</ul>
+</div>
+<div id="Unix_command-line_interface_programs_and_shell_builtins" style="font-size:114%"><a href="/wiki/Unix" title="Unix">Unix</a> <a href="/wiki/Command-line_interface" title="Command-line interface">command-line interface</a> programs and <a href="/wiki/Shell_builtin" title="Shell builtin">shell builtins</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">File system</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Cat_(Unix)" title="Cat (Unix)">cat</a></li>
+<li><a href="/wiki/Chmod" title="Chmod">chmod</a></li>
+<li><a href="/wiki/Chown" title="Chown">chown</a></li>
+<li><a href="/wiki/Chgrp" title="Chgrp">chgrp</a></li>
+<li><a href="/wiki/Cksum" title="Cksum">cksum</a></li>
+<li><a href="/wiki/Cmp_(Unix)" title="Cmp (Unix)">cmp</a></li>
+<li><a href="/wiki/Cp_(Unix)" title="Cp (Unix)">cp</a></li>
+<li><a href="/wiki/Dd_(Unix)" class="mw-redirect" title="Dd (Unix)">dd</a></li>
+<li><a href="/wiki/Du_(Unix)" title="Du (Unix)">du</a></li>
+<li><a href="/wiki/Df_(Unix)" title="Df (Unix)">df</a></li>
+<li><a href="/wiki/File_(command)" title="File (command)">file</a></li>
+<li><a href="/wiki/Fsck" title="Fsck">fsck</a></li>
+<li><a href="/wiki/Fuser_(Unix)" title="Fuser (Unix)">fuser</a></li>
+<li><a href="/wiki/Ln_(Unix)" title="Ln (Unix)">ln</a></li>
+<li><a href="/wiki/Ls" title="Ls">ls</a></li>
+<li><a href="/wiki/Mkdir" title="Mkdir">mkdir</a></li>
+<li><a href="/wiki/Mount_(Unix)" title="Mount (Unix)">mount</a></li>
+<li><a href="/wiki/Mv" title="Mv">mv</a></li>
+<li><a href="/wiki/Pax_(Unix)" title="Pax (Unix)">pax</a></li>
+<li><a href="/wiki/Pwd" title="Pwd">pwd</a></li>
+<li><a href="/wiki/Rm_(Unix)" title="Rm (Unix)">rm</a></li>
+<li><a href="/wiki/Rmdir" title="Rmdir">rmdir</a></li>
+<li><a href="/wiki/Split_(Unix)" title="Split (Unix)">split</a></li>
+<li><a href="/wiki/Tee_(command)" title="Tee (command)">tee</a></li>
+<li><a href="/wiki/Touch_(Unix)" title="Touch (Unix)">touch</a></li>
+<li><a href="/wiki/Type_(Unix)" title="Type (Unix)">type</a></li>
+<li><a href="/wiki/Umask" title="Umask">umask</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Processes</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/At_(Unix)" title="At (Unix)">at</a></li>
+<li><a href="/wiki/Bg_(Unix)" class="mw-redirect" title="Bg (Unix)">bg</a></li>
+<li><a href="/wiki/Chroot" title="Chroot">chroot</a></li>
+<li><a href="/wiki/Cron" title="Cron">cron</a></li>
+<li><a href="/wiki/Fg_(Unix)" class="mw-redirect" title="Fg (Unix)">fg</a></li>
+<li><a href="/wiki/Kill_(command)" title="Kill (command)">kill</a></li>
+<li><a href="/wiki/Killall" title="Killall">killall</a></li>
+<li><a href="/wiki/Nice_(Unix)" title="Nice (Unix)">nice</a></li>
+<li><a href="/wiki/Pgrep" title="Pgrep">pgrep</a></li>
+<li><a href="/wiki/Pkill" title="Pkill">pkill</a></li>
+<li><a href="/wiki/Ps_(Unix)" title="Ps (Unix)">ps</a></li>
+<li><a href="/wiki/Pstree" title="Pstree">pstree</a></li>
+<li><a href="/wiki/Time_(Unix)" title="Time (Unix)">time</a></li>
+<li><a href="/wiki/Top_(software)" title="Top (software)">top</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">User environment</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Clear_(Unix)" title="Clear (Unix)">clear</a></li>
+<li><a href="/wiki/Env" title="Env">env</a></li>
+<li><a href="/wiki/Exit_(command)" title="Exit (command)">exit</a></li>
+<li><a href="/wiki/Finger_protocol" title="Finger protocol">finger</a></li>
+<li><a href="/wiki/History_(Unix)" title="History (Unix)">history</a></li>
+<li><a href="/wiki/Logname" title="Logname">logname</a></li>
+<li><a href="/wiki/Mesg" title="Mesg">mesg</a></li>
+<li><a href="/wiki/Passwd" title="Passwd">passwd</a></li>
+<li><a href="/wiki/Su_(Unix)" title="Su (Unix)">su</a></li>
+<li><a href="/wiki/Sudo" title="Sudo">sudo</a></li>
+<li><a href="/wiki/Uptime#Linux" title="Uptime">uptime</a></li>
+<li><a href="/wiki/Talk_(software)" title="Talk (software)">talk</a></li>
+<li><a href="/wiki/Tput" title="Tput">tput</a></li>
+<li><a href="/wiki/Uname" title="Uname">uname</a></li>
+<li><a href="/wiki/W_(Unix)" title="W (Unix)">w</a></li>
+<li><a href="/wiki/Wall_(Unix)" title="Wall (Unix)">wall</a></li>
+<li><a href="/wiki/Who_(Unix)" title="Who (Unix)">who</a></li>
+<li><a href="/wiki/Whoami" title="Whoami">whoami</a></li>
+<li><a href="/wiki/Write_(Unix)" title="Write (Unix)">write</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Text processing</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/AWK" title="AWK">awk</a></li>
+<li><a href="/wiki/Banner_(Unix)" title="Banner (Unix)">banner</a></li>
+<li><a href="/wiki/Basename" title="Basename">basename</a></li>
+<li><a href="/wiki/Comm" title="Comm">comm</a></li>
+<li><a href="/wiki/Csplit" title="Csplit">csplit</a></li>
+<li><a href="/wiki/Cut_(Unix)" title="Cut (Unix)">cut</a></li>
+<li><a href="/wiki/Diff_utility" title="Diff utility">diff</a></li>
+<li><a href="/wiki/Dirname" title="Dirname">dirname</a></li>
+<li><a href="/wiki/Ed_(text_editor)" title="Ed (text editor)">ed</a></li>
+<li><a href="/wiki/Ex_(text_editor)" title="Ex (text editor)">ex</a></li>
+<li><a href="/wiki/Fmt_(Unix)" title="Fmt (Unix)">fmt</a></li>
+<li><a href="/wiki/Fold_(Unix)" title="Fold (Unix)">fold</a></li>
+<li><a href="/wiki/Head_(Unix)" title="Head (Unix)">head</a></li>
+<li><a href="/wiki/Iconv" title="Iconv">iconv</a></li>
+<li><a href="/wiki/Join_(Unix)" title="Join (Unix)">join</a></li>
+<li><a href="/wiki/Less_(Unix)" title="Less (Unix)">less</a></li>
+<li><a href="/wiki/More_(command)" title="More (command)">more</a></li>
+<li><a href="/wiki/Nl_(Unix)" title="Nl (Unix)">nl</a></li>
+<li><a href="/wiki/Paste_(Unix)" title="Paste (Unix)">paste</a></li>
+<li><a href="/wiki/Printf_format_string" title="Printf format string">printf</a></li>
+<li><a href="/wiki/Sed" title="Sed">sed</a></li>
+<li><a href="/wiki/Sort_(Unix)" title="Sort (Unix)">sort</a></li>
+<li><a href="/wiki/Spell_(Unix)" title="Spell (Unix)">spell</a></li>
+<li><a href="/wiki/Strings_(Unix)" title="Strings (Unix)">strings</a></li>
+<li><a href="/wiki/Tail_(Unix)" title="Tail (Unix)">tail</a></li>
+<li><a href="/wiki/Tr_(Unix)" title="Tr (Unix)">tr</a></li>
+<li><a href="/wiki/Uniq" title="Uniq">uniq</a></li>
+<li><a href="/wiki/Vi" title="Vi">vi</a></li>
+<li><a href="/wiki/Wc_(Unix)" title="Wc (Unix)">wc</a></li>
+<li><a href="/wiki/Xargs" title="Xargs">xargs</a></li>
+<li><a href="/wiki/Yes_(Unix)" title="Yes (Unix)">yes</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Shell_builtin" title="Shell builtin">Shell builtins</a></th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Alias_(command)" title="Alias (command)">alias</a></li>
+<li><a href="/wiki/Cd_(command)" title="Cd (command)">cd</a></li>
+<li><a href="/wiki/Echo_(command)" title="Echo (command)">echo</a></li>
+<li><a href="/wiki/Test_(Unix)" title="Test (Unix)">test</a></li>
+<li><a href="/wiki/Unset_(Unix)" class="mw-redirect" title="Unset (Unix)">unset</a></li>
+<li><a href="/wiki/Wait_(command)" title="Wait (command)">wait</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Network_utility" title="Network utility">Networking</a></th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Dig_(command)" title="Dig (command)">dig</a></li>
+<li><a href="/wiki/Host_(Unix)" title="Host (Unix)">host</a></li>
+<li><a href="/wiki/Ifconfig" title="Ifconfig">ifconfig</a></li>
+<li><a href="/wiki/Inetd" title="Inetd">inetd</a></li>
+<li><a href="/wiki/Netcat" title="Netcat">netcat</a></li>
+<li><a href="/wiki/Netstat" title="Netstat">netstat</a></li>
+<li><a href="/wiki/Nslookup" title="Nslookup">nslookup</a></li>
+<li><a href="/wiki/Ping_(networking_utility)" title="Ping (networking utility)">ping</a></li>
+<li><a href="/wiki/Rdate" title="Rdate">rdate</a></li>
+<li><a href="/wiki/Rlogin" title="Rlogin">rlogin</a></li>
+<li><a href="/wiki/Route_(command)" title="Route (command)">route</a></li>
+<li><a href="/wiki/OpenSSH" title="OpenSSH">ssh</a></li>
+<li><a href="/wiki/Traceroute" title="Traceroute">traceroute</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Searching</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Find" title="Find">find</a></li>
+<li><a href="/wiki/Grep" title="Grep">grep</a></li>
+<li><a href="/wiki/Locate_(Unix)" title="Locate (Unix)">locate</a></li>
+<li><a href="/wiki/Whatis" title="Whatis">whatis</a></li>
+<li><a href="/wiki/Whereis" title="Whereis">whereis</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Documentation</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Apropos_(Unix)" title="Apropos (Unix)">apropos</a></li>
+<li><a href="/wiki/Help_(command)" title="Help (command)">help</a></li>
+<li><a href="/wiki/Man_page" title="Man page">man</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Miscellaneous</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Bc_(programming_language)" title="Bc (programming language)">bc</a></li>
+<li><strong class="selflink">dc</strong></li>
+<li><a href="/wiki/Cal_(Unix)" title="Cal (Unix)">cal</a></li>
+<li><a href="/wiki/Expr" title="Expr">expr</a></li>
+<li><a href="/wiki/Lp_(Unix)" class="mw-redirect" title="Lp (Unix)">lp</a></li>
+<li><a href="/wiki/Od_(Unix)" title="Od (Unix)">od</a></li>
+<li><a href="/wiki/Sleep_(Unix)" title="Sleep (Unix)">sleep</a></li>
+<li><a href="/wiki/True_and_false_(commands)" title="True and false (commands)">true and false</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" colspan="2">
+<div><i><a href="/wiki/List_of_Unix_commands" title="List of Unix commands">List of Unix commands</a></i></div>
+</td>
+</tr>
+</table>
+</div>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1267
+Cached time: 20170130113332
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.132 seconds
+Real time usage: 1.406 seconds
+Preprocessor visited node count: 507/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 24921/2097152 bytes
+Template argument size: 317/2097152 bytes
+Highest expansion depth: 12/40
+Expensive parser function count: 0/500
+Lua time usage: 0.042/10.000 seconds
+Lua memory usage: 2.06 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00% 1324.999      1 -total
+  6.14%   81.394      1 Template:Reflist
+  4.67%   61.887      3 Template:Cite_web
+  1.06%   14.016      1 Template:Unix_commands
+  0.91%   12.014      1 Template:Navbox
+  0.45%    5.917      1 Template:Man
+  0.44%    5.811      1 Template:Cite_techreport
+  0.32%    4.209      1 Template:Man/format
+  0.20%    2.584      1 Template:Lowercase
+  0.15%    1.966      3 Template:Man/die.net
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:562904-0!*!0!!en!*!*!math=5 and timestamp 20170130113330 and revision id 753743945
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Dc_(computer_program)&amp;oldid=753743945">https://en.wikipedia.org/w/index.php?title=Dc_(computer_program)&amp;oldid=753743945</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Cross-platform_software" title="Category:Cross-platform software">Cross-platform software</a></li><li><a href="/wiki/Category:Unix_software" title="Category:Unix software">Unix software</a></li><li><a href="/wiki/Category:Software_calculators" title="Category:Software calculators">Software calculators</a></li><li><a href="/wiki/Category:Free_mathematics_software" title="Category:Free mathematics software">Free mathematics software</a></li><li><a href="/wiki/Category:Numerical_programming_languages" title="Category:Numerical programming languages">Numerical programming languages</a></li><li><a href="/wiki/Category:Stack-oriented_programming_languages" title="Category:Stack-oriented programming languages">Stack-oriented programming languages</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Dc+%28computer+program%29" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Dc+%28computer+program%29" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/Dc_(computer_program)"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:Dc_(computer_program)"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/Dc_(computer_program)" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=Dc_(computer_program)&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Dc_(computer_program)&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Dc_(computer_program)" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Dc_(computer_program)" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Dc_(computer_program)&amp;oldid=753743945" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Dc_(computer_program)&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q344670" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Dc_%28computer_program%29&amp;id=753743945" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Dc+%28computer+program%29">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Dc+%28computer+program%29&amp;returnto=Dc+%28computer+program%29&amp;oldid=753743945&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Dc_(computer_program)&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-cs"><a href="https://cs.wikipedia.org/wiki/Dc_(programovac%C3%AD_jazyk)" title="Dc (programovací jazyk) – Czech" lang="cs" hreflang="cs" class="interlanguage-link-target">Čeština</a></li><li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/Dc_(Unix)" title="Dc (Unix) – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-es"><a href="https://es.wikipedia.org/wiki/DC_(Unix)" title="DC (Unix) – Spanish" lang="es" hreflang="es" class="interlanguage-link-target">Español</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/Dc_(logiciel)" title="Dc (logiciel) – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-pl"><a href="https://pl.wikipedia.org/wiki/Dc_(informatyka)" title="Dc (informatyka) – Polish" lang="pl" hreflang="pl" class="interlanguage-link-target">Polski</a></li><li class="interlanguage-link interwiki-ru"><a href="https://ru.wikipedia.org/wiki/Dc" title="Dc – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q344670#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 8 December 2016, at 22:52.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Dc_(computer_program)&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.132","walltime":"1.406","ppvisitednodes":{"value":507,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":24921,"limit":2097152},"templateargumentsize":{"value":317,"limit":2097152},"expansiondepth":{"value":12,"limit":40},"expensivefunctioncount":{"value":0,"limit":500},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00% 1324.999      1 -total","  6.14%   81.394      1 Template:Reflist","  4.67%   61.887      3 Template:Cite_web","  1.06%   14.016      1 Template:Unix_commands","  0.91%   12.014      1 Template:Navbox","  0.45%    5.917      1 Template:Man","  0.44%    5.811      1 Template:Cite_techreport","  0.32%    4.209      1 Template:Man/format","  0.20%    2.584      1 Template:Lowercase","  0.15%    1.966      3 Template:Man/die.net"]},"scribunto":{"limitreport-timeusage":{"value":"0.042","limit":"10.000"},"limitreport-memusage":{"value":2156361,"limit":52428800}},"cachereport":{"origin":"mw1267","timestamp":"20170130113332","ttl":2592000,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":59,"wgHostname":"mw1272"});});</script>
+	</body>
+</html>

@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Interlisp - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Interlisp","wgTitle":"Interlisp","wgCurRevisionId":746789164,"wgRevisionId":746789164,"wgArticleId":353464,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Lisp (programming language)","Dynamic programming languages","Functional languages","Lisp programming language family","Lisp-based operating systems"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Interlisp","wgRelevantArticleId":353464,"wgRequestId":"WIs15wpAADsAAV-X0osAAABC","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":true},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q4386338","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.cite.styles":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.legacy.wikibits","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.centralauth.centralautologin","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.29.0-wmf.8"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Interlisp"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Interlisp&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Interlisp&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Interlisp"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Interlisp rootpage-Interlisp skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Interlisp</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><script>function mfTempOpenSection(id){var block=document.getElementById("mf-section-"+id);block.className+=" open-block";block.previousSibling.className+=" open-block";}</script><p><b>Interlisp</b> (also seen with a variety of capitalizations) is a programming environment built around a version of the <a href="/wiki/Lisp_programming_language" class="mw-redirect" title="Lisp programming language">Lisp programming language</a>. Interlisp development began in 1967 at <a href="/wiki/Bolt,_Beranek_and_Newman" class="mw-redirect" title="Bolt, Beranek and Newman">Bolt, Beranek and Newman</a> in <a href="/wiki/Cambridge,_Massachusetts" title="Cambridge, Massachusetts">Cambridge, Massachusetts</a> as <a href="/wiki/BBN_LISP" title="BBN LISP">BBN LISP</a>, which ran on <a href="/wiki/PDP-10" title="PDP-10">PDP-10</a> machines running the <a href="/wiki/TOPS-20" title="TOPS-20">TENEX</a> operating system. When <a href="/wiki/Daniel_G._Bobrow" title="Daniel G. Bobrow">Danny Bobrow</a>, <a href="/wiki/Warren_Teitelman" title="Warren Teitelman">Warren Teitelman</a> and <a href="/wiki/Ronald_Kaplan" title="Ronald Kaplan">Ronald Kaplan</a> moved from BBN to <a href="/wiki/Xerox_PARC" class="mw-redirect" title="Xerox PARC">Xerox PARC</a>, it was renamed Interlisp. Interlisp became a popular Lisp development tool for AI researchers at <a href="/wiki/Stanford_University" title="Stanford University">Stanford University</a> and elsewhere in the <a href="/wiki/DARPA" title="DARPA">DARPA</a> community. Interlisp was notable for the integration of interactive development tools into the environment, such as a <a href="/wiki/Debugger" title="Debugger">debugger</a>, an automatic correction tool for simple errors (<a href="/wiki/DWIM" title="DWIM">DWIM</a><sup id="cite_ref-1" class="reference"><a href="#cite_note-1">[1]</a></sup> – "do what I mean"), and analysis tools.</p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Adaptations"><span class="tocnumber">1</span> <span class="toctext">Adaptations</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#References"><span class="tocnumber">2</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Publications"><span class="tocnumber">3</span> <span class="toctext">Publications</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#External_links"><span class="tocnumber">4</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Adaptations">Adaptations</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Interlisp&amp;action=edit&amp;section=1" title="Edit section: Adaptations">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>At <a href="/wiki/Xerox_PARC" class="mw-redirect" title="Xerox PARC">Xerox PARC</a>, there was an early attempt to define a <a href="/wiki/Virtual_machine" title="Virtual machine">virtual machine</a> to facilitate porting, known as the "Interlisp virtual machine". However, this wasn't useful as a basis for porting.</p>
+<p><a href="/wiki/L._Peter_Deutsch" class="mw-redirect" title="L. Peter Deutsch">Peter Deutsch</a> defined a byte-coded instruction set for Interlisp, and implemented it as a microcoded emulator for the <a href="/wiki/Xerox_Alto" title="Xerox Alto">Xerox Alto</a>. This was subsequently ported to a series of workstation designs produced by Xerox for both their own use and for commercial exploitation, including the Xerox 1100 (Dolphin), 1108 (Dandelion), 1109 (the floating-point enabled "Dandetiger"), <a href="/wiki/Xerox_Daybreak" title="Xerox Daybreak">1186 (Daybreak)</a>, and 1132 (Dorado). Interlisp implementations for these were known collectively as Interlisp-D. Commercially, these were sold as <a href="/wiki/Lisp_Machine" class="mw-redirect" title="Lisp Machine">Lisp Machines</a> and branded as Xerox AI Workstations; the same designs, but with different software, were also sold under different names (e.g. when running the Viewpoint system, the 1186 Daybreak was sold as the Xerox 6085.) Releases of Interlisp-D were named according to a musical theme, which ended with Koto, Lyric, and Medley. Later versions included an implementation of pre-<a href="/wiki/ANSI" class="mw-redirect" title="ANSI">ANSI</a> <a href="/wiki/Common_Lisp" title="Common Lisp">Common Lisp</a>, known as <a href="/w/index.php?title=Xerox_Common_Lisp&amp;action=edit&amp;redlink=1" class="new" title="Xerox Common Lisp (page does not exist)">Xerox Common Lisp</a>. <a href="/w/index.php?title=LOOPS&amp;action=edit&amp;redlink=1" class="new" title="LOOPS (page does not exist)">LOOPS</a>, the object system for Interlisp-D, became, along with <a href="/wiki/Symbolics" title="Symbolics">Symbolics</a>' <a href="/wiki/Flavors_(programming_language)" title="Flavors (programming language)">FLAVORS</a> system, the basis for the <a href="/wiki/Common_Lisp_Object_System" title="Common Lisp Object System">Common Lisp Object System</a>.</p>
+<p>The PDP-10 version of Interlisp became <b>Interlisp-10</b>; BBN had an internal project to build <b>Interlisp-Jericho</b> and there was a 1982 port to <a href="/wiki/Berkeley_Software_Distribution" title="Berkeley Software Distribution">Berkeley Unix</a> on the <a href="/wiki/VAX" title="VAX">VAX</a> by <a href="/wiki/Stanford_University" title="Stanford University">Stanford University</a>, <a href="/wiki/Information_Sciences_Institute" title="Information Sciences Institute">ISI</a> and Xerox PARC, called <b>Interlisp-VAX</b>.<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">[2]</a></sup></p>
+<p>In 1981, Warren Teitelman and Larry Masinter published a paper on Interlisp in <a href="/wiki/IEEE_Computer" class="mw-redirect" title="IEEE Computer">IEEE Computer</a> that provides a nice overview of the system and its design philosophy.<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">[3]</a></sup></p>
+<p>Also in 1981 a <a href="/wiki/6502" class="mw-redirect" title="6502">6502</a> variant, INTER-LISP/65, was released by <a href="/wiki/Datasoft" title="Datasoft">Datasoft</a> for the <a href="/wiki/Atari_800" class="mw-redirect" title="Atari 800">Atari 800</a>.</p>
+<p>In 1985-7, a team from <a href="/wiki/Fuji_Xerox" title="Fuji Xerox">Fuji Xerox</a> developed a C implementation of the microcoded bytecode interpreter, and, together with <a href="/w/index.php?title=Xerox_AI_Systems&amp;action=edit&amp;redlink=1" class="new" title="Xerox AI Systems (page does not exist)">Xerox AI Systems</a> (XAIS) in <a href="/wiki/Sunnyvale,_California" title="Sunnyvale, California">Sunnyvale, California</a>, completed the port of the environment and emulator to the <a href="/wiki/Sun_Microsystems" title="Sun Microsystems">Sun Microsystems</a> <a href="/wiki/SPARC" title="SPARC">SPARC</a> 4 architecture. In 1987, XAIS was spun off into <a href="/w/index.php?title=Envos_Corporation&amp;action=edit&amp;redlink=1" class="new" title="Envos Corporation (page does not exist)">Envos Corporation</a>, which almost immediately failed.</p>
+<p>In 1992, an <a href="/wiki/Association_for_Computing_Machinery" title="Association for Computing Machinery">ACM</a> <a href="/wiki/Software_System_Award" class="mw-redirect" title="Software System Award">Software System Award</a> recognized the team of <a href="/wiki/Daniel_G._Bobrow" title="Daniel G. Bobrow">Daniel G. Bobrow</a>, <a href="/w/index.php?title=Richard_R._Burton&amp;action=edit&amp;redlink=1" class="new" title="Richard R. Burton (page does not exist)">Richard R. Burton</a>, <a href="/wiki/L._Peter_Deutsch" class="mw-redirect" title="L. Peter Deutsch">L. Peter Deutsch</a>, <a href="/wiki/Ronald_Kaplan" title="Ronald Kaplan">Ronald Kaplan</a>, <a href="/w/index.php?title=Larry_Masinter&amp;action=edit&amp;redlink=1" class="new" title="Larry Masinter (page does not exist)">Larry Masinter</a>, <a href="/wiki/Warren_Teitelman" title="Warren Teitelman">Warren Teitelman</a> for their pioneering work on Interlisp.</p>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Interlisp&amp;action=edit&amp;section=2" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist columns references-column-width" style="-moz-column-width: 30em; -webkit-column-width: 30em; column-width: 30em; list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><cite id="CITEREFTeitelman1972" class="citation">Teitelman, Warren (April 1972), "<span style="padding-left:0.2em;">"</span>Do What I Mean": the programmer's assistant", <i>Computers and Automation</i>: 8–11</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AInterlisp&amp;rft.atitle=%22Do+What+I+Mean%22%3A+the+programmer%27s+assistant&amp;rft.aufirst=Warren&amp;rft.aulast=Teitelman&amp;rft.date=1972-04&amp;rft.genre=article&amp;rft.jtitle=Computers+and+Automation&amp;rft.pages=8-11&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span>.</span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><cite class="citation report">Larry M. Masinter (1981). <a rel="nofollow" class="external text" href="http://www.softwarepreservation.org/projects/LISP/interlisp/Interlisp-VAX_A_Report.pdf">Interlisp-VAX: A Report</a> <span style="font-size:85%;">(PDF)</span> (Report). Stanford University.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AInterlisp&amp;rft.au=Larry+M.+Masinter&amp;rft.btitle=Interlisp-VAX%3A+A+Report&amp;rft.date=1981&amp;rft.genre=report&amp;rft_id=http%3A%2F%2Fwww.softwarepreservation.org%2Fprojects%2FLISP%2Finterlisp%2FInterlisp-VAX_A_Report.pdf&amp;rft.pub=Stanford+University&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text">Warren Teitelman, Larry M. Masinter. <a rel="nofollow" class="external text" href="http://larry.masinter.net/interlisp-ieee.pdf">The Interlisp Programming Environment</a>. IEEE Computer, April 1981.</span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="Publications">Publications</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Interlisp&amp;action=edit&amp;section=3" title="Edit section: Publications">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a href="/wiki/Warren_Teitelman" title="Warren Teitelman">Warren Teitelman</a> <i>et al.</i>, <i>Interlisp Reference Manual</i> (Xerox tech report, 1974)</li>
+<li><a href="/wiki/J_Strother_Moore" title="J Strother Moore">J Strother Moore</a>, <i>The Interlisp Virtual Machine Specification</i> (Xerox tech report, 1976)</li>
+<li><a href="/wiki/L._Peter_Deutsch" class="mw-redirect" title="L. Peter Deutsch">L Peter Deutsch</a>, <i>A LISP Machine with Very Compact Programs</i> (Third Joint Conference on Artificial Intelligence, 1973).</li>
+<li>Kaisler, S. H. 1986 Interlisp: the Language and its Usage. Wiley-Interscience.</li>
+</ul>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Interlisp&amp;action=edit&amp;section=4" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://bitsavers.org/pdf/xerox/interlisp/">Archived Interlisp documentation at bitsavers.org</a></li>
+<li><a rel="nofollow" class="external text" href="https://github.com/blakemcbride/LISPF4">LISPF4</a> an Interlisp interpreter written originally in <a href="/wiki/Fortran" title="Fortran">Fortran</a> by <a href="/w/index.php?title=Mats_Nordstrom&amp;action=edit&amp;redlink=1" class="new" title="Mats Nordstrom (page does not exist)">Mats Nordstrom</a> and ported to <a href="/wiki/C_(programming_language)" title="C (programming language)">C</a> (<a href="/wiki/Microsoft_Windows" title="Microsoft Windows">Windows</a>, <a href="/wiki/Mac_OS" class="mw-redirect" title="Mac OS">Mac OS</a> and <a href="/wiki/Linux" title="Linux">Linux</a>) by <a href="/w/index.php?title=Blake_McBride&amp;action=edit&amp;redlink=1" class="new" title="Blake McBride (page does not exist)">Blake McBride</a>.</li>
+<li><a rel="nofollow" class="external text" href="http://www.softwarepreservation.org/projects/LISP/interlisp">Interlisp documentation at Computer History Museum</a>.</li>
+<li><a rel="nofollow" class="external text" href="http://www.atariage.com/forums/topic/116093-datasoft-inter-lisp65/">AtariAge forum discussion on INTER-LISP/65</a></li>
+<li><a rel="nofollow" class="external text" href="http://wiki.strotmann.de/wiki/Wiki.jsp?page=Lisp">AtariWiki entry for INTER-LISP/65</a></li>
+</ul>
+<table class="navbox">
+<caption>Timeline of Lisp dialects<sup>(<a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Lisp&amp;action=edit">edit</a>)</sup></caption>
+<tr>
+<th></th>
+<th>1955</th>
+<th>1960</th>
+<th>1965</th>
+<th>1970</th>
+<th>1975</th>
+<th>1980</th>
+<th>1985</th>
+<th>1990</th>
+<th>1995</th>
+<th>2000</th>
+<th>2005</th>
+<th>2010</th>
+<th>2015</th>
+</tr>
+<tr>
+<th>Lisp 1.5</th>
+<td align="center" colspan="3" style="background:lightgray"><a href="/wiki/Lisp_(programming_language)" title="Lisp (programming language)">Lisp 1.5</a></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+</tr>
+<tr>
+<th>Maclisp</th>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td align="center" colspan="5" style="background:lightgray"><a href="/wiki/Maclisp" title="Maclisp">Maclisp</a></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+</tr>
+<tr>
+<th>Interlisp</th>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td align="center" colspan="5" style="background:lightgray"><strong class="selflink">Interlisp</strong></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+</tr>
+<tr>
+<th>ZetaLisp</th>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td align="center" colspan="5" style="background:lightgray"><a href="/wiki/Lisp_Machine_Lisp" title="Lisp Machine Lisp">Lisp Machine Lisp</a></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+</tr>
+<tr>
+<th>Scheme</th>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td align="center" colspan="9" style="background:lightgray"><a href="/wiki/Scheme_(programming_language)" title="Scheme (programming language)">Scheme</a></td>
+</tr>
+<tr>
+<th>NIL</th>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td align="center" colspan="2" style="background:lightgray"><a href="/wiki/NIL_(programming_language)" title="NIL (programming language)">NIL</a></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+</tr>
+<tr>
+<th>Common Lisp</th>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td align="center" colspan="8" style="background:lightgray"><a href="/wiki/Common_Lisp" title="Common Lisp">Common Lisp</a></td>
+</tr>
+<tr>
+<th>T</th>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td align="center" colspan="3" style="background:lightgray"><a href="/wiki/T_(programming_language)" title="T (programming language)">T</a></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+</tr>
+<tr>
+<th>Emacs Lisp</th>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td align="center" colspan="8" style="background:lightgray"><a href="/wiki/Emacs_Lisp" title="Emacs Lisp">Emacs Lisp</a></td>
+</tr>
+<tr>
+<th>AutoLISP</th>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td align="center" colspan="7" style="background:lightgray"><a href="/wiki/AutoLISP" title="AutoLISP">AutoLISP</a></td>
+</tr>
+<tr>
+<th>ISLISP</th>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td align="center" colspan="7" style="background:lightgray"><a href="/wiki/ISLISP" title="ISLISP">ISLISP</a></td>
+</tr>
+<tr>
+<th>EuLisp</th>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td align="center" colspan="4" style="background:lightgray"><a href="/wiki/EuLisp" title="EuLisp">EuLisp</a></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+</tr>
+<tr>
+<th>PicoLisp</th>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td align="center" colspan="6" style="background:lightgray"><a href="/wiki/PicoLisp" title="PicoLisp">PicoLisp</a></td>
+</tr>
+<tr>
+<th>Racket</th>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td align="center" colspan="5" style="background:lightgray"><a href="/wiki/Racket_(programming_language)" title="Racket (programming language)">Racket</a></td>
+</tr>
+<tr>
+<th>Arc</th>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td align="center" colspan="4" style="background:lightgray"><a href="/wiki/Arc_(programming_language)" title="Arc (programming language)">Arc</a></td>
+</tr>
+<tr>
+<th>Clojure</th>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td align="center" colspan="3" style="background:lightgray"><a href="/wiki/Clojure" title="Clojure">Clojure</a></td>
+</tr>
+<tr>
+<th>LFE</th>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td align="center" colspan="3" style="background:lightgray"><a href="/wiki/LFE_(programming_language)" title="LFE (programming language)">LFE</a></td>
+</tr>
+<tr>
+<th>Hy</th>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td align="center" colspan="2" style="background:lightgray"><a href="/wiki/Hy" title="Hy">Hy</a></td>
+</tr>
+</table>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1228
+Cached time: 20161231012212
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.056 seconds
+Real time usage: 0.075 seconds
+Preprocessor visited node count: 196/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 7699/2097152 bytes
+Template argument size: 32/2097152 bytes
+Highest expansion depth: 7/40
+Expensive parser function count: 0/500
+Lua time usage: 0.019/10.000 seconds
+Lua memory usage: 1.54 MB/50 MB
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%   48.374      1 - -total
+ 97.33%   47.080      1 - Template:Reflist
+ 74.98%   36.269      1 - Template:Citation
+  9.12%    4.414      1 - Template:Cite_report
+  2.47%    1.194      1 - Template:Lisp
+  2.21%    1.070      1 - Template:Column-width
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:353464-0!*!0!!en!*!* and timestamp 20161231012212 and revision id 746789164
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Interlisp&amp;oldid=746789164">https://en.wikipedia.org/w/index.php?title=Interlisp&amp;oldid=746789164</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Lisp_(programming_language)" title="Category:Lisp (programming language)">Lisp (programming language)</a></li><li><a href="/wiki/Category:Dynamic_programming_languages" title="Category:Dynamic programming languages">Dynamic programming languages</a></li><li><a href="/wiki/Category:Functional_languages" title="Category:Functional languages">Functional languages</a></li><li><a href="/wiki/Category:Lisp_programming_language_family" title="Category:Lisp programming language family">Lisp programming language family</a></li><li><a href="/wiki/Category:Lisp-based_operating_systems" title="Category:Lisp-based operating systems">Lisp-based operating systems</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Interlisp" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Interlisp" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/Interlisp"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:Interlisp"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/Interlisp" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=Interlisp&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Interlisp&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Interlisp" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Interlisp" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Interlisp&amp;oldid=746789164" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Interlisp&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q4386338" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Interlisp&amp;id=746789164" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Interlisp">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Interlisp&amp;returnto=Interlisp&amp;oldid=746789164&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Interlisp&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-ja"><a href="https://ja.wikipedia.org/wiki/Interlisp" title="Interlisp – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target">日本語</a></li><li class="interlanguage-link interwiki-pl"><a href="https://pl.wikipedia.org/wiki/Interlisp" title="Interlisp – Polish" lang="pl" hreflang="pl" class="interlanguage-link-target">Polski</a></li><li class="interlanguage-link interwiki-fi"><a href="https://fi.wikipedia.org/wiki/Interlisp" title="Interlisp – Finnish" lang="fi" hreflang="fi" class="interlanguage-link-target">Suomi</a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q4386338#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 29 October 2016, at 15:39.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Interlisp&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":66,"wgHostname":"mw1264"});});</script>
+	</body>
+</html>

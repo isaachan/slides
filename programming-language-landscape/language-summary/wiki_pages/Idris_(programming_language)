@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Idris (programming language) - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Idris_(programming_language)","wgTitle":"Idris (programming language)","wgCurRevisionId":752888393,"wgRevisionId":752888393,"wgArticleId":39035048,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles containing potentially dated statements from October 2014","All articles containing potentially dated statements","Dependently typed languages","Functional languages","Free software programmed in Haskell","Haskell programming language family","Cross-platform free software","Free compilers and interpreters","Software using the BSD license"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Idris_(programming_language)","wgRelevantArticleId":39035048,"wgRequestId":"WJOPRQpAMFIAAFmNMtsAAABU","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":true},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q15408477","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.cite.styles":"ready","ext.pygments":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.legacy.wikibits","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.pygments%2CwikimediaBadges%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.29.0-wmf.9"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Idris_(programming_language)"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Idris_(programming_language)&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Idris_(programming_language)&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Idris_(programming_language)"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Idris_programming_language rootpage-Idris_programming_language skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Idris (programming language)</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><script>function mfTempOpenSection(id){var block=document.getElementById("mf-section-"+id);block.className+=" open-block";block.previousSibling.className+=" open-block";}</script><table class="infobox vevent" style="width:22em">
+<caption class="summary">Idris</caption>
+<tr>
+<th scope="row"><a href="/wiki/Programming_paradigm" title="Programming paradigm">Paradigm</a></th>
+<td><a href="/wiki/Functional_programming" title="Functional programming">Functional</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_design" title="Software design">Designed&#160;by</a></th>
+<td>Edwin Brady</td>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Software_release_life_cycle" title="Software release life cycle">Stable release</a></th>
+<td>
+<div style="margin:0px;">0.99<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">[1]</a></sup> / December&#160;3, 2016<span class="noprint">; 48 days ago</span><span style="display:none">&#160;(<span class="bday dtstart published updated">2016-12-03</span>)</span></div>
+</td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Operating_system" title="Operating system">OS</a></th>
+<td><a href="/wiki/Cross-platform" title="Cross-platform">Cross-platform</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_license" title="Software license">License</a></th>
+<td>BSD-3</td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Filename_extension" title="Filename extension">Filename extensions</a></th>
+<td>.idr, .lidr</td>
+</tr>
+<tr>
+<th scope="row">Website</th>
+<td><span class="url"><a rel="nofollow" class="external text" href="http://idris-lang.org">idris-lang<wbr />.org</a></span></td>
+</tr>
+<tr>
+<th colspan="2" style="text-align:center;background-color: #eee;">Influenced by</th>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/Agda_(programming_language)" title="Agda (programming language)">Agda</a>, <a href="/wiki/Coq" title="Coq">Coq</a>,<sup id="cite_ref-idris-web_2-0" class="reference"><a href="#cite_note-idris-web-2">[2]</a></sup> <a href="/wiki/Epigram_(programming_language)" title="Epigram (programming language)">Epigram</a>, <a href="/wiki/Haskell_(programming_language)" title="Haskell (programming language)">Haskell</a>,<sup id="cite_ref-idris-web_2-1" class="reference"><a href="#cite_note-idris-web-2">[2]</a></sup> <a href="/wiki/ML_(programming_language)" title="ML (programming language)">ML</a>,<sup id="cite_ref-idris-web_2-2" class="reference"><a href="#cite_note-idris-web-2">[2]</a></sup> <a href="/wiki/Rust_(programming_language)" title="Rust (programming language)">Rust</a></td>
+</tr>
+</table>
+<p><b>Idris</b> is a general-purpose <a href="/wiki/Purely_functional_programming_language" class="mw-redirect" title="Purely functional programming language">purely functional programming language</a> with <a href="/wiki/Dependent_type" title="Dependent type">dependent types</a>. The <a href="/wiki/Type_system" title="Type system">type system</a> is similar to the one used by <a href="/wiki/Agda_(programming_language)" title="Agda (programming language)">Agda</a>.</p>
+<p>The language supports <a href="/wiki/Proof_assistant" title="Proof assistant">interactive theorem-proving</a> comparable to <a href="/wiki/Coq" title="Coq">Coq</a>, including tactics, while the focus remains on <a href="/wiki/General-purpose_language" title="General-purpose language">general-purpose programming</a> even before theorem-proving. Other goals of Idris are "sufficient" performance, easy management of <a href="/wiki/Side_effect_(computer_science)" title="Side effect (computer science)">side-effects</a> and support for implementing <a href="/wiki/EDSL#Usage_patterns" class="mw-redirect" title="EDSL">embedded domain specific languages</a>.</p>
+<p>As of October 2014<sup class="plainlinks noprint asof-tag update" style="display:none;"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Idris_(programming_language)&amp;action=edit">[update]</a></sup>, Idris compiles to <a href="/wiki/C_(programming_language)" title="C (programming language)">C</a> and relies on a custom copying <a href="/wiki/Garbage_collection_(computer_science)" title="Garbage collection (computer science)">garbage collector</a> using <a href="/wiki/Cheney%27s_algorithm" title="Cheney's algorithm">Cheney's algorithm</a>. There also exist <a href="/wiki/JavaScript" title="JavaScript">JavaScript</a> and <a href="/wiki/Java_(programming_language)" title="Java (programming language)">Java</a> backends, and a partial <a href="/wiki/LLVM" title="LLVM">LLVM</a> backend.<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">[3]</a></sup></p>
+<p>The name <i>Idris</i> goes back to the character of the singing dragon in the 1970s UK kids' program <a href="/wiki/Ivor_the_Engine#Idris_the_Dragon" title="Ivor the Engine">Ivor the Engine</a>.<sup id="cite_ref-4" class="reference"><a href="#cite_note-4">[4]</a></sup></p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Features"><span class="tocnumber">1</span> <span class="toctext">Features</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Functional_programming"><span class="tocnumber">1.1</span> <span class="toctext">Functional programming</span></a>
+<ul>
+<li class="toclevel-3 tocsection-3"><a href="#Inductive_and_parametric_data_types"><span class="tocnumber">1.1.1</span> <span class="toctext">Inductive and parametric data types</span></a></li>
+<li class="toclevel-3 tocsection-4"><a href="#Dependent_types"><span class="tocnumber">1.1.2</span> <span class="toctext">Dependent types</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-5"><a href="#Proof_assistant_features"><span class="tocnumber">1.2</span> <span class="toctext">Proof assistant features</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Code_generation"><span class="tocnumber">1.3</span> <span class="toctext">Code generation</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a href="#See_also"><span class="tocnumber">2</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#References"><span class="tocnumber">3</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#External_links"><span class="tocnumber">4</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Features">Features</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Idris_(programming_language)&amp;action=edit&amp;section=1" title="Edit section: Features">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Idris combines a number of features from relatively mainstream functional programming languages with features borrowed from <a href="/wiki/Proof_assistant" title="Proof assistant">proof assistants</a>, in effect blurring the boundary between the two kinds of software.</p>
+<h3><span class="mw-headline" id="Functional_programming">Functional programming</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Idris_(programming_language)&amp;action=edit&amp;section=2" title="Edit section: Functional programming">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The syntax of Idris shows many similarities with that of Haskell. A <a href="/wiki/Hello_world_program" class="mw-redirect" title="Hello world program">hello world program</a> in Idris might look like this:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="kr">module</span> <span class="nn">Main</span>
+
+<span class="nf">main</span> <span class="ow">:</span> <span class="kt">IO</span> <span class="ow">()</span>
+main <span class="ow">=</span> putStrLn <span class="s">"Hello, World!"</span>
+</pre></div>
+<p>The only differences between this program and its <a href="/wiki/Haskell_(programming_language)#Code_examples" title="Haskell (programming language)">Haskell equivalent</a> are the single colon (instead of two) in the <a href="/wiki/Type_signature" title="Type signature">signature</a> of the main function and the omission of the word "where" in the module declaration.</p>
+<h4><span class="mw-headline" id="Inductive_and_parametric_data_types">Inductive and parametric data types</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Idris_(programming_language)&amp;action=edit&amp;section=3" title="Edit section: Inductive and parametric data types">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>Like most modern functional programming languages, Idris supports a notion of <a href="/wiki/Inductively-defined_data_type" class="mw-redirect" title="Inductively-defined data type">inductively-defined data type</a> and <a href="/wiki/Parametric_polymorphism" title="Parametric polymorphism">parametric polymorphism</a>. Such types can be defined both in traditional "Haskell98" syntax:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="kr">data</span> <span class="kt">Tree</span> a <span class="ow">=</span> <span class="kt">Node</span> <span class="ow">(</span><span class="kt">Tree</span> a<span class="ow">)</span> <span class="ow">(</span><span class="kt">Tree</span> a<span class="ow">)</span> <span class="ow">|</span> <span class="kt">Leaf</span> a
+</pre></div>
+<p>or in the more general <a href="/wiki/GADT" class="mw-redirect" title="GADT">GADT</a> syntax:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="kr">data</span> <span class="kt">Tree</span> <span class="ow">:</span> <span class="kt">Type</span> <span class="ow">-&gt;</span> <span class="kt">Type</span> <span class="kr">where</span>
+    <span class="nf">Node</span> <span class="ow">:</span> <span class="kt">Tree</span> a <span class="ow">-&gt;</span> <span class="kt">Tree</span> a <span class="ow">-&gt;</span> <span class="kt">Tree</span> a
+    <span class="nf">Leaf</span> <span class="ow">:</span> a <span class="ow">-&gt;</span> <span class="kt">Tree</span> a
+</pre></div>
+<h4><span class="mw-headline" id="Dependent_types">Dependent types</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Idris_(programming_language)&amp;action=edit&amp;section=4" title="Edit section: Dependent types">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>With <a href="/wiki/Dependent_type" title="Dependent type">dependent types</a>, it is possible for values to appear in the types; in effect, any value-level computation can be performed during <a href="/wiki/Typechecking" class="mw-redirect" title="Typechecking">typechecking</a>. The following defines a type of lists of statically known length, traditionally called 'vectors':</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="kr">data</span> <span class="kt">Vect</span> <span class="ow">:</span> <span class="kt">Nat</span> <span class="ow">-&gt;</span> <span class="kt">Type</span> <span class="ow">-&gt;</span> <span class="kt">Type</span> <span class="kr">where</span>
+  <span class="nf">Nil</span>  <span class="ow">:</span> <span class="kt">Vect</span> <span class="mi">0</span> a
+  <span class="ow">(::)</span> <span class="ow">:</span> <span class="ow">(</span>x <span class="ow">:</span> a<span class="ow">)</span> <span class="ow">-&gt;</span> <span class="ow">(</span>xs <span class="ow">:</span> <span class="kt">Vect</span> n a<span class="ow">)</span> <span class="ow">-&gt;</span> <span class="kt">Vect</span> <span class="ow">(</span>n <span class="ow">+</span> <span class="mi">1</span><span class="ow">)</span> a
+</pre></div>
+<p>This type can be used as follows:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="kr">total</span>
+<span class="nf">append</span> <span class="ow">:</span> <span class="kt">Vect</span> n a <span class="ow">-&gt;</span> <span class="kt">Vect</span> m a <span class="ow">-&gt;</span> <span class="kt">Vect</span> <span class="ow">(</span>n <span class="ow">+</span> m<span class="ow">)</span> a
+append <span class="kt">Nil</span>       ys <span class="ow">=</span> ys
+append <span class="ow">(</span>x <span class="ow">::</span> xs<span class="ow">)</span> ys <span class="ow">=</span> x <span class="ow">::</span> append xs ys
+</pre></div>
+<p>The functions appends a vector of m elements of type a to a vector of n elements of type a. Since the precise types of the input vectors depend on a value, it is possible to be certain at compile-time that the resulting vector will have exactly (n + m) elements of type a. The word "total" invokes the <a href="/wiki/Termination_analysis" title="Termination analysis">totality checker</a> which will report an error if the function <a href="/wiki/Partial_function" title="Partial function">doesn't cover all possible cases</a> or cannot be (automatically) proven to not enter an <a href="/wiki/Infinite_loop" title="Infinite loop">infinite loop</a>.</p>
+<p>Another common example is pairwise addition of two vectors that are parameterized over their length:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="kr">total</span>
+<span class="nf">pairAdd</span> <span class="ow">:</span> <span class="kt">Num</span> a <span class="ow">=&gt;</span> <span class="kt">Vect</span> n a <span class="ow">-&gt;</span> <span class="kt">Vect</span> n a <span class="ow">-&gt;</span> <span class="kt">Vect</span> n a
+pairAdd <span class="kt">Nil</span>       <span class="kt">Nil</span>       <span class="ow">=</span> <span class="kt">Nil</span>
+pairAdd <span class="ow">(</span>x <span class="ow">::</span> xs<span class="ow">)</span> <span class="ow">(</span>y <span class="ow">::</span> ys<span class="ow">)</span> <span class="ow">=</span> x <span class="ow">+</span> y <span class="ow">::</span> pairAdd xs ys
+</pre></div>
+<p>Num a signifies that the type a belongs to the <a href="/wiki/Type_class" title="Type class">type class</a> Num. Note that this function still typechecks successfully as total, even though there is no case matching Nil in one vector and a number in the other. Since both vectors are ensured by the type system to have exactly the same length, we can be sure at compile time that this case will not occur. Hence it does not need to be mentioned for the function to be total.</p>
+<h3><span class="mw-headline" id="Proof_assistant_features">Proof assistant features</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Idris_(programming_language)&amp;action=edit&amp;section=5" title="Edit section: Proof assistant features">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Dependent types are powerful enough to encode most properties of programs, and an Idris program can prove invariants at compile-time. This makes Idris into a proof assistant.</p>
+<p>There are two standard ways of interacting with proof assistants: by writing a series of tactic invocations (<a href="/wiki/Coq" title="Coq">Coq</a> style), or by interactively elaborating a proof term (<a href="/wiki/Epigram_(programming_language)" title="Epigram (programming language)">Epigram</a>/<a href="/wiki/Agda_(programming_language)" title="Agda (programming language)">Agda</a> style). Idris supports both modes of interaction, although the set of available tactics is not yet as useful as that of Coq.</p>
+<h3><span class="mw-headline" id="Code_generation">Code generation</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Idris_(programming_language)&amp;action=edit&amp;section=6" title="Edit section: Code generation">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Because Idris contains a proof assistant, Idris programs can be written to pass proofs around. If treated naively, such proofs remain around at runtime. Idris aims to avoid this pitfall by aggressively erasing unused terms,<sup id="cite_ref-5" class="reference"><a href="#cite_note-5">[5]</a></sup> with promising results.<sup id="cite_ref-6" class="reference"><a href="#cite_note-6">[6]</a></sup></p>
+<p>By default, Idris generates native code by going through C. Other backends are available for generating JavaScript and Java.</p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Idris_(programming_language)&amp;action=edit&amp;section=7" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a href="/wiki/Total_functional_programming" title="Total functional programming">Total functional programming</a></li>
+</ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Idris_(programming_language)&amp;action=edit&amp;section=8" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.idris-lang.org/idris-0-99-released/">"Idris 0.99 released"</a>. 2016-12-03.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AIdris+%28programming+language%29&amp;rft.btitle=Idris+0.99+released&amp;rft.date=2016-12-03&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.idris-lang.org%2Fidris-0-99-released%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-idris-web-2"><span class="mw-cite-backlink">^ <a href="#cite_ref-idris-web_2-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-idris-web_2-1"><sup><i><b>b</b></i></sup></a> <a href="#cite_ref-idris-web_2-2"><sup><i><b>c</b></i></sup></a></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.idris-lang.org/">"Idris, a language with dependent types"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2014-10-26</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AIdris+%28programming+language%29&amp;rft.btitle=Idris%2C+a+language+with+dependent+types&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.idris-lang.org%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://idris-lang.org/news">http://idris-lang.org/news</a></span></li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://docs.idris-lang.org/en/latest/faq/faq.html#what-does-the-name-idris-mean">"Frequently Asked Questions"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2015-07-19</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AIdris+%28programming+language%29&amp;rft.btitle=Frequently+Asked+Questions&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fdocs.idris-lang.org%2Fen%2Flatest%2Ffaq%2Ffaq.html%23what-does-the-name-idris-mean&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://idris.readthedocs.org/en/latest/reference/erasure.html">http://idris.readthedocs.org/en/latest/reference/erasure.html</a></span></li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://ziman.functor.sk/erasure-bm/">http://ziman.functor.sk/erasure-bm/</a></span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Idris_(programming_language)&amp;action=edit&amp;section=9" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://idris-lang.org/">The Idris homepage</a>, including documentation, frequently asked questions and examples</li>
+<li><a rel="nofollow" class="external text" href="http://hackage.haskell.org/package/idris">Idris at the Hackage repository</a></li>
+<li><a rel="nofollow" class="external text" href="http://docs.idris-lang.org/en/latest/index.html">Documentation for the Idris Language (tutorial, language reference, etc.)</a></li>
+</ul>
+<div role="navigation" class="navbox" aria-labelledby="Programming_languages" style="padding:3px">
+<table class="nowraplinks hlist collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:Programming_languages" title="Template:Programming languages"><abbr title="View this template" style=";;background:none transparent;border:none;">v</abbr></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:Programming_languages" title="Template talk:Programming languages"><abbr title="Discuss this template" style=";;background:none transparent;border:none;">t</abbr></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:Programming_languages&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;">e</abbr></a></li>
+</ul>
+</div>
+<div id="Programming_languages" style="font-size:114%"><a href="/wiki/Programming_language" title="Programming language">Programming languages</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" colspan="2">
+<div>
+<ul>
+<li><a href="/wiki/Comparison_of_programming_languages" title="Comparison of programming languages">Comparison</a></li>
+<li><a href="/wiki/Timeline_of_programming_languages" title="Timeline of programming languages">Timeline</a></li>
+<li><a href="/wiki/History_of_programming_languages" title="History of programming languages">History</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Assembly_language" title="Assembly language">Assembly</a></li>
+<li><a href="/wiki/BASIC" title="BASIC">BASIC</a></li>
+<li><a href="/wiki/C_(programming_language)" title="C (programming language)">C</a></li>
+<li><a href="/wiki/C%2B%2B" title="C++">C++</a></li>
+<li><a href="/wiki/C_Sharp_(programming_language)" title="C Sharp (programming language)">C#</a></li>
+<li><a href="/wiki/COBOL" title="COBOL">COBOL</a></li>
+<li><a href="/wiki/Fortran" title="Fortran">Fortran</a></li>
+<li><a href="/wiki/Go_(programming_language)" title="Go (programming language)">Go</a></li>
+<li><a href="/wiki/Haskell_(programming_language)" title="Haskell (programming language)">Haskell</a></li>
+<li><a href="/wiki/Java_(programming_language)" title="Java (programming language)">Java</a></li>
+<li><a href="/wiki/JavaScript" title="JavaScript">JavaScript</a> (JS)</li>
+<li><a href="/wiki/Lisp_(programming_language)" title="Lisp (programming language)">Lisp</a></li>
+<li><a href="/wiki/Lua_(programming_language)" title="Lua (programming language)">Lua</a></li>
+<li><a href="/wiki/Objective-C" title="Objective-C">Objective-C</a></li>
+<li><a href="/wiki/Pascal_(programming_language)" title="Pascal (programming language)">Pascal</a></li>
+<li><a href="/wiki/Perl" title="Perl">Perl</a></li>
+<li><a href="/wiki/PHP" title="PHP">PHP</a></li>
+<li><a href="/wiki/Python_(programming_language)" title="Python (programming language)">Python</a></li>
+<li><a href="/wiki/Ruby_(programming_language)" title="Ruby (programming language)">Ruby</a></li>
+<li><a href="/wiki/Shell_script" title="Shell script">Shell</a></li>
+<li><a href="/wiki/Smalltalk" title="Smalltalk">Smalltalk</a></li>
+<li><a href="/wiki/Swift_(programming_language)" title="Swift (programming language)">Swift</a></li>
+<li><a href="/wiki/Visual_Basic_.NET" title="Visual Basic .NET">Visual Basic .NET</a> (VB.NET)</li>
+<li><i><a href="/wiki/List_of_programming_languages" title="List of programming languages">more...</a></i></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" colspan="2">
+<div>
+<ul>
+<li><img alt="Category" src="//upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/16px-Folder_Hexagonal_Icon.svg.png" title="Category" width="16" height="14" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/24px-Folder_Hexagonal_Icon.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/32px-Folder_Hexagonal_Icon.svg.png 2x" data-file-width="36" data-file-height="31" /> <b><a href="/wiki/Category:Programming_languages" title="Category:Programming languages">Category</a></b></li>
+<li><img alt="Non-article page" src="//upload.wikimedia.org/wikipedia/en/thumb/8/89/Symbol_neutral_vote.svg/16px-Symbol_neutral_vote.svg.png" title="Non-article page" width="16" height="16" srcset="//upload.wikimedia.org/wikipedia/en/thumb/8/89/Symbol_neutral_vote.svg/23px-Symbol_neutral_vote.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/8/89/Symbol_neutral_vote.svg/31px-Symbol_neutral_vote.svg.png 2x" data-file-width="180" data-file-height="185" /> <b><a href="/wiki/Comparison_of_programming_languages" title="Comparison of programming languages">Comparison</a></b></li>
+<li><img alt="List-Class article" src="//upload.wikimedia.org/wikipedia/en/thumb/d/db/Symbol_list_class.svg/16px-Symbol_list_class.svg.png" title="List-Class article" width="16" height="16" srcset="//upload.wikimedia.org/wikipedia/en/thumb/d/db/Symbol_list_class.svg/23px-Symbol_list_class.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/d/db/Symbol_list_class.svg/31px-Symbol_list_class.svg.png 2x" data-file-width="180" data-file-height="185" /> <b>Lists</b>
+<ul>
+<li><a href="/wiki/List_of_programming_languages" title="List of programming languages">Alphabetical</a></li>
+<li><a href="/wiki/Categorical_list_of_programming_languages" class="mw-redirect" title="Categorical list of programming languages">Categorical</a></li>
+<li><a href="/wiki/Generational_list_of_programming_languages" title="Generational list of programming languages">Generational</a></li>
+<li><a href="/wiki/Non-English-based_programming_languages" title="Non-English-based programming languages">Non-English-based</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1272
+Cached time: 20170120111928
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.148 seconds
+Real time usage: 0.190 seconds
+Preprocessor visited node count: 1062/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 21252/2097152 bytes
+Template argument size: 2168/2097152 bytes
+Highest expansion depth: 25/40
+Expensive parser function count: 3/500
+Lua time usage: 0.061/10.000 seconds
+Lua memory usage: 2.58 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  158.463      1 -total
+ 55.87%   88.534      2 Template:Infobox
+ 42.40%   67.193      1 Template:Infobox_programming_language
+ 36.00%   57.041      1 Template:Reflist
+ 30.26%   47.953      3 Template:Cite_web
+ 19.14%   30.336      1 Template:Infobox_software/simple
+ 11.05%   17.505      1 Template:Programming_languages
+ 10.90%   17.271      1 Template:Start_date_and_age
+  9.99%   15.830      1 Template:Navbox
+  7.66%   12.145      1 Template:As_of
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:39035048-0!*!0!!en!4!* and timestamp 20170120111928 and revision id 752888393
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Idris_(programming_language)&amp;oldid=752888393">https://en.wikipedia.org/w/index.php?title=Idris_(programming_language)&amp;oldid=752888393</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Dependently_typed_languages" title="Category:Dependently typed languages">Dependently typed languages</a></li><li><a href="/wiki/Category:Functional_languages" title="Category:Functional languages">Functional languages</a></li><li><a href="/wiki/Category:Free_software_programmed_in_Haskell" title="Category:Free software programmed in Haskell">Free software programmed in Haskell</a></li><li><a href="/wiki/Category:Haskell_programming_language_family" title="Category:Haskell programming language family">Haskell programming language family</a></li><li><a href="/wiki/Category:Cross-platform_free_software" title="Category:Cross-platform free software">Cross-platform free software</a></li><li><a href="/wiki/Category:Free_compilers_and_interpreters" title="Category:Free compilers and interpreters">Free compilers and interpreters</a></li><li><a href="/wiki/Category:Software_using_the_BSD_license" title="Category:Software using the BSD license">Software using the BSD license</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Articles_containing_potentially_dated_statements_from_October_2014" title="Category:Articles containing potentially dated statements from October 2014">Articles containing potentially dated statements from October 2014</a></li><li><a href="/wiki/Category:All_articles_containing_potentially_dated_statements" title="Category:All articles containing potentially dated statements">All articles containing potentially dated statements</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Idris+%28programming+language%29" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Idris+%28programming+language%29" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/Idris_(programming_language)"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:Idris_(programming_language)"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/Idris_(programming_language)" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=Idris_(programming_language)&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Idris_(programming_language)&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Idris_(programming_language)" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Idris_(programming_language)" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Idris_(programming_language)&amp;oldid=752888393" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Idris_(programming_language)&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q15408477" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Idris_%28programming_language%29&amp;id=752888393" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Idris+%28programming+language%29">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Idris+%28programming+language%29&amp;returnto=Idris+%28programming+language%29&amp;oldid=752888393&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Idris_(programming_language)&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-ca"><a href="https://ca.wikipedia.org/wiki/Idris_(llenguatge_de_programaci%C3%B3)" title="Idris (llenguatge de programació) – Catalan" lang="ca" hreflang="ca" class="interlanguage-link-target">Català</a></li><li class="interlanguage-link interwiki-ru"><a href="https://ru.wikipedia.org/wiki/Idris_(%D1%8F%D0%B7%D1%8B%D0%BA_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F)" title="Idris (язык программирования) – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li><li class="interlanguage-link interwiki-zh"><a href="https://zh.wikipedia.org/wiki/Idris" title="Idris – Chinese" lang="zh" hreflang="zh" class="interlanguage-link-target">中文</a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q15408477#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 3 December 2016, at 23:59.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Idris_(programming_language)&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.148","walltime":"0.190","ppvisitednodes":{"value":1062,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":21252,"limit":2097152},"templateargumentsize":{"value":2168,"limit":2097152},"expansiondepth":{"value":25,"limit":40},"expensivefunctioncount":{"value":3,"limit":500},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  158.463      1 -total"," 55.87%   88.534      2 Template:Infobox"," 42.40%   67.193      1 Template:Infobox_programming_language"," 36.00%   57.041      1 Template:Reflist"," 30.26%   47.953      3 Template:Cite_web"," 19.14%   30.336      1 Template:Infobox_software/simple"," 11.05%   17.505      1 Template:Programming_languages"," 10.90%   17.271      1 Template:Start_date_and_age","  9.99%   15.830      1 Template:Navbox","  7.66%   12.145      1 Template:As_of"]},"scribunto":{"limitreport-timeusage":{"value":"0.061","limit":"10.000"},"limitreport-memusage":{"value":2703819,"limit":52428800}},"cachereport":{"origin":"mw1272","timestamp":"20170120111928","ttl":2592000,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":56,"wgHostname":"mw1247"});});</script>
+	</body>
+</html>

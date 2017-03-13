@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>XQuery - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"XQuery","wgTitle":"XQuery","wgCurRevisionId":760326908,"wgRevisionId":760326908,"wgArticleId":23742879,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Pages using ISBN magic links","Wikipedia references cleanup from December 2013","All articles needing references cleanup","Articles covered by WikiProject Wikify from December 2013","All articles covered by WikiProject Wikify","All articles with specifically marked weasel-worded phrases","Articles with specifically marked weasel-worded phrases from May 2015","All articles with unsourced statements","Articles with unsourced statements from May 2015","Wikipedia articles with GND identifiers","World Wide Web Consortium standards","XML data access","Functional languages","Query languages","4GL"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"XQuery","wgRelevantArticleId":23742879,"wgRequestId":"WJYtKwpAEKcAADIVOlwAAAAI","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":true},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q850661","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.cite.styles":"ready","ext.pygments":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.legacy.wikibits","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.pygments%2CwikimediaBadges%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.29.0-wmf.10"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/XQuery"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=XQuery&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=XQuery&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/XQuery"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-XQuery rootpage-XQuery skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">XQuery</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><table class="plainlinks metadata ambox ambox-style ambox-citation_style" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/40px-Edit-clear.svg.png" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/60px-Edit-clear.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/80px-Edit-clear.svg.png 2x" data-file-width="48" data-file-height="48" /></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">This article <b>has an unclear citation style</b>. <span class="hide-when-compact">The references used may be made clearer with a different or consistent style of <a href="/wiki/Wikipedia:Citing_sources" title="Wikipedia:Citing sources">citation</a>, <a href="/wiki/Help:Footnotes" title="Help:Footnotes">footnoting</a>, or <a href="/wiki/Wikipedia:External_links" title="Wikipedia:External links">external linking</a>. <em>Violates Wikipedia:External links: "Wikipedia articles may include links to web pages outside Wikipedia (external links), but they should not normally be used in the body of an article.".</em></span> <small><i>(December 2013)</i></small> <small class="hide-when-compact"><i>(<a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove this template message</a>)</i></small></span></td>
+</tr>
+</table>
+<table class="infobox vevent" style="width:22em">
+<caption class="summary">XQuery</caption>
+<tr>
+<th scope="row"><a href="/wiki/Programming_paradigm" title="Programming paradigm">Paradigm</a></th>
+<td><a href="/wiki/Declarative_programming" title="Declarative programming">declarative</a>, <a href="/wiki/Functional_programming" title="Functional programming">functional</a>, <a href="/wiki/Modular_programming" title="Modular programming">modular</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_design" title="Software design">Designed&#160;by</a></th>
+<td><a href="/wiki/W3C" class="mw-redirect" title="W3C">W3C</a></td>
+</tr>
+<tr>
+<th scope="row">First&#160;appeared</th>
+<td>2007</td>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Software_release_life_cycle" title="Software release life cycle">Stable release</a></th>
+<td>
+<div style="margin:0px;"><a rel="nofollow" class="external text" href="http://www.w3.org/TR/xquery-30/">3.0</a>/ April&#160;8,&#160;2014<span style="display:none">&#160;(<span class="bday dtstart published updated">2014-04-08</span>)</span><sup id="cite_ref-1" class="reference"><a href="#cite_note-1">[1]</a></sup></div>
+</td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Type_system" title="Type system">Typing discipline</a></th>
+<td><a href="/wiki/Dynamic_typing" class="mw-redirect" title="Dynamic typing">dynamic</a> or static,<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">[2]</a></sup><sup id="cite_ref-3" class="reference"><a href="#cite_note-3">[3]</a></sup> <a href="/wiki/Strong_typing" class="mw-redirect" title="Strong typing">strong</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Operating_system" title="Operating system">OS</a></th>
+<td><a href="/wiki/Cross-platform" title="Cross-platform">Cross-platform</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Filename_extension" title="Filename extension">Filename extensions</a></th>
+<td>.xq, .xqy, .xquery</td>
+</tr>
+<tr>
+<th scope="row">Website</th>
+<td><span class="url"><a rel="nofollow" class="external text" href="http://www.w3.org/XML/Query/">www<wbr />.w3<wbr />.org<wbr />/XML<wbr />/Query<wbr />/</a></span></td>
+</tr>
+<tr>
+<th colspan="2" style="text-align:center;background-color: #eee;">Major <a href="/wiki/Programming_language_implementation" title="Programming language implementation">implementations</a></th>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"><a rel="nofollow" class="external text" href="http://www.w3.org/XML/Query#implementations">Many</a></td>
+</tr>
+<tr>
+<th colspan="2" style="text-align:center;background-color: #eee;">Influenced by</th>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/XPath" title="XPath">XPath</a>, <a href="/wiki/SQL" title="SQL">SQL</a>, <a href="/wiki/XSLT" title="XSLT">XSLT</a></td>
+</tr>
+<tr>
+<td colspan="2" class="hlist" style="text-align:center;border-top: 1px solid #aaa; padding-top: 3px;">
+<ul>
+<li><a href="/wiki/File:Wikibooks-logo-en-noslogan.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/16px-Wikibooks-logo-en-noslogan.svg.png" width="16" height="16" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/24px-Wikibooks-logo-en-noslogan.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/32px-Wikibooks-logo-en-noslogan.svg.png 2x" data-file-width="400" data-file-height="400" /></a> <a href="https://en.wikibooks.org/wiki/XQuery" class="extiw" title="wikibooks:XQuery">XQuery</a> at Wikibooks</li>
+</ul>
+</td>
+</tr>
+</table>
+<p><b>XQuery</b> (<b>XML Query</b>) is a <a href="/wiki/Query_language" title="Query language">query</a> and <a href="/wiki/Functional_programming" title="Functional programming">functional programming</a> language that queries and transforms collections of structured and unstructured data, usually in the form of XML, text and with vendor-specific extensions for other data formats (JSON, binary, etc.). The language is developed by the XML Query <a href="/wiki/Working_group" title="Working group">working group</a> of the <a href="/wiki/W3C" class="mw-redirect" title="W3C">W3C</a>. The work is closely coordinated with the development of <a href="/wiki/XSLT" title="XSLT">XSLT</a> by the XSL Working Group; the two groups share responsibility for <a href="/wiki/XPath" title="XPath">XPath</a>, which is a subset of XQuery.</p>
+<p><b>XQuery 1.0</b> became a <a href="/wiki/W3C_Recommendation" class="mw-redirect" title="W3C Recommendation">W3C Recommendation</a> on January 23, 2007.<sup id="cite_ref-4" class="reference"><a href="#cite_note-4">[4]</a></sup></p>
+<p><b>XQuery 3.0</b> became a <a href="/wiki/W3C_Recommendation" class="mw-redirect" title="W3C Recommendation">W3C Recommendation</a> on April 8, 2014.<sup id="cite_ref-5" class="reference"><a href="#cite_note-5">[5]</a></sup></p>
+<blockquote class="templatequote">
+<p>"The mission of the XML Query project is to provide flexible query facilities to extract data from real and virtual documents on the World Wide Web, therefore finally providing the needed interaction between the Web world and the database world. Ultimately, collections of XML files will be accessed like databases".<sup id="cite_ref-6" class="reference"><a href="#cite_note-6">[6]</a></sup></p>
+</blockquote>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Features"><span class="tocnumber">1</span> <span class="toctext">Features</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Examples"><span class="tocnumber">2</span> <span class="toctext">Examples</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Applications"><span class="tocnumber">3</span> <span class="toctext">Applications</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#XQuery_and_XSLT_compared"><span class="tocnumber">4</span> <span class="toctext">XQuery and XSLT compared</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="#Scope"><span class="tocnumber">4.1</span> <span class="toctext">Scope</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Origin"><span class="tocnumber">4.2</span> <span class="toctext">Origin</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Versions"><span class="tocnumber">4.3</span> <span class="toctext">Versions</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Strengths_and_weaknesses"><span class="tocnumber">4.4</span> <span class="toctext">Strengths and weaknesses</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-9"><a href="#Extensions_and_future_work"><span class="tocnumber">5</span> <span class="toctext">Extensions and future work</span></a>
+<ul>
+<li class="toclevel-2 tocsection-10"><a href="#W3C_extensions"><span class="tocnumber">5.1</span> <span class="toctext">W3C extensions</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#Third-party_extensions"><span class="tocnumber">5.2</span> <span class="toctext">Third-party extensions</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-12"><a href="#Further_reading"><span class="tocnumber">6</span> <span class="toctext">Further reading</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="#Implementations"><span class="tocnumber">7</span> <span class="toctext">Implementations</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="#References"><span class="tocnumber">8</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-15"><a href="#External_links"><span class="tocnumber">9</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Features">Features</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=XQuery&amp;action=edit&amp;section=1" title="Edit section: Features">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>XQuery is a functional, <a href="/wiki/Side_effect_(computer_science)" title="Side effect (computer science)">side effect-free</a>, expression-oriented programming language with a simple <a href="/wiki/Type_system" title="Type system">type system</a>, summed up by Kilpeläinen:<sup id="cite_ref-7" class="reference"><a href="#cite_note-7">[7]</a></sup></p>
+<blockquote class="templatequote">
+<p>All XQuery expressions operate on sequences, and evaluate to sequences. <i>Sequences</i> are ordered lists of items. <i>Items</i> can be either <i>nodes</i>, which represent components of XML documents, or <i>atomic values</i>, which are instances of XML Schema base types like <span style="font-family: monospace, monospace;">xs:integer</span> or <span style="font-family: monospace, monospace;">xs:string</span>. Sequences can also be empty, or consist of a single item only. No distinction is made between a single item and a singleton sequence. (...) XQuery/XPath sequences differ from lists in languages like <a href="/wiki/Lisp_(programming_language)" title="Lisp (programming language)">Lisp</a> and <a href="/wiki/Prolog" title="Prolog">Prolog</a> by excluding nested sequences. Designers of XQuery may have considered nested sequences unnecessary for the manipulation of document contents. Nesting, or hierarchy of document structures is instead represented by nodes and their child-parent relationships</p>
+</blockquote>
+<p>XQuery provides the means to extract and manipulate data from XML documents or any data source that can be viewed as XML, such as <a href="/wiki/Relational_database" title="Relational database">relational databases</a><sup id="cite_ref-8" class="reference"><a href="#cite_note-8">[8]</a></sup> or office documents.</p>
+<p>XQuery contains a superset of <a href="/wiki/XPath" title="XPath">XPath</a> expression syntax to address specific parts of an XML document. It supplements this with a <a href="/wiki/SQL" title="SQL">SQL</a>-like "<a href="/wiki/FLWOR" title="FLWOR">FLWOR</a> expression" for performing joins. A FLWOR expression is constructed from the five clauses after which it is named: FOR, LET, WHERE, ORDER BY, RETURN.</p>
+<p>The language also provides syntax allowing new XML documents to be constructed. Where the element and attribute names are known in advance, an XML-like syntax can be used; in other cases, expressions referred to as dynamic node constructors are available. All these constructs are defined as expressions within the language, and can be arbitrarily nested.</p>
+<p>The language is based on the <a href="/wiki/XQuery_and_XPath_Data_Model" title="XQuery and XPath Data Model">XQuery and XPath Data Model</a> (XDM) which uses a tree-structured model of the information content of an XML document, containing seven kinds of nodes: document nodes, elements, attributes, text nodes, comments, processing instructions, and namespaces.</p>
+<p>XDM also models all values as sequences (a singleton value is considered to be a sequence of length one). The items in a sequence can either be XML nodes or atomic values. Atomic values may be integers, strings, booleans, and so on: the full list of types is based on the primitive types defined in <a href="/wiki/XML_Schema_(W3C)" title="XML Schema (W3C)">XML Schema</a>.</p>
+<p>Features for updating XML documents or databases, and <a href="/wiki/Full_text_search" class="mw-redirect" title="Full text search">full text search</a> capability, are not part of the core language, but are defined in add-on extension standards: XQuery Update Facility 1.0 supports update feature and XQuery and XPath Full Text 1.0 supports full text search in XML documents.</p>
+<p>XQuery 3.0 adds support for full functional programming, in that functions are values that can be manipulated (stored in variables, passed to higher-order functions, and dynamically called).</p>
+<h2><span class="mw-headline" id="Examples">Examples</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=XQuery&amp;action=edit&amp;section=2" title="Edit section: Examples">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The sample XQuery code below lists the unique speakers in each act of Shakespeare's play Hamlet, encoded in <a rel="nofollow" class="external text" href="http://www.ibiblio.org/xml/examples/shakespeare/hamlet.xml">hamlet.xml</a></p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+ <span class="nt">&lt;html&gt;&lt;body&gt;</span>
+<span class="l"> </span><span class="p">{</span>
+   <span class="k">for</span> <span class="nv">$</span><span class="n">act</span> <span class="ow">in</span> <span class="nf">doc</span><span class="p">(</span><span class="s2">"hamlet.xml"</span><span class="p">)//</span><span class="nt">ACT</span>
+   <span class="k">let</span> <span class="nv">$</span><span class="n">speakers</span> <span class="o">:=</span> <span class="nf">distinct-values</span><span class="p">(</span><span class="nv">$</span><span class="n">act</span><span class="p">//</span><span class="nt">SPEAKER</span><span class="p">)</span>
+   <span class="k">return</span>
+     <span class="nt">&lt;div&gt;</span>
+<span class="l">       </span><span class="nt">&lt;h1&gt;</span><span class="p">{</span> <span class="nf">string</span><span class="p">(</span><span class="nv">$</span><span class="n">act</span><span class="p">/</span><span class="nt">TITLE</span><span class="p">)</span> <span class="p">}</span><span class="nt">&lt;/h1&gt;</span>
+<span class="l">       </span><span class="nt">&lt;ul&gt;</span>
+<span class="l">       </span><span class="p">{</span>
+         <span class="k">for</span> <span class="nv">$</span><span class="n">speaker</span> <span class="ow">in</span> <span class="nv">$</span><span class="n">speakers</span>
+         <span class="k">return</span> <span class="nt">&lt;li&gt;</span><span class="p">{</span> <span class="nv">$</span><span class="n">speaker</span> <span class="p">}</span><span class="nt">&lt;/li&gt;</span>
+       <span class="p">}</span>
+<span class="l">       </span><span class="nt">&lt;/ul&gt;</span>
+<span class="l">     </span><span class="nt">&lt;/div&gt;</span>
+ <span class="p">}</span>
+<span class="l"> </span><span class="nt">&lt;/body&gt;&lt;/html&gt;</span>
+</pre></div>
+<p>All XQuery constructs for performing computations are <a href="/wiki/Expression_(programming)" class="mw-redirect" title="Expression (programming)">expressions</a>. There are no <a href="/wiki/Statement_(programming)" class="mw-redirect" title="Statement (programming)">statements</a>, even though some of the keywords appear to suggest statement-like behaviors. To execute a function, the expression within the body is evaluated and its value is returned. Thus to write a function to double an input value, one simply writes:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="kd">declare</span> <span class="kd">function</span> <span class="nf">local:doubler</span><span class="p">(</span><span class="nv">$</span><span class="n">x</span><span class="p">)</span> <span class="p">{</span> <span class="nv">$</span><span class="n">x</span> <span class="o">*</span> <span class="mi">2</span> <span class="p">}</span>
+</pre></div>
+<p>To write a full query saying 'Hello World', one writes the expression:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+ <span class="s2">"Hello World"</span>
+</pre></div>
+<p>This style is common in <a href="/wiki/Functional_programming" title="Functional programming">functional programming languages</a>.</p>
+<h2><span class="mw-headline" id="Applications">Applications</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=XQuery&amp;action=edit&amp;section=3" title="Edit section: Applications">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Below are a few examples of how XQuery can be used:</p>
+<ol>
+<li>Extracting information from a database for use in a web service.</li>
+<li>Generating summary reports on data stored in an XML database.</li>
+<li>Searching textual documents on the Web for relevant information and compiling the results.</li>
+<li>Selecting and transforming XML data to XHTML to be published on the Web.</li>
+<li>Pulling data from databases to be used for the application integration.</li>
+<li>Splitting up an XML document that represents multiple transactions into multiple XML documents.</li>
+</ol>
+<h2><span class="mw-headline" id="XQuery_and_XSLT_compared">XQuery and XSLT compared</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=XQuery&amp;action=edit&amp;section=4" title="Edit section: XQuery and XSLT compared">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="Scope">Scope</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=XQuery&amp;action=edit&amp;section=5" title="Edit section: Scope">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Although XQuery was initially conceived as a query language for large collections of XML documents, it is also capable of transforming individual documents. As such, its capabilities overlap with <a href="/wiki/XSLT" title="XSLT">XSLT</a>, which was designed expressly to allow input XML documents to be transformed into HTML or other formats.</p>
+<p>The XSLT 2.0 and XQuery standards were developed by separate working groups within <a href="/wiki/W3C" class="mw-redirect" title="W3C">W3C</a>, working together to ensure a common approach where appropriate. They share the same data model (<a href="/wiki/XQuery_and_XPath_Data_Model" title="XQuery and XPath Data Model">XDM</a>), type system, and function library, and both include <a href="/wiki/XPath" title="XPath">XPath</a> 2.0 as a sublanguage.</p>
+<h3><span class="mw-headline" id="Origin">Origin</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=XQuery&amp;action=edit&amp;section=6" title="Edit section: Origin">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The two languages, however, are rooted in different traditions and serve the needs of different communities. XSLT was primarily conceived as a stylesheet language whose primary goal was to render XML for the human reader on screen, on <a href="/wiki/The_web" class="mw-redirect" title="The web">the web</a> (as <a href="/wiki/Web_template" class="mw-redirect" title="Web template">web template language</a>), or on paper. XQuery was primarily conceived as a <a href="/wiki/Database_query_language" class="mw-redirect" title="Database query language">database query language</a> in the tradition of <a href="/wiki/SQL" title="SQL">SQL</a>.</p>
+<p>Because the two languages originate in different communities, XSLT is stronger<sup class="noprint Inline-Template" style="margin-left:0.1em; white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Manual_of_Style/Words_to_watch#Unsupported_attributions" title="Wikipedia:Manual of Style/Words to watch"><span title="The material near this tag may use weasel words or too-vague attribution. (May 2015)">according to whom?</span></a></i>]</sup> in its handling of narrative documents with more flexible structure, while XQuery is stronger in its data handling (for example, when performing relational joins).</p>
+<h3><span class="mw-headline" id="Versions">Versions</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=XQuery&amp;action=edit&amp;section=7" title="Edit section: Versions">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>XSLT 1.0 appeared as a Recommendation in 1999, whereas XQuery 1.0 only became a Recommendation in early 2007; as a result, XSLT is at present much more widely used. Both languages have similar expressive power, though XSLT 2.0 has many features that are missing from XQuery 1.0, such as grouping, number and date formatting, and greater control over XML namespaces.<sup id="cite_ref-Kay_9-0" class="reference"><a href="#cite_note-Kay-9">[9]</a></sup><sup id="cite_ref-Eisenberg_10-0" class="reference"><a href="#cite_note-Eisenberg-10">[10]</a></sup><sup id="cite_ref-Smith_11-0" class="reference"><a href="#cite_note-Smith-11">[11]</a></sup> Many of these features were planned for XQuery 3.0.<sup id="cite_ref-XQuery11_12-0" class="reference"><a href="#cite_note-XQuery11-12">[12]</a></sup></p>
+<p>Any comparison must take into account the fact that XSLT 1.0 and XSLT 2.0 are very different languages. XSLT 2.0, in particular, has been heavily influenced by XQuery in its move to strong typing and schema-awareness.</p>
+<h3><span class="mw-headline" id="Strengths_and_weaknesses">Strengths and weaknesses</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=XQuery&amp;action=edit&amp;section=8" title="Edit section: Strengths and weaknesses">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Usability studies have shown that XQuery is easier to learn than XSLT, especially for users with previous experience of database languages such as SQL.<sup id="cite_ref-13" class="reference"><a href="#cite_note-13">[13]</a></sup> This can be attributed to the fact that XQuery is a smaller language with fewer concepts to learn, and to the fact that programs are more concise. It is also true that XQuery is more orthogonal, in that any expression can be used in any syntactic context. By contrast, XSLT is a two-language system in which XPath expressions can be nested in XSLT instructions but not vice versa.</p>
+<p>XSLT is currently stronger than XQuery for applications that involve making small changes to a document (for example, deleting all the NOTE elements). Such applications are generally handled in XSLT by use of a coding pattern that involves an identity template that copies all nodes unchanged, modified by specific templates that modify selected nodes. XQuery has no equivalent to this coding pattern, though in future versions it will be possible to tackle such problems using the update facilities in the language that are under development.<sup id="cite_ref-XQueryUpdate_14-0" class="reference"><a href="#cite_note-XQueryUpdate-14">[14]</a></sup></p>
+<p>XQuery 1.0 lacked any kind of mechanism for dynamic binding or polymorphism; this has been remedied with the introduction of functions as first-class values in XQuery 3.0. The absence of this capability starts to become noticeable when writing large applications, or when writing code that is designed to be reusable in different environments.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (May 2015)">citation needed</span></a></i>]</sup> XSLT offers two complementary mechanisms in this area: the dynamic matching of template rules, and the ability to override rules using <code>xsl:import</code>, that make it possible to write applications with multiple customization layers.</p>
+<p>The absence of these facilities from XQuery 1.0 was a deliberate design decision: it has the consequence that XQuery is very amenable to static analysis, which is essential to achieve the level of optimization needed in database query languages. This also makes it easier to detect errors in XQuery code at compile time.</p>
+<p>The fact that XSLT 2.0 uses <a href="/wiki/XML" title="XML">XML</a> syntax makes it rather verbose in comparison to XQuery 1.0. However, many large applications take advantage of this capability by using XSLT to read, write, or modify stylesheets dynamically as part of a processing pipeline. The use of XML syntax also enables the use of XML-based tools for managing XSLT code. By contrast, XQuery syntax is more suitable for embedding in traditional programming languages such as <a href="/wiki/Java_(programming_language)" title="Java (programming language)">Java</a> (see <a href="/wiki/XQuery_API_for_Java" title="XQuery API for Java">XQuery API for Java</a>) or <a href="/wiki/C_Sharp_(programming_language)" title="C Sharp (programming language)">C#</a>. If necessary, XQuery code can also be expressed in an XML syntax called XQueryX. The XQueryX representation of XQuery code is rather verbose and not convenient for humans, but can easily be processed with XML tools, for example transformed with XSLT stylesheets.<sup id="cite_ref-XQueryX_15-0" class="reference"><a href="#cite_note-XQueryX-15">[15]</a></sup><sup id="cite_ref-16" class="reference"><a href="#cite_note-16">[16]</a></sup></p>
+<h2><span class="mw-headline" id="Extensions_and_future_work">Extensions and future work</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=XQuery&amp;action=edit&amp;section=9" title="Edit section: Extensions and future work">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="W3C_extensions">W3C extensions</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=XQuery&amp;action=edit&amp;section=10" title="Edit section: W3C extensions">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Currently, two major extensions to the XQuery are under development by the W3C:</p>
+<ul>
+<li>XQuery 1.0 and XPath 2.0 Full-Text<sup id="cite_ref-17" class="reference"><a href="#cite_note-17">[17]</a></sup></li>
+<li><a href="/wiki/XQuery_Update_Facility" title="XQuery Update Facility">XQuery Update Facility</a></li>
+</ul>
+<p>Work on XQuery 3.0 was published as a Recommendation on 8 April 2014,<sup id="cite_ref-18" class="reference"><a href="#cite_note-18">[18]</a></sup> and work has started on XQuery 3.1.</p>
+<p>A scripting (procedural) extension for XQuery is also being designed.<sup id="cite_ref-19" class="reference"><a href="#cite_note-19">[19]</a></sup></p>
+<p>The EXPath Community Group <sup id="cite_ref-20" class="reference"><a href="#cite_note-20">[20]</a></sup> develops extensions to XQuery and other related standards (XPath, XSLT, XProc, and XForms). The following extensions are currently available:</p>
+<ul>
+<li>Packaging System<sup id="cite_ref-21" class="reference"><a href="#cite_note-21">[21]</a></sup></li>
+<li>File Module<sup id="cite_ref-22" class="reference"><a href="#cite_note-22">[22]</a></sup></li>
+<li>Binary Module<sup id="cite_ref-23" class="reference"><a href="#cite_note-23">[23]</a></sup></li>
+<li>Web Applications<sup id="cite_ref-24" class="reference"><a href="#cite_note-24">[24]</a></sup></li>
+</ul>
+<h3><span class="mw-headline" id="Third-party_extensions">Third-party extensions</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=XQuery&amp;action=edit&amp;section=11" title="Edit section: Third-party extensions">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p><a href="/wiki/JSONiq" title="JSONiq">JSONiq</a> is an extension of XQuery that adds support to extract and transform data from <a href="/wiki/JSON" title="JSON">JSON</a> documents. JSONiq is a superset of XQuery 3.0. It is published under the <a href="/wiki/Creative_Commons_license" title="Creative Commons license">Creative Commons Attribution-ShareAlike 3.0</a> license.</p>
+<p>The EXQuery<sup id="cite_ref-25" class="reference"><a href="#cite_note-25">[25]</a></sup> project develops standards around creating portable XQuery applications. The following standards are currently available:</p>
+<ul>
+<li>RESTXQ<sup id="cite_ref-26" class="reference"><a href="#cite_note-26">[26]</a></sup></li>
+</ul>
+<h2><span class="mw-headline" id="Further_reading">Further reading</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=XQuery&amp;action=edit&amp;section=12" title="Edit section: Further reading">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li>Querying XML: XQuery, XPath, and SQL/XML in context. Jim Melton and Stephen Buxton. Morgan Kaufmann, 2006. <a href="/wiki/Special:BookSources/1558607110" class="internal mw-magiclink-isbn">ISBN 1-55860-711-0</a>.</li>
+<li><cite class="citation book">Walmsley, Priscilla (2007). <i>XQuery, 1st Edition</i>. O'Reilly Media. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-0-596-00634-1" title="Special:BookSources/978-0-596-00634-1">978-0-596-00634-1</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AXQuery&amp;rft.aufirst=Priscilla&amp;rft.aulast=Walmsley&amp;rft.btitle=XQuery%2C+1st+Edition&amp;rft.date=2007&amp;rft.genre=book&amp;rft.isbn=978-0-596-00634-1&amp;rft.pub=O%27Reilly+Media&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation book">Walmsley, Priscilla (2015). <i>XQuery, 2nd Edition</i>. O'Reilly Media. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-1-4919-1510-3" title="Special:BookSources/978-1-4919-1510-3">978-1-4919-1510-3</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AXQuery&amp;rft.aufirst=Priscilla&amp;rft.aulast=Walmsley&amp;rft.btitle=XQuery%2C+2nd+Edition&amp;rft.date=2015&amp;rft.genre=book&amp;rft.isbn=978-1-4919-1510-3&amp;rft.pub=O%27Reilly+Media&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li>XQuery: The XML Query Language. Michael Brundage. Addison-Wesley Professional, 2004. <a href="/wiki/Special:BookSources/0321165810" class="internal mw-magiclink-isbn">ISBN 0-321-16581-0</a>.</li>
+<li>XQuery from the Experts: A Guide to the W3C XML Query Language. Howard Katz (ed). Addison-Wesley, 2004. <a href="/wiki/Special:BookSources/0321180607" class="internal mw-magiclink-isbn">ISBN 0-321-18060-7</a></li>
+<li>An Introduction to the <a rel="nofollow" class="external text" href="http://www.stylusstudio.com/xquery_flwor.html">XQuery FLWOR</a> Expression. Dr. <a href="/wiki/Michael_Howard_Kay" title="Michael Howard Kay">Michael Kay</a> (W3C XQuery Committee), 2005.</li>
+</ul>
+<h2><span class="mw-headline" id="Implementations">Implementations</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=XQuery&amp;action=edit&amp;section=13" title="Edit section: Implementations">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a href="/wiki/BaseX" title="BaseX">BaseX</a>: BaseX XQuery implementation</li>
+<li><a href="/wiki/EXist" title="EXist">eXist</a>: eXist XQuery implementation</li>
+<li><a href="/wiki/MarkLogic" title="MarkLogic">MarkLogic</a>: MarkLogic XQuery implementation</li>
+<li><a rel="nofollow" class="external text" href="http://docs.oracle.com/cd/E63064_01/doc.42/e63063/oxh.htm">Oracle</a>: XQuery for Hadoop</li>
+<li><a rel="nofollow" class="external text" href="http://docs.oracle.com/database/121/ADXDK/adx_j_xqj.htm">Oracle</a>: XQuery Processor for Java</li>
+<li><a rel="nofollow" class="external text" href="http://www.altova.com/raptorxml.html">RaptorXML Server</a>: Altova's XSLT and XQuery engine</li>
+<li><a href="/wiki/Saxon_XSLT" title="Saxon XSLT">SAXON</a>: Michael Kay's XSLT and XQuery processor</li>
+<li><a rel="nofollow" class="external text" href="https://github.com/sirixdb/sirix">Sirix</a>: XQuery with versioning extensions</li>
+<li><a rel="nofollow" class="external text" href="http://xqilla.sourceforge.net/HomePage">XQilla</a>: XQilla XQuery implementation</li>
+<li><a href="/wiki/Zorba_(XQuery_processor)" title="Zorba (XQuery processor)">Zorba</a>: Zorba XQuery and JSONiq processor</li>
+<li><a rel="nofollow" class="external text" href="http://www.w3.org/community/expath/wiki/Engines">EXPath</a>: XPath/XQuery engines, including a feature matrix</li>
+<li><a rel="nofollow" class="external text" href="http://www.w3.org/XML/Query#implementations">W3C</a>: XQuery implementations</li>
+<li><a rel="nofollow" class="external text" href="http://www.dblab.ntua.gr/~bikakis/SPARQL2XQuery.html">SPARQL2XQuery</a>: SPARQL to XQuery translator</li>
+<li><a rel="nofollow" class="external text" href="http://galax.sourceforge.net/about.html">Galax</a> – an open source XQuery implementation.</li>
+<li><a rel="nofollow" class="external text" href="http://www-01.ibm.com/support/knowledgecenter/SSEPGG_10.5.0/com.ibm.db2.luw.xml.doc/doc/xqrbasics.html?cp=SSEPGG_10.5.0&amp;lang=en">IBM DB2 for LUW</a> – XQuery implementation in IBM DB2.</li>
+<li><a rel="nofollow" class="external text" href="http://www.videlibri.de/xidel.html">Xidel</a> – open-source XQuery 3.0 implementation</li>
+</ul>
+<div role="note" class="hatnote">See also: <a href="/wiki/Category:XQuery_processors" title="Category:XQuery processors">Category:XQuery processors</a></div>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=XQuery&amp;action=edit&amp;section=14" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist columns references-column-count references-column-count-2" style="-moz-column-count: 2; -webkit-column-count: 2; column-count: 2; list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.w3.org/TR/xquery-30/">"XQuery 3.0 Recommendation"</a>. 2014-04-08.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AXQuery&amp;rft.btitle=XQuery+3.0+Recommendation&amp;rft.date=2014-04-08&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.w3.org%2FTR%2Fxquery-30%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.w3.org/TR/xquery/#dt-static-typing-feature">"XQuery 1.0: An XML Query Language (Second Edition)"</a>. 2010-12-14.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AXQuery&amp;rft.btitle=XQuery+1.0%3A+An+XML+Query+Language+%28Second+Edition%29&amp;rft.date=2010-12-14&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.w3.org%2FTR%2Fxquery%2F%23dt-static-typing-feature&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://technet.microsoft.com/en-us/library/ms190938.aspx">"XQuery and Static Typing"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AXQuery&amp;rft.btitle=XQuery+and+Static+Typing&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Ftechnet.microsoft.com%2Fen-us%2Flibrary%2Fms190938.aspx&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.dblab.ntua.gr/~bikakis/XML%20and%20Semantic%20Web%20W3C%20Standards%20Timeline-History.pdf">"XML and Semantic Web W3C Standards Timeline"</a> <span style="font-size:85%;">(PDF)</span>. 2012-02-04.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AXQuery&amp;rft.btitle=XML+and+Semantic+Web+W3C+Standards+Timeline&amp;rft.date=2012-02-04&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.dblab.ntua.gr%2F~bikakis%2FXML%2520and%2520Semantic%2520Web%2520W3C%2520Standards%2520Timeline-History.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.w3.org/TR/xquery-30/">"XQuery 3.0 Recommendation"</a>. 2014-04-08.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AXQuery&amp;rft.btitle=XQuery+3.0+Recommendation&amp;rft.date=2014-04-08&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.w3.org%2FTR%2Fxquery-30%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text"><cite class="citation web">W3C (2003-10-25). <a rel="nofollow" class="external text" href="http://lists.w3.org/Archives/Public/www-tag/2003Oct/0115.html">"cited by J.Robie"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AXQuery&amp;rft.au=W3C&amp;rft.btitle=cited+by+J.Robie&amp;rft.date=2003-10-25&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Flists.w3.org%2FArchives%2FPublic%2Fwww-tag%2F2003Oct%2F0115.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text"><cite class="citation journal">Kilpeläinen, Pekka (2012). <a rel="nofollow" class="external text" href="http://www.cs.uef.fi/~kilpelai/RDK11/refs/xqueryProblems.pdf">"Using XQuery for problem solving"</a> <span style="font-size:85%;">(PDF)</span>. <i>Software: Practice and Experience</i>. <b>42</b> (12): 1433–1465. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1002%2Fspe.1140">10.1002/spe.1140</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AXQuery&amp;rft.atitle=Using+XQuery+for+problem+solving&amp;rft.aufirst=Pekka&amp;rft.aulast=Kilpel%C3%A4inen&amp;rft.date=2012&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fwww.cs.uef.fi%2F~kilpelai%2FRDK11%2Frefs%2FxqueryProblems.pdf&amp;rft_id=info%3Adoi%2F10.1002%2Fspe.1140&amp;rft.issue=12&amp;rft.jtitle=Software%3A+Practice+and+Experience&amp;rft.pages=1433-1465&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=42" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www-01.ibm.com/support/knowledgecenter/SSEPGG_10.5.0/com.ibm.db2.luw.xml.doc/doc/c0023907.html?lang=en">"Data retrieval with XQuery"</a>. Retrieved on 18 January 2016.</span></li>
+<li id="cite_note-Kay-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-Kay_9-0">^</a></b></span> <span class="reference-text"><cite class="citation web">Kay, Michael (May 2005). <a rel="nofollow" class="external text" href="https://www.mscs.mu.edu/~praveen/Teaching/fa05/AdvDb/PaperTeams/XSLT2XQTeam/Comparing%20XSLT%20and%20XQuery.htm">"Comparing XSLT and XQuery"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AXQuery&amp;rft.aufirst=Michael&amp;rft.aulast=Kay&amp;rft.btitle=Comparing+XSLT+and+XQuery&amp;rft.date=2005-05&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fwww.mscs.mu.edu%2F~praveen%2FTeaching%2Ffa05%2FAdvDb%2FPaperTeams%2FXSLT2XQTeam%2FComparing%2520XSLT%2520and%2520XQuery.htm&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-Eisenberg-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-Eisenberg_10-0">^</a></b></span> <span class="reference-text"><cite class="citation web">Eisenberg, J. David (2005-03-09). <a rel="nofollow" class="external text" href="http://www.xml.com/pub/a/2005/03/09/xquery-v-xslt.html">"Comparing XSLT and XQuery"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AXQuery&amp;rft.aufirst=J.+David&amp;rft.aulast=Eisenberg&amp;rft.btitle=Comparing+XSLT+and+XQuery&amp;rft.date=2005-03-09&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.xml.com%2Fpub%2Fa%2F2005%2F03%2F09%2Fxquery-v-xslt.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-Smith-11"><span class="mw-cite-backlink"><b><a href="#cite_ref-Smith_11-0">^</a></b></span> <span class="reference-text"><cite class="citation web">Smith, Michael (2001-02-23). <a rel="nofollow" class="external text" href="http://www.xmlhack.com/read.php?item=1080">"XQuery, XSLT "overlap" debated"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AXQuery&amp;rft.aufirst=Michael&amp;rft.aulast=Smith&amp;rft.btitle=XQuery%2C+XSLT+%22overlap%22+debated&amp;rft.date=2001-02-23&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.xmlhack.com%2Fread.php%3Fitem%3D1080&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-XQuery11-12"><span class="mw-cite-backlink"><b><a href="#cite_ref-XQuery11_12-0">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.w3.org/TR/xquery-30-requirements/">"XQuery 3.0 requirements"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AXQuery&amp;rft.btitle=XQuery+3.0+requirements&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.w3.org%2FTR%2Fxquery-30-requirements%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-13"><span class="mw-cite-backlink"><b><a href="#cite_ref-13">^</a></b></span> <span class="reference-text">Usability of XML Query Languages. Joris Graaumans. SIKS Dissertation Series No 2005-16, <a href="/wiki/Special:BookSources/903934065X" class="internal mw-magiclink-isbn">ISBN 90-393-4065-X</a></span></li>
+<li id="cite_note-XQueryUpdate-14"><span class="mw-cite-backlink"><b><a href="#cite_ref-XQueryUpdate_14-0">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.w3.org/TR/xqupdate/">"XQuery Update Facility"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AXQuery&amp;rft.btitle=XQuery+Update+Facility&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.w3.org%2FTR%2Fxqupdate%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-XQueryX-15"><span class="mw-cite-backlink"><b><a href="#cite_ref-XQueryX_15-0">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.w3.org/TR/xqueryx/">"XML Syntax for XQuery (XQueryX)"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AXQuery&amp;rft.btitle=XML+Syntax+for+XQuery+%28XQueryX%29&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.w3.org%2FTR%2Fxqueryx%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-16"><span class="mw-cite-backlink"><b><a href="#cite_ref-16">^</a></b></span> <span class="reference-text"><cite class="citation web">Michael Kay. <a rel="nofollow" class="external text" href="http://saxonica.blogharbor.com/blog/_archives/2007/1/20/2665644.html">"Saxon diaries: How not to fold constants"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AXQuery&amp;rft.au=Michael+Kay&amp;rft.btitle=Saxon+diaries%3A+How+not+to+fold+constants&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fsaxonica.blogharbor.com%2Fblog%2F_archives%2F2007%2F1%2F20%2F2665644.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-17"><span class="mw-cite-backlink"><b><a href="#cite_ref-17">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.w3.org/TR/xquery-full-text/">XQuery and XPath Full Text 1.0</a></span></li>
+<li id="cite_note-18"><span class="mw-cite-backlink"><b><a href="#cite_ref-18">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.w3.org/TR/xquery-30/">XML Query (XQuery) 3.0</a></span></li>
+<li id="cite_note-19"><span class="mw-cite-backlink"><b><a href="#cite_ref-19">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.w3.org/TR/xquery-sx-10-requirements/">XQuery Scripting Extension 1.0 Requirements</a></span></li>
+<li id="cite_note-20"><span class="mw-cite-backlink"><b><a href="#cite_ref-20">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.w3.org/community/expath/">EXPath Community Group</a></span></li>
+<li id="cite_note-21"><span class="mw-cite-backlink"><b><a href="#cite_ref-21">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://expath.org/spec/pkg/20120509">Packaging System</a></span></li>
+<li id="cite_note-22"><span class="mw-cite-backlink"><b><a href="#cite_ref-22">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://expath.org/spec/file/20120614">File Module</a></span></li>
+<li id="cite_note-23"><span class="mw-cite-backlink"><b><a href="#cite_ref-23">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://expath.org/spec/binary/20130312">Binary Module</a></span></li>
+<li id="cite_note-24"><span class="mw-cite-backlink"><b><a href="#cite_ref-24">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://expath.org/spec/webapp/20130401">Web Applications</a></span></li>
+<li id="cite_note-25"><span class="mw-cite-backlink"><b><a href="#cite_ref-25">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.exquery.org/">"Standard for portable XQuery applications"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">12 December</span> 2013</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AXQuery&amp;rft.btitle=Standard+for+portable+XQuery+applications&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.exquery.org%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-26"><span class="mw-cite-backlink"><b><a href="#cite_ref-26">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external autonumber" href="http://exquery.github.io/exquery/exquery-restxq-specification/restxq-1.0-specification.html">[1]</a></span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=XQuery&amp;action=edit&amp;section=15" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<table role="presentation" class="mbox-small plainlinks sistersitebox" style="border:1px solid #aaa;background-color:#f9f9f9">
+<tr>
+<td class="mbox-image"><a href="/wiki/File:Wikibooks-logo-en-noslogan.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/40px-Wikibooks-logo-en-noslogan.svg.png" width="40" height="40" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/60px-Wikibooks-logo-en-noslogan.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/80px-Wikibooks-logo-en-noslogan.svg.png 2x" data-file-width="400" data-file-height="400" /></a></td>
+<td class="mbox-text plainlist">Wikibooks has a book on the topic of: <i><b><a href="https://en.wikibooks.org/wiki/XQuery" class="extiw" title="wikibooks:XQuery">XQuery</a></b></i></td>
+</tr>
+</table>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.w3.org/XML/Query">W3C XML Query (XQuery)</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.w3schools.com/xml/xquery_intro.asp">XQuery tutorial</a></li>
+<li><a href="/wiki/XQuery_API_for_Java" title="XQuery API for Java">XQuery API for Java</a> (XQJ) <a href="/wiki/Java_Specification_Request" class="mw-redirect" title="Java Specification Request">Java Specification Request</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.ibiblio.org/xml/examples/shakespeare/hamlet.xml">hamlet.xml</a> Hamlet in XML Format</li>
+<li><a rel="nofollow" class="external text" href="http://www.cafeconleche.org/slides/xmlsig/xquery/index.html">XQuery</a> (presentation - as HTML slides)</li>
+<li><a rel="nofollow" class="external text" href="http://www.martinbroadhurst.com/open-source-xquery-implementations.html">List of open-source XQuery implementations</a></li>
+</ul>
+<p><i>Portions borrowed with permission from the books "XML Hacks" (<a href="/wiki/O%27Reilly_Media" title="O'Reilly Media">O'Reilly Media</a>) and "XQuery" (<a href="/wiki/O%27Reilly_Media" title="O'Reilly Media">O'Reilly Media</a>).</i></p>
+<p><i>Previous version based on an article at the <a href="https://fr.wikipedia.org/wiki/XML_Query" class="extiw" title="fr:XML Query">French language Wikipedia</a></i></p>
+<div role="navigation" class="navbox" aria-labelledby="World_Wide_Web_Consortium_.28W3C.29" style="padding:3px">
+<table class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:W3C_standards" title="Template:W3C standards"><abbr title="View this template" style=";;background:none transparent;border:none;">v</abbr></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:W3C_standards" title="Template talk:W3C standards"><abbr title="Discuss this template" style=";;background:none transparent;border:none;">t</abbr></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:W3C_standards&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;">e</abbr></a></li>
+</ul>
+</div>
+<div id="World_Wide_Web_Consortium_.28W3C.29" style="font-size:114%"><a href="/wiki/World_Wide_Web_Consortium" title="World Wide Web Consortium">World Wide Web Consortium (W3C)</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Products and<br />
+standards</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks navbox-subgroup" style="border-spacing:0">
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/World_Wide_Web_Consortium#Specification_maturation" title="World Wide Web Consortium">Recommendations</a></th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/WAI-ARIA" title="WAI-ARIA">ARIA</a></li>
+<li><a href="/wiki/Canonical_XML" title="Canonical XML">Canonical XML</a></li>
+<li><a href="/wiki/Compound_Document_Format" title="Compound Document Format">CDF</a></li>
+<li><a href="/wiki/Cascading_Style_Sheets" title="Cascading Style Sheets">CSS</a></li>
+<li><a href="/wiki/Document_Object_Model" title="Document Object Model">DOM</a></li>
+<li><a href="/wiki/W3C_Geolocation_API" title="W3C Geolocation API">Geolocation API</a></li>
+<li><a href="/wiki/HTML" title="HTML">HTML</a> (<a href="/wiki/HTML5" title="HTML5">HTML5</a>)</li>
+<li><a href="/wiki/Internationalization_Tag_Set" title="Internationalization Tag Set">ITS</a></li>
+<li><a href="/wiki/JSON-LD" title="JSON-LD">JSON-LD</a></li>
+<li><a href="/wiki/MathML" title="MathML">MathML</a></li>
+<li><a href="/wiki/Web_Ontology_Language" title="Web Ontology Language">OWL</a></li>
+<li><a href="/wiki/P3P" title="P3P">P3P</a></li>
+<li><a href="/wiki/Pronunciation_Lexicon_Specification" title="Pronunciation Lexicon Specification">PLS</a></li>
+<li><a href="/wiki/Resource_Description_Framework" title="Resource Description Framework">RDF</a></li>
+<li><a href="/wiki/RDF_Schema" title="RDF Schema">RDF Schema</a></li>
+<li><a href="/wiki/Semantic_Interpretation_for_Speech_Recognition" title="Semantic Interpretation for Speech Recognition">SISR</a></li>
+<li><a href="/wiki/Simple_Knowledge_Organization_System" title="Simple Knowledge Organization System">SKOS</a></li>
+<li><a href="/wiki/Synchronized_Multimedia_Integration_Language" title="Synchronized Multimedia Integration Language">SMIL</a></li>
+<li><a href="/wiki/SOAP" title="SOAP">SOAP</a></li>
+<li><a href="/wiki/Speech_Recognition_Grammar_Specification" title="Speech Recognition Grammar Specification">SRGS</a></li>
+<li><a href="/wiki/Subresource_Integrity" title="Subresource Integrity">SRI</a></li>
+<li><a href="/wiki/Speech_Synthesis_Markup_Language" title="Speech Synthesis Markup Language">SSML</a></li>
+<li><a href="/wiki/Scalable_Vector_Graphics" title="Scalable Vector Graphics">SVG</a></li>
+<li><a href="/wiki/SCXML" title="SCXML">SCXML</a></li>
+<li><a href="/wiki/SPARQL" title="SPARQL">SPARQL</a></li>
+<li><a href="/wiki/Timed_text" title="Timed text">Timed text</a></li>
+<li><a href="/wiki/VoiceXML" title="VoiceXML">VoiceXML</a></li>
+<li><a href="/wiki/Web_storage" title="Web storage">Web storage</a></li>
+<li><a href="/wiki/Web_Services_Description_Language" title="Web Services Description Language">WSDL</a></li>
+<li><a href="/wiki/XForms" title="XForms">XForms</a></li>
+<li><a href="/wiki/XHTML" title="XHTML">XHTML</a></li>
+<li><a href="/wiki/XHTML%2BRDFa" title="XHTML+RDFa">XHTML+RDFa</a></li>
+<li><a href="/wiki/XInclude" title="XInclude">XInclude</a></li>
+<li><a href="/wiki/XLink" title="XLink">XLink</a></li>
+<li><a href="/wiki/XML" title="XML">XML</a></li>
+<li><a href="/wiki/XML_Base" title="XML Base">XML Base</a></li>
+<li><a href="/wiki/XML_Encryption" title="XML Encryption">XML Encryption</a></li>
+<li><a href="/wiki/XML_Events" title="XML Events">XML Events</a></li>
+<li><a href="/wiki/XML_Information_Set" title="XML Information Set">XML Information Set</a></li>
+<li><a href="/wiki/XML_namespace" title="XML namespace">XML namespace</a></li>
+<li><a href="/wiki/XML_Schema_(W3C)" title="XML Schema (W3C)">XML Schema</a></li>
+<li><a href="/wiki/XML_Signature" title="XML Signature">XML Signature</a></li>
+<li><a href="/wiki/XML-binary_Optimized_Packaging" title="XML-binary Optimized Packaging">XOP</a></li>
+<li><a href="/wiki/XPath" title="XPath">XPath</a></li>
+<li><a href="/wiki/XPath_2.0" title="XPath 2.0">XPath 2.0</a></li>
+<li><a href="/wiki/XPointer" title="XPointer">XPointer</a></li>
+<li><a href="/wiki/XProc" title="XProc">XProc</a></li>
+<li><strong class="selflink">XQuery</strong></li>
+<li><a href="/wiki/XSL" title="XSL">XSL</a></li>
+<li><a href="/wiki/XSL_Formatting_Objects" title="XSL Formatting Objects">XSL-FO</a></li>
+<li><a href="/wiki/XSLT" title="XSLT">XSLT</a>&#160;(<a href="/wiki/XSLT_elements" title="XSLT elements">elements</a>)</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Notes</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/XAdES" title="XAdES">XAdES</a></li>
+<li><a href="/wiki/XHTML%2BSMIL" title="XHTML+SMIL">XHTML+SMIL</a></li>
+<li><a href="/wiki/Extensible_User_Interface_Protocol" title="Extensible User Interface Protocol">XUP</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Working drafts</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Call_Control_eXtensible_Markup_Language" title="Call Control eXtensible Markup Language">CCXML</a></li>
+<li><a href="/wiki/CURIE" title="CURIE">CURIE</a></li>
+<li><a href="/wiki/Encrypted_Media_Extensions" title="Encrypted Media Extensions">EME</a></li>
+<li><a href="/wiki/InkML" title="InkML">InkML</a></li>
+<li><a href="/wiki/Media_Source_Extensions" title="Media Source Extensions">MSE</a></li>
+<li><a href="/wiki/Rule_Interchange_Format" title="Rule Interchange Format">RIF</a></li>
+<li><a href="/wiki/SMIL_Timesheets" title="SMIL Timesheets">SMIL Timesheets</a></li>
+<li><a href="/wiki/SXBL" title="SXBL">sXBL</a></li>
+<li><a href="/wiki/Web_Integration_Compound_Document" title="Web Integration Compound Document">WICD</a></li>
+<li><a href="/wiki/Extensible_Forms_Description_Language" title="Extensible Forms Description Language">XFDL</a></li>
+<li><a href="/wiki/XFrames" title="XFrames">XFrames</a></li>
+<li><a href="/wiki/XBL" title="XBL">XBL</a></li>
+<li><a href="/wiki/XMLHttpRequest" title="XMLHttpRequest">XMLHttpRequest</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Guidelines</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Web_Content_Accessibility_Guidelines" title="Web Content Accessibility Guidelines">Web Content Accessibility Guidelines</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Initiative</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/W3C_MMI" title="W3C MMI">Multimodal Interaction Activity (MMI)</a></li>
+<li><a href="/wiki/W3C_Markup_Validation_Service" title="W3C Markup Validation Service">Markup Validation Service</a></li>
+<li><a href="/wiki/Web_Accessibility_Initiative" title="Web Accessibility Initiative">Web Accessibility Initiative</a></li>
+<li><a href="/wiki/WebPlatform" title="WebPlatform">WebPlatform</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Deprecated</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/C-HTML" title="C-HTML">C-HTML</a></li>
+<li><a href="/wiki/Handheld_Device_Markup_Language" title="Handheld Device Markup Language">HDML</a></li>
+<li><a href="/wiki/JavaScript_Style_Sheets" title="JavaScript Style Sheets">JSSS</a></li>
+<li><a href="/wiki/Precision_Graphics_Markup_Language" title="Precision Graphics Markup Language">PGML</a></li>
+<li><a href="/wiki/Vector_Markup_Language" title="Vector Markup Language">VML</a></li>
+<li><a href="/wiki/XHTML%2BMathML%2BSVG" title="XHTML+MathML+SVG">XHTML+MathML+SVG</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Organizations</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks navbox-subgroup" style="border-spacing:0">
+<tr>
+<td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/w/index.php?title=Advisory_Committee_(W3C)&amp;action=edit&amp;redlink=1" class="new" title="Advisory Committee (W3C) (page does not exist)">Advisory Committee (AC)</a></li>
+<li><a href="/wiki/World_Wide_Web_Foundation" title="World Wide Web Foundation">World Wide Web Foundation</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Elected groups</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/w/index.php?title=Advisory_Board_(W3C)&amp;action=edit&amp;redlink=1" class="new" title="Advisory Board (W3C) (page does not exist)">Advisory Board (AB)</a></li>
+<li><a href="/w/index.php?title=Technical_Architecture_Group&amp;action=edit&amp;redlink=1" class="new" title="Technical Architecture Group (page does not exist)">Technical Architecture Group (TAG)</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Working groups</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/CSS_Working_Group" title="CSS Working Group">CSS</a></li>
+<li><a href="/wiki/HTML_Working_Group" title="HTML Working Group">HTML</a></li>
+<li><a href="/w/index.php?title=Geolocation_Working_Group&amp;action=edit&amp;redlink=1" class="new" title="Geolocation Working Group (page does not exist)">Geolocation</a></li>
+<li><a href="/w/index.php?title=Social_Web_Working_Group&amp;action=edit&amp;redlink=1" class="new" title="Social Web Working Group (page does not exist)">Social Web</a></li>
+<li><a href="/wiki/SVG_Working_Group" title="SVG Working Group">SVG</a></li>
+<li><a href="/wiki/WHATWG" title="WHATWG">Web Hypertext Application Technology (WHATWG)</a></li>
+<li><a href="/w/index.php?title=Web_Platform_Working_Group&amp;action=edit&amp;redlink=1" class="new" title="Web Platform Working Group (page does not exist)">Web Platform</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Closed groups</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/W3C_Device_Description_Working_Group" title="W3C Device Description Working Group">Device Description (DDWG)</a></li>
+<li><a href="/w/index.php?title=WebOnt&amp;action=edit&amp;redlink=1" class="new" title="WebOnt (page does not exist)">WebOnt (Semantic Web Activity)</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Software</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks navbox-subgroup" style="border-spacing:0">
+<tr>
+<td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/CERN_httpd" title="CERN httpd">CERN httpd</a></li>
+<li><a href="/wiki/Libwww" title="Libwww">Libwww</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Web_browser" title="Web browser">Browsers</a></th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Line_Mode_Browser" title="Line Mode Browser">Line Mode <span style="font-size:90%;">(1990–)</span></a></li>
+<li><a href="/wiki/Arena_(web_browser)" title="Arena (web browser)">Arena <span style="font-size:90%;">(1993–98)</span></a></li>
+<li><a href="/wiki/Agora_(web_browser)" title="Agora (web browser)">Agora <span style="font-size:90%;">(1994–97)</span></a></li>
+<li><a href="/wiki/Argo_(web_browser)" title="Argo (web browser)">Argo <span style="font-size:90%;">(1994–97)</span></a></li>
+<li><a href="/wiki/Amaya_(web_editor)" title="Amaya (web editor)">Amaya <span style="font-size:90%;">(browser/editor, 1996–2012)</span></a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Conferences</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/International_World_Wide_Web_Conference" title="International World Wide Web Conference">International World Wide Web Conference (IW3C)</a>
+<ul>
+<li><a href="/wiki/International_World_Wide_Web_Conferences_Steering_Committee" class="mw-redirect" title="International World Wide Web Conferences Steering Committee">Steering Committee (IW3C2)</a></li>
+<li><a href="/wiki/First_International_Conference_on_the_World-Wide_Web" title="First International Conference on the World-Wide Web">First conference ("WWW1", 1994)</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div role="navigation" class="navbox" aria-labelledby="Query_languages" style="padding:3px">
+<table class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:Query_languages" title="Template:Query languages"><abbr title="View this template" style=";;background:none transparent;border:none;">v</abbr></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:Query_languages" title="Template talk:Query languages"><abbr title="Discuss this template" style=";;background:none transparent;border:none;">t</abbr></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:Query_languages&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;">e</abbr></a></li>
+</ul>
+</div>
+<div id="Query_languages" style="font-size:114%"><a href="/wiki/Query_language" title="Query language">Query languages</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">In current use</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/.QL" title=".QL">.QL</a></li>
+<li><a href="/wiki/Alpha_(programming_language)" title="Alpha (programming language)">ALPHA</a></li>
+<li><a href="/wiki/Contextual_Query_Language" title="Contextual Query Language">CQL</a></li>
+<li><a href="/wiki/Cypher_Query_Language" title="Cypher Query Language">Cypher</a></li>
+<li><a href="/wiki/D_(data_language_specification)" title="D (data language specification)">D</a></li>
+<li><a href="/wiki/Data_Mining_Extensions" title="Data Mining Extensions">DMX</a></li>
+<li><a href="/wiki/Datalog" title="Datalog">Datalog</a></li>
+<li><a href="/wiki/Gremlin_(programming_language)" title="Gremlin (programming language)">Gremlin</a></li>
+<li><a href="/wiki/ISBL" title="ISBL">ISBL</a></li>
+<li><a href="/wiki/Lightweight_Directory_Access_Protocol" title="Lightweight Directory Access Protocol">LDAP</a></li>
+<li><a href="/wiki/Language_Integrated_Query" title="Language Integrated Query">LINQ</a></li>
+<li><a href="/wiki/Molecular_Query_Language" title="Molecular Query Language">MQL</a></li>
+<li><a href="/wiki/MultiDimensional_eXpressions" title="MultiDimensional eXpressions">MDX</a></li>
+<li><a href="/wiki/Object_Query_Language" title="Object Query Language">OQL</a></li>
+<li><a href="/wiki/Object_Constraint_Language" title="Object Constraint Language">OCL</a></li>
+<li><a href="/wiki/QUEL_query_languages" title="QUEL query languages">QUEL</a></li>
+<li><a href="/wiki/Smiles_arbitrary_target_specification" title="Smiles arbitrary target specification">SMARTS</a></li>
+<li><a href="/wiki/SPARQL" title="SPARQL">SPARQL</a></li>
+<li><a href="/wiki/SQL" title="SQL">SQL</a></li>
+<li><strong class="selflink">XQuery</strong></li>
+<li><a href="/wiki/XPath" title="XPath">XPath</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Proprietary</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Yahoo!_query_language" class="mw-redirect" title="Yahoo! query language">YQL</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Superseded</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/CODASYL" title="CODASYL">CODASYL</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div role="navigation" class="navbox" aria-label="Navbox" style="padding:3px">
+<table class="nowraplinks hlist navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Help:Authority_control" title="Help:Authority control">Authority control</a></th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><span style="white-space:nowrap;"><a href="/wiki/Integrated_Authority_File" title="Integrated Authority File">GND</a>: <span class="uid"><a rel="nofollow" class="external text" href="http://d-nb.info/gnd/4737681-8">4737681-8</a></span></span></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1212
+Cached time: 20170204193612
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.296 seconds
+Real time usage: 0.857 seconds
+Preprocessor visited node count: 2020/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 90440/2097152 bytes
+Template argument size: 5036/2097152 bytes
+Highest expansion depth: 21/40
+Expensive parser function count: 6/500
+Lua time usage: 0.133/10.000 seconds
+Lua memory usage: 4.95 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  794.012      1 -total
+  8.62%   68.434      1 Template:Reflist
+  8.19%   65.044      2 Template:Infobox
+  7.16%   56.863      1 Template:Infobox_programming_language
+  5.31%   42.151     14 Template:Cite_web
+  5.06%   40.188      1 Template:Citation_style
+  4.26%   33.823      2 Template:Cite_book
+  3.56%   28.291      5 Template:Navbox
+  3.38%   26.817      1 Template:Ambox
+  2.98%   23.671      1 Template:Infobox_software/simple
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:23742879-0!*!0!!en!4!* and timestamp 20170204193611 and revision id 760326908
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=XQuery&amp;oldid=760326908">https://en.wikipedia.org/w/index.php?title=XQuery&amp;oldid=760326908</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:World_Wide_Web_Consortium_standards" title="Category:World Wide Web Consortium standards">World Wide Web Consortium standards</a></li><li><a href="/wiki/Category:XML_data_access" title="Category:XML data access">XML data access</a></li><li><a href="/wiki/Category:Functional_languages" title="Category:Functional languages">Functional languages</a></li><li><a href="/wiki/Category:Query_languages" title="Category:Query languages">Query languages</a></li><li><a href="/wiki/Category:4GL" title="Category:4GL">4GL</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Pages_using_ISBN_magic_links" title="Category:Pages using ISBN magic links">Pages using ISBN magic links</a></li><li><a href="/wiki/Category:Wikipedia_references_cleanup_from_December_2013" title="Category:Wikipedia references cleanup from December 2013">Wikipedia references cleanup from December 2013</a></li><li><a href="/wiki/Category:All_articles_needing_references_cleanup" title="Category:All articles needing references cleanup">All articles needing references cleanup</a></li><li><a href="/wiki/Category:Articles_covered_by_WikiProject_Wikify_from_December_2013" title="Category:Articles covered by WikiProject Wikify from December 2013">Articles covered by WikiProject Wikify from December 2013</a></li><li><a href="/wiki/Category:All_articles_covered_by_WikiProject_Wikify" title="Category:All articles covered by WikiProject Wikify">All articles covered by WikiProject Wikify</a></li><li><a href="/wiki/Category:All_articles_with_specifically_marked_weasel-worded_phrases" title="Category:All articles with specifically marked weasel-worded phrases">All articles with specifically marked weasel-worded phrases</a></li><li><a href="/wiki/Category:Articles_with_specifically_marked_weasel-worded_phrases_from_May_2015" title="Category:Articles with specifically marked weasel-worded phrases from May 2015">Articles with specifically marked weasel-worded phrases from May 2015</a></li><li><a href="/wiki/Category:All_articles_with_unsourced_statements" title="Category:All articles with unsourced statements">All articles with unsourced statements</a></li><li><a href="/wiki/Category:Articles_with_unsourced_statements_from_May_2015" title="Category:Articles with unsourced statements from May 2015">Articles with unsourced statements from May 2015</a></li><li><a href="/wiki/Category:Wikipedia_articles_with_GND_identifiers" title="Category:Wikipedia articles with GND identifiers">Wikipedia articles with GND identifiers</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=XQuery" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=XQuery" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/XQuery"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:XQuery"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/XQuery" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=XQuery&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=XQuery&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/XQuery" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/XQuery" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=XQuery&amp;oldid=760326908" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=XQuery&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q850661" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=XQuery&amp;id=760326908" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=XQuery">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=XQuery&amp;returnto=XQuery&amp;oldid=760326908&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=XQuery&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-wikibase-otherprojects' aria-labelledby='p-wikibase-otherprojects-label'>
+			<h3 id='p-wikibase-otherprojects-label'>In other projects</h3>
+
+			<div class="body">
+									<ul>
+						<li class="wb-otherproject-link wb-otherproject-commons"><a href="https://commons.wikimedia.org/wiki/Category:XQuery" hreflang="en">Wikimedia Commons</a></li><li class="wb-otherproject-link wb-otherproject-wikibooks"><a href="https://en.wikibooks.org/wiki/XQuery" hreflang="en">Wikibooks</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-ar"><a href="https://ar.wikipedia.org/wiki/%D8%A5%D9%83%D8%B3_%D9%83%D9%88%D9%8A%D8%B1%D9%8A" title="إكس كويري – Arabic" lang="ar" hreflang="ar" class="interlanguage-link-target">العربية</a></li><li class="interlanguage-link interwiki-bg"><a href="https://bg.wikipedia.org/wiki/XQuery" title="XQuery – Bulgarian" lang="bg" hreflang="bg" class="interlanguage-link-target">Български</a></li><li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/XQuery" title="XQuery – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-es"><a href="https://es.wikipedia.org/wiki/XQuery" title="XQuery – Spanish" lang="es" hreflang="es" class="interlanguage-link-target">Español</a></li><li class="interlanguage-link interwiki-eu"><a href="https://eu.wikipedia.org/wiki/XQuery" title="XQuery – Basque" lang="eu" hreflang="eu" class="interlanguage-link-target">Euskara</a></li><li class="interlanguage-link interwiki-fa"><a href="https://fa.wikipedia.org/wiki/%D8%A7%DA%A9%D8%B3%E2%80%8C%DA%A9%D9%88%D8%A6%D8%B1%DB%8C" title="اکس‌کوئری – Persian" lang="fa" hreflang="fa" class="interlanguage-link-target">فارسی</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/XQuery" title="XQuery – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-hy"><a href="https://hy.wikipedia.org/wiki/XQuery" title="XQuery – Armenian" lang="hy" hreflang="hy" class="interlanguage-link-target">Հայերեն</a></li><li class="interlanguage-link interwiki-ia"><a href="https://ia.wikipedia.org/wiki/XQuery" title="XQuery – Interlingua" lang="ia" hreflang="ia" class="interlanguage-link-target">Interlingua</a></li><li class="interlanguage-link interwiki-is"><a href="https://is.wikipedia.org/wiki/XQuery" title="XQuery – Icelandic" lang="is" hreflang="is" class="interlanguage-link-target">Íslenska</a></li><li class="interlanguage-link interwiki-it"><a href="https://it.wikipedia.org/wiki/XQuery" title="XQuery – Italian" lang="it" hreflang="it" class="interlanguage-link-target">Italiano</a></li><li class="interlanguage-link interwiki-ky"><a href="https://ky.wikipedia.org/wiki/XML_Query" title="XML Query – Kyrgyz" lang="ky" hreflang="ky" class="interlanguage-link-target">Кыргызча</a></li><li class="interlanguage-link interwiki-lv"><a href="https://lv.wikipedia.org/wiki/XQuery" title="XQuery – Latvian" lang="lv" hreflang="lv" class="interlanguage-link-target">Latviešu</a></li><li class="interlanguage-link interwiki-nl"><a href="https://nl.wikipedia.org/wiki/XQuery" title="XQuery – Dutch" lang="nl" hreflang="nl" class="interlanguage-link-target">Nederlands</a></li><li class="interlanguage-link interwiki-ja"><a href="https://ja.wikipedia.org/wiki/XQuery" title="XQuery – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target">日本語</a></li><li class="interlanguage-link interwiki-no"><a href="https://no.wikipedia.org/wiki/XQuery" title="XQuery – Norwegian" lang="no" hreflang="no" class="interlanguage-link-target">Norsk bokmål</a></li><li class="interlanguage-link interwiki-pl"><a href="https://pl.wikipedia.org/wiki/XQuery" title="XQuery – Polish" lang="pl" hreflang="pl" class="interlanguage-link-target">Polski</a></li><li class="interlanguage-link interwiki-pt"><a href="https://pt.wikipedia.org/wiki/XQuery" title="XQuery – Portuguese" lang="pt" hreflang="pt" class="interlanguage-link-target">Português</a></li><li class="interlanguage-link interwiki-ru"><a href="https://ru.wikipedia.org/wiki/XQuery" title="XQuery – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li><li class="interlanguage-link interwiki-fi"><a href="https://fi.wikipedia.org/wiki/XQuery" title="XQuery – Finnish" lang="fi" hreflang="fi" class="interlanguage-link-target">Suomi</a></li><li class="interlanguage-link interwiki-sv"><a href="https://sv.wikipedia.org/wiki/XQuery" title="XQuery – Swedish" lang="sv" hreflang="sv" class="interlanguage-link-target">Svenska</a></li><li class="interlanguage-link interwiki-tr"><a href="https://tr.wikipedia.org/wiki/XQuery" title="XQuery – Turkish" lang="tr" hreflang="tr" class="interlanguage-link-target">Türkçe</a></li><li class="interlanguage-link interwiki-uk"><a href="https://uk.wikipedia.org/wiki/XQuery" title="XQuery – Ukrainian" lang="uk" hreflang="uk" class="interlanguage-link-target">Українська</a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q850661#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 16 January 2017, at 08:45.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=XQuery&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.296","walltime":"0.857","ppvisitednodes":{"value":2020,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":90440,"limit":2097152},"templateargumentsize":{"value":5036,"limit":2097152},"expansiondepth":{"value":21,"limit":40},"expensivefunctioncount":{"value":6,"limit":500},"entityaccesscount":{"value":1,"limit":400},"timingprofile":["100.00%  794.012      1 -total","  8.62%   68.434      1 Template:Reflist","  8.19%   65.044      2 Template:Infobox","  7.16%   56.863      1 Template:Infobox_programming_language","  5.31%   42.151     14 Template:Cite_web","  5.06%   40.188      1 Template:Citation_style","  4.26%   33.823      2 Template:Cite_book","  3.56%   28.291      5 Template:Navbox","  3.38%   26.817      1 Template:Ambox","  2.98%   23.671      1 Template:Infobox_software/simple"]},"scribunto":{"limitreport-timeusage":{"value":"0.133","limit":"10.000"},"limitreport-memusage":{"value":5194379,"limit":52428800}},"cachereport":{"origin":"mw1212","timestamp":"20170204193612","ttl":2592000,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":938,"wgHostname":"mw1212"});});</script>
+	</body>
+</html>

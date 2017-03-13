@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Linden Scripting Language - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Linden_Scripting_Language","wgTitle":"Linden Scripting Language","wgCurRevisionId":735188753,"wgRevisionId":735188753,"wgArticleId":843913,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles lacking reliable references from December 2011","All articles lacking reliable references","Mono project applications","Scripting languages","Second Life"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Linden_Scripting_Language","wgRelevantArticleId":843913,"wgRequestId":"WIltogpAIDUAAAGcS4UAAABO","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":true},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q1185543","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.cite.styles":"ready","ext.pygments":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.legacy.wikibits","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.pygments%2CwikimediaBadges%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.29.0-wmf.8"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Linden_Scripting_Language"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Linden_Scripting_Language&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Linden_Scripting_Language&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Linden_Scripting_Language"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Linden_Scripting_Language rootpage-Linden_Scripting_Language skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Linden Scripting Language</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><script>function mfTempOpenSection(id){var block=document.getElementById("mf-section-"+id);block.className+=" open-block";block.previousSibling.className+=" open-block";}</script><table class="plainlinks metadata ambox ambox-content ambox-Primary_sources" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><a href="/wiki/File:Question_book-new.svg" class="image"><img alt="Question book-new.svg" src="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" width="50" height="39" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/75px-Question_book-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/100px-Question_book-new.svg.png 2x" data-file-width="512" data-file-height="399" /></a></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">This article <b>relies too much on <a href="/wiki/Wikipedia:Verifiability" title="Wikipedia:Verifiability">references</a> to <a href="/wiki/Wikipedia:No_original_research#Primary.2C_secondary_and_tertiary_sources" title="Wikipedia:No original research">primary sources</a></b>. <span class="hide-when-compact">Please improve this by adding <a href="/wiki/Wikipedia:No_original_research#Primary.2C_secondary_and_tertiary_sources" title="Wikipedia:No original research">secondary or tertiary sources</a>.</span> <small><i>(December 2011)</i></small> <small class="hide-when-compact"><i>(<a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove this template message</a>)</i></small></span></td>
+</tr>
+</table>
+<table class="infobox vevent" style="width:22em">
+<caption class="summary">Linden Scripting Language (LSL)</caption>
+<tr>
+<th scope="row"><a href="/wiki/Type_system" title="Type system">Typing discipline</a></th>
+<td><a href="/wiki/Strong_typing" class="mw-redirect" title="Strong typing">strong</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Operating_system" title="Operating system">OS</a></th>
+<td><a href="/wiki/Cross-platform" title="Cross-platform">cross-platform</a></td>
+</tr>
+<tr>
+<th scope="row">Website</th>
+<td><span class="url"><a rel="nofollow" class="external text" href="https://wiki.secondlife.com/wiki/LSL_Portal">wiki<wbr />.secondlife<wbr />.com<wbr />/wiki<wbr />/LSL<wbr />_Portal</a></span></td>
+</tr>
+<tr>
+<th colspan="2" style="text-align:center;background-color: #eee;">Influenced by</th>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/C_(programming_language)" title="C (programming language)">C</a></td>
+</tr>
+</table>
+<p><b>Linden Scripting Language</b>, or LSL, is the <a href="/wiki/Programming_language" title="Programming language">programming language</a> used by residents of <a href="/wiki/Second_Life" title="Second Life">Second Life</a> (<b>SL</b>), a <a href="/wiki/Virtual_world" title="Virtual world">virtual world</a> by <a href="/wiki/Linden_Lab" title="Linden Lab">Linden Lab</a><sup id="cite_ref-1" class="reference"><a href="#cite_note-1">[1]</a></sup> and similar virtual worlds.</p>
+<p>LSL has a <a href="/wiki/Programming_language_syntax" class="mw-redirect" title="Programming language syntax">syntax</a> similar to <a href="/wiki/C_(programming_language)" title="C (programming language)">C</a> and allows objects to control the behavior of in-world objects of Second Life from the Internet via email, <a href="/wiki/XML-RPC" title="XML-RPC">XML-RPC</a>, and most recently, <a href="/wiki/HTTP" class="mw-redirect" title="HTTP">HTTP</a> requests.</p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#LSL_design"><span class="tocnumber">1</span> <span class="toctext">LSL design</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Permission_system"><span class="tocnumber">2</span> <span class="toctext">Permission system</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Default_LSL_script"><span class="tocnumber">3</span> <span class="toctext">Default LSL script</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Mono"><span class="tocnumber">4</span> <span class="toctext">Mono</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#More_complex_example_script"><span class="tocnumber">5</span> <span class="toctext">More complex example script</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#References"><span class="tocnumber">6</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#External_links"><span class="tocnumber">7</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="LSL_design">LSL design</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Linden_Scripting_Language&amp;action=edit&amp;section=1" title="Edit section: LSL design">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Linden Scripting Language is a state-<a href="/wiki/Event-driven_programming" title="Event-driven programming">event driven</a> <a href="/wiki/Scripting_language" title="Scripting language">scripting language</a>, a type of <a href="/wiki/Finite_state_machine" class="mw-redirect" title="Finite state machine">finite state machine</a>.<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">[2]</a></sup> A script consists of variables, function definitions, and one or more named states. Each state contains a description of how to react to events that occur while the program is within that state. The system sends to the script, such as timers, movement, chat (from other agents), email, and collisions (with objects in the virtual world). Scripts can change most aspects of the state of the object and communicate with other objects and agents. As soon as a script is added to an object, and turned on, it begins to execute.</p>
+<p>A script is tightly bound to the concept of virtual-world <i><a href="/wiki/3D_modeling" title="3D modeling">objects</a></i> (in the 3D modeling sense rather than in the <a href="/wiki/Object-oriented" class="mw-redirect" title="Object-oriented">object-oriented</a> sense) called <i>primitives</i>. An object in Second Life represents something like a chair or a wall, or possibly something invisible. Multiple scripts may be placed inside an object, where they all execute simultaneously.</p>
+<p>There are over 300 library <a href="/wiki/Function_(programming)" class="mw-redirect" title="Function (programming)">functions</a> available.<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">[3]</a></sup> Users can also define additional functions. LSL is a <a href="/wiki/Strongly_typed_language" class="mw-redirect" title="Strongly typed language">strongly typed language</a><sup id="cite_ref-4" class="reference"><a href="#cite_note-4">[4]</a></sup> that is compiled to <a href="/wiki/Bytecode" title="Bytecode">bytecode</a> before runtime execution in a <a href="/wiki/Virtual_machine" title="Virtual machine">virtual machine</a> (<b>VM</b>) on one of Linden Lab's servers.</p>
+<p>LSL's native <a href="/wiki/Data_structure" title="Data structure">data structures</a> includes <a href="/wiki/Integers" class="mw-redirect" title="Integers">integers</a>,<sup id="cite_ref-5" class="reference"><a href="#cite_note-5">[5]</a></sup> <a href="/wiki/Floating_point_numbers" class="mw-redirect" title="Floating point numbers">floating point numbers</a>,<sup id="cite_ref-6" class="reference"><a href="#cite_note-6">[6]</a></sup> <a href="/wiki/String_(computer_science)" title="String (computer science)">strings</a>,<sup id="cite_ref-7" class="reference"><a href="#cite_note-7">[7]</a></sup> keys (<a href="/wiki/UUID" class="mw-redirect" title="UUID">UUID</a>),<sup id="cite_ref-8" class="reference"><a href="#cite_note-8">[8]</a></sup> <a href="/wiki/Euclidean_vector" title="Euclidean vector">vectors</a> (used for 3D coordinates and <a href="/wiki/RGB" class="mw-redirect" title="RGB">RGB</a> color expression),<sup id="cite_ref-9" class="reference"><a href="#cite_note-9">[9]</a></sup> and <a href="/wiki/Rotation" title="Rotation">rotations</a> (<a href="/wiki/Quaternion" title="Quaternion">quaternions</a>).<sup id="cite_ref-10" class="reference"><a href="#cite_note-10">[10]</a></sup> There are also heterogeneous lists. There are no arrays; multiple list functions are used to adapt programs requiring array structures.<sup id="cite_ref-11" class="reference"><a href="#cite_note-11">[11]</a></sup> There is no built-in persistent data storage, such as a file or database (though users have found various workarounds for this like storing data in various data fields of the items containing scripts). On the other hand, scripts continue to run even when a user is not logged in, and if an object is saved (taken into inventory), and then re-introduced into the World later, it still maintains its previous state. In addition, the mechanisms for communicating via HTTP can be used to store a state externally.</p>
+<p>Some functions in LSL have built-in delays, which range from a 0.1-second delay when (for example) requesting string data from a notecard;<sup id="cite_ref-12" class="reference"><a href="#cite_note-12">[12]</a></sup> to a 20-second script pause after sending an <a href="/wiki/Email" title="Email">e-mail message</a>. The delays help prevent developers from writing LSL scripts that could overtax system resources. Memory available to LSL scripts (when compiled as <a href="/wiki/Mono_(software)" title="Mono (software)">mono</a>) is capped at about 64 <a href="/wiki/Kibibyte" title="Kibibyte">KiB</a>, which places a practical limit on how much a single script can do, however the ability to use multiple scripts and to call scripts from another script allows the user to pragmatically work around this 64 KiB cap.</p>
+<h2><span class="mw-headline" id="Permission_system">Permission system</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Linden_Scripting_Language&amp;action=edit&amp;section=2" title="Edit section: Permission system">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Certain actions in LSL require permissions:</p>
+<ul>
+<li>take money from agent's account</li>
+<li>take agent's controls</li>
+<li>start or stop Animations on agent</li>
+<li>attach/detach from agent</li>
+<li>change links</li>
+<li>track the agent's camera position and rotation</li>
+<li>control the agent's camera</li>
+</ul>
+<p>The permission system, however, is an issue for scripts owned by the land owner: those scripts can modify the parcel settings without requiring permissions. A malicious script can unsit avatars, ban and unban avatars, destroy the terrain that includes returning of objects by letting them fall out of the World, and gather the ip addresses of avatars by manipulating the media settings for that avatar.</p>
+<h2><span class="mw-headline" id="Default_LSL_script">Default LSL script</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Linden_Scripting_Language&amp;action=edit&amp;section=3" title="Edit section: Default LSL script">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The default script, "Hello, Avatar",<sup id="cite_ref-13" class="reference"><a href="#cite_note-13">[13]</a></sup> a <a href="/wiki/Hello_world_program" class="mw-redirect" title="Hello world program">hello world program</a> that speaks (streams message to local chat ("heard" (printed) by all viewers (<a href="/wiki/Client_(computing)" title="Client (computing)">clients</a>) within 20 meters <sup>(3D virtual environment)</sup> of the task)) when the script is first saved, initialized or reset (in this case, since the command is in the default "state", the first to be run on initialization) or 'touched' (a simple user interaction usually initiated using a mouse click), looks like:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="nc">default</span><span class="w"> </span>
+<span class="p">{</span><span class="w"> </span>
+<span class="w">	</span><span class="nb">state_entry</span><span class="p">()</span><span class="w"> </span>
+<span class="w">	</span><span class="p">{</span><span class="w"> </span>
+<span class="w">		</span><span class="nf">llSay</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="s2">"Hello, Avatar!"</span><span class="p">);</span><span class="w"> </span>
+<span class="w">	</span><span class="p">}</span><span class="w"> </span>
+
+<span class="w">	</span><span class="nb">touch_start</span><span class="p">(</span><span class="kt">integer</span><span class="w"> </span><span class="nv">total_number</span><span class="p">)</span><span class="w"> </span>
+<span class="w">	</span><span class="p">{</span><span class="w"> </span>
+<span class="w">		</span><span class="nf">llSay</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="s2">"Touched."</span><span class="p">);</span><span class="w"> </span>
+<span class="w">	</span><span class="p">}</span><span class="w"> </span>
+<span class="p">}</span>
+</pre></div>
+<h2><span class="mw-headline" id="Mono">Mono</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Linden_Scripting_Language&amp;action=edit&amp;section=4" title="Edit section: Mono">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The revised version of Second Life's scripting virtual machine is based on <a href="/wiki/Mono_(software)" title="Mono (software)">Mono</a>, the open source implementation of the Microsoft.NET framework. The Mono <b>VM</b> was introduced to several <a href="/wiki/Simulation#Computer_simulation" title="Simulation">simulators</a> (<b>sims</b>) on the Second Life <a href="/wiki/Betaware" class="mw-redirect" title="Betaware">Beta</a> <a href="/wiki/Metaverse" title="Metaverse">grid</a> for compatibility testing on 29 January 2008 and later that year on 20 August 2008 Linden Lab started deploying it on the production grid<sup id="cite_ref-14" class="reference"><a href="#cite_note-14">[14]</a></sup> - with the entire production grid updated to use it on 29 August 2008.</p>
+<p>While the LSL scripting language remained the same, scripts executed on the Mono underpinnings were up to 220<sup id="cite_ref-15" class="reference"><a href="#cite_note-15">[15]</a></sup> times faster in execution, but at the cost of a somewhat higher overhead when creating (rezzing) scripted objects and moving them from <b>sim</b> to <b>sim</b>.<sup id="cite_ref-16" class="reference"><a href="#cite_note-16">[16]</a></sup></p>
+<h2><span class="mw-headline" id="More_complex_example_script">More complex example script</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Linden_Scripting_Language&amp;action=edit&amp;section=5" title="Edit section: More complex example script">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Below is an example of a relatively simple LSL script, that when placed in a <b>primitive</b> along with a selection of <a href="/wiki/WAV" title="WAV">.wav sound files</a>, users may select the sound files to be played in series. This scripting is required to play full length songs in Second Life, as the sound file length is limited to a maximum of 10 seconds per clip at upload to <b>SL</b>.</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="c1">// Global variables must be declared above any functions created and above the first "default" state.</span>
+<span class="c1">// Many LSL scripts are open source, and can be edited by their owners.</span>
+<span class="c1">// Often scripts have settings variables with instructions for editing written as comments around them.</span>
+
+<span class="w"> </span><span class="c1">// This list of sound file names would be populated by the owner.</span>
+<span class="kt">list</span><span class="w"> </span><span class="nv">songs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">"Box_Of_Rain"</span><span class="p">,</span><span class="w"> </span><span class="mf">9.2</span><span class="p">,</span><span class="w"> </span><span class="s2">"Servant"</span><span class="p">,</span><span class="w"> </span><span class="mf">9.8</span><span class="p">];</span>
+
+<span class="kt">integer</span><span class="w"> </span><span class="nv">volume</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span><span class="w"> </span><span class="c1">// All variables (global or local) must have their type declared on creation.</span>
+<span class="kt">integer</span><span class="w"> </span><span class="nv">lis_count</span><span class="p">;</span>
+<span class="kt">integer</span><span class="w"> </span><span class="nv">playing</span><span class="p">;</span>
+<span class="kt">integer</span><span class="w"> </span><span class="nv">busy</span><span class="p">;</span><span class="w"> </span><span class="c1">// Values need not be applied to variable at creation.</span>
+<span class="kt">integer</span><span class="w"> </span><span class="nv">part</span><span class="p">;</span>
+<span class="kt">integer</span><span class="w"> </span><span class="nv">lis</span><span class="p">;</span>
+<span class="kt">integer</span><span class="w"> </span><span class="nv">sl</span><span class="p">;</span>
+<span class="kt">float</span><span class="w"> </span><span class="nv">delay</span><span class="p">;</span>
+<span class="kt">list</span><span class="w"> </span><span class="nv">cancel</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">"CANCEL"</span><span class="p">];</span>
+<span class="kt">list</span><span class="w"> </span><span class="nv">playlist</span><span class="p">;</span>
+<span class="kt">list</span><span class="w"> </span><span class="nv">waiting</span><span class="p">;</span>
+<span class="kt">list</span><span class="w"> </span><span class="nv">song</span><span class="p">;</span>
+<span class="kt">string</span><span class="w"> </span><span class="nv">vol_str</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Volume"</span><span class="p">;</span>
+<span class="kt">string</span><span class="w"> </span><span class="nv">song_str</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Songs"</span><span class="p">;</span>
+<span class="kt">string</span><span class="w"> </span><span class="nv">song_name</span><span class="p">;</span>
+
+<span class="c1">// Variable names (as well as function names and state names) must begin with a letter (upper or lower case) or any number of underscores.</span>
+<span class="c1">// Variable names cannot begin with a numeral, but they may contain numerals as any other character.</span>
+
+<span class="c1">// User created functions can be created by simply naming the function.</span>
+<span class="c1">// Functions that return a value, must have the value type declared as the type for the function.</span>
+<span class="c1">// Arguments passed to the function must have their types declared. the type of data passed to the function must match the argument type.</span>
+<span class="kt">list</span><span class="w"> </span><span class="nv">StrideOfList</span><span class="p">(</span><span class="kt">list</span><span class="w"> </span><span class="nv">src</span><span class="p">,</span><span class="w"> </span><span class="kt">integer</span><span class="w"> </span><span class="nv">stride</span><span class="p">,</span><span class="w"> </span><span class="kt">integer</span><span class="w"> </span><span class="nv">start</span><span class="p">,</span><span class="w"> </span><span class="kt">integer</span><span class="w"> </span><span class="nv">end</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">	</span><span class="kt">list</span><span class="w"> </span><span class="nv">l</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[];</span>
+<span class="w">	</span><span class="kt">integer</span><span class="w"> </span><span class="nv">ll</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">llGetListLength</span><span class="p">(</span><span class="nv">src</span><span class="p">);</span>
+<span class="w">	</span><span class="k">if</span><span class="p">(</span><span class="nv">start</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="nv">start</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="nv">ll</span><span class="p">;</span>
+<span class="w">	</span><span class="k">if</span><span class="p">(</span><span class="nv">end</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="nv">end</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="nv">ll</span><span class="p">;</span>
+<span class="w">	</span><span class="k">if</span><span class="p">(</span><span class="nv">end</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="nv">start</span><span class="p">)</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="nf">llList2List</span><span class="p">(</span><span class="nv">src</span><span class="p">,</span><span class="w"> </span><span class="nv">start</span><span class="p">,</span><span class="w"> </span><span class="nv">start</span><span class="p">);</span>
+<span class="w">	</span><span class="k">while</span><span class="p">(</span><span class="nv">start</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="nv">end</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">		</span><span class="nv">l</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="nf">llList2List</span><span class="p">(</span><span class="nv">src</span><span class="p">,</span><span class="w"> </span><span class="nv">start</span><span class="p">,</span><span class="w"> </span><span class="nv">start</span><span class="p">);</span>
+<span class="w">		</span><span class="nv">start</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="nv">stride</span><span class="p">;</span>
+<span class="w">	</span><span class="p">}</span>
+<span class="w">	</span><span class="k">return</span><span class="w"> </span><span class="nv">l</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="kt">list</span><span class="w"> </span><span class="nv">Volumes</span><span class="p">(</span><span class="kt">integer</span><span class="w"> </span><span class="nv">vol</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">	</span><span class="kt">integer</span><span class="w"> </span><span class="nv">v</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">	</span><span class="kt">list</span><span class="w"> </span><span class="nv">l</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[];</span>
+<span class="w">	</span><span class="k">do</span><span class="w"> </span><span class="p">{</span>
+<span class="w">		</span><span class="k">if</span><span class="p">(</span><span class="nv">v</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="nv">vol</span><span class="p">)</span><span class="w"> </span><span class="c1">// Single instruction conditional blocks need not be wrapped in braces.</span>
+<span class="w">		</span><span class="nv">l</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="p">[((</span><span class="kt">string</span><span class="p">)</span><span class="nv">v</span><span class="p">)];</span>
+<span class="w">	</span><span class="p">}</span>
+<span class="w">	</span><span class="k">while</span><span class="p">((</span><span class="o">++</span><span class="nv">v</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">10</span><span class="p">);</span>
+<span class="w">	</span><span class="k">return</span><span class="w"> </span><span class="nv">l</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nv">PageOne</span><span class="p">(</span><span class="kt">key</span><span class="w"> </span><span class="nv">k</span><span class="p">,</span><span class="w"> </span><span class="kt">integer</span><span class="w"> </span><span class="nv">c</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">	</span><span class="nf">llDialog</span><span class="p">(</span><span class="nv">k</span><span class="p">,</span><span class="w"> </span><span class="s2">"</span><span class="se">\n</span><span class="s2">Adjust the volume or select a song to play?"</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="nv">vol_str</span><span class="p">,</span><span class="w"> </span><span class="nv">song_str</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nv">cancel</span><span class="p">,</span><span class="w"> </span><span class="nv">c</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="nv">PlaySong</span><span class="p">(</span><span class="kt">string</span><span class="w"> </span><span class="nv">n</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">	</span><span class="nv">song</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[];</span>
+<span class="w">	</span><span class="kt">integer</span><span class="w"> </span><span class="nv">c</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+<span class="w">	</span><span class="kt">string</span><span class="w"> </span><span class="nv">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">""</span><span class="p">;</span>
+<span class="w">	</span><span class="k">do</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="c1">// Functions may be nested and used inline where values are returned (the values need not be stored to a variable for use).</span>
+<span class="w">		</span><span class="k">if</span><span class="p">(</span><span class="nf">llSubStringIndex</span><span class="p">((</span><span class="nv">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">llGetInventoryName</span><span class="p">(</span><span class="kc">INVENTORY_SOUND</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="o">++</span><span class="nv">c</span><span class="p">))),</span><span class="w"> </span><span class="nv">n</span><span class="p">)</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">		</span><span class="nv">song</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="p">[</span><span class="nv">name</span><span class="p">];</span>
+<span class="w">	</span><span class="p">}</span>
+<span class="w">	</span><span class="k">while</span><span class="p">(</span><span class="nv">name</span><span class="p">);</span>
+<span class="w">	</span><span class="nv">delay</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">llList2Float</span><span class="p">(</span><span class="nv">songs</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="nf">llListFindList</span><span class="p">(</span><span class="nv">songs</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="nv">n</span><span class="p">])</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">));</span>
+<span class="w">	</span><span class="k">if</span><span class="p">((</span><span class="nv">sl</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">llGetListLength</span><span class="p">(</span><span class="nv">song</span><span class="p">)))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">		</span><span class="nf">llPreloadSound</span><span class="p">(</span><span class="nf">llList2String</span><span class="p">(</span><span class="nv">song</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="nv">part</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">)));</span>
+<span class="w">		</span><span class="k">if</span><span class="p">(</span><span class="nv">sl</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span>
+<span class="w">		</span><span class="nf">llPreloadSound</span><span class="p">(</span><span class="nf">llList2String</span><span class="p">(</span><span class="nv">song</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">));</span>
+<span class="w">		</span><span class="nv">playing</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">FALSE</span><span class="p">;</span>
+<span class="w">		</span><span class="nf">llSetTimerEvent</span><span class="p">(</span><span class="mf">0.01</span><span class="p">);</span>
+<span class="w">	</span><span class="p">}</span>
+<span class="p">}</span>
+<span class="kt">integer</span><span class="w"> </span><span class="nv">Chan</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">	</span><span class="k">return</span><span class="w"> </span><span class="nf">llRound</span><span class="p">((</span><span class="nf">llFrand</span><span class="p">(</span><span class="o">-</span><span class="mf">5000000.0</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="o">-</span><span class="mf">500000.0</span><span class="p">));</span>
+<span class="p">}</span>
+<span class="kt">float</span><span class="w"> </span><span class="nv">ScaleVol</span><span class="p">(</span><span class="kt">integer</span><span class="w"> </span><span class="nv">v</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">	</span><span class="k">return</span><span class="w"> </span><span class="p">(</span><span class="nv">v</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">0.1</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="nv">Listen</span><span class="p">(</span><span class="kt">integer</span><span class="w"> </span><span class="nv">c</span><span class="p">,</span><span class="w"> </span><span class="kt">key</span><span class="w"> </span><span class="nv">a</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">	</span><span class="nv">lis</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">llListen</span><span class="p">(</span><span class="nv">c</span><span class="p">,</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"> </span><span class="nv">a</span><span class="p">,</span><span class="w"> </span><span class="s2">""</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="nv">RemoveListen</span><span class="p">(</span><span class="kt">integer</span><span class="w"> </span><span class="nv">b</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">	</span><span class="nf">llListenRemove</span><span class="p">(</span><span class="nv">lis</span><span class="p">);</span>
+<span class="w">	</span><span class="nv">lis_count</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">	</span><span class="k">if</span><span class="p">(</span><span class="nv">b</span><span class="p">)</span>
+<span class="w">	</span><span class="nv">busy</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">FALSE</span><span class="p">;</span>
+<span class="w">	</span><span class="nv">lis</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nv">SetListenTimer</span><span class="p">(</span><span class="kt">integer</span><span class="w"> </span><span class="nv">p</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">	</span><span class="k">if</span><span class="p">(</span><span class="nv">p</span><span class="p">)</span>
+<span class="w">	</span><span class="k">while</span><span class="p">(((</span><span class="o">++</span><span class="nv">lis_count</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nf">llRound</span><span class="p">(</span><span class="nv">delay</span><span class="p">))</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">30</span><span class="p">);</span>
+<span class="w">	</span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">		</span><span class="nv">lis_count</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<span class="w">		</span><span class="nf">llSetTimerEvent</span><span class="p">(</span><span class="mf">30.0</span><span class="p">);</span>
+<span class="w">	</span><span class="p">}</span>
+<span class="p">}</span>
+<span class="kt">integer</span><span class="w"> </span><span class="nv">CheckWaitingRoom</span><span class="p">(</span><span class="kt">integer</span><span class="w"> </span><span class="nv">c</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">	</span><span class="k">if</span><span class="p">(</span><span class="nv">waiting</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">		</span><span class="kt">key</span><span class="w"> </span><span class="nv">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">llList2Key</span><span class="p">(</span><span class="nv">waiting</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span>
+<span class="w">		</span><span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="nv">c</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">			</span><span class="nv">RemoveListen</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+<span class="w">			</span><span class="nv">Listen</span><span class="p">((</span><span class="nv">c</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">Chan</span><span class="p">()),</span><span class="w"> </span><span class="nv">a</span><span class="p">);</span>
+<span class="w">			</span><span class="nv">SetListenTimer</span><span class="p">(</span><span class="nv">playing</span><span class="p">);</span>
+<span class="w">		</span><span class="p">}</span>
+<span class="w">		</span><span class="nv">PageOne</span><span class="p">(</span><span class="nv">a</span><span class="p">,</span><span class="w"> </span><span class="nv">c</span><span class="p">);</span>
+<span class="w">		</span><span class="nv">waiting</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">llDeleteSubList</span><span class="p">(</span><span class="nv">waiting</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span>
+<span class="w">		</span><span class="k">return</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<span class="w">	</span><span class="p">}</span>
+<span class="w">	</span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c1">// All scripts must have a default state.</span>
+<span class="c1">// However many other states a script may have, the default state must be uppermost in the script (below global vars and functions).</span>
+<span class="nc">default</span><span class="w"> </span><span class="p">{</span>
+<span class="w">	</span><span class="c1">// Event names are written in all lower case letters. Some contain underscores.</span>
+<span class="w">	</span><span class="nb">on_rez</span><span class="p">(</span><span class="kt">integer</span><span class="w"> </span><span class="nv">param</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">		</span><span class="c1">// If an event is passed any values as it is triggered, those values will be of specific types.</span>
+<span class="w">		</span><span class="c1">// Writers can choose the name for the variable, but not the type.</span>
+<span class="w">		</span><span class="c1">// Even if the data contained in the variables passed to the event are not used, the event must contain reference to that data.</span>
+<span class="w">		</span><span class="nf">llStopSound</span><span class="p">();</span>
+<span class="w">		</span><span class="nf">llResetScript</span><span class="p">();</span>
+<span class="w">	</span><span class="p">}</span>
+<span class="w">	</span><span class="nb">changed</span><span class="p">(</span><span class="kt">integer</span><span class="w"> </span><span class="nv">change</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">		</span><span class="k">if</span><span class="p">(</span><span class="nv">change</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="kc">CHANGED_INVENTORY</span><span class="p">)</span><span class="w"> </span><span class="c1">// Bitwise comparison</span>
+<span class="w">		</span><span class="nf">llResetScript</span><span class="p">();</span>
+<span class="w">	</span><span class="p">}</span>
+<span class="w">	</span><span class="nb">touch_start</span><span class="p">(</span><span class="kt">integer</span><span class="w"> </span><span class="nv">nd</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w"> 		</span><span class="k">while</span><span class="p">(</span><span class="nv">nd</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">			</span><span class="kt">key</span><span class="w"> </span><span class="nv">agent</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">llDetectedKey</span><span class="p">(</span><span class="o">--</span><span class="nv">nd</span><span class="p">);</span>
+<span class="w">			</span><span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="nv">busy</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w"> 				</span><span class="nv">busy</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">;</span>
+<span class="w">				</span><span class="kt">integer</span><span class="w"> </span><span class="nv">channel</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">Chan</span><span class="p">();</span>
+<span class="w">				</span><span class="nv">SetListenTimer</span><span class="p">(</span><span class="nv">playing</span><span class="p">);</span>
+<span class="w">				</span><span class="nv">Listen</span><span class="p">(</span><span class="nv">channel</span><span class="p">,</span><span class="w"> </span><span class="nv">agent</span><span class="p">);</span>
+<span class="w">				</span><span class="nv">PageOne</span><span class="p">(</span><span class="nv">agent</span><span class="p">,</span><span class="w"> </span><span class="nv">channel</span><span class="p">);</span>
+<span class="w">			</span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">				</span><span class="kt">list</span><span class="w"> </span><span class="nv">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="nv">agent</span><span class="p">];</span>
+<span class="w">				</span><span class="k">if</span><span class="p">(</span><span class="nf">llListFindList</span><span class="p">(</span><span class="nv">waiting</span><span class="p">,</span><span class="w"> </span><span class="nv">a</span><span class="p">)</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">				</span><span class="nv">waiting</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="nv">a</span><span class="p">;</span>
+<span class="w">			</span><span class="p">}</span>
+<span class="w">		</span><span class="p">}</span>
+<span class="w">	</span><span class="p">}</span>
+<span class="w">	</span><span class="nb">listen</span><span class="p">(</span><span class="kt">integer</span><span class="w"> </span><span class="nv">chan</span><span class="p">,</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="nv">name</span><span class="p">,</span><span class="w"> </span><span class="kt">key</span><span class="w"> </span><span class="nv">id</span><span class="p">,</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="nv">msg</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">		</span><span class="k">if</span><span class="p">(</span><span class="nv">msg</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="nf">llList2String</span><span class="p">(</span><span class="nv">cancel</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">			</span><span class="nv">SetListenTimer</span><span class="p">(</span><span class="nv">playing</span><span class="p">);</span>
+<span class="w">			</span><span class="k">if</span><span class="p">(</span><span class="nv">msg</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nv">vol_str</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">				</span><span class="nf">llDialog</span><span class="p">(</span><span class="nv">id</span><span class="p">,</span><span class="w"> </span><span class="s2">"</span><span class="se">\n</span><span class="s2">Change the volume?</span><span class="se">\n</span><span class="s2">The current volume is set at </span><span class="se">\"</span><span class="s2">"</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="p">((</span><span class="kt">string</span><span class="p">)</span><span class="nv">volume</span><span class="p">)</span><span class="w"> </span><span class="o">+</span>
+<span class="w">					</span><span class="s2">"</span><span class="se">\"</span><span class="s2">"</span><span class="p">,</span><span class="w"> </span><span class="nv">cancel</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nv">Volumes</span><span class="p">(</span><span class="nv">volume</span><span class="p">),</span><span class="w"> </span><span class="nv">chan</span><span class="p">);</span>
+<span class="w">				</span><span class="k">return</span><span class="p">;</span>
+<span class="w">			</span><span class="p">}</span>
+<span class="w">			</span><span class="k">if</span><span class="p">(</span><span class="nv">msg</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nv">song_str</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">				</span><span class="kt">string</span><span class="w"> </span><span class="nv">current</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">""</span><span class="p">;</span>
+<span class="w">				</span><span class="k">if</span><span class="p">(</span><span class="nv">playlist</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">					</span><span class="nv">current</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"</span><span class="se">\n\n</span><span class="s2">The songs currently queued are</span><span class="se">\n\"</span><span class="s2">"</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nf">llList2String</span><span class="p">(</span><span class="nv">playlist</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="o">+</span>
+<span class="w">						</span><span class="s2">"</span><span class="se">\"</span><span class="s2"> (currently playing)"</span><span class="p">;</span>
+<span class="w">					</span><span class="k">if</span><span class="p">(</span><span class="nf">llGetListLength</span><span class="p">(</span><span class="nv">playlist</span><span class="p">)</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span>
+<span class="w">					</span><span class="nv">current</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="s2">"</span><span class="se">\n\"</span><span class="s2">"</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nf">llDumpList2String</span><span class="p">(</span><span class="nf">llList2List</span><span class="p">(</span><span class="nv">playlist</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="mi">1</span><span class="p">),</span><span class="w"> </span><span class="s2">"</span><span class="se">\"\n\"</span><span class="s2">"</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s2">"</span><span class="se">\"</span><span class="s2">"</span><span class="p">;</span>
+<span class="w">				</span><span class="p">}</span>
+<span class="w">				</span><span class="nf">llDialog</span><span class="p">(</span><span class="nv">id</span><span class="p">,</span><span class="w"> </span><span class="nf">llGetSubString</span><span class="p">((</span><span class="s2">"</span><span class="se">\n</span><span class="s2">Select a song to play?"</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nv">current</span><span class="p">),</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">500</span><span class="p">),</span><span class="w"> </span><span class="nv">cancel</span><span class="w"> </span><span class="o">+</span>
+<span class="w">					</span><span class="nv">StrideOfList</span><span class="p">(</span><span class="nv">songs</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="mi">1</span><span class="p">),</span><span class="w"> </span><span class="nv">chan</span><span class="p">);</span>
+<span class="w">				</span><span class="k">return</span><span class="p">;</span>
+<span class="w">			</span><span class="p">}</span>
+<span class="w">			</span><span class="k">if</span><span class="p">(</span><span class="nf">llListFindList</span><span class="p">(</span><span class="nv">Volumes</span><span class="p">(</span><span class="nv">volume</span><span class="p">),</span><span class="w"> </span><span class="p">[</span><span class="nv">msg</span><span class="p">])</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">				</span><span class="nf">llAdjustSoundVolume</span><span class="p">(</span><span class="nv">ScaleVol</span><span class="p">((</span><span class="nv">volume</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">((</span><span class="kt">integer</span><span class="p">)</span><span class="nv">msg</span><span class="p">))));</span>
+<span class="w"> 				</span><span class="nv">PageOne</span><span class="p">(</span><span class="nv">id</span><span class="p">,</span><span class="w"> </span><span class="nv">chan</span><span class="p">);</span>
+<span class="w">				</span><span class="k">return</span><span class="p">;</span>
+<span class="w">			</span><span class="p">}</span>
+<span class="w">			</span><span class="k">if</span><span class="p">(</span><span class="nf">llGetListLength</span><span class="p">((</span><span class="nv">playlist</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="p">[</span><span class="nv">msg</span><span class="p">]))</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span>
+<span class="w">			</span><span class="nv">PlaySong</span><span class="p">((</span><span class="nv">song_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">msg</span><span class="p">));</span>
+<span class="w">		</span><span class="p">}</span>
+<span class="w">		</span><span class="k">if</span><span class="p">(</span><span class="nv">CheckWaitingRoom</span><span class="p">(</span><span class="nv">chan</span><span class="p">))</span>
+<span class="w">		</span><span class="k">return</span><span class="p">;</span>
+<span class="w">		</span><span class="nv">RemoveListen</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+<span class="w">	</span><span class="p">}</span>
+<span class="w">	</span><span class="nb">timer</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">		</span><span class="k">if</span><span class="p">(</span><span class="nv">playlist</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">			</span><span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="nv">playing</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">				</span><span class="nf">llSetTimerEvent</span><span class="p">(</span><span class="nv">delay</span><span class="p">);</span>
+<span class="w">				</span><span class="nv">playing</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">;</span>
+<span class="w">			</span><span class="p">}</span>
+<span class="w">			</span><span class="nf">llPlaySound</span><span class="p">(</span><span class="nf">llList2String</span><span class="p">(</span><span class="nv">song</span><span class="p">,</span><span class="w"> </span><span class="nv">part</span><span class="p">),</span><span class="w"> </span><span class="nv">ScaleVol</span><span class="p">(</span><span class="nv">volume</span><span class="p">));</span>
+<span class="w">			</span><span class="k">if</span><span class="p">((</span><span class="o">++</span><span class="nv">part</span><span class="p">)</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nv">sl</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">				</span><span class="k">if</span><span class="p">(</span><span class="nf">llGetListLength</span><span class="p">(</span><span class="nv">playlist</span><span class="p">)</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">					</span><span class="nv">song_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">llList2String</span><span class="p">((</span><span class="nv">playlist</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">llDeleteSubList</span><span class="p">(</span><span class="nv">playlist</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">)),</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span>
+<span class="w">					</span><span class="nf">llSleep</span><span class="p">(</span><span class="nv">delay</span><span class="p">);</span>
+<span class="w">					</span><span class="nv">PlaySong</span><span class="p">(</span><span class="nv">song_name</span><span class="p">);</span>
+<span class="w">				</span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">					</span><span class="nf">llSetTimerEvent</span><span class="p">(</span><span class="mf">0.0</span><span class="p">);</span>
+<span class="w">					</span><span class="nv">song_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">""</span><span class="p">;</span>
+<span class="w">					</span><span class="nv">playing</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">FALSE</span><span class="p">;</span>
+<span class="w">					</span><span class="nv">playlist</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[];</span>
+<span class="w">				</span><span class="p">}</span>
+<span class="w">			</span><span class="p">}</span>
+<span class="w">			</span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="p">(</span><span class="nv">part</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="p">(</span><span class="nv">sl</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">))</span>
+<span class="w">			</span><span class="nf">llPreloadSound</span><span class="p">(</span><span class="nf">llList2String</span><span class="p">(</span><span class="nv">song</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">));</span>
+<span class="w">			</span><span class="k">else</span>
+<span class="w">			</span><span class="nf">llPreloadSound</span><span class="p">(</span><span class="nf">llList2String</span><span class="p">(</span><span class="nv">song</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="nv">part</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">)));</span>
+<span class="w">		</span><span class="p">}</span>
+<span class="w">		</span><span class="k">if</span><span class="p">(</span><span class="nv">lis</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="p">(</span><span class="o">--</span><span class="nv">lis_count</span><span class="p">)))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">			</span><span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="p">(</span><span class="nv">CheckWaitingRoom</span><span class="p">(</span><span class="mi">0</span><span class="p">)))</span>
+<span class="w">			</span><span class="nv">RemoveListen</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+<span class="w">		</span><span class="p">}</span>
+<span class="w">	</span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Linden_Scripting_Language&amp;action=edit&amp;section=6" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://wiki.secondlife.com/wiki/Help:Getting_started_with_LSL#What_is_LSL.3F">Getting started with LSL</a>. wiki.secondlife.com (2013-07-01). Retrieved on 2013-09-21.</span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://wiki.secondlife.com/wiki/Category:LSL_Events">Category:LSL Events</a>. wiki.secondlife.com (2011-08-08). Retrieved on 2013-09-21.</span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://wiki.secondlife.com/wiki/Category:LSL_Functions">Category:LSL Functions</a>. wiki.secondlife.com (2012-09-08). Retrieved on 2013-09-21.</span></li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://wiki.secondlife.com/wiki/Category:LSL_Types">Category:LSL Types</a>. wiki.secondlife.com (2012-04-27). Retrieved on 2013-09-21.</span></li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://wiki.secondlife.com/wiki/Category:LSL_Integer">Category:LSL Integer</a>. wiki.secondlife.com (2012-12-22). Retrieved on 2013-09-21.</span></li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://wiki.secondlife.com/wiki/Category:LSL_Float">Category:LSL Float</a>. wiki.secondlife.com</span></li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://wiki.secondlife.com/wiki/Category:LSL_String">Category:LSL String</a>. wiki.secondlife.com (2013-05-19). Retrieved on 2013-09-21.</span></li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://wiki.secondlife.com/wiki/Category:LSL_Key">Category:LSL Key</a>. wiki.secondlife.com (2013-09-11). Retrieved on 2013-09-21.</span></li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-9">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://wiki.secondlife.com/wiki/Category:LSL_Vector">Category:LSL Vector</a>. wiki.secondlife.com (2011-10-05). Retrieved on 2013-09-21.</span></li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-10">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://wiki.secondlife.com/wiki/Category:LSL_Rotation">Category:LSL Rotation</a>. wiki.secondlife.com (2008-10-24). Retrieved on 2013-09-21.</span></li>
+<li id="cite_note-11"><span class="mw-cite-backlink"><b><a href="#cite_ref-11">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://wiki.secondlife.com/wiki/List">Category:LSL List</a>. wiki.secondlife.com. Retrieved on 2013-09-21.</span></li>
+<li id="cite_note-12"><span class="mw-cite-backlink"><b><a href="#cite_ref-12">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://wiki.secondlife.com/wiki/Category:LSL_Notecard">Category:LSL Notecard</a> An <a href="/wiki/Second_Life" title="Second Life">in-world</a> data storage medium mainly used for text. wiki.secondlife.com</span></li>
+<li id="cite_note-13"><span class="mw-cite-backlink"><b><a href="#cite_ref-13">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://wiki.secondlife.com/wiki/Hello_Avatar">Hello Avatar</a>. wiki.secondlife.com (2012-10-06). Retrieved on 2013-09-21.</span></li>
+<li id="cite_note-14"><span class="mw-cite-backlink"><b><a href="#cite_ref-14">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://blog.secondlife.com/2008/08/20/mono-launch/">Blogs</a>. blog.secondlife.com. Retrieved on 2013-09-21.</span></li>
+<li id="cite_note-15"><span class="mw-cite-backlink"><b><a href="#cite_ref-15">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://jira.secondlife.com/browse/SVC-1341">ISSUE SVC-1341</a>. jira.secondlife.com</span></li>
+<li id="cite_note-16"><span class="mw-cite-backlink"><b><a href="#cite_ref-16">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://jira.secondlife.com/browse/SVC-3895">ISSUE SVC-3895</a>. jira.secondlife.com</span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Linden_Scripting_Language&amp;action=edit&amp;section=7" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://forums.secondlife.com/forumdisplay.php?f=54">LSL forum</a>—Second Life LSL forum</li>
+<li><a rel="nofollow" class="external text" href="http://drdobbs.com/197008520">Extensive Tutorial on LSL</a>—Dr. Dobb's</li>
+<li><a rel="nofollow" class="external text" href="http://www.lslwiki.net/">LSL Wiki</a>—A community effort to supplement the available LSL documentation</li>
+<li><a rel="nofollow" class="external text" href="http://wiki.secondlife.com/wiki/LSL_Portal">LSL Portal</a>—A new Wiki hosted by Second Life</li>
+<li><a rel="nofollow" class="external text" href="http://wiki.secondlife.com/wiki/Mono">Mono for Second Life</a>—Information regarding the move to Mono</li>
+<li><a rel="nofollow" class="external text" href="http://xahlee.org/sl/ls-prob.html">Linden Scripting Language Problems</a>—Criticism by Xah Lee</li>
+<li><a rel="nofollow" class="external text" href="http://www.free-lsl-scripts.com/cgi/freescripts.plx">Linden Scripting Language Script Repository</a>—Privately maintained library of LSL Scripts.</li>
+</ul>
+<div role="navigation" class="navbox" aria-labelledby="Second_Life" style="padding:3px">
+<table class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:Second_Life" title="Template:Second Life"><abbr title="View this template" style=";;background:none transparent;border:none;">v</abbr></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:Second_Life" title="Template talk:Second Life"><abbr title="Discuss this template" style=";;background:none transparent;border:none;">t</abbr></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:Second_Life&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;">e</abbr></a></li>
+</ul>
+</div>
+<div id="Second_Life" style="font-size:114%"><a href="/wiki/Second_Life" title="Second Life">Second Life</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Main articles</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Linden_Lab" title="Linden Lab">Linden Lab</a></li>
+<li><a href="/wiki/Teen_Second_Life" title="Teen Second Life">Teen Second Life</a></li>
+<li><a href="/wiki/Culture_of_Second_Life" title="Culture of Second Life">Residents</a></li>
+<li><a href="/wiki/Second_Life_Grid" title="Second Life Grid">Second Life Grid</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Software</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><strong class="selflink">Linden Scripting Language</strong></li>
+<li><a href="/wiki/CopyBot" title="CopyBot">CopyBot</a></li>
+<li><a href="/wiki/OpenSimulator" title="OpenSimulator">OpenSimulator</a></li>
+<li><a href="/wiki/Sculpted_prim" title="Sculpted prim">Sculpted prim</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Economy</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Economy_of_Second_Life" title="Economy of Second Life">Economy</a></li>
+<li><a href="/wiki/Businesses_and_organizations_in_Second_Life" title="Businesses and organizations in Second Life">Businesses and Organizations</a></li>
+<li><a href="/wiki/Real_estate_(Second_Life)" title="Real estate (Second Life)">Real estate</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Culture_of_Second_Life" title="Culture of Second Life">Culture</a></th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Arts_in_Second_Life" title="Arts in Second Life">Arts</a></li>
+<li><a href="/wiki/Education_in_Second_Life" title="Education in Second Life">Education</a></li>
+<li><a href="/wiki/Libraries_in_Second_Life" title="Libraries in Second Life">Libraries</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Related</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Criticism_of_Second_Life" title="Criticism of Second Life">Criticism</a></li>
+<li><a href="/wiki/Second_Life_in_popular_culture" title="Second Life in popular culture">Popular culture</a></li>
+<li><a href="/wiki/Patriotic_Nigras" title="Patriotic Nigras">Patriotic Nigras</a></li>
+<li><i><a href="/wiki/Bragg_v._Linden_Lab" title="Bragg v. Linden Lab">Bragg v. Linden Lab</a></i></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div role="navigation" class="navbox" aria-labelledby="Vector_graphics_markup_languages_and_file_formats" style="padding:3px">
+<table class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:Vector_graphics_markup_languages" title="Template:Vector graphics markup languages"><abbr title="View this template" style=";;background:none transparent;border:none;">v</abbr></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:Vector_graphics_markup_languages" title="Template talk:Vector graphics markup languages"><abbr title="Discuss this template" style=";;background:none transparent;border:none;">t</abbr></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:Vector_graphics_markup_languages&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;">e</abbr></a></li>
+</ul>
+</div>
+<div id="Vector_graphics_markup_languages_and_file_formats" style="font-size:114%"><a href="/wiki/Vector_graphics" title="Vector graphics">Vector graphics</a> <a href="/wiki/Vector_graphics_markup_language" class="mw-redirect" title="Vector graphics markup language">markup languages</a> and file formats</div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">By <a href="/wiki/List_of_vector_graphics_markup_languages" class="mw-redirect" title="List of vector graphics markup languages">type</a></th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks navbox-subgroup" style="border-spacing:0">
+<tr>
+<th scope="row" class="navbox-group">2D</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Asymptote_(vector_graphics_language)" title="Asymptote (vector graphics language)">Asymptote</a></li>
+<li><a href="/wiki/Computer_Graphics_Metafile" title="Computer Graphics Metafile">CGM</a></li>
+<li><a href="/wiki/Office_Open_XML_file_formats#DrawingML" title="Office Open XML file formats">DrawingML</a></li>
+<li><a href="/wiki/Enhanced_Metafile" class="mw-redirect" title="Enhanced Metafile">EMF</a></li>
+<li><a href="/wiki/Graphics_Layout_Engine" title="Graphics Layout Engine">Graphics Layout Engine</a></li>
+<li><a href="/wiki/GeoGebra" title="GeoGebra">GeoGebra</a></li>
+<li><a href="/wiki/Haiku_Vector_Icon_Format" title="Haiku Vector Icon Format">HVIF</a></li>
+<li><a href="/wiki/MetaPost" title="MetaPost">MetaPost</a></li>
+<li><a href="/wiki/PGF/TikZ" title="PGF/TikZ">PGF/TikZ</a></li>
+<li><a href="/wiki/Precision_Graphics_Markup_Language" title="Precision Graphics Markup Language">PGML</a></li>
+<li><a href="/wiki/PSTricks" title="PSTricks">PSTricks</a></li>
+<li><a href="/wiki/Remote_imaging_protocol" class="mw-redirect" title="Remote imaging protocol">Remote imaging protocol</a></li>
+<li><a href="/wiki/Scalable_Vector_Graphics" title="Scalable Vector Graphics">SVG</a></li>
+<li><a href="/wiki/SWF" title="SWF">SWF</a></li>
+<li><a href="/wiki/Vector_Markup_Language" title="Vector Markup Language">VML</a></li>
+<li><a href="/wiki/Windows_Metafile" title="Windows Metafile">WMF</a></li>
+<li><a href="/wiki/Extensible_Application_Markup_Language" title="Extensible Application Markup Language">XAML</a></li>
+<li><a href="/wiki/Xar_(graphics)" title="Xar (graphics)">Xar</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">3D</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/3DMLW" title="3DMLW">3DMLW</a></li>
+<li><a href="/wiki/3DXML" title="3DXML">3DXML</a></li>
+<li><a href="/wiki/Asymptote_(vector_graphics_language)" title="Asymptote (vector graphics language)">Asymptote</a></li>
+<li><a href="/wiki/COLLADA" title="COLLADA">COLLADA</a></li>
+<li><a href="/wiki/Design_Web_Format" title="Design Web Format">DWF</a></li>
+<li><a href="/wiki/GeoGebra" title="GeoGebra">GeoGebra</a></li>
+<li><a href="/wiki/IGES" title="IGES">IGES</a></li>
+<li><a href="/wiki/JT_(visualization_format)" title="JT (visualization format)">JT</a></li>
+<li><a href="/wiki/OpenGEX" class="mw-redirect" title="OpenGEX">OpenGEX</a></li>
+<li><a href="/wiki/PRC_(file_format)" title="PRC (file format)">PRC</a></li>
+<li><a href="/wiki/ISO_10303" title="ISO 10303">STEP</a></li>
+<li><a href="/wiki/STL_(file_format)" title="STL (file format)">STL</a></li>
+<li><a href="/wiki/Universal_3D" title="Universal 3D">U3D</a></li>
+<li><a href="/wiki/VRML" title="VRML">VRML</a></li>
+<li><a href="/wiki/X3D" title="X3D">X3D</a></li>
+<li><a href="/wiki/Extensible_Application_Markup_Language" title="Extensible Application Markup Language">XAML</a></li>
+<li><a href="/wiki/XVL" title="XVL">XVL</a></li>
+<li><a href="/wiki/XVRML" title="XVRML">xVRML</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">See also</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Web3D" title="Web3D">Web3D</a></li>
+<li><a href="/wiki/Web3D_Consortium" title="Web3D Consortium">Web3D Consortium</a></li>
+<li><strong class="selflink">Linden Scripting Language</strong></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1213
+Cached time: 20161230224353
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.140 seconds
+Real time usage: 0.180 seconds
+Preprocessor visited node count: 705/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 28377/2097152 bytes
+Template argument size: 801/2097152 bytes
+Highest expansion depth: 10/40
+Expensive parser function count: 3/500
+Lua time usage: 0.043/10.000 seconds
+Lua memory usage: 1.64 MB/50 MB
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  130.420      1 - -total
+ 38.11%   49.708      1 - Template:Primary_sources
+ 27.67%   36.085      1 - Template:Infobox_programming_language
+ 23.97%   31.259      1 - Template:Ambox
+ 23.94%   31.216      1 - Template:Infobox
+ 11.92%   15.548      3 - Template:Navbox
+ 10.86%   14.167      1 - Template:Second_Life
+  7.87%   10.265      1 - Template:Reflist
+  5.93%    7.736      1 - Template:Vector_graphics_markup_languages
+  3.35%    4.374      1 - Template:URL
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:843913-0!*!0!!en!4!* and timestamp 20161230224353 and revision id 735188753
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Linden_Scripting_Language&amp;oldid=735188753">https://en.wikipedia.org/w/index.php?title=Linden_Scripting_Language&amp;oldid=735188753</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Mono_project_applications" title="Category:Mono project applications">Mono project applications</a></li><li><a href="/wiki/Category:Scripting_languages" title="Category:Scripting languages">Scripting languages</a></li><li><a href="/wiki/Category:Second_Life" title="Category:Second Life">Second Life</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Articles_lacking_reliable_references_from_December_2011" title="Category:Articles lacking reliable references from December 2011">Articles lacking reliable references from December 2011</a></li><li><a href="/wiki/Category:All_articles_lacking_reliable_references" title="Category:All articles lacking reliable references">All articles lacking reliable references</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Linden+Scripting+Language" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Linden+Scripting+Language" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/Linden_Scripting_Language"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:Linden_Scripting_Language"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/Linden_Scripting_Language" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=Linden_Scripting_Language&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Linden_Scripting_Language&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Linden_Scripting_Language" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Linden_Scripting_Language" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Linden_Scripting_Language&amp;oldid=735188753" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Linden_Scripting_Language&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q1185543" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Linden_Scripting_Language&amp;id=735188753" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Linden+Scripting+Language">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Linden+Scripting+Language&amp;returnto=Linden+Scripting+Language&amp;oldid=735188753&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Linden_Scripting_Language&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-bg"><a href="https://bg.wikipedia.org/wiki/Linden_Scripting_Language" title="Linden Scripting Language – Bulgarian" lang="bg" hreflang="bg" class="interlanguage-link-target">Български</a></li><li class="interlanguage-link interwiki-cs"><a href="https://cs.wikipedia.org/wiki/Linden_Scripting_Language" title="Linden Scripting Language – Czech" lang="cs" hreflang="cs" class="interlanguage-link-target">Čeština</a></li><li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/Linden_Scripting_Language" title="Linden Scripting Language – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-ko"><a href="https://ko.wikipedia.org/wiki/Linden_Scripting_Language" title="Linden Scripting Language – Korean" lang="ko" hreflang="ko" class="interlanguage-link-target">한국어</a></li><li class="interlanguage-link interwiki-it"><a href="https://it.wikipedia.org/wiki/Linden_Scripting_Language" title="Linden Scripting Language – Italian" lang="it" hreflang="it" class="interlanguage-link-target">Italiano</a></li><li class="interlanguage-link interwiki-ja"><a href="https://ja.wikipedia.org/wiki/Linden_Scripting_Language" title="Linden Scripting Language – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target">日本語</a></li><li class="interlanguage-link interwiki-pt"><a href="https://pt.wikipedia.org/wiki/Linden_Scripting_Language" title="Linden Scripting Language – Portuguese" lang="pt" hreflang="pt" class="interlanguage-link-target">Português</a></li><li class="interlanguage-link interwiki-ru"><a href="https://ru.wikipedia.org/wiki/Linden_Scripting_Language" title="Linden Scripting Language – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q1185543#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 19 August 2016, at 03:52.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Linden_Scripting_Language&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":65,"wgHostname":"mw1183"});});</script>
+	</body>
+</html>

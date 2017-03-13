@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>OCaml - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"OCaml","wgTitle":"OCaml","wgCurRevisionId":761181082,"wgRevisionId":761181082,"wgArticleId":39652,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles lacking reliable references from May 2015","All articles lacking reliable references","Pages using deprecated image syntax","All articles with unsourced statements","Articles with unsourced statements from November 2016","Articles needing additional references from May 2013","All articles needing additional references","Official website not in Wikidata","Articles with example OCaml code","Cross-platform free software","Extensible syntax programming languages","Free compilers and interpreters","Functional languages","ML programming language family","Object-oriented programming languages","OCaml programming language family","OCaml software","Pattern matching programming languages","Programming languages created in 1996"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"OCaml","wgRelevantArticleId":39652,"wgRequestId":"WJE7DwpAEKgAADGNvB4AAAAD","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":true},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q212587","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.cite.styles":"ready","ext.pygments":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.legacy.wikibits","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.pygments%2CwikimediaBadges%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.29.0-wmf.9"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/OCaml"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=OCaml&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=OCaml&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/OCaml"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-OCaml rootpage-OCaml skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">OCaml</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><script>function mfTempOpenSection(id){var block=document.getElementById("mf-section-"+id);block.className+=" open-block";block.previousSibling.className+=" open-block";}</script><div role="note" class="hatnote">Not to be confused with <a href="/wiki/Occam_(programming_language)" title="Occam (programming language)">occam (programming language)</a>.</div>
+<table class="plainlinks metadata ambox ambox-content ambox-Primary_sources" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><a href="/wiki/File:Question_book-new.svg" class="image"><img alt="Question book-new.svg" src="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" width="50" height="39" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/75px-Question_book-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/100px-Question_book-new.svg.png 2x" data-file-width="512" data-file-height="399" /></a></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">This article <b>relies too much on <a href="/wiki/Wikipedia:Verifiability" title="Wikipedia:Verifiability">references</a> to <a href="/wiki/Wikipedia:No_original_research#Primary.2C_secondary_and_tertiary_sources" title="Wikipedia:No original research">primary sources</a></b>. <span class="hide-when-compact">Please improve this by adding <a href="/wiki/Wikipedia:No_original_research#Primary.2C_secondary_and_tertiary_sources" title="Wikipedia:No original research">secondary or tertiary sources</a>.</span> <small><i>(May 2015)</i></small> <small class="hide-when-compact"><i>(<a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove this template message</a>)</i></small></span></td>
+</tr>
+</table>
+<table class="infobox vevent" style="width:22em">
+<caption class="summary">OCaml</caption>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/File:OCaml_Logo.svg" class="image"><img alt="OCaml Logo.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/f/ff/OCaml_Logo.svg/200px-OCaml_Logo.svg.png" width="200" height="55" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/f/ff/OCaml_Logo.svg/300px-OCaml_Logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/f/ff/OCaml_Logo.svg/400px-OCaml_Logo.svg.png 2x" data-file-width="525" data-file-height="144" /></a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Programming_paradigm" title="Programming paradigm">Paradigm</a></th>
+<td><a href="/wiki/Programming_paradigm#Multi-paradigm" title="Programming paradigm">multi-paradigm</a>: <a href="/wiki/Imperative_programming" title="Imperative programming">imperative</a>, <a href="/wiki/Functional_programming" title="Functional programming">functional</a>, <a href="/wiki/Object-oriented_programming" title="Object-oriented programming">object-oriented</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_design" title="Software design">Designed&#160;by</a></th>
+<td><a href="/wiki/Xavier_Leroy" title="Xavier Leroy">Xavier Leroy</a>, Jérôme Vouillon, <a href="/wiki/Damien_Doligez" title="Damien Doligez">Damien Doligez</a>, Didier Rémy, Ascánder Suárez</td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_developer" title="Software developer">Developer</a></th>
+<td class="organiser"><a href="/wiki/French_Institute_for_Research_in_Computer_Science_and_Automation" title="French Institute for Research in Computer Science and Automation">INRIA</a></td>
+</tr>
+<tr>
+<th scope="row">First&#160;appeared</th>
+<td>1996<span class="noprint">; 21&#160;years ago</span><span style="display:none">&#160;(<span class="bday dtstart published updated">1996</span>)</span></td>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Software_release_life_cycle" title="Software release life cycle">Stable release</a></th>
+<td>
+<div style="margin:0px;">4.04.0 / November&#160;4, 2016<span class="noprint">; 2 months ago</span><span style="display:none">&#160;(<span class="bday dtstart published updated">2016-11-04</span>)</span></div>
+</td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Type_system" title="Type system">Typing discipline</a></th>
+<td><a href="/wiki/Static_typing" class="mw-redirect" title="Static typing">static</a>, <a href="/wiki/Strong_and_weak_typing" title="Strong and weak typing">strong</a>, <a href="/wiki/Type_inference" title="Type inference">inferred</a></td>
+</tr>
+<tr>
+<th scope="row">Implementation language</th>
+<td>OCaml, <a href="/wiki/C_(programming_language)" title="C (programming language)">C</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Computing_platform" title="Computing platform">Platform</a></th>
+<td><a href="/wiki/IA-32" title="IA-32">IA-32</a>, <a href="/wiki/X86-64" title="X86-64">X86-64</a>, <a href="/wiki/Power_Architecture" title="Power Architecture">Power</a>, <a href="/wiki/SPARC" title="SPARC">SPARC</a>, <a href="/wiki/ARM_architecture" title="ARM architecture">ARM 32-64</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Operating_system" title="Operating system">OS</a></th>
+<td><a href="/wiki/Cross-platform" title="Cross-platform">Cross-platform</a>: <a href="/wiki/Unix" title="Unix">Unix</a>, <a href="/wiki/MacOS" title="MacOS">macOS</a>, <a href="/wiki/Microsoft_Windows" title="Microsoft Windows">Windows</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_license" title="Software license">License</a></th>
+<td><a href="/wiki/GNU_Lesser_General_Public_License" title="GNU Lesser General Public License">LGPL</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Filename_extension" title="Filename extension">Filename extensions</a></th>
+<td>.ml, .mli</td>
+</tr>
+<tr>
+<th scope="row">Website</th>
+<td><span class="url"><a rel="nofollow" class="external text" href="http://ocaml.org">ocaml<wbr />.org</a></span></td>
+</tr>
+<tr>
+<th colspan="2" style="text-align:center;background-color: #eee;"><a href="/wiki/Dialect_(computing)" title="Dialect (computing)">Dialects</a></th>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/F_Sharp_(programming_language)" title="F Sharp (programming language)">F#</a>, <a href="/wiki/JoCaml" title="JoCaml">JoCaml</a>, MetaOCaml, OcamlP3l, Reason</td>
+</tr>
+<tr>
+<th colspan="2" style="text-align:center;background-color: #eee;">Influenced by</th>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/Caml" title="Caml">Caml</a> Light, <a href="/wiki/Cool_(programming_language)" title="Cool (programming language)">Cool</a>,<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (November 2016)">citation needed</span></a></i>]</sup> <a href="/wiki/Standard_ML" title="Standard ML">Standard ML</a></td>
+</tr>
+<tr>
+<th colspan="2" style="text-align:center;background-color: #eee;">Influenced</th>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/ATS_(programming_language)" title="ATS (programming language)">ATS</a>, <a href="/wiki/Elm_(programming_language)" title="Elm (programming language)">Elm</a>, <a href="/wiki/F_Sharp_(programming_language)" title="F Sharp (programming language)">F#</a>, <a href="/wiki/F*_(programming_language)" title="F* (programming language)">F*</a>, <a href="/wiki/Haxe" title="Haxe">Haxe</a>, <a href="/wiki/Opa_(programming_language)" title="Opa (programming language)">Opa</a>, <a href="/wiki/Rust_(programming_language)" title="Rust (programming language)">Rust</a>, <a href="/wiki/Scala_(programming_language)" title="Scala (programming language)">Scala</a></td>
+</tr>
+<tr>
+<td colspan="2" class="hlist" style="text-align:center;border-top: 1px solid #aaa; padding-top: 3px;">
+<ul>
+<li><a href="/wiki/File:Wikibooks-logo-en-noslogan.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/16px-Wikibooks-logo-en-noslogan.svg.png" width="16" height="16" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/24px-Wikibooks-logo-en-noslogan.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/32px-Wikibooks-logo-en-noslogan.svg.png 2x" data-file-width="400" data-file-height="400" /></a> <a href="https://en.wikibooks.org/wiki/Objective_Caml" class="extiw" title="wikibooks:Objective Caml">Objective Caml</a> at Wikibooks</li>
+</ul>
+</td>
+</tr>
+</table>
+<p><b>OCaml</b> (<span class="nowrap"><span class="IPA nopopups"><a href="/wiki/Help:IPA_for_English" title="Help:IPA for English">/<span style="border-bottom:1px dotted"><span title="/oʊ/ long 'o' in 'code'">oʊ</span><span title="/ˈ/ primary stress follows">ˈ</span><span title="'k' in 'kind'">k</span><span title="/æ/ short 'a' in 'bad'">æ</span><span title="'m' in 'my'">m</span><span title="/əl/ 'le' in 'bottle'">əl</span></span>/</a></span></span> <span title="English pronunciation respelling"><a href="/wiki/Help:Pronunciation_respelling_key" title="Help:Pronunciation respelling key"><i>oh-<b><span class="smallcaps"><span style="font-variant: small-caps; text-transform: lowercase;">KAM</span></span></b>-əl</i></a></span>), originally named <b>Objective Caml</b>, is the main implementation of the programming language <a href="/wiki/Caml" title="Caml">Caml</a>, created by <a href="/wiki/Xavier_Leroy" title="Xavier Leroy">Xavier Leroy</a>, Jérôme Vouillon, <a href="/wiki/Damien_Doligez" title="Damien Doligez">Damien Doligez</a>, Didier Rémy, Ascánder Suárez and others in 1996. A member of the <a href="/wiki/ML_(programming_language)" title="ML (programming language)">ML</a> language family, OCaml extends the core Caml language with <a href="/wiki/Object-oriented_programming" title="Object-oriented programming">object-oriented programming</a> constructs.</p>
+<p>OCaml's toolset includes an interactive top-level <a href="/wiki/Interpreter_(computing)" title="Interpreter (computing)">interpreter</a>, a <a href="/wiki/Bytecode" title="Bytecode">bytecode</a> <a href="/wiki/Compiler" title="Compiler">compiler</a>, a reversible <a href="/wiki/Debugger" title="Debugger">debugger</a>, a package manager (OPAM), and an optimizing <a href="/wiki/Native_code" class="mw-redirect" title="Native code">native code</a> compiler. It has a large standard library, making it useful for many of the same applications as <a href="/wiki/Python_(programming_language)" title="Python (programming language)">Python</a> or <a href="/wiki/Perl" title="Perl">Perl</a>, and has robust modular and object-oriented programming constructs that make it applicable for large-scale software engineering. OCaml is the successor to <a href="/wiki/Caml" title="Caml">Caml</a> Light. The acronym <i>CAML</i> originally stood for <i>Categorical Abstract Machine Language</i>, although OCaml omits this <a href="/wiki/Abstract_machine" title="Abstract machine">abstract machine</a>.<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">[1]</a></sup></p>
+<p>OCaml is a <a href="/wiki/Free_and_open-source_software" title="Free and open-source software">free and open-source software</a> project managed and principally maintained by <a href="/wiki/French_Institute_for_Research_in_Computer_Science_and_Automation" title="French Institute for Research in Computer Science and Automation">French Institute for Research in Computer Science and Automation</a> (INRIA). In the early 2000s, many new languages adopted elements from OCaml, most notably <a href="/wiki/F_Sharp_(programming_language)" title="F Sharp (programming language)">F#</a> and <a href="/wiki/Scala_(programming_language)" title="Scala (programming language)">Scala</a>.</p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Philosophy"><span class="tocnumber">1</span> <span class="toctext">Philosophy</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Features"><span class="tocnumber">2</span> <span class="toctext">Features</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Development_environment"><span class="tocnumber">3</span> <span class="toctext">Development environment</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Code_examples"><span class="tocnumber">4</span> <span class="toctext">Code examples</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="#Hello_World"><span class="tocnumber">4.1</span> <span class="toctext">Hello World</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Summing_a_list_of_integers"><span class="tocnumber">4.2</span> <span class="toctext">Summing a list of integers</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Quicksort"><span class="tocnumber">4.3</span> <span class="toctext">Quicksort</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Birthday_paradox"><span class="tocnumber">4.4</span> <span class="toctext">Birthday paradox</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Church_numerals"><span class="tocnumber">4.5</span> <span class="toctext">Church numerals</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Arbitrary-precision_factorial_function_.28libraries.29"><span class="tocnumber">4.6</span> <span class="toctext">Arbitrary-precision factorial function (libraries)</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#Triangle_.28graphics.29"><span class="tocnumber">4.7</span> <span class="toctext">Triangle (graphics)</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#Fibonacci_Sequence"><span class="tocnumber">4.8</span> <span class="toctext">Fibonacci Sequence</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="#Higher-order_functions"><span class="tocnumber">4.9</span> <span class="toctext">Higher-order functions</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-14"><a href="#Derived_languages"><span class="tocnumber">5</span> <span class="toctext">Derived languages</span></a>
+<ul>
+<li class="toclevel-2 tocsection-15"><a href="#MetaOCaml"><span class="tocnumber">5.1</span> <span class="toctext">MetaOCaml</span></a></li>
+<li class="toclevel-2 tocsection-16"><a href="#Other_derived_languages"><span class="tocnumber">5.2</span> <span class="toctext">Other derived languages</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-17"><a href="#Software_written_in_it"><span class="tocnumber">6</span> <span class="toctext">Software written in it</span></a></li>
+<li class="toclevel-1 tocsection-18"><a href="#Commercial_users"><span class="tocnumber">7</span> <span class="toctext">Commercial users</span></a></li>
+<li class="toclevel-1 tocsection-19"><a href="#See_also"><span class="tocnumber">8</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-20"><a href="#References"><span class="tocnumber">9</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-21"><a href="#External_links"><span class="tocnumber">10</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Philosophy">Philosophy</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=OCaml&amp;action=edit&amp;section=1" title="Edit section: Philosophy">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p><a href="/wiki/ML_(programming_language)" title="ML (programming language)">ML</a>-derived languages are best known for their static <a href="/wiki/Type_system" title="Type system">type systems</a> and <a href="/wiki/Type_inference" title="Type inference">type-inferring</a> compilers. OCaml unifies <a href="/wiki/Functional_programming" title="Functional programming">functional</a>, <a href="/wiki/Imperative_programming" title="Imperative programming">imperative</a>, and <a href="/wiki/Object-oriented_programming" title="Object-oriented programming">object-oriented programming</a> under an ML-like type system. Thus, programmers need not be highly familiar with the pure functional language paradigm to use OCaml.</p>
+<p>OCaml's static type system can help eliminate problems at runtime. However, it also forces the programmer to conform to the constraints of the type system, which can require careful thought and close attention. A type-inferring compiler greatly reduces the need for manual type annotations. For example, the <a href="/wiki/Data_type" title="Data type">data type</a> of variables and the signature of functions usually need not be declared explicitly, as they do in <a href="/wiki/Java_(programming_language)" title="Java (programming language)">Java</a>. Nonetheless, effective use of OCaml's type system can require some sophistication on the part of a programmer.</p>
+<p>OCaml is perhaps most distinguished from other languages with origins in academia, by its emphasis on performance. Firstly, its static type system presents runtime type mismatches, and thus obviates runtime type and safety checks that burden the performance of dynamically typed languages, while still guaranteeing runtime safety, except when array bounds checking is turned off, or when some type-unsafe features like serialization are used. These are rare enough that avoiding them is quite possible in practice.</p>
+<p>Aside from type-checking overhead, <a href="/wiki/Functional_programming" title="Functional programming">functional programming</a> languages are, in general, challenging to compile to efficient machine language code, due to issues such as the <a href="/wiki/Funarg_problem" title="Funarg problem">funarg problem</a>. Along with standard loop, register, and instruction <a href="/wiki/Compiler_optimization" class="mw-redirect" title="Compiler optimization">optimizations</a>, OCaml's optimizing compiler employs <a href="/wiki/Static_program_analysis" title="Static program analysis">static program analysis</a> methods to optimize value <a href="/wiki/Boxing_(computer_science)" class="mw-redirect" title="Boxing (computer science)">boxing</a> and <a href="/wiki/Closure_(computer_science)" class="mw-redirect" title="Closure (computer science)">closure</a> allocation, helping to maximize the performance of the resulting code even if it makes extensive use of functional programming constructs.</p>
+<p><a href="/wiki/Xavier_Leroy" title="Xavier Leroy">Xavier Leroy</a> has stated that "OCaml delivers at least 50% of the performance of a decent C compiler",<sup id="cite_ref-LWN_2-0" class="reference"><a href="#cite_note-LWN-2">[2]</a></sup> but a direct comparison is impossible. Some functions in the OCaml standard library are implemented with faster algorithms than equivalent functions in the standard libraries of other languages. For example, the implementation of set union in the OCaml standard library in theory is asymptotically faster than the equivalent function in the standard libraries of imperative languages (e.g., C++, Java) because the OCaml implementation exploits the immutability of sets to reuse parts of input sets in the output (see <a href="/wiki/Persistent_data_structure" title="Persistent data structure">persistent data structure</a>).</p>
+<h2><span class="mw-headline" id="Features">Features</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=OCaml&amp;action=edit&amp;section=2" title="Edit section: Features">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>OCaml features: a <a href="/wiki/Semantic_analysis_(computer_science)" class="mw-redirect" title="Semantic analysis (computer science)">static</a> <a href="/wiki/Type_system" title="Type system">type system</a>, <a href="/wiki/Type_inference" title="Type inference">type inference</a>, <a href="/wiki/Parametric_polymorphism" title="Parametric polymorphism">parametric polymorphism</a>, <a href="/wiki/Tail_recursion" class="mw-redirect" title="Tail recursion">tail recursion</a>, <a href="/wiki/Pattern_matching" title="Pattern matching">pattern matching</a>, first class lexical <a href="/wiki/Closure_(computer_science)" class="mw-redirect" title="Closure (computer science)">closures</a>, <a href="/wiki/Function_object#Other_meanings" title="Function object">functors (parametric modules)</a>, <a href="/wiki/Exception_handling" title="Exception handling">exception handling</a>, and incremental generational <a href="/wiki/Garbage_collection_(computer_science)" title="Garbage collection (computer science)">automatic garbage collection</a>.</p>
+<p>OCaml is notable for extending ML-style type inference to an object system in a general-purpose language. This permits <a href="/wiki/Structural_subtyping" class="mw-redirect" title="Structural subtyping">structural subtyping</a>, where object types are compatible if their method signatures are compatible, regardless of their declared inheritance; an unusual feature in statically typed languages.</p>
+<p>A <a href="/wiki/Foreign_function_interface" title="Foreign function interface">foreign function interface</a> for <a href="/wiki/Linker_(computing)" title="Linker (computing)">linking</a> to <a href="/wiki/C_(programming_language)" title="C (programming language)">C</a> primitives is provided, including language support for efficient numerical <a href="/wiki/Array_data_structure" title="Array data structure">arrays</a> in formats compatible with both C and <a href="/wiki/Fortran" title="Fortran">Fortran</a>. OCaml also supports creating libraries of OCaml functions that can be linked to a <i>main</i> program in C, so that an OCaml library can be distributed to C programmers who have no knowledge or installation of OCaml.</p>
+<p>The OCaml distribution contains:</p>
+<ul>
+<li>An extensible <a href="/wiki/Parsing#Computer_languages" title="Parsing">parser</a> and <a href="/wiki/Macro_(computer_science)" title="Macro (computer science)">macro language</a> named <a href="/wiki/Camlp4" title="Camlp4">Camlp4</a>, which permits the syntax of OCaml to be extended or even replaced</li>
+<li><a href="/wiki/Lexical_analysis" title="Lexical analysis">Lexer</a> and parser tools called ocamllex and ocamlyacc</li>
+<li><a href="/wiki/Debugger" title="Debugger">Debugger</a> that supports stepping backwards to investigate errors</li>
+<li><a href="/wiki/Documentation_generator" title="Documentation generator">Documentation generator</a></li>
+<li><a href="/wiki/Profiler_(computer_science)" class="mw-redirect" title="Profiler (computer science)">Profiler</a> – to measure performance</li>
+<li>Many general-purpose <a href="/wiki/Library_(computing)" title="Library (computing)">libraries</a></li>
+</ul>
+<p>The native code compiler is available for many platforms, including <a href="/wiki/Unix" title="Unix">Unix</a>, <a href="/wiki/Microsoft_Windows" title="Microsoft Windows">Microsoft Windows</a>, and <a href="/wiki/Apple_Inc." title="Apple Inc.">Apple</a> <a href="/wiki/MacOS" title="MacOS">macOS</a>. Portability is achieved through native code generation support for major architectures: <a href="/wiki/IA-32" title="IA-32">IA-32</a>, <a href="/wiki/X86-64" title="X86-64">X86-64</a> (AMD64), <a href="/wiki/Power_Architecture" title="Power Architecture">Power</a>, <a href="/wiki/SPARC" title="SPARC">SPARC</a>, <a href="/wiki/ARM_architecture" title="ARM architecture">ARM</a>, and <a href="/wiki/ARM64" class="mw-redirect" title="ARM64">ARM64</a>.<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">[3]</a></sup></p>
+<p>OCaml bytecode and native code programs can be written in a <a href="/wiki/Thread_(computer_science)" class="mw-redirect" title="Thread (computer science)">multithreaded</a> style, with preemptive context switching. However, because the garbage collector of the INRIA OCaml system (which is the only currently available full implementation of the language) is not designed for concurrency, <a href="/wiki/Symmetric_multiprocessing" title="Symmetric multiprocessing">symmetric multiprocessing</a> is unsupported.<sup id="cite_ref-INRIA_4-0" class="reference"><a href="#cite_note-INRIA-4">[4]</a></sup> OCaml threads in the same process execute by time sharing only. There are however several libraries for distributed computing such as <a rel="nofollow" class="external text" href="http://functory.lri.fr/About.html">Functory</a> and <a rel="nofollow" class="external text" href="http://projects.camlcity.org/projects/ocamlnet.html">ocamlnet/Plasma</a>.</p>
+<h2><span class="mw-headline" id="Development_environment">Development environment</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=OCaml&amp;action=edit&amp;section=3" title="Edit section: Development environment">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Since 2011, many new tools and libraries have been contributed to the OCaml development environment:</p>
+<ul>
+<li>OCaml Package Manager (OPAM), developed by OCamlPro, is now an easy way to install OCaml and many of its tools and libraries</li>
+<li>Optimizing compilers for OCaml:
+<ul>
+<li>js_of_ocaml, developed by the <a href="/wiki/Ocsigen" title="Ocsigen">Ocsigen</a> team, is an optimizing compiler from OCaml to <a href="/wiki/JavaScript" title="JavaScript">JavaScript</a>, to create webapps in OCaml.</li>
+<li>ocamlcc is a compiler from OCaml to C, to complement the native code compiler for unsupported platforms.</li>
+<li>OCamlJava, developed by INRIA, is a compiler from OCaml to the <a href="/wiki/Java_virtual_machine" title="Java virtual machine">Java virtual machine</a> (JVM).</li>
+<li>OCaPic, developed by Lip6, is a compiler from OCaml to <a href="/wiki/PIC_microcontroller" title="PIC microcontroller">PIC microcontroller</a>.</li>
+</ul>
+</li>
+<li>Web sites:
+<ul>
+<li><a rel="nofollow" class="external text" href="https://ocaml.org/">OCaml.org</a> is a website managed by the OCaml community.</li>
+<li><a rel="nofollow" class="external text" href="https://try.ocamlpro.com/">Try-OCaml</a>, developed by OCamlPro, is a website containing a complete OCaml REPL in a webpage.</li>
+</ul>
+</li>
+<li>Development tools
+<ul>
+<li>TypeRex is a set of open-source tools and libraries for OCaml, developed and maintained by OCamlPro.</li>
+<li>Merlin is an auto-completion tool for editing OCaml code in <a href="/wiki/Emacs" title="Emacs">Emacs</a> and <a href="/wiki/Vim_(text_editor)" title="Vim (text editor)">Vim</a>.</li>
+</ul>
+</li>
+</ul>
+<h2><span class="mw-headline" id="Code_examples">Code examples</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=OCaml&amp;action=edit&amp;section=4" title="Edit section: Code examples">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<table class="plainlinks metadata ambox ambox-content ambox-Unreferenced" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><a href="/wiki/File:Question_book-new.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" width="50" height="39" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/75px-Question_book-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/100px-Question_book-new.svg.png 2x" data-file-width="512" data-file-height="399" /></a></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">This section <b>does not <a href="/wiki/Wikipedia:Citing_sources" title="Wikipedia:Citing sources">cite</a> any <a href="/wiki/Wikipedia:Verifiability" title="Wikipedia:Verifiability">sources</a></b>. <span class="hide-when-compact">Please help <a class="external text" href="//en.wikipedia.org/w/index.php?title=OCaml&amp;action=edit">improve this section</a> by <a href="/wiki/Help:Introduction_to_referencing_with_Wiki_Markup/1" title="Help:Introduction to referencing with Wiki Markup/1">adding citations to reliable sources</a>. Unsourced material may be challenged and <a href="/wiki/Wikipedia:Verifiability#Burden_of_evidence" title="Wikipedia:Verifiability">removed</a>.</span> <small><i>(May 2013)</i></small> <small class="hide-when-compact"><i>(<a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove this template message</a>)</i></small></span></td>
+</tr>
+</table>
+<p>Snippets of OCaml code are most easily studied by entering them into the <i>top-level</i>. This is an interactive OCaml session that prints the inferred types of resulting or defined expressions. The OCaml top-level is started by simply executing the OCaml program:</p>
+<pre>
+  $ ocaml
+       Objective Caml version 3.09.0
+  #
+</pre>
+<p>Code can then be entered at the "#" prompt. For example, to calculate 1+2*3:</p>
+<pre>
+  # 1 + 2 * 3;;
+  - : int = 7
+</pre>
+<p>OCaml infers the type of the expression to be "int" (a <a href="/wiki/Word_(computer_architecture)" title="Word (computer architecture)">machine-precision</a> <a href="/wiki/Integer_(computer_science)" title="Integer (computer science)">integer</a>) and gives the result "7".</p>
+<h3><span class="mw-headline" id="Hello_World">Hello World</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=OCaml&amp;action=edit&amp;section=5" title="Edit section: Hello World">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The following program "hello.ml":</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="n">print_endline</span> <span class="s2">"Hello World!"</span>
+</pre></div>
+<p>can be compiled into a bytecode executable:</p>
+<pre>
+$ ocamlc hello.ml -o hello
+</pre>
+<p>or compiled into an optimized native-code executable:</p>
+<pre>
+$ ocamlopt hello.ml -o hello
+</pre>
+<p>and executed:</p>
+<pre>
+$ ./hello
+Hello World!
+$
+</pre>
+<h3><span class="mw-headline" id="Summing_a_list_of_integers">Summing a list of integers</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=OCaml&amp;action=edit&amp;section=6" title="Edit section: Summing a list of integers">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Lists are one of the fundamental datatypes in OCaml. The following code example defines a <i>recursive</i> function <i>sum</i> that accepts one argument <i>xs</i>. (Note the keyword <b>rec</b>). The function recursively iterates over a given list and provides a sum of integer elements. The <i>match</i> statement has similarities to <a href="/wiki/C_(programming_language)" title="C (programming language)">C</a>'s <a href="/wiki/Switch_statement" title="Switch statement">switch</a> element, though it is far more general.</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="k">let</span> <span class="k">rec</span> <span class="n">sum</span> <span class="n">xs</span> <span class="o">=</span>
+  <span class="k">match</span> <span class="n">xs</span> <span class="k">with</span>
+    <span class="o">|</span> <span class="bp">[]</span>       <span class="o">-&gt;</span> <span class="mi">0</span>                  <span class="c">(* yield 0 if xs has the form [] *)</span>
+    <span class="o">|</span> <span class="n">x</span> <span class="o">::</span> <span class="n">xs'</span> <span class="o">-&gt;</span> <span class="n">x</span> <span class="o">+</span> <span class="n">sum</span> <span class="n">xs'</span><span class="o">;;</span>      <span class="c">(* recursive call if xs has the form x::xs' for suitable x and xs' *)</span>
+</pre></div>
+<pre>
+ # sum [1;2;3;4;5];;
+ - : int = 15
+</pre>
+<p>Another way is to use standard <a href="/wiki/Fold_function" class="mw-redirect" title="Fold function">fold function</a> that works with lists.</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="k">let</span> <span class="n">sum</span> <span class="n">xs</span> <span class="o">=</span>
+    <span class="nn">List</span><span class="p">.</span><span class="n">fold_left</span> <span class="o">(</span><span class="k">fun</span> <span class="n">acc</span> <span class="n">each_xs</span> <span class="o">-&gt;</span> <span class="n">acc</span> <span class="o">+</span> <span class="n">each_xs</span><span class="o">)</span> <span class="mi">0</span> <span class="n">xs</span><span class="o">;;</span>
+</pre></div>
+<pre>
+ # sum [1;2;3;4;5];;
+ - : int = 15
+</pre>
+<h3><span class="mw-headline" id="Quicksort">Quicksort</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=OCaml&amp;action=edit&amp;section=7" title="Edit section: Quicksort">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>OCaml lends itself to concisely expressing recursive algorithms. The following code example implements an algorithm similar to <a href="/wiki/Quicksort" title="Quicksort">quicksort</a> that sorts a list in increasing order.</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+ <span class="k">let</span> <span class="k">rec</span> <span class="n">qsort</span> <span class="o">=</span> <span class="k">function</span>
+   <span class="o">|</span> <span class="bp">[]</span> <span class="o">-&gt;</span> <span class="bp">[]</span>
+   <span class="o">|</span> <span class="n">pivot</span> <span class="o">::</span> <span class="n">rest</span> <span class="o">-&gt;</span>
+       <span class="k">let</span> <span class="n">is_less</span> <span class="n">x</span> <span class="o">=</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="n">pivot</span> <span class="k">in</span>
+       <span class="k">let</span> <span class="n">left</span><span class="o">,</span> <span class="n">right</span> <span class="o">=</span> <span class="nn">List</span><span class="p">.</span><span class="n">partition</span> <span class="n">is_less</span> <span class="n">rest</span> <span class="k">in</span>
+       <span class="n">qsort</span> <span class="n">left</span> <span class="o">@</span> <span class="o">[</span><span class="n">pivot</span><span class="o">]</span> <span class="o">@</span> <span class="n">qsort</span> <span class="n">right</span>
+</pre></div>
+<h3><span class="mw-headline" id="Birthday_paradox">Birthday paradox</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=OCaml&amp;action=edit&amp;section=8" title="Edit section: Birthday paradox">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The following program calculates the smallest number of people in a room for whom the probability of completely unique birthdays is less than 50% (the so-called <a href="/wiki/Birthday_paradox" class="mw-redirect" title="Birthday paradox">birthday paradox</a>, where for 1 person the probability is 365/365 (or 100%), for 2 it is 364/365, for 3 it is 364/365 × 363/365, etc.) (answer = 23).</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+ <span class="k">let</span> <span class="n">year_size</span> <span class="o">=</span> <span class="mi">365</span><span class="o">.</span>
+
+ <span class="k">let</span> <span class="k">rec</span> <span class="n">birthday_paradox</span> <span class="n">prob</span> <span class="n">people</span> <span class="o">=</span>
+     <span class="k">let</span> <span class="n">prob'</span> <span class="o">=</span> <span class="o">(</span><span class="n">year_size</span> <span class="o">-.</span> <span class="kt">float</span> <span class="n">people</span><span class="o">)</span> <span class="o">/.</span> <span class="n">year_size</span> <span class="o">*.</span> <span class="n">prob</span>  <span class="k">in</span>
+     <span class="k">if</span> <span class="n">prob'</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="o">.</span><span class="mi">5</span> <span class="k">then</span>
+         <span class="nn">Printf</span><span class="p">.</span><span class="n">printf</span> <span class="s2">"answer = %d</span><span class="se">\n</span><span class="s2">"</span> <span class="o">(</span><span class="n">people</span><span class="o">+</span><span class="mi">1</span><span class="o">)</span>
+     <span class="k">else</span>
+         <span class="n">birthday_paradox</span> <span class="n">prob'</span> <span class="o">(</span><span class="n">people</span><span class="o">+</span><span class="mi">1</span><span class="o">)</span> <span class="o">;;</span>
+
+ <span class="n">birthday_paradox</span> <span class="mi">1</span><span class="o">.</span><span class="mi">0</span> <span class="mi">1</span>
+</pre></div>
+<h3><span class="mw-headline" id="Church_numerals">Church numerals</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=OCaml&amp;action=edit&amp;section=9" title="Edit section: Church numerals">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The following code defines a <a href="/wiki/Church_encoding" title="Church encoding">Church encoding</a> of <a href="/wiki/Natural_number" title="Natural number">natural numbers</a>, with successor (succ) and addition (add). A Church numeral <code class="mw-highlight" dir="ltr"><span class="n">n</span></code> is a higher-order function that accepts a function <code class="mw-highlight" dir="ltr"><span class="n">f</span></code> and a value <code class="mw-highlight" dir="ltr"><span class="n">x</span></code> and applies <code class="mw-highlight" dir="ltr"><span class="n">f</span></code> to <code class="mw-highlight" dir="ltr"><span class="n">x</span></code> exactly <code class="mw-highlight" dir="ltr"><span class="n">n</span></code> times. To convert a Church numeral from a functional value to a string, we pass it a function that prepends the string <code class="mw-highlight" dir="ltr"><span class="s2">"S"</span></code> to its input and the constant string <code class="mw-highlight" dir="ltr"><span class="s2">"0"</span></code>.</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="k">let</span> <span class="n">zero</span> <span class="n">f</span> <span class="n">x</span> <span class="o">=</span> <span class="n">x</span>
+<span class="k">let</span> <span class="n">succ</span> <span class="n">n</span> <span class="n">f</span> <span class="n">x</span> <span class="o">=</span> <span class="n">f</span> <span class="o">(</span><span class="n">n</span> <span class="n">f</span> <span class="n">x</span><span class="o">)</span>
+<span class="k">let</span> <span class="n">one</span> <span class="o">=</span> <span class="n">succ</span> <span class="n">zero</span>
+<span class="k">let</span> <span class="n">two</span> <span class="o">=</span> <span class="n">succ</span> <span class="o">(</span><span class="n">succ</span> <span class="n">zero</span><span class="o">)</span>
+<span class="k">let</span> <span class="n">add</span> <span class="n">n1</span> <span class="n">n2</span> <span class="n">f</span> <span class="n">x</span> <span class="o">=</span> <span class="n">n1</span> <span class="n">f</span> <span class="o">(</span><span class="n">n2</span> <span class="n">f</span> <span class="n">x</span><span class="o">)</span>
+<span class="k">let</span> <span class="n">to_string</span> <span class="n">n</span> <span class="o">=</span> <span class="n">n</span> <span class="o">(</span><span class="k">fun</span> <span class="n">k</span> <span class="o">-&gt;</span> <span class="s2">"S"</span> <span class="o">^</span> <span class="n">k</span><span class="o">)</span> <span class="s2">"0"</span>
+<span class="k">let</span> <span class="o">_</span> <span class="o">=</span> <span class="n">to_string</span> <span class="o">(</span><span class="n">add</span> <span class="o">(</span><span class="n">succ</span> <span class="n">two</span><span class="o">)</span> <span class="n">two</span><span class="o">)</span>
+</pre></div>
+<h3><span class="mw-headline" id="Arbitrary-precision_factorial_function_.28libraries.29">Arbitrary-precision factorial function (libraries)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=OCaml&amp;action=edit&amp;section=10" title="Edit section: Arbitrary-precision factorial function (libraries)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>A variety of libraries are directly accessible from OCaml. For example, OCaml has a built-in library for <a href="/wiki/Arbitrary-precision_arithmetic" title="Arbitrary-precision arithmetic">arbitrary-precision arithmetic</a>. As the factorial function grows very rapidly, it quickly overflows machine-precision numbers (typically 32- or 64-bits). Thus, factorial is a suitable candidate for arbitrary-precision arithmetic.</p>
+<p>In OCaml, the Num module provides arbitrary-precision arithmetic and can be loaded into a running top-level using:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="o">#</span> <span class="o">#</span><span class="n">load</span> <span class="s2">"nums.cma"</span><span class="o">;;</span>
+<span class="o">#</span> <span class="k">open</span> <span class="nc">Num</span><span class="o">;;</span>
+</pre></div>
+<p>The factorial function may then be written using the arbitrary-precision numeric operators =/, */ and -/&#160;:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="o">#</span> <span class="k">let</span> <span class="k">rec</span> <span class="n">fact</span> <span class="n">n</span> <span class="o">=</span>
+    <span class="k">if</span> <span class="n">n</span> <span class="o">=/</span> <span class="nc">Int</span> <span class="mi">0</span> <span class="k">then</span> <span class="nc">Int</span> <span class="mi">1</span> <span class="k">else</span> <span class="n">n</span> <span class="o">*/</span> <span class="n">fact</span><span class="o">(</span><span class="n">n</span> <span class="o">-/</span> <span class="nc">Int</span> <span class="mi">1</span><span class="o">);;</span>
+<span class="k">val</span> <span class="n">fact</span> <span class="o">:</span> <span class="nn">Num</span><span class="p">.</span><span class="n">num</span> <span class="o">-&gt;</span> <span class="nn">Num</span><span class="p">.</span><span class="n">num</span> <span class="o">=</span> <span class="o">&lt;</span><span class="k">fun</span><span class="o">&gt;</span>
+</pre></div>
+<p>This function can compute much larger factorials, such as 120!:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="o">#</span> <span class="n">string_of_num</span> <span class="o">(</span><span class="n">fact</span> <span class="o">(</span><span class="nc">Int</span> <span class="mi">120</span><span class="o">));;</span>
+<span class="o">-</span> <span class="o">:</span> <span class="kt">string</span> <span class="o">=</span>
+<span class="s2">"6689502913449127057588118054090372586752746333138029810295671352301633</span>
+<span class="s2">55724496298936687416527198498130815763789321409055253440858940812185989</span>
+<span class="s2">8481114389650005964960521256960000000000000000000000000000"</span>
+</pre></div>
+<p>The cumbersome syntax for Num operations can be alleviated thanks to the camlp4 syntax extension called Delimited overloading:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="o">#</span> <span class="o">#</span><span class="n">require</span> <span class="s2">"pa_do.num"</span><span class="o">;;</span>
+<span class="o">#</span> <span class="k">let</span> <span class="k">rec</span> <span class="n">fact</span> <span class="n">n</span> <span class="o">=</span> <span class="nn">Num</span><span class="p">.</span><span class="o">(</span><span class="k">if</span> <span class="n">n</span> <span class="o">=</span> <span class="mi">0</span> <span class="k">then</span> <span class="mi">1</span> <span class="k">else</span> <span class="n">n</span> <span class="o">*</span> <span class="n">fact</span><span class="o">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="o">));;</span>
+<span class="k">val</span> <span class="n">fact</span> <span class="o">:</span> <span class="nn">Num</span><span class="p">.</span><span class="n">num</span> <span class="o">-&gt;</span> <span class="nn">Num</span><span class="p">.</span><span class="n">num</span> <span class="o">=</span> <span class="o">&lt;</span><span class="k">fun</span><span class="o">&gt;</span>
+<span class="o">#</span> <span class="n">fact</span> <span class="nn">Num</span><span class="p">.</span><span class="o">(</span><span class="mi">120</span><span class="o">);;</span>
+<span class="o">-</span> <span class="o">:</span> <span class="nn">Num</span><span class="p">.</span><span class="n">num</span> <span class="o">=</span>
+  <span class="o">&lt;</span><span class="n">num</span> <span class="mi">668950291344912705758811805409037258675274633313802981029567</span>
+  <span class="mi">135230163355724496298936687416527198498130815763789321409055253440</span>
+  <span class="mi">8589408121859898481114389650005964960521256960000000000000000000000000000</span><span class="o">&gt;</span>
+</pre></div>
+<h3><span class="mw-headline" id="Triangle_.28graphics.29">Triangle (graphics)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=OCaml&amp;action=edit&amp;section=11" title="Edit section: Triangle (graphics)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The following program "simple.ml" renders a rotating triangle in 2D using <a href="/wiki/OpenGL" title="OpenGL">OpenGL</a>:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="k">let</span> <span class="bp">()</span> <span class="o">=</span>
+  <span class="n">ignore</span><span class="o">(</span> <span class="nn">Glut</span><span class="p">.</span><span class="n">init</span> <span class="nn">Sys</span><span class="p">.</span><span class="n">argv</span> <span class="o">);</span>
+  <span class="nn">Glut</span><span class="p">.</span><span class="n">initDisplayMode</span> <span class="o">~</span><span class="n">double_buffer</span><span class="o">:</span><span class="bp">true</span> <span class="bp">()</span><span class="o">;</span>
+  <span class="n">ignore</span> <span class="o">(</span><span class="nn">Glut</span><span class="p">.</span><span class="n">createWindow</span> <span class="o">~</span><span class="n">title</span><span class="o">:</span><span class="s2">"OpenGL Demo"</span><span class="o">);</span>
+  <span class="k">let</span> <span class="n">angle</span> <span class="n">t</span> <span class="o">=</span> <span class="mi">10</span><span class="o">.</span> <span class="o">*.</span> <span class="n">t</span> <span class="o">*.</span> <span class="n">t</span> <span class="k">in</span>
+  <span class="k">let</span> <span class="n">render</span> <span class="bp">()</span> <span class="o">=</span>
+    <span class="nn">GlClear</span><span class="p">.</span><span class="n">clear</span> <span class="o">[</span> <span class="o">`</span><span class="n">color</span> <span class="o">];</span>
+    <span class="nn">GlMat</span><span class="p">.</span><span class="n">load_identity</span> <span class="bp">()</span><span class="o">;</span>
+    <span class="nn">GlMat</span><span class="p">.</span><span class="n">rotate</span> <span class="o">~</span><span class="n">angle</span><span class="o">:</span> <span class="o">(</span><span class="n">angle</span> <span class="o">(</span><span class="nn">Sys</span><span class="p">.</span><span class="n">time</span> <span class="bp">()</span><span class="o">))</span> <span class="o">~</span><span class="n">z</span><span class="o">:</span><span class="mi">1</span><span class="o">.</span> <span class="bp">()</span><span class="o">;</span>
+    <span class="nn">GlDraw</span><span class="p">.</span><span class="n">begins</span> <span class="o">`</span><span class="n">triangles</span><span class="o">;</span>
+    <span class="nn">List</span><span class="p">.</span><span class="n">iter</span> <span class="nn">GlDraw</span><span class="p">.</span><span class="n">vertex2</span> <span class="o">[-</span><span class="mi">1</span><span class="o">.,</span> <span class="o">-</span><span class="mi">1</span><span class="o">.;</span> <span class="mi">0</span><span class="o">.,</span> <span class="mi">1</span><span class="o">.;</span> <span class="mi">1</span><span class="o">.,</span> <span class="o">-</span><span class="mi">1</span><span class="o">.];</span>
+    <span class="nn">GlDraw</span><span class="p">.</span><span class="n">ends</span> <span class="bp">()</span><span class="o">;</span>
+    <span class="nn">Glut</span><span class="p">.</span><span class="n">swapBuffers</span> <span class="bp">()</span> <span class="k">in</span>
+  <span class="nn">GlMat</span><span class="p">.</span><span class="n">mode</span> <span class="o">`</span><span class="n">modelview</span><span class="o">;</span>
+  <span class="nn">Glut</span><span class="p">.</span><span class="n">displayFunc</span> <span class="o">~</span><span class="n">cb</span><span class="o">:</span><span class="n">render</span><span class="o">;</span>
+  <span class="nn">Glut</span><span class="p">.</span><span class="n">idleFunc</span> <span class="o">~</span><span class="n">cb</span><span class="o">:(</span><span class="nc">Some</span> <span class="nn">Glut</span><span class="p">.</span><span class="n">postRedisplay</span><span class="o">);</span>
+  <span class="nn">Glut</span><span class="p">.</span><span class="n">mainLoop</span> <span class="bp">()</span>
+</pre></div>
+<p>The LablGL bindings to OpenGL are required. The program may then be compiled to bytecode with:</p>
+<pre>
+  $ ocamlc -I +lablGL lablglut.cma lablgl.cma simple.ml -o simple
+</pre>
+<p>or to nativecode with:</p>
+<pre>
+  $ ocamlopt -I +lablGL lablglut.cmxa lablgl.cmxa simple.ml -o simple
+</pre>
+<p>and run:</p>
+<pre>
+  $ ./simple
+</pre>
+<p>Far more sophisticated, high-performance 2D and 3D graphical programs can be developed in OCaml. Thanks to the use of OpenGL and OCaml, the resulting programs can be cross-platform, compiling without any changes on many major platforms.</p>
+<h3><span class="mw-headline" id="Fibonacci_Sequence">Fibonacci Sequence</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=OCaml&amp;action=edit&amp;section=12" title="Edit section: Fibonacci Sequence">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The following code calculates the Fibonacci sequence of a number <i>n</i> inputted. It uses <a href="/wiki/Tail_recursion" class="mw-redirect" title="Tail recursion">tail recursion</a> and pattern matching.</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="k">let</span> <span class="k">rec</span> <span class="n">fib_aux</span> <span class="n">n</span> <span class="n">a</span> <span class="n">b</span> <span class="o">=</span>
+  <span class="k">match</span> <span class="n">n</span> <span class="k">with</span>
+  <span class="o">|</span> <span class="mi">0</span> <span class="o">-&gt;</span> <span class="n">a</span>
+  <span class="o">|</span> <span class="o">_</span> <span class="o">-&gt;</span> <span class="n">fib_aux</span> <span class="o">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="o">)</span> <span class="n">b</span> <span class="o">(</span><span class="n">a</span><span class="o">+</span><span class="n">b</span><span class="o">)</span> 
+<span class="k">let</span> <span class="n">fib</span> <span class="n">n</span> <span class="o">=</span> <span class="n">fib_aux</span> <span class="n">n</span> <span class="mi">0</span> <span class="mi">1</span>
+</pre></div>
+<h3><span class="mw-headline" id="Higher-order_functions">Higher-order functions</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=OCaml&amp;action=edit&amp;section=13" title="Edit section: Higher-order functions">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Functions may take functions as input and return functions as result. For example, applying <i>twice</i> to a function <i>f</i> yields a function that applies <i>f</i> two times to its argument.</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="k">let</span> <span class="n">twice</span> <span class="o">(</span><span class="n">f</span> <span class="o">:</span> <span class="k">'</span><span class="n">a</span> <span class="o">-&gt;</span> <span class="k">'</span><span class="n">a</span><span class="o">)</span> <span class="o">=</span> <span class="k">fun</span> <span class="o">(</span><span class="n">x</span> <span class="o">:</span> <span class="k">'</span><span class="n">a</span><span class="o">)</span> <span class="o">-&gt;</span> <span class="n">f</span> <span class="o">(</span><span class="n">f</span> <span class="n">x</span><span class="o">)</span> <span class="o">;;</span>
+<span class="k">let</span> <span class="n">inc</span> <span class="o">(</span><span class="n">x</span> <span class="o">:</span> <span class="kt">int</span><span class="o">)</span> <span class="o">:</span> <span class="kt">int</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">;;</span>
+<span class="k">let</span> <span class="n">add2</span> <span class="o">=</span> <span class="n">twice</span><span class="o">(</span><span class="n">inc</span><span class="o">);;</span>
+<span class="k">let</span> <span class="n">inc_str</span> <span class="o">(</span><span class="n">x</span> <span class="o">:</span> <span class="kt">string</span><span class="o">)</span> <span class="o">:</span> <span class="kt">string</span> <span class="o">=</span> <span class="n">x</span> <span class="o">^</span> <span class="s2">" "</span> <span class="o">^</span> <span class="n">x</span> <span class="o">;;</span>
+<span class="k">let</span> <span class="n">add_str</span> <span class="o">=</span> <span class="n">twice</span><span class="o">(</span><span class="n">inc_str</span><span class="o">);;</span>
+</pre></div>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="hll">  <span class="o">#</span> <span class="n">add2</span> <span class="mi">98</span><span class="o">;;</span>
+</span>  <span class="o">-</span> <span class="o">:</span> <span class="kt">int</span> <span class="o">=</span> <span class="mi">100</span>
+<span class="hll">  <span class="o">#</span> <span class="n">add_str</span> <span class="s2">"Test"</span><span class="o">;;</span>
+</span>  <span class="o">-</span> <span class="o">:</span> <span class="kt">string</span> <span class="o">=</span> <span class="s2">"Test Test Test Test"</span>
+</pre></div>
+<p>The function <i>twice</i> uses a type variable <i>'a</i> to indicate that it can be applied to any function <i>f</i> mapping from a type <i>'a</i> to itself, rather than only to <i>int-&gt;int</i> functions. In particular, <i>twice</i> can even be applied to itself.</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="hll">  <span class="o">#</span> <span class="k">let</span> <span class="n">fourtimes</span> <span class="n">f</span> <span class="o">=</span> <span class="o">(</span><span class="n">twice</span> <span class="n">twice</span><span class="o">)</span> <span class="n">f</span><span class="o">;;</span>
+</span>  <span class="k">val</span> <span class="n">fourtimes</span> <span class="o">:</span> <span class="o">(</span><span class="k">'</span><span class="n">a</span> <span class="o">-&gt;</span> <span class="k">'</span><span class="n">a</span><span class="o">)</span> <span class="o">-&gt;</span> <span class="k">'</span><span class="n">a</span> <span class="o">-&gt;</span> <span class="k">'</span><span class="n">a</span> <span class="o">=</span> <span class="o">&lt;</span><span class="k">fun</span><span class="o">&gt;</span>
+<span class="hll">  <span class="o">#</span> <span class="k">let</span> <span class="n">add4</span> <span class="o">=</span> <span class="n">fourtimes</span> <span class="n">inc</span><span class="o">;;</span>
+</span>  <span class="k">val</span> <span class="n">add4</span> <span class="o">:</span> <span class="kt">int</span> <span class="o">-&gt;</span> <span class="kt">int</span> <span class="o">=</span> <span class="o">&lt;</span><span class="k">fun</span><span class="o">&gt;</span>
+<span class="hll">  <span class="o">#</span> <span class="n">add4</span> <span class="mi">98</span><span class="o">;;</span>
+</span>  <span class="o">-</span> <span class="o">:</span> <span class="kt">int</span> <span class="o">=</span> <span class="mi">102</span>
+</pre></div>
+<h2><span class="mw-headline" id="Derived_languages">Derived languages</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=OCaml&amp;action=edit&amp;section=14" title="Edit section: Derived languages">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="MetaOCaml">MetaOCaml</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=OCaml&amp;action=edit&amp;section=15" title="Edit section: MetaOCaml">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>MetaOCaml<sup id="cite_ref-Meta_5-0" class="reference"><a href="#cite_note-Meta-5">[5]</a></sup> is a <a href="/wiki/Multi-stage_programming" title="Multi-stage programming">multi-stage programming</a> extension of OCaml enabling incremental compiling of new <a href="/wiki/Machine_code" title="Machine code">machine code</a> during runtime. Under some circumstances, significant speedups are possible using multistage programming, because more detailed information about the data to process is available at runtime than at the regular compile time, so the incremental compiler can optimize away many cases of condition checking, etc.</p>
+<p>As an example: if at compile time it is known that some <a href="/wiki/Exponentiation" title="Exponentiation">power function</a> <code class="mw-highlight" dir="ltr"><span class="n">x</span> <span class="o">-&gt;</span> <span class="n">x</span><span class="o">^</span><span class="n">n</span></code> is needed often, but the value of <code class="mw-highlight" dir="ltr"><span class="n">n</span></code> is known only at runtime, a two-stage power function can be used in MetaOCaml:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+ <span class="k">let</span> <span class="k">rec</span> <span class="n">power</span> <span class="n">n</span> <span class="n">x</span> <span class="o">=</span>
+   <span class="k">if</span> <span class="n">n</span> <span class="o">=</span> <span class="mi">0</span>
+   <span class="k">then</span> <span class="o">.&lt;</span><span class="mi">1</span><span class="o">&gt;.</span>
+   <span class="k">else</span>
+     <span class="k">if</span> <span class="n">even</span> <span class="n">n</span>
+     <span class="k">then</span> <span class="n">sqr</span> <span class="o">(</span><span class="n">power</span> <span class="o">(</span><span class="n">n</span><span class="o">/</span><span class="mi">2</span><span class="o">)</span> <span class="n">x</span><span class="o">)</span>
+     <span class="k">else</span> <span class="o">.&lt;.~</span><span class="n">x</span> <span class="o">*.</span> <span class="o">.~(</span><span class="n">power</span> <span class="o">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="o">)</span> <span class="n">x</span><span class="o">)&gt;.</span>
+</pre></div>
+<p>As soon as <code class="mw-highlight" dir="ltr"><span class="n">n</span></code> is known at runtime, a specialized and very fast power function can be created:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+ <span class="o">.&lt;</span><span class="k">fun</span> <span class="n">x</span> <span class="o">-&gt;</span> <span class="o">.~(</span><span class="n">power</span> <span class="mi">5</span> <span class="o">.&lt;</span><span class="n">x</span><span class="o">&gt;.)&gt;.</span>
+</pre></div>
+<p>The result is:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+ <span class="k">fun</span> <span class="n">x_1</span> <span class="o">-&gt;</span> <span class="o">(</span><span class="n">x_1</span> <span class="o">*</span>
+     <span class="k">let</span> <span class="n">y_3</span> <span class="o">=</span> 
+         <span class="k">let</span> <span class="n">y_2</span> <span class="o">=</span> <span class="o">(</span><span class="n">x_1</span> <span class="o">*</span> <span class="mi">1</span><span class="o">)</span>
+         <span class="k">in</span> <span class="o">(</span><span class="n">y_2</span> <span class="o">*</span> <span class="n">y_2</span><span class="o">)</span>
+     <span class="k">in</span> <span class="o">(</span><span class="n">y_3</span> <span class="o">*</span> <span class="n">y_3</span><span class="o">))</span>
+</pre></div>
+<p>The new function is automatically compiled.</p>
+<h3><span class="mw-headline" id="Other_derived_languages">Other derived languages</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=OCaml&amp;action=edit&amp;section=16" title="Edit section: Other derived languages">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<ul>
+<li>AtomCaml provides a synchronization primitive for atomic (transactional) execution of code.</li>
+<li>Emily is a subset of OCaml that uses a design rule verifier to enforce <a href="/wiki/Object-capability_model" title="Object-capability model">object-capability model</a> <a href="/wiki/Capability-based_security" title="Capability-based security">security</a> principles.</li>
+<li><a href="/wiki/F_Sharp_(programming_language)" title="F Sharp (programming language)">F#</a> is a <a href="/wiki/.NET_Framework" title=".NET Framework">.NET Framework</a> language based on OCaml.</li>
+<li>Fresh OCaml facilitates manipulating names and binders.</li>
+<li>GCaml adds extensional polymorphism to OCaml, thus allowing overloading and type-safe marshalling.</li>
+<li><a href="/wiki/JoCaml" title="JoCaml">JoCaml</a> integrates constructions for developing concurrent and distributed programs.</li>
+<li>OCamlDuce extends OCaml with features such as XML expressions and regular-expression types.</li>
+<li>OCamlP3l is a <a href="/wiki/Parallel_programming" class="mw-redirect" title="Parallel programming">parallel programming</a> system based on OCaml and the P3L language</li>
+</ul>
+<h2><span class="mw-headline" id="Software_written_in_it">Software written in it</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=OCaml&amp;action=edit&amp;section=17" title="Edit section: Software written in it">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a href="/wiki/MirageOS" class="mw-redirect" title="MirageOS">MirageOS</a>, a <a href="/wiki/Unikernel" title="Unikernel">unikernel</a> programming framework written in pure OCaml</li>
+<li><a href="/wiki/Hack_(programming_language)" title="Hack (programming language)">Hack</a>, a programming language extending <a href="/wiki/PHP" title="PHP">PHP</a> with static typing, created by <a href="/wiki/Facebook" title="Facebook">Facebook</a> in 2014. The compiler is written in OCaml.</li>
+<li>Flow, a static analyzer for JavaScript created at <a href="/wiki/Facebook" title="Facebook">Facebook</a> that infers and verifies static types for JavaScript programs.<sup id="cite_ref-6" class="reference"><a href="#cite_note-6">[6]</a></sup></li>
+<li>Infer, a static analyzer for Java, C, and Objective-C created at <a href="/wiki/Facebook" title="Facebook">Facebook</a>, which is used to detect bugs in <a href="/wiki/IOS" title="IOS">iOS</a> and <a href="/wiki/Android_(operating_system)" title="Android (operating system)">Android</a> apps.<sup id="cite_ref-7" class="reference"><a href="#cite_note-7">[7]</a></sup></li>
+<li><a href="/wiki/Zero_Install" title="Zero Install">0Install</a>, a multi-platform package manager</li>
+<li><a href="/wiki/Xen_Cloud_Platform" class="mw-redirect" title="Xen Cloud Platform">Xen Cloud Platform</a> (XCP), an open source toolstack for the Xen Virtual Machine Hypervisor</li>
+<li><a href="/wiki/FFTW" title="FFTW">FFTW</a>, a software library for computing <a href="/wiki/Discrete_Fourier_transform" title="Discrete Fourier transform">discrete Fourier transforms</a>. Several C routines have been generated by an OCaml program named <code class="mw-highlight" dir="ltr"><span class="n">genfft</span></code>.</li>
+<li><a href="/w/index.php?title=Unison_(file_synchronizer)&amp;action=edit&amp;redlink=1" class="new" title="Unison (file synchronizer) (page does not exist)">Unison</a>, a <a href="/wiki/File_synchronization" title="File synchronization">file synchronization</a> program to synchronize files between two directories</li>
+<li><a href="/wiki/Mldonkey" class="mw-redirect" title="Mldonkey">Mldonkey</a>, a peer to peer client based on the <a href="/wiki/EDonkey_network" title="EDonkey network">EDonkey network</a></li>
+<li><a href="/wiki/GeneWeb" title="GeneWeb">GeneWeb</a>, multi-platform genealogy software, free open source</li>
+<li><a href="/wiki/Haxe#Compiler" title="Haxe">Haxe compiler</a>, a compiler for the language <a href="/wiki/Haxe" title="Haxe">Haxe</a>, free open source</li>
+<li><a href="/wiki/Frama-C" title="Frama-C">Frama-C</a>, a framework to analyze C programs</li>
+<li><a href="/wiki/Coq" title="Coq">Coq</a>, a formal proof management system</li>
+<li><a href="/wiki/Ocsigen" title="Ocsigen">Ocsigen</a>, web development framework</li>
+<li><a href="/wiki/Opa_(programming_language)" title="Opa (programming language)">Opa</a>, a programming language for web development, free open source</li>
+<li><a href="/wiki/WebAssembly" title="WebAssembly">WebAssembly</a>, an experimental, low-level scripting language for in-browser client-side scripting. Its WIP interpreter and parser in the specification repository on Github<sup id="cite_ref-8" class="reference"><a href="#cite_note-8">[8]</a></sup> is written mostly in OCaml.</li>
+</ul>
+<h2><span class="mw-headline" id="Commercial_users">Commercial users</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=OCaml&amp;action=edit&amp;section=18" title="Edit section: Commercial users">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Several dozen companies use OCaml to some degree.<sup id="cite_ref-ocaml.org-companies_9-0" class="reference"><a href="#cite_note-ocaml.org-companies-9">[9]</a></sup> Notable examples include:</p>
+<ul>
+<li><a href="/wiki/Jane_Street_Capital" title="Jane Street Capital">Jane Street Capital</a>, a proprietary trading firm, which adopted OCaml as its preferred language in its early days<sup id="cite_ref-10" class="reference"><a href="#cite_note-10">[10]</a></sup></li>
+<li><a href="/wiki/Citrix_Systems" title="Citrix Systems">Citrix Systems</a>, which uses OCaml in <a href="/wiki/XenServer" class="mw-redirect" title="XenServer">XenServer</a>, a component of one of its products</li>
+<li><a href="/wiki/Facebook" title="Facebook">Facebook</a>, which developed Hack, Flow, Infer, and Pfff</li>
+<li><a href="/w/index.php?title=Ahrefs_Site_Explorer&amp;action=edit&amp;redlink=1" class="new" title="Ahrefs Site Explorer (page does not exist)">Ahrefs Site Explorer</a>, which uses OCaml for its back-end framework: database management, web-crawler and web-page parser</li>
+<li><a href="/wiki/Bloomberg_L.P." title="Bloomberg L.P.">Bloomberg L.P.</a></li>
+</ul>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=OCaml&amp;action=edit&amp;section=19" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a href="/wiki/Caml" title="Caml">Caml</a>, and Caml Light, languages from which OCaml evolved</li>
+<li><a href="/wiki/Standard_ML" title="Standard ML">Standard ML</a>, another popular dialect of ML</li>
+<li><a href="/wiki/Extensible_ML" title="Extensible ML">Extensible ML</a>, another object-oriented dialect of ML</li>
+<li><a href="/wiki/O%27Haskell" class="mw-redirect" title="O'Haskell">O'Haskell</a>, an object-oriented extension to the functional language <a href="/wiki/Haskell_(programming_language)" title="Haskell (programming language)">Haskell</a></li>
+<li>Reason, a new interface to OCaml initiated by Facebook<sup id="cite_ref-11" class="reference"><a href="#cite_note-11">[11]</a></sup></li>
+</ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=OCaml&amp;action=edit&amp;section=20" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://ocaml.org/learn/history.html">"A History of OCaml"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">24 December</span> 2016</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AOCaml&amp;rft.btitle=A+History+of+OCaml&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Focaml.org%2Flearn%2Fhistory.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-LWN-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-LWN_2-0">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://lwn.net/Articles/19378/">Linux Weekly News</a>.</span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://github.com/ocaml/ocaml/tree/trunk/asmcomp">"ocaml/asmcomp at trunk · ocaml/ocaml · GitHub"</a>. <i>GitHub</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2 May</span> 2015</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AOCaml&amp;rft.atitle=ocaml%2Fasmcomp+at+trunk+%B7+ocaml%2Focaml+%B7+GitHub&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fgithub.com%2Focaml%2Focaml%2Ftree%2Ftrunk%2Fasmcomp&amp;rft.jtitle=GitHub&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-INRIA-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-INRIA_4-0">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://mirror.ocamlcore.org/caml.inria.fr/pub/ml-archives/caml-list/2002/11/64c14acb90cb14bedb2cacb73338fb15.en.html">"Archives of the Caml mailing list &gt; Message from Xavier Leroy"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2 May</span> 2015</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AOCaml&amp;rft.btitle=Archives+of+the+Caml+mailing+list+%3E+Message+from+Xavier+Leroy&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fmirror.ocamlcore.org%2Fcaml.inria.fr%2Fpub%2Fml-archives%2Fcaml-list%2F2002%2F11%2F64c14acb90cb14bedb2cacb73338fb15.en.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-Meta-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-Meta_5-0">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://okmij.org/ftp/ML/MetaOCaml.html">BER MetaOCaml</a></span></li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://flowtype.org">Flow static analyzer</a></span></li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://fbinfer.com">Infer static analyzer</a></span></li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/WebAssembly/spec">WebAssembly specification repository, Github</a></span></li>
+<li id="cite_note-ocaml.org-companies-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-ocaml.org-companies_9-0">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://ocaml.org/learn/companies.html">"Companies using OCaml"</a>. OCaml.org<span class="reference-accessdate">. Retrieved <span class="nowrap">17 August</span> 2014</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AOCaml&amp;rft.btitle=Companies+using+OCaml&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Focaml.org%2Flearn%2Fcompanies.html&amp;rft.pub=OCaml.org&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-10">^</a></b></span> <span class="reference-text"><cite class="citation web">Yaron Minsky (1 November 2011). <a rel="nofollow" class="external text" href="http://cacm.acm.org/magazines/2011/11/138203-ocaml-for-the-masses/fulltext">"OCaml for the Masses"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2 May</span> 2015</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AOCaml&amp;rft.au=Yaron+Minsky&amp;rft.btitle=OCaml+for+the+Masses&amp;rft.date=2011-11-01&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fcacm.acm.org%2Fmagazines%2F2011%2F11%2F138203-ocaml-for-the-masses%2Ffulltext&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-11"><span class="mw-cite-backlink"><b><a href="#cite_ref-11">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://facebook.github.io/reason">Reason</a></span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=OCaml&amp;action=edit&amp;section=21" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<table role="presentation" class="mbox-small plainlinks sistersitebox" style="border:1px solid #aaa;background-color:#f9f9f9">
+<tr>
+<td class="mbox-image"><a href="/wiki/File:Wikibooks-logo-en-noslogan.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/40px-Wikibooks-logo-en-noslogan.svg.png" width="40" height="40" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/60px-Wikibooks-logo-en-noslogan.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/80px-Wikibooks-logo-en-noslogan.svg.png 2x" data-file-width="400" data-file-height="400" /></a></td>
+<td class="mbox-text plainlist">Wikibooks has a book on the topic of: <i><b><a href="https://en.wikibooks.org/wiki/OCaml" class="extiw" title="wikibooks:OCaml">OCaml</a></b></i></td>
+</tr>
+</table>
+<ul>
+<li><span class="official-website"><span class="url"><a rel="nofollow" class="external text" href="http://ocaml.org">Official website</a></span></span></li>
+<li><a rel="nofollow" class="external text" href="https://opam.ocaml.org/">OCaml Package Manager</a></li>
+</ul>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1213
+Cached time: 20170201013407
+Cache expiry: 86400
+Dynamic content: true
+CPU time usage: 0.228 seconds
+Real time usage: 0.310 seconds
+Preprocessor visited node count: 1975/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 38106/2097152 bytes
+Template argument size: 4316/2097152 bytes
+Highest expansion depth: 25/40
+Expensive parser function count: 5/500
+Lua time usage: 0.095/10.000 seconds
+Lua memory usage: 3.43 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  255.329      1 -total
+ 39.46%  100.749      2 Template:Infobox
+ 33.31%   85.061      1 Template:Infobox_programming_language
+ 18.79%   47.985      1 Template:Reflist
+ 15.19%   38.774      5 Template:Cite_web
+ 11.41%   29.145      2 Template:Ambox
+ 10.95%   27.965      1 Template:Primary_sources
+  9.01%   22.995      1 Template:Infobox_software/simple
+  8.58%   21.913      1 Template:Citation_needed
+  7.74%   19.773      1 Template:Distinguish
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:39652-0!*!0!!en!4!* and timestamp 20170201013407 and revision id 761181082
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=OCaml&amp;oldid=761181082">https://en.wikipedia.org/w/index.php?title=OCaml&amp;oldid=761181082</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Articles_with_example_OCaml_code" title="Category:Articles with example OCaml code">Articles with example OCaml code</a></li><li><a href="/wiki/Category:Cross-platform_free_software" title="Category:Cross-platform free software">Cross-platform free software</a></li><li><a href="/wiki/Category:Extensible_syntax_programming_languages" title="Category:Extensible syntax programming languages">Extensible syntax programming languages</a></li><li><a href="/wiki/Category:Free_compilers_and_interpreters" title="Category:Free compilers and interpreters">Free compilers and interpreters</a></li><li><a href="/wiki/Category:Functional_languages" title="Category:Functional languages">Functional languages</a></li><li><a href="/wiki/Category:ML_programming_language_family" title="Category:ML programming language family">ML programming language family</a></li><li><a href="/wiki/Category:Object-oriented_programming_languages" title="Category:Object-oriented programming languages">Object-oriented programming languages</a></li><li><a href="/wiki/Category:OCaml_programming_language_family" title="Category:OCaml programming language family">OCaml programming language family</a></li><li><a href="/wiki/Category:OCaml_software" title="Category:OCaml software">OCaml software</a></li><li><a href="/wiki/Category:Pattern_matching_programming_languages" title="Category:Pattern matching programming languages">Pattern matching programming languages</a></li><li><a href="/wiki/Category:Programming_languages_created_in_1996" title="Category:Programming languages created in 1996">Programming languages created in 1996</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Articles_lacking_reliable_references_from_May_2015" title="Category:Articles lacking reliable references from May 2015">Articles lacking reliable references from May 2015</a></li><li><a href="/wiki/Category:All_articles_lacking_reliable_references" title="Category:All articles lacking reliable references">All articles lacking reliable references</a></li><li><a href="/wiki/Category:Pages_using_deprecated_image_syntax" title="Category:Pages using deprecated image syntax">Pages using deprecated image syntax</a></li><li><a href="/wiki/Category:All_articles_with_unsourced_statements" title="Category:All articles with unsourced statements">All articles with unsourced statements</a></li><li><a href="/wiki/Category:Articles_with_unsourced_statements_from_November_2016" title="Category:Articles with unsourced statements from November 2016">Articles with unsourced statements from November 2016</a></li><li><a href="/wiki/Category:Articles_needing_additional_references_from_May_2013" title="Category:Articles needing additional references from May 2013">Articles needing additional references from May 2013</a></li><li><a href="/wiki/Category:All_articles_needing_additional_references" title="Category:All articles needing additional references">All articles needing additional references</a></li><li><a href="/wiki/Category:Official_website_not_in_Wikidata" title="Category:Official website not in Wikidata">Official website not in Wikidata</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=OCaml" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=OCaml" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/OCaml"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:OCaml"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/OCaml" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=OCaml&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=OCaml&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/OCaml" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/OCaml" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=OCaml&amp;oldid=761181082" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=OCaml&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q212587" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=OCaml&amp;id=761181082" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=OCaml">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=OCaml&amp;returnto=OCaml&amp;oldid=761181082&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=OCaml&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-wikibase-otherprojects' aria-labelledby='p-wikibase-otherprojects-label'>
+			<h3 id='p-wikibase-otherprojects-label'>In other projects</h3>
+
+			<div class="body">
+									<ul>
+						<li class="wb-otherproject-link wb-otherproject-commons"><a href="https://commons.wikimedia.org/wiki/Category:OCaml" hreflang="en">Wikimedia Commons</a></li><li class="wb-otherproject-link wb-otherproject-wikibooks"><a href="https://en.wikibooks.org/wiki/OCaml" hreflang="en">Wikibooks</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-ar"><a href="https://ar.wikipedia.org/wiki/%D9%84%D8%BA%D8%A9_%D9%83%D8%A7%D9%85%D9%84_%D8%A7%D9%84%D9%85%D9%88%D8%B6%D9%88%D8%B9%D9%8A%D8%A9" title="لغة كامل الموضوعية – Arabic" lang="ar" hreflang="ar" class="interlanguage-link-target">العربية</a></li><li class="interlanguage-link interwiki-az"><a href="https://az.wikipedia.org/wiki/OCaml" title="OCaml – Azerbaijani" lang="az" hreflang="az" class="interlanguage-link-target">Azərbaycanca</a></li><li class="interlanguage-link interwiki-ca"><a href="https://ca.wikipedia.org/wiki/OCaml" title="OCaml – Catalan" lang="ca" hreflang="ca" class="interlanguage-link-target">Català</a></li><li class="interlanguage-link interwiki-cs"><a href="https://cs.wikipedia.org/wiki/OCaml" title="OCaml – Czech" lang="cs" hreflang="cs" class="interlanguage-link-target">Čeština</a></li><li class="interlanguage-link interwiki-da"><a href="https://da.wikipedia.org/wiki/OCaml" title="OCaml – Danish" lang="da" hreflang="da" class="interlanguage-link-target">Dansk</a></li><li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/Objective_CAML" title="Objective CAML – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-el"><a href="https://el.wikipedia.org/wiki/OCaml" title="OCaml – Greek" lang="el" hreflang="el" class="interlanguage-link-target">Ελληνικά</a></li><li class="interlanguage-link interwiki-es"><a href="https://es.wikipedia.org/wiki/Ocaml" title="Ocaml – Spanish" lang="es" hreflang="es" class="interlanguage-link-target">Español</a></li><li class="interlanguage-link interwiki-fa"><a href="https://fa.wikipedia.org/wiki/%D8%A7%DA%A9%D9%85%D9%84" title="اکمل – Persian" lang="fa" hreflang="fa" class="interlanguage-link-target">فارسی</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/OCaml" title="OCaml – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-gl"><a href="https://gl.wikipedia.org/wiki/Ocaml" title="Ocaml – Galician" lang="gl" hreflang="gl" class="interlanguage-link-target">Galego</a></li><li class="interlanguage-link interwiki-ko"><a href="https://ko.wikipedia.org/wiki/OCaml" title="OCaml – Korean" lang="ko" hreflang="ko" class="interlanguage-link-target">한국어</a></li><li class="interlanguage-link interwiki-it"><a href="https://it.wikipedia.org/wiki/Objective_Caml" title="Objective Caml – Italian" lang="it" hreflang="it" class="interlanguage-link-target">Italiano</a></li><li class="interlanguage-link interwiki-ka"><a href="https://ka.wikipedia.org/wiki/%E1%83%9D%E1%83%91%E1%83%98%E1%83%94%E1%83%A5%E1%83%A2%E1%83%A3%E1%83%A0%E1%83%98_%E1%83%99%E1%83%90%E1%83%9B%E1%83%9A%E1%83%98" title="ობიექტური კამლი – Georgian" lang="ka" hreflang="ka" class="interlanguage-link-target">ქართული</a></li><li class="interlanguage-link interwiki-la"><a href="https://la.wikipedia.org/wiki/Ocaml" title="Ocaml – Latin" lang="la" hreflang="la" class="interlanguage-link-target">Latina</a></li><li class="interlanguage-link interwiki-ms"><a href="https://ms.wikipedia.org/wiki/OCaml" title="OCaml – Malay" lang="ms" hreflang="ms" class="interlanguage-link-target">Bahasa Melayu</a></li><li class="interlanguage-link interwiki-nl"><a href="https://nl.wikipedia.org/wiki/Ocaml" title="Ocaml – Dutch" lang="nl" hreflang="nl" class="interlanguage-link-target">Nederlands</a></li><li class="interlanguage-link interwiki-ja"><a href="https://ja.wikipedia.org/wiki/OCaml" title="OCaml – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target">日本語</a></li><li class="interlanguage-link interwiki-no"><a href="https://no.wikipedia.org/wiki/Objective_Caml" title="Objective Caml – Norwegian" lang="no" hreflang="no" class="interlanguage-link-target">Norsk bokmål</a></li><li class="interlanguage-link interwiki-nn"><a href="https://nn.wikipedia.org/wiki/OCaml" title="OCaml – Norwegian Nynorsk" lang="nn" hreflang="nn" class="interlanguage-link-target">Norsk nynorsk</a></li><li class="interlanguage-link interwiki-pl"><a href="https://pl.wikipedia.org/wiki/OCaml" title="OCaml – Polish" lang="pl" hreflang="pl" class="interlanguage-link-target">Polski</a></li><li class="interlanguage-link interwiki-pt"><a href="https://pt.wikipedia.org/wiki/OCaml" title="OCaml – Portuguese" lang="pt" hreflang="pt" class="interlanguage-link-target">Português</a></li><li class="interlanguage-link interwiki-ru"><a href="https://ru.wikipedia.org/wiki/OCaml" title="OCaml – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li><li class="interlanguage-link interwiki-simple"><a href="https://simple.wikipedia.org/wiki/OCaml" title="OCaml – Simple English" lang="simple" hreflang="simple" class="interlanguage-link-target">Simple English</a></li><li class="interlanguage-link interwiki-sl"><a href="https://sl.wikipedia.org/wiki/Ocaml" title="Ocaml – Slovenian" lang="sl" hreflang="sl" class="interlanguage-link-target">Slovenščina</a></li><li class="interlanguage-link interwiki-fi"><a href="https://fi.wikipedia.org/wiki/OCaml" title="OCaml – Finnish" lang="fi" hreflang="fi" class="interlanguage-link-target">Suomi</a></li><li class="interlanguage-link interwiki-tg"><a href="https://tg.wikipedia.org/wiki/OCaml" title="OCaml – Tajik" lang="tg" hreflang="tg" class="interlanguage-link-target">Тоҷикӣ</a></li><li class="interlanguage-link interwiki-tr"><a href="https://tr.wikipedia.org/wiki/OCaml" title="OCaml – Turkish" lang="tr" hreflang="tr" class="interlanguage-link-target">Türkçe</a></li><li class="interlanguage-link interwiki-uk"><a href="https://uk.wikipedia.org/wiki/Objective_Caml" title="Objective Caml – Ukrainian" lang="uk" hreflang="uk" class="interlanguage-link-target">Українська</a></li><li class="interlanguage-link interwiki-vi"><a href="https://vi.wikipedia.org/wiki/OCaml" title="OCaml – Vietnamese" lang="vi" hreflang="vi" class="interlanguage-link-target">Tiếng Việt</a></li><li class="interlanguage-link interwiki-zh"><a href="https://zh.wikipedia.org/wiki/OCaml" title="OCaml – Chinese" lang="zh" hreflang="zh" class="interlanguage-link-target">中文</a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q212587#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 21 January 2017, at 12:20.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=OCaml&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.228","walltime":"0.310","ppvisitednodes":{"value":1975,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":38106,"limit":2097152},"templateargumentsize":{"value":4316,"limit":2097152},"expansiondepth":{"value":25,"limit":40},"expensivefunctioncount":{"value":5,"limit":500},"entityaccesscount":{"value":1,"limit":400},"timingprofile":["100.00%  255.329      1 -total"," 39.46%  100.749      2 Template:Infobox"," 33.31%   85.061      1 Template:Infobox_programming_language"," 18.79%   47.985      1 Template:Reflist"," 15.19%   38.774      5 Template:Cite_web"," 11.41%   29.145      2 Template:Ambox"," 10.95%   27.965      1 Template:Primary_sources","  9.01%   22.995      1 Template:Infobox_software/simple","  8.58%   21.913      1 Template:Citation_needed","  7.74%   19.773      1 Template:Distinguish"]},"scribunto":{"limitreport-timeusage":{"value":"0.095","limit":"10.000"},"limitreport-memusage":{"value":3597249,"limit":52428800}},"cachereport":{"origin":"mw1213","timestamp":"20170201013407","ttl":86400,"transientcontent":true}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":386,"wgHostname":"mw1213"});});</script>
+	</body>
+</html>

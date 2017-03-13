@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>FAUST (programming language) - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"FAUST_(programming_language)","wgTitle":"FAUST (programming language)","wgCurRevisionId":757066823,"wgRevisionId":757066823,"wgArticleId":4532356,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles lacking in-text citations from March 2015","All articles lacking in-text citations","Articles containing potentially dated statements from 2015","All articles containing potentially dated statements","All articles with dead external links","Articles with dead external links from December 2016","Articles with permanently dead external links","Commons category with local link same as on Wikidata","Official website not in Wikidata","Audio programming languages"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"FAUST_(programming_language)","wgRelevantArticleId":4532356,"wgRequestId":"WIzPDwpAIDYAAHVVRf0AAABE","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":true},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q1398550","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.pygments":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.legacy.wikibits","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.pygments%2CwikimediaBadges%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.29.0-wmf.9"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/FAUST_(programming_language)"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=FAUST_(programming_language)&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=FAUST_(programming_language)&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/FAUST_(programming_language)"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-FAUST_programming_language rootpage-FAUST_programming_language skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">FAUST (programming language)</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><script>function mfTempOpenSection(id){var block=document.getElementById("mf-section-"+id);block.className+=" open-block";block.previousSibling.className+=" open-block";}</script><table class="plainlinks metadata ambox ambox-style ambox-No_footnotes" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Text_document_with_red_question_mark.svg/40px-Text_document_with_red_question_mark.svg.png" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Text_document_with_red_question_mark.svg/60px-Text_document_with_red_question_mark.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Text_document_with_red_question_mark.svg/80px-Text_document_with_red_question_mark.svg.png 2x" data-file-width="48" data-file-height="48" /></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">This article includes a <a href="/wiki/Wikipedia:Citing_sources" title="Wikipedia:Citing sources">list of references</a>, related reading or <a href="/wiki/Wikipedia:External_links" title="Wikipedia:External links">external links</a>, <b>but its sources remain unclear because it lacks <a href="/wiki/Wikipedia:Citing_sources#Inline_citations" title="Wikipedia:Citing sources">inline citations</a></b>. <span class="hide-when-compact">Please help to <a href="/wiki/Wikipedia:WikiProject_Fact_and_Reference_Check" title="Wikipedia:WikiProject Fact and Reference Check">improve</a> this article by <a href="/wiki/Wikipedia:When_to_cite" title="Wikipedia:When to cite">introducing</a> more precise citations.</span> <small><i>(March 2015)</i></small> <small class="hide-when-compact"><i>(<a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove this template message</a>)</i></small></span></td>
+</tr>
+</table>
+<table class="infobox vevent" style="width:22em">
+<caption class="summary">FAUST</caption>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Software_developer" title="Software developer">Original author(s)</a></th>
+<td>Yann Orlarey, Dominique Fober, Stéphane Letz</td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Software_developer" title="Software developer">Developer(s)</a></th>
+<td>GRAME, Centre National de Création Musicale</td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;">Initial release</th>
+<td>2002<span style="display:none">&#160;(<span class="bday dtstart published updated">2002</span>)</span></td>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Software_release_life_cycle" title="Software release life cycle">Stable release</a></th>
+<td>
+<div style="margin:0px;">0.9.67 / May&#160;19,&#160;2014<span style="display:none">&#160;(<span class="bday dtstart published updated">2014-05-19</span>)</span></div>
+</td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;">Written in</th>
+<td><a href="/wiki/C%2B%2B" title="C++">C++</a></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Operating_system" title="Operating system">Operating system</a></th>
+<td><a href="/wiki/Linux" title="Linux">Linux</a>, <a href="/wiki/OS_X" class="mw-redirect" title="OS X">OS X</a>, <a href="/wiki/Microsoft_Windows" title="Microsoft Windows">Windows</a>, <a href="/wiki/Unix" title="Unix">Unix</a></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Software_categories#Broad_categories" title="Software categories">Type</a></th>
+<td>Functional programming language for audio signal processing</td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Software_license" title="Software license">License</a></th>
+<td><a href="/wiki/GNU_General_Public_License" title="GNU General Public License">GPL</a></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;">Website</th>
+<td><span class="url"><a rel="nofollow" class="external text" href="http://faust.grame.fr">faust<wbr />.grame<wbr />.fr</a></span></td>
+</tr>
+</table>
+<p><b>FAUST</b> (Functional AUdio STream) is a <a href="/wiki/Domain_specific_language" class="mw-redirect" title="Domain specific language">domain-specific</a> <a href="/wiki/Purely_functional_programming" title="Purely functional programming">purely functional</a> <a href="/wiki/Programming_language" title="Programming language">programming language</a> for implementing <a href="/wiki/Signal_processing" title="Signal processing">signal processing</a> <a href="/wiki/Algorithms" class="mw-redirect" title="Algorithms">algorithms</a> in the form of <a href="/wiki/Library_(computing)" title="Library (computing)">libraries</a>, <a href="/wiki/Audio_plug-ins" class="mw-redirect" title="Audio plug-ins">audio plug-ins</a>, or standalone applications. A FAUST program denotes a signal processor: a mathematical function that is applied to some input signal and then fed out.</p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Example_code"><span class="tocnumber">2</span> <span class="toctext">Example code</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Block_diagram_composition"><span class="tocnumber">3</span> <span class="toctext">Block diagram composition</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Generating_full_applications"><span class="tocnumber">4</span> <span class="toctext">Generating full applications</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Generating_block_diagrams"><span class="tocnumber">5</span> <span class="toctext">Generating block diagrams</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Arrows-like_semantics"><span class="tocnumber">6</span> <span class="toctext">Arrows-like semantics</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#References"><span class="tocnumber">7</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#External_links"><span class="tocnumber">8</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Overview">Overview</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=FAUST_(programming_language)&amp;action=edit&amp;section=1" title="Edit section: Overview">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The FAUST <a href="/wiki/Programming_model" title="Programming model">programming model</a> combines a <a href="/wiki/Functional_programming" title="Functional programming">functional programming</a> approach with a <a href="/wiki/Block_diagram" title="Block diagram">block diagram</a> syntax:</p>
+<ul>
+<li>The functional programming approach provides a natural framework for <a href="/wiki/Signal_processing" title="Signal processing">signal processing</a>. Digital signals are modeled as <a href="/wiki/Sequence" title="Sequence">discrete functions</a> of time, signal processors as <a href="/wiki/Higher-order_function" title="Higher-order function">second order functions</a> that operate on them, and FAUST’s block diagram <i>composition operators</i>, used to combine signal processors together, as third order functions, etc.</li>
+<li>Block diagrams, even if purely textual as in FAUST, promote a modular approach to signal processing that complies with sound engineers' and audio developers' habits.</li>
+</ul>
+<p>A FAUST program doesn’t describe a sound or a group of sounds, but a <a href="/wiki/Digital_signal_processing" title="Digital signal processing">signal processor</a>. The program source is organized as a set of <i>definitions</i> with at least the definition of the keyword <code>process</code> (the equivalent of <code>main</code> in C):</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="nf">process</span> <span class="ow">=</span> <span class="o">...</span><span class="p">;</span>
+</pre></div>
+<p>The FAUST <a href="/wiki/Compiler" title="Compiler">compiler</a> translates FAUST code into a <a href="/wiki/C%2B%2B" title="C++">C++</a> <a href="/wiki/Object-oriented_programming" title="Object-oriented programming">object</a>, which may then interface with other C++ code to produce a full program.</p>
+<p>The generated code works at the sample level. It is therefore suited to implement low-level <a href="/wiki/Digital_signal_processing" title="Digital signal processing">DSP</a> functions like <a href="/wiki/Infinite_impulse_response" title="Infinite impulse response">recursive filters</a>. The code may also be <a href="/wiki/Embedded_software" title="Embedded software">embedded</a>. It is self-contained and does not depend on any DSP library or <a href="/wiki/Runtime_system" title="Runtime system">runtime system</a>. It has a very deterministic behavior and a constant memory size.</p>
+<p>The semantics of FAUST is driven to be simple and well-defined. It allows the FAUST compiler to be <i>semantically driven</i>. Instead of compiling a program literally, it compiles the mathematical function it denotes. This may promote component reuse. Moreover, having access to the exact semantics of a FAUST program can simplify preservation issues.</p>
+<p>FAUST is a textual language but block diagram oriented. It combines two approaches: <a href="/wiki/Functional_programming" title="Functional programming">functional programming</a> and algebraic <a href="/wiki/Block_diagram" title="Block diagram">block diagrams</a>, which are constructed via <a href="/wiki/Function_composition" title="Function composition">function composition</a>. For that, FAUST relies on a <i>block diagram algebra</i> of five composition operations.</p>
+<h2><span class="mw-headline" id="Example_code">Example code</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=FAUST_(programming_language)&amp;action=edit&amp;section=2" title="Edit section: Example code">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>FAUST programs define a <code>process</code> function that operates on incoming data. This is analogous to the <code>main</code> function in most programming languages. The following is an example that produces silence:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="nf">process</span> <span class="ow">=</span> <span class="mi">0</span><span class="p">;</span>
+</pre></div>
+<p>The second example copies the input signal to the output. It involves the <code>_</code> primitive that denotes the <a href="/wiki/Identity_function" title="Identity function">identity function</a> for signals:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="nf">process</span> <span class="ow">=</span> <span class="kr">_</span><span class="p">;</span>
+</pre></div>
+<p>Another example sums a stereo signal into a mono signal using the <code>+</code> primitive:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="nf">process</span> <span class="ow">=</span> <span class="o">+</span><span class="p">;</span>
+</pre></div>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;"><a href="/wiki/File:Faust-simple-block-diagram.jpg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/74/Faust-simple-block-diagram.jpg/220px-Faust-simple-block-diagram.jpg" width="220" height="122" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/74/Faust-simple-block-diagram.jpg/330px-Faust-simple-block-diagram.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/7/74/Faust-simple-block-diagram.jpg/440px-Faust-simple-block-diagram.jpg 2x" data-file-width="808" data-file-height="448" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:Faust-simple-block-diagram.jpg" class="internal" title="Enlarge"></a></div>
+Block diagrams generated by Faust from some simple programs</div>
+</div>
+</div>
+<p>Most FAUST primitives are analogous to their C counterpart on numbers, but lifted to signals. For example, the FAUST primitive <code>sin</code> operates on a signal X by applying the <a href="/wiki/C_(programming_language)" title="C (programming language)">C</a> function <code>sin</code> to each sample X[t]. All C numerical functions have their counterpart in FAUST. Some <a href="/wiki/Signal_processing" title="Signal processing">signal processing</a> primitives are specific to FAUST. For example the delay operator <code>@</code> takes two input signals: X (the signal to be delayed) and D (the delay to be applied), and produces an output signal Y such that Y(t) = X(t − D(t)).</p>
+<h2><span class="mw-headline" id="Block_diagram_composition">Block diagram composition</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=FAUST_(programming_language)&amp;action=edit&amp;section=3" title="Edit section: Block diagram composition">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Contrary to <a href="/wiki/Max_(software)" title="Max (software)">Max-like</a> <a href="/wiki/Visual_programming_languages" class="mw-redirect" title="Visual programming languages">visual programming languages</a> where the user does manual connections, FAUST primitives are assembled in <a href="/wiki/Block_diagram" title="Block diagram">block diagrams</a> by using a set of high-level block diagram <a href="/wiki/Function_composition" title="Function composition">composition</a> operations.</p>
+<div class="thumb tright">
+<div class="thumbinner" style="width:392px;"><a href="/wiki/File:Faust-simple-block-diagrams.jpg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Faust-simple-block-diagrams.jpg/390px-Faust-simple-block-diagrams.jpg" width="390" height="117" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Faust-simple-block-diagrams.jpg/585px-Faust-simple-block-diagrams.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Faust-simple-block-diagrams.jpg/780px-Faust-simple-block-diagrams.jpg 2x" data-file-width="1000" data-file-height="299" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:Faust-simple-block-diagrams.jpg" class="internal" title="Enlarge"></a></div>
+Simple examples of block diagram composition</div>
+</div>
+</div>
+<table class="wikitable">
+<caption>The block diagram <i>composition operators</i> used in FAUST</caption>
+<tr>
+<td>f~g</td>
+<td>Recursive composition (precedence 4)</td>
+</tr>
+<tr>
+<td>f,g</td>
+<td>Parallel composition (precedence 3)</td>
+</tr>
+<tr>
+<td>f:g</td>
+<td>Sequential composition (precedence 2)</td>
+</tr>
+<tr>
+<td>f&lt;:g</td>
+<td>Split composition (precedence 1)</td>
+</tr>
+<tr>
+<td>f:&gt;g</td>
+<td>Merge composition (precedence 1)</td>
+</tr>
+</table>
+<p>Using the sequential composition operator <code>:</code> the output of <code>+</code> can be routed to the input of <code>abs</code> to compute the <a href="/wiki/Absolute_value" title="Absolute value">absolute value</a> of the signal:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="nf">process</span> <span class="ow">=</span> <span class="o">+</span> <span class="kt">:</span> <span class="n">abs</span><span class="p">;</span>
+</pre></div>
+<p>Here is an example of parallel composition using the <code>,</code> operator that arranges its left and right expressions in parallel. This is analogous to a stereo cable.</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="nf">process</span> <span class="ow">=</span> <span class="kr">_</span><span class="p">,</span><span class="kr">_</span><span class="p">;</span>
+</pre></div>
+<p>These operators can be arbitrarily combined. The following code multiplies an input signal with 0.5:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="nf">process</span> <span class="ow">=</span> <span class="kr">_</span><span class="p">,</span><span class="mf">0.5</span> <span class="kt">:</span> <span class="o">*</span><span class="p">;</span>
+</pre></div>
+<p>The above may be rewritten in <a href="/wiki/Currying" title="Currying">curried</a> form:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="nf">process</span> <span class="ow">=</span> <span class="o">*</span><span class="p">(</span><span class="mf">0.5</span><span class="p">);</span>
+</pre></div>
+<p>The recursive composition operator <code>~</code> can be used to create block diagrams with cycles (that include an implicit one-sample delay). Here is an example of an integrator that takes an input signal X and computes an output signal Y such that Y(t) = X(t) + Y(t−1):</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="nf">process</span> <span class="ow">=</span> <span class="o">+</span> <span class="o">~</span> <span class="kr">_</span><span class="p">;</span>
+</pre></div>
+<h2><span class="mw-headline" id="Generating_full_applications">Generating full applications</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=FAUST_(programming_language)&amp;action=edit&amp;section=4" title="Edit section: Generating full applications">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Using specific <i>architecture files</i>, a FAUST program can be used to produce code for a variety of platforms and plug-in formats. These architecture files act as wrappers and describe the interactions with the host audio and GUI system. As of 2015<sup class="plainlinks noprint asof-tag update" style="display:none;"><a class="external text" href="//en.wikipedia.org/w/index.php?title=FAUST_(programming_language)&amp;action=edit">[update]</a></sup>, more than 10 architectures are supported and new ones may be implemented by anyone.</p>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;"><a href="/wiki/File:Faust-mixer-jackqt.jpg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/5/59/Faust-mixer-jackqt.jpg/220px-Faust-mixer-jackqt.jpg" width="220" height="108" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/5/59/Faust-mixer-jackqt.jpg/330px-Faust-mixer-jackqt.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/5/59/Faust-mixer-jackqt.jpg/440px-Faust-mixer-jackqt.jpg 2x" data-file-width="1286" data-file-height="631" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:Faust-mixer-jackqt.jpg" class="internal" title="Enlarge"></a></div>
+Screenshot of mixer.dsp (available in the FAUST distribution) using the jack-qt architecture</div>
+</div>
+</div>
+<table class="wikitable">
+<caption>Some architecture files available for FAUST</caption>
+<tr>
+<td>alsa-gtk.cpp</td>
+<td>ALSA application + GTK</td>
+</tr>
+<tr>
+<td>alsa-qt.cpp</td>
+<td>ALSA application + QT4</td>
+</tr>
+<tr>
+<td>android.cpp</td>
+<td>Android applications</td>
+</tr>
+<tr>
+<td>au.cpp</td>
+<td>Audio Unit plug-in</td>
+</tr>
+<tr>
+<td>ca-qt.cpp</td>
+<td>CoreAudio application + QT4</td>
+</tr>
+<tr>
+<td>ios-coreaudio.cpp</td>
+<td>iPhone and iPad applications</td>
+</tr>
+<tr>
+<td>jack-gtk.cpp</td>
+<td>JACK application + GTK</td>
+</tr>
+<tr>
+<td>jack-qt.cpp</td>
+<td>JACK application + QT4</td>
+</tr>
+<tr>
+<td>ladspa.cpp</td>
+<td>LADSPA plug-in</td>
+</tr>
+<tr>
+<td>max-msp.cpp</td>
+<td>Max MSP plug-in</td>
+</tr>
+<tr>
+<td>pd.cpp</td>
+<td>Puredata plug-in</td>
+</tr>
+<tr>
+<td>q.cpp</td>
+<td>Q language plug-in</td>
+</tr>
+<tr>
+<td>supercollider.cpp</td>
+<td>Supercollider plug-in</td>
+</tr>
+<tr>
+<td>vst.cpp</td>
+<td>VST plug-in</td>
+</tr>
+<tr>
+<td>vsti-mono.cpp</td>
+<td>Monophonic VST Instrument plug-in</td>
+</tr>
+<tr>
+<td>vsti-poly.cpp</td>
+<td>Polyphonic VST Instrument plug-in</td>
+</tr>
+</table>
+<h2><span class="mw-headline" id="Generating_block_diagrams">Generating block diagrams</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=FAUST_(programming_language)&amp;action=edit&amp;section=5" title="Edit section: Generating block diagrams">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>A useful option makes it possible to generate the block diagram representation of the program as one or more SVG graphic files.</p>
+<p>It is useful to note the difference between the block diagram and the generated C++ code. As stated, the key idea here is not to compile the block diagram literally, but the mathematical function it denotes. Modern C/C++ compilers also don’t compile programs literally. But because of the complex semantics of C/C++ (due to side effects, pointer aliasing, etc.) they can’t go very far in that direction. This is a distinct advantage of a purely functional language: it allows compilers to do very advanced optimisations.</p>
+<h2><span class="mw-headline" id="Arrows-like_semantics">Arrows-like semantics</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=FAUST_(programming_language)&amp;action=edit&amp;section=6" title="Edit section: Arrows-like semantics">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The Faust semantics is almost the same as that of <a href="/wiki/Haskell_(programming_language)" title="Haskell (programming language)">Haskell's</a> <a href="/wiki/Arrow_(computer_science)" title="Arrow (computer science)">Arrows</a> type class. However, the Arrow type class is not bound to signal processors.</p>
+<table class="wikitable">
+<caption>Equivalences between FAUST and Arrow combinators</caption>
+<tr>
+<td><code>f~g</code></td>
+<td><code>loop ((\(a,b) -&gt; (b,a)) ^&gt;&gt; f &gt;&gt;&gt; id &amp;&amp;&amp; (delay&gt;&gt;&gt;g))</code> where <code>delay</code> is not a method of the <code>Arrow</code> type class, but is specific to signal processing arrows</td>
+</tr>
+<tr>
+<td><code>f,g</code></td>
+<td><code>f***g</code></td>
+</tr>
+<tr>
+<td><code>f:g</code></td>
+<td><code>f&gt;&gt;&gt;g</code></td>
+</tr>
+<tr>
+<td><code>f&lt;:g</code></td>
+<td><code>f&gt;&gt;^h&gt;&gt;&gt;g</code> with appropriate function <code>h</code> (or <code>&amp;&amp;&amp;</code> in special cases)</td>
+</tr>
+<tr>
+<td><code>f:&gt;g</code></td>
+<td><code>f&gt;&gt;^h&gt;&gt;&gt;g</code> with appropriate function <code>h</code></td>
+</tr>
+</table>
+<p>The Arrow combinators are more restrictive than their FAUST counterparts, e.g., the nesting of parallel composition is preserved, and inputs of the operands of <code>&amp;&amp;&amp;</code> must match exactly.</p>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=FAUST_(programming_language)&amp;action=edit&amp;section=7" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;"></div>
+<div class="refbegin" style="">
+<ul>
+<li><cite class="citation journal">Michon, Romain; Smith, Julius O. III (2011). <a rel="nofollow" class="external text" href="http://recherche.ircam.fr/pub/dafx11/Papers/20_e.pdf">"Faust-STK: a Set of Linear and Nonlinear Physical Models for the Faust Programming Language"</a> <span style="font-size:85%;">(PDF)</span>. <i>Proceedings of the 11th Int. Conference on Digital Audio Effects (DAFx-11)</i>: 199–204.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFAUST+%28programming+language%29&amp;rft.atitle=Faust-STK%3A+a+Set+of+Linear+and+Nonlinear+Physical+Models+for+the+Faust+Programming+Language&amp;rft.aufirst=Romain&amp;rft.aulast=Michon&amp;rft.au=Smith%2C+Julius+O.+III&amp;rft.date=2011&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Frecherche.ircam.fr%2Fpub%2Fdafx11%2FPapers%2F20_e.pdf&amp;rft.jtitle=Proceedings+of+the+11th+Int.+Conference+on+Digital+Audio+Effects+%28DAFx-11%29&amp;rft.pages=199-204&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation journal">Fober, Dominique; Orlarey, Yann; Letz, Stéphane (2011). <a rel="nofollow" class="external text" href="http://recherche.ircam.fr/pub/dafx11/Papers/29_e.pdf">"Faust Architectures Design and OSC Support"</a> <span style="font-size:85%;">(PDF)</span>. <i>Proceedings of the 11th Int. Conference on Digital Audio Effects (DAFx-11)</i>: 213–216.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFAUST+%28programming+language%29&amp;rft.atitle=Faust+Architectures+Design+and+OSC+Support&amp;rft.aufirst=Dominique&amp;rft.aulast=Fober&amp;rft.au=Letz%2C+St%C3%A9phane&amp;rft.au=Orlarey%2C+Yann&amp;rft.date=2011&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Frecherche.ircam.fr%2Fpub%2Fdafx11%2FPapers%2F29_e.pdf&amp;rft.jtitle=Proceedings+of+the+11th+Int.+Conference+on+Digital+Audio+Effects+%28DAFx-11%29&amp;rft.pages=213-216&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation journal">Smith, Julius O. III; Michon, Romain (2011). <a rel="nofollow" class="external text" href="http://recherche.ircam.fr/pub/dafx11/Papers/38_e.pdf">"Nonlinear Allpass Ladder Filters in Faust"</a> <span style="font-size:85%;">(PDF)</span>. <i>Proceedings of the 11th Int. Conference on Digital Audio Effects (DAFx-11)</i>: 361–364.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFAUST+%28programming+language%29&amp;rft.atitle=Nonlinear+Allpass+Ladder+Filters+in+Faust&amp;rft.aufirst=Julius+O.+III&amp;rft.aulast=Smith&amp;rft.au=Michon%2C+Romain&amp;rft.date=2011&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Frecherche.ircam.fr%2Fpub%2Fdafx11%2FPapers%2F38_e.pdf&amp;rft.jtitle=Proceedings+of+the+11th+Int.+Conference+on+Digital+Audio+Effects+%28DAFx-11%29&amp;rft.pages=361-364&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation journal">Jouvelot, Pierre; Orlarey, Yann (2011). <a rel="nofollow" class="external text" href="http://faust.grame.fr/images/faust-doc/papers/faust-elsevier2011.pdf">"Dependent Vector Types for Data Structuring in Multirate Faust"</a> <span style="font-size:85%;">(PDF)</span>. <i>Computer Languages, Systems and Structures&#160;– Elsevier</i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFAUST+%28programming+language%29&amp;rft.atitle=Dependent+Vector+Types+for+Data+Structuring+in+Multirate+Faust&amp;rft.aufirst=Pierre&amp;rft.aulast=Jouvelot&amp;rft.au=Orlarey%2C+Yann&amp;rft.date=2011&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Ffaust.grame.fr%2Fimages%2Ffaust-doc%2Fpapers%2Ffaust-elsevier2011.pdf&amp;rft.jtitle=Computer+Languages%2C+Systems+and+Structures+%93+Elsevier&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span><sup class="noprint Inline-Template"><span style="white-space: nowrap;">[<i><a href="/wiki/Wikipedia:Link_rot" title="Wikipedia:Link rot"><span title="&#160;Dead link since December 2016">permanent dead link</span></a></i>]</span></sup></li>
+<li><cite class="citation web">Smith III, Julius O. (2011). <a rel="nofollow" class="external text" href="https://ccrma.stanford.edu/~jos/spf/aspf.pdf">"Audio Signal Processing in Faust"</a> <span style="font-size:85%;">(PDF)</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFAUST+%28programming+language%29&amp;rft.aufirst=Julius+O.&amp;rft.aulast=Smith+III&amp;rft.btitle=Audio+Signal+Processing+in+Faust&amp;rft.date=2011&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fccrma.stanford.edu%2F~jos%2Fspf%2Faspf.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation journal">Orlarey, Yann; Letz, Stéphane; Fober, Dominique (2010). <a rel="nofollow" class="external text" href="http://faust.grame.fr/images/faust-doc/papers/faust-CFA-2010.pdf">"Automatic Parallelization of Audio Applications with Faust"</a> <span style="font-size:85%;">(PDF)</span>. <i>Proceedings of the Congrès Français d'Acoustique</i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFAUST+%28programming+language%29&amp;rft.atitle=Automatic+Parallelization+of+Audio+Applications+with+Faust&amp;rft.aufirst=Yann&amp;rft.au=Fober%2C+Dominique&amp;rft.aulast=Orlarey&amp;rft.au=Letz%2C+St%C3%A9phane&amp;rft.date=2010&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Ffaust.grame.fr%2Fimages%2Ffaust-doc%2Fpapers%2Ffaust-CFA-2010.pdf&amp;rft.jtitle=Proceedings+of+the+Congr%C3%A8s+Fran%C3%A7ais+d%27Acoustique&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span><sup class="noprint Inline-Template"><span style="white-space: nowrap;">[<i><a href="/wiki/Wikipedia:Link_rot" title="Wikipedia:Link rot"><span title="&#160;Dead link since December 2016">permanent dead link</span></a></i>]</span></sup></li>
+<li><cite class="citation journal">Letz, Stéphane; Orlarey, Yann; Fober, Dominique (2010). <a rel="nofollow" class="external text" href="http://lac.linuxaudio.org/2010/papers/17.pdf">"Work Stealing Scheduler for Automatic Parallelization in Faust"</a> <span style="font-size:85%;">(PDF)</span>. <i>Proceedings of the Linux Audio Conference (LAC-2010)</i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFAUST+%28programming+language%29&amp;rft.atitle=Work+Stealing+Scheduler+for+Automatic+Parallelization+in+Faust&amp;rft.aufirst=St%C3%A9phane&amp;rft.au=Fober%2C+Dominique&amp;rft.aulast=Letz&amp;rft.au=Orlarey%2C+Yann&amp;rft.date=2010&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Flac.linuxaudio.org%2F2010%2Fpapers%2F17.pdf&amp;rft.jtitle=Proceedings+of+the+Linux+Audio+Conference+%28LAC-2010%29&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation journal">Gräf, Albert (2010). <a rel="nofollow" class="external text" href="http://lac.linuxaudio.org/2010/download/lac2010proceedings.pdf">"Term rewriting extension for the Faust programming language"</a> <span style="font-size:85%;">(PDF)</span>. <i>Proceedings of the 8th International Linux Audio Conference (LAC-2010)</i>: 117.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFAUST+%28programming+language%29&amp;rft.atitle=Term+rewriting+extension+for+the+Faust+programming+language&amp;rft.aufirst=Albert&amp;rft.aulast=Gr%C3%A4f&amp;rft.date=2010&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Flac.linuxaudio.org%2F2010%2Fdownload%2Flac2010proceedings.pdf&amp;rft.jtitle=Proceedings+of+the+8th+International+Linux+Audio+Conference+%28LAC-2010%29&amp;rft.pages=117&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation journal">Barthélemy, Jérôme; Bonardi, Alain; Orlarey, Yann; Lemouton, Serge; Ciavarella, Raffaele; Barkati, Karim (2010). <a rel="nofollow" class="external text" href="http://faust.grame.fr/images/faust-doc/papers/astree-icmc2010.pdf">"First Steps Towards an Organology of Virtual Instruments in Computer Music"</a> <span style="font-size:85%;">(PDF)</span>. <i>Proceedings of the 2010 International Computer Music Conference (ICMA-2010)</i>: 369–372.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFAUST+%28programming+language%29&amp;rft.atitle=First+Steps+Towards+an+Organology+of+Virtual+Instruments+in+Computer+Music&amp;rft.au=Barkati%2C+Karim&amp;rft.au=Bonardi%2C+Alain&amp;rft.au=Ciavarella%2C+Raffaele&amp;rft.aufirst=J%C3%A9r%C3%B4me&amp;rft.aulast=Barth%C3%A9lemy&amp;rft.au=Lemouton%2C+Serge&amp;rft.au=Orlarey%2C+Yann&amp;rft.date=2010&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Ffaust.grame.fr%2Fimages%2Ffaust-doc%2Fpapers%2Fastree-icmc2010.pdf&amp;rft.jtitle=Proceedings+of+the+2010+International+Computer+Music+Conference+%28ICMA-2010%29&amp;rft.pages=369-372&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span><sup class="noprint Inline-Template"><span style="white-space: nowrap;">[<i><a href="/wiki/Wikipedia:Link_rot" title="Wikipedia:Link rot"><span title="&#160;Dead link since December 2016">permanent dead link</span></a></i>]</span></sup></li>
+<li><cite class="citation journal">Jouvelot, Pierre; Orlarey, Yann (2010). <a rel="nofollow" class="external text" href="http://smcnetwork.org/files/proceedings/2010/51.pdf">"Depandant Vector Types for Multirate Faust"</a> <span style="font-size:85%;">(PDF)</span>. <i>Proceedings of the 7th Sound an Music Computing Conference (SMC-2010)</i>: 345–352.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFAUST+%28programming+language%29&amp;rft.atitle=Depandant+Vector+Types+for+Multirate+Faust&amp;rft.aufirst=Pierre&amp;rft.aulast=Jouvelot&amp;rft.au=Orlarey%2C+Yann&amp;rft.date=2010&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fsmcnetwork.org%2Ffiles%2Fproceedings%2F2010%2F51.pdf&amp;rft.jtitle=Proceedings+of+the+7th+Sound+an+Music+Computing+Conference+%28SMC-2010%29&amp;rft.pages=345-352&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation journal">Orlarey, Yann; Letz, Stéphane; Fober, Dominique (2009). <a rel="nofollow" class="external text" href="http://faust.grame.fr/test/images/faust-doc/papers/faustLAC09.pdf">"Adding Automatic Parallelization to Faust"</a> <span style="font-size:85%;">(PDF)</span>. <i>Proceedings of the Linux Audio Conference (LAC-2009)</i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFAUST+%28programming+language%29&amp;rft.atitle=Adding+Automatic+Parallelization+to+Faust&amp;rft.aufirst=Yann&amp;rft.au=Fober%2C+Dominique&amp;rft.aulast=Orlarey&amp;rft.au=Letz%2C+St%C3%A9phane&amp;rft.date=2009&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Ffaust.grame.fr%2Ftest%2Fimages%2Ffaust-doc%2Fpapers%2FfaustLAC09.pdf&amp;rft.jtitle=Proceedings+of+the+Linux+Audio+Conference+%28LAC-2009%29&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span><sup class="noprint Inline-Template"><span style="white-space: nowrap;">[<i><a href="/wiki/Wikipedia:Link_rot" title="Wikipedia:Link rot"><span title="&#160;Dead link since December 2016">permanent dead link</span></a></i>]</span></sup></li>
+<li><cite class="citation book">Jouvelot, Pierre; Orlarey, Yann (2009). "Semantics for Multirate Faust". <a rel="nofollow" class="external text" href="http://faust.grame.fr/images/faust-doc/papers/multirate-faust.pdf"><i>Technical Repports of Centre de Recherche en Informatique de MINES ParisTech</i></a> <span style="font-size:85%;">(PDF)</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFAUST+%28programming+language%29&amp;rft.atitle=Semantics+for+Multirate+Faust&amp;rft.aufirst=Pierre&amp;rft.aulast=Jouvelot&amp;rft.au=Orlarey%2C+Yann&amp;rft.btitle=Technical+Repports+of+Centre+de+Recherche+en+Informatique+de+MINES+ParisTech&amp;rft.date=2009&amp;rft.genre=bookitem&amp;rft_id=http%3A%2F%2Ffaust.grame.fr%2Fimages%2Ffaust-doc%2Fpapers%2Fmultirate-faust.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation journal">Orlarey, Yann; Fober, Dominique; Letz, Stéphane (2009). <a rel="nofollow" class="external text" href="http://smc2009.smcnetwork.org/programme/pdfs/232.pdf">"Parallelization of Audio Applications with Faust"</a> <span style="font-size:85%;">(PDF)</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFAUST+%28programming+language%29&amp;rft.atitle=Parallelization+of+Audio+Applications+with+Faust&amp;rft.aufirst=Yann&amp;rft.au=Fober%2C+Dominique&amp;rft.aulast=Orlarey&amp;rft.au=Letz%2C+St%C3%A9phane&amp;rft.date=2009&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fsmc2009.smcnetwork.org%2Fprogramme%2Fpdfs%2F232.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation book">Orlarey, Yann; Fober, Dominique; Letz, Stéphane (2009). "Faust: an Efficient Functional Approach to DSP Programming". <a rel="nofollow" class="external text" href="http://faust.grame.fr/images/faust-doc/papers/faust-delatour2009.pdf"><i>New Computanionals Paradigms for Computer Music</i></a> <span style="font-size:85%;">(PDF)</span>. Edition Delatour. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-2-7521-0054-2" title="Special:BookSources/978-2-7521-0054-2">978-2-7521-0054-2</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFAUST+%28programming+language%29&amp;rft.atitle=Faust%3A+an+Efficient+Functional+Approach+to+DSP+Programming&amp;rft.aufirst=Yann&amp;rft.au=Fober%2C+Dominique&amp;rft.aulast=Orlarey&amp;rft.au=Letz%2C+St%C3%A9phane&amp;rft.btitle=New+Computanionals+Paradigms+for+Computer+Music&amp;rft.date=2009&amp;rft.genre=bookitem&amp;rft_id=http%3A%2F%2Ffaust.grame.fr%2Fimages%2Ffaust-doc%2Fpapers%2Ffaust-delatour2009.pdf&amp;rft.isbn=978-2-7521-0054-2&amp;rft.pub=Edition+Delatour&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation journal">Orlarey, Yann; Letz, Stéphane; Fober, Dominique (2008). <a rel="nofollow" class="external text" href="http://faust.grame.fr/images/faust-doc/papers/jack-faust-multicore.pdf">"Multicore Technologies in Jack and Faust"</a> <span style="font-size:85%;">(PDF)</span>. <i>Proceedings of the 2010 International Computer Music Conference (ICMC-2008)</i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFAUST+%28programming+language%29&amp;rft.atitle=Multicore+Technologies+in+Jack+and+Faust&amp;rft.aufirst=Yann&amp;rft.au=Fober%2C+Dominique&amp;rft.aulast=Orlarey&amp;rft.au=Letz%2C+St%C3%A9phane&amp;rft.date=2008&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Ffaust.grame.fr%2Fimages%2Ffaust-doc%2Fpapers%2Fjack-faust-multicore.pdf&amp;rft.jtitle=Proceedings+of+the+2010+International+Computer+Music+Conference+%28ICMC-2008%29&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span><sup class="noprint Inline-Template"><span style="white-space: nowrap;">[<i><a href="/wiki/Wikipedia:Link_rot" title="Wikipedia:Link rot"><span title="&#160;Dead link since December 2016">permanent dead link</span></a></i>]</span></sup></li>
+<li><cite class="citation journal">Gräf, Albert (2007). <a rel="nofollow" class="external text" href="http://lac.linuxaudio.org/2007/download/lac07_proceedings.pdf">"Interfacing Pure Data with Faust"</a> <span style="font-size:85%;">(PDF)</span>. <i>Proceedings of the 5th International Linux Audio Conference (LAC2007)</i>: 24.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFAUST+%28programming+language%29&amp;rft.atitle=Interfacing+Pure+Data+with+Faust&amp;rft.aufirst=Albert&amp;rft.aulast=Gr%C3%A4f&amp;rft.date=2007&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Flac.linuxaudio.org%2F2007%2Fdownload%2Flac07_proceedings.pdf&amp;rft.jtitle=Proceedings+of+the+5th+International+Linux+Audio+Conference+%28LAC2007%29&amp;rft.pages=24&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation book">Smith III, Julius O. (2007). "Appendix K. Digital Filtering in Faust and PD". <a rel="nofollow" class="external text" href="https://books.google.com/books?id=pC1iCQUAsHEC&amp;pg=PA417"><i>Introduction to Digital Filters: With Audio Applications</i></a>. W3K Publishing. pp.&#160;417–?. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-0-9745607-1-7" title="Special:BookSources/978-0-9745607-1-7">978-0-9745607-1-7</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFAUST+%28programming+language%29&amp;rft.atitle=Appendix+K.++Digital+Filtering+in+Faust+and+PD&amp;rft.aufirst=Julius+O.&amp;rft.aulast=Smith+III&amp;rft.btitle=Introduction+to+Digital+Filters%3A+With+Audio+Applications&amp;rft.date=2007&amp;rft.genre=bookitem&amp;rft_id=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DpC1iCQUAsHEC%26pg%3DPA417&amp;rft.isbn=978-0-9745607-1-7&amp;rft.pages=417-%3F&amp;rft.pub=W3K+Publishing&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation journal">Gräf, Albert; Kersten, Stefan; Orlarey, Yann (2006). <a rel="nofollow" class="external text" href="http://lac.zkm.de/2006/papers/lac2006_orlarey_et_al.pdf">"DSP Programming with Faust, Q and SuperCollider"</a> <span style="font-size:85%;">(PDF)</span>. <i>Proceedings of the 4th International Linux Audio Conference (LAC2006)</i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFAUST+%28programming+language%29&amp;rft.atitle=DSP+Programming+with+Faust%2C+Q+and+SuperCollider&amp;rft.aufirst=Albert&amp;rft.au=Kersten%2C+Stefan&amp;rft.aulast=Gr%C3%A4f&amp;rft.au=Orlarey%2C+Yann&amp;rft.date=2006&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Flac.zkm.de%2F2006%2Fpapers%2Flac2006_orlarey_et_al.pdf&amp;rft.jtitle=Proceedings+of+the+4th+International+Linux+Audio+Conference+%28LAC2006%29&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation journal">Trausmuth, Robert; Dusek, Christian; Orlarey, Yann (2006). <a rel="nofollow" class="external text" href="http://www.dafx.ca/proceedings/papers/p_287.pdf">"Using Faust for FPGA Programming"</a> <span style="font-size:85%;">(PDF)</span>. <i>Proceedings of the 9th Int. Conference on Digital Audio Effects (DAFx-09)</i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFAUST+%28programming+language%29&amp;rft.atitle=Using+Faust+for+FPGA+Programming&amp;rft.au=Dusek%2C+Christian&amp;rft.aufirst=Robert&amp;rft.aulast=Trausmuth&amp;rft.au=Orlarey%2C+Yann&amp;rft.date=2006&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fwww.dafx.ca%2Fproceedings%2Fpapers%2Fp_287.pdf&amp;rft.jtitle=Proceedings+of+the+9th+Int.+Conference+on+Digital+Audio+Effects+%28DAFx-09%29&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation book">Orlarey, Yann; Fober, Dominique; Letz, Stephone (2005). <a rel="nofollow" class="external text" href="http://quod.lib.umich.edu/i/icmc/bbp2372.2005.054?view=image">"Demonstration of Faust Signal Processing Language"</a>. <a rel="nofollow" class="external text" href="http://quod.lib.umich.edu/cgi/t/text/text-idx?c=icmc;idno=bbp2372.2005.*"><i>Proceedings of the International Computer Music Conference</i></a>. <b>2005</b>. Computer Music Association. p.&#160;286.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFAUST+%28programming+language%29&amp;rft.atitle=Demonstration+of+Faust+Signal+Processing+Language&amp;rft.aufirst=Yann&amp;rft.au=Fober%2C+Dominique&amp;rft.aulast=Orlarey&amp;rft.au=Letz%2C+Stephone&amp;rft.btitle=Proceedings+of+the+International+Computer+Music+Conference&amp;rft.date=2005&amp;rft.genre=bookitem&amp;rft_id=http%3A%2F%2Fquod.lib.umich.edu%2Fi%2Ficmc%2Fbbp2372.2005.054%3Fview%3Dimage&amp;rft.pages=286&amp;rft.pub=Computer+Music+Association&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation book">Orlarey, Yann; Fober, Dominique; Letz, Stéphane (2004). "Syntactical and Semantical Aspects of Faust". <a rel="nofollow" class="external text" href="http://faust.grame.fr/images/faust-doc/papers/faust-soft-computing.pdf"><i>Soft Computing</i></a> <span style="font-size:85%;">(PDF)</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFAUST+%28programming+language%29&amp;rft.atitle=Syntactical+and+Semantical+Aspects+of+Faust&amp;rft.aufirst=Yann&amp;rft.au=Fober%2C+Dominique&amp;rft.aulast=Orlarey&amp;rft.au=Letz%2C+St%C3%A9phane&amp;rft.btitle=Soft+Computing&amp;rft.date=2004&amp;rft.genre=bookitem&amp;rft_id=http%3A%2F%2Ffaust.grame.fr%2Fimages%2Ffaust-doc%2Fpapers%2Ffaust-soft-computing.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation journal">Scaringella, Nicolas; Orlarey, Yann; Fober, Dominique (2003). <a rel="nofollow" class="external text" href="http://faust.grame.fr/images/faust-doc/papers/JIM2003vect.pdf">"Automatic Vectorization in Faust"</a> <span style="font-size:85%;">(PDF)</span>. <i>Journée de l'Informatique Musicale (JIM-2003)</i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFAUST+%28programming+language%29&amp;rft.atitle=Automatic+Vectorization+in+Faust&amp;rft.aufirst=Nicolas&amp;rft.au=Fober%2C+Dominique&amp;rft.aulast=Scaringella&amp;rft.au=Orlarey%2C+Yann&amp;rft.date=2003&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Ffaust.grame.fr%2Fimages%2Ffaust-doc%2Fpapers%2FJIM2003vect.pdf&amp;rft.jtitle=Journ%C3%A9e+de+l%27Informatique+Musicale+%28JIM-2003%29&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span><sup class="noprint Inline-Template"><span style="white-space: nowrap;">[<i><a href="/wiki/Wikipedia:Link_rot" title="Wikipedia:Link rot"><span title="&#160;Dead link since December 2016">permanent dead link</span></a></i>]</span></sup></li>
+<li><cite class="citation journal">Orlarey, Yann; Fober, Dominique; Letz, Stéphane (2002). <a rel="nofollow" class="external text" href="http://faust.grame.fr/images/faust-doc/papers/faust-jim2002.pdf">"An Algebraic Approach to Block Diagram Constructions"</a> <span style="font-size:85%;">(PDF)</span>. <i>Journée de l'Informatique Musicale (JIM-2002)</i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFAUST+%28programming+language%29&amp;rft.atitle=An+Algebraic+Approach+to+Block+Diagram+Constructions&amp;rft.aufirst=Yann&amp;rft.au=Fober%2C+Dominique&amp;rft.aulast=Orlarey&amp;rft.au=Letz%2C+St%C3%A9phane&amp;rft.date=2002&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Ffaust.grame.fr%2Fimages%2Ffaust-doc%2Fpapers%2Ffaust-jim2002.pdf&amp;rft.jtitle=Journ%C3%A9e+de+l%27Informatique+Musicale+%28JIM-2002%29&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span><sup class="noprint Inline-Template"><span style="white-space: nowrap;">[<i><a href="/wiki/Wikipedia:Link_rot" title="Wikipedia:Link rot"><span title="&#160;Dead link since December 2016">permanent dead link</span></a></i>]</span></sup></li>
+<li><cite class="citation journal">Orlarey, Yann; Fober, Dominique; Letz, Stéphane (2002). <a rel="nofollow" class="external text" href="http://faust.grame.fr/images/faust-doc/papers/faust-icmc2002.pdf">"An Algebra for Block Diagram Languages"</a> <span style="font-size:85%;">(PDF)</span>. <i>Proceedings of International Computer Music Conference (ICMA-2002)</i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFAUST+%28programming+language%29&amp;rft.atitle=An+Algebra+for+Block+Diagram+Languages&amp;rft.aufirst=Yann&amp;rft.au=Fober%2C+Dominique&amp;rft.aulast=Orlarey&amp;rft.au=Letz%2C+St%C3%A9phane&amp;rft.date=2002&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Ffaust.grame.fr%2Fimages%2Ffaust-doc%2Fpapers%2Ffaust-icmc2002.pdf&amp;rft.jtitle=Proceedings+of+International+Computer+Music+Conference+%28ICMA-2002%29&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span><sup class="noprint Inline-Template"><span style="white-space: nowrap;">[<i><a href="/wiki/Wikipedia:Link_rot" title="Wikipedia:Link rot"><span title="&#160;Dead link since December 2016">permanent dead link</span></a></i>]</span></sup></li>
+</ul>
+</div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=FAUST_(programming_language)&amp;action=edit&amp;section=8" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<table role="presentation" class="mbox-small plainlinks sistersitebox" style="border:1px solid #aaa;background-color:#f9f9f9">
+<tr>
+<td class="mbox-image"><a href="/wiki/File:Commons-logo.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/30px-Commons-logo.svg.png" width="30" height="40" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/45px-Commons-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/59px-Commons-logo.svg.png 2x" data-file-width="1024" data-file-height="1376" /></a></td>
+<td class="mbox-text plainlist">Wikimedia Commons has media related to <i><b><a href="https://commons.wikimedia.org/wiki/Category:FAUST_(programming_language)" class="extiw" title="commons:Category:FAUST (programming language)">FAUST (programming language)</a></b></i>.</td>
+</tr>
+</table>
+<ul>
+<li><span class="official-website"><span class="url"><a rel="nofollow" class="external text" href="http://faust.grame.fr">Official website</a></span></span>, online compiler, support, documentation, news, etc.</li>
+<li><a rel="nofollow" class="external text" href="https://sourceforge.net/projects/faudiostream/">FAUST on SourceForge</a>: Faust repository and mailing lists</li>
+</ul>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1262
+Cached time: 20170117112227
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.288 seconds
+Real time usage: 0.351 seconds
+Preprocessor visited node count: 2556/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 73279/2097152 bytes
+Template argument size: 6607/2097152 bytes
+Highest expansion depth: 25/40
+Expensive parser function count: 5/500
+Lua time usage: 0.146/10.000 seconds
+Lua memory usage: 5.18 MB/50 MB
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  292.051      1 - -total
+ 29.59%   86.411     18 - Template:Cite_journal
+ 22.13%   64.618      2 - Template:Infobox
+ 18.10%   52.866      1 - Template:Infobox_software
+ 17.42%   50.861      1 - Template:No_footnotes
+ 11.90%   34.766      8 - Template:Dead_link
+  9.52%   27.802      1 - Template:Ambox
+  9.16%   26.766      8 - Template:Fix
+  7.75%   22.641     16 - Template:Category_handler
+  6.61%   19.306      1 - Template:Infobox_software/simple
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:4532356-0!*!0!!en!4!* and timestamp 20170117112227 and revision id 757066823
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=FAUST_(programming_language)&amp;oldid=757066823">https://en.wikipedia.org/w/index.php?title=FAUST_(programming_language)&amp;oldid=757066823</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Audio_programming_languages" title="Category:Audio programming languages">Audio programming languages</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Articles_lacking_in-text_citations_from_March_2015" title="Category:Articles lacking in-text citations from March 2015">Articles lacking in-text citations from March 2015</a></li><li><a href="/wiki/Category:All_articles_lacking_in-text_citations" title="Category:All articles lacking in-text citations">All articles lacking in-text citations</a></li><li><a href="/wiki/Category:Articles_containing_potentially_dated_statements_from_2015" title="Category:Articles containing potentially dated statements from 2015">Articles containing potentially dated statements from 2015</a></li><li><a href="/wiki/Category:All_articles_containing_potentially_dated_statements" title="Category:All articles containing potentially dated statements">All articles containing potentially dated statements</a></li><li><a href="/wiki/Category:All_articles_with_dead_external_links" title="Category:All articles with dead external links">All articles with dead external links</a></li><li><a href="/wiki/Category:Articles_with_dead_external_links_from_December_2016" title="Category:Articles with dead external links from December 2016">Articles with dead external links from December 2016</a></li><li><a href="/wiki/Category:Articles_with_permanently_dead_external_links" title="Category:Articles with permanently dead external links">Articles with permanently dead external links</a></li><li><a href="/wiki/Category:Commons_category_with_local_link_same_as_on_Wikidata" title="Category:Commons category with local link same as on Wikidata">Commons category with local link same as on Wikidata</a></li><li><a href="/wiki/Category:Official_website_not_in_Wikidata" title="Category:Official website not in Wikidata">Official website not in Wikidata</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=FAUST+%28programming+language%29" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=FAUST+%28programming+language%29" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/FAUST_(programming_language)"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:FAUST_(programming_language)"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/FAUST_(programming_language)" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=FAUST_(programming_language)&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=FAUST_(programming_language)&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/FAUST_(programming_language)" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/FAUST_(programming_language)" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=FAUST_(programming_language)&amp;oldid=757066823" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=FAUST_(programming_language)&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q1398550" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=FAUST_%28programming_language%29&amp;id=757066823" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=FAUST+%28programming+language%29">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=FAUST+%28programming+language%29&amp;returnto=FAUST+%28programming+language%29&amp;oldid=757066823&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=FAUST_(programming_language)&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-wikibase-otherprojects' aria-labelledby='p-wikibase-otherprojects-label'>
+			<h3 id='p-wikibase-otherprojects-label'>In other projects</h3>
+
+			<div class="body">
+									<ul>
+						<li class="wb-otherproject-link wb-otherproject-commons"><a href="https://commons.wikimedia.org/wiki/Category:FAUST_(programming_language)" hreflang="en">Wikimedia Commons</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/Faust_(Programmiersprache)" title="Faust (Programmiersprache) – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/FAUST_(langage)" title="FAUST (langage) – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q1398550#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 28 December 2016, at 15:44.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=FAUST_(programming_language)&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":94,"wgHostname":"mw1184"});});</script>
+	</body>
+</html>

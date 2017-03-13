@@ -1,0 +1,20 @@
+.scroll {
+  animation: myAnimation 25s;
+
+  -webkit-animation: myAnimation 25s; /* Safari & Chrome */
+
+  animation-timing-function:linear; 
+  -webkit-animation-timing-function:linear; /* Safari & Chrome */
+  animation-delay:0.5s; 
+  -webkit-animation-delay:0.5s; /* Safari & Chrome */
+}
+
+@keyframes myAnimation {
+  from {top:0; }
+  to {top:-2500px;}
+}
+
+@-webkit-keyframes myAnimation /* Safari & Chrome */ {
+  from {top:0; }
+  to {top:-2500px;}
+}

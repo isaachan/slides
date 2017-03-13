@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>IDL (programming language) - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"IDL_(programming_language)","wgTitle":"IDL (programming language)","wgCurRevisionId":752785164,"wgRevisionId":752785164,"wgArticleId":512587,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles needing additional references from February 2010","All articles needing additional references","Articles that may contain original research from September 2015","All articles that may contain original research","Articles that may contain original research from August 2014","Articles containing potentially dated statements from February 2010","All articles containing potentially dated statements","Image processing software","Array programming languages","Earth sciences graphics software","Numerical programming languages","Plotting software"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"IDL_(programming_language)","wgRelevantArticleId":512587,"wgRequestId":"WIXsJgpAIDgAAGN5fbUAAABT","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":true},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q1665857","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.pygments":"ready","ext.cite.styles":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.legacy.wikibits","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.pygments%2CwikimediaBadges%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.29.0-wmf.8"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/IDL_(programming_language)"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=IDL_(programming_language)&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=IDL_(programming_language)&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/IDL_(programming_language)"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-IDL_programming_language rootpage-IDL_programming_language skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">IDL (programming language)</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><script>function mfTempOpenSection(id){var block=document.getElementById("mf-section-"+id);block.className+=" open-block";block.previousSibling.className+=" open-block";}</script><div role="note" class="hatnote">Not to be confused with <a href="/wiki/Interface_description_language" title="Interface description language">Interface description language</a>.</div>
+<table class="plainlinks metadata ambox ambox-content ambox-Refimprove" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><a href="/wiki/File:Question_book-new.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" width="50" height="39" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/75px-Question_book-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/100px-Question_book-new.svg.png 2x" data-file-width="512" data-file-height="399" /></a></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">This article <b>needs additional citations for <a href="/wiki/Wikipedia:Verifiability" title="Wikipedia:Verifiability">verification</a></b>. <span class="hide-when-compact">Please help <a class="external text" href="//en.wikipedia.org/w/index.php?title=IDL_(programming_language)&amp;action=edit">improve this article</a> by <a href="/wiki/Help:Introduction_to_referencing_with_Wiki_Markup/1" title="Help:Introduction to referencing with Wiki Markup/1">adding citations to reliable sources</a>. Unsourced material may be challenged and removed.</span> <small><i>(February 2010)</i></small> <small class="hide-when-compact"><i>(<a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove this template message</a>)</i></small></span></td>
+</tr>
+</table>
+<table class="infobox vevent" style="width:22em">
+<caption class="summary">IDL (Interactive Data Language)</caption>
+<tr>
+<th scope="row"><a href="/wiki/Programming_paradigm" title="Programming paradigm">Paradigm</a></th>
+<td><a href="/wiki/Array_programming" title="Array programming">Vector Oriented Programming</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_design" title="Software design">Designed&#160;by</a></th>
+<td>David Stern</td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_developer" title="Software developer">Developer</a></th>
+<td class="organiser">David Stern &amp; <a href="/wiki/ITT_Visual_Information_Solutions" class="mw-redirect" title="ITT Visual Information Solutions">ITT Visual Information Solutions (ITT VIS)</a></td>
+</tr>
+<tr>
+<th scope="row">First&#160;appeared</th>
+<td>1977</td>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Software_release_life_cycle" title="Software release life cycle">Stable release</a></th>
+<td>
+<div style="margin:0px;">IDL 8.5.1 / December 15, 2015</div>
+</td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Type_system" title="Type system">Typing discipline</a></th>
+<td><a href="/wiki/Dynamic_typing" class="mw-redirect" title="Dynamic typing">Dynamic</a></td>
+</tr>
+<tr>
+<th colspan="2" style="text-align:center;background-color: #eee;">Major <a href="/wiki/Programming_language_implementation" title="Programming language implementation">implementations</a></th>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center">IDL, <a href="/wiki/GNU_Data_Language" title="GNU Data Language">GNU Data Language</a>, Fawlty Language</td>
+</tr>
+</table>
+<p><b>IDL</b>, short for <b>Interactive Data Language</b>, is a <a href="/wiki/Programming_language" title="Programming language">programming language</a> used for data analysis. It is popular in particular areas of science, such as <a href="/wiki/Astronomy" title="Astronomy">astronomy</a>, <a href="/wiki/Atmospheric_physics" title="Atmospheric physics">atmospheric physics</a> and <a href="/wiki/Medical_imaging" title="Medical imaging">medical imaging</a>. IDL shares a common syntax with <a href="/wiki/PV-Wave" title="PV-Wave">PV-Wave</a> and originated from the same codebase, though the languages have subsequently diverged in detail. There are also two free implementations, <a href="/wiki/GNU_Data_Language" title="GNU Data Language">GNU Data Language</a> (GDL) and Fawlty Language (FL).</p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#History"><span class="tocnumber">2</span> <span class="toctext">History</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Features"><span class="tocnumber">3</span> <span class="toctext">Features</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Problems"><span class="tocnumber">4</span> <span class="toctext">Problems</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Examples"><span class="tocnumber">5</span> <span class="toctext">Examples</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#References"><span class="tocnumber">7</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#External_links"><span class="tocnumber">8</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Overview">Overview</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=IDL_(programming_language)&amp;action=edit&amp;section=1" title="Edit section: Overview">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>IDL is <a href="/wiki/Array_programming" title="Array programming">vectorized</a>, numerical, and interactive, and is commonly used for interactive processing of large amounts of data (including <a href="/wiki/Image_processing" title="Image processing">image processing</a>). The syntax includes many constructs from <a href="/wiki/Fortran" title="Fortran">Fortran</a> and some from <a href="/wiki/C_(programming_language)" title="C (programming language)">C</a>.</p>
+<p>IDL originated from early <a href="/wiki/VAX/VMS" class="mw-redirect" title="VAX/VMS">VAX/VMS</a>/Fortran, and its syntax still shows its heritage:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+ x <span class="o">=</span> <span class="nb">findgen</span>(<span class="mi">100</span>)<span class="o">/</span><span class="mi">10</span>
+ y <span class="o">=</span> <span class="nb">sin</span>(x)<span class="o">/</span>x
+ <span class="nb">plot</span>,x,y
+</pre></div>
+<p>The <tt>findgen</tt> function in the above example returns a one-dimensional array of floating point numbers, with values equal to a series of integers starting at 0.</p>
+<p>Note that the operation in the second line applies in a vectorized manner to the whole 100-element array created in the first line, analogous to the way general-purpose array programming languages (such as <a href="/wiki/APL_programming_language" class="mw-redirect" title="APL programming language">APL</a>, <a href="/wiki/J_programming_language" class="mw-redirect" title="J programming language">J</a> or <a href="/wiki/K_programming_language" class="mw-redirect" title="K programming language">K</a>) would do it. This example contains a divide by zero; IDL will report an <a href="/wiki/Arithmetic_overflow" title="Arithmetic overflow">arithmetic overflow</a>, and store a <a href="/wiki/NaN" title="NaN">NaN</a> value in the corresponding element of the <tt>y</tt> array (the first one), but the other array elements will be finite. The NaN is excluded from the visualization generated by the <tt>plot</tt> command.</p>
+<p>As with most other array programming languages, IDL is very fast at doing vector operations (sometimes as fast as a well-coded custom loop in <a href="/wiki/FORTRAN" class="mw-redirect" title="FORTRAN">FORTRAN</a> or C) but quite slow if elements need processing individually. Hence part of the art of using IDL (or any other array programming language, for that matter) for numerically heavy computations is to make use of the built-in vector operations.</p>
+<h2><span class="mw-headline" id="History">History</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=IDL_(programming_language)&amp;action=edit&amp;section=2" title="Edit section: History">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<table class="plainlinks metadata ambox ambox-content ambox-Original_research" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ambox_important.svg/40px-Ambox_important.svg.png" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ambox_important.svg/60px-Ambox_important.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ambox_important.svg/80px-Ambox_important.svg.png 2x" data-file-width="40" data-file-height="40" /></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">This section <b>possibly contains <a href="/wiki/Wikipedia:No_original_research" title="Wikipedia:No original research">original research</a></b>. <span class="hide-when-compact">Please <a class="external text" href="//en.wikipedia.org/w/index.php?title=IDL_(programming_language)&amp;action=edit">improve it</a> by <a href="/wiki/Wikipedia:Verifiability" title="Wikipedia:Verifiability">verifying</a> the claims made and adding <a href="/wiki/Wikipedia:Citing_sources#Inline_citations" title="Wikipedia:Citing sources">inline citations</a>. Statements consisting only of original research should be removed.</span> <small><i>(September 2015)</i></small> <small class="hide-when-compact"><i>(<a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove this template message</a>)</i></small></span></td>
+</tr>
+</table>
+<p>The predecessor versions of IDL were developed in the 1970s at the <a href="/wiki/Laboratory_for_Atmospheric_and_Space_Physics" title="Laboratory for Atmospheric and Space Physics">Laboratory for Atmospheric and Space Physics</a> (LASP) at the <a href="/wiki/University_of_Colorado_at_Boulder" class="mw-redirect" title="University of Colorado at Boulder">University of Colorado at Boulder</a>. At LASP, David Stern was involved in efforts to allow scientists to test hypotheses without employing programmers to write or modify individual applications. The first program in the evolutionary chain to IDL that Stern developed was named Rufus; it was a simple vector-oriented calculator that ran on the <a href="/wiki/PDP-12" title="PDP-12">PDP-12</a>. It accepted two-letter codes that specified an arithmetic operation, the input registers to serve as operands, and the destination register. A version of Rufus developed on the <a href="/wiki/PDP-8" title="PDP-8">PDP-8</a> was the Mars Mariner Spectrum Editor (MMED). MMED was used by LASP scientists to interpret data from <a href="/wiki/Mariner_7" class="mw-redirect" title="Mariner 7">Mariner 7</a> and <a href="/wiki/Mariner_9" title="Mariner 9">Mariner 9</a>. Later, Stern wrote a program named SOL, which also ran on the PDP-8. Unlike its predecessors, it was a true programming language with a FORTRAN-like syntax. SOL was an array-oriented language with some primitive graphics capabilities.</p>
+<p>Stern left LASP to found Research Systems Inc. (RSI) in 1977. The first RSI product was IDL for the PDP-11. In this release, the graphics supported by IDL were primarily Tektronix terminals and raster graphics displays. RSI sold its first IDL licenses to NASA's <a href="/wiki/Goddard_Space_Flight_Center" title="Goddard Space Flight Center">Goddard Space Flight Center</a> and <a href="/wiki/Ball_Aerospace_%26_Technologies_Corp." class="mw-redirect" title="Ball Aerospace &amp; Technologies Corp.">Ball Aerospace &amp; Technologies Corp.</a> in 1979. Two years later RSI released an initial VAX/VMS version of IDL, which was written in VAX-11 MACRO and FORTRAN. It took advantage of the VAX virtual memory and 32-bit address space. The <a href="/wiki/National_Center_for_Atmospheric_Research" title="National Center for Atmospheric Research">National Center for Atmospheric Research</a> (NCAR), the <a href="/wiki/University_of_Michigan" title="University of Michigan">University of Michigan</a>, the <a href="/wiki/University_of_Colorado_at_Boulder" class="mw-redirect" title="University of Colorado at Boulder">University of Colorado</a>, and the <a href="/wiki/Naval_Research_Laboratory" class="mw-redirect" title="Naval Research Laboratory">Naval Research Laboratory</a> started to use IDL with this version.</p>
+<p>In 1987 RSI shifted development work of IDL to the <a href="/wiki/Unix" title="Unix">Unix</a> environment, which required a complete re-write of the code in C rather than a port of the existing version of VAX IDL. Stern and Ali Bahrami rewrote IDL for Unix on the Sun 3, taking advantage of the re-write to extend and improve the language. Subsequently, IDL was further expanded and ported to several variants of Unix, VMS, Linux, Microsoft Windows (1992), and Mac OS (1994).</p>
+<p>Widgets were added to IDL in 1992, providing <a href="/wiki/Event-driven_programming" title="Event-driven programming">event-driven programming</a> with <a href="/wiki/Graphical_user_interface" title="Graphical user interface">graphical user interfaces</a>. In 1997 ION (IDL On the Net), a web server-based system, was commercially released. The first version of <a href="/wiki/ENVI_(software)" class="mw-redirect" title="ENVI (software)">ENVI</a>, an application for <a href="/wiki/Remote_sensing" title="Remote sensing">remote sensing</a> <a href="/wiki/Multispectral" class="mw-redirect" title="Multispectral">multispectral</a> and <a href="/wiki/Hyperspectral" class="mw-redirect" title="Hyperspectral">hyperspectral</a> image analysis written in IDL, was released in 1994. <a href="/wiki/ENVI_(software)" class="mw-redirect" title="ENVI (software)">ENVI</a> was created, developed and owned by Better Solutions Consulting, LLC, until it was purchased from BSC in October 2000 by Eastman Kodak coincident with their purchase of RSI. RSI sold, marketed and supported <a href="/wiki/ENVI_(software)" class="mw-redirect" title="ENVI (software)">ENVI</a> under the terms of a license agreement with BSC, LLC from 1994 through October, 2000. New object and pointer types, and limited <a href="/wiki/Object-oriented_programming" title="Object-oriented programming">object-oriented programming</a> capabilities were added to IDL in 1997.</p>
+<p>IDL has been applied widely in space science, for example in <a href="/wiki/Solarsoft" title="Solarsoft">solar physics</a>. The <a href="/wiki/European_Space_Agency" title="European Space Agency">European Space Agency</a> used IDL to process almost all of the pictures of <a href="/wiki/Halley%27s_Comet" title="Halley's Comet">Halley's Comet</a> taken by the <a href="/wiki/Giotto_(spacecraft)" title="Giotto (spacecraft)">Giotto</a> spacecraft. The team repairing the <a href="/wiki/Hubble_Space_Telescope" title="Hubble Space Telescope">Hubble Space Telescope</a> used IDL to help them diagnose anomalies in the main mirror. In 1995, astronauts on board a space shuttle used IDL loaded on a laptop to study ultraviolet radiation. Currently, amongst other applications, IDL is being used for most of the analysis of the SECCHI part of the <a href="/wiki/STEREO" title="STEREO">STEREO</a> mission at <a href="/wiki/United_States_Naval_Research_Laboratory" title="United States Naval Research Laboratory">NRL</a>, USA, and at the Rutherford Appleton Laboratory, UK.</p>
+<p>RSI became a wholly owned subsidiary of <a href="/wiki/ITT_Industries" class="mw-redirect" title="ITT Industries">ITT Industries</a> in March 2004. As of May 15, 2006, RSI began doing business as <a href="/wiki/ITT_Visual_Information_Solutions" class="mw-redirect" title="ITT Visual Information Solutions">ITT Visual Information Solutions</a>. Effective 31 October 2011, as a result of restructuring, that company became <a href="/wiki/Exelis_Visual_Information_Solutions" title="Exelis Visual Information Solutions">Exelis Visual Information Solutions</a>.</p>
+<h2><span class="mw-headline" id="Features">Features</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=IDL_(programming_language)&amp;action=edit&amp;section=3" title="Edit section: Features">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>As a computer language, IDL:</p>
+<ul>
+<li>is <a href="/wiki/Dynamically_typed" class="mw-redirect" title="Dynamically typed">dynamically typed</a>.</li>
+<li>has separate <a href="/wiki/Namespaces" class="mw-redirect" title="Namespaces">namespaces</a> for variables, functions and procedures, but no namespace hierarchy.</li>
+<li>was originally single threaded but now has many multi-threaded functions and procedures.</li>
+<li>has all function arguments <a href="/wiki/Evaluation_strategy#Call_by_reference" title="Evaluation strategy">passed by reference</a>; but see "problems", below.</li>
+<li>has <a href="/wiki/Named_parameter" title="Named parameter">named parameters</a> called keywords which are passed by reference.</li>
+<li>provides named parameter inheritance in nested routine calls, by reference or value.</li>
+<li>does not require variables to be predeclared.</li>
+<li>provides COMMON block declarations and system variables to share global values among routines.</li>
+<li>provides a basic form of object-oriented programming, somewhat similar to <a href="/wiki/Smalltalk" title="Smalltalk">Smalltalk</a>, along with <a href="/wiki/Operator_overloading" title="Operator overloading">operator overloading</a>.</li>
+<li>implements a persistent, global heap of pointer and object variables, using <a href="/wiki/Reference_counting" title="Reference counting">reference counting</a> for garbage collection.</li>
+<li>compiles to an interpreted, stack-based intermediate p-code (à la <a href="/wiki/Java_Virtual_Machine" class="mw-redirect" title="Java Virtual Machine">Java Virtual Machine</a>).</li>
+<li>provides a simple and efficient index slice syntax to extract data from large arrays.</li>
+<li>provides various integer sizes, as well as single and double precision floating point real and complex numbers.</li>
+<li>provides composite data types such as character strings, homogeneous-type arrays, lists, hash tables, and simple (non-hierarchical) record structures of mixed data types.</li>
+</ul>
+<h2><span class="mw-headline" id="Problems">Problems</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=IDL_(programming_language)&amp;action=edit&amp;section=4" title="Edit section: Problems">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<table class="plainlinks metadata ambox ambox-content ambox-Original_research" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ambox_important.svg/40px-Ambox_important.svg.png" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ambox_important.svg/60px-Ambox_important.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ambox_important.svg/80px-Ambox_important.svg.png 2x" data-file-width="40" data-file-height="40" /></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">This section <b>possibly contains <a href="/wiki/Wikipedia:No_original_research" title="Wikipedia:No original research">original research</a></b>. <span class="hide-when-compact">Please <a class="external text" href="//en.wikipedia.org/w/index.php?title=IDL_(programming_language)&amp;action=edit">improve it</a> by <a href="/wiki/Wikipedia:Verifiability" title="Wikipedia:Verifiability">verifying</a> the claims made and adding <a href="/wiki/Wikipedia:Citing_sources#Inline_citations" title="Wikipedia:Citing sources">inline citations</a>. Statements consisting only of original research should be removed.</span> <small><i>(August 2014)</i></small> <small class="hide-when-compact"><i>(<a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove this template message</a>)</i></small></span></td>
+</tr>
+</table>
+<p>Some of these features, which make IDL very simple to use interactively, also cause difficulties when building large programs. The single namespace is particularly problematic; for example, language updates that include new built-in functions have on occasion invalidated large scientific libraries.<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">[1]</a></sup></p>
+<p>Arrays are passed by reference, and this mechanism is an advertised feature of the language to pass data back out of a subroutine — in contrast, array slices are copied before being passed, so that data modifications do not flow back into array ranges (after the subroutine exits), violating the <a href="/wiki/Principle_of_least_surprise" class="mw-redirect" title="Principle of least surprise">principle of least surprise</a>.</p>
+<p>Many historical irregularities survive from the early heritage of the language, requiring individual workarounds by the programmer. As an example:</p>
+<ul>
+<li>Array indexing and subroutine entry can both be carried out with exactly the same syntax (parentheses); this ambiguity, coupled with the single namespace for all variables and subroutines, can cause code to stop working when newly defined subroutines or language extensions conflict with local variable names. IDL programmers can avoid many of these problems by using square brackets for array indexing, thereby avoiding conflicts with function names which use parentheses.</li>
+</ul>
+<p>The preceding issue can be alleviated using this compiler option:</p>
+<pre>
+COMPILE_OPT STRICTARR
+</pre>
+<ul>
+<li><a href="/wiki/ITT_Visual_Information_Solutions" class="mw-redirect" title="ITT Visual Information Solutions">ITT Visual Information Solutions (ITT VIS)</a>, the developers of IDL, have taken explicit steps to prevent <a href="/wiki/Bytecode" title="Bytecode">bytecode</a> compatibility with other environments. Files containing compiled routines use a binary tagged-data-structure format that has not been officially published but has been investigated and documented by users<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">[2]</a></sup> but also contain the following notice as ASCII text embedded within each saved file: "IDL Save/Restore files embody unpublished proprietary information about the IDL program. Reverse engineering of this file is therefore forbidden under the terms of the IDL End User License Agreement (IDL EULA). All IDL users are required to read and agree to the terms of the IDL EULA at the time that they install IDL. Software that reads or writes files in the IDL Save/Restore format must have a license from ITT Visual Information Solutions explicitly granting the right to do so. In this case, the license will be included with the software for your inspection. Please report software that does not have such a license to ITT Visual Information Solutions..." As of February 2010<sup class="plainlinks noprint asof-tag update" style="display:none;"><a class="external text" href="//en.wikipedia.org/w/index.php?title=IDL_(programming_language)&amp;action=edit">[update]</a></sup>, the statement has not been tested in a court of law.</li>
+</ul>
+<p>Also, that provision of the IDL EULA has no effect in Australia, as a result of sections <a rel="nofollow" class="external text" href="http://www.austlii.edu.au/au/legis/cth/consol_act/ca1968133/s47d.html">47D</a> and <a rel="nofollow" class="external text" href="http://www.austlii.edu.au/au/legis/cth/consol_act/ca1968133/s47h.html">47H</a> of that country's Copyright Act.</p>
+<h2><span class="mw-headline" id="Examples">Examples</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=IDL_(programming_language)&amp;action=edit&amp;section=5" title="Edit section: Examples">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The following graphics were created with IDL (source code included):</p>
+<ul>
+<li><a href="/wiki/File:Random-data-plus-trend-r2.png" title="File:Random-data-plus-trend-r2.png">Image of random data plus trend, with best-fit line and different smoothings</a></li>
+<li><a href="/wiki/File:Epica-vostok-40kyr.png" title="File:Epica-vostok-40kyr.png">Plots of delta-o-18 against age and depth (from EPICA and Vostok)</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.idlcoyote.com/gallery/index.html">coyote IDL gallery</a> examples of IDL imaging</li>
+</ul>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=IDL_(programming_language)&amp;action=edit&amp;section=6" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a href="/wiki/List_of_numerical_analysis_software" title="List of numerical analysis software">List of numerical analysis software</a></li>
+<li><a href="/wiki/ENVI_(software)" class="mw-redirect" title="ENVI (software)">ENVI</a> - an image processing software package built in IDL</li>
+<li><a href="/wiki/IRAF" title="IRAF">IRAF</a> - a free, graphical data reduction environment produced by NOAO</li>
+<li><a href="/wiki/MATLAB" title="MATLAB">MATLAB</a> - a technical computing environment providing similar capabilities to IDL</li>
+<li><a href="/wiki/Numpy" class="mw-redirect" title="Numpy">Numpy</a> - an extension for <a href="/wiki/Python_(programming_language)" title="Python (programming language)">Python</a> that gives it array math capabilities similar to those of IDL</li>
+<li><a href="/wiki/Perl_Data_Language" title="Perl Data Language">Perl Data Language</a> (PDL) - An extension to <a href="/wiki/Perl" title="Perl">Perl</a> that gives it array math capabilities similar to those of IDL</li>
+<li><a href="/wiki/Solarsoft" title="Solarsoft">Solarsoft</a> - library for solar data analysis and spacecraft operation activities written predominately in IDL</li>
+<li><a href="/wiki/GNU_Data_Language" title="GNU Data Language">GDL</a> - GNU Data Language, a free implementation similar to IDL.</li>
+</ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=IDL_(programming_language)&amp;action=edit&amp;section=7" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><cite class="citation web">Fanning, David. <a rel="nofollow" class="external text" href="https://www.idlcoyote.com/ng_tips/idl8_name_conflicts.html">"Program Naming Conflicts in IDL 8"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">30 September</span> 2014</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AIDL+%28programming+language%29&amp;rft.aufirst=David&amp;rft.aulast=Fanning&amp;rft.btitle=Program+Naming+Conflicts+in+IDL+8&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fwww.idlcoyote.com%2Fng_tips%2Fidl8_name_conflicts.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><cite class="citation web">Markwardt, Craig (2011-12-21). <a rel="nofollow" class="external text" href="http://www.physics.wisc.edu/~craigm/idl/savefmt/">"Unofficial Format Specification of the IDL "SAVE" File"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2013-02-13</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AIDL+%28programming+language%29&amp;rft.aufirst=Craig&amp;rft.aulast=Markwardt&amp;rft.btitle=Unofficial+Format+Specification+of+the+IDL+%22SAVE%22+File&amp;rft.date=2011-12-21&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.physics.wisc.edu%2F~craigm%2Fidl%2Fsavefmt%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=IDL_(programming_language)&amp;action=edit&amp;section=8" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.harrisgeospatial.com/ProductsandSolutions/GeospatialProducts/IDL.aspx">IDL home page</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.idlcoyote.com/">Coyote's Guide to IDL Programming</a></li>
+<li><a rel="nofollow" class="external text" href="http://idlastro.gsfc.nasa.gov/">The IDL Astronomy User's Library at NASA Goddard</a></li>
+<li><a rel="nofollow" class="external text" href="http://fawlty.uhostall.com/">Fawlty Language homepage</a></li>
+</ul>
+<div role="navigation" class="navbox" aria-labelledby="Numerical_analysis_software" style="padding:3px">
+<table class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:Numerical_analysis_software" title="Template:Numerical analysis software"><abbr title="View this template" style=";;background:none transparent;border:none;">v</abbr></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:Numerical_analysis_software" title="Template talk:Numerical analysis software"><abbr title="Discuss this template" style=";;background:none transparent;border:none;">t</abbr></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:Numerical_analysis_software&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;">e</abbr></a></li>
+</ul>
+</div>
+<div id="Numerical_analysis_software" style="font-size:114%"><a href="/wiki/List_of_numerical_analysis_software" title="List of numerical analysis software">Numerical analysis software</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Free_software" title="Free software">Free</a></th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Advanced_Simulation_Library" title="Advanced Simulation Library">Advanced Simulation Library</a></li>
+<li><a href="/wiki/ADMB" title="ADMB">ADMB</a></li>
+<li><a href="/wiki/Chapel_(programming_language)" title="Chapel (programming language)">Chapel</a></li>
+<li><a href="/wiki/Euler_(software)" title="Euler (software)">Euler</a></li>
+<li><a href="/wiki/Fortress_(programming_language)" title="Fortress (programming language)">Fortress</a></li>
+<li><a href="/wiki/FreeFem%2B%2B" title="FreeFem++">FreeFem++</a></li>
+<li><a href="/wiki/FreeMat" title="FreeMat">FreeMat</a></li>
+<li><a href="/wiki/Genius_(mathematics_software)" title="Genius (mathematics software)">Genius</a></li>
+<li><a href="/wiki/Gmsh" title="Gmsh">Gmsh</a></li>
+<li><a href="/wiki/GNU_Octave" title="GNU Octave">GNU Octave</a></li>
+<li><a href="/wiki/Gretl" title="Gretl">gretl</a></li>
+<li><a href="/wiki/Julia_(programming_language)" title="Julia (programming language)">Julia</a></li>
+<li><a href="/wiki/Maxima_(software)" title="Maxima (software)">Maxima</a></li>
+<li><a href="/wiki/OpenFOAM" title="OpenFOAM">OpenFOAM</a></li>
+<li><a href="/wiki/R_(programming_language)" title="R (programming language)">R</a></li>
+<li><a href="/wiki/SageMath" title="SageMath">SageMath</a></li>
+<li><a href="/wiki/Salome_(software)" title="Salome (software)">Salome</a></li>
+<li><a href="/wiki/ScicosLab" title="ScicosLab">ScicosLab</a></li>
+<li><a href="/wiki/Scilab" title="Scilab">Scilab</a></li>
+<li><a href="/wiki/X10_(programming_language)" title="X10 (programming language)">X10</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Proprietary_software" title="Proprietary software">Proprietary</a></th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/DADiSP" title="DADiSP">DADiSP</a></li>
+<li><a href="/wiki/GAUSS_(software)" title="GAUSS (software)">GAUSS</a></li>
+<li><a href="/wiki/LabVIEW" title="LabVIEW">LabVIEW</a></li>
+<li><a href="/wiki/Maple_(software)" title="Maple (software)">Maple</a></li>
+<li><a href="/wiki/Mathcad" title="Mathcad">Mathcad</a></li>
+<li><a href="/wiki/Mathematica" class="mw-redirect" title="Mathematica">Mathematica</a></li>
+<li><a href="/wiki/MATLAB" title="MATLAB">MATLAB</a></li>
+<li><a href="/wiki/Speakeasy_(computational_environment)" title="Speakeasy (computational environment)">Speakeasy</a></li>
+<li><a href="/wiki/VisSim" title="VisSim">VisSim</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow hlist" colspan="2">
+<div>
+<ul>
+<li><b><a href="/wiki/List_of_numerical_analysis_software" title="List of numerical analysis software">List of numerical analysis software</a></b></li>
+<li><b><a href="/wiki/Comparison_of_numerical_analysis_software" title="Comparison of numerical analysis software">Comparison of numerical analysis software</a></b></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div role="navigation" class="navbox" aria-labelledby="Statistical_software" style="padding:3px">
+<table class="nowraplinks hlist collapsible collapsed navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:Statistical_software" title="Template:Statistical software"><abbr title="View this template" style=";;background:none transparent;border:none;">v</abbr></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:Statistical_software" title="Template talk:Statistical software"><abbr title="Discuss this template" style=";;background:none transparent;border:none;">t</abbr></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:Statistical_software&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;">e</abbr></a></li>
+</ul>
+</div>
+<div id="Statistical_software" style="font-size:114%"><a href="/wiki/List_of_statistical_packages" title="List of statistical packages">Statistical software</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Public-domain_software" title="Public-domain software">Public domain</a></th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Dataplot" title="Dataplot">Dataplot</a></li>
+<li><a href="/wiki/Epi_Info" title="Epi Info">Epi Info</a></li>
+<li><a href="/wiki/CSPro" title="CSPro">CSPro</a></li>
+<li><a href="/wiki/X-12-ARIMA" title="X-12-ARIMA">X-12-ARIMA</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Open-source_software" title="Open-source software">Open-source</a></th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/ADMB" title="ADMB">ADMB</a></li>
+<li><a href="/wiki/DAP_(software)" title="DAP (software)">DAP</a></li>
+<li><a href="/wiki/Gretl" title="Gretl">gretl</a></li>
+<li><a href="/wiki/Just_another_Gibbs_sampler" title="Just another Gibbs sampler">JAGS</a></li>
+<li><a href="/wiki/JMulTi" title="JMulTi">JMulTi</a></li>
+<li><a href="/wiki/Julia_(programming_language)" title="Julia (programming language)">Julia</a></li>
+<li><a href="/wiki/GNU_Octave" title="GNU Octave">GNU Octave</a></li>
+<li><a href="/wiki/H2O_(software)" title="H2O (software)">H2O</a></li>
+<li><a href="/wiki/OpenBUGS" title="OpenBUGS">OpenBUGS</a></li>
+<li><a href="/wiki/Orange_(software)" title="Orange (software)">Orange</a></li>
+<li><a href="/wiki/PSPP" title="PSPP">PSPP</a></li>
+<li><a href="/wiki/R_(programming_language)" title="R (programming language)">R</a></li>
+<li><a href="/wiki/SageMath" title="SageMath">SageMath</a></li>
+<li><a href="/wiki/SimFiT" title="SimFiT">SimFiT</a></li>
+<li><a href="/wiki/SOFA_Statistics" title="SOFA Statistics">SOFA Statistics</a></li>
+<li><a href="/wiki/Stan_(software)" title="Stan (software)">Stan</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Freeware" title="Freeware">Freeware</a></th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/BV4.1_(software)" title="BV4.1 (software)">BV4.1</a></li>
+<li><a href="/wiki/CumFreq" title="CumFreq">CumFreq</a></li>
+<li><a href="/wiki/SegReg" title="SegReg">SegReg</a></li>
+<li><a href="/wiki/XploRe" title="XploRe">XploRe</a></li>
+<li><a href="/wiki/WinBUGS" title="WinBUGS">WinBUGS</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Commercial_software" title="Commercial software">Commercial</a></th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks navbox-subgroup" style="border-spacing:0">
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Cross-platform" title="Cross-platform">Cross-platform</a></th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Data_Desk" title="Data Desk">Data Desk</a></li>
+<li><a href="/wiki/GAUSS_(software)" title="GAUSS (software)">GAUSS</a></li>
+<li><a href="/wiki/GraphPad_InStat" title="GraphPad InStat">GraphPad InStat</a></li>
+<li><a href="/wiki/GraphPad_Prism" title="GraphPad Prism">GraphPad Prism</a></li>
+<li>IBM <a href="/wiki/SPSS" title="SPSS">SPSS</a> Statistics</li>
+<li>IBM <a href="/wiki/SPSS_Modeler" title="SPSS Modeler">SPSS Modeler</a></li>
+<li><a href="/wiki/JMP_(statistical_software)" title="JMP (statistical software)">JMP</a></li>
+<li><a href="/wiki/Maple_(software)" title="Maple (software)">Maple</a></li>
+<li><a href="/wiki/Mathcad" title="Mathcad">Mathcad</a></li>
+<li><a href="/wiki/Mathematica" class="mw-redirect" title="Mathematica">Mathematica</a></li>
+<li><a href="/wiki/MATLAB" title="MATLAB">MATLAB</a></li>
+<li><a href="/wiki/OxMetrics" title="OxMetrics">OxMetrics</a></li>
+<li><a href="/wiki/Regression_Analysis_of_Time_Series" class="mw-redirect" title="Regression Analysis of Time Series">RATS</a></li>
+<li><a href="/wiki/Revolution_Analytics" title="Revolution Analytics">Revolution Analytics</a></li>
+<li><a href="/wiki/SAS_(software)" title="SAS (software)">SAS</a></li>
+<li><a href="/wiki/SmartPLS" title="SmartPLS">SmartPLS</a></li>
+<li><a href="/wiki/Stata" title="Stata">Stata</a></li>
+<li><a href="/wiki/StatView" title="StatView">StatView</a></li>
+<li><a href="/wiki/SUDAAN" title="SUDAAN">SUDAAN</a></li>
+<li><a href="/wiki/S-PLUS" title="S-PLUS">S-PLUS</a></li>
+<li><a href="/wiki/TSP_(econometrics_software)" title="TSP (econometrics software)">TSP</a></li>
+<li><a href="/wiki/World_Programming_System" title="World Programming System">World Programming System</a> (WPS)</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Microsoft_Windows" title="Microsoft Windows">Windows</a> only</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/BMDP" title="BMDP">BMDP</a></li>
+<li><a href="/wiki/EViews" title="EViews">EViews</a></li>
+<li><a href="/wiki/GenStat" class="mw-redirect" title="GenStat">GenStat</a></li>
+<li><a href="/wiki/LIMDEP" title="LIMDEP">LIMDEP</a></li>
+<li><a href="/wiki/LISREL" title="LISREL">LISREL</a></li>
+<li><a href="/wiki/MedCalc" title="MedCalc">MedCalc</a></li>
+<li><a href="/wiki/Microfit" title="Microfit">Microfit</a></li>
+<li><a href="/wiki/Minitab" title="Minitab">Minitab</a></li>
+<li><a href="/wiki/MLwiN" title="MLwiN">MLwiN</a></li>
+<li><a href="/wiki/NCSS_(statistical_software)" title="NCSS (statistical software)">NCSS</a></li>
+<li><a href="/wiki/SHAZAM_(software)" title="SHAZAM (software)">SHAZAM</a></li>
+<li><a href="/wiki/SigmaStat" title="SigmaStat">SigmaStat</a></li>
+<li><a href="/wiki/Statistica" title="Statistica">Statistica</a></li>
+<li><a href="/wiki/StatsDirect" title="StatsDirect">StatsDirect</a></li>
+<li><a href="/wiki/StatXact" title="StatXact">StatXact</a></li>
+<li><a href="/wiki/SYSTAT_(software)" title="SYSTAT (software)">SYSTAT</a></li>
+<li><a href="/wiki/The_Unscrambler" title="The Unscrambler">The Unscrambler</a></li>
+<li><a href="/wiki/UNISTAT" class="mw-redirect" title="UNISTAT">UNISTAT</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Microsoft_Excel" title="Microsoft Excel">Excel</a> add-ons</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Analyse-it" title="Analyse-it">Analyse-it</a></li>
+<li><a href="/wiki/SPC_XL" title="SPC XL">SPC XL</a></li>
+<li><a href="/wiki/SigmaXL" title="SigmaXL">SigmaXL</a></li>
+<li><a href="/wiki/UNISTAT" class="mw-redirect" title="UNISTAT">UNISTAT</a> for Excel</li>
+<li><a href="/wiki/XLfit_(software)" class="mw-redirect" title="XLfit (software)">XLfit</a></li>
+<li><a href="/wiki/RExcel" title="RExcel">RExcel</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" colspan="2">
+<div>
+<ul>
+<li><b><a href="/wiki/Category:Statistical_software" title="Category:Statistical software">Category</a></b></li>
+<li><b><a href="/wiki/Comparison_of_statistical_packages" title="Comparison of statistical packages">Comparison</a></b></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div role="navigation" class="navbox" aria-labelledby="Image_processing_software" style="padding:3px">
+<table class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:Image_processing_software" title="Template:Image processing software"><abbr title="View this template" style=";;background:none transparent;border:none;">v</abbr></a></li>
+<li class="nv-talk"><a href="/w/index.php?title=Template_talk:Image_processing_software&amp;action=edit&amp;redlink=1" class="new" title="Template talk:Image processing software (page does not exist)"><abbr title="Discuss this template" style=";;background:none transparent;border:none;">t</abbr></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:Image_processing_software&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;">e</abbr></a></li>
+</ul>
+</div>
+<div id="Image_processing_software" style="font-size:114%">Image processing software</div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Free_software" title="Free software">Free</a></th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/3DSlicer" title="3DSlicer">3D Slicer</a></li>
+<li><a href="/wiki/AFNI" class="mw-redirect" title="AFNI">AFNI</a></li>
+<li><a href="/wiki/CellCognition" title="CellCognition">CellCognition</a></li>
+<li><a href="/wiki/CellProfiler" title="CellProfiler">CellProfiler</a></li>
+<li><a href="/w/index.php?title=DicomIR&amp;action=edit&amp;redlink=1" class="new" title="DicomIR (page does not exist)">DicomIR</a></li>
+<li><a href="/wiki/Endrov" title="Endrov">Endrov</a></li>
+<li><a href="/wiki/Fiji_(software)" title="Fiji (software)">Fiji</a></li>
+<li><a href="/wiki/FMRIB_Software_Library" title="FMRIB Software Library">FMRIB Software Library</a></li>
+<li><a href="/wiki/FreeSurfer" title="FreeSurfer">FreeSurfer</a></li>
+<li><a href="/wiki/GemIdent" title="GemIdent">GemIdent</a></li>
+<li><a href="/wiki/GNU_Octave" title="GNU Octave">GNU Octave</a></li>
+<li><a href="/wiki/Ilastik" title="Ilastik">ilastik</a></li>
+<li><a href="/wiki/ImageJ" title="ImageJ">ImageJ</a></li>
+<li><a href="/wiki/Insight_Segmentation_and_Registration_Toolkit" title="Insight Segmentation and Registration Toolkit">ITK</a></li>
+<li><a href="/wiki/Integrating_Vision_Toolkit" title="Integrating Vision Toolkit">IVT</a></li>
+<li><a href="/wiki/InVesalius" title="InVesalius">InVesalius</a></li>
+<li><a href="/wiki/ITK-SNAP" title="ITK-SNAP">ITK-SNAP</a></li>
+<li><a href="/wiki/KNIME" title="KNIME">KNIME</a></li>
+<li><a href="/wiki/Mango_(software)" title="Mango (software)">Mango</a></li>
+<li><a href="/wiki/OpenCV" title="OpenCV">OpenCV</a></li>
+<li><a href="/wiki/OsiriX" title="OsiriX">OsiriX</a></li>
+<li><a href="/wiki/VIGRA" title="VIGRA">VIGRA</a></li>
+<li><a href="/wiki/VXL" title="VXL">VXL</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Proprietary_software" title="Proprietary software">Proprietary</a></th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Amira_(software)" title="Amira (software)">Amira</a></li>
+<li><a href="/wiki/Analyze_(imaging_software)" title="Analyze (imaging software)">Analyze</a></li>
+<li><a href="/wiki/Aphelion_(software)" title="Aphelion (software)">Aphelion</a></li>
+<li><a href="/wiki/Bitplane" title="Bitplane">Bitplane</a></li>
+<li><strong class="selflink">IDL</strong></li>
+<li><a href="/wiki/Mathematica" class="mw-redirect" title="Mathematica">Mathematica</a></li>
+<li><a href="/wiki/MATLAB" title="MATLAB">MATLAB</a></li>
+<li><a rel="nofollow" class="external text" href="http://mipar.us">MIPAR</a></li>
+<li><a href="/wiki/Mimics" title="Mimics">Mimics</a></li>
+<li><a href="/wiki/MountainsMap" title="MountainsMap">MountainsMap</a></li>
+<li><a href="/wiki/Visage_SDK" title="Visage SDK">Visage SDK</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1275
+Cached time: 20170114191743
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.184 seconds
+Real time usage: 0.250 seconds
+Preprocessor visited node count: 1133/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 53865/2097152 bytes
+Template argument size: 1192/2097152 bytes
+Highest expansion depth: 20/40
+Expensive parser function count: 6/500
+Lua time usage: 0.075/10.000 seconds
+Lua memory usage: 2.83 MB/50 MB
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  189.226      1 - -total
+ 27.51%   52.057      2 - Template:Infobox
+ 24.32%   46.024      1 - Template:Infobox_programming_language
+ 22.41%   42.411      1 - Template:Reflist
+ 19.91%   37.672      2 - Template:Cite_web
+ 16.97%   32.119      3 - Template:Ambox
+ 14.46%   27.360      1 - Template:Refimprove
+ 11.04%   20.889      1 - Template:Distinguish
+  8.80%   16.651      4 - Template:Navbox
+  8.56%   16.203      1 - Template:As_of
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:512587-0!*!0!!en!4!* and timestamp 20170114191743 and revision id 752785164
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=IDL_(programming_language)&amp;oldid=752785164">https://en.wikipedia.org/w/index.php?title=IDL_(programming_language)&amp;oldid=752785164</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Image_processing_software" title="Category:Image processing software">Image processing software</a></li><li><a href="/wiki/Category:Array_programming_languages" title="Category:Array programming languages">Array programming languages</a></li><li><a href="/wiki/Category:Earth_sciences_graphics_software" title="Category:Earth sciences graphics software">Earth sciences graphics software</a></li><li><a href="/wiki/Category:Numerical_programming_languages" title="Category:Numerical programming languages">Numerical programming languages</a></li><li><a href="/wiki/Category:Plotting_software" title="Category:Plotting software">Plotting software</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Articles_needing_additional_references_from_February_2010" title="Category:Articles needing additional references from February 2010">Articles needing additional references from February 2010</a></li><li><a href="/wiki/Category:All_articles_needing_additional_references" title="Category:All articles needing additional references">All articles needing additional references</a></li><li><a href="/wiki/Category:Articles_that_may_contain_original_research_from_September_2015" title="Category:Articles that may contain original research from September 2015">Articles that may contain original research from September 2015</a></li><li><a href="/wiki/Category:All_articles_that_may_contain_original_research" title="Category:All articles that may contain original research">All articles that may contain original research</a></li><li><a href="/wiki/Category:Articles_that_may_contain_original_research_from_August_2014" title="Category:Articles that may contain original research from August 2014">Articles that may contain original research from August 2014</a></li><li><a href="/wiki/Category:Articles_containing_potentially_dated_statements_from_February_2010" title="Category:Articles containing potentially dated statements from February 2010">Articles containing potentially dated statements from February 2010</a></li><li><a href="/wiki/Category:All_articles_containing_potentially_dated_statements" title="Category:All articles containing potentially dated statements">All articles containing potentially dated statements</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=IDL+%28programming+language%29" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=IDL+%28programming+language%29" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/IDL_(programming_language)"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:IDL_(programming_language)"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/IDL_(programming_language)" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=IDL_(programming_language)&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=IDL_(programming_language)&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/IDL_(programming_language)" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/IDL_(programming_language)" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=IDL_(programming_language)&amp;oldid=752785164" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=IDL_(programming_language)&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q1665857" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=IDL_%28programming_language%29&amp;id=752785164" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=IDL+%28programming+language%29">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=IDL+%28programming+language%29&amp;returnto=IDL+%28programming+language%29&amp;oldid=752785164&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=IDL_(programming_language)&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/Interactive_Data_Language" title="Interactive Data Language – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/IDL_(langage)" title="IDL (langage) – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-ko"><a href="https://ko.wikipedia.org/wiki/%EB%8C%80%ED%99%94%ED%98%95_%EB%8D%B0%EC%9D%B4%ED%84%B0_%EC%96%B8%EC%96%B4" title="대화형 데이터 언어 – Korean" lang="ko" hreflang="ko" class="interlanguage-link-target">한국어</a></li><li class="interlanguage-link interwiki-it"><a href="https://it.wikipedia.org/wiki/Interactive_Data_Language" title="Interactive Data Language – Italian" lang="it" hreflang="it" class="interlanguage-link-target">Italiano</a></li><li class="interlanguage-link interwiki-hu"><a href="https://hu.wikipedia.org/wiki/IDL_(programoz%C3%A1si_nyelv)" title="IDL (programozási nyelv) – Hungarian" lang="hu" hreflang="hu" class="interlanguage-link-target">Magyar</a></li><li class="interlanguage-link interwiki-ja"><a href="https://ja.wikipedia.org/wiki/Interactive_Data_Language" title="Interactive Data Language – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target">日本語</a></li><li class="interlanguage-link interwiki-pl"><a href="https://pl.wikipedia.org/wiki/Interactive_Data_Language" title="Interactive Data Language – Polish" lang="pl" hreflang="pl" class="interlanguage-link-target">Polski</a></li><li class="interlanguage-link interwiki-fi"><a href="https://fi.wikipedia.org/wiki/IDL_(ohjelmointikieli)" title="IDL (ohjelmointikieli) – Finnish" lang="fi" hreflang="fi" class="interlanguage-link-target">Suomi</a></li><li class="interlanguage-link interwiki-vi"><a href="https://vi.wikipedia.org/wiki/IDL_(ng%C3%B4n_ng%E1%BB%AF_l%E1%BA%ADp_tr%C3%ACnh)" title="IDL (ngôn ngữ lập trình) – Vietnamese" lang="vi" hreflang="vi" class="interlanguage-link-target">Tiếng Việt</a></li><li class="interlanguage-link interwiki-zh"><a href="https://zh.wikipedia.org/wiki/%E4%BA%92%E5%8B%95%E5%BC%8F%E6%95%B8%E6%93%9A%E8%AA%9E%E8%A8%80" title="互動式數據語言 – Chinese" lang="zh" hreflang="zh" class="interlanguage-link-target">中文</a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q1665857#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 3 December 2016, at 08:32.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=IDL_(programming_language)&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":58,"wgHostname":"mw1186"});});</script>
+	</body>
+</html>

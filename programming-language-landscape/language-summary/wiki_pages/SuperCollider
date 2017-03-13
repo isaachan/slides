@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>SuperCollider - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"SuperCollider","wgTitle":"SuperCollider","wgCurRevisionId":759333140,"wgRevisionId":759333140,"wgArticleId":346978,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Official website different in Wikidata and Wikipedia","Dynamically typed programming languages","Object-oriented programming languages","Audio programming languages","Music software plugin architectures","Free music software","Electronic music software","Free audio software","Software synthesizers","MacOS multimedia software","2002 software","Array programming languages","Live coding","Algorave"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"SuperCollider","wgRelevantArticleId":346978,"wgRequestId":"WI2tuApAMCYAABvpfosAAAFN","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":true},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q2299598","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.math.styles":"ready","ext.cite.styles":"ready","ext.pygments":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.legacy.wikibits","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.math.scripts%2Cstyles%7Cext.pygments%2CwikimediaBadges%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.29.0-wmf.9"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/SuperCollider"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=SuperCollider&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=SuperCollider&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/SuperCollider"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-SuperCollider rootpage-SuperCollider skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">SuperCollider</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><script>function mfTempOpenSection(id){var block=document.getElementById("mf-section-"+id);block.className+=" open-block";block.previousSibling.className+=" open-block";}</script><div role="note" class="hatnote">This article is about the programming language. For other uses, see <a href="/wiki/Supercollider_(disambiguation)" class="mw-disambig" title="Supercollider (disambiguation)">Supercollider</a>.</div>
+<table class="infobox vevent" style="width:22em">
+<caption class="summary">SuperCollider</caption>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Software_developer" title="Software developer">Developer(s)</a></th>
+<td>James McCartney and others</td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;">Initial release</th>
+<td>1996<span class="noprint">; 21&#160;years ago</span><span style="display:none">&#160;(<span class="bday dtstart published updated">1996</span>)</span></td>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Software_release_life_cycle" title="Software release life cycle">Stable release</a></th>
+<td>
+<div style="margin:0px;">3.8 / 4&#160;November 2016<span class="noprint">; 2 months ago</span><span style="display:none">&#160;(<span class="bday dtstart published updated">2016-11-04</span>)</span></div>
+</td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Operating_system" title="Operating system">Operating system</a></th>
+<td><a href="/wiki/FreeBSD" title="FreeBSD">FreeBSD</a>,<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">[1]</a></sup> <a href="/wiki/Linux" title="Linux">Linux</a>, <a href="/wiki/MacOS" title="MacOS">macOS</a>, <a href="/wiki/Microsoft_Windows" title="Microsoft Windows">Windows</a></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Software_license" title="Software license">License</a></th>
+<td><a href="/wiki/GNU_General_Public_License" title="GNU General Public License">GNU General Public License</a></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;">Website</th>
+<td><span class="url"><a rel="nofollow" class="external text" href="http://supercollider.github.io">supercollider<wbr />.github<wbr />.io</a></span></td>
+</tr>
+</table>
+<p><b>SuperCollider</b> is an environment and <a href="/wiki/Programming_language" title="Programming language">programming language</a> originally released in 1996 by James McCartney for <a href="/wiki/Real-time_operating_system" title="Real-time operating system">real-time</a> <a href="/wiki/Audio_synthesis" class="mw-redirect" title="Audio synthesis">audio synthesis</a> and <a href="/wiki/Algorithmic_composition" title="Algorithmic composition">algorithmic composition</a>.<sup id="cite_ref-sc1996_2-0" class="reference"><a href="#cite_note-sc1996-2">[2]</a></sup><sup id="cite_ref-sc2002_3-0" class="reference"><a href="#cite_note-sc2002-3">[3]</a></sup></p>
+<p>Since then it has been evolving into a system used and further developed by both scientists and artists working with sound. It is an efficient and expressive <a href="/wiki/Dynamic_programming_language" title="Dynamic programming language">dynamic programming language</a> providing a framework for <a href="/wiki/Acoustics" title="Acoustics">acoustic research</a>, <a href="/wiki/Algorithmic_composition" title="Algorithmic composition">algorithmic music</a>, <a href="/wiki/Interactive_programming" title="Interactive programming">interactive programming</a><sup id="cite_ref-book_4-0" class="reference"><a href="#cite_note-book-4">[4]</a></sup> and <a href="/wiki/Live_coding" title="Live coding">live coding</a>.</p>
+<p>Released under the terms of the <a href="/wiki/GNU_General_Public_License" title="GNU General Public License">GPLv</a>2 in 2002, SuperCollider is <a href="/wiki/Free_and_open-source_software" title="Free and open-source software">free and open-source software</a>.</p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Architecture"><span class="tocnumber">1</span> <span class="toctext">Architecture</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#The_SuperCollider_synthesis_server_.28scsynth.29"><span class="tocnumber">1.1</span> <span class="toctext">The SuperCollider synthesis server (<i>scsynth</i>)</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#The_SuperCollider_programming_language_.28sclang.29"><span class="tocnumber">1.2</span> <span class="toctext">The SuperCollider programming language (<i>sclang</i>)</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#GUI_system"><span class="tocnumber">1.3</span> <span class="toctext">GUI system</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="#Interfacing_and_system_support"><span class="tocnumber">2</span> <span class="toctext">Interfacing and system support</span></a>
+<ul>
+<li class="toclevel-2 tocsection-6"><a href="#Clients"><span class="tocnumber">2.1</span> <span class="toctext">Clients</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Supported_operating_systems"><span class="tocnumber">2.2</span> <span class="toctext">Supported operating systems</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Editing_environments"><span class="tocnumber">2.3</span> <span class="toctext">Editing environments</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-9"><a href="#Code_examples"><span class="tocnumber">3</span> <span class="toctext">Code examples</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#Live_coding"><span class="tocnumber">4</span> <span class="toctext">Live coding</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#See_also"><span class="tocnumber">5</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="#References"><span class="tocnumber">6</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="#External_links"><span class="tocnumber">7</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Architecture">Architecture</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=SuperCollider&amp;action=edit&amp;section=1" title="Edit section: Architecture">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Starting with version 3, the SuperCollider environment has been split into two components: a <a href="/wiki/Server_(computing)" title="Server (computing)">server</a>, <i>scsynth</i>; and a <a href="/wiki/Client_(computing)" title="Client (computing)">client</a>, <i>sclang</i>. These components communicate using OSC (<a href="/wiki/Open_Sound_Control" title="Open Sound Control">Open Sound Control</a>).<sup id="cite_ref-book_4-1" class="reference"><a href="#cite_note-book-4">[4]</a></sup></p>
+<p><i>SC Language</i> combines the object oriented structure of <a href="/wiki/Smalltalk" title="Smalltalk">Smalltalk</a> and features from <a href="/wiki/Functional_programming_language" class="mw-redirect" title="Functional programming language">functional programming languages</a> with a <a href="/wiki/C_(programming_language)" title="C (programming language)">C</a> family <a href="/wiki/Syntax_(programming_languages)" title="Syntax (programming languages)">syntax</a>.<sup id="cite_ref-book_4-2" class="reference"><a href="#cite_note-book-4">[4]</a></sup></p>
+<p>The <i>SC Server</i> application supports a simple C plugin API making it easy to write efficient sound algorithms (<a href="/wiki/Unit_generator" title="Unit generator">unit generators</a>), which can then be combined into graphs of calculations. Because all external control in the server happens via OSC, it is possible to use it with other languages or applications.<sup id="cite_ref-book_4-3" class="reference"><a href="#cite_note-book-4">[4]</a></sup></p>
+<h3><span class="mw-headline" id="The_SuperCollider_synthesis_server_.28scsynth.29">The SuperCollider synthesis server (<i>scsynth</i>)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=SuperCollider&amp;action=edit&amp;section=2" title="Edit section: The SuperCollider synthesis server (scsynth)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>SuperCollider's sound generation is bundled into an optimised command-line executable (named <i>scsynth</i>). In most cases it is controlled from within the SuperCollider programming language, but it can be used independently. The audio server has the following features:<sup id="cite_ref-book_4-4" class="reference"><a href="#cite_note-book-4">[4]</a></sup></p>
+<ul>
+<li><a href="/wiki/Open_Sound_Control" title="Open Sound Control">Open Sound Control</a> access</li>
+<li>Simple <a href="/wiki/ANSI_C" title="ANSI C">ANSI C</a> plugin <a href="/wiki/API" class="mw-redirect" title="API">API</a></li>
+<li>Supports any number of input and output channels, including massively multichannel setups<sup id="cite_ref-5" class="reference"><a href="#cite_note-5">[5]</a></sup></li>
+<li>Gives access to an <a href="/wiki/Ordered_tree_data_structure" class="mw-redirect" title="Ordered tree data structure">ordered tree</a> structure of synthesis nodes which define the order of execution</li>
+<li>Bus system which allows to dynamically restructure the signal flow</li>
+<li>Buffers for writing and reading</li>
+<li>Calculation at different rates depending on the needs: audio rate, control rate, demand rate</li>
+</ul>
+<p>Supernova, an independent implementation of the Server architecture,<sup id="cite_ref-6" class="reference"><a href="#cite_note-6">[6]</a></sup> adds multi-processor support through explicit parallel grouping of synthesis nodes.</p>
+<h3><span class="mw-headline" id="The_SuperCollider_programming_language_.28sclang.29">The SuperCollider programming language (<i>sclang</i>)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=SuperCollider&amp;action=edit&amp;section=3" title="Edit section: The SuperCollider programming language (sclang)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The SuperCollider programming language is a <a href="/wiki/Dynamically_typed" class="mw-redirect" title="Dynamically typed">dynamically typed</a>, <a href="/wiki/Garbage_collection_(computer_science)" title="Garbage collection (computer science)">garbage-collected</a>, <a href="/wiki/Single_inheritance" class="mw-redirect" title="Single inheritance">single inheritance</a> <a href="/wiki/Object-oriented_programming" title="Object-oriented programming">object-oriented</a> and <a href="/wiki/Functional_programming" title="Functional programming">functional</a> language similar to <a href="/wiki/Smalltalk" title="Smalltalk">Smalltalk</a>,<sup id="cite_ref-sc2002_3-1" class="reference"><a href="#cite_note-sc2002-3">[3]</a></sup> with a syntax similar to <a href="/wiki/Lisp_(programming_language)" title="Lisp (programming language)">Lisp</a> or the <a href="/wiki/C_(programming_language)" title="C (programming language)">C programming language</a>. Its architecture strikes a balance between the needs of realtime computation and the flexibility and simplicity of an abstract language. Like many functional languages, it implements <a href="/wiki/Function_(computer_science)" class="mw-redirect" title="Function (computer science)">functions</a> as <a href="/wiki/First_class_(computing)" title="First class (computing)">first class</a> objects, which may be <a href="/wiki/Function_composition" title="Function composition">composed</a>. Functions and methods can have default argument values and variable length argument lists and can be called with any order of keyword arguments. <a href="/wiki/Closure_(computer_science)" class="mw-redirect" title="Closure (computer science)">Closures</a> are lexical, and <a href="/wiki/Scope_(programming)" class="mw-redirect" title="Scope (programming)">scope</a> is both lexical and dynamic. Further features typical of functional languages are supported, including closure creation via partial application (explicit <a href="/wiki/Currying" title="Currying">currying</a>), <a href="/wiki/Tail_call" title="Tail call">tail call</a> optimization, <a href="/wiki/List_comprehension" title="List comprehension">list comprehensions</a>, and <a href="/wiki/Coroutines" class="mw-redirect" title="Coroutines">coroutines</a>. Specifics include the implicit expansion of tuples and the stateless pattern system. Its constant time message lookup and real time <a href="/wiki/Garbage_collection_(computer_science)" title="Garbage collection (computer science)">garbage collection</a> allows large systems to be efficient and to handle signal processing flexibly.<sup id="cite_ref-book_4-5" class="reference"><a href="#cite_note-book-4">[4]</a></sup></p>
+<p>By supporting methods of <a href="/wiki/Reflection_(computer_science)" class="mw-redirect" title="Reflection (computer science)">reflective</a>, <a href="/wiki/Interactive_programming" title="Interactive programming">conversational</a>, and <a href="/wiki/Literate_Programming" class="mw-redirect" title="Literate Programming">literate programming</a>, SuperCollider makes it relatively easy to find new sound algorithms<sup id="cite_ref-7" class="reference"><a href="#cite_note-7">[7]</a></sup> and to develop custom software as well as custom frameworks. With regards to domain specific knowledge, it is both general (e.g., it allows to represent properties such as time and pitch in variable degrees of abstraction) and copious of example implementations for specific purposes.<sup id="cite_ref-book_4-6" class="reference"><a href="#cite_note-book-4">[4]</a></sup></p>
+<h3><span class="mw-headline" id="GUI_system">GUI system</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=SuperCollider&amp;action=edit&amp;section=4" title="Edit section: GUI system">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;"><a href="/wiki/File:IxiQuarks.jpg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/f/f0/IxiQuarks.jpg/220px-IxiQuarks.jpg" width="220" height="135" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/en/thumb/f/f0/IxiQuarks.jpg/330px-IxiQuarks.jpg 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/f/f0/IxiQuarks.jpg/440px-IxiQuarks.jpg 2x" data-file-width="1677" data-file-height="1028" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:IxiQuarks.jpg" class="internal" title="Enlarge"></a></div>
+Screenshot of SuperCollider running the ixiQuarks GUI tools.</div>
+</div>
+</div>
+<p>The SuperCollider language allows users to construct cross-platform graphical user interfaces for applications. The standard <a href="/wiki/Class_library" class="mw-redirect" title="Class library">class library</a> with <a href="/wiki/User_interface" title="User interface">user interface</a> components may be extended by a number of available frameworks. For interactive programming, the system supports programmatic access to rich text code files. It may be used to generate <a href="/wiki/Vector_graphics" title="Vector graphics">vector graphics</a> algorithmically.<sup id="cite_ref-8" class="reference"><a href="#cite_note-8">[8]</a></sup></p>
+<h2><span class="mw-headline" id="Interfacing_and_system_support">Interfacing and system support</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=SuperCollider&amp;action=edit&amp;section=5" title="Edit section: Interfacing and system support">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="Clients">Clients</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=SuperCollider&amp;action=edit&amp;section=6" title="Edit section: Clients">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Because the server is controlled using <a href="/wiki/Open_Sound_Control" title="Open Sound Control">Open Sound Control</a> (OSC), a variety of applications can be used to control the server. SuperCollider language environments (see below) are typically used, but other OSC-aware systems can be used such as <a href="/wiki/Pure_Data" title="Pure Data">Pure Data</a>.<sup id="cite_ref-book_4-7" class="reference"><a href="#cite_note-book-4">[4]</a></sup></p>
+<p>"Third-party" clients for the SuperCollider server exist, including rsc3, a <a href="/wiki/Scheme_(programming_language)" title="Scheme (programming language)">Scheme</a> client, hsc3, based on <a href="/wiki/Haskell_(programming_language)" title="Haskell (programming language)">Haskell</a>, ScalaCollider,<sup id="cite_ref-scalacollider2010_9-0" class="reference"><a href="#cite_note-scalacollider2010-9">[9]</a></sup> based on <a href="/wiki/Scala_(programming_language)" title="Scala (programming language)">Scala</a>, Overtone, based on <a href="/wiki/Clojure" title="Clojure">Clojure</a>, and <a href="/wiki/Sonic_Pi" title="Sonic Pi">Sonic Pi</a>.<sup id="cite_ref-clients_10-0" class="reference"><a href="#cite_note-clients-10">[10]</a></sup> These are distinct from the development environments mentioned below because they do not provide an interface to SuperCollider's programming language, instead they communicate directly with the audio server and provide their own approaches to facilitating user expression.<sup id="cite_ref-book_4-8" class="reference"><a href="#cite_note-book-4">[4]</a></sup></p>
+<h3><span class="mw-headline" id="Supported_operating_systems">Supported operating systems</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=SuperCollider&amp;action=edit&amp;section=7" title="Edit section: Supported operating systems">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;"><a href="/wiki/File:SuperCollider_screenshot2.jpg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/5/51/SuperCollider_screenshot2.jpg/220px-SuperCollider_screenshot2.jpg" width="220" height="138" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/en/thumb/5/51/SuperCollider_screenshot2.jpg/330px-SuperCollider_screenshot2.jpg 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/5/51/SuperCollider_screenshot2.jpg/440px-SuperCollider_screenshot2.jpg 2x" data-file-width="1440" data-file-height="900" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:SuperCollider_screenshot2.jpg" class="internal" title="Enlarge"></a></div>
+Screenshot of SuperCollider on Mac OS X with various user-generated GUI elements.</div>
+</div>
+</div>
+<p>SuperCollider runs under <a href="/wiki/MacOS" title="MacOS">macOS</a>, <a href="/wiki/Linux" title="Linux">Linux</a>, <a href="/wiki/Microsoft_Windows" title="Microsoft Windows">Windows</a> and <a href="/wiki/FreeBSD" title="FreeBSD">FreeBSD</a>. The Windows version, however, tends to lag behind the others since most development is based on Mac and Linux. For each of these operating systems there are multiple language-editing environments and clients that can be used with SuperCollider (see below).<sup id="cite_ref-book_4-9" class="reference"><a href="#cite_note-book-4">[4]</a></sup></p>
+<p>It has also been demonstrated that SuperCollider can run on <a href="/wiki/Android_(operating_system)" title="Android (operating system)">Android</a><sup id="cite_ref-11" class="reference"><a href="#cite_note-11">[11]</a></sup> and <a href="/wiki/IOS" title="IOS">iOS</a>.<sup id="cite_ref-12" class="reference"><a href="#cite_note-12">[12]</a></sup></p>
+<h3><span class="mw-headline" id="Editing_environments">Editing environments</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=SuperCollider&amp;action=edit&amp;section=8" title="Edit section: Editing environments">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;"><a href="/wiki/File:Puredyne-supercollider-eee.png" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/Puredyne-supercollider-eee.png/220px-Puredyne-supercollider-eee.png" width="220" height="132" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/Puredyne-supercollider-eee.png/330px-Puredyne-supercollider-eee.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/6/62/Puredyne-supercollider-eee.png/440px-Puredyne-supercollider-eee.png 2x" data-file-width="800" data-file-height="480" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:Puredyne-supercollider-eee.png" class="internal" title="Enlarge"></a></div>
+Screenshot of SuperCollider Vim on <a href="/wiki/Puredyne" title="Puredyne">puredyne</a> <a href="/wiki/Linux" title="Linux">linux</a>.</div>
+</div>
+</div>
+<p>SuperCollider code is most commonly edited and used from within its own cross platform IDE (Linux, Mac, Windows).</p>
+<p>Other <a href="/wiki/Integrated_development_environment" title="Integrated development environment">development environments</a> with SuperCollider support include:</p>
+<ul>
+<li><a href="/wiki/Emacs" title="Emacs">Emacs</a> (Linux, Mac, Windows)<sup id="cite_ref-13" class="reference"><a href="#cite_note-13">[13]</a></sup></li>
+<li><a href="/wiki/Vim_(text_editor)" title="Vim (text editor)">Vim</a> (Linux, Mac)</li>
+<li><a href="/wiki/Atom_(text_editor)" title="Atom (text editor)">Atom</a> (Linux, Mac, Windows)<sup id="cite_ref-14" class="reference"><a href="#cite_note-14">[14]</a></sup></li>
+<li><a href="/wiki/Gedit" title="Gedit">gedit</a> (Linux, Windows)</li>
+<li><a href="/wiki/Kate_(text_editor)" title="Kate (text editor)">Kate</a> (Linux)<sup id="cite_ref-15" class="reference"><a href="#cite_note-15">[15]</a></sup></li>
+</ul>
+<h2><span class="mw-headline" id="Code_examples">Code examples</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=SuperCollider&amp;action=edit&amp;section=9" title="Edit section: Code examples">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="c1">// Print "Hello world!"</span>
+<span class="s2">"Hello world!"</span><span class="p">.</span><span class="nx">postln</span><span class="p">;</span>
+</pre></div>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="c1">// Play a mixture of an 800 Hz sine tone and pink noise</span>
+<span class="p">{</span> <span class="nx">SinOsc</span><span class="p">.</span><span class="nx">ar</span><span class="p">(</span><span class="mi">800</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">)</span> <span class="o">+</span> <span class="nx">PinkNoise</span><span class="p">.</span><span class="nx">ar</span><span class="p">(</span><span class="mf">0.01</span><span class="p">)</span> <span class="p">}.</span><span class="nx">play</span><span class="p">;</span>
+</pre></div>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="c1">// Modulate a sine frequency and a noise amplitude with another sine</span>
+<span class="c1">// whose frequency depends on the horizontal mouse pointer position</span>
+<span class="p">{</span> 
+	<span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="nx">SinOsc</span><span class="p">.</span><span class="nx">ar</span><span class="p">(</span><span class="nx">MouseX</span><span class="p">.</span><span class="nx">kr</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">100</span><span class="p">));</span>
+	<span class="nx">SinOsc</span><span class="p">.</span><span class="nx">ar</span><span class="p">(</span><span class="mi">300</span> <span class="o">*</span> <span class="nx">x</span> <span class="o">+</span> <span class="mi">800</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">)</span> 
+	<span class="o">+</span> <span class="nx">PinkNoise</span><span class="p">.</span><span class="nx">ar</span><span class="p">(</span><span class="mf">0.1</span> <span class="o">*</span> <span class="nx">x</span> <span class="o">+</span> <span class="mf">0.1</span><span class="p">)</span> 
+<span class="p">}.</span><span class="nx">play</span><span class="p">;</span>
+</pre></div>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="c1">// List iteration: multiply the elements of a collection by their indices</span>
+<span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="o">-</span><span class="mi">3</span><span class="p">].</span><span class="nx">collect</span> <span class="p">{</span> <span class="o">|</span><span class="nx">elem</span><span class="p">,</span> <span class="nx">idx</span><span class="o">|</span> <span class="nx">elem</span> <span class="o">*</span> <span class="nx">idx</span> <span class="p">};</span>
+</pre></div>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="c1">// Factorial function</span>
+<span class="nx">f</span> <span class="o">=</span> <span class="p">{</span> <span class="o">|</span><span class="nx">x</span><span class="o">|</span> <span class="k">if</span><span class="p">(</span><span class="nx">x</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span> <span class="mi">1</span> <span class="p">}</span> <span class="p">{</span> <span class="nx">f</span><span class="p">.(</span><span class="nx">x</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="o">*</span> <span class="nx">x</span> <span class="p">}</span> <span class="p">};</span>
+</pre></div>
+<h2><span class="mw-headline" id="Live_coding">Live coding</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=SuperCollider&amp;action=edit&amp;section=10" title="Edit section: Live coding">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>As a versatile <a href="/wiki/Dynamic_programming_language" title="Dynamic programming language">dynamic programming language</a>, SuperCollider can be used for <a href="/wiki/Live_coding" title="Live coding">live coding</a>, i.e. performances which involve the performer modifying and executing code on-the-fly.<sup id="cite_ref-16" class="reference"><a href="#cite_note-16">[16]</a></sup> Specific kinds of <a href="/wiki/Proxy_pattern" title="Proxy pattern">proxies</a> serve as high level placeholders for synthesis objects which can be swapped in and out or modified at runtime. Environments allow sharing and modification of objects and process declarations over networks.<sup id="cite_ref-17" class="reference"><a href="#cite_note-17">[17]</a></sup> Various extension libraries support different abstraction and access to sound objects, e.g. dewdrop_lib<sup id="cite_ref-18" class="reference"><a href="#cite_note-18">[18]</a></sup> allows for the live creation and modification of pseudo-classes and -objects.</p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=SuperCollider&amp;action=edit&amp;section=11" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div role="navigation" aria-label="Portals" class="noprint portal plainlist tright" style="margin:0.5em 0 0.5em 1em;border:solid #aaa 1px">
+<ul style="display:table;box-sizing:border-box;padding:0.1em;max-width:175px;background:#f9f9f9;font-size:85%;line-height:110%;font-style:italic;font-weight:bold">
+<li style="display:table-row"><span style="display:table-cell;padding:0.2em;vertical-align:middle;text-align:center"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/3/31/Free_and_open-source_software_logo_%282009%29.svg/28px-Free_and_open-source_software_logo_%282009%29.svg.png" width="28" height="28" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/3/31/Free_and_open-source_software_logo_%282009%29.svg/42px-Free_and_open-source_software_logo_%282009%29.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/3/31/Free_and_open-source_software_logo_%282009%29.svg/56px-Free_and_open-source_software_logo_%282009%29.svg.png 2x" data-file-width="512" data-file-height="512" /></span><span style="display:table-cell;padding:0.2em 0.2em 0.2em 0.3em;vertical-align:middle"><a href="/wiki/Portal:Free_software" class="mw-redirect" title="Portal:Free software">Free software portal</a></span></li>
+</ul>
+</div>
+<ul>
+<li><a href="/wiki/List_of_music_software" title="List of music software">List of music software</a></li>
+<li><a href="/wiki/Comparison_of_audio_synthesis_environments" title="Comparison of audio synthesis environments">Comparison of audio synthesis environments</a></li>
+</ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=SuperCollider&amp;action=edit&amp;section=12" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><cite class="citation web">asynth. <a rel="nofollow" class="external text" href="http://sourceforge.net/project/showfiles.php?group_id=54622">"SuperCollider"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">20 June</span> 2015</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASuperCollider&amp;rft.au=asynth&amp;rft.btitle=SuperCollider&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fsourceforge.net%2Fproject%2Fshowfiles.php%3Fgroup_id%3D54622&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-sc1996-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-sc1996_2-0">^</a></b></span> <span class="reference-text">J. McCartney, <a rel="nofollow" class="external text" href="http://www.audiosynth.com/icmc96paper.html">SuperCollider: A new real time synthesis language</a>, in Proc. International Computer Music Conference (ICMC’96), 1996, pp. 257–258.</span></li>
+<li id="cite_note-sc2002-3"><span class="mw-cite-backlink">^ <a href="#cite_ref-sc2002_3-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-sc2002_3-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text">J. McCartney, <a rel="nofollow" class="external text" href="http://dx.doi.org/10.1162/014892602320991383">Rethinking the computer music language: SuperCollider</a>, Computer Music Journal, 26 (2002), pp. 61–68.</span></li>
+<li id="cite_note-book-4"><span class="mw-cite-backlink">^ <a href="#cite_ref-book_4-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-book_4-1"><sup><i><b>b</b></i></sup></a> <a href="#cite_ref-book_4-2"><sup><i><b>c</b></i></sup></a> <a href="#cite_ref-book_4-3"><sup><i><b>d</b></i></sup></a> <a href="#cite_ref-book_4-4"><sup><i><b>e</b></i></sup></a> <a href="#cite_ref-book_4-5"><sup><i><b>f</b></i></sup></a> <a href="#cite_ref-book_4-6"><sup><i><b>g</b></i></sup></a> <a href="#cite_ref-book_4-7"><sup><i><b>h</b></i></sup></a> <a href="#cite_ref-book_4-8"><sup><i><b>i</b></i></sup></a> <a href="#cite_ref-book_4-9"><sup><i><b>j</b></i></sup></a></span> <span class="reference-text"><cite class="citation book">Scott Wilson; David Cottle; Nick Collins (2011). <a rel="nofollow" class="external text" href="http://supercolliderbook.net/"><i>The SuperCollider Book</i></a>. The MIT Press. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-0-262-23269-2" title="Special:BookSources/978-0-262-23269-2">978-0-262-23269-2</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASuperCollider&amp;rft.au=David+Cottle&amp;rft.au=Nick+Collins&amp;rft.au=Scott+Wilson&amp;rft.btitle=The+SuperCollider+Book&amp;rft.date=2011&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fsupercolliderbook.net%2F&amp;rft.isbn=978-0-262-23269-2&amp;rft.pub=The+MIT+Press&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.beast.bham.ac.uk/research/mulch.shtml">"SuperCollider mailing lists"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">20 June</span> 2015</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASuperCollider&amp;rft.btitle=SuperCollider+mailing+lists&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.beast.bham.ac.uk%2Fresearch%2Fmulch.shtml&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text">T. Blechmann, <a rel="nofollow" class="external text" href="http://lac.linuxaudio.org/2010/papers/32.pdf">supernova, a multiprocessor-aware synthesis server for SuperCollider</a>, Proceedings of the Linux Audio Conference, Utrecht 2010.</span></li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text">J. Rohrhuber, A. de Campo and Renate Wieser. <a rel="nofollow" class="external text" href="http://www.wertlos.org/~rohrhuber/articles/AlgorithmsToday.pdf">Algorithms Today. Notes on Language Design for Just in Time Programming</a>. In <i>Proceedings of the International Computer Music Conference</i>, Barcelona, 2005.</span></li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text">The vector graphics interface is provided by the Pen class. Various examples can be found in <a rel="nofollow" class="external text" href="http://www.fredrikolofsson.com/f0blog/?q=node/316">Audiovisuals with SC</a>, blog by Fredrik Olofsson, 02.05.2009 (updated 11.05.2012)</span></li>
+<li id="cite_note-scalacollider2010-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-scalacollider2010_9-0">^</a></b></span> <span class="reference-text"><cite class="citation conference">Rutz, H. H. (2010). "Rethinking the SuperCollider Client...". <i>Proceedings of SuperCollider Symposium</i>. Berlin. <a href="/wiki/CiteSeerX" title="CiteSeerX">CiteSeerX</a>&#160;<span class="plainlinks"><a rel="nofollow" class="external text" href="//citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.186.9817">10.1.1.186.9817</a><span style="margin-left:0.1em"><img alt="Freely accessible" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/65/Lock-green.svg/9px-Lock-green.svg.png" title="Freely accessible" width="9" height="14" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/65/Lock-green.svg/14px-Lock-green.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/6/65/Lock-green.svg/18px-Lock-green.svg.png 2x" data-file-width="512" data-file-height="813" /></span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASuperCollider&amp;rft.atitle=Rethinking+the+SuperCollider+Client...&amp;rft.aufirst=H.+H.&amp;rft.aulast=Rutz&amp;rft.btitle=Proceedings+of+SuperCollider+Symposium&amp;rft.date=2010&amp;rft.genre=conference&amp;rft_id=%2F%2Fciteseerx.ist.psu.edu%2Fviewdoc%2Fsummary%3Fdoi%3D10.1.1.186.9817&amp;rft.place=Berlin&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-clients-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-clients_10-0">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://supercollider.sourceforge.net/wiki/index.php/Systems_interfacing_with_SC">"Systems interfacing with SC"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">20 June</span> 2015</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASuperCollider&amp;rft.btitle=Systems+interfacing+with+SC&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fsupercollider.sourceforge.net%2Fwiki%2Findex.php%2FSystems_interfacing_with_SC&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-11"><span class="mw-cite-backlink"><b><a href="#cite_ref-11">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/glastonbridge/SuperCollider-Android/wiki">SuperCollider Android project</a> on GitHub</span></li>
+<li id="cite_note-12"><span class="mw-cite-backlink"><b><a href="#cite_ref-12">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://cylob.blogspot.co.uk/2009/11/tiny-music-system.html">Tiny Music System</a> - Cylob Blog, 04.11.2009</span></li>
+<li id="cite_note-13"><span class="mw-cite-backlink"><b><a href="#cite_ref-13">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://supercollider.sourceforge.net/wiki/index.php/SuperCollider_with_emacs:_scel">"SuperCollider with emacs: scel"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">20 June</span> 2015</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASuperCollider&amp;rft.btitle=SuperCollider+with+emacs%3A+scel&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fsupercollider.sourceforge.net%2Fwiki%2Findex.php%2FSuperCollider_with_emacs%3A_scel&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-14"><span class="mw-cite-backlink"><b><a href="#cite_ref-14">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://atom.io/packages/supercollider">"supercollider"</a>. <i>Atom</i><span class="reference-accessdate">. Retrieved <span class="nowrap">20 June</span> 2015</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASuperCollider&amp;rft.atitle=supercollider&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fatom.io%2Fpackages%2Fsupercollider&amp;rft.jtitle=Atom&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-15"><span class="mw-cite-backlink"><b><a href="#cite_ref-15">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://github.com/jleben/Scate">"jleben/Scate"</a>. <i>GitHub</i><span class="reference-accessdate">. Retrieved <span class="nowrap">20 June</span> 2015</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASuperCollider&amp;rft.atitle=jleben%2FScate&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fgithub.com%2Fjleben%2FScate&amp;rft.jtitle=GitHub&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-16"><span class="mw-cite-backlink"><b><a href="#cite_ref-16">^</a></b></span> <span class="reference-text">Collins, N., McLean, A., Rohrhuber, J. &amp; Ward, A. (2003), Live Coding Techniques for Laptop Performance, <i>Organised Sound</i> 8(3): pp 321-30. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1017%2FS135577180300030X">10.1017/S135577180300030X</a></span></li>
+<li id="cite_note-17"><span class="mw-cite-backlink"><b><a href="#cite_ref-17">^</a></b></span> <span class="reference-text">J. Rohrhuber and A. de Campo. <a rel="nofollow" class="external text" href="http://akustik.hfbk.net/publications/Uncertainty_and_waiting.pdf">Waiting and uncertainty in computer music networks</a>. In <i>Proceedings of the International Computer Music Conference</i>, Miami, 2004.</span></li>
+<li id="cite_note-18"><span class="mw-cite-backlink"><b><a href="#cite_ref-18">^</a></b></span> <span class="reference-text">One of the numerous user contributed libraries known as "Quarks", and published in the <a rel="nofollow" class="external text" href="https://github.com/supercollider-quarks">SuperCollider Quarks repository</a>.</span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=SuperCollider&amp;action=edit&amp;section=13" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><span class="official-website"><span class="url"><a rel="nofollow" class="external text" href="http://supercollider.github.io">Official website</a></span></span></li>
+<li><a rel="nofollow" class="external text" href="http://swiki.hfbk-hamburg.de:8888/MusicTechnology/6">The SuperCollider Swiki</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.beast.bham.ac.uk/research/sc_mailing_lists.shtml">SuperCollider users mailing list</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.informatics.sussex.ac.uk/users/nc81/courses/cm1/workshop.html">Workshop on SuperCollider</a> by Nick Collins</li>
+<li><a rel="nofollow" class="external text" href="http://doc.sccode.org">SuperCollider Online Help</a></li>
+</ul>
+<div role="navigation" class="navbox" aria-labelledby="Computer_music" style="padding:3px">
+<table class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="3">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:Computer_music" title="Template:Computer music"><abbr title="View this template" style=";;background:none transparent;border:none;">v</abbr></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:Computer_music" title="Template talk:Computer music"><abbr title="Discuss this template" style=";;background:none transparent;border:none;">t</abbr></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:Computer_music&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;">e</abbr></a></li>
+</ul>
+</div>
+<div id="Computer_music" style="font-size:114%"><a href="/wiki/Computer_music" title="Computer music">Computer music</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">People</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Marc_Battier" title="Marc Battier">Marc Battier</a></li>
+<li><a href="/wiki/Richard_Boulanger" title="Richard Boulanger">Richard Boulanger</a></li>
+<li><a href="/wiki/David_Cope" title="David Cope">David Cope</a></li>
+<li><a href="/wiki/John_Chowning" title="John Chowning">John Chowning</a></li>
+<li><a href="/wiki/Giuseppe_di_Giugno" title="Giuseppe di Giugno">Giuseppe di Giugno</a></li>
+<li><a href="/wiki/Charles_Dodge_(composer)" title="Charles Dodge (composer)">Charles Dodge</a></li>
+<li><a href="/wiki/Gottfried_Michael_Koenig" title="Gottfried Michael Koenig">Gottfried Michael Koenig</a></li>
+<li><a href="/wiki/Paul_Lansky" title="Paul Lansky">Paul Lansky</a></li>
+<li><a href="/wiki/Max_Mathews" title="Max Mathews">Max Mathews</a></li>
+<li><a href="/wiki/Miller_Puckette" title="Miller Puckette">Miller Puckette</a></li>
+<li><a href="/wiki/Roger_Reynolds" title="Roger Reynolds">Roger Reynolds</a></li>
+<li><a href="/wiki/Jean-Claude_Risset" title="Jean-Claude Risset">Jean-Claude Risset</a></li>
+<li><a href="/wiki/Curtis_Roads" title="Curtis Roads">Curtis Roads</a></li>
+<li><a href="/wiki/Laurie_Spiegel" title="Laurie Spiegel">Laurie Spiegel</a></li>
+<li><a href="/wiki/The_Hub_(band)" title="The Hub (band)">The Hub</a></li>
+<li><a href="/wiki/Trimpin" title="Trimpin">Trimpin</a></li>
+<li><a href="/wiki/Barry_Vercoe" title="Barry Vercoe">Barry Vercoe</a></li>
+<li><a href="/wiki/Iannis_Xenakis" title="Iannis Xenakis">Iannis Xenakis</a></li>
+</ul>
+</div>
+</td>
+<td class="navbox-image" rowspan="9" style="width:0%;padding:0px 0px 0px 2px">
+<div><a href="/wiki/CSIRAC" title="CSIRAC"><img alt="CSIRAC." src="//upload.wikimedia.org/wikipedia/commons/thumb/f/fb/CSIRAC.jpg/80px-CSIRAC.jpg" width="80" height="60" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/f/fb/CSIRAC.jpg/120px-CSIRAC.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/f/fb/CSIRAC.jpg/160px-CSIRAC.jpg 2x" data-file-width="640" data-file-height="480" /></a></div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Programs and<br />
+instruments</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/ChucK" title="ChucK">ChucK</a></li>
+<li><a href="/wiki/Real-time_Cmix" title="Real-time Cmix">Cmix</a></li>
+<li><a href="/wiki/Csound" title="Csound">Csound</a></li>
+<li><a href="/wiki/Hierarchical_Music_Specification_Language" title="Hierarchical Music Specification Language">HMSL</a></li>
+<li><a href="/wiki/Kyma_(sound_design_language)" title="Kyma (sound design language)">Kyma</a></li>
+<li><a href="/wiki/Max_(software)" title="Max (software)">Max/MSP</a></li>
+<li><a href="/wiki/MIDI_controller" title="MIDI controller">MIDI controller</a></li>
+<li><a href="/wiki/Pure_Data" title="Pure Data">Pure Data</a></li>
+<li><i><a href="/wiki/Music_Mouse" title="Music Mouse">Music Mouse</a></i></li>
+<li><a href="/wiki/MUSIC-N" title="MUSIC-N">MUSIC-N</a></li>
+<li><a href="/wiki/Radiodrum" title="Radiodrum">Radiodrum</a></li>
+<li><strong class="selflink">SuperCollider</strong></li>
+<li><a href="/wiki/UPIC" title="UPIC">UPIC</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Places</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Bell_Labs" title="Bell Labs">Bell Labs</a></li>
+<li><a href="/wiki/Center_for_Computer_Research_in_Music_and_Acoustics" class="mw-redirect" title="Center for Computer Research in Music and Acoustics">CCRMA</a></li>
+<li><a href="/wiki/CCMIX" title="CCMIX">CEMAMu</a></li>
+<li><a href="/wiki/Computer_Music_Center" title="Computer Music Center">Computer Music Center at Columbia</a></li>
+<li><a href="/wiki/IRCAM" title="IRCAM">IRCAM</a></li>
+<li><a href="/wiki/Princeton_Sound_Lab" title="Princeton Sound Lab">Princeton Sound Lab</a></li>
+<li><a href="/wiki/TIMARA" title="TIMARA">Oberlin TIMARA Labs</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Techniques</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Algorithmic_composition" title="Algorithmic composition">Algorithmic composition</a></li>
+<li><a href="/wiki/Synthesizer" title="Synthesizer">Sound synthesis</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Compositions</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><i><a href="/wiki/Illiac_Suite" title="Illiac Suite">Illiac Suite</a></i></li>
+<li><i><a href="/wiki/Mortuos_Plango,_Vivos_Voco" title="Mortuos Plango, Vivos Voco">Mortuos Plango, Vivos Voco</a></i></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1210
+Cached time: 20170129085416
+Cache expiry: 86400
+Dynamic content: true
+CPU time usage: 0.204 seconds
+Real time usage: 0.264 seconds
+Preprocessor visited node count: 1363/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 30298/2097152 bytes
+Template argument size: 1629/2097152 bytes
+Highest expansion depth: 25/40
+Expensive parser function count: 2/500
+Lua time usage: 0.080/10.000 seconds
+Lua memory usage: 3.38 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  215.963      1 -total
+ 45.09%   97.386      2 Template:Infobox
+ 37.02%   79.941      1 Template:Reflist
+ 35.66%   77.018      1 Template:Infobox_software
+ 20.89%   45.121      6 Template:Cite_web
+ 13.25%   28.616      1 Template:Infobox_software/simple
+  9.83%   21.219      2 Template:Start_date_and_age
+  8.12%   17.539      1 Template:About
+  4.94%   10.663      1 Template:Official_website
+  3.61%    7.791      1 Template:Computer_music
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:346978-0!*!0!!en!4!* and timestamp 20170129085416 and revision id 759333140
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=SuperCollider&amp;oldid=759333140">https://en.wikipedia.org/w/index.php?title=SuperCollider&amp;oldid=759333140</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Dynamically_typed_programming_languages" title="Category:Dynamically typed programming languages">Dynamically typed programming languages</a></li><li><a href="/wiki/Category:Object-oriented_programming_languages" title="Category:Object-oriented programming languages">Object-oriented programming languages</a></li><li><a href="/wiki/Category:Audio_programming_languages" title="Category:Audio programming languages">Audio programming languages</a></li><li><a href="/wiki/Category:Music_software_plugin_architectures" title="Category:Music software plugin architectures">Music software plugin architectures</a></li><li><a href="/wiki/Category:Free_music_software" title="Category:Free music software">Free music software</a></li><li><a href="/wiki/Category:Electronic_music_software" title="Category:Electronic music software">Electronic music software</a></li><li><a href="/wiki/Category:Free_audio_software" title="Category:Free audio software">Free audio software</a></li><li><a href="/wiki/Category:Software_synthesizers" title="Category:Software synthesizers">Software synthesizers</a></li><li><a href="/wiki/Category:MacOS_multimedia_software" title="Category:MacOS multimedia software">MacOS multimedia software</a></li><li><a href="/wiki/Category:2002_software" title="Category:2002 software">2002 software</a></li><li><a href="/wiki/Category:Array_programming_languages" title="Category:Array programming languages">Array programming languages</a></li><li><a href="/wiki/Category:Live_coding" title="Category:Live coding">Live coding</a></li><li><a href="/wiki/Category:Algorave" title="Category:Algorave">Algorave</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Official_website_different_in_Wikidata_and_Wikipedia" title="Category:Official website different in Wikidata and Wikipedia">Official website different in Wikidata and Wikipedia</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=SuperCollider" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=SuperCollider" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/SuperCollider"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:SuperCollider"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/SuperCollider" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=SuperCollider&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=SuperCollider&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/SuperCollider" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/SuperCollider" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=SuperCollider&amp;oldid=759333140" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=SuperCollider&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q2299598" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=SuperCollider&amp;id=759333140" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=SuperCollider">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=SuperCollider&amp;returnto=SuperCollider&amp;oldid=759333140&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=SuperCollider&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-wikibase-otherprojects' aria-labelledby='p-wikibase-otherprojects-label'>
+			<h3 id='p-wikibase-otherprojects-label'>In other projects</h3>
+
+			<div class="body">
+									<ul>
+						<li class="wb-otherproject-link wb-otherproject-commons"><a href="https://commons.wikimedia.org/wiki/Category:SuperCollider" hreflang="en">Wikimedia Commons</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-da"><a href="https://da.wikipedia.org/wiki/SuperCollider" title="SuperCollider – Danish" lang="da" hreflang="da" class="interlanguage-link-target">Dansk</a></li><li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/SuperCollider" title="SuperCollider – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-es"><a href="https://es.wikipedia.org/wiki/SuperCollider" title="SuperCollider – Spanish" lang="es" hreflang="es" class="interlanguage-link-target">Español</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/SuperCollider" title="SuperCollider – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-it"><a href="https://it.wikipedia.org/wiki/SuperCollider" title="SuperCollider – Italian" lang="it" hreflang="it" class="interlanguage-link-target">Italiano</a></li><li class="interlanguage-link interwiki-ja"><a href="https://ja.wikipedia.org/wiki/SuperCollider" title="SuperCollider – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target">日本語</a></li><li class="interlanguage-link interwiki-pt"><a href="https://pt.wikipedia.org/wiki/SuperCollider" title="SuperCollider – Portuguese" lang="pt" hreflang="pt" class="interlanguage-link-target">Português</a></li><li class="interlanguage-link interwiki-ru"><a href="https://ru.wikipedia.org/wiki/SuperCollider" title="SuperCollider – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li><li class="interlanguage-link interwiki-simple"><a href="https://simple.wikipedia.org/wiki/SuperCollider" title="SuperCollider – Simple English" lang="simple" hreflang="simple" class="interlanguage-link-target">Simple English</a></li><li class="interlanguage-link interwiki-uk"><a href="https://uk.wikipedia.org/wiki/SuperCollider" title="SuperCollider – Ukrainian" lang="uk" hreflang="uk" class="interlanguage-link-target">Українська</a></li><li class="interlanguage-link interwiki-zh"><a href="https://zh.wikipedia.org/wiki/SuperCollider" title="SuperCollider – Chinese" lang="zh" hreflang="zh" class="interlanguage-link-target">中文</a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q2299598#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 10 January 2017, at 15:35.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=SuperCollider&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.204","walltime":"0.264","ppvisitednodes":{"value":1363,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":30298,"limit":2097152},"templateargumentsize":{"value":1629,"limit":2097152},"expansiondepth":{"value":25,"limit":40},"expensivefunctioncount":{"value":2,"limit":500},"entityaccesscount":{"value":1,"limit":400},"timingprofile":["100.00%  215.963      1 -total"," 45.09%   97.386      2 Template:Infobox"," 37.02%   79.941      1 Template:Reflist"," 35.66%   77.018      1 Template:Infobox_software"," 20.89%   45.121      6 Template:Cite_web"," 13.25%   28.616      1 Template:Infobox_software/simple","  9.83%   21.219      2 Template:Start_date_and_age","  8.12%   17.539      1 Template:About","  4.94%   10.663      1 Template:Official_website","  3.61%    7.791      1 Template:Computer_music"]},"scribunto":{"limitreport-timeusage":{"value":"0.080","limit":"10.000"},"limitreport-memusage":{"value":3547502,"limit":52428800}},"cachereport":{"origin":"mw1210","timestamp":"20170129085416","ttl":86400,"transientcontent":true}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":331,"wgHostname":"mw1210"});});</script>
+	</body>
+</html>

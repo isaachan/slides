@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Chapel (programming language) - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Chapel_(programming_language)","wgTitle":"Chapel (programming language)","wgCurRevisionId":741740560,"wgRevisionId":741740560,"wgArticleId":6776794,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Pages using deprecated image syntax","All stub articles","Cray","Array programming languages","C programming language family","Concurrent programming languages","Object-oriented programming languages","Programming languages created in 2009","Programming language topic stubs"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Chapel_(programming_language)","wgRelevantArticleId":6776794,"wgRequestId":"WI76EgpAMFEAAAqUl28AAAAC","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":true},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q4036051","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.cite.styles":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.legacy.wikibits","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.29.0-wmf.9"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Chapel_(programming_language)"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Chapel_(programming_language)&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Chapel_(programming_language)&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Chapel_(programming_language)"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Chapel_programming_language rootpage-Chapel_programming_language skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Chapel (programming language)</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><script>function mfTempOpenSection(id){var block=document.getElementById("mf-section-"+id);block.className+=" open-block";block.previousSibling.className+=" open-block";}</script><table class="infobox vevent" style="width:22em">
+<caption class="summary">Chapel</caption>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/File:Cray_Chapel_Logo.png" class="image"><img alt="Cray Chapel Logo.png" src="//upload.wikimedia.org/wikipedia/en/c/c0/Cray_Chapel_Logo.png" width="200" height="132" data-file-width="200" data-file-height="132" /></a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Programming_paradigm" title="Programming paradigm">Paradigm</a></th>
+<td><a href="/wiki/Object-oriented_programming" title="Object-oriented programming">Object-oriented</a><br />
+<a href="/wiki/Partitioned_global_address_space" title="Partitioned global address space">Partitioned global address space</a><br />
+<a href="/wiki/Parallel_programming_model" title="Parallel programming model">Parallel programming</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_design" title="Software design">Designed&#160;by</a></th>
+<td>David Callahan, Hans Zima, Brad Chamberlain, John Plevyak</td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_developer" title="Software developer">Developer</a></th>
+<td class="organiser"><a href="/wiki/Cray" title="Cray">Cray Inc.</a></td>
+</tr>
+<tr>
+<th scope="row">First&#160;appeared</th>
+<td>2009<span style="display:none">&#160;(<span class="bday dtstart published updated">2009</span>)</span></td>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Software_release_life_cycle" title="Software release life cycle">Stable release</a></th>
+<td>
+<div style="margin:0px;">1.13.1 / June&#160;14, 2016<span class="noprint">; 7 months ago</span><span style="display:none">&#160;(<span class="bday dtstart published updated">2016-06-14</span>)</span></div>
+</td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Type_system" title="Type system">Typing discipline</a></th>
+<td><a href="/wiki/Type_system" title="Type system">static</a><br />
+<a href="/wiki/Type_inference" title="Type inference">inferred</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Computing_platform" title="Computing platform">Platform</a></th>
+<td>multiplatform</td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Operating_system" title="Operating system">OS</a></th>
+<td>Mac OS, Linux, POSIX, Windows (with Cygwin)</td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_license" title="Software license">License</a></th>
+<td>Apache 2</td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Filename_extension" title="Filename extension">Filename extensions</a></th>
+<td>.chpl</td>
+</tr>
+<tr>
+<th scope="row">Website</th>
+<td><span class="url"><a rel="nofollow" class="external text" href="http://chapel.cray.com">chapel<wbr />.cray<wbr />.com</a></span></td>
+</tr>
+<tr>
+<th colspan="2" style="text-align:center;background-color: #eee;">Influenced by</th>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/Ada_(programming_language)" title="Ada (programming language)">Ada</a>, <a href="/wiki/C_(programming_language)" title="C (programming language)">C</a>, <a href="/wiki/Fortran" title="Fortran">Fortran</a>, <a href="/wiki/C%2B%2B" title="C++">C++</a>, <a href="/wiki/Java_(programming_language)" title="Java (programming language)">Java</a>, <a href="/wiki/C_Sharp_(programming_language)" title="C Sharp (programming language)">C#</a>, <a href="/wiki/High_Performance_Fortran" title="High Performance Fortran">HPF</a>, <a href="/wiki/ZPL_(programming_language)" title="ZPL (programming language)">ZPL</a>, <a href="/wiki/Cray_MTA" title="Cray MTA">Cray MTA</a> / <a href="/wiki/Cray_XMT" title="Cray XMT">XMT</a> extensions to C and Fortran.<sup id="cite_ref-Overview_1-0" class="reference"><a href="#cite_note-Overview-1">[1]</a></sup></td>
+</tr>
+</table>
+<p><b>Chapel</b>, the <b>Cascade High Productivity Language</b>, is a <a href="/wiki/Parallel_programming_language" class="mw-redirect" title="Parallel programming language">parallel programming language</a> developed by <a href="/wiki/Cray" title="Cray">Cray</a>.<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">[2]</a></sup> It is being developed as part of the Cray Cascade project, a participant in <a href="/wiki/DARPA" title="DARPA">DARPA</a>'s <a href="/wiki/High_Productivity_Computing_Systems" title="High Productivity Computing Systems">High Productivity Computing Systems</a> (HPCS) program, which had the goal of increasing <a href="/wiki/Supercomputer" title="Supercomputer">supercomputer</a> productivity by the year 2010. It is being developed as an <a href="/wiki/Open_source" class="mw-redirect" title="Open source">open source</a> project, under version 2 of the <a href="/wiki/Apache_license" class="mw-redirect" title="Apache license">Apache license</a>.<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">[3]</a></sup></p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Goals"><span class="tocnumber">1</span> <span class="toctext">Goals</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Features"><span class="tocnumber">2</span> <span class="toctext">Features</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#See_also"><span class="tocnumber">3</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Notes"><span class="tocnumber">4</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Further_reading"><span class="tocnumber">6</span> <span class="toctext">Further reading</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#External_links"><span class="tocnumber">7</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Goals">Goals</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Chapel_(programming_language)&amp;action=edit&amp;section=1" title="Edit section: Goals">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Chapel aims to improve the programmability of <a href="/wiki/Parallel_computer" class="mw-redirect" title="Parallel computer">parallel computers</a> in general and the Cascade system in particular, by providing a higher level of expression than current programming languages do and by improving the separation between algorithmic expression and <a href="/wiki/Data_structure" title="Data structure">data structure</a> implementation details.</p>
+<p>The language designers aspire for Chapel to bridge the gap between current <a href="/wiki/High_performance_computing" class="mw-redirect" title="High performance computing">HPC</a> programming practitioners, who they describe as Fortran, C or C++ users writing <a href="/wiki/Procedural_code" class="mw-redirect" title="Procedural code">procedural code</a> using technologies like <a href="/wiki/OpenMP" title="OpenMP">OpenMP</a> and <a href="/wiki/Message_passing_interface" class="mw-redirect" title="Message passing interface">MPI</a> on one side, and newly graduating computer programmers who tend to prefer Java, Python or Matlab with only some of them having experience with C++ or C. Chapel should offer the productivity advances offered by the latter suite of languages while not alienating the users of the first.<sup id="cite_ref-Overview_1-1" class="reference"><a href="#cite_note-Overview-1">[1]</a></sup></p>
+<h2><span class="mw-headline" id="Features">Features</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Chapel_(programming_language)&amp;action=edit&amp;section=2" title="Edit section: Features">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Chapel supports a <a href="/wiki/Multithreading_(computer_architecture)" title="Multithreading (computer architecture)">multithreaded</a> parallel programming model at a high level by supporting abstractions for <a href="/wiki/Data_parallelism" title="Data parallelism">data parallelism</a>, <a href="/wiki/Task_parallelism" title="Task parallelism">task parallelism</a>, and <a href="/w/index.php?title=Nested_parallelism&amp;action=edit&amp;redlink=1" class="new" title="Nested parallelism (page does not exist)">nested parallelism</a>. It enables optimizations for the <a href="/w/index.php?title=Locality_of_data&amp;action=edit&amp;redlink=1" class="new" title="Locality of data (page does not exist)">locality of data</a> and computation in the program via abstractions for data distribution and <a href="/wiki/Data-driven" title="Data-driven">data-driven</a> placement of subcomputations. It allows for <a href="/wiki/Code_reuse" title="Code reuse">code reuse</a> and generality through <a href="/wiki/Object-oriented" class="mw-redirect" title="Object-oriented">object-oriented</a> concepts and <a href="/wiki/Generic_programming" title="Generic programming">generic programming</a> features. For instance, Chapel allows for the declaration of <a href="/wiki/Locale_(computer_hardware)" title="Locale (computer hardware)">locales</a>.<sup id="cite_ref-4" class="reference"><a href="#cite_note-4">[4]</a></sup></p>
+<p>While Chapel borrows concepts from many preceding languages, its parallel concepts are most closely based on ideas from <a href="/wiki/High_Performance_Fortran" title="High Performance Fortran">High Performance Fortran</a> (HPF), <a href="/wiki/ZPL_(programming_language)" title="ZPL (programming language)">ZPL</a>, and the <a href="/wiki/Cray_MTA-2" title="Cray MTA-2">Cray MTA</a>'s extensions to <a href="/wiki/Fortran" title="Fortran">Fortran</a> and <a href="/wiki/C_(programming_language)" title="C (programming language)">C</a>.</p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Chapel_(programming_language)&amp;action=edit&amp;section=3" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div role="navigation" aria-label="Portals" class="noprint portal plainlist tright" style="margin:0.5em 0 0.5em 1em;border:solid #aaa 1px">
+<ul style="display:table;box-sizing:border-box;padding:0.1em;max-width:175px;background:#f9f9f9;font-size:85%;line-height:110%;font-style:italic;font-weight:bold">
+<li style="display:table-row"><span style="display:table-cell;padding:0.2em;vertical-align:middle;text-align:center"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/3/31/Free_and_open-source_software_logo_%282009%29.svg/28px-Free_and_open-source_software_logo_%282009%29.svg.png" width="28" height="28" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/3/31/Free_and_open-source_software_logo_%282009%29.svg/42px-Free_and_open-source_software_logo_%282009%29.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/3/31/Free_and_open-source_software_logo_%282009%29.svg/56px-Free_and_open-source_software_logo_%282009%29.svg.png 2x" data-file-width="512" data-file-height="512" /></span><span style="display:table-cell;padding:0.2em 0.2em 0.2em 0.3em;vertical-align:middle"><a href="/wiki/Portal:Free_software" class="mw-redirect" title="Portal:Free software">Free software portal</a></span></li>
+</ul>
+</div>
+<ul>
+<li><a href="/wiki/Coarray_Fortran" title="Coarray Fortran">Coarray Fortran</a></li>
+<li><a href="/wiki/Fortress_(programming_language)" title="Fortress (programming language)">Fortress</a></li>
+<li><a href="/wiki/Unified_Parallel_C" title="Unified Parallel C">Unified Parallel C</a></li>
+<li><a href="/wiki/X10_(programming_language)" title="X10 (programming language)">X10</a></li>
+<li><a href="/wiki/RaftLib" title="RaftLib">RaftLib</a></li>
+</ul>
+<h2><span class="mw-headline" id="Notes">Notes</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Chapel_(programming_language)&amp;action=edit&amp;section=4" title="Edit section: Notes">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-Overview-1"><span class="mw-cite-backlink">^ <a href="#cite_ref-Overview_1-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-Overview_1-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><cite class="citation web">Chamberlain, Bradford L. <a rel="nofollow" class="external text" href="http://chapel.cray.com/papers/BriefOverviewChapel.pdf">"A Brief Overview of Chapel"</a> <span style="font-size:85%;">(PDF)</span>. Cray Inc<span class="reference-accessdate">. Retrieved <span class="nowrap">22 April</span> 2015</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AChapel+%28programming+language%29&amp;rft.aufirst=Bradford+L.&amp;rft.aulast=Chamberlain&amp;rft.btitle=A+Brief+Overview+of+Chapel&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fchapel.cray.com%2Fpapers%2FBriefOverviewChapel.pdf&amp;rft.pub=Cray+Inc.&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><cite class="citation book">Lightfoot, David E. (2006). <i>Modular programming languages: 7th Joint Modular Languages Conference</i>. p.&#160;20. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/3-540-40927-0" title="Special:BookSources/3-540-40927-0">3-540-40927-0</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AChapel+%28programming+language%29&amp;rft.aufirst=David+E.&amp;rft.aulast=Lightfoot&amp;rft.btitle=Modular+programming+languages%3A+7th+Joint+Modular+Languages+Conference&amp;rft.date=2006&amp;rft.genre=book&amp;rft.isbn=3-540-40927-0&amp;rft.pages=20&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://chapel.cray.com/license.html">"Chapel license"</a>. <i>Chapel.Cray.com</i><span class="reference-accessdate">. Retrieved <span class="nowrap">November 15,</span> 2015</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AChapel+%28programming+language%29&amp;rft.atitle=Chapel+license&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fchapel.cray.com%2Flicense.html&amp;rft.jtitle=Chapel.Cray.com&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text"><cite class="citation conference">Bongen Gu; Wikuan Yu; Yoonsik Kwak (June 28–30, 2011). <a rel="nofollow" class="external text" href="http://www.worldcat.org/title/future-information-technology-6th-international-conference-futuretech-2011-loutraki-greece-june-28-30-2011-proceedings-part-i/oclc/743288033?title=&amp;detail=&amp;page=frame&amp;url=http%3A%2F%2Fdx.doi.org%2F10.1007%2F978-3-642-22333-4%26checksum%3D2f368965a4018fb8f195284f641951bd&amp;linktype=digitalObject">"Communication and Computation Overlap through Task Synchronization in Multi-locale Chapel Environment"</a>. In James J. Park, Laurence T. Yang and Changhoon Lee. <i>Future Information Technology, Part I: 6th International Conference</i>. Loutraki, Greece: Springer-Verlag. pp.&#160;285–292. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-3-642-22332-7" title="Special:BookSources/978-3-642-22332-7">978-3-642-22332-7</a><span class="reference-accessdate">. Retrieved <span class="nowrap">August 17,</span> 2011</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AChapel+%28programming+language%29&amp;rft.atitle=Communication+and+Computation+Overlap+through+Task+Synchronization+in+Multi-locale+Chapel+Environment&amp;rft.au=Bongen+Gu&amp;rft.au=Wikuan+Yu&amp;rft.au=Yoonsik+Kwak&amp;rft.btitle=Future+Information+Technology%2C+Part+I%3A+6th+International+Conference&amp;rft.date=2011-06-28%2F2011-06-30&amp;rft.genre=conference&amp;rft_id=http%3A%2F%2Fwww.worldcat.org%2Ftitle%2Ffuture-information-technology-6th-international-conference-futuretech-2011-loutraki-greece-june-28-30-2011-proceedings-part-i%2Foclc%2F743288033%3Ftitle%3D%26detail%3D%26page%3Dframe%26url%3Dhttp%253A%252F%252Fdx.doi.org%252F10.1007%252F978-3-642-22333-4%2526checksum%253D2f368965a4018fb8f195284f641951bd%26linktype%3DdigitalObject&amp;rft.isbn=978-3-642-22332-7&amp;rft.pages=285-292&amp;rft.place=Loutraki%2C+Greece&amp;rft.pub=Springer-Verlag&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Chapel_(programming_language)&amp;action=edit&amp;section=5" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><cite class="citation book">Chamberlain, Bradford L. (2011). "Chapel (Cray Inc. HPCS Language)". In Padua, David. <i>Encyclopedia of Parallel Computing, Volume 4</i>. Springer. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/9780387097657" title="Special:BookSources/9780387097657">9780387097657</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AChapel+%28programming+language%29&amp;rft.atitle=Chapel+%28Cray+Inc.+HPCS+Language%29&amp;rft.aufirst=Bradford+L.&amp;rft.aulast=Chamberlain&amp;rft.btitle=Encyclopedia+of+Parallel+Computing%2C+Volume+4&amp;rft.date=2011&amp;rft.genre=bookitem&amp;rft.isbn=9780387097657&amp;rft.pub=Springer&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+</ul>
+<h2><span class="mw-headline" id="Further_reading">Further reading</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Chapel_(programming_language)&amp;action=edit&amp;section=6" title="Edit section: Further reading">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><cite class="citation news">Brueckner, Rich (August 6, 2014). <a rel="nofollow" class="external text" href="http://insidehpc.com/2014/08/chapel-parallel-programming/">"Why Chapel for Parallel Programming?"</a>. <i>InsideHPC</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2015-03-23</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AChapel+%28programming+language%29&amp;rft.atitle=Why+Chapel+for+Parallel+Programming%3F&amp;rft.aufirst=Rich&amp;rft.aulast=Brueckner&amp;rft.date=2014-08-06&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Finsidehpc.com%2F2014%2F08%2Fchapel-parallel-programming%2F&amp;rft.jtitle=InsideHPC&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation journal">Dun, Nan; Taura, K. (2012). <a rel="nofollow" class="external text" href="http://ieeexplore.ieee.org/xpls/icp.jsp?arnumber=6270684">"An Empirical Performance Study of Chapel Programming Language"</a>. <i>Parallel and Distributed Processing Symposium Workshops &amp; PhD Forum (IPDPSW), 2012 IEEE 26th International</i>. <a href="/wiki/IEEE" class="mw-redirect" title="IEEE">IEEE</a>: 497–506. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1109%2FIPDPSW.2012.64">10.1109/IPDPSW.2012.64</a>. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-1-4673-0974-5" title="Special:BookSources/978-1-4673-0974-5">978-1-4673-0974-5</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2015-03-23</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AChapel+%28programming+language%29&amp;rft.atitle=An+Empirical+Performance+Study+of+Chapel+Programming+Language&amp;rft.aufirst=Nan&amp;rft.aulast=Dun&amp;rft.au=Taura%2C+K.&amp;rft.date=2012&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fieeexplore.ieee.org%2Fxpls%2Ficp.jsp%3Farnumber%3D6270684&amp;rft_id=info%3Adoi%2F10.1109%2FIPDPSW.2012.64&amp;rft.isbn=978-1-4673-0974-5&amp;rft.jtitle=Parallel+and+Distributed+Processing+Symposium+Workshops+%26+PhD+Forum+%28IPDPSW%29%2C+2012+IEEE+26th+International&amp;rft.pages=497-506&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation book">Padua, David, ed. (2011). <i>Encyclopedia of Parallel Computing</i>. Volume 4. Springer Science &amp; Business Media. pp.&#160;249–256. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/9780387097657" title="Special:BookSources/9780387097657">9780387097657</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AChapel+%28programming+language%29&amp;rft.btitle=Encyclopedia+of+Parallel+Computing&amp;rft.date=2011&amp;rft.genre=book&amp;rft.isbn=9780387097657&amp;rft.pages=249-256&amp;rft.pub=Springer+Science+%26+Business+Media&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+</ul>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Chapel_(programming_language)&amp;action=edit&amp;section=7" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><span class="official-website"><span class="url"><a rel="nofollow" class="external text" href="http://chapel.cray.com/">Official website</a></span></span></li>
+<li><a rel="nofollow" class="external text" href="https://github.com/chapel-lang/chapel">chapel</a> on <a href="/wiki/GitHub" title="GitHub">GitHub</a></li>
+<li><a rel="nofollow" class="external text" href="http://99-bottles-of-beer.net/language-chapel-1215.html">99 bottles of beer in Chapel</a></li>
+</ul>
+<div role="navigation" class="navbox" aria-labelledby="Programming_languages" style="padding:3px">
+<table class="nowraplinks hlist collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:Programming_languages" title="Template:Programming languages"><abbr title="View this template" style=";;background:none transparent;border:none;">v</abbr></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:Programming_languages" title="Template talk:Programming languages"><abbr title="Discuss this template" style=";;background:none transparent;border:none;">t</abbr></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:Programming_languages&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;">e</abbr></a></li>
+</ul>
+</div>
+<div id="Programming_languages" style="font-size:114%"><a href="/wiki/Programming_language" title="Programming language">Programming languages</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" colspan="2">
+<div>
+<ul>
+<li><a href="/wiki/Comparison_of_programming_languages" title="Comparison of programming languages">Comparison</a></li>
+<li><a href="/wiki/Timeline_of_programming_languages" title="Timeline of programming languages">Timeline</a></li>
+<li><a href="/wiki/History_of_programming_languages" title="History of programming languages">History</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Assembly_language" title="Assembly language">Assembly</a></li>
+<li><a href="/wiki/BASIC" title="BASIC">BASIC</a></li>
+<li><a href="/wiki/C_(programming_language)" title="C (programming language)">C</a></li>
+<li><a href="/wiki/C%2B%2B" title="C++">C++</a></li>
+<li><a href="/wiki/C_Sharp_(programming_language)" title="C Sharp (programming language)">C#</a></li>
+<li><a href="/wiki/COBOL" title="COBOL">COBOL</a></li>
+<li><a href="/wiki/Fortran" title="Fortran">Fortran</a></li>
+<li><a href="/wiki/Go_(programming_language)" title="Go (programming language)">Go</a></li>
+<li><a href="/wiki/Haskell_(programming_language)" title="Haskell (programming language)">Haskell</a></li>
+<li><a href="/wiki/Java_(programming_language)" title="Java (programming language)">Java</a></li>
+<li><a href="/wiki/JavaScript" title="JavaScript">JavaScript</a> (JS)</li>
+<li><a href="/wiki/Lisp_(programming_language)" title="Lisp (programming language)">Lisp</a></li>
+<li><a href="/wiki/Lua_(programming_language)" title="Lua (programming language)">Lua</a></li>
+<li><a href="/wiki/Objective-C" title="Objective-C">Objective-C</a></li>
+<li><a href="/wiki/Pascal_(programming_language)" title="Pascal (programming language)">Pascal</a></li>
+<li><a href="/wiki/Perl" title="Perl">Perl</a></li>
+<li><a href="/wiki/PHP" title="PHP">PHP</a></li>
+<li><a href="/wiki/Python_(programming_language)" title="Python (programming language)">Python</a></li>
+<li><a href="/wiki/Ruby_(programming_language)" title="Ruby (programming language)">Ruby</a></li>
+<li><a href="/wiki/Shell_script" title="Shell script">Shell</a></li>
+<li><a href="/wiki/Smalltalk" title="Smalltalk">Smalltalk</a></li>
+<li><a href="/wiki/Swift_(programming_language)" title="Swift (programming language)">Swift</a></li>
+<li><a href="/wiki/Visual_Basic_.NET" title="Visual Basic .NET">Visual Basic .NET</a> (VB.NET)</li>
+<li><i><a href="/wiki/List_of_programming_languages" title="List of programming languages">more...</a></i></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" colspan="2">
+<div>
+<ul>
+<li><img alt="Category" src="//upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/16px-Folder_Hexagonal_Icon.svg.png" title="Category" width="16" height="14" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/24px-Folder_Hexagonal_Icon.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/32px-Folder_Hexagonal_Icon.svg.png 2x" data-file-width="36" data-file-height="31" /> <b><a href="/wiki/Category:Programming_languages" title="Category:Programming languages">Category</a></b></li>
+<li><img alt="Non-article page" src="//upload.wikimedia.org/wikipedia/en/thumb/8/89/Symbol_neutral_vote.svg/16px-Symbol_neutral_vote.svg.png" title="Non-article page" width="16" height="16" srcset="//upload.wikimedia.org/wikipedia/en/thumb/8/89/Symbol_neutral_vote.svg/23px-Symbol_neutral_vote.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/8/89/Symbol_neutral_vote.svg/31px-Symbol_neutral_vote.svg.png 2x" data-file-width="180" data-file-height="185" /> <b><a href="/wiki/Comparison_of_programming_languages" title="Comparison of programming languages">Comparison</a></b></li>
+<li><img alt="List-Class article" src="//upload.wikimedia.org/wikipedia/en/thumb/d/db/Symbol_list_class.svg/16px-Symbol_list_class.svg.png" title="List-Class article" width="16" height="16" srcset="//upload.wikimedia.org/wikipedia/en/thumb/d/db/Symbol_list_class.svg/23px-Symbol_list_class.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/d/db/Symbol_list_class.svg/31px-Symbol_list_class.svg.png 2x" data-file-width="180" data-file-height="185" /> <b>Lists</b>
+<ul>
+<li><a href="/wiki/List_of_programming_languages" title="List of programming languages">Alphabetical</a></li>
+<li><a href="/wiki/Categorical_list_of_programming_languages" class="mw-redirect" title="Categorical list of programming languages">Categorical</a></li>
+<li><a href="/wiki/Generational_list_of_programming_languages" title="Generational list of programming languages">Generational</a></li>
+<li><a href="/wiki/Non-English-based_programming_languages" title="Non-English-based programming languages">Non-English-based</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<p><br /></p>
+<table class="metadata plainlinks stub" role="presentation" style="background:transparent">
+<tr>
+<td><a href="/wiki/File:HelloWorld.svg" class="image"><img alt="Stub icon" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/28/HelloWorld.svg/50px-HelloWorld.svg.png" width="50" height="25" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/28/HelloWorld.svg/75px-HelloWorld.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/2/28/HelloWorld.svg/100px-HelloWorld.svg.png 2x" data-file-width="512" data-file-height="256" /></a></td>
+<td><i>This <a href="/wiki/Programming_language" title="Programming language">programming-language</a>-related article is a <a href="/wiki/Wikipedia:Stub" title="Wikipedia:Stub">stub</a>. You can help Wikipedia by <a class="external text" href="//en.wikipedia.org/w/index.php?title=Chapel_(programming_language)&amp;action=edit">expanding it</a>.</i>
+<div class="plainlinks hlist navbar mini" style="position: absolute; right: 15px; display: none;">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:Prog-lang-stub" title="Template:Prog-lang-stub"><abbr title="View this template">v</abbr></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:Prog-lang-stub" title="Template talk:Prog-lang-stub"><abbr title="Discuss this template">t</abbr></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:Prog-lang-stub&amp;action=edit"><abbr title="Edit this template">e</abbr></a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1246
+Cached time: 20170130083218
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.184 seconds
+Real time usage: 0.240 seconds
+Preprocessor visited node count: 1050/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 37669/2097152 bytes
+Template argument size: 2178/2097152 bytes
+Highest expansion depth: 25/40
+Expensive parser function count: 2/500
+Lua time usage: 0.089/10.000 seconds
+Lua memory usage: 3.86 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  204.902      1 -total
+ 57.51%  117.844      2 Template:Infobox
+ 44.01%   90.174      1 Template:Infobox_programming_language
+ 22.06%   45.206      1 Template:Reflist
+ 17.11%   35.054      1 Template:Infobox_software/simple
+ 13.42%   27.504      2 Template:Cite_web
+  9.36%   19.180      1 Template:Start_date_and_age
+  7.34%   15.050      1 Template:Official_website
+  6.44%   13.205      1 Template:Programming_languages
+  5.76%   11.803      1 Template:Navbox
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:6776794-0!*!0!!en!4!* and timestamp 20170130083218 and revision id 741740560
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Chapel_(programming_language)&amp;oldid=741740560">https://en.wikipedia.org/w/index.php?title=Chapel_(programming_language)&amp;oldid=741740560</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Cray" title="Category:Cray">Cray</a></li><li><a href="/wiki/Category:Array_programming_languages" title="Category:Array programming languages">Array programming languages</a></li><li><a href="/wiki/Category:C_programming_language_family" title="Category:C programming language family">C programming language family</a></li><li><a href="/wiki/Category:Concurrent_programming_languages" title="Category:Concurrent programming languages">Concurrent programming languages</a></li><li><a href="/wiki/Category:Object-oriented_programming_languages" title="Category:Object-oriented programming languages">Object-oriented programming languages</a></li><li><a href="/wiki/Category:Programming_languages_created_in_2009" title="Category:Programming languages created in 2009">Programming languages created in 2009</a></li><li><a href="/wiki/Category:Programming_language_topic_stubs" title="Category:Programming language topic stubs">Programming language topic stubs</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Pages_using_deprecated_image_syntax" title="Category:Pages using deprecated image syntax">Pages using deprecated image syntax</a></li><li><a href="/wiki/Category:All_stub_articles" title="Category:All stub articles">All stub articles</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Chapel+%28programming+language%29" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Chapel+%28programming+language%29" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/Chapel_(programming_language)"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:Chapel_(programming_language)"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/Chapel_(programming_language)" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=Chapel_(programming_language)&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Chapel_(programming_language)&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Chapel_(programming_language)" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Chapel_(programming_language)" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Chapel_(programming_language)&amp;oldid=741740560" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Chapel_(programming_language)&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q4036051" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Chapel_%28programming_language%29&amp;id=741740560" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Chapel+%28programming+language%29">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Chapel+%28programming+language%29&amp;returnto=Chapel+%28programming+language%29&amp;oldid=741740560&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Chapel_(programming_language)&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-ja"><a href="https://ja.wikipedia.org/wiki/Chapel" title="Chapel – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target">日本語</a></li><li class="interlanguage-link interwiki-ru"><a href="https://ru.wikipedia.org/wiki/Chapel_(%D1%8F%D0%B7%D1%8B%D0%BA_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F)" title="Chapel (язык программирования) – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q4036051#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 29 September 2016, at 10:52.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Chapel_(programming_language)&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.184","walltime":"0.240","ppvisitednodes":{"value":1050,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":37669,"limit":2097152},"templateargumentsize":{"value":2178,"limit":2097152},"expansiondepth":{"value":25,"limit":40},"expensivefunctioncount":{"value":2,"limit":500},"entityaccesscount":{"value":1,"limit":400},"timingprofile":["100.00%  204.902      1 -total"," 57.51%  117.844      2 Template:Infobox"," 44.01%   90.174      1 Template:Infobox_programming_language"," 22.06%   45.206      1 Template:Reflist"," 17.11%   35.054      1 Template:Infobox_software/simple"," 13.42%   27.504      2 Template:Cite_web","  9.36%   19.180      1 Template:Start_date_and_age","  7.34%   15.050      1 Template:Official_website","  6.44%   13.205      1 Template:Programming_languages","  5.76%   11.803      1 Template:Navbox"]},"scribunto":{"limitreport-timeusage":{"value":"0.089","limit":"10.000"},"limitreport-memusage":{"value":4047172,"limit":52428800}},"cachereport":{"origin":"mw1246","timestamp":"20170130083218","ttl":2592000,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":311,"wgHostname":"mw1246"});});</script>
+	</body>
+</html>

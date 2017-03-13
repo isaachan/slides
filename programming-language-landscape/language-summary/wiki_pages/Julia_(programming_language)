@@ -1,0 +1,1388 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Julia (programming language) - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Julia_(programming_language)","wgTitle":"Julia (programming language)","wgCurRevisionId":763662627,"wgRevisionId":763662627,"wgArticleId":38455554,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Use dmy dates from October 2015","Official website different in Wikidata and Wikipedia","2012 software","Array programming languages","Computational notebook","Data mining and machine learning software","Data-centric programming languages","Dynamically typed programming languages","Free data analysis software","Free data visualization software","Free software projects","Free statistical software","Functional languages","High-level programming languages","Numerical analysis software for Linux","Numerical analysis software for MacOS","Numerical analysis software for Windows","Numerical linear algebra","Numerical programming languages","Object-oriented programming languages","Parallel computing","Programming languages created in 2012","Software using the MIT license","Statistical programming languages"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Julia_(programming_language)","wgRelevantArticleId":38455554,"wgRequestId":"WJXi@ApAMEsAAL6MoZ0AAAAG","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":true},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q2613697","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.cite.styles":"ready","ext.pygments":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.legacy.wikibits","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.pygments%2CwikimediaBadges%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.29.0-wmf.10"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Julia_prog_language.svg/1920px-Julia_prog_language.svg.png"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Julia_(programming_language)"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Julia_(programming_language)&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Julia_(programming_language)&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Julia_(programming_language)"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Julia_programming_language rootpage-Julia_programming_language skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Julia (programming language)</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><table class="infobox vevent" style="width:22em">
+<caption class="summary">Julia</caption>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/File:Julia_prog_language.svg" class="image"><img alt="Julia prog language.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/69/Julia_prog_language.svg/220px-Julia_prog_language.svg.png" width="220" height="149" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/69/Julia_prog_language.svg/330px-Julia_prog_language.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/6/69/Julia_prog_language.svg/440px-Julia_prog_language.svg.png 2x" data-file-width="512" data-file-height="346" /></a>
+<div>Official Julia logo</div>
+</td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Programming_paradigm" title="Programming paradigm">Paradigm</a></th>
+<td><a href="/wiki/Multi-paradigm_programming_language" class="mw-redirect" title="Multi-paradigm programming language">Multi-paradigm</a>: <a href="/wiki/Multiple_dispatch" title="Multiple dispatch">multiple dispatch</a> ("<a href="/wiki/Object-oriented_programming" title="Object-oriented programming">object-oriented</a>"), <a href="/wiki/Procedural_programming" title="Procedural programming">procedural</a>, <a href="/wiki/Functional_programming" title="Functional programming">functional</a>, <a href="/wiki/Metaprogramming" title="Metaprogramming">meta</a>, <a href="/wiki/Multistaged_programming" class="mw-redirect" title="Multistaged programming">multistaged</a><sup id="cite_ref-1" class="reference"><a href="#cite_note-1">[1]</a></sup></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_design" title="Software design">Designed&#160;by</a></th>
+<td><a href="/wiki/Jeff_Bezanson" title="Jeff Bezanson">Jeff Bezanson</a>, <a href="/wiki/Stefan_Karpinski" title="Stefan Karpinski">Stefan Karpinski</a>, Viral B. Shah, <a href="/wiki/Alan_Edelman" title="Alan Edelman">Alan Edelman</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_developer" title="Software developer">Developer</a></th>
+<td class="organiser"><a href="/wiki/Jeff_Bezanson" title="Jeff Bezanson">Jeff Bezanson</a>, <a href="/wiki/Stefan_Karpinski" title="Stefan Karpinski">Stefan Karpinski</a>, Viral B. Shah, and other contributors<sup id="cite_ref-license_2-0" class="reference"><a href="#cite_note-license-2">[2]</a></sup><sup id="cite_ref-3" class="reference"><a href="#cite_note-3">[3]</a></sup></td>
+</tr>
+<tr>
+<th scope="row">First&#160;appeared</th>
+<td>2012<span class="noprint">; 5&#160;years ago</span><span style="display:none">&#160;(<span class="bday dtstart published updated">2012</span>)</span><sup id="cite_ref-announcement_4-0" class="reference"><a href="#cite_note-announcement-4">[4]</a></sup></td>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Software_release_life_cycle" title="Software release life cycle">Stable release</a></th>
+<td>
+<div style="margin:0px;">0.5.0<sup id="cite_ref-5" class="reference"><a href="#cite_note-5">[5]</a></sup> / 0.4.7<sup id="cite_ref-6" class="reference"><a href="#cite_note-6">[6]</a></sup> / 19&#160;September 2016<span class="noprint">; 4 months ago</span><span style="display:none">&#160;(<span class="bday dtstart published updated">2016-09-19</span>)</span><sup id="cite_ref-7" class="reference"><a href="#cite_note-7">[7]</a></sup></div>
+</td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Software_release_life_cycle" title="Software release life cycle">Preview release</a></th>
+<td>
+<div style="margin:0px;">0.6.0-dev / daily updates</div>
+</td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Type_system" title="Type system">Typing discipline</a></th>
+<td><a href="/wiki/Dynamic_programming_language" title="Dynamic programming language">Dynamic</a>, <a href="/wiki/Nominal_type_system" title="Nominal type system">nominative</a>, <a href="/wiki/Parametric_polymorphism" title="Parametric polymorphism">parametric</a></td>
+</tr>
+<tr>
+<th scope="row">Implementation language</th>
+<td>Julia, <a href="/wiki/C_(programming_language)" title="C (programming language)">C</a>, <a href="/wiki/C%2B%2B" title="C++">C++</a> (mostly LLVM dependency), <a href="/wiki/Scheme_(programming_language)" title="Scheme (programming language)">Scheme</a> (the parser; using the FemtoLisp implementation); standard <a href="/wiki/Library_(computing)" title="Library (computing)">library</a>: Julia (mostly), C (a few dependencies), <a href="/wiki/Fortran" title="Fortran">Fortran</a> (BLAS and with assembly)<sup id="cite_ref-JuliaHome_8-0" class="reference"><a href="#cite_note-JuliaHome-8">[8]</a></sup></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Computing_platform" title="Computing platform">Platform</a></th>
+<td><a href="/wiki/IA-32" title="IA-32">IA-32</a>, <a href="/wiki/X86-64" title="X86-64">x86-64</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Operating_system" title="Operating system">OS</a></th>
+<td><a href="/wiki/Linux" title="Linux">Linux</a>, <a href="/wiki/MacOS" title="MacOS">macOS</a>, <a href="/wiki/FreeBSD" title="FreeBSD">FreeBSD</a>, <a href="/wiki/Microsoft_Windows" title="Microsoft Windows">Windows</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_license" title="Software license">License</a></th>
+<td><a href="/wiki/MIT_License" title="MIT License">MIT</a> (core),<sup id="cite_ref-license_2-1" class="reference"><a href="#cite_note-license-2">[2]</a></sup> <a href="/wiki/General_Public_Licence" class="mw-redirect" title="General Public Licence">GPL v2</a>;<sup id="cite_ref-JuliaHome_8-1" class="reference"><a href="#cite_note-JuliaHome-8">[8]</a></sup><sup id="cite_ref-9" class="reference"><a href="#cite_note-9">[9]</a></sup> a make-file option omits GPL libraries<sup id="cite_ref-10" class="reference"><a href="#cite_note-10">[10]</a></sup></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Filename_extension" title="Filename extension">Filename extensions</a></th>
+<td>.jl</td>
+</tr>
+<tr>
+<th scope="row">Website</th>
+<td><span class="url"><a rel="nofollow" class="external text" href="http://julialang.org">julialang<wbr />.org</a></span></td>
+</tr>
+<tr>
+<th colspan="2" style="text-align:center;background-color: #eee;">Influenced by</th>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center">
+<div class="hlist">
+<ul>
+<li><a href="/wiki/C_(programming_language)" title="C (programming language)">C</a></li>
+<li><a href="/wiki/Fortran" title="Fortran">Fortran</a><sup id="cite_ref-announcement_4-1" class="reference"><a href="#cite_note-announcement-4">[4]</a></sup></li>
+<li><a href="/wiki/Lisp_(programming_language)" title="Lisp (programming language)">Lisp</a></li>
+<li><a href="/wiki/Lua_(programming_language)" title="Lua (programming language)">Lua</a><sup id="cite_ref-Introduction_11-0" class="reference"><a href="#cite_note-Introduction-11">[11]</a></sup></li>
+<li><a href="/wiki/Mathematica" class="mw-redirect" title="Mathematica">Mathematica</a><sup id="cite_ref-announcement_4-2" class="reference"><a href="#cite_note-announcement-4">[4]</a></sup> (strictly its <a href="/wiki/Wolfram_Language" title="Wolfram Language">Wolfram Language</a><sup id="cite_ref-announcement_4-3" class="reference"><a href="#cite_note-announcement-4">[4]</a></sup><sup id="cite_ref-12" class="reference"><a href="#cite_note-12">[12]</a></sup>)</li>
+<li><a href="/wiki/MATLAB" title="MATLAB">MATLAB</a><sup id="cite_ref-announcement_4-4" class="reference"><a href="#cite_note-announcement-4">[4]</a></sup></li>
+<li><a href="/wiki/Perl" title="Perl">Perl</a></li>
+<li><a href="/wiki/Python_(programming_language)" title="Python (programming language)">Python</a></li>
+<li><a href="/wiki/R_(programming_language)" title="R (programming language)">R</a></li>
+<li><a href="/wiki/Ruby_(programming_language)" title="Ruby (programming language)">Ruby</a><sup id="cite_ref-Introduction_11-1" class="reference"><a href="#cite_note-Introduction-11">[11]</a></sup></li>
+<li><a href="/wiki/Scheme_(programming_language)" title="Scheme (programming language)">Scheme</a><sup id="cite_ref-JuliaCon2016_13-0" class="reference"><a href="#cite_note-JuliaCon2016-13">[13]</a></sup></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+<p><b>Julia</b> is a <a href="/wiki/High-level_programming_language" title="High-level programming language">high-level</a> <a href="/wiki/Dynamic_programming_language" title="Dynamic programming language">dynamic programming language</a> designed to address the needs of high-performance <a href="/wiki/Numerical_analysis" title="Numerical analysis">numerical analysis</a> and <a href="/wiki/Computational_science" title="Computational science">computational science</a> while also being effective for <a href="/wiki/General-purpose_programming_language" title="General-purpose programming language">general-purpose programming</a>,<sup id="cite_ref-14" class="reference"><a href="#cite_note-14">[14]</a></sup><sup id="cite_ref-15" class="reference"><a href="#cite_note-15">[15]</a></sup><sup id="cite_ref-16" class="reference"><a href="#cite_note-16">[16]</a></sup><sup id="cite_ref-17" class="reference"><a href="#cite_note-17">[17]</a></sup> web use<sup id="cite_ref-Escher.jl_18-0" class="reference"><a href="#cite_note-Escher.jl-18">[18]</a></sup><sup id="cite_ref-node-js_19-0" class="reference"><a href="#cite_note-node-js-19">[19]</a></sup> or as a <a href="/wiki/Specification_language" title="Specification language">specification language</a>.<sup id="cite_ref-spec_20-0" class="reference"><a href="#cite_note-spec-20">[20]</a></sup></p>
+<p>Distinctive aspects of Julia's design include a type system with <a href="/wiki/Parametric_polymorphism" title="Parametric polymorphism">parametric polymorphism</a> and types in a fully <a href="/wiki/Dynamic_programming_language" title="Dynamic programming language">dynamic programming language</a> and <a href="/wiki/Multiple_dispatch" title="Multiple dispatch">multiple dispatch</a> as its core <a href="/wiki/Programming_paradigm" title="Programming paradigm">programming paradigm</a>. It allows <a href="/wiki/Concurrent_computing" title="Concurrent computing">concurrent</a>, <a href="/wiki/Parallel_computing" title="Parallel computing">parallel</a> and <a href="/wiki/Distributed_computing" title="Distributed computing">distributed computing</a>, and <a href="/wiki/Foreign_function_interface" title="Foreign function interface">direct calling</a> of <a href="/wiki/C_(programming_language)" title="C (programming language)">C</a> and <a href="/wiki/Fortran" title="Fortran">Fortran</a> libraries without <a href="/wiki/Adapter_pattern#gluecode" title="Adapter pattern">glue code</a>.</p>
+<p>Julia is <a href="/wiki/Garbage_collection_(computer_science)" title="Garbage collection (computer science)">garbage-collected</a>,<sup id="cite_ref-21" class="reference"><a href="#cite_note-21">[21]</a></sup> uses <a href="/wiki/Eager_evaluation" title="Eager evaluation">eager evaluation</a> and includes efficient libraries for <a href="/wiki/Floating-point" class="mw-redirect" title="Floating-point">floating-point</a> calculations, <a href="/wiki/Linear_algebra" title="Linear algebra">linear algebra</a>, <a href="/wiki/Random_number_generation" title="Random number generation">random number generation</a>, <a href="/wiki/Fast_Fourier_transform" title="Fast Fourier transform">fast Fourier transforms</a> and <a href="/wiki/Regular_expression" title="Regular expression">regular expression</a> matching.</p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Language_features"><span class="tocnumber">1</span> <span class="toctext">Language features</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Interaction"><span class="tocnumber">2</span> <span class="toctext">Interaction</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Use_with_other_languages"><span class="tocnumber">2.1</span> <span class="toctext">Use with other languages</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="#Implementation"><span class="tocnumber">3</span> <span class="toctext">Implementation</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="#Current_and_future_platforms"><span class="tocnumber">3.1</span> <span class="toctext">Current and future platforms</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Julia2C_source-to-source_compiler"><span class="tocnumber">3.2</span> <span class="toctext">Julia2C source-to-source compiler</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a href="#See_also"><span class="tocnumber">4</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#Notes"><span class="tocnumber">5</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#References"><span class="tocnumber">6</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#External_links"><span class="tocnumber">7</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Language_features">Language features</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Julia_(programming_language)&amp;action=edit&amp;section=1" title="Edit section: Language features">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>According to the official website, the main features of the language are:</p>
+<ul>
+<li><a href="/wiki/Multiple_dispatch" title="Multiple dispatch">Multiple dispatch</a>: providing ability to define function behavior across many combinations of argument types</li>
+<li><a href="/wiki/Type_system#DYNAMIC" title="Type system">Dynamic type</a> system: types for documentation, optimization, and dispatch</li>
+<li>Good performance, approaching that of <a href="/wiki/Type_system" title="Type system">statically-typed</a> languages like C</li>
+<li>Built-in <a href="/wiki/Package_manager" title="Package manager">package manager</a></li>
+<li><a href="/wiki/Lisp_(programming_language)" title="Lisp (programming language)">Lisp</a>-like macros and other <a href="/wiki/Metaprogramming" title="Metaprogramming">metaprogramming</a> facilities</li>
+<li>Call <a href="/wiki/Python_(programming_language)" title="Python (programming language)">Python</a> functions: use the PyCall package<sup id="cite_ref-25" class="reference"><a href="#cite_note-25">[a]</a></sup></li>
+<li>Call <a href="/wiki/C_(programming_language)" title="C (programming language)">C</a> functions directly: no wrappers or special <a href="/wiki/Application_programming_interface" title="Application programming interface">APIs</a></li>
+<li>Powerful <a href="/wiki/Shell_(computing)" title="Shell (computing)">shell</a>-like abilities to manage other processes</li>
+<li>Designed for <a href="/wiki/Parallel_computing" title="Parallel computing">parallel</a> and <a href="/wiki/Distributed_computing" title="Distributed computing">distributed computing</a></li>
+<li>Coroutines: lightweight <i>green</i> threading</li>
+<li>User-defined types are as fast and compact as built-ins</li>
+<li>Automatic generation of efficient, specialized code for different argument types</li>
+<li>Elegant and extensible conversions and promotions for numeric and other types</li>
+<li>Efficient support for <a href="/wiki/Unicode" title="Unicode">Unicode</a>, including but not limited to <a href="/wiki/UTF-8" title="UTF-8">UTF-8</a></li>
+</ul>
+<p>Multiple dispatch (also termed <a href="/wiki/Multimethod" class="mw-redirect" title="Multimethod">multimethods</a> in Lisp) is a <a href="/wiki/Generalization" title="Generalization">generalization</a> of <a href="/wiki/Single_dispatch" class="mw-redirect" title="Single dispatch">single dispatch</a>&#160;–  the <a href="/wiki/Polymorphism_(computer_science)" title="Polymorphism (computer science)">polymorphic mechanism</a> used in common <a href="/wiki/Object-oriented_programming" title="Object-oriented programming">object-oriented programming</a> (OOP) languages&#160;–  that uses <a href="/wiki/Inheritance_(object-oriented_programming)" title="Inheritance (object-oriented programming)">inheritance</a>. In Julia, all concrete types are <a href="/wiki/Subtyping" title="Subtyping">subtypes</a> of abstract types, directly or indirectly subtypes of the <i>Any</i> type, which is the top of the type hierarchy. Concrete types can not be subtyped, but composition is used over inheritance, that is used by traditional object-oriented languages (see also <a href="/wiki/Inheritance_(object-oriented_programming)#Inheritance_vs_subtyping" title="Inheritance (object-oriented programming)">Inheritance vs subtyping</a>).</p>
+<p>Julia draws significant inspiration from various dialects of Lisp, including <a href="/wiki/Scheme_(programming_language)" title="Scheme (programming language)">Scheme</a> and <a href="/wiki/Common_Lisp" title="Common Lisp">Common Lisp</a>, and it shares many features with <a href="/wiki/Dylan_(programming_language)" title="Dylan (programming language)">Dylan</a> (such as an <a href="/wiki/ALGOL" title="ALGOL">ALGOL</a>-like <a href="/wiki/Free-form_language" title="Free-form language">free-form</a> <a href="/wiki/Infix_notation" title="Infix notation">infix</a> syntax rather than a Lisp-like prefix syntax, while in Julia "everything"<sup id="cite_ref-26" class="reference"><a href="#cite_note-26">[25]</a></sup> is an <a href="/wiki/Expression_(computer_science)" title="Expression (computer science)">expression</a>)&#160;–  also a multiple-dispatch-oriented dynamic language&#160;–  and <a href="/wiki/Fortress_(programming_language)" title="Fortress (programming language)">Fortress</a>, another numerical programming language with multiple dispatch and a sophisticated parametric type system. While <a href="/wiki/Common_Lisp_Object_System" title="Common Lisp Object System">Common Lisp Object System</a> (CLOS) adds multiple dispatch to Common Lisp, not all functions are generic functions.</p>
+<p>In Julia, Dylan and Fortress extensibility is the default, and the system's built-in functions are all generic and extensible. In Dylan, multiple dispatch is as fundamental as it is in Julia: all user-defined functions and even basic built-in operations like <code>+</code> are generic. Dylan's type system, however, does not fully support parametric types, which are more typical of the <a href="/wiki/Generational_list_of_programming_languages#ML_based" title="Generational list of programming languages">ML lineage of languages</a>. By default, CLOS does not allow for dispatch on Common Lisp's parametric types; such extended dispatch semantics can only be added as an extension through the <a href="/wiki/Common_Lisp_Object_System#Metaobject_Protocol" title="Common Lisp Object System">CLOS Metaobject Protocol</a>. By convergent design, Fortress also features multiple dispatch on parametric types; unlike Julia, however, Fortress is statically rather than dynamically typed, with separate compiling and executing phases. The language features are summarized in the following table:</p>
+<table class="wikitable">
+<tr>
+<th><a href="/wiki/Programming_language" title="Programming language">Language</a></th>
+<th><a href="/wiki/Type_system" title="Type system">Type system</a></th>
+<th><a href="/wiki/Generic_function" title="Generic function">Generic functions</a></th>
+<th><a href="/wiki/Parametric_polymorphism" title="Parametric polymorphism">Parametric types</a></th>
+</tr>
+<tr>
+<td>Julia</td>
+<td>dynamic</td>
+<td>default</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><a href="/wiki/Common_Lisp" title="Common Lisp">Common Lisp</a></td>
+<td>dynamic</td>
+<td>opt-in</td>
+<td>yes (but no dispatch)</td>
+</tr>
+<tr>
+<td><a href="/wiki/Dylan_(programming_language)" title="Dylan (programming language)">Dylan</a></td>
+<td>dynamic</td>
+<td>default</td>
+<td>partial (no dispatch)</td>
+</tr>
+<tr>
+<td><a href="/wiki/Fortress_(programming_language)" title="Fortress (programming language)">Fortress</a></td>
+<td>static</td>
+<td>default</td>
+<td>yes</td>
+</tr>
+</table>
+<p>By default, the Julia runtime must be pre-installed as user-provided source code is run, while another way is possible, where a standalone <a href="/wiki/Executable" title="Executable">executable</a> can be made that needs no Julia source code built with <i>BuildExecutable.jl</i>.<sup id="cite_ref-27" class="reference"><a href="#cite_note-27">[26]</a></sup><sup id="cite_ref-28" class="reference"><a href="#cite_note-28">[27]</a></sup></p>
+<p>Julia's <a href="/wiki/Macro_(computer_science)#Syntactic_macros" title="Macro (computer science)">syntactic macros</a> (used for <a href="/wiki/Metaprogramming" title="Metaprogramming">metaprogramming</a>), like Lisp macros, are more powerful and different from <a href="/wiki/Macro_(computer_science)#Text-substitution_macros" title="Macro (computer science)">text-substitution macros</a> used in the <a href="/wiki/Preprocessor" title="Preprocessor">preprocessor</a> of some other languages such as C, because they work at the level of <a href="/wiki/Abstract_syntax_tree" title="Abstract syntax tree">abstract syntax trees</a> (ASTs). Julia's macro system is <a href="/wiki/Hygienic_macro" title="Hygienic macro">hygienic</a>, but also supports deliberate capture when desired (like for <a href="/wiki/Anaphoric_macro" title="Anaphoric macro">anaphoric macros</a>) using the <code>esc</code> construct.</p>
+<h2><span class="mw-headline" id="Interaction">Interaction</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Julia_(programming_language)&amp;action=edit&amp;section=2" title="Edit section: Interaction">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The Julia official distribution includes an interactive session shell, called Julia's <a href="/wiki/Read%E2%80%93eval%E2%80%93print_loop" title="Read–eval–print loop">read–eval–print loop</a> (REPL), which can be used to experiment and test code quickly.<sup id="cite_ref-29" class="reference"><a href="#cite_note-29">[28]</a></sup> The following fragment represents a sample session on the REPL:<sup id="cite_ref-30" class="reference"><a href="#cite_note-30">[29]</a></sup></p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="gp">julia&gt;</span> <span class="n">p</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">=</span> <span class="mi">2</span><span class="n">x</span><span class="o">^</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span> <span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">2</span><span class="n">p</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="n">y</span>
+<span class="gp">julia&gt;</span> <span class="n">println</span><span class="p">(</span><span class="s">"Hello world!"</span><span class="p">,</span> <span class="s">" I'm on cloud "</span><span class="p">,</span> <span class="n">f</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span> <span class="s">" as Julia supports recognizable syntax!"</span><span class="p">)</span>
+<span class="go">Hello world! I'm on cloud 9 as Julia supports recognizable syntax!</span>
+</pre></div>
+<p>The REPL gives user access to the system shell and to help mode, by pressing <code>;</code> or <code>?</code> after the prompt (preceding each command), respectively. The REPL also keeps the history of commands, even between sessions. For other examples, see the Julia documentation,<sup id="cite_ref-31" class="reference"><a href="#cite_note-31">[30]</a></sup> which gives code that can be tested inside the Julia's interactive section or saved into a file with a <code>.jl</code> extension and run from the command line by typing (for example):<sup id="cite_ref-32" class="reference"><a href="#cite_note-32">[31]</a></sup></p>
+<pre>
+$ julia &lt;filename&gt;
+</pre>
+<p>Julia is also supported by <a href="/wiki/Jupyter" class="mw-redirect" title="Jupyter">Jupyter</a>, an online interactive "notebooks" environment (<a rel="nofollow" class="external text" href="https://jupyter.org/">project Jupyter</a> is a multi-language extension, that "evolved", from the <a href="/wiki/IPython" title="IPython">IPython</a> command shell; now includes IJulia). See for other ways in the next section.</p>
+<h3><span class="mw-headline" id="Use_with_other_languages">Use with other languages</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Julia_(programming_language)&amp;action=edit&amp;section=3" title="Edit section: Use with other languages">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Julia's <code class="mw-highlight" dir="ltr"><span class="k">ccall</span></code> keyword is used to call C-exported or Fortran shared library functions individually.</p>
+<p>Julia has <a href="/wiki/Unicode_9.0" class="mw-redirect" title="Unicode 9.0">Unicode 9.0</a> support, with UTF-8 used for source code (and by default for strings) and e.g. optionally allowing common math symbols for many operators, such as ∈ for the <code>in</code> operator.</p>
+<p>Julia has packages supporting markup languages such as <a href="/wiki/HTML" title="HTML">HTML</a>, (and also for <a href="/wiki/HTTP" class="mw-redirect" title="HTTP">HTTP</a>), <a href="/wiki/XML" title="XML">XML</a>, <a href="/wiki/JSON" title="JSON">JSON</a> and <a href="/wiki/BSON" title="BSON">BSON</a>.</p>
+<h2><span class="mw-headline" id="Implementation">Implementation</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Julia_(programming_language)&amp;action=edit&amp;section=4" title="Edit section: Implementation">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Julia's core is implemented in <a href="/wiki/C_(programming_language)" title="C (programming language)">C</a> and <a href="/wiki/C%2B%2B" title="C++">C++</a> (the <a href="/wiki/LLVM" title="LLVM">LLVM</a> dependency is in C++), its parser in <a href="/wiki/Scheme_(programming_language)" title="Scheme (programming language)">Scheme</a> (<a rel="nofollow" class="external text" href="https://github.com/JeffBezanson/femtolisp">"femtolisp"</a>), and the LLVM compiler framework is used for <a href="/wiki/Just-in-time_compilation" title="Just-in-time compilation">just-in-time</a> (JIT) generation of <a href="/wiki/64-bit" class="mw-redirect" title="64-bit">64-bit</a> or <a href="/wiki/32-bit" title="32-bit">32-bit</a> optimized <a href="/wiki/Machine_code" title="Machine code">machine code</a> (i.e. not for <a href="/wiki/Virtual_machine" title="Virtual machine">VM</a><sup id="cite_ref-33" class="reference"><a href="#cite_note-33">[32]</a></sup>) depending on the platform Julia runs on. With some exceptions (e.g., <a href="/wiki/Libuv" title="Libuv">libuv</a>), the standard library is implemented in Julia itself. The most notable aspect of Julia's implementation is its speed, which is often within a factor of two relative to fully optimized C code (and thus often an order of magnitude faster than Python or <a href="/wiki/R_(programming_language)" title="R (programming language)">R</a>).<sup id="cite_ref-Julia-TR_34-0" class="reference"><a href="#cite_note-Julia-TR-34">[33]</a></sup> Development of Julia began in 2009 and an <a href="/wiki/Open-source_software" title="Open-source software">open-source</a> version was publicized in February 2012.<sup id="cite_ref-announcement_4-5" class="reference"><a href="#cite_note-announcement-4">[4]</a></sup><sup id="cite_ref-35" class="reference"><a href="#cite_note-35">[34]</a></sup></p>
+<p>Julia, the 0.5.x line, is on a monthly release schedule where bugs are fixed and some new features from 0.6-dev are <a href="/wiki/Backporting" title="Backporting">backported</a> (and possibly also to 0.4.x).</p>
+<h3><span class="mw-headline" id="Current_and_future_platforms">Current and future platforms</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Julia_(programming_language)&amp;action=edit&amp;section=5" title="Edit section: Current and future platforms">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>While Julia uses JIT<sup id="cite_ref-36" class="reference"><a href="#cite_note-36">[35]</a></sup> (MCJIT<sup id="cite_ref-37" class="reference"><a href="#cite_note-37">[36]</a></sup> from LLVM)&#160;–  it still means Julia generates native machine code, directly, before a function is first run (not a <a href="/wiki/Bytecode" title="Bytecode">bytecode</a> that is run on a <a href="/wiki/Virtual_machine" title="Virtual machine">virtual machine</a> (VM) or translated as the bytecode is running, as with e.g., Java; the <a href="/wiki/JVM" class="mw-redirect" title="JVM">JVM</a> or <a href="/wiki/Dalvik_(software)" title="Dalvik (software)">Dalvik</a> in Android).</p>
+<p>Current support is for <a href="/wiki/32-bit" title="32-bit">32-</a> and <a href="/wiki/64-bit_computing" title="64-bit computing">64-bit</a> (all except for ancient pre-<a href="/wiki/Pentium_4" title="Pentium 4">Pentium 4</a>-era, to <a href="/wiki/Program_optimization" title="Program optimization">optimize</a> for newer) x86 processors (and with download of <a href="/wiki/Executable" title="Executable">executables</a> or source code also available for other architectures). Experimental and early support for ARM, <a href="/wiki/AArch64" class="mw-redirect" title="AArch64">AArch64</a>, and <a href="/wiki/Power_Architecture" title="Power Architecture">POWER</a> (<a href="/wiki/Little-endian" class="mw-redirect" title="Little-endian">little-endian</a>) is available too.<sup id="cite_ref-38" class="reference"><a href="#cite_note-38">[37]</a></sup> Including support for <a href="/wiki/Raspberry_Pi" title="Raspberry Pi">Raspberry Pi</a> 1 and later (e.g., requires at least <a href="/wiki/ARMv6" class="mw-redirect" title="ARMv6">ARMv6</a>).<sup id="cite_ref-39" class="reference"><a href="#cite_note-39">[38]</a></sup><sup id="cite_ref-40" class="reference"><a href="#cite_note-40">[39]</a></sup></p>
+<p>Support for <a href="/wiki/GNU_Hurd" title="GNU Hurd">GNU Hurd</a> is being worked on.<sup id="cite_ref-41" class="reference"><a href="#cite_note-41">[40]</a></sup></p>
+<p>Julia version 0.6 is planned for 2016 and 1.0 for 2017 and some features are discussed for 2+ that is also planned, e.g., "<a href="/wiki/Multiple_inheritance" title="Multiple inheritance">multiple inheritance</a> for abstract types".<sup id="cite_ref-42" class="reference"><a href="#cite_note-42">[41]</a></sup></p>
+<h3><span class="mw-headline" id="Julia2C_source-to-source_compiler"><span id="Julia2C"></span>Julia2C source-to-source compiler</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Julia_(programming_language)&amp;action=edit&amp;section=6" title="Edit section: Julia2C source-to-source compiler">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>A Julia2C <a href="/wiki/Source-to-source_compiler" title="Source-to-source compiler">source-to-source compiler</a> from <a href="/wiki/Intel" title="Intel">Intel</a> Labs is available.<sup id="cite_ref-43" class="reference"><a href="#cite_note-43">[42]</a></sup> This compiler is a <a href="/wiki/Fork_(software_development)" title="Fork (software development)">fork</a> of Julia, that implements the same Julia language syntax, which emits C code (for compatibility with more <a href="/wiki/Central_processing_unit" title="Central processing unit">CPUs</a>) instead of native machine code, as an <a href="/wiki/Intermediate_representation#Intermediate_language" title="Intermediate representation">intermediate language</a>, for functions or whole programs. The compiler is also meant to allow analyzing code at a higher level than C.<sup id="cite_ref-44" class="reference"><a href="#cite_note-44">[43]</a></sup></p>
+<p>Intel's <a rel="nofollow" class="external text" href="https://github.com/IntelLabs/ParallelAccelerator.jl">ParallelAccelerator.jl</a> can be thought of as a partial Julia to C++ compiler (and then to machine code transparently), but the objective is <a href="/wiki/Parallel_speedup" class="mw-redirect" title="Parallel speedup">parallel speedup</a> (can be "100x over plain Julia", for the older 0.4 version,<sup id="cite_ref-45" class="reference"><a href="#cite_note-45">[44]</a></sup> and could in cases also speed up serial code manyfold for that version); not compiling the full Julia language to C++ (C++ is only an implementation detail, later versions might not compile to C++). It doesn't need not compile all of Julia's syntax, as the rest is handled by Julia.</p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Julia_(programming_language)&amp;action=edit&amp;section=7" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a href="/wiki/Comparison_of_numerical_analysis_software" title="Comparison of numerical analysis software">Comparison of numerical analysis software</a></li>
+</ul>
+<h2><span class="mw-headline" id="Notes">Notes</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Julia_(programming_language)&amp;action=edit&amp;section=8" title="Edit section: Notes">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist columns references-column-width" style="-moz-column-width: 80em; -webkit-column-width: 80em; column-width: 80em; list-style-type: lower-alpha;">
+<ol class="references">
+<li id="cite_note-25"><span class="mw-cite-backlink"><b><a href="#cite_ref-25">^</a></b></span> <span class="reference-text">Calling newer <a href="/wiki/Python_3" class="mw-redirect" title="Python 3">Python 3</a> also works<sup id="cite_ref-22" class="reference"><a href="#cite_note-22">[22]</a></sup><sup id="cite_ref-23" class="reference"><a href="#cite_note-23">[23]</a></sup> (and <a href="/wiki/PyPy" title="PyPy">PyPy</a><sup id="cite_ref-Polyglot_24-0" class="reference"><a href="#cite_note-Polyglot-24">[24]</a></sup>) and calling in the other direction, from Python to Julia, is also supported with <i><a rel="nofollow" class="external text" href="https://github.com/JuliaLang/pyjulia">pyjulia</a></i>. Even calling <a href="/wiki/Recursive" class="mw-redirect" title="Recursive">recursively</a> (back and forth) between these languages is possible, without (or with) using <i><a rel="nofollow" class="external text" href="https://github.com/wavexx/Polyglot.jl">Polyglot.jl</a></i>, that supports additional languages to Python.</span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Julia_(programming_language)&amp;action=edit&amp;section=9" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist columns references-column-width" style="-moz-column-width: 30em; -webkit-column-width: 30em; column-width: 30em; list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://medium.com/@acidflask/smoothing-data-with-julia-s-generated-functions-c80e240e05f3#.615wk3dle">"Smoothing data with Julia's @generated functions"</a>. 5 November 2015<span class="reference-accessdate">. Retrieved <span class="nowrap">9 December</span> 2015</span>. <q>Julia’s generated functions are closely related to the multistaged programming (MSP) paradigm popularized by Taha and Sheard, which generalizes the compile time/run time stages of program execution by allowing for multiple stages of delayed code execution.</q></cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJulia+%28programming+language%29&amp;rft.btitle=Smoothing+data+with+Julia%99s+%40generated+functions&amp;rft.date=2015-11-05&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fmedium.com%2F%40acidflask%2Fsmoothing-data-with-julia-s-generated-functions-c80e240e05f3%23.615wk3dle&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-license-2"><span class="mw-cite-backlink">^ <a href="#cite_ref-license_2-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-license_2-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://github.com/JuliaLang/julia/blob/master/LICENSE.md">"LICENSE.md"</a>. <a href="/wiki/GitHub" title="GitHub">GitHub</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJulia+%28programming+language%29&amp;rft.btitle=LICENSE.md&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fgithub.com%2FJuliaLang%2Fjulia%2Fblob%2Fmaster%2FLICENSE.md&amp;rft.pub=GitHub&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://github.com/JuliaLang/julia/graphs/contributors">"Contributors to JuliaLang/julia"</a>. <a href="/wiki/GitHub" title="GitHub">GitHub</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJulia+%28programming+language%29&amp;rft.btitle=Contributors+to+JuliaLang%2Fjulia&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fgithub.com%2FJuliaLang%2Fjulia%2Fgraphs%2Fcontributors&amp;rft.pub=GitHub&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-announcement-4"><span class="mw-cite-backlink">^ <a href="#cite_ref-announcement_4-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-announcement_4-1"><sup><i><b>b</b></i></sup></a> <a href="#cite_ref-announcement_4-2"><sup><i><b>c</b></i></sup></a> <a href="#cite_ref-announcement_4-3"><sup><i><b>d</b></i></sup></a> <a href="#cite_ref-announcement_4-4"><sup><i><b>e</b></i></sup></a> <a href="#cite_ref-announcement_4-5"><sup><i><b>f</b></i></sup></a></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://julialang.org/blog/2012/02/why-we-created-julia">"Why We Created Julia"</a>. <i>Julia website</i>. February 2012<span class="reference-accessdate">. Retrieved <span class="nowrap">7 February</span> 2013</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJulia+%28programming+language%29&amp;rft.atitle=Why+We+Created+Julia&amp;rft.date=2012-02&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fjulialang.org%2Fblog%2F2012%2F02%2Fwhy-we-created-julia&amp;rft.jtitle=Julia+website&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://julialang.org/downloads/">http://julialang.org/downloads/</a></span></li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://julialang.org/downloads/oldreleases.html">http://julialang.org/downloads/oldreleases.html</a></span></li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="https://github.com/JuliaLang/julia/releases/tag/v0.5.0">https://github.com/JuliaLang/julia/releases/tag/v0.5.0</a></span></li>
+<li id="cite_note-JuliaHome-8"><span class="mw-cite-backlink">^ <a href="#cite_ref-JuliaHome_8-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-JuliaHome_8-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://julialang.org/">"Julia"</a>. <i>Julia</i>. NumFocus project<span class="reference-accessdate">. Retrieved <span class="nowrap">9 December</span> 2016</span>. <q>Julia’s Base library, largely written in Julia itself, also integrates mature, best-of-breed open source C and Fortran libraries for ...</q></cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJulia+%28programming+language%29&amp;rft.atitle=Julia&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fjulialang.org%2F&amp;rft.jtitle=Julia&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-9">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://groups.google.com/forum/#!topic/julia-users/v4OjEK7azBs">Non-GPL Julia?</a></span></li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-10">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://github.com/JuliaLang/julia/pull/10870">"Introduce USE_GPL_LIBS Makefile flag to build Julia without GPL libraries"</a>. <q>Note that this commit does not remove GPL utilities such as git and busybox that are included in the Julia binary installers on Mac and Windows. It allows building from source with no GPL library dependencies.</q></cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJulia+%28programming+language%29&amp;rft.btitle=Introduce+USE_GPL_LIBS+Makefile+flag+to+build+Julia+without+GPL+libraries&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fgithub.com%2FJuliaLang%2Fjulia%2Fpull%2F10870&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-Introduction-11"><span class="mw-cite-backlink">^ <a href="#cite_ref-Introduction_11-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-Introduction_11-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://julia.readthedocs.org/en/latest/manual/introduction/">"Introduction"</a>. <i>The Julia Manual</i>. Read the Docs<span class="reference-accessdate">. Retrieved <span class="nowrap">2016-12-06</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJulia+%28programming+language%29&amp;rft.atitle=Introduction&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fjulia.readthedocs.org%2Fen%2Flatest%2Fmanual%2Fintroduction%2F&amp;rft.jtitle=The+Julia+Manual&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-12"><span class="mw-cite-backlink"><b><a href="#cite_ref-12">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://fatiherikli.github.io/programming-language-network/">"Programming Language Network"</a>. GitHub<span class="reference-accessdate">. Retrieved <span class="nowrap">2016-12-06</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJulia+%28programming+language%29&amp;rft.btitle=Programming+Language+Network&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Ffatiherikli.github.io%2Fprogramming-language-network%2F&amp;rft.pub=GitHub&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-JuliaCon2016-13"><span class="mw-cite-backlink"><b><a href="#cite_ref-JuliaCon2016_13-0">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.juliacon.org">"JuliaCon 2016"</a>. JuliaCon<span class="reference-accessdate">. Retrieved <span class="nowrap">2016-12-06</span></span>. <q>He has co-designed the programming language Scheme, which has greatly influenced the design of Julia</q></cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJulia+%28programming+language%29&amp;rft.btitle=JuliaCon+2016&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.juliacon.org&amp;rft.pub=JuliaCon&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-14"><span class="mw-cite-backlink"><b><a href="#cite_ref-14">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://julialang.org/">"The Julia Language"</a> (official website).</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJulia+%28programming+language%29&amp;rft.btitle=The+Julia+Language&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fjulialang.org%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-15"><span class="mw-cite-backlink"><b><a href="#cite_ref-15">^</a></b></span> <span class="reference-text"><cite class="citation web">Bryant, Avi (15 October 2012). <a rel="nofollow" class="external text" href="http://strata.oreilly.com/2012/10/matlab-r-julia-languages-for-data-analysis.html">"Matlab, R, and Julia: Languages for data analysis"</a>. O'Reilly Strata.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJulia+%28programming+language%29&amp;rft.aufirst=Avi&amp;rft.aulast=Bryant&amp;rft.btitle=Matlab%2C+R%2C+and+Julia%3A+Languages+for+data+analysis&amp;rft.date=2012-10-15&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fstrata.oreilly.com%2F2012%2F10%2Fmatlab-r-julia-languages-for-data-analysis.html&amp;rft.pub=O%27Reilly+Strata&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-16"><span class="mw-cite-backlink"><b><a href="#cite_ref-16">^</a></b></span> <span class="reference-text"><cite class="citation web">Krill, Paul (18 April 2012). <a rel="nofollow" class="external text" href="http://www.infoworld.com/d/application-development/new-julia-language-seeks-be-the-c-scientists-190818">"New Julia language seeks to be the C for scientists"</a>. InfoWorld.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJulia+%28programming+language%29&amp;rft.aufirst=Paul&amp;rft.aulast=Krill&amp;rft.btitle=New+Julia+language+seeks+to+be+the+C+for+scientists&amp;rft.date=2012-04-18&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.infoworld.com%2Fd%2Fapplication-development%2Fnew-julia-language-seeks-be-the-c-scientists-190818&amp;rft.pub=InfoWorld&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-17"><span class="mw-cite-backlink"><b><a href="#cite_ref-17">^</a></b></span> <span class="reference-text"><cite class="citation web">Finley, Klint (3 February 2014). <a rel="nofollow" class="external text" href="http://www.wired.com/2014/02/julia/">"Out in the Open: Man Creates One Programming Language to Rule Them All"</a>. Wired.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJulia+%28programming+language%29&amp;rft.aufirst=Klint&amp;rft.aulast=Finley&amp;rft.btitle=Out+in+the+Open%3A+Man+Creates+One+Programming+Language+to+Rule+Them+All&amp;rft.date=2014-02-03&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.wired.com%2F2014%2F02%2Fjulia%2F&amp;rft.pub=Wired&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-Escher.jl-18"><span class="mw-cite-backlink"><b><a href="#cite_ref-Escher.jl_18-0">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://shashi.github.io/Escher.jl/">"Escher lets you build beautiful interactive Web UIs in Julia"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">27 July</span> 2015</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJulia+%28programming+language%29&amp;rft.btitle=Escher+lets+you+build+beautiful+interactive+Web+UIs+in+Julia&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fshashi.github.io%2FEscher.jl%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-node-js-19"><span class="mw-cite-backlink"><b><a href="#cite_ref-node-js_19-0">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://node-julia.readme.io/">"Getting Started with Node Julia"</a>. <i>node-julia</i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJulia+%28programming+language%29&amp;rft.atitle=Getting+Started+with+Node+Julia&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fnode-julia.readme.io%2F&amp;rft.jtitle=node-julia&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-spec-20"><span class="mw-cite-backlink"><b><a href="#cite_ref-spec_20-0">^</a></b></span> <span class="reference-text"><cite class="citation web">Moss, Robert (26 June 2015). <a rel="nofollow" class="external text" href="https://web.archive.org/web/20150701182804/http://juliacon.org/talks.html">"Using Julia as a Specification Language for the Next-Generation Airborne Collision Avoidance System"</a>. Archived from <a rel="nofollow" class="external text" href="http://juliacon.org/talks.html#friday">the original</a> on 1 July 2015<span class="reference-accessdate">. Retrieved <span class="nowrap">29 June</span> 2015</span>. <q><a href="/wiki/Airborne_collision_avoidance_system" title="Airborne collision avoidance system">Airborne collision avoidance system</a></q></cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJulia+%28programming+language%29&amp;rft.aufirst=Robert&amp;rft.aulast=Moss&amp;rft.btitle=Using+Julia+as+a+Specification+Language+for+the+Next-Generation+Airborne+Collision+Avoidance+System&amp;rft.date=2015-06-26&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fjuliacon.org%2Ftalks.html%23friday&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-21"><span class="mw-cite-backlink"><b><a href="#cite_ref-21">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://groups.google.com/forum/#!topic/julia-users/6_XvoLBzN60">"Suspending Garbage Collection for Performance...good idea or bad idea?"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJulia+%28programming+language%29&amp;rft.btitle=Suspending+Garbage+Collection+for+Performance...good+idea+or+bad+idea%3F&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fgroups.google.com%2Fforum%2F%23%21topic%2Fjulia-users%2F6_XvoLBzN60&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-22"><span class="mw-cite-backlink"><b><a href="#cite_ref-22">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://github.com/stevengj/PyCall.jl">"PyCall.jl"</a>. <i>stevengj</i>. github.com.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJulia+%28programming+language%29&amp;rft.atitle=PyCall.jl&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fgithub.com%2Fstevengj%2FPyCall.jl&amp;rft.jtitle=stevengj&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-23"><span class="mw-cite-backlink"><b><a href="#cite_ref-23">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://groups.google.com/forum/#!topic/julia-users/lDM7-YXT2LU">"Using PyCall in julia on Ubuntu with python3"</a>. <i>julia-users at Google Groups</i>. <q>to import modules (e.g. python3-numpy)</q></cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJulia+%28programming+language%29&amp;rft.atitle=Using+PyCall+in+julia+on+Ubuntu+with+python3&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fgroups.google.com%2Fforum%2F%23%21topic%2Fjulia-users%2FlDM7-YXT2LU&amp;rft.jtitle=julia-users+at+Google+Groups&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-Polyglot-24"><span class="mw-cite-backlink"><b><a href="#cite_ref-Polyglot_24-0">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://github.com/wavexx/Polyglot.jl">"Polyglot.jl"</a>. <i>wavexx</i>. github.com.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJulia+%28programming+language%29&amp;rft.atitle=Polyglot.jl&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fgithub.com%2Fwavexx%2FPolyglot.jl&amp;rft.jtitle=wavexx&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-26"><span class="mw-cite-backlink"><b><a href="#cite_ref-26">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://learnxinyminutes.com/docs/julia/">Learn X in Y minutes: Where X=Julia</a> at learnxinyminutes.com</span></li>
+<li id="cite_note-27"><span class="mw-cite-backlink"><b><a href="#cite_ref-27">^</a></b></span> <span class="reference-text"><i><a rel="nofollow" class="external text" href="https://github.com/dhoegh/BuildExecutable.jl">dhoegh/BuildExecutable.jl: Build a standalone executables from a Julia script</a></i></span></li>
+<li id="cite_note-28"><span class="mw-cite-backlink"><b><a href="#cite_ref-28">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="https://groups.google.com/forum/#!topic/julia-users/MtF4wHc77sw">https://groups.google.com/forum/#!topic/julia-users/MtF4wHc77sw</a></span></li>
+<li id="cite_note-29"><span class="mw-cite-backlink"><b><a href="#cite_ref-29">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://docs.julialang.org/en/latest/manual/getting-started/">Julia REPL documentation</a></span></li>
+<li id="cite_note-30"><span class="mw-cite-backlink"><b><a href="#cite_ref-30">^</a></b></span> <span class="reference-text">See also: <a rel="nofollow" class="external free" href="http://julia.readthedocs.org/en/latest/manual/strings/">http://julia.readthedocs.org/en/latest/manual/strings/</a> for string interpolation and the <code>string(greet, ", ", whom, ".\n")</code> example for preferred ways to concatenate strings. While the <code>+</code> operator is not used for string concatenation, it could easily be defined to do so. Julia has the println and print functions, but also a @printf macro, while not in a function form, to eliminate run-time overhead of formatting (unlike the same function in C).</span></li>
+<li id="cite_note-31"><span class="mw-cite-backlink"><b><a href="#cite_ref-31">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://docs.julialang.org">"Julia Documentation"</a>. <i>julialang.org</i><span class="reference-accessdate">. Retrieved <span class="nowrap">18 November</span> 2014</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJulia+%28programming+language%29&amp;rft.atitle=Julia+Documentation&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fdocs.julialang.org&amp;rft.jtitle=julialang.org&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-32"><span class="mw-cite-backlink"><b><a href="#cite_ref-32">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://learnxinyminutes.com/docs/julia/">Learn Julia in Y Minutes</a></span></li>
+<li id="cite_note-33"><span class="mw-cite-backlink"><b><a href="#cite_ref-33">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://lists.cs.uiuc.edu/pipermail/llvmdev/2011-December/046440.html">"Chris Lattner discusses the name LLVM"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">22 December</span> 2011</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJulia+%28programming+language%29&amp;rft.btitle=Chris+Lattner+discusses+the+name+LLVM&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Flists.cs.uiuc.edu%2Fpipermail%2Fllvmdev%2F2011-December%2F046440.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-Julia-TR-34"><span class="mw-cite-backlink"><b><a href="#cite_ref-Julia-TR_34-0">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://julialang.org/images/julia-dynamic-2012-tr.pdf">"Julia: A Fast Dynamic Language for Technical Computing"</a> <span style="font-size:85%;">(<a href="/wiki/PDF" class="mw-redirect" title="PDF">PDF</a>)</span>. 2012.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJulia+%28programming+language%29&amp;rft.btitle=Julia%3A+A+Fast+Dynamic+Language+for+Technical+Computing&amp;rft.date=2012&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fjulialang.org%2Fimages%2Fjulia-dynamic-2012-tr.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-35"><span class="mw-cite-backlink"><b><a href="#cite_ref-35">^</a></b></span> <span class="reference-text"><cite class="citation web">Gibbs, Mark (9 January 2013). <a rel="nofollow" class="external text" href="http://www.networkworld.com/columnists/2013/010913-gearhead.html">"Pure and Julia are cool languages worth checking out"</a>. <i>Network World</i> (column)<span class="reference-accessdate">. Retrieved <span class="nowrap">7 February</span> 2013</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJulia+%28programming+language%29&amp;rft.atitle=Pure+and+Julia+are+cool+languages+worth+checking+out&amp;rft.aufirst=Mark&amp;rft.aulast=Gibbs&amp;rft.date=2013-01-09&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.networkworld.com%2Fcolumnists%2F2013%2F010913-gearhead.html&amp;rft.jtitle=Network+World&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-36"><span class="mw-cite-backlink"><b><a href="#cite_ref-36">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://github.com/JuliaLang/julia/pull/5208">"Support MCJIT"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">26 May</span> 2015</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJulia+%28programming+language%29&amp;rft.btitle=Support+MCJIT&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fgithub.com%2FJuliaLang%2Fjulia%2Fpull%2F5208&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-37"><span class="mw-cite-backlink"><b><a href="#cite_ref-37">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://blog.llvm.org/2013/07/using-mcjit-with-kaleidoscope-tutorial.html">"Using MCJIT with the Kaleidoscope Tutorial"</a>. 22 July 2013<span class="reference-accessdate">. Retrieved <span class="nowrap">26 May</span> 2015</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJulia+%28programming+language%29&amp;rft.btitle=Using+MCJIT+with+the+Kaleidoscope+Tutorial&amp;rft.date=2013-07-22&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fblog.llvm.org%2F2013%2F07%2Fusing-mcjit-with-kaleidoscope-tutorial.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span> quote=The older implementation (llvm::JIT) is a sort of ad hoc implementation that brings together various pieces of the LLVM code generation and adds its own glue to get dynamically generated code into memory one function at a time. The newer implementation (llvm::MCJIT) is heavily based on the core MC library and emits complete object files into memory then prepares them for execution.</span></li>
+<li id="cite_note-38"><span class="mw-cite-backlink"><b><a href="#cite_ref-38">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="https://github.com/JuliaLang/julia/blob/v0.5.0/README.md">https://github.com/JuliaLang/julia/blob/v0.5.0/README.md</a></span></li>
+<li id="cite_note-39"><span class="mw-cite-backlink"><b><a href="#cite_ref-39">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://github.com/JuliaLang/julia/issues/10488">"Cross-compiling for ARMv6"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">16 May</span> 2015</span>. <q>I believe #10917 should fix this. The CPU used there arm1176jzf-s.</q></cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJulia+%28programming+language%29&amp;rft.btitle=Cross-compiling+for+ARMv6&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fgithub.com%2FJuliaLang%2Fjulia%2Fissues%2F10488&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-40"><span class="mw-cite-backlink"><b><a href="#cite_ref-40">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://github.com/JuliaLang/julia/issues/10235">"ARM build failing during bootstrap on Raspberry Pi 2"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">16 May</span> 2015</span>. <q>I can confirm (FINALLY) that it works on the Raspberry Pi 2 [..] I guess we can announce alpha support for arm in 0.4 as well.</q></cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJulia+%28programming+language%29&amp;rft.btitle=ARM+build+failing+during+bootstrap+on+Raspberry+Pi+2&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fgithub.com%2FJuliaLang%2Fjulia%2Fissues%2F10235&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-41"><span class="mw-cite-backlink"><b><a href="#cite_ref-41">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="https://github.com/JuliaLang/openlibm/pull/129">https://github.com/JuliaLang/openlibm/pull/129</a> Fix building tests on GNU/kFreeBSD and GNU/Hurd</span></li>
+<li id="cite_note-42"><span class="mw-cite-backlink"><b><a href="#cite_ref-42">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="https://github.com/JuliaLang/julia/issues/6975">https://github.com/JuliaLang/julia/issues/6975</a> Interfaces for Abstract Types</span></li>
+<li id="cite_note-43"><span class="mw-cite-backlink"><b><a href="#cite_ref-43">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="https://github.com/IntelLabs/julia/tree/j2c/j2c">https://github.com/IntelLabs/julia/tree/j2c/j2c</a></span></li>
+<li id="cite_note-44"><span class="mw-cite-backlink"><b><a href="#cite_ref-44">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://julia-programming-language.2336112.n4.nabble.com/Julia2C-initial-release-td7595.html">"Julia2C initial release"</a>. <q>By translating Julia to C, we leverage the high-level abstractions (matrix, vector, ..), which are easier to analyze, and can potentially add the rich extensions of C (like openmp, tbb, ...).<br />
+<br />
+The tool may also extend Julia to new architectures where the only available tool chain is for C<br />
+[..]<br />
+Translation from C to Julia might be harder.</q></cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJulia+%28programming+language%29&amp;rft.btitle=Julia2C+initial+release&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fjulia-programming-language.2336112.n4.nabble.com%2FJulia2C-initial-release-td7595.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-45"><span class="mw-cite-backlink"><b><a href="#cite_ref-45">^</a></b></span> <span class="reference-text"><cite class="citation web">Lindsey Kuper (1 March 2016). <a rel="nofollow" class="external text" href="http://julialang.org/blog/2016/03/parallelaccelerator">"An introduction to ParallelAccelerator.jl"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJulia+%28programming+language%29&amp;rft.au=Lindsey+Kuper&amp;rft.btitle=An+introduction+to+ParallelAccelerator.jl&amp;rft.date=2016-03-01&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fjulialang.org%2Fblog%2F2016%2F03%2Fparallelaccelerator&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Julia_(programming_language)&amp;action=edit&amp;section=10" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<table role="presentation" class="mbox-small plainlinks sistersitebox" style="border:1px solid #aaa;background-color:#f9f9f9">
+<tr>
+<td class="mbox-image"><a href="/wiki/File:Wikibooks-logo-en-noslogan.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/40px-Wikibooks-logo-en-noslogan.svg.png" width="40" height="40" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/60px-Wikibooks-logo-en-noslogan.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/80px-Wikibooks-logo-en-noslogan.svg.png 2x" data-file-width="400" data-file-height="400" /></a></td>
+<td class="mbox-text plainlist">Wikibooks has a book on the topic of: <i><b><a href="https://en.wikibooks.org/wiki/Introducing_Julia" class="extiw" title="wikibooks:Introducing Julia">Introducing Julia</a></b></i></td>
+</tr>
+</table>
+<ul>
+<li><span class="official-website"><span class="url"><a rel="nofollow" class="external text" href="http://julialang.org">Official website</a></span></span></li>
+<li><a rel="nofollow" class="external text" href="http://docs.julialang.org/en/latest/">The Julia manual</a></li>
+<li><a rel="nofollow" class="external text" href="http://pkg.julialang.org/">Julia Package Listing</a> – a searchable listing of all (currently over <a rel="nofollow" class="external text" href="http://pkg.julialang.org/pulse.html">1200</a> with combined over 21,000 Github stars) <i>registered</i> packages</li>
+</ul>
+<div role="navigation" class="navbox" aria-labelledby="Programming_languages" style="padding:3px">
+<table class="nowraplinks hlist collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:Programming_languages" title="Template:Programming languages"><abbr title="View this template" style=";;background:none transparent;border:none;">v</abbr></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:Programming_languages" title="Template talk:Programming languages"><abbr title="Discuss this template" style=";;background:none transparent;border:none;">t</abbr></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:Programming_languages&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;">e</abbr></a></li>
+</ul>
+</div>
+<div id="Programming_languages" style="font-size:114%"><a href="/wiki/Programming_language" title="Programming language">Programming languages</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" colspan="2">
+<div>
+<ul>
+<li><a href="/wiki/Comparison_of_programming_languages" title="Comparison of programming languages">Comparison</a></li>
+<li><a href="/wiki/Timeline_of_programming_languages" title="Timeline of programming languages">Timeline</a></li>
+<li><a href="/wiki/History_of_programming_languages" title="History of programming languages">History</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Assembly_language" title="Assembly language">Assembly</a></li>
+<li><a href="/wiki/BASIC" title="BASIC">BASIC</a></li>
+<li><a href="/wiki/C_(programming_language)" title="C (programming language)">C</a></li>
+<li><a href="/wiki/C%2B%2B" title="C++">C++</a></li>
+<li><a href="/wiki/C_Sharp_(programming_language)" title="C Sharp (programming language)">C#</a></li>
+<li><a href="/wiki/COBOL" title="COBOL">COBOL</a></li>
+<li><a href="/wiki/Fortran" title="Fortran">Fortran</a></li>
+<li><a href="/wiki/Go_(programming_language)" title="Go (programming language)">Go</a></li>
+<li><a href="/wiki/Haskell_(programming_language)" title="Haskell (programming language)">Haskell</a></li>
+<li><a href="/wiki/Java_(programming_language)" title="Java (programming language)">Java</a></li>
+<li><a href="/wiki/JavaScript" title="JavaScript">JavaScript</a> (JS)</li>
+<li><a href="/wiki/Lisp_(programming_language)" title="Lisp (programming language)">Lisp</a></li>
+<li><a href="/wiki/Lua_(programming_language)" title="Lua (programming language)">Lua</a></li>
+<li><a href="/wiki/Objective-C" title="Objective-C">Objective-C</a></li>
+<li><a href="/wiki/Pascal_(programming_language)" title="Pascal (programming language)">Pascal</a></li>
+<li><a href="/wiki/Perl" title="Perl">Perl</a></li>
+<li><a href="/wiki/PHP" title="PHP">PHP</a></li>
+<li><a href="/wiki/Python_(programming_language)" title="Python (programming language)">Python</a></li>
+<li><a href="/wiki/Ruby_(programming_language)" title="Ruby (programming language)">Ruby</a></li>
+<li><a href="/wiki/Shell_script" title="Shell script">Shell</a></li>
+<li><a href="/wiki/Smalltalk" title="Smalltalk">Smalltalk</a></li>
+<li><a href="/wiki/Swift_(programming_language)" title="Swift (programming language)">Swift</a></li>
+<li><a href="/wiki/Visual_Basic_.NET" title="Visual Basic .NET">Visual Basic .NET</a> (VB.NET)</li>
+<li><i><a href="/wiki/List_of_programming_languages" title="List of programming languages">more...</a></i></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" colspan="2">
+<div>
+<ul>
+<li><img alt="Category" src="//upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/16px-Folder_Hexagonal_Icon.svg.png" title="Category" width="16" height="14" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/24px-Folder_Hexagonal_Icon.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/32px-Folder_Hexagonal_Icon.svg.png 2x" data-file-width="36" data-file-height="31" /> <b><a href="/wiki/Category:Programming_languages" title="Category:Programming languages">Category</a></b></li>
+<li><img alt="Non-article page" src="//upload.wikimedia.org/wikipedia/en/thumb/8/89/Symbol_neutral_vote.svg/16px-Symbol_neutral_vote.svg.png" title="Non-article page" width="16" height="16" srcset="//upload.wikimedia.org/wikipedia/en/thumb/8/89/Symbol_neutral_vote.svg/23px-Symbol_neutral_vote.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/8/89/Symbol_neutral_vote.svg/31px-Symbol_neutral_vote.svg.png 2x" data-file-width="180" data-file-height="185" /> <b><a href="/wiki/Comparison_of_programming_languages" title="Comparison of programming languages">Comparison</a></b></li>
+<li><img alt="List-Class article" src="//upload.wikimedia.org/wikipedia/en/thumb/d/db/Symbol_list_class.svg/16px-Symbol_list_class.svg.png" title="List-Class article" width="16" height="16" srcset="//upload.wikimedia.org/wikipedia/en/thumb/d/db/Symbol_list_class.svg/23px-Symbol_list_class.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/d/db/Symbol_list_class.svg/31px-Symbol_list_class.svg.png 2x" data-file-width="180" data-file-height="185" /> <b>Lists</b>
+<ul>
+<li><a href="/wiki/List_of_programming_languages" title="List of programming languages">Alphabetical</a></li>
+<li><a href="/wiki/Categorical_list_of_programming_languages" class="mw-redirect" title="Categorical list of programming languages">Categorical</a></li>
+<li><a href="/wiki/Generational_list_of_programming_languages" title="Generational list of programming languages">Generational</a></li>
+<li><a href="/wiki/Non-English-based_programming_languages" title="Non-English-based programming languages">Non-English-based</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div role="navigation" class="navbox" aria-labelledby="Free_and_open-source_software" style="padding:3px">
+<table class="nowraplinks hlist collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:FOSS" title="Template:FOSS"><abbr title="View this template" style=";;background:none transparent;border:none;">v</abbr></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:FOSS" title="Template talk:FOSS"><abbr title="Discuss this template" style=";;background:none transparent;border:none;">t</abbr></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:FOSS&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;">e</abbr></a></li>
+</ul>
+</div>
+<div id="Free_and_open-source_software" style="font-size:114%"><a href="/wiki/Free_and_open-source_software" title="Free and open-source software">Free and open-source software</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">General</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Alternative_terms_for_free_software" title="Alternative terms for free software">Alternative terms for free software</a></li>
+<li><a href="/wiki/Comparison_of_open-source_and_closed-source_software" title="Comparison of open-source and closed-source software">Comparison of open-source and closed-source software</a></li>
+<li><a href="/wiki/Comparison_of_source_code_hosting_facilities" title="Comparison of source code hosting facilities">Comparison of source code hosting facilities</a></li>
+<li><a href="/wiki/Free_software" title="Free software">Free software</a></li>
+<li><a href="/wiki/List_of_free_software_project_directories" title="List of free software project directories">Free software project directories</a></li>
+<li><a href="/wiki/Gratis_versus_libre" title="Gratis versus libre">Gratis versus libre</a></li>
+<li><a href="/wiki/Long-term_support" title="Long-term support">Long-term support</a></li>
+<li><a href="/wiki/Open-source_software" title="Open-source software">Open-source software</a></li>
+<li><a href="/wiki/Open-source_software_development" title="Open-source software development">Open-source software development</a></li>
+<li><a href="/wiki/Outline_of_free_software" title="Outline of free software">Outline</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/List_of_free_and_open-source_software_packages" title="List of free and open-source software packages">Software<br />
+packages</a></th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Comparison_of_free_software_for_audio" title="Comparison of free software for audio">Audio</a></li>
+<li><a href="/wiki/List_of_open-source_bioinformatics_software" title="List of open-source bioinformatics software">Bioinformatics</a></li>
+<li><a href="/wiki/List_of_open-source_codecs" title="List of open-source codecs">Codecs</a></li>
+<li><a href="/wiki/List_of_collaborative_software#Open_source_software" title="List of collaborative software">Collaboration</a></li>
+<li><a href="/wiki/Comparison_of_open-source_configuration_management_software" title="Comparison of open-source configuration management software">Configuration management</a></li>
+<li><a href="/wiki/Device_driver#Open_drivers" title="Device driver">Device drivers</a>
+<ul>
+<li><a href="/wiki/Free_and_open-source_graphics_device_driver" title="Free and open-source graphics device driver">Graphics</a></li>
+<li><a href="/wiki/Comparison_of_open-source_wireless_drivers" title="Comparison of open-source wireless drivers">Wireless</a></li>
+</ul>
+</li>
+<li><a href="/wiki/Comparison_of_free_geophysics_software" title="Comparison of free geophysics software">Geophysics</a></li>
+<li><a href="/wiki/List_of_open-source_health_software" title="List of open-source health software">Health</a></li>
+<li><a href="/wiki/List_of_open-source_software_for_mathematics" title="List of open-source software for mathematics">Mathematics</a></li>
+<li><a href="/wiki/Comparison_of_open-source_operating_systems" title="Comparison of open-source operating systems">Operating systems</a></li>
+<li><a href="/wiki/Comparison_of_open-source_programming_language_licensing" title="Comparison of open-source programming language licensing">Programming languages</a></li>
+<li><a href="/wiki/List_of_open-source_routing_platforms" title="List of open-source routing platforms">Routing</a></li>
+<li><a href="/wiki/List_of_statistical_packages#Open-source_statistical_packages" title="List of statistical packages">Statistics</a></li>
+<li><a href="/wiki/List_of_free_television_software" title="List of free television software">Television</a></li>
+<li><a href="/wiki/List_of_open-source_video_games" title="List of open-source video games">Video games</a></li>
+<li><a href="/wiki/List_of_free_software_web_applications" title="List of free software web applications">Web applications</a>
+<ul>
+<li><a href="/wiki/List_of_content_management_systems#Open_source_software" title="List of content management systems">Content management systems</a></li>
+<li><a href="/wiki/Comparison_of_free_software_e-commerce_web_application_frameworks" class="mw-redirect" title="Comparison of free software e-commerce web application frameworks">E-commerce</a></li>
+</ul>
+</li>
+<li><a href="/wiki/List_of_word_processors#Free_and_open-source_software" title="List of word processors">Word processors</a></li>
+<li><a href="/wiki/List_of_free_and_open-source_Android_applications" title="List of free and open-source Android applications">Android apps</a></li>
+<li><a href="/wiki/List_of_free_and_open-source_iOS_applications" title="List of free and open-source iOS applications">iOS apps</a></li>
+<li><a href="/wiki/List_of_commercial_open-source_applications_and_services" title="List of commercial open-source applications and services">Commercial</a></li>
+<li><a href="/wiki/List_of_trademarked_open-source_software" title="List of trademarked open-source software">Trademarked</a></li>
+<li><a href="/wiki/List_of_formerly_proprietary_software" title="List of formerly proprietary software">Formerly proprietary</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Community</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Free_software_movement" title="Free software movement">Free software movement</a></li>
+<li><a href="/wiki/History_of_free_and_open-source_software" title="History of free and open-source software">History</a></li>
+<li><a href="/wiki/Open-source_software_movement" title="Open-source software movement">Open-source software movement</a></li>
+<li><a href="/wiki/List_of_free_and_open-source_software_organizations" title="List of free and open-source software organizations">Organizations</a></li>
+<li><a href="/wiki/List_of_free-software_events" title="List of free-software events">Events</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Free_software_license" title="Free software license">Licenses</a></th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Apache_License" title="Apache License">Apache</a></li>
+<li><a href="/wiki/Apple_Public_Source_License" title="Apple Public Source License">APSL</a></li>
+<li><a href="/wiki/Artistic_License" title="Artistic License">Artistic</a></li>
+<li><a href="/wiki/Beerware" title="Beerware">Beerware</a></li>
+<li><a href="/wiki/Boost_Software_License" class="mw-redirect" title="Boost Software License">Boost</a></li>
+<li><a href="/wiki/BSD_licenses" title="BSD licenses">BSD</a></li>
+<li><a href="/wiki/CC0" class="mw-redirect" title="CC0">CC0</a></li>
+<li><a href="/wiki/Common_Development_and_Distribution_License" title="Common Development and Distribution License">CDDL</a></li>
+<li><a href="/wiki/Eclipse_Public_License" title="Eclipse Public License">EPL</a></li>
+<li><a href="/wiki/GNU_General_Public_License" title="GNU General Public License">GNU GPL</a></li>
+<li><a href="/wiki/GNU_Lesser_General_Public_License" title="GNU Lesser General Public License">GNU LGPL</a></li>
+<li><a href="/wiki/ISC_license" title="ISC license">ISC</a></li>
+<li><a href="/wiki/MIT_License" title="MIT License">MIT</a></li>
+<li><a href="/wiki/Mozilla_Public_License" title="Mozilla Public License">MPL</a></li>
+<li><a href="/wiki/Shared_source#Open_Source_licenses" title="Shared source">Ms-PL/RL</a></li>
+<li><a href="/wiki/WTFPL" title="WTFPL">WTFPL</a></li>
+<li><a href="/wiki/Zlib_License" title="Zlib License">zlib</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">License types<br />
+and standards</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Comparison_of_free_and_open-source_software_licenses" title="Comparison of free and open-source software licenses">Comparison of free and open-source software licenses</a></li>
+<li><a href="/wiki/Contributor_License_Agreement" title="Contributor License Agreement">Contributor License Agreement</a></li>
+<li><a href="/wiki/Copyfree" class="mw-redirect" title="Copyfree">Copyfree</a></li>
+<li><a href="/wiki/Copyleft" title="Copyleft">Copyleft</a></li>
+<li><a href="/wiki/Debian_Free_Software_Guidelines" title="Debian Free Software Guidelines">Debian Free Software Guidelines</a></li>
+<li><a href="/wiki/Definition_of_Free_Cultural_Works" title="Definition of Free Cultural Works">Definition of Free Cultural Works</a></li>
+<li><a href="/wiki/Free_license" title="Free license">Free license</a></li>
+<li><a href="/wiki/The_Free_Software_Definition" title="The Free Software Definition">The Free Software Definition</a></li>
+<li><a href="/wiki/The_Open_Source_Definition" title="The Open Source Definition">The Open Source Definition</a></li>
+<li><a href="/wiki/Open-source_license" title="Open-source license">Open-source license</a></li>
+<li><a href="/wiki/Permissive_free_software_licence" class="mw-redirect" title="Permissive free software licence">Permissive free software licence</a></li>
+<li><a href="/wiki/Public_domain" title="Public domain">Public domain</a></li>
+<li><a href="/wiki/Viral_license" title="Viral license">Viral license</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Challenges</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Binary_blob" title="Binary blob">Binary blob</a></li>
+<li><a href="/wiki/Digital_rights_management" title="Digital rights management">Digital rights management</a></li>
+<li><a href="/wiki/Hardware_restriction" title="Hardware restriction">Hardware restrictions</a></li>
+<li><a href="/wiki/License_proliferation" title="License proliferation">License proliferation</a></li>
+<li><a href="/wiki/Mozilla_Corporation_software_rebranded_by_the_Debian_project" class="mw-redirect" title="Mozilla Corporation software rebranded by the Debian project">Mozilla software rebranding</a></li>
+<li><a href="/wiki/Proprietary_software" title="Proprietary software">Proprietary software</a></li>
+<li><a href="/wiki/SCO/Linux_controversies" title="SCO/Linux controversies">SCO/Linux controversies</a></li>
+<li><a href="/wiki/UEFI_Secure_Boot#Secure_boot" class="mw-redirect" title="UEFI Secure Boot">Secure boot</a></li>
+<li><a href="/wiki/Software_patents_and_free_software" title="Software patents and free software">Software patents</a></li>
+<li><a href="/wiki/Open-source_software_security" title="Open-source software security">Software security</a></li>
+<li><a href="/wiki/Trusted_Computing" title="Trusted Computing">Trusted Computing</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Related topics</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><i><a href="/wiki/The_Cathedral_and_the_Bazaar" title="The Cathedral and the Bazaar">The Cathedral and the Bazaar</a></i></li>
+<li><a href="/wiki/Fork_(software_development)" title="Fork (software development)">Forking</a></li>
+<li><a href="/wiki/Microsoft_Open_Specification_Promise" title="Microsoft Open Specification Promise">Microsoft Open Specification Promise</a></li>
+<li><i><a href="/wiki/Revolution_OS" title="Revolution OS">Revolution OS</a></i></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" colspan="2" style="font-weight:bold">
+<div>
+<ul>
+<li><img alt="Wikipedia book" src="//upload.wikimedia.org/wikipedia/commons/thumb/8/89/Symbol_book_class2.svg/16px-Symbol_book_class2.svg.png" title="Wikipedia book" width="16" height="16" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/89/Symbol_book_class2.svg/23px-Symbol_book_class2.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/8/89/Symbol_book_class2.svg/31px-Symbol_book_class2.svg.png 2x" data-file-width="180" data-file-height="185" /> <a href="/wiki/Book:Free_and_Open_Source_Software" title="Book:Free and Open Source Software">Book</a></li>
+<li><img alt="Category" src="//upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/16px-Folder_Hexagonal_Icon.svg.png" title="Category" width="16" height="14" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/24px-Folder_Hexagonal_Icon.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/32px-Folder_Hexagonal_Icon.svg.png 2x" data-file-width="36" data-file-height="31" /> <a href="/wiki/Category:Free_software" title="Category:Free software">Category</a></li>
+<li><img alt="Commons page" src="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/12px-Commons-logo.svg.png" title="Commons page" width="12" height="16" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/18px-Commons-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/24px-Commons-logo.svg.png 2x" data-file-width="1024" data-file-height="1376" /> <a href="https://commons.wikimedia.org/wiki/Category:Free_software" class="extiw" title="commons:Category:Free software">Commons</a></li>
+<li><img alt="Portal" src="//upload.wikimedia.org/wikipedia/en/thumb/f/fd/Portal-puzzle.svg/16px-Portal-puzzle.svg.png" title="Portal" width="16" height="14" srcset="//upload.wikimedia.org/wikipedia/en/thumb/f/fd/Portal-puzzle.svg/24px-Portal-puzzle.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/f/fd/Portal-puzzle.svg/32px-Portal-puzzle.svg.png 2x" data-file-width="32" data-file-height="28" /> <a href="/wiki/Portal:Free_software" class="mw-redirect" title="Portal:Free software">Portal</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div role="navigation" class="navbox" aria-labelledby="Numerical_analysis_software" style="padding:3px">
+<table class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:Numerical_analysis_software" title="Template:Numerical analysis software"><abbr title="View this template" style=";;background:none transparent;border:none;">v</abbr></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:Numerical_analysis_software" title="Template talk:Numerical analysis software"><abbr title="Discuss this template" style=";;background:none transparent;border:none;">t</abbr></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:Numerical_analysis_software&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;">e</abbr></a></li>
+</ul>
+</div>
+<div id="Numerical_analysis_software" style="font-size:114%"><a href="/wiki/List_of_numerical_analysis_software" title="List of numerical analysis software">Numerical analysis software</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Free_software" title="Free software">Free</a></th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Advanced_Simulation_Library" title="Advanced Simulation Library">Advanced Simulation Library</a></li>
+<li><a href="/wiki/ADMB" title="ADMB">ADMB</a></li>
+<li><a href="/wiki/Chapel_(programming_language)" title="Chapel (programming language)">Chapel</a></li>
+<li><a href="/wiki/Euler_(software)" title="Euler (software)">Euler</a></li>
+<li><a href="/wiki/Fortress_(programming_language)" title="Fortress (programming language)">Fortress</a></li>
+<li><a href="/wiki/FreeFem%2B%2B" title="FreeFem++">FreeFem++</a></li>
+<li><a href="/wiki/FreeMat" title="FreeMat">FreeMat</a></li>
+<li><a href="/wiki/Genius_(mathematics_software)" title="Genius (mathematics software)">Genius</a></li>
+<li><a href="/wiki/Gmsh" title="Gmsh">Gmsh</a></li>
+<li><a href="/wiki/GNU_Octave" title="GNU Octave">GNU Octave</a></li>
+<li><a href="/wiki/Gretl" title="Gretl">gretl</a></li>
+<li><strong class="selflink">Julia</strong></li>
+<li><a href="/wiki/Maxima_(software)" title="Maxima (software)">Maxima</a></li>
+<li><a href="/wiki/OpenFOAM" title="OpenFOAM">OpenFOAM</a></li>
+<li><a href="/wiki/R_(programming_language)" title="R (programming language)">R</a></li>
+<li><a href="/wiki/SageMath" title="SageMath">SageMath</a></li>
+<li><a href="/wiki/Salome_(software)" title="Salome (software)">Salome</a></li>
+<li><a href="/wiki/ScicosLab" title="ScicosLab">ScicosLab</a></li>
+<li><a href="/wiki/Scilab" title="Scilab">Scilab</a></li>
+<li><a href="/wiki/X10_(programming_language)" title="X10 (programming language)">X10</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Proprietary_software" title="Proprietary software">Proprietary</a></th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/DADiSP" title="DADiSP">DADiSP</a></li>
+<li><a href="/wiki/GAUSS_(software)" title="GAUSS (software)">GAUSS</a></li>
+<li><a href="/wiki/LabVIEW" title="LabVIEW">LabVIEW</a></li>
+<li><a href="/wiki/Maple_(software)" title="Maple (software)">Maple</a></li>
+<li><a href="/wiki/Mathcad" title="Mathcad">Mathcad</a></li>
+<li><a href="/wiki/Mathematica" class="mw-redirect" title="Mathematica">Mathematica</a></li>
+<li><a href="/wiki/MATLAB" title="MATLAB">MATLAB</a></li>
+<li><a href="/wiki/Speakeasy_(computational_environment)" title="Speakeasy (computational environment)">Speakeasy</a></li>
+<li><a href="/wiki/VisSim" title="VisSim">VisSim</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow hlist" colspan="2">
+<div>
+<ul>
+<li><b><a href="/wiki/List_of_numerical_analysis_software" title="List of numerical analysis software">List of numerical analysis software</a></b></li>
+<li><b><a href="/wiki/Comparison_of_numerical_analysis_software" title="Comparison of numerical analysis software">Comparison of numerical analysis software</a></b></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div role="navigation" class="navbox" aria-labelledby="Mathematical_optimization_software" style="padding:3px">
+<table class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:Mathematical_optimization_software" title="Template:Mathematical optimization software"><abbr title="View this template" style=";;background:none transparent;border:none;">v</abbr></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:Mathematical_optimization_software" title="Template talk:Mathematical optimization software"><abbr title="Discuss this template" style=";;background:none transparent;border:none;">t</abbr></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:Mathematical_optimization_software&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;">e</abbr></a></li>
+</ul>
+</div>
+<div id="Mathematical_optimization_software" style="font-size:114%"><a href="/wiki/Mathematical_optimization_software" class="mw-redirect" title="Mathematical optimization software">Mathematical optimization software</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="vertical-align:top;">Data formats</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li>LP</li>
+<li><a href="/wiki/MPS_(format)" title="MPS (format)">MPS</a></li>
+<li><a href="/wiki/Nl_(format)" title="Nl (format)">nl</a></li>
+<li><a href="/w/index.php?title=OptML&amp;action=edit&amp;redlink=1" class="new" title="OptML (page does not exist)">OptML</a></li>
+<li><a href="/w/index.php?title=OSiL&amp;action=edit&amp;redlink=1" class="new" title="OSiL (page does not exist)">OSiL</a></li>
+<li><a href="/wiki/Sol_(format)" title="Sol (format)">sol</a></li>
+<li><a href="/w/index.php?title=XMPS&amp;action=edit&amp;redlink=1" class="new" title="XMPS (page does not exist)">xMPS</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="vertical-align:top;"><a href="/wiki/Mathematical_modeling" class="mw-redirect" title="Mathematical modeling">Modeling</a> tools</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/AIMMS" title="AIMMS">AIMMS</a></li>
+<li><a href="/wiki/AMPL" title="AMPL">AMPL</a></li>
+<li><a href="/wiki/APMonitor" title="APMonitor">APMonitor</a></li>
+<li>CMPL</li>
+<li>CVX</li>
+<li><a href="/w/index.php?title=CVXOPT&amp;action=edit&amp;redlink=1" class="new" title="CVXOPT (page does not exist)">CVXOPT</a></li>
+<li><a href="/w/index.php?title=CVXPY&amp;action=edit&amp;redlink=1" class="new" title="CVXPY (page does not exist)">CVXPY</a></li>
+<li><a href="/wiki/ECLiPSe" title="ECLiPSe">ECLiPSe</a>-CLP</li>
+<li><a href="/wiki/General_Algebraic_Modeling_System" title="General Algebraic Modeling System">GAMS</a></li>
+<li><a href="/wiki/GNU_Linear_Programming_Kit" title="GNU Linear Programming Kit">GNU MathProg</a></li>
+<li><a href="/wiki/JuMP" class="mw-redirect" title="JuMP">JuMP</a></li>
+<li><a href="/wiki/LINDO" title="LINDO">LINDO</a></li>
+<li><a href="/wiki/CPLEX" title="CPLEX">OPL</a></li>
+<li><a href="/w/index.php?title=Mathematical_Programming_Language&amp;action=edit&amp;redlink=1" class="new" title="Mathematical Programming Language (page does not exist)">MPL</a></li>
+<li><a href="/wiki/OptimJ" title="OptimJ">OptimJ</a></li>
+<li>PICOS</li>
+<li><a href="/wiki/COIN-OR#PuLP" title="COIN-OR">PuLP</a></li>
+<li><a href="/wiki/Pyomo" title="Pyomo">Pyomo</a></li>
+<li><a href="/w/index.php?title=ROML&amp;action=edit&amp;redlink=1" class="new" title="ROML (page does not exist)">ROML</a></li>
+<li><a href="/wiki/TOMLAB" title="TOMLAB">TOMLAB</a></li>
+<li><a href="/wiki/FICO_Xpress" title="FICO Xpress">Xpress-Mosel</a></li>
+<li><a href="/w/index.php?title=YALMIP&amp;action=edit&amp;redlink=1" class="new" title="YALMIP (page does not exist)">YALMIP</a></li>
+<li><a href="/wiki/SCIP_(optimization_software)#SCIP_Optimization_Suite" title="SCIP (optimization software)">ZIMPL</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="vertical-align:top;"><a href="/wiki/Linear_programming" title="Linear programming">LP</a>, <a href="/wiki/Linear_programming#Integer_unknowns" title="Linear programming">MILP</a><sup style="font-weight:normal;">∗</sup> solvers</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li>ABACUS<sup>∗</sup></li>
+<li><a href="/wiki/APOPT" title="APOPT">APOPT</a><sup>∗</sup></li>
+<li><a href="/wiki/Artelys_Knitro" title="Artelys Knitro">Artelys Knitro</a><sup>∗</sup></li>
+<li><a href="/wiki/COIN-OR" title="COIN-OR">BCP</a><sup>∗</sup></li>
+<li><a href="/w/index.php?title=BDMLP&amp;action=edit&amp;redlink=1" class="new" title="BDMLP (page does not exist)">BDMLP</a></li>
+<li><a href="/w/index.php?title=BPMPD&amp;action=edit&amp;redlink=1" class="new" title="BPMPD (page does not exist)">BPMPD</a></li>
+<li><a href="/w/index.php?title=BPOPT&amp;action=edit&amp;redlink=1" class="new" title="BPOPT (page does not exist)">BPOPT</a></li>
+<li><a href="/wiki/COIN-OR#CLP" title="COIN-OR">CLP</a></li>
+<li><a href="/wiki/COIN-OR#CBC" title="COIN-OR">CBC</a><sup>∗</sup></li>
+<li><a href="/wiki/CPLEX" title="CPLEX">CPLEX</a><sup>∗</sup></li>
+<li><a href="/w/index.php?title=CSDP_(optimization_software)&amp;action=edit&amp;redlink=1" class="new" title="CSDP (optimization software) (page does not exist)">CSDP</a></li>
+<li><a href="/w/index.php?title=DSDP_(optimization_software)&amp;action=edit&amp;redlink=1" class="new" title="DSDP (optimization software) (page does not exist)">DSDP</a></li>
+<li><a href="/wiki/FortMP" title="FortMP">FortMP</a><sup>∗</sup></li>
+<li><a href="/wiki/SCIP_(optimization_software)#SCIP_Optimization_Suite" title="SCIP (optimization software)">GCG</a><sup>∗</sup></li>
+<li><a href="/w/index.php?title=GIPALS32&amp;action=edit&amp;redlink=1" class="new" title="GIPALS32 (page does not exist)">GIPALS32</a></li>
+<li><a href="/wiki/GNU_Linear_Programming_Kit" title="GNU Linear Programming Kit">GLPK/GLPSOL</a><sup>∗</sup></li>
+<li><a href="/wiki/Gurobi" title="Gurobi">Gurobi</a><sup>∗</sup></li>
+<li><a href="/w/index.php?title=HOPDM&amp;action=edit&amp;redlink=1" class="new" title="HOPDM (page does not exist)">HOPDM</a></li>
+<li><a href="/wiki/LINDO" title="LINDO">LINDO</a><sup>∗</sup></li>
+<li>lp_solve<sup>∗</sup></li>
+<li><a href="/wiki/Robert_J._Vanderbei" title="Robert J. Vanderbei">LOQO</a></li>
+<li><a href="/wiki/MINOS_(optimization_software)" title="MINOS (optimization software)">MINOS</a></li>
+<li><a href="/wiki/MINTO" title="MINTO">MINTO</a><sup>∗</sup></li>
+<li><a href="/wiki/MOSEK" title="MOSEK">MOSEK</a><sup>∗</sup></li>
+<li><a href="/w/index.php?title=OOPS_(optimization_software)&amp;action=edit&amp;redlink=1" class="new" title="OOPS (optimization software) (page does not exist)">OOPS</a></li>
+<li><a href="/w/index.php?title=OOQP&amp;action=edit&amp;redlink=1" class="new" title="OOQP (page does not exist)">OOQP</a></li>
+<li><a href="/w/index.php?title=PCx&amp;action=edit&amp;redlink=1" class="new" title="PCx (page does not exist)">PCx</a></li>
+<li><a href="/w/index.php?title=QSopt&amp;action=edit&amp;redlink=1" class="new" title="QSopt (page does not exist)">QSopt</a></li>
+<li><a href="/w/index.php?title=SAS/OR&amp;action=edit&amp;redlink=1" class="new" title="SAS/OR (page does not exist)">SAS/OR</a><sup>∗</sup></li>
+<li><a href="/wiki/SCIP_(optimization_software)" title="SCIP (optimization software)">SCIP</a><sup>∗</sup></li>
+<li><a href="/wiki/SCIP_(optimization_software)#SCIP_Optimization_Suite" title="SCIP (optimization software)">SoPlex</a></li>
+<li><a href="/w/index.php?title=SOPT-IP&amp;action=edit&amp;redlink=1" class="new" title="SOPT-IP (page does not exist)">SOPT-IP</a><sup>∗</sup></li>
+<li>Sulum Optimization Tools<sup>∗</sup></li>
+<li><a href="/wiki/COIN-OR#SYMPHONY" title="COIN-OR">SYMPHONY</a><sup>∗</sup></li>
+<li><a href="/w/index.php?title=XA_(optimization_software)&amp;action=edit&amp;redlink=1" class="new" title="XA (optimization software) (page does not exist)">XA</a><sup>∗</sup></li>
+<li><a href="/wiki/FICO_Xpress" title="FICO Xpress">Xpress-Optimizer</a><sup>∗</sup></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="vertical-align:top;"><a href="/wiki/Quadratic_programming" title="Quadratic programming">QP</a>, MIQP<sup style="font-weight:normal;">∗</sup> solvers</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/APOPT" title="APOPT">APOPT</a><sup>∗</sup></li>
+<li><a href="/wiki/Artelys_Knitro" title="Artelys Knitro">Artelys Knitro</a><sup>∗</sup></li>
+<li><a href="/w/index.php?title=BPMPD&amp;action=edit&amp;redlink=1" class="new" title="BPMPD (page does not exist)">BPMPD</a></li>
+<li><a href="/w/index.php?title=BPOPT&amp;action=edit&amp;redlink=1" class="new" title="BPOPT (page does not exist)">BPOPT</a></li>
+<li><a href="/w/index.php?title=BQPD&amp;action=edit&amp;redlink=1" class="new" title="BQPD (page does not exist)">BQPD</a></li>
+<li><a href="/wiki/COIN-OR#CBC" title="COIN-OR">CBC</a><sup>∗</sup></li>
+<li><a href="/wiki/COIN-OR#CLP" title="COIN-OR">CLP</a></li>
+<li><a href="/wiki/CPLEX" title="CPLEX">CPLEX</a><sup>∗</sup></li>
+<li><a href="/wiki/FortMP" title="FortMP">FortMP</a><sup>∗</sup></li>
+<li><a href="/w/index.php?title=GloMIQO&amp;action=edit&amp;redlink=1" class="new" title="GloMIQO (page does not exist)">GloMIQO</a><sup>∗</sup></li>
+<li><a href="/wiki/Gurobi" title="Gurobi">Gurobi</a><sup>∗</sup></li>
+<li><a href="/wiki/IPOPT" title="IPOPT">IPOPT</a></li>
+<li><a href="/wiki/LINDO" title="LINDO">LINDO</a><sup>∗</sup></li>
+<li><a href="/w/index.php?title=LSSOL&amp;action=edit&amp;redlink=1" class="new" title="LSSOL (page does not exist)">LSSOL</a></li>
+<li><a href="/wiki/Robert_J._Vanderbei" title="Robert J. Vanderbei">LOQO</a></li>
+<li><a href="/wiki/MINOS_(optimization_software)" title="MINOS (optimization software)">MINOS</a></li>
+<li><a href="/wiki/MOSEK" title="MOSEK">MOSEK</a><sup>∗</sup></li>
+<li><a href="/w/index.php?title=OOPS_(optimization_software)&amp;action=edit&amp;redlink=1" class="new" title="OOPS (optimization software) (page does not exist)">OOPS</a></li>
+<li><a href="/w/index.php?title=OOQP&amp;action=edit&amp;redlink=1" class="new" title="OOQP (page does not exist)">OOQP</a></li>
+<li><a href="/w/index.php?title=QPOPT&amp;action=edit&amp;redlink=1" class="new" title="QPOPT (page does not exist)">QPOPT</a></li>
+<li><a href="/w/index.php?title=QPSOL&amp;action=edit&amp;redlink=1" class="new" title="QPSOL (page does not exist)">QPSOL</a></li>
+<li><a href="/wiki/SCIP_(optimization_software)" title="SCIP (optimization software)">SCIP</a><sup>∗</sup></li>
+<li><a href="/w/index.php?title=XA_(optimization_software)&amp;action=edit&amp;redlink=1" class="new" title="XA (optimization software) (page does not exist)">XA Quadratic Solver</a></li>
+<li><a href="/wiki/FICO_Xpress" title="FICO Xpress">Xpress-Optimizer</a><sup>∗</sup></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="vertical-align:top;"><a href="/wiki/Quadratically_constrained_quadratic_program" title="Quadratically constrained quadratic program">QCP</a>, MIQCP<sup style="font-weight:normal;">∗</sup> solvers</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/APOPT" title="APOPT">APOPT</a><sup>∗</sup></li>
+<li><a href="/wiki/Artelys_Knitro" title="Artelys Knitro">Artelys Knitro</a><sup>∗</sup></li>
+<li><a href="/w/index.php?title=BPMPD&amp;action=edit&amp;redlink=1" class="new" title="BPMPD (page does not exist)">BPMPD</a></li>
+<li><a href="/w/index.php?title=BPOPT&amp;action=edit&amp;redlink=1" class="new" title="BPOPT (page does not exist)">BPOPT</a></li>
+<li><a href="/wiki/CPLEX" title="CPLEX">CPLEX</a><sup>∗</sup></li>
+<li><a href="/w/index.php?title=GloMIQO&amp;action=edit&amp;redlink=1" class="new" title="GloMIQO (page does not exist)">GloMIQO</a><sup>∗</sup></li>
+<li><a href="/wiki/Gurobi" title="Gurobi">Gurobi</a><sup>∗</sup></li>
+<li><a href="/wiki/IPOPT" title="IPOPT">IPOPT</a></li>
+<li><a href="/wiki/LINDO" title="LINDO">LINDO</a><sup>∗</sup></li>
+<li><a href="/wiki/Robert_J._Vanderbei" title="Robert J. Vanderbei">LOQO</a></li>
+<li><a href="/wiki/MINOS_(optimization_software)" title="MINOS (optimization software)">MINOS</a></li>
+<li><a href="/wiki/MOSEK" title="MOSEK">MOSEK</a><sup>∗</sup></li>
+<li><a href="/wiki/SCIP_(optimization_software)" title="SCIP (optimization software)">SCIP</a><sup>∗</sup></li>
+<li><a href="/wiki/FICO_Xpress" title="FICO Xpress">Xpress-Optimizer</a><sup>∗</sup></li>
+<li><a href="/wiki/FICO_Xpress" title="FICO Xpress">Xpress-SLP</a><sup>∗</sup></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="vertical-align:top;"><a href="/wiki/Second-order_cone_programming" title="Second-order cone programming">SOCP</a>, MISOCP<sup style="font-weight:normal;">∗</sup> solvers</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/CPLEX" title="CPLEX">CPLEX</a><sup>∗</sup></li>
+<li><a href="/w/index.php?title=DSDP_(optimization_software)&amp;action=edit&amp;redlink=1" class="new" title="DSDP (optimization software) (page does not exist)">DSDP</a></li>
+<li><a href="/wiki/Gurobi" title="Gurobi">Gurobi</a><sup>∗</sup></li>
+<li><a href="/wiki/LINDO" title="LINDO">LINDO</a><sup>∗</sup></li>
+<li><a href="/wiki/Robert_J._Vanderbei" title="Robert J. Vanderbei">LOQO</a></li>
+<li><a href="/wiki/MOSEK" title="MOSEK">MOSEK</a><sup>∗</sup></li>
+<li><a href="/wiki/SCIP_(optimization_software)" title="SCIP (optimization software)">SCIP</a><sup>∗</sup></li>
+<li><a href="/w/index.php?title=SDPT3&amp;action=edit&amp;redlink=1" class="new" title="SDPT3 (page does not exist)">SDPT3</a></li>
+<li><a href="/w/index.php?title=SeDuMi&amp;action=edit&amp;redlink=1" class="new" title="SeDuMi (page does not exist)">SeDuMi</a></li>
+<li><a href="/wiki/FICO_Xpress" title="FICO Xpress">Xpress-Optimizer</a><sup>∗</sup></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="vertical-align:top;"><a href="/wiki/Semidefinite_programming" title="Semidefinite programming">SDP</a>, MISDP<sup style="font-weight:normal;">∗</sup> solvers</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/w/index.php?title=CSDP_(optimization_software)&amp;action=edit&amp;redlink=1" class="new" title="CSDP (optimization software) (page does not exist)">CSDP</a></li>
+<li><a href="/w/index.php?title=DSDP_(optimization_software)&amp;action=edit&amp;redlink=1" class="new" title="DSDP (optimization software) (page does not exist)">DSDP</a></li>
+<li><a href="/wiki/MOSEK" title="MOSEK">MOSEK</a></li>
+<li><a href="/w/index.php?title=PENBMI&amp;action=edit&amp;redlink=1" class="new" title="PENBMI (page does not exist)">PENBMI</a></li>
+<li><a href="/w/index.php?title=PENSDP&amp;action=edit&amp;redlink=1" class="new" title="PENSDP (page does not exist)">PENSDP</a></li>
+<li><a href="/w/index.php?title=SCIP-SDP&amp;action=edit&amp;redlink=1" class="new" title="SCIP-SDP (page does not exist)">SCIP-SDP</a><sup>∗</sup></li>
+<li><a href="/w/index.php?title=SDPA&amp;action=edit&amp;redlink=1" class="new" title="SDPA (page does not exist)">SDPA</a></li>
+<li><a href="/w/index.php?title=SDPT3&amp;action=edit&amp;redlink=1" class="new" title="SDPT3 (page does not exist)">SDPT3</a></li>
+<li><a href="/w/index.php?title=SeDuMi&amp;action=edit&amp;redlink=1" class="new" title="SeDuMi (page does not exist)">SeDuMi</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="vertical-align:top;"><a href="/wiki/Nonlinear_programming" title="Nonlinear programming">NLP</a>, MINLP<sup style="font-weight:normal;">∗</sup> solvers</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/w/index.php?title=ALGENCAN&amp;action=edit&amp;redlink=1" class="new" title="ALGENCAN (page does not exist)">ALGENCAN</a></li>
+<li><a href="/w/index.php?title=AlphaECP&amp;action=edit&amp;redlink=1" class="new" title="AlphaECP (page does not exist)">AlphaECP</a><sup>∗</sup></li>
+<li><a href="/w/index.php?title=ANTIGONE&amp;action=edit&amp;redlink=1" class="new" title="ANTIGONE (page does not exist)">ANTIGONE</a><sup>∗</sup></li>
+<li><a href="/wiki/AIMMS_Outer_Approximation_(optimization_software)" class="mw-redirect" title="AIMMS Outer Approximation (optimization software)">AOA</a><sup>∗</sup></li>
+<li><a href="/wiki/APOPT" title="APOPT">APOPT</a><sup>∗</sup></li>
+<li><a href="/wiki/Artelys_Knitro" title="Artelys Knitro">Artelys Knitro</a><sup>∗</sup></li>
+<li><a href="/wiki/BARON" title="BARON">BARON</a><sup>∗</sup></li>
+<li><a href="/w/index.php?title=Bonmin&amp;action=edit&amp;redlink=1" class="new" title="Bonmin (page does not exist)">Bonmin</a><sup>∗</sup></li>
+<li><a href="/w/index.php?title=BPOPT&amp;action=edit&amp;redlink=1" class="new" title="BPOPT (page does not exist)">BPOPT</a></li>
+<li><a href="/w/index.php?title=CONOPT&amp;action=edit&amp;redlink=1" class="new" title="CONOPT (page does not exist)">CONOPT</a></li>
+<li><a href="/wiki/Couenne" title="Couenne">Couenne</a><sup>∗</sup></li>
+<li><a href="/w/index.php?title=DICOPT&amp;action=edit&amp;redlink=1" class="new" title="DICOPT (page does not exist)">DICOPT</a><sup>∗</sup></li>
+<li><a href="/w/index.php?title=FilMINT&amp;action=edit&amp;redlink=1" class="new" title="FilMINT (page does not exist)">FilMINT</a><sup>∗</sup></li>
+<li><a href="/w/index.php?title=FilterSQP&amp;action=edit&amp;redlink=1" class="new" title="FilterSQP (page does not exist)">FilterSQP</a></li>
+<li><a href="/wiki/Galahad_library" title="Galahad library">Galahad library</a></li>
+<li>ipfilter</li>
+<li><a href="/wiki/IPOPT" title="IPOPT">IPOPT</a></li>
+<li><a href="/w/index.php?title=LANCELOT&amp;action=edit&amp;redlink=1" class="new" title="LANCELOT (page does not exist)">LANCELOT</a></li>
+<li><a href="/wiki/LINDO" title="LINDO">LINDO</a><sup>∗</sup></li>
+<li><a href="/wiki/Robert_J._Vanderbei" title="Robert J. Vanderbei">LOQO</a></li>
+<li><a href="/w/index.php?title=LRAMBO&amp;action=edit&amp;redlink=1" class="new" title="LRAMBO (page does not exist)">LRAMBO</a></li>
+<li><a href="/wiki/MIDACO" title="MIDACO">MIDACO</a><sup>∗</sup></li>
+<li><a href="/w/index.php?title=MILANO&amp;action=edit&amp;redlink=1" class="new" title="MILANO (page does not exist)">MILANO</a><sup>∗</sup></li>
+<li><a href="/w/index.php?title=MINLP_BB&amp;action=edit&amp;redlink=1" class="new" title="MINLP BB (page does not exist)">MINLP BB</a><sup>∗</sup></li>
+<li><a href="/wiki/MINOS_(optimization_software)" title="MINOS (optimization software)">MINOS</a></li>
+<li>Minotaur<sup>∗</sup></li>
+<li><a href="/w/index.php?title=MISQP&amp;action=edit&amp;redlink=1" class="new" title="MISQP (page does not exist)">MISQP</a><sup>∗</sup></li>
+<li><a href="/wiki/NLPQLP" title="NLPQLP">NLPQLP</a></li>
+<li><a href="/wiki/NPSOL" title="NPSOL">NPSOL</a></li>
+<li><a href="/w/index.php?title=OQNLP&amp;action=edit&amp;redlink=1" class="new" title="OQNLP (page does not exist)">OQNLP</a><sup>∗</sup></li>
+<li><a href="/w/index.php?title=PATHNLP&amp;action=edit&amp;redlink=1" class="new" title="PATHNLP (page does not exist)">PATHNLP</a></li>
+<li><a href="/w/index.php?title=PENNON&amp;action=edit&amp;redlink=1" class="new" title="PENNON (page does not exist)">PENNON</a></li>
+<li><a href="/w/index.php?title=SBB_(optimization_software)&amp;action=edit&amp;redlink=1" class="new" title="SBB (optimization software) (page does not exist)">SBB</a><sup>∗</sup></li>
+<li><a href="/wiki/SCIP_(optimization_software)" title="SCIP (optimization software)">SCIP</a><sup>∗</sup></li>
+<li><a href="/wiki/SNOPT" title="SNOPT">SNOPT</a><sup>∗</sup></li>
+<li><a href="/w/index.php?title=SQPlab&amp;action=edit&amp;redlink=1" class="new" title="SQPlab (page does not exist)">SQPlab</a></li>
+<li><a href="/wiki/WORHP" title="WORHP">WORHP</a></li>
+<li><a href="/wiki/FICO_Xpress" title="FICO Xpress">Xpress-SLP</a><sup>∗</sup></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="vertical-align:top;"><a href="/wiki/Global_optimization" title="Global optimization">GO</a> solvers</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/BARON" title="BARON">BARON</a></li>
+<li><a href="/wiki/Couenne" title="Couenne">Couenne</a><sup>∗</sup></li>
+<li><a href="/wiki/LINDO" title="LINDO">LINDO</a></li>
+<li><a href="/wiki/SCIP_(optimization_software)" title="SCIP (optimization software)">SCIP</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="vertical-align:top;"><a href="/wiki/Constraint_programming" title="Constraint programming">CP</a> solvers</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li>Artelys Kalis</li>
+<li>Choco</li>
+<li><a href="/wiki/Comet_(programming_language)" title="Comet (programming language)">Comet</a></li>
+<li><a href="/wiki/CPLEX" title="CPLEX">CPLEX CP Optimizer</a></li>
+<li><a href="/wiki/Gecode" title="Gecode">Gecode</a></li>
+<li>Google CP Solver</li>
+<li><a href="/wiki/JaCoP_(solver)" title="JaCoP (solver)">JaCoP</a></li>
+<li>OscaR</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="vertical-align:top;"><a href="/wiki/Metaheuristic" title="Metaheuristic">Metaheuristic</a> solvers</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/OptaPlanner" title="OptaPlanner">OptaPlanner</a></li>
+<li>LocalSolver</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow hlist" colspan="2">
+<div>
+<ul>
+<li><b><a href="/wiki/List_of_optimization_software" title="List of optimization software">List of optimization software</a></b></li>
+<li><b><a href="/wiki/Comparison_of_optimization_software" title="Comparison of optimization software">Comparison of optimization software</a></b></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div role="navigation" class="navbox" aria-labelledby="Statistical_software" style="padding:3px">
+<table class="nowraplinks hlist collapsible collapsed navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:Statistical_software" title="Template:Statistical software"><abbr title="View this template" style=";;background:none transparent;border:none;">v</abbr></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:Statistical_software" title="Template talk:Statistical software"><abbr title="Discuss this template" style=";;background:none transparent;border:none;">t</abbr></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:Statistical_software&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;">e</abbr></a></li>
+</ul>
+</div>
+<div id="Statistical_software" style="font-size:114%"><a href="/wiki/List_of_statistical_packages" title="List of statistical packages">Statistical software</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Public-domain_software" title="Public-domain software">Public domain</a></th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Dataplot" title="Dataplot">Dataplot</a></li>
+<li><a href="/wiki/Epi_Info" title="Epi Info">Epi Info</a></li>
+<li><a href="/wiki/CSPro" title="CSPro">CSPro</a></li>
+<li><a href="/wiki/X-12-ARIMA" title="X-12-ARIMA">X-12-ARIMA</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Open-source_software" title="Open-source software">Open-source</a></th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/ADMB" title="ADMB">ADMB</a></li>
+<li><a href="/wiki/DAP_(software)" title="DAP (software)">DAP</a></li>
+<li><a href="/wiki/Gretl" title="Gretl">gretl</a></li>
+<li><a href="/wiki/Just_another_Gibbs_sampler" title="Just another Gibbs sampler">JAGS</a></li>
+<li><a href="/wiki/JMulTi" title="JMulTi">JMulTi</a></li>
+<li><strong class="selflink">Julia</strong></li>
+<li><a href="/wiki/GNU_Octave" title="GNU Octave">GNU Octave</a></li>
+<li><a href="/wiki/H2O_(software)" title="H2O (software)">H2O</a></li>
+<li><a href="/wiki/OpenBUGS" title="OpenBUGS">OpenBUGS</a></li>
+<li><a href="/wiki/Orange_(software)" title="Orange (software)">Orange</a></li>
+<li><a href="/wiki/PSPP" title="PSPP">PSPP</a></li>
+<li><a href="/wiki/R_(programming_language)" title="R (programming language)">R</a></li>
+<li><a href="/wiki/SageMath" title="SageMath">SageMath</a></li>
+<li><a href="/wiki/SimFiT" title="SimFiT">SimFiT</a></li>
+<li><a href="/wiki/SOFA_Statistics" title="SOFA Statistics">SOFA Statistics</a></li>
+<li><a href="/wiki/Stan_(software)" title="Stan (software)">Stan</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Freeware" title="Freeware">Freeware</a></th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/BV4.1_(software)" title="BV4.1 (software)">BV4.1</a></li>
+<li><a href="/wiki/CumFreq" title="CumFreq">CumFreq</a></li>
+<li><a href="/wiki/SegReg" title="SegReg">SegReg</a></li>
+<li><a href="/wiki/XploRe" title="XploRe">XploRe</a></li>
+<li><a href="/wiki/WinBUGS" title="WinBUGS">WinBUGS</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Commercial_software" title="Commercial software">Commercial</a></th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks navbox-subgroup" style="border-spacing:0">
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Cross-platform" title="Cross-platform">Cross-platform</a></th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Data_Desk" title="Data Desk">Data Desk</a></li>
+<li><a href="/wiki/GAUSS_(software)" title="GAUSS (software)">GAUSS</a></li>
+<li><a href="/wiki/GraphPad_InStat" title="GraphPad InStat">GraphPad InStat</a></li>
+<li><a href="/wiki/GraphPad_Prism" title="GraphPad Prism">GraphPad Prism</a></li>
+<li>IBM <a href="/wiki/SPSS" title="SPSS">SPSS</a> Statistics</li>
+<li>IBM <a href="/wiki/SPSS_Modeler" title="SPSS Modeler">SPSS Modeler</a></li>
+<li><a href="/wiki/JMP_(statistical_software)" title="JMP (statistical software)">JMP</a></li>
+<li><a href="/wiki/Maple_(software)" title="Maple (software)">Maple</a></li>
+<li><a href="/wiki/Mathcad" title="Mathcad">Mathcad</a></li>
+<li><a href="/wiki/Mathematica" class="mw-redirect" title="Mathematica">Mathematica</a></li>
+<li><a href="/wiki/MATLAB" title="MATLAB">MATLAB</a></li>
+<li><a href="/wiki/OxMetrics" title="OxMetrics">OxMetrics</a></li>
+<li><a href="/wiki/Regression_Analysis_of_Time_Series" class="mw-redirect" title="Regression Analysis of Time Series">RATS</a></li>
+<li><a href="/wiki/Revolution_Analytics" title="Revolution Analytics">Revolution Analytics</a></li>
+<li><a href="/wiki/SAS_(software)" title="SAS (software)">SAS</a></li>
+<li><a href="/wiki/SmartPLS" title="SmartPLS">SmartPLS</a></li>
+<li><a href="/wiki/Stata" title="Stata">Stata</a></li>
+<li><a href="/wiki/StatView" title="StatView">StatView</a></li>
+<li><a href="/wiki/SUDAAN" title="SUDAAN">SUDAAN</a></li>
+<li><a href="/wiki/S-PLUS" title="S-PLUS">S-PLUS</a></li>
+<li><a href="/wiki/TSP_(econometrics_software)" title="TSP (econometrics software)">TSP</a></li>
+<li><a href="/wiki/World_Programming_System" title="World Programming System">World Programming System</a> (WPS)</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Microsoft_Windows" title="Microsoft Windows">Windows</a> only</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/BMDP" title="BMDP">BMDP</a></li>
+<li><a href="/wiki/EViews" title="EViews">EViews</a></li>
+<li><a href="/wiki/GenStat" class="mw-redirect" title="GenStat">GenStat</a></li>
+<li><a href="/wiki/LIMDEP" title="LIMDEP">LIMDEP</a></li>
+<li><a href="/wiki/LISREL" title="LISREL">LISREL</a></li>
+<li><a href="/wiki/MedCalc" title="MedCalc">MedCalc</a></li>
+<li><a href="/wiki/Microfit" title="Microfit">Microfit</a></li>
+<li><a href="/wiki/Minitab" title="Minitab">Minitab</a></li>
+<li><a href="/wiki/MLwiN" title="MLwiN">MLwiN</a></li>
+<li><a href="/wiki/NCSS_(statistical_software)" title="NCSS (statistical software)">NCSS</a></li>
+<li><a href="/wiki/SHAZAM_(software)" title="SHAZAM (software)">SHAZAM</a></li>
+<li><a href="/wiki/SigmaStat" title="SigmaStat">SigmaStat</a></li>
+<li><a href="/wiki/Statistica" title="Statistica">Statistica</a></li>
+<li><a href="/wiki/StatsDirect" title="StatsDirect">StatsDirect</a></li>
+<li><a href="/wiki/StatXact" title="StatXact">StatXact</a></li>
+<li><a href="/wiki/SYSTAT_(software)" title="SYSTAT (software)">SYSTAT</a></li>
+<li><a href="/wiki/The_Unscrambler" title="The Unscrambler">The Unscrambler</a></li>
+<li><a href="/wiki/UNISTAT" class="mw-redirect" title="UNISTAT">UNISTAT</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Microsoft_Excel" title="Microsoft Excel">Excel</a> add-ons</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Analyse-it" title="Analyse-it">Analyse-it</a></li>
+<li><a href="/wiki/SPC_XL" title="SPC XL">SPC XL</a></li>
+<li><a href="/wiki/SigmaXL" title="SigmaXL">SigmaXL</a></li>
+<li><a href="/wiki/UNISTAT" class="mw-redirect" title="UNISTAT">UNISTAT</a> for Excel</li>
+<li><a href="/wiki/XLfit_(software)" class="mw-redirect" title="XLfit (software)">XLfit</a></li>
+<li><a href="/wiki/RExcel" title="RExcel">RExcel</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" colspan="2">
+<div>
+<ul>
+<li><b><a href="/wiki/Category:Statistical_software" title="Category:Statistical software">Category</a></b></li>
+<li><b><a href="/wiki/Comparison_of_statistical_packages" title="Comparison of statistical packages">Comparison</a></b></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1285
+Cached time: 20170204141847
+Cache expiry: 86400
+Dynamic content: true
+CPU time usage: 0.400 seconds
+Real time usage: 0.494 seconds
+Preprocessor visited node count: 2730/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 146457/2097152 bytes
+Template argument size: 5112/2097152 bytes
+Highest expansion depth: 25/40
+Expensive parser function count: 3/500
+Lua time usage: 0.159/10.000 seconds
+Lua memory usage: 4.2 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  357.826      1 -total
+ 41.80%  149.561      2 Template:Reflist
+ 31.91%  114.173     30 Template:Cite_web
+ 28.04%  100.321      2 Template:Infobox
+ 21.66%   77.522      1 Template:Infobox_programming_language
+  9.12%   32.628      6 Template:Navbox
+  8.89%   31.806      1 Template:Infobox_software/simple
+  7.37%   26.376      1 Template:Official_website
+  7.11%   25.425      1 Template:Use_dmy_dates
+  5.91%   21.151      2 Template:Start_date_and_age
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:38455554-0!*!0!!en!4!* and timestamp 20170204141910 and revision id 763662627
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Julia_(programming_language)&amp;oldid=763662627">https://en.wikipedia.org/w/index.php?title=Julia_(programming_language)&amp;oldid=763662627</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:2012_software" title="Category:2012 software">2012 software</a></li><li><a href="/wiki/Category:Array_programming_languages" title="Category:Array programming languages">Array programming languages</a></li><li><a href="/wiki/Category:Computational_notebook" title="Category:Computational notebook">Computational notebook</a></li><li><a href="/wiki/Category:Data_mining_and_machine_learning_software" title="Category:Data mining and machine learning software">Data mining and machine learning software</a></li><li><a href="/wiki/Category:Data-centric_programming_languages" title="Category:Data-centric programming languages">Data-centric programming languages</a></li><li><a href="/wiki/Category:Dynamically_typed_programming_languages" title="Category:Dynamically typed programming languages">Dynamically typed programming languages</a></li><li><a href="/wiki/Category:Free_data_analysis_software" title="Category:Free data analysis software">Free data analysis software</a></li><li><a href="/wiki/Category:Free_data_visualization_software" title="Category:Free data visualization software">Free data visualization software</a></li><li><a href="/wiki/Category:Free_software_projects" title="Category:Free software projects">Free software projects</a></li><li><a href="/wiki/Category:Free_statistical_software" title="Category:Free statistical software">Free statistical software</a></li><li><a href="/wiki/Category:Functional_languages" title="Category:Functional languages">Functional languages</a></li><li><a href="/wiki/Category:High-level_programming_languages" title="Category:High-level programming languages">High-level programming languages</a></li><li><a href="/wiki/Category:Numerical_analysis_software_for_Linux" title="Category:Numerical analysis software for Linux">Numerical analysis software for Linux</a></li><li><a href="/wiki/Category:Numerical_analysis_software_for_MacOS" title="Category:Numerical analysis software for MacOS">Numerical analysis software for MacOS</a></li><li><a href="/wiki/Category:Numerical_analysis_software_for_Windows" title="Category:Numerical analysis software for Windows">Numerical analysis software for Windows</a></li><li><a href="/wiki/Category:Numerical_linear_algebra" title="Category:Numerical linear algebra">Numerical linear algebra</a></li><li><a href="/wiki/Category:Numerical_programming_languages" title="Category:Numerical programming languages">Numerical programming languages</a></li><li><a href="/wiki/Category:Object-oriented_programming_languages" title="Category:Object-oriented programming languages">Object-oriented programming languages</a></li><li><a href="/wiki/Category:Parallel_computing" title="Category:Parallel computing">Parallel computing</a></li><li><a href="/wiki/Category:Programming_languages_created_in_2012" title="Category:Programming languages created in 2012">Programming languages created in 2012</a></li><li><a href="/wiki/Category:Software_using_the_MIT_license" title="Category:Software using the MIT license">Software using the MIT license</a></li><li><a href="/wiki/Category:Statistical_programming_languages" title="Category:Statistical programming languages">Statistical programming languages</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Use_dmy_dates_from_October_2015" title="Category:Use dmy dates from October 2015">Use dmy dates from October 2015</a></li><li><a href="/wiki/Category:Official_website_different_in_Wikidata_and_Wikipedia" title="Category:Official website different in Wikidata and Wikipedia">Official website different in Wikidata and Wikipedia</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Julia+%28programming+language%29" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Julia+%28programming+language%29" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/Julia_(programming_language)"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:Julia_(programming_language)"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/Julia_(programming_language)" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=Julia_(programming_language)&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Julia_(programming_language)&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Julia_(programming_language)" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Julia_(programming_language)" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Julia_(programming_language)&amp;oldid=763662627" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Julia_(programming_language)&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q2613697" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Julia_%28programming_language%29&amp;id=763662627" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Julia+%28programming+language%29">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Julia+%28programming+language%29&amp;returnto=Julia+%28programming+language%29&amp;oldid=763662627&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Julia_(programming_language)&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-wikibase-otherprojects' aria-labelledby='p-wikibase-otherprojects-label'>
+			<h3 id='p-wikibase-otherprojects-label'>In other projects</h3>
+
+			<div class="body">
+									<ul>
+						<li class="wb-otherproject-link wb-otherproject-commons"><a href="https://commons.wikimedia.org/wiki/Category:Julia_(programming_language)" hreflang="en">Wikimedia Commons</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-ar"><a href="https://ar.wikipedia.org/wiki/%D8%AC%D9%88%D9%84%D9%8A%D8%A7_(%D9%84%D8%BA%D8%A9_%D8%A8%D8%B1%D9%85%D8%AC%D8%A9)" title="جوليا (لغة برمجة) – Arabic" lang="ar" hreflang="ar" class="interlanguage-link-target">العربية</a></li><li class="interlanguage-link interwiki-cs"><a href="https://cs.wikipedia.org/wiki/Julia_(programovac%C3%AD_jazyk)" title="Julia (programovací jazyk) – Czech" lang="cs" hreflang="cs" class="interlanguage-link-target">Čeština</a></li><li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/Julia_(Programmiersprache)" title="Julia (Programmiersprache) – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-es"><a href="https://es.wikipedia.org/wiki/Julia_(lenguaje_de_programaci%C3%B3n)" title="Julia (lenguaje de programación) – Spanish" lang="es" hreflang="es" class="interlanguage-link-target">Español</a></li><li class="interlanguage-link interwiki-fa"><a href="https://fa.wikipedia.org/wiki/%D8%AC%D9%88%D9%84%DB%8C%D8%A7" title="جولیا – Persian" lang="fa" hreflang="fa" class="interlanguage-link-target">فارسی</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/Julia_(langage)" title="Julia (langage) – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-ko"><a href="https://ko.wikipedia.org/wiki/%EC%A4%84%EB%A6%AC%EC%95%84_(%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D_%EC%96%B8%EC%96%B4)" title="줄리아 (프로그래밍 언어) – Korean" lang="ko" hreflang="ko" class="interlanguage-link-target">한국어</a></li><li class="interlanguage-link interwiki-it"><a href="https://it.wikipedia.org/wiki/Julia_(linguaggio_di_programmazione)" title="Julia (linguaggio di programmazione) – Italian" lang="it" hreflang="it" class="interlanguage-link-target">Italiano</a></li><li class="interlanguage-link interwiki-ja"><a href="https://ja.wikipedia.org/wiki/Julia_(%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E8%A8%80%E8%AA%9E)" title="Julia (プログラミング言語) – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target">日本語</a></li><li class="interlanguage-link interwiki-pt"><a href="https://pt.wikipedia.org/wiki/Julia_(linguagem_de_programa%C3%A7%C3%A3o)" title="Julia (linguagem de programação) – Portuguese" lang="pt" hreflang="pt" class="interlanguage-link-target">Português</a></li><li class="interlanguage-link interwiki-ru"><a href="https://ru.wikipedia.org/wiki/Julia_(%D1%8F%D0%B7%D1%8B%D0%BA_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F)" title="Julia (язык программирования) – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li><li class="interlanguage-link interwiki-sr"><a href="https://sr.wikipedia.org/wiki/%D0%88%D1%83%D0%BB%D0%B8%D1%98%D0%B0_(%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D1%81%D0%BA%D0%B8_%D1%98%D0%B5%D0%B7%D0%B8%D0%BA)" title="Јулија (програмски језик) – Serbian" lang="sr" hreflang="sr" class="interlanguage-link-target">Српски / srpski</a></li><li class="interlanguage-link interwiki-tr"><a href="https://tr.wikipedia.org/wiki/Julia_(programlama_dili)" title="Julia (programlama dili) – Turkish" lang="tr" hreflang="tr" class="interlanguage-link-target">Türkçe</a></li><li class="interlanguage-link interwiki-zh"><a href="https://zh.wikipedia.org/wiki/Julia_(%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80)" title="Julia (编程语言) – Chinese" lang="zh" hreflang="zh" class="interlanguage-link-target">中文</a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q2613697#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 4 February 2017, at 14:19.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Julia_(programming_language)&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.400","walltime":"0.494","ppvisitednodes":{"value":2730,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":146457,"limit":2097152},"templateargumentsize":{"value":5112,"limit":2097152},"expansiondepth":{"value":25,"limit":40},"expensivefunctioncount":{"value":3,"limit":500},"entityaccesscount":{"value":1,"limit":400},"timingprofile":["100.00%  357.826      1 -total"," 41.80%  149.561      2 Template:Reflist"," 31.91%  114.173     30 Template:Cite_web"," 28.04%  100.321      2 Template:Infobox"," 21.66%   77.522      1 Template:Infobox_programming_language","  9.12%   32.628      6 Template:Navbox","  8.89%   31.806      1 Template:Infobox_software/simple","  7.37%   26.376      1 Template:Official_website","  7.11%   25.425      1 Template:Use_dmy_dates","  5.91%   21.151      2 Template:Start_date_and_age"]},"scribunto":{"limitreport-timeusage":{"value":"0.159","limit":"10.000"},"limitreport-memusage":{"value":4404861,"limit":52428800}},"cachereport":{"origin":"mw1285","timestamp":"20170204141847","ttl":86400,"transientcontent":true}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":179,"wgHostname":"mw1240"});});</script>
+	</body>
+</html>

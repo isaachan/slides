@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Io (programming language) - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Io_(programming_language)","wgTitle":"Io (programming language)","wgCurRevisionId":736869226,"wgRevisionId":736869226,"wgArticleId":323340,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles needing additional references from August 2014","All articles needing additional references","Articles lacking reliable references from August 2014","All articles lacking reliable references","Pages using deprecated image syntax","All articles with unsourced statements","Articles with unsourced statements from July 2008","Articles needing additional references from June 2013","Articles with DMOZ links","Dynamically typed programming languages","Prototype-based programming languages","Programming languages created in 2002","Scripting languages"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Io_(programming_language)","wgRelevantArticleId":323340,"wgRequestId":"WIuTzgpAMEkAAEOq2HMAAAAI","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":true},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q756175","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.cite.styles":"ready","ext.pygments":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.legacy.wikibits","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.pygments%2CwikimediaBadges%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.29.0-wmf.8"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Io_(programming_language)"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Io_(programming_language)&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Io_(programming_language)&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Io_(programming_language)"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Io_programming_language rootpage-Io_programming_language skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Io (programming language)</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><script>function mfTempOpenSection(id){var block=document.getElementById("mf-section-"+id);block.className+=" open-block";block.previousSibling.className+=" open-block";}</script><table class="plainlinks metadata ambox ambox-content ambox-Refimprove" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><a href="/wiki/File:Question_book-new.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" width="50" height="39" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/75px-Question_book-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/100px-Question_book-new.svg.png 2x" data-file-width="512" data-file-height="399" /></a></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">This article <b>needs additional citations for <a href="/wiki/Wikipedia:Verifiability" title="Wikipedia:Verifiability">verification</a></b>. <span class="hide-when-compact">Please help <a class="external text" href="//en.wikipedia.org/w/index.php?title=Io_(programming_language)&amp;action=edit">improve this article</a> by <a href="/wiki/Help:Introduction_to_referencing_with_Wiki_Markup/1" title="Help:Introduction to referencing with Wiki Markup/1">adding citations to reliable sources</a>. Unsourced material may be challenged and removed.</span> <small><i>(August 2014)</i></small> <small class="hide-when-compact"><i>(<a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove this template message</a>)</i></small></span></td>
+</tr>
+</table>
+<table class="plainlinks metadata ambox ambox-content ambox-Primary_sources" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><a href="/wiki/File:Question_book-new.svg" class="image"><img alt="Question book-new.svg" src="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" width="50" height="39" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/75px-Question_book-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/100px-Question_book-new.svg.png 2x" data-file-width="512" data-file-height="399" /></a></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">This article <b>relies too much on <a href="/wiki/Wikipedia:Verifiability" title="Wikipedia:Verifiability">references</a> to <a href="/wiki/Wikipedia:No_original_research#Primary.2C_secondary_and_tertiary_sources" title="Wikipedia:No original research">primary sources</a></b>. <span class="hide-when-compact">Please improve this by adding <a href="/wiki/Wikipedia:No_original_research#Primary.2C_secondary_and_tertiary_sources" title="Wikipedia:No original research">secondary or tertiary sources</a>.</span> <small><i>(August 2014)</i></small> <small class="hide-when-compact"><i>(<a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove this template message</a>)</i></small></span></td>
+</tr>
+</table>
+<table class="infobox vevent" style="width:22em">
+<caption class="summary">Io</caption>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/File:Io-logo.svg" class="image"><img alt="Io-logo.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/26/Io-logo.svg/64px-Io-logo.svg.png" width="64" height="64" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/26/Io-logo.svg/96px-Io-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/2/26/Io-logo.svg/128px-Io-logo.svg.png 2x" data-file-width="64" data-file-height="64" /></a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Programming_paradigm" title="Programming paradigm">Paradigm</a></th>
+<td><a href="/wiki/Object-oriented_programming" title="Object-oriented programming">object-oriented</a> <a href="/wiki/Prototype-based_programming" title="Prototype-based programming">prototype-based</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_design" title="Software design">Designed&#160;by</a></th>
+<td>Steve Dekorte</td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_developer" title="Software developer">Developer</a></th>
+<td class="organiser">Steve Dekorte, Jonathan Wright, Jeremy Tregunna</td>
+</tr>
+<tr>
+<th scope="row">First&#160;appeared</th>
+<td>2002<span class="noprint">; 15&#160;years ago</span><span style="display:none">&#160;(<span class="bday dtstart published updated">2002</span>)</span></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Type_system" title="Type system">Typing discipline</a></th>
+<td><a href="/wiki/Type_system" title="Type system">dynamic</a>, <a href="/wiki/Strongly-typed_programming_language" class="mw-redirect" title="Strongly-typed programming language">strong</a></td>
+</tr>
+<tr>
+<th colspan="2" style="text-align:center;background-color: #eee;">Major <a href="/wiki/Programming_language_implementation" title="Programming language implementation">implementations</a></th>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"><a rel="nofollow" class="external text" href="http://www.iolanguage.com/">Io</a> <a rel="nofollow" class="external text" href="http://synrc.com/io/index.htm">Io.NET</a></td>
+</tr>
+<tr>
+<th colspan="2" style="text-align:center;background-color: #eee;">Influenced by</th>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/Smalltalk" title="Smalltalk">Smalltalk</a>, <a href="/wiki/NewtonScript" title="NewtonScript">NewtonScript</a>, <a href="/wiki/Self_(programming_language)" title="Self (programming language)">Self</a>, <a href="/wiki/Lua_(programming_language)" title="Lua (programming language)">Lua</a>, <a href="/wiki/Lisp_(programming_language)" title="Lisp (programming language)">Lisp</a>, <a href="/wiki/Python_(programming_language)" title="Python (programming language)">Python</a>, <a href="/wiki/Actor_model_middle_history#Actor_programming_languages" title="Actor model middle history">Act1</a></td>
+</tr>
+<tr>
+<th colspan="2" style="text-align:center;background-color: #eee;">Influenced</th>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/Ioke_(programming_language)" title="Ioke (programming language)">Ioke</a>, Potion</td>
+</tr>
+</table>
+<p><b>Io</b> is a pure <a href="/wiki/Object-oriented_programming" title="Object-oriented programming">object-oriented</a> <a href="/wiki/Computer_programming" title="Computer programming">programming</a> <a href="/wiki/Programming_language" title="Programming language">language</a> inspired by <a href="/wiki/Smalltalk" title="Smalltalk">Smalltalk</a>, <a href="/wiki/Self_(programming_language)" title="Self (programming language)">Self</a>, <a href="/wiki/Lua_(programming_language)" title="Lua (programming language)">Lua</a>, <a href="/wiki/Lisp_(programming_language)" title="Lisp (programming language)">Lisp</a>, <a href="/wiki/Actor_model_middle_history#Actor_programming_languages" title="Actor model middle history">Act1</a>, and <a href="/wiki/NewtonScript" title="NewtonScript">NewtonScript</a>.<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">[1]</a></sup> Io has a <a href="/wiki/Prototype-based_programming" title="Prototype-based programming">prototype-based</a> object model similar to the ones in Self and NewtonScript, eliminating the distinction between <a href="/wiki/Object_(computer_science)" title="Object (computer science)">instance</a> and <a href="/wiki/Class_(computer_science)" class="mw-redirect" title="Class (computer science)">class</a>. Like Smalltalk, everything is an object and it uses <a href="/wiki/Type_system" title="Type system">dynamic typing</a>. Like Lisp, programs are just data trees. Io uses <a href="/wiki/Actor_model" title="Actor model">actors</a> for concurrency.</p>
+<p>Remarkable features of Io are its minimal size and openness to using external code resources.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (July 2008)">citation needed</span></a></i>]</sup> Io is executed by a small, portable <a href="/wiki/Virtual_machine" title="Virtual machine">virtual machine</a>.</p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#History"><span class="tocnumber">1</span> <span class="toctext">History</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Philosophy"><span class="tocnumber">2</span> <span class="toctext">Philosophy</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Features"><span class="tocnumber">3</span> <span class="toctext">Features</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Syntax"><span class="tocnumber">4</span> <span class="toctext">Syntax</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="#Methods_and_blocks"><span class="tocnumber">4.1</span> <span class="toctext">Methods and blocks</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Examples"><span class="tocnumber">4.2</span> <span class="toctext">Examples</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a href="#See_also"><span class="tocnumber">5</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#References"><span class="tocnumber">6</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#External_links"><span class="tocnumber">7</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="History">History</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Io_(programming_language)&amp;action=edit&amp;section=1" title="Edit section: History">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The language was created by Steve Dekorte in 2002, after trying to help a friend, Dru Nelson, with his language, Cel. He found out that he really didn't know much about how languages worked, and set out to write a tiny language to understand the problems better.<sup id="cite_ref-Tate_2010_2-0" class="reference"><a href="#cite_note-Tate_2010-2">[2]</a></sup></p>
+<h2><span class="mw-headline" id="Philosophy">Philosophy</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Io_(programming_language)&amp;action=edit&amp;section=2" title="Edit section: Philosophy">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Io's goal is to explore conceptual unification and <a href="/wiki/Dynamic_programming_language" title="Dynamic programming language">dynamic languages</a>, so the tradeoffs tend to favor simplicity and flexibility over performance.</p>
+<h2><span class="mw-headline" id="Features">Features</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Io_(programming_language)&amp;action=edit&amp;section=3" title="Edit section: Features">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li>pure <a href="/wiki/Object-oriented_programming" title="Object-oriented programming">object-oriented</a> based on <a href="/wiki/Prototype-based_programming" title="Prototype-based programming">prototypes</a></li>
+<li>code-as-data / <a href="/wiki/Homoiconicity" title="Homoiconicity">homoiconic</a></li>
+<li><a href="/wiki/Lazy_evaluation" title="Lazy evaluation">lazy evaluation</a> of function parameters</li>
+<li><a href="/wiki/Higher-order_functions" class="mw-redirect" title="Higher-order functions">higher-order functions</a></li>
+<li>introspection, <a href="/wiki/Reflection_(computer_science)" class="mw-redirect" title="Reflection (computer science)">reflection</a> and <a href="/wiki/Metaprogramming" title="Metaprogramming">metaprogramming</a></li>
+<li><a href="/wiki/Actor_model" title="Actor model">Actor-based</a> <a href="/wiki/Concurrency_(computer_science)" title="Concurrency (computer science)">concurrency</a></li>
+<li><a href="/wiki/Coroutine" title="Coroutine">Coroutines</a></li>
+<li><a href="/wiki/Exception_handling" title="Exception handling">exception handling</a></li>
+<li>incremental <a href="/wiki/Garbage_collection_(computer_science)" title="Garbage collection (computer science)">garbage collecting</a> supporting <a href="/wiki/Weak_reference" title="Weak reference">weak links</a></li>
+<li>highly <a href="/wiki/Porting" title="Porting">portable</a></li>
+<li><a href="/wiki/Dynamic-Link_Library" class="mw-redirect" title="Dynamic-Link Library">DLL</a>/<a href="/wiki/Library_(computer_science)" class="mw-redirect" title="Library (computer science)">shared library</a> dynamic loading on most platforms</li>
+<li>small <a href="/wiki/Virtual_machine" title="Virtual machine">virtual machine</a></li>
+</ul>
+<h2><span class="mw-headline" id="Syntax">Syntax</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Io_(programming_language)&amp;action=edit&amp;section=4" title="Edit section: Syntax">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<table class="plainlinks metadata ambox ambox-content ambox-Unreferenced" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><a href="/wiki/File:Question_book-new.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" width="50" height="39" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/75px-Question_book-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/100px-Question_book-new.svg.png 2x" data-file-width="512" data-file-height="399" /></a></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">This section <b>does not <a href="/wiki/Wikipedia:Citing_sources" title="Wikipedia:Citing sources">cite</a> any <a href="/wiki/Wikipedia:Verifiability" title="Wikipedia:Verifiability">sources</a></b>. <span class="hide-when-compact">Please help <a class="external text" href="//en.wikipedia.org/w/index.php?title=Io_(programming_language)&amp;action=edit">improve this section</a> by <a href="/wiki/Help:Introduction_to_referencing_with_Wiki_Markup/1" title="Help:Introduction to referencing with Wiki Markup/1">adding citations to reliable sources</a>. Unsourced material may be challenged and <a href="/wiki/Wikipedia:Verifiability#Burden_of_evidence" title="Wikipedia:Verifiability">removed</a>.</span> <small><i>(June 2013)</i></small> <small class="hide-when-compact"><i>(<a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove this template message</a>)</i></small></span></td>
+</tr>
+</table>
+<p>In its simplest form, it is composed of a single identifier:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+ <span class="n">doStuff</span>
+</pre></div>
+<p>Assuming the above doStuff is a <a href="/wiki/Method_(programming)" class="mw-redirect" title="Method (programming)">method</a>, it is being called with zero arguments and as a result, explicit parentheses are not required.</p>
+<p>If doStuff had arguments, it would look like this:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+ <span class="n">doStuff</span><span class="o">(</span><span class="mf">42</span><span class="o">)</span>
+</pre></div>
+<p>Io is a <a href="/wiki/Message_passing" title="Message passing">message passing</a> language, and since everything in Io is a message (excluding <a href="/wiki/Comment_(computer_programming)" title="Comment (computer programming)">comments</a>), each message is sent to a receiver. The above example demonstrates this well, but not fully. To describe this point better, let's look at the next example:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+ <span class="n">System</span> <span class="n">version</span>
+</pre></div>
+<p>The above example demonstrates message passing in Io; the "version" message is sent to the "System" object.</p>
+<p><a href="/wiki/Operator_(programming)" class="mw-redirect" title="Operator (programming)">Operators</a> are a special case where the syntax is not as cut-and-dried as the above examples. The Io <a href="/wiki/Syntax_analysis" class="mw-redirect" title="Syntax analysis">parser</a> intercepts a set of operators defined by the interpreter, and translates them to method calls. For example, the following:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+ <span class="mf">1</span> <span class="o">+</span> <span class="mf">5</span> <span class="o">*</span> <span class="mf">8</span> <span class="o">+</span> <span class="mf">1</span>
+</pre></div>
+<p>translates to:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+ <span class="mf">1</span> <span class="o">+</span> <span class="o">(</span><span class="mf">5</span> <span class="o">*(</span><span class="mf">8</span><span class="o">))</span> <span class="o">+(</span><span class="mf">1</span><span class="o">)</span>
+</pre></div>
+<p>As you can see, there is also a little bit of <a href="/wiki/Operator_precedence" class="mw-redirect" title="Operator precedence">operator precedence</a> happening here, and the precedence levels are the same as with the <a href="/wiki/Operator_precedence_in_C" class="mw-redirect" title="Operator precedence in C">C precedence levels</a>.</p>
+<p>Operators were also turned into method calls. In fact, all operators in Io are methods; the fact that they do not require explicit parentheses is a convenience.</p>
+<h3><span class="mw-headline" id="Methods_and_blocks">Methods and blocks</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Io_(programming_language)&amp;action=edit&amp;section=5" title="Edit section: Methods and blocks">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>In Io there are two ways of creating anonymous functions: methods and blocks. Between them, they are almost identical except for <a href="/wiki/Scope_(programming)" class="mw-redirect" title="Scope (programming)">scope</a>. While blocks have <a href="/wiki/Lexical_scope" class="mw-redirect" title="Lexical scope">lexical scope</a>, methods have <a href="/wiki/Dynamic_scope" class="mw-redirect" title="Dynamic scope">dynamic scope</a>.</p>
+<p>Both <i>method</i> and <i>block</i> are <a href="/wiki/Higher-order_functions" class="mw-redirect" title="Higher-order functions">higher-order functions</a>.</p>
+<h3><span class="mw-headline" id="Examples">Examples</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Io_(programming_language)&amp;action=edit&amp;section=6" title="Edit section: Examples">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The ubiquitous <a href="/wiki/Hello_world_program" class="mw-redirect" title="Hello world program">Hello world program</a>:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+ <span class="s">"Hello, world!"</span> <span class="n">println</span>
+</pre></div>
+<p>New objects are created by <a href="/wiki/Cloning_(programming)" title="Cloning (programming)">cloning</a> objects. In Io specifically, a new, empty object is created and only the differences between it and its parent are stored within the new object; this behavior is known as <a href="/wiki/Differential_inheritance" title="Differential inheritance">differential inheritance</a>. An example of this behavior is shown:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+ <span class="n">A</span> <span class="o">:=</span> <span class="nb">Object</span> <span class="k">clone</span>         <span class="c1">// creates a new, empty object named "A"</span>
+</pre></div>
+<p>A simple non-recursive factorial function, in Io:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="n">factorial</span> <span class="o">:=</span> <span class="k">method</span><span class="o">(</span><span class="n">n</span><span class="o">,</span>
+    <span class="k">if</span><span class="o">(</span><span class="n">n</span> <span class="o">==</span> <span class="mf">0</span><span class="o">,</span> <span class="n">return</span> <span class="mf">1</span><span class="o">)</span>
+    <span class="n">res</span> <span class="o">:=</span> <span class="mf">1</span>
+    <span class="n">Range</span> <span class="mf">1</span> <span class="n">to</span><span class="o">(</span><span class="n">n</span><span class="o">)</span> <span class="n">foreach</span><span class="o">(</span><span class="n">i</span><span class="o">,</span> <span class="n">res</span> <span class="o">=</span> <span class="n">res</span> <span class="o">*</span> <span class="n">i</span><span class="o">)</span>
+<span class="o">)</span>
+</pre></div>
+<p>Because assignment of res * i to res is the last action taken, the function implicitly returns the result and so an explicit return expression is not needed. The above demonstrates the usage of <a href="/w/index.php?title=Range_(programming)&amp;action=edit&amp;redlink=1" class="new" title="Range (programming) (page does not exist)">ranges</a>, and doesn't use a for() loop, which would be faster.</p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Io_(programming_language)&amp;action=edit&amp;section=7" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a href="/wiki/Ioke_(programming_language)" title="Ioke (programming language)">Ioke (programming language)</a></li>
+</ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Io_(programming_language)&amp;action=edit&amp;section=8" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://iolanguage.com/scm/io/docs/IoGuide.html">Io Programming Guide</a></span></li>
+<li id="cite_note-Tate_2010-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-Tate_2010_2-0">^</a></b></span> <span class="reference-text"><cite class="citation book">Tate, Bruce (2010). "Chapter 3: Io". <i>Seven Languages in Seven Weeks: A Pragmatic Guide to Learning Programming Languages</i> (1st ed.). Raleigh, North Carolina: <a href="/wiki/Pragmatic_Bookshelf" class="mw-redirect" title="Pragmatic Bookshelf">Pragmatic Bookshelf</a>. p.&#160;60, 72. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-1934356593" title="Special:BookSources/978-1934356593">978-1934356593</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AIo+%28programming+language%29&amp;rft.atitle=Chapter+3%3A+Io&amp;rft.aufirst=Bruce&amp;rft.aulast=Tate&amp;rft.btitle=Seven+Languages+in+Seven+Weeks%3A+A+Pragmatic+Guide+to+Learning+Programming+Languages&amp;rft.date=2010&amp;rft.edition=1st&amp;rft.genre=bookitem&amp;rft.isbn=978-1934356593&amp;rft.pages=60%2C+72&amp;rft.place=Raleigh%2C+North+Carolina&amp;rft.pub=Pragmatic+Bookshelf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Io_(programming_language)&amp;action=edit&amp;section=9" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://iolanguage.com/">Io</a> home page</li>
+<li><a rel="nofollow" class="external text" href="http://synrc.com/research/io/index.htm">Io at Synrc Research Center</a></li>
+<li><a rel="nofollow" class="external text" href="https://www.dmoz.org/Computers/Programming/Languages/Io">Io</a> at <a href="/wiki/DMOZ" title="DMOZ">DMOZ</a></li>
+<li><a rel="nofollow" class="external text" href="https://github.com/bekkopen/jasmineio">Jasmine.Io</a> BDD Testing Framework for Io</li>
+</ul>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1224
+Cached time: 20170127131531
+Cache expiry: 86400
+Dynamic content: true
+CPU time usage: 0.156 seconds
+Real time usage: 0.207 seconds
+Preprocessor visited node count: 977/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 24129/2097152 bytes
+Template argument size: 1849/2097152 bytes
+Highest expansion depth: 12/40
+Expensive parser function count: 6/500
+Lua time usage: 0.064/10.000 seconds
+Lua memory usage: 2.45 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  166.860      1 -total
+ 26.14%   43.618      1 Template:Reflist
+ 23.95%   39.967      1 Template:Morerefs
+ 22.85%   38.128      1 Template:Infobox_programming_language
+ 21.75%   36.291      1 Template:Cite_book
+ 20.65%   34.463      1 Template:Infobox
+ 20.54%   34.266      3 Template:Ambox
+ 12.95%   21.606      1 Template:Fact
+ 11.13%   18.573      1 Template:Fix
+  6.00%   10.005      1 Template:Unreferenced_section
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:323340-0!*!0!!en!4!* and timestamp 20170127131531 and revision id 736869226
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Io_(programming_language)&amp;oldid=736869226">https://en.wikipedia.org/w/index.php?title=Io_(programming_language)&amp;oldid=736869226</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Dynamically_typed_programming_languages" title="Category:Dynamically typed programming languages">Dynamically typed programming languages</a></li><li><a href="/wiki/Category:Prototype-based_programming_languages" title="Category:Prototype-based programming languages">Prototype-based programming languages</a></li><li><a href="/wiki/Category:Programming_languages_created_in_2002" title="Category:Programming languages created in 2002">Programming languages created in 2002</a></li><li><a href="/wiki/Category:Scripting_languages" title="Category:Scripting languages">Scripting languages</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Articles_needing_additional_references_from_August_2014" title="Category:Articles needing additional references from August 2014">Articles needing additional references from August 2014</a></li><li><a href="/wiki/Category:All_articles_needing_additional_references" title="Category:All articles needing additional references">All articles needing additional references</a></li><li><a href="/wiki/Category:Articles_lacking_reliable_references_from_August_2014" title="Category:Articles lacking reliable references from August 2014">Articles lacking reliable references from August 2014</a></li><li><a href="/wiki/Category:All_articles_lacking_reliable_references" title="Category:All articles lacking reliable references">All articles lacking reliable references</a></li><li><a href="/wiki/Category:Pages_using_deprecated_image_syntax" title="Category:Pages using deprecated image syntax">Pages using deprecated image syntax</a></li><li><a href="/wiki/Category:All_articles_with_unsourced_statements" title="Category:All articles with unsourced statements">All articles with unsourced statements</a></li><li><a href="/wiki/Category:Articles_with_unsourced_statements_from_July_2008" title="Category:Articles with unsourced statements from July 2008">Articles with unsourced statements from July 2008</a></li><li><a href="/wiki/Category:Articles_needing_additional_references_from_June_2013" title="Category:Articles needing additional references from June 2013">Articles needing additional references from June 2013</a></li><li><a href="/wiki/Category:Articles_with_DMOZ_links" title="Category:Articles with DMOZ links">Articles with DMOZ links</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Io+%28programming+language%29" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Io+%28programming+language%29" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/Io_(programming_language)"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:Io_(programming_language)"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/Io_(programming_language)" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=Io_(programming_language)&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Io_(programming_language)&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Io_(programming_language)" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Io_(programming_language)" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Io_(programming_language)&amp;oldid=736869226" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Io_(programming_language)&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q756175" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Io_%28programming_language%29&amp;id=736869226" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Io+%28programming+language%29">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Io+%28programming+language%29&amp;returnto=Io+%28programming+language%29&amp;oldid=736869226&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Io_(programming_language)&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/Io_(Programmiersprache)" title="Io (Programmiersprache) – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-es"><a href="https://es.wikipedia.org/wiki/Io_(lenguaje_de_programaci%C3%B3n)" title="Io (lenguaje de programación) – Spanish" lang="es" hreflang="es" class="interlanguage-link-target">Español</a></li><li class="interlanguage-link interwiki-fa"><a href="https://fa.wikipedia.org/wiki/%D8%A2%DB%8C%E2%80%8C%D8%A7%D9%88_(%D8%B2%D8%A8%D8%A7%D9%86_%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C)" title="آی‌او (زبان برنامه‌نویسی) – Persian" lang="fa" hreflang="fa" class="interlanguage-link-target">فارسی</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/Io_(langage)" title="Io (langage) – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-ko"><a href="https://ko.wikipedia.org/wiki/%EC%95%84%EC%9D%B4%EC%98%A4_(%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D_%EC%96%B8%EC%96%B4)" title="아이오 (프로그래밍 언어) – Korean" lang="ko" hreflang="ko" class="interlanguage-link-target">한국어</a></li><li class="interlanguage-link interwiki-hy"><a href="https://hy.wikipedia.org/wiki/Io_(%D5%AE%D6%80%D5%A1%D5%A3%D6%80%D5%A1%D5%BE%D5%B8%D6%80%D5%B4%D5%A1%D5%B6_%D5%AC%D5%A5%D5%A6%D5%B8%D6%82)" title="Io (ծրագրավորման լեզու) – Armenian" lang="hy" hreflang="hy" class="interlanguage-link-target">Հայերեն</a></li><li class="interlanguage-link interwiki-ms"><a href="https://ms.wikipedia.org/wiki/Io_(bahasa_pengaturcaraan)" title="Io (bahasa pengaturcaraan) – Malay" lang="ms" hreflang="ms" class="interlanguage-link-target">Bahasa Melayu</a></li><li class="interlanguage-link interwiki-ja"><a href="https://ja.wikipedia.org/wiki/Io_(%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E8%A8%80%E8%AA%9E)" title="Io (プログラミング言語) – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target">日本語</a></li><li class="interlanguage-link interwiki-pt"><a href="https://pt.wikipedia.org/wiki/Io_(linguagem_de_programa%C3%A7%C3%A3o)" title="Io (linguagem de programação) – Portuguese" lang="pt" hreflang="pt" class="interlanguage-link-target">Português</a></li><li class="interlanguage-link interwiki-ru"><a href="https://ru.wikipedia.org/wiki/Io" title="Io – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li><li class="interlanguage-link interwiki-fi"><a href="https://fi.wikipedia.org/wiki/Io_(ohjelmointikieli)" title="Io (ohjelmointikieli) – Finnish" lang="fi" hreflang="fi" class="interlanguage-link-target">Suomi</a></li><li class="interlanguage-link interwiki-tg"><a href="https://tg.wikipedia.org/wiki/Io" title="Io – Tajik" lang="tg" hreflang="tg" class="interlanguage-link-target">Тоҷикӣ</a></li><li class="interlanguage-link interwiki-zh"><a href="https://zh.wikipedia.org/wiki/Io_(%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80)" title="Io (编程语言) – Chinese" lang="zh" hreflang="zh" class="interlanguage-link-target">中文</a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q756175#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 30 August 2016, at 11:01.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Io_(programming_language)&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.156","walltime":"0.207","ppvisitednodes":{"value":977,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":24129,"limit":2097152},"templateargumentsize":{"value":1849,"limit":2097152},"expansiondepth":{"value":12,"limit":40},"expensivefunctioncount":{"value":6,"limit":500},"entityaccesscount":{"value":1,"limit":400},"timingprofile":["100.00%  166.860      1 -total"," 26.14%   43.618      1 Template:Reflist"," 23.95%   39.967      1 Template:Morerefs"," 22.85%   38.128      1 Template:Infobox_programming_language"," 21.75%   36.291      1 Template:Cite_book"," 20.65%   34.463      1 Template:Infobox"," 20.54%   34.266      3 Template:Ambox"," 12.95%   21.606      1 Template:Fact"," 11.13%   18.573      1 Template:Fix","  6.00%   10.005      1 Template:Unreferenced_section"]},"scribunto":{"limitreport-timeusage":{"value":"0.064","limit":"10.000"},"limitreport-memusage":{"value":2572262,"limit":52428800}},"cachereport":{"origin":"mw1224","timestamp":"20170127131531","ttl":86400,"transientcontent":true}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":56,"wgHostname":"mw1238"});});</script>
+	</body>
+</html>

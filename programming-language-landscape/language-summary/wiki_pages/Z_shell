@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Z shell - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Z_shell","wgTitle":"Z shell","wgCurRevisionId":754457801,"wgRevisionId":754457801,"wgArticleId":95928,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Pages using deprecated image syntax","Articles with DMOZ links","Unix shells","Scripting languages"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Z_shell","wgRelevantArticleId":95928,"wgRequestId":"WI37bgpAMEkAACPS8eYAAAJP","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":true},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q227308","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.math.styles":"ready","ext.cite.styles":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.legacy.wikibits","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.math.scripts%2Cstyles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.29.0-wmf.9"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Z_shell"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Z_shell&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Z_shell&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Z_shell"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Z_shell rootpage-Z_shell skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Z shell</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><script>function mfTempOpenSection(id){var block=document.getElementById("mf-section-"+id);block.className+=" open-block";block.previousSibling.className+=" open-block";}</script><table class="infobox vevent" style="width:22em">
+<caption class="summary">Z shell</caption>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/File:Zsh-demo.png" class="image"><img alt="Zsh-demo.png" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Zsh-demo.png/250px-Zsh-demo.png" width="250" height="141" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Zsh-demo.png/375px-Zsh-demo.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Zsh-demo.png/500px-Zsh-demo.png 2x" data-file-width="804" data-file-height="453" /></a>
+<div>Screenshot of a zsh session</div>
+</td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Software_developer" title="Software developer">Original author(s)</a></th>
+<td>Paul Falstad<sup id="cite_ref-ZshManual_1-0" class="reference"><a href="#cite_note-ZshManual-1">[1]</a></sup></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Software_developer" title="Software developer">Developer(s)</a></th>
+<td>Peter Stephenson, et al.<sup id="cite_ref-ZshManual_1-1" class="reference"><a href="#cite_note-ZshManual-1">[1]</a></sup></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;">Initial release</th>
+<td>1990<span class="noprint">; 27&#160;years ago</span><span style="display:none">&#160;(<span class="bday dtstart published updated">1990</span>)</span></td>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Software_release_life_cycle" title="Software release life cycle">Stable release</a></th>
+<td>
+<div style="margin:0px;"><a rel="nofollow" class="external text" href="http://sourceforge.net/projects/zsh/files/zsh/5.3/">5.3</a> / December&#160;12, 2016<span class="noprint">; 48 days ago</span><span style="display:none">&#160;(<span class="bday dtstart published updated">2016-12-12</span>)</span></div>
+</td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Repository_(version_control)" title="Repository (version control)">Repository</a></th>
+<td><span class="url"><a rel="nofollow" class="external text" href="https://sourceforge.net/p/zsh/code/ci/master/tree/">sourceforge<wbr />.net<wbr />/p<wbr />/zsh<wbr />/code<wbr />/ci<wbr />/master<wbr />/tree<wbr />/</a></span></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;">Written in</th>
+<td><a href="/wiki/C_(programming_language)" title="C (programming language)">C</a></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Operating_system" title="Operating system">Operating system</a></th>
+<td>Various</td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Software_categories#Broad_categories" title="Software categories">Type</a></th>
+<td><a href="/wiki/Unix_shell" title="Unix shell">Unix shell</a></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Software_license" title="Software license">License</a></th>
+<td><a href="/wiki/MIT_License" title="MIT License">MIT</a>-like<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">[2]</a></sup></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;">Website</th>
+<td><span class="url"><a rel="nofollow" class="external text" href="http://www.zsh.org/">www<wbr />.zsh<wbr />.org</a></span></td>
+</tr>
+</table>
+<p>The <b>Z shell</b> (<b>zsh</b>) is a <a href="/wiki/Unix_shell" title="Unix shell">Unix shell</a> that can be used as an <a href="/wiki/Interactive" class="mw-redirect" title="Interactive">interactive</a> login <a href="/wiki/Shell_(computing)" title="Shell (computing)">shell</a> and as a powerful <a href="/wiki/Command_line_interpreter" class="mw-redirect" title="Command line interpreter">command interpreter</a> for <a href="/wiki/Shell_script" title="Shell script">shell scripting</a>. Zsh is an extended <a href="/wiki/Bourne_shell" title="Bourne shell">Bourne shell</a> with a large number of improvements, including some features of <a href="/wiki/Bash_(Unix_shell)" title="Bash (Unix shell)">bash</a>, <a href="/wiki/Korn_shell" class="mw-redirect" title="Korn shell">ksh</a>, and <a href="/wiki/Tcsh" title="Tcsh">tcsh</a>.</p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Origin"><span class="tocnumber">1</span> <span class="toctext">Origin</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Features"><span class="tocnumber">2</span> <span class="toctext">Features</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#See_also"><span class="tocnumber">3</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#References"><span class="tocnumber">4</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#External_links"><span class="tocnumber">5</span> <span class="toctext">External links</span></a>
+<ul>
+<li class="toclevel-2 tocsection-6"><a href="#Official"><span class="tocnumber">5.1</span> <span class="toctext">Official</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Articles"><span class="tocnumber">5.2</span> <span class="toctext">Articles</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Other"><span class="tocnumber">5.3</span> <span class="toctext">Other</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Origin">Origin</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Z_shell&amp;action=edit&amp;section=1" title="Edit section: Origin">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Paul Falstad wrote the first version of zsh in 1990<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">[3]</a></sup> while a student at <a href="/wiki/Princeton_University" title="Princeton University">Princeton University</a>.<sup id="cite_ref-4" class="reference"><a href="#cite_note-4">[4]</a></sup> The name <i>zsh</i> derives from the name of <a href="/wiki/Yale_University" title="Yale University">Yale</a> professor Zhong Shao (then an Assistant Professor at Princeton University) — Paul Falstad regarded Shao's <a href="/wiki/Login_name" class="mw-redirect" title="Login name">login-id</a>, "zsh", as a good name for a shell.<sup id="cite_ref-5" class="reference"><a href="#cite_note-5">[5]</a></sup><sup id="cite_ref-6" class="reference"><a href="#cite_note-6">[6]</a></sup> Speakers of <a href="/wiki/American_English" title="American English">American English</a> pronounce "<a href="/wiki/Z" title="Z">Z</a>" as <i>zee</i>, so "Z shell" is <a href="/wiki/Allophone" title="Allophone">allophonous</a> with "<a href="/wiki/C_shell" title="C shell">C shell</a>", which in turn is a <a href="/wiki/Homophones" class="mw-redirect" title="Homophones">homophone</a> of "<a href="/wiki/Seashell" title="Seashell">seashell</a>".</p>
+<h2><span class="mw-headline" id="Features">Features</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Z_shell&amp;action=edit&amp;section=2" title="Edit section: Features">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;"><a href="/wiki/File:Zsh-new-user.png" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/99/Zsh-new-user.png/220px-Zsh-new-user.png" width="220" height="150" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/99/Zsh-new-user.png/330px-Zsh-new-user.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/9/99/Zsh-new-user.png/440px-Zsh-new-user.png 2x" data-file-width="484" data-file-height="329" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:Zsh-new-user.png" class="internal" title="Enlarge"></a></div>
+Z shell's configuration utility for new users</div>
+</div>
+</div>
+<p>Features include:</p>
+<ul>
+<li>Programmable <a href="/wiki/Command-line_completion" title="Command-line completion">command-line completion</a> that can help the user type both options and arguments for most used commands, with out-of-the-box support for several hundred commands</li>
+<li>Sharing of <a href="/wiki/Command_history" title="Command history">command history</a> among all running shells</li>
+<li>Extended <a href="/wiki/Glob_(programming)" title="Glob (programming)">file globbing</a> allows file specification without needing to run an external program such as <a href="/wiki/Find" title="Find">find</a></li>
+<li>Improved <a href="/wiki/Variable_(programming)" class="mw-redirect" title="Variable (programming)">variable</a>/<a href="/wiki/Array_data_structure" title="Array data structure">array</a> handling</li>
+<li>Editing of multi-line commands in a single buffer</li>
+<li><a href="/wiki/Spell_checker" title="Spell checker">Spelling correction</a></li>
+<li>Various compatibility modes, e.g. zsh can pretend to be a <a href="/wiki/Bourne_shell" title="Bourne shell">Bourne shell</a> when run as <code>/bin/sh</code></li>
+<li>Themeable <a href="/wiki/Command_line_interface#Command_prompt" class="mw-redirect" title="Command line interface">prompts</a>, including the ability to put prompt information on the right side of the screen and have it auto-hide when typing a long command</li>
+<li>Loadable modules, providing among other things: full <a href="/wiki/Transmission_Control_Protocol" title="Transmission Control Protocol">TCP</a> and <a href="/wiki/Unix_domain_socket" title="Unix domain socket">Unix domain socket</a> controls, an <a href="/wiki/File_Transfer_Protocol" title="File Transfer Protocol">FTP</a> client, and extended math functions.</li>
+<li>The built-in <code>where</code> command. Works like the <code>which</code> command but shows <b>all</b> locations of the target command in the directories specified in <code>$PATH</code> rather than only the one that will be used.</li>
+<li>Named directories. This allows the user to set up shortcuts such as <code>~mydir</code>, which then behave the way <code>~</code> and <code>~user</code> do.</li>
+</ul>
+<p>A user community website called "Oh My Zsh" collects third-party extensions to the Z shell.<sup id="cite_ref-7" class="reference"><a href="#cite_note-7">[7]</a></sup></p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Z_shell&amp;action=edit&amp;section=3" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div role="navigation" aria-label="Portals" class="noprint portal plainlist tright" style="margin:0.5em 0 0.5em 1em;border:solid #aaa 1px">
+<ul style="display:table;box-sizing:border-box;padding:0.1em;max-width:175px;background:#f9f9f9;font-size:85%;line-height:110%;font-style:italic;font-weight:bold">
+<li style="display:table-row"><span style="display:table-cell;padding:0.2em;vertical-align:middle;text-align:center"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/3/31/Free_and_open-source_software_logo_%282009%29.svg/28px-Free_and_open-source_software_logo_%282009%29.svg.png" width="28" height="28" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/3/31/Free_and_open-source_software_logo_%282009%29.svg/42px-Free_and_open-source_software_logo_%282009%29.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/3/31/Free_and_open-source_software_logo_%282009%29.svg/56px-Free_and_open-source_software_logo_%282009%29.svg.png 2x" data-file-width="512" data-file-height="512" /></span><span style="display:table-cell;padding:0.2em 0.2em 0.2em 0.3em;vertical-align:middle"><a href="/wiki/Portal:Free_software" class="mw-redirect" title="Portal:Free software">Free software portal</a></span></li>
+</ul>
+</div>
+<ul>
+<li><a href="/wiki/Comparison_of_command_shells" title="Comparison of command shells">Comparison of command shells</a></li>
+</ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Z_shell&amp;action=edit&amp;section=4" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-ZshManual-1"><span class="mw-cite-backlink">^ <a href="#cite_ref-ZshManual_1-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-ZshManual_1-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://zsh.sourceforge.net/Doc/Release/Introduction.html#Author">"The Z Shell Manual"</a> (Version 5.0.0). Sourceforge.net. July 21, 2012<span class="reference-accessdate">. Retrieved <span class="nowrap">September 18,</span> 2012</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AZ+shell&amp;rft.btitle=The+Z+Shell+Manual&amp;rft.date=2012-07-21&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fzsh.sourceforge.net%2FDoc%2FRelease%2FIntroduction.html%23Author&amp;rft.pub=Sourceforge.net&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://sourceforge.net/p/zsh/code/ci/master/tree/LICENCE">"zsh / Code / [281031] /LICENCE"</a>. Paul Falstad<span class="reference-accessdate">. Retrieved <span class="nowrap">February 7,</span> 2015</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AZ+shell&amp;rft.btitle=zsh+%2F+Code+%2F+%26%2391%3B281031%26%2393%3B+%2FLICENCE&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fsourceforge.net%2Fp%2Fzsh%2Fcode%2Fci%2Fmaster%2Ftree%2FLICENCE&amp;rft.pub=Paul+Falstad&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://groups.google.com/group/alt.sources/msg/936c7876941058ed">"zsh - a ksh/tcsh-like shell (part 1 of 8)"</a>. alt.sources. December 14, 1990<span class="reference-accessdate">. Retrieved <span class="nowrap">September 18,</span> 2012</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AZ+shell&amp;rft.btitle=zsh+-+a+ksh%2Ftcsh-like+shell+%28part+1+of+8%29&amp;rft.date=1990-12-14&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fgroups.google.com%2Fgroup%2Falt.sources%2Fmsg%2F936c7876941058ed&amp;rft.pub=alt.sources&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://zsh.sourceforge.net/FAQ/zshfaq01.html#l3">"Z-Shell Frequently-Asked Questions"</a>. Sourceforge.net. February 15, 2010<span class="reference-accessdate">. Retrieved <span class="nowrap">September 18,</span> 2012</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AZ+shell&amp;rft.btitle=Z-Shell+Frequently-Asked+Questions&amp;rft.date=2010-02-15&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fzsh.sourceforge.net%2FFAQ%2Fzshfaq01.html%23l3&amp;rft.pub=Sourceforge.net&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.guckes.net/zsh/lover.html">"The Z-Shell (ZSH) Lovers' Page"</a>. Guckes.net. c. 2004<span class="reference-accessdate">. Retrieved <span class="nowrap">October 2,</span> 2012</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AZ+shell&amp;rft.btitle=The+Z-Shell+%28ZSH%29+Lovers%27+Page&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.guckes.net%2Fzsh%2Flover.html&amp;rft.pub=Guckes.net&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.zsh.org/mla/users/2005/msg00951.html">"Zsh Mailing List Archive"</a>. Zsh.org. August 8, 2005<span class="reference-accessdate">. Retrieved <span class="nowrap">October 2,</span> 2012</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AZ+shell&amp;rft.btitle=Zsh+Mailing+List+Archive&amp;rft.date=2005-08-08&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.zsh.org%2Fmla%2Fusers%2F2005%2Fmsg00951.html&amp;rft.pub=Zsh.org&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://ohmyz.sh/">"Oh My ZSH - Community driven framework with 150+ plugins and 100+ themes"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">May 7,</span> 2014</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AZ+shell&amp;rft.btitle=Oh+My+ZSH+-+Community+driven+framework+with+150%2B+plugins+and+100%2B+themes&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fohmyz.sh%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Z_shell&amp;action=edit&amp;section=5" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="Official">Official</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Z_shell&amp;action=edit&amp;section=6" title="Edit section: Official">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.zsh.org/">Primary site</a></li>
+<li><a rel="nofollow" class="external text" href="http://sourceforge.net/projects/zsh/">Sourceforge Project page</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.zsh.org/mla/">Mailing List Archive</a></li>
+<li><a rel="nofollow" class="external text" href="http://zshwiki.org/">ZSH Wiki</a></li>
+</ul>
+<h3><span class="mw-headline" id="Articles">Articles</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Z_shell&amp;action=edit&amp;section=7" title="Edit section: Articles">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.zzapper.co.uk/zshtips.html">Zzappers Best of ZSH Tips</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.tuxradar.com/content/z-shell-made-easy">TuxRadar: Z Shell Made Easy</a></li>
+<li><a rel="nofollow" class="external text" href="http://zsh.sourceforge.net/Guide/zshguide.html">Users guide</a></li>
+</ul>
+<h3><span class="mw-headline" id="Other">Other</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Z_shell&amp;action=edit&amp;section=8" title="Edit section: Other">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<ul>
+<li><a rel="nofollow" class="external text" href="https://www.dmoz.org/Computers/Software/Operating_Systems/Unix/Shell/zsh/">zsh</a> at <a href="/wiki/DMOZ" title="DMOZ">DMOZ</a></li>
+<li><a rel="nofollow" class="external text" href="http://ohmyz.sh/">Oh My ZSH!</a></li>
+</ul>
+<div role="navigation" class="navbox" aria-labelledby="Unix_shells" style="padding:3px">
+<table class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:Unix_shells" title="Template:Unix shells"><abbr title="View this template" style=";;background:none transparent;border:none;">v</abbr></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:Unix_shells" title="Template talk:Unix shells"><abbr title="Discuss this template" style=";;background:none transparent;border:none;">t</abbr></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:Unix_shells&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;">e</abbr></a></li>
+</ul>
+</div>
+<div id="Unix_shells" style="font-size:114%"><a href="/wiki/Unix_shell" title="Unix shell">Unix shells</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-odd hlist" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Bash_(Unix_shell)" title="Bash (Unix shell)">Bash</a></li>
+<li><a href="/wiki/Bourne_shell" title="Bourne shell">Bourne</a></li>
+<li><a href="/wiki/Almquist_shell" title="Almquist shell">Almquist</a></li>
+<li><a href="/wiki/C_shell" title="C shell">csh</a></li>
+<li><a href="/wiki/Es_(Unix_shell)" class="mw-redirect" title="Es (Unix shell)">es</a></li>
+<li><a href="/wiki/Friendly_interactive_shell" title="Friendly interactive shell">fish</a></li>
+<li><a href="/wiki/Hamilton_C_shell" title="Hamilton C shell">Hamilton</a></li>
+<li><a href="/wiki/Korn_shell" class="mw-redirect" title="Korn shell">Korn</a></li>
+<li><a href="/wiki/PWB_shell" title="PWB shell">PWB</a></li>
+<li><a href="/wiki/Rc" title="Rc">rc</a></li>
+<li><a href="/wiki/Stand-alone_shell" title="Stand-alone shell">sash</a></li>
+<li><a href="/wiki/Tcsh" title="Tcsh">tcsh</a></li>
+<li><a href="/wiki/Thompson_shell" title="Thompson shell">Thompson</a></li>
+<li><a href="/wiki/Wish_(Unix_shell)" title="Wish (Unix shell)">Wish</a></li>
+<li><strong class="selflink">zsh</strong></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1238
+Cached time: 20170129142550
+Cache expiry: 86400
+Dynamic content: true
+CPU time usage: 0.180 seconds
+Real time usage: 0.220 seconds
+Preprocessor visited node count: 1047/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 25834/2097152 bytes
+Template argument size: 1808/2097152 bytes
+Highest expansion depth: 25/40
+Expensive parser function count: 2/500
+Lua time usage: 0.073/10.000 seconds
+Lua memory usage: 2.86 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  196.635      1 -total
+ 79.08%  155.495      2 Template:Infobox
+ 63.14%  124.152      1 Template:Infobox_software
+ 27.61%   54.286      1 Template:Reflist
+ 23.17%   45.556      7 Template:Cite_web
+ 20.06%   39.448      1 Template:Infobox_software/simple
+ 16.47%   32.378      2 Template:Start_date_and_age
+  5.68%   11.168      1 Template:Time_ago
+  3.33%    6.554      1 Template:Unix_Shells
+  3.16%    6.212      2 Template:URL
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:95928-0!*!0!!en!4!* and timestamp 20170129142550 and revision id 754457801
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Z_shell&amp;oldid=754457801">https://en.wikipedia.org/w/index.php?title=Z_shell&amp;oldid=754457801</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Unix_shells" title="Category:Unix shells">Unix shells</a></li><li><a href="/wiki/Category:Scripting_languages" title="Category:Scripting languages">Scripting languages</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Pages_using_deprecated_image_syntax" title="Category:Pages using deprecated image syntax">Pages using deprecated image syntax</a></li><li><a href="/wiki/Category:Articles_with_DMOZ_links" title="Category:Articles with DMOZ links">Articles with DMOZ links</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Z+shell" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Z+shell" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/Z_shell"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:Z_shell"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/Z_shell" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=Z_shell&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Z_shell&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Z_shell" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Z_shell" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Z_shell&amp;oldid=754457801" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Z_shell&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q227308" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Z_shell&amp;id=754457801" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Z+shell">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Z+shell&amp;returnto=Z+shell&amp;oldid=754457801&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Z_shell&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-ar"><a href="https://ar.wikipedia.org/wiki/%D8%B2%D9%8A_%D8%B4%D9%84" title="زي شل – Arabic" lang="ar" hreflang="ar" class="interlanguage-link-target">العربية</a></li><li class="interlanguage-link interwiki-az"><a href="https://az.wikipedia.org/wiki/Z_shell" title="Z shell – Azerbaijani" lang="az" hreflang="az" class="interlanguage-link-target">Azərbaycanca</a></li><li class="interlanguage-link interwiki-bg"><a href="https://bg.wikipedia.org/wiki/Z_shell" title="Z shell – Bulgarian" lang="bg" hreflang="bg" class="interlanguage-link-target">Български</a></li><li class="interlanguage-link interwiki-cs"><a href="https://cs.wikipedia.org/wiki/Z_shell" title="Z shell – Czech" lang="cs" hreflang="cs" class="interlanguage-link-target">Čeština</a></li><li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/Zsh" title="Zsh – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-el"><a href="https://el.wikipedia.org/wiki/Zsh" title="Zsh – Greek" lang="el" hreflang="el" class="interlanguage-link-target">Ελληνικά</a></li><li class="interlanguage-link interwiki-es"><a href="https://es.wikipedia.org/wiki/Zsh" title="Zsh – Spanish" lang="es" hreflang="es" class="interlanguage-link-target">Español</a></li><li class="interlanguage-link interwiki-fa"><a href="https://fa.wikipedia.org/wiki/%D8%B2%DB%8C_%D8%B4%D9%84" title="زی شل – Persian" lang="fa" hreflang="fa" class="interlanguage-link-target">فارسی</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/Z_Shell" title="Z Shell – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-it"><a href="https://it.wikipedia.org/wiki/Zsh" title="Zsh – Italian" lang="it" hreflang="it" class="interlanguage-link-target">Italiano</a></li><li class="interlanguage-link interwiki-ja"><a href="https://ja.wikipedia.org/wiki/Z_Shell" title="Z Shell – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target">日本語</a></li><li class="interlanguage-link interwiki-pl"><a href="https://pl.wikipedia.org/wiki/Zsh" title="Zsh – Polish" lang="pl" hreflang="pl" class="interlanguage-link-target">Polski</a></li><li class="interlanguage-link interwiki-ru"><a href="https://ru.wikipedia.org/wiki/Zsh" title="Zsh – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li><li class="interlanguage-link interwiki-fi"><a href="https://fi.wikipedia.org/wiki/Zsh" title="Zsh – Finnish" lang="fi" hreflang="fi" class="interlanguage-link-target">Suomi</a></li><li class="interlanguage-link interwiki-uk"><a href="https://uk.wikipedia.org/wiki/Zsh" title="Zsh – Ukrainian" lang="uk" hreflang="uk" class="interlanguage-link-target">Українська</a></li><li class="interlanguage-link interwiki-zh"><a href="https://zh.wikipedia.org/wiki/Z_shell" title="Z shell – Chinese" lang="zh" hreflang="zh" class="interlanguage-link-target">中文</a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q227308#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 12 December 2016, at 19:40.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Z_shell&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.180","walltime":"0.220","ppvisitednodes":{"value":1047,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":25834,"limit":2097152},"templateargumentsize":{"value":1808,"limit":2097152},"expansiondepth":{"value":25,"limit":40},"expensivefunctioncount":{"value":2,"limit":500},"entityaccesscount":{"value":1,"limit":400},"timingprofile":["100.00%  196.635      1 -total"," 79.08%  155.495      2 Template:Infobox"," 63.14%  124.152      1 Template:Infobox_software"," 27.61%   54.286      1 Template:Reflist"," 23.17%   45.556      7 Template:Cite_web"," 20.06%   39.448      1 Template:Infobox_software/simple"," 16.47%   32.378      2 Template:Start_date_and_age","  5.68%   11.168      1 Template:Time_ago","  3.33%    6.554      1 Template:Unix_Shells","  3.16%    6.212      2 Template:URL"]},"scribunto":{"limitreport-timeusage":{"value":"0.073","limit":"10.000"},"limitreport-memusage":{"value":2997870,"limit":52428800}},"cachereport":{"origin":"mw1238","timestamp":"20170129142550","ttl":86400,"transientcontent":true}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":288,"wgHostname":"mw1238"});});</script>
+	</body>
+</html>

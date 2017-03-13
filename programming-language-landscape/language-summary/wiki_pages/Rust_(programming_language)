@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Rust (programming language) - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Rust_(programming_language)","wgTitle":"Rust (programming language)","wgCurRevisionId":763701815,"wgRevisionId":763701815,"wgArticleId":29414838,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Pages using deprecated image syntax","All articles with unsourced statements","Articles with unsourced statements from August 2016","Vague or ambiguous time from August 2016","Articles to be split from October 2016","All articles to be split","Articles with example code","Concurrent programming languages","Functional languages","Mozilla","Multi-paradigm programming languages","Pattern matching programming languages","Procedural programming languages","Programming languages created in 2012","Rust (programming language)","Software using the Apache license","Software using the MIT license","Statically typed programming languages","Systems programming languages"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Rust_(programming_language)","wgRelevantArticleId":29414838,"wgRequestId":"WJYsYwpAAEUAAWRB498AAAAK","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":true},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q575650","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.cite.styles":"ready","ext.pygments":"ready","ext.tmh.thumbnail.styles":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["ext.cite.a11y","mw.MediaWikiPlayer.loader","mw.PopUpMediaTransform","mw.TMHGalleryHook.js","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.legacy.wikibits","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.pygments%2CwikimediaBadges%7Cext.tmh.thumbnail.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.29.0-wmf.10"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Rust_programming_language_black_logo.svg/1920px-Rust_programming_language_black_logo.svg.png"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Rust_(programming_language)"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Rust_(programming_language)&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Rust_(programming_language)&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Rust_(programming_language)"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Rust_programming_language rootpage-Rust_programming_language skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Rust (programming language)</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><table class="infobox vevent" style="width:22em">
+<caption class="summary">Rust</caption>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/File:Rust_programming_language_black_logo.svg" class="image"><img alt="Rust programming language black logo.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Rust_programming_language_black_logo.svg/144px-Rust_programming_language_black_logo.svg.png" width="144" height="144" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Rust_programming_language_black_logo.svg/216px-Rust_programming_language_black_logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Rust_programming_language_black_logo.svg/288px-Rust_programming_language_black_logo.svg.png 2x" data-file-width="144" data-file-height="144" /></a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Programming_paradigm" title="Programming paradigm">Paradigm</a></th>
+<td><a href="/wiki/Multi-paradigm_programming_language" class="mw-redirect" title="Multi-paradigm programming language">Multi-paradigm</a>: <a href="/wiki/Compiled_language" title="Compiled language">compiled</a>, <a href="/wiki/Concurrent_programming" class="mw-redirect" title="Concurrent programming">concurrent</a>, <a href="/wiki/Functional_programming" title="Functional programming">functional</a>, <a href="/wiki/Imperative_programming" title="Imperative programming">imperative</a>, <a href="/wiki/Structured_programming" title="Structured programming">structured</a>, <a href="/wiki/Generic_programming" title="Generic programming">generic</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_design" title="Software design">Designed&#160;by</a></th>
+<td>Originally Graydon Hoare, then Rust Project Developers</td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_developer" title="Software developer">Developer</a></th>
+<td class="organiser">Rust Project Developers</td>
+</tr>
+<tr>
+<th scope="row">First&#160;appeared</th>
+<td>2010<span class="noprint">; 7&#160;years ago</span><span style="display:none">&#160;(<span class="bday dtstart published updated">2010</span>)</span></td>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Software_release_life_cycle" title="Software release life cycle">Stable release</a></th>
+<td>
+<div style="margin:0px;">1.15<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">[1]</a></sup> / February&#160;2, 2017<span class="noprint">; 2 days ago</span><span style="display:none">&#160;(<span class="bday dtstart published updated">2017-02-02</span>)</span></div>
+</td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Type_system" title="Type system">Typing discipline</a></th>
+<td><a href="/wiki/Static_typing" class="mw-redirect" title="Static typing">static</a>, <a href="/wiki/Strong_typing" class="mw-redirect" title="Strong typing">strong</a>, <a href="/wiki/Type_inference" title="Type inference">inferred</a>, <a href="/wiki/Nominal_type_system" title="Nominal type system">nominal</a>, <a href="/wiki/Substructural_type_system#Linear_type_systems" title="Substructural type system">linear</a></td>
+</tr>
+<tr>
+<th scope="row">Implementation language</th>
+<td>Rust</td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Operating_system" title="Operating system">OS</a></th>
+<td><a href="/wiki/Linux" title="Linux">Linux</a>, <a href="/wiki/MacOS" title="MacOS">macOS</a>, <a href="/wiki/Microsoft_Windows" title="Microsoft Windows">Windows</a>, <a href="/wiki/FreeBSD" title="FreeBSD">FreeBSD</a>, <a href="/wiki/Android_(operating_system)" title="Android (operating system)">Android</a>, <a href="/wiki/IOS" title="IOS">iOS</a> (partial)<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">[2]</a></sup></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_license" title="Software license">License</a></th>
+<td><a href="/wiki/Apache_License" title="Apache License">Apache License</a> 2.0 or <a href="/wiki/MIT_License" title="MIT License">MIT License</a><sup id="cite_ref-license_3-0" class="reference"><a href="#cite_note-license-3">[3]</a></sup></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Filename_extension" title="Filename extension">Filename extensions</a></th>
+<td>.rs, .rlib</td>
+</tr>
+<tr>
+<th scope="row">Website</th>
+<td><span class="url"><a rel="nofollow" class="external text" href="https://www.rust-lang.org">www<wbr />.rust-lang<wbr />.org</a></span></td>
+</tr>
+<tr>
+<th colspan="2" style="text-align:center;background-color: #eee;">Influenced by</th>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/Alef_(programming_language)" title="Alef (programming language)">Alef</a>,<sup id="cite_ref-referenceinfluences_4-0" class="reference"><a href="#cite_note-referenceinfluences-4">[4]</a></sup> <a href="/wiki/C_Sharp_(programming_language)" title="C Sharp (programming language)">C#</a>,<sup id="cite_ref-referenceinfluences_4-1" class="reference"><a href="#cite_note-referenceinfluences-4">[4]</a></sup> <a href="/wiki/C%2B%2B" title="C++">C++</a>,<sup id="cite_ref-referenceinfluences_4-2" class="reference"><a href="#cite_note-referenceinfluences-4">[4]</a></sup> <a href="/wiki/Cyclone_(programming_language)" title="Cyclone (programming language)">Cyclone</a>,<sup id="cite_ref-referenceinfluences_4-3" class="reference"><a href="#cite_note-referenceinfluences-4">[4]</a></sup><sup id="cite_ref-rustwiki-noteresearch-typesystem_5-0" class="reference"><a href="#cite_note-rustwiki-noteresearch-typesystem-5">[5]</a></sup> <a href="/wiki/Erlang_(programming_language)" title="Erlang (programming language)">Erlang</a>,<sup id="cite_ref-referenceinfluences_4-4" class="reference"><a href="#cite_note-referenceinfluences-4">[4]</a></sup> <a href="/wiki/Haskell_(programming_language)" title="Haskell (programming language)">Haskell</a>,<sup id="cite_ref-referenceinfluences_4-5" class="reference"><a href="#cite_note-referenceinfluences-4">[4]</a></sup> <a href="/wiki/Hermes_(programming_language)" title="Hermes (programming language)">Hermes</a>,<sup id="cite_ref-referenceinfluences_4-6" class="reference"><a href="#cite_note-referenceinfluences-4">[4]</a></sup> <a href="/wiki/Limbo_(programming_language)" title="Limbo (programming language)">Limbo</a>,<sup id="cite_ref-referenceinfluences_4-7" class="reference"><a href="#cite_note-referenceinfluences-4">[4]</a></sup> <a href="/wiki/Newsqueak" title="Newsqueak">Newsqueak</a>,<sup id="cite_ref-referenceinfluences_4-8" class="reference"><a href="#cite_note-referenceinfluences-4">[4]</a></sup> <a href="/wiki/NIL_(programming_language)" title="NIL (programming language)">NIL</a>,<sup id="cite_ref-referenceinfluences_4-9" class="reference"><a href="#cite_note-referenceinfluences-4">[4]</a></sup> <a href="/wiki/Ocaml" class="mw-redirect" title="Ocaml">OCaml</a>,<sup id="cite_ref-referenceinfluences_4-10" class="reference"><a href="#cite_note-referenceinfluences-4">[4]</a></sup> <a href="/wiki/Ruby_(programming_language)" title="Ruby (programming language)">Ruby</a>,<sup id="cite_ref-referenceinfluences_4-11" class="reference"><a href="#cite_note-referenceinfluences-4">[4]</a></sup> <a href="/wiki/Scheme_(programming_language)" title="Scheme (programming language)">Scheme</a>,<sup id="cite_ref-referenceinfluences_4-12" class="reference"><a href="#cite_note-referenceinfluences-4">[4]</a></sup> <a href="/wiki/Standard_ML" title="Standard ML">Standard ML</a>,<sup id="cite_ref-referenceinfluences_4-13" class="reference"><a href="#cite_note-referenceinfluences-4">[4]</a></sup> <a href="/wiki/Swift_(programming_language)" title="Swift (programming language)">Swift</a><sup id="cite_ref-referenceinfluences_4-14" class="reference"><a href="#cite_note-referenceinfluences-4">[4]</a></sup><sup id="cite_ref-rust-if-let_6-0" class="reference"><a href="#cite_note-rust-if-let-6">[6]</a></sup></td>
+</tr>
+<tr>
+<th colspan="2" style="text-align:center;background-color: #eee;">Influenced</th>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/Crystal_(programming_language)" title="Crystal (programming language)">Crystal</a>, <a href="/wiki/Elm_(programming_language)" title="Elm (programming language)">Elm</a>,<sup id="cite_ref-elmresult_7-0" class="reference"><a href="#cite_note-elmresult-7">[7]</a></sup> <a href="/wiki/Idris_(programming_language)" title="Idris (programming language)">Idris</a><sup id="cite_ref-idrisunique_8-0" class="reference"><a href="#cite_note-idrisunique-8">[8]</a></sup></td>
+</tr>
+</table>
+<p><b>Rust</b> is a <a href="/wiki/General_purpose_programming_language" class="mw-redirect" title="General purpose programming language">general purpose programming language</a> sponsored by <a href="/wiki/Mozilla" title="Mozilla">Mozilla</a> Research.<sup id="cite_ref-lamda_9-0" class="reference"><a href="#cite_note-lamda-9">[9]</a></sup> It is designed to be a "safe, <a href="/wiki/Concurrent_programming_language" class="mw-redirect" title="Concurrent programming language">concurrent</a>, practical language",<sup id="cite_ref-FAQ_-_The_Rust_Project_10-0" class="reference"><a href="#cite_note-FAQ_-_The_Rust_Project-10">[10]</a></sup> supporting <a href="/wiki/Functional_programming" title="Functional programming">functional</a> and <a href="/wiki/Procedural_programming" title="Procedural programming">imperative-procedural</a> paradigms.</p>
+<p>The language grew out of a personal project by Mozilla employee Graydon Hoare, who stated that the project was possibly named after the <a href="/wiki/Rust_(fungus)" title="Rust (fungus)">rust family of fungi</a>.<sup id="cite_ref-rust-name_11-0" class="reference"><a href="#cite_note-rust-name-11">[11]</a></sup> Mozilla began sponsoring the project in 2009<sup id="cite_ref-FAQ_-_The_Rust_Project_10-1" class="reference"><a href="#cite_note-FAQ_-_The_Rust_Project-10">[10]</a></sup> and announced it in 2010.<sup id="cite_ref-future-tense_12-0" class="reference"><a href="#cite_note-future-tense-12">[12]</a></sup> The same year, work shifted from the initial <a href="/wiki/Compiler" title="Compiler">compiler</a> (written in <a href="/wiki/OCaml" title="OCaml">OCaml</a>) to the <a href="/wiki/Self-hosting_compiler" class="mw-redirect" title="Self-hosting compiler">self-hosting compiler</a> written in Rust.<sup id="cite_ref-rust-in-rust_13-0" class="reference"><a href="#cite_note-rust-in-rust-13">[13]</a></sup> Known as <span style="font-family: monospace, monospace;">rustc</span>, it successfully <a href="/wiki/Bootstrapping_(compilers)" title="Bootstrapping (compilers)">compiled itself</a> in 2011.<sup id="cite_ref-rust-compiles-rust_14-0" class="reference"><a href="#cite_note-rust-compiles-rust-14">[14]</a></sup> <span style="font-family: monospace, monospace;">rustc</span> uses <a href="/wiki/LLVM" title="LLVM">LLVM</a> as its <a href="/wiki/Front_and_back_ends" title="Front and back ends">back end</a>.</p>
+<p>The first numbered <a href="/wiki/Software_release_life_cycle#Pre-alpha" title="Software release life cycle">pre-alpha release</a> of the Rust compiler occurred in January 2012.<sup id="cite_ref-rustc-0.1_15-0" class="reference"><a href="#cite_note-rustc-0.1-15">[15]</a></sup> Rust 1.0, the first stable release, was released on May 15, 2015.<sup id="cite_ref-16" class="reference"><a href="#cite_note-16">[16]</a></sup></p>
+<p>Rust is <a href="/wiki/Open_source_software" class="mw-redirect" title="Open source software">open source software</a>. The design of the language has been refined through the experiences of writing the <a href="/wiki/Servo_(layout_engine)" title="Servo (layout engine)">Servo</a><sup id="cite_ref-rustinservo_17-0" class="reference"><a href="#cite_note-rustinservo-17">[17]</a></sup> <a href="/wiki/Web_browser" title="Web browser">web browser</a> <a href="/wiki/Layout_engine" title="Layout engine">layout engine</a> and the Rust compiler. A large portion of current <a href="/wiki/Commit_(version_control)" title="Commit (version control)">commits</a> are from community members.<sup id="cite_ref-contributors_18-0" class="reference"><a href="#cite_note-contributors-18">[18]</a></sup></p>
+<p>Rust won the first place for Most Loved Programming Language of 2016 in the <a href="/wiki/Stack_Overflow" title="Stack Overflow">Stack Overflow</a> Developer Survey.</p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Design"><span class="tocnumber">1</span> <span class="toctext">Design</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Goal"><span class="tocnumber">1.1</span> <span class="toctext">Goal</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Syntax"><span class="tocnumber">1.2</span> <span class="toctext">Syntax</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Memory_safety"><span class="tocnumber">1.3</span> <span class="toctext">Memory safety</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Polymorphism"><span class="tocnumber">1.4</span> <span class="toctext">Polymorphism</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Memory_management"><span class="tocnumber">1.5</span> <span class="toctext">Memory management</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Miscellaneous"><span class="tocnumber">1.6</span> <span class="toctext">Miscellaneous</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-8"><a href="#History"><span class="tocnumber">2</span> <span class="toctext">History</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#Projects_using_Rust"><span class="tocnumber">3</span> <span class="toctext">Projects using Rust</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#Examples"><span class="tocnumber">4</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2 tocsection-11"><a href="#Factorial"><span class="tocnumber">4.1</span> <span class="toctext">Factorial</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#Concurrency"><span class="tocnumber">4.2</span> <span class="toctext">Concurrency</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="#Miscellaneous_2"><span class="tocnumber">4.3</span> <span class="toctext">Miscellaneous</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-14"><a href="#See_also"><span class="tocnumber">5</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-15"><a href="#References"><span class="tocnumber">6</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-16"><a href="#External_links"><span class="tocnumber">7</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Design">Design</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Rust_(programming_language)&amp;action=edit&amp;section=1" title="Edit section: Design">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="Goal">Goal</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Rust_(programming_language)&amp;action=edit&amp;section=2" title="Edit section: Goal">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The goal of Rust is to be a language suited to creating highly concurrent and highly safe <a href="/wiki/System_programming" title="System programming">systems</a>,<sup id="cite_ref-infoq2012_19-0" class="reference"><a href="#cite_note-infoq2012-19">[19]</a></sup> and <a href="/wiki/Programming_in_the_large" class="mw-redirect" title="Programming in the large">programming in the large</a>. This has led to a feature set with an emphasis on safety, control of <a href="/wiki/Memory_map" title="Memory map">memory layout</a>, and <a href="/wiki/Concurrency_(computer_science)" title="Concurrency (computer science)">concurrency</a>. Performance of idiomatic Rust is comparable to the performance of idiomatic C++.<sup id="cite_ref-cpp-design-goals_20-0" class="reference"><a href="#cite_note-cpp-design-goals-20">[20]</a></sup><sup id="cite_ref-how-fast-is-rust_21-0" class="reference"><a href="#cite_note-how-fast-is-rust-21">[21]</a></sup></p>
+<h3><span class="mw-headline" id="Syntax">Syntax</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Rust_(programming_language)&amp;action=edit&amp;section=3" title="Edit section: Syntax">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The syntax of Rust is similar to <a href="/wiki/C_(programming_language)" title="C (programming language)">C</a> and <a href="/wiki/C%2B%2B" title="C++">C++</a>, with blocks of code delimited by <a href="/wiki/Bracket#Curly_brackets" title="Bracket">curly brackets</a>, and <a href="/wiki/Control_flow" title="Control flow">control flow</a> keywords such as <code><a href="/wiki/Conditional_(computer_programming)" title="Conditional (computer programming)">if</a></code>, <code>else</code>, <code>while</code>, and <code>for</code>. Not all C or C++ keywords are implemented, however, while some Rust functionality (such as keyword <a href="/wiki/Pattern_matching" title="Pattern matching"><code>match</code></a> for multi-directional branching, similar to <code>switch</code> in other languages) will be less familiar to programmers coming from these languages. Despite the <a href="/wiki/Syntax_(programming_languages)" title="Syntax (programming languages)">syntactic</a> resemblance, Rust is <a href="/wiki/Semantics_(computer_science)" title="Semantics (computer science)">semantically</a> very different from C and C++.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (August 2016)">citation needed</span></a></i>]</sup></p>
+<h3><span class="mw-headline" id="Memory_safety">Memory safety</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Rust_(programming_language)&amp;action=edit&amp;section=4" title="Edit section: Memory safety">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The system is designed to be <a href="/wiki/Memory_safe" class="mw-redirect" title="Memory safe">memory safe</a>, and it does not permit <a href="/wiki/Null_pointer" title="Null pointer">null pointers</a> or <a href="/wiki/Dangling_pointer" title="Dangling pointer">dangling pointers</a>.<sup id="cite_ref-cnet_22-0" class="reference"><a href="#cite_note-cnet-22">[22]</a></sup><sup id="cite_ref-lwn_23-0" class="reference"><a href="#cite_note-lwn-23">[23]</a></sup> Data values can only be initialized through a fixed set of forms, all of which require their inputs to be already initialized.<sup id="cite_ref-lang-faq_24-0" class="reference"><a href="#cite_note-lang-faq-24">[24]</a></sup> The system introduces additional syntax to manage <a href="/wiki/Lifetime_(computer_science)" title="Lifetime (computer science)">lifetimes</a>, and the compiler reasons about these through it's <i><a href="/wiki/Borrow_checker" class="mw-redirect" title="Borrow checker">borrow checker</a></i>.</p>
+<h3><span class="mw-headline" id="Polymorphism">Polymorphism</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Rust_(programming_language)&amp;action=edit&amp;section=5" title="Edit section: Polymorphism">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The <a href="/wiki/Type_system" title="Type system">type system</a> supports a mechanism similar to <a href="/wiki/Type_class" title="Type class">type classes</a>, called '<a href="/wiki/Trait_(computer_programming)" title="Trait (computer programming)">traits</a>', inspired directly by the <a href="/wiki/Haskell_(programming_language)" title="Haskell (programming language)">Haskell language</a>. This is a facility for <a href="/wiki/Ad-hoc_polymorphism" class="mw-redirect" title="Ad-hoc polymorphism">ad-hoc polymorphism</a>, achieved by adding constraints to type variable declarations. Other features from Haskell, such as <a href="/wiki/Type_class#Higher-kinded_polymorphism" title="Type class">higher-kinded polymorphism</a>, are not yet supported.</p>
+<h3><span class="mw-headline" id="Memory_management">Memory management</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Rust_(programming_language)&amp;action=edit&amp;section=6" title="Edit section: Memory management">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Rust does not use an <a href="/wiki/Garbage_collection_(computer_science)#AUTOMATIC" title="Garbage collection (computer science)">automated garbage collection</a> system like those used by <a href="/wiki/Go_(programming_language)" title="Go (programming language)">Go</a>, <a href="/wiki/Java_(programming_language)" title="Java (programming language)">Java</a> or <a href="/wiki/.NET_Framework" title=".NET Framework">.NET Framework</a>, but instead <a href="/wiki/Resource_Acquisition_Is_Initialization" class="mw-redirect" title="Resource Acquisition Is Initialization">Resource Acquisition Is Initialization</a> (RAII), as in <a href="/wiki/C%2B%2B" title="C++">C++</a>.</p>
+<h3><span class="mw-headline" id="Miscellaneous">Miscellaneous</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Rust_(programming_language)&amp;action=edit&amp;section=7" title="Edit section: Miscellaneous">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Rust features <a href="/wiki/Type_inference" title="Type inference">type inference</a>, for variables declared with the <code>let</code> keyword. Such variables do not require a value to be initially assigned to determine their type. A <a href="/wiki/Compile_time" title="Compile time">compile time</a> error results if any branch of code fails to assign a value to the variable.<sup id="cite_ref-type-inference_25-0" class="reference"><a href="#cite_note-type-inference-25">[25]</a></sup> Functions can be given generic <a href="/wiki/Parameter_(computer_programming)" title="Parameter (computer programming)">parameters</a>, but they must be explicitly bounded by traits. There is no way to leave off <a href="/wiki/Type_signature" title="Type signature">type signatures</a> while still making use of methods and operators on the parameters.</p>
+<p>The object system within Rust is based around implementations, <a href="/wiki/Trait_(computer_programming)" title="Trait (computer programming)">traits</a> and <a href="/wiki/Struct_(C_programming_language)" title="Struct (C programming language)">structured types</a>. Implementations fulfill a role similar to that of <a href="/wiki/Class_(computer_programming)" title="Class (computer programming)">classes</a> within other languages, and are defined with the <code>impl</code> keyword. Inheritance and polymorphism are provided by traits; they allow methods to be defined and <a href="/wiki/Mixin" title="Mixin">mixed in</a> to implementations. Structured types are used to define fields. Implementations and traits cannot define fields themselves, and only traits can provide inheritance, to prevent the <a href="/wiki/Diamond_problem" class="mw-redirect" title="Diamond problem">diamond problem</a> of <a href="/wiki/Multiple_inheritance" title="Multiple inheritance">multiple inheritance</a>, as in C++.</p>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;">
+<div id="mwe_player_0" class="PopUpMediaTransform" style="width:220px;" videopayload="&lt;div class=&quot;mediaContainer&quot; style=&quot;width:854px&quot;&gt;&lt;video id=&quot;mwe_player_1&quot; poster=&quot;//upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Rust_101.webm/854px--Rust_101.webm.jpg&quot; controls=&quot;&quot; preload=&quot;none&quot; autoplay=&quot;&quot; style=&quot;width:854px;height:480px&quot; class=&quot;kskin&quot; data-durationhint=&quot;5447.921&quot; data-startoffset=&quot;0&quot; data-mwtitle=&quot;Rust_101.webm&quot; data-mwprovider=&quot;wikimediacommons&quot;&gt;&lt;source src=&quot;//upload.wikimedia.org/wikipedia/commons/transcoded/5/5c/Rust_101.webm/Rust_101.webm.720p.ogv&quot; type=&quot;video/ogg; codecs=&amp;quot;theora, vorbis&amp;quot;&quot; data-title=&quot;HD Ogg video (720P)&quot; data-shorttitle=&quot;Ogg 720P&quot; data-transcodekey=&quot;720p.ogv&quot; data-width=&quot;1280&quot; data-height=&quot;720&quot; data-bandwidth=&quot;390240&quot; data-framerate=&quot;60&quot;/&gt;&lt;source src=&quot;//upload.wikimedia.org/wikipedia/commons/5/5c/Rust_101.webm&quot; type=&quot;video/webm; codecs=&amp;quot;vp9, opus&amp;quot;&quot; data-title=&quot;Original WebM file, 1,280 × 720 (460 kbps)&quot; data-shorttitle=&quot;WebM source&quot; data-width=&quot;1280&quot; data-height=&quot;720&quot; data-bandwidth=&quot;460020&quot; data-framerate=&quot;29.97&quot;/&gt;&lt;source src=&quot;//upload.wikimedia.org/wikipedia/commons/transcoded/5/5c/Rust_101.webm/Rust_101.webm.480p.ogv&quot; type=&quot;video/ogg; codecs=&amp;quot;theora, vorbis&amp;quot;&quot; data-title=&quot;SD Ogg video (480P)&quot; data-shorttitle=&quot;Ogg 480P&quot; data-transcodekey=&quot;480p.ogv&quot; data-width=&quot;854&quot; data-height=&quot;480&quot; data-bandwidth=&quot;663488&quot; data-framerate=&quot;60&quot;/&gt;&lt;source src=&quot;//upload.wikimedia.org/wikipedia/commons/transcoded/5/5c/Rust_101.webm/Rust_101.webm.480p.webm&quot; type=&quot;video/webm; codecs=&amp;quot;vp8, vorbis&amp;quot;&quot; data-title=&quot;SD WebM (480P)&quot; data-shorttitle=&quot;WebM 480P&quot; data-transcodekey=&quot;480p.webm&quot; data-width=&quot;854&quot; data-height=&quot;480&quot; data-bandwidth=&quot;1060424&quot; data-framerate=&quot;29.97&quot;/&gt;&lt;source src=&quot;//upload.wikimedia.org/wikipedia/commons/transcoded/5/5c/Rust_101.webm/Rust_101.webm.720p.webm&quot; type=&quot;video/webm; codecs=&amp;quot;vp8, vorbis&amp;quot;&quot; data-title=&quot;HD WebM (720P)&quot; data-shorttitle=&quot;WebM 720P&quot; data-transcodekey=&quot;720p.webm&quot; data-width=&quot;1280&quot; data-height=&quot;720&quot; data-bandwidth=&quot;2072256&quot; data-framerate=&quot;29.97&quot;/&gt;&lt;source src=&quot;//upload.wikimedia.org/wikipedia/commons/transcoded/5/5c/Rust_101.webm/Rust_101.webm.160p.ogv&quot; type=&quot;video/ogg; codecs=&amp;quot;theora, vorbis&amp;quot;&quot; data-title=&quot;Low bandwidth Ogg video (160P)&quot; data-shorttitle=&quot;Ogg 160P&quot; data-transcodekey=&quot;160p.ogv&quot; data-width=&quot;284&quot; data-height=&quot;160&quot; data-bandwidth=&quot;114848&quot; data-framerate=&quot;15&quot;/&gt;&lt;source src=&quot;//upload.wikimedia.org/wikipedia/commons/transcoded/5/5c/Rust_101.webm/Rust_101.webm.160p.webm&quot; type=&quot;video/webm; codecs=&amp;quot;vp8, vorbis&amp;quot;&quot; data-title=&quot;Low bandwidth WebM (160P)&quot; data-shorttitle=&quot;WebM 160P&quot; data-transcodekey=&quot;160p.webm&quot; data-width=&quot;284&quot; data-height=&quot;160&quot; data-bandwidth=&quot;204248&quot; data-framerate=&quot;29.97&quot;/&gt;&lt;source src=&quot;//upload.wikimedia.org/wikipedia/commons/transcoded/5/5c/Rust_101.webm/Rust_101.webm.240p.ogv&quot; type=&quot;video/ogg; codecs=&amp;quot;theora, vorbis&amp;quot;&quot; data-title=&quot;Small Ogg video (240P)&quot; data-shorttitle=&quot;Ogg 240P&quot; data-transcodekey=&quot;240p.ogv&quot; data-width=&quot;426&quot; data-height=&quot;240&quot; data-bandwidth=&quot;253480&quot; data-framerate=&quot;60&quot;/&gt;&lt;source src=&quot;//upload.wikimedia.org/wikipedia/commons/transcoded/5/5c/Rust_101.webm/Rust_101.webm.240p.webm&quot; type=&quot;video/webm; codecs=&amp;quot;vp8, vorbis&amp;quot;&quot; data-title=&quot;Small WebM (240P)&quot; data-shorttitle=&quot;WebM 240P&quot; data-transcodekey=&quot;240p.webm&quot; data-width=&quot;426&quot; data-height=&quot;240&quot; data-bandwidth=&quot;316768&quot; data-framerate=&quot;29.97&quot;/&gt;&lt;source src=&quot;//upload.wikimedia.org/wikipedia/commons/transcoded/5/5c/Rust_101.webm/Rust_101.webm.360p.ogv&quot; type=&quot;video/ogg; codecs=&amp;quot;theora, vorbis&amp;quot;&quot; data-title=&quot;Ogg video (360P)&quot; data-shorttitle=&quot;Ogg 360P&quot; data-transcodekey=&quot;360p.ogv&quot; data-width=&quot;640&quot; data-height=&quot;360&quot; data-bandwidth=&quot;431368&quot; data-framerate=&quot;60&quot;/&gt;&lt;source src=&quot;//upload.wikimedia.org/wikipedia/commons/transcoded/5/5c/Rust_101.webm/Rust_101.webm.360p.webm&quot; type=&quot;video/webm; codecs=&amp;quot;vp8, vorbis&amp;quot;&quot; data-title=&quot;WebM (360P)&quot; data-shorttitle=&quot;WebM 360P&quot; data-transcodekey=&quot;360p.webm&quot; data-width=&quot;640&quot; data-height=&quot;360&quot; data-bandwidth=&quot;564024&quot; data-framerate=&quot;29.97&quot;/&gt;&lt;/video&gt;&lt;/div&gt;"><img alt="File:Rust 101.webm" style="width:220px;height:124px" src="//upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Rust_101.webm/220px--Rust_101.webm.jpg" /><a href="//upload.wikimedia.org/wikipedia/commons/5/5c/Rust_101.webm" title="Play media" target="new"><span class="play-btn-large"><span class="mw-tmh-playtext">Play media</span></span></a></div>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:Rust_101.webm" class="internal" title="Enlarge"></a></div>
+A presentation from <a href="/wiki/Linux.conf.au" title="Linux.conf.au">linux.conf.au</a> that explains the key concepts necessary for successful Rust programming.</div>
+</div>
+</div>
+<p>This program prints the string "<a href="/wiki/Hello,_world!" class="mw-redirect" title="Hello, world!">Hello, world!</a>" to <a href="/wiki/Standard_output" class="mw-redirect" title="Standard output">standard output</a> and exits.</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="k">fn</span><span class="w"> </span><span class="n">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">println</span><span class="o">!</span><span class="p">(</span><span class="s">"Hello, world!"</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+<h2><span class="mw-headline" id="History">History</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Rust_(programming_language)&amp;action=edit&amp;section=8" title="Edit section: History">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The 0.1 release of Rust was in January 2012 and the first "stable" version of the Rust, version 1.0.0, was released in May 2015.<sup id="cite_ref-Version_history_26-0" class="reference"><a href="#cite_note-Version_history-26">[26]</a></sup><sup id="cite_ref-27" class="reference"><a href="#cite_note-27">[27]</a></sup> Following 1.0, stable point releases are delivered every six weeks, while features are developed in nightly Rust and then tested with alpha and beta releases that last six weeks.<sup id="cite_ref-Scheduling_the_Trains_28-0" class="reference"><a href="#cite_note-Scheduling_the_Trains-28">[28]</a></sup></p>
+<p>In addition to conventional static typing, before version 0.4, Rust also supported <a href="/wiki/Typestate_analysis" title="Typestate analysis">typestates</a>. The typestate system modeled assertions before and after program statements, through use of a special <code>check</code> statement. Discrepancies could be discovered at compile time, rather than when a program was running, as might be the case with <a href="/wiki/Assertion_(computing)" class="mw-redirect" title="Assertion (computing)">assertions</a> in C or C++ code. The typestate concept was not unique to Rust, as it was first introduced in the language <a href="/wiki/NIL_(programming_language)" title="NIL (programming language)">NIL</a>.<sup id="cite_ref-typestate_29-0" class="reference"><a href="#cite_note-typestate-29">[29]</a></sup> Typestates were removed because in practice they found little use, though the same functionality can still be achieved with <a href="/w/index.php?title=Branding_pattern&amp;action=edit&amp;redlink=1" class="new" title="Branding pattern (page does not exist)">branding patterns</a>.<sup id="cite_ref-branding-patterns_30-0" class="reference"><a href="#cite_note-branding-patterns-30">[30]</a></sup></p>
+<p>The style of the object system changed considerably within versions 0.2, 0.3 and 0.4 of Rust.<sup class="noprint Inline-Template" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Manual_of_Style/Dates_and_numbers#Chronological_items" title="Wikipedia:Manual of Style/Dates and numbers"><span title="The time period mentioned near this tag is ambiguous. (August 2016)">when?</span></a></i>]</sup> Version 0.2 introduced classes for the first time, with version 0.3 adding a number of features including destructors and polymorphism through the use of interfaces. In Rust 0.4, traits were added as a means to provide inheritance; interfaces were unified with traits and removed as a separate feature. Classes were also removed, replaced by a combination of implementations and structured types.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (August 2016)">citation needed</span></a></i>]</sup></p>
+<p>Starting in Rust 0.9 and ending in Rust 0.11, Rust had two built-in pointer types, <code>~</code> and <code>@</code>, simplifying the core memory model. It reimplemented those pointer types in the standard library as <code>Box</code> and (the now removed) <code>Gc</code>.</p>
+<p>In January 2014, the editor-in-chief of <i><a href="/wiki/Dr_Dobb%27s" class="mw-redirect" title="Dr Dobb's">Dr Dobb's</a></i>, Andrew Binstock, commented on Rust's chances to become a competitor to C++, as well as to the other upcoming languages <a href="/wiki/D_(programming_language)" title="D (programming language)">D</a>, <a href="/wiki/Go_(programming_language)" title="Go (programming language)">Go</a> and <a href="/wiki/Nim_(programming_language)" title="Nim (programming language)">Nim</a> (then Nimrod): according to Binstock, while Rust was "widely viewed as a remarkably elegant language", adoption of it stayed behind because the language kept changing between versions.<sup id="cite_ref-31" class="reference"><a href="#cite_note-31">[31]</a></sup></p>
+<p>Rust was the third most loved programming language in the 2015 Stack Overflow annual survey,<sup id="cite_ref-32" class="reference"><a href="#cite_note-32">[32]</a></sup> and jumped to the first place in 2016 Stack Overflow annual survey.<sup id="cite_ref-33" class="reference"><a href="#cite_note-33">[33]</a></sup></p>
+<h2><span class="mw-headline" id="Projects_using_Rust">Projects using Rust</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Rust_(programming_language)&amp;action=edit&amp;section=9" title="Edit section: Projects using Rust">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<table class="plainlinks metadata ambox ambox-move" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Split-arrows.svg/50px-Split-arrows.svg.png" width="50" height="17" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Split-arrows.svg/75px-Split-arrows.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Split-arrows.svg/100px-Split-arrows.svg.png 2x" data-file-width="60" data-file-height="20" /></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">It has been suggested that this section be <a href="/wiki/Wikipedia:Splitting" title="Wikipedia:Splitting">split</a> out into another article. (<a href="/wiki/Talk:Rust_(programming_language)#Split_proposed_for_list_of_projects_using_Rust" title="Talk:Rust (programming language)">Discuss</a>) <small><i>(October 2016)</i></small></span></td>
+</tr>
+</table>
+<p>Projects developed in Rust include:</p>
+<p>Web browser oriented:</p>
+<ul>
+<li><a href="/wiki/Firefox" title="Firefox">Firefox</a><sup id="cite_ref-34" class="reference"><a href="#cite_note-34">[34]</a></sup>
+<ul>
+<li><a href="/wiki/Servo_(layout_engine)" title="Servo (layout engine)">Servo</a> – Mozilla's new <a href="/wiki/Parallel_computing" title="Parallel computing">parallel</a> <a href="/wiki/Web_browser_engine" title="Web browser engine">web browser engine</a><sup id="cite_ref-35" class="reference"><a href="#cite_note-35">[35]</a></sup> developed in collaboration with <a href="/wiki/Samsung" title="Samsung">Samsung</a><sup id="cite_ref-36" class="reference"><a href="#cite_note-36">[36]</a></sup></li>
+<li>Quantum – a <a href="/wiki/Web_browser_engine" title="Web browser engine">web browser engine</a> with many components developed by Mozilla<sup id="cite_ref-37" class="reference"><a href="#cite_note-37">[37]</a></sup></li>
+</ul>
+</li>
+</ul>
+<p>Build tool oriented:</p>
+<ul>
+<li>Cargo – Rust's <a href="/wiki/Build_automation" title="Build automation">build automation</a> system</li>
+<li>Habitat – a build and deployment tool from Chef Software (<a rel="nofollow" class="external text" href="https://www.habitat.sh/">Official website</a>)</li>
+</ul>
+<p>Other projects:</p>
+<ul>
+<li>Magic Pocket – Dropbox's <a href="/wiki/File_system" title="File system">file system</a> that powers their Diskotech <a href="/wiki/Petabyte" title="Petabyte">petabyte</a> storage machines<sup id="cite_ref-38" class="reference"><a href="#cite_note-38">[38]</a></sup></li>
+<li><a href="/wiki/OpenDNS" title="OpenDNS">OpenDNS</a> – used in two of its components<sup id="cite_ref-39" class="reference"><a href="#cite_note-39">[39]</a></sup><sup id="cite_ref-40" class="reference"><a href="#cite_note-40">[40]</a></sup><sup id="cite_ref-41" class="reference"><a href="#cite_note-41">[41]</a></sup></li>
+<li><a href="/wiki/Redox_OS" class="mw-redirect" title="Redox OS">Redox OS</a> – a <a href="/wiki/Microkernel" title="Microkernel">microkernel</a> <a href="/wiki/Operating_system" title="Operating system">operating system</a><sup id="cite_ref-42" class="reference"><a href="#cite_note-42">[42]</a></sup></li>
+<li>Piston – a <a href="/wiki/Game_engine" title="Game engine">game engine</a> (<a rel="nofollow" class="external text" href="http://www.piston.rs/">Official website</a>)</li>
+<li>OnePush – a notification delivery system developed by OneSignal<sup id="cite_ref-43" class="reference"><a href="#cite_note-43">[43]</a></sup></li>
+<li>REmacs - a port of Emacs to Rust<sup id="cite_ref-44" class="reference"><a href="#cite_note-44">[44]</a></sup></li>
+<li>MAIDsafe P2P Internet project. Currently being built by a development team in Troon, Scotland. MAIDsafe will provide a censorship free, decentralised internet 2.0. See&#160;: <a rel="nofollow" class="external free" href="https://maidsafe.net/">https://maidsafe.net/</a> or its community forum at&#160;: <a rel="nofollow" class="external free" href="https://safenetforum.org/">https://safenetforum.org/</a></li>
+</ul>
+<h2><span class="mw-headline" id="Examples">Examples</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Rust_(programming_language)&amp;action=edit&amp;section=10" title="Edit section: Examples">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="Factorial">Factorial</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Rust_(programming_language)&amp;action=edit&amp;section=11" title="Edit section: Factorial">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>This is a <a href="/wiki/Factorial" title="Factorial">factorial</a> function, implemented <a href="/wiki/Recursion_(computer_science)" title="Recursion (computer science)">recursively</a>. The branches in this function exhibit Rust's optional implicit return values, which can be utilized where a more "functional" style is preferred. Unlike C++ and related languages, Rust's <code>if</code> construct is an expression rather than a statement, and thus has a return value of its own.</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="k">fn</span><span class="w"> </span><span class="n">factorial_recursive</span><span class="p">(</span><span class="n">n</span><span class="o">:</span><span class="w"> </span><span class="kt">u32</span><span class="p">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="kt">u32</span><span class="w"> </span><span class="p">{</span>
+<span class="err">   </span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="p">{</span>
+<span class="err">       </span><span class="w"> </span><span class="mi">1</span>
+<span class="err">   </span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="err">       </span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">factorial_recursive</span><span class="p">(</span><span class="n">n</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span>
+<span class="err">   </span><span class="w"> </span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+<p>This can be written with the most idiomatic match pattern, coming from the functional languages. The first line of the match block evaluates the block to 1 if <code>n</code> is 0 or 1, and the <code>_</code> match all the remaining cases, like <code>default</code> in the <code>switch</code> from C.</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="k">fn</span><span class="w"> </span><span class="n">factorial_recursive</span><span class="p">(</span><span class="n">n</span><span class="o">:</span><span class="w"> </span><span class="kt">u32</span><span class="p">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="kt">u32</span><span class="w"> </span><span class="p">{</span>
+<span class="err">   </span><span class="w"> </span><span class="k">match</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="p">{</span>
+<span class="err">       </span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="mi">1</span><span class="err">  </span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="c1">// if n is 0 or 1, the match block is evaluated to 1,</span>
+<span class="err">       </span><span class="w"> </span><span class="n">_</span><span class="err">      </span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">factorial_recursive</span><span class="p">(</span><span class="n">n</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">),</span><span class="w"> </span><span class="c1">// and on the other cases to this expression</span>
+<span class="err">   </span><span class="w"> </span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+<p>And here's an <a href="/wiki/Iteration" title="Iteration">iterative</a> implementation:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="k">fn</span><span class="w"> </span><span class="n">factorial_iterative</span><span class="p">(</span><span class="n">n</span><span class="o">:</span><span class="w"> </span><span class="kt">u32</span><span class="p">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="kt">u32</span><span class="w"> </span><span class="p">{</span>
+<span class="err">   </span><span class="w"> </span><span class="c1">// Variables are declared with `let`.</span>
+<span class="err">   </span><span class="w"> </span><span class="c1">// The `mut` keyword allows these variables to be mutated.</span>
+<span class="err">   </span><span class="w"> </span><span class="kd">let</span><span class="w"> </span><span class="k">mut</span><span class="w"> </span><span class="n">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<span class="err">   </span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="mi">2</span><span class="p">..</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="c1">// The lower bound is inclusive, the upper bound exclusive.</span>
+<span class="err">       </span><span class="w"> </span><span class="n">result</span><span class="w"> </span><span class="o">*=</span><span class="w"> </span><span class="n">i</span><span class="p">;</span>
+<span class="err">   </span><span class="w"> </span><span class="p">}</span>
+<span class="err">   </span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">result</span><span class="p">;</span><span class="w"> </span><span class="c1">// An explicit return, in contrast to the prior function.</span>
+<span class="p">}</span>
+</pre></div>
+<p>This implementation uses an <a href="/wiki/Iterator" title="Iterator">iterator</a> instead.</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="k">fn</span><span class="w"> </span><span class="n">factorial_iterator</span><span class="p">(</span><span class="n">n</span><span class="o">:</span><span class="w"> </span><span class="kt">u32</span><span class="p">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="kt">u32</span><span class="w"> </span><span class="p">{</span>
+<span class="err">   </span><span class="w"> </span><span class="c1">// |accum, x| defines an anonymous function.</span>
+<span class="err">   </span><span class="w"> </span><span class="c1">// Optimizations like inline expansion reduce the range and fold</span>
+<span class="err">   </span><span class="w"> </span><span class="c1">// to have performance similar to factorial_iterative.</span>
+<span class="err">   </span><span class="w"> </span><span class="p">(</span><span class="mi">1</span><span class="p">..</span><span class="n">n</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">).</span><span class="n">fold</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="o">|</span><span class="n">accum</span><span class="p">,</span><span class="w"> </span><span class="n">x</span><span class="o">|</span><span class="w"> </span><span class="n">accum</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">x</span><span class="p">)</span>
+<span class="p">}</span>
+</pre></div>
+<h3><span class="mw-headline" id="Concurrency">Concurrency</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Rust_(programming_language)&amp;action=edit&amp;section=12" title="Edit section: Concurrency">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>A demonstration of Rust's <a href="/wiki/Concurrent_computing" title="Concurrent computing">concurrency</a> capabilities:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="kn">use</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">thread</span><span class="p">;</span>
+
+<span class="c1">// This function creates ten threads that all execute concurrently.</span>
+<span class="c1">// To verify this, run the program several times and observe the irregular</span>
+<span class="c1">// order in which each thread's output is printed.</span>
+<span class="k">fn</span><span class="w"> </span><span class="n">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="err">   </span><span class="w"> </span><span class="c1">// This string is immutable, so it can safely be accessed from multiple threads.</span>
+<span class="err">   </span><span class="w"> </span><span class="kd">let</span><span class="w"> </span><span class="n">greeting</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Hello"</span><span class="p">;</span>
+
+<span class="err">   </span><span class="w"> </span><span class="kd">let</span><span class="w"> </span><span class="k">mut</span><span class="w"> </span><span class="n">threads</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">Vec</span><span class="o">::</span><span class="n">new</span><span class="p">();</span>
+<span class="err">   </span><span class="w"> </span><span class="c1">// `for` loops work with any type that implements the `Iterator` trait.</span>
+<span class="err">   </span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">num</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="mi">0</span><span class="p">..</span><span class="mi">10</span><span class="w"> </span><span class="p">{</span>
+<span class="err">       </span><span class="w"> </span><span class="n">threads</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="n">thread</span><span class="o">::</span><span class="n">spawn</span><span class="p">(</span><span class="n">move</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="p">{</span>
+<span class="err">           </span><span class="w"> </span><span class="c1">// `println!` is a macro that statically typechecks a format string.</span>
+<span class="err">           </span><span class="w"> </span><span class="c1">// Macros are structural (as in Scheme) rather than textual (as in C).</span>
+<span class="err">           </span><span class="w"> </span><span class="n">println</span><span class="o">!</span><span class="p">(</span><span class="s">"{} from thread number {}"</span><span class="p">,</span><span class="w"> </span><span class="n">greeting</span><span class="p">,</span><span class="w"> </span><span class="n">num</span><span class="p">);</span>
+<span class="err">       </span><span class="w"> </span><span class="p">}));</span>
+<span class="err">   </span><span class="w"> </span><span class="p">}</span>
+
+<span class="err">   </span><span class="w"> </span><span class="c1">// Join each thread so that they all finish before program exit.</span>
+<span class="err">   </span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">thread</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">threads</span><span class="w"> </span><span class="p">{</span>
+<span class="err">       </span><span class="w"> </span><span class="n">thread</span><span class="p">.</span><span class="n">join</span><span class="p">().</span><span class="n">unwrap</span><span class="p">();</span>
+<span class="err">   </span><span class="w"> </span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+<h3><span class="mw-headline" id="Miscellaneous_2">Miscellaneous</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Rust_(programming_language)&amp;action=edit&amp;section=13" title="Edit section: Miscellaneous">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>A demonstration of Rust's built-in <a href="/wiki/Smart_pointer" title="Smart pointer">unique smart pointers</a>, along with <a href="/wiki/Tagged_union" title="Tagged union">tagged unions</a> and <a href="/wiki/Method_(computer_programming)" title="Method (computer programming)">methods</a>.</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="kn">use</span><span class="w"> </span><span class="n">IntList</span><span class="o">::</span><span class="p">{</span><span class="n">Node</span><span class="p">,</span><span class="w"> </span><span class="n">Empty</span><span class="p">};</span>
+
+<span class="c1">// This program defines a recursive data structure and implements methods upon it.</span>
+<span class="c1">// Recursive data structures require a layer of indirection, which is provided here</span>
+<span class="c1">// by a unique pointer, constructed via the `Box::new` constructor. These are</span>
+<span class="c1">// analogous to the C++ library type `std::unique_ptr`, though with more static</span>
+<span class="c1">// safety guarantees.</span>
+<span class="k">fn</span><span class="w"> </span><span class="n">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="err">   </span><span class="w"> </span><span class="kd">let</span><span class="w"> </span><span class="n">list</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">IntList</span><span class="o">::</span><span class="n">new</span><span class="p">().</span><span class="n">prepend</span><span class="p">(</span><span class="mi">3</span><span class="p">).</span><span class="n">prepend</span><span class="p">(</span><span class="mi">2</span><span class="p">).</span><span class="n">prepend</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+<span class="err">   </span><span class="w"> </span><span class="n">println</span><span class="o">!</span><span class="p">(</span><span class="s">"Sum of all values in the list: {}."</span><span class="p">,</span><span class="w"> </span><span class="n">list</span><span class="p">.</span><span class="n">sum</span><span class="p">());</span>
+<span class="err">   </span><span class="w"> </span><span class="n">println</span><span class="o">!</span><span class="p">(</span><span class="s">"Sum of all doubled values in the list: {}."</span><span class="p">,</span><span class="w"> </span><span class="n">list</span><span class="p">.</span><span class="n">multiply_by</span><span class="p">(</span><span class="mi">2</span><span class="p">).</span><span class="n">sum</span><span class="p">());</span>
+<span class="p">}</span>
+
+<span class="c1">// `enum` defines a tagged union that may be one of several different kinds of values at runtime.</span>
+<span class="c1">// The type here will either contain no value, or a value and a pointer to another `IntList`.</span>
+<span class="k">enum</span><span class="w"> </span><span class="n">IntList</span><span class="w"> </span><span class="p">{</span>
+<span class="err">   </span><span class="w"> </span><span class="n">Node</span><span class="p">(</span><span class="kt">i32</span><span class="p">,</span><span class="w"> </span><span class="nb">Box</span><span class="o">&lt;</span><span class="n">IntList</span><span class="o">&gt;</span><span class="p">),</span>
+<span class="err">   </span><span class="w"> </span><span class="n">Empty</span>
+<span class="p">}</span>
+
+<span class="c1">// An `impl` block allows methods to be defined on a type.</span>
+<span class="k">impl</span><span class="w"> </span><span class="n">IntList</span><span class="w"> </span><span class="p">{</span>
+<span class="err">   </span><span class="w"> </span><span class="k">fn</span><span class="w"> </span><span class="n">new</span><span class="p">()</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="nb">Box</span><span class="o">&lt;</span><span class="n">IntList</span><span class="o">&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="err">       </span><span class="w"> </span><span class="nb">Box</span><span class="o">::</span><span class="n">new</span><span class="p">(</span><span class="n">Empty</span><span class="p">)</span>
+<span class="err">   </span><span class="w"> </span><span class="p">}</span>
+
+<span class="err">   </span><span class="w"> </span><span class="k">fn</span><span class="w"> </span><span class="n">prepend</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="w"> </span><span class="n">value</span><span class="o">:</span><span class="w"> </span><span class="kt">i32</span><span class="p">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="nb">Box</span><span class="o">&lt;</span><span class="n">IntList</span><span class="o">&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="err">       </span><span class="w"> </span><span class="nb">Box</span><span class="o">::</span><span class="n">new</span><span class="p">(</span><span class="n">Node</span><span class="p">(</span><span class="n">value</span><span class="p">,</span><span class="w"> </span><span class="nb">Box</span><span class="o">::</span><span class="n">new</span><span class="p">(</span><span class="bp">self</span><span class="p">)))</span>
+<span class="err">   </span><span class="w"> </span><span class="p">}</span>
+
+<span class="err">   </span><span class="w"> </span><span class="k">fn</span><span class="w"> </span><span class="n">sum</span><span class="p">(</span><span class="o">&amp;</span><span class="bp">self</span><span class="p">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="kt">i32</span><span class="w"> </span><span class="p">{</span>
+<span class="err">       </span><span class="w"> </span><span class="c1">// `match` expressions are the typical way of employing pattern-matching,</span>
+<span class="err">       </span><span class="w"> </span><span class="c1">// and are somewhat analogous to the `switch` statement from C and C++.</span>
+<span class="err">       </span><span class="w"> </span><span class="k">match</span><span class="w"> </span><span class="o">*</span><span class="bp">self</span><span class="w"> </span><span class="p">{</span>
+<span class="err">           </span><span class="w"> </span><span class="n">Node</span><span class="p">(</span><span class="n">value</span><span class="p">,</span><span class="w"> </span><span class="k">ref</span><span class="w"> </span><span class="n">next</span><span class="p">)</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">value</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">next</span><span class="p">.</span><span class="n">sum</span><span class="p">(),</span>
+<span class="err">           </span><span class="w"> </span><span class="n">Empty</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="mi">0</span>
+<span class="err">       </span><span class="w"> </span><span class="p">}</span>
+<span class="err">   </span><span class="w"> </span><span class="p">}</span>
+
+<span class="err">   </span><span class="w"> </span><span class="k">fn</span><span class="w"> </span><span class="n">multiply_by</span><span class="p">(</span><span class="o">&amp;</span><span class="bp">self</span><span class="p">,</span><span class="w"> </span><span class="n">n</span><span class="o">:</span><span class="w"> </span><span class="kt">i32</span><span class="p">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="nb">Box</span><span class="o">&lt;</span><span class="n">IntList</span><span class="o">&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="err">       </span><span class="w"> </span><span class="k">match</span><span class="w"> </span><span class="o">*</span><span class="bp">self</span><span class="w"> </span><span class="p">{</span>
+<span class="err">           </span><span class="w"> </span><span class="n">Node</span><span class="p">(</span><span class="n">value</span><span class="p">,</span><span class="w"> </span><span class="k">ref</span><span class="w"> </span><span class="n">next</span><span class="p">)</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="nb">Box</span><span class="o">::</span><span class="n">new</span><span class="p">(</span><span class="n">Node</span><span class="p">(</span><span class="n">value</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">n</span><span class="p">,</span><span class="w"> </span><span class="n">next</span><span class="p">.</span><span class="n">multiply_by</span><span class="p">(</span><span class="n">n</span><span class="p">))),</span>
+<span class="err">           </span><span class="w"> </span><span class="n">Empty</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="nb">Box</span><span class="o">::</span><span class="n">new</span><span class="p">(</span><span class="n">Empty</span><span class="p">)</span>
+<span class="err">       </span><span class="w"> </span><span class="p">}</span>
+<span class="err">   </span><span class="w"> </span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Rust_(programming_language)&amp;action=edit&amp;section=14" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a href="/wiki/Comparison_of_programming_languages" title="Comparison of programming languages">Comparison of programming languages</a></li>
+</ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Rust_(programming_language)&amp;action=edit&amp;section=15" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist columns references-column-width" style="-moz-column-width: 30em; -webkit-column-width: 30em; column-width: 30em; list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://blog.rust-lang.org/2017/02/02/Rust-1.15.html">"Announcing Rust 1.15"</a>. <i>blog.rust-lang.org</i>. 2017-02-02<span class="reference-accessdate">. Retrieved <span class="nowrap">2017-02-04</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARust+%28programming+language%29&amp;rft.atitle=Announcing+Rust+1.15&amp;rft.date=2017-02-02&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fblog.rust-lang.org%2F2017%2F02%2F02%2FRust-1.15.html&amp;rft.jtitle=blog.rust-lang.org&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://github.com/rust-lang/rust/wiki/Doc-building-for-ios">"Doc building for ios"</a>. <i>GitHub</i><span class="reference-accessdate">. Retrieved <span class="nowrap">4 January</span> 2015</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARust+%28programming+language%29&amp;rft.atitle=Doc+building+for+ios&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fgithub.com%2Frust-lang%2Frust%2Fwiki%2FDoc-building-for-ios&amp;rft.jtitle=GitHub&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-license-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-license_3-0">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://github.com/rust-lang/rust/blob/master/COPYRIGHT">"Copyright"</a>. Rust compiler source repository<span class="reference-accessdate">. Retrieved <span class="nowrap">2015-11-09</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARust+%28programming+language%29&amp;rft.btitle=Copyright&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fgithub.com%2Frust-lang%2Frust%2Fblob%2Fmaster%2FCOPYRIGHT&amp;rft.pub=Rust+compiler+source+repository&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-referenceinfluences-4"><span class="mw-cite-backlink">^ <a href="#cite_ref-referenceinfluences_4-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-referenceinfluences_4-1"><sup><i><b>b</b></i></sup></a> <a href="#cite_ref-referenceinfluences_4-2"><sup><i><b>c</b></i></sup></a> <a href="#cite_ref-referenceinfluences_4-3"><sup><i><b>d</b></i></sup></a> <a href="#cite_ref-referenceinfluences_4-4"><sup><i><b>e</b></i></sup></a> <a href="#cite_ref-referenceinfluences_4-5"><sup><i><b>f</b></i></sup></a> <a href="#cite_ref-referenceinfluences_4-6"><sup><i><b>g</b></i></sup></a> <a href="#cite_ref-referenceinfluences_4-7"><sup><i><b>h</b></i></sup></a> <a href="#cite_ref-referenceinfluences_4-8"><sup><i><b>i</b></i></sup></a> <a href="#cite_ref-referenceinfluences_4-9"><sup><i><b>j</b></i></sup></a> <a href="#cite_ref-referenceinfluences_4-10"><sup><i><b>k</b></i></sup></a> <a href="#cite_ref-referenceinfluences_4-11"><sup><i><b>l</b></i></sup></a> <a href="#cite_ref-referenceinfluences_4-12"><sup><i><b>m</b></i></sup></a> <a href="#cite_ref-referenceinfluences_4-13"><sup><i><b>n</b></i></sup></a> <a href="#cite_ref-referenceinfluences_4-14"><sup><i><b>o</b></i></sup></a></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://doc.rust-lang.org/reference.html#appendix-influences">"The Rust Reference: Appendix: Influences"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">March 25,</span> 2015</span>. <q>Rust is not a particularly original language, with design elements coming from a wide range of sources. Some of these are listed below (including elements that have since been removed): SML, OCaml [...] C++ [...] ML Kit, Cyclone [...] Haskell [...] Newsqueak, Alef, Limbo [...] Erlang [...] Swift [...] Scheme [...] C# [...] Ruby [...] NIL, Hermes</q></cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARust+%28programming+language%29&amp;rft.btitle=The+Rust+Reference%3A+Appendix%3A+Influences&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fdoc.rust-lang.org%2Freference.html%23appendix-influences&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-rustwiki-noteresearch-typesystem-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-rustwiki-noteresearch-typesystem_5-0">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://github.com/rust-lang/rust-wiki-backup/blob/master/Note-research.md#type-system">"Note Research: Type System"</a>. 2015-02-01<span class="reference-accessdate">. Retrieved <span class="nowrap">2015-03-25</span></span>. <q>Papers that have had more or less influence on Rust, or which one might want to consult for inspiration or to understand Rust's background. [...] <i>Region based memory management in Cyclone</i> [...] <i>Safe memory management in Cyclone</i></q></cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARust+%28programming+language%29&amp;rft.btitle=Note+Research%3A+Type+System&amp;rft.date=2015-02-01&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fgithub.com%2Frust-lang%2Frust-wiki-backup%2Fblob%2Fmaster%2FNote-research.md%23type-system&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-rust-if-let-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-rust-if-let_6-0">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://github.com/rust-lang/rfcs/pull/160">"RFC for 'if let' expression"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">December 4,</span> 2014</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARust+%28programming+language%29&amp;rft.btitle=RFC+for+%27if+let%27+expression&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fgithub.com%2Frust-lang%2Frfcs%2Fpull%2F160&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-elmresult-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-elmresult_7-0">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://groups.google.com/forum/?fromgroups#!searchin/elm-discuss/rust/elm-discuss/lMX_9miTD2E/QBwdvL4JD9wJ">"Command Optimizations?"</a>. 2014-06-26<span class="reference-accessdate">. Retrieved <span class="nowrap">2014-12-10</span></span>. <q>I just added the outline of a Result library that lets you use richer error messages. It's like Either except the names are more helpful. The names are inspired by Rust's Result library.</q></cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARust+%28programming+language%29&amp;rft.btitle=Command+Optimizations%3F&amp;rft.date=2014-06-26&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fgroups.google.com%2Fforum%2F%3Ffromgroups%23%21searchin%2Felm-discuss%2Frust%2Felm-discuss%2FlMX_9miTD2E%2FQBwdvL4JD9wJ&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-idrisunique-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-idrisunique_8-0">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://web.archive.org/web/20141225103820/https://github.com/idris-lang/Idris-dev/wiki/Uniqueness-Types">"Uniqueness Types"</a>. 2014-08-22. Archived from <a rel="nofollow" class="external text" href="https://github.com/idris-lang/Idris-dev/wiki/Uniqueness-Types">the original</a> on December 25, 2014<span class="reference-accessdate">. Retrieved <span class="nowrap">2014-10-27</span></span>. <q>They are inspired by linear types, Uniqueness Types in the Clean programming language, and ownership types and borrowed pointers in the Rust programming language.</q></cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARust+%28programming+language%29&amp;rft.btitle=Uniqueness+Types&amp;rft.date=2014-08-22&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fgithub.com%2Fidris-lang%2FIdris-dev%2Fwiki%2FUniqueness-Types&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-lamda-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-lamda_9-0">^</a></b></span> <span class="reference-text"><cite class="citation web">Noel (2010-07-08). <a rel="nofollow" class="external text" href="http://lambda-the-ultimate.org/node/4009">"The Rust Language"</a>. Lambda the Ultimate<span class="reference-accessdate">. Retrieved <span class="nowrap">2010-10-30</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARust+%28programming+language%29&amp;rft.au=Noel&amp;rft.btitle=The+Rust+Language&amp;rft.date=2010-07-08&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Flambda-the-ultimate.org%2Fnode%2F4009&amp;rft.pub=Lambda+the+Ultimate&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-FAQ_-_The_Rust_Project-10"><span class="mw-cite-backlink">^ <a href="#cite_ref-FAQ_-_The_Rust_Project_10-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-FAQ_-_The_Rust_Project_10-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://www.rust-lang.org/faq.html#project">"FAQ - The Rust Project"</a>. <i>Rust-lang.org</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2 March</span> 2016</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARust+%28programming+language%29&amp;rft.atitle=FAQ+-+The+Rust+Project&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fwww.rust-lang.org%2Ffaq.html%23project&amp;rft.jtitle=Rust-lang.org&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-rust-name-11"><span class="mw-cite-backlink"><b><a href="#cite_ref-rust-name_11-0">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.reddit.com/r/rust/comments/27jvdt/internet_archaeology_the_definitive_endall_source/">"Internet archaeology: the definitive, end-all source for why Rust is named "Rust"&#160;: rust"</a>. <i>Reddit.com</i>. 2014-06-07<span class="reference-accessdate">. Retrieved <span class="nowrap">2016-11-03</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARust+%28programming+language%29&amp;rft.atitle=Internet+archaeology%3A+the+definitive%2C+end-all+source+for+why+Rust+is+named+%22Rust%22+%3A+rust&amp;rft.date=2014-06-07&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.reddit.com%2Fr%2Frust%2Fcomments%2F27jvdt%2Finternet_archaeology_the_definitive_endall_source%2F&amp;rft.jtitle=Reddit.com&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-future-tense-12"><span class="mw-cite-backlink"><b><a href="#cite_ref-future-tense_12-0">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.slideshare.net/BrendanEich/future-tense-7782010">"Future Tense"</a>. 2011-04-29<span class="reference-accessdate">. Retrieved <span class="nowrap">2012-02-06</span></span>. <q>At Mozilla Summit 2010, we launched Rust, a new programming language motivated by safety and concurrency for parallel hardware, the “manycore” future which is upon us.</q></cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARust+%28programming+language%29&amp;rft.btitle=Future+Tense&amp;rft.date=2011-04-29&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.slideshare.net%2FBrendanEich%2Ffuture-tense-7782010&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-rust-in-rust-13"><span class="mw-cite-backlink"><b><a href="#cite_ref-rust-in-rust_13-0">^</a></b></span> <span class="reference-text"><cite class="citation web">Hoare, Graydon (2010-10-02). <a rel="nofollow" class="external text" href="https://web.archive.org/web/20140815054745/http://blog.mozilla.org/graydon/2010/10/02/rust-progress/">"Rust Progress"</a>. Archived from <a rel="nofollow" class="external text" href="http://blog.mozilla.com/graydon/2010/10/02/rust-progress/">the original</a> on 2014-08-15<span class="reference-accessdate">. Retrieved <span class="nowrap">2010-10-30</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARust+%28programming+language%29&amp;rft.aufirst=Graydon&amp;rft.aulast=Hoare&amp;rft.btitle=Rust+Progress&amp;rft.date=2010-10-02&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fblog.mozilla.com%2Fgraydon%2F2010%2F10%2F02%2Frust-progress%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-rust-compiles-rust-14"><span class="mw-cite-backlink"><b><a href="#cite_ref-rust-compiles-rust_14-0">^</a></b></span> <span class="reference-text"><cite class="citation web">Hoare, Graydon (2011-04-20). <a rel="nofollow" class="external text" href="https://mail.mozilla.org/pipermail/rust-dev/2011-April/000330.html">"[rust-dev] stage1/rustc builds"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2011-04-20</span></span>. <q>After that last change fixing the logging scope context bug, looks like stage1/rustc builds. Just shy of midnight&#160;:)</q></cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARust+%28programming+language%29&amp;rft.aufirst=Graydon&amp;rft.aulast=Hoare&amp;rft.btitle=%5Brust-dev%26%2393%3B+stage1%2Frustc+builds&amp;rft.date=2011-04-20&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fmail.mozilla.org%2Fpipermail%2Frust-dev%2F2011-April%2F000330.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-rustc-0.1-15"><span class="mw-cite-backlink"><b><a href="#cite_ref-rustc-0.1_15-0">^</a></b></span> <span class="reference-text"><cite class="citation web">catamorphism (2012-01-20). <a rel="nofollow" class="external text" href="http://www.reddit.com/r/programming/comments/opgxd/mozilla_and_the_rust_community_release_rust_01_a/">"Mozilla and the Rust community release Rust 0.1 (a strongly-typed systems programming language with a focus on memory safety and concurrency)"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2012-02-06</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARust+%28programming+language%29&amp;rft.au=catamorphism&amp;rft.btitle=Mozilla+and+the+Rust+community+release+Rust+0.1+%28a+strongly-typed+systems+programming+language+with+a+focus+on+memory+safety+and+concurrency%29&amp;rft.date=2012-01-20&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.reddit.com%2Fr%2Fprogramming%2Fcomments%2Fopgxd%2Fmozilla_and_the_rust_community_release_rust_01_a%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-16"><span class="mw-cite-backlink"><b><a href="#cite_ref-16">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://blog.rust-lang.org/2015/05/15/Rust-1.0.html">"Announcing Rust 1.0 - The Rust Programming Language Blog"</a>. <i>blog.rust-lang.org</i>. The Rust Core Team<span class="reference-accessdate">. Retrieved <span class="nowrap">21 January</span> 2016</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARust+%28programming+language%29&amp;rft.atitle=Announcing+Rust+1.0+-+The+Rust+Programming+Language+Blog&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fblog.rust-lang.org%2F2015%2F05%2F15%2FRust-1.0.html&amp;rft.jtitle=blog.rust-lang.org&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-rustinservo-17"><span class="mw-cite-backlink"><b><a href="#cite_ref-rustinservo_17-0">^</a></b></span> <span class="reference-text"><cite class="citation web">Peter Bright (2013-04-03). <a rel="nofollow" class="external text" href="http://arstechnica.com/information-technology/2013/04/samsung-teams-up-with-mozilla-to-build-browser-engine-for-multicore-machines/">"Samsung teams up with Mozilla to build browser engine for multicore machines"</a>. <i>Arstechnica.com</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2013-04-04</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARust+%28programming+language%29&amp;rft.atitle=Samsung+teams+up+with+Mozilla+to+build+browser+engine+for+multicore+machines&amp;rft.au=Peter+Bright&amp;rft.date=2013-04-03&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Farstechnica.com%2Finformation-technology%2F2013%2F04%2Fsamsung-teams-up-with-mozilla-to-build-browser-engine-for-multicore-machines%2F&amp;rft.jtitle=Arstechnica.com&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-contributors-18"><span class="mw-cite-backlink"><b><a href="#cite_ref-contributors_18-0">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://github.com/mozilla/rust/contributors">"Contributors to rust-lang/rust · GitHub"</a>. <i>Github.com</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2016-11-03</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARust+%28programming+language%29&amp;rft.atitle=Contributors+to+rust-lang%2Frust+%B7+GitHub&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fgithub.com%2Fmozilla%2Frust%2Fcontributors&amp;rft.jtitle=Github.com&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-infoq2012-19"><span class="mw-cite-backlink"><b><a href="#cite_ref-infoq2012_19-0">^</a></b></span> <span class="reference-text"><cite class="citation web">Avram, Abel (2012-08-03). <a rel="nofollow" class="external text" href="http://www.infoq.com/news/2012/08/Interview-Rust">"Interview on Rust, a Systems Programming Language Developed by Mozilla"</a>. InfoQ<span class="reference-accessdate">. Retrieved <span class="nowrap">2013-08-17</span></span>. <q><b>GH:</b> A lot of obvious good ideas, known and loved in other languages, haven't made it into widely used systems languages... There were a lot of good competitors in the late 1970s and early 1980s in that space, and I wanted to revive some of their ideas and give them another go, on the theory that circumstances have changed: the internet is highly concurrent and highly security-conscious, so the design-tradeoffs that always favor C and C++ (for example) have been shifting.</q></cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARust+%28programming+language%29&amp;rft.aufirst=Abel&amp;rft.aulast=Avram&amp;rft.btitle=Interview+on+Rust%2C+a+Systems+Programming+Language+Developed+by+Mozilla&amp;rft.date=2012-08-03&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.infoq.com%2Fnews%2F2012%2F08%2FInterview-Rust&amp;rft.pub=InfoQ&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-cpp-design-goals-20"><span class="mw-cite-backlink"><b><a href="#cite_ref-cpp-design-goals_20-0">^</a></b></span> <span class="reference-text"><cite class="citation web">Walton, Patrick (2010-12-05). <a rel="nofollow" class="external text" href="http://pcwalton.blogspot.com/2010/12/c-design-goals-in-context-of-rust.html">"C++ Design Goals in the Context of Rust"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2011-01-21</span></span>. <q>... It’s impossible to be “as fast as C” in all cases while remaining safe... C++ allows all sorts of low-level tricks, mostly involving circumventing the type system, that offer practically unlimited avenues for optimization. In practice, though, C++ programmers restrict themselves to a few tools for the vast majority of the code they write, including stack-allocated variables owned by one function and passed by alias, uniquely owned objects (often used with <code>auto_ptr</code> or the C++0x <code>unique_ptr</code>), and reference counting via <code>shared_ptr</code> or COM. One of the goals of Rust’s type system is to support these patterns exactly as C++ does, but to enforce their safe usage. In this way, the goal is to be competitive with the vast majority of idiomatic C++ in performance, while remaining memory-safe...</q></cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARust+%28programming+language%29&amp;rft.aufirst=Patrick&amp;rft.aulast=Walton&amp;rft.btitle=C%2B%2B+Design+Goals+in+the+Context+of+Rust&amp;rft.date=2010-12-05&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fpcwalton.blogspot.com%2F2010%2F12%2Fc-design-goals-in-context-of-rust.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-how-fast-is-rust-21"><span class="mw-cite-backlink"><b><a href="#cite_ref-how-fast-is-rust_21-0">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://www.rust-lang.org/en-US/faq.html#how-fast-is-rust">"How Fast Is Rust?"</a>. <i>The Rust Programming Language FAQ</i><span class="reference-accessdate">. Retrieved <span class="nowrap">3 August</span> 2016</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARust+%28programming+language%29&amp;rft.atitle=How+Fast+Is+Rust%3F&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fwww.rust-lang.org%2Fen-US%2Ffaq.html%23how-fast-is-rust&amp;rft.jtitle=The+Rust+Programming+Language+FAQ&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-cnet-22"><span class="mw-cite-backlink"><b><a href="#cite_ref-cnet_22-0">^</a></b></span> <span class="reference-text"><cite class="citation web">Rosenblatt, Seth (2013-04-03). <a rel="nofollow" class="external text" href="http://reviews.cnet.com/8301-3514_7-57577639/samsung-joins-mozillas-quest-for-rust/">"Samsung joins Mozilla's quest for Rust"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2013-04-05</span></span>. <q>[Brendan Eich] noted that every year browsers fall victim to hacking in the annual Pwn2Own contest at the CanSecWest conference. "There's no free memory reads" in Rust, he said, but there are in C++. Those problems "lead to a lot of browser vulnerabilities" and would be solved by Rust, which is a self-compiling language.</q></cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARust+%28programming+language%29&amp;rft.aufirst=Seth&amp;rft.aulast=Rosenblatt&amp;rft.btitle=Samsung+joins+Mozilla%27s+quest+for+Rust&amp;rft.date=2013-04-03&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Freviews.cnet.com%2F8301-3514_7-57577639%2Fsamsung-joins-mozillas-quest-for-rust%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-lwn-23"><span class="mw-cite-backlink"><b><a href="#cite_ref-lwn_23-0">^</a></b></span> <span class="reference-text"><cite class="citation web">Brown, Neil (2013-04-17). <a rel="nofollow" class="external text" href="https://lwn.net/Articles/547145/">"A taste of Rust"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2013-04-25</span></span>. <q>... Other more complex data structures could clearly be implemented to allow greater levels of sharing, while making sure the interface is composed only of owned and managed references, and thus is safe from unplanned concurrent access and from dangling pointer errors.</q></cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARust+%28programming+language%29&amp;rft.aufirst=Neil&amp;rft.aulast=Brown&amp;rft.btitle=A+taste+of+Rust&amp;rft.date=2013-04-17&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Flwn.net%2FArticles%2F547145%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-lang-faq-24"><span class="mw-cite-backlink"><b><a href="#cite_ref-lang-faq_24-0">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://github.com/mozilla/rust/wiki/Doc-language-FAQ">"Doc language FAQ"</a>. <i>Github.com</i>. 2010-09-14<span class="reference-accessdate">. Retrieved <span class="nowrap">2012-01-11</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARust+%28programming+language%29&amp;rft.atitle=Doc+language+FAQ&amp;rft.date=2010-09-14&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fgithub.com%2Fmozilla%2Frust%2Fwiki%2FDoc-language-FAQ&amp;rft.jtitle=Github.com&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-type-inference-25"><span class="mw-cite-backlink"><b><a href="#cite_ref-type-inference_25-0">^</a></b></span> <span class="reference-text"><cite class="citation web">Walton, Patrick (2010-10-01). <a rel="nofollow" class="external text" href="http://pcwalton.blogspot.com/2010/10/rust-features-i-type-inference.html">"Rust Features I: Type Inference"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2011-01-21</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARust+%28programming+language%29&amp;rft.aufirst=Patrick&amp;rft.aulast=Walton&amp;rft.btitle=Rust+Features+I%3A+Type+Inference&amp;rft.date=2010-10-01&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fpcwalton.blogspot.com%2F2010%2F10%2Frust-features-i-type-inference.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-Version_history-26"><span class="mw-cite-backlink"><b><a href="#cite_ref-Version_history_26-0">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://github.com/rust-lang/rust/blob/master/RELEASES.md">"Version History"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2017-01-01</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARust+%28programming+language%29&amp;rft.btitle=Version+History&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fgithub.com%2Frust-lang%2Frust%2Fblob%2Fmaster%2FRELEASES.md&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-27"><span class="mw-cite-backlink"><b><a href="#cite_ref-27">^</a></b></span> <span class="reference-text"><cite class="citation web">The Rust Core Team (May 15, 2015). <a rel="nofollow" class="external text" href="http://blog.rust-lang.org/2015/05/15/Rust-1.0.html">"Announcing Rust 1.0"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2015-12-11</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARust+%28programming+language%29&amp;rft.au=The+Rust+Core+Team&amp;rft.btitle=Announcing+Rust+1.0&amp;rft.date=2015-05-15&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fblog.rust-lang.org%2F2015%2F05%2F15%2FRust-1.0.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-Scheduling_the_Trains-28"><span class="mw-cite-backlink"><b><a href="#cite_ref-Scheduling_the_Trains_28-0">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://blog.rust-lang.org/2014/12/12/1.0-Timeline.html">"Scheduling the Trains"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2017-01-01</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARust+%28programming+language%29&amp;rft.btitle=Scheduling+the+Trains&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fblog.rust-lang.org%2F2014%2F12%2F12%2F1.0-Timeline.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-typestate-29"><span class="mw-cite-backlink"><b><a href="#cite_ref-typestate_29-0">^</a></b></span> <span class="reference-text"><cite class="citation journal">Strom, Robert E.; Yemini, Shaula (1986). <a rel="nofollow" class="external text" href="http://www.cs.cmu.edu/~aldrich/papers/classic/tse12-typestate.pdf">"Typestate: A Programming Language Concept for Enhancing Software Reliability"</a> <span style="font-size:85%;">(PDF)</span>. IEEE Transactions on Software Engineering. <a href="/wiki/International_Standard_Serial_Number" title="International Standard Serial Number">ISSN</a>&#160;<a rel="nofollow" class="external text" href="//www.worldcat.org/issn/0098-5589">0098-5589</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2010-11-14</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARust+%28programming+language%29&amp;rft.atitle=Typestate%3A+A+Programming+Language+Concept+for+Enhancing+Software+Reliability&amp;rft.aufirst=Robert+E.&amp;rft.aulast=Strom&amp;rft.au=Yemini%2C+Shaula&amp;rft.date=1986&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fwww.cs.cmu.edu%2F~aldrich%2Fpapers%2Fclassic%2Ftse12-typestate.pdf&amp;rft.issn=0098-5589&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-branding-patterns-30"><span class="mw-cite-backlink"><b><a href="#cite_ref-branding-patterns_30-0">^</a></b></span> <span class="reference-text"><cite class="citation web">Walton, Patrick (2012-12-26). <a rel="nofollow" class="external text" href="http://pcwalton.github.com/blog/2012/12/26/typestate-is-dead/">"Typestate Is Dead, Long Live Typestate!"</a>. <i>Pcwalton.github.com</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2016-11-03</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARust+%28programming+language%29&amp;rft.atitle=Typestate+Is+Dead%2C+Long+Live+Typestate%21&amp;rft.aufirst=Patrick&amp;rft.aulast=Walton&amp;rft.date=2012-12-26&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fpcwalton.github.com%2Fblog%2F2012%2F12%2F26%2Ftypestate-is-dead%2F&amp;rft.jtitle=Pcwalton.github.com&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-31"><span class="mw-cite-backlink"><b><a href="#cite_ref-31">^</a></b></span> <span class="reference-text"><cite class="citation web">Binstock, Andrew. <a rel="nofollow" class="external text" href="http://www.drdobbs.com/jvm/the-rise-and-fall-of-languages-in-2013/240165192">"The Rise And Fall of Languages in 2013"</a>. <i>Dr Dobb's</i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARust+%28programming+language%29&amp;rft.atitle=The+Rise+And+Fall+of+Languages+in+2013&amp;rft.aufirst=Andrew&amp;rft.aulast=Binstock&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.drdobbs.com%2Fjvm%2Fthe-rise-and-fall-of-languages-in-2013%2F240165192&amp;rft.jtitle=Dr+Dobb%27s&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-32"><span class="mw-cite-backlink"><b><a href="#cite_ref-32">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://stackoverflow.com/research/developer-survey-2015">"Stack Overflow Developer Survey 2015"</a>. <i>Stackoverflow.com</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2016-11-03</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARust+%28programming+language%29&amp;rft.atitle=Stack+Overflow+Developer+Survey+2015&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fstackoverflow.com%2Fresearch%2Fdeveloper-survey-2015&amp;rft.jtitle=Stackoverflow.com&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-33"><span class="mw-cite-backlink"><b><a href="#cite_ref-33">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://stackoverflow.com/research/developer-survey-2016#technology-most-loved-dreaded-and-wanted">"Stack Overflow Developer Survey 2016"</a>. <i>Stackoverflow.com</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2016-12-02</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARust+%28programming+language%29&amp;rft.atitle=Stack+Overflow+Developer+Survey+2016&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fstackoverflow.com%2Fresearch%2Fdeveloper-survey-2016%23technology-most-loved-dreaded-and-wanted&amp;rft.jtitle=Stackoverflow.com&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-34"><span class="mw-cite-backlink"><b><a href="#cite_ref-34">^</a></b></span> <span class="reference-text"><cite class="citation web">Herman, Dave (2016-07-12). <a rel="nofollow" class="external text" href="https://hacks.mozilla.org/2016/07/shipping-rust-in-firefox/">"Shipping Rust in Firefox * Mozilla Hacks – the Web developer blog"</a>. <i>Hacks.mozilla.org</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2016-11-03</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARust+%28programming+language%29&amp;rft.atitle=Shipping+Rust+in+Firefox+%2A+Mozilla+Hacks+%93+the+Web+developer+blog&amp;rft.aufirst=Dave&amp;rft.aulast=Herman&amp;rft.date=2016-07-12&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fhacks.mozilla.org%2F2016%2F07%2Fshipping-rust-in-firefox%2F&amp;rft.jtitle=Hacks.mozilla.org&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-35"><span class="mw-cite-backlink"><b><a href="#cite_ref-35">^</a></b></span> <span class="reference-text"><cite class="citation news">Serdar Yegulalp (3 April 2015). <a rel="nofollow" class="external text" href="http://www.infoworld.com/article/2905688/applications/mozillas-rust-based-servo-browser-engine-inches-forward.html">"Mozilla's Rust-based Servo browser engine inches forward"</a>. <i>InfoWorld</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2016-03-15</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARust+%28programming+language%29&amp;rft.atitle=Mozilla%27s+Rust-based+Servo+browser+engine+inches+forward&amp;rft.au=Serdar+Yegulalp&amp;rft.date=2015-04-03&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fwww.infoworld.com%2Farticle%2F2905688%2Fapplications%2Fmozillas-rust-based-servo-browser-engine-inches-forward.html&amp;rft.jtitle=InfoWorld&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-36"><span class="mw-cite-backlink"><b><a href="#cite_ref-36">^</a></b></span> <span class="reference-text"><cite class="citation news">Frederic Lardinois (3 April 2015). <a rel="nofollow" class="external text" href="http://techcrunch.com/2013/04/03/mozilla-and-samsung-collaborate-on-servo-mozillas-next-gen-browser-engine-for-tomorrows-multicore-processors/">"Mozilla And Samsung Team Up To Develop Servo, Mozilla's Next-Gen Browser Engine For Multicore Processors"</a>. <i>TechCrunch</i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARust+%28programming+language%29&amp;rft.atitle=Mozilla+And+Samsung+Team+Up+To+Develop+Servo%2C+Mozilla%99s+Next-Gen+Browser+Engine+For+Multicore+Processors&amp;rft.au=Frederic+Lardinois&amp;rft.date=2015-04-03&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Ftechcrunch.com%2F2013%2F04%2F03%2Fmozilla-and-samsung-collaborate-on-servo-mozillas-next-gen-browser-engine-for-tomorrows-multicore-processors%2F&amp;rft.jtitle=TechCrunch&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-37"><span class="mw-cite-backlink"><b><a href="#cite_ref-37">^</a></b></span> <span class="reference-text"><cite class="citation web">Bryant, David. <a rel="nofollow" class="external text" href="https://medium.com/mozilla-tech/a-quantum-leap-for-the-web-a3b7174b3c12#.ldic6a78e">"A Quantum Leap for the Web"</a>. <i>Medium</i><span class="reference-accessdate">. Retrieved <span class="nowrap">27 October</span> 2016</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARust+%28programming+language%29&amp;rft.atitle=A+Quantum+Leap+for+the+Web&amp;rft.aufirst=David&amp;rft.aulast=Bryant&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fmedium.com%2Fmozilla-tech%2Fa-quantum-leap-for-the-web-a3b7174b3c12%23.ldic6a78e&amp;rft.jtitle=Medium&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-38"><span class="mw-cite-backlink"><b><a href="#cite_ref-38">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.wired.com/2016/03/epic-story-dropboxs-exodus-amazon-cloud-empire/">"The Epic Story of Dropbox's Exodus From the Amazon Cloud Empire"</a>. <i>Wired.com</i>. 2016-03-14<span class="reference-accessdate">. Retrieved <span class="nowrap">2016-11-03</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARust+%28programming+language%29&amp;rft.atitle=The+Epic+Story+of+Dropbox%99s+Exodus+From+the+Amazon+Cloud+Empire&amp;rft.date=2016-03-14&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.wired.com%2F2016%2F03%2Fepic-story-dropboxs-exodus-amazon-cloud-empire%2F&amp;rft.jtitle=Wired.com&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-39"><span class="mw-cite-backlink"><b><a href="#cite_ref-39">^</a></b></span> <span class="reference-text"><cite class="citation book">Balbaert, Ivo. <a rel="nofollow" class="external text" href="https://books.google.ca/books?id=TeiuCQAAQBAJ&amp;pg=PA6&amp;lpg=PA6&amp;dq=OpenDNS+Rust&amp;source=bl&amp;ots=UL5thAAi8w&amp;sig=Wf-Z5xSRYU-IXyGiyIl2FVEQWEc&amp;hl=en&amp;sa=X&amp;ved=0ahUKEwizzdSk59LLAhVpnoMKHWdbDrQQ6AEINzAF#v=onepage&amp;q=OpenDNS%20Rust&amp;f=false"><i>Rust Essentials</i></a>. Packt Publishing. p.&#160;6. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/1785285769" title="Special:BookSources/1785285769">1785285769</a><span class="reference-accessdate">. Retrieved <span class="nowrap">21 March</span> 2016</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARust+%28programming+language%29&amp;rft.aufirst=Ivo&amp;rft.aulast=Balbaert&amp;rft.btitle=Rust+Essentials&amp;rft.genre=book&amp;rft_id=https%3A%2F%2Fbooks.google.ca%2Fbooks%3Fid%3DTeiuCQAAQBAJ%26pg%3DPA6%26lpg%3DPA6%26dq%3DOpenDNS%2BRust%26source%3Dbl%26ots%3DUL5thAAi8w%26sig%3DWf-Z5xSRYU-IXyGiyIl2FVEQWEc%26hl%3Den%26sa%3DX%26ved%3D0ahUKEwizzdSk59LLAhVpnoMKHWdbDrQQ6AEINzAF%23v%3Donepage%26q%3DOpenDNS%2520Rust%26f%3Dfalse&amp;rft.isbn=1785285769&amp;rft.pages=6&amp;rft.pub=Packt+Publishing&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-40"><span class="mw-cite-backlink"><b><a href="#cite_ref-40">^</a></b></span> <span class="reference-text"><cite class="citation web">Frank, Denis. <a rel="nofollow" class="external text" href="https://labs.opendns.com/2013/12/05/hyperloglog-and-malware-detection/">"Using HyperLogLog to Detect Malware Faster Than Ever"</a>. <i>OpenDNS Security Labs</i><span class="reference-accessdate">. Retrieved <span class="nowrap">19 March</span> 2016</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARust+%28programming+language%29&amp;rft.atitle=Using+HyperLogLog+to+Detect+Malware+Faster+Than+Ever&amp;rft.aufirst=Denis&amp;rft.aulast=Frank&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Flabs.opendns.com%2F2013%2F12%2F05%2Fhyperloglog-and-malware-detection%2F&amp;rft.jtitle=OpenDNS+Security+Labs&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-41"><span class="mw-cite-backlink"><b><a href="#cite_ref-41">^</a></b></span> <span class="reference-text"><cite class="citation web">Denis, Frank. <a rel="nofollow" class="external text" href="https://labs.opendns.com/2013/10/04/zeromq-helping-us-block-malicious-domains/">"ZeroMQ: Helping us Block Malicious Domains in Real Time"</a>. <i>OpenDNS Security Labs</i><span class="reference-accessdate">. Retrieved <span class="nowrap">19 March</span> 2016</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARust+%28programming+language%29&amp;rft.atitle=ZeroMQ%3A+Helping+us+Block+Malicious+Domains+in+Real+Time&amp;rft.aufirst=Frank&amp;rft.aulast=Denis&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Flabs.opendns.com%2F2013%2F10%2F04%2Fzeromq-helping-us-block-malicious-domains%2F&amp;rft.jtitle=OpenDNS+Security+Labs&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-42"><span class="mw-cite-backlink"><b><a href="#cite_ref-42">^</a></b></span> <span class="reference-text"><cite class="citation news">Yegulalp, Serdar. <a rel="nofollow" class="external text" href="http://www.infoworld.com/article/3046100/open-source-tools/rusts-redox-os-could-show-linux-a-few-new-tricks.html">"Rust's Redox OS could show Linux a few new tricks"</a>. infoworld<span class="reference-accessdate">. Retrieved <span class="nowrap">21 March</span> 2016</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARust+%28programming+language%29&amp;rft.atitle=Rust%27s+Redox+OS+could+show+Linux+a+few+new+tricks&amp;rft.aufirst=Serdar&amp;rft.aulast=Yegulalp&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fwww.infoworld.com%2Farticle%2F3046100%2Fopen-source-tools%2Frusts-redox-os-could-show-linux-a-few-new-tricks.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-43"><span class="mw-cite-backlink"><b><a href="#cite_ref-43">^</a></b></span> <span class="reference-text"><cite class="citation news"><a rel="nofollow" class="external text" href="https://onesignal.com/blog/announcing-our-new-delivery-backend/">"OneSignal now sends iOS push notifications 100x faster"</a>. <i>OneSignal</i>. 2016-03-21<span class="reference-accessdate">. Retrieved <span class="nowrap">2017-01-06</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARust+%28programming+language%29&amp;rft.atitle=OneSignal+now+sends+iOS+push+notifications+100x+faster&amp;rft.date=2016-03-21&amp;rft.genre=article&amp;rft_id=https%3A%2F%2Fonesignal.com%2Fblog%2Fannouncing-our-new-delivery-backend%2F&amp;rft.jtitle=OneSignal&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-44"><span class="mw-cite-backlink"><b><a href="#cite_ref-44">^</a></b></span> <span class="reference-text"><cite class="citation web">Larabel, Michael (2017-01-11). <a rel="nofollow" class="external text" href="https://www.phoronix.com/scan.php?page=news_item&amp;px=Remacs-Rust-Emacs">"Remacs:Re-Implementing Emacs In Rust"</a>. <i>phoronix.com</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2017-01-19</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARust+%28programming+language%29&amp;rft.atitle=Remacs%3ARe-Implementing+Emacs+In+Rust&amp;rft.aufirst=Michael&amp;rft.aulast=Larabel&amp;rft.date=2017-01-11&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fwww.phoronix.com%2Fscan.php%3Fpage%3Dnews_item%26px%3DRemacs-Rust-Emacs&amp;rft.jtitle=phoronix.com&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Rust_(programming_language)&amp;action=edit&amp;section=16" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><span class="official-website"><span class="url"><a rel="nofollow" class="external text" href="https://www.rust-lang.org">Official website</a></span></span></li>
+<li><a rel="nofollow" class="external text" href="https://mail.mozilla.org/pipermail/rust-dev/">The Rust-dev Archives</a>&#160;– electronic mailing list</li>
+<li><a rel="nofollow" class="external text" href="https://github.com/rust-lang/rust">rust</a> on <a href="/wiki/GitHub" title="GitHub">GitHub</a>&#160;– primary source code repository and bug tracker</li>
+<li><a rel="nofollow" class="external text" href="https://github.com/Hoverbear/rust-rosetta">rust-rosetta</a> on <a href="/wiki/GitHub" title="GitHub">GitHub</a>&#160;– implementations of common algorithms and solutions</li>
+<li><a rel="nofollow" class="external text" href="http://rustbyexample.com">Rust by Example</a>&#160;– web book</li>
+<li><a rel="nofollow" class="external text" href="https://www.reddit.com/r/rust/">Rust SubReddit</a>&#160;– active dev community language development and support</li>
+<li><a rel="nofollow" class="external text" href="https://www.udemy.com/rust-programming-for-beginners/">Rust course on Udemy</a> &#160;– Self Paced Video Course</li>
+</ul>
+<div role="navigation" class="navbox" aria-labelledby="Programming_languages" style="padding:3px">
+<table class="nowraplinks hlist collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:Programming_languages" title="Template:Programming languages"><abbr title="View this template" style=";;background:none transparent;border:none;">v</abbr></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:Programming_languages" title="Template talk:Programming languages"><abbr title="Discuss this template" style=";;background:none transparent;border:none;">t</abbr></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:Programming_languages&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;">e</abbr></a></li>
+</ul>
+</div>
+<div id="Programming_languages" style="font-size:114%"><a href="/wiki/Programming_language" title="Programming language">Programming languages</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" colspan="2">
+<div>
+<ul>
+<li><a href="/wiki/Comparison_of_programming_languages" title="Comparison of programming languages">Comparison</a></li>
+<li><a href="/wiki/Timeline_of_programming_languages" title="Timeline of programming languages">Timeline</a></li>
+<li><a href="/wiki/History_of_programming_languages" title="History of programming languages">History</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Assembly_language" title="Assembly language">Assembly</a></li>
+<li><a href="/wiki/BASIC" title="BASIC">BASIC</a></li>
+<li><a href="/wiki/C_(programming_language)" title="C (programming language)">C</a></li>
+<li><a href="/wiki/C%2B%2B" title="C++">C++</a></li>
+<li><a href="/wiki/C_Sharp_(programming_language)" title="C Sharp (programming language)">C#</a></li>
+<li><a href="/wiki/COBOL" title="COBOL">COBOL</a></li>
+<li><a href="/wiki/Fortran" title="Fortran">Fortran</a></li>
+<li><a href="/wiki/Go_(programming_language)" title="Go (programming language)">Go</a></li>
+<li><a href="/wiki/Haskell_(programming_language)" title="Haskell (programming language)">Haskell</a></li>
+<li><a href="/wiki/Java_(programming_language)" title="Java (programming language)">Java</a></li>
+<li><a href="/wiki/JavaScript" title="JavaScript">JavaScript</a> (JS)</li>
+<li><a href="/wiki/Lisp_(programming_language)" title="Lisp (programming language)">Lisp</a></li>
+<li><a href="/wiki/Lua_(programming_language)" title="Lua (programming language)">Lua</a></li>
+<li><a href="/wiki/Objective-C" title="Objective-C">Objective-C</a></li>
+<li><a href="/wiki/Pascal_(programming_language)" title="Pascal (programming language)">Pascal</a></li>
+<li><a href="/wiki/Perl" title="Perl">Perl</a></li>
+<li><a href="/wiki/PHP" title="PHP">PHP</a></li>
+<li><a href="/wiki/Python_(programming_language)" title="Python (programming language)">Python</a></li>
+<li><a href="/wiki/Ruby_(programming_language)" title="Ruby (programming language)">Ruby</a></li>
+<li><a href="/wiki/Shell_script" title="Shell script">Shell</a></li>
+<li><a href="/wiki/Smalltalk" title="Smalltalk">Smalltalk</a></li>
+<li><a href="/wiki/Swift_(programming_language)" title="Swift (programming language)">Swift</a></li>
+<li><a href="/wiki/Visual_Basic_.NET" title="Visual Basic .NET">Visual Basic .NET</a> (VB.NET)</li>
+<li><i><a href="/wiki/List_of_programming_languages" title="List of programming languages">more...</a></i></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" colspan="2">
+<div>
+<ul>
+<li><img alt="Category" src="//upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/16px-Folder_Hexagonal_Icon.svg.png" title="Category" width="16" height="14" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/24px-Folder_Hexagonal_Icon.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/32px-Folder_Hexagonal_Icon.svg.png 2x" data-file-width="36" data-file-height="31" /> <b><a href="/wiki/Category:Programming_languages" title="Category:Programming languages">Category</a></b></li>
+<li><img alt="Non-article page" src="//upload.wikimedia.org/wikipedia/en/thumb/8/89/Symbol_neutral_vote.svg/16px-Symbol_neutral_vote.svg.png" title="Non-article page" width="16" height="16" srcset="//upload.wikimedia.org/wikipedia/en/thumb/8/89/Symbol_neutral_vote.svg/23px-Symbol_neutral_vote.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/8/89/Symbol_neutral_vote.svg/31px-Symbol_neutral_vote.svg.png 2x" data-file-width="180" data-file-height="185" /> <b><a href="/wiki/Comparison_of_programming_languages" title="Comparison of programming languages">Comparison</a></b></li>
+<li><img alt="List-Class article" src="//upload.wikimedia.org/wikipedia/en/thumb/d/db/Symbol_list_class.svg/16px-Symbol_list_class.svg.png" title="List-Class article" width="16" height="16" srcset="//upload.wikimedia.org/wikipedia/en/thumb/d/db/Symbol_list_class.svg/23px-Symbol_list_class.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/d/db/Symbol_list_class.svg/31px-Symbol_list_class.svg.png 2x" data-file-width="180" data-file-height="185" /> <b>Lists</b>
+<ul>
+<li><a href="/wiki/List_of_programming_languages" title="List of programming languages">Alphabetical</a></li>
+<li><a href="/wiki/Categorical_list_of_programming_languages" class="mw-redirect" title="Categorical list of programming languages">Categorical</a></li>
+<li><a href="/wiki/Generational_list_of_programming_languages" title="Generational list of programming languages">Generational</a></li>
+<li><a href="/wiki/Non-English-based_programming_languages" title="Non-English-based programming languages">Non-English-based</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div role="navigation" class="navbox" aria-labelledby="Mozilla" style="padding:3px">
+<table class="nowraplinks hlist collapsible collapsed navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:Mozilla" title="Template:Mozilla"><abbr title="View this template" style=";;background:none transparent;border:none;">v</abbr></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:Mozilla" title="Template talk:Mozilla"><abbr title="Discuss this template" style=";;background:none transparent;border:none;">t</abbr></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:Mozilla&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;">e</abbr></a></li>
+</ul>
+</div>
+<div id="Mozilla" style="font-size:114%"><a href="/wiki/Mozilla" title="Mozilla">Mozilla</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks collapsible collapsed navbox-subgroup" style="border-spacing:0">
+<tr>
+<th scope="col" class="navbox-title" colspan="2" style=";"><span style="float:left;width:6em">&#160;</span>
+<div id="Projects" style="font-size:114%">Projects</div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks navbox-subgroup" style="border-spacing:0">
+<tr>
+<th scope="row" class="navbox-group">Mozilla<br />
+Labs</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Bonsai_(software)" title="Bonsai (software)">Bonsai</a></li>
+<li><a href="/wiki/Bugzilla" title="Bugzilla">Bugzilla</a></li>
+<li><a href="/wiki/ChatZilla" title="ChatZilla">ChatZilla</a></li>
+<li><a href="/wiki/Electrolysis_Project" class="mw-redirect" title="Electrolysis Project">Electrolysis Project</a></li>
+<li><a href="/wiki/Jetpack_(Firefox_project)" title="Jetpack (Firefox project)">Jetpack</a></li>
+<li><a href="/wiki/Lightning_(software)" title="Lightning (software)">Lightning</a></li>
+<li><a href="/wiki/Mozilla_Persona" title="Mozilla Persona">Persona</a></li>
+<li><a href="/wiki/Mozilla_Prism" title="Mozilla Prism">Prism</a></li>
+<li><a href="/wiki/Mozilla_Raindrop" title="Mozilla Raindrop">Raindrop</a></li>
+<li><a href="/wiki/Mozilla_Skywriter" title="Mozilla Skywriter">Skywriter</a></li>
+<li><a href="/wiki/Mozilla_Sunbird" title="Mozilla Sunbird">Sunbird</a></li>
+<li><a href="/wiki/PDF.js" title="PDF.js">PDF.js</a></li>
+<li><a href="/wiki/Firefox_Sync" title="Firefox Sync">Sync</a></li>
+<li>Tinderbox</li>
+<li><a href="/wiki/Ubiquity_(Firefox)" title="Ubiquity (Firefox)">Ubiquity</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Mozilla<br />
+Research</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Daala" title="Daala">Daala</a></li>
+<li><a href="/wiki/Firefox_OS" title="Firefox OS">Firefox OS</a></li>
+<li><a href="/wiki/OpenFlint" title="OpenFlint">OpenFlint</a></li>
+<li><strong class="selflink">Rust</strong></li>
+<li><a href="/wiki/Servo_(layout_engine)" title="Servo (layout engine)">Servo</a></li>
+<li><a href="/wiki/Shumway_(software)" title="Shumway (software)">Shumway</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Mozilla<br />
+Foundation</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks navbox-subgroup" style="border-spacing:0">
+<tr>
+<td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Firefox" title="Firefox">Firefox</a>
+<ul>
+<li><i><a href="/wiki/Firefox_1" class="mw-redirect" title="Firefox 1">1</a></i></li>
+<li><i><a href="/wiki/Firefox_1.5" class="mw-redirect" title="Firefox 1.5">1.5</a></i></li>
+<li><i><a href="/wiki/Firefox_2" title="Firefox 2">2</a></i></li>
+<li><i><a href="/wiki/Firefox_3" class="mw-redirect" title="Firefox 3">3</a></i></li>
+<li><i><a href="/wiki/Firefox_3.5" title="Firefox 3.5">3.5</a></i></li>
+<li><a href="/wiki/Firefox_3.6" title="Firefox 3.6">3.6</a></li>
+<li><i><a href="/wiki/Firefox_4" title="Firefox 4">4</a></i></li>
+<li><i><a href="/wiki/History_of_Firefox#Rapid_release" title="History of Firefox">5–current</a></i></li>
+<li><a href="/wiki/History_of_Firefox#Future_releases" title="History of Firefox">Future releases</a></li>
+<li><a href="/wiki/Firefox_for_mobile" class="mw-redirect" title="Firefox for mobile">for Mobile</a></li>
+<li><a href="/wiki/Firefox_for_iOS" title="Firefox for iOS">for iOS</a></li>
+</ul>
+</li>
+<li><a href="/wiki/SeaMonkey" title="SeaMonkey">SeaMonkey</a></li>
+<li><a href="/wiki/Mozilla_Thunderbird" title="Mozilla Thunderbird">Thunderbird</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Origins</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Mozilla_Application_Suite" title="Mozilla Application Suite">Mozilla Application Suite</a></li>
+<li><a href="/wiki/Netscape_Navigator" title="Netscape Navigator">Netscape Navigator</a></li>
+<li><a href="/wiki/Netscape_Communicator" title="Netscape Communicator">Netscape Communicator</a></li>
+<li><a href="/wiki/Netscape" title="Netscape">Netscape Communications</a></li>
+<li><a href="/wiki/Beonex_Communicator" title="Beonex Communicator">Beonex Communicator</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Forks</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/GNewSense#Comparison_with_other_distributions" title="GNewSense">BurningDog</a></li>
+<li><a href="/wiki/Classilla" title="Classilla">Classilla</a></li>
+<li><i><a href="/wiki/Flock_(web_browser)" title="Flock (web browser)">Flock</a></i></li>
+<li><a href="/wiki/Gnuzilla" title="Gnuzilla">Gnuzilla</a></li>
+<li><a href="/wiki/Mozilla_software_rebranded_by_Debian#Iceape" title="Mozilla software rebranded by Debian">Iceape</a></li>
+<li><a href="/wiki/GNU_IceCat" title="GNU IceCat">IceCat</a></li>
+<li><a href="/wiki/Mozilla_software_rebranded_by_Debian#Icedove" title="Mozilla software rebranded by Debian">Icedove</a></li>
+<li><a href="/wiki/Mozilla_software_rebranded_by_Debian#Iceowl" title="Mozilla software rebranded by Debian">Iceowl</a></li>
+<li><a href="/wiki/Miro_(software)" title="Miro (software)">Miro</a></li>
+<li><i><a href="/wiki/Netscape_Navigator_9" title="Netscape Navigator 9">Netscape 9</a></i></li>
+<li><a href="/wiki/Pale_Moon_(web_browser)" title="Pale Moon (web browser)">Pale Moon</a></li>
+<li><a href="/wiki/Firefox_Portable" title="Firefox Portable">Portable Edition</a></li>
+<li><i><a href="/wiki/Swiftfox" title="Swiftfox">Swiftfox</a></i></li>
+<li><i><a href="/wiki/Swiftweasel" title="Swiftweasel">Swiftweasel</a></i></li>
+<li><a href="/wiki/TenFourFox" title="TenFourFox">TenFourFox</a></li>
+<li><i><a href="/wiki/XB_Browser" title="XB Browser">xB Browser</a></i></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Frameworks</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Add-on_(Mozilla)" title="Add-on (Mozilla)">add-on</a></li>
+<li><a href="/wiki/Gecko_(software)" title="Gecko (software)">Gecko</a></li>
+<li><a href="/wiki/Mozilla_application_framework" title="Mozilla application framework">Necko</a></li>
+<li><a href="/wiki/NPAPI" title="NPAPI">NPAPI</a>
+<ul>
+<li><a href="/wiki/NPAPI#XPConnect" title="NPAPI">XPConnect</a></li>
+</ul>
+</li>
+<li><a href="/wiki/XBL" title="XBL">XBL</a></li>
+<li><a href="/wiki/XPCOM" title="XPCOM">XPCOM</a></li>
+<li><a href="/wiki/XPInstall" title="XPInstall">XPInstall</a></li>
+<li><a href="/wiki/XUL" title="XUL">XUL</a></li>
+<li><a href="/wiki/XULRunner" title="XULRunner">XULRunner</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Components</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/w/index.php?title=Application_Object_Model&amp;action=edit&amp;redlink=1" class="new" title="Application Object Model (page does not exist)">Application Object Model</a></li>
+<li><a href="/wiki/Mozilla_Composer" title="Mozilla Composer">Composer</a></li>
+<li><a href="/wiki/Netscape_Portable_Runtime" title="Netscape Portable Runtime">NSPR</a></li>
+<li><a href="/wiki/Network_Security_Services" title="Network Security Services">NSS</a></li>
+<li><a href="/wiki/Rhino_(JavaScript_engine)" title="Rhino (JavaScript engine)">Rhino</a></li>
+<li><a href="/wiki/SpiderMonkey" title="SpiderMonkey">SpiderMonkey</a></li>
+<li><a href="/wiki/Tamarin_(software)" title="Tamarin (software)">Tamarin</a></li>
+<li><a href="/wiki/Venkman" title="Venkman">Venkman</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Discontinued</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Mozilla_Calendar_Project" title="Mozilla Calendar Project">Calendar Project</a></li>
+<li><a href="/wiki/Camino_(web_browser)" title="Camino (web browser)">Camino</a></li>
+<li><a href="/wiki/Firefox_Home" class="mw-redirect" title="Firefox Home">Firefox Home</a></li>
+<li><a href="/wiki/Mozilla_Grendel" title="Mozilla Grendel">Grendel</a></li>
+<li><a href="/wiki/Minimo" title="Minimo">Minimo</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-even" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks collapsible collapsed navbox-subgroup" style="border-spacing:0">
+<tr>
+<th scope="col" class="navbox-title" colspan="2" style=";"><span style="float:left;width:6em">&#160;</span>
+<div id="Organization" style="font-size:114%">Organization</div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks navbox-subgroup" style="border-spacing:0">
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Mozilla" title="Mozilla">Foundation</a></th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><i>Former <a href="/wiki/Mozilla_Organization" class="mw-redirect" title="Mozilla Organization">Mozilla Organization</a></i></li>
+<li><a href="/wiki/Mozilla_Foundation" title="Mozilla Foundation">Mozilla Foundation</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Subsidiaries</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Mozilla_Corporation" title="Mozilla Corporation">Mozilla Corporation</a></li>
+<li><a href="/wiki/Mozilla_Messaging" title="Mozilla Messaging">Mozilla Messaging</a></li>
+<li><a href="/wiki/Mozilla_Foundation#Mozilla_Online" title="Mozilla Foundation">Mozilla Online</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Official affiliates</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Mozilla_China" title="Mozilla China">Mozilla China</a></li>
+<li><a href="/wiki/Mozilla_Europe" title="Mozilla Europe">Mozilla Europe</a></li>
+<li><a href="/wiki/Mozilla_Japan" title="Mozilla Japan">Mozilla Japan</a></li>
+<li><a href="/wiki/Mozilla_Taiwan" title="Mozilla Taiwan">Mozilla Taiwan</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">People</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Mitchell_Baker" title="Mitchell Baker">Mitchell Baker</a></li>
+<li><a href="/w/index.php?title=David_Baron_(Computer_Scientist)&amp;action=edit&amp;redlink=1" class="new" title="David Baron (Computer Scientist) (page does not exist)">David Baron</a></li>
+<li><a href="/wiki/Sheeri_Cabral" title="Sheeri Cabral">Sheeri Cabral</a></li>
+<li><a href="/wiki/Tantek_%C3%87elik" title="Tantek Çelik">Tantek Çelik</a></li>
+<li><a href="/wiki/Asa_Dotzler" title="Asa Dotzler">Asa Dotzler</a></li>
+<li><a href="/wiki/Brendan_Eich" title="Brendan Eich">Brendan Eich</a></li>
+<li><a href="/wiki/John_Hammink" title="John Hammink">John Hammink</a></li>
+<li><a href="/w/index.php?title=Robert_O%27Callahan&amp;action=edit&amp;redlink=1" class="new" title="Robert O'Callahan (page does not exist)">Robert O'Callahan</a></li>
+<li><a href="/wiki/Johnny_Stenb%C3%A4ck" title="Johnny Stenbäck">Johnny Stenbäck</a></li>
+<li><a href="/wiki/Doug_Turner_(Mozilla)" title="Doug Turner (Mozilla)">Doug Turner</a></li>
+<li><a href="/w/index.php?title=Boris_Zbarsky&amp;action=edit&amp;redlink=1" class="new" title="Boris Zbarsky (page does not exist)">Boris Zbarsky</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks collapsible collapsed navbox-subgroup" style="border-spacing:0">
+<tr>
+<th scope="col" class="navbox-title" colspan="2" style=";"><span style="float:left;width:6em">&#160;</span>
+<div id="Community" style="font-size:114%">Community</div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Mozdev.org" title="Mozdev.org">mozdev.org</a></li>
+<li><a href="/wiki/Mozilla_Add-ons" class="mw-redirect" title="Mozilla Add-ons">Mozilla Add-ons</a></li>
+<li><a href="/wiki/Mozilla_Developer_Network" title="Mozilla Developer Network">Mozilla Developer Network</a></li>
+<li><a href="/wiki/MozillaZine" title="MozillaZine">MozillaZine</a></li>
+<li><a href="/wiki/Firefox#Promotion" title="Firefox">Spread Firefox</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-even" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks collapsible collapsed navbox-subgroup" style="border-spacing:0">
+<tr>
+<th scope="col" class="navbox-title" colspan="2" style=";"><span style="float:left;width:6em">&#160;</span>
+<div id="Other_topics" style="font-size:114%">Other topics</div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><i><a href="/wiki/The_Book_of_Mozilla" title="The Book of Mozilla">The Book of Mozilla</a></i></li>
+<li><i><a href="/wiki/Code_Rush" title="Code Rush">Code Rush</a></i></li>
+<li><a href="/wiki/Mozilla_Public_License" title="Mozilla Public License">Mozilla Public License</a></li>
+<li><a href="/wiki/Mozilla_localizations" title="Mozilla localizations">Localizations</a></li>
+<li><a href="/wiki/Mozilla_(mascot)" title="Mozilla (mascot)">Mascot</a></li>
+<li><a href="/wiki/Mozilla_software_rebranded_by_Debian" title="Mozilla software rebranded by Debian">Rebranding / forking</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1286
+Cached time: 20170204193220
+Cache expiry: 86400
+Dynamic content: true
+CPU time usage: 0.488 seconds
+Real time usage: 0.587 seconds
+Preprocessor visited node count: 3746/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 172157/2097152 bytes
+Template argument size: 13359/2097152 bytes
+Highest expansion depth: 25/40
+Expensive parser function count: 5/500
+Lua time usage: 0.255/10.000 seconds
+Lua memory usage: 5.27 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  500.088      1 -total
+ 48.14%  240.727      1 Template:Reflist
+ 35.28%  176.441     38 Template:Cite_web
+ 20.10%  100.539      2 Template:Infobox
+ 16.39%   81.980      1 Template:Infobox_programming_language
+  8.81%   44.067      3 Template:Fix
+  8.13%   40.650      2 Template:Citation_needed
+  6.65%   33.275      1 Template:Mozilla_projects
+  6.13%   30.645      1 Template:Navbox_with_collapsible_groups
+  5.68%   28.398      1 Template:Infobox_software/simple
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:29414838-0!*!0!!en!4!* and timestamp 20170204193227 and revision id 763701815
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Rust_(programming_language)&amp;oldid=763701815">https://en.wikipedia.org/w/index.php?title=Rust_(programming_language)&amp;oldid=763701815</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Concurrent_programming_languages" title="Category:Concurrent programming languages">Concurrent programming languages</a></li><li><a href="/wiki/Category:Functional_languages" title="Category:Functional languages">Functional languages</a></li><li><a href="/wiki/Category:Mozilla" title="Category:Mozilla">Mozilla</a></li><li><a href="/wiki/Category:Multi-paradigm_programming_languages" title="Category:Multi-paradigm programming languages">Multi-paradigm programming languages</a></li><li><a href="/wiki/Category:Pattern_matching_programming_languages" title="Category:Pattern matching programming languages">Pattern matching programming languages</a></li><li><a href="/wiki/Category:Procedural_programming_languages" title="Category:Procedural programming languages">Procedural programming languages</a></li><li><a href="/wiki/Category:Programming_languages_created_in_2012" title="Category:Programming languages created in 2012">Programming languages created in 2012</a></li><li><a href="/wiki/Category:Rust_(programming_language)" title="Category:Rust (programming language)">Rust (programming language)</a></li><li><a href="/wiki/Category:Software_using_the_Apache_license" title="Category:Software using the Apache license">Software using the Apache license</a></li><li><a href="/wiki/Category:Software_using_the_MIT_license" title="Category:Software using the MIT license">Software using the MIT license</a></li><li><a href="/wiki/Category:Statically_typed_programming_languages" title="Category:Statically typed programming languages">Statically typed programming languages</a></li><li><a href="/wiki/Category:Systems_programming_languages" title="Category:Systems programming languages">Systems programming languages</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Pages_using_deprecated_image_syntax" title="Category:Pages using deprecated image syntax">Pages using deprecated image syntax</a></li><li><a href="/wiki/Category:All_articles_with_unsourced_statements" title="Category:All articles with unsourced statements">All articles with unsourced statements</a></li><li><a href="/wiki/Category:Articles_with_unsourced_statements_from_August_2016" title="Category:Articles with unsourced statements from August 2016">Articles with unsourced statements from August 2016</a></li><li><a href="/wiki/Category:Vague_or_ambiguous_time_from_August_2016" title="Category:Vague or ambiguous time from August 2016">Vague or ambiguous time from August 2016</a></li><li><a href="/wiki/Category:Articles_to_be_split_from_October_2016" title="Category:Articles to be split from October 2016">Articles to be split from October 2016</a></li><li><a href="/wiki/Category:All_articles_to_be_split" title="Category:All articles to be split">All articles to be split</a></li><li><a href="/wiki/Category:Articles_with_example_code" title="Category:Articles with example code">Articles with example code</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Rust+%28programming+language%29" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Rust+%28programming+language%29" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/Rust_(programming_language)"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:Rust_(programming_language)"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/Rust_(programming_language)" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=Rust_(programming_language)&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Rust_(programming_language)&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Rust_(programming_language)" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Rust_(programming_language)" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Rust_(programming_language)&amp;oldid=763701815" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Rust_(programming_language)&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q575650" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Rust_%28programming_language%29&amp;id=763701815" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Rust+%28programming+language%29">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Rust+%28programming+language%29&amp;returnto=Rust+%28programming+language%29&amp;oldid=763701815&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Rust_(programming_language)&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-az"><a href="https://az.wikipedia.org/wiki/Rust_(proqramla%C5%9Fd%C4%B1rma_dili)" title="Rust (proqramlaşdırma dili) – Azerbaijani" lang="az" hreflang="az" class="interlanguage-link-target">Azərbaycanca</a></li><li class="interlanguage-link interwiki-cs"><a href="https://cs.wikipedia.org/wiki/Rust_(programovac%C3%AD_jazyk)" title="Rust (programovací jazyk) – Czech" lang="cs" hreflang="cs" class="interlanguage-link-target">Čeština</a></li><li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/Rust_(Programmiersprache)" title="Rust (Programmiersprache) – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-es"><a href="https://es.wikipedia.org/wiki/Rust_(lenguaje_de_programaci%C3%B3n)" title="Rust (lenguaje de programación) – Spanish" lang="es" hreflang="es" class="interlanguage-link-target">Español</a></li><li class="interlanguage-link interwiki-eo"><a href="https://eo.wikipedia.org/wiki/Rust_(programlingvo)" title="Rust (programlingvo) – Esperanto" lang="eo" hreflang="eo" class="interlanguage-link-target">Esperanto</a></li><li class="interlanguage-link interwiki-fa"><a href="https://fa.wikipedia.org/wiki/%D8%B1%D8%A7%D8%B3%D8%AA_(%D8%B2%D8%A8%D8%A7%D9%86_%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C)" title="راست (زبان برنامه‌نویسی) – Persian" lang="fa" hreflang="fa" class="interlanguage-link-target">فارسی</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/Rust_(langage)" title="Rust (langage) – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-ko"><a href="https://ko.wikipedia.org/wiki/%EB%9F%AC%EC%8A%A4%ED%8A%B8_(%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D_%EC%96%B8%EC%96%B4)" title="러스트 (프로그래밍 언어) – Korean" lang="ko" hreflang="ko" class="interlanguage-link-target">한국어</a></li><li class="interlanguage-link interwiki-it"><a href="https://it.wikipedia.org/wiki/Rust_(linguaggio_di_programmazione)" title="Rust (linguaggio di programmazione) – Italian" lang="it" hreflang="it" class="interlanguage-link-target">Italiano</a></li><li class="interlanguage-link interwiki-nl"><a href="https://nl.wikipedia.org/wiki/Rust_(programmeertaal)" title="Rust (programmeertaal) – Dutch" lang="nl" hreflang="nl" class="interlanguage-link-target">Nederlands</a></li><li class="interlanguage-link interwiki-ja"><a href="https://ja.wikipedia.org/wiki/Rust_(%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E8%A8%80%E8%AA%9E)" title="Rust (プログラミング言語) – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target">日本語</a></li><li class="interlanguage-link interwiki-no"><a href="https://no.wikipedia.org/wiki/Rust_(programmeringsspr%C3%A5k)" title="Rust (programmeringsspråk) – Norwegian" lang="no" hreflang="no" class="interlanguage-link-target">Norsk bokmål</a></li><li class="interlanguage-link interwiki-pl"><a href="https://pl.wikipedia.org/wiki/Rust_(j%C4%99zyk_programowania)" title="Rust (język programowania) – Polish" lang="pl" hreflang="pl" class="interlanguage-link-target">Polski</a></li><li class="interlanguage-link interwiki-pt"><a href="https://pt.wikipedia.org/wiki/Rust_(linguagem_de_programa%C3%A7%C3%A3o)" title="Rust (linguagem de programação) – Portuguese" lang="pt" hreflang="pt" class="interlanguage-link-target">Português</a></li><li class="interlanguage-link interwiki-ru"><a href="https://ru.wikipedia.org/wiki/Rust_(%D1%8F%D0%B7%D1%8B%D0%BA_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F)" title="Rust (язык программирования) – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li><li class="interlanguage-link interwiki-fi"><a href="https://fi.wikipedia.org/wiki/Rust_(ohjelmointikieli)" title="Rust (ohjelmointikieli) – Finnish" lang="fi" hreflang="fi" class="interlanguage-link-target">Suomi</a></li><li class="interlanguage-link interwiki-sv"><a href="https://sv.wikipedia.org/wiki/Rust_(programspr%C3%A5k)" title="Rust (programspråk) – Swedish" lang="sv" hreflang="sv" class="interlanguage-link-target">Svenska</a></li><li class="interlanguage-link interwiki-tr"><a href="https://tr.wikipedia.org/wiki/Rust" title="Rust – Turkish" lang="tr" hreflang="tr" class="interlanguage-link-target">Türkçe</a></li><li class="interlanguage-link interwiki-uk"><a href="https://uk.wikipedia.org/wiki/Rust_(%D0%BC%D0%BE%D0%B2%D0%B0_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F)" title="Rust (мова програмування) – Ukrainian" lang="uk" hreflang="uk" class="interlanguage-link-target">Українська</a></li><li class="interlanguage-link interwiki-zh"><a href="https://zh.wikipedia.org/wiki/Rust" title="Rust – Chinese" lang="zh" hreflang="zh" class="interlanguage-link-target">中文</a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q575650#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 4 February 2017, at 19:32.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Rust_(programming_language)&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.488","walltime":"0.587","ppvisitednodes":{"value":3746,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":172157,"limit":2097152},"templateargumentsize":{"value":13359,"limit":2097152},"expansiondepth":{"value":25,"limit":40},"expensivefunctioncount":{"value":5,"limit":500},"entityaccesscount":{"value":1,"limit":400},"timingprofile":["100.00%  500.088      1 -total"," 48.14%  240.727      1 Template:Reflist"," 35.28%  176.441     38 Template:Cite_web"," 20.10%  100.539      2 Template:Infobox"," 16.39%   81.980      1 Template:Infobox_programming_language","  8.81%   44.067      3 Template:Fix","  8.13%   40.650      2 Template:Citation_needed","  6.65%   33.275      1 Template:Mozilla_projects","  6.13%   30.645      1 Template:Navbox_with_collapsible_groups","  5.68%   28.398      1 Template:Infobox_software/simple"]},"scribunto":{"limitreport-timeusage":{"value":"0.255","limit":"10.000"},"limitreport-memusage":{"value":5525187,"limit":52428800}},"cachereport":{"origin":"mw1286","timestamp":"20170204193220","ttl":86400,"transientcontent":true}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":72,"wgHostname":"mw1274"});});</script>
+	</body>
+</html>

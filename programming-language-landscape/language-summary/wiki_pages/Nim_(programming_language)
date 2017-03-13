@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Nim (programming language) - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Nim_(programming_language)","wgTitle":"Nim (programming language)","wgCurRevisionId":763662878,"wgRevisionId":763662878,"wgArticleId":45413679,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["CS1 Bulgarian-language sources (bg)","Pages with URL errors","All articles with unsourced statements","Articles with unsourced statements from October 2016","Accuracy disputes from June 2015","Concurrent programming languages","Functional languages","Multi-paradigm programming languages","Procedural programming languages","Programming languages created in 2008","Software using the MIT license","Statically typed programming languages","Systems programming languages"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Nim_(programming_language)","wgRelevantArticleId":45413679,"wgRequestId":"WJXjggpAME4AAD9g@MkAAAAW","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":true},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q20080327","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.cite.styles":"ready","ext.pygments":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.legacy.wikibits","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.pygments%2CwikimediaBadges%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.29.0-wmf.10"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Nim_(programming_language)"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Nim_(programming_language)&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Nim_(programming_language)&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Nim_(programming_language)"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Nim_programming_language rootpage-Nim_programming_language skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Nim (programming language)</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><table class="infobox vevent" style="width:22em">
+<caption class="summary">Nim</caption>
+<tr>
+<th scope="row"><a href="/wiki/Programming_paradigm" title="Programming paradigm">Paradigm</a></th>
+<td><a href="/wiki/Multi-paradigm_programming_language" class="mw-redirect" title="Multi-paradigm programming language">multi-paradigm</a>: <a href="/wiki/Compiled_language" title="Compiled language">compiled</a>, <a href="/wiki/Concurrent_programming" class="mw-redirect" title="Concurrent programming">concurrent</a>, <a href="/wiki/Procedural_programming" title="Procedural programming">procedural</a>, <a href="/wiki/Imperative_programming" title="Imperative programming">imperative</a>, <a href="/wiki/Object-oriented_programming" title="Object-oriented programming">object-oriented</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_design" title="Software design">Designed&#160;by</a></th>
+<td>Andreas Rumpf</td>
+</tr>
+<tr>
+<th scope="row">First&#160;appeared</th>
+<td>2008<span class="noprint">; 9&#160;years ago</span><span style="display:none">&#160;(<span class="bday dtstart published updated">2008</span>)</span></td>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Software_release_life_cycle" title="Software release life cycle">Preview release</a></th>
+<td>
+<div style="margin:0px;">0.16.0<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">[1]</a></sup> / 8&#160;January 2017<span class="noprint">; 27 days ago</span><span style="display:none">&#160;(<span class="bday dtstart published updated">2017-01-08</span>)</span></div>
+</td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Type_system" title="Type system">Typing discipline</a></th>
+<td><a href="/wiki/Static_typing" class="mw-redirect" title="Static typing">static</a>,<sup id="cite_ref-nimbyex_2-0" class="reference"><a href="#cite_note-nimbyex-2">[2]</a></sup> <a href="/wiki/Strong_typing" class="mw-redirect" title="Strong typing">strong</a>,<sup id="cite_ref-nimrodbg_3-0" class="reference"><a href="#cite_note-nimrodbg-3">[3]</a></sup> <a href="/wiki/Type_inference" title="Type inference">inferred</a>, <a href="/wiki/Structural_type_system" title="Structural type system">structural</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Operating_system" title="Operating system">OS</a></th>
+<td>Cross-platform<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (October 2016)">citation needed</span></a></i>]</sup></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_license" title="Software license">License</a></th>
+<td><a href="/wiki/MIT_License" title="MIT License">MIT</a><sup id="cite_ref-FAQ_4-0" class="reference"><a href="#cite_note-FAQ-4">[4]</a></sup><sup id="cite_ref-license1_5-0" class="reference"><a href="#cite_note-license1-5">[5]</a></sup></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Filename_extension" title="Filename extension">Filename extensions</a></th>
+<td>.nim</td>
+</tr>
+<tr>
+<th scope="row">Website</th>
+<td><span class="url"><a rel="nofollow" class="external text" href="http://nim-lang.org/">nim-lang<wbr />.org</a></span></td>
+</tr>
+<tr>
+<th colspan="2" style="text-align:center;background-color: #eee;">Influenced by</th>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/Ada_(programming_language)" title="Ada (programming language)">Ada</a>, <a href="/wiki/Modula-3" title="Modula-3">Modula-3</a>, <a href="/wiki/Lisp_(programming_language)" title="Lisp (programming language)">Lisp</a>, <a href="/wiki/C%2B%2B" title="C++">C++</a>, <a href="/wiki/Object_Pascal" title="Object Pascal">Object Pascal</a>, <a href="/wiki/Python_(programming_language)" title="Python (programming language)">Python</a>, <a href="/wiki/Oberon_(programming_language)" title="Oberon (programming language)">Oberon</a></td>
+</tr>
+</table>
+<p><b>Nim</b> (formerly named <b>Nimrod</b>) is an <a href="/wiki/Imperative_programming" title="Imperative programming">imperative</a>, <a href="/wiki/Multi-paradigm_programming_language" class="mw-redirect" title="Multi-paradigm programming language">multi-paradigm</a>, <a href="/wiki/Compiled_programming_language" class="mw-redirect" title="Compiled programming language">compiled programming language</a><sup id="cite_ref-drdobbs_6-0" class="reference"><a href="#cite_note-drdobbs-6">[6]</a></sup> designed and developed by Andreas Rumpf. It is designed to be "efficient, expressive, and elegant",<sup id="cite_ref-nim-lang_7-0" class="reference"><a href="#cite_note-nim-lang-7">[7]</a></sup> supporting <a href="/wiki/Metaprogramming" title="Metaprogramming">metaprogramming</a>, <a href="/wiki/Functional_programming" title="Functional programming">functional</a>, <a href="/wiki/Message_passing" title="Message passing">message passing</a>,<sup id="cite_ref-FAQ_4-1" class="reference"><a href="#cite_note-FAQ-4">[4]</a></sup> <a href="/wiki/Procedural_programming" title="Procedural programming">procedural</a>, and <a href="/wiki/Object-oriented_programming" title="Object-oriented programming">object-oriented</a> programming styles by providing several features such as compile time code generation, <a href="/wiki/Algebraic_data_type" title="Algebraic data type">algebraic data types</a>, an elegant <a href="/wiki/Foreign_function_interface" title="Foreign function interface">foreign function interface</a> (FFI) with C and compiling to <a href="/wiki/JavaScript" title="JavaScript">JavaScript</a>.<sup id="cite_ref-Nim_features_8-0" class="reference"><a href="#cite_note-Nim_features-8">[8]</a></sup></p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#History"><span class="tocnumber">2</span> <span class="toctext">History</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Language_design"><span class="tocnumber">3</span> <span class="toctext">Language design</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Compiler"><span class="tocnumber">4</span> <span class="toctext">Compiler</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Tools"><span class="tocnumber">5</span> <span class="toctext">Tools</span></a>
+<ul>
+<li class="toclevel-2 tocsection-6"><a href="#Nimble"><span class="tocnumber">5.1</span> <span class="toctext">Nimble</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#c2nim"><span class="tocnumber">5.2</span> <span class="toctext">c2nim</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-8"><a href="#Libraries"><span class="tocnumber">6</span> <span class="toctext">Libraries</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#Examples"><span class="tocnumber">7</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2 tocsection-10"><a href="#Hello_world"><span class="tocnumber">7.1</span> <span class="toctext">Hello world</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#Reversing_a_string"><span class="tocnumber">7.2</span> <span class="toctext">Reversing a string</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#Metaprogramming"><span class="tocnumber">7.3</span> <span class="toctext">Metaprogramming</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="#Wrapping_C_functions"><span class="tocnumber">7.4</span> <span class="toctext">Wrapping C functions</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-14"><a href="#Community"><span class="tocnumber">8</span> <span class="toctext">Community</span></a></li>
+<li class="toclevel-1 tocsection-15"><a href="#See_also"><span class="tocnumber">9</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-16"><a href="#References"><span class="tocnumber">10</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-17"><a href="#External_links"><span class="tocnumber">11</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Description">Description</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Nim_(programming_language)&amp;action=edit&amp;section=1" title="Edit section: Description">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Nim is statically typed, with a simple syntax.<sup id="cite_ref-Nim_Syntax_9-0" class="reference"><a href="#cite_note-Nim_Syntax-9">[9]</a></sup> It supports compile-time metaprogramming features such as syntactic macros and <a href="/wiki/Macro_(computer_science)#Syntactic_macros" title="Macro (computer science)">term rewriting macros</a>.<sup id="cite_ref-manual_10-0" class="reference"><a href="#cite_note-manual-10">[10]</a></sup> Term rewriting macros enable library implementations of common data structures such as bignums and matrices to be implemented with an efficiency as if they would have been builtin language facilities.<sup id="cite_ref-strangeloop_11-0" class="reference"><a href="#cite_note-strangeloop-11">[11]</a></sup> Iterators are supported and can be used as first class entities<sup id="cite_ref-manual_10-1" class="reference"><a href="#cite_note-manual-10">[10]</a></sup> in the language as can functions, these features allow for <a href="/wiki/Functional_programming" title="Functional programming">functional programming</a> to be used. Object-oriented programming is supported by inheritance and <a href="/wiki/Multiple_dispatch" title="Multiple dispatch">multiple dispatch</a>. Functions can be generic and can also be overloaded, generics are further enhanced by the support for type classes. Operator overloading is also supported.<sup id="cite_ref-manual_10-2" class="reference"><a href="#cite_note-manual-10">[10]</a></sup> Nim includes <a href="/wiki/Garbage_collection_(computer_science)" title="Garbage collection (computer science)">automatic garbage collection</a> based on deferred <a href="/wiki/Reference_counting" title="Reference counting">reference counting</a> with cycle detection.<sup id="cite_ref-gc_12-0" class="reference"><a href="#cite_note-gc-12">[12]</a></sup><sup id="cite_ref-13" class="reference"><a href="#cite_note-13">[13]</a></sup><sup class="noprint Inline-Template" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Verifiability#Self-published_sources" title="Wikipedia:Verifiability"><span title="The material near this tag may rely on a self-published source. (June 2015)">self-published source?</span></a></i>]</sup> Andrew Binstock (editor-in-chief of <a href="/wiki/Dr._Dobb%27s" class="mw-redirect" title="Dr. Dobb's">Dr. Dobb's</a>) says Nim (formerly known as Nimrod) "presents a most original design that straddles Pascal and Python and compiles to C code or JavaScript."<sup id="cite_ref-14" class="reference"><a href="#cite_note-14">[14]</a></sup></p>
+<h2><span class="mw-headline" id="History">History</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Nim_(programming_language)&amp;action=edit&amp;section=2" title="Edit section: History">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The initial development of Nim began in 2005 by Andreas Rumpf. The first version of the Nim compiler was written in <a href="/wiki/Pascal_(programming_language)" title="Pascal (programming language)">Pascal</a>.<sup id="cite_ref-pas-sources_15-0" class="reference"><a href="#cite_note-pas-sources-15">[15]</a></sup> In 2008, a version of the compiler written in Nim was released.<sup id="cite_ref-news_16-0" class="reference"><a href="#cite_note-news-16">[16]</a></sup> The compiler is open source and is being developed by a group of volunteers in addition to Andreas Rumpf.<sup id="cite_ref-contributors_17-0" class="reference"><a href="#cite_note-contributors-17">[17]</a></sup></p>
+<h2><span class="mw-headline" id="Language_design">Language design</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Nim_(programming_language)&amp;action=edit&amp;section=3" title="Edit section: Language design">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The syntax of Nim is similar to <a href="/wiki/Python_(programming_language)" title="Python (programming language)">Python</a>.</p>
+<p>In details, it is influenced by:</p>
+<ul>
+<li><a href="/wiki/Modula-3" title="Modula-3">Modula-3</a>: traced vs untraced pointers</li>
+<li><a href="/wiki/Delphi_(programming_language)" title="Delphi (programming language)">Delphi</a>: type safe bit sets (set of char)</li>
+<li><a href="/wiki/Ada_(programming_language)" title="Ada (programming language)">Ada</a>: subrange types, distinct type, safe variants / case objects</li>
+<li><a href="/wiki/C%2B%2B" title="C++">C++</a>: Excessive overloading, generic programming</li>
+<li>Python: <a href="/wiki/Off-side_rule" title="Off-side rule">Off-side rule</a></li>
+<li><a href="/wiki/Lisp_(programming_language)" title="Lisp (programming language)">Lisp</a>: Macro system, embrace the AST, homoiconicity</li>
+<li><a href="/wiki/Oberon_(programming_language)" title="Oberon (programming language)">Oberon</a>: The export marker</li>
+<li><a href="/wiki/C_Sharp_(programming_language)" title="C Sharp (programming language)">C#</a>: Async / await, lambda macros</li>
+<li><a href="/wiki/Go_(programming_language)" title="Go (programming language)">Go</a>: Defer</li>
+</ul>
+<p>In addition, Nim supports a <a href="/wiki/Uniform_Function_Call_Syntax" title="Uniform Function Call Syntax">Uniform Call Syntax</a><sup id="cite_ref-18" class="reference"><a href="#cite_note-18">[18]</a></sup> and identifier equality.<sup id="cite_ref-19" class="reference"><a href="#cite_note-19">[19]</a></sup></p>
+<h2><span class="mw-headline" id="Compiler">Compiler</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Nim_(programming_language)&amp;action=edit&amp;section=4" title="Edit section: Compiler">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The Nim compiler emits optimized C code and defers compiling to an external compiler<sup id="cite_ref-infoq_20-0" class="reference"><a href="#cite_note-infoq-20">[20]</a></sup> (many compilers are supported including <a href="/wiki/Clang" title="Clang">Clang</a> and <a href="/wiki/GNU_Compiler_Collection" title="GNU Compiler Collection">GNU Compiler Collection</a> (GCC)) to leverage their optimizing and portability abilities. The compiler can also emit <a href="/wiki/C%2B%2B" title="C++">C++</a>, <a href="/wiki/Objective-C" title="Objective-C">Objective-C</a> and <a href="/wiki/JavaScript" title="JavaScript">JavaScript</a> code to allow easy interfacing with <a href="/wiki/Application_programming_interface" title="Application programming interface">application programming interfaces</a> (APIs) written in those languages.<sup id="cite_ref-drdobbs_6-1" class="reference"><a href="#cite_note-drdobbs-6">[6]</a></sup> This allows writing applications for <a href="/wiki/IOS" title="IOS">iOS</a> and <a href="/wiki/Android_(operating_system)" title="Android (operating system)">Android</a>.<sup id="cite_ref-gradhacrossplatform_21-0" class="reference"><a href="#cite_note-gradhacrossplatform-21">[21]</a></sup><sup id="cite_ref-androidforum_22-0" class="reference"><a href="#cite_note-androidforum-22">[22]</a></sup></p>
+<p>The Nim compiler itself is written in the Nim programming language.<sup id="cite_ref-23" class="reference"><a href="#cite_note-23">[23]</a></sup></p>
+<h2><span class="mw-headline" id="Tools">Tools</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Nim_(programming_language)&amp;action=edit&amp;section=5" title="Edit section: Tools">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="Nimble">Nimble</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Nim_(programming_language)&amp;action=edit&amp;section=6" title="Edit section: Nimble">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Nimble<sup id="cite_ref-24" class="reference"><a href="#cite_note-24">[24]</a></sup> is the <a href="/wiki/Package_manager" title="Package manager">package manager</a> used by Nim to package the Nim modules. It uses NimScript for the configuration. Nimble works on <a href="/wiki/Git" title="Git">Git</a> repositories as its primary source of packages. Its list of packages is stored in a <a href="/wiki/JSON" title="JSON">JSON</a> file which is freely accessible in the nim-lang/packages repository. This JSON file provides nimble with the required Git URL to clone the package and install it.</p>
+<h3><span class="mw-headline" id="c2nim">c2nim</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Nim_(programming_language)&amp;action=edit&amp;section=7" title="Edit section: c2nim">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>c2nim<sup id="cite_ref-25" class="reference"><a href="#cite_note-25">[25]</a></sup> helps to generate new bindings by translating Ansi C code to Nim code. The output is human-readable Nim code that is meant to be tweaked by hand after the translation process.</p>
+<h2><span class="mw-headline" id="Libraries">Libraries</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Nim_(programming_language)&amp;action=edit&amp;section=8" title="Edit section: Libraries">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>A Nim program can use any <a href="/wiki/Library_(computing)" title="Library (computing)">library</a> which can be used in a <a href="/wiki/C_(programming_language)" title="C (programming language)">C</a> program. <a href="/wiki/Language_binding" title="Language binding">Language bindings</a> exist for many libraries, for example <a href="/wiki/GTK%2B" title="GTK+">GTK+</a>2, <a href="/wiki/Simple_DirectMedia_Layer" title="Simple DirectMedia Layer">SDL</a>2, <a href="/wiki/Cairo_(graphics)" title="Cairo (graphics)">Cairo</a>, <a href="/wiki/OpenGL" title="OpenGL">OpenGL</a>, <a href="/wiki/Windows_API" title="Windows API">WinAPI</a>, <a href="/wiki/Zlib" title="Zlib">zlib</a>, <a href="/wiki/Libzip" title="Libzip">libzip</a>, <a href="/wiki/OpenSSL" title="OpenSSL">OpenSSL</a> and <a href="/wiki/CURL" title="CURL">cURL</a>.<sup id="cite_ref-lib_26-0" class="reference"><a href="#cite_note-lib-26">[26]</a></sup> Nim works with <a href="/wiki/PostgreSQL" title="PostgreSQL">PostgreSQL</a>, <a href="/wiki/MySQL" title="MySQL">MySQL</a> and <a href="/wiki/SQLite" title="SQLite">SQLite</a> databases. Nim can interface with the <a href="/wiki/Lua_(programming_language)" title="Lua (programming language)">Lua</a> and <a href="/wiki/Python_(programming_language)" title="Python (programming language)">Python</a> interpreter.</p>
+<h2><span class="mw-headline" id="Examples">Examples</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Nim_(programming_language)&amp;action=edit&amp;section=9" title="Edit section: Examples">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The following code examples are valid as of Nim 0.13.0. Syntax and semantics may change in subsequent versions.<sup id="cite_ref-27" class="reference"><a href="#cite_note-27">[27]</a></sup></p>
+<h3><span class="mw-headline" id="Hello_world">Hello world</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Nim_(programming_language)&amp;action=edit&amp;section=10" title="Edit section: Hello world">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The <a href="/wiki/%22Hello,_World!%22_program" title="&quot;Hello, World!&quot; program">"Hello, World!" program</a> in Nim:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="n">echo</span> <span class="s">"Hello, World!"</span>
+</pre></div>
+<h3><span class="mw-headline" id="Reversing_a_string">Reversing a string</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Nim_(programming_language)&amp;action=edit&amp;section=11" title="Edit section: Reversing a string">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>A simple demonstration showing many of Nim's features.</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="k">proc </span><span class="nf">reverse</span><span class="p">(</span><span class="n">s</span><span class="p">:</span> <span class="kt">string</span><span class="p">):</span> <span class="kt">string</span> <span class="o">=</span>
+  <span class="n">result</span> <span class="o">=</span> <span class="s">""</span> <span class="c"># implicit result variable</span>
+  <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">countdown</span><span class="p">(</span><span class="n">high</span><span class="p">(</span><span class="n">s</span><span class="p">),</span> <span class="mi">0</span><span class="p">):</span>
+    <span class="n">result</span><span class="p">.</span><span class="n">add</span> <span class="n">s</span><span class="o">[</span><span class="n">i</span><span class="o">]</span>
+
+<span class="kd">var</span> <span class="n">str1</span> <span class="o">=</span> <span class="s">"Reverse This!"</span>
+<span class="n">echo</span> <span class="s">"Reversed: "</span><span class="p">,</span> <span class="n">reverse</span><span class="p">(</span><span class="n">str1</span><span class="p">)</span>
+</pre></div>
+<p>One of the more exotic features is the implicit <code>result</code> variable: every procedure in Nim with a non-void return type has an implicit result variable that represents the value that will be returned. In the for loop we see an invocation of <code>countdown</code> which is an iterator, if an iterator is omitted then the compiler will attempt to use an <code>items</code> iterator if one is defined for the type that was specified in the for loop.</p>
+<h3><span class="mw-headline" id="Metaprogramming">Metaprogramming</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Nim_(programming_language)&amp;action=edit&amp;section=12" title="Edit section: Metaprogramming">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>This is an example of metaprogramming in Nim using its template facilities.</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="k">template</span> <span class="n">genType</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">fieldname</span><span class="p">:</span> <span class="n">expr</span><span class="p">,</span> <span class="n">fieldtype</span><span class="p">:</span> <span class="n">typedesc</span><span class="p">)</span> <span class="o">=</span>
+  <span class="k">type</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="k">object</span>
+      <span class="n">fieldname</span><span class="p">:</span> <span class="n">fieldtype</span>
+
+<span class="n">genType</span><span class="p">(</span><span class="n">Test</span><span class="p">,</span> <span class="n">foo</span><span class="p">,</span> <span class="kt">int</span><span class="p">)</span>
+
+<span class="kd">var</span> <span class="n">x</span> <span class="o">=</span> <span class="n">Test</span><span class="p">(</span><span class="n">foo</span><span class="p">:</span> <span class="mi">4566</span><span class="p">)</span>
+<span class="n">echo</span><span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">foo</span><span class="p">)</span> <span class="c"># 4566</span>
+</pre></div>
+<p>The <code>genType</code> is invoked at compile-time and a <code>Test</code> type is created.</p>
+<h3><span class="mw-headline" id="Wrapping_C_functions">Wrapping C functions</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Nim_(programming_language)&amp;action=edit&amp;section=13" title="Edit section: Wrapping C functions">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The following program demonstrates the ease with which existing C code can be directly used in Nim.</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="k">proc </span><span class="nf">printf</span><span class="p">(</span><span class="n">formatstr</span><span class="p">:</span> <span class="n">cstring</span><span class="p">)</span>
+  <span class="p">{.</span><span class="n">header</span><span class="p">:</span> <span class="s">"&lt;stdio.h&gt;"</span><span class="p">,</span> <span class="n">varargs</span><span class="p">.}</span>
+
+<span class="n">printf</span><span class="p">(</span><span class="s">"%s %d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="s">"foo"</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+</pre></div>
+<p>In this code the well known <code>printf</code> function is imported into Nim and subsequently used.<sup id="cite_ref-special_28-0" class="reference"><a href="#cite_note-special-28">[28]</a></sup></p>
+<h2><span class="mw-headline" id="Community">Community</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Nim_(programming_language)&amp;action=edit&amp;section=14" title="Edit section: Community">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The language has a bug tracker with wiki hosted by <a href="/wiki/GitHub" title="GitHub">GitHub</a> and a forum.<sup id="cite_ref-29" class="reference"><a href="#cite_note-29">[29]</a></sup><sup id="cite_ref-30" class="reference"><a href="#cite_note-30">[30]</a></sup> A presentation at <a href="/wiki/O%27Reilly_Open_Source_Convention" title="O'Reilly Open Source Convention">O'Reilly Open Source Convention</a> (OSCON) in 2015 took place.<sup id="cite_ref-31" class="reference"><a href="#cite_note-31">[31]</a></sup> O'Reilly Community: Essential Languages: Nim, <a href="/wiki/Scala_(programming_language)" title="Scala (programming language)">Scala</a>, Python.<sup id="cite_ref-32" class="reference"><a href="#cite_note-32">[32]</a></sup><sup id="cite_ref-33" class="reference"><a href="#cite_note-33">[33]</a></sup></p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Nim_(programming_language)&amp;action=edit&amp;section=15" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div role="navigation" aria-label="Portals" class="noprint portal plainlist tright" style="margin:0.5em 0 0.5em 1em;border:solid #aaa 1px">
+<ul style="display:table;box-sizing:border-box;padding:0.1em;max-width:175px;background:#f9f9f9;font-size:85%;line-height:110%;font-style:italic;font-weight:bold">
+<li style="display:table-row"><span style="display:table-cell;padding:0.2em;vertical-align:middle;text-align:center"><a href="/wiki/File:8bit-dynamiclist_(reversed).gif" class="image"><img alt="icon" src="//upload.wikimedia.org/wikipedia/commons/thumb/c/cc/8bit-dynamiclist_%28reversed%29.gif/28px-8bit-dynamiclist_%28reversed%29.gif" width="28" height="28" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/commons/c/cc/8bit-dynamiclist_%28reversed%29.gif 1.5x" data-file-width="32" data-file-height="32" /></a></span><span style="display:table-cell;padding:0.2em 0.2em 0.2em 0.3em;vertical-align:middle"><a href="/wiki/Portal:Computer_programming" title="Portal:Computer programming">Computer programming portal</a></span></li>
+</ul>
+</div>
+<ul>
+<li><a href="/wiki/D_(programming_language)" title="D (programming language)">D (programming language)</a></li>
+<li><a href="/wiki/UFCS" class="mw-redirect" title="UFCS">UFCS</a>, a feature supported by Nim</li>
+</ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Nim_(programming_language)&amp;action=edit&amp;section=16" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist columns references-column-width" style="-moz-column-width: 30em; -webkit-column-width: 30em; column-width: 30em; list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://nim-lang.org/news/e029_version_0_16_0.html">"Version 0.16.0 released"</a>. 2017-01-08.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANim+%28programming+language%29&amp;rft.btitle=Version+0.16.0+released&amp;rft.date=2017-01-08&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fnim-lang.org%2Fnews%2Fe029_version_0_16_0.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-nimbyex-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-nimbyex_2-0">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://nim-by-example.github.io/">"Nim by example"</a>. <a href="/wiki/GitHub" title="GitHub">GitHub</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2014-07-20</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANim+%28programming+language%29&amp;rft.btitle=Nim+by+example&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fnim-by-example.github.io%2F&amp;rft.pub=GitHub&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-nimrodbg-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-nimrodbg_3-0">^</a></b></span> <span class="reference-text"><cite class="citation conference">Караджов, Захари; Станимиров, Борислав (2014). <a rel="nofollow" class="external text" href="http://ibob.github.io/slides/nimrodbg/#/"><i>Метапрограмиране с Nimrod</i></a>. <a rel="nofollow" class="external text" href="http://varnaconf.com/">VarnaConf</a> (in Bulgarian)<span class="reference-accessdate">. Retrieved <span class="nowrap">2014-07-27</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANim+%28programming+language%29&amp;rft.au=%D0%A1%D1%82%D0%B0%D0%BD%D0%B8%D0%BC%D0%B8%D1%D0%BE%D0%B2%2C+%D0%91%D0%BE%D1%D0%B8%D1%81%D0%BB%D0%B0%D0%B2&amp;rft.aufirst=%D0%97%D0%B0%D1%85%D0%B0%D1%D0%B8&amp;rft.aulast=%D0%9A%D0%B0%D1%D0%B0%D0%B4%D0%B6%D0%BE%D0%B2&amp;rft.btitle=%D0%9C%D0%B5%D1%82%D0%B0%D0%BF%D1%D0%BE%D0%B3%D1%D0%B0%D0%BC%D0%B8%D1%D0%B0%D0%BD%D0%B5+%D1%81+Nimrod&amp;rft.date=2014&amp;rft.genre=conference&amp;rft_id=http%3A%2F%2Fibob.github.io%2Fslides%2Fnimrodbg%2F%23%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-FAQ-4"><span class="mw-cite-backlink">^ <a href="#cite_ref-FAQ_4-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-FAQ_4-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://nim-lang.org/question.html">"FAQ"</a>. <i>Official website</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2015-03-27</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANim+%28programming+language%29&amp;rft.atitle=FAQ&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fnim-lang.org%2Fquestion.html&amp;rft.jtitle=Official+website&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-license1-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-license1_5-0">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://github.com/Araq/Nim/blob/master/copying.txt">"copying.txt"</a>. <i>Nim</i>. <a href="/wiki/GitHub" title="GitHub">GitHub</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2015-03-27</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANim+%28programming+language%29&amp;rft.atitle=copying.txt&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fgithub.com%2FAraq%2FNim%2Fblob%2Fmaster%2Fcopying.txt&amp;rft.jtitle=Nim&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-drdobbs-6"><span class="mw-cite-backlink">^ <a href="#cite_ref-drdobbs_6-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-drdobbs_6-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><cite class="citation web">Rumpf, Andreas (2014-02-11). <a rel="nofollow" class="external text" href="http://www.drdobbs.com/open-source/nimrod-a-new-systems-programming-languag/240165321">"Nimrod: A new systems programming language"</a>. <i><a href="/wiki/Dr._Dobb%27s_Journal" title="Dr. Dobb's Journal">Dr. Dobb's Journal</a></i><span class="reference-accessdate">. Retrieved <span class="nowrap">2014-07-20</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANim+%28programming+language%29&amp;rft.atitle=Nimrod%3A+A+new+systems+programming+language&amp;rft.aufirst=Andreas&amp;rft.aulast=Rumpf&amp;rft.date=2014-02-11&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.drdobbs.com%2Fopen-source%2Fnimrod-a-new-systems-programming-languag%2F240165321&amp;rft.jtitle=Dr.+Dobb%27s+Journal&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-nim-lang-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-nim-lang_7-0">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://nim-lang.org/">"The Nim Programming Language"</a>. <i>Official website</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2014-07-20</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANim+%28programming+language%29&amp;rft.atitle=The+Nim+Programming+Language&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fnim-lang.org%2F&amp;rft.jtitle=Official+website&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-Nim_features-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-Nim_features_8-0">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://hookrace.net/blog/what-is-special-about-nim/">"What is special about Nim?"</a>. <i>Hookrace blog</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2015-03-27</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANim+%28programming+language%29&amp;rft.atitle=What+is+special+about+Nim%3F&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fhookrace.net%2Fblog%2Fwhat-is-special-about-nim%2F&amp;rft.jtitle=Hookrace+blog&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-Nim_Syntax-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-Nim_Syntax_9-0">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://akehrer.github.io/nim/2015/01/05/getting-started-with-nim.html">"Nim Syntax"</a>. <i>akehrer</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2015-03-27</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANim+%28programming+language%29&amp;rft.atitle=Nim+Syntax&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fakehrer.github.io%2Fnim%2F2015%2F01%2F05%2Fgetting-started-with-nim.html&amp;rft.jtitle=akehrer&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-manual-10"><span class="mw-cite-backlink">^ <a href="#cite_ref-manual_10-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-manual_10-1"><sup><i><b>b</b></i></sup></a> <a href="#cite_ref-manual_10-2"><sup><i><b>c</b></i></sup></a></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://nim-lang.org/manual.html">"Nim Manual"</a>. <i>Official website</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2014-07-20</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANim+%28programming+language%29&amp;rft.atitle=Nim+Manual&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fnim-lang.org%2Fmanual.html&amp;rft.jtitle=Official+website&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-strangeloop-11"><span class="mw-cite-backlink"><b><a href="#cite_ref-strangeloop_11-0">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://thestrangeloop.com/sessions/nimrod-a-new-approach-to-meta-programming">"Strangeloop Nim presentation"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2015-04-30</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANim+%28programming+language%29&amp;rft.btitle=Strangeloop+Nim+presentation&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fthestrangeloop.com%2Fsessions%2Fnimrod-a-new-approach-to-meta-programming&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-gc-12"><span class="mw-cite-backlink"><b><a href="#cite_ref-gc_12-0">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://nim-lang.org/gc.html">"Nim's Garbage Collector"</a>. <i>Nim documentation</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2015-04-03</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANim+%28programming+language%29&amp;rft.atitle=Nim%27s+Garbage+Collector&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fnim-lang.org%2Fgc.html&amp;rft.jtitle=Nim+documentation&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-13"><span class="mw-cite-backlink"><b><a href="#cite_ref-13">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://arthurtw.github.io/2015/01/12/quick-comparison-nim-vs-rust.html">"A Quick Comparison of Nim vs. Rust"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANim+%28programming+language%29&amp;rft.btitle=A+Quick+Comparison+of+Nim+vs.+Rust&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Farthurtw.github.io%2F2015%2F01%2F12%2Fquick-comparison-nim-vs-rust.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-14"><span class="mw-cite-backlink"><b><a href="#cite_ref-14">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.drdobbs.com/jvm/the-rise-and-fall-of-languages-in-2013/240165192">The Rise And Fall of Languages in 2013</a> By Andrew Binstock, 7 January 2014 <a href="/wiki/Dr._Dobb%27s" class="mw-redirect" title="Dr. Dobb's">Dr. Dobb's</a></span></li>
+<li id="cite_note-pas-sources-15"><span class="mw-cite-backlink"><b><a href="#cite_ref-pas-sources_15-0">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://github.com/Araq/Nim/tree/ea1f1ec6d4d6c776eb0f81c2bebdd4cb4c817ebe/nim">"Nim Pascal Sources"</a>. <i>Nim</i>. <a href="/wiki/GitHub" title="GitHub">GitHub</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2013-04-05</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANim+%28programming+language%29&amp;rft.atitle=Nim+Pascal+Sources&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fgithub.com%2FAraq%2FNim%2Ftree%2Fea1f1ec6d4d6c776eb0f81c2bebdd4cb4c817ebe%2Fnim&amp;rft.jtitle=Nim&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-news-16"><span class="mw-cite-backlink"><b><a href="#cite_ref-news_16-0">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://nim-lang.org/news/2016_06_11_version_0_14_2_released.html">"News"</a>. <i>Official website</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2016-06-11</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANim+%28programming+language%29&amp;rft.atitle=News&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fnim-lang.org%2Fnews%2F2016_06_11_version_0_14_2_released.html&amp;rft.jtitle=Official+website&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-contributors-17"><span class="mw-cite-backlink"><b><a href="#cite_ref-contributors_17-0">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://github.com/Araq/Nim/contributors">"Contributors"</a>. <i>Nim</i>. <a href="/wiki/GitHub" title="GitHub">GitHub</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2013-04-05</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANim+%28programming+language%29&amp;rft.atitle=Contributors&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fgithub.com%2FAraq%2FNim%2Fcontributors&amp;rft.jtitle=Nim&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-18"><span class="mw-cite-backlink"><b><a href="#cite_ref-18">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://nim-lang.org/docs/manual.html#procedures-method-call-syntax">Nim Manual:Method call syntax</a></span></li>
+<li id="cite_note-19"><span class="mw-cite-backlink"><b><a href="#cite_ref-19">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://nim-lang.org/docs/manual.html#lexical-analysis-identifier-equality">Nim Manual:Identifier equality</a></span></li>
+<li id="cite_note-infoq-20"><span class="mw-cite-backlink"><b><a href="#cite_ref-infoq_20-0">^</a></b></span> <span class="reference-text"><cite class="citation audio-visual">Rumpf, Andreas (2014-01-15). <a rel="nofollow" class="external text" href="http://www.infoq.com/presentations/nimrod"><i>Nimrod: A New Approach to Metaprogramming</i></a>. <i><a href="/w/index.php?title=InfoQ&amp;action=edit&amp;redlink=1" class="new" title="InfoQ (page does not exist)">InfoQ</a></i>. Event occurs at 2:23<span class="reference-accessdate">. Retrieved <span class="nowrap">2014-07-20</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANim+%28programming+language%29&amp;rft.aufirst=Andreas&amp;rft.aulast=Rumpf&amp;rft.btitle=Nimrod%3A+A+New+Approach+to+Metaprogramming&amp;rft.date=2014-01-15&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.infoq.com%2Fpresentations%2Fnimrod&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-gradhacrossplatform-21"><span class="mw-cite-backlink"><b><a href="#cite_ref-gradhacrossplatform_21-0">^</a></b></span> <span class="reference-text"><cite class="citation web">Hankiewicz, Grzegorz Adam (2014-03-10). <a rel="nofollow" class="external text" href="http://gradha.github.io/articles/2014/03/nimrod-for-cross-platform-software.html">"Nimrod for cross platform software"</a>. <i>Rants from the Ballmer Peak</i>. <a href="/wiki/GitHub" title="GitHub">GitHub</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2014-07-20</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANim+%28programming+language%29&amp;rft.atitle=Nimrod+for+cross+platform+software&amp;rft.aufirst=Grzegorz+Adam&amp;rft.aulast=Hankiewicz&amp;rft.date=2014-03-10&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fgradha.github.io%2Farticles%2F2014%2F03%2Fnimrod-for-cross-platform-software.html&amp;rft.jtitle=Rants+from+the+Ballmer+Peak&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-androidforum-22"><span class="mw-cite-backlink"><b><a href="#cite_ref-androidforum_22-0">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://forum.nim-lang.org/t/61/1#319">"Nimrod-on-android failure"</a>. 2012-07-28<span class="reference-accessdate">. Retrieved <span class="nowrap">2015-02-28</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANim+%28programming+language%29&amp;rft.btitle=Nimrod-on-android+failure&amp;rft.date=2012-07-28&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fforum.nim-lang.org%2Ft%2F61%2F1%23319&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-23"><span class="mw-cite-backlink"><b><a href="#cite_ref-23">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="https://github.com/nim-lang/Nim#compiling">https://github.com/nim-lang/Nim#compiling</a></span></li>
+<li id="cite_note-24"><span class="mw-cite-backlink"><b><a href="#cite_ref-24">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/nim-lang/nimble">Nimble</a></span></li>
+<li id="cite_note-25"><span class="mw-cite-backlink"><b><a href="#cite_ref-25">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/nim-lang/c2nim">c2nim</a></span></li>
+<li id="cite_note-lib-26"><span class="mw-cite-backlink"><b><a href="#cite_ref-lib_26-0">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://nim-lang.org/lib.html">"Nim Standard Library"</a>. <i>Nim documentation</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2015-04-04</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANim+%28programming+language%29&amp;rft.atitle=Nim+Standard+Library&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fnim-lang.org%2Flib.html&amp;rft.jtitle=Nim+documentation&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-27"><span class="mw-cite-backlink"><b><a href="#cite_ref-27">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://rosettacode.org/wiki/Nim">Nim code examples at Rosetta Code</a></span></li>
+<li id="cite_note-special-28"><span class="mw-cite-backlink"><b><a href="#cite_ref-special_28-0">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://hookrace.net/blog/what-is-special-about-nim/">"What is special about Nim?"</a>. <i>HookRace</i>. 2015-01-01<span class="reference-accessdate">. Retrieved <span class="nowrap">2015-02-17</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANim+%28programming+language%29&amp;rft.atitle=What+is+special+about+Nim%3F&amp;rft.date=2015-01-01&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fhookrace.net%2Fblog%2Fwhat-is-special-about-nim%2F&amp;rft.jtitle=HookRace&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-29"><span class="mw-cite-backlink"><b><a href="#cite_ref-29">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://github.com/Araq/Nim">"Primary source code repository and bug tracker"</a>. <a href="/wiki/GitHub" title="GitHub">GitHub</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2015-05-04</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANim+%28programming+language%29&amp;rft.btitle=Primary+source+code+repository+and+bug+tracker&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fgithub.com%2FAraq%2FNim&amp;rft.pub=GitHub&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-30"><span class="mw-cite-backlink"><b><a href="#cite_ref-30">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://forum.nim-lang.org">Nim "Forum"</a> <span style="font-size:100%" class="error citation-comment">Check <code style="color:inherit; border:inherit; padding:inherit;">|url=</code> value (<a href="/wiki/Help:CS1_errors#bad_url" title="Help:CS1 errors">help</a>)</span>. nim-lang.org<span class="reference-accessdate">. Retrieved <span class="nowrap">2015-05-04</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANim+%28programming+language%29&amp;rft.btitle=Forum&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fforum.nim-lang.org+Nim&amp;rft.pub=nim-lang.org&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-31"><span class="mw-cite-backlink"><b><a href="#cite_ref-31">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.oscon.com/open-source-2015/public/schedule/detail/42497">"Nim at OSCON 2015"</a>. <a href="/wiki/O%27Reilly_Open_Source_Convention" title="O'Reilly Open Source Convention">OSCON</a>. 2015-07-20<span class="reference-accessdate">. Retrieved <span class="nowrap">2015-05-04</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANim+%28programming+language%29&amp;rft.btitle=Nim+at+OSCON+2015&amp;rft.date=2015-07-20&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.oscon.com%2Fopen-source-2015%2Fpublic%2Fschedule%2Fdetail%2F42497&amp;rft.pub=OSCON&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-32"><span class="mw-cite-backlink"><b><a href="#cite_ref-32">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.oreilly.com/pub/e/3420">"Essential Languages: Nim, Scala, Python"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANim+%28programming+language%29&amp;rft.btitle=Essential+Languages%3A+Nim%2C+Scala%2C+Python&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.oreilly.com%2Fpub%2Fe%2F3420&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-33"><span class="mw-cite-backlink"><b><a href="#cite_ref-33">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://www.youtube.com/watch?v=4rJEBs_Nnaw"><span class="plainlinks">Presentation of Nim by Andreas Rumpf on OSCON 2015</span></a> on <a href="/wiki/YouTube" title="YouTube">YouTube</a></span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Nim_(programming_language)&amp;action=edit&amp;section=17" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><span class="official-website"><span class="url"><a rel="nofollow" class="external text" href="http://nim-lang.org/">Official website</a></span></span></li>
+<li><a rel="nofollow" class="external text" href="https://github.com/nim-lang/Nim">Nim</a> on <a href="/wiki/GitHub" title="GitHub">GitHub</a></li>
+<li><a rel="nofollow" class="external text" href="http://stackoverflow.com/tags/nim/info">Information about Nim</a> on <a href="/wiki/Stack_Overflow" title="Stack Overflow">Stack Overflow</a></li>
+<li><a rel="nofollow" class="external text" href="https://github.com/nim-lang/nimble">Nimble</a></li>
+<li><a rel="nofollow" class="external text" href="https://github.com/nim-lang/c2nim">c2nim</a></li>
+</ul>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1233
+Cached time: 20170204142129
+Cache expiry: 86400
+Dynamic content: true
+CPU time usage: 0.328 seconds
+Real time usage: 0.401 seconds
+Preprocessor visited node count: 2100/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 48832/2097152 bytes
+Template argument size: 3452/2097152 bytes
+Highest expansion depth: 25/40
+Expensive parser function count: 4/500
+Lua time usage: 0.170/10.000 seconds
+Lua memory usage: 5.14 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  357.239      1 -total
+ 49.86%  178.132      1 Template:Reflist
+ 40.22%  143.681      2 Template:Infobox
+ 34.59%  123.558      1 Template:Infobox_programming_language
+ 31.85%  113.774     23 Template:Cite_web
+ 12.43%   44.412      2 Template:Fix
+ 10.21%   36.481      1 Template:Citation_needed
+  8.49%   30.323      1 Template:Infobox_software/simple
+  6.42%   22.946      2 Template:Delink
+  6.42%   22.925      2 Template:Start_date_and_age
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:45413679-0!*!0!!en!4!* and timestamp 20170204142137 and revision id 763662878
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Nim_(programming_language)&amp;oldid=763662878">https://en.wikipedia.org/w/index.php?title=Nim_(programming_language)&amp;oldid=763662878</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Concurrent_programming_languages" title="Category:Concurrent programming languages">Concurrent programming languages</a></li><li><a href="/wiki/Category:Functional_languages" title="Category:Functional languages">Functional languages</a></li><li><a href="/wiki/Category:Multi-paradigm_programming_languages" title="Category:Multi-paradigm programming languages">Multi-paradigm programming languages</a></li><li><a href="/wiki/Category:Procedural_programming_languages" title="Category:Procedural programming languages">Procedural programming languages</a></li><li><a href="/wiki/Category:Programming_languages_created_in_2008" title="Category:Programming languages created in 2008">Programming languages created in 2008</a></li><li><a href="/wiki/Category:Software_using_the_MIT_license" title="Category:Software using the MIT license">Software using the MIT license</a></li><li><a href="/wiki/Category:Statically_typed_programming_languages" title="Category:Statically typed programming languages">Statically typed programming languages</a></li><li><a href="/wiki/Category:Systems_programming_languages" title="Category:Systems programming languages">Systems programming languages</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:CS1_Bulgarian-language_sources_(bg)" title="Category:CS1 Bulgarian-language sources (bg)">CS1 Bulgarian-language sources (bg)</a></li><li><a href="/wiki/Category:Pages_with_URL_errors" title="Category:Pages with URL errors">Pages with URL errors</a></li><li><a href="/wiki/Category:All_articles_with_unsourced_statements" title="Category:All articles with unsourced statements">All articles with unsourced statements</a></li><li><a href="/wiki/Category:Articles_with_unsourced_statements_from_October_2016" title="Category:Articles with unsourced statements from October 2016">Articles with unsourced statements from October 2016</a></li><li><a href="/wiki/Category:Accuracy_disputes_from_June_2015" title="Category:Accuracy disputes from June 2015">Accuracy disputes from June 2015</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Nim+%28programming+language%29" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Nim+%28programming+language%29" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/Nim_(programming_language)"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:Nim_(programming_language)"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/Nim_(programming_language)" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=Nim_(programming_language)&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Nim_(programming_language)&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Nim_(programming_language)" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Nim_(programming_language)" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Nim_(programming_language)&amp;oldid=763662878" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Nim_(programming_language)&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q20080327" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Nim_%28programming_language%29&amp;id=763662878" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Nim+%28programming+language%29">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Nim+%28programming+language%29&amp;returnto=Nim+%28programming+language%29&amp;oldid=763662878&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Nim_(programming_language)&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/Nim_(langage)" title="Nim (langage) – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-ja"><a href="https://ja.wikipedia.org/wiki/Nim" title="Nim – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target">日本語</a></li><li class="interlanguage-link interwiki-ru"><a href="https://ru.wikipedia.org/wiki/Nim" title="Nim – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q20080327#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 4 February 2017, at 14:21.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Nim_(programming_language)&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.328","walltime":"0.401","ppvisitednodes":{"value":2100,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":48832,"limit":2097152},"templateargumentsize":{"value":3452,"limit":2097152},"expansiondepth":{"value":25,"limit":40},"expensivefunctioncount":{"value":4,"limit":500},"entityaccesscount":{"value":1,"limit":400},"timingprofile":["100.00%  357.239      1 -total"," 49.86%  178.132      1 Template:Reflist"," 40.22%  143.681      2 Template:Infobox"," 34.59%  123.558      1 Template:Infobox_programming_language"," 31.85%  113.774     23 Template:Cite_web"," 12.43%   44.412      2 Template:Fix"," 10.21%   36.481      1 Template:Citation_needed","  8.49%   30.323      1 Template:Infobox_software/simple","  6.42%   22.946      2 Template:Delink","  6.42%   22.925      2 Template:Start_date_and_age"]},"scribunto":{"limitreport-timeusage":{"value":"0.170","limit":"10.000"},"limitreport-memusage":{"value":5393940,"limit":52428800}},"cachereport":{"origin":"mw1233","timestamp":"20170204142129","ttl":86400,"transientcontent":true}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":48,"wgHostname":"mw1243"});});</script>
+	</body>
+</html>

@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Cg (programming language) - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Cg_(programming_language)","wgTitle":"Cg (programming language)","wgCurRevisionId":754121193,"wgRevisionId":754121193,"wgArticleId":390212,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Pages using ISBN magic links","C programming language family","Nvidia software","Shading languages"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Cg_(programming_language)","wgRelevantArticleId":390212,"wgRequestId":"WJR4bQpAAEEAAcYuFqwAAAAI","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":true},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q1024657","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.cite.styles":"ready","ext.pygments":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.legacy.wikibits","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.centralauth.centralautologin","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.pygments%2CwikimediaBadges%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.29.0-wmf.10"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Cg_(programming_language)"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Cg_(programming_language)&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Cg_(programming_language)&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Cg_(programming_language)"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Cg_programming_language rootpage-Cg_programming_language skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Cg (programming language)</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p><b>Cg</b> (short for <b>C for Graphics</b>) is a high-level <a href="/wiki/Shading_language" title="Shading language">shading language</a> developed by <a href="/wiki/Nvidia" title="Nvidia">Nvidia</a> in close collaboration with <a href="/wiki/Microsoft" title="Microsoft">Microsoft</a> for <a href="/wiki/Computer_programming" title="Computer programming">programming</a> <a href="/wiki/Shader" title="Shader">vertex and pixel shaders</a>. Cg is based on the <a href="/wiki/C_(programming_language)" title="C (programming language)">C programming language</a> and although they share the same syntax, some features of C were modified and new data types were added to make Cg more suitable for programming <a href="/wiki/Graphics_processing_unit" title="Graphics processing unit">graphics processing units</a>. This language is only suitable for <a href="/wiki/GPU" class="mw-redirect" title="GPU">GPU</a> programming and is not a <a href="/wiki/GPGPU" class="mw-redirect" title="GPGPU">general programming language</a>. The Cg compiler outputs <a href="/wiki/DirectX" title="DirectX">DirectX</a> or <a href="/wiki/OpenGL" title="OpenGL">OpenGL</a> shader programs. Since 2012, Cg was deprecated, with no additional development or support available.<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">[1]</a></sup></p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Background"><span class="tocnumber">1</span> <span class="toctext">Background</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Details"><span class="tocnumber">2</span> <span class="toctext">Details</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Data_types"><span class="tocnumber">2.1</span> <span class="toctext">Data types</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Operators"><span class="tocnumber">2.2</span> <span class="toctext">Operators</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Functions_and_control_structures"><span class="tocnumber">2.3</span> <span class="toctext">Functions and control structures</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#The_standard_Cg_library"><span class="tocnumber">2.4</span> <span class="toctext">The standard Cg library</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#The_Cg_runtime_library"><span class="tocnumber">2.5</span> <span class="toctext">The Cg runtime library</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#A_sample_Cg_vertex_shader"><span class="tocnumber">2.6</span> <span class="toctext">A sample Cg vertex shader</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-9"><a href="#Applications_and_games_that_use_Cg"><span class="tocnumber">3</span> <span class="toctext">Applications and games that use Cg</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#See_also"><span class="tocnumber">4</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="#Further_reading"><span class="tocnumber">6</span> <span class="toctext">Further reading</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="#External_links"><span class="tocnumber">7</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Background">Background</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Cg_(programming_language)&amp;action=edit&amp;section=1" title="Edit section: Background">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Due to technical advances in graphics hardware, some areas of 3D graphics programming have become quite complex. To simplify the process, new features were added to graphics cards, including the ability to modify their rendering pipelines using vertex and pixel shaders.</p>
+<p>In the beginning, vertex and pixel shaders were programmed at a very low level with only the assembly language of the graphics processing unit. Although using the assembly language gave the programmer complete control over code and flexibility, it was fairly hard to use. A portable, higher level language for programming the GPU was needed, so Cg was created to overcome these problems and make shader development easier.</p>
+<p>Some of the benefits of using Cg over assembly are:</p>
+<ul>
+<li>High level code is easier to learn, program, read, and maintain than assembly code.</li>
+<li>Cg code is portable to a wide range of hardware and platforms, unlike assembly code, which usually depends on hardware and the platforms it's written for.</li>
+<li>The Cg compiler can optimize code and do lower level tasks automatically, which are hard to do and error prone in assembly.</li>
+</ul>
+<h2><span class="mw-headline" id="Details">Details</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Cg_(programming_language)&amp;action=edit&amp;section=2" title="Edit section: Details">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="Data_types">Data types</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Cg_(programming_language)&amp;action=edit&amp;section=3" title="Edit section: Data types">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Cg has six basic data types. Some of them are the same as in C, while others are especially added for GPU programming. These types are:</p>
+<ul>
+<li><a href="/wiki/IEEE_floating_point" title="IEEE floating point">float</a> - a 32bit floating point number</li>
+<li><a href="/wiki/Half-precision_floating-point_format" title="Half-precision floating-point format">half</a> - a 16bit floating point number</li>
+<li><a href="/wiki/Integer_(computer_science)" title="Integer (computer science)">int</a> - a 32bit integer</li>
+<li><a href="/wiki/Fixed-point_arithmetic" title="Fixed-point arithmetic">fixed</a> - a 12bit fixed point number</li>
+<li><a href="/wiki/Boolean_data_type" title="Boolean data type">bool</a> - a boolean variable</li>
+<li>sampler* - represents a texture object</li>
+</ul>
+<p>Cg also features vector and matrix data types that are based on the basic data types, such as float3 and float4x4. Such data types are quite common when dealing with 3D graphics programming. Cg also has struct and <a href="/wiki/Array_data_type" title="Array data type">array data types</a>, which work in a similar way to their C equivalents.</p>
+<h3><span class="mw-headline" id="Operators">Operators</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Cg_(programming_language)&amp;action=edit&amp;section=4" title="Edit section: Operators">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Cg supports a wide range of operators, including the common arithmetic operators from C, the equivalent arithmetic operators for vector and matrix data types, and the common <a href="/wiki/Logical_operator" class="mw-redirect" title="Logical operator">logical operators</a>.</p>
+<h3><span class="mw-headline" id="Functions_and_control_structures">Functions and control structures</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Cg_(programming_language)&amp;action=edit&amp;section=5" title="Edit section: Functions and control structures">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Cg shares the basic control structures with C, like if/else, while, and for. It also has a similar way of defining functions.</p>
+<h3><span class="mw-headline" id="The_standard_Cg_library">The standard Cg library</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Cg_(programming_language)&amp;action=edit&amp;section=6" title="Edit section: The standard Cg library">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>As in C, Cg features a set of functions for common tasks in GPU programming. Some of the functions have equivalents in C, like the mathematical functions abs and sin, while others are specialized in GPU programming tasks, like the texture mapping functions tex1D and tex2D.</p>
+<h3><span class="mw-headline" id="The_Cg_runtime_library">The Cg runtime library</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Cg_(programming_language)&amp;action=edit&amp;section=7" title="Edit section: The Cg runtime library">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Cg programs are merely vertex and pixel shaders, and they need supporting programs that handle the rest of the rendering process. Cg can be used with two graphics <a href="/wiki/API" class="mw-redirect" title="API">APIs</a>: <a href="/wiki/OpenGL" title="OpenGL">OpenGL</a> or <a href="/wiki/DirectX" title="DirectX">DirectX</a>. Each has its own set of Cg functions to communicate with the Cg program, like setting the current Cg shader, passing parameters, and such tasks.</p>
+<p>In addition to being able to compile Cg source to assembly code, the Cg runtime also has the ability to compile shaders during execution of the supporting program. This allows the runtime to compile the shader using the latest optimizations available for hardware that the program is currently executing on. However, this technique requires that the source code for the shader be available in plain text to the compiler, allowing the user of the program to access the source-code for the shader. Some developers view this as a major drawback of this technique.</p>
+<p>To avoid exposing the source code of the shader, and still maintain some of the hardware specific optimizations, the concept of profiles was developed. Shaders can be compiled to suit different graphics hardware platforms (according to profiles). When executing the supporting program, the best/most optimized shader is loaded according to its profile. For instance there might be a profile for a graphics card that supports complex pixel shaders, and another profile for one that supports only minimal pixel shaders. By creating a pixel shader for each of these profiles a supporting program enlarges the number of supported hardware platforms without sacrificing picture quality on powerful systems.</p>
+<h3><span class="mw-headline" id="A_sample_Cg_vertex_shader">A sample Cg vertex shader</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Cg_(programming_language)&amp;action=edit&amp;section=8" title="Edit section: A sample Cg vertex shader">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+ <span class="c1">// input vertex</span>
+ <span class="k">struct</span> <span class="n">VertIn</span> <span class="p">{</span>
+     <span class="n">float4</span> <span class="n">pos</span>   <span class="o">:</span> <span class="n">POSITION</span><span class="p">;</span>
+     <span class="n">float4</span> <span class="n">color</span> <span class="o">:</span> <span class="n">COLOR0</span><span class="p">;</span>
+ <span class="p">};</span>
+ 
+ <span class="c1">// output vertex</span>
+ <span class="k">struct</span> <span class="n">VertOut</span> <span class="p">{</span>
+     <span class="n">float4</span> <span class="n">pos</span>   <span class="o">:</span> <span class="n">POSITION</span><span class="p">;</span>
+     <span class="n">float4</span> <span class="n">color</span> <span class="o">:</span> <span class="n">COLOR0</span><span class="p">;</span>
+ <span class="p">};</span>
+ 
+ <span class="c1">// vertex shader main entry</span>
+ <span class="n">VertOut</span> <span class="n">main</span><span class="p">(</span><span class="n">VertIn</span> <span class="n">IN</span><span class="p">,</span> <span class="k">uniform</span> <span class="n">float4x4</span> <span class="n">modelViewProj</span><span class="p">)</span> <span class="p">{</span>
+     <span class="n">VertOut</span> <span class="n">OUT</span><span class="p">;</span>
+     <span class="n">OUT</span><span class="p">.</span><span class="n">pos</span>     <span class="o">=</span> <span class="n">mul</span><span class="p">(</span><span class="n">modelViewProj</span><span class="p">,</span> <span class="n">IN</span><span class="p">.</span><span class="n">pos</span><span class="p">);</span> <span class="c1">// calculate output coords</span>
+     <span class="n">OUT</span><span class="p">.</span><span class="n">color</span>   <span class="o">=</span> <span class="n">IN</span><span class="p">.</span><span class="n">color</span><span class="p">;</span> <span class="c1">// copy input color to output</span>
+     <span class="n">OUT</span><span class="p">.</span><span class="n">color</span><span class="p">.</span><span class="n">z</span> <span class="o">=</span> <span class="mf">1.0</span><span class="n">f</span><span class="p">;</span> <span class="c1">// blue component of color = 1.0f</span>
+     <span class="k">return</span> <span class="n">OUT</span><span class="p">;</span>
+ <span class="p">}</span>
+</pre></div>
+<h2><span class="mw-headline" id="Applications_and_games_that_use_Cg">Applications and games that use Cg</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Cg_(programming_language)&amp;action=edit&amp;section=9" title="Edit section: Applications and games that use Cg">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><i><a href="/wiki/Virtools" title="Virtools">3DVIA Virtools</a></i></li>
+<li><a href="/wiki/Adobe_Photoshop" title="Adobe Photoshop">Adobe Photoshop</a></li>
+<li><a href="/wiki/Autodesk_Maya" title="Autodesk Maya">Maya</a><sup id="cite_ref-2" class="reference"><a href="#cite_note-2">[2]</a></sup></li>
+<li><i><a href="/wiki/Battlefield_2" title="Battlefield 2">Battlefield 2</a></i></li>
+<li><i><a href="/wiki/Cafu_Engine" title="Cafu Engine">Cafu Engine</a></i></li>
+<li><i><a href="/wiki/Crystal_Space" title="Crystal Space">Crystal Space</a></i></li>
+<li><i><a href="/wiki/Racer_(simulator)" title="Racer (simulator)">Dolphinity Racer</a></i></li>
+<li><i><a href="/w/index.php?title=Earth%27s_Special_Forces_-_A_Half-Life_Mod&amp;action=edit&amp;redlink=1" class="new" title="Earth's Special Forces - A Half-Life Mod (page does not exist)">Earth's Special Forces - A Half-Life Mod</a></i></li>
+<li><i><a href="/wiki/Enemy_Territory:_Quake_Wars" title="Enemy Territory: Quake Wars">Enemy Territory: Quake Wars</a></i></li>
+<li><i><a href="/wiki/Doom_3_BFG_Edition" title="Doom 3 BFG Edition">Doom 3 BFG Edition</a></i></li>
+<li><i>EON Professional™/Ultra™</i></li>
+<li><i><a href="/wiki/Eyeon_Fusion" class="mw-redirect" title="Eyeon Fusion">eyeon Fusion</a></i></li>
+<li><i><a href="/wiki/Far_Cry" title="Far Cry">Far Cry</a></i></li>
+<li><i><a href="/wiki/Garshasp:_The_Monster_Slayer" title="Garshasp: The Monster Slayer">Garshasp: The Monster Slayer</a></i></li>
+<li><i><a href="/wiki/GLScene" title="GLScene">GLScene</a></i></li>
+<li><i><a href="/wiki/Gun_Metal" class="mw-redirect" title="Gun Metal">Gun Metal</a></i></li>
+<li><i><a href="/wiki/Hitman:_Blood_Money" title="Hitman: Blood Money">Hitman: Blood Money</a></i></li>
+<li><i><a href="/wiki/Irrlicht_Engine" title="Irrlicht Engine">Irrlicht Engine</a></i></li>
+<li><i><a href="/wiki/League_of_Legends" title="League of Legends">League of Legends</a></i></li>
+<li><i>Lightfeather 3D Engine</i></li>
+<li><a href="/wiki/LightWave" class="mw-redirect" title="LightWave">LightWave</a> 11.6<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">[3]</a></sup></li>
+<li><i><a href="/wiki/Muvee_Technologies" title="Muvee Technologies">muvee Reveal</a></i></li>
+<li><i><a href="/wiki/OGRE" title="OGRE">OGRE</a></i></li>
+<li><i><a href="/wiki/OpenEmu" title="OpenEmu">OpenEmu</a></i></li>
+<li><i><a href="/wiki/Panda3D" title="Panda3D">Panda3D</a></i></li>
+<li>PCSX2</li>
+<li><a href="/wiki/PlayStation_3" title="PlayStation 3">PlayStation 3</a></li>
+<li><i>RetroArch</i></li>
+<li><i><a href="/wiki/R.U.S.E." title="R.U.S.E.">R.U.S.E.</a></i></li>
+<li><i><a href="/wiki/Snes9x" title="Snes9x">Snes9x</a></i></li>
+<li><i><a href="/wiki/Unity_(game_engine)" title="Unity (game engine)">Unity game engine</a></i><sup id="cite_ref-4" class="reference"><a href="#cite_note-4">[4]</a></sup></li>
+<li><i><a href="/wiki/Unreal_Engine" title="Unreal Engine">Unreal Engine</a></i></li>
+</ul>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Cg_(programming_language)&amp;action=edit&amp;section=10" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a href="/wiki/Computer_programming" title="Computer programming">Computer programming</a></li>
+<li><a href="/wiki/Computer_graphics" title="Computer graphics">Computer graphics</a></li>
+<li><a href="/wiki/Vertex_shader" class="mw-redirect" title="Vertex shader">Vertex and pixel shaders</a></li>
+<li><a href="/wiki/HLSL" class="mw-redirect" title="HLSL">High level shader language</a></li>
+<li><a href="/wiki/GLSL" class="mw-redirect" title="GLSL">OpenGL shading language</a></li>
+<li><a href="/wiki/Shader_Model" class="mw-redirect" title="Shader Model">Shader Model</a></li>
+<li><a href="/wiki/OpenGL" title="OpenGL">OpenGL</a></li>
+<li><a href="/wiki/DirectX" title="DirectX">DirectX</a></li>
+</ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Cg_(programming_language)&amp;action=edit&amp;section=11" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://developer.nvidia.com/cg-toolkit">"Cg Toolkit | NVIDIA Developer"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACg+%28programming+language%29&amp;rft.btitle=Cg+Toolkit+%26%23124%3B+NVIDIA+Developer&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fdeveloper.nvidia.com%2Fcg-toolkit&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.nvidia.com/object/MayaCgPlugin.html">"Maya Cg Plug-in | NVIDIA"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACg+%28programming+language%29&amp;rft.btitle=Maya+Cg+Plug-in+%26%23124%3B+NVIDIA&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.nvidia.com%2Fobject%2FMayaCgPlugin.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://www.lightwave3d.com/11-6_features_overview/">"LightWave - 11.6 Features Overview"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACg+%28programming+language%29&amp;rft.btitle=LightWave+-+11.6+Features+Overview&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fwww.lightwave3d.com%2F11-6_features_overview%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://docs.unity3d.com/Manual/ShadersOverview.html">"Unity - Manual: Writing Shaders"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACg+%28programming+language%29&amp;rft.btitle=Unity+-+Manual%3A+Writing+Shaders&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fdocs.unity3d.com%2FManual%2FShadersOverview.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="Further_reading">Further reading</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Cg_(programming_language)&amp;action=edit&amp;section=12" title="Edit section: Further reading">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.randima.com">Randima Fernando</a>, <a href="/wiki/Mark_Kilgard" title="Mark Kilgard">Mark J. Kilgard</a>, <i><a rel="nofollow" class="external text" href="http://http.developer.nvidia.com/CgTutorial/cg_tutorial_frontmatter.html">The Cg Tutorial</a>: The Definitive Guide to Programmable Real-Time Graphics</i>, Addison-Wesley Professional, <a href="/wiki/Special:BookSources/0321194969" class="internal mw-magiclink-isbn">ISBN 0-321-19496-9</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.randima.com">Randima Fernando</a>, <i>GPU Gems: Programming Techniques, Tips, and Tricks for Real-Time Graphics</i>, Addison-Wesley Professional, <a href="/wiki/Special:BookSources/0321228324" class="internal mw-magiclink-isbn">ISBN 0-321-22832-4</a></li>
+<li>William R. Mark, R. Steven Glanville, <a href="/wiki/Kurt_Akeley" title="Kurt Akeley">Kurt Akeley</a>, <a href="/wiki/Mark_Kilgard" title="Mark Kilgard">Mark J. Kilgard</a>, <i>Cg: A System for Programming Graphics Hardware in a C-like Language</i>, Proceedings of <a href="/wiki/SIGGRAPH" title="SIGGRAPH">SIGGRAPH</a> 2003, <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1145%2F1201775.882362">10.1145/1201775.882362</a></li>
+<li><a href="/wiki/Mark_Kilgard" title="Mark Kilgard">Mark J. Kilgard</a>, <a rel="nofollow" class="external text" href="http://arxiv.org/abs/cs/0302013"><i>Cg in Two Pages</i></a>, 2003.</li>
+</ul>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Cg_(programming_language)&amp;action=edit&amp;section=13" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://arxiv.org/abs/cs/0302013">Cg in Two Pages</a></li>
+<li>Some essential materials (e.g. the design paper) are gathered in <a rel="nofollow" class="external text" href="http://www.csee.umbc.edu/~olano/s2005c37/ch05.pdf">these course notes from Siggraph 2005</a></li>
+<li>Nvidia-hosted materials:
+<ul>
+<li><a rel="nofollow" class="external text" href="http://developer.nvidia.com/page/cg_main.html">Cg home page</a></li>
+<li><a rel="nofollow" class="external text" href="http://http.developer.nvidia.com/CgTutorial/cg_tutorial_chapter01.html">Cg Tutorial (Free Book)</a></li>
+<li>Cg <a rel="nofollow" class="external text" href="http://http.developer.nvidia.com/Cg/Cg_language.html">language</a>, <a rel="nofollow" class="external text" href="http://http.developer.nvidia.com/Cg/index_runtime.html">runtime</a>, <a rel="nofollow" class="external text" href="http://http.developer.nvidia.com/Cg/index_profiles.html">profile</a>, <a rel="nofollow" class="external text" href="http://http.developer.nvidia.com/Cg/index_stdlib.html">standard library</a>, <a rel="nofollow" class="external text" href="http://http.developer.nvidia.com/Cg/index_states.html">CgFX state</a> and <a rel="nofollow" class="external text" href="http://http.developer.nvidia.com/Cg/index_bin.html">command</a> documentation.</li>
+<li><a rel="nofollow" class="external text" href="http://developer.nvidia.com/cg-faq">Cg FAQ</a></li>
+</ul>
+</li>
+<li><a rel="nofollow" class="external text" href="http://nehe.gamedev.net/data/lessons/lesson.asp?lesson=47">NeHe Cg vertex shader tutorial</a></li>
+<li><a rel="nofollow" class="external text" href="https://github.com/Themaister/Emulator-Shader-Pack/blob/master/Cg/README">Documentation for the Cg Shader standard used by emulators</a></li>
+<li>Aras Pranckevičius, <a rel="nofollow" class="external text" href="http://aras-p.info/blog/2014/03/28/cross-platform-shaders-in-2014/">Cross Platform Shaders in 2014</a>.</li>
+</ul>
+<div role="navigation" class="navbox" aria-labelledby="Nvidia" style="padding:3px">
+<table class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:Nvidia" title="Template:Nvidia"><abbr title="View this template" style=";;background:none transparent;border:none;">v</abbr></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:Nvidia" title="Template talk:Nvidia"><abbr title="Discuss this template" style=";;background:none transparent;border:none;">t</abbr></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:Nvidia&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;">e</abbr></a></li>
+</ul>
+</div>
+<div id="Nvidia" style="font-size:114%"><a href="/wiki/Nvidia" title="Nvidia">Nvidia</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-odd hlist" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks collapsible collapsed navbox-subgroup" style="border-spacing:0">
+<tr>
+<th scope="col" class="navbox-title" colspan="2" style=";"><span style="float:left;width:6em">&#160;</span>
+<div id="GeForce_.28List_of_GPUs.29" style="font-size:114%"><a href="/wiki/GeForce" title="GeForce">GeForce</a> <small>(<a href="/wiki/List_of_Nvidia_graphics_processing_units" title="List of Nvidia graphics processing units">List of GPUs</a>)</small></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks navbox-subgroup" style="border-spacing:0">
+<tr>
+<th scope="row" class="navbox-group">Fixed pixel pipeline(s)</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/NV1" title="NV1">NV1</a></li>
+<li><a href="/wiki/NV2" title="NV2">NV2</a></li>
+<li><a href="/wiki/RIVA_128" title="RIVA 128">RIVA 128</a></li>
+<li><a href="/wiki/RIVA_TNT" title="RIVA TNT">RIVA TNT</a></li>
+<li><a href="/wiki/RIVA_TNT2" title="RIVA TNT2">RIVA TNT2</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Fixed <a href="/wiki/Transform,_clipping,_and_lighting" title="Transform, clipping, and lighting">T&amp;L</a> and pixel pipelines</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/GeForce_256" title="GeForce 256">GeForce 256</a></li>
+<li><a href="/wiki/GeForce_2_series" title="GeForce 2 series">2</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Vertex and fragment shaders</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/GeForce_3_series" title="GeForce 3 series">GeForce 3</a></li>
+<li><a href="/wiki/GeForce_4_series" title="GeForce 4 series">4</a></li>
+<li><a href="/wiki/GeForce_FX_series" title="GeForce FX series">FX</a></li>
+<li><a href="/wiki/GeForce_6_series" title="GeForce 6 series">6</a></li>
+<li><a href="/wiki/GeForce_7_series" title="GeForce 7 series">7</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Unified_Shader_Model" class="mw-redirect" title="Unified Shader Model">Unified shaders</a></th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks navbox-subgroup" style="border-spacing:0">
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Tesla_(microarchitecture)" title="Tesla (microarchitecture)">Tesla</a></th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/GeForce_8_series" title="GeForce 8 series">GeForce 8</a></li>
+<li><a href="/wiki/GeForce_9_series" title="GeForce 9 series">9</a></li>
+<li><a href="/wiki/GeForce_100_series" title="GeForce 100 series">100</a></li>
+<li><a href="/wiki/GeForce_200_series" title="GeForce 200 series">200</a></li>
+<li><a href="/wiki/GeForce_300_series" title="GeForce 300 series">300</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Fermi_(microarchitecture)" title="Fermi (microarchitecture)">Fermi</a></th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/GeForce_400_series" title="GeForce 400 series">GeForce 400</a></li>
+<li><a href="/wiki/GeForce_500_series" title="GeForce 500 series">500</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Unified shaders<br />
+&amp; <a href="/wiki/Non-uniform_memory_access" title="Non-uniform memory access">memory</a></th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks navbox-subgroup" style="border-spacing:0">
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Kepler_(microarchitecture)" title="Kepler (microarchitecture)">Kepler</a></th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/GeForce_600_series" title="GeForce 600 series">GeForce 600</a></li>
+<li><a href="/wiki/GeForce_700_series" title="GeForce 700 series">700</a></li>
+<li><a href="/wiki/GeForce_800M_series" title="GeForce 800M series">800M</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Maxwell_(microarchitecture)" title="Maxwell (microarchitecture)">Maxwell</a></th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/GeForce_700_series" title="GeForce 700 series">GeForce 700</a></li>
+<li><a href="/wiki/GeForce_800M_series" title="GeForce 800M series">800M</a></li>
+<li><a href="/wiki/GeForce_900_series" title="GeForce 900 series">900</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Pascal_(microarchitecture)" title="Pascal (microarchitecture)">Pascal</a></th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/GeForce_10_series" title="GeForce 10 series">GeForce 10</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Volta_(microarchitecture)" class="mw-redirect" title="Volta (microarchitecture)">Volta</a></th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><i>To be announced</i></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-even hlist" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks collapsible collapsed navbox-subgroup" style="border-spacing:0">
+<tr>
+<th scope="col" class="navbox-title" colspan="2" style=";"><span style="float:left;width:6em">&#160;</span>
+<div id="Software_and_technologies" style="font-size:114%">Software and technologies</div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks navbox-subgroup" style="border-spacing:0">
+<tr>
+<th scope="row" class="navbox-group">Multimedia<br />
+acceleration</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Nvidia_NVENC" title="Nvidia NVENC">Nvidia NVENC</a></li>
+<li><a href="/wiki/Nvidia_PureVideo" title="Nvidia PureVideo">Nvidia PureVideo</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Software</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><strong class="selflink">Cg</strong></li>
+<li><a href="/wiki/CUDA" title="CUDA">CUDA</a></li>
+<li><a href="/wiki/Gelato_(software)" title="Gelato (software)">Gelato</a></li>
+<li><a href="/wiki/Nvidia_GameWorks" title="Nvidia GameWorks">Nvidia GameWorks</a>
+<ul>
+<li><a href="/wiki/OptiX" title="OptiX">OptiX</a></li>
+<li><a href="/wiki/PhysX" title="PhysX">PhysX</a></li>
+</ul>
+</li>
+<li><a href="/wiki/Nvidia_System_Tools" title="Nvidia System Tools">Nvidia System Tools</a></li>
+<li><a href="/wiki/VDPAU" title="VDPAU">VDPAU</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Technologies</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Nvidia_3D_Vision" title="Nvidia 3D Vision">Nvidia 3D Vision</a></li>
+<li><a href="/wiki/Nvidia_G-Sync" title="Nvidia G-Sync">Nvidia G-Sync</a></li>
+<li><a href="/wiki/Nvidia_Optimus" title="Nvidia Optimus">Nvidia Optimus</a></li>
+<li><a href="/wiki/Nvidia_Surround" class="mw-redirect" title="Nvidia Surround">Nvidia Surround</a></li>
+<li><a href="/wiki/NVLink" title="NVLink">NVLink</a></li>
+<li><a href="/wiki/Scalable_Link_Interface" title="Scalable Link Interface">Scalable Link Interface</a></li>
+<li><a href="/wiki/TurboCache" title="TurboCache">TurboCache</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-odd hlist" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks collapsible collapsed navbox-subgroup" style="border-spacing:0">
+<tr>
+<th scope="col" class="navbox-title" colspan="2" style=";"><span style="float:left;width:6em">&#160;</span>
+<div id="Other_products" style="font-size:114%">Other products</div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks navbox-subgroup" style="border-spacing:0">
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Workstation" title="Workstation">Workstations</a> and<br />
+<a href="/wiki/Supercomputer" title="Supercomputer">supercomputers</a></th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Nvidia_Quadro" title="Nvidia Quadro">Nvidia Quadro</a>
+<ul>
+<li><a href="/wiki/Nvidia_Quadro_Plex" title="Nvidia Quadro Plex">Quadro Plex</a></li>
+</ul>
+</li>
+<li><a href="/wiki/Nvidia_Tesla" title="Nvidia Tesla">Nvidia Tesla</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Video_game_console" title="Video game console">Console</a> components</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Xbox_(console)#Technical_specifications" title="Xbox (console)">NV2A</a> <small>(<a href="/wiki/Xbox_(console)" title="Xbox (console)">Xbox</a>)</small></li>
+<li><a href="/wiki/RSX_%27Reality_Synthesizer%27" class="mw-redirect" title="RSX 'Reality Synthesizer'">RSX 'Reality Synthesizer'</a> <small>(<a href="/wiki/PlayStation_3" title="PlayStation 3">PlayStation 3</a>)</small></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Nvidia Shield</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Shield_Portable" title="Shield Portable">Shield Portable</a></li>
+<li><a href="/wiki/Shield_Tablet" title="Shield Tablet">Shield Tablet</a></li>
+<li><a href="/wiki/Shield_Android_TV" class="mw-redirect" title="Shield Android TV">Shield Android TV</a></li>
+<li><a href="/wiki/GeForce_Now" title="GeForce Now">GeForce Now</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/System_on_a_chip" title="System on a chip">SoCs</a></th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/GoForce" title="GoForce">GoForce</a></li>
+<li><a href="/wiki/Tegra" title="Tegra">Tegra</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Central_processing_unit" title="Central processing unit">CPUs</a></th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Project_Denver" title="Project Denver">Project Denver</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Computer <a href="/wiki/Chipset" title="Chipset">chipsets</a></th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Comparison_of_Nvidia_chipsets" class="mw-redirect" title="Comparison of Nvidia chipsets">nForce</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-even hlist" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks collapsible collapsed navbox-subgroup" style="border-spacing:0">
+<tr>
+<th scope="col" class="navbox-title" colspan="2" style=";"><span style="float:left;width:6em">&#160;</span>
+<div id="Company" style="font-size:114%">Company</div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks navbox-subgroup" style="border-spacing:0">
+<tr>
+<th scope="row" class="navbox-group">Key people</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Jen-Hsun_Huang" title="Jen-Hsun Huang">Jen-Hsun Huang</a></li>
+<li><a href="/wiki/Chris_Malachowsky" title="Chris Malachowsky">Chris Malachowsky</a></li>
+<li><a href="/wiki/Curtis_Priem" title="Curtis Priem">Curtis Priem</a></li>
+<li><a href="/wiki/David_Kirk_(scientist)" title="David Kirk (scientist)">David Kirk</a></li>
+<li><a href="/wiki/Bill_Dally" title="Bill Dally">Bill Dally</a></li>
+<li>Debora Shoquist</li>
+<li>Ranga Jayaraman</li>
+<li>Jonah M. Alben</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Acquisitions</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/3dfx_Interactive" title="3dfx Interactive">3dfx Interactive</a></li>
+<li><a href="/wiki/Ageia" title="Ageia">Ageia</a></li>
+<li><a href="/wiki/Acer_Laboratories_Incorporated" class="mw-redirect" title="Acer Laboratories Incorporated">ULi</a></li>
+<li><a href="/wiki/Icera" title="Icera">Icera</a></li>
+<li><a href="/wiki/Mental_Images_(firm)" class="mw-redirect" title="Mental Images (firm)">Mental Images</a></li>
+<li><a href="/wiki/PortalPlayer" title="PortalPlayer">PortalPlayer</a></li>
+<li>Exluna</li>
+<li>MediaQ</li>
+<li>Stexar</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1270
+Cached time: 20170203123245
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.152 seconds
+Real time usage: 0.355 seconds
+Preprocessor visited node count: 1029/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 84480/2097152 bytes
+Template argument size: 9233/2097152 bytes
+Highest expansion depth: 11/40
+Expensive parser function count: 0/500
+Lua time usage: 0.057/10.000 seconds
+Lua memory usage: 2.9 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  133.268      1 -total
+ 51.18%   68.200      1 Template:Reflist
+ 46.34%   61.760      4 Template:Cite_web
+ 44.69%   59.552      1 Template:Nvidia
+ 42.36%   56.451      1 Template:Navbox_with_collapsible_groups
+ 16.46%   21.941      6 Template:Navbox
+  4.01%    5.341      1 Template:Doi
+  1.99%    2.648      2 Template:Hide_in_print
+  1.02%    1.357      2 Template:Small
+  0.94%    1.251      1 Template:Only_in_print
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:390212-0!*!0!!en!*!* and timestamp 20170203123245 and revision id 754121193
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Cg_(programming_language)&amp;oldid=754121193">https://en.wikipedia.org/w/index.php?title=Cg_(programming_language)&amp;oldid=754121193</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:C_programming_language_family" title="Category:C programming language family">C programming language family</a></li><li><a href="/wiki/Category:Nvidia_software" title="Category:Nvidia software">Nvidia software</a></li><li><a href="/wiki/Category:Shading_languages" title="Category:Shading languages">Shading languages</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Pages_using_ISBN_magic_links" title="Category:Pages using ISBN magic links">Pages using ISBN magic links</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Cg+%28programming+language%29" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Cg+%28programming+language%29" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/Cg_(programming_language)"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:Cg_(programming_language)"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/Cg_(programming_language)" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=Cg_(programming_language)&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Cg_(programming_language)&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Cg_(programming_language)" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Cg_(programming_language)" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Cg_(programming_language)&amp;oldid=754121193" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Cg_(programming_language)&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q1024657" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Cg_%28programming_language%29&amp;id=754121193" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Cg+%28programming+language%29">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Cg+%28programming+language%29&amp;returnto=Cg+%28programming+language%29&amp;oldid=754121193&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Cg_(programming_language)&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-cs"><a href="https://cs.wikipedia.org/wiki/Cg_(programovac%C3%AD_jazyk)" title="Cg (programovací jazyk) – Czech" lang="cs" hreflang="cs" class="interlanguage-link-target">Čeština</a></li><li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/C_for_graphics" title="C for graphics – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-es"><a href="https://es.wikipedia.org/wiki/Cg_(lenguaje_de_programaci%C3%B3n)" title="Cg (lenguaje de programación) – Spanish" lang="es" hreflang="es" class="interlanguage-link-target">Español</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/Cg_(langage)" title="Cg (langage) – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-ko"><a href="https://ko.wikipedia.org/wiki/Cg_(%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D_%EC%96%B8%EC%96%B4)" title="Cg (프로그래밍 언어) – Korean" lang="ko" hreflang="ko" class="interlanguage-link-target">한국어</a></li><li class="interlanguage-link interwiki-ms"><a href="https://ms.wikipedia.org/wiki/Bahasa_pengaturcaraan_Cg" title="Bahasa pengaturcaraan Cg – Malay" lang="ms" hreflang="ms" class="interlanguage-link-target">Bahasa Melayu</a></li><li class="interlanguage-link interwiki-ja"><a href="https://ja.wikipedia.org/wiki/Cg_(%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E8%A8%80%E8%AA%9E)" title="Cg (プログラミング言語) – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target">日本語</a></li><li class="interlanguage-link interwiki-pl"><a href="https://pl.wikipedia.org/wiki/Cg_(j%C4%99zyk_programowania)" title="Cg (język programowania) – Polish" lang="pl" hreflang="pl" class="interlanguage-link-target">Polski</a></li><li class="interlanguage-link interwiki-pt"><a href="https://pt.wikipedia.org/wiki/C_for_Graphics" title="C for Graphics – Portuguese" lang="pt" hreflang="pt" class="interlanguage-link-target">Português</a></li><li class="interlanguage-link interwiki-sv"><a href="https://sv.wikipedia.org/wiki/Cg_(programspr%C3%A5k)" title="Cg (programspråk) – Swedish" lang="sv" hreflang="sv" class="interlanguage-link-target">Svenska</a></li><li class="interlanguage-link interwiki-tr"><a href="https://tr.wikipedia.org/wiki/Cg" title="Cg – Turkish" lang="tr" hreflang="tr" class="interlanguage-link-target">Türkçe</a></li><li class="interlanguage-link interwiki-zh"><a href="https://zh.wikipedia.org/wiki/Cg%E8%AA%9E%E8%A8%80" title="Cg語言 – Chinese" lang="zh" hreflang="zh" class="interlanguage-link-target">中文</a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q1024657#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 10 December 2016, at 23:30.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Cg_(programming_language)&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.152","walltime":"0.355","ppvisitednodes":{"value":1029,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":84480,"limit":2097152},"templateargumentsize":{"value":9233,"limit":2097152},"expansiondepth":{"value":11,"limit":40},"expensivefunctioncount":{"value":0,"limit":500},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  133.268      1 -total"," 51.18%   68.200      1 Template:Reflist"," 46.34%   61.760      4 Template:Cite_web"," 44.69%   59.552      1 Template:Nvidia"," 42.36%   56.451      1 Template:Navbox_with_collapsible_groups"," 16.46%   21.941      6 Template:Navbox","  4.01%    5.341      1 Template:Doi","  1.99%    2.648      2 Template:Hide_in_print","  1.02%    1.357      2 Template:Small","  0.94%    1.251      1 Template:Only_in_print"]},"scribunto":{"limitreport-timeusage":{"value":"0.057","limit":"10.000"},"limitreport-memusage":{"value":3043263,"limit":52428800}},"cachereport":{"origin":"mw1270","timestamp":"20170203123245","ttl":2592000,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":438,"wgHostname":"mw1270"});});</script>
+	</body>
+</html>

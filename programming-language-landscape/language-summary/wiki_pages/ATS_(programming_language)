@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>ATS (programming language) - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"ATS_(programming_language)","wgTitle":"ATS (programming language)","wgCurRevisionId":750305565,"wgRevisionId":750305565,"wgArticleId":19905196,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["All articles with dead external links","Articles with dead external links from October 2016","Articles with permanently dead external links","Webarchive template wayback links","Multi-paradigm programming languages","Declarative programming languages","Functional languages","Dependently typed languages","Systems programming languages","Programming languages created in 2004"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"ATS_(programming_language)","wgRelevantArticleId":19905196,"wgRequestId":"WI3DQApAAEIAATX5pP0AAADH","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":true},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q621618","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.cite.styles":"ready","ext.pygments":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.legacy.wikibits","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.pygments%2CwikimediaBadges%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.29.0-wmf.9"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/ATS_(programming_language)"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=ATS_(programming_language)&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=ATS_(programming_language)&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/ATS_(programming_language)"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ATS_programming_language rootpage-ATS_programming_language skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">ATS (programming language)</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><script>function mfTempOpenSection(id){var block=document.getElementById("mf-section-"+id);block.className+=" open-block";block.previousSibling.className+=" open-block";}</script><table class="infobox vevent" style="width:22em">
+<caption class="summary">ATS</caption>
+<tr>
+<th scope="row"><a href="/wiki/Programming_paradigm" title="Programming paradigm">Paradigm</a></th>
+<td><a href="/wiki/Multi-paradigm_programming_language" class="mw-redirect" title="Multi-paradigm programming language">multi-paradigm</a>: <a href="/wiki/Imperative_programming" title="Imperative programming">imperative</a>, <a href="/wiki/Functional_programming" title="Functional programming">functional</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_design" title="Software design">Designed&#160;by</a></th>
+<td><a href="/w/index.php?title=Hongwei_Xi&amp;action=edit&amp;redlink=1" class="new" title="Hongwei Xi (page does not exist)">Hongwei Xi</a> at the <a href="/wiki/Boston_University" title="Boston University">Boston University</a></td>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Software_release_life_cycle" title="Software release life cycle">Stable release</a></th>
+<td>
+<div style="margin:0px;">ATS2-0.2.8 / 2016-06-29</div>
+</td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_license" title="Software license">License</a></th>
+<td><a href="/wiki/GNU_General_Public_License" title="GNU General Public License">GPLv3</a></td>
+</tr>
+<tr>
+<th scope="row">Website</th>
+<td><a rel="nofollow" class="external free" href="http://www.ats-lang.org/">http://www.ats-lang.org/</a></td>
+</tr>
+<tr>
+<th colspan="2" style="text-align:center;background-color: #eee;">Influenced by</th>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/Dependent_ML" title="Dependent ML">Dependent ML</a>, <a href="/wiki/ML_(programming_language)" title="ML (programming language)">ML</a>, <a href="/wiki/OCaml" title="OCaml">OCaml</a></td>
+</tr>
+</table>
+<p><b>ATS (Applied Type System)</b> is a programming language designed to unify programming with formal specification. ATS has support for combining theorem proving with practical programming through the use of advanced <a href="/wiki/Type_system" title="Type system">type systems</a>.<sup id="cite_ref-ats-lang.org_1-0" class="reference"><a href="#cite_note-ats-lang.org-1">[1]</a></sup> The performance of ATS has been demonstrated to be comparable to that of the <a href="/wiki/C_(programming_language)" title="C (programming language)">C</a> and <a href="/wiki/C%2B%2B" title="C++">C++</a> programming languages.<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">[2]</a></sup> By using theorem proving and strict type checking, the compiler can detect and prove that its implemented functions are not susceptible to bugs such as <a href="/wiki/Division_by_zero" title="Division by zero">division by zero</a>, <a href="/wiki/Memory_leak" title="Memory leak">memory leaks</a>, <a href="/wiki/Buffer_overflow" title="Buffer overflow">buffer overflow</a>, and other forms of <a href="/wiki/Memory_corruption" title="Memory corruption">memory corruption</a> by verifying <a href="/wiki/Pointer_arithmetic" class="mw-redirect" title="Pointer arithmetic">pointer arithmetic</a> and <a href="/wiki/Reference_counting" title="Reference counting">reference counting</a> before the program compiles. Additionally, by using the integrated theorem-proving system of ATS (ATS/LF), the programmer may make use of static constructs that are intertwined with the operative code to prove that a function attains its specification.</p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#History"><span class="tocnumber">1</span> <span class="toctext">History</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Theorem_proving"><span class="tocnumber">2</span> <span class="toctext">Theorem proving</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Data_representation"><span class="tocnumber">3</span> <span class="toctext">Data representation</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#An_introductory_case"><span class="tocnumber">4</span> <span class="toctext">An introductory case</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="#Propositions"><span class="tocnumber">4.1</span> <span class="toctext">Propositions</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Example"><span class="tocnumber">4.2</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a href="#Features"><span class="tocnumber">5</span> <span class="toctext">Features</span></a>
+<ul>
+<li class="toclevel-2 tocsection-8"><a href="#Basic_types"><span class="tocnumber">5.1</span> <span class="toctext">Basic types</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Tuples_and_records"><span class="tocnumber">5.2</span> <span class="toctext">Tuples and records</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Common"><span class="tocnumber">5.3</span> <span class="toctext">Common</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#Dictionary"><span class="tocnumber">5.4</span> <span class="toctext">Dictionary</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#pattern_matching_exhaustivity"><span class="tocnumber">5.5</span> <span class="toctext">pattern matching exhaustivity</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="#modules"><span class="tocnumber">5.6</span> <span class="toctext">modules</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="#dataview"><span class="tocnumber">5.7</span> <span class="toctext">dataview</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="#datatype_.2F_dataviewtype"><span class="tocnumber">5.8</span> <span class="toctext">datatype / dataviewtype</span></a>
+<ul>
+<li class="toclevel-3 tocsection-16"><a href="#dataviewtype"><span class="tocnumber">5.8.1</span> <span class="toctext">dataviewtype</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-17"><a href="#variables"><span class="tocnumber">5.9</span> <span class="toctext">variables</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-18"><a href="#References"><span class="tocnumber">6</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-19"><a href="#External_links"><span class="tocnumber">7</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="History">History</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=ATS_(programming_language)&amp;action=edit&amp;section=1" title="Edit section: History">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>ATS is derived mostly from the <a href="/wiki/ML_(programming_language)" title="ML (programming language)">ML</a> and <a href="/wiki/OCaml" title="OCaml">OCaml</a> programming languages. An earlier language, <a href="/wiki/Dependent_ML" title="Dependent ML">Dependent ML</a>, by the same author has been incorporated by the language.</p>
+<p>The latest version of ATS1 (Anairiats) was released as v0.2.12 on 2015-01-20.<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">[3]</a></sup> The first version of ATS2 (Postiats) was released in September 2013.<sup id="cite_ref-4" class="reference"><a href="#cite_note-4">[4]</a></sup></p>
+<h2><span class="mw-headline" id="Theorem_proving">Theorem proving</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=ATS_(programming_language)&amp;action=edit&amp;section=2" title="Edit section: Theorem proving">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The primary focus of ATS is to support <a href="/wiki/Formal_verification" title="Formal verification">theorem proving</a> in combination with practical programming.<sup id="cite_ref-ats-lang.org_1-1" class="reference"><a href="#cite_note-ats-lang.org-1">[1]</a></sup> With theorem proving one can prove, for instance, that an implemented function does not produce memory leaks. It also prevents other bugs that might otherwise only be found during testing. It incorporates a system similar to those of <a href="/wiki/Proof_assistant" title="Proof assistant">proof assistants</a> which usually only aim to verify mathematical proofs—except ATS uses this ability to prove that the implementations of its functions operate correctly, and produce the expected output.</p>
+<p>As a simple example, in a function using division, the programmer may prove that the divisor will never equal zero, preventing a <a href="/wiki/Division_by_zero" title="Division by zero">division by zero</a> error. Let's say, the divisor 'X' was computed as 5 times the length of list 'A'. One can prove, that in the case of a non-empty list, 'X' is non-zero, since 'X' is the product of two non-zero numbers (5 and the length of 'A'). A more practical example would be proving through <a href="/wiki/Reference_counting" title="Reference counting">reference counting</a> that the retain count on an allocated block of memory is being counted correctly for each pointer. Then one can know, and quite literally prove, that the object will not be deallocated prematurely, and that <a href="/wiki/Memory_leak" title="Memory leak">memory leaks</a> will not occur.</p>
+<p>The benefit of the ATS system is that since all theorem proving occurs strictly within the compiler, it has no effect on the speed of the executable program. ATS code is often harder to compile than standard <a href="/wiki/C_(programming_language)" title="C (programming language)">C</a> code, but once it compiles the programmer can be certain that it is running correctly to exactly the degree specified by their proofs.</p>
+<p>In ATS proofs are separate from implementation, so it is possible to implement a function without proving it if the programmer so desires.</p>
+<h2><span class="mw-headline" id="Data_representation">Data representation</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=ATS_(programming_language)&amp;action=edit&amp;section=3" title="Edit section: Data representation">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>According to the author (Hongwei Xi), ATS's efficiency<sup id="cite_ref-5" class="reference"><a href="#cite_note-5">[5]</a></sup> is largely due to the way that data is represented in the language and <a href="/wiki/Tail_recursion" class="mw-redirect" title="Tail recursion">tail-call optimizations</a> (which are generally important for the efficiency of functional programming languages). Data can be stored in a flat or unboxed representation rather than a boxed representation.</p>
+<h2><span class="mw-headline" id="An_introductory_case">An introductory case</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=ATS_(programming_language)&amp;action=edit&amp;section=4" title="Edit section: An introductory case">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="Propositions">Propositions</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=ATS_(programming_language)&amp;action=edit&amp;section=5" title="Edit section: Propositions">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p><code>dataprop</code> expresses <i>predicates</i> as algebraic types.</p>
+<p>Predicates in pseudo‑code somewhat similar to ATS source (see below for valid ATS source):</p>
+<pre>
+ FACT(n, r)         <a href="/wiki/If_and_only_if" title="If and only if">iff</a>    fact(n) = r
+ MUL(n, m, prod)    <a href="/wiki/If_and_only_if" title="If and only if">iff</a>    n * m = prod
+  
+ FACT(n, r) = 
+       FACT(0, 1) 
+     | FACT(n, r) iff FACT(n-1, r1) and MUL(n, r1, r)   // for n &gt; 0
+ 
+ <i>// expresses fact(n) = r  <a href="/wiki/If_and_only_if" title="If and only if">iff</a>  r = n * r1  and  r1 = fact(n-1)</i>
+</pre>
+<p>In ATS code:</p>
+<pre>
+<b>dataprop</b> FACT (int, int) =
+  | FACTbas (0, 1)                 <i>// basic case: FACT(0, 1)</i>
+    // inductive case
+  | {n:int | n &gt; 0} {r,r1:int} FACTind (n, r) of (FACT (n-1, r1), MUL (n, r1, r))
+</pre>
+<p>where FACT (int, int) is a proof type</p>
+<h3><span class="mw-headline" id="Example">Example</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=ATS_(programming_language)&amp;action=edit&amp;section=6" title="Edit section: Example">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Non tail-recursive factorial with proposition or "<a href="/wiki/Theorem" title="Theorem">Theorem</a>" proving through the construction <i>dataprop</i>.</p>
+<p>The evaluation of fact1(n-1) returns a pair (proof_n_minus_1 | result_of_n_minus_1) which is used in the calculation of fact1(n). The proofs express the predicates of the proposition.</p>
+<dl>
+<dt>Part 1 (algorithm and propositions)</dt>
+</dl>
+<pre>
+ [FACT (n, r)] implies [fact (n) = r]
+ [MUL (n, m, prod)] implies [n * m = prod]
+</pre>
+<pre>
+ FACT (0, 1)
+ FACT (n, r) iff FACT (n-1, r1) and MUL (n, r1, r) forall n &gt; 0
+</pre>
+<p>To remember:</p>
+<pre>
+{...} universal quantification
+[...] existential quantification
+(... | ...)   (proof | value)
+@(...) flat tuple or variadic function parameters tuple
+.&lt;...&gt;. termination metric<sup id="cite_ref-6" class="reference"><a href="#cite_note-6">[6]</a></sup>
+</pre>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="o">#</span><span class="k">include</span> <span class="s2">"share/atspre_staload.hats"</span>
+
+<span class="n">dataprop</span>
+<span class="nc">FACT</span> <span class="o">(</span><span class="kt">int</span><span class="o">,</span> <span class="kt">int</span><span class="o">)</span> <span class="o">=</span>
+  <span class="c">(* basic case: *)</span>
+  <span class="o">|</span> <span class="nc">FACTbas</span> <span class="o">(</span><span class="mi">0</span><span class="o">,</span> <span class="mi">1</span><span class="o">)</span> <span class="k">of</span> <span class="bp">()</span>
+  <span class="c">(* inductive case: *)</span>
+  <span class="o">|</span> <span class="o">{</span><span class="n">n</span><span class="o">:</span><span class="n">nat</span><span class="o">}{</span><span class="n">r</span><span class="o">:</span><span class="kt">int</span><span class="o">}</span>
+    <span class="nc">FACTind</span> <span class="o">(</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="o">,</span> <span class="o">(</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="o">)*</span><span class="n">r</span><span class="o">)</span> <span class="k">of</span> <span class="o">(</span><span class="nc">FACT</span> <span class="o">(</span><span class="n">n</span><span class="o">,</span> <span class="n">r</span><span class="o">))</span>
+
+<span class="c">(* note that int(x) , also int x, is the monovalued type of the int x value.</span>
+
+<span class="c"> The function signtuare below says:</span>
+<span class="c"> forall n:nat, exists r:int where fact( num: int(n)) returns (FACT (n, r) | int(r)) *)</span>
+<span class="k">fun</span>
+<span class="n">fact</span><span class="o">{</span><span class="n">n</span><span class="o">:</span><span class="n">nat</span><span class="o">}</span> <span class="o">.&lt;</span><span class="n">n</span><span class="o">&gt;.</span>
+<span class="o">(</span>
+  <span class="n">n</span><span class="o">:</span> <span class="kt">int</span> <span class="o">(</span><span class="n">n</span><span class="o">)</span>
+<span class="o">)</span> <span class="o">:</span> <span class="o">[</span><span class="n">r</span><span class="o">:</span><span class="kt">int</span><span class="o">]</span> <span class="o">(</span><span class="nc">FACT</span> <span class="o">(</span><span class="n">n</span><span class="o">,</span> <span class="n">r</span><span class="o">)</span> <span class="o">|</span> <span class="kt">int</span><span class="o">(</span><span class="n">r</span><span class="o">))</span> <span class="o">=</span>
+<span class="o">(</span>
+<span class="k">if</span> <span class="n">n</span> <span class="o">&gt;</span> <span class="mi">0</span>
+  <span class="k">then</span> <span class="k">let</span>
+    <span class="k">val</span> <span class="o">(</span><span class="n">pf1</span> <span class="o">|</span> <span class="n">r1</span><span class="o">)</span> <span class="o">=</span> <span class="n">fact</span> <span class="o">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="o">)</span> <span class="k">in</span> <span class="o">(</span><span class="nc">FACTind</span><span class="o">(</span><span class="n">pf1</span><span class="o">)</span> <span class="o">|</span> <span class="n">n</span> <span class="o">*</span> <span class="n">r1</span><span class="o">)</span>
+  <span class="k">end</span> <span class="o">//</span> <span class="k">end</span> <span class="k">of</span> <span class="o">[</span><span class="k">then</span><span class="o">]</span>
+  <span class="k">else</span> <span class="o">(</span><span class="nc">FACTbas</span><span class="bp">()</span> <span class="o">|</span> <span class="mi">1</span><span class="o">)</span>
+<span class="o">)</span>
+</pre></div>
+<dl>
+<dt>Part 2 (routines and test)</dt>
+</dl>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="n">implement</span>
+<span class="n">main0</span> <span class="o">(</span><span class="n">argc</span><span class="o">,</span> <span class="n">argv</span><span class="o">)</span> <span class="o">=</span>
+<span class="o">{</span>
+<span class="o">//</span>
+<span class="k">val</span> <span class="bp">()</span> <span class="o">=</span>
+<span class="k">if</span> <span class="o">(</span><span class="n">argc</span> <span class="o">!=</span> <span class="mi">2</span><span class="o">)</span>
+  <span class="k">then</span> <span class="n">prerrln</span><span class="o">!</span> <span class="o">(</span><span class="s2">"Usage: "</span><span class="o">,</span> <span class="n">argv</span><span class="o">[</span><span class="mi">0</span><span class="o">],</span> <span class="s2">" &lt;integer&gt;"</span><span class="o">)</span>
+<span class="o">//</span>
+<span class="k">val</span> <span class="bp">()</span> <span class="o">=</span> <span class="k">assert</span> <span class="o">(</span><span class="n">argc</span> <span class="o">&gt;=</span> <span class="mi">2</span><span class="o">)</span>
+<span class="k">val</span> <span class="n">n0</span> <span class="o">=</span> <span class="n">g0string2int</span> <span class="o">(</span><span class="n">argv</span><span class="o">[</span><span class="mi">1</span><span class="o">])</span>
+<span class="k">val</span> <span class="n">n0</span> <span class="o">=</span> <span class="n">g1ofg0</span> <span class="o">(</span><span class="n">n0</span><span class="o">)</span>
+<span class="k">val</span> <span class="bp">()</span> <span class="o">=</span> <span class="k">assert</span> <span class="o">(</span><span class="n">n0</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="o">)</span>
+<span class="k">val</span> <span class="o">(_</span><span class="c">(*pf*)</span> <span class="o">|</span> <span class="n">res</span><span class="o">)</span> <span class="o">=</span> <span class="n">fact</span> <span class="o">(</span><span class="n">n0</span><span class="o">)</span>
+<span class="o">//</span>
+<span class="k">val</span> <span class="o">(</span><span class="c">(*void*)</span><span class="o">)</span> <span class="o">=</span> <span class="n">println</span><span class="o">!</span> <span class="o">(</span><span class="s2">"fact("</span><span class="o">,</span> <span class="n">n0</span><span class="o">,</span> <span class="s2">") = "</span><span class="o">,</span> <span class="n">res</span><span class="o">)</span>
+<span class="o">//</span>
+<span class="o">}</span> <span class="c">(* end of [main0] *)</span>
+</pre></div>
+<p>This can all be added to a single file and compiled as follows. Compilation should work with various back end C compilers, e.g. <a href="/wiki/GNU_Compiler_Collection" title="GNU Compiler Collection">gcc</a>. <a href="/wiki/Garbage_collection_(computer_science)" title="Garbage collection (computer science)">Garbage collection</a> is not used unless explicitly stated with -D_ATS_GCATS )<sup id="cite_ref-7" class="reference"><a href="#cite_note-7">[7]</a></sup></p>
+<pre>
+patscc fact1.dats -o fact1
+./fact1 4
+</pre>
+<p>compiles and gives the expected result</p>
+<h2><span class="mw-headline" id="Features">Features</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=ATS_(programming_language)&amp;action=edit&amp;section=7" title="Edit section: Features">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="Basic_types">Basic types</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=ATS_(programming_language)&amp;action=edit&amp;section=8" title="Edit section: Basic types">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<ul>
+<li>bool (true, false)</li>
+<li>int (literals: 255, 0377, 0xFF), unary minus as ~ (as in <a href="/wiki/ML_(programming_language)" title="ML (programming language)">ML</a>)</li>
+<li>double</li>
+<li>char 'a'</li>
+<li>string "abc"</li>
+</ul>
+<h3><span class="mw-headline" id="Tuples_and_records">Tuples and records</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=ATS_(programming_language)&amp;action=edit&amp;section=9" title="Edit section: Tuples and records">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<dl>
+<dt>prefix @ or none means direct, <i>flat</i> or unboxed allocation</dt>
+</dl>
+<pre>
+<b>val</b> x : @(int, char) = @(15, 'c')        <i>// x.0 = 15 ; x.1 = 'c' </i>
+<b>val</b> @(a, b) = x                          <i>// pattern matching binding, a= 15, b='c' </i>
+<b>val</b> x = @{first=15, second='c'}          <i>// x.first = 15</i>
+<b>val</b> @{first=a, second=b} = x             <i>// a= 15, b='c' </i>
+<b>val</b> @{second=b, ...} = x                 <i>// with omission, b='c' </i>
+</pre>
+<dl>
+<dt>prefix ' means indirect or boxed allocation</dt>
+</dl>
+<pre>
+<b>val</b> x : '(int, char) = '(15, 'c')        <i>// x.0 = 15 ; x.1 = 'c' </i>
+<b>val</b> '(a, b) = x                          <i>// a= 15, b='c' </i>
+<b>val</b> x = '{first=15, second='c'}          <i>// x.first = 15</i>
+<b>val</b> '{first=a, second=b} = x             <i>// a= 15, b='c' </i>
+<b>val</b> '{second=b, ...} = x                 <i>// b='c' </i>
+</pre>
+<dl>
+<dt>special</dt>
+</dl>
+<p>With '|' as separator, some functions return wrapped the result value with an evaluation of predicates</p>
+<pre>
+<b>val</b> ( predicate_proofs | values) = myfunct params
+</pre>
+<h3><span class="mw-headline" id="Common">Common</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=ATS_(programming_language)&amp;action=edit&amp;section=10" title="Edit section: Common">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<pre>
+{...} universal quantification
+[...] existential quantification
+(...) parenthetical expression or tuple
+
+(... | ...)     (proofs | values)
+</pre>
+<pre>
+.&lt;...&gt;. termination metric
+
+@(...)          flat tuple or <a href="/wiki/Variadic_function" title="Variadic function">variadic function</a> parameters tuple (see example's <i>printf</i>)
+
+@[byte][BUFLEN]     type of an array of BUFLEN values of type <i>byte</i><sup id="cite_ref-8" class="reference"><a href="#cite_note-8">[8]</a></sup>
+@[byte][BUFLEN]()   array instance
+@[byte][BUFLEN](0)  array initialized to 0
+</pre>
+<h3><span class="mw-headline" id="Dictionary">Dictionary</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=ATS_(programming_language)&amp;action=edit&amp;section=11" title="Edit section: Dictionary">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<dl>
+<dt>sort</dt>
+<dd>domain</dd>
+</dl>
+<pre>
+sortdef nat = {a: int | a &gt;= 0 }     // from prelude: ∀ <i>a</i> ∈ int ...
+</pre>
+<pre>
+typedef String = [a:nat] string(a)   // [..]: ∃ <i>a</i> ∈ nat ...
+</pre>
+<dl>
+<dt>type (as sort)</dt>
+<dd>generic <i>sort</i> for elements with the length of a pointer word, to be used in type parameterized polymorphic functions. Also "boxed types"<sup id="cite_ref-introdep_9-0" class="reference"><a href="#cite_note-introdep-9">[9]</a></sup></dd>
+</dl>
+<pre>
+// {..}: ∀ a,b ∈ type ...
+fun {a,b:type} swap_type_type (xy: @(a, b)): @(b, a) = (xy.1, xy.0)
+</pre>
+<dl>
+<dt>t@ype</dt>
+<dd>linear version of previous <i>type</i> with abstracted length. Also unboxed types.<sup id="cite_ref-introdep_9-1" class="reference"><a href="#cite_note-introdep-9">[9]</a></sup></dd>
+</dl>
+<dl>
+<dt>viewtype</dt>
+<dd>a domain class like <i>type</i> with a <i>view</i> (memory association)</dd>
+</dl>
+<dl>
+<dt>viewt@ype</dt>
+<dd>linear version of <i>viewtype</i> with abstracted length. It supersets <i>viewtype</i></dd>
+</dl>
+<dl>
+<dt>view</dt>
+<dd>relation of a Type and a memory location. The infix @ is its most common constructor</dd>
+<dd>T @ L asserts that there is a view of type T at location L</dd>
+</dl>
+<pre>
+fun {a:t@ype} ptr_get0 {l:addr} (pf: a @ l | p: ptr l): @(a @ l | a)
+
+fun {a:t@ype} ptr_set0 {l:addr} (pf: a? @ l | p: ptr l, x: a): @(a @ l | void)
+</pre>
+<dl>
+<dd>the type of ptr_get0 (T) is ∀ l&#160;: addr . ( T @ l | ptr( l ) ) -&gt; ( T @ l | T) // see manual, section 7.1. Safe Memory Access through Pointers<sup id="cite_ref-10" class="reference"><a href="#cite_note-10">[10]</a></sup></dd>
+</dl>
+<pre>
+viewdef array_v (a:viewt@ype, n:int, l: addr) = @[a][n] @ l
+</pre>
+<dl>
+<dt>T?&#160;</dt>
+<dd>possibly uninitialized type</dd>
+</dl>
+<h3><span class="mw-headline" id="pattern_matching_exhaustivity">pattern matching exhaustivity</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=ATS_(programming_language)&amp;action=edit&amp;section=12" title="Edit section: pattern matching exhaustivity">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>as in <b>case+</b>, <b>val+</b>, <b>type+</b>, <b>viewtype+</b>, ...</p>
+<ul>
+<li>with suffix '+' the compiler issues an error in case of non exhaustive alternatives</li>
+<li>without suffix the compiler issues a warning</li>
+<li>with '-' as suffix, avoids exhaustivity control</li>
+</ul>
+<h3><span class="mw-headline" id="modules">modules</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=ATS_(programming_language)&amp;action=edit&amp;section=13" title="Edit section: modules">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<pre>
+ staload "foo.sats" // foo.sats is loaded and then opened into the current namespace
+
+ staload F = "foo.sats" // to use identifiers qualified as $F.bar
+
+ dynload "foo.dats" // loaded dynamically at run-time
+</pre>
+<h3><span class="mw-headline" id="dataview">dataview</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=ATS_(programming_language)&amp;action=edit&amp;section=14" title="Edit section: dataview">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Dataviews are often declared to encode recursively defined relations on linear resources.<sup id="cite_ref-11" class="reference"><a href="#cite_note-11">[11]</a></sup></p>
+<pre>
+dataview array_v (a: viewt@ype+, int, addr) =
+  | {l: addr} array_v_none (a, 0, l)
+  | {n: nat} {l: addr}
+    array_v_some (a, n+1, l)
+    of (a @ l, array_v (a, n, l+sizeof a))
+
+</pre>
+<h3><span class="mw-headline" id="datatype_.2F_dataviewtype">datatype / dataviewtype</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=ATS_(programming_language)&amp;action=edit&amp;section=15" title="Edit section: datatype / dataviewtype">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Datatypes<sup id="cite_ref-12" class="reference"><a href="#cite_note-12">[12]</a></sup></p>
+<pre>
+datatype workday = Mon | Tue | Wed | Thu | Fri
+</pre>
+<p>lists</p>
+<pre>
+datatype list0 (a:t@ype) = list0_cons (a) of (a, list0 a) | list0_nil (a)
+</pre>
+<h4><span class="mw-headline" id="dataviewtype">dataviewtype</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=ATS_(programming_language)&amp;action=edit&amp;section=16" title="Edit section: dataviewtype">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>A dataviewtype is similar to a datatype, but it is linear. With a dataviewtype, the programmer is allowed to explicitly free (or deallocate) in a safe manner the memory used for storing constructors associated with the dataviewtype.<sup id="cite_ref-13" class="reference"><a href="#cite_note-13">[13]</a></sup></p>
+<h3><span class="mw-headline" id="variables">variables</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=ATS_(programming_language)&amp;action=edit&amp;section=17" title="Edit section: variables">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>local variables</p>
+<pre>
+var res: int with pf_res = 1   // introduces pf_res as an alias of <i>view @ (res)</i>
+</pre>
+<p><i>on stack</i> array allocation:</p>
+<pre>
+#define BUFLEN 10
+var !p_buf with pf_buf = @[byte][BUFLEN](0)    // pf_buf = @[byte][BUFLEN](0) @ p_buf<sup id="cite_ref-14" class="reference"><a href="#cite_note-14">[14]</a></sup>
+</pre>
+<p>See <i>val</i> and <i>var</i> declarations<sup id="cite_ref-15" class="reference"><a href="#cite_note-15">[15]</a></sup></p>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=ATS_(programming_language)&amp;action=edit&amp;section=18" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ol class="references">
+<li id="cite_note-ats-lang.org-1"><span class="mw-cite-backlink">^ <a href="#cite_ref-ats-lang.org_1-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-ats-lang.org_1-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.ats-lang.org/MYDATA/CPwTP-icfp05.pdf">Combining Programming with Theorem Proving</a></span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://web.archive.org/web/20121218042116/http://shootout.alioth.debian.org/u64/ats.php">ATS benchmarks | Computer Language Benchmarks Game</a> (web archive)</span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="https://sourceforge.net/projects/ats-lang/files/ats-lang/">https://sourceforge.net/projects/ats-lang/files/ats-lang/</a></span></li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="https://github.com/githwxi/ATS-Postiats/commit/30fd556e649745f735eafbdace54373fa163862e">https://github.com/githwxi/ATS-Postiats/commit/30fd556e649745f735eafbdace54373fa163862e</a></span></li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.reddit.com/r/programming/comments/72hmw/language_shootout_ats_is_the_new_top_gunslinger/">Discussion about the language's efficiency (Language Shootout: ATS is the new top gunslinger. Beats C++.)</a></span></li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://ats-lang.sourceforge.net/DOCUMENT/INT2PROGINATS/HTML/x2482.html">Termination metrics</a><sup class="noprint Inline-Template"><span style="white-space: nowrap;">[<i><a href="/wiki/Wikipedia:Link_rot" title="Wikipedia:Link rot"><span title="&#160;Dead link since October 2016">permanent dead link</span></a></i>]</span></sup></span></li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.ats-lang.org/TUTORIAL/contents/compilation.html">Compilation - Garbage collection</a> <a rel="nofollow" class="external text" href="https://web.archive.org/web/20090804092735/http://www.ats-lang.org/TUTORIAL/contents/compilation.html">Archived</a> August 4, 2009, at the <a href="/wiki/Wayback_Machine" title="Wayback Machine">Wayback Machine</a>.</span></li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.ats-lang.org/DOCUMENTATION/MISC/manual_main.pdf#page=65">type of an array</a> <a rel="nofollow" class="external text" href="https://web.archive.org/web/20110904160146/http://www.ats-lang.org/DOCUMENTATION/MISC/manual_main.pdf#page=65">Archived</a> September 4, 2011, at the <a href="/wiki/Wayback_Machine" title="Wayback Machine">Wayback Machine</a>. types like @[T][I]</span></li>
+<li id="cite_note-introdep-9"><span class="mw-cite-backlink">^ <a href="#cite_ref-introdep_9-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-introdep_9-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://ats-lang.sourceforge.net/DOCUMENT/INT2PROGINATS/HTML/HTMLTOC/c2232.html">Introduction to Dependent types</a></span></li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-10">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.ats-lang.org/htdocs-old/DOCUMENT/MISC/manual_main.pdff#page=61">Manual, section 7.1. Safe Memory Access through Pointers</a><sup class="noprint Inline-Template"><span style="white-space: nowrap;">[<i><a href="/wiki/Wikipedia:Link_rot" title="Wikipedia:Link rot"><span title="&#160;Dead link since October 2016">permanent dead link</span></a></i>]</span></sup> (outdated)</span></li>
+<li id="cite_note-11"><span class="mw-cite-backlink"><b><a href="#cite_ref-11">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.ats-lang.org/TUTORIAL/contents/dataviews.html">Dataview construct</a> <a rel="nofollow" class="external text" href="https://web.archive.org/web/20100413053430/http://www.ats-lang.org/TUTORIAL/contents/dataviews.html">Archived</a> April 13, 2010, at the <a href="/wiki/Wayback_Machine" title="Wayback Machine">Wayback Machine</a>.</span></li>
+<li id="cite_note-12"><span class="mw-cite-backlink"><b><a href="#cite_ref-12">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.ats-lang.org/TUTORIAL/contents/datatypes.html">Datatype construct</a> <a rel="nofollow" class="external text" href="https://web.archive.org/web/20100414020420/http://www.ats-lang.org/TUTORIAL/contents/datatypes.html">Archived</a> April 14, 2010, at the <a href="/wiki/Wayback_Machine" title="Wayback Machine">Wayback Machine</a>.</span></li>
+<li id="cite_note-13"><span class="mw-cite-backlink"><b><a href="#cite_ref-13">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/githwxi/ATS-Postiats/wiki/dataviewtype">Dataviewtype construct</a></span></li>
+<li id="cite_note-14"><span class="mw-cite-backlink"><b><a href="#cite_ref-14">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.ats-lang.org/htdocs-old/DOCUMENT/MISC/manual_main.pdf#page=64">Manual - 7.3 Memory allocation on stack</a> <a rel="nofollow" class="external text" href="https://web.archive.org/web/20140809193400/http://www.ats-lang.org/htdocs-old/DOCUMENT/MISC/manual_main.pdf#page=64">Archived</a> August 9, 2014, at the <a href="/wiki/Wayback_Machine" title="Wayback Machine">Wayback Machine</a>. (outdated)</span></li>
+<li id="cite_note-15"><span class="mw-cite-backlink"><b><a href="#cite_ref-15">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.ats-lang.org/htdocs-old/TUTORIAL/contents/val-and-var.html">Val and Var declarations</a> <a rel="nofollow" class="external text" href="https://web.archive.org/web/20140809193101/http://www.ats-lang.org/htdocs-old/TUTORIAL/contents/val-and-var.html">Archived</a> August 9, 2014, at the <a href="/wiki/Wayback_Machine" title="Wayback Machine">Wayback Machine</a>. (outdated)</span></li>
+</ol>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=ATS_(programming_language)&amp;action=edit&amp;section=19" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<table role="presentation" class="mbox-small plainlinks sistersitebox" style="border:1px solid #aaa;background-color:#f9f9f9">
+<tr>
+<td class="mbox-image"><a href="/wiki/File:Wikibooks-logo-en-noslogan.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/40px-Wikibooks-logo-en-noslogan.svg.png" width="40" height="40" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/60px-Wikibooks-logo-en-noslogan.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/80px-Wikibooks-logo-en-noslogan.svg.png 2x" data-file-width="400" data-file-height="400" /></a></td>
+<td class="mbox-text plainlist">Wikibooks has a book on the topic of: <i><b><a href="https://en.wikibooks.org/wiki/ATS:_Programming_with_Theorem-Proving" class="extiw" title="wikibooks:ATS: Programming with Theorem-Proving">ATS: Programming with Theorem-Proving</a></b></i></td>
+</tr>
+</table>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.ats-lang.org/">ATS home page</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.ats-lang.org/Documents.html">The ATS Programming Language</a> Documentation for ATS2</li>
+<li><a rel="nofollow" class="external text" href="http://ats-lang.sourceforge.net/DOCUMENT/">The ATS Programming Language</a> Old documentation for ATS1</li>
+<li><a rel="nofollow" class="external text" href="http://ats-lang.sourceforge.net/htdocs-old/DOCUMENT/MISC/manual_main.pdf">Manual</a> Draft (outdated). Some examples refer to features or routines not present in the release (Anairiats-0.1.6) (e.g.: print overload for strbuf, and using its array examples gives errmsgs like "use of array subscription is not supported".)</li>
+<li><a rel="nofollow" class="external text" href="http://cs.likai.org/ats/ml-programmers-guide-to-ats">ATS for ML programmers</a></li>
+<li><a rel="nofollow" class="external text" href="http://bluishcoder.co.nz/tags/ats/">Learning examples and short use‑cases of ATS</a></li>
+</ul>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1271
+Cached time: 20170129102608
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.144 seconds
+Real time usage: 0.178 seconds
+Preprocessor visited node count: 949/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 12763/2097152 bytes
+Template argument size: 2164/2097152 bytes
+Highest expansion depth: 17/40
+Expensive parser function count: 3/500
+Lua time usage: 0.046/10.000 seconds
+Lua memory usage: 1.57 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  146.882      1 -total
+ 46.65%   68.523      2 Template:Infobox
+ 41.78%   61.368      1 Template:Infobox_programming_language
+ 25.15%   36.945      2 Template:Dead_link
+ 21.48%   31.544      2 Template:Fix
+ 19.54%   28.703      4 Template:Category_handler
+ 12.34%   18.127      1 Template:Infobox_software/simple
+ 10.95%   16.081      6 Template:Webarchive
+  6.10%    8.962      1 Template:Wikibooks
+  4.87%    7.154      1 Template:Sister_project
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:19905196-0!*!0!!en!4!* and timestamp 20170129102608 and revision id 750305565
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=ATS_(programming_language)&amp;oldid=750305565">https://en.wikipedia.org/w/index.php?title=ATS_(programming_language)&amp;oldid=750305565</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Multi-paradigm_programming_languages" title="Category:Multi-paradigm programming languages">Multi-paradigm programming languages</a></li><li><a href="/wiki/Category:Declarative_programming_languages" title="Category:Declarative programming languages">Declarative programming languages</a></li><li><a href="/wiki/Category:Functional_languages" title="Category:Functional languages">Functional languages</a></li><li><a href="/wiki/Category:Dependently_typed_languages" title="Category:Dependently typed languages">Dependently typed languages</a></li><li><a href="/wiki/Category:Systems_programming_languages" title="Category:Systems programming languages">Systems programming languages</a></li><li><a href="/wiki/Category:Programming_languages_created_in_2004" title="Category:Programming languages created in 2004">Programming languages created in 2004</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:All_articles_with_dead_external_links" title="Category:All articles with dead external links">All articles with dead external links</a></li><li><a href="/wiki/Category:Articles_with_dead_external_links_from_October_2016" title="Category:Articles with dead external links from October 2016">Articles with dead external links from October 2016</a></li><li><a href="/wiki/Category:Articles_with_permanently_dead_external_links" title="Category:Articles with permanently dead external links">Articles with permanently dead external links</a></li><li><a href="/wiki/Category:Webarchive_template_wayback_links" title="Category:Webarchive template wayback links">Webarchive template wayback links</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=ATS+%28programming+language%29" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=ATS+%28programming+language%29" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/ATS_(programming_language)"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:ATS_(programming_language)"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/ATS_(programming_language)" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=ATS_(programming_language)&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=ATS_(programming_language)&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/ATS_(programming_language)" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/ATS_(programming_language)" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=ATS_(programming_language)&amp;oldid=750305565" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=ATS_(programming_language)&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q621618" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=ATS_%28programming_language%29&amp;id=750305565" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=ATS+%28programming+language%29">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=ATS+%28programming+language%29&amp;returnto=ATS+%28programming+language%29&amp;oldid=750305565&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=ATS_(programming_language)&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-ca"><a href="https://ca.wikipedia.org/wiki/ATS_(llenguatge_de_programaci%C3%B3)" title="ATS (llenguatge de programació) – Catalan" lang="ca" hreflang="ca" class="interlanguage-link-target">Català</a></li><li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/Applied_Type_System" title="Applied Type System – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-ru"><a href="https://ru.wikipedia.org/wiki/ATS_(%D1%8F%D0%B7%D1%8B%D0%BA_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F)" title="ATS (язык программирования) – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q621618#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 18 November 2016, at 23:58.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=ATS_(programming_language)&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.144","walltime":"0.178","ppvisitednodes":{"value":949,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":12763,"limit":2097152},"templateargumentsize":{"value":2164,"limit":2097152},"expansiondepth":{"value":17,"limit":40},"expensivefunctioncount":{"value":3,"limit":500},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  146.882      1 -total"," 46.65%   68.523      2 Template:Infobox"," 41.78%   61.368      1 Template:Infobox_programming_language"," 25.15%   36.945      2 Template:Dead_link"," 21.48%   31.544      2 Template:Fix"," 19.54%   28.703      4 Template:Category_handler"," 12.34%   18.127      1 Template:Infobox_software/simple"," 10.95%   16.081      6 Template:Webarchive","  6.10%    8.962      1 Template:Wikibooks","  4.87%    7.154      1 Template:Sister_project"]},"scribunto":{"limitreport-timeusage":{"value":"0.046","limit":"10.000"},"limitreport-memusage":{"value":1647393,"limit":52428800}},"cachereport":{"origin":"mw1271","timestamp":"20170129102608","ttl":2592000,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":281,"wgHostname":"mw1271"});});</script>
+	</body>
+</html>

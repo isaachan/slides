@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Programming Computable Functions - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Programming_Computable_Functions","wgTitle":"Programming Computable Functions","wgCurRevisionId":763638373,"wgRevisionId":763638373,"wgArticleId":3239232,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["CS1 maint: Multiple names: authors list","Programming languages created in 1977","Academic programming languages","Educational programming languages","Functional languages","Programming language theory"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Programming_Computable_Functions","wgRelevantArticleId":3239232,"wgRequestId":"WJYDIApAIDMAAHwA6ZgAAABK","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgRedirectedFrom":"Programming_language_for_Computable_Functions","wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":true},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgInternalRedirectTargetUrl":"/wiki/Programming_Computable_Functions","wgWikibaseItemId":"Q7248484","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.cite.styles":"ready","ext.math.styles":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.action.view.redirect","ext.cite.a11y","ext.math.scripts","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.legacy.wikibits","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.centralauth.centralautologin","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.math.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.29.0-wmf.10"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Programming_Computable_Functions"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Programming_Computable_Functions&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Programming_Computable_Functions&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Programming_Computable_Functions"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Programming_Computable_Functions rootpage-Programming_Computable_Functions skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Programming Computable Functions</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"><span class="mw-redirectedfrom">  (Redirected from <a href="/w/index.php?title=Programming_language_for_Computable_Functions&amp;redirect=no" class="mw-redirect" title="Programming language for Computable Functions">Programming language for Computable Functions</a>)</span></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p>In <a href="/wiki/Computer_science" title="Computer science">computer science</a>, <b>Programming Computable Functions</b>, or <b>PCF</b>, is a <a href="/wiki/Type_system" title="Type system">typed</a> <a href="/wiki/Functional_programming" title="Functional programming">functional language</a> introduced by <a href="/wiki/Gordon_Plotkin" title="Gordon Plotkin">Gordon Plotkin</a> in 1977, based on previous unpublished material by <a href="/wiki/Dana_Scott" title="Dana Scott">Dana Scott</a>.<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">[note 1]</a></sup> It can be considered to be an extended version of the <a href="/wiki/Typed_lambda_calculus" title="Typed lambda calculus">typed lambda calculus</a> or a simplified version of modern typed functional languages such as <a href="/wiki/ML_programming_language" class="mw-redirect" title="ML programming language">ML</a> or <a href="/wiki/Haskell_(programming_language)" title="Haskell (programming language)">Haskell</a>.</p>
+<p>A <a href="/wiki/Fully_abstract" class="mw-redirect" title="Fully abstract">fully abstract</a> model for PCF was first given by <a href="/wiki/Robin_Milner" title="Robin Milner">Milner</a> (1977). However, since Milner's model was essentially based on the syntax of PCF it was considered less than satisfactory (Ong, 1995). The first two fully abstract models not employing syntax were formulated during the 1990s. These models are based on <a href="/wiki/Game_semantics" title="Game semantics">game semantics</a> (Hyland and Ong, 2000; Abramsky, Jagadeesan, and Malacaria, 2000) and <a href="/w/index.php?title=Kripke_logical_relations&amp;action=edit&amp;redlink=1" class="new" title="Kripke logical relations (page does not exist)">Kripke logical relations</a> (O'Hearn and Riecke, 1995). For a time it was felt that neither of these models was completely satisfactory, since they were not effectively presentable. However, <a href="/w/index.php?title=Ralph_Loader&amp;action=edit&amp;redlink=1" class="new" title="Ralph Loader (page does not exist)">Ralph Loader</a> demonstrated that no effectively presentable fully abstract model could exist, since the question of program equivalence in the finitary fragment of PCF is not decidable.</p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Syntax"><span class="tocnumber">1</span> <span class="toctext">Syntax</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Semantics"><span class="tocnumber">2</span> <span class="toctext">Semantics</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Denotational_semantics"><span class="tocnumber">2.1</span> <span class="toctext">Denotational semantics</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#References"><span class="tocnumber">4</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#External_links"><span class="tocnumber">5</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Syntax">Syntax</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Programming_Computable_Functions&amp;action=edit&amp;section=1" title="Edit section: Syntax">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The <i>types</i> of PCF are inductively defined as</p>
+<ul>
+<li><b>nat</b> is a type</li>
+<li>For types <i>σ</i> and <i>τ</i>, there is a type <i>σ</i> → <i>τ</i></li>
+</ul>
+<p>A <i>context</i> is a list of pairs <i>x&#160;: σ</i>, where <i>x</i> is a variable name and <i>σ</i> is a type, such that no variable name is duplicated. One then defines typing judgments of terms-in-context in the usual way for the following syntactical constructs:</p>
+<ul>
+<li>Variables (if <i>x&#160;: σ</i> is part of a context <i>Γ</i>, then <i>Γ</i> ⊢ <i>x</i>&#160;: <i>σ</i>)</li>
+<li>Application (of a term of type <i>σ</i> → <i>τ</i> to a term of type <i>σ</i>)</li>
+<li><a href="/wiki/%CE%9B-abstraction" class="mw-redirect" title="Λ-abstraction">λ-abstraction</a></li>
+<li>The <b><a href="/wiki/Fixed-point_combinator#Y_combinator" title="Fixed-point combinator">Y</a></b> fixed point combinator (making terms of type <i>σ</i> out of terms of type <i>σ</i> → <i>σ</i>)</li>
+<li>The successor (<b>succ</b>) and predecessor (<b>pred</b>) operations on <b>nat</b> and the constant <b>0</b></li>
+<li>The conditional <b>if</b> with the typing rule:</li>
+</ul>
+<dl>
+<dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" >
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi mathvariant="normal">&#x0393;<!-- Γ --></mi>
+              <mspace width="thickmathspace" />
+              <mo>&#x22A2;<!-- ⊢ --></mo>
+              <mspace width="thickmathspace" />
+              <mi>t</mi>
+              <mspace width="thickmathspace" />
+              <mo>:</mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mtext mathvariant="bold">nat</mtext>
+                </mrow>
+              </mrow>
+              <mo>,</mo>
+              <mspace width="1em" />
+              <mspace width="1em" />
+              <mi mathvariant="normal">&#x0393;<!-- Γ --></mi>
+              <mspace width="thickmathspace" />
+              <mo>&#x22A2;<!-- ⊢ --></mo>
+              <mspace width="thickmathspace" />
+              <msub>
+                <mi>s</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>0</mn>
+                </mrow>
+              </msub>
+              <mspace width="thickmathspace" />
+              <mo>:</mo>
+              <mi>&#x03C3;<!-- σ --></mi>
+              <mo>,</mo>
+              <mspace width="1em" />
+              <mspace width="1em" />
+              <mi mathvariant="normal">&#x0393;<!-- Γ --></mi>
+              <mspace width="thickmathspace" />
+              <mo>&#x22A2;<!-- ⊢ --></mo>
+              <mspace width="thickmathspace" />
+              <msub>
+                <mi>s</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>1</mn>
+                </mrow>
+              </msub>
+              <mspace width="thickmathspace" />
+              <mo>:</mo>
+              <mi>&#x03C3;<!-- σ --></mi>
+            </mrow>
+            <mrow>
+              <mi mathvariant="normal">&#x0393;<!-- Γ --></mi>
+              <mspace width="thickmathspace" />
+              <mo>&#x22A2;<!-- ⊢ --></mo>
+              <mspace width="thickmathspace" />
+              <mrow class="MJX-TeXAtom-ORD">
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mtext mathvariant="bold">if</mtext>
+                </mrow>
+              </mrow>
+              <mo stretchy="false">(</mo>
+              <mi>t</mi>
+              <mo>,</mo>
+              <msub>
+                <mi>s</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>0</mn>
+                </mrow>
+              </msub>
+              <mo>,</mo>
+              <msub>
+                <mi>s</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>1</mn>
+                </mrow>
+              </msub>
+              <mo stretchy="false">)</mo>
+              <mspace width="thickmathspace" />
+              <mo>:</mo>
+              <mi>&#x03C3;<!-- σ --></mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {\Gamma \;\vdash \;t\;:{\textbf {nat}},\quad \quad \Gamma \;\vdash \;s_{0}\;:\sigma ,\quad \quad \Gamma \;\vdash \;s_{1}\;:\sigma }{\Gamma \;\vdash \;{\textbf {if}}(t,s_{0},s_{1})\;:\sigma }}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7d1cd1e0aa666cff73a6cff5f550eac4d7bbc864" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.671ex; width:48.128ex; height:6.176ex;" alt="{\frac  {\Gamma \;\vdash \;t\;:{\textbf  {nat}},\quad \quad \Gamma \;\vdash \;s_{0}\;:\sigma ,\quad \quad \Gamma \;\vdash \;s_{1}\;:\sigma }{\Gamma \;\vdash \;{\textbf  {if}}(t,s_{0},s_{1})\;:\sigma }}" /></span></dd>
+<dd>(<b>nat</b>s will be interpreted as booleans here with a convention like zero denoting truth, and any other number denoting falsity)</dd>
+</dl>
+<h2><span class="mw-headline" id="Semantics">Semantics</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Programming_Computable_Functions&amp;action=edit&amp;section=2" title="Edit section: Semantics">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="Denotational_semantics">Denotational semantics</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Programming_Computable_Functions&amp;action=edit&amp;section=3" title="Edit section: Denotational semantics">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>A relatively straightforward semantics for the language is the <b>Scott model</b>. In this model,</p>
+<ul>
+<li>Types are interpreted as certain <a href="/wiki/Domain_theory" title="Domain theory">domains</a>.
+<ul>
+<li><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" >
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">[</mo>
+        <mspace width="negativethinmathspace" />
+        <mo stretchy="false">[</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext mathvariant="bold">nat</mtext>
+          </mrow>
+        </mrow>
+        <mo stretchy="false">]</mo>
+        <mspace width="negativethinmathspace" />
+        <mo stretchy="false">]</mo>
+        <mo>:=</mo>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="double-struck">N</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">&#x22A5;<!-- ⊥ --></mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle [\![{\textbf {nat}}]\!]:=\mathbb {N} _{\bot }}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/172645ff005d9c6b718219bfe5916ccfb9d63a68" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:12.683ex; height:2.843ex;" alt="[\![{\textbf  {nat}}]\!]:={\mathbb  {N}}_{{\bot }}" /></span> (the natural numbers with a bottom element adjoined, with the flat ordering)</li>
+<li><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" >
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">[</mo>
+        <mspace width="negativethinmathspace" />
+        <mo stretchy="false">[</mo>
+        <mi>&#x03C3;<!-- σ --></mi>
+        <mo stretchy="false">&#x2192;<!-- → --></mo>
+        <mi>&#x03C4;<!-- τ --></mi>
+        <mspace width="thinmathspace" />
+        <mo stretchy="false">]</mo>
+        <mspace width="negativethinmathspace" />
+        <mo stretchy="false">]</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle [\![\sigma \to \tau \,]\!]}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6f9216cddd2bbf07883a0a6d7259a98c7127a90d" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:8.419ex; height:2.843ex;" alt="[\![\sigma \to \tau \,]\!]" /></span> is interpreted as the domain of <a href="/wiki/Scott-continuous" class="mw-redirect" title="Scott-continuous">Scott-continuous</a> functions from <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" >
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">[</mo>
+        <mspace width="negativethinmathspace" />
+        <mo stretchy="false">[</mo>
+        <mi>&#x03C3;<!-- σ --></mi>
+        <mo stretchy="false">]</mo>
+        <mspace width="negativethinmathspace" />
+        <mo stretchy="false">]</mo>
+        <mspace width="thinmathspace" />
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle [\![\sigma ]\!]\,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a3d0b607b4da282559d62257f064d874d4778c1f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:3.582ex; height:2.843ex;" alt="[\![\sigma ]\!]\," /></span> to <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" >
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">[</mo>
+        <mspace width="negativethinmathspace" />
+        <mo stretchy="false">[</mo>
+        <mi>&#x03C4;<!-- τ --></mi>
+        <mo stretchy="false">]</mo>
+        <mspace width="negativethinmathspace" />
+        <mo stretchy="false">]</mo>
+        <mspace width="thinmathspace" />
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle [\![\tau ]\!]\,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/fa3d8b955ce6db8d09b4b1605e705ecb8b4d7d16" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:3.454ex; height:2.843ex;" alt="[\![\tau ]\!]\," /></span></li>
+</ul>
+</li>
+<li>A context <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" >
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>:</mo>
+        <msub>
+          <mi>&#x03C3;<!-- σ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <mspace width="thickmathspace" />
+        <mo>&#x2026;<!-- … --></mo>
+        <mo>,</mo>
+        <mspace width="thickmathspace" />
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo>:</mo>
+        <msub>
+          <mi>&#x03C3;<!-- σ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle x_{1}:\sigma _{1},\;\dots ,\;x_{n}:\sigma _{n}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3141b9cb594fce4c0eae2d96c815aa5392385732" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:20.326ex; height:2.009ex;" alt="x_{1}:\sigma _{1},\;\dots ,\;x_{n}:\sigma _{n}" /></span> is interpreted as the product <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" >
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">[</mo>
+        <mspace width="negativethinmathspace" />
+        <mo stretchy="false">[</mo>
+        <msub>
+          <mi>&#x03C3;<!-- σ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">]</mo>
+        <mspace width="negativethinmathspace" />
+        <mo stretchy="false">]</mo>
+        <mo>&#x00D7;<!-- × --></mo>
+        <mspace width="thickmathspace" />
+        <mo>&#x2026;<!-- … --></mo>
+        <mspace width="thickmathspace" />
+        <mo>&#x00D7;<!-- × --></mo>
+        <mo stretchy="false">[</mo>
+        <mspace width="negativethinmathspace" />
+        <mo stretchy="false">[</mo>
+        <msub>
+          <mi>&#x03C3;<!-- σ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">]</mo>
+        <mspace width="negativethinmathspace" />
+        <mo stretchy="false">]</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle [\![\sigma _{1}]\!]\times \;\dots \;\times [\![\sigma _{n}]\!]}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6e22396cfb4399fd87de4bf7388afd3409997e09" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:18.399ex; height:2.843ex;" alt="[\![\sigma _{1}]\!]\times \;\dots \;\times [\![\sigma _{n}]\!]" /></span></li>
+<li>Terms in context <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" >
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">&#x0393;<!-- Γ --></mi>
+        <mspace width="thickmathspace" />
+        <mo>&#x22A2;<!-- ⊢ --></mo>
+        <mspace width="thickmathspace" />
+        <mi>x</mi>
+        <mspace width="thickmathspace" />
+        <mo>:</mo>
+        <mspace width="thickmathspace" />
+        <mi>&#x03C3;<!-- σ --></mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \Gamma \;\vdash \;x\;:\;\sigma }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/431bc29fb58179b629b83c2f987c763bb98b5634" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:11.393ex; height:2.176ex;" alt="\Gamma \;\vdash \;x\;:\;\sigma " /></span> are interpreted as continuous functions <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" >
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">[</mo>
+        <mspace width="negativethinmathspace" />
+        <mo stretchy="false">[</mo>
+        <mi mathvariant="normal">&#x0393;<!-- Γ --></mi>
+        <mo stretchy="false">]</mo>
+        <mspace width="negativethinmathspace" />
+        <mo stretchy="false">]</mo>
+        <mspace width="thickmathspace" />
+        <mo stretchy="false">&#x2192;<!-- → --></mo>
+        <mspace width="thickmathspace" />
+        <mo stretchy="false">[</mo>
+        <mspace width="negativethinmathspace" />
+        <mo stretchy="false">[</mo>
+        <mi>&#x03C3;<!-- σ --></mi>
+        <mo stretchy="false">]</mo>
+        <mspace width="negativethinmathspace" />
+        <mo stretchy="false">]</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle [\![\Gamma ]\!]\;\to \;[\![\sigma ]\!]}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a7ade925a4ceea33e5b118ee2c54a171c2cf15a4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:11.428ex; height:2.843ex;" alt="[\![\Gamma ]\!]\;\to \;[\![\sigma ]\!]" /></span>
+<ul>
+<li>Variable terms are interpreted as projections</li>
+<li>Lambda abstraction and application are interpreted by making use of the <a href="/wiki/Cartesian_closed" class="mw-redirect" title="Cartesian closed">cartesian closed</a> structure of the category of domains and continuous functions</li>
+<li><b>Y</b> is interpreted by taking the <a href="/wiki/Least_fixed_point" title="Least fixed point">least fixed point</a> of the argument</li>
+</ul>
+</li>
+</ul>
+<p>This model is not <a href="/wiki/Fully_abstract" class="mw-redirect" title="Fully abstract">fully abstract</a> for PCF; but it is fully abstract for the language obtained by adding a <i><a href="/w/index.php?title=Parallel_or&amp;action=edit&amp;redlink=1" class="new" title="Parallel or (page does not exist)">parallel or</a></i> operator to PCF (p.&#160;293 in the Hyland and Ong 2000 reference below).</p>
+<h2><span class="mw-headline" id="Notes">Notes</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Programming_Computable_Functions&amp;action=edit&amp;section=4" title="Edit section: Notes">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text">"PCF is a programming language for computable functions, based on LCF, Scott’s logic of computable functions" (<a href="#CITEREFPlotkin1977">Plotkin 1977</a>). <i>Programming Computable Functions</i> is used by (<a href="#CITEREFMitchell1996">Mitchell 1996</a>). It is also referred to as <i>Programming with Computable Functions</i> or <i>Programming language for Computable Functions</i>.</span></li>
+</ol>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Programming_Computable_Functions&amp;action=edit&amp;section=5" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><cite id="CITEREFScott1969" class="citation journal"><a href="/wiki/Dana_Scott" title="Dana Scott">Scott, Dana S.</a> (1969). <a rel="nofollow" class="external text" href="http://www.cs.cmu.edu/~kw/scans/scott93tcs.pdf">"A type-theoretic alternative to CUCH, ISWIM, OWHY"</a> <span style="font-size:85%;">(PDF)</span>. Unpublished manuscript.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AProgramming+Computable+Functions&amp;rft.atitle=A+type-theoretic+alternative+to+CUCH%2C+ISWIM%2C+OWHY&amp;rft.aufirst=Dana+S.&amp;rft.aulast=Scott&amp;rft.date=1969&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fwww.cs.cmu.edu%2F~kw%2Fscans%2Fscott93tcs.pdf&amp;rft.jtitle=%27%27Unpublished+manuscript%27%27&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span> Appeared as <cite class="citation journal"><a href="/wiki/Dana_Scott" title="Dana Scott">Scott, Dana S.</a> (1993). "A type-theoretic alternative to CUCH, ISWIM, OWHY". <i><a href="/wiki/Theoretical_Computer_Science_(journal)" title="Theoretical Computer Science (journal)">Theoretical Computer Science</a></i>. <b>121</b>: 411–440. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1016%2F0304-3975%2893%2990095-b">10.1016/0304-3975(93)90095-b</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AProgramming+Computable+Functions&amp;rft.atitle=A+type-theoretic+alternative+to+CUCH%2C+ISWIM%2C+OWHY&amp;rft.aufirst=Dana+S.&amp;rft.aulast=Scott&amp;rft.date=1993&amp;rft.genre=article&amp;rft_id=info%3Adoi%2F10.1016%2F0304-3975%2893%2990095-b&amp;rft.jtitle=Theoretical+Computer+Science&amp;rft.pages=411-440&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=121" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite id="CITEREFPlotkin1977" class="citation journal"><a href="/wiki/Gordon_Plotkin" title="Gordon Plotkin">Plotkin, Gordon D.</a> (1977). <a rel="nofollow" class="external text" href="http://homepages.inf.ed.ac.uk/gdp/publications/LCF.pdf">"LCF considered as a programming language"</a> <span style="font-size:85%;">(PDF)</span>. <i>Theoretical Computer Science</i>. <b>5</b>: 223–255. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1016%2F0304-3975%2877%2990044-5">10.1016/0304-3975(77)90044-5</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AProgramming+Computable+Functions&amp;rft.atitle=LCF+considered+as+a+programming+language&amp;rft.aufirst=Gordon+D.&amp;rft.aulast=Plotkin&amp;rft.date=1977&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fhomepages.inf.ed.ac.uk%2Fgdp%2Fpublications%2FLCF.pdf&amp;rft_id=info%3Adoi%2F10.1016%2F0304-3975%2877%2990044-5&amp;rft.jtitle=Theoretical+Computer+Science&amp;rft.pages=223-255&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=5" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation journal"><a href="/wiki/Robin_Milner" title="Robin Milner">Milner, Robin</a> (1977). "Fully abstract models of typed λ-calculi". <i>Theoretical Computer Science</i>. <b>4</b>: 1–22. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1016%2F0304-3975%2877%2990053-6">10.1016/0304-3975(77)90053-6</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AProgramming+Computable+Functions&amp;rft.atitle=Fully+abstract+models+of+typed+%CE%BB-calculi&amp;rft.aufirst=Robin&amp;rft.aulast=Milner&amp;rft.date=1977&amp;rft.genre=article&amp;rft_id=info%3Adoi%2F10.1016%2F0304-3975%2877%2990053-6&amp;rft.jtitle=Theoretical+Computer+Science&amp;rft.pages=1-22&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=4" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite id="CITEREFMitchell1996" class="citation book"><a href="/wiki/John_C._Mitchell" title="John C. Mitchell">Mitchell, John C.</a> (1996). "The Language PCF". <i>Foundations for Programming Languages</i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AProgramming+Computable+Functions&amp;rft.atitle=The+Language+PCF&amp;rft.aufirst=John+C.&amp;rft.aulast=Mitchell&amp;rft.btitle=Foundations+for+Programming+Languages&amp;rft.date=1996&amp;rft.genre=bookitem&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation journal">Abramsky, S., Jagadeesan, R., and Malacaria, P. (2000). "Full Abstraction for PCF". <i>Information and Computation</i>. <b>163</b> (2): 409–470. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1006%2Finco.2000.2930">10.1006/inco.2000.2930</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AProgramming+Computable+Functions&amp;rft.atitle=Full+Abstraction+for+PCF&amp;rft.au=Abramsky%2C+S.%2C+Jagadeesan%2C+R.%2C+and+Malacaria%2C+P.&amp;rft.date=2000&amp;rft.genre=article&amp;rft_id=info%3Adoi%2F10.1006%2Finco.2000.2930&amp;rft.issue=2&amp;rft.jtitle=Information+and+Computation&amp;rft.pages=409-470&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=163" class="Z3988"><span style="display:none;">&#160;</span></span> <span class="citation-comment" style="display:none; color:#33aa33">CS1 maint: Multiple names: authors list (<a href="/wiki/Category:CS1_maint:_Multiple_names:_authors_list" title="Category:CS1 maint: Multiple names: authors list">link</a>)</span></li>
+<li><cite class="citation journal">Hyland, J. M. E. &amp; Ong, C.-H. L. (2000). "On Full Abstraction for PCF". <i>Information and Computation</i>. <b>163</b> (2): 285–408. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1006%2Finco.2000.2917">10.1006/inco.2000.2917</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AProgramming+Computable+Functions&amp;rft.atitle=On+Full+Abstraction+for+PCF&amp;rft.au=Hyland%2C+J.+M.+E.&amp;rft.au=Ong%2C+C.-H.+L.&amp;rft.date=2000&amp;rft.genre=article&amp;rft_id=info%3Adoi%2F10.1006%2Finco.2000.2917&amp;rft.issue=2&amp;rft.jtitle=Information+and+Computation&amp;rft.pages=285-408&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=163" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation journal">O'Hearn, P. W. &amp; Riecke, J. G (1995). "Kripke Logical Relations and PCF". <i>Information and Computation</i>. <b>120</b> (1): 107–116. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1006%2Finco.1995.1103">10.1006/inco.1995.1103</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AProgramming+Computable+Functions&amp;rft.atitle=Kripke+Logical+Relations+and+PCF&amp;rft.au=O%27Hearn%2C+P.+W.&amp;rft.au=Riecke%2C+J.+G&amp;rft.date=1995&amp;rft.genre=article&amp;rft_id=info%3Adoi%2F10.1006%2Finco.1995.1103&amp;rft.issue=1&amp;rft.jtitle=Information+and+Computation&amp;rft.pages=107-116&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=120" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation journal">Loader, R. (2001). "Finitary PCF is not decidable". <i>Theoretical Computer Science</i>. <b>266</b> (1-2): 341–364. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1016%2FS0304-3975%2800%2900194-8">10.1016/S0304-3975(00)00194-8</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AProgramming+Computable+Functions&amp;rft.atitle=Finitary+PCF+is+not+decidable&amp;rft.au=Loader%2C+R.&amp;rft.date=2001&amp;rft.genre=article&amp;rft_id=info%3Adoi%2F10.1016%2FS0304-3975%2800%2900194-8&amp;rft.issue=1-2&amp;rft.jtitle=Theoretical+Computer+Science&amp;rft.pages=341-364&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=266" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation book">Ong, C.-H. L. (1995). "Correspondence between Operational and Denotational Semantics: The Full Abstraction Problem for PCF". In Abramsky, S.; Gabbay, D.; Maibau, T. S. E. <a rel="nofollow" class="external text" href="http://users.comlab.ox.ac.uk/luke.ong/publications/index.html"><i>Handbook of Logic in Computer Science</i></a>. Oxford University Press. pp.&#160;269–356.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AProgramming+Computable+Functions&amp;rft.atitle=Correspondence+between+Operational+and+Denotational+Semantics%3A+The+Full+Abstraction+Problem+for+PCF&amp;rft.au=Ong%2C+C.-H.+L.&amp;rft.btitle=Handbook+of+Logic+in+Computer+Science&amp;rft.date=1995&amp;rft.genre=bookitem&amp;rft_id=http%3A%2F%2Fusers.comlab.ox.ac.uk%2Fluke.ong%2Fpublications%2Findex.html&amp;rft.pages=269-356&amp;rft.pub=Oxford+University+Press&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+</ul>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Programming_Computable_Functions&amp;action=edit&amp;section=6" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.cs.bham.ac.uk/~mhe/papers/RNC3.pdf">Introduction to RealPCF</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.cs.pomona.edu/classes/cs131/Parsers/parsePCF.sml">Lexer and Parser for PCF written in SML</a></li>
+</ul>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1235
+Cached time: 20170204093823
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.092 seconds
+Real time usage: 0.150 seconds
+Preprocessor visited node count: 407/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 16060/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 3/40
+Expensive parser function count: 0/500
+Lua time usage: 0.047/10.000 seconds
+Lua memory usage: 2.54 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%   83.202      1 -total
+ 67.08%   55.812      8 Template:Cite_journal
+ 21.32%   17.738      2 Template:Harv
+  9.14%    7.602      2 Template:Cite_book
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:3239232-0!*!0!!en!*!*!math=5 and timestamp 20170204093823 and revision id 763638373
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Programming_Computable_Functions&amp;oldid=763638373">https://en.wikipedia.org/w/index.php?title=Programming_Computable_Functions&amp;oldid=763638373</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Programming_languages_created_in_1977" title="Category:Programming languages created in 1977">Programming languages created in 1977</a></li><li><a href="/wiki/Category:Academic_programming_languages" title="Category:Academic programming languages">Academic programming languages</a></li><li><a href="/wiki/Category:Educational_programming_languages" title="Category:Educational programming languages">Educational programming languages</a></li><li><a href="/wiki/Category:Functional_languages" title="Category:Functional languages">Functional languages</a></li><li><a href="/wiki/Category:Programming_language_theory" title="Category:Programming language theory">Programming language theory</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:CS1_maint:_Multiple_names:_authors_list" title="Category:CS1 maint: Multiple names: authors list">CS1 maint: Multiple names: authors list</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Programming+Computable+Functions" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Programming+Computable+Functions" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/Programming_Computable_Functions"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:Programming_Computable_Functions"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/Programming_Computable_Functions" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=Programming_Computable_Functions&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Programming_Computable_Functions&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Programming_Computable_Functions" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Programming_Computable_Functions" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Programming_Computable_Functions&amp;oldid=763638373" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Programming_Computable_Functions&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q7248484" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Programming_Computable_Functions&amp;id=763638373" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Programming+Computable+Functions">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Programming+Computable+Functions&amp;returnto=Programming+Computable+Functions&amp;oldid=763638373&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Programming_Computable_Functions&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+											</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-add wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q7248484#sitelinks-wikipedia" title="Add interlanguage links" class="wbc-editpage">Add links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 4 February 2017, at 09:38.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Programming_Computable_Functions&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.092","walltime":"0.150","ppvisitednodes":{"value":407,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":16060,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":3,"limit":40},"expensivefunctioncount":{"value":0,"limit":500},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%   83.202      1 -total"," 67.08%   55.812      8 Template:Cite_journal"," 21.32%   17.738      2 Template:Harv","  9.14%    7.602      2 Template:Cite_book"]},"scribunto":{"limitreport-timeusage":{"value":"0.047","limit":"10.000"},"limitreport-memusage":{"value":2659216,"limit":52428800}},"cachereport":{"origin":"mw1235","timestamp":"20170204093823","ttl":2592000,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":62,"wgHostname":"mw1181"});});</script>
+	</body>
+</html>

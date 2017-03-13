@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Uniface (programming language) - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Uniface_(programming_language)","wgTitle":"Uniface (programming language)","wgCurRevisionId":744741729,"wgRevisionId":744741729,"wgArticleId":2905637,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles lacking in-text citations from September 2016","All articles lacking in-text citations","Articles with a promotional tone from September 2016","All articles with a promotional tone","4GL","Software development","Integrated development environments"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Uniface_(programming_language)","wgRelevantArticleId":2905637,"wgRequestId":"WI0hXQpAAD8AAZCRDeEAAABI","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":true},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q2143563","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.cite.styles":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.legacy.wikibits","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.29.0-wmf.9"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Uniface_(programming_language)"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Uniface_(programming_language)&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Uniface_(programming_language)&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Uniface_(programming_language)"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Uniface_programming_language rootpage-Uniface_programming_language skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Uniface (programming language)</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><script>function mfTempOpenSection(id){var block=document.getElementById("mf-section-"+id);block.className+=" open-block";block.previousSibling.className+=" open-block";}</script><table class="plainlinks metadata ambox ambox-content ambox-multiple_issues compact-ambox" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ambox_important.svg/40px-Ambox_important.svg.png" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ambox_important.svg/60px-Ambox_important.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ambox_important.svg/80px-Ambox_important.svg.png 2x" data-file-width="40" data-file-height="40" /></div>
+</td>
+<td class="mbox-text">
+<div class="mw-collapsible" style="width:95%; margin: 0.2em 0;"><span class="mbox-text-span"><b>This article has multiple issues.</b> Please help <b><a class="external text" href="//en.wikipedia.org/w/index.php?title=Uniface_(programming_language)&amp;action=edit">improve it</a></b> or discuss these issues on the <b><a href="/wiki/Talk:Uniface_(programming_language)" title="Talk:Uniface (programming language)">talk page</a></b>. <small><i>(<a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove these template messages</a>)</i></small></span>
+<div class="mw-collapsible-content" style="margin-top: 0.3em;">
+<table class="plainlinks metadata ambox ambox-style ambox-More_footnotes" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Text_document_with_red_question_mark.svg/40px-Text_document_with_red_question_mark.svg.png" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Text_document_with_red_question_mark.svg/60px-Text_document_with_red_question_mark.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Text_document_with_red_question_mark.svg/80px-Text_document_with_red_question_mark.svg.png 2x" data-file-width="48" data-file-height="48" /></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">This article includes a <a href="/wiki/Wikipedia:Citing_sources" title="Wikipedia:Citing sources">list of references</a>, but <b>its sources remain unclear</b> because it has <b>insufficient <a href="/wiki/Wikipedia:Citing_sources#Inline_citations" title="Wikipedia:Citing sources">inline citations</a></b>. <span class="hide-when-compact">Please help to <a href="/wiki/Wikipedia:WikiProject_Fact_and_Reference_Check" title="Wikipedia:WikiProject Fact and Reference Check">improve</a> this article by <a href="/wiki/Wikipedia:When_to_cite" title="Wikipedia:When to cite">introducing</a> more precise citations.</span> <small><i>(September 2016)</i></small> <small class="hide-when-compact"><i>(<a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove this template message</a>)</i></small></span></td>
+</tr>
+</table>
+<table class="plainlinks metadata ambox ambox-content ambox-Advert" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ambox_important.svg/40px-Ambox_important.svg.png" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ambox_important.svg/60px-Ambox_important.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ambox_important.svg/80px-Ambox_important.svg.png 2x" data-file-width="40" data-file-height="40" /></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">This article <b>contains content that is written like <a href="/wiki/Wikipedia:What_Wikipedia_is_not#Wikipedia_is_not_a_soapbox_or_means_of_promotion" title="Wikipedia:What Wikipedia is not">an advertisement</a></b>. <span class="hide-when-compact">Please help <a class="external text" href="//en.wikipedia.org/w/index.php?title=Uniface_(programming_language)&amp;action=edit">improve it</a> by removing <a href="/wiki/Wikipedia:Spam" title="Wikipedia:Spam">promotional content</a> and inappropriate <a href="/wiki/Wikipedia:External_links" title="Wikipedia:External links">external links</a>, and by adding encyclopedic content written from a <a href="/wiki/Wikipedia:Neutral_point_of_view" title="Wikipedia:Neutral point of view">neutral point of view</a>.</span> <small><i>(September 2016)</i></small> <small class="hide-when-compact"><i>(<a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove this template message</a>)</i></small></span></td>
+</tr>
+</table>
+</div>
+</div>
+<small class="hide-when-compact"><i>(<a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove this template message</a>)</i></small></td>
+</tr>
+</table>
+<table class="infobox vevent" style="width:22em">
+<caption class="summary">Uniface</caption>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Software_developer" title="Software developer">Original author(s)</a></th>
+<td>Inside Automation (1984-1986)</td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Software_developer" title="Software developer">Developer(s)</a></th>
+<td><a href="/wiki/Uniface_(company)" title="Uniface (company)">Uniface</a> (1986–present)</td>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Software_release_life_cycle" title="Software release life cycle">Stable release</a></th>
+<td>
+<div style="margin:0px;">Uniface 10 / September&#160;15, 2016<span class="noprint">; 4 months ago</span><span style="display:none">&#160;(<span class="bday dtstart published updated">2016-09-15</span>)</span></div>
+</td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;">Available in</th>
+<td>English</td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Software_categories#Broad_categories" title="Software categories">Type</a></th>
+<td><a href="/wiki/Integrated_Development_Environment" class="mw-redirect" title="Integrated Development Environment">Integrated Development Environment</a></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Software_license" title="Software license">License</a></th>
+<td><a href="/wiki/Commercial_software" title="Commercial software">Commercial</a></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;">Website</th>
+<td><span class="url"><a rel="nofollow" class="external text" href="http://uniface.com">uniface<wbr />.com</a></span></td>
+</tr>
+</table>
+<p><b>Uniface</b> is a development and deployment platform for enterprise applications that can run in a large range of runtime environments, including mobile, mainframe, web, <a href="/wiki/Service-oriented_architecture" title="Service-oriented architecture">Service-oriented architecture</a> (SOA), <a href="/wiki/Microsoft_Windows" title="Microsoft Windows">Windows</a>, <a href="/wiki/Java_Platform,_Enterprise_Edition" title="Java Platform, Enterprise Edition">Java EE</a> and <a href="/wiki/Microsoft_.NET" class="mw-redirect" title="Microsoft .NET">.NET</a>. Uniface is a model-driven, Rapid Application Development (RAD) environment used to create mission-critical applications.</p>
+<p>Uniface applications are database- and platform-independent. Uniface provides an integration framework that enables Uniface applications to integrate with all major DBMS products such as <a href="/wiki/Oracle_Database" title="Oracle Database">Oracle</a>, <a href="/wiki/Microsoft_SQL_Server" title="Microsoft SQL Server">Microsoft SQL Server</a>, <a href="/wiki/MySQL" title="MySQL">MySQL</a> and <a href="/wiki/IBM_DB2" title="IBM DB2">IBM DB2</a>. In addition, Uniface also supports file systems such as RMS (HP OpenVMS), Sequential files, operating system text files and a wide range of other technologies, such as mainframe-based products (<a href="/wiki/CICS" title="CICS">CICS</a>, <a href="/wiki/IBM_Information_Management_System" title="IBM Information Management System">IMS</a>), <a href="/wiki/Web_service" title="Web service">web services</a>, <a href="/wiki/Simple_Mail_Transfer_Protocol" title="Simple Mail Transfer Protocol">SMTP</a> and <a href="/wiki/Post_Office_Protocol" title="Post Office Protocol">POP</a> email, <a href="/wiki/LDAP" class="mw-redirect" title="LDAP">LDAP</a> directories, <a href="/wiki/Microsoft_.NET" class="mw-redirect" title="Microsoft .NET">.NET</a>, <a href="/wiki/ActiveX" title="ActiveX">ActiveX</a>, <a href="/wiki/Component_Object_Model" title="Component Object Model">Component Object Model</a> (COM), <a href="/wiki/C_(programming_language)" title="C (programming language)">C(++)</a> programs, and <a href="/wiki/Java_(programming_language)" title="Java (programming language)">Java</a>. Uniface operates under <a href="/wiki/Microsoft_Windows" title="Microsoft Windows">Microsoft Windows</a>, <a href="/wiki/Windows_Mobile" title="Windows Mobile">Windows Mobile</a>, various flavors of <a href="/wiki/Unix" title="Unix">Unix</a> and <a href="/wiki/Linux" title="Linux">Linux</a>, <a href="/wiki/OpenVMS" title="OpenVMS">VMS</a>, IBM <a href="/wiki/IBM_System_i" title="IBM System i">iSeries</a>, and <a href="/wiki/Z/OS" title="Z/OS">z/OS</a>.</p>
+<p>Uniface can be used in complex systems that maintain critical enterprise data supporting mission-critical business processes such as point-of sale and web-based online shopping, financial transactions, salary administration, and inventory control. It is currently used by thousands of companies in more than 30 countries, with an effective installed base of millions of end-users. Uniface applications range from client/server to web, and from data entry to workflow, as well as portals that are accessed locally, via intranets and the internet.</p>
+<p>Originally developed in the Netherlands by Inside Automation, later Uniface B.V., the product and company were acquired by Detroit-based <a href="/wiki/Compuware" title="Compuware">Compuware</a> Corp in 1994, and in 2014 was acquired by Marlin Equity Partners and is now an independent company. Uniface B.V. global headquarters are based in <a href="/wiki/Amsterdam" title="Amsterdam">Amsterdam</a>.</p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Uniface_Products"><span class="tocnumber">1</span> <span class="toctext">Uniface Products</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Uniface_Applications"><span class="tocnumber">2</span> <span class="toctext">Uniface Applications</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Application_Development"><span class="tocnumber">3</span> <span class="toctext">Application Development</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="#Application_Model"><span class="tocnumber">3.1</span> <span class="toctext">Application Model</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Components"><span class="tocnumber">3.2</span> <span class="toctext">Components</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Uniface_Repository"><span class="tocnumber">3.3</span> <span class="toctext">Uniface Repository</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a href="#Application_Deployment"><span class="tocnumber">4</span> <span class="toctext">Application Deployment</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#Database_Connectivity"><span class="tocnumber">5</span> <span class="toctext">Database Connectivity</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#Licensing"><span class="tocnumber">6</span> <span class="toctext">Licensing</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#History_of_Uniface"><span class="tocnumber">7</span> <span class="toctext">History of Uniface</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#Uniface_Versions"><span class="tocnumber">8</span> <span class="toctext">Uniface Versions</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="#References"><span class="tocnumber">9</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="#External_links"><span class="tocnumber">10</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Uniface_Products">Uniface Products</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Uniface_(programming_language)&amp;action=edit&amp;section=1" title="Edit section: Uniface Products">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Uniface Development Environment—an integrated collection of tools for modeling, implementing, compiling, debugging, and distributing applications.</p>
+<p>Uniface applications, including the above, use a common runtime infrastructure, consisting of:</p>
+<ul>
+<li>Uniface Runtime Engine—a platform-specific process that interprets and executes compiled application components and libraries.</li>
+<li>Uniface Router—a multi-threaded process responsible for interprocess communication in Uniface applications. It starts and stops Uniface Server processes, performs load balancing, and passing messages between various Uniface processes.</li>
+<li>Uniface Server—a server-based process that enables Uniface clients to access remote resources or to execute remote components. It acts as an application server, a data server, and a file server.</li>
+<li>Uniface Repository—an <a href="/wiki/SQL" title="SQL">SQL</a>-capable DBMS used to store definitions and properties of development objects, process and organization models, and portal definitions.</li>
+<li>Web server—Uniface bundles the Apache Tomcat Server for developing and testing web applications, but any web server can be used in a production environment.</li>
+<li>Servlets—Java servlets that broker communication between a web server and the Uniface Server for Uniface web applications and web services.</li>
+<li>Database connectors—drivers that handle the connection between Uniface and a variety of databases.</li>
+<li>Integration tools—drivers, components, and APIs that handle communication between Uniface and third-party applications and technologies, including Java, CICS, IMS, LDAP, SMTP, POP, operating system commands, COM, and more.</li>
+</ul>
+<p>In addition, Uniface Anywhere (formerly Uniface JTi or Java Thin Client Interface) can deliver client/server Uniface applications to any computer connected to the Internet as a thin client solution.</p>
+<p>Uniface has a procedural scripting language called Uniface Proc that is used to code application behavior. Uniface automates most input/output operations through its kernel and default code, so much fundamental behavior does not need to be coded.</p>
+<h2><span class="mw-headline" id="Uniface_Applications">Uniface Applications</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Uniface_(programming_language)&amp;action=edit&amp;section=2" title="Edit section: Uniface Applications">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Uniface applications are component-based, infrastructure-independent software programs that can create or use data stored in one or more databases or file-systems. They can be composite applications that include non-Uniface components created using other development tools, and they can be deployed in distributed client/server and web environments, as mobile applications or web services, and in mainframe environments.</p>
+<p>Uniface has a variety of component types that are intended for use in different layers of a multi-tier application architecture.</p>
+<p>Components for the presentation tier are responsible for the user interface, and include:</p>
+<ul>
+<li>Forms—interactive screens for displaying and updating data in a client/server environment.</li>
+<li>Server Pages—interactive pages for displaying and updating data in a web environment.</li>
+<li>Reports—layouts for presenting data in a printed output.</li>
+</ul>
+<p>Components for the business logic tier handle business rules and task-specific behavior and have no user interface:</p>
+<ul>
+<li>Services—provide processing and business logic functionality when called by other components, either locally or remotely.</li>
+<li>Session Services—centralize complex business rules affecting multiple data entities, such as task-specific behavior, transactions, and referential integrity.</li>
+<li>Entity Services—centralize simple business rules for single data entities.</li>
+</ul>
+<p>The data access tier contains physical database structures captured in the Uniface application model. Uniface ensures physical data access by encapsulating SQL in its DBMS connectors. Network and middleware access are encapsulated by the middleware drivers and the Uniface Router.</p>
+<p>The runtime engine executes the application components. It displays presentation components using the appropriate user interface connector (either GUI or character-based), and sends and receives data via a DBMS connector.</p>
+<h2><span class="mw-headline" id="Application_Development">Application Development</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Uniface_(programming_language)&amp;action=edit&amp;section=3" title="Edit section: Application Development">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Uniface applications are developed on with the Uniface Development Environment. Originally, it was possible to develop on <a href="/wiki/Apple_Inc." title="Apple Inc.">Apple</a> and <a href="/wiki/Digital_Equipment" class="mw-redirect" title="Digital Equipment">DEC</a> platforms; now, <a href="/wiki/Microsoft_Windows" title="Microsoft Windows">Windows</a> is the supported platform for development.</p>
+<p>Uniface applications development is model-driven and component-based. The data structure, business rules, and default behavior of the application are captured in the Application Model. Model definitions can be reused and inherited by components, which can override inherited definitions and provide component-specific behavior and characteristics. Templates improve productivity and enforce consistency when defining models.</p>
+<h3><span class="mw-headline" id="Application_Model">Application Model</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Uniface_(programming_language)&amp;action=edit&amp;section=4" title="Edit section: Application Model">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The application model defines entities (tables), fields, keys (indexes) and relationships together with referential integrity. Each entity and field in the model has properties and a set of triggers. Business rules are added to the model declaratively by setting properties and procedurally by adding Proc code (Uniface's procedural language) in triggers.</p>
+<p>Triggers are containers for code. Some triggers represent user or system events, for example Occurrence Gets Focus, Read or Leave Field. Others cover matters such as validation or act as place holders for methods associated with the particular object.</p>
+<p>The use of model-level triggers enables Uniface to collect properties and behavior within business objects, separating logical from the physical data structures. It makes it possible to define default behavior once, for reuse throughout the application, speeding development and facilitating the 3-tier application architecture.</p>
+<p>Each entity (table) is first defined in the Application Model from where it can be exported to the physical database in the form of CREATE TABLE scripts.</p>
+<h3><span class="mw-headline" id="Components">Components</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Uniface_(programming_language)&amp;action=edit&amp;section=5" title="Edit section: Components">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Objects described in the application model are reused by components. Developers embed objects from the model on the component by drawing them on the layout canvas (for presentation components), or inserting them into a tree view of the component structure. They can also add component-level objects that are not in the application model, such as control fields, menus, and component variables.</p>
+<p>The properties and triggers defined in the application model are inherited by being copied into the component. The definitions can be changed at the component level to provide specific functionality. This breaks the link between the application model and the component (although it is possible to restore the link to the model). If the model code or properties are changed at the model level, all components holding that object need only be recompiled to collect the new definitions. This provides benefits in maintenance and ensures that the rules associated with the object are available wherever it is used.</p>
+<h3><span class="mw-headline" id="Uniface_Repository">Uniface Repository</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Uniface_(programming_language)&amp;action=edit&amp;section=6" title="Edit section: Uniface Repository">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Uniface maintains a database of its own metadata for the purposes of reuse—application models, component definitions, component layouts, procedural code, and so on. The repository is proprietary and intended for access via the Uniface Development Environment, to ensure repository integrity. However, the repository structure is documented, making it possible (though not recommended) to interface directly with it for, for example, reporting.</p>
+<p>By using a centralized repository, application development can be shared over teams of software developers. Uniface can integrate with any <a href="/wiki/Version_control_system" class="mw-redirect" title="Version control system">version control system</a> (VCS) that supports the Microsoft Common Source Code Control Interface Specification. The VCS functionality available within Uniface depends on the VCS used, because software vendors have interpreted and implemented the MS CSCC API differently.</p>
+<h2><span class="mw-headline" id="Application_Deployment">Application Deployment</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Uniface_(programming_language)&amp;action=edit&amp;section=7" title="Edit section: Application Deployment">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Uniface applications can be deployed on platforms from mainframe through mobile, without changing the code. The components (and other objects such as startup shells, menus, toolbars (panels), glyphs, global and included Proc entries) are compiled into runtime objects that can be packaged into zip files and deployed onto any platform. The runtime objects are executed using a virtual machine and a platform-specific interpreter. (Java later followed Uniface in this respect). Components can be compiled on one machine and executed on another, providing the Uniface Virtual Machine is present.</p>
+<p>The Uniface Router and Uniface Server make Uniface scalable, balanceable and make is possible to run processes asynchronously.</p>
+<h2><span class="mw-headline" id="Database_Connectivity">Database Connectivity</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Uniface_(programming_language)&amp;action=edit&amp;section=8" title="Edit section: Database Connectivity">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Uniface accesses the many databases and file systems it supports by means of database connectors (or drivers). DBMS connectors map and convert Uniface data types to the most suitable format of the particular storage medium. At runtime, it is possible to pass parameters to invoke (or disable) database-specific extensions. Provided the database connector is licensed, it is possible to convert between different data sources. Uniface also provides an API, the Database Connector Interface, which can be used to create proprietary connectors for any <a href="/wiki/SQL" title="SQL">SQL</a>-based database.</p>
+<h2><span class="mw-headline" id="Licensing">Licensing</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Uniface_(programming_language)&amp;action=edit&amp;section=9" title="Edit section: Licensing">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Licensing is managed through the Compuware Distributed License Manager (DLM), a server based system of distributing licenses to clients on request, precluding the need for them to be held locally.</p>
+<h2><span class="mw-headline" id="History_of_Uniface">History of Uniface</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Uniface_(programming_language)&amp;action=edit&amp;section=10" title="Edit section: History of Uniface">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Originally called UNIS, the product was created in The Netherlands in 1984 by Inside Automation, a company that was headed by Bodo Douqué, with Frits Kress as Technical Director. By 1986, both the product and the company had changed their name to Uniface. (An early logo for the product included a red capital A which reflected the red capital A in the Inside Automation logo.)</p>
+<p>Uniface was developed on the principles of the American National Standards Institute, (ANSI), <a href="/wiki/Three_schema_approach" class="mw-redirect" title="Three schema approach">3-schema architecture</a>. First proposed in 1975, this was a standard approach to the building of database management systems consisting of 3 schema (or metamodels):</p>
+<ul>
+<li>Conceptual schema—definition of all the data items and relationships between them. There is only one conceptual schema per database. Uniface implements the conceptual schema as the Application Model (in various Uniface versions known as the Business Object Model and the Application Object Model).</li>
+<li>External schema—different external (user) views of the data. There can be many external schemas for a database. Uniface implements external schemas as components. During Uniface's evolution, the External Schema became forms; hidden forms, which ran in the background without displaying to the user, became services; services split into session services for objects of the business tier and entity services that may be either business or data tier. Forms that were printed instead of being displayed became report components. The server page (USP) was introduced for web development, and later the dynamic server page was introduced to support Web 2.0 functionality.</li>
+<li>Internal schema—definition of the physical representation of the stored data. Uniface leaves the internal schema to the many relational database systems to which it could be connected, enabling it to be database-independent.</li>
+</ul>
+<p>Uniface was developed on the <a href="/wiki/Digital_Equipment_Corporation" title="Digital Equipment Corporation">DEC</a> <a href="/wiki/VAX" title="VAX">VAX</a> machine, using the native VAX file-management system <a href="/wiki/Record_Management_Services" title="Record Management Services">RMS</a>. A vestige of this is still seen in today’s product by its continued use of a <a href="/wiki/Gold_key_(DEC)" title="Gold key (DEC)">“GOLD” key</a> to change modes (<a href="/wiki/VT100" title="VT100">DEC VT terminals</a> actually had a gold or yellow key on the keyboard. Today the “GOLD” is simply mapped to the numeric keyboard + key, or a function key).</p>
+<p>Early versions of the product were bundled with the Sybase RDBMS under the name FastBuild, although it was not limited to accessing only that database.</p>
+<p>Uniface has continuously evolved to handle new technologies and application architectures. This has been critical to its success, because applications built with Uniface can be migrated, updated and modernized without losing the original development investment.</p>
+<h2><span class="mw-headline" id="Uniface_Versions">Uniface Versions</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Uniface_(programming_language)&amp;action=edit&amp;section=11" title="Edit section: Uniface Versions">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p><b>Uniface Version 3</b> (1986): Uniface 3 was the first public release. It featured support for multiple databases (RMS, Oracle, C_ISAM, Ingres, and RDB); virtual machine interpretation; the Structure Editor, the Uniface text and command editor.</p>
+<p><b>Uniface Version 4</b> (1988): Uniface 4 improved the text editor (now form editor), improved printing and display support, introduced support for MS-DOS, and added a CASE tool interface.</p>
+<p><b>Uniface Version 5</b> (1990): Uniface 5 enabled client/server deployment with the introduction of remote database access through Polyserver. It introduced graphical user interface via the Universal Presentation Interface (UPI). Database support was extended to a total of 13 databases and file systems, and it was now available on DOS, VMS, OS/2, Stratus VOS and UNIX. Japanese character support was also introduced.</p>
+<p><b>Uniface Six</b> (1994): Uniface Six completed the move to fully graphical development environments. It included the graphical form painter and application model editor; improved deployment through Dynamic Object Libraries; added support for Microsoft Object Linking and Embedding (OLE); included support for Apple Macintosh; added permissions control; integrated version control; added Personal Series reporting tools (although these were later removed when the 3rd party decided not to enhance its product); wider platform support.</p>
+<p><b>Uniface Seven</b> (1997): Uniface Seven focused on component integration for both Uniface and external components through the introduction of the Uniface Request Broker (URB) architecture. The URB supports bi-directional and synchronous or asynchronous communication between components. As well as remote data access, it added partitioned Application Servers and messaging. Uniface Seven also delivered the first Uniface web development and deployment tools with Web Application Server and Uniface Request Dispatcher.</p>
+<p>Other enhancements included new component types (Services, Server Pages, Reports); Signature Editor and Assembly Workbench; subsystems; operations; non-modal forms; component instances; improved editors and navigation; enhanced editor plug-in; new debugger; integrated online help; component templates; Web Application Server; improved validation; Uniface Name Server and graphical partitioning manager.</p>
+<p>Uniface Seven also saw the introduction of several other tools:</p>
+<ul>
+<li>A tool for the modeling, integration and management of business processes. This functionality became Optimal Flow under Uniface 8, then Uniface Flow under Uniface 9.</li>
+<li>A business integration portal, initially called Optimal View, and later Uniface View</li>
+<li>Uniface—a server-based, thin-client solution for delivering web-enabled applications over the Internet or Intranet, providing high-performance in low-bandwidth connections.</li>
+</ul>
+<p><b>Uniface 8</b> (2001): Uniface 8 brought about major changes in the area of process integration. The Uniface Router and Uniface Server provided scalable, balanced deployment. The Web Request Dispatcher (WRD) replaced the URD, improving performance. Support for web services, with SOAP and XML, was introduced. Connectivity and interoperability were improved and a method for implementing a 3-tier application architecture was introduced. Connectors for SOAP, COM, CORBA and MQSeries were added; window and file management was improved; a new deployment utility was introduced, improving application distribution; component subtypes for 3-tier architecture were added; handles were added for component instances, and automatic garbage collection was added.</p>
+<p><b>Uniface 9</b> (2006): The Uniface 9 release focused on GUI and usability improvements, thin deployment, and integration. Support for Windows Mobile was added, and configuration and deployment was simplified using zipped archives. Support for Unicode improved what was an already impressive multilingual capability, and improvements in web development and XML handling brought Uniface further into line with industry standards. Dynamic field movement in form components removed some old barriers to flexibility.</p>
+<p>Other features included improved color handling, dynamic menus, an XML API, a diagram editor for the Application Model; cross-referencing functionality to support refactoring and deployment, and enhanced web services functionality.</p>
+<p><b>Uniface 9.4</b> (2010): Despite being a point release, Uniface 9.4 introduced enough major new functionality to be considered a major release. The major focus was on rich internet application (RIA) functionality, making it possible to develop Web 2.0 applications with the rich functionality of client/server applications using the same tools and methodologies used to develop classic client/server applications. Language and locale support was substantially improved, as was support for HTML email, and security and encryption.</p>
+<p><b>Uniface 9.5</b> (2011): The release of Uniface 9.5 has improved the product’s integration with the World Wide Web. The introduction of a JavaScript API, together with other improvements, means that client-side processing can bring benefits in the areas of performance, integration, functionality and user-friendliness. The session management capability has been extended to offer improved security. And the processing of Web Services now fully supports complex datatypes for both SOAP and RESTful services. There have also been improvements for those customers who have business-critical client/server applications, particularly in the area of the grid widget.</p>
+<p><b>Uniface 9.6</b> (2012): Uniface 9.6, provided a significant overhaul of the Uniface client server GUI capabilities. Functionality included an HTML5 control leveraging the JavaScript APIs originally delivered for the web, an enhanced tab control and updates to image handling, buttons plus other improvements. The form container control enables 'forms within forms', enabling the development of dynamic user experiences.</p>
+<p>In addition to the GUI enhancements, Uniface 9.6 also delivered enhancements to the Uniface Web and Web Services capabilities, including the ability to dynamically change the scope of web transactions, web pagination and hitlist processing and improved WSDL and XML capabilities.</p>
+<p><b>Uniface 9.7</b> (2015): Uniface 9.7 delivered significant enhancements to the development of Web Applications, including extensions to facilitate the development and deployment of mobile applications based on hybrid application and enhancing the <a href="/wiki/Multichannel_marketing" title="Multichannel marketing">multi-channel</a> development/deployment capability of Uniface. This will be significantly extended with the Uniface 9.7.02 release (May 2016), providing integration to a build service provider to enable hybrid applications to be packaged for distribution via Google Play and the Apple Store.</p>
+<p>In addition to the mobile and web enhancements, Uniface 9.7 delivered integration and client server enhancements (MS Windows 10).</p>
+<p>The Uniface Development Environment (UDE) was modernized, with a new look and feel, providing a new look front screen, and a refreshed visual user experience. The approach that Uniface took to modernize their UDE was shared both at developer conferences and on their community website <a rel="nofollow" class="external text" href="http://unifaceinfo.com/">Uniface.info</a> to help advise and promote client server modernization to their existing customer base.</p>
+<p>Uniface 9.7 provides two new database drivers, enabling connectivity to <a href="/wiki/PostgreSQL" title="PostgreSQL">PostgreSQL</a> and SAP <a href="/wiki/SAP_HANA" title="SAP HANA">Hana</a>.</p>
+<p><b>Uniface 10</b> (2015): Uniface 10 delivered a rewritten development environment based on the core concepts of Integrated Development Environments (IDE). The initial release positioned as a preview or early adopter release showed a significant change from a proprietary development style to a highly productive implementation of industry standard development, enabling the development of Web applications.</p>
+<p>In May 2015, the first edition of Uniface 10 was released to early adopters to test and develop web applications.<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">[1]</a></sup> The full enterprise edition of Uniface 10 was released in September 2016, delivering mobile and client server development and a migration path to enable the existing customer base to move their applications to Uniface 10.</p>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Uniface_(programming_language)&amp;action=edit&amp;section=12" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://www.uniface.com/news-entry/uniface-10-web-edition-featuring-modern-ide-is-released/">http://www.uniface.com/news-entry/uniface-10-web-edition-featuring-modern-ide-is-released/</a> Uniface 10 Web Edition is Released, 26 may 2015</span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Uniface_(programming_language)&amp;action=edit&amp;section=13" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.uniface.com">Uniface product page</a> The Uniface Corporate Site</li>
+<li><a rel="nofollow" class="external text" href="http://www.nextcomcz.eu/index.php?kategorie=en.php">Nextcom</a> Czech company developing in Uniface</li>
+<li><a rel="nofollow" class="external text" href="http://www.udev.info">www.udev.info</a> building better web applications with Uniface (Tutorials und HowTo's)</li>
+<li><a rel="nofollow" class="external text" href="http://www.uniface.info">The Uniface Community</a> The Uniface Community web site</li>
+<li><a rel="nofollow" class="external text" href="http://hosted.byjones.net/turf/">T.U.R.F.</a> An independent Uniface Related Forum</li>
+<li><a rel="nofollow" class="external text" href="http://march-hare.com/library/html/ud6blurb.htm">Database Driver for Source Code</a> UD6: a database driver for the Uniface repository (used with Version Control)</li>
+<li><a rel="nofollow" class="external text" href="http://tcco.nl/index.html">TCCO.NL</a> Designer Developer Uniface-FAST templates - speeds up your Uniface development process.</li>
+<li><a rel="nofollow" class="external text" href="http://www.cortislentini.it">Cortis Lentini</a> Italian company developing in Uniface</li>
+</ul>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1272
+Cached time: 20170117103933
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.144 seconds
+Real time usage: 0.189 seconds
+Preprocessor visited node count: 853/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 29298/2097152 bytes
+Template argument size: 7571/2097152 bytes
+Highest expansion depth: 25/40
+Expensive parser function count: 4/500
+Lua time usage: 0.053/10.000 seconds
+Lua memory usage: 1.65 MB/50 MB
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  150.688      1 - -total
+ 61.56%   92.770      3 - Template:Ambox
+ 61.31%   92.390      2 - Template:Infobox
+ 50.84%   76.605      1 - Template:Multiple_issues
+ 45.81%   69.026      1 - Template:Infobox_software
+ 21.55%   32.474      1 - Template:Infobox_software/simple
+ 17.97%   27.086      1 - Template:More_footnotes
+ 11.93%   17.974      1 - Template:Release_date_and_age
+  4.85%    7.307      1 - Template:Advert
+  4.56%    6.872      1 - Template:Time_ago
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:2905637-0!*!0!!en!4!* and timestamp 20170117103933 and revision id 744741729
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Uniface_(programming_language)&amp;oldid=744741729">https://en.wikipedia.org/w/index.php?title=Uniface_(programming_language)&amp;oldid=744741729</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:4GL" title="Category:4GL">4GL</a></li><li><a href="/wiki/Category:Software_development" title="Category:Software development">Software development</a></li><li><a href="/wiki/Category:Integrated_development_environments" title="Category:Integrated development environments">Integrated development environments</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Articles_lacking_in-text_citations_from_September_2016" title="Category:Articles lacking in-text citations from September 2016">Articles lacking in-text citations from September 2016</a></li><li><a href="/wiki/Category:All_articles_lacking_in-text_citations" title="Category:All articles lacking in-text citations">All articles lacking in-text citations</a></li><li><a href="/wiki/Category:Articles_with_a_promotional_tone_from_September_2016" title="Category:Articles with a promotional tone from September 2016">Articles with a promotional tone from September 2016</a></li><li><a href="/wiki/Category:All_articles_with_a_promotional_tone" title="Category:All articles with a promotional tone">All articles with a promotional tone</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Uniface+%28programming+language%29" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Uniface+%28programming+language%29" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/Uniface_(programming_language)"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:Uniface_(programming_language)"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/Uniface_(programming_language)" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=Uniface_(programming_language)&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Uniface_(programming_language)&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Uniface_(programming_language)" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Uniface_(programming_language)" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Uniface_(programming_language)&amp;oldid=744741729" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Uniface_(programming_language)&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q2143563" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Uniface_%28programming_language%29&amp;id=744741729" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Uniface+%28programming+language%29">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Uniface+%28programming+language%29&amp;returnto=Uniface+%28programming+language%29&amp;oldid=744741729&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Uniface_(programming_language)&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/Uniface" title="Uniface – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/Uniface" title="Uniface – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-mk"><a href="https://mk.wikipedia.org/wiki/Uniface" title="Uniface – Macedonian" lang="mk" hreflang="mk" class="interlanguage-link-target">Македонски</a></li><li class="interlanguage-link interwiki-nl"><a href="https://nl.wikipedia.org/wiki/Uniface" title="Uniface – Dutch" lang="nl" hreflang="nl" class="interlanguage-link-target">Nederlands</a></li><li class="interlanguage-link interwiki-ja"><a href="https://ja.wikipedia.org/wiki/Uniface" title="Uniface – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target">日本語</a></li><li class="interlanguage-link interwiki-pt"><a href="https://pt.wikipedia.org/wiki/Uniface" title="Uniface – Portuguese" lang="pt" hreflang="pt" class="interlanguage-link-target">Português</a></li><li class="interlanguage-link interwiki-sr"><a href="https://sr.wikipedia.org/wiki/Uniface" title="Uniface – Serbian" lang="sr" hreflang="sr" class="interlanguage-link-target">Српски / srpski</a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q2143563#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 17 October 2016, at 04:29.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Uniface_(programming_language)&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":74,"wgHostname":"mw1268"});});</script>
+	</body>
+</html>

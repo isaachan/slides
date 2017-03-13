@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>IBM i Control Language - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"IBM_i_Control_Language","wgTitle":"IBM i Control Language","wgCurRevisionId":751657167,"wgRevisionId":751657167,"wgArticleId":431985,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles needing additional references from April 2008","All articles needing additional references","Scripting languages","AS/400","Command shells"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"IBM_i_Control_Language","wgRelevantArticleId":431985,"wgRequestId":"WIq43ApAICwAAHeqDrYAAAAT","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgRedirectedFrom":"AS/400_Control_Language","wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":true},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgInternalRedirectTargetUrl":"/wiki/IBM_i_Control_Language","wgWikibaseItemId":"Q263490","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.cite.styles":"ready","ext.pygments":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.action.view.redirect","ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.legacy.wikibits","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.pygments%2CwikimediaBadges%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.29.0-wmf.8"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/IBM_i_Control_Language"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=IBM_i_Control_Language&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=IBM_i_Control_Language&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/IBM_i_Control_Language"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-IBM_i_Control_Language rootpage-IBM_i_Control_Language skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">IBM i Control Language</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"><span class="mw-redirectedfrom">  (Redirected from <a href="/w/index.php?title=AS/400_Control_Language&amp;redirect=no" class="mw-redirect" title="AS/400 Control Language">AS/400 Control Language</a>)</span></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><script>function mfTempOpenSection(id){var block=document.getElementById("mf-section-"+id);block.className+=" open-block";block.previousSibling.className+=" open-block";}</script><table class="plainlinks metadata ambox ambox-content ambox-Refimprove" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><a href="/wiki/File:Question_book-new.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" width="50" height="39" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/75px-Question_book-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/100px-Question_book-new.svg.png 2x" data-file-width="512" data-file-height="399" /></a></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">This article <b>needs additional citations for <a href="/wiki/Wikipedia:Verifiability" title="Wikipedia:Verifiability">verification</a></b>. <span class="hide-when-compact">Please help <a class="external text" href="//en.wikipedia.org/w/index.php?title=IBM_i_Control_Language&amp;action=edit">improve this article</a> by <a href="/wiki/Help:Introduction_to_referencing_with_Wiki_Markup/1" title="Help:Introduction to referencing with Wiki Markup/1">adding citations to reliable sources</a>. Unsourced material may be challenged and removed.</span> <small><i>(April 2008)</i></small> <small class="hide-when-compact"><i>(<a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove this template message</a>)</i></small></span></td>
+</tr>
+</table>
+<table class="infobox vevent" style="width:22em">
+<caption class="summary">AS/400 Control Language</caption>
+<tr>
+<th scope="row"><a href="/wiki/Programming_paradigm" title="Programming paradigm">Paradigm</a></th>
+<td><a href="/wiki/Imperative_programming" title="Imperative programming">imperative</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_design" title="Software design">Designed&#160;by</a></th>
+<td><a href="/wiki/IBM" title="IBM">IBM</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_developer" title="Software developer">Developer</a></th>
+<td class="organiser"><a href="/wiki/IBM" title="IBM">IBM</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Operating_system" title="Operating system">OS</a></th>
+<td><a href="/wiki/IBM_System_i" title="IBM System i">IBM System i</a></td>
+</tr>
+<tr>
+<th colspan="2" style="text-align:center;background-color: #eee;">Influenced by</th>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/Job_Control_Language" title="Job Control Language">Job Control Language</a>, <a href="/wiki/PL/I" title="PL/I">PL/I</a></td>
+</tr>
+<tr>
+<th colspan="2" style="text-align:center;background-color: #eee;">Influenced</th>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/Windows_PowerShell" class="mw-redirect" title="Windows PowerShell">Windows PowerShell</a></td>
+</tr>
+</table>
+<p>The <b>IBM i Control Language</b> (CL) is a <a href="/wiki/Scripting_language" title="Scripting language">scripting language</a> for the <a href="/wiki/IBM" title="IBM">IBM</a>'s <a href="/wiki/IBM_i" title="IBM i">IBM i</a> <a href="/wiki/Platform_(computing)" class="mw-redirect" title="Platform (computing)">platform</a> (previously called OS/400 when running on AS/400 systems) bearing a resemblance to the IBM <a href="/wiki/Job_Control_Language" title="Job Control Language">Job Control Language</a> and consisting of an ever expanding set of command <a href="/wiki/AS/400_object" title="AS/400 object">objects</a> (*CMD) used to invoke traditional AS/400 programs and/or get help on what those programs do. CL can also be used to create CL programs (congruent to <a href="/wiki/Shell_script" title="Shell script">shell scripts</a>) where there are additional commands that provide program-like functionality (IF/ELSE, <a href="/wiki/Declaration_(computer_science)" class="mw-redirect" title="Declaration (computer science)">variable declaration</a>, file input, etc.)</p>
+<p>Although CL is a scripting language for system administration, it is used mainly to create compiled programs. The use of intepreted CL scripts through the SBMDBJOB command <sup id="cite_ref-1" class="reference"><a href="#cite_note-1">[1]</a></sup> is in fact extremely limited .</p>
+<p>While thousands of commands were written by IBM developers to perform system level tasks like compiling programs, backing up data, changing system configurations, displaying system object details, or deleting them, commands are not limited to systems level concerns and can be drafted for user applications as well.</p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Commands_and_programs"><span class="tocnumber">1</span> <span class="toctext">Commands and programs</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Syntax"><span class="tocnumber">2</span> <span class="toctext">Syntax</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Prompting"><span class="tocnumber">3</span> <span class="toctext">Prompting</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Command_help"><span class="tocnumber">4</span> <span class="toctext">Command help</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Creating_new_commands"><span class="tocnumber">5</span> <span class="toctext">Creating new commands</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Finding_the_right_command"><span class="tocnumber">6</span> <span class="toctext">Finding the right command</span></a>
+<ul>
+<li class="toclevel-2 tocsection-7"><a href="#Standardized_abbreviations"><span class="tocnumber">6.1</span> <span class="toctext">Standardized abbreviations</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Command_grouping_menus"><span class="tocnumber">6.2</span> <span class="toctext">Command grouping menus</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Command_selection"><span class="tocnumber">6.3</span> <span class="toctext">Command selection</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-10"><a href="#Sample_code"><span class="tocnumber">7</span> <span class="toctext">Sample code</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#References"><span class="tocnumber">8</span> <span class="toctext">References</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Commands_and_programs">Commands and programs</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=IBM_i_Control_Language&amp;action=edit&amp;section=1" title="Edit section: Commands and programs">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p><a href="/wiki/Parameter_(computer_science)" class="mw-redirect" title="Parameter (computer science)">Parameters</a> (<a href="/wiki/Command-line_argument" class="mw-redirect" title="Command-line argument">command-line arguments</a>) defined in the main procedures of all traditional AS/400 programs are hard coded lists that are made up of parameters that can be numeric, alphanumeric, boolean, etc. and the order in which parameters are passed is important. This is a stark difference from the <a href="/wiki/Unix" title="Unix">Unix</a> and <a href="/wiki/DOS" title="DOS">DOS</a> worlds where the parameter list in Unix shell scripts and <a href="/wiki/C_(programming_language)" title="C (programming language)">C programs</a> is a set or array of character pointers and more often than not the parameters are not positionally dependent.</p>
+<p>The AS/400 developer's solution to this problem was the command object (*CMD). While the parameters on the command can be specified in any order, each parameter is defined to be passed in a specific order to the program. The programmer can also define, among other things, the parameter's <a href="/wiki/Data_type" title="Data type">data type</a>, unique parameter name, descriptive text (for prompting), default value (used only if the parameter isn't specified during execution), if the values are restricted to a certain set or range, if the data entered should be changed to another value before calling the program, etc.</p>
+<p>At its most basic a command names a single program to call when the user types or prompts the command and presses the Enter key. The command takes all of the parameters typed by the user, and those not typed by the user, and builds a parameter list that it passes to the program when it's called.</p>
+<h2><span class="mw-headline" id="Syntax">Syntax</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=IBM_i_Control_Language&amp;action=edit&amp;section=2" title="Edit section: Syntax">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The <a href="/wiki/Backus-Naur_form" class="mw-redirect" title="Backus-Naur form">BNF</a> for a much simplified CL command syntax would be defined as follows:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+ <span class="p">&lt;</span><span class="nc">CL-command</span><span class="p">&gt;</span> <span class="o">::=</span> command-name [<span class="p">&lt;</span><span class="nc">positional-parameter-list</span><span class="p">&gt;</span>] [<span class="p">&lt;</span><span class="nc">named-parameter-list</span><span class="p">&gt;</span>]
+
+ <span class="p">&lt;</span><span class="nc">positional-parameter-list</span><span class="p">&gt;</span> <span class="o">::=</span> <span class="p">&lt;</span><span class="nc">parameter-value</span><span class="p">&gt;</span> [<span class="p">&lt;</span><span class="nc">positional-parameter-list</span><span class="p">&gt;</span>]
+
+ <span class="p">&lt;</span><span class="nc">named-parameter-list</span><span class="p">&gt;</span> <span class="o">::=</span> parameter-name"(" <span class="p">&lt;</span><span class="nc">parameter-element-list</span><span class="p">&gt;</span> ")" [<span class="p">&lt;</span><span class="nc">named-parameter-list</span><span class="p">&gt;</span>]
+
+ <span class="p">&lt;</span><span class="nc">parameter-element-list</span><span class="p">&gt;</span> <span class="o">::=</span> <span class="p">&lt;</span><span class="nc">parameter-value</span><span class="p">&gt;</span> [<span class="p">&lt;</span><span class="nc">parameter-element-list</span><span class="p">&gt;</span>]
+
+ <span class="p">&lt;</span><span class="nc">parameter-value</span><span class="p">&gt;</span> <span class="o">::=</span> CL-name |
+                       qualified-CL-name |
+                       "*"special-value |
+                       generic-CL-name"*" |
+                       "'"alphanumeric-value"'" |
+                       numeric-value |
+                       "X'"hexadecimal-value"'"
+</pre></div>
+<p>The items above that end in <i>-name</i> follow <a href="/wiki/AS/400_object" title="AS/400 object">AS/400 object</a> naming conventions which, generally speaking, means the name starts with a letter and can be up to ten characters in length. (CL commands are also case-insensitive.)</p>
+<p>A good example of a typical CL command is the <b>Change Program</b> (CHGPGM) command below:</p>
+<pre>
+CHGPGM MYPGM OPTIMIZE(*FULL) RMVOBS(*BLKORD *PRCORD) TEXT('My program.')
+</pre>
+<p>The above command is passing four parameters to the program that does <i>Change Program</i> processing and they are:</p>
+<ul>
+<li>MYPGM: A positional parameter (PGM), and the only required parameter. In this case it's the name of the program being changed. Positional parameters are always first. Once a named parameter appears all parameters that follow must be named parameters.</li>
+<li>OPTIMIZE(*FULL): A named parameter specifying a single element which is a special value. In this case it will change the program to be fully optimized.</li>
+<li>RMVOBS(*BLKORD *PRCORD): A named parameter (Remove Observability) specifying multiple special values. In this case telling it to remove two kinds of profiling data from the program.</li>
+<li>TEXT('My program.'): Another named parameter specifying a single alphanumeric value. In this case it's changing the descriptive text of the program.</li>
+</ul>
+<p>In reality the AS/400 will pass many more parameters than the four specified above. This is because the rest of the CHGPGM command's parameters were not specified, so default values will be passed instead. For every parameter on this, aside from the PGM parameter, that default is <i>*SAME</i>, meaning don't change it.</p>
+<h2><span class="mw-headline" id="Prompting">Prompting</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=IBM_i_Control_Language&amp;action=edit&amp;section=3" title="Edit section: Prompting">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>All AS/400 commands can be prompted directly from the command line or within CL program <a href="/wiki/Source_code" title="Source code">source</a> by typing the command and pressing the F4 <a href="/wiki/Function_key" title="Function key">function key</a>. An OS/400 command can also be prompted by typing a&#160;? before the command. (This is useful in an interactive program which cues a command string, having already filled in some values.)</p>
+<p>The system will then present a screen with the set of parameters that the program accepts/requires (required parameters are usually highlighted).</p>
+<p>Required parameters are listed first, and parameters with system-supplied default values are listed last of all. To see all parameters, press F10. If any one choice requires further selections, those are cued as you select that value for that parameter, by appearing onscreen.</p>
+<p>Prompting is further enhanced to allow the programmer to find what values are valid for each parameter. To do this during prompting the user would move the cursor to the parameter field in question and press F4 again. The system would then display a screen describing the type of input required and an available list of allowable values.</p>
+<p>To enter a longer name, or extend the list to allow you to enter extra values, type a plus sign instead of a value. (As when listing names of objects to be saved or restored.)</p>
+<h2><span class="mw-headline" id="Command_help">Command help</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=IBM_i_Control_Language&amp;action=edit&amp;section=4" title="Edit section: Command help">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Cursor sensitive help can also be provided on AS/400 commands but it's not required. If help has been provided one can view help for a parameter by moving the cursor to the desired parameter field and pressing F1 (help). To get help for the entire command itself (and all of its parameters) the user would press F1 anywhere on the prompt display and then press F2 (extended help).</p>
+<h2><span class="mw-headline" id="Creating_new_commands">Creating new commands</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=IBM_i_Control_Language&amp;action=edit&amp;section=5" title="Edit section: Creating new commands">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>New commands can be created to call non-system programs and they will work exactly like the AS/400 variety. The Command Definition Language is described in the <a rel="nofollow" class="external text" href="http://publib.boulder.ibm.com/iseries/v5r2/ic2924/books/sm14/c4157215.pdf">CL Programmer's Guide</a>.</p>
+<p>It's a good idea to create help screens for new commands and their parameters. All help screens use <a href="/w/index.php?title=AS/400_panel_group&amp;action=edit&amp;redlink=1" class="new" title="AS/400 panel group (page does not exist)">Panel Group</a> <a href="/wiki/AS/400_object" title="AS/400 object">objects</a> (*PNLGRP) and these can be created using the <a href="/w/index.php?title=UIM_language&amp;action=edit&amp;redlink=1" class="new" title="UIM language (page does not exist)">UIM language</a> described in the <a rel="nofollow" class="external text" href="http://publib.boulder.ibm.com/iseries/v5r2/ic2924/books/c4157150.pdf">IBM AS/400 Application Display Programming manual</a>.</p>
+<p>Beginning in V5R3 of the operating system a new, much simpler method of creating help was added: run the command</p>
+<pre>
+ GENCMDDOC CMD(MYLIB/MYCMD) TODIR('/QSYS.LIB/MYLIB.LIB/QPNLSRC.FILE) GENOPT(*UIM)
+</pre>
+<p>A skeleton UIM panel group will be automatically generated including all parameters described by the command. The result file can be edited (seu, wdsc, rdi), then compiled with the CRTPNLGRP command, and finally associated with the command via CHGCMD HLPPNLGRP().</p>
+<h2><span class="mw-headline" id="Finding_the_right_command">Finding the right command</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=IBM_i_Control_Language&amp;action=edit&amp;section=6" title="Edit section: Finding the right command">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>There are 2,262 commands built-in IBM commands contained in V7R3,<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">[2]</a></sup> but finding them isn't all that hard because of several designs of the system that make life easier. These labor saving designs are: Standardized Abbreviations, Command Grouping Menus, and Command Selection.</p>
+<h3><span class="mw-headline" id="Standardized_abbreviations">Standardized abbreviations</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=IBM_i_Control_Language&amp;action=edit&amp;section=7" title="Edit section: Standardized abbreviations">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The AS/400 developers standardized the abbreviations used to create command names. Verbs like <i>change</i> are always rendered as <i>CHG</i>, <i>display</i> as <i>DSP</i>, <i>work</i> as <i>WRK</i>, <i>create</i> as <i>CRT</i>, etc. Subjects like <i>program</i> are always <i>PGM</i>, <i>user</i> is <i>USR</i>, <i>module</i> is <i>MOD</i>, <i>server</i> is <i>SVR</i>, etc. You can see every possible verb and subject used on the AS/400 in the <b>VERB</b> and <b>SUBJECT</b> menus, just enter the commands GO VERB or GO SUBJECT.</p>
+<p>Likewise, "Control Language Programming" was abbreviated CLP, and the source type was accordingly CLP. With the introduction of the ILE programming model, the source type was changed to "CLLE".<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">[3]</a></sup></p>
+<h3><span class="mw-headline" id="Command_grouping_menus">Command grouping menus</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=IBM_i_Control_Language&amp;action=edit&amp;section=8" title="Edit section: Command grouping menus">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The VERB and SUBJECT menus are part of what are called the Command Grouping Menus. For every Three (or four) Letter abbreviation there is a menu devoted to it that starts with the letters <i>CMD</i>. So to see all <i>CHG</i> commands the user would execute the command GO CMDCHG. For <i>program</i> commands the menu would be CMDPGM.</p>
+<p>There are other menus besides the Command Grouping Menus. The starting point for the menuing system can be accessed by pressing F4 on an empty <a href="/w/index.php?title=AS/400_command_line&amp;action=edit&amp;redlink=1" class="new" title="AS/400 command line (page does not exist)">command line</a>.</p>
+<h3><span class="mw-headline" id="Command_selection">Command selection</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=IBM_i_Control_Language&amp;action=edit&amp;section=9" title="Edit section: Command selection">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>If one only knows part of a command or if third party software is being used where the commands don't conform to the AS/400 abbreviation standard then you would enter that part of the command that is known, attach an asterisk (to make it generic), and press enter. The system will then display a list of commands in the job's <a href="/wiki/AS/400_Library_List" title="AS/400 Library List">library list</a> that match the generic names just typed. One can then page through the list looking for the command needed and then select it using option 1.</p>
+<p>In the background the system is using the SLTCMD command to perform this function. If one wants to select all commands in a <a href="/wiki/AS/400_library" title="AS/400 library">library</a> then prompt this command and enter the special value *ALL.</p>
+<h2><span class="mw-headline" id="Sample_code">Sample code</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=IBM_i_Control_Language&amp;action=edit&amp;section=10" title="Edit section: Sample code">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The following is a sample of CL programming. The program interactively converts dates from Julian to MDY and vice versa. Results are displayed on line 24 of the terminal. It accepts two parameters. The &amp;IN parameter which is the date string to be converted. If a Julian string it should be in the format YYNNN where YY is the year number and NNN is the day number of the year. If a MDY string it must be in the format MMDDYY. The second parameter is &amp;TYP which is the type of date to be converted to. It must be 'J' (Julian) or 'M' (MDY). For example: the command <tt>CALL PGM(ICVTDATC) PARM('04180' 'M')</tt> will convert the Julian date 04180 to 062804 (June 28, 2004).</p>
+<pre>
+PGM (&amp;IN &amp;TYP)
+
+   DCL &amp;IN  *CHAR 6
+   DCL &amp;OUT *CHAR 8
+   DCL &amp;TYP *CHAR 1
+
+   IF (&amp;TYP = J) +
+      DO
+         CVTDAT DATE(&amp;IN) TOVAR(&amp;OUT) FROMFMT(*MDY) +
+                TOFMT(*JUL) TOSEP(*NONE)
+      ENDDO
+
+   ELSE IF (&amp;TYP = M) +
+      DO
+         CVTDAT DATE(&amp;IN) TOVAR(&amp;OUT) FROMFMT(*JUL) +
+                TOFMT(*MDY) TOSEP(*NONE)
+      ENDDO
+
+   SNDPGMMSG MSG('IN=' || &amp;IN || '  OUT=' || &amp;OUT) +
+             MSGTYPE(*COMP)
+
+ENDPGM  
+</pre>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=IBM_i_Control_Language&amp;action=edit&amp;section=11" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.itjungle.com/fhg/fhg030712-story02.html">itjungle.com</a></span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.ibm.com/support/knowledgecenter/ssw_ibm_i_73/clfinder/finder30.htm">IBM.com</a></span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><cite class="citation book">Meyers, Bryan (1997). <i>Control Language Programming for the AS/400 (2nd Edition)</i>. 29th Street Press. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/9781882419760" title="Special:BookSources/9781882419760">9781882419760</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AIBM+i+Control+Language&amp;rft.aufirst=Bryan&amp;rft.aulast=Meyers&amp;rft.btitle=Control+Language+Programming+for+the+AS%2F400+%282nd+Edition%29&amp;rft.date=1997&amp;rft.genre=book&amp;rft.isbn=9781882419760&amp;rft.pub=29th+Street+Press&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+</ol>
+</div>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1212
+Cached time: 20161230174834
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.092 seconds
+Real time usage: 0.130 seconds
+Preprocessor visited node count: 464/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 7924/2097152 bytes
+Template argument size: 374/2097152 bytes
+Highest expansion depth: 10/40
+Expensive parser function count: 3/500
+Lua time usage: 0.040/10.000 seconds
+Lua memory usage: 1.73 MB/50 MB
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  109.976      1 - -total
+ 37.36%   41.088      1 - Template:Refimprove
+ 31.09%   34.193      1 - Template:Reflist
+ 28.92%   31.805      1 - Template:Infobox_programming_language
+ 26.72%   29.386      1 - Template:Cite_book
+ 25.35%   27.874      1 - Template:Infobox
+ 24.52%   26.971      1 - Template:Ambox
+  3.11%    3.420      1 - Template:Infobox_software/simple
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:431985-0!*!0!!en!4!* and timestamp 20161230174834 and revision id 751657167
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=IBM_i_Control_Language&amp;oldid=751657167">https://en.wikipedia.org/w/index.php?title=IBM_i_Control_Language&amp;oldid=751657167</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Scripting_languages" title="Category:Scripting languages">Scripting languages</a></li><li><a href="/wiki/Category:AS/400" title="Category:AS/400">AS/400</a></li><li><a href="/wiki/Category:Command_shells" title="Category:Command shells">Command shells</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Articles_needing_additional_references_from_April_2008" title="Category:Articles needing additional references from April 2008">Articles needing additional references from April 2008</a></li><li><a href="/wiki/Category:All_articles_needing_additional_references" title="Category:All articles needing additional references">All articles needing additional references</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=IBM+i+Control+Language" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=IBM+i+Control+Language" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/IBM_i_Control_Language"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:IBM_i_Control_Language"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/IBM_i_Control_Language" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=IBM_i_Control_Language&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=IBM_i_Control_Language&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/IBM_i_Control_Language" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/IBM_i_Control_Language" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=IBM_i_Control_Language&amp;oldid=751657167" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=IBM_i_Control_Language&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q263490" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=IBM_i_Control_Language&amp;id=751657167" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=IBM+i+Control+Language">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=IBM+i+Control+Language&amp;returnto=IBM+i+Control+Language&amp;oldid=751657167&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=IBM_i_Control_Language&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/CL_(Programmiersprache)" title="CL (Programmiersprache) – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/Langage_CLP" title="Langage CLP – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-pt"><a href="https://pt.wikipedia.org/wiki/Linguagem_de_controlo" title="Linguagem de controlo – Portuguese" lang="pt" hreflang="pt" class="interlanguage-link-target">Português</a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q263490#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 27 November 2016, at 02:40.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=IBM_i_Control_Language&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":70,"wgHostname":"mw1174"});});</script>
+	</body>
+</html>

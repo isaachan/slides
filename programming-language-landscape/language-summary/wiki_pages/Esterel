@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Esterel - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Esterel","wgTitle":"Esterel","wgCurRevisionId":748808342,"wgRevisionId":748808342,"wgArticleId":1285078,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Wikipedia articles needing clarification from April 2011","Synchronous programming languages","Hardware description languages"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Esterel","wgRelevantArticleId":1285078,"wgRequestId":"WIiAsgpAIDcAABDzSQYAAAAE","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":true},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q486926","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.cite.styles":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.legacy.wikibits","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.29.0-wmf.8"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Esterel"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Esterel&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Esterel&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Esterel"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Esterel rootpage-Esterel skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Esterel</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><script>function mfTempOpenSection(id){var block=document.getElementById("mf-section-"+id);block.className+=" open-block";block.previousSibling.className+=" open-block";}</script><div role="note" class="hatnote">This article is about the programming language. For the mountain range in France, see <a href="/wiki/Esterel_massif" class="mw-redirect" title="Esterel massif">Esterel massif</a>. For the ship, see <a href="/wiki/MV_Esterel" class="mw-redirect" title="MV Esterel">MV Esterel</a>.</div>
+<p><b>Esterel</b> is a <a href="/wiki/Synchronous_programming_language" title="Synchronous programming language">synchronous</a> <a href="/wiki/Programming_language" title="Programming language">programming language</a> for the development of complex reactive systems. The <a href="/wiki/Imperative_programming" title="Imperative programming">imperative programming</a> style of <b>Esterel</b> allows the simple expression of <a href="/wiki/Parallel_computing" title="Parallel computing">parallelism</a> and <a href="/wiki/Preemption_(computing)" title="Preemption (computing)">preemption</a>. As a consequence, it is well suited for control-dominated model designs.</p>
+<p>The development of the language started in the early 1980s, and was mainly carried out by a team of <a href="/wiki/Ecole_des_Mines_de_Paris" class="mw-redirect" title="Ecole des Mines de Paris">Ecole des Mines de Paris</a> and <a href="/wiki/INRIA" class="mw-redirect" title="INRIA">INRIA</a> led by <a href="/wiki/G%C3%A9rard_Berry" title="Gérard Berry">Gérard Berry</a>. Current compilers take Esterel programs and generate <a href="/wiki/C_(programming_language)" title="C (programming language)">C code</a> or hardware (RTL) implementations (<a href="/wiki/VHDL" title="VHDL">VHDL</a> or <a href="/wiki/Verilog" title="Verilog">Verilog</a>).</p>
+<p>The language is still under development, with several compilers out. The commercial version of <b>Esterel</b> is the development environment <a href="/w/index.php?title=Esterel_Studio&amp;action=edit&amp;redlink=1" class="new" title="Esterel Studio (page does not exist)">Esterel Studio</a>. The company that commercialize it (<a href="/w/index.php?title=Synfora&amp;action=edit&amp;redlink=1" class="new" title="Synfora (page does not exist)">Synfora</a>) initiated a normalization process with the <a href="/wiki/IEEE" class="mw-redirect" title="IEEE">IEEE</a> in April 2007 however the working group (P1778) dissolved March 2011. The <a rel="nofollow" class="external text" href="http://www.esterel-technologies.com/files/Esterel-Language-v7-Ref-Man.pdf">Esterel v7 Reference Manual Version v7 30 – initial IEEE standardization proposal</a> is publicly available.</p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#The_Multiform_Notion_of_Time"><span class="tocnumber">1</span> <span class="toctext">The Multiform Notion of Time</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Signals"><span class="tocnumber">2</span> <span class="toctext">Signals</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Signal_Coherence_rules"><span class="tocnumber">2.1</span> <span class="toctext">Signal Coherence rules</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="#The_language_constructs"><span class="tocnumber">3</span> <span class="toctext">The language constructs</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="#Primitive_Esterel_statements"><span class="tocnumber">3.1</span> <span class="toctext">Primitive Esterel statements</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Derived_Esterel_statements"><span class="tocnumber">3.2</span> <span class="toctext">Derived Esterel statements</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Other_Esterel_statements"><span class="tocnumber">3.3</span> <span class="toctext">Other Esterel statements</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Example_.28ABRO.29"><span class="tocnumber">3.4</span> <span class="toctext">Example (ABRO)</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-9"><a href="#Advantages_of_Esterel"><span class="tocnumber">4</span> <span class="toctext">Advantages of Esterel</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#Disadvantages_of_Esterel"><span class="tocnumber">5</span> <span class="toctext">Disadvantages of Esterel</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="#References"><span class="tocnumber">7</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="#External_links"><span class="tocnumber">8</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="The_Multiform_Notion_of_Time">The Multiform Notion of Time</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Esterel&amp;action=edit&amp;section=1" title="Edit section: The Multiform Notion of Time">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The notion of time used in Esterel differs from that of non-synchronous languages in the following way: The notion of physical time is replaced with the notion of order. Only the simultaneity and precedence of events are considered. This means that the physical time does not play any special role. This is called multiform notion of time. An Esterel program describes a totally ordered sequence of logical instants. At each instant, an arbitrary number of events occur (including 0). Event occurrences that happen at the same logical instant are considered simultaneous. Other events are ordered as their instances of occurrences. There are two types of statements: Those that take zero time (execute and terminate in the same instant) and those that delay for a prescribed number of cycles.</p>
+<h2><span class="mw-headline" id="Signals">Signals</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Esterel&amp;action=edit&amp;section=2" title="Edit section: Signals">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Signals are the only means of communication. There are valued and non-valued signals. They are further categorized as being input, output, or local signals. A signal has the property of being either present or absent in an instant. Valued signals also contain a value. Signals are broadcast across the program, and that means any process can read or write a signal. The value of a valued signal can be determined in any instant, even if the signal is absent. The default status of a signal is absent. Signals remain absent until they are explicitly set to present using the emit statement. Communication is instantaneous, that means that a signal emitted in a cycle is visible immediately. Note that one can communicate back and forth in the same cycle.</p>
+<h3><span class="mw-headline" id="Signal_Coherence_rules">Signal Coherence rules</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Esterel&amp;action=edit&amp;section=3" title="Edit section: Signal Coherence rules">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<ul>
+<li>Each signal is only present or absent in a cycle, never both.</li>
+<li>All writers run before any readers do.</li>
+</ul>
+<p>Thus</p>
+<pre>
+present A else
+    emit A
+end
+</pre>
+<p>is an erroneous program: the writer "emit A" must run before the reader "present A", but the semantics of the language requires the "present A" to be performed first, resulting in a conflict in the program's semantics. <sup class="noprint Inline-Template" style="margin-left:0.1em; white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Please_clarify" title="Wikipedia:Please clarify"><span title="The text near this tag may need clarification or removal of jargon. (April 2011)">clarification needed</span></a></i>]</sup></p>
+<h2><span class="mw-headline" id="The_language_constructs">The language constructs</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Esterel&amp;action=edit&amp;section=4" title="Edit section: The language constructs">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="Primitive_Esterel_statements">Primitive Esterel statements</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Esterel&amp;action=edit&amp;section=5" title="Edit section: Primitive Esterel statements">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Pure Esterel has eleven primitive statements.<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">[1]</a></sup></p>
+<table class="wikitable">
+<tr>
+<td><code>nothing</code></td>
+<td>Terminates immediately with no other effect.</td>
+</tr>
+<tr>
+<td><code>pause</code></td>
+<td>Blocks control flow in the current cycle for resumption in the next cycle.</td>
+</tr>
+<tr>
+<td><i>p</i> <code>;</code> <i>q</i></td>
+<td>Runs <i>p</i> until it terminates and then, in the same reaction, start <i>q</i>.</td>
+</tr>
+<tr>
+<td><i>p</i> <code>||</code> <i>q</i></td>
+<td>Runs <i>p</i> and <i>q</i> in parallel</td>
+</tr>
+<tr>
+<td><code>loop</code> <i>p</i> <code>end</code></td>
+<td>Restart the body <i>p</i> as soon as it terminates. Every path through the loop body must contain at least one <code>pause</code> statement to avoid unbounded looping within a single reaction.</td>
+</tr>
+<tr>
+<td><code>signal</code> <i>S</i> <code>in</code> <i>p</i> <code>end</code></td>
+<td>Declares a local signal.</td>
+</tr>
+<tr>
+<td><code>emit</code> <i>S</i></td>
+<td>Make signal <i>S</i> present in the current instant. A signal is absent unless it is emitted.</td>
+</tr>
+<tr>
+<td class="nowrap"><code>present</code> <i>S</i> <code>then</code> <i>p</i> <code>else</code> <i>q</i> <code>end</code></td>
+<td>If signal <i>S</i> is present in the current instant, immediately run <i>p</i>, otherwise run <i>q</i>.</td>
+</tr>
+<tr>
+<td><code>suspend</code> <i>p</i> <code>when</code> <i>S</i></td>
+<td>Suspends the execution of the body in instants where <i>S</i> is present.</td>
+</tr>
+<tr>
+<td><code>trap</code> <i>T</i> <code>in</code> <i>p</i> <code>end</code></td>
+<td>Declare a labeled escape block.</td>
+</tr>
+<tr>
+<td><code>exit</code> <i>T</i></td>
+<td>Jump to the end of the innermost <i>T</i>-labeled escape block.</td>
+</tr>
+</table>
+<h3><span class="mw-headline" id="Derived_Esterel_statements">Derived Esterel statements</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Esterel&amp;action=edit&amp;section=6" title="Edit section: Derived Esterel statements">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Esterel has several derived constructions:<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">[2]</a></sup><sup id="cite_ref-3" class="reference"><a href="#cite_note-3">[3]</a></sup></p>
+<table class="wikitable">
+<tr>
+<th>Derived statement</th>
+<th>Expansion</th>
+</tr>
+<tr>
+<td><code>halt</code></td>
+<td><code>loop pause end</code></td>
+</tr>
+<tr>
+<td><code>sustain</code> <i>s</i></td>
+<td><code>loop emit</code> <i>s</i><code>; pause end</code></td>
+</tr>
+<tr>
+<td><code>present</code> <i>s</i> <code>then</code> <i>p</i> <code>end</code></td>
+<td><code>present</code> <i>s</i> <code>then</code> <i>p</i> <code>else nothing</code> <code>end</code></td>
+</tr>
+<tr>
+<td><code>await</code> <i>s</i></td>
+<td><code>trap T in loop pause; present</code> <i>s</i> <code>then exit T end end loop end</code></td>
+</tr>
+<tr>
+<td><code>await immediate</code> <i>s</i></td>
+<td><code>trap T in loop present</code> <i>s</i> <code>then exit T end; pause end loop end</code></td>
+</tr>
+<tr>
+<td><code>suspend</code> <i>p</i> <code>when immediate</code> <i>s</i></td>
+<td><code>suspend present</code> <i>s</i> <code>then pause end;</code> <i>p</i> <code>when</code> <i>s</i></td>
+</tr>
+<tr>
+<td><code>abort</code> <i>p</i> <code>when (immediate)</code> <i>s</i></td>
+<td><code>trap T in suspend</code> <i>p</i> <code>when (immediate)</code> <i>s</i><code>; exit T || await (immediate)</code> <i>s</i><code>; exit T; end</code></td>
+</tr>
+<tr>
+<td><code>weak abort</code> <i>p</i> <code>when (immediate)</code> <i>s</i></td>
+<td><code>trap T in</code> <i>p</i><code>; exit T || await (immediate)</code> <i>s</i><code>; exit T; end</code></td>
+</tr>
+<tr>
+<td><code>loop</code> <i>p</i> each <i>s</i></td>
+<td><code>loop abort</code> <i>p</i> ; halt when <i>s</i> <code>end loop</code></td>
+</tr>
+<tr>
+<td><code>every (immediate)</code> <i>s</i> <code>do</code> <i>p</i> <code>end every</code></td>
+<td><code>await (immediate)</code> <i>s</i><code>; loop</code> <i>p</i> <code>each</code> <i>s</i></td>
+</tr>
+</table>
+<h3><span class="mw-headline" id="Other_Esterel_statements">Other Esterel statements</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Esterel&amp;action=edit&amp;section=7" title="Edit section: Other Esterel statements">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The full Esterel language also has statements for declaring and instantiating modules, for variables, for calling external procedures, and for valued signals.</p>
+<h3><span class="mw-headline" id="Example_.28ABRO.29">Example (ABRO)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Esterel&amp;action=edit&amp;section=8" title="Edit section: Example (ABRO)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The following program emits the output O as soon as both inputs A and B have been received. Reset the behaviour whenever the input R is received.</p>
+<pre>
+module ABRO:
+input A, B, R;
+output O;
+
+loop
+  [ await A || await B ];
+  emit O
+each R
+
+end module
+</pre>
+<h2><span class="mw-headline" id="Advantages_of_Esterel">Advantages of Esterel</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Esterel&amp;action=edit&amp;section=9" title="Edit section: Advantages of Esterel">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li>Model of time gives programmer precise control</li>
+<li>Concurrency convenient for specifying control systems</li>
+<li>Completely deterministic</li>
+<li>Finite-state language
+<ul>
+<li>Execution time predictable</li>
+<li>Much easier to verify formally</li>
+</ul>
+</li>
+<li>Can be implemented in hardware as well as in software</li>
+</ul>
+<h2><span class="mw-headline" id="Disadvantages_of_Esterel">Disadvantages of Esterel</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Esterel&amp;action=edit&amp;section=10" title="Edit section: Disadvantages of Esterel">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li>Finite-state nature of the language limits flexibility (but expressivity is sufficient for the chosen application field)</li>
+<li>Semantic challenges
+<ul>
+<li>Avoiding causality violations is often difficult</li>
+<li>Difficult to compile in the general case, but simple correctness criteria exist</li>
+</ul>
+</li>
+</ul>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Esterel&amp;action=edit&amp;section=11" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a href="/w/index.php?title=Esterel_Studio&amp;action=edit&amp;redlink=1" class="new" title="Esterel Studio (page does not exist)">Esterel Studio</a>, an esterel IDE</li>
+<li>The <a href="/wiki/Lustre_programming_language" class="mw-redirect" title="Lustre programming language">Lustre programming language</a>, a cousin language.</li>
+<li><a href="/w/index.php?title=SCADE&amp;action=edit&amp;redlink=1" class="new" title="SCADE (page does not exist)">SCADE</a></li>
+<li><a href="/wiki/Esterel_Technologies" title="Esterel Technologies">Esterel Technologies</a>, the company behind Esterel Studio and SCADE.</li>
+<li><a href="/wiki/SIGNAL_programming_language" class="mw-redirect" title="SIGNAL programming language">SIGNAL</a> (a dataflow-oriented synchronous language enabling multi-clock specifications)</li>
+<li><a href="/wiki/Hardware_description_languages" class="mw-redirect" title="Hardware description languages">Hardware description languages</a></li>
+<li><a href="/wiki/Parallel_programming_model" title="Parallel programming model">Parallel programming model</a></li>
+</ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Esterel&amp;action=edit&amp;section=12" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><cite class="citation journal">Berry, Gérard (1999). "The Constructive Semantics of Pure Esterel". <a href="/wiki/CiteSeerX" title="CiteSeerX">CiteSeerX</a>&#160;<span class="plainlinks"><a rel="nofollow" class="external text" href="//citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.46.2076">10.1.1.46.2076</a><span style="margin-left:0.1em"><img alt="Freely accessible" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/65/Lock-green.svg/9px-Lock-green.svg.png" title="Freely accessible" width="9" height="14" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/65/Lock-green.svg/14px-Lock-green.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/6/65/Lock-green.svg/18px-Lock-green.svg.png 2x" data-file-width="512" data-file-height="813" /></span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AEsterel&amp;rft.atitle=The+Constructive+Semantics+of+Pure+Esterel&amp;rft.aufirst=G%C3%A9rard&amp;rft.aulast=Berry&amp;rft.date=1999&amp;rft.genre=article&amp;rft_id=%2F%2Fciteseerx.ist.psu.edu%2Fviewdoc%2Fsummary%3Fdoi%3D10.1.1.46.2076&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><cite class="citation journal">Berry, Gérard (June 2000). "The Esterel v5 Language Primer". Ecole des Mines and INRIA. <a href="/wiki/CiteSeerX" title="CiteSeerX">CiteSeerX</a>&#160;<span class="plainlinks"><a rel="nofollow" class="external text" href="//citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.3.1177">10.1.1.3.1177</a><span style="margin-left:0.1em"><img alt="Freely accessible" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/65/Lock-green.svg/9px-Lock-green.svg.png" title="Freely accessible" width="9" height="14" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/65/Lock-green.svg/14px-Lock-green.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/6/65/Lock-green.svg/18px-Lock-green.svg.png 2x" data-file-width="512" data-file-height="813" /></span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AEsterel&amp;rft.atitle=The+Esterel+v5+Language+Primer&amp;rft.aufirst=G%C3%A9rard&amp;rft.aulast=Berry&amp;rft.date=2000-06&amp;rft.genre=article&amp;rft_id=%2F%2Fciteseerx.ist.psu.edu%2Fviewdoc%2Fsummary%3Fdoi%3D10.1.1.3.1177&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><cite class="citation journal"><a href="/wiki/G%C3%A9rard_Berry" title="Gérard Berry">Berry, Gérard</a>; <a href="/wiki/Georges_Gonthier" title="Georges Gonthier">Gonthier, Georges</a> (November 1992). "The Esterel synchronous programming language: Design, semantics, implementation". <i>Science of Computer Programming</i>. <b>19</b> (2): 87–152. <a href="/wiki/CiteSeerX" title="CiteSeerX">CiteSeerX</a>&#160;<span class="plainlinks"><a rel="nofollow" class="external text" href="//citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.17.5606">10.1.1.17.5606</a><span style="margin-left:0.1em"><img alt="Freely accessible" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/65/Lock-green.svg/9px-Lock-green.svg.png" title="Freely accessible" width="9" height="14" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/65/Lock-green.svg/14px-Lock-green.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/6/65/Lock-green.svg/18px-Lock-green.svg.png 2x" data-file-width="512" data-file-height="813" /></span></span>. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1016%2F0167-6423%2892%2990005-V">10.1016/0167-6423(92)90005-V</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AEsterel&amp;rft.atitle=The+Esterel+synchronous+programming+language%3A+Design%2C+semantics%2C+implementation&amp;rft.aufirst=G%C3%A9rard&amp;rft.au=Gonthier%2C+Georges&amp;rft.aulast=Berry&amp;rft.date=1992-11&amp;rft.genre=article&amp;rft_id=%2F%2Fciteseerx.ist.psu.edu%2Fviewdoc%2Fsummary%3Fdoi%3D10.1.1.17.5606&amp;rft_id=info%3Adoi%2F10.1016%2F0167-6423%2892%2990005-V&amp;rft.issue=2&amp;rft.jtitle=Science+of+Computer+Programming&amp;rft.pages=87-152&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=19" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Esterel&amp;action=edit&amp;section=13" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.synfora.com/products/esterelStudio.html">Synfora, Inc.</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.esterel.org">Esterel Web</a></li>
+<li><a rel="nofollow" class="external text" href="http://www-sop.inria.fr/meije/esterel/esterel-eng.html">The Esterel Language</a></li>
+<li><a rel="nofollow" class="external text" href="http://www1.cs.columbia.edu/~sedwards/cec/">The Columbia Esterel Compiler: An open-source Esterel compiler</a></li>
+</ul>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1182
+Cached time: 20161231012516
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.092 seconds
+Real time usage: 0.124 seconds
+Preprocessor visited node count: 393/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 8419/2097152 bytes
+Template argument size: 461/2097152 bytes
+Highest expansion depth: 11/40
+Expensive parser function count: 1/500
+Lua time usage: 0.043/10.000 seconds
+Lua memory usage: 2.21 MB/50 MB
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  107.836      1 - -total
+ 43.69%   47.116      1 - Template:Reflist
+ 36.30%   39.144      1 - Template:Clarify
+ 33.17%   35.769      1 - Template:Fix-span
+ 31.10%   33.534      2 - Template:Cite_paper
+ 17.89%   19.297      2 - Template:Category_handler
+ 17.69%   19.075      1 - Template:About
+ 12.75%   13.745      1 - Template:Replace
+  9.37%   10.107      1 - Template:Delink
+  3.97%    4.281      1 - Template:Cite_journal
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:1285078-0!*!0!!en!4!* and timestamp 20161231012515 and revision id 748808342
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Esterel&amp;oldid=748808342">https://en.wikipedia.org/w/index.php?title=Esterel&amp;oldid=748808342</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Synchronous_programming_languages" title="Category:Synchronous programming languages">Synchronous programming languages</a></li><li><a href="/wiki/Category:Hardware_description_languages" title="Category:Hardware description languages">Hardware description languages</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Wikipedia_articles_needing_clarification_from_April_2011" title="Category:Wikipedia articles needing clarification from April 2011">Wikipedia articles needing clarification from April 2011</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Esterel" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Esterel" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/Esterel"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:Esterel"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/Esterel" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=Esterel&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Esterel&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Esterel" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Esterel" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Esterel&amp;oldid=748808342" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Esterel&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q486926" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Esterel&amp;id=748808342" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Esterel">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Esterel&amp;returnto=Esterel&amp;oldid=748808342&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Esterel&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/Esterel_(Programmiersprache)" title="Esterel (Programmiersprache) – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/Esterel_(langage)" title="Esterel (langage) – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-ja"><a href="https://ja.wikipedia.org/wiki/Esterel" title="Esterel – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target">日本語</a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q486926#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 10 November 2016, at 14:29.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Esterel&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":84,"wgHostname":"mw1185"});});</script>
+	</body>
+</html>

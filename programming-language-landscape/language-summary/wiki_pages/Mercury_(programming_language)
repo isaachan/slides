@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Mercury (programming language) - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Mercury_(programming_language)","wgTitle":"Mercury (programming language)","wgCurRevisionId":763635566,"wgRevisionId":763635566,"wgArticleId":19726,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Pages using deprecated image syntax","All accuracy disputes","Articles with disputed statements from February 2009","All articles with unsourced statements","Articles with unsourced statements from January 2014","Cross-platform free software","Functional languages","Functional logic programming languages","Logic programming languages",".NET programming languages","Programming languages created in 1995"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Mercury_(programming_language)","wgRelevantArticleId":19726,"wgRequestId":"WJWb4gpAMFQAAEXQkFsAAAAH","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":true},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q206040","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.cite.styles":"ready","ext.pygments":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.legacy.wikibits","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.pygments%2CwikimediaBadges%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.29.0-wmf.10"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Mercury_(programming_language)"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Mercury_(programming_language)&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Mercury_(programming_language)&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Mercury_(programming_language)"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Mercury_programming_language rootpage-Mercury_programming_language skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Mercury (programming language)</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div role="note" class="hatnote">For Mercury Autocode, see <a href="/wiki/Autocode" title="Autocode">Autocode</a>.</div>
+<div role="note" class="hatnote">Not to be confused with <a href="/wiki/Mercurial" title="Mercurial">Mercurial</a>.</div>
+<table class="infobox vevent" style="width:22em">
+<caption class="summary">Mercury</caption>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/File:Mercury_(programming_language)_logo.jpg" class="image"><img alt="Mercury (programming language) logo.jpg" src="//upload.wikimedia.org/wikipedia/en/2/21/Mercury_%28programming_language%29_logo.jpg" width="327" height="80" data-file-width="327" data-file-height="80" /></a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Programming_paradigm" title="Programming paradigm">Paradigm</a></th>
+<td><a href="/wiki/Logic_programming" title="Logic programming">Logic</a>, <a href="/wiki/Functional_programming" title="Functional programming">functional</a>, <a href="/wiki/Object-oriented_programming" title="Object-oriented programming">object-oriented</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_design" title="Software design">Designed&#160;by</a></th>
+<td>Zoltan Somogyi</td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_developer" title="Software developer">Developer</a></th>
+<td class="organiser"><a href="/wiki/University_of_Melbourne" title="University of Melbourne">University of Melbourne</a></td>
+</tr>
+<tr>
+<th scope="row">First&#160;appeared</th>
+<td>1995</td>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Software_release_life_cycle" title="Software release life cycle">Stable release</a></th>
+<td>
+<div style="margin:0px;">14.01.1 / September&#160;8,&#160;2014<span style="display:none">&#160;(<span class="bday dtstart published updated">2014-09-08</span>)</span></div>
+</td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Type_system" title="Type system">Typing discipline</a></th>
+<td><a href="/wiki/Strongly-typed_programming_language" class="mw-redirect" title="Strongly-typed programming language">Strong</a>, <a href="/wiki/Static_typing" class="mw-redirect" title="Static typing">static</a>, <a href="/wiki/Type_polymorphism" class="mw-redirect" title="Type polymorphism">polymorphic</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Operating_system" title="Operating system">OS</a></th>
+<td><a href="/wiki/Cross-platform" title="Cross-platform">Cross-platform</a> (<a href="/wiki/Unix" title="Unix">Unix</a>, <a href="/wiki/Mac_OS_X" class="mw-redirect" title="Mac OS X">Mac OS X</a>, <a href="/wiki/Microsoft_Windows" title="Microsoft Windows">Windows</a>)</td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_license" title="Software license">License</a></th>
+<td><a href="/wiki/GPL" class="mw-redirect" title="GPL">GPL</a> for compiler, <a href="/wiki/LGPL" class="mw-redirect" title="LGPL">LGPL</a> for standard library</td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Filename_extension" title="Filename extension">Filename extensions</a></th>
+<td>.m</td>
+</tr>
+<tr>
+<th scope="row">Website</th>
+<td><span class="url"><a rel="nofollow" class="external text" href="http://www.mercurylang.org/">www<wbr />.mercurylang<wbr />.org</a></span></td>
+</tr>
+<tr>
+<th colspan="2" style="text-align:center;background-color: #eee;">Major <a href="/wiki/Programming_language_implementation" title="Programming language implementation">implementations</a></th>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center">Melbourne Mercury Compiler</td>
+</tr>
+<tr>
+<th colspan="2" style="text-align:center;background-color: #eee;">Influenced by</th>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/Prolog" title="Prolog">Prolog</a>, <a href="/wiki/Hope_(programming_language)" title="Hope (programming language)">Hope</a>, <a href="/wiki/Haskell_(programming_language)" title="Haskell (programming language)">Haskell</a></td>
+</tr>
+</table>
+<p><b>Mercury</b> is a <a href="/wiki/Functional_logic_programming" title="Functional logic programming">functional logic programming</a> language geared towards real-world applications. It was initially developed at the <a href="/wiki/University_of_Melbourne" title="University of Melbourne">University of Melbourne</a> Computer Science department under the supervision of Zoltan Somogyi. The first version was developed by <a href="/w/index.php?title=Fergus_Henderson_(computer_scientist)&amp;action=edit&amp;redlink=1" class="new" title="Fergus Henderson (computer scientist) (page does not exist)">Fergus Henderson</a>, Thomas Conway and Zoltan Somogyi and was released on April 8, 1995.</p>
+<p>Mercury is a purely <a href="/wiki/Declarative_programming" title="Declarative programming">declarative</a> <a href="/wiki/Logic_programming" title="Logic programming">logic language</a>. It is related to both <a href="/wiki/Prolog" title="Prolog">Prolog</a> and <a href="/wiki/Haskell_(programming_language)" title="Haskell (programming language)">Haskell</a>.<sup id="cite_ref-motivation_1-0" class="reference"><a href="#cite_note-motivation-1">[1]</a></sup> It features a strong, static, polymorphic <a href="/wiki/Type_system" title="Type system">type system</a>, as well as a strong mode and determinism system.</p>
+<p>The official implementation, the Melbourne Mercury Compiler, is available for most <a href="/wiki/Unix" title="Unix">Unix</a> platforms, including <a href="/wiki/Mac_OS_X" class="mw-redirect" title="Mac OS X">Mac OS X</a>, as well as for <a href="/wiki/Microsoft_Windows" title="Microsoft Windows">Microsoft Windows</a>.</p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Back-ends"><span class="tocnumber">2</span> <span class="toctext">Back-ends</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Examples"><span class="tocnumber">3</span> <span class="toctext">Examples</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Release_schedule"><span class="tocnumber">4</span> <span class="toctext">Release schedule</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#See_also"><span class="tocnumber">5</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#References"><span class="tocnumber">6</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#External_links"><span class="tocnumber">7</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Overview">Overview</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Mercury_(programming_language)&amp;action=edit&amp;section=1" title="Edit section: Overview">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Mercury is based on the logic programming language <a href="/wiki/Prolog" title="Prolog">Prolog</a>. It has the same syntax, and the same basic concepts such as the <a href="/wiki/SLD_resolution" title="SLD resolution">SLD resolution</a> algorithm. It can be viewed as a pure subset of Prolog with strong types and modes. As such, it is often compared to its predecessor, both in terms of features, and run-time efficiency.</p>
+<p>The language is designed with <a href="/wiki/Software_engineering" title="Software engineering">software engineering</a> principles in mind. Unlike the original implementations of Prolog, it has a separate <a href="/wiki/Compiler" title="Compiler">compilation</a> phase, rather than being directly interpreted, which allows a much wider range of errors to be caught before running a program. It features a <a href="/w/index.php?title=Strict_typing&amp;action=edit&amp;redlink=1" class="new" title="Strict typing (page does not exist)">strict</a> <a href="/wiki/Static_typing" class="mw-redirect" title="Static typing">static type and mode system</a><sup id="cite_ref-motivation_1-1" class="reference"><a href="#cite_note-motivation-1">[1]</a></sup> and a module system.</p>
+<p>Due to the use of information obtained at compile time (such as type and mode information), programs written in Mercury typically perform significantly faster than equivalent programs written in Prolog.<sup id="cite_ref-benchmarks_2-0" class="reference"><a href="#cite_note-benchmarks-2">[2]</a></sup><sup id="cite_ref-jlp_3-0" class="reference"><a href="#cite_note-jlp-3">[3]</a></sup> Its authors claim that Mercury is the fastest logic language in the world, by a wide margin.<sup id="cite_ref-motivation_1-2" class="reference"><a href="#cite_note-motivation-1">[1]</a></sup></p>
+<p>Mercury is a purely <a href="/wiki/Declarative_programming" title="Declarative programming">declarative</a> language, unlike <a href="/wiki/Prolog" title="Prolog">Prolog</a>, since it lacks "extra-logical" Prolog statements such as "cut" and <a href="/wiki/Imperative_programming" title="Imperative programming">imperative</a> <a href="/wiki/I/O" class="mw-redirect" title="I/O">I/O</a>. This enables advanced <a href="/wiki/Static_program_analysis" title="Static program analysis">static analysis</a> and program <a href="/wiki/Optimization_(computer_science)" class="mw-redirect" title="Optimization (computer science)">optimization</a>, including <a href="/w/index.php?title=Compile-time_garbage_collection&amp;action=edit&amp;redlink=1" class="new" title="Compile-time garbage collection (page does not exist)">compile-time garbage collection</a>,<sup id="cite_ref-4" class="reference"><a href="#cite_note-4">[4]</a></sup> but can make certain programming constructs (such as a switch over a number of options, with a default<sup class="noprint Inline-Template" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Accuracy_dispute#Disputed_statement" title="Wikipedia:Accuracy dispute"><span title="The material near this tag is possibly inaccurate or nonfactual. (February 2009)">dubious</span></a> <span class="metadata">– <a href="/wiki/Talk:Mercury_(programming_language)#Examples_of_difficulties_introduced_by_declarativeness.3F" title="Talk:Mercury (programming language)">discuss</a></span></i>]</sup>) harder to express. (Note that while Mercury does allow impure functionality, this serves primarily as a way of calling foreign language code. All impure code must be explicitly marked.) Operations which would typically be impure (such as <a href="/wiki/Input/output" title="Input/output">input/output</a>) are expressed using pure constructs in Mercury using <a href="/wiki/Linear_type_system" class="mw-redirect" title="Linear type system">linear types</a>, by threading a dummy "world" value through all relevant code.</p>
+<p>Notable programs written in Mercury include the Mercury compiler itself and the <a href="/wiki/Prince_XML" class="mw-redirect" title="Prince XML">Prince XML</a> formatter. Mission Critical IT <a rel="nofollow" class="external autonumber" href="http://www.missioncriticalit.com/">[1]</a>, a software company, has also been using Mercury since 2000 to develop enterprise applications and its Ontology-Driven software development platform ODASE.</p>
+<h2><span class="mw-headline" id="Back-ends">Back-ends</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Mercury_(programming_language)&amp;action=edit&amp;section=2" title="Edit section: Back-ends">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Mercury has several back-ends, which means it is possible to compile Mercury code into the following languages:</p>
+<p><b>Production level</b>:</p>
+<ul>
+<li>Low-level <a href="/wiki/C_(programming_language)" title="C (programming language)">C</a> for <a href="/wiki/GNU_Compiler_Collection" title="GNU Compiler Collection">GCC</a> (the original Mercury back-end)</li>
+<li>High-level C</li>
+<li><a href="/wiki/Java_(programming_language)" title="Java (programming language)">Java</a></li>
+<li><a href="/wiki/C_Sharp_(programming_language)" title="C Sharp (programming language)">C#</a></li>
+<li><a href="/wiki/Erlang_(programming_language)" title="Erlang (programming language)">Erlang</a></li>
+</ul>
+<p><b>Past back-ends</b>:</p>
+<ul>
+<li><a href="/wiki/Assembly_language" title="Assembly language">Assembly</a> via the GCC back-end</li>
+<li>Aditi, a deductive database system also developed at the <a href="/wiki/University_of_Melbourne" title="University of Melbourne">University of Melbourne</a>. Mercury-0.12.2 is the last version of Mercury that supports Aditi.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (January 2014)">citation needed</span></a></i>]</sup></li>
+<li><a href="/wiki/Common_Intermediate_Language" title="Common Intermediate Language">IL</a> for <a href="/wiki/.NET_Framework" title=".NET Framework">Microsoft's .NET</a></li>
+</ul>
+<p>Mercury also features a foreign language interface, allowing code in other languages (depending on the chosen back-end) to be linked with Mercury code. The following foreign languages are possible:</p>
+<table class="wikitable">
+<tr>
+<th>Back-end</th>
+<th>Foreign language(s)</th>
+</tr>
+<tr>
+<td>C (both levels)</td>
+<td><a href="/wiki/C_(programming_language)" title="C (programming language)">C</a></td>
+</tr>
+<tr>
+<td>Java</td>
+<td><a href="/wiki/Java_(programming_language)" title="Java (programming language)">Java</a></td>
+</tr>
+<tr>
+<td>Erlang</td>
+<td><a href="/wiki/Erlang_(programming_language)" title="Erlang (programming language)">Erlang</a></td>
+</tr>
+<tr>
+<td>IL</td>
+<td><a href="/wiki/Common_Intermediate_Language" title="Common Intermediate Language">IL</a> or <a href="/wiki/C_Sharp_(programming_language)" title="C Sharp (programming language)">C#</a></td>
+</tr>
+</table>
+<p>Other languages can then be interfaced to by calling them from these languages. However, this means that foreign language code may need to be written several times for the different backends, otherwise portability between backends will be lost.</p>
+<p>The most commonly used back-end is the original low-level C back-end.</p>
+<h2><span class="mw-headline" id="Examples">Examples</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Mercury_(programming_language)&amp;action=edit&amp;section=3" title="Edit section: Examples">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p><a href="/wiki/Hello_world_program" class="mw-redirect" title="Hello world program">Hello World</a>:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+ <span class="p">:-</span> <span class="s s-Atom">module</span> <span class="s s-Atom">hello</span><span class="p">.</span>
+ <span class="p">:-</span> <span class="s s-Atom">interface</span><span class="p">.</span>
+ <span class="p">:-</span> <span class="s s-Atom">import_module</span> <span class="s s-Atom">io</span><span class="p">.</span>
+ <span class="p">:-</span> <span class="s s-Atom">pred</span> <span class="nf">main</span><span class="p">(</span><span class="nn">io</span><span class="p">:</span><span class="s s-Atom">:di</span><span class="p">,</span> <span class="nn">io</span><span class="p">:</span><span class="s s-Atom">:uo</span><span class="p">)</span> <span class="o">is</span> <span class="s s-Atom">det</span><span class="p">.</span>
+
+ <span class="p">:-</span> <span class="s s-Atom">implementation</span><span class="p">.</span>
+ <span class="nf">main</span><span class="p">(!</span><span class="nv">IO</span><span class="p">)</span> <span class="p">:-</span>
+ 	<span class="s s-Atom">io</span><span class="p">.</span><span class="nf">write_string</span><span class="p">(</span><span class="s2">"Hello, World!\n"</span><span class="p">,</span> <span class="p">!</span><span class="nv">IO</span><span class="p">).</span>
+</pre></div>
+<p>Calculating the 10th <a href="/wiki/Fibonacci_number" title="Fibonacci number">Fibonacci number</a> (in the most obvious way):<sup id="cite_ref-tutorial_5-0" class="reference"><a href="#cite_note-tutorial-5">[5]</a></sup></p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+ <span class="p">:-</span> <span class="s s-Atom">module</span> <span class="s s-Atom">fib</span><span class="p">.</span>
+ <span class="p">:-</span> <span class="s s-Atom">interface</span><span class="p">.</span>
+ <span class="p">:-</span> <span class="s s-Atom">import_module</span> <span class="s s-Atom">io</span><span class="p">.</span>
+ <span class="p">:-</span> <span class="s s-Atom">pred</span> <span class="nf">main</span><span class="p">(</span><span class="nn">io</span><span class="p">:</span><span class="s s-Atom">:di</span><span class="p">,</span> <span class="nn">io</span><span class="p">:</span><span class="s s-Atom">:uo</span><span class="p">)</span> <span class="o">is</span> <span class="s s-Atom">det</span><span class="p">.</span>
+ 
+ <span class="p">:-</span> <span class="s s-Atom">implementation</span><span class="p">.</span>
+ <span class="p">:-</span> <span class="s s-Atom">import_module</span> <span class="s s-Atom">int</span><span class="p">.</span>
+
+ <span class="p">:-</span> <span class="s s-Atom">func</span> <span class="nf">fib</span><span class="p">(</span><span class="s s-Atom">int</span><span class="p">)</span> <span class="o">=</span> <span class="s s-Atom">int</span><span class="p">.</span>
+ <span class="nf">fib</span><span class="p">(</span><span class="nv">N</span><span class="p">)</span> <span class="o">=</span> <span class="p">(</span><span class="s s-Atom">if</span> <span class="nv">N</span> <span class="o">=&lt;</span> <span class="mi">2</span> <span class="s s-Atom">then</span> <span class="mi">1</span> <span class="s s-Atom">else</span> <span class="nf">fib</span><span class="p">(</span><span class="nv">N</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="nf">fib</span><span class="p">(</span><span class="nv">N</span> <span class="o">-</span> <span class="mi">2</span><span class="p">)).</span>
+
+ <span class="nf">main</span><span class="p">(!</span><span class="nv">IO</span><span class="p">)</span> <span class="p">:-</span>
+        <span class="s s-Atom">io</span><span class="p">.</span><span class="nf">write_string</span><span class="p">(</span><span class="s2">"fib(10) = "</span><span class="p">,</span> <span class="p">!</span><span class="nv">IO</span><span class="p">),</span>
+        <span class="s s-Atom">io</span><span class="p">.</span><span class="nf">write_int</span><span class="p">(</span><span class="nf">fib</span><span class="p">(</span><span class="mi">10</span><span class="p">),</span> <span class="p">!</span><span class="nv">IO</span><span class="p">),</span>
+        <span class="s s-Atom">io</span><span class="p">.</span><span class="nf">nl</span><span class="p">(!</span><span class="nv">IO</span><span class="p">).</span>
+        <span class="c1">% Could instead use io.format("fib(10) = %d\n", [i(fib(10))], !IO).</span>
+</pre></div>
+<h2><span class="mw-headline" id="Release_schedule">Release schedule</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Mercury_(programming_language)&amp;action=edit&amp;section=4" title="Edit section: Release schedule">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Releases are named according to the year and month of the release. The current stable release is 14.01.1 (September 2014). Previously releases were numbered 0.12, 0.13, etc. and the period between stable releases can be very large (3 years).</p>
+<p>There is also a snapshot release consisting of the latest features and bug fixes added to the last stable release.</p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Mercury_(programming_language)&amp;action=edit&amp;section=5" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div role="navigation" aria-label="Portals" class="noprint portal plainlist tright" style="margin:0.5em 0 0.5em 1em;border:solid #aaa 1px">
+<ul style="display:table;box-sizing:border-box;padding:0.1em;max-width:175px;background:#f9f9f9;font-size:85%;line-height:110%;font-style:italic;font-weight:bold">
+<li style="display:table-row"><span style="display:table-cell;padding:0.2em;vertical-align:middle;text-align:center"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/3/31/Free_and_open-source_software_logo_%282009%29.svg/28px-Free_and_open-source_software_logo_%282009%29.svg.png" width="28" height="28" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/3/31/Free_and_open-source_software_logo_%282009%29.svg/42px-Free_and_open-source_software_logo_%282009%29.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/3/31/Free_and_open-source_software_logo_%282009%29.svg/56px-Free_and_open-source_software_logo_%282009%29.svg.png 2x" data-file-width="512" data-file-height="512" /></span><span style="display:table-cell;padding:0.2em 0.2em 0.2em 0.3em;vertical-align:middle"><a href="/wiki/Portal:Free_software" class="mw-redirect" title="Portal:Free software">Free software portal</a></span></li>
+</ul>
+</div>
+<ul>
+<li><a href="/wiki/Curry_(programming_language)" title="Curry (programming language)">Curry</a> programming language, another functional logic programming</li>
+<li><a href="/wiki/Alice_(programming_language)" title="Alice (programming language)">Alice</a> programming language, a dialect of <a href="/wiki/Standard_ML" title="Standard ML">Standard ML</a></li>
+<li><a href="/wiki/Logtalk" title="Logtalk">Logtalk</a> programming language, an object-oriented extension of Prolog which compiles down to Prolog</li>
+<li><a href="/wiki/Oz_(programming_language)" title="Oz (programming language)">Oz/Mozart</a>, a multiparadigm programming language</li>
+<li><a href="/wiki/Visual_Prolog" title="Visual Prolog">Visual Prolog</a> programming language, a strongly typed object-oriented extension of Prolog (with a new syntax)</li>
+</ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Mercury_(programming_language)&amp;action=edit&amp;section=6" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ol class="references">
+<li id="cite_note-motivation-1"><span class="mw-cite-backlink">^ <a href="#cite_ref-motivation_1-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-motivation_1-1"><sup><i><b>b</b></i></sup></a> <a href="#cite_ref-motivation_1-2"><sup><i><b>c</b></i></sup></a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.mercurylang.org/about/motivation.html">The Mercury Project - Motivation</a></span></li>
+<li id="cite_note-benchmarks-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-benchmarks_2-0">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.mercurylang.org/about/benchmarks.html">The Mercury Project - Benchmarks</a></span></li>
+<li id="cite_note-jlp-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-jlp_3-0">^</a></b></span> <span class="reference-text"><cite class="citation journal">Somogyi, Zoltan; Henderson, Fergus; Conway, Thomas (October–December 1996). <a rel="nofollow" class="external text" href="http://www.mercurylang.org/documentation/papers.html#jlp">"The execution algorithm of Mercury: an efficient purely declarative logic programming language"</a>. <i>Journal of Logic Programming</i>. <b>29</b> (1–3): 17–64. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1016%2FS0743-1066%2896%2900068-4">10.1016/S0743-1066(96)00068-4</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2008-08-30</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMercury+%28programming+language%29&amp;rft.atitle=The+execution+algorithm+of+Mercury%3A+an+efficient+purely+declarative+logic+programming+language&amp;rft.au=Conway%2C+Thomas&amp;rft.aufirst=Zoltan&amp;rft.au=Henderson%2C+Fergus&amp;rft.aulast=Somogyi&amp;rft.date=1996-10%2F1996-12&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fwww.mercurylang.org%2Fdocumentation%2Fpapers.html%23jlp&amp;rft_id=info%3Adoi%2F10.1016%2FS0743-1066%2896%2900068-4&amp;rft.issue=1%933&amp;rft.jtitle=Journal+of+Logic+Programming&amp;rft.pages=17-64&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=29" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text"><cite class="citation thesis">Mazur, Nancy (May 2004). <a rel="nofollow" class="external text" href="https://mercurylang.org/documentation/papers/CW2004_03_mazur.pdf"><i>Compile-time garbage collection for the declarative language Mercury</i></a> <span style="font-size:85%;">(PDF)</span> (Thesis). Katholieke Universiteit Leuven.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMercury+%28programming+language%29&amp;rft.aufirst=Nancy&amp;rft.aulast=Mazur&amp;rft.date=2004-05&amp;rft_id=https%3A%2F%2Fmercurylang.org%2Fdocumentation%2Fpapers%2FCW2004_03_mazur.pdf&amp;rft.inst=Katholieke+Universiteit+Leuven&amp;rft.title=Compile-time+garbage+collection+for+the+declarative+language+Mercury&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adissertation" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-tutorial-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-tutorial_5-0">^</a></b></span> <span class="reference-text">Adapted from <a rel="nofollow" class="external text" href="http://www.mercurylang.org/documentation/papers/book.pdf">Ralph Becket's Mercury tutorial</a></span></li>
+</ol>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Mercury_(programming_language)&amp;action=edit&amp;section=7" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><span class="official-website"><span class="url"><a rel="nofollow" class="external text" href="http://www.mercurylang.org/">Official website</a></span></span></li>
+<li><a rel="nofollow" class="external text" href="http://rosettacode.org/wiki/Category:Mercury">Rosetta Code (examples) in Mercury</a></li>
+<li><a rel="nofollow" class="external text" href="http://en.literateprograms.org/Category:Programming_language:Mercury">Literate Programs (examples) in Mercury</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.mercurylang.org/documentation/papers.html">Papers And Presentations About Mercury</a></li>
+<li><a rel="nofollow" class="external text" href="https://stackoverflow.com/tags/mercury/info">Stack Overflow's Mercury Page</a></li>
+<li><a rel="nofollow" class="external text" href="https://github.com/trending?l=mercury">GitHub repositories using Mercury</a></li>
+<li><a rel="nofollow" class="external text" href="http://adventuresinmercury.blogspot.com/">Adventures in Mercury</a></li>
+</ul>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1284
+Cached time: 20170204091543
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.164 seconds
+Real time usage: 0.518 seconds
+Preprocessor visited node count: 948/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 19914/2097152 bytes
+Template argument size: 2880/2097152 bytes
+Highest expansion depth: 25/40
+Expensive parser function count: 4/500
+Lua time usage: 0.077/10.000 seconds
+Lua memory usage: 2.67 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  485.536      1 -total
+ 12.36%   59.990      2 Template:Infobox
+  9.74%   47.315      1 Template:Infobox_programming_language
+  7.64%   37.107      1 Template:Cite_journal
+  7.33%   35.595      2 Template:Fix
+  6.22%   30.187      1 Template:Dubious
+  4.10%   19.903      1 Template:Infobox_software/simple
+  3.94%   19.144      3 Template:Category_handler
+  3.66%   17.756      1 Template:For
+  3.06%   14.845      1 Template:Official_website
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:19726-0!*!0!!en!4!* and timestamp 20170204091543 and revision id 763635566
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Mercury_(programming_language)&amp;oldid=763635566">https://en.wikipedia.org/w/index.php?title=Mercury_(programming_language)&amp;oldid=763635566</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Cross-platform_free_software" title="Category:Cross-platform free software">Cross-platform free software</a></li><li><a href="/wiki/Category:Functional_languages" title="Category:Functional languages">Functional languages</a></li><li><a href="/wiki/Category:Functional_logic_programming_languages" title="Category:Functional logic programming languages">Functional logic programming languages</a></li><li><a href="/wiki/Category:Logic_programming_languages" title="Category:Logic programming languages">Logic programming languages</a></li><li><a href="/wiki/Category:.NET_programming_languages" title="Category:.NET programming languages">.NET programming languages</a></li><li><a href="/wiki/Category:Programming_languages_created_in_1995" title="Category:Programming languages created in 1995">Programming languages created in 1995</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Pages_using_deprecated_image_syntax" title="Category:Pages using deprecated image syntax">Pages using deprecated image syntax</a></li><li><a href="/wiki/Category:All_accuracy_disputes" title="Category:All accuracy disputes">All accuracy disputes</a></li><li><a href="/wiki/Category:Articles_with_disputed_statements_from_February_2009" title="Category:Articles with disputed statements from February 2009">Articles with disputed statements from February 2009</a></li><li><a href="/wiki/Category:All_articles_with_unsourced_statements" title="Category:All articles with unsourced statements">All articles with unsourced statements</a></li><li><a href="/wiki/Category:Articles_with_unsourced_statements_from_January_2014" title="Category:Articles with unsourced statements from January 2014">Articles with unsourced statements from January 2014</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Mercury+%28programming+language%29" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Mercury+%28programming+language%29" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/Mercury_(programming_language)"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:Mercury_(programming_language)"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/Mercury_(programming_language)" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=Mercury_(programming_language)&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Mercury_(programming_language)&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Mercury_(programming_language)" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Mercury_(programming_language)" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Mercury_(programming_language)&amp;oldid=763635566" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Mercury_(programming_language)&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q206040" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Mercury_%28programming_language%29&amp;id=763635566" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Mercury+%28programming+language%29">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Mercury+%28programming+language%29&amp;returnto=Mercury+%28programming+language%29&amp;oldid=763635566&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Mercury_(programming_language)&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-ca"><a href="https://ca.wikipedia.org/wiki/Mercury" title="Mercury – Catalan" lang="ca" hreflang="ca" class="interlanguage-link-target">Català</a></li><li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/Mercury_(Programmiersprache)" title="Mercury (Programmiersprache) – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-es"><a href="https://es.wikipedia.org/wiki/Mercury_(lenguaje)" title="Mercury (lenguaje) – Spanish" lang="es" hreflang="es" class="interlanguage-link-target">Español</a></li><li class="interlanguage-link interwiki-fa"><a href="https://fa.wikipedia.org/wiki/%D9%85%D8%B1%DA%A9%D9%88%D8%B1%DB%8C_(%D8%B2%D8%A8%D8%A7%D9%86_%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C)" title="مرکوری (زبان برنامه‌نویسی) – Persian" lang="fa" hreflang="fa" class="interlanguage-link-target">فارسی</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/Mercury_(langage)" title="Mercury (langage) – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-ko"><a href="https://ko.wikipedia.org/wiki/%EB%A8%B8%ED%81%90%EB%A6%AC_(%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D_%EC%96%B8%EC%96%B4)" title="머큐리 (프로그래밍 언어) – Korean" lang="ko" hreflang="ko" class="interlanguage-link-target">한국어</a></li><li class="interlanguage-link interwiki-it"><a href="https://it.wikipedia.org/wiki/Mercury_(linguaggio)" title="Mercury (linguaggio) – Italian" lang="it" hreflang="it" class="interlanguage-link-target">Italiano</a></li><li class="interlanguage-link interwiki-pl"><a href="https://pl.wikipedia.org/wiki/Merkury_(j%C4%99zyk_programowania)" title="Merkury (język programowania) – Polish" lang="pl" hreflang="pl" class="interlanguage-link-target">Polski</a></li><li class="interlanguage-link interwiki-ru"><a href="https://ru.wikipedia.org/wiki/Mercury_(%D1%8F%D0%B7%D1%8B%D0%BA_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F)" title="Mercury (язык программирования) – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li><li class="interlanguage-link interwiki-fi"><a href="https://fi.wikipedia.org/wiki/Mercury_(ohjelmointikieli)" title="Mercury (ohjelmointikieli) – Finnish" lang="fi" hreflang="fi" class="interlanguage-link-target">Suomi</a></li><li class="interlanguage-link interwiki-tg"><a href="https://tg.wikipedia.org/wiki/Mercury" title="Mercury – Tajik" lang="tg" hreflang="tg" class="interlanguage-link-target">Тоҷикӣ</a></li><li class="interlanguage-link interwiki-zh"><a href="https://zh.wikipedia.org/wiki/%E5%A2%A8%E4%B8%98%E5%88%A9%E8%AF%AD%E8%A8%80" title="墨丘利语言 – Chinese" lang="zh" hreflang="zh" class="interlanguage-link-target">中文</a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q206040#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 4 February 2017, at 09:15.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Mercury_(programming_language)&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.164","walltime":"0.518","ppvisitednodes":{"value":948,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":19914,"limit":2097152},"templateargumentsize":{"value":2880,"limit":2097152},"expansiondepth":{"value":25,"limit":40},"expensivefunctioncount":{"value":4,"limit":500},"entityaccesscount":{"value":1,"limit":400},"timingprofile":["100.00%  485.536      1 -total"," 12.36%   59.990      2 Template:Infobox","  9.74%   47.315      1 Template:Infobox_programming_language","  7.64%   37.107      1 Template:Cite_journal","  7.33%   35.595      2 Template:Fix","  6.22%   30.187      1 Template:Dubious","  4.10%   19.903      1 Template:Infobox_software/simple","  3.94%   19.144      3 Template:Category_handler","  3.66%   17.756      1 Template:For","  3.06%   14.845      1 Template:Official_website"]},"scribunto":{"limitreport-timeusage":{"value":"0.077","limit":"10.000"},"limitreport-memusage":{"value":2799077,"limit":52428800}},"cachereport":{"origin":"mw1284","timestamp":"20170204091543","ttl":2592000,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":51,"wgHostname":"mw1249"});});</script>
+	</body>
+</html>

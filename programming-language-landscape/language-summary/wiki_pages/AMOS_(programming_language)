@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>AMOS (programming language) - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"AMOS_(programming_language)","wgTitle":"AMOS (programming language)","wgCurRevisionId":742026184,"wgRevisionId":742026184,"wgArticleId":2957,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles needing additional references from June 2011","All articles needing additional references","Wikipedia introduction cleanup from June 2014","All pages needing cleanup","Articles covered by WikiProject Wikify from June 2014","All articles covered by WikiProject Wikify","All articles with unsourced statements","Articles with unsourced statements from January 2012","BASIC programming language family","Video game development software","Amiga development software"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"AMOS_(programming_language)","wgRelevantArticleId":2957,"wgRequestId":"WIuLVApAADsAAiOHAqwAAAAB","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":true},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q295232","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.cite.styles":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.legacy.wikibits","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.29.0-wmf.8"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/AMOS_(programming_language)"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=AMOS_(programming_language)&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=AMOS_(programming_language)&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/AMOS_(programming_language)"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-AMOS_programming_language rootpage-AMOS_programming_language skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">AMOS (programming language)</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><script>function mfTempOpenSection(id){var block=document.getElementById("mf-section-"+id);block.className+=" open-block";block.previousSibling.className+=" open-block";}</script><table class="plainlinks metadata ambox ambox-content ambox-multiple_issues compact-ambox" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ambox_important.svg/40px-Ambox_important.svg.png" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ambox_important.svg/60px-Ambox_important.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ambox_important.svg/80px-Ambox_important.svg.png 2x" data-file-width="40" data-file-height="40" /></div>
+</td>
+<td class="mbox-text">
+<div class="mw-collapsible" style="width:95%; margin: 0.2em 0;"><span class="mbox-text-span"><b>This article has multiple issues.</b> Please help <b><a class="external text" href="//en.wikipedia.org/w/index.php?title=AMOS_(programming_language)&amp;action=edit">improve it</a></b> or discuss these issues on the <b><a href="/wiki/Talk:AMOS_(programming_language)" title="Talk:AMOS (programming language)">talk page</a></b>. <small><i>(<a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove these template messages</a>)</i></small></span>
+<div class="mw-collapsible-content" style="margin-top: 0.3em;">
+<table class="plainlinks metadata ambox ambox-content ambox-Refimprove" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><a href="/wiki/File:Question_book-new.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" width="50" height="39" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/75px-Question_book-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/100px-Question_book-new.svg.png 2x" data-file-width="512" data-file-height="399" /></a></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">This article <b>needs additional citations for <a href="/wiki/Wikipedia:Verifiability" title="Wikipedia:Verifiability">verification</a></b>. <span class="hide-when-compact">Please help <a class="external text" href="//en.wikipedia.org/w/index.php?title=AMOS_(programming_language)&amp;action=edit">improve this article</a> by <a href="/wiki/Help:Introduction_to_referencing_with_Wiki_Markup/1" title="Help:Introduction to referencing with Wiki Markup/1">adding citations to reliable sources</a>. Unsourced material may be challenged and removed.</span> <small><i>(June 2011)</i></small> <small class="hide-when-compact"><i>(<a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove this template message</a>)</i></small></span></td>
+</tr>
+</table>
+<table class="plainlinks metadata ambox ambox-content ambox-lead_too_short" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><a href="/wiki/File:Wiki_letter_w.svg" class="image"><img alt="Wiki letter w.svg" src="//upload.wikimedia.org/wikipedia/en/thumb/6/6c/Wiki_letter_w.svg/40px-Wiki_letter_w.svg.png" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/en/thumb/6/6c/Wiki_letter_w.svg/60px-Wiki_letter_w.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/6/6c/Wiki_letter_w.svg/80px-Wiki_letter_w.svg.png 2x" data-file-width="44" data-file-height="44" /></a></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">This article's <b><a href="/wiki/Wikipedia:Manual_of_Style/Lead_section" title="Wikipedia:Manual of Style/Lead section">lead section</a> may not adequately <a href="/wiki/Wikipedia:Summary_style" title="Wikipedia:Summary style">summarize</a> key points of its contents</b>. <span class="hide-when-compact">Please consider expanding the lead to <a href="/wiki/Wikipedia:Manual_of_Style/Lead_section#Provide_an_accessible_overview" title="Wikipedia:Manual of Style/Lead section">provide an accessible overview</a> of all important aspects of the article. Please discuss this issue on the article's <a href="/wiki/Talk:AMOS_(programming_language)" title="Talk:AMOS (programming language)">talk page</a>.</span> <small><i>(June 2014)</i></small></span></td>
+</tr>
+</table>
+</div>
+</div>
+<small class="hide-when-compact"><i>(<a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove this template message</a>)</i></small></td>
+</tr>
+</table>
+<table class="infobox vevent" style="width:22em">
+<caption class="summary">AMOS</caption>
+<tr>
+<th scope="row"><a href="/wiki/Programming_paradigm" title="Programming paradigm">Paradigm</a></th>
+<td><a href="/wiki/Imperative_programming" title="Imperative programming">Imperative</a>, <a href="/wiki/Procedural_programming" title="Procedural programming">Procedural</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_developer" title="Software developer">Developer</a></th>
+<td class="organiser"><a href="/wiki/Fran%C3%A7ois_Lionet" title="François Lionet">François Lionet</a> and <a href="/wiki/Constantin_Sotiropoulos" title="Constantin Sotiropoulos">Constantin Sotiropoulos</a></td>
+</tr>
+<tr>
+<th scope="row">First&#160;appeared</th>
+<td>1990<span class="noprint">; 27&#160;years ago</span><span style="display:none">&#160;(<span class="bday dtstart published updated">1990</span>)</span></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Type_system" title="Type system">Typing discipline</a></th>
+<td>Static</td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Operating_system" title="Operating system">OS</a></th>
+<td><a href="/wiki/AmigaOS" title="AmigaOS">AmigaOS</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_license" title="Software license">License</a></th>
+<td><a href="/wiki/BSD_licenses" title="BSD licenses">BSD style license</a></td>
+</tr>
+<tr>
+<th scope="row">Website</th>
+<td><a rel="nofollow" class="external text" href="https://web.archive.org/web/20120204085705/http://www.clickteam.com/eng/downloadcenter.php?i=58">AMOS and STOS</a></td>
+</tr>
+<tr>
+<th colspan="2" style="text-align:center;background-color: #eee;"><a href="/wiki/Dialect_(computing)" title="Dialect (computing)">Dialects</a></th>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center">AMOS, Easy AMOS, AMOS Professional</td>
+</tr>
+<tr>
+<th colspan="2" style="text-align:center;background-color: #eee;">Influenced by</th>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/STOS_BASIC" title="STOS BASIC">STOS BASIC</a></td>
+</tr>
+</table>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;"><a href="/wiki/File:AMOS_Professional_Screenshot.png" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/4/49/AMOS_Professional_Screenshot.png/220px-AMOS_Professional_Screenshot.png" width="220" height="176" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/49/AMOS_Professional_Screenshot.png/330px-AMOS_Professional_Screenshot.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/49/AMOS_Professional_Screenshot.png/440px-AMOS_Professional_Screenshot.png 2x" data-file-width="640" data-file-height="512" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:AMOS_Professional_Screenshot.png" class="internal" title="Enlarge"></a></div>
+Screenshot of the AMOS Professional user interface and code editor, displaying the start of a program included with the language.</div>
+</div>
+</div>
+<p><b>AMOS BASIC</b> is a dialect of the <a href="/wiki/BASIC" title="BASIC">BASIC</a> <a href="/wiki/Programming_language" title="Programming language">programming language</a> implemented on the <a href="/wiki/Amiga" title="Amiga">Amiga</a> computer. AMOS BASIC was published by <a href="/wiki/Europress_Software" class="mw-redirect" title="Europress Software">Europress Software</a> and originally written by <a href="/wiki/Fran%C3%A7ois_Lionet" title="François Lionet">François Lionet</a> with <a href="/wiki/Constantin_Sotiropoulos" title="Constantin Sotiropoulos">Constantin Sotiropoulos</a>.</p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#History"><span class="tocnumber">1</span> <span class="toctext">History</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Software"><span class="tocnumber">2</span> <span class="toctext">Software</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#References"><span class="tocnumber">3</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#External_links"><span class="tocnumber">4</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="History">History</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=AMOS_(programming_language)&amp;action=edit&amp;section=1" title="Edit section: History">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>AMOS is a descendant of <a href="/wiki/STOS_BASIC" title="STOS BASIC">STOS BASIC</a> for the <a href="/wiki/Atari_ST" title="Atari ST">Atari ST</a>. AMOS BASIC was first produced in 1990.</p>
+<p>AMOS competed on the Amiga platform with Acid Software's <a href="/wiki/Blitz_BASIC" title="Blitz BASIC">Blitz BASIC</a>. Both BASICs differed from other dialects on different platforms, in that they allowed the easy creation of fairly demanding multimedia software, with full structured code and many high-level functions to load images, animations, sounds and display them in various ways.</p>
+<p>The original AMOS version was <a href="/wiki/Interpreter_(computing)" title="Interpreter (computing)">interpreted</a> which, whilst working fine, suffered the same disadvantage of any language being run interpretively. By all accounts, AMOS was extremely fast among interpreted languages. The language was fast enough that an extension called AMOS 3D could produce playable 3D games even on plain 7&#160;MHz Amigas. Later, an AMOS <a href="/wiki/Compiler" title="Compiler">compiler</a> was developed that further increased speed.</p>
+<p>AMOS could also include inline Assembly Language.<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">[1]</a></sup></p>
+<p>To simplify animation of sprites, AMOS included the AMOS Animation Language (AMAL), a compiled sprite scripting language which runs independently of the main AMOS BASIC program.<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">[2]</a></sup> It was also possible to control screen and "rainbow" effects using AMAL scripts. AMAL scripts in effect created CopperLists, small routines executed by the Amiga's Agnus chip.</p>
+<p>After the original version of AMOS, Europress released a compiler (<b>AMOS Compiler</b>), and two other versions of the language: <b>Easy AMOS</b>, a simpler version for beginners, and <b>AMOS Professional</b>, a more advanced version with added features, such as a better <a href="/wiki/Integrated_development_environment" title="Integrated development environment">IDE</a>, <a href="/wiki/ARexx" title="ARexx">ARexx</a> support, a new <a href="/wiki/User_interface" title="User interface">UI</a> API and new <a href="/wiki/Control_flow" title="Control flow">flow control constructs</a>. Neither of these new versions was significantly more popular than the original AMOS.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="For example, from my experience it was way more popular. References to sales figures or alike would be nice. (January 2012)">citation needed</span></a></i>]</sup></p>
+<p>AMOS was mostly used to make multimedia software, <a href="/wiki/Video_game" title="Video game">video games</a> (platformers and graphical adventures) and educational software.</p>
+<p>The language was mildly successful within the Amiga community. Its ease of use made it especially attractive to beginners.</p>
+<p>Perhaps AMOS BASIC's biggest disadvantage, stemming from its Atari ST lineage, was its incompatibility with the Amiga's <a href="/wiki/AmigaOS" title="AmigaOS">operating system</a> functions and interfaces. Instead, AMOS BASIC controlled the computer directly, which caused programs written in it to have a non-standard user interface, and also caused compatibility problems with newer versions of the operating system.</p>
+<p>Today the language has declined in popularity along with the Amiga computer for which it was written. Despite this, a small community of enthusiasts are still using it. The <a href="/wiki/Source_code" title="Source code">source code</a> to AMOS has since been released under a <a href="/wiki/BSD_licenses" title="BSD licenses">BSD style license</a> by <a href="/wiki/Clickteam" title="Clickteam">Clickteam</a> - a company that includes the original programmer.</p>
+<h2><span class="mw-headline" id="Software">Software</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=AMOS_(programming_language)&amp;action=edit&amp;section=2" title="Edit section: Software">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Software written using AMOS BASIC includes:</p>
+<ul>
+<li><a href="/wiki/Miggybyte" title="Miggybyte">Miggybyte</a></li>
+<li><a href="/wiki/Scorched_Tanks" title="Scorched Tanks">Scorched Tanks</a></li>
+<li>Games by <a href="/wiki/Vulcan_Software" title="Vulcan Software">Vulcan Software</a>, amongst which the <a href="/wiki/Valhalla:_Before_the_War" title="Valhalla: Before the War">Valhalla</a> trilogy</li>
+<li>Amiga version of <a href="/wiki/Ultimate_Domain" title="Ultimate Domain">Ultimate Domain</a> (called <a href="/w/index.php?title=Genesia_(game)&amp;action=edit&amp;redlink=1" class="new" title="Genesia (game) (page does not exist)">Genesia</a>) by <a href="/wiki/Micro%C3%AFds" title="Microïds">Microïds</a></li>
+<li><a href="/wiki/Flight_of_the_Amazon_Queen" title="Flight of the Amazon Queen">Flight of the Amazon Queen</a>, by <a href="/w/index.php?title=Interactive_Binary_Illusions&amp;action=edit&amp;redlink=1" class="new" title="Interactive Binary Illusions (page does not exist)">Interactive Binary Illusions</a><sup id="cite_ref-3" class="reference"><a href="#cite_note-3">[3]</a></sup></li>
+</ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=AMOS_(programming_language)&amp;action=edit&amp;section=3" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://archive.org/stream/1990-lionet-francois-amos-the-creator-user-guide/1990-lionet-francois-amos-the-creator-user-guide_djvu.txt">The Creator</a>, by Frangois Lionet, 1990, <i>"AMOS Basic includes special facilities which allow you to combine assembly language routines with your Basic programs."</i></span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://web.archive.org/web/20101208051702/http://grove.ufl.edu:80/~cwarner/computers.html">"Archived copy"</a>. Archived from <a rel="nofollow" class="external text" href="http://grove.ufl.edu/~cwarner/computers.html">the original</a> on 2010-12-08<span class="reference-accessdate">. Retrieved <span class="nowrap">2010-11-22</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AAMOS+%28programming+language%29&amp;rft.btitle=Archived+copy&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fgrove.ufl.edu%2F~cwarner%2Fcomputers.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://gamasutra.com/blogs/JohnPassfield/20150601/244740/Making_of_Flight_of_the_Amazon_Queen__A_20th_Anniversary_Retrospective.php">"Making of Flight of the Amazon Queen: A 20th Anniversary Retrospective"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">1 January</span> 2016</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AAMOS+%28programming+language%29&amp;rft.btitle=Making+of+Flight+of+the+Amazon+Queen%3A+A+20th+Anniversary+Retrospective&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fgamasutra.com%2Fblogs%2FJohnPassfield%2F20150601%2F244740%2FMaking_of_Flight_of_the_Amazon_Queen__A_20th_Anniversary_Retrospective.php&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=AMOS_(programming_language)&amp;action=edit&amp;section=4" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.clickteam.co.uk/downloadcenter.php?i=58">Source code for AMOS and STOS (68000 ASM)</a></li>
+<li><a rel="nofollow" class="external text" href="http://amos.pspuae.com/">The AMOS Factory</a> (An AMOS support/community site)</li>
+<li><a rel="nofollow" class="external text" href="http://www.amigacoding.com">Amigacoding website</a> (contains in-depth info and references for AMOS)</li>
+<li><a rel="nofollow" class="external text" href="http://www.back2roots.org/Tools/Dev/">Back to the Roots</a> (Contains full AMOS downloads for Amiga or an emulator)</li>
+<li><a rel="nofollow" class="external text" href="http://sdlbasic.sourceforge.net/">sdlBasic</a>: a multiplatform Basic interpreter, multiplaform and open-source, using SDL libraries, very inspired by AMOS.</li>
+<li><a rel="nofollow" class="external text" href="http://sourceforge.net/projects/mattathias/">Mattathias BASIC</a> (Open source AMOS compiler, early alpha)</li>
+<li><a rel="nofollow" class="external text" href="http://www.triumphoverchallenges.com/stos-and-amos-game-creators/">History of STOS and AMOS</a>: how they came to be published in the UK</li>
+</ul>
+<div role="navigation" class="navbox" aria-labelledby="AmigaOS" style="padding:3px">
+<table class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:AmigaOS" title="Template:AmigaOS"><abbr title="View this template" style=";;background:none transparent;border:none;">v</abbr></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:AmigaOS" title="Template talk:AmigaOS"><abbr title="Discuss this template" style=";;background:none transparent;border:none;">t</abbr></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:AmigaOS&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;">e</abbr></a></li>
+</ul>
+</div>
+<div id="AmigaOS" style="font-size:114%"><a href="/wiki/AmigaOS" title="AmigaOS">AmigaOS</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Amiga" title="Amiga">Amiga</a> technologies</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/AmigaBASIC" title="AmigaBASIC">AmigaBASIC</a></li>
+<li><a href="/wiki/AmigaDOS" title="AmigaDOS">AmigaDOS</a></li>
+<li><a href="/wiki/AmigaGuide" title="AmigaGuide">AmigaGuide</a></li>
+<li><a href="/wiki/ARexx" title="ARexx">ARexx</a></li>
+<li><a href="/wiki/Blitter_object" title="Blitter object">Blitter object</a></li>
+<li><a href="/wiki/Exec_(Amiga)" title="Exec (Amiga)">Exec</a>/<a href="/wiki/WarpOS" title="WarpOS">WarpOS</a></li>
+<li><a href="/wiki/Guru_Meditation" title="Guru Meditation">Guru Meditation</a></li>
+<li><a href="/wiki/Amiga_Hunk" title="Amiga Hunk">Hunk</a></li>
+<li><a href="/wiki/Intuition_(Amiga)" title="Intuition (Amiga)">Intuition</a></li>
+<li><a href="/wiki/Kickstart_(Amiga)" title="Kickstart (Amiga)">Kickstart</a></li>
+<li><a href="/wiki/RAM_drive" title="RAM drive">RAM disk</a></li>
+<li><a href="/wiki/Workbench_(AmigaOS)" title="Workbench (AmigaOS)">Workbench</a></li>
+<li><a href="/wiki/XAD_(software)" title="XAD (software)">XAD</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Amiga <a href="/wiki/Graphical_user_interface" title="Graphical user interface">GUIs</a></th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Ambient_(desktop_environment)" title="Ambient (desktop environment)">Ambient</a></li>
+<li><a href="/wiki/Magic_User_Interface" title="Magic User Interface">MUI</a></li>
+<li><a href="/wiki/ReAction_GUI" title="ReAction GUI">ReAction</a></li>
+<li><a href="/wiki/Scalos" title="Scalos">Scalos</a></li>
+<li><a href="/wiki/Wanderer_(AROS)" class="mw-redirect" title="Wanderer (AROS)">Wanderer</a></li>
+<li><a href="/wiki/Workbench_(AmigaOS)" title="Workbench (AmigaOS)">Workbench</a></li>
+<li><a href="/wiki/Zune_(widget_toolkit)" title="Zune (widget toolkit)">Zune</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">File systems</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/CrossDOS" title="CrossDOS">CrossDOS</a></li>
+<li><a href="/wiki/Amiga_Old_File_System" title="Amiga Old File System">OFS</a></li>
+<li><a href="/wiki/Amiga_Fast_File_System" title="Amiga Fast File System">FFS</a></li>
+<li><a href="/wiki/Professional_File_System" title="Professional File System">PFS</a></li>
+<li><a href="/wiki/Smart_File_System" title="Smart File System">SFS</a></li>
+<li><a href="/wiki/Universal_Disk_Format" title="Universal Disk Format">UDF</a></li>
+<li>JXFS</li>
+<li><a href="/wiki/File_Allocation_Table" title="File Allocation Table">FAT</a></li>
+<li><a href="/wiki/NTFS" title="NTFS">NTFS</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">OS versions</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks navbox-subgroup" style="border-spacing:0">
+<tr>
+<th scope="row" class="navbox-group">68k-based</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/AmigaOS_versions#Kickstart.2FWorkbench_1.0.2C_1.1.2C_1.2.2C_1.3" class="mw-redirect" title="AmigaOS versions">1.0, 1.1, 1.2, 1.3, 1.4 <small>(beta)</small></a></li>
+<li><a href="/wiki/AmigaOS_versions#AmigaOS_2.0.2C_2.04.2C_2.05.2C_2.1" class="mw-redirect" title="AmigaOS versions">2.0, 2.04, 2.05, 2.1</a></li>
+<li><a href="/wiki/AmigaOS_versions#AmigaOS_3.0.2C_3.1" class="mw-redirect" title="AmigaOS versions">3.0, 3.1, 3.5, 3.9</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">PowerPC-based</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/AmigaOS_4" title="AmigaOS 4">4.0</a></li>
+<li><a href="/wiki/AmigaOS_4#AmigaOS_4.1" title="AmigaOS 4">4.1</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Software packs</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Amiga_Forever" title="Amiga Forever">Amiga Forever</a></li>
+<li><a href="/wiki/AmiKit" title="AmiKit">AmiKit</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Other <a href="/wiki/Amiga_software" title="Amiga software">software</a></th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Aminet" title="Aminet">Aminet</a></li>
+<li><a href="/wiki/Amiga_Reflections" title="Amiga Reflections">Amiga Reflections</a></li>
+<li><a href="/wiki/Amiga_demos" title="Amiga demos">Demos</a></li>
+<li><a href="/wiki/Amiga_games" class="mw-redirect" title="Amiga games">Games</a></li>
+<li><a href="/wiki/Hollywood_(programming_language)" title="Hollywood (programming language)">Hollywood</a></li>
+<li><a href="/wiki/Category:Web_browsers_for_AmigaOS" title="Category:Web browsers for AmigaOS">Web browsers</a></li>
+<li><a href="/wiki/Amiga_Disk_File" title="Amiga Disk File">ADF</a></li>
+<li><a href="/wiki/Interchange_File_Format" title="Interchange File Format">IFF</a></li>
+<li><a href="/wiki/LHA_(file_format)" title="LHA (file format)">LHA</a></li>
+<li><a href="/wiki/WHDLoad" title="WHDLoad">WHDLoad</a></li>
+<li><a href="/wiki/UAE_(emulator)" title="UAE (emulator)">WinUAE</a></li>
+<li><a href="/wiki/YAM_(Yet_Another_Mailer)" title="YAM (Yet Another Mailer)">YAM</a></li>
+<li>(<a href="/wiki/AmiZilla" title="AmiZilla">AmiZilla</a>)</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Influenced</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/AROS_Research_Operating_System" title="AROS Research Operating System">AROS</a></li>
+<li><a href="/wiki/AtheOS" title="AtheOS">AtheOS</a></li>
+<li><a href="/wiki/BeOS" title="BeOS">BeOS</a></li>
+<li><a href="/wiki/DragonFly_BSD" title="DragonFly BSD">DragonFly BSD</a></li>
+<li><a href="/wiki/MorphOS" title="MorphOS">MorphOS</a></li>
+<li><a href="/wiki/Syllable_Desktop" title="Syllable Desktop">Syllable</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div role="navigation" class="navbox" aria-labelledby="Dialects_of_the_BASIC_programming_language_.28list.29" style="padding:3px">
+<table class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:BASIC" title="Template:BASIC"><abbr title="View this template" style=";;background:none transparent;border:none;">v</abbr></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:BASIC" title="Template talk:BASIC"><abbr title="Discuss this template" style=";;background:none transparent;border:none;">t</abbr></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:BASIC&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;">e</abbr></a></li>
+</ul>
+</div>
+<div id="Dialects_of_the_BASIC_programming_language_.28list.29" style="font-size:114%">Dialects of the <a href="/wiki/BASIC" title="BASIC">BASIC</a> programming language (<a href="/wiki/List_of_BASIC_dialects" title="List of BASIC dialects">list</a>)</div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Classic</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Altair_BASIC" title="Altair BASIC">Altair BASIC</a></li>
+<li><a href="/wiki/Applesoft_BASIC" title="Applesoft BASIC">Applesoft BASIC</a></li>
+<li><a href="/wiki/Atari_BASIC" title="Atari BASIC">Atari BASIC</a></li>
+<li><a href="/wiki/Atari_Microsoft_BASIC" title="Atari Microsoft BASIC">Atari Microsoft BASIC</a></li>
+<li><a href="/wiki/Atari_ST_BASIC" title="Atari ST BASIC">Atari ST BASIC</a></li>
+<li><a href="/wiki/IBM_BASIC" title="IBM BASIC">BASICA</a></li>
+<li><a href="/wiki/BASIC_A%2B" title="BASIC A+">BASIC A+</a></li>
+<li><a href="/wiki/BASIC_Programming" title="BASIC Programming">BASIC Programming</a></li>
+<li><a href="/wiki/Optimized_Systems_Software#BASIC_XE" title="Optimized Systems Software">BASIC XE</a></li>
+<li><a href="/wiki/Optimized_Systems_Software#BASIC_XL" title="Optimized Systems Software">BASIC XL</a></li>
+<li><a href="/wiki/Casio_BASIC" title="Casio BASIC">Casio BASIC</a></li>
+<li><a href="/wiki/Chipmunk_Basic" title="Chipmunk Basic">Chipmunk Basic</a></li>
+<li><a href="/wiki/Color_BASIC" title="Color BASIC">Color BASIC</a></li>
+<li><a href="/wiki/Commodore_BASIC" title="Commodore BASIC">Commodore BASIC</a></li>
+<li><a href="/wiki/Extended_Color_BASIC" title="Extended Color BASIC">Extended Color BASIC</a></li>
+<li><a href="/wiki/Dartmouth_BASIC" title="Dartmouth BASIC">Dartmouth BASIC</a></li>
+<li><a href="/wiki/Disk_Extended_Color_BASIC" title="Disk Extended Color BASIC">Disk Extended Color BASIC</a></li>
+<li><a href="/wiki/Family_BASIC" title="Family BASIC">Family BASIC</a></li>
+<li><a href="/wiki/GFA_BASIC" title="GFA BASIC">GFA BASIC</a></li>
+<li><a href="/wiki/GW-BASIC" title="GW-BASIC">GW-BASIC</a></li>
+<li><a href="/wiki/HP_BASIC_for_OpenVMS" title="HP BASIC for OpenVMS">HP BASIC for OpenVMS</a></li>
+<li><a href="/wiki/HP_Time-Shared_BASIC" title="HP Time-Shared BASIC">HP Time-Shared BASIC</a></li>
+<li><a href="/wiki/IBM_BASIC" title="IBM BASIC">IBM BASIC</a></li>
+<li><a href="/wiki/Integer_BASIC" title="Integer BASIC">Integer BASIC</a></li>
+<li><a href="/wiki/Locomotive_BASIC" title="Locomotive BASIC">Locomotive BASIC</a></li>
+<li><a href="/wiki/Mallard_BASIC" title="Mallard BASIC">Mallard BASIC</a></li>
+<li><a href="/wiki/Microsoft_BASIC" title="Microsoft BASIC">Microsoft BASIC</a></li>
+<li><a href="/wiki/MSX_BASIC" title="MSX BASIC">MSX BASIC</a></li>
+<li><a href="/wiki/PureBasic" title="PureBasic">Pure Basic</a></li>
+<li><a href="/wiki/Rocky_Mountain_BASIC" title="Rocky Mountain BASIC">Rocky Mountain BASIC</a></li>
+<li><a href="/wiki/S-BASIC" title="S-BASIC">S'-BASIC</a> (Tandy, Casio, Sharp Pocket Computers)</li>
+<li><a href="/wiki/ScriptBasic" title="ScriptBasic">ScriptBasic</a></li>
+<li><a href="/wiki/Sinclair_BASIC" title="Sinclair BASIC">Sinclair BASIC</a></li>
+<li><a href="/wiki/Southampton_BASIC_System" title="Southampton BASIC System">Southampton BASIC System</a></li>
+<li><a href="/wiki/STOS_BASIC" title="STOS BASIC">STOS BASIC</a></li>
+<li><a href="/wiki/TI_BASIC_(TI_99/4A)" title="TI BASIC (TI 99/4A)">TI BASIC (TI 99/4A)</a></li>
+<li><a href="/wiki/TI-BASIC" title="TI-BASIC">TI-BASIC (calculators)</a></li>
+<li><a href="/wiki/TI_Extended_BASIC" title="TI Extended BASIC">TI Extended BASIC</a> (aka XBasic)</li>
+<li><a href="/wiki/Tiny_BASIC" title="Tiny BASIC">Tiny BASIC</a></li>
+<li><a href="/wiki/Turbo-Basic_XL" title="Turbo-Basic XL">Turbo-Basic XL</a></li>
+<li><a href="/wiki/Tymshare_Super_BASIC" class="mw-redirect" title="Tymshare Super BASIC">Tymshare SUPER BASIC</a></li>
+<li><a href="/wiki/UBASIC" title="UBASIC">UBASIC</a></li>
+<li><a href="/wiki/Vilnius_BASIC" title="Vilnius BASIC">Vilnius BASIC</a></li>
+<li><a href="/wiki/XBasic" title="XBasic">XBasic</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Procedure-oriented</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/AmigaBASIC" title="AmigaBASIC">AmigaBASIC</a></li>
+<li><strong class="selflink">AMOS BASIC</strong></li>
+<li><a href="/wiki/ASIC_programming_language" title="ASIC programming language">ASIC</a></li>
+<li><a href="/wiki/BBC_BASIC" title="BBC BASIC">BBC BASIC</a></li>
+<li><a href="/wiki/Beta_BASIC" title="Beta BASIC">Beta BASIC</a></li>
+<li><a href="/wiki/DarkBASIC" class="mw-redirect" title="DarkBASIC">DarkBASIC</a></li>
+<li><a href="/wiki/FreeBASIC" title="FreeBASIC">FreeBASIC</a></li>
+<li><a href="/wiki/FutureBASIC" title="FutureBASIC">FutureBASIC</a></li>
+<li><a href="/wiki/GFA_BASIC" title="GFA BASIC">GFA BASIC</a></li>
+<li><a href="/wiki/GLBasic" title="GLBasic">GLBasic</a></li>
+<li><a href="/wiki/Liberty_BASIC" title="Liberty BASIC">Liberty BASIC</a></li>
+<li><a href="/wiki/Microsoft_Small_Basic" title="Microsoft Small Basic">Microsoft Small Basic</a></li>
+<li><a href="/wiki/PowerBASIC" title="PowerBASIC">PowerBASIC</a></li>
+<li><a href="/wiki/PureBasic" title="PureBasic">PureBasic</a></li>
+<li><a href="/wiki/QBasic" title="QBasic">QBasic</a></li>
+<li><a href="/wiki/QB64" title="QB64">QB64</a></li>
+<li><a href="/wiki/QuickBASIC" title="QuickBASIC">QuickBASIC</a></li>
+<li><a href="/wiki/SmallBASIC" title="SmallBASIC">SmallBASIC</a></li>
+<li><a href="/wiki/SuperBASIC" title="SuperBASIC">SuperBASIC</a></li>
+<li><a href="/wiki/ThinBasic" title="ThinBasic">ThinBasic</a></li>
+<li><a href="/wiki/True_BASIC" title="True BASIC">True BASIC</a></li>
+<li><a href="/wiki/Turbo_Basic" class="mw-redirect" title="Turbo Basic">Turbo Basic</a></li>
+<li><a href="/wiki/XBasic" title="XBasic">XBasic</a></li>
+<li><a href="/wiki/XBLite" title="XBLite">Xblite</a></li>
+<li><a href="/wiki/Basic4ppc" title="Basic4ppc">Basic4ppc</a></li>
+<li><a href="/wiki/Visual_Test" title="Visual Test">Visual Test</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">With object extensions</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/AutoIt" title="AutoIt">AutoIt</a></li>
+<li><a href="/wiki/Basic_For_Qt" title="Basic For Qt">Basic For Qt</a> (KBasic)</li>
+<li><a href="/wiki/Blitz_BASIC" title="Blitz BASIC">BlitzMax</a></li>
+<li><a href="/wiki/Chipmunk_Basic" title="Chipmunk Basic">Chipmunk Basic</a></li>
+<li><a href="/wiki/FreeBASIC" title="FreeBASIC">FreeBASIC</a></li>
+<li><a href="/wiki/Gambas" title="Gambas">Gambas</a></li>
+<li><a href="/wiki/GLBasic" title="GLBasic">GLBasic</a></li>
+<li><a href="/wiki/Monkey_X" title="Monkey X">Monkey X</a></li>
+<li><a href="/wiki/OpenOffice_Basic" title="OpenOffice Basic">OpenOffice Basic</a></li>
+<li><a href="/wiki/PowerBASIC" title="PowerBASIC">PowerBASIC</a></li>
+<li><a href="/wiki/ProvideX" title="ProvideX">ProvideX</a></li>
+<li><a href="/wiki/RapidQ" title="RapidQ">RapidQ</a></li>
+<li><a href="/wiki/Xojo" title="Xojo">REALbasic</a></li>
+<li><a href="/wiki/Run_BASIC" title="Run BASIC">Run BASIC</a></li>
+<li><a href="/wiki/Visual_Basic" title="Visual Basic">Visual Basic</a></li>
+<li><a href="/wiki/Visual_Basic_.NET" title="Visual Basic .NET">Visual Basic .NET</a></li>
+<li><a href="/wiki/Xojo" title="Xojo">Xojo</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">For mobile devices</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Basic4android" title="Basic4android">Basic4android</a></li>
+<li><a href="/wiki/Basic4ppc" title="Basic4ppc">Basic4ppc</a></li>
+<li><a href="/wiki/GLBasic" title="GLBasic">GLBasic</a></li>
+<li><a href="/wiki/NS_Basic" title="NS Basic">NS Basic</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Microsoft</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Microsoft_BASIC" title="Microsoft BASIC">Microsoft BASIC</a>
+<ul>
+<li><a href="/wiki/MBASIC" title="MBASIC">MBASIC</a></li>
+<li><a href="/wiki/IBM_BASIC" title="IBM BASIC">IBM BASIC</a>/BASICA</li>
+<li><a href="/wiki/GW-BASIC" title="GW-BASIC">GW-BASIC</a></li>
+<li><a href="/wiki/QuickBASIC" title="QuickBASIC">QuickBASIC</a></li>
+<li><a href="/wiki/QBasic" title="QBasic">QBasic</a></li>
+</ul>
+</li>
+<li><a href="/wiki/VBScript" title="VBScript">VBScript</a></li>
+<li><a href="/wiki/Visual_Basic" title="Visual Basic">Visual Basic</a></li>
+<li><a href="/wiki/Visual_Basic_for_Applications" title="Visual Basic for Applications">VBA</a></li>
+<li><a href="/wiki/Visual_Basic_.NET" title="Visual Basic .NET">Visual Basic .NET</a></li>
+<li><a href="/wiki/Embedded_Visual_Basic" title="Embedded Visual Basic">Embedded Visual Basic</a></li>
+<li>VB 5 for <a href="/wiki/Microsoft_Excel" title="Microsoft Excel">Microsoft Excel</a> 5.0
+<ul>
+<li><a href="/wiki/Visual_Studio_Tools_for_Office" title="Visual Studio Tools for Office">VSTO</a></li>
+<li><a href="/wiki/Visual_Studio_Tools_for_Applications" title="Visual Studio Tools for Applications">VSTA</a></li>
+</ul>
+</li>
+<li><a href="/wiki/WordBASIC" title="WordBASIC">WordBASIC</a></li>
+<li>TRS-80 Basics (Level I, Level II, Level III)</li>
+<li><a href="/wiki/Microsoft_Small_Basic" title="Microsoft Small Basic">Microsoft Small Basic</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Third-party VB-like</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Basic_For_Qt" title="Basic For Qt">Basic For Qt</a></li>
+<li><a href="/wiki/Gambas" title="Gambas">Gambas</a></li>
+<li><a href="/wiki/Visual_Basic" title="Visual Basic">Hummingbird Basic</a></li>
+<li><a href="/wiki/LotusScript" title="LotusScript">LotusScript</a></li>
+<li><a href="/wiki/WinWrap_Basic" title="WinWrap Basic">WinWrapBasic</a></li>
+<li><a href="/wiki/Xojo" title="Xojo">Xojo</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1178
+Cached time: 20170127061630
+Cache expiry: 86400
+Dynamic content: true
+CPU time usage: 0.172 seconds
+Real time usage: 0.229 seconds
+Preprocessor visited node count: 1082/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 64505/2097152 bytes
+Template argument size: 7483/2097152 bytes
+Highest expansion depth: 12/40
+Expensive parser function count: 6/500
+Lua time usage: 0.071/10.000 seconds
+Lua memory usage: 2.6 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  173.365      1 -total
+ 38.95%   67.534      3 Template:Ambox
+ 32.94%   57.102      1 Template:Multiple_issues
+ 21.11%   36.599      1 Template:Reflist
+ 19.45%   33.711      1 Template:Infobox_programming_language
+ 17.76%   30.795      2 Template:Cite_web
+ 17.27%   29.946      1 Template:Infobox
+ 15.65%   27.123      1 Template:Citation_needed
+ 14.02%   24.310      1 Template:Fix
+  9.91%   17.180      1 Template:Refimprove
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:2957-0!*!0!!en!4!* and timestamp 20170127061629 and revision id 742026184
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=AMOS_(programming_language)&amp;oldid=742026184">https://en.wikipedia.org/w/index.php?title=AMOS_(programming_language)&amp;oldid=742026184</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:BASIC_programming_language_family" title="Category:BASIC programming language family">BASIC programming language family</a></li><li><a href="/wiki/Category:Video_game_development_software" title="Category:Video game development software">Video game development software</a></li><li><a href="/wiki/Category:Amiga_development_software" title="Category:Amiga development software">Amiga development software</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Articles_needing_additional_references_from_June_2011" title="Category:Articles needing additional references from June 2011">Articles needing additional references from June 2011</a></li><li><a href="/wiki/Category:All_articles_needing_additional_references" title="Category:All articles needing additional references">All articles needing additional references</a></li><li><a href="/wiki/Category:Wikipedia_introduction_cleanup_from_June_2014" title="Category:Wikipedia introduction cleanup from June 2014">Wikipedia introduction cleanup from June 2014</a></li><li><a href="/wiki/Category:All_pages_needing_cleanup" title="Category:All pages needing cleanup">All pages needing cleanup</a></li><li><a href="/wiki/Category:Articles_covered_by_WikiProject_Wikify_from_June_2014" title="Category:Articles covered by WikiProject Wikify from June 2014">Articles covered by WikiProject Wikify from June 2014</a></li><li><a href="/wiki/Category:All_articles_covered_by_WikiProject_Wikify" title="Category:All articles covered by WikiProject Wikify">All articles covered by WikiProject Wikify</a></li><li><a href="/wiki/Category:All_articles_with_unsourced_statements" title="Category:All articles with unsourced statements">All articles with unsourced statements</a></li><li><a href="/wiki/Category:Articles_with_unsourced_statements_from_January_2012" title="Category:Articles with unsourced statements from January 2012">Articles with unsourced statements from January 2012</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=AMOS+%28programming+language%29" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=AMOS+%28programming+language%29" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/AMOS_(programming_language)"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:AMOS_(programming_language)"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/AMOS_(programming_language)" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=AMOS_(programming_language)&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=AMOS_(programming_language)&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/AMOS_(programming_language)" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/AMOS_(programming_language)" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=AMOS_(programming_language)&amp;oldid=742026184" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=AMOS_(programming_language)&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q295232" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=AMOS_%28programming_language%29&amp;id=742026184" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=AMOS+%28programming+language%29">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=AMOS+%28programming+language%29&amp;returnto=AMOS+%28programming+language%29&amp;oldid=742026184&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=AMOS_(programming_language)&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-bs"><a href="https://bs.wikipedia.org/wiki/AMOS_BASIC" title="AMOS BASIC – Bosnian" lang="bs" hreflang="bs" class="interlanguage-link-target">Bosanski</a></li><li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/AMOS_BASIC" title="AMOS BASIC – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-es"><a href="https://es.wikipedia.org/wiki/AMOS_(lenguaje_de_programaci%C3%B3n)" title="AMOS (lenguaje de programación) – Spanish" lang="es" hreflang="es" class="interlanguage-link-target">Español</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/AMOS_BASIC" title="AMOS BASIC – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-hr"><a href="https://hr.wikipedia.org/wiki/AMOS_BASIC" title="AMOS BASIC – Croatian" lang="hr" hreflang="hr" class="interlanguage-link-target">Hrvatski</a></li><li class="interlanguage-link interwiki-it"><a href="https://it.wikipedia.org/wiki/AMOS_BASIC" title="AMOS BASIC – Italian" lang="it" hreflang="it" class="interlanguage-link-target">Italiano</a></li><li class="interlanguage-link interwiki-ms"><a href="https://ms.wikipedia.org/wiki/Bahasa_pengaturcaraan_Amos" title="Bahasa pengaturcaraan Amos – Malay" lang="ms" hreflang="ms" class="interlanguage-link-target">Bahasa Melayu</a></li><li class="interlanguage-link interwiki-pa"><a href="https://pa.wikipedia.org/wiki/%E0%A8%8F%E0%A8%90%E0%A8%AE%E0%A8%93%E0%A8%90%E0%A8%B8_(%E0%A8%AA%E0%A9%8D%E0%A8%B0%E0%A9%8B%E0%A8%97%E0%A9%8D%E0%A8%B0%E0%A8%BE%E0%A8%AE%E0%A8%BF%E0%A9%B0%E0%A8%97_%E0%A8%AD%E0%A8%BE%E0%A8%B8%E0%A8%BC%E0%A8%BE)" title="ਏਐਮਓਐਸ (ਪ੍ਰੋਗ੍ਰਾਮਿੰਗ ਭਾਸ਼ਾ) – Punjabi" lang="pa" hreflang="pa" class="interlanguage-link-target">ਪੰਜਾਬੀ</a></li><li class="interlanguage-link interwiki-pl"><a href="https://pl.wikipedia.org/wiki/Amos_(j%C4%99zyk_programowania)" title="Amos (język programowania) – Polish" lang="pl" hreflang="pl" class="interlanguage-link-target">Polski</a></li><li class="interlanguage-link interwiki-sh"><a href="https://sh.wikipedia.org/wiki/AMOS_BASIC" title="AMOS BASIC – Serbo-Croatian" lang="sh" hreflang="sh" class="interlanguage-link-target">Srpskohrvatski / српскохрватски</a></li><li class="interlanguage-link interwiki-fi"><a href="https://fi.wikipedia.org/wiki/AMOS_(ohjelmointikieli)" title="AMOS (ohjelmointikieli) – Finnish" lang="fi" hreflang="fi" class="interlanguage-link-target">Suomi</a></li><li class="interlanguage-link interwiki-sv"><a href="https://sv.wikipedia.org/wiki/AMOS_(programspr%C3%A5k)" title="AMOS (programspråk) – Swedish" lang="sv" hreflang="sv" class="interlanguage-link-target">Svenska</a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q295232#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 1 October 2016, at 06:08.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=AMOS_(programming_language)&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.172","walltime":"0.229","ppvisitednodes":{"value":1082,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":64505,"limit":2097152},"templateargumentsize":{"value":7483,"limit":2097152},"expansiondepth":{"value":12,"limit":40},"expensivefunctioncount":{"value":6,"limit":500},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  173.365      1 -total"," 38.95%   67.534      3 Template:Ambox"," 32.94%   57.102      1 Template:Multiple_issues"," 21.11%   36.599      1 Template:Reflist"," 19.45%   33.711      1 Template:Infobox_programming_language"," 17.76%   30.795      2 Template:Cite_web"," 17.27%   29.946      1 Template:Infobox"," 15.65%   27.123      1 Template:Citation_needed"," 14.02%   24.310      1 Template:Fix","  9.91%   17.180      1 Template:Refimprove"]},"scribunto":{"limitreport-timeusage":{"value":"0.071","limit":"10.000"},"limitreport-memusage":{"value":2721345,"limit":52428800}},"cachereport":{"origin":"mw1178","timestamp":"20170127061630","ttl":86400,"transientcontent":true}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":50,"wgHostname":"mw1264"});});</script>
+	</body>
+</html>

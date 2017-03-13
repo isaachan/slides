@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>OptimJ - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"OptimJ","wgTitle":"OptimJ","wgCurRevisionId":731419913,"wgRevisionId":731419913,"wgArticleId":28952622,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Object-oriented programming languages","Mathematical optimization software","Free mathematics software","Mathematical modeling","Discontinued programming languages","Programming languages created in 2006"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"OptimJ","wgRelevantArticleId":28952622,"wgRequestId":"WIydPgpAAD8AATuBJ8UAAABR","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":true},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q3354460","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.cite.styles":"ready","ext.pygments":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.legacy.wikibits","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.centralauth.centralautologin","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.pygments%2CwikimediaBadges%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.29.0-wmf.9"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/OptimJ"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=OptimJ&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=OptimJ&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/OptimJ"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-OptimJ rootpage-OptimJ skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">OptimJ</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><script>function mfTempOpenSection(id){var block=document.getElementById("mf-section-"+id);block.className+=" open-block";block.previousSibling.className+=" open-block";}</script><table class="infobox vevent" style="width:22em">
+<caption class="summary">OptimJ</caption>
+<tr>
+<th scope="row"><a href="/wiki/Programming_paradigm" title="Programming paradigm">Paradigm</a></th>
+<td><a href="/wiki/Object-oriented_programming" title="Object-oriented programming">object-oriented</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_design" title="Software design">Designed&#160;by</a></th>
+<td><a href="/wiki/Ateji" title="Ateji">Ateji</a></td>
+</tr>
+<tr>
+<th scope="row">First&#160;appeared</th>
+<td>2006<span style="display:none">&#160;(<span class="bday dtstart published updated">2006</span>)</span></td>
+</tr>
+<tr>
+<th scope="row">Website</th>
+<td><a rel="nofollow" class="external text" href="http://www.ateji.com/">www.Ateji.com</a></td>
+</tr>
+<tr>
+<th colspan="2" style="text-align:center;background-color: #eee;">Influenced by</th>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/Java_(programming_language)" title="Java (programming language)">Java</a></td>
+</tr>
+</table>
+<p><b>OptimJ</b> is an extension of the <a href="/wiki/Java_(programming_language)" title="Java (programming language)">Java</a> with language support for writing optimization models and abstractions for bulk data processing. The extensions and the proprietary product implementing the extensions were developed by Ateji which went out of business in September 2011.<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">[1]</a></sup> OptimJ aims at providing a clear and concise algebraic notation for optimization modeling, removing compatibility barriers between optimization modeling and application programming tools, and bringing software engineering techniques such as object-orientation and modern IDE support to optimization experts.</p>
+<p>OptimJ models are directly compatible with Java source code, existing Java libraries such as database access, Excel connection or graphical interfaces. OptimJ is compatible with development tools such as Eclipse, CVS, JUnit or JavaDoc. OptimJ is available free with the following solvers: lp_solve, glpk, LP or MPS file formats and also supports the following commercial solvers: <a href="/wiki/Gurobi" title="Gurobi">Gurobi</a>, <a href="/wiki/MOSEK" title="MOSEK">MOSEK</a>, IBM ILOG CPLEX Optimization Studio.</p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Language_concepts"><span class="tocnumber">1</span> <span class="toctext">Language concepts</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#The_example_of_map_coloring"><span class="tocnumber">2</span> <span class="toctext">The example of map coloring</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#OR-specific_concepts"><span class="tocnumber">3</span> <span class="toctext">OR-specific concepts</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="#Models"><span class="tocnumber">3.1</span> <span class="toctext">Models</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Decision_variables"><span class="tocnumber">3.2</span> <span class="toctext">Decision variables</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Constraints"><span class="tocnumber">3.3</span> <span class="toctext">Constraints</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Objectives"><span class="tocnumber">3.4</span> <span class="toctext">Objectives</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-8"><a href="#Generalist_concepts"><span class="tocnumber">4</span> <span class="toctext">Generalist concepts</span></a>
+<ul>
+<li class="toclevel-2 tocsection-9"><a href="#Associative_arrays"><span class="tocnumber">4.1</span> <span class="toctext">Associative arrays</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Extended_initialization"><span class="tocnumber">4.2</span> <span class="toctext">Extended initialization</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#Tuples"><span class="tocnumber">4.3</span> <span class="toctext">Tuples</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#Ranges"><span class="tocnumber">4.4</span> <span class="toctext">Ranges</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="#Comprehensions"><span class="tocnumber">4.5</span> <span class="toctext">Comprehensions</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-14"><a href="#Development_environment"><span class="tocnumber">5</span> <span class="toctext">Development environment</span></a></li>
+<li class="toclevel-1 tocsection-15"><a href="#OptimJ_GUI_and_Rapid_Prototyping"><span class="tocnumber">6</span> <span class="toctext">OptimJ GUI and Rapid Prototyping</span></a></li>
+<li class="toclevel-1 tocsection-16"><a href="#Supported_solvers"><span class="tocnumber">7</span> <span class="toctext">Supported solvers</span></a></li>
+<li class="toclevel-1 tocsection-17"><a href="#External_links"><span class="tocnumber">8</span> <span class="toctext">External links</span></a></li>
+<li class="toclevel-1 tocsection-18"><a href="#References"><span class="tocnumber">9</span> <span class="toctext">References</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Language_concepts">Language concepts</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=OptimJ&amp;action=edit&amp;section=1" title="Edit section: Language concepts">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>OptimJ combines concepts from object-oriented imperative languages with concepts from <a href="/wiki/Algebraic_modeling_language" title="Algebraic modeling language">algebraic modeling languages</a> for optimization problems. Here we will review the optimization concepts added to Java, starting with a concrete example.</p>
+<h2><span class="mw-headline" id="The_example_of_map_coloring">The example of map coloring</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=OptimJ&amp;action=edit&amp;section=2" title="Edit section: The example of map coloring">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The goal of a map coloring problem is to color a map so that regions sharing a common border have different colors. It can be expressed in OptimJ as follows.</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="kn">package</span> <span class="nn">examples</span><span class="o">;</span>
+
+<span class="c1">// a simple model for the map-coloring problem</span>
+<span class="kd">public</span> <span class="n">model</span> <span class="n">SimpleColoring</span> <span class="n">solver</span> <span class="n">lpsolve</span>
+<span class="o">{</span>
+  <span class="c1">// maximum number of colors</span>
+  <span class="kt">int</span> <span class="n">nbColors</span> <span class="o">=</span> <span class="mi">4</span><span class="o">;</span>
+
+  <span class="c1">// decision variables hold the color of each country</span>
+  <span class="n">var</span> <span class="kt">int</span> <span class="n">belgium</span> <span class="n">in</span> <span class="mi">1</span> <span class="o">..</span> <span class="n">nbColors</span><span class="o">;</span>
+  <span class="n">var</span> <span class="kt">int</span> <span class="n">denmark</span> <span class="n">in</span> <span class="mi">1</span> <span class="o">..</span> <span class="n">nbColors</span><span class="o">;</span>
+  <span class="n">var</span> <span class="kt">int</span> <span class="n">germany</span> <span class="n">in</span> <span class="mi">1</span> <span class="o">..</span> <span class="n">nbColors</span><span class="o">;</span>
+
+  <span class="c1">// neighbouring countries must have a different color</span>
+  <span class="n">constraints</span> <span class="o">{</span>
+    <span class="n">belgium</span> <span class="o">!=</span> <span class="n">germany</span><span class="o">;</span>
+    <span class="n">germany</span> <span class="o">!=</span> <span class="n">denmark</span><span class="o">;</span>
+  <span class="o">}</span>
+
+  <span class="c1">// a main entry point to test our model</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span>
+  <span class="o">{</span>
+    <span class="c1">// instantiate the model</span>
+    <span class="n">SimpleColoring</span> <span class="n">m</span> <span class="o">=</span> <span class="k">new</span> <span class="n">SimpleColoring</span><span class="o">();</span>
+
+    <span class="c1">// solve it</span>
+    <span class="n">m</span><span class="o">.</span><span class="na">extract</span><span class="o">();</span>
+    <span class="n">m</span><span class="o">.</span><span class="na">solve</span><span class="o">();</span>
+
+    <span class="c1">// print solutions</span>
+    <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Belgium: "</span> <span class="o">+</span> <span class="n">m</span><span class="o">.</span><span class="na">value</span><span class="o">(</span><span class="n">m</span><span class="o">.</span><span class="na">belgium</span><span class="o">));</span>
+    <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Denmark: "</span> <span class="o">+</span> <span class="n">m</span><span class="o">.</span><span class="na">value</span><span class="o">(</span><span class="n">m</span><span class="o">.</span><span class="na">denmark</span><span class="o">));</span>
+    <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Germany: "</span> <span class="o">+</span> <span class="n">m</span><span class="o">.</span><span class="na">value</span><span class="o">(</span><span class="n">m</span><span class="o">.</span><span class="na">germany</span><span class="o">));</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+<p>Readers familiar with Java will notice a strong similarity with this language. Indeed, OptimJ is a <a href="/wiki/Conservative_extension" title="Conservative extension">conservative extension</a> of Java: every valid Java program is also a valid OptimJ program and has the same behavior.</p>
+<p>This map coloring example also shows features specific to optimization that have no direct equivalent in Java, introduced by the keywords <code>model</code>, <code>var</code>, <code>constraints</code>.</p>
+<h2><span class="mw-headline" id="OR-specific_concepts">OR-specific concepts</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=OptimJ&amp;action=edit&amp;section=3" title="Edit section: OR-specific concepts">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="Models">Models</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=OptimJ&amp;action=edit&amp;section=4" title="Edit section: Models">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>A model is an extension of a Java class that can contain not only fields and methods but also constraints and an objective function. It is introduced by the <code>model</code> keyword and follows the same rules as class declarations. A non-abstract model must be linked to a solver, introduced by the keyword <code>solver</code>. The capabilities of the solver will determine what kind of constraints can be expressed in the model, for instance a linear solver such as <a href="/wiki/Lp_solve" class="mw-redirect" title="Lp solve">lp solve</a> will only allow linear constraints.</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="kd">public</span> <span class="n">model</span> <span class="n">SimpleColoring</span> <span class="n">solver</span> <span class="n">lpsolve</span>
+</pre></div>
+<h3><span class="mw-headline" id="Decision_variables">Decision variables</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=OptimJ&amp;action=edit&amp;section=5" title="Edit section: Decision variables">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Imperative languages such as Java provide a notion of <a href="/wiki/Imperative_programming" title="Imperative programming">imperative variables</a>, which basically represent memory locations that can be written to and read from.</p>
+<p>OptimJ also introduces the notion of a decision variable, which basically represents an unknown quantity whose value one is searching. A solution to an optimization problem is a set of values for all its decision variables that respects the constraints of the problem—without decision variables, it would not possible to express optimization problems. The term "decision variable" comes from the optimization community, but decision variables in OptimJ are the same concept as logical variables in logical languages such as Prolog.</p>
+<p>Decision variables have special types introduced by the keyword <code>var</code>. There is a <code>var</code> type for each possible Java type.</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+  <span class="c1">// a var type for a Java primitive type</span>
+  <span class="n">var</span> <span class="kt">int</span> <span class="n">x</span><span class="o">;</span>
+
+  <span class="c1">// a var type for a user-defined class</span>
+  <span class="n">var</span> <span class="n">MyClass</span> <span class="n">y</span><span class="o">;</span>
+</pre></div>
+<p>In the map coloring example, decision variables were introduced together with the range of values they may take.</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+  <span class="n">var</span> <span class="kt">int</span> <span class="n">germany</span> <span class="n">in</span> <span class="mi">1</span> <span class="o">..</span> <span class="n">nbColors</span><span class="o">;</span>
+</pre></div>
+<p>This is just a shorthand equivalent to putting a constraint on the variable.</p>
+<h3><span class="mw-headline" id="Constraints">Constraints</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=OptimJ&amp;action=edit&amp;section=6" title="Edit section: Constraints">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Constraints express conditions that must be true in any solution of the problem. A constraint can be any Java boolean expression involving decision variables.</p>
+<p>In the map coloring example, this set of constraints states that in any solution to the map coloring problem, the color of Belgium must be different from the color of Germany, and the color of Germany must be different from the color of Denmark.</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+  <span class="n">constraints</span> <span class="o">{</span>
+    <span class="n">belgium</span> <span class="o">!=</span> <span class="n">germany</span><span class="o">;</span>
+    <span class="n">germany</span> <span class="o">!=</span> <span class="n">denmark</span><span class="o">;</span>
+  <span class="o">}</span>
+</pre></div>
+<p>The operator <code>!=</code> is the standard Java not-equal operator.</p>
+<p>Constraints typically come in batches and can be quantified with the <code>forall</code> operator. For instance, instead of listing all countries and their neighbors explicitly in the source code, one may have an array of countries, an array of decision variables representing the color of each country, and an array <code>boolean[][] neighboring</code> or a predicate (a boolean function) <code>boolean isNeighbor()</code>.</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="n">constraints</span> <span class="o">{</span>
+  <span class="n">forall</span><span class="o">(</span><span class="n">Country</span> <span class="n">c1</span> <span class="o">:</span> <span class="n">countries</span><span class="o">,</span> <span class="n">Country</span> <span class="n">c2</span> <span class="o">:</span> <span class="n">countries</span><span class="o">,</span> <span class="o">:</span><span class="n">isNeighbor</span><span class="o">(</span><span class="n">c1</span><span class="o">,</span><span class="n">c2</span><span class="o">))</span> <span class="o">{</span>
+    <span class="n">color</span><span class="o">[</span><span class="n">c1</span><span class="o">]</span> <span class="o">!=</span> <span class="n">color</span><span class="o">[</span><span class="n">c2</span><span class="o">];</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+<p><code>Country c1&#160;: countries</code> is a generator: it iterates <code>c1</code> over all the values in the collection <code>countries</code>.</p>
+<p><code>:isNeighbor(c1,c2)</code> is a filter: it keeps only the generated values for which the predicate is true (the symbol <code>:</code> may be read as "if").</p>
+<p>Assuming that the array <code>countries</code> contains <code>belgium</code>, <code>germany</code> and <code>denmark</code>, and that the predicate <code>isNeighbor</code> returns <code>true</code> for the couples (<code>Belgium</code> , <code>Germany</code>) and (<code>Germany</code>, <code>Denmark</code>), then this code is equivalent to the constraints block of the original map coloring example.</p>
+<h3><span class="mw-headline" id="Objectives">Objectives</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=OptimJ&amp;action=edit&amp;section=7" title="Edit section: Objectives">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Optionally, when a model describes an optimization problem, an objective function to be minimized or maximized can be stated in the model.</p>
+<h2><span class="mw-headline" id="Generalist_concepts">Generalist concepts</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=OptimJ&amp;action=edit&amp;section=8" title="Edit section: Generalist concepts">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Generalist concepts are programming concepts that are not specific to OR problems and would make sense for any kind of application development. The generalist concepts added to Java by OptimJ make the expression of OR models easier or more concise. They are often present in older modeling languages and thus provide OR experts with a familiar way of expressing their models.</p>
+<h3><span class="mw-headline" id="Associative_arrays">Associative arrays</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=OptimJ&amp;action=edit&amp;section=9" title="Edit section: Associative arrays">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>While Java arrays can only be indexed by 0-based integers, OptimJ arrays can be indexed by values of any type. Such arrays are typically called <a href="/wiki/Associative_array" title="Associative array">associative arrays</a> or maps. In this example, the array <code>age</code> contains the age of persons, identified by their name:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+  <span class="kt">int</span><span class="o">[</span><span class="n">String</span><span class="o">]</span> <span class="n">age</span><span class="o">;</span>
+</pre></div>
+<p>The type <code>int[String]</code> denoting an array of <code>int</code> indexed by <code>String</code>. Accessing OptimJ arrays using the standard Java syntax:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+  <span class="n">age</span><span class="o">[</span><span class="s">"Stephan"</span><span class="o">]</span> <span class="o">=</span> <span class="mi">37</span><span class="o">;</span>
+  <span class="n">x</span> <span class="o">=</span> <span class="n">age</span><span class="o">[</span><span class="s">"Lynda"</span><span class="o">];</span>
+</pre></div>
+<p>Traditionally, associative arrays are heavily used in the expression of optimization problems. OptimJ associative arrays are very handy when associated to their specific initialization syntax. Initial values can be given in <a href="/wiki/Intention" title="Intention">intensional definition</a>, as in:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="kt">int</span><span class="o">[</span><span class="n">String</span><span class="o">]</span> <span class="n">age</span> <span class="o">=</span> <span class="o">{</span> 
+  <span class="s">"Stephan"</span> <span class="o">-&gt;</span> <span class="mi">37</span><span class="o">,</span>
+  <span class="s">"Lynda"</span>   <span class="o">-&gt;</span> <span class="mi">29</span> 
+<span class="o">};</span>
+</pre></div>
+<p>or can be given in <a href="/wiki/Extensibility" title="Extensibility">extensional definition</a>, as in:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+  <span class="kt">int</span><span class="o">[</span><span class="n">String</span><span class="o">]</span> <span class="n">length</span><span class="o">[</span><span class="n">String</span> <span class="n">name</span> <span class="o">:</span> <span class="n">names</span><span class="o">]</span> <span class="o">=</span> <span class="n">name</span><span class="o">.</span><span class="na">length</span><span class="o">();</span>
+</pre></div>
+<p>Here each of the entries <code>length[i]</code> is initialized with <code>names[i].length()</code>.</p>
+<h3><span class="mw-headline" id="Extended_initialization">Extended initialization</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=OptimJ&amp;action=edit&amp;section=10" title="Edit section: Extended initialization">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h3><span class="mw-headline" id="Tuples">Tuples</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=OptimJ&amp;action=edit&amp;section=11" title="Edit section: Tuples">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p><a href="/wiki/Tuple" title="Tuple">Tuples</a> are ubiquitous in computing, but absent from most mainstream languages including Java. OptimJ provides a notion of tuple at the language level that can be very useful as indexes in combination with associative arrays.</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+  <span class="o">(:</span> <span class="kt">int</span><span class="o">,</span> <span class="n">String</span> <span class="o">:)</span> <span class="n">myTuple</span> <span class="o">=</span> <span class="k">new</span> <span class="o">(:</span> <span class="mi">3</span><span class="o">,</span> <span class="s">"Three"</span> <span class="o">:);</span>
+  <span class="n">String</span> <span class="n">s</span> <span class="o">=</span> <span class="n">myTuple</span><span class="err">#</span><span class="mi">1</span><span class="o">;</span>
+</pre></div>
+<p>Tuple types and tuple values are both written between <code>(:</code> and <code>:)</code>.</p>
+<h3><span class="mw-headline" id="Ranges">Ranges</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=OptimJ&amp;action=edit&amp;section=12" title="Edit section: Ranges">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h3><span class="mw-headline" id="Comprehensions">Comprehensions</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=OptimJ&amp;action=edit&amp;section=13" title="Edit section: Comprehensions">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p><a href="/wiki/List_comprehension" title="List comprehension">Comprehensions</a>, also called aggregates operations or reductions, are OptimJ expressions that extend a given binary operation over a collection of values. A common example is the sum:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+  <span class="c1">// the sum of all integers from 1 to 10</span>
+  <span class="kt">int</span> <span class="n">k</span> <span class="o">=</span> <span class="n">sum</span> <span class="o">{</span> <span class="n">i</span> <span class="o">|</span> <span class="kt">int</span> <span class="n">i</span> <span class="n">in</span> <span class="mi">1</span> <span class="o">..</span> <span class="mi">10</span><span class="o">};</span>
+</pre></div>
+<p>This construction is very similar to the big-sigma <a href="/wiki/Summation" title="Summation">summation</a> notation used in mathematics, with a syntax compatible with the Java language.</p>
+<p>Comprehensions can also be used to build collections, such as lists, sets, multisets or maps:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+  <span class="c1">// the set of all integers from 1 to 10</span>
+  <span class="n">HashSet</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">&gt;</span> <span class="n">s</span> <span class="o">=</span> <span class="err">`</span><span class="n">hashSet</span><span class="o">(){</span> <span class="n">i</span> <span class="o">|</span> <span class="kt">int</span> <span class="n">i</span> <span class="n">in</span> <span class="mi">1</span> <span class="o">..</span> <span class="mi">10</span><span class="o">};</span>
+</pre></div>
+<p>Comprehension expressions can have an arbitrary expression as target, as in:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+  <span class="c1">// the sum of all squares of integers from 1 to 10</span>
+  <span class="kt">int</span> <span class="n">k</span> <span class="o">=</span> <span class="n">sum</span> <span class="o">{</span> <span class="n">i</span><span class="o">*</span><span class="n">i</span> <span class="o">|</span> <span class="kt">int</span> <span class="n">i</span> <span class="n">in</span> <span class="mi">1</span> <span class="o">..</span> <span class="mi">10</span><span class="o">};</span>
+</pre></div>
+<p>They can also have an arbitrary number of generators and filters:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+  <span class="c1">// the sum of all f(i,j), for 0&lt;=i&lt;10, 1&lt;=j&lt;=10 and i!=j </span>
+  <span class="kt">int</span> <span class="n">k</span> <span class="o">=</span> <span class="n">sum</span><span class="o">{</span> <span class="n">f</span><span class="o">(</span><span class="n">i</span><span class="o">,</span><span class="n">j</span><span class="o">)</span> <span class="o">|</span> <span class="kt">int</span> <span class="n">i</span> <span class="o">:</span> <span class="mi">10</span><span class="o">,</span> <span class="kt">int</span> <span class="n">j</span> <span class="o">:</span> <span class="mi">1</span> <span class="o">..</span> <span class="mi">10</span><span class="o">,</span> <span class="o">:</span><span class="n">i</span><span class="o">!=</span><span class="n">j</span> <span class="o">}</span>
+</pre></div>
+<p>Comprehension need not apply only to numeric values. Set or multiset-building comprehensions, especially in combination with tuples of strings, make it possible to express queries very similar to SQL database queries:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+  <span class="c1">// select name from persons where age &gt; 18</span>
+  <span class="err">`</span><span class="n">multiSet</span><span class="o">(){</span> <span class="n">p</span><span class="o">.</span><span class="na">name</span> <span class="o">|</span> <span class="n">Person</span> <span class="n">p</span> <span class="o">:</span> <span class="n">persons</span><span class="o">,</span> <span class="o">:</span><span class="n">p</span><span class="o">.</span><span class="na">age</span> <span class="o">&gt;</span> <span class="mi">18</span> <span class="o">}</span>
+</pre></div>
+<p>In the context of optimization models, comprehension expressions provide a concise and expressive way to pre-process and clean the input data, and format the output data.</p>
+<h2><span class="mw-headline" id="Development_environment">Development environment</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=OptimJ&amp;action=edit&amp;section=14" title="Edit section: Development environment">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>OptimJ is available as an Eclipse plug-in. The compiler implements a <a href="/wiki/Source-to-source_compiler" title="Source-to-source compiler">source-to-source translation</a> from OptimJ to standard Java, thus providing immediate compatibility with most development tools of the Java ecosystem.</p>
+<h2><span class="mw-headline" id="OptimJ_GUI_and_Rapid_Prototyping">OptimJ GUI and Rapid Prototyping</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=OptimJ&amp;action=edit&amp;section=15" title="Edit section: OptimJ GUI and Rapid Prototyping">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Since the OptimJ compiler knows about the structure of all data used in models, it is able to generate a structured graphical view of this data at compile-time. This is especially relevant in the case of associative arrays where the compiler knows the collections used for indexing the various dimensions.</p>
+<p>The basic graphical view generated by the compiler is reminiscent of an <a href="/wiki/OLAP_cube" title="OLAP cube">OLAP cube</a>. It can then be customized in many different ways, from simple coloring up to providing new widgets for displaying data elements.</p>
+<p>The compiler-generated OptimJ GUI saves the OR expert from writing all the glue code required when mapping graphical libraries to data. It enables rapid prototyping, by providing immediate visual hints about the structure of data.</p>
+<p>Another part of the OptimJ GUI reports in real time performance statistics from the solver. This information can be used for understanding performance problems and improving solving time. At this time, it is available only for lp_solve.</p>
+<h2><span class="mw-headline" id="Supported_solvers">Supported solvers</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=OptimJ&amp;action=edit&amp;section=16" title="Edit section: Supported solvers">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>OptimJ is available for free with the following solvers lp_solve, glpk, LP or MPS file formats and also supports the following commercial solvers: <a href="/wiki/Gurobi" title="Gurobi">Gurobi</a>, Mosek, IBM ILOG CPLEX Optimization Studio.</p>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=OptimJ&amp;action=edit&amp;section=17" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.ateji.com/vpAvt/OptimJ%20manual%20v1.3.16.pdf">The OptimJ language manual</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.ateji.com/optimj">OptimJ page</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.ateji.com/optimj/freeoptimjdownload.html">Free OptimJ download</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.ateji.com/optimj/optimj-gui.html">OptimJ GUI</a></li>
+</ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=OptimJ&amp;action=edit&amp;section=18" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.ateji.com/blog/ateji-is-closed/">"Ateji is closed"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2012-01-11</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AOptimJ&amp;rft.btitle=Ateji+is+closed&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.ateji.com%2Fblog%2Fateji-is-closed%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+</ol>
+</div>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.rostudel.com/docs/rostudel-optimj-lisbon2010.pdf">Rapid application development with OPTIMJ, a practitioner's experience report. David Gravot, Patrick Viry. EURO 2010 (Lisbon)</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.in-ter-trans.eu/resources/Zesch_Hellingrath_2010_Integrated+Production-Distribution+Planning.pdf">OptimJ used in an optimization model for mixed-model assembly lines, University of Münster</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.aaai.org/ocs/index.php/AAAI/AAAI10/paper/viewFile/1769/2076">OptimJ used in an Approximate Subgame-Perfect Equilibrium Computation Technique for Repeated Games, Laval University</a></li>
+</ul>
+<p><br /></p>
+<div role="navigation" class="navbox" aria-labelledby="Mathematical_optimization_software" style="padding:3px">
+<table class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:Mathematical_optimization_software" title="Template:Mathematical optimization software"><abbr title="View this template" style=";;background:none transparent;border:none;">v</abbr></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:Mathematical_optimization_software" title="Template talk:Mathematical optimization software"><abbr title="Discuss this template" style=";;background:none transparent;border:none;">t</abbr></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:Mathematical_optimization_software&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;">e</abbr></a></li>
+</ul>
+</div>
+<div id="Mathematical_optimization_software" style="font-size:114%"><a href="/wiki/Mathematical_optimization_software" class="mw-redirect" title="Mathematical optimization software">Mathematical optimization software</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="vertical-align:top;">Data formats</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li>LP</li>
+<li><a href="/wiki/MPS_(format)" title="MPS (format)">MPS</a></li>
+<li><a href="/wiki/Nl_(format)" title="Nl (format)">nl</a></li>
+<li><a href="/w/index.php?title=OptML&amp;action=edit&amp;redlink=1" class="new" title="OptML (page does not exist)">OptML</a></li>
+<li><a href="/w/index.php?title=OSiL&amp;action=edit&amp;redlink=1" class="new" title="OSiL (page does not exist)">OSiL</a></li>
+<li><a href="/wiki/Sol_(format)" title="Sol (format)">sol</a></li>
+<li><a href="/w/index.php?title=XMPS&amp;action=edit&amp;redlink=1" class="new" title="XMPS (page does not exist)">xMPS</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="vertical-align:top;"><a href="/wiki/Mathematical_modeling" class="mw-redirect" title="Mathematical modeling">Modeling</a> tools</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/AIMMS" title="AIMMS">AIMMS</a></li>
+<li><a href="/wiki/AMPL" title="AMPL">AMPL</a></li>
+<li><a href="/wiki/APMonitor" title="APMonitor">APMonitor</a></li>
+<li>CMPL</li>
+<li>CVX</li>
+<li><a href="/w/index.php?title=CVXOPT&amp;action=edit&amp;redlink=1" class="new" title="CVXOPT (page does not exist)">CVXOPT</a></li>
+<li><a href="/w/index.php?title=CVXPY&amp;action=edit&amp;redlink=1" class="new" title="CVXPY (page does not exist)">CVXPY</a></li>
+<li><a href="/wiki/ECLiPSe" title="ECLiPSe">ECLiPSe</a>-CLP</li>
+<li><a href="/wiki/General_Algebraic_Modeling_System" title="General Algebraic Modeling System">GAMS</a></li>
+<li><a href="/wiki/GNU_Linear_Programming_Kit" title="GNU Linear Programming Kit">GNU MathProg</a></li>
+<li><a href="/wiki/JuMP" class="mw-redirect" title="JuMP">JuMP</a></li>
+<li><a href="/wiki/LINDO" title="LINDO">LINDO</a></li>
+<li><a href="/wiki/CPLEX" title="CPLEX">OPL</a></li>
+<li><a href="/w/index.php?title=Mathematical_Programming_Language&amp;action=edit&amp;redlink=1" class="new" title="Mathematical Programming Language (page does not exist)">MPL</a></li>
+<li><strong class="selflink">OptimJ</strong></li>
+<li>PICOS</li>
+<li><a href="/wiki/COIN-OR#PuLP" title="COIN-OR">PuLP</a></li>
+<li><a href="/wiki/Pyomo" title="Pyomo">Pyomo</a></li>
+<li><a href="/w/index.php?title=ROML&amp;action=edit&amp;redlink=1" class="new" title="ROML (page does not exist)">ROML</a></li>
+<li><a href="/wiki/TOMLAB" title="TOMLAB">TOMLAB</a></li>
+<li><a href="/wiki/FICO_Xpress" title="FICO Xpress">Xpress-Mosel</a></li>
+<li><a href="/w/index.php?title=YALMIP&amp;action=edit&amp;redlink=1" class="new" title="YALMIP (page does not exist)">YALMIP</a></li>
+<li><a href="/wiki/SCIP_(optimization_software)#SCIP_Optimization_Suite" title="SCIP (optimization software)">ZIMPL</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="vertical-align:top;"><a href="/wiki/Linear_programming" title="Linear programming">LP</a>, <a href="/wiki/Linear_programming#Integer_unknowns" title="Linear programming">MILP</a><sup style="font-weight:normal;">∗</sup> solvers</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li>ABACUS<sup>∗</sup></li>
+<li><a href="/wiki/APOPT" title="APOPT">APOPT</a><sup>∗</sup></li>
+<li><a href="/wiki/Artelys_Knitro" title="Artelys Knitro">Artelys Knitro</a><sup>∗</sup></li>
+<li><a href="/wiki/COIN-OR" title="COIN-OR">BCP</a><sup>∗</sup></li>
+<li><a href="/w/index.php?title=BDMLP&amp;action=edit&amp;redlink=1" class="new" title="BDMLP (page does not exist)">BDMLP</a></li>
+<li><a href="/w/index.php?title=BPMPD&amp;action=edit&amp;redlink=1" class="new" title="BPMPD (page does not exist)">BPMPD</a></li>
+<li><a href="/w/index.php?title=BPOPT&amp;action=edit&amp;redlink=1" class="new" title="BPOPT (page does not exist)">BPOPT</a></li>
+<li><a href="/wiki/COIN-OR#CLP" title="COIN-OR">CLP</a></li>
+<li><a href="/wiki/COIN-OR#CBC" title="COIN-OR">CBC</a><sup>∗</sup></li>
+<li><a href="/wiki/CPLEX" title="CPLEX">CPLEX</a><sup>∗</sup></li>
+<li><a href="/w/index.php?title=CSDP_(optimization_software)&amp;action=edit&amp;redlink=1" class="new" title="CSDP (optimization software) (page does not exist)">CSDP</a></li>
+<li><a href="/w/index.php?title=DSDP_(optimization_software)&amp;action=edit&amp;redlink=1" class="new" title="DSDP (optimization software) (page does not exist)">DSDP</a></li>
+<li><a href="/wiki/FortMP" title="FortMP">FortMP</a><sup>∗</sup></li>
+<li><a href="/wiki/SCIP_(optimization_software)#SCIP_Optimization_Suite" title="SCIP (optimization software)">GCG</a><sup>∗</sup></li>
+<li><a href="/w/index.php?title=GIPALS32&amp;action=edit&amp;redlink=1" class="new" title="GIPALS32 (page does not exist)">GIPALS32</a></li>
+<li><a href="/wiki/GNU_Linear_Programming_Kit" title="GNU Linear Programming Kit">GLPK/GLPSOL</a><sup>∗</sup></li>
+<li><a href="/wiki/Gurobi" title="Gurobi">Gurobi</a><sup>∗</sup></li>
+<li><a href="/w/index.php?title=HOPDM&amp;action=edit&amp;redlink=1" class="new" title="HOPDM (page does not exist)">HOPDM</a></li>
+<li><a href="/wiki/LINDO" title="LINDO">LINDO</a><sup>∗</sup></li>
+<li>lp_solve<sup>∗</sup></li>
+<li><a href="/wiki/Robert_J._Vanderbei" title="Robert J. Vanderbei">LOQO</a></li>
+<li><a href="/wiki/MINOS_(optimization_software)" title="MINOS (optimization software)">MINOS</a></li>
+<li><a href="/wiki/MINTO" title="MINTO">MINTO</a><sup>∗</sup></li>
+<li><a href="/wiki/MOSEK" title="MOSEK">MOSEK</a><sup>∗</sup></li>
+<li><a href="/w/index.php?title=OOPS_(optimization_software)&amp;action=edit&amp;redlink=1" class="new" title="OOPS (optimization software) (page does not exist)">OOPS</a></li>
+<li><a href="/w/index.php?title=OOQP&amp;action=edit&amp;redlink=1" class="new" title="OOQP (page does not exist)">OOQP</a></li>
+<li><a href="/w/index.php?title=PCx&amp;action=edit&amp;redlink=1" class="new" title="PCx (page does not exist)">PCx</a></li>
+<li><a href="/w/index.php?title=QSopt&amp;action=edit&amp;redlink=1" class="new" title="QSopt (page does not exist)">QSopt</a></li>
+<li><a href="/w/index.php?title=SAS/OR&amp;action=edit&amp;redlink=1" class="new" title="SAS/OR (page does not exist)">SAS/OR</a><sup>∗</sup></li>
+<li><a href="/wiki/SCIP_(optimization_software)" title="SCIP (optimization software)">SCIP</a><sup>∗</sup></li>
+<li><a href="/wiki/SCIP_(optimization_software)#SCIP_Optimization_Suite" title="SCIP (optimization software)">SoPlex</a></li>
+<li><a href="/w/index.php?title=SOPT-IP&amp;action=edit&amp;redlink=1" class="new" title="SOPT-IP (page does not exist)">SOPT-IP</a><sup>∗</sup></li>
+<li>Sulum Optimization Tools<sup>∗</sup></li>
+<li><a href="/wiki/COIN-OR#SYMPHONY" title="COIN-OR">SYMPHONY</a><sup>∗</sup></li>
+<li><a href="/w/index.php?title=XA_(optimization_software)&amp;action=edit&amp;redlink=1" class="new" title="XA (optimization software) (page does not exist)">XA</a><sup>∗</sup></li>
+<li><a href="/wiki/FICO_Xpress" title="FICO Xpress">Xpress-Optimizer</a><sup>∗</sup></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="vertical-align:top;"><a href="/wiki/Quadratic_programming" title="Quadratic programming">QP</a>, MIQP<sup style="font-weight:normal;">∗</sup> solvers</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/APOPT" title="APOPT">APOPT</a><sup>∗</sup></li>
+<li><a href="/wiki/Artelys_Knitro" title="Artelys Knitro">Artelys Knitro</a><sup>∗</sup></li>
+<li><a href="/w/index.php?title=BPMPD&amp;action=edit&amp;redlink=1" class="new" title="BPMPD (page does not exist)">BPMPD</a></li>
+<li><a href="/w/index.php?title=BPOPT&amp;action=edit&amp;redlink=1" class="new" title="BPOPT (page does not exist)">BPOPT</a></li>
+<li><a href="/w/index.php?title=BQPD&amp;action=edit&amp;redlink=1" class="new" title="BQPD (page does not exist)">BQPD</a></li>
+<li><a href="/wiki/COIN-OR#CBC" title="COIN-OR">CBC</a><sup>∗</sup></li>
+<li><a href="/wiki/COIN-OR#CLP" title="COIN-OR">CLP</a></li>
+<li><a href="/wiki/CPLEX" title="CPLEX">CPLEX</a><sup>∗</sup></li>
+<li><a href="/wiki/FortMP" title="FortMP">FortMP</a><sup>∗</sup></li>
+<li><a href="/w/index.php?title=GloMIQO&amp;action=edit&amp;redlink=1" class="new" title="GloMIQO (page does not exist)">GloMIQO</a><sup>∗</sup></li>
+<li><a href="/wiki/Gurobi" title="Gurobi">Gurobi</a><sup>∗</sup></li>
+<li><a href="/wiki/IPOPT" title="IPOPT">IPOPT</a></li>
+<li><a href="/wiki/LINDO" title="LINDO">LINDO</a><sup>∗</sup></li>
+<li><a href="/w/index.php?title=LSSOL&amp;action=edit&amp;redlink=1" class="new" title="LSSOL (page does not exist)">LSSOL</a></li>
+<li><a href="/wiki/Robert_J._Vanderbei" title="Robert J. Vanderbei">LOQO</a></li>
+<li><a href="/wiki/MINOS_(optimization_software)" title="MINOS (optimization software)">MINOS</a></li>
+<li><a href="/wiki/MOSEK" title="MOSEK">MOSEK</a><sup>∗</sup></li>
+<li><a href="/w/index.php?title=OOPS_(optimization_software)&amp;action=edit&amp;redlink=1" class="new" title="OOPS (optimization software) (page does not exist)">OOPS</a></li>
+<li><a href="/w/index.php?title=OOQP&amp;action=edit&amp;redlink=1" class="new" title="OOQP (page does not exist)">OOQP</a></li>
+<li><a href="/w/index.php?title=QPOPT&amp;action=edit&amp;redlink=1" class="new" title="QPOPT (page does not exist)">QPOPT</a></li>
+<li><a href="/w/index.php?title=QPSOL&amp;action=edit&amp;redlink=1" class="new" title="QPSOL (page does not exist)">QPSOL</a></li>
+<li><a href="/wiki/SCIP_(optimization_software)" title="SCIP (optimization software)">SCIP</a><sup>∗</sup></li>
+<li><a href="/w/index.php?title=XA_(optimization_software)&amp;action=edit&amp;redlink=1" class="new" title="XA (optimization software) (page does not exist)">XA Quadratic Solver</a></li>
+<li><a href="/wiki/FICO_Xpress" title="FICO Xpress">Xpress-Optimizer</a><sup>∗</sup></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="vertical-align:top;"><a href="/wiki/Quadratically_constrained_quadratic_program" title="Quadratically constrained quadratic program">QCP</a>, MIQCP<sup style="font-weight:normal;">∗</sup> solvers</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/APOPT" title="APOPT">APOPT</a><sup>∗</sup></li>
+<li><a href="/wiki/Artelys_Knitro" title="Artelys Knitro">Artelys Knitro</a><sup>∗</sup></li>
+<li><a href="/w/index.php?title=BPMPD&amp;action=edit&amp;redlink=1" class="new" title="BPMPD (page does not exist)">BPMPD</a></li>
+<li><a href="/w/index.php?title=BPOPT&amp;action=edit&amp;redlink=1" class="new" title="BPOPT (page does not exist)">BPOPT</a></li>
+<li><a href="/wiki/CPLEX" title="CPLEX">CPLEX</a><sup>∗</sup></li>
+<li><a href="/w/index.php?title=GloMIQO&amp;action=edit&amp;redlink=1" class="new" title="GloMIQO (page does not exist)">GloMIQO</a><sup>∗</sup></li>
+<li><a href="/wiki/Gurobi" title="Gurobi">Gurobi</a><sup>∗</sup></li>
+<li><a href="/wiki/IPOPT" title="IPOPT">IPOPT</a></li>
+<li><a href="/wiki/LINDO" title="LINDO">LINDO</a><sup>∗</sup></li>
+<li><a href="/wiki/Robert_J._Vanderbei" title="Robert J. Vanderbei">LOQO</a></li>
+<li><a href="/wiki/MINOS_(optimization_software)" title="MINOS (optimization software)">MINOS</a></li>
+<li><a href="/wiki/MOSEK" title="MOSEK">MOSEK</a><sup>∗</sup></li>
+<li><a href="/wiki/SCIP_(optimization_software)" title="SCIP (optimization software)">SCIP</a><sup>∗</sup></li>
+<li><a href="/wiki/FICO_Xpress" title="FICO Xpress">Xpress-Optimizer</a><sup>∗</sup></li>
+<li><a href="/wiki/FICO_Xpress" title="FICO Xpress">Xpress-SLP</a><sup>∗</sup></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="vertical-align:top;"><a href="/wiki/Second-order_cone_programming" title="Second-order cone programming">SOCP</a>, MISOCP<sup style="font-weight:normal;">∗</sup> solvers</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/CPLEX" title="CPLEX">CPLEX</a><sup>∗</sup></li>
+<li><a href="/w/index.php?title=DSDP_(optimization_software)&amp;action=edit&amp;redlink=1" class="new" title="DSDP (optimization software) (page does not exist)">DSDP</a></li>
+<li><a href="/wiki/Gurobi" title="Gurobi">Gurobi</a><sup>∗</sup></li>
+<li><a href="/wiki/LINDO" title="LINDO">LINDO</a><sup>∗</sup></li>
+<li><a href="/wiki/Robert_J._Vanderbei" title="Robert J. Vanderbei">LOQO</a></li>
+<li><a href="/wiki/MOSEK" title="MOSEK">MOSEK</a><sup>∗</sup></li>
+<li><a href="/wiki/SCIP_(optimization_software)" title="SCIP (optimization software)">SCIP</a><sup>∗</sup></li>
+<li><a href="/w/index.php?title=SDPT3&amp;action=edit&amp;redlink=1" class="new" title="SDPT3 (page does not exist)">SDPT3</a></li>
+<li><a href="/w/index.php?title=SeDuMi&amp;action=edit&amp;redlink=1" class="new" title="SeDuMi (page does not exist)">SeDuMi</a></li>
+<li><a href="/wiki/FICO_Xpress" title="FICO Xpress">Xpress-Optimizer</a><sup>∗</sup></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="vertical-align:top;"><a href="/wiki/Semidefinite_programming" title="Semidefinite programming">SDP</a>, MISDP<sup style="font-weight:normal;">∗</sup> solvers</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/w/index.php?title=CSDP_(optimization_software)&amp;action=edit&amp;redlink=1" class="new" title="CSDP (optimization software) (page does not exist)">CSDP</a></li>
+<li><a href="/w/index.php?title=DSDP_(optimization_software)&amp;action=edit&amp;redlink=1" class="new" title="DSDP (optimization software) (page does not exist)">DSDP</a></li>
+<li><a href="/wiki/MOSEK" title="MOSEK">MOSEK</a></li>
+<li><a href="/w/index.php?title=PENBMI&amp;action=edit&amp;redlink=1" class="new" title="PENBMI (page does not exist)">PENBMI</a></li>
+<li><a href="/w/index.php?title=PENSDP&amp;action=edit&amp;redlink=1" class="new" title="PENSDP (page does not exist)">PENSDP</a></li>
+<li><a href="/w/index.php?title=SCIP-SDP&amp;action=edit&amp;redlink=1" class="new" title="SCIP-SDP (page does not exist)">SCIP-SDP</a><sup>∗</sup></li>
+<li><a href="/w/index.php?title=SDPA&amp;action=edit&amp;redlink=1" class="new" title="SDPA (page does not exist)">SDPA</a></li>
+<li><a href="/w/index.php?title=SDPT3&amp;action=edit&amp;redlink=1" class="new" title="SDPT3 (page does not exist)">SDPT3</a></li>
+<li><a href="/w/index.php?title=SeDuMi&amp;action=edit&amp;redlink=1" class="new" title="SeDuMi (page does not exist)">SeDuMi</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="vertical-align:top;"><a href="/wiki/Nonlinear_programming" title="Nonlinear programming">NLP</a>, MINLP<sup style="font-weight:normal;">∗</sup> solvers</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/w/index.php?title=ALGENCAN&amp;action=edit&amp;redlink=1" class="new" title="ALGENCAN (page does not exist)">ALGENCAN</a></li>
+<li><a href="/w/index.php?title=AlphaECP&amp;action=edit&amp;redlink=1" class="new" title="AlphaECP (page does not exist)">AlphaECP</a><sup>∗</sup></li>
+<li><a href="/w/index.php?title=ANTIGONE&amp;action=edit&amp;redlink=1" class="new" title="ANTIGONE (page does not exist)">ANTIGONE</a><sup>∗</sup></li>
+<li><a href="/wiki/AIMMS_Outer_Approximation_(optimization_software)" class="mw-redirect" title="AIMMS Outer Approximation (optimization software)">AOA</a><sup>∗</sup></li>
+<li><a href="/wiki/APOPT" title="APOPT">APOPT</a><sup>∗</sup></li>
+<li><a href="/wiki/Artelys_Knitro" title="Artelys Knitro">Artelys Knitro</a><sup>∗</sup></li>
+<li><a href="/wiki/BARON" title="BARON">BARON</a><sup>∗</sup></li>
+<li><a href="/w/index.php?title=Bonmin&amp;action=edit&amp;redlink=1" class="new" title="Bonmin (page does not exist)">Bonmin</a><sup>∗</sup></li>
+<li><a href="/w/index.php?title=BPOPT&amp;action=edit&amp;redlink=1" class="new" title="BPOPT (page does not exist)">BPOPT</a></li>
+<li><a href="/w/index.php?title=CONOPT&amp;action=edit&amp;redlink=1" class="new" title="CONOPT (page does not exist)">CONOPT</a></li>
+<li><a href="/wiki/Couenne" title="Couenne">Couenne</a><sup>∗</sup></li>
+<li><a href="/w/index.php?title=DICOPT&amp;action=edit&amp;redlink=1" class="new" title="DICOPT (page does not exist)">DICOPT</a><sup>∗</sup></li>
+<li><a href="/w/index.php?title=FilMINT&amp;action=edit&amp;redlink=1" class="new" title="FilMINT (page does not exist)">FilMINT</a><sup>∗</sup></li>
+<li><a href="/w/index.php?title=FilterSQP&amp;action=edit&amp;redlink=1" class="new" title="FilterSQP (page does not exist)">FilterSQP</a></li>
+<li><a href="/wiki/Galahad_library" title="Galahad library">Galahad library</a></li>
+<li>ipfilter</li>
+<li><a href="/wiki/IPOPT" title="IPOPT">IPOPT</a></li>
+<li><a href="/w/index.php?title=LANCELOT&amp;action=edit&amp;redlink=1" class="new" title="LANCELOT (page does not exist)">LANCELOT</a></li>
+<li><a href="/wiki/LINDO" title="LINDO">LINDO</a><sup>∗</sup></li>
+<li><a href="/wiki/Robert_J._Vanderbei" title="Robert J. Vanderbei">LOQO</a></li>
+<li><a href="/w/index.php?title=LRAMBO&amp;action=edit&amp;redlink=1" class="new" title="LRAMBO (page does not exist)">LRAMBO</a></li>
+<li><a href="/wiki/MIDACO" title="MIDACO">MIDACO</a><sup>∗</sup></li>
+<li><a href="/w/index.php?title=MILANO&amp;action=edit&amp;redlink=1" class="new" title="MILANO (page does not exist)">MILANO</a><sup>∗</sup></li>
+<li><a href="/w/index.php?title=MINLP_BB&amp;action=edit&amp;redlink=1" class="new" title="MINLP BB (page does not exist)">MINLP BB</a><sup>∗</sup></li>
+<li><a href="/wiki/MINOS_(optimization_software)" title="MINOS (optimization software)">MINOS</a></li>
+<li>Minotaur<sup>∗</sup></li>
+<li><a href="/w/index.php?title=MISQP&amp;action=edit&amp;redlink=1" class="new" title="MISQP (page does not exist)">MISQP</a><sup>∗</sup></li>
+<li><a href="/wiki/NLPQLP" title="NLPQLP">NLPQLP</a></li>
+<li><a href="/wiki/NPSOL" title="NPSOL">NPSOL</a></li>
+<li><a href="/w/index.php?title=OQNLP&amp;action=edit&amp;redlink=1" class="new" title="OQNLP (page does not exist)">OQNLP</a><sup>∗</sup></li>
+<li><a href="/w/index.php?title=PATHNLP&amp;action=edit&amp;redlink=1" class="new" title="PATHNLP (page does not exist)">PATHNLP</a></li>
+<li><a href="/w/index.php?title=PENNON&amp;action=edit&amp;redlink=1" class="new" title="PENNON (page does not exist)">PENNON</a></li>
+<li><a href="/w/index.php?title=SBB_(optimization_software)&amp;action=edit&amp;redlink=1" class="new" title="SBB (optimization software) (page does not exist)">SBB</a><sup>∗</sup></li>
+<li><a href="/wiki/SCIP_(optimization_software)" title="SCIP (optimization software)">SCIP</a><sup>∗</sup></li>
+<li><a href="/wiki/SNOPT" title="SNOPT">SNOPT</a><sup>∗</sup></li>
+<li><a href="/w/index.php?title=SQPlab&amp;action=edit&amp;redlink=1" class="new" title="SQPlab (page does not exist)">SQPlab</a></li>
+<li><a href="/wiki/WORHP" title="WORHP">WORHP</a></li>
+<li><a href="/wiki/FICO_Xpress" title="FICO Xpress">Xpress-SLP</a><sup>∗</sup></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="vertical-align:top;"><a href="/wiki/Global_optimization" title="Global optimization">GO</a> solvers</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/BARON" title="BARON">BARON</a></li>
+<li><a href="/wiki/Couenne" title="Couenne">Couenne</a><sup>∗</sup></li>
+<li><a href="/wiki/LINDO" title="LINDO">LINDO</a></li>
+<li><a href="/wiki/SCIP_(optimization_software)" title="SCIP (optimization software)">SCIP</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="vertical-align:top;"><a href="/wiki/Constraint_programming" title="Constraint programming">CP</a> solvers</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li>Artelys Kalis</li>
+<li>Choco</li>
+<li><a href="/wiki/Comet_(programming_language)" title="Comet (programming language)">Comet</a></li>
+<li><a href="/wiki/CPLEX" title="CPLEX">CPLEX CP Optimizer</a></li>
+<li><a href="/wiki/Gecode" title="Gecode">Gecode</a></li>
+<li>Google CP Solver</li>
+<li><a href="/wiki/JaCoP_(solver)" title="JaCoP (solver)">JaCoP</a></li>
+<li>OscaR</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="vertical-align:top;"><a href="/wiki/Metaheuristic" title="Metaheuristic">Metaheuristic</a> solvers</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/OptaPlanner" title="OptaPlanner">OptaPlanner</a></li>
+<li>LocalSolver</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow hlist" colspan="2">
+<div>
+<ul>
+<li><b><a href="/wiki/List_of_optimization_software" title="List of optimization software">List of optimization software</a></b></li>
+<li><b><a href="/wiki/Comparison_of_optimization_software" title="Comparison of optimization software">Comparison of optimization software</a></b></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1178
+Cached time: 20170120131541
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.140 seconds
+Real time usage: 2.458 seconds
+Preprocessor visited node count: 593/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 34390/2097152 bytes
+Template argument size: 423/2097152 bytes
+Highest expansion depth: 10/40
+Expensive parser function count: 2/500
+Lua time usage: 0.036/10.000 seconds
+Lua memory usage: 1.61 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00% 2403.356      1 -total
+  1.57%   37.666      1 Template:Infobox_programming_language
+  1.54%   37.015      1 Template:Reflist
+  1.40%   33.623      1 Template:Infobox
+  1.37%   32.821      1 Template:Cite_web
+  0.65%   15.601      1 Template:Mathematical_optimization_software
+  0.55%   13.143      1 Template:Navbox
+  0.21%    5.044      1 Template:Infobox_software/simple
+  0.09%    2.047      1 Template:Start_date
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:28952622-0!*!0!!en!*!* and timestamp 20170120131538 and revision id 731419913
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=OptimJ&amp;oldid=731419913">https://en.wikipedia.org/w/index.php?title=OptimJ&amp;oldid=731419913</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Object-oriented_programming_languages" title="Category:Object-oriented programming languages">Object-oriented programming languages</a></li><li><a href="/wiki/Category:Mathematical_optimization_software" title="Category:Mathematical optimization software">Mathematical optimization software</a></li><li><a href="/wiki/Category:Free_mathematics_software" title="Category:Free mathematics software">Free mathematics software</a></li><li><a href="/wiki/Category:Mathematical_modeling" title="Category:Mathematical modeling">Mathematical modeling</a></li><li><a href="/wiki/Category:Discontinued_programming_languages" title="Category:Discontinued programming languages">Discontinued programming languages</a></li><li><a href="/wiki/Category:Programming_languages_created_in_2006" title="Category:Programming languages created in 2006">Programming languages created in 2006</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=OptimJ" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=OptimJ" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/OptimJ"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:OptimJ"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/OptimJ" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=OptimJ&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=OptimJ&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/OptimJ" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/OptimJ" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=OptimJ&amp;oldid=731419913" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=OptimJ&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q3354460" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=OptimJ&amp;id=731419913" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=OptimJ">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=OptimJ&amp;returnto=OptimJ&amp;oldid=731419913&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=OptimJ&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/OptimJ" title="OptimJ – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q3354460#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 25 July 2016, at 07:21.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=OptimJ&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.140","walltime":"2.458","ppvisitednodes":{"value":593,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":34390,"limit":2097152},"templateargumentsize":{"value":423,"limit":2097152},"expansiondepth":{"value":10,"limit":40},"expensivefunctioncount":{"value":2,"limit":500},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00% 2403.356      1 -total","  1.57%   37.666      1 Template:Infobox_programming_language","  1.54%   37.015      1 Template:Reflist","  1.40%   33.623      1 Template:Infobox","  1.37%   32.821      1 Template:Cite_web","  0.65%   15.601      1 Template:Mathematical_optimization_software","  0.55%   13.143      1 Template:Navbox","  0.21%    5.044      1 Template:Infobox_software/simple","  0.09%    2.047      1 Template:Start_date"]},"scribunto":{"limitreport-timeusage":{"value":"0.036","limit":"10.000"},"limitreport-memusage":{"value":1692013,"limit":52428800}},"cachereport":{"origin":"mw1178","timestamp":"20170120131541","ttl":2592000,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":70,"wgHostname":"mw1268"});});</script>
+	</body>
+</html>

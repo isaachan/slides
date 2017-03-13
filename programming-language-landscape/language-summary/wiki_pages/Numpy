@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>NumPy - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"NumPy","wgTitle":"NumPy","wgCurRevisionId":763617482,"wgRevisionId":763617482,"wgArticleId":381782,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["CS1 maint: Uses authors parameter","Pages using deprecated image syntax","Vague or ambiguous time from October 2013","All articles with unsourced statements","Articles with unsourced statements from October 2013","Articles with example Python code","Array programming languages","Free mathematics software","Free science software","Numerical analysis software for Linux","Numerical analysis software for MacOS","Numerical analysis software for Windows","Numerical programming languages","Python scientific libraries"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"NumPy","wgRelevantArticleId":381782,"wgRequestId":"WJbfxgpAAEEAAdbzy@cAAAAY","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgRedirectedFrom":"Numpy","wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":true},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgInternalRedirectTargetUrl":"/wiki/NumPy","wgWikibaseItemId":"Q197520","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.cite.styles":"ready","ext.pygments":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.action.view.redirect","ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.legacy.wikibits","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.pygments%2CwikimediaBadges%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.29.0-wmf.10"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/en/1/1b/NumPy_logo.png"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/NumPy"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=NumPy&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=NumPy&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/NumPy"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-NumPy rootpage-NumPy skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">NumPy</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"><span class="mw-redirectedfrom">  (Redirected from <a href="/w/index.php?title=Numpy&amp;redirect=no" class="mw-redirect" title="Numpy">Numpy</a>)</span></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><table class="infobox vevent" style="width:22em">
+<caption class="summary">NumPy</caption>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/File:NumPy_logo.png" class="image" title="NumPy logo"><img alt="NumPy logo" src="//upload.wikimedia.org/wikipedia/en/1/1b/NumPy_logo.png" width="180" height="61" data-file-width="180" data-file-height="61" /></a></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Software_developer" title="Software developer">Original author(s)</a></th>
+<td>Travis Oliphant</td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Software_developer" title="Software developer">Developer(s)</a></th>
+<td>Community project</td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;">Initial release</th>
+<td>As Numeric, 1995<span style="display:none">&#160;(<span class="bday dtstart published updated">1995</span>)</span>; as NumPy, 2006<span style="display:none">&#160;(<span class="bday dtstart published updated">2006</span>)</span></td>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Software_release_life_cycle" title="Software release life cycle">Stable release</a></th>
+<td>
+<div style="margin:0px;">1.12.0 / 15&#160;January 2017<span class="noprint">; 20 days ago</span><span style="display:none">&#160;(<span class="bday dtstart published updated">2017-01-15</span>)</span></div>
+</td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Repository_(version_control)" title="Repository (version control)">Repository</a></th>
+<td><span class="url"><a rel="nofollow" class="external text" href="https://github.com/numpy/numpy">github<wbr />.com<wbr />/numpy<wbr />/numpy</a></span></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;">Written in</th>
+<td><a href="/wiki/Python_(programming_language)" title="Python (programming language)">Python</a>, <a href="/wiki/C_(programming_language)" title="C (programming language)">C</a></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Operating_system" title="Operating system">Operating system</a></th>
+<td><a href="/wiki/Cross-platform" title="Cross-platform">Cross-platform</a></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Software_categories#Broad_categories" title="Software categories">Type</a></th>
+<td><a href="/wiki/List_of_numerical_analysis_software" title="List of numerical analysis software">Technical computing</a></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Software_license" title="Software license">License</a></th>
+<td><a href="/wiki/BSD-new" class="mw-redirect" title="BSD-new">BSD-new license</a></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;">Website</th>
+<td><span class="url"><a rel="nofollow" class="external text" href="http://www.numpy.org/">www<wbr />.numpy<wbr />.org</a></span></td>
+</tr>
+</table>
+<p><b>NumPy</b> (pronounced <span class="nowrap"><span class="IPA nopopups"><a href="/wiki/Help:IPA_for_English" title="Help:IPA for English">/<span style="border-bottom:1px dotted"><span title="/ˈ/ primary stress follows">ˈ</span><span title="'n' in 'no'">n</span><span title="/ʌ/ short 'u' in 'bud'">ʌ</span><span title="'m' in 'my'">m</span><span title="'p' in 'pie'">p</span><span title="/aɪ/ long 'i' in 'tide'">aɪ</span></span>/</a></span></span> (<span title="English pronunciation respelling"><a href="/wiki/Help:Pronunciation_respelling_key" title="Help:Pronunciation respelling key"><i><b><span class="smallcaps"><span style="font-variant: small-caps; text-transform: lowercase;">NUM</span></span></b>-py</i></a></span>) or sometimes <span class="nowrap"><span class="IPA nopopups"><a href="/wiki/Help:IPA_for_English" title="Help:IPA for English">/<span style="border-bottom:1px dotted"><span title="/ˈ/ primary stress follows">ˈ</span><span title="'n' in 'no'">n</span><span title="/ʌ/ short 'u' in 'bud'">ʌ</span><span title="'m' in 'my'">m</span><span title="'p' in 'pie'">p</span><span title="/i/ 'y' in 'happy'">i</span></span>/</a></span></span><sup id="cite_ref-1" class="reference"><a href="#cite_note-1">[1]</a></sup><sup id="cite_ref-2" class="reference"><a href="#cite_note-2">[2]</a></sup> (<span title="English pronunciation respelling"><a href="/wiki/Help:Pronunciation_respelling_key" title="Help:Pronunciation respelling key"><i><b><span class="smallcaps"><span style="font-variant: small-caps; text-transform: lowercase;">NUM</span></span></b>-pee</i></a></span>)) is an extension to the <a href="/wiki/Python_(programming_language)" title="Python (programming language)">Python programming language</a>, adding support for large, multi-dimensional <a href="/wiki/Array_data_structure" title="Array data structure">arrays</a> and <a href="/wiki/Matrix_(math)" class="mw-redirect" title="Matrix (math)">matrices</a>, along with a large library of <a href="/wiki/High-level_programming_language" title="High-level programming language">high-level</a> <a href="/wiki/Mathematics" title="Mathematics">mathematical</a> <a href="/wiki/Function_(mathematics)" title="Function (mathematics)">functions</a> to operate on these arrays. The ancestor of NumPy, Numeric, was originally created by <a href="/wiki/Jim_Hugunin" title="Jim Hugunin">Jim Hugunin</a> with contributions from several other developers. In 2005, <a href="/wiki/Travis_Oliphant" title="Travis Oliphant">Travis Oliphant</a> created NumPy by incorporating features of the competing Numarray into Numeric, with extensive modifications. NumPy is <a href="/wiki/Open-source_software" title="Open-source software">open-source software</a> and has many contributors.</p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Traits"><span class="tocnumber">1</span> <span class="toctext">Traits</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#The_ndarray_data_structure"><span class="tocnumber">1.1</span> <span class="toctext">The ndarray data structure</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Limitations"><span class="tocnumber">1.2</span> <span class="toctext">Limitations</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="#Examples"><span class="tocnumber">2</span> <span class="toctext">Examples</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#History"><span class="tocnumber">3</span> <span class="toctext">History</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#See_also"><span class="tocnumber">4</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#Further_reading"><span class="tocnumber">6</span> <span class="toctext">Further reading</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#External_links"><span class="tocnumber">7</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Traits">Traits</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=NumPy&amp;action=edit&amp;section=1" title="Edit section: Traits">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>NumPy targets the <a href="/wiki/CPython" title="CPython">CPython</a> reference <a href="/wiki/Programming_language_implementation" title="Programming language implementation">implementation</a> of Python, which is a non-optimizing <a href="/wiki/Bytecode" title="Bytecode">bytecode</a> interpreter. Mathematical algorithms written for this version of Python often run much slower than <a href="/wiki/Compiler" title="Compiler">compiled</a> equivalents. NumPy address the slowness problem partly by providing multidimensional arrays and functions and operators that operate efficiently on arrays, requiring (re)writing some code, mostly inner loops using NumPy.</p>
+<p>Using NumPy in Python gives functionality comparable to <a href="/wiki/MATLAB" title="MATLAB">MATLAB</a> since they are both interpreted,<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">[3]</a></sup> and they both allow the user to write fast programs as long as most operations work on arrays or matrices instead of <a href="/wiki/Scalar_(computing)" class="mw-redirect" title="Scalar (computing)">scalars</a>. In comparison, MATLAB boasts a large number of additional toolboxes, notably <a href="/wiki/Simulink" title="Simulink">Simulink</a>, whereas NumPy is intrinsically integrated with Python, a more modern and complete programming language. Moreover, complementary Python packages are available; <a href="/wiki/SciPy" title="SciPy">SciPy</a> is a library that adds more MATLAB-like functionality and <a href="/wiki/Matplotlib" title="Matplotlib">Matplotlib</a> is a plotting package that provides MATLAB-like plotting functionality. Internally, both MATLAB and NumPy rely on <a href="/wiki/Basic_Linear_Algebra_Subprograms" title="Basic Linear Algebra Subprograms">BLAS</a> and <a href="/wiki/LAPACK" title="LAPACK">LAPACK</a> for efficient linear algebra computations.</p>
+<p>Python <a href="/wiki/Language_binding" title="Language binding">bindings</a> of the widely used <a href="/wiki/Computer_vision" title="Computer vision">computer vision</a> library <a href="/wiki/OpenCV" title="OpenCV">OpenCV</a> utilize NumPy arrays to store and operate on data. Since images with multiple channels are simply represented as three-dimensional arrays, indexing, <a href="/wiki/Array_slicing#1991:_Python" title="Array slicing">slicing</a> or <a href="/wiki/Mask_(computing)#Image_masks" title="Mask (computing)">masking</a> with other arrays are very efficient ways to access specific pixels of an image. The NumPy array as universal data structure in OpenCV for images, extracted <a href="/wiki/Interest_point_detection" title="Interest point detection">feature points</a>, <a href="/wiki/Kernel_(image_processing)" title="Kernel (image processing)">filter kernels</a> and many more vastly simplifies the programming workflow and <a href="/wiki/Debugger" title="Debugger">debugging</a>.</p>
+<h3><span class="mw-headline" id="The_ndarray_data_structure">The ndarray data structure</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=NumPy&amp;action=edit&amp;section=2" title="Edit section: The ndarray data structure">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The core functionality of NumPy is its "ndarray", for <i>n</i>-dimensional array, data structure. These arrays are <a href="/wiki/Stride_of_an_array" title="Stride of an array">strided</a> views on memory.<sup id="cite_ref-cise_4-0" class="reference"><a href="#cite_note-cise-4">[4]</a></sup> In contrast to Python's built-in list data structure (which, despite the name, is a <a href="/wiki/Dynamic_array" title="Dynamic array">dynamic array</a>), these arrays are homogeneously typed: all elements of a single array must be of the same type.</p>
+<p>Such arrays can also be views into memory buffers allocated by <a href="/wiki/C_Programming_Language" class="mw-redirect" title="C Programming Language">C</a>/<a href="/wiki/C%2B%2B" title="C++">C++</a>, <a href="/wiki/Cython" title="Cython">Cython</a>, and Fortran extensions to the CPython interpreter without the need to copy data around, giving a degree of compatibility with existing numerical libraries. This functionality is exploited by the <a href="/wiki/SciPy" title="SciPy">SciPy</a> package, which wraps a number of such libraries (notably <a href="/wiki/BLAS" class="mw-redirect" title="BLAS">BLAS</a> and <a href="/wiki/LAPACK" title="LAPACK">LAPACK</a>). NumPy has built-in support for <a href="/wiki/Memory-mapped_file" title="Memory-mapped file">memory-mapped</a> ndarrays.<sup id="cite_ref-cise_4-1" class="reference"><a href="#cite_note-cise-4">[4]</a></sup></p>
+<h3><span class="mw-headline" id="Limitations">Limitations</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=NumPy&amp;action=edit&amp;section=3" title="Edit section: Limitations">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Inserting or appending entries to an array is not as trivially possible as it is with Python's lists. The <tt>np.pad(...)</tt> routine to extend arrays actually creates new arrays of the desired shape and padding values, copies the given array into the new one and returns it. NumPy's <tt>np.concatenate([a1,a2])</tt> operation does not actually link the two arrays but returns a new one, filled with the entries from both given arrays in sequence. Reshaping the dimensionality of an array with <tt>np.reshape(...)</tt> is only possible as long as the number of elements in the array does not change. These circumstances originate from the fact that NumPy's arrays must be views on contiguous memory buffers. A replacement package called Blaze attempts to overcome this limitation.<sup id="cite_ref-5" class="reference"><a href="#cite_note-5">[5]</a></sup></p>
+<p>Algorithms that are not expressible as a vectorized operation will typically run slowly because they must be implemented in "pure Python", while vectorization may increase memory complexity of some operations from constant to linear, because temporary arrays must be created that are as large as the inputs. Runtime compilation of numerical code has been implemented by several groups to avoid these problems; open source solutions that interoperate with NumPy include <code>scipy.weave</code>, numexpr<sup id="cite_ref-6" class="reference"><a href="#cite_note-6">[6]</a></sup> and Numba.<sup id="cite_ref-7" class="reference"><a href="#cite_note-7">[7]</a></sup> <a href="/wiki/Cython" title="Cython">Cython</a> is a static-compiling alternative to these.</p>
+<h2><span class="mw-headline" id="Examples">Examples</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=NumPy&amp;action=edit&amp;section=4" title="Edit section: Examples">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<dl>
+<dt>Array creation</dt>
+</dl>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="kp">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">x</span>
+<span class="kp">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="kp">arange</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>  <span class="c1"># like Python's range, but returns an array</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">y</span>
+<span class="kp">array</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">])</span>
+</pre></div>
+<dl>
+<dt>Basic operations</dt>
+</dl>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="kp">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">6</span><span class="p">])</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="kp">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>  <span class="c1"># create an array with four equally spaced points starting with 0 and ending with 2.</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">c</span> <span class="o">=</span> <span class="n">a</span> <span class="o">-</span> <span class="n">b</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">c</span>
+<span class="kp">array</span><span class="p">([</span> <span class="mf">1.</span>        <span class="p">,</span>  <span class="mf">1.33333333</span><span class="p">,</span>  <span class="mf">1.66666667</span><span class="p">,</span>  <span class="mf">4.</span>        <span class="p">])</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">a</span><span class="o">**</span><span class="mi">2</span>
+<span class="kp">array</span><span class="p">([</span> <span class="mi">1</span><span class="p">,</span>  <span class="mi">4</span><span class="p">,</span>  <span class="mi">9</span><span class="p">,</span> <span class="mi">36</span><span class="p">])</span>
+</pre></div>
+<dl>
+<dt>Universal functions</dt>
+</dl>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="kp">linspace</span><span class="p">(</span><span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span> 
+<span class="o">&gt;&gt;&gt;</span> <span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="kp">sin</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">c</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="kp">cos</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</pre></div>
+<dl>
+<dt>Linear algebra</dt>
+</dl>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">numpy.random</span> <span class="kn">import</span> <span class="n">rand</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">numpy.linalg</span> <span class="kn">import</span> <span class="kp">solve</span><span class="p">,</span> <span class="kp">inv</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="kp">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mf">6.7</span><span class="p">],</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mf">9.0</span><span class="p">,</span> <span class="mi">5</span><span class="p">]])</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">a</span><span class="o">.</span><span class="kp">transpose</span><span class="p">()</span>
+<span class="kp">array</span><span class="p">([[</span> <span class="mf">1.</span> <span class="p">,</span>  <span class="mf">3.</span> <span class="p">,</span>  <span class="mf">5.</span> <span class="p">],</span>
+       <span class="p">[</span> <span class="mf">2.</span> <span class="p">,</span>  <span class="mf">4.</span> <span class="p">,</span>  <span class="mf">9.</span> <span class="p">],</span>
+       <span class="p">[</span> <span class="mf">3.</span> <span class="p">,</span>  <span class="mf">6.7</span><span class="p">,</span>  <span class="mf">5.</span> <span class="p">]])</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="kp">inv</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="kp">array</span><span class="p">([[</span><span class="o">-</span><span class="mf">2.27683616</span><span class="p">,</span>  <span class="mf">0.96045198</span><span class="p">,</span>  <span class="mf">0.07909605</span><span class="p">],</span>
+       <span class="p">[</span> <span class="mf">1.04519774</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.56497175</span><span class="p">,</span>  <span class="mf">0.1299435</span> <span class="p">],</span>
+       <span class="p">[</span> <span class="mf">0.39548023</span><span class="p">,</span>  <span class="mf">0.05649718</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.11299435</span><span class="p">]])</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">b</span> <span class="o">=</span>  <span class="n">np</span><span class="o">.</span><span class="kp">array</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="kp">solve</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>  <span class="c1"># solve the equation ax = b</span>
+<span class="kp">array</span><span class="p">([</span><span class="o">-</span><span class="mf">4.83050847</span><span class="p">,</span>  <span class="mf">2.13559322</span><span class="p">,</span>  <span class="mf">1.18644068</span><span class="p">])</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">c</span> <span class="o">=</span> <span class="n">rand</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span> <span class="o">*</span> <span class="mi">20</span>  <span class="c1"># create a 3x3 random matrix of values within [0,1] scaled by 20</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">c</span>
+<span class="kp">array</span><span class="p">([[</span>  <span class="mf">3.98732789</span><span class="p">,</span>   <span class="mf">2.47702609</span><span class="p">,</span>   <span class="mf">4.71167924</span><span class="p">],</span>
+       <span class="p">[</span>  <span class="mf">9.24410671</span><span class="p">,</span>   <span class="mf">5.5240412</span> <span class="p">,</span>  <span class="mf">10.6468792</span> <span class="p">],</span>
+       <span class="p">[</span> <span class="mf">10.38136661</span><span class="p">,</span>   <span class="mf">8.44968437</span><span class="p">,</span>  <span class="mf">15.17639591</span><span class="p">]])</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">np</span><span class="o">.</span><span class="kp">dot</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">c</span><span class="p">)</span>  <span class="c1"># matrix multiplication</span>
+<span class="kp">array</span><span class="p">([[</span>  <span class="mf">53.61964114</span><span class="p">,</span>   <span class="mf">38.8741616</span> <span class="p">,</span>   <span class="mf">71.53462537</span><span class="p">],</span>
+       <span class="p">[</span> <span class="mf">118.4935668</span> <span class="p">,</span>   <span class="mf">86.14012835</span><span class="p">,</span>  <span class="mf">158.40440712</span><span class="p">],</span>
+       <span class="p">[</span> <span class="mf">155.04043289</span><span class="p">,</span>  <span class="mf">104.3499231</span> <span class="p">,</span>  <span class="mf">195.26228855</span><span class="p">]])</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">a</span> <span class="err">@</span> <span class="n">c</span> <span class="c1"># Starting with Python 3.5 and NumPy 1.10</span>
+<span class="kp">array</span><span class="p">([[</span>  <span class="mf">53.61964114</span><span class="p">,</span>   <span class="mf">38.8741616</span> <span class="p">,</span>   <span class="mf">71.53462537</span><span class="p">],</span>
+       <span class="p">[</span> <span class="mf">118.4935668</span> <span class="p">,</span>   <span class="mf">86.14012835</span><span class="p">,</span>  <span class="mf">158.40440712</span><span class="p">],</span>
+       <span class="p">[</span> <span class="mf">155.04043289</span><span class="p">,</span>  <span class="mf">104.3499231</span> <span class="p">,</span>  <span class="mf">195.26228855</span><span class="p">]])</span>
+</pre></div>
+<dl>
+<dt>Incorporation with OpenCV</dt>
+</dl>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">cv2</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">r</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="kp">reshape</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="kp">arange</span><span class="p">(</span><span class="mi">256</span><span class="o">*</span><span class="mi">256</span><span class="p">)</span><span class="o">%</span><span class="mi">256</span><span class="p">,(</span><span class="mi">256</span><span class="p">,</span><span class="mi">256</span><span class="p">))</span>  <span class="c1"># 256x256 pixel array with a horizontal gradient from 0 to 255 for the red color channel</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">g</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="kp">zeros_like</span><span class="p">(</span><span class="n">r</span><span class="p">)</span>  <span class="c1"># array of same size and type as r but filled with 0s for the green color channel</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">b</span> <span class="o">=</span> <span class="n">r</span><span class="o">.</span><span class="n">T</span> <span class="c1"># transposed r will give a vertical gradient for the blue color channel</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">cv2</span><span class="o">.</span><span class="n">imwrite</span><span class="p">(</span><span class="s1">'gradients.png'</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="kp">dstack</span><span class="p">([</span><span class="n">b</span><span class="p">,</span><span class="n">g</span><span class="p">,</span><span class="n">r</span><span class="p">]))</span>  <span class="c1"># OpenCV images are interpreted as BGR, the depth-stacked array will be written to an 8bit RGB PNG-file called 'gradients.png'</span>
+<span class="bp">True</span>
+</pre></div>
+<dl>
+<dt>Nearest Neighbor Search - Iterative Python algorithm and vectorized NumPy version</dt>
+</dl>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="o">&gt;&gt;&gt;</span> <span class="c1"># # # Pure iterative Python # # #</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">points</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">9</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">8</span><span class="p">],[</span><span class="mi">4</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">2</span><span class="p">],[</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">],[</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">9</span><span class="p">],[</span><span class="mi">5</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">7</span><span class="p">],[</span><span class="mi">8</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">7</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">],[</span><span class="mi">7</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="mi">6</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">],[</span><span class="mi">2</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">6</span><span class="p">]]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">qPoint</span> <span class="o">=</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">minIdx</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">minDist</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">point</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">points</span><span class="p">):</span>  <span class="c1"># iterate over all points</span>
+        <span class="n">dist</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">([(</span><span class="n">dp</span><span class="o">-</span><span class="n">dq</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span> <span class="k">for</span> <span class="n">dp</span><span class="p">,</span><span class="n">dq</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">point</span><span class="p">,</span><span class="n">qPoint</span><span class="p">)])</span><span class="o">**</span><span class="mf">0.5</span>  <span class="c1"># compute the euclidean distance for each point to q</span>
+        <span class="k">if</span> <span class="n">dist</span> <span class="o">&lt;</span> <span class="n">minDist</span> <span class="ow">or</span> <span class="n">minDist</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>  <span class="c1"># if necessary, update minimum distance and index of the corresponding point</span>
+            <span class="n">minDist</span> <span class="o">=</span> <span class="n">dist</span>
+            <span class="n">minIdx</span> <span class="o">=</span> <span class="n">idx</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span> <span class="s1">'Nearest point to q: '</span><span class="p">,</span> <span class="n">points</span><span class="p">[</span><span class="n">minIdx</span><span class="p">]</span>
+<span class="n">Nearest</span> <span class="n">point</span> <span class="n">to</span> <span class="n">q</span><span class="p">:</span>  <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="c1"># # # Equivalent NumPy vectorization # # #</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">points</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="kp">array</span><span class="p">([[</span><span class="mi">9</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">8</span><span class="p">],[</span><span class="mi">4</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">2</span><span class="p">],[</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">],[</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">9</span><span class="p">],[</span><span class="mi">5</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">7</span><span class="p">],[</span><span class="mi">8</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">7</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">],[</span><span class="mi">7</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="mi">6</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">],[</span><span class="mi">2</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">6</span><span class="p">]])</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">qPoint</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="kp">array</span><span class="p">([</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">3</span><span class="p">])</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">minIdx</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="kp">argmin</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">points</span><span class="o">-</span><span class="n">qPoint</span><span class="p">,</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span>  <span class="c1"># compute all euclidean distances at once and return the index of the smallest one</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span> <span class="s1">'Nearest point to q: '</span><span class="p">,</span> <span class="n">points</span><span class="p">[</span><span class="n">minIdx</span><span class="p">]</span>
+<span class="n">Nearest</span> <span class="n">point</span> <span class="n">to</span> <span class="n">q</span><span class="p">:</span>  <span class="p">[</span><span class="mi">3</span> <span class="mi">4</span> <span class="mi">4</span><span class="p">]</span>
+</pre></div>
+<h2><span class="mw-headline" id="History">History</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=NumPy&amp;action=edit&amp;section=5" title="Edit section: History">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The Python programming language was not initially designed for numerical computing, but attracted the attention of the scientific/engineering community early on, so that a special interest group called matrix-sig was founded in 1995 with the aim of defining an array computing package. Among its members was Python designer/maintainer <a href="/wiki/Guido_van_Rossum" title="Guido van Rossum">Guido van Rossum</a>, who implemented extensions to <a href="/wiki/Python_syntax_and_semantics" title="Python syntax and semantics">Python's syntax</a> (in particular the indexing syntax) to make array computing easier.<sup id="cite_ref-millman_8-0" class="reference"><a href="#cite_note-millman-8">[8]</a></sup></p>
+<p>An implementation of a matrix package was completed by Jim Fulton, then generalized by <a href="/wiki/Jim_Hugunin" title="Jim Hugunin">Jim Hugunin</a> to become <i>Numeric</i>,<sup id="cite_ref-millman_8-1" class="reference"><a href="#cite_note-millman-8">[8]</a></sup> also variously called Numerical Python extensions or NumPy.<sup id="cite_ref-cise2_9-0" class="reference"><a href="#cite_note-cise2-9">[9]</a></sup><sup id="cite_ref-numerical_10-0" class="reference"><a href="#cite_note-numerical-10">[10]</a></sup> Hugunin, a graduate student at <a href="/wiki/Massachusetts_Institute_of_Technology" title="Massachusetts Institute of Technology">MIT</a>,<sup id="cite_ref-numerical_10-1" class="reference"><a href="#cite_note-numerical-10">[10]</a></sup><sup class="reference" style="white-space:nowrap;">:10</sup> joined <a href="/wiki/CNRI" class="mw-redirect" title="CNRI">CNRI</a> to work on <a href="/wiki/Jython" title="Jython">JPython</a> in 1997<sup id="cite_ref-millman_8-2" class="reference"><a href="#cite_note-millman-8">[8]</a></sup> leading Paul Dubois of <a href="/wiki/Lawrence_Livermore_National_Laboratory" title="Lawrence Livermore National Laboratory">LLNL</a> to take over as maintainer.<sup id="cite_ref-numerical_10-2" class="reference"><a href="#cite_note-numerical-10">[10]</a></sup><sup class="reference" style="white-space:nowrap;">:10</sup> Other early contributors include David Ascher, Konrad Hinsen and <a href="/wiki/Travis_Oliphant" title="Travis Oliphant">Travis Oliphant</a>.<sup id="cite_ref-numerical_10-3" class="reference"><a href="#cite_note-numerical-10">[10]</a></sup><sup class="reference" style="white-space:nowrap;">:10</sup></p>
+<p>A new package called <i>Numarray</i> was written as a more flexible replacement for Numeric.<sup id="cite_ref-cise_4-2" class="reference"><a href="#cite_note-cise-4">[4]</a></sup> Like Numeric, it is now deprecated.<sup id="cite_ref-11" class="reference"><a href="#cite_note-11">[11]</a></sup><sup id="cite_ref-NumPyBook_12-0" class="reference"><a href="#cite_note-NumPyBook-12">[12]</a></sup> Numarray had faster operations for large arrays, but was slower than Numeric on small ones,<sup id="cite_ref-13" class="reference"><a href="#cite_note-13">[13]</a></sup> so for a time both packages were used for different use cases. The last version of Numeric v24.2 was released on 11 November 2005 and numarray v1.5.2 was released on 24 August 2006.<sup id="cite_ref-14" class="reference"><a href="#cite_note-14">[14]</a></sup></p>
+<p>There was a desire to get Numeric into the Python standard library, but <a href="/wiki/Guido_van_Rossum" title="Guido van Rossum">Guido van Rossum</a> (the author of Python) was quite clear that the code was not maintainable in its state then.<sup class="noprint Inline-Template" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Manual_of_Style/Dates_and_numbers#Chronological_items" title="Wikipedia:Manual of Style/Dates and numbers"><span title="The time period mentioned near this tag is ambiguous. (October 2013)">when?</span></a></i>]</sup><sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (October 2013)">citation needed</span></a></i>]</sup></p>
+<p>In early 2005, NumPy developer <a href="/wiki/Travis_Oliphant" title="Travis Oliphant">Travis Oliphant</a> wanted to unify the community around a single array package and ported Numarray's features to Numeric, releasing the result as NumPy 1.0 in 2006.<sup id="cite_ref-cise_4-3" class="reference"><a href="#cite_note-cise-4">[4]</a></sup> This new project was part of <a href="/wiki/SciPy" title="SciPy">SciPy</a>. To avoid installing the large SciPy package just to get an array object, this new package was separated and called NumPy. Support for Python 3 was added in version 1.5.0.<sup id="cite_ref-15" class="reference"><a href="#cite_note-15">[15]</a></sup></p>
+<p>In 2011, <a href="/wiki/PyPy" title="PyPy">PyPy</a> started development on an implementation of the numpy API for PyPy.<sup id="cite_ref-16" class="reference"><a href="#cite_note-16">[16]</a></sup> It is not yet fully compatible with NumPy.<sup id="cite_ref-17" class="reference"><a href="#cite_note-17">[17]</a></sup></p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=NumPy&amp;action=edit&amp;section=6" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a href="/wiki/List_of_numerical_analysis_software" title="List of numerical analysis software">List of numerical analysis software</a></li>
+<li><a href="/wiki/SciPy" title="SciPy">SciPy</a></li>
+<li><a href="/wiki/Matplotlib" title="Matplotlib">matplotlib</a></li>
+</ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=NumPy&amp;action=edit&amp;section=7" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist columns references-column-count references-column-count-2" style="-moz-column-count: 2; -webkit-column-count: 2; column-count: 2; list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://www.physics.nyu.edu/pine/pymanual/html/apdx3/apdx3_resources.html">http://www.physics.nyu.edu/pine/pymanual/html/apdx3/apdx3_resources.html</a></span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="https://www.reddit.com/r/Python/comments/2709pq/how_do_you_say_numpy/">https://www.reddit.com/r/Python/comments/2709pq/how_do_you_say_numpy/</a></span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><cite class="citation web">The SciPy Community. <a rel="nofollow" class="external text" href="https://docs.scipy.org/doc/numpy-dev/user/numpy-for-matlab-users.html">"NumPy for Matlab users"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">February 2,</span> 2017</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANumPy&amp;rft.au=The+SciPy+Community&amp;rft.btitle=NumPy+for+Matlab+users&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fdocs.scipy.org%2Fdoc%2Fnumpy-dev%2Fuser%2Fnumpy-for-matlab-users.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-cise-4"><span class="mw-cite-backlink">^ <a href="#cite_ref-cise_4-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-cise_4-1"><sup><i><b>b</b></i></sup></a> <a href="#cite_ref-cise_4-2"><sup><i><b>c</b></i></sup></a> <a href="#cite_ref-cise_4-3"><sup><i><b>d</b></i></sup></a></span> <span class="reference-text"><cite class="citation journal">Stéfan van der Walt, S. Chris Colbert and Gaël Varoquaux (2011). "The NumPy array: a structure for efficient numerical computation". <i>Computing in Science and Engineering</i>. IEEE. <a href="/wiki/ArXiv" title="ArXiv">arXiv</a>:<span class="plainlinks"><a rel="nofollow" class="external text" href="//arxiv.org/abs/1102.1523">1102.1523</a><span style="margin-left:0.1em"><img alt="Freely accessible" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/65/Lock-green.svg/9px-Lock-green.svg.png" title="Freely accessible" width="9" height="14" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/65/Lock-green.svg/14px-Lock-green.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/6/65/Lock-green.svg/18px-Lock-green.svg.png 2x" data-file-width="512" data-file-height="813" /></span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANumPy&amp;rft.atitle=The+NumPy+array%3A+a+structure+for+efficient+numerical+computation&amp;rft.date=2011&amp;rft.genre=article&amp;rft_id=info%3Aarxiv%2F1102.1523&amp;rft.jtitle=Computing+in+Science+and+Engineering&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span> <span class="citation-comment" style="display:none; color:#33aa33">CS1 maint: Uses authors parameter (<a href="/wiki/Category:CS1_maint:_Uses_authors_parameter" title="Category:CS1 maint: Uses authors parameter">link</a>)</span></span></li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://blaze.readthedocs.io/">"Blaze Ecosystem Docs"</a>. <i>Read the Docs</i><span class="reference-accessdate">. Retrieved <span class="nowrap">17 July</span> 2016</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANumPy&amp;rft.atitle=Blaze+Ecosystem+Docs&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fblaze.readthedocs.io%2F&amp;rft.jtitle=Read+the+Docs&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text"><cite class="citation web">Francesc Alted. <a rel="nofollow" class="external text" href="https://github.com/pydata/numexpr">"numexpr"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">8 March</span> 2014</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANumPy&amp;rft.au=Francesc+Alted&amp;rft.btitle=numexpr&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fgithub.com%2Fpydata%2Fnumexpr&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://numba.pydata.org/">"Numba"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">8 March</span> 2014</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANumPy&amp;rft.btitle=Numba&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fnumba.pydata.org%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-millman-8"><span class="mw-cite-backlink">^ <a href="#cite_ref-millman_8-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-millman_8-1"><sup><i><b>b</b></i></sup></a> <a href="#cite_ref-millman_8-2"><sup><i><b>c</b></i></sup></a></span> <span class="reference-text"><cite class="citation journal">Millman, K. Jarrod; Aivazis, Michael (2011). <a rel="nofollow" class="external text" href="http://www.computer.org/csdl/mags/cs/2011/02/mcs2011020009.html">"Python for Scientists and Engineers"</a>. <i>Computing in Science and Engineering</i>. <b>13</b> (2): 9–12.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANumPy&amp;rft.atitle=Python+for+Scientists+and+Engineers&amp;rft.au=Aivazis%2C+Michael&amp;rft.aufirst=K.+Jarrod&amp;rft.aulast=Millman&amp;rft.date=2011&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fwww.computer.org%2Fcsdl%2Fmags%2Fcs%2F2011%2F02%2Fmcs2011020009.html&amp;rft.issue=2&amp;rft.jtitle=Computing+in+Science+and+Engineering&amp;rft.pages=9-12&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=13" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-cise2-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-cise2_9-0">^</a></b></span> <span class="reference-text"><cite class="citation journal">Travis Oliphant (2007). <a rel="nofollow" class="external text" href="http://www.vision.ime.usp.br/~thsant/pool/oliphant-python_scientific.pdf">"Python for Scientific Computing"</a> <span style="font-size:85%;">(PDF)</span>. <i>Computing in Science and Engineering</i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANumPy&amp;rft.atitle=Python+for+Scientific+Computing&amp;rft.au=Travis+Oliphant&amp;rft.date=2007&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fwww.vision.ime.usp.br%2F~thsant%2Fpool%2Foliphant-python_scientific.pdf&amp;rft.jtitle=Computing+in+Science+and+Engineering&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-numerical-10"><span class="mw-cite-backlink">^ <a href="#cite_ref-numerical_10-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-numerical_10-1"><sup><i><b>b</b></i></sup></a> <a href="#cite_ref-numerical_10-2"><sup><i><b>c</b></i></sup></a> <a href="#cite_ref-numerical_10-3"><sup><i><b>d</b></i></sup></a></span> <span class="reference-text"><cite class="citation web">David Ascher; Paul F. Dubois; Konrad Hinsen; Jim Hugunin; Travis Oliphant (1999). <a rel="nofollow" class="external text" href="http://www.cs.mcgill.ca/~hv/articles/Numerical/numpy.pdf">"Numerical Python"</a> <span style="font-size:85%;">(PDF)</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANumPy&amp;rft.au=David+Ascher&amp;rft.au=Jim+Hugunin&amp;rft.au=Konrad+Hinsen&amp;rft.au=Paul+F.+Dubois&amp;rft.au=Travis+Oliphant&amp;rft.btitle=Numerical+Python&amp;rft.date=1999&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.cs.mcgill.ca%2F~hv%2Farticles%2FNumerical%2Fnumpy.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-11"><span class="mw-cite-backlink"><b><a href="#cite_ref-11">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.stsci.edu/resources/software_hardware/numarray">"Numarray Homepage"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2006-06-24</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANumPy&amp;rft.btitle=Numarray+Homepage&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.stsci.edu%2Fresources%2Fsoftware_hardware%2Fnumarray&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-NumPyBook-12"><span class="mw-cite-backlink"><b><a href="#cite_ref-NumPyBook_12-0">^</a></b></span> <span class="reference-text"><cite class="citation book">Travis E. Oliphant (December 7, 2006). <a rel="nofollow" class="external text" href="https://archive.org/details/NumPyBook"><i>Guide to NumPy</i></a><span class="reference-accessdate">. Retrieved <span class="nowrap">February 2,</span> 2017</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANumPy&amp;rft.au=Travis+E.+Oliphant&amp;rft.btitle=Guide+to+NumPy&amp;rft.date=2006-12-07&amp;rft.genre=book&amp;rft_id=https%3A%2F%2Farchive.org%2Fdetails%2FNumPyBook&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-13"><span class="mw-cite-backlink"><b><a href="#cite_ref-13">^</a></b></span> <span class="reference-text"><cite class="citation web">Travis Oliphant and other SciPy developers. <a rel="nofollow" class="external text" href="https://mail.scipy.org/pipermail/numpy-discussion/2004-January/002645.html">"[Numpy-discussion] Status of Numeric"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">February 2,</span> 2017</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANumPy&amp;rft.au=Travis+Oliphant+and+other+SciPy+developers&amp;rft.btitle=%5BNumpy-discussion%5D+Status+of+Numeric&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fmail.scipy.org%2Fpipermail%2Fnumpy-discussion%2F2004-January%2F002645.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-14"><span class="mw-cite-backlink"><b><a href="#cite_ref-14">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://sourceforge.net/project/showfiles.php?group_id=1369">"NumPy Sourceforge Files"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2008-03-24</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANumPy&amp;rft.btitle=NumPy+Sourceforge+Files&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fsourceforge.net%2Fproject%2Fshowfiles.php%3Fgroup_id%3D1369&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-15"><span class="mw-cite-backlink"><b><a href="#cite_ref-15">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://sourceforge.net/projects/numpy/files//NumPy/1.5.0/NOTES.txt/view">"NumPy 1.5.0 Release Notes"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2011-04-29</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANumPy&amp;rft.btitle=NumPy+1.5.0+Release+Notes&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fsourceforge.net%2Fprojects%2Fnumpy%2Ffiles%2F%2FNumPy%2F1.5.0%2FNOTES.txt%2Fview&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-16"><span class="mw-cite-backlink"><b><a href="#cite_ref-16">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://morepypy.blogspot.com/2011/10/numpy-funding-and-status-update.html">"PyPy Status Blog: Numpy funding and status update"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2011-12-22</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANumPy&amp;rft.btitle=PyPy+Status+Blog%3A+Numpy+funding+and+status+update&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fmorepypy.blogspot.com%2F2011%2F10%2Fnumpy-funding-and-status-update.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-17"><span class="mw-cite-backlink"><b><a href="#cite_ref-17">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://buildbot.pypy.org/numpy-status/latest.html">"NumPyPy Status"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2013-10-14</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANumPy&amp;rft.btitle=NumPyPy+Status&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fbuildbot.pypy.org%2Fnumpy-status%2Flatest.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="Further_reading">Further reading</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=NumPy&amp;action=edit&amp;section=8" title="Edit section: Further reading">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><cite class="citation book">Bressert, Eli (2012). <i>Scipy and Numpy: An Overview for Developers</i>. O'Reilly Media. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-1-4493-0546-8" title="Special:BookSources/978-1-4493-0546-8">978-1-4493-0546-8</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANumPy&amp;rft.aufirst=Eli&amp;rft.aulast=Bressert&amp;rft.btitle=Scipy+and+Numpy%3A+An+Overview+for+Developers.&amp;rft.date=2012&amp;rft.genre=book&amp;rft.isbn=978-1-4493-0546-8&amp;rft.pub=O%27Reilly+Media&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+</ul>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=NumPy&amp;action=edit&amp;section=9" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div role="navigation" aria-labelledby="sister-projects" class="metadata plainlinks plainlist mbox-small" style="overflow:hidden; border:1px solid #aaa; padding:0.75em; background:#f9f9f9;">
+<div style="padding-bottom: 0.75em; text-align: center;">Find more about<b style="display:block;">NumPy</b>at Wikipedia's <a href="/wiki/Wikipedia:Wikimedia_sister_projects" title="Wikipedia:Wikimedia sister projects"><span id="sister-projects">sister projects</span></a></div>
+<ul style="border-top:1px solid #aaa; padding-top: 0.75em;">
+<li style="min-height: 31px;"><span style="display: inline-block; width: 31px; line-height: 31px; vertical-align: middle; text-align: center;"><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/20px-Commons-logo.svg.png" width="20" height="27" style="vertical-align: middle" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/30px-Commons-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/40px-Commons-logo.svg.png 2x" data-file-width="1024" data-file-height="1376" /></span><span style="display: inline-block; margin-left: 4px; width: 182px; vertical-align: middle;"><a href="https://commons.wikimedia.org/wiki/Category:NumPy" class="extiw" title="c:Category:NumPy">Media</a> from Commons</span></li>
+<li style="min-height: 31px;"><span style="display: inline-block; width: 31px; line-height: 31px; vertical-align: middle; text-align: center;"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Wikibooks-logo.svg/27px-Wikibooks-logo.svg.png" width="27" height="27" style="vertical-align: middle" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Wikibooks-logo.svg/41px-Wikibooks-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Wikibooks-logo.svg/54px-Wikibooks-logo.svg.png 2x" data-file-width="300" data-file-height="300" /></span><span style="display: inline-block; margin-left: 4px; width: 182px; vertical-align: middle;"><a href="https://en.wikibooks.org/wiki/Python_Programming/numpy" class="extiw" title="b:Python Programming/numpy">Textbooks</a> from Wikibooks</span></li>
+<li style="min-height: 31px;"><span style="display: inline-block; width: 31px; line-height: 31px; vertical-align: middle; text-align: center;"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Wikiversity-logo-en.svg/27px-Wikiversity-logo-en.svg.png" width="27" height="24" style="vertical-align: middle" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Wikiversity-logo-en.svg/41px-Wikiversity-logo-en.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Wikiversity-logo-en.svg/54px-Wikiversity-logo-en.svg.png 2x" data-file-width="1000" data-file-height="900" /></span><span style="display: inline-block; margin-left: 4px; width: 182px; vertical-align: middle;"><a href="https://en.wikiversity.org/wiki/Python/Quizzes/NumPy_%26_Co." class="extiw" title="v:Python/Quizzes/NumPy &amp; Co.">Learning resources</a> from Wikiversity</span></li>
+</ul>
+</div>
+<ul>
+<li><span class="official-website"><span class="url"><a rel="nofollow" class="external text" href="http://www.numpy.org/">Official website</a></span></span></li>
+<li><a rel="nofollow" class="external text" href="http://scipy.github.io/old-wiki/pages/History_of_SciPy">History of NumPy</a></li>
+</ul>
+<div role="navigation" class="navbox" aria-labelledby="Scientific_software_in_Python" style="padding:3px">
+<table class="nowraplinks hlist collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:SciPy_ecosystem" title="Template:SciPy ecosystem"><abbr title="View this template" style=";;background:none transparent;border:none;">v</abbr></a></li>
+<li class="nv-talk"><a href="/w/index.php?title=Template_talk:SciPy_ecosystem&amp;action=edit&amp;redlink=1" class="new" title="Template talk:SciPy ecosystem (page does not exist)"><abbr title="Discuss this template" style=";;background:none transparent;border:none;">t</abbr></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:SciPy_ecosystem&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;">e</abbr></a></li>
+</ul>
+</div>
+<div id="Scientific_software_in_Python" style="font-size:114%">Scientific software in <a href="/wiki/Python_(programming_language)" title="Python (programming language)">Python</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><strong class="selflink">NumPy</strong></li>
+<li><a href="/wiki/SciPy" title="SciPy">SciPy</a></li>
+<li><a href="/wiki/Matplotlib" title="Matplotlib">matplotlib</a></li>
+<li><a href="/wiki/Pandas_(software)" title="Pandas (software)">pandas</a></li>
+<li><a href="/wiki/Scikit-learn" title="Scikit-learn">scikit-learn</a></li>
+<li><a href="/wiki/Scikit-image" title="Scikit-image">scikit-image</a></li>
+<li><a href="/wiki/Statsmodels" title="Statsmodels">statsmodels</a></li>
+<li><a href="/wiki/MayaVi" title="MayaVi">MayaVi</a></li>
+<li><i><a href="/wiki/Category:Python_scientific_libraries" title="Category:Python scientific libraries">more</a></i></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1203
+Cached time: 20170204054401
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.352 seconds
+Real time usage: 0.419 seconds
+Preprocessor visited node count: 2002/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 45998/2097152 bytes
+Template argument size: 2551/2097152 bytes
+Highest expansion depth: 25/40
+Expensive parser function count: 4/500
+Lua time usage: 0.160/10.000 seconds
+Lua memory usage: 4.45 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  360.031      1 -total
+ 34.26%  123.350      2 Template:Infobox
+ 32.03%  115.336      1 Template:Reflist
+ 27.07%   97.471      1 Template:Infobox_software
+ 19.71%   70.963      2 Template:Fix
+ 19.62%   70.643     11 Template:Cite_web
+ 16.04%   57.742      1 Template:When
+  9.83%   35.376      1 Template:Infobox_software/simple
+  9.73%   35.025      3 Template:Category_handler
+  8.88%   31.964      2 Template:Delink
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:381782-0!*!0!!en!4!* and timestamp 20170204054412 and revision id 763617482
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=NumPy&amp;oldid=763617482">https://en.wikipedia.org/w/index.php?title=NumPy&amp;oldid=763617482</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Array_programming_languages" title="Category:Array programming languages">Array programming languages</a></li><li><a href="/wiki/Category:Free_mathematics_software" title="Category:Free mathematics software">Free mathematics software</a></li><li><a href="/wiki/Category:Free_science_software" title="Category:Free science software">Free science software</a></li><li><a href="/wiki/Category:Numerical_analysis_software_for_Linux" title="Category:Numerical analysis software for Linux">Numerical analysis software for Linux</a></li><li><a href="/wiki/Category:Numerical_analysis_software_for_MacOS" title="Category:Numerical analysis software for MacOS">Numerical analysis software for MacOS</a></li><li><a href="/wiki/Category:Numerical_analysis_software_for_Windows" title="Category:Numerical analysis software for Windows">Numerical analysis software for Windows</a></li><li><a href="/wiki/Category:Numerical_programming_languages" title="Category:Numerical programming languages">Numerical programming languages</a></li><li><a href="/wiki/Category:Python_scientific_libraries" title="Category:Python scientific libraries">Python scientific libraries</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:CS1_maint:_Uses_authors_parameter" title="Category:CS1 maint: Uses authors parameter">CS1 maint: Uses authors parameter</a></li><li><a href="/wiki/Category:Pages_using_deprecated_image_syntax" title="Category:Pages using deprecated image syntax">Pages using deprecated image syntax</a></li><li><a href="/wiki/Category:Vague_or_ambiguous_time_from_October_2013" title="Category:Vague or ambiguous time from October 2013">Vague or ambiguous time from October 2013</a></li><li><a href="/wiki/Category:All_articles_with_unsourced_statements" title="Category:All articles with unsourced statements">All articles with unsourced statements</a></li><li><a href="/wiki/Category:Articles_with_unsourced_statements_from_October_2013" title="Category:Articles with unsourced statements from October 2013">Articles with unsourced statements from October 2013</a></li><li><a href="/wiki/Category:Articles_with_example_Python_code" title="Category:Articles with example Python code">Articles with example Python code</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=NumPy" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=NumPy" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/NumPy"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:NumPy"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/NumPy" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=NumPy&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=NumPy&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/NumPy" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/NumPy" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=NumPy&amp;oldid=763617482" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=NumPy&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q197520" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=NumPy&amp;id=763617482" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=NumPy">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=NumPy&amp;returnto=NumPy&amp;oldid=763617482&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=NumPy&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-wikibase-otherprojects' aria-labelledby='p-wikibase-otherprojects-label'>
+			<h3 id='p-wikibase-otherprojects-label'>In other projects</h3>
+
+			<div class="body">
+									<ul>
+						<li class="wb-otherproject-link wb-otherproject-commons"><a href="https://commons.wikimedia.org/wiki/Category:NumPy" hreflang="en">Wikimedia Commons</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-ar"><a href="https://ar.wikipedia.org/wiki/%D9%86%D9%85%D8%A8%D8%A7%D9%8A" title="نمباي – Arabic" lang="ar" hreflang="ar" class="interlanguage-link-target">العربية</a></li><li class="interlanguage-link interwiki-ca"><a href="https://ca.wikipedia.org/wiki/NumPy" title="NumPy – Catalan" lang="ca" hreflang="ca" class="interlanguage-link-target">Català</a></li><li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/NumPy" title="NumPy – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-et"><a href="https://et.wikipedia.org/wiki/NumPy" title="NumPy – Estonian" lang="et" hreflang="et" class="interlanguage-link-target">Eesti</a></li><li class="interlanguage-link interwiki-es"><a href="https://es.wikipedia.org/wiki/NumPy" title="NumPy – Spanish" lang="es" hreflang="es" class="interlanguage-link-target">Español</a></li><li class="interlanguage-link interwiki-fa"><a href="https://fa.wikipedia.org/wiki/%D9%86%D8%A7%D9%85%E2%80%8C%D9%BE%D8%A7%DB%8C" title="نام‌پای – Persian" lang="fa" hreflang="fa" class="interlanguage-link-target">فارسی</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/NumPy" title="NumPy – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-it"><a href="https://it.wikipedia.org/wiki/NumPy" title="NumPy – Italian" lang="it" hreflang="it" class="interlanguage-link-target">Italiano</a></li><li class="interlanguage-link interwiki-hu"><a href="https://hu.wikipedia.org/wiki/NumPy" title="NumPy – Hungarian" lang="hu" hreflang="hu" class="interlanguage-link-target">Magyar</a></li><li class="interlanguage-link interwiki-ml"><a href="https://ml.wikipedia.org/wiki/%E0%B4%A8%E0%B4%82%E2%80%8C%E0%B4%AA%E0%B5%88" title="നം‌പൈ – Malayalam" lang="ml" hreflang="ml" class="interlanguage-link-target">മലയാളം</a></li><li class="interlanguage-link interwiki-nl"><a href="https://nl.wikipedia.org/wiki/NumPy" title="NumPy – Dutch" lang="nl" hreflang="nl" class="interlanguage-link-target">Nederlands</a></li><li class="interlanguage-link interwiki-ja"><a href="https://ja.wikipedia.org/wiki/NumPy" title="NumPy – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target">日本語</a></li><li class="interlanguage-link interwiki-pt"><a href="https://pt.wikipedia.org/wiki/NumPy" title="NumPy – Portuguese" lang="pt" hreflang="pt" class="interlanguage-link-target">Português</a></li><li class="interlanguage-link interwiki-ru"><a href="https://ru.wikipedia.org/wiki/NumPy" title="NumPy – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li><li class="interlanguage-link interwiki-sr"><a href="https://sr.wikipedia.org/wiki/NumPy" title="NumPy – Serbian" lang="sr" hreflang="sr" class="interlanguage-link-target">Српски / srpski</a></li><li class="interlanguage-link interwiki-uk"><a href="https://uk.wikipedia.org/wiki/NumPy" title="NumPy – Ukrainian" lang="uk" hreflang="uk" class="interlanguage-link-target">Українська</a></li><li class="interlanguage-link interwiki-zh"><a href="https://zh.wikipedia.org/wiki/NumPy" title="NumPy – Chinese" lang="zh" hreflang="zh" class="interlanguage-link-target">中文</a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q197520#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 4 February 2017, at 05:44.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=NumPy&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.352","walltime":"0.419","ppvisitednodes":{"value":2002,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":45998,"limit":2097152},"templateargumentsize":{"value":2551,"limit":2097152},"expansiondepth":{"value":25,"limit":40},"expensivefunctioncount":{"value":4,"limit":500},"entityaccesscount":{"value":1,"limit":400},"timingprofile":["100.00%  360.031      1 -total"," 34.26%  123.350      2 Template:Infobox"," 32.03%  115.336      1 Template:Reflist"," 27.07%   97.471      1 Template:Infobox_software"," 19.71%   70.963      2 Template:Fix"," 19.62%   70.643     11 Template:Cite_web"," 16.04%   57.742      1 Template:When","  9.83%   35.376      1 Template:Infobox_software/simple","  9.73%   35.025      3 Template:Category_handler","  8.88%   31.964      2 Template:Delink"]},"scribunto":{"limitreport-timeusage":{"value":"0.160","limit":"10.000"},"limitreport-memusage":{"value":4663598,"limit":52428800}},"cachereport":{"origin":"mw1203","timestamp":"20170204054401","ttl":2592000,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":64,"wgHostname":"mw1270"});});</script>
+	</body>
+</html>

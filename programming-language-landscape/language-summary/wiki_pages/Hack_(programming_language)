@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Hack (programming language) - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Hack_(programming_language)","wgTitle":"Hack (programming language)","wgCurRevisionId":761942840,"wgRevisionId":761942840,"wgArticleId":42257880,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Pages using deprecated image syntax","Official website different in Wikidata and Wikipedia","Dynamically typed programming languages","Facebook","PHP software","Programming languages created in 2014","Scripting languages","Statically typed programming languages","2014 software"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Hack_(programming_language)","wgRelevantArticleId":42257880,"wgRequestId":"WI7YpgpAME8AAGtdiyAAAABP","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":true},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q15971618","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.cite.styles":"ready","ext.pygments":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.legacy.wikibits","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.pygments%2CwikimediaBadges%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.29.0-wmf.9"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Hack_(programming_language)"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Hack_(programming_language)&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Hack_(programming_language)&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Hack_(programming_language)"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Hack_programming_language rootpage-Hack_programming_language skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Hack (programming language)</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><script>function mfTempOpenSection(id){var block=document.getElementById("mf-section-"+id);block.className+=" open-block";block.previousSibling.className+=" open-block";}</script><div role="note" class="hatnote">Not to be confused with <a href="/wiki/Haxe_(programming_language)" class="mw-redirect" title="Haxe (programming language)">Haxe (programming language)</a>.</div>
+<table class="infobox vevent" style="width:22em">
+<caption class="summary">Hack</caption>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/File:Hack-icon.svg" class="image"><img alt="Hack-icon.svg" src="//upload.wikimedia.org/wikipedia/en/thumb/3/32/Hack-icon.svg/200px-Hack-icon.svg.png" width="200" height="200" srcset="//upload.wikimedia.org/wikipedia/en/thumb/3/32/Hack-icon.svg/300px-Hack-icon.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/3/32/Hack-icon.svg/400px-Hack-icon.svg.png 2x" data-file-width="512" data-file-height="512" /></a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_design" title="Software design">Designed&#160;by</a></th>
+<td>Julien Verlaguet, Alok Menghrajani, Drew Paroski, and others<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">[1]</a></sup></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_developer" title="Software developer">Developer</a></th>
+<td class="organiser"><a href="/wiki/Facebook" title="Facebook">Facebook</a></td>
+</tr>
+<tr>
+<th scope="row">First&#160;appeared</th>
+<td>2014</td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Type_system" title="Type system">Typing discipline</a></th>
+<td><a href="/wiki/Static_typing" class="mw-redirect" title="Static typing">static</a>, <a href="/wiki/Dynamic_typing" class="mw-redirect" title="Dynamic typing">dynamic</a>, <a href="/wiki/Weak_typing" class="mw-redirect" title="Weak typing">weak</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Operating_system" title="Operating system">OS</a></th>
+<td><a href="/wiki/Cross-platform" title="Cross-platform">Cross-platform</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_license" title="Software license">License</a></th>
+<td><a href="/wiki/BSD_License" class="mw-redirect" title="BSD License">BSD License</a><sup id="cite_ref-license_2-0" class="reference"><a href="#cite_note-license-2">[2]</a></sup></td>
+</tr>
+<tr>
+<th scope="row">Website</th>
+<td><span class="url"><a rel="nofollow" class="external text" href="http://hacklang.org/">hacklang<wbr />.org</a></span></td>
+</tr>
+<tr>
+<th colspan="2" style="text-align:center;background-color: #eee;">Influenced by</th>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/PHP" title="PHP">PHP</a>, <a href="/wiki/OCaml" title="OCaml">OCaml</a>, <a href="/wiki/Java_(programming_language)" title="Java (programming language)">Java</a>, <a href="/wiki/C_Sharp_(programming_language)" title="C Sharp (programming language)">C#</a>, <a href="/wiki/Scala_(programming_language)" title="Scala (programming language)">Scala</a>, <a href="/wiki/Haskell_(programming_language)" title="Haskell (programming language)">Haskell</a></td>
+</tr>
+</table>
+<p><b>Hack</b> is a <a href="/wiki/Programming_language" title="Programming language">programming language</a> for the <a href="/wiki/HipHop_Virtual_Machine" title="HipHop Virtual Machine">HipHop Virtual Machine</a> (HHVM), created by <a href="/wiki/Facebook" title="Facebook">Facebook</a> as a dialect of <a href="/wiki/PHP" title="PHP">PHP</a>. The language implementation is <a href="/wiki/Open-source" class="mw-redirect" title="Open-source">open-source</a>, licensed under the <a href="/wiki/BSD_License" class="mw-redirect" title="BSD License">BSD License</a>.<sup id="cite_ref-license_2-1" class="reference"><a href="#cite_note-license-2">[2]</a></sup><sup id="cite_ref-oreilly_3-0" class="reference"><a href="#cite_note-oreilly-3">[3]</a></sup><sup id="cite_ref-4" class="reference"><a href="#cite_note-4">[4]</a></sup></p>
+<p>Hack allows programmers to use both <a href="/wiki/Dynamic_typing" class="mw-redirect" title="Dynamic typing">dynamic typing</a> and <a href="/wiki/Static_typing" class="mw-redirect" title="Static typing">static typing</a>. This kind of a <a href="/wiki/Type_systems" class="mw-redirect" title="Type systems">type system</a> is called <a href="/wiki/Gradual_typing" title="Gradual typing">gradual typing</a>, which is also implemented in other programming languages such as <a href="/wiki/ActionScript" title="ActionScript">ActionScript</a>.<sup id="cite_ref-5" class="reference"><a href="#cite_note-5">[5]</a></sup> Hack's type system allows types to be specified for <a href="/wiki/Function_(programming)" class="mw-redirect" title="Function (programming)">function</a> <a href="/wiki/Argument_(computer_programming)" class="mw-redirect" title="Argument (computer programming)">arguments</a>, function <a href="/wiki/Return_value" class="mw-redirect" title="Return value">return values</a>, and <a href="/wiki/Class_properties" class="mw-redirect" title="Class properties">class properties</a>; however, types of <a href="/wiki/Local_variable" title="Local variable">local variables</a> are always inferred and cannot be specified.<sup id="cite_ref-oreilly_3-1" class="reference"><a href="#cite_note-oreilly-3">[3]</a></sup><sup id="cite_ref-hack.annotations_6-0" class="reference"><a href="#cite_note-hack.annotations-6">[6]</a></sup></p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#History"><span class="tocnumber">1</span> <span class="toctext">History</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Features"><span class="tocnumber">2</span> <span class="toctext">Features</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Syntax_and_semantics"><span class="tocnumber">3</span> <span class="toctext">Syntax and semantics</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="#Functions"><span class="tocnumber">3.1</span> <span class="toctext">Functions</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="#See_also"><span class="tocnumber">4</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#External_links"><span class="tocnumber">6</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="History">History</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Hack_(programming_language)&amp;action=edit&amp;section=1" title="Edit section: History">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Hack was introduced on March 20, 2014.<sup id="cite_ref-7" class="reference"><a href="#cite_note-7">[7]</a></sup> Before the announcement of the new programming language, Facebook had already implemented the code and "battle tested" it on a large portion of its web site.</p>
+<h2><span class="mw-headline" id="Features">Features</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Hack_(programming_language)&amp;action=edit&amp;section=2" title="Edit section: Features">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Hack is designed to interoperate seamlessly with PHP, which is a widely used open-source general-purpose <a href="/wiki/Scripting_language" title="Scripting language">scripting language</a> that was designed for <a href="/wiki/Web_development" title="Web development">web development</a> and can be embedded into <a href="/wiki/HTML" title="HTML">HTML</a>. A majority of valid PHP scripts are also valid in Hack; however, numerous less frequently used PHP features and language constructs are not supported in Hack.<sup id="cite_ref-unsupported_8-0" class="reference"><a href="#cite_note-unsupported-8">[8]</a></sup></p>
+<p>Hack extends the <a href="/wiki/Type_hinting" class="mw-redirect" title="Type hinting">type hinting</a> available in PHP&#160;5 through the introduction of static typing, by adding new type hints (for example, for scalar types such as integer or string), as well as by extending the use of type hints (for example, for class properties or function return values). However, types of local variables cannot be specified.<sup id="cite_ref-hack.annotations_6-1" class="reference"><a href="#cite_note-hack.annotations-6">[6]</a></sup> Since Hack uses a gradual typing system, in the default mode, type annotations are not mandatory even in places they cannot be inferred; the type system will assume the author is correct and admit the code.<sup id="cite_ref-9" class="reference"><a href="#cite_note-9">[9]</a></sup> However, a "strict" mode is available which requires such annotations, and thus enforces fully sound code.<sup id="cite_ref-10" class="reference"><a href="#cite_note-10">[10]</a></sup></p>
+<h2><span class="mw-headline" id="Syntax_and_semantics">Syntax and semantics</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Hack_(programming_language)&amp;action=edit&amp;section=3" title="Edit section: Syntax and semantics">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The basic file structure of a Hack script is similar to a PHP script with a few changes. A Hack file starts with <tt>&lt;?hh</tt> as opposed to <tt>&lt;?php</tt> for a PHP script:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="o">&lt;?</span><span class="nx">hh</span>
+<span class="k">echo</span> <span class="s1">'Hello World'</span><span class="p">;</span>
+</pre></div>
+<p>The above script, similar to PHP, will be executed and the following output is sent to the browser:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+Hello World
+</pre></div>
+<p>An important point to note is that unlike PHP, Hack and HTML code do not mix. Normally you can mix PHP and HTML code together in the same file, like this:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>PHP Test<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+        <span class="c">&lt;!-- hh and html do not mix --&gt;</span>
+        <span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="s1">'&lt;p&gt;Hello World&lt;/p&gt;'</span><span class="p">;</span> <span class="cp">?&gt;</span> 
+    <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+<p>This type of code is not supported by Hack; either <a href="/wiki/XHP" title="XHP">XHP</a> or another <a href="/wiki/Web_template_system" title="Web template system">template engine</a> needs to be used.<sup id="cite_ref-unsupported_8-1" class="reference"><a href="#cite_note-unsupported-8">[8]</a></sup></p>
+<h3><span class="mw-headline" id="Functions">Functions</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Hack_(programming_language)&amp;action=edit&amp;section=4" title="Edit section: Functions">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Hack allows types to be specified for function arguments and function return values. Functions in Hack are thus annotated with types like the following:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="o">&lt;?</span><span class="nx">hh</span>
+<span class="c1">// Hack functions are annotated with types.</span>
+<span class="k">function</span> <span class="nf">negate</span><span class="p">(</span><span class="nx">bool</span> <span class="nv">$x</span><span class="p">)</span><span class="o">:</span> <span class="nx">bool</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="o">!</span><span class="nv">$x</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Hack_(programming_language)&amp;action=edit&amp;section=5" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div role="navigation" aria-label="Portals" class="noprint portal plainlist tright" style="margin:0.5em 0 0.5em 1em;border:solid #aaa 1px">
+<ul style="display:table;box-sizing:border-box;padding:0.1em;max-width:175px;background:#f9f9f9;font-size:85%;line-height:110%;font-style:italic;font-weight:bold">
+<li style="display:table-row"><span style="display:table-cell;padding:0.2em;vertical-align:middle;text-align:center"><a href="/wiki/File:8bit-dynamiclist_(reversed).gif" class="image"><img alt="icon" src="//upload.wikimedia.org/wikipedia/commons/thumb/c/cc/8bit-dynamiclist_%28reversed%29.gif/28px-8bit-dynamiclist_%28reversed%29.gif" width="28" height="28" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/commons/c/cc/8bit-dynamiclist_%28reversed%29.gif 1.5x" data-file-width="32" data-file-height="32" /></a></span><span style="display:table-cell;padding:0.2em 0.2em 0.2em 0.3em;vertical-align:middle"><a href="/wiki/Portal:Computer_programming" title="Portal:Computer programming">Computer programming portal</a></span></li>
+</ul>
+</div>
+<ul>
+<li><a href="/wiki/KPHP" title="KPHP">KPHP</a></li>
+<li><a href="/wiki/Parrot_virtual_machine" title="Parrot virtual machine">Parrot virtual machine</a></li>
+<li><a href="/wiki/Phalanger_(compiler)" title="Phalanger (compiler)">Phalanger</a></li>
+<li><a href="/wiki/Project_Zero" title="Project Zero">Project Zero</a></li>
+</ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Hack_(programming_language)&amp;action=edit&amp;section=6" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist columns references-column-width" style="-moz-column-width: 30em; -webkit-column-width: 30em; column-width: 30em; list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.serpentine.com/blog/2014/03/28/where-credit-belongs-for-hack/">"Where Credit Belongs for Hack"</a>. Bryan O'Sullivan. 2014-03-28<span class="reference-accessdate">. Retrieved <span class="nowrap">2015-02-02</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AHack+%28programming+language%29&amp;rft.btitle=Where+Credit+Belongs+for+Hack&amp;rft.date=2014-03-28&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.serpentine.com%2Fblog%2F2014%2F03%2F28%2Fwhere-credit-belongs-for-hack%2F&amp;rft.pub=Bryan+O%27Sullivan&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-license-2"><span class="mw-cite-backlink">^ <a href="#cite_ref-license_2-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-license_2-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://github.com/facebook/hhvm/blob/master/hphp/hack/LICENSE">"facebook/hhvm: hhvm / hphp / hack / LICENSE"</a>. <i>github.com</i>. <a href="/wiki/Facebook" title="Facebook">Facebook</a>. 2014-03-20<span class="reference-accessdate">. Retrieved <span class="nowrap">2014-08-11</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AHack+%28programming+language%29&amp;rft.atitle=facebook%2Fhhvm%3A+hhvm+%2F+hphp+%2F+hack+%2F+LICENSE&amp;rft.date=2014-03-20&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fgithub.com%2Ffacebook%2Fhhvm%2Fblob%2Fmaster%2Fhphp%2Fhack%2FLICENSE&amp;rft.jtitle=github.com&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-oreilly-3"><span class="mw-cite-backlink">^ <a href="#cite_ref-oreilly_3-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-oreilly_3-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><cite class="citation web">Josh Lockhart (2014-04-03). <a rel="nofollow" class="external text" href="http://radar.oreilly.com/2014/04/facebooks-hack-hhvm-and-the-future-of-php.html">"Facebook's Hack, HHVM, and the future of PHP"</a>. <a href="/wiki/O%27Reilly_Media" title="O'Reilly Media">O'Reilly Media</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2014-08-02</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AHack+%28programming+language%29&amp;rft.au=Josh+Lockhart&amp;rft.btitle=Facebook%99s+Hack%2C+HHVM%2C+and+the+future+of+PHP&amp;rft.date=2014-04-03&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fradar.oreilly.com%2F2014%2F04%2Ffacebooks-hack-hhvm-and-the-future-of-php.html&amp;rft.pub=O%27Reilly+Media&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text"><cite class="citation web">Cade Metz (2014-03-20). <a rel="nofollow" class="external text" href="http://www.wired.com/wiredenterprise/2014/03/facebook-hack/">"Facebook Introduces 'Hack,' the Programming Language of the Future"</a>. <a href="/wiki/Wired_(website)" title="Wired (website)">Wired</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2014-04-15</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AHack+%28programming+language%29&amp;rft.au=Cade+Metz&amp;rft.btitle=Facebook+Introduces+%27Hack%2C%27+the+Programming+Language+of+the+Future&amp;rft.date=2014-03-20&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.wired.com%2Fwiredenterprise%2F2014%2F03%2Ffacebook-hack%2F&amp;rft.pub=Wired&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text"><cite class="citation web">Aseem Rastogi; Avik Chaudhuri; Basil Hosmer (January 2012). <a rel="nofollow" class="external text" href="https://www.cs.umd.edu/~avik/papers/iogti.pdf">"The Ins and Outs of Gradual Type Inference"</a> <span style="font-size:85%;">(PDF)</span>. <a href="/wiki/Association_for_Computing_Machinery" title="Association for Computing Machinery">Association for Computing Machinery</a> (ACM)<span class="reference-accessdate">. Retrieved <span class="nowrap">2014-09-23</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AHack+%28programming+language%29&amp;rft.au=Aseem+Rastogi&amp;rft.au=Avik+Chaudhuri&amp;rft.au=Basil+Hosmer&amp;rft.btitle=The+Ins+and+Outs+of+Gradual+Type+Inference&amp;rft.date=2012-01&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fwww.cs.umd.edu%2F~avik%2Fpapers%2Fiogti.pdf&amp;rft.pub=Association+for+Computing+Machinery+%28ACM%29&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-hack.annotations-6"><span class="mw-cite-backlink">^ <a href="#cite_ref-hack.annotations_6-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-hack.annotations_6-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://docs.hhvm.com/hack/types/annotations">"Hack Manual: Hack and HHVM – Type Annotations"</a>. <i>docs.hhvm.com</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2015-12-29</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AHack+%28programming+language%29&amp;rft.atitle=Hack+Manual%3A+Hack+and+HHVM+%93++Type+Annotations&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fdocs.hhvm.com%2Fhack%2Ftypes%2Fannotations&amp;rft.jtitle=docs.hhvm.com&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://code.facebook.com/posts/264544830379293/hack-a-new-programming-language-for-hhvm/">"Hack: a new programming language for HHVM"</a>. <i>code.facebook.com</i>. <a href="/wiki/Facebook" title="Facebook">Facebook</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2014-03-23</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AHack+%28programming+language%29&amp;rft.atitle=Hack%3A+a+new+programming+language+for+HHVM&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fcode.facebook.com%2Fposts%2F264544830379293%2Fhack-a-new-programming-language-for-hhvm%2F&amp;rft.jtitle=code.facebook.com&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-unsupported-8"><span class="mw-cite-backlink">^ <a href="#cite_ref-unsupported_8-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-unsupported_8-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://docs.hhvm.com/hack/unsupported/introduction">"Hack Manual: Hack and HHVM – Unsupported PHP Features in Hack"</a>. <i>docs.hhvm.com</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2014-04-02</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AHack+%28programming+language%29&amp;rft.atitle=Hack+Manual%3A+Hack+and+HHVM+%93++Unsupported+PHP+Features+in+Hack&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fdocs.hhvm.com%2Fhack%2Funsupported%2Fintroduction&amp;rft.jtitle=docs.hhvm.com&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-9">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://docs.hhvm.com/hack/typechecker/modes#partial-mode">"Hack Manual: Partial Mode"</a>. <i>docs.hhvm.com</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2015-12-29</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AHack+%28programming+language%29&amp;rft.atitle=Hack+Manual%3A+Partial+Mode&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fdocs.hhvm.com%2Fhack%2Ftypechecker%2Fmodes%23partial-mode&amp;rft.jtitle=docs.hhvm.com&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-10">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://docs.hhvm.com/hack/typechecker/modes#strict-mode">"Hack Manual: Strict Mode"</a>. <i>docs.hhvm.com</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2015-12-29</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AHack+%28programming+language%29&amp;rft.atitle=Hack+Manual%3A+Strict+Mode&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fdocs.hhvm.com%2Fhack%2Ftypechecker%2Fmodes%23strict-mode&amp;rft.jtitle=docs.hhvm.com&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Hack_(programming_language)&amp;action=edit&amp;section=7" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li>Official <span class="official-website"><span class="url"><a rel="nofollow" class="external text" href="http://hacklang.org">website</a></span></span>, <span class="official-website"><span class="url"><a rel="nofollow" class="external text" href="http://hacklang.org/tutorial.html">tutorial</a></span></span> and <span class="official-website"><span class="url"><a rel="nofollow" class="external text" href="https://docs.hhvm.com/hack/">language reference</a></span></span></li>
+<li><a rel="nofollow" class="external text" href="http://www.infoworld.com/t/php-web/facebook-qa-hack-brings-static-typing-php-world-239112?page=0,1">Facebook Q&amp;A: Hack brings static typing to PHP world</a></li>
+<li><a rel="nofollow" class="external text" href="http://hacklang.org">Full presentation on "Hack Dev Day"</a></li>
+<li><a rel="nofollow" class="external text" href="https://docs.hhvm.com/hack/tools/hackificator">A tutorial on converting an existing PHP project to Hack</a></li>
+</ul>
+<div role="navigation" class="navbox" aria-labelledby="Programming_languages" style="padding:3px">
+<table class="nowraplinks hlist collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:Programming_languages" title="Template:Programming languages"><abbr title="View this template" style=";;background:none transparent;border:none;">v</abbr></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:Programming_languages" title="Template talk:Programming languages"><abbr title="Discuss this template" style=";;background:none transparent;border:none;">t</abbr></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:Programming_languages&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;">e</abbr></a></li>
+</ul>
+</div>
+<div id="Programming_languages" style="font-size:114%"><a href="/wiki/Programming_language" title="Programming language">Programming languages</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" colspan="2">
+<div>
+<ul>
+<li><a href="/wiki/Comparison_of_programming_languages" title="Comparison of programming languages">Comparison</a></li>
+<li><a href="/wiki/Timeline_of_programming_languages" title="Timeline of programming languages">Timeline</a></li>
+<li><a href="/wiki/History_of_programming_languages" title="History of programming languages">History</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Assembly_language" title="Assembly language">Assembly</a></li>
+<li><a href="/wiki/BASIC" title="BASIC">BASIC</a></li>
+<li><a href="/wiki/C_(programming_language)" title="C (programming language)">C</a></li>
+<li><a href="/wiki/C%2B%2B" title="C++">C++</a></li>
+<li><a href="/wiki/C_Sharp_(programming_language)" title="C Sharp (programming language)">C#</a></li>
+<li><a href="/wiki/COBOL" title="COBOL">COBOL</a></li>
+<li><a href="/wiki/Fortran" title="Fortran">Fortran</a></li>
+<li><a href="/wiki/Go_(programming_language)" title="Go (programming language)">Go</a></li>
+<li><a href="/wiki/Haskell_(programming_language)" title="Haskell (programming language)">Haskell</a></li>
+<li><a href="/wiki/Java_(programming_language)" title="Java (programming language)">Java</a></li>
+<li><a href="/wiki/JavaScript" title="JavaScript">JavaScript</a> (JS)</li>
+<li><a href="/wiki/Lisp_(programming_language)" title="Lisp (programming language)">Lisp</a></li>
+<li><a href="/wiki/Lua_(programming_language)" title="Lua (programming language)">Lua</a></li>
+<li><a href="/wiki/Objective-C" title="Objective-C">Objective-C</a></li>
+<li><a href="/wiki/Pascal_(programming_language)" title="Pascal (programming language)">Pascal</a></li>
+<li><a href="/wiki/Perl" title="Perl">Perl</a></li>
+<li><a href="/wiki/PHP" title="PHP">PHP</a></li>
+<li><a href="/wiki/Python_(programming_language)" title="Python (programming language)">Python</a></li>
+<li><a href="/wiki/Ruby_(programming_language)" title="Ruby (programming language)">Ruby</a></li>
+<li><a href="/wiki/Shell_script" title="Shell script">Shell</a></li>
+<li><a href="/wiki/Smalltalk" title="Smalltalk">Smalltalk</a></li>
+<li><a href="/wiki/Swift_(programming_language)" title="Swift (programming language)">Swift</a></li>
+<li><a href="/wiki/Visual_Basic_.NET" title="Visual Basic .NET">Visual Basic .NET</a> (VB.NET)</li>
+<li><i><a href="/wiki/List_of_programming_languages" title="List of programming languages">more...</a></i></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" colspan="2">
+<div>
+<ul>
+<li><img alt="Category" src="//upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/16px-Folder_Hexagonal_Icon.svg.png" title="Category" width="16" height="14" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/24px-Folder_Hexagonal_Icon.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/32px-Folder_Hexagonal_Icon.svg.png 2x" data-file-width="36" data-file-height="31" /> <b><a href="/wiki/Category:Programming_languages" title="Category:Programming languages">Category</a></b></li>
+<li><img alt="Non-article page" src="//upload.wikimedia.org/wikipedia/en/thumb/8/89/Symbol_neutral_vote.svg/16px-Symbol_neutral_vote.svg.png" title="Non-article page" width="16" height="16" srcset="//upload.wikimedia.org/wikipedia/en/thumb/8/89/Symbol_neutral_vote.svg/23px-Symbol_neutral_vote.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/8/89/Symbol_neutral_vote.svg/31px-Symbol_neutral_vote.svg.png 2x" data-file-width="180" data-file-height="185" /> <b><a href="/wiki/Comparison_of_programming_languages" title="Comparison of programming languages">Comparison</a></b></li>
+<li><img alt="List-Class article" src="//upload.wikimedia.org/wikipedia/en/thumb/d/db/Symbol_list_class.svg/16px-Symbol_list_class.svg.png" title="List-Class article" width="16" height="16" srcset="//upload.wikimedia.org/wikipedia/en/thumb/d/db/Symbol_list_class.svg/23px-Symbol_list_class.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/d/db/Symbol_list_class.svg/31px-Symbol_list_class.svg.png 2x" data-file-width="180" data-file-height="185" /> <b>Lists</b>
+<ul>
+<li><a href="/wiki/List_of_programming_languages" title="List of programming languages">Alphabetical</a></li>
+<li><a href="/wiki/Categorical_list_of_programming_languages" class="mw-redirect" title="Categorical list of programming languages">Categorical</a></li>
+<li><a href="/wiki/Generational_list_of_programming_languages" title="Generational list of programming languages">Generational</a></li>
+<li><a href="/wiki/Non-English-based_programming_languages" title="Non-English-based programming languages">Non-English-based</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div role="navigation" class="navbox" aria-labelledby="PHP" style="padding:3px">
+<table class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="3">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:PHP" title="Template:PHP"><abbr title="View this template" style=";;background:none transparent;border:none;">v</abbr></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:PHP" title="Template talk:PHP"><abbr title="Discuss this template" style=";;background:none transparent;border:none;">t</abbr></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:PHP&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;">e</abbr></a></li>
+</ul>
+</div>
+<div id="PHP" style="font-size:114%"><a href="/wiki/PHP" title="PHP">PHP</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">People</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Andi_Gutmans" title="Andi Gutmans">Andi Gutmans</a></li>
+<li><a href="/wiki/Rasmus_Lerdorf" title="Rasmus Lerdorf">Rasmus Lerdorf</a></li>
+<li><a href="/wiki/Zeev_Suraski" title="Zeev Suraski">Zeev Suraski</a></li>
+</ul>
+</div>
+</td>
+<td class="navbox-image" rowspan="15" style="width:0%;padding:0px 0px 0px 2px">
+<div><a href="/wiki/File:PHP-logo.svg" class="image"><img alt="PHP-logo.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/64px-PHP-logo.svg.png" width="64" height="35" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/96px-PHP-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/128px-PHP-logo.svg.png 2x" data-file-width="711" data-file-height="384" /></a></div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Resources</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/PHP_accelerator" title="PHP accelerator">Accelerator</a> (<a href="/wiki/List_of_PHP_accelerators" title="List of PHP accelerators">List</a>)</li>
+<li><a href="/wiki/Composer_(software)" title="Composer (software)">Composer</a></li>
+<li><a href="/wiki/List_of_PHP_editors" title="List of PHP editors">Editors</a></li>
+<li><a href="/wiki/List_of_PHP_extensions" title="List of PHP extensions">Libraries</a></li>
+<li><a href="/wiki/PEAR" title="PEAR">PEAR</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Implementations</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/HipHop_Virtual_Machine" title="HipHop Virtual Machine">HHVM</a></li>
+<li><a href="/wiki/HPHPc" class="mw-redirect" title="HPHPc">HPHPc</a></li>
+<li><a href="/wiki/Parrot_VM" class="mw-redirect" title="Parrot VM">Parrot</a></li>
+<li><a href="/wiki/Phalanger_(compiler)" title="Phalanger (compiler)">Phalanger</a></li>
+<li><a href="/wiki/Project_Zero" title="Project Zero">Project Zero</a></li>
+<li><a href="/wiki/Quercus_(software)" class="mw-redirect" title="Quercus (software)">Quercus</a></li>
+<li><a href="/wiki/Zend_Engine" title="Zend Engine">Zend Engine</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Web_framework" title="Web framework">Web frameworks</a></th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/CakePHP" title="CakePHP">CakePHP</a></li>
+<li><a href="/wiki/CodeIgniter" title="CodeIgniter">CodeIgniter</a></li>
+<li><a href="/wiki/Drupal" title="Drupal">Drupal</a></li>
+<li><a href="/wiki/EZ_Publish" title="EZ Publish">eZ Publish</a></li>
+<li><a href="/wiki/Fat-Free_Framework" title="Fat-Free Framework">Fat-Free</a></li>
+<li><a href="/wiki/FuelPHP" title="FuelPHP">FuelPHP</a></li>
+<li><a href="/wiki/Horde_(software)" title="Horde (software)">Horde</a></li>
+<li><a href="/wiki/Joomla" title="Joomla">Joomla!</a></li>
+<li><a href="/wiki/Laravel" title="Laravel">Laravel</a></li>
+<li><a href="/wiki/Lithium_(software)" title="Lithium (software)">Lithium</a></li>
+<li><a href="/wiki/Midgard_(software)" title="Midgard (software)">Midgard</a></li>
+<li><a href="/wiki/MODx" class="mw-redirect" title="MODx">MODx</a></li>
+<li><a href="/wiki/Nette_Framework" title="Nette Framework">Nette Framework</a></li>
+<li><a href="/wiki/PRADO_(framework)" title="PRADO (framework)">PRADO</a></li>
+<li><a href="/wiki/Phalcon_(framework)" title="Phalcon (framework)">Phalcon</a></li>
+<li><a href="/wiki/Qcodo" title="Qcodo">Qcodo</a></li>
+<li><a href="/wiki/Silex_(web_framework)" title="Silex (web framework)">Silex</a></li>
+<li><a href="/wiki/SilverStripe" title="SilverStripe">SilverStripe</a></li>
+<li><a href="/wiki/Symfony" title="Symfony">Symfony</a></li>
+<li><a href="/wiki/TYPO3" title="TYPO3">TYPO3</a></li>
+<li><a href="/wiki/WordPress" title="WordPress">WordPress</a></li>
+<li><a href="/wiki/Xaraya" title="Xaraya">Xaraya</a></li>
+<li><a href="/wiki/XOOPS" title="XOOPS">XOOPS</a></li>
+<li><a href="/wiki/Yii" title="Yii">Yii</a></li>
+<li><a href="/wiki/Zend_Framework" title="Zend Framework">Zend Framework</a></li>
+<li><a href="/wiki/Zeta_Components" class="mw-redirect" title="Zeta Components">Zeta Components</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Software_testing" title="Software testing">Testing</a></th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Behat_(computer_science)" title="Behat (computer science)">Behat</a></li>
+<li><a href="/wiki/PHPUnit" title="PHPUnit">PHPUnit</a></li>
+<li><a href="/wiki/PHP_Unit_Testing_Framework" title="PHP Unit Testing Framework">PHP Unit Testing Framework</a></li>
+<li><a href="/wiki/SimpleTest" title="SimpleTest">SimpleTest</a></li>
+<li><a href="/wiki/Lime_(software)" title="Lime (software)">Lime</a> (<a href="/wiki/Symfony" title="Symfony">Symfony</a>)</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Object-Relational_Mapping" class="mw-redirect" title="Object-Relational Mapping">ORMs</a></th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Doctrine_(PHP)" title="Doctrine (PHP)">Doctrine</a></li>
+<li><a href="/wiki/Propel_(PHP)" title="Propel (PHP)">Propel</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Comparison_of_integrated_development_environments#PHP" title="Comparison of integrated development environments">IDEs</a></th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Aptana" title="Aptana">Aptana</a></li>
+<li><a href="/wiki/Codelobster" title="Codelobster">Codelobster</a></li>
+<li><a href="/wiki/Eclipse_(software)#Eclipse_PDT_.28PHP_Development_Tools.29" title="Eclipse (software)">Eclipse PDT</a></li>
+<li><a href="/wiki/NetBeans" title="NetBeans">NetBeans</a></li>
+<li><a href="/wiki/PHPEdit" title="PHPEdit">PHPEdit</a></li>
+<li><a href="/wiki/PhpStorm" title="PhpStorm">PhpStorm</a></li>
+<li><a href="/wiki/RadPHP" title="RadPHP">RadPHP</a></li>
+<li><a href="/wiki/Zend_Studio" title="Zend Studio">Zend Studio</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Widget_toolkit" title="Widget toolkit">Widget toolkit</a></th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/PHP-GTK" title="PHP-GTK">PHP-GTK</a></li>
+<li><a href="/wiki/PHP-Qt" title="PHP-Qt">PHP-Qt</a></li>
+<li><a href="/wiki/WxPHP" title="WxPHP">wxPHP</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow hlist" colspan="3">
+<div>
+<ul>
+<li><img alt="Category" src="//upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/16px-Folder_Hexagonal_Icon.svg.png" title="Category" width="16" height="14" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/24px-Folder_Hexagonal_Icon.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/32px-Folder_Hexagonal_Icon.svg.png 2x" data-file-width="36" data-file-height="31" /> <a href="/wiki/Category:PHP" title="Category:PHP">Category</a></li>
+<li><img alt="Commons page" src="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/12px-Commons-logo.svg.png" title="Commons page" width="12" height="16" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/18px-Commons-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/24px-Commons-logo.svg.png 2x" data-file-width="1024" data-file-height="1376" /> <a href="https://commons.wikimedia.org/wiki/Category:PHP" class="extiw" title="commons:Category:PHP">Commons</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div role="navigation" class="navbox" aria-labelledby="Facebook" style="padding:3px">
+<table class="nowraplinks hlist collapsible collapsed navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:Facebook_navbox" title="Template:Facebook navbox"><abbr title="View this template" style=";;background:none transparent;border:none;">v</abbr></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:Facebook_navbox" title="Template talk:Facebook navbox"><abbr title="Discuss this template" style=";;background:none transparent;border:none;">t</abbr></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:Facebook_navbox&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;">e</abbr></a></li>
+</ul>
+</div>
+<div id="Facebook" style="font-size:114%"><a href="/wiki/Facebook" title="Facebook">Facebook</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Website</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Facebook_features" class="mw-redirect" title="Facebook features">Features</a></li>
+<li><a href="/wiki/Facebook_Beacon" title="Facebook Beacon">Beacon</a></li>
+<li><a href="/wiki/Facebook_Graph_Search" title="Facebook Graph Search">Graph Search</a></li>
+<li><a href="/wiki/EdgeRank" title="EdgeRank">EdgeRank</a></li>
+<li><a href="/wiki/Facebook_Platform" title="Facebook Platform">Platform</a></li>
+<li><a href="/wiki/Facebook_Credits" title="Facebook Credits">Payments</a></li>
+<li><a href="/wiki/Facebook_like_button" title="Facebook like button">Facebook like button</a></li>
+<li><a href="/wiki/Facebookcorewwwi.onion" title="Facebookcorewwwi.onion">Facebookcorewwwi.onion</a></li>
+<li><a href="/wiki/Facebook_Live" class="mw-redirect" title="Facebook Live">Facebook Live</a></li>
+<li><a href="/wiki/Facebook_Zero" title="Facebook Zero">Facebook Zero</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Other products</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks navbox-subgroup" style="border-spacing:0">
+<tr>
+<th scope="row" class="navbox-group">Current</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Instagram" title="Instagram">Instagram</a></li>
+<li><a href="/wiki/Facebook_Messenger" title="Facebook Messenger">Messenger</a></li>
+<li><a href="/wiki/MSQRD" title="MSQRD">MSQRD</a></li>
+<li><a href="/wiki/Oculus_Rift" title="Oculus Rift">Oculus Rift</a></li>
+<li><a href="/wiki/WhatsApp" title="WhatsApp">WhatsApp</a></li>
+<li><a href="/wiki/Workplace_by_Facebook" title="Workplace by Facebook">Workplace</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Former</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/w/index.php?title=Facebook_Camera&amp;action=edit&amp;redlink=1" class="new" title="Facebook Camera (page does not exist)">Camera</a></li>
+<li><a href="/wiki/FriendFeed" title="FriendFeed">FriendFeed</a></li>
+<li><a href="/wiki/Facebook_Home" title="Facebook Home">Home</a>
+<ul>
+<li><a href="/wiki/HTC_First" title="HTC First">HTC First</a></li>
+</ul>
+</li>
+<li><a href="/wiki/Facebook_Paper" title="Facebook Paper">Paper</a></li>
+<li><a href="/w/index.php?title=Facebook_Poke_(app)&amp;action=edit&amp;redlink=1" class="new" title="Facebook Poke (app) (page does not exist)">Poke (app)</a></li>
+<li><a href="/w/index.php?title=Facebook_Riff&amp;action=edit&amp;redlink=1" class="new" title="Facebook Riff (page does not exist)">Riff</a></li>
+<li><a href="/wiki/Facebook_Slingshot" title="Facebook Slingshot">Slingshot</a></li>
+<li><a href="/wiki/Wirehog" title="Wirehog">Wirehog</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">People</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks navbox-subgroup" style="border-spacing:0">
+<tr>
+<th scope="row" class="navbox-group">Founders</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Mark_Zuckerberg" title="Mark Zuckerberg">Mark Zuckerberg</a> (<span style="color:gray">28% equity</span>)</li>
+<li><a href="/wiki/Dustin_Moskovitz" title="Dustin Moskovitz">Dustin Moskovitz</a> (<span style="color:gray">7%</span>)</li>
+<li><a href="/wiki/Eduardo_Saverin" title="Eduardo Saverin">Eduardo Saverin</a> (<span style="color:gray"><i>5%, formerly</i></span>)</li>
+<li><a href="/wiki/Chris_Hughes" title="Chris Hughes">Chris Hughes</a> (<span style="color:gray"><i>1%, formerly</i></span>)</li>
+<li><a href="/wiki/Andrew_McCollum" title="Andrew McCollum">Andrew McCollum</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Board</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Mark_Zuckerberg" title="Mark Zuckerberg">Mark Zuckerberg</a></li>
+<li><a href="/wiki/Jim_Breyer" title="Jim Breyer">Jim Breyer</a> (<span style="color:gray">11%</span>)</li>
+<li><a href="/wiki/Peter_Thiel" title="Peter Thiel">Peter Thiel</a> (<span style="color:gray">2%</span>)</li>
+<li><a href="/wiki/Sheryl_Sandberg" title="Sheryl Sandberg">Sheryl Sandberg</a></li>
+<li><a href="/wiki/Marc_Andreessen" title="Marc Andreessen">Marc Andreessen</a></li>
+<li><a href="/wiki/Erskine_Bowles" title="Erskine Bowles">Erskine Bowles</a></li>
+<li><a href="/wiki/Susan_Desmond-Hellmann" title="Susan Desmond-Hellmann">Susan Desmond-Hellmann</a></li>
+<li><a href="/wiki/Donald_E._Graham" title="Donald E. Graham">Donald E. Graham</a></li>
+<li><a href="/wiki/Reed_Hastings" title="Reed Hastings">Reed Hastings</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Executive<br />
+officers</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks navbox-subgroup" style="border-spacing:0">
+<tr>
+<th scope="row" class="navbox-group">Current</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Mark_Zuckerberg" title="Mark Zuckerberg">Mark Zuckerberg</a> (Chairman and CEO)</li>
+<li><a href="/wiki/Sheryl_Sandberg" title="Sheryl Sandberg">Sheryl Sandberg</a> (COO)</li>
+<li><a href="/wiki/David_Wehner" title="David Wehner">David Wehner</a> (CFO)</li>
+<li><a href="/wiki/Mike_Schroepfer" title="Mike Schroepfer">Mike Schroepfer</a> (CTO)</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Former</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Sean_Parker" title="Sean Parker">Sean Parker</a> (<span style="color:gray"><i>4%, formerly</i></span>)</li>
+<li><a href="/wiki/Owen_Van_Natta" title="Owen Van Natta">Owen Van Natta</a></li>
+<li><a href="/wiki/Gideon_Yu" title="Gideon Yu">Gideon Yu</a></li>
+<li><a href="/wiki/Adam_D%27Angelo" title="Adam D'Angelo">Adam D'Angelo</a></li>
+<li><a href="/wiki/Chris_Kelly_(entrepreneur)" title="Chris Kelly (entrepreneur)">Chris Kelly</a></li>
+<li><a href="/wiki/Bret_Taylor" title="Bret Taylor">Bret Taylor</a></li>
+<li><a href="/wiki/David_Ebersman" title="David Ebersman">David Ebersman</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Notable<br />
+employees</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks navbox-subgroup" style="border-spacing:0">
+<tr>
+<th scope="row" class="navbox-group">Current</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Chris_Cox_(Facebook)" title="Chris Cox (Facebook)">Chris Cox</a> (VP of Product)</li>
+<li><a href="/wiki/Elliot_Schrage" title="Elliot Schrage">Elliot Schrage</a> (VP of Global Communications, Marketing and Public Policy)</li>
+<li><a href="/wiki/Lars_Rasmussen_(software_developer)" title="Lars Rasmussen (software developer)">Lars Rasmussen</a> (Graph Search director)</li>
+<li><a href="/wiki/John_Carmack" title="John Carmack">John Carmack</a> (CTO of <a href="/wiki/Oculus_VR" title="Oculus VR">Oculus VR</a>)</li>
+<li><a href="/wiki/Hugo_Barra" title="Hugo Barra">Hugo Barra</a> (VP of <a href="/wiki/Oculus_VR" title="Oculus VR">Oculus VR</a>)</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Former</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Blake_Ross" title="Blake Ross">Blake Ross</a> (Director of Product)</li>
+<li><a href="/wiki/Ted_Ullyot" title="Ted Ullyot">Ted Ullyot</a> (VP, General Counsel, and Secretary)</li>
+<li><a href="/wiki/Matt_Cohler" title="Matt Cohler">Matt Cohler</a></li>
+<li><a href="/wiki/Charlie_Cheever" title="Charlie Cheever">Charlie Cheever</a></li>
+<li><a href="/wiki/Randi_Zuckerberg" title="Randi Zuckerberg">Randi Zuckerberg</a></li>
+<li><a href="/wiki/Yishan_Wong" title="Yishan Wong">Yishan Wong</a></li>
+<li><a href="/wiki/George_Hotz" title="George Hotz">George Hotz</a></li>
+<li><a href="/wiki/Joe_Lockhart" title="Joe Lockhart">Joe Lockhart</a></li>
+<li><a href="/wiki/Andrei_Alexandrescu" title="Andrei Alexandrescu">Andrei Alexandrescu</a> (research scientist)</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Open source</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Apache_Cassandra" title="Apache Cassandra">Apache Cassandra</a></li>
+<li><a href="/wiki/Apache_Hive" title="Apache Hive">Apache Hive</a></li>
+<li><a href="/wiki/Apache_Thrift" title="Apache Thrift">Apache Thrift</a></li>
+<li><a href="/wiki/Facebook_Query_Language" title="Facebook Query Language">FQL</a></li>
+<li><strong class="selflink">Hack</strong></li>
+<li><a href="/wiki/HipHop_for_PHP" title="HipHop for PHP">HipHop for PHP</a></li>
+<li><a href="/wiki/Phabricator" title="Phabricator">Phabricator</a></li>
+<li><a href="/wiki/React_(JavaScript_library)" title="React (JavaScript library)">React</a></li>
+<li><a href="/wiki/Scribe_(log_server)" title="Scribe (log server)">Scribe</a></li>
+<li><a href="/wiki/Open_Compute_Project" title="Open Compute Project">Open Compute Project</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Mass media</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><i><a href="/wiki/The_Facebook_Effect" title="The Facebook Effect">The Facebook Effect</a></i></li>
+<li><i><a href="/wiki/The_Accidental_Billionaires" title="The Accidental Billionaires">The Accidental Billionaires</a></i></li>
+<li><i><a href="/wiki/The_Social_Network" title="The Social Network">The Social Network</a></i></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Concepts</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Activity_stream" title="Activity stream">Activity stream</a></li>
+<li><a href="/wiki/Social_graph" title="Social graph">Social graph</a></li>
+<li><a href="/wiki/Friending" title="Friending">Friending</a></li>
+<li><a href="/wiki/Reblogging" title="Reblogging">Reblogging</a></li>
+<li><a href="/wiki/Fan-gating" title="Fan-gating">Fan-gating</a></li>
+<li><a href="/wiki/Facebook_diplomacy" title="Facebook diplomacy">Facebook diplomacy</a></li>
+<li><a href="/wiki/Like_button" title="Like button">Like button</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Business</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/History_of_Facebook" title="History of Facebook">History</a></li>
+<li><a href="/wiki/Timeline_of_Facebook" title="Timeline of Facebook">Timeline</a></li>
+<li><a href="/wiki/List_of_mergers_and_acquisitions_by_Facebook" title="List of mergers and acquisitions by Facebook">Acquisitions</a></li>
+<li><a href="/wiki/Facebook_F8" title="Facebook F8">f8 conference</a></li>
+<li><a href="/wiki/Initial_public_offering_of_Facebook" title="Initial public offering of Facebook">IPO</a></li>
+<li><a href="/wiki/Censorship_of_Facebook" title="Censorship of Facebook">Censorship</a></li>
+<li><a href="/wiki/Criticism_of_Facebook" title="Criticism of Facebook">Criticism</a></li>
+<li><a href="/wiki/Category:Facebook_litigation" title="Category:Facebook litigation">Litigation</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Divisions</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/w/index.php?title=Facebook_AI_Research&amp;action=edit&amp;redlink=1" class="new" title="Facebook AI Research (page does not exist)">Facebook AI Research</a></li>
+<li><a href="/w/index.php?title=Facebook_Creative_Labs&amp;action=edit&amp;redlink=1" class="new" title="Facebook Creative Labs (page does not exist)">Creative Labs</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Related</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Priscilla_Chan_(philanthropist)" title="Priscilla Chan (philanthropist)">Priscilla Chan</a> (wife of Mark Zuckerberg)</li>
+<li><a href="/wiki/Chan_Zuckerberg_Initiative" title="Chan Zuckerberg Initiative">Chan Zuckerberg Initiative</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1244
+Cached time: 20170130060943
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.252 seconds
+Real time usage: 0.316 seconds
+Preprocessor visited node count: 1170/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 87692/2097152 bytes
+Template argument size: 998/2097152 bytes
+Highest expansion depth: 10/40
+Expensive parser function count: 2/500
+Lua time usage: 0.113/10.000 seconds
+Lua memory usage: 3.84 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  238.622      1 -total
+ 36.40%   86.862      1 Template:Reflist
+ 28.88%   68.913     10 Template:Cite_web
+ 21.02%   50.151      7 Template:Navbox
+ 19.15%   45.690      1 Template:Infobox_programming_language
+ 17.04%   40.662      1 Template:Infobox
+ 11.43%   27.276      1 Template:Distinguish
+  8.29%   19.780      3 Template:Official_website
+  7.43%   17.722      1 Template:Programming_languages
+  6.82%   16.266      1 Template:Facebook_navbox
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:42257880-0!*!0!!en!4!* and timestamp 20170130060942 and revision id 761942840
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Hack_(programming_language)&amp;oldid=761942840">https://en.wikipedia.org/w/index.php?title=Hack_(programming_language)&amp;oldid=761942840</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Dynamically_typed_programming_languages" title="Category:Dynamically typed programming languages">Dynamically typed programming languages</a></li><li><a href="/wiki/Category:Facebook" title="Category:Facebook">Facebook</a></li><li><a href="/wiki/Category:PHP_software" title="Category:PHP software">PHP software</a></li><li><a href="/wiki/Category:Programming_languages_created_in_2014" title="Category:Programming languages created in 2014">Programming languages created in 2014</a></li><li><a href="/wiki/Category:Scripting_languages" title="Category:Scripting languages">Scripting languages</a></li><li><a href="/wiki/Category:Statically_typed_programming_languages" title="Category:Statically typed programming languages">Statically typed programming languages</a></li><li><a href="/wiki/Category:2014_software" title="Category:2014 software">2014 software</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Pages_using_deprecated_image_syntax" title="Category:Pages using deprecated image syntax">Pages using deprecated image syntax</a></li><li><a href="/wiki/Category:Official_website_different_in_Wikidata_and_Wikipedia" title="Category:Official website different in Wikidata and Wikipedia">Official website different in Wikidata and Wikipedia</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Hack+%28programming+language%29" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Hack+%28programming+language%29" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/Hack_(programming_language)"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:Hack_(programming_language)"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/Hack_(programming_language)" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=Hack_(programming_language)&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Hack_(programming_language)&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Hack_(programming_language)" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Hack_(programming_language)" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Hack_(programming_language)&amp;oldid=761942840" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Hack_(programming_language)&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q15971618" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Hack_%28programming_language%29&amp;id=761942840" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Hack+%28programming+language%29">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Hack+%28programming+language%29&amp;returnto=Hack+%28programming+language%29&amp;oldid=761942840&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Hack_(programming_language)&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-ar"><a href="https://ar.wikipedia.org/wiki/%D9%87%D8%A7%D9%83_(%D9%84%D8%BA%D8%A9_%D8%A8%D8%B1%D9%85%D8%AC%D8%A9)" title="هاك (لغة برمجة) – Arabic" lang="ar" hreflang="ar" class="interlanguage-link-target">العربية</a></li><li class="interlanguage-link interwiki-as"><a href="https://as.wikipedia.org/wiki/%E0%A6%B9%E0%A7%87%E0%A6%95_%E0%A6%AA%E0%A7%8D%E0%A7%B0%E0%A6%97%E0%A7%8D%E0%A7%B0%E0%A6%BE%E0%A6%AE%E0%A6%BF%E0%A6%82_%E0%A6%B2%E0%A7%87%E0%A6%82%E0%A6%97%E0%A7%81%E0%A7%B1%E0%A7%87%E0%A6%9C" title="হেক প্ৰগ্ৰামিং লেংগুৱেজ – Assamese" lang="as" hreflang="as" class="interlanguage-link-target">অসমীয়া</a></li><li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/Hack_(Programmiersprache)" title="Hack (Programmiersprache) – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-es"><a href="https://es.wikipedia.org/wiki/Hack_(lenguaje_de_programaci%C3%B3n)" title="Hack (lenguaje de programación) – Spanish" lang="es" hreflang="es" class="interlanguage-link-target">Español</a></li><li class="interlanguage-link interwiki-fa"><a href="https://fa.wikipedia.org/wiki/%D9%87%DA%A9_(%D8%B2%D8%A8%D8%A7%D9%86_%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C)" title="هک (زبان برنامه‌نویسی) – Persian" lang="fa" hreflang="fa" class="interlanguage-link-target">فارسی</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/Hack_(langage)" title="Hack (langage) – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-hy"><a href="https://hy.wikipedia.org/wiki/Hack_(%D5%AE%D6%80%D5%A1%D5%A3%D6%80%D5%A1%D5%BE%D5%B8%D6%80%D5%B4%D5%A1%D5%B6_%D5%AC%D5%A5%D5%A6%D5%B8%D6%82)" title="Hack (ծրագրավորման լեզու) – Armenian" lang="hy" hreflang="hy" class="interlanguage-link-target">Հայերեն</a></li><li class="interlanguage-link interwiki-nl"><a href="https://nl.wikipedia.org/wiki/Hack_(programmeertaal)" title="Hack (programmeertaal) – Dutch" lang="nl" hreflang="nl" class="interlanguage-link-target">Nederlands</a></li><li class="interlanguage-link interwiki-ja"><a href="https://ja.wikipedia.org/wiki/Hack_(%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E8%A8%80%E8%AA%9E)" title="Hack (プログラミング言語) – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target">日本語</a></li><li class="interlanguage-link interwiki-pl"><a href="https://pl.wikipedia.org/wiki/Hack_(j%C4%99zyk_programowania)" title="Hack (język programowania) – Polish" lang="pl" hreflang="pl" class="interlanguage-link-target">Polski</a></li><li class="interlanguage-link interwiki-pt"><a href="https://pt.wikipedia.org/wiki/Hack_(linguagem_de_programa%C3%A7%C3%A3o)" title="Hack (linguagem de programação) – Portuguese" lang="pt" hreflang="pt" class="interlanguage-link-target">Português</a></li><li class="interlanguage-link interwiki-ru"><a href="https://ru.wikipedia.org/wiki/Hack_(%D1%8F%D0%B7%D1%8B%D0%BA_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F)" title="Hack (язык программирования) – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li><li class="interlanguage-link interwiki-ur"><a href="https://ur.wikipedia.org/wiki/%DB%81%DB%8C%DA%A9_(%D9%BE%D8%B1%D9%88%DA%AF%D8%B1%D8%A7%D9%85%D9%86%DA%AF_%D8%B2%D8%A8%D8%A7%D9%86)" title="ہیک (پروگرامنگ زبان) – Urdu" lang="ur" hreflang="ur" class="interlanguage-link-target">اردو</a></li><li class="interlanguage-link interwiki-vi"><a href="https://vi.wikipedia.org/wiki/Hack_(ng%C3%B4n_ng%E1%BB%AF_l%E1%BA%ADp_tr%C3%ACnh)" title="Hack (ngôn ngữ lập trình) – Vietnamese" lang="vi" hreflang="vi" class="interlanguage-link-target">Tiếng Việt</a></li><li class="interlanguage-link interwiki-zh"><a href="https://zh.wikipedia.org/wiki/Hack_(%E7%A8%8B%E5%BC%8F%E8%AA%9E%E8%A8%80)" title="Hack (程式語言) – Chinese" lang="zh" hreflang="zh" class="interlanguage-link-target">中文</a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q15971618#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 25 January 2017, at 19:10.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Hack_(programming_language)&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.252","walltime":"0.316","ppvisitednodes":{"value":1170,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":87692,"limit":2097152},"templateargumentsize":{"value":998,"limit":2097152},"expansiondepth":{"value":10,"limit":40},"expensivefunctioncount":{"value":2,"limit":500},"entityaccesscount":{"value":1,"limit":400},"timingprofile":["100.00%  238.622      1 -total"," 36.40%   86.862      1 Template:Reflist"," 28.88%   68.913     10 Template:Cite_web"," 21.02%   50.151      7 Template:Navbox"," 19.15%   45.690      1 Template:Infobox_programming_language"," 17.04%   40.662      1 Template:Infobox"," 11.43%   27.276      1 Template:Distinguish","  8.29%   19.780      3 Template:Official_website","  7.43%   17.722      1 Template:Programming_languages","  6.82%   16.266      1 Template:Facebook_navbox"]},"scribunto":{"limitreport-timeusage":{"value":"0.113","limit":"10.000"},"limitreport-memusage":{"value":4026429,"limit":52428800}},"cachereport":{"origin":"mw1244","timestamp":"20170130060943","ttl":2592000,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":408,"wgHostname":"mw1244"});});</script>
+	</body>
+</html>

@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>LilyPond - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"LilyPond","wgTitle":"LilyPond","wgCurRevisionId":759310334,"wgRevisionId":759310334,"wgArticleId":169144,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles needing additional references from July 2016","All articles needing additional references","Cross-platform software","Free music software","Free software programmed in C++","GNU Project software","Music notation file formats","Scorewriters","Scorewriters for Linux","1996 software"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"LilyPond","wgRelevantArticleId":169144,"wgRequestId":"WI2mQwpAICgAAB-UZaUAAAAH","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":true},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q195946","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.cite.styles":"ready","ext.pygments":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.legacy.wikibits","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.pygments%2CwikimediaBadges%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.29.0-wmf.9"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/LilyPond"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=LilyPond&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=LilyPond&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/LilyPond"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-LilyPond rootpage-LilyPond skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">LilyPond</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><script>function mfTempOpenSection(id){var block=document.getElementById("mf-section-"+id);block.className+=" open-block";block.previousSibling.className+=" open-block";}</script><table class="plainlinks metadata ambox ambox-content ambox-Refimprove" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><a href="/wiki/File:Question_book-new.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" width="50" height="39" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/75px-Question_book-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/100px-Question_book-new.svg.png 2x" data-file-width="512" data-file-height="399" /></a></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">This article <b>needs additional citations for <a href="/wiki/Wikipedia:Verifiability" title="Wikipedia:Verifiability">verification</a></b>. <span class="hide-when-compact">Please help <a class="external text" href="//en.wikipedia.org/w/index.php?title=LilyPond&amp;action=edit">improve this article</a> by <a href="/wiki/Help:Introduction_to_referencing_with_Wiki_Markup/1" title="Help:Introduction to referencing with Wiki Markup/1">adding citations to reliable sources</a>. Unsourced material may be challenged and removed.</span> <small><i>(July 2016)</i></small> <small class="hide-when-compact"><i>(<a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove this template message</a>)</i></small></span></td>
+</tr>
+</table>
+<table class="infobox vevent" style="width:22em">
+<caption class="summary">LilyPond</caption>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/File:LilyPond-logo-with-music.png" class="image"><img alt="LilyPond-logo-with-music.png" src="//upload.wikimedia.org/wikipedia/commons/thumb/0/03/LilyPond-logo-with-music.png/107px-LilyPond-logo-with-music.png" width="107" height="64" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/0/03/LilyPond-logo-with-music.png/161px-LilyPond-logo-with-music.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/0/03/LilyPond-logo-with-music.png/214px-LilyPond-logo-with-music.png 2x" data-file-width="321" data-file-height="192" /></a></td>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/File:Fibonacci_composition.svg" class="image"><img alt="Fibonacci composition.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Fibonacci_composition.svg/300px-Fibonacci_composition.svg.png" width="300" height="162" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Fibonacci_composition.svg/450px-Fibonacci_composition.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Fibonacci_composition.svg/600px-Fibonacci_composition.svg.png 2x" data-file-width="765" data-file-height="414" /></a></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Software_developer" title="Software developer">Original author(s)</a></th>
+<td>Bertrand Bordage, Ian Hulin, Reinhold Kainhofer, Joe Neeman, Neil Puttock, Mike Solomon, Nicolas Sceaux, <span class="nowrap">et. al.</span><sup id="cite_ref-devteam_1-0" class="reference"><a href="#cite_note-devteam-1">[1]</a></sup></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Software_developer" title="Software developer">Developer(s)</a></th>
+<td>David Kastrup, Werner Lemberg, Han-Wen Nienhuys, Jan Nieuwenhuizen, Carl Sorensen, Janek Warchoł, <span class="nowrap">et. al.</span><sup id="cite_ref-devteam_1-1" class="reference"><a href="#cite_note-devteam-1">[1]</a></sup></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;">Initial release</th>
+<td>1996<span class="noprint">; 21&#160;years ago</span><span style="display:none">&#160;(<span class="bday dtstart published updated">1996</span>)</span></td>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Software_release_life_cycle" title="Software release life cycle">Stable release</a></th>
+<td>2.18.2 <small>(March&#160;17, 2014<span class="noprint">; 2 years ago</span><span style="display:none">&#160;(<span class="bday dtstart published updated">2014-03-17</span>)</span><sup id="cite_ref-stable_release_news_2-0" class="reference"><a href="#cite_note-stable_release_news-2">[2]</a></sup>)</small> <small class="plainlinks"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:Latest_stable_software_release/LilyPond&amp;action=edit">[±]</a></small></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Software_release_life_cycle" title="Software release life cycle">Preview release</a></th>
+<td>2.19.53 <small>(December&#160;18, 2016<span class="noprint">; 42 days ago</span><span style="display:none">&#160;(<span class="bday dtstart published updated">2016-12-18</span>)</span><sup id="cite_ref-preview_release_news_3-0" class="reference"><a href="#cite_note-preview_release_news-3">[3]</a></sup>)</small> <small class="plainlinks"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:Latest_preview_software_release/LilyPond&amp;action=edit">[±]</a></small></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Repository_(version_control)" title="Repository (version control)">Repository</a></th>
+<td><span class="url"><a rel="nofollow" class="external text" href="http://git.savannah.gnu.org/cgit/lilypond.git">git<wbr />.savannah<wbr />.gnu<wbr />.org<wbr />/cgit<wbr />/lilypond<wbr />.git</a></span></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;">Development status</th>
+<td>Active</td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;">Written in</th>
+<td><a href="/wiki/C%2B%2B" title="C++">C++</a>, <a href="/wiki/Scheme_(programming_language)" title="Scheme (programming language)">Scheme</a>, <a href="/wiki/Metafont" title="Metafont">Metafont</a>, <a href="/wiki/PostScript" title="PostScript">PostScript</a>, <a href="/wiki/Python_(programming_language)" title="Python (programming language)">Python</a><sup id="cite_ref-4" class="reference"><a href="#cite_note-4">[4]</a></sup></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Operating_system" title="Operating system">Operating system</a></th>
+<td>
+<div class="plainlist">
+<ul>
+<li><a href="/wiki/Windows_2000" title="Windows 2000">Windows 2000</a> and later</li>
+<li><a href="/wiki/Mac_OS_X_10.4" class="mw-redirect" title="Mac OS X 10.4">Mac OS X 10.4</a> and later</li>
+<li><a href="/wiki/Linux" title="Linux">Linux</a></li>
+<li><a href="/wiki/FreeBSD" title="FreeBSD">FreeBSD</a><sup id="cite_ref-5" class="reference"><a href="#cite_note-5">[5]</a></sup></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/File_size" title="File size">Size</a></th>
+<td>20–100 MB</td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Technical_standard" title="Technical standard">Standard</a>(s)</th>
+<td><a href="/wiki/Encapsulated_PostScript" title="Encapsulated PostScript">EPS</a>, <a href="/wiki/Musical_Instrument_Digital_Interface" class="mw-redirect" title="Musical Instrument Digital Interface">MIDI</a>, <a href="/wiki/MusicXML" title="MusicXML">MusicXML</a>, <a href="/wiki/Portable_Document_Format" title="Portable Document Format">PDF</a>, <a href="/wiki/PostScript" title="PostScript">PS</a>, <a href="/wiki/Scalable_Vector_Graphics" title="Scalable Vector Graphics">SVG</a></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;">Available in</th>
+<td>English, Catalan, Dutch, French, German, Hungarian, Italian, Japanese, Spanish</td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Software_categories#Broad_categories" title="Software categories">Type</a></th>
+<td><a href="/wiki/Music_software" title="Music software">Music software</a>, <a href="/wiki/Scorewriter" title="Scorewriter">scorewriter</a></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Software_license" title="Software license">License</a></th>
+<td><a href="/wiki/GPLv3" class="mw-redirect" title="GPLv3">GPLv3</a><sup id="cite_ref-6" class="reference"><a href="#cite_note-6">[6]</a></sup></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;">Website</th>
+<td><span class="url"><a rel="nofollow" class="external text" href="http://lilypond.org">lilypond<wbr />.org</a></span></td>
+</tr>
+</table>
+<p><b>LilyPond</b> is a <a href="/wiki/Computer_program" title="Computer program">computer program</a> and <a href="/wiki/File_format" title="File format">file format</a> for <a href="/wiki/Music_engraving" title="Music engraving">music engraving</a>. One of LilyPond's major goals is to produce scores that are engraved with traditional layout rules, reflecting the era when scores were engraved by hand.</p>
+<p>LilyPond is <a href="/wiki/Cross-platform" title="Cross-platform">cross-platform</a>, and is available for several common <a href="/wiki/Operating_system" title="Operating system">operating systems</a>; released under the terms of the <a href="/wiki/GNU_General_Public_License" title="GNU General Public License">GNU General Public License</a>, LilyPond is <a href="/wiki/Free_software" title="Free software">free software</a>.</p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#History"><span class="tocnumber">1</span> <span class="toctext">History</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Version_1.0"><span class="tocnumber">1.1</span> <span class="toctext">Version 1.0</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Version_2.0"><span class="tocnumber">1.2</span> <span class="toctext">Version 2.0</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="#Design"><span class="tocnumber">2</span> <span class="toctext">Design</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Software_features"><span class="tocnumber">3</span> <span class="toctext">Software features</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Overview_of_input_syntax"><span class="tocnumber">4</span> <span class="toctext">Overview of input syntax</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#Example_of_LilyPond_input_file"><span class="tocnumber">5</span> <span class="toctext">Example of LilyPond input file</span></a>
+<ul>
+<li class="toclevel-2 tocsection-8"><a href="#Corresponding_output"><span class="tocnumber">5.1</span> <span class="toctext">Corresponding output</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#More_complex_output"><span class="tocnumber">5.2</span> <span class="toctext">More complex output</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-10"><a href="#Collaboration_with_other_projects"><span class="tocnumber">6</span> <span class="toctext">Collaboration with other projects</span></a>
+<ul>
+<li class="toclevel-2 tocsection-11"><a href="#Integration_into_MediaWiki"><span class="tocnumber">6.1</span> <span class="toctext">Integration into MediaWiki</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-12"><a href="#Comparison_to_other_scorewriters"><span class="tocnumber">7</span> <span class="toctext">Comparison to other scorewriters</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="#See_also"><span class="tocnumber">8</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="#References"><span class="tocnumber">9</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-15"><a href="#External_links"><span class="tocnumber">10</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="History">History</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=LilyPond&amp;action=edit&amp;section=1" title="Edit section: History">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The LilyPond project was started in 1996 by Han-Wen Nienhuys and Jan Nieuwenhuizen, after they decided to abandon work on MPP (<a href="/wiki/MusiXTeX" title="MusiXTeX">MusiXTeX</a> PreProcessor), a project they began collaborating on in 1995.<sup id="cite_ref-7" class="reference"><a href="#cite_note-7">[7]</a></sup><sup id="cite_ref-8" class="reference"><a href="#cite_note-8">[8]</a></sup> Its name was inspired both by the <a href="/wiki/Rosegarden" title="Rosegarden">Rosegarden</a> project and an acquaintance of Nienhuys and Nieuwenhuizen named Suzanne, a name that means lily in Hebrew (שׁוּשָׁן).<sup id="cite_ref-9" class="reference"><a href="#cite_note-9">[9]</a></sup></p>
+<h3><span class="mw-headline" id="Version_1.0">Version 1.0</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=LilyPond&amp;action=edit&amp;section=2" title="Edit section: Version 1.0">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>LilyPond 1.0 was released on July 31, 1998, highlighting the development of a custom music font, Feta, and the complete separation of LilyPond from MusiXTeX.<sup id="cite_ref-10" class="reference"><a href="#cite_note-10">[10]</a></sup></p>
+<h3><span class="mw-headline" id="Version_2.0">Version 2.0</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=LilyPond&amp;action=edit&amp;section=3" title="Edit section: Version 2.0">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>LilyPond 2.0 was released on September 24, 2003, announcing a simplified syntax model and a much more complete set of facilities for notating various styles of music.<sup id="cite_ref-11" class="reference"><a href="#cite_note-11">[11]</a></sup></p>
+<h2><span class="mw-headline" id="Design">Design</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=LilyPond&amp;action=edit&amp;section=4" title="Edit section: Design">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>LilyPond is mostly written in <a href="/wiki/C%2B%2B" title="C++">C++</a> and uses <a href="/wiki/Scheme_(programming_language)" title="Scheme (programming language)">Scheme</a> (interpreted by <a href="/wiki/GNU_Guile" title="GNU Guile">GNU Guile</a>) as its extension language, allowing for user customization.<sup id="cite_ref-12" class="reference"><a href="#cite_note-12">[12]</a></sup> It has a relatively large codebase; as of March 21, 2015, the source comprises over 600,000 lines of C++ and 120,000 lines of Scheme and Python code.<sup id="cite_ref-13" class="reference"><a href="#cite_note-13">[13]</a></sup></p>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;"><a href="/wiki/File:PL-lilypond-2.10.33-screenshot.png" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/8/8d/PL-lilypond-2.10.33-screenshot.png/220px-PL-lilypond-2.10.33-screenshot.png" width="220" height="134" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/8d/PL-lilypond-2.10.33-screenshot.png/330px-PL-lilypond-2.10.33-screenshot.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/8/8d/PL-lilypond-2.10.33-screenshot.png/440px-PL-lilypond-2.10.33-screenshot.png 2x" data-file-width="481" data-file-height="293" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:PL-lilypond-2.10.33-screenshot.png" class="internal" title="Enlarge"></a></div>
+Screenshot of LilyPond running on Linux</div>
+</div>
+</div>
+<p>It uses a simple text notation for music input, which LilyPond interprets and processes in a series of stages.<sup id="cite_ref-14" class="reference"><a href="#cite_note-14">[14]</a></sup> In the final stage, music notation is output to <a href="/wiki/PDF" class="mw-redirect" title="PDF">PDF</a> (via <a href="/wiki/PostScript" title="PostScript">PostScript</a>) or other graphical formats, such as <a href="/wiki/Scalable_Vector_Graphics" title="Scalable Vector Graphics">SVG</a> or <a href="/wiki/Portable_Network_Graphics" title="Portable Network Graphics">PNG</a>. LilyPond also has the facility to generate <a href="/wiki/Musical_Instrument_Digital_Interface" class="mw-redirect" title="Musical Instrument Digital Interface">MIDI</a> files that correspond to the music notation output.</p>
+<p>LilyPond is a <a href="/wiki/Console_application" title="Console application">text-based application</a>, so it does not contain its own <a href="/wiki/Graphical_user_interface" title="Graphical user interface">graphical user interface</a> to assist with score creation. It does, however, have a flexible input language that strives to be simple, easing the <a href="/wiki/Learning_curve" title="Learning curve">learning curve</a> for new users. LilyPond adheres to the <a href="/wiki/WYSIWYM" title="WYSIWYM">WYSIWYM</a> paradigm; the workflow for typesetting music notation with LilyPond is similar to that of preparing documents with <a href="/wiki/LaTeX" title="LaTeX">LaTeX</a>.</p>
+<p>LilyPond supports experimental <a href="/wiki/Musical_notation" title="Musical notation">musical notation</a>. Its guitar facilities support <a href="/wiki/Guitar_tunings#Alternative" title="Guitar tunings">alternative tunings</a>, such as <a href="/wiki/Major-thirds_tuning" class="mw-redirect" title="Major-thirds tuning">major-thirds tuning</a>.<sup id="cite_ref-15" class="reference"><a href="#cite_note-15">[15]</a></sup></p>
+<h2><span class="mw-headline" id="Software_features">Software features</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=LilyPond&amp;action=edit&amp;section=5" title="Edit section: Software features">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;"><a href="/wiki/File:BeethovenSymponyNo5.JPG" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/63/BeethovenSymponyNo5.JPG/220px-BeethovenSymponyNo5.JPG" width="220" height="146" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/63/BeethovenSymponyNo5.JPG/330px-BeethovenSymponyNo5.JPG 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/6/63/BeethovenSymponyNo5.JPG/440px-BeethovenSymponyNo5.JPG 2x" data-file-width="4928" data-file-height="3264" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:BeethovenSymponyNo5.JPG" class="internal" title="Enlarge"></a></div>
+<a href="/wiki/Symphony_No._5_(Beethoven)" title="Symphony No. 5 (Beethoven)">Symphony No. 5</a> music sheet printed from a digitally engraved PDF file produced by LilyPond; released by the <a href="/wiki/Mutopia_Project" title="Mutopia Project">Mutopia Project</a></div>
+</div>
+</div>
+<p>LilyPond's primary goal is to produce output comparable to professionally engraved scores instead of output that looks mechanical and computer-generated. An essay from the LilyPond website, written by LilyPond developers, explains some typographical issues addressed by LilyPond:<sup id="cite_ref-16" class="reference"><a href="#cite_note-16">[16]</a></sup></p>
+<ul>
+<li><b>Optical font scaling</b>: depending on the staff size, the design of the music font is slightly altered; this is a feature that <a href="/wiki/Donald_Knuth" title="Donald Knuth">Donald Knuth's</a> <a href="/wiki/Computer_Modern" title="Computer Modern">Computer Modern</a> font is known for. As a result, note heads become more rounded, and staff lines become thicker.</li>
+<li><b>Optical spacing</b>: stem directions are taken into account when spacing subsequent notes.</li>
+<li><b>Special ledger line handling</b>: ledger lines are shortened when accidentals are nearby, thus enhancing readability.</li>
+<li><b>Proportional spacing</b>: notes can be positioned in such a way that <i>exactly</i> reflects their duration. For example, with this setting, the space between consecutive <a href="/wiki/Quarter_note" title="Quarter note">quarter notes</a> is four times greater than between consecutive <a href="/wiki/Sixteenth_note" title="Sixteenth note">sixteenth notes</a>.<sup id="cite_ref-17" class="reference"><a href="#cite_note-17">[17]</a></sup></li>
+</ul>
+<h2><span class="mw-headline" id="Overview_of_input_syntax">Overview of input syntax</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=LilyPond&amp;action=edit&amp;section=6" title="Edit section: Overview of input syntax">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The native input language for LilyPond is comprehensive, consisting of many commands needed for expressing any sort of articulation, dynamic, meter, etc. The ability to embed Scheme code within a LilyPond source file permits arbitrary extensions to the input language and assists with <a href="/wiki/Algorithmic_composition" title="Algorithmic composition">algorithmic composition</a>. Some general syntactic features are listed below.</p>
+<ul>
+<li>Single-line <a href="/wiki/Comment_(computer_programming)" title="Comment (computer programming)">comments</a> begin with a percent sign <code>%</code>.<sup id="cite_ref-18" class="reference"><a href="#cite_note-18">[18]</a></sup></li>
+<li><a href="/wiki/Musical_note" title="Musical note">Notes</a> are represented in <i>pitch-duration</i> format: <i>pitch</i> is specified with <a href="/wiki/Helmholtz_pitch_notation" title="Helmholtz pitch notation">Helmholtz pitch notation</a>, and <i>duration</i> is specified with a <a href="/wiki/Numeral_system" title="Numeral system">numeral</a> based system. The semantics of the <i>pitch-duration</i> format change depending on the active input mode; this is explained in depth in the LilyPond manual. For example, in absolute mode, <code>a'4</code> is an A, one octave up from the base A (A3 in <a href="/wiki/Scientific_pitch_notation" title="Scientific pitch notation">scientific pitch notation</a>), of quarter note length.<sup id="cite_ref-19" class="reference"><a href="#cite_note-19">[19]</a></sup></li>
+<li>Commands usually begin with a backslash (such as <code>\time</code>, or <code>\slurUp</code>). The function of the command in question determines where the command is placed; for example, if the command is used to indicate a fixed <a href="/wiki/Dynamics_(music)" title="Dynamics (music)">dynamic</a> on a specific note, it is placed <i>after</i> the note.<sup id="cite_ref-20" class="reference"><a href="#cite_note-20">[20]</a></sup></li>
+<li>Some common commands are represented symbolically to ease typing. One example is with <a href="/wiki/Slur_(music)" title="Slur (music)">slurs</a>, where <code>(</code> and <code>)</code> indicate the beginning and ending of a slur, respectively.<sup id="cite_ref-21" class="reference"><a href="#cite_note-21">[21]</a></sup> Another example is with manual <a href="/wiki/Beam_(music)" title="Beam (music)">beaming</a>, where <code>[</code> and <code>]</code> indicate the extent of the beam.<sup id="cite_ref-22" class="reference"><a href="#cite_note-22">[22]</a></sup></li>
+</ul>
+<p>LilyPond's interface with <a href="/wiki/Pango" title="Pango">Pango</a> requires the input <a href="/wiki/Character_encoding" title="Character encoding">character encoding</a> to be <a href="/wiki/UTF-8" title="UTF-8">UTF-8</a>.<sup id="cite_ref-23" class="reference"><a href="#cite_note-23">[23]</a></sup> One benefit of this is that more than one language can be included in the same source file.</p>
+<h2><span class="mw-headline" id="Example_of_LilyPond_input_file">Example of LilyPond input file</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=LilyPond&amp;action=edit&amp;section=7" title="Edit section: Example of LilyPond input file">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="k">\version</span> "2.19.22"
+
+<span class="k">\include</span> "english.ly"
+
+<span class="k">\header</span> <span class="nb">{</span>
+  title = <span class="k">\markup</span> <span class="nb">{</span> "Excerpt from" <span class="k">\italic</span> "fibonacci" <span class="nb">}</span>
+  composer = "Patrick McCarty"
+  <span class="c">%  copyright = \markup \fontsize #-5 </span>
+  <span class="c">%  {</span>
+  <span class="c">%    Copyright © 2009.</span>
+  <span class="c">%    Typeset with GNU LilyPond.</span>
+  <span class="c">%    Released into public domain by the composer.</span>
+  <span class="c">%  }</span>
+<span class="nb">}</span>
+
+<span class="k">\paper</span> <span class="nb">{</span>
+  paper-height = 4.6<span class="k">\in</span>
+  paper-width = 8.5<span class="k">\in</span>
+  indent = #0
+  system-count = #2
+<span class="nb">}</span>
+
+<span class="k">\score</span> <span class="nb">{</span>
+  <span class="k">\new</span> PianoStaff = "pianostaff" &lt;&lt;
+    <span class="k">\new</span> Staff = "RH" <span class="k">\relative</span> c' <span class="nb">{</span>
+      <span class="k">\accidentalStyle</span> Score.piano
+      <span class="k">\clef</span> "treble"
+      <span class="k">\time</span> 2/4
+      <span class="k">\set</span> Score.currentBarNumber = #51
+      <span class="k">\tempo</span> "Slow and steady" 4 = 60
+      &lt;e gs,&gt;4 <span class="k">\acciaccatura</span> <span class="nb">{</span> cs16[ ds] <span class="nb">}</span> &lt;e gs,&gt;4 | <span class="c">% m. 51</span>
+      &lt;ds gs,&gt;4 <span class="k">\acciaccatura</span> <span class="nb">{</span> e16[ ds] <span class="nb">}</span> &lt;cs gs&gt;4 | <span class="c">% m. 52</span>
+      &lt;cs gs&gt;4 <span class="k">\acciaccatura</span> <span class="nb">{</span> ds16[ cs] <span class="nb">}</span> &lt;c g&gt;4  | <span class="c">% m. 53</span>
+      &lt;cs gs&gt;4 <span class="k">\acciaccatura</span> <span class="nb">{</span> ds16[ e] <span class="nb">}</span> &lt;es bs gs&gt;4 | <span class="c">% m. 54</span>
+
+      &lt;e gs,&gt;4 <span class="k">\acciaccatura</span> <span class="nb">{</span> cs16[ ds] <span class="nb">}</span> e16 f gs a | <span class="c">% m. 55</span>
+      &lt;gs c,&gt;8 <span class="k">\acciaccatura</span> <span class="nb">{</span> as16[ gs] <span class="nb">}</span>
+      &lt;es b&gt;8 ~ &lt;es b&gt;16 ds b as | <span class="c">% m. 56</span>
+
+      b16 d8 bf32 f' g16 af bf c | <span class="c">% m. 57</span>
+      &lt;df df,&gt;16 ( c af ) &lt;e' e,&gt; ( ds b ) &lt;g' g,&gt; ( ds | <span class="c">% m. 58</span>
+
+      <span class="k">\time</span> 3/4
+      &lt;gs gs,&gt;16 ) <span class="k">\noBeam</span> d,16 f gs
+      a16 e f b
+      c16 d, ( f gs | <span class="c">% m. 59</span>
+
+      a16 b ) e, ( f
+      gs16 b c ) f, (
+      gs16 as b c ) | <span class="c">% m. 60</span>
+    <span class="nb">}</span>
+
+    <span class="k">\new</span> Dynamics = "Dynamics<span class="nb">_</span>pf" <span class="nb">{</span>
+      s4 <span class="k">\p</span> <span class="k">\&lt;</span> s4 | <span class="c">% m. 51</span>
+      s4 s4 | <span class="c">% m. 52</span>
+      s4 <span class="k">\mp</span> <span class="k">\&gt;</span> s4 | <span class="c">% m. 53</span>
+      s4 s4 <span class="k">\!</span> | <span class="c">% m. 54</span>
+      s4 <span class="k">\p</span> s4 | <span class="c">% m. 55</span>
+      s1 * 2/4 | <span class="c">% m. 56</span>
+      s4 <span class="k">\&lt;</span> s4 | <span class="c">% m. 57</span>
+      s4 s4 | <span class="c">% m. 58</span>
+      <span class="k">\override</span> DynamicText.extra-spacing-width = #'(-0.75 . 0.75)
+      s16 <span class="k">\mf</span> s16 <span class="k">\p</span> s8 s4 s4 | <span class="c">% m. 59</span>
+      s2. | <span class="c">% m. 60</span>
+    <span class="nb">}</span>
+
+    <span class="k">\new</span> Staff = "LH" <span class="k">\relative</span> c, <span class="nb">{</span>
+      <span class="k">\clef</span> "bass"
+      <span class="k">\time</span> 2/4
+      cs4. cs8 | <span class="c">% m. 51</span>
+      cs4. d8 | <span class="c">% m. 52</span>
+      f4. a8 | <span class="c">% m. 53</span>
+      f4. d8 | <span class="c">% m. 54</span>
+
+      cs4. cs8 | <span class="c">% m. 55</span>
+      d4 ds | <span class="c">% m. 56</span>
+      gs4. bf,8 | <span class="c">% m. 57</span>
+      f'4 b, | <span class="c">% m. 58</span>
+
+      <span class="k">\time</span> 3/4
+      d4. d8 ~ d4 | <span class="c">% m. 59</span>
+      ef2 f4 | <span class="c">% m. 60</span>
+    <span class="nb">}</span>
+  &gt;&gt;
+<span class="nb">}</span>
+</pre></div>
+<h3><span class="mw-headline" id="Corresponding_output">Corresponding output</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=LilyPond&amp;action=edit&amp;section=8" title="Edit section: Corresponding output">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p><a href="/wiki/File:Fibonacci_composition.svg" class="image" title="Rendered output"><img alt="Rendered output" src="//upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Fibonacci_composition.svg/700px-Fibonacci_composition.svg.png" width="700" height="379" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Fibonacci_composition.svg/1050px-Fibonacci_composition.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Fibonacci_composition.svg/1400px-Fibonacci_composition.svg.png 2x" data-file-width="765" data-file-height="414" /></a></p>
+<h3><span class="mw-headline" id="More_complex_output">More complex output</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=LilyPond&amp;action=edit&amp;section=9" title="Edit section: More complex output">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Lilypond can also create extensively customised output. An example is the short extract of the Stockhausen piano piece below.</p>
+<p><a href="/wiki/File:Excerpt_from_Stockhausen,_Klavierst%C3%BCck_II.svg" class="image" title="Excerpt from Klavierstück II by Stockhausen as a rendering example"><img alt="Excerpt from Klavierstück II by Stockhausen as a rendering example" src="//upload.wikimedia.org/wikipedia/en/thumb/b/b0/Excerpt_from_Stockhausen%2C_Klavierst%C3%BCck_II.svg/700px-Excerpt_from_Stockhausen%2C_Klavierst%C3%BCck_II.svg.png" width="700" height="219" srcset="//upload.wikimedia.org/wikipedia/en/thumb/b/b0/Excerpt_from_Stockhausen%2C_Klavierst%C3%BCck_II.svg/1050px-Excerpt_from_Stockhausen%2C_Klavierst%C3%BCck_II.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/b/b0/Excerpt_from_Stockhausen%2C_Klavierst%C3%BCck_II.svg/1400px-Excerpt_from_Stockhausen%2C_Klavierst%C3%BCck_II.svg.png 2x" data-file-width="785" data-file-height="246" /></a></p>
+<h2><span class="mw-headline" id="Collaboration_with_other_projects">Collaboration with other projects</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=LilyPond&amp;action=edit&amp;section=10" title="Edit section: Collaboration with other projects">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="thumb tright">
+<div class="thumbinner" style="width:302px;"><a href="/wiki/File:AdesteFidelesLilyPhil.png" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/e/e4/AdesteFidelesLilyPhil.png/300px-AdesteFidelesLilyPhil.png" width="300" height="143" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/en/thumb/e/e4/AdesteFidelesLilyPhil.png/450px-AdesteFidelesLilyPhil.png 1.5x, //upload.wikimedia.org/wikipedia/en/e/e4/AdesteFidelesLilyPhil.png 2x" data-file-width="588" data-file-height="280" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:AdesteFidelesLilyPhil.png" class="internal" title="Enlarge"></a></div>
+First <a href="/wiki/Bar_(music)" title="Bar (music)">measures</a> of <i><a href="/wiki/Adeste_Fideles" class="mw-redirect" title="Adeste Fideles">Adeste Fideles</a></i>, generated by LilyPond.</div>
+</div>
+</div>
+<p>Several graphical <a href="/wiki/Scorewriter" title="Scorewriter">scorewriters</a>—such as <a href="/wiki/Rosegarden" title="Rosegarden">Rosegarden</a>, <a href="/wiki/NoteEdit" title="NoteEdit">NoteEdit</a>, Canorus, <a href="/wiki/Denemo" title="Denemo">Denemo</a>, and <a href="/wiki/TuxGuitar" title="TuxGuitar">TuxGuitar</a>—can export files directly to LilyPond format. Other graphical applications serve as front ends to LilyPond, including <a href="/wiki/Frescobaldi_(software)" title="Frescobaldi (software)">Frescobaldi</a> and the LilyPondTool plugin for <a href="/wiki/JEdit" title="JEdit">jEdit</a>. <a href="/wiki/Denemo" title="Denemo">Denemo</a> integrates the <a href="/wiki/Portable_Document_Format" title="Portable Document Format">PDF</a> output of LilyPond in its display, allowing some editing operations on the final typeset score.</p>
+<p>The <a href="/wiki/Mutopia_Project" title="Mutopia Project">Mutopia Project</a>, which distributes <a href="/wiki/Free_content" title="Free content">free content</a> sheet music, uses LilyPond to typeset its music, as does Musipedia, a collaborative music encyclopedia.</p>
+<p><a href="/wiki/Emacs" title="Emacs">Emacs</a>' <a href="/wiki/Org-mode" title="Org-mode">org-mode</a> contains support for embedding LilyPond scores into documents.<sup id="cite_ref-24" class="reference"><a href="#cite_note-24">[24]</a></sup></p>
+<h3><span class="mw-headline" id="Integration_into_MediaWiki">Integration into MediaWiki</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=LilyPond&amp;action=edit&amp;section=11" title="Edit section: Integration into MediaWiki">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Lilypond is available in <a href="/wiki/MediaWiki" title="MediaWiki">MediaWiki</a> via the <a href="https://www.mediawiki.org/wiki/Extension:Score" class="extiw" title="mw:Extension:Score">Score extension</a> code. This, for example, transforms the notation</p>
+<pre>
+&lt;score vorbis="1"&gt;\relative c' { f d f a d f e d cis a cis e a g f e }&lt;/score&gt;
+</pre>
+<p>into</p>
+<p><img src="//upload.wikimedia.org/score/j/q/jqn99bwy8777srpv45hxjoiu24f0636/jqn99bwy.png" width="438" height="54" alt="\relative c' { f d f a d f e d cis a cis e a g f e }" /></p>
+<div class="mediaContainer" style="width:300px"><audio id="mwe_player_0" controls="" preload="none" style="width:300px" class="kskin" data-disablecontrols="options,timedText" data-durationhint="11.600453514739">
+<source src="//upload.wikimedia.org/score/j/q/jqn99bwy8777srpv45hxjoiu24f0636/jqn99bwy.ogg" type="audio/ogg; codecs=&quot;vorbis&quot;" /></audio></div>
+<p>The above excerpt is a simplified version of Solfeggio in C Minor by <a href="/wiki/Carl_Philipp_Emanuel_Bach" title="Carl Philipp Emanuel Bach">C.P.E. Bach</a>. More complex scores, including lyrics, are also possible within MediaWikis. <span class="plainlinks selfreference" style="font-style: italic;">See <a href="/wiki/Pastime_with_Good_Company" title="Pastime with Good Company">Pastime with Good Company</a> for an example.</span></p>
+<h2><span class="mw-headline" id="Comparison_to_other_scorewriters">Comparison to other scorewriters</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=LilyPond&amp;action=edit&amp;section=12" title="Edit section: Comparison to other scorewriters">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p><a href="/wiki/Finale_(software)" title="Finale (software)">Finale</a> and <a href="/wiki/Sibelius_(software)" title="Sibelius (software)">Sibelius</a> are two <a href="/wiki/Proprietary_software" title="Proprietary software">proprietary</a> scorewriters often compared to LilyPond. Andrew Hawryluk, a LilyPond user, wrote a series of articles comparing output quality between Finale and LilyPond.<sup id="cite_ref-25" class="reference"><a href="#cite_note-25">[25]</a></sup></p>
+<p>Another scorewriter with comparable features to LilyPond is <a href="/wiki/SCORE_(software)" title="SCORE (software)">SCORE</a>, but SCORE relies on manual positioning more than Lilypond does.</p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=LilyPond&amp;action=edit&amp;section=13" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div role="navigation" aria-label="Portals" class="noprint portal plainlist tright" style="margin:0.5em 0 0.5em 1em;border:solid #aaa 1px">
+<ul style="display:table;box-sizing:border-box;padding:0.1em;max-width:175px;background:#f9f9f9;font-size:85%;line-height:110%;font-style:italic;font-weight:bold">
+<li style="display:table-row"><span style="display:table-cell;padding:0.2em;vertical-align:middle;text-align:center"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/3/31/Free_and_open-source_software_logo_%282009%29.svg/28px-Free_and_open-source_software_logo_%282009%29.svg.png" width="28" height="28" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/3/31/Free_and_open-source_software_logo_%282009%29.svg/42px-Free_and_open-source_software_logo_%282009%29.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/3/31/Free_and_open-source_software_logo_%282009%29.svg/56px-Free_and_open-source_software_logo_%282009%29.svg.png 2x" data-file-width="512" data-file-height="512" /></span><span style="display:table-cell;padding:0.2em 0.2em 0.2em 0.3em;vertical-align:middle"><a href="/wiki/Portal:Free_software" class="mw-redirect" title="Portal:Free software">Free software portal</a></span></li>
+</ul>
+</div>
+<div class="div-col columns column-count column-count-2" style="-moz-column-count: 2; -webkit-column-count: 2; column-count: 2;">
+<ul>
+<li><a href="/wiki/ABC_notation" title="ABC notation">ABC notation</a></li>
+<li><a href="/wiki/Common_Music_Notation" title="Common Music Notation">Common Music Notation</a></li>
+<li><a href="/wiki/Denemo" title="Denemo">Denemo</a></li>
+<li><a href="/wiki/Frescobaldi_(software)" title="Frescobaldi (software)">Frescobaldi</a></li>
+<li><a href="/wiki/GUIDO_music_notation" title="GUIDO music notation">GUIDO music notation</a></li>
+<li><a href="/wiki/MuseScore" title="MuseScore">MuseScore</a></li>
+<li><a href="/wiki/MusiXTeX" title="MusiXTeX">MusiXTeX</a></li>
+<li><a href="/wiki/NoteEdit" title="NoteEdit">NoteEdit</a></li>
+<li><a href="/wiki/Philip%27s_Music_Scribe" title="Philip's Music Scribe">Philip's Music Scribe</a></li>
+<li><a href="/wiki/Rosegarden" title="Rosegarden">Rosegarden</a></li>
+<li><a href="/wiki/SCORE_(software)" title="SCORE (software)">SCORE (software)</a></li>
+<li><a href="/wiki/List_of_music_software" title="List of music software">List of music software</a></li>
+<li><a href="/wiki/List_of_scorewriters" title="List of scorewriters">List of scorewriters</a></li>
+</ul>
+</div>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=LilyPond&amp;action=edit&amp;section=14" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist references-column-width" style="-moz-column-width: 30em; -webkit-column-width: 30em; column-width: 30em; list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-devteam-1"><span class="mw-cite-backlink">^ <a href="#cite_ref-devteam_1-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-devteam_1-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://lilypond.org/authors.html">"Authors"</a>. LilyPond Development team<span class="reference-accessdate">. Retrieved <span class="nowrap">2015-03-21</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALilyPond&amp;rft.btitle=Authors&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Flilypond.org%2Fauthors.html&amp;rft.pub=LilyPond+Development+team&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-stable_release_news-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-stable_release_news_2-0">^</a></b></span> <span class="reference-text"><cite class="citation mailinglist">Holmes, Phil (2014-03-17). <a rel="nofollow" class="external text" href="http://lists.gnu.org/archive/html/info-lilypond/2013-12/msg00001.html">"LilyPond 2.18.2 released"</a> (Mailing list). info-lilypond.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALilyPond&amp;rft.aufirst=Phil&amp;rft.aulast=Holmes&amp;rft.btitle=LilyPond+2.18.2+released&amp;rft.date=2014-03-17&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Flists.gnu.org%2Farchive%2Fhtml%2Finfo-lilypond%2F2013-12%2Fmsg00001.html&amp;rft.pub=info-lilypond&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-preview_release_news-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-preview_release_news_3-0">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://lilypond.org/">"LilyPond – Music notation for everyone"</a>. December 18, 2016<span class="reference-accessdate">. Retrieved <span class="nowrap">December 18,</span> 2016</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALilyPond&amp;rft.btitle=LilyPond+%26ndash%3B+Music+notation+for+everyone&amp;rft.date=2016-12-18&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Flilypond.org%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://lilypond.org/source.html">"Source tarball"</a>. <i>lilypond.org</i><span class="reference-accessdate">. Retrieved <span class="nowrap">4 March</span> 2016</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALilyPond&amp;rft.atitle=Source+tarball&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Flilypond.org%2Fsource.html&amp;rft.jtitle=lilypond.org&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://lilypond.org/download.html">"Downloads for LilyPond 2.18.2"</a>. <i>lilypond.org</i><span class="reference-accessdate">. Retrieved <span class="nowrap">4 March</span> 2016</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALilyPond&amp;rft.atitle=Downloads+for+LilyPond+2.18.2&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Flilypond.org%2Fdownload.html&amp;rft.jtitle=lilypond.org&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://git.savannah.gnu.org/cgit/lilypond.git/tree/COPYING">COPYING</a></span></li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://lilypond.org/doc/v2.18/Documentation/user/lilypond-learning/Preface">"GNU LilyPond Learning Manual: Preface"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2015-03-21</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALilyPond&amp;rft.btitle=GNU+LilyPond+Learning+Manual%3A+Preface&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Flilypond.org%2Fdoc%2Fv2.18%2FDocumentation%2Fuser%2Flilypond-learning%2FPreface&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://github.com/janneke/mpp">"MusiXTeX PreProcessor README"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2010-03-31</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALilyPond&amp;rft.btitle=MusiXTeX+PreProcessor+README&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fgithub.com%2Fjanneke%2Fmpp&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-9">^</a></b></span> <span class="reference-text"><cite class="citation web">Kroger, Pedro (2004). <a rel="nofollow" class="external text" href="http://lists.gnu.org/archive/html/lilypond-user/2004-09/msg00095.html">"Re: The origin of the name lilypond"</a>. <i>lilypond-user mailing list</i>. lists.gnu.org. Archived from <a rel="nofollow" class="external text" href="http://lists.gnu.org/archive/html/lilypond-user/2004-09/msg00095.html">the original</a> on 8 Sep 2004<span class="reference-accessdate">. Retrieved <span class="nowrap">19 March</span> 2014</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALilyPond&amp;rft.atitle=Re%3A+The+origin+of+the+name+lilypond&amp;rft.aufirst=Pedro&amp;rft.aulast=Kroger&amp;rft.date=2004&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Flists.gnu.org%2Farchive%2Fhtml%2Flilypond-user%2F2004-09%2Fmsg00095.html&amp;rft.jtitle=lilypond-user+mailing+list&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-10">^</a></b></span> <span class="reference-text"><cite class="citation mailinglist">Nienhuys, Han-Wen (1998-07-31). <a rel="nofollow" class="external text" href="http://www.mail-archive.com/gnu-music-discuss@gnu.org/msg00313.html">"GNU LilyPond 1.0 released"</a>. <i>gnu-music-discuss</i> (Mailing list)<span class="reference-accessdate">. Retrieved <span class="nowrap">2010-02-16</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALilyPond&amp;rft.aufirst=Han-Wen&amp;rft.aulast=Nienhuys&amp;rft.btitle=GNU+LilyPond+1.0+released&amp;rft.date=1998-07-31&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.mail-archive.com%2Fgnu-music-discuss%40gnu.org%2Fmsg00313.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-11"><span class="mw-cite-backlink"><b><a href="#cite_ref-11">^</a></b></span> <span class="reference-text"><cite class="citation mailinglist">Nienhuys, Han-Wen (2003-09-24). <a rel="nofollow" class="external text" href="http://lists.gnu.org/archive/html/info-lilypond/2003-09/msg00008.html">"LilyPond 2.0 – make beautiful music prints"</a>. <i>info-lilypond</i> (Mailing list)<span class="reference-accessdate">. Retrieved <span class="nowrap">2010-02-16</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALilyPond&amp;rft.aufirst=Han-Wen&amp;rft.aulast=Nienhuys&amp;rft.btitle=LilyPond+2.0+%93+make+beautiful+music+prints&amp;rft.date=2003-09-24&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Flists.gnu.org%2Farchive%2Fhtml%2Finfo-lilypond%2F2003-09%2Fmsg00008.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-12"><span class="mw-cite-backlink"><b><a href="#cite_ref-12">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://lilypond.org/doc/v2.18/Documentation/contributor/lilypond-programming-languages">"LilyPond programming languages"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2015-03-21</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALilyPond&amp;rft.btitle=LilyPond+programming+languages&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Flilypond.org%2Fdoc%2Fv2.18%2FDocumentation%2Fcontributor%2Flilypond-programming-languages&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-13"><span class="mw-cite-backlink"><b><a href="#cite_ref-13">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.ohloh.net/p/lilypond/analyses/latest">"GNU LilyPond Music Typesetter – Code Analysis"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2015-03-21</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALilyPond&amp;rft.btitle=GNU+LilyPond+Music+Typesetter+%93+Code+Analysis&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.ohloh.net%2Fp%2Flilypond%2Fanalyses%2Flatest&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-14"><span class="mw-cite-backlink"><b><a href="#cite_ref-14">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://lilypond.org/doc/v2.18/Documentation/contributor/overview-of-lilypond-architecture">"Overview of LilyPond architecture"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2015-03-21</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALilyPond&amp;rft.btitle=Overview+of+LilyPond+architecture&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Flilypond.org%2Fdoc%2Fv2.18%2FDocumentation%2Fcontributor%2Foverview-of-lilypond-architecture&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-15"><span class="mw-cite-backlink"><b><a href="#cite_ref-15">^</a></b></span> <span class="reference-text"><cite id="CITEREFGriewank2010" class="citation"><a href="/w/index.php?title=Andreas_Griewank&amp;action=edit&amp;redlink=1" class="new" title="Andreas Griewank (page does not exist)">Griewank, Andreas</a> (1 January 2010), <a rel="nofollow" class="external text" href="http://opus4.kobv.de/opus4-matheon/frontdoor/index/index/docId/675"><i>Tuning guitars and reading music in major thirds</i></a>, Matheon preprints, <b>695</b>, Rosestr.&#160;3a, 12524 Berlin, Germany: DFG research center "MATHEON, Mathematics for key technologies" Berlin</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALilyPond&amp;rft.aufirst=Andreas&amp;rft.aulast=Griewank&amp;rft.btitle=Tuning+guitars+and+reading+music+in+major+thirds&amp;rft.date=2010-01-01&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fopus4.kobv.de%2Fopus4-matheon%2Ffrontdoor%2Findex%2Findex%2FdocId%2F675&amp;rft.place=Rosestr.+3a%2C+12524+Berlin%2C+Germany&amp;rft.pub=DFG+research+center+%22MATHEON%2C+Mathematics+for+key+technologies%22+Berlin&amp;rft.series=Matheon+preprints&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-16"><span class="mw-cite-backlink"><b><a href="#cite_ref-16">^</a></b></span> <span class="reference-text"><cite class="citation web">Nienhuys, Han-Wen; Nieuwenhuizen, Jan. <a rel="nofollow" class="external text" href="http://lilypond.org/web/about/automated-engraving/">"Obsessed with putting ink on paper"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2010-02-15</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALilyPond&amp;rft.aufirst=Han-Wen&amp;rft.aulast=Nienhuys&amp;rft.au=Nieuwenhuizen%2C+Jan&amp;rft.btitle=Obsessed+with+putting+ink+on+paper&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Flilypond.org%2Fweb%2Fabout%2Fautomated-engraving%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-17"><span class="mw-cite-backlink"><b><a href="#cite_ref-17">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.lilypond.org/doc/v2.18/Documentation/notation/proportional-notation">"Proportional notation"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2015-03-21</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALilyPond&amp;rft.btitle=Proportional+notation&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.lilypond.org%2Fdoc%2Fv2.18%2FDocumentation%2Fnotation%2Fproportional-notation&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-18"><span class="mw-cite-backlink"><b><a href="#cite_ref-18">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://lilypond.org/doc/v2.18/Documentation/learning/working-on-input-files">"LilyPond Learning Manual: 1.2.2 Working on input files"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2015-03-21</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALilyPond&amp;rft.btitle=LilyPond+Learning+Manual%3A+1.2.2+Working+on+input+files&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Flilypond.org%2Fdoc%2Fv2.18%2FDocumentation%2Flearning%2Fworking-on-input-files&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-19"><span class="mw-cite-backlink"><b><a href="#cite_ref-19">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://lilypond.org/doc/v2.18/Documentation/notation/writing-pitches">"LilyPond Notation Reference: 1.1.1 Writing pitches"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2015-03-21</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALilyPond&amp;rft.btitle=LilyPond+Notation+Reference%3A+1.1.1+Writing+pitches&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Flilypond.org%2Fdoc%2Fv2.18%2FDocumentation%2Fnotation%2Fwriting-pitches&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-20"><span class="mw-cite-backlink"><b><a href="#cite_ref-20">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://lilypond.org/doc/v2.18/Documentation/notation/expressive-marks-attached-to-notes#dynamics">"LilyPond Notation Reference: 1.3.1 Expressive marks attached to notes"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2015-03-21</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALilyPond&amp;rft.btitle=LilyPond+Notation+Reference%3A+1.3.1+Expressive+marks+attached+to+notes&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Flilypond.org%2Fdoc%2Fv2.18%2FDocumentation%2Fnotation%2Fexpressive-marks-attached-to-notes%23dynamics&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-21"><span class="mw-cite-backlink"><b><a href="#cite_ref-21">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://lilypond.org/doc/v2.18/Documentation/notation/expressive-marks-as-curves#slurs">"LilyPond Notation Reference: 1.3.2 Expressive marks as curves"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2015-03-21</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALilyPond&amp;rft.btitle=LilyPond+Notation+Reference%3A+1.3.2+Expressive+marks+as+curves&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Flilypond.org%2Fdoc%2Fv2.18%2FDocumentation%2Fnotation%2Fexpressive-marks-as-curves%23slurs&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-22"><span class="mw-cite-backlink"><b><a href="#cite_ref-22">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://lilypond.org/doc/v2.18/Documentation/notation/beams#manual-beams">"LilyPond Notation Reference: 1.2.4 Beams"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2015-03-21</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALilyPond&amp;rft.btitle=LilyPond+Notation+Reference%3A+1.2.4+Beams&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Flilypond.org%2Fdoc%2Fv2.18%2FDocumentation%2Fnotation%2Fbeams%23manual-beams&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-23"><span class="mw-cite-backlink"><b><a href="#cite_ref-23">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.lilypond.org/doc/v2.18/Documentation/notation/special-characters#text-encoding">"LilyPond Notation Reference: 3.3.3 Text encoding"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2015-03-21</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALilyPond&amp;rft.btitle=LilyPond+Notation+Reference%3A+3.3.3+Text+encoding&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.lilypond.org%2Fdoc%2Fv2.18%2FDocumentation%2Fnotation%2Fspecial-characters%23text-encoding&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-24"><span class="mw-cite-backlink"><b><a href="#cite_ref-24">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/mjago/ob-lilypond#readme">github.com</a></span></li>
+<li id="cite_note-25"><span class="mw-cite-backlink"><b><a href="#cite_ref-25">^</a></b></span> <span class="reference-text"><cite class="citation web">Hawryluk, Andrew. <a rel="nofollow" class="external text" href="http://www.musicbyandrew.ca/finale-lilypond-1.html">"Finale and LilyPond"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2010-02-15</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALilyPond&amp;rft.aufirst=Andrew&amp;rft.aulast=Hawryluk&amp;rft.btitle=Finale+and+LilyPond&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.musicbyandrew.ca%2Ffinale-lilypond-1.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=LilyPond&amp;action=edit&amp;section=15" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><span class="official-website"><span class="url"><a rel="nofollow" class="external text" href="http://lilypond.org">Official website</a></span></span></li>
+<li><a rel="nofollow" class="external text" href="http://weblily.net/">WebLily.net</a> – Web-based LilyPond interface</li>
+<li><a rel="nofollow" class="external text" href="http://lilypond.org/web/images/xivcim.pdf">"LilyPond, a system for automated music engraving"</a> (by <a href="/wiki/Han-Wen_Nienhuys" class="mw-redirect" title="Han-Wen Nienhuys">Han-Wen Nienhuys</a>, <a href="/wiki/Jan_Nieuwenhuizen" class="mw-redirect" title="Jan Nieuwenhuizen">Jan Nieuwenhuizen</a>; <a href="/wiki/PDF" class="mw-redirect" title="PDF">PDF</a>)</li>
+</ul>
+<div role="navigation" class="navbox" aria-labelledby="GNU_Project" style="padding:3px">
+<table class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="3">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:GNU" title="Template:GNU"><abbr title="View this template" style=";;background:none transparent;border:none;">v</abbr></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:GNU" title="Template talk:GNU"><abbr title="Discuss this template" style=";;background:none transparent;border:none;">t</abbr></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:GNU&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;">e</abbr></a></li>
+</ul>
+</div>
+<div id="GNU_Project" style="font-size:114%"><a href="/wiki/GNU_Project" title="GNU Project">GNU Project</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">History</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/GNU_Manifesto" title="GNU Manifesto">GNU Manifesto</a></li>
+<li><a href="/wiki/Free_Software_Foundation" title="Free Software Foundation">Free Software Foundation</a>
+<ul>
+<li><a href="/wiki/Free_Software_Foundation_Europe" title="Free Software Foundation Europe">Europe</a></li>
+<li><a href="/wiki/Free_Software_Foundation_of_India" title="Free Software Foundation of India">India</a></li>
+<li><a href="/wiki/Free_Software_Foundation_Latin_America" title="Free Software Foundation Latin America">Latin America</a></li>
+</ul>
+</li>
+<li><a href="/wiki/History_of_free_and_open-source_software" title="History of free and open-source software">History of free software</a></li>
+</ul>
+</div>
+</td>
+<td class="navbox-image" rowspan="9" style="width:0%;padding:0px 0px 0px 2px">
+<div><a href="/wiki/File:Heckert_GNU_white.svg" class="image" title="GNU's not UNIX"><img alt="GNU's not UNIX" src="//upload.wikimedia.org/wikipedia/en/thumb/2/22/Heckert_GNU_white.svg/64px-Heckert_GNU_white.svg.png" width="64" height="63" srcset="//upload.wikimedia.org/wikipedia/en/thumb/2/22/Heckert_GNU_white.svg/96px-Heckert_GNU_white.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/2/22/Heckert_GNU_white.svg/128px-Heckert_GNU_white.svg.png 2x" data-file-width="535" data-file-height="523" /></a></div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Licenses</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/GNU_General_Public_License" title="GNU General Public License">GNU General Public License</a></li>
+<li><a href="/wiki/GNU_Lesser_General_Public_License" title="GNU Lesser General Public License">GNU Lesser General Public License</a></li>
+<li><a href="/wiki/Affero_General_Public_License" title="Affero General Public License">Affero General Public License</a></li>
+<li><a href="/wiki/GNU_Free_Documentation_License" title="GNU Free Documentation License">GNU Free Documentation License</a></li>
+<li><a href="/wiki/GPL_linking_exception" title="GPL linking exception">GPL linking exception</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Software</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/GNU" title="GNU">GNU</a> (<a href="/wiki/GNU_variants" title="GNU variants">variants</a>)</li>
+<li><a href="/wiki/GNU_Hurd" title="GNU Hurd">Hurd</a></li>
+<li><a href="/wiki/Linux-libre" title="Linux-libre">Linux-libre</a></li>
+<li><a href="/wiki/GNU_C_Library" title="GNU C Library">glibc</a></li>
+<li><a href="/wiki/Bash_(Unix_shell)" title="Bash (Unix shell)">Bash</a></li>
+<li><a href="/wiki/GNU_Core_Utilities" title="GNU Core Utilities">coreutils</a></li>
+<li><a href="/wiki/GNU_Find_Utilities" title="GNU Find Utilities">findutils</a></li>
+<li><a href="/wiki/GNU_Build_System" title="GNU Build System">Build System</a></li>
+<li><a href="/wiki/GNU_Compiler_Collection" title="GNU Compiler Collection">GCC</a></li>
+<li><a href="/wiki/GNU_Binutils" title="GNU Binutils">binutils</a></li>
+<li><a href="/wiki/GNU_Debugger" title="GNU Debugger">GDB</a></li>
+<li><a href="/wiki/GNU_GRUB" title="GNU GRUB">GRUB</a></li>
+<li><a href="/wiki/GNOME" title="GNOME">GNOME</a></li>
+<li><a href="/wiki/GNUstep" title="GNUstep">GNUstep</a></li>
+<li><a href="/wiki/GIMP" title="GIMP">GIMP</a></li>
+<li><a href="/wiki/GNU_Emacs" title="GNU Emacs">GNU Emacs</a></li>
+<li><a href="/wiki/GNU_TeXmacs" title="GNU TeXmacs">GNU TeXmacs</a></li>
+<li><a href="/wiki/GNU_Octave" title="GNU Octave">GNU Octave</a></li>
+<li><a href="/wiki/R_(programming_language)" title="R (programming language)">GNU R</a></li>
+<li><a href="/wiki/GNU_Scientific_Library" title="GNU Scientific Library">GSL</a></li>
+<li><a href="/wiki/GNU_Multiple_Precision_Arithmetic_Library" title="GNU Multiple Precision Arithmetic Library">GMP</a></li>
+<li><a href="/wiki/Electric_(software)" title="Electric (software)">GNU Electric</a></li>
+<li><a href="/wiki/GNU_Archimedes" title="GNU Archimedes">GNU Archimedes</a></li>
+<li><a href="/wiki/GNUnet" title="GNUnet">GNUnet</a></li>
+<li><a href="/wiki/GNU_Privacy_Guard" title="GNU Privacy Guard">GNU Privacy Guard</a></li>
+<li><a href="/wiki/Gnuzilla" title="Gnuzilla">Gnuzilla</a> (<a href="/wiki/GNU_IceCat" title="GNU IceCat">IceCat</a>)</li>
+<li><a href="/wiki/GNU_Health" title="GNU Health">GNU Health</a></li>
+<li><a href="/wiki/GNUmed" title="GNUmed">GNUmed</a></li>
+<li><strong class="selflink">GNU LilyPond</strong></li>
+<li><a href="/wiki/GNU_Go" title="GNU Go">GNU Go</a></li>
+<li><a href="/wiki/GNU_Chess" title="GNU Chess">GNU Chess</a></li>
+<li><a href="/wiki/Gnash_(software)" title="Gnash (software)">Gnash</a></li>
+<li><a href="/wiki/GNU_Guix" title="GNU Guix">Guix</a></li>
+<li><a href="/wiki/Guix_System_Distribution" title="Guix System Distribution">Guix System Distribution</a></li>
+<li><a href="/wiki/List_of_GNU_packages" title="List of GNU packages"><i>more...</i></a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Public<br />
+speakers</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Alexandre_Oliva" title="Alexandre Oliva">Alexandre Oliva</a></li>
+<li><a href="/wiki/Benjamin_Mako_Hill" title="Benjamin Mako Hill">Benjamin Mako Hill</a></li>
+<li><a href="/wiki/Bradley_M._Kuhn" title="Bradley M. Kuhn">Bradley M. Kuhn</a></li>
+<li><a href="/wiki/Eben_Moglen" title="Eben Moglen">Eben Moglen</a></li>
+<li><a href="/wiki/Federico_Heinz" title="Federico Heinz">Federico Heinz</a></li>
+<li><a href="/wiki/Georg_C._F._Greve" title="Georg C. F. Greve">Georg C. F. Greve</a></li>
+<li><a href="/wiki/William_John_Sullivan" title="William John Sullivan">John Sullivan</a></li>
+<li><a href="/wiki/Lo%C3%AFc_Dachary" title="Loïc Dachary">Loïc Dachary</a></li>
+<li><a href="/wiki/Matt_Lee_(artist)" title="Matt Lee (artist)">Matt Lee</a></li>
+<li><a href="/wiki/Nagarjuna_G." title="Nagarjuna G.">Nagarjuna G.</a></li>
+<li><a href="/wiki/Ricardo_Galli" title="Ricardo Galli">Ricardo Galli</a></li>
+<li><a href="/wiki/Richard_Stallman" title="Richard Stallman">Richard Stallman</a></li>
+<li><a href="/wiki/Robert_J._Chassell" title="Robert J. Chassell">Robert J. Chassell</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Other topics</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/GNU/Linux_naming_controversy" title="GNU/Linux naming controversy">GNU/Linux naming controversy</a></li>
+<li><i><a href="/wiki/Revolution_OS" title="Revolution OS">Revolution OS</a></i></li>
+<li><a href="/wiki/Free_Software_Foundation_anti-Windows_campaigns" title="Free Software Foundation anti-Windows campaigns">Free Software Foundation anti-Windows campaigns</a></li>
+<li><a href="/wiki/Defective_by_Design" title="Defective by Design">Defective by Design</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div role="navigation" class="navbox" aria-labelledby="Scorewriters" style="padding:3px">
+<table class="nowraplinks hlist collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:Scorewriters" title="Template:Scorewriters"><abbr title="View this template" style=";;background:none transparent;border:none;">v</abbr></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:Scorewriters" title="Template talk:Scorewriters"><abbr title="Discuss this template" style=";;background:none transparent;border:none;">t</abbr></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:Scorewriters&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;">e</abbr></a></li>
+</ul>
+</div>
+<div id="Scorewriters" style="font-size:114%"><a href="/wiki/Scorewriter" title="Scorewriter">Scorewriters</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Free_software" title="Free software">Free</a></th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Canorus" class="mw-redirect" title="Canorus">Canorus</a></li>
+<li><a href="/wiki/Gregorio_(software)" title="Gregorio (software)">Gregorio</a></li>
+<li><a href="/wiki/Impro-Visor" title="Impro-Visor">Impro-Visor</a></li>
+<li><strong class="selflink">LilyPond</strong>
+<ul>
+<li><a href="/wiki/Denemo" title="Denemo">Denemo</a></li>
+<li><a href="/wiki/Frescobaldi_(software)" title="Frescobaldi (software)">Frescobaldi</a></li>
+<li><a href="/wiki/JEdit#Plug-ins" title="JEdit">jEdit plugin</a></li>
+</ul>
+</li>
+<li><a href="/wiki/MuseScore" title="MuseScore">MuseScore</a></li>
+<li><a href="/wiki/MusiXTeX" title="MusiXTeX">MusiXTeX</a></li>
+<li><a href="/wiki/NoteEdit" title="NoteEdit">NoteEdit</a></li>
+<li><a href="/wiki/NtEd" class="mw-redirect" title="NtEd">NtEd</a></li>
+<li><a href="/wiki/Rosegarden" title="Rosegarden">Rosegarden</a></li>
+<li><a href="/wiki/TuxGuitar" title="TuxGuitar">TuxGuitar</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Proprietary_software" title="Proprietary software">Proprietary</a></th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Capella_(notation_program)" title="Capella (notation program)">Capella</a></li>
+<li><a href="/wiki/Dorico" title="Dorico">Dorico</a></li>
+<li><a href="/wiki/Encore_(software)" title="Encore (software)">Encore</a></li>
+<li><a href="/wiki/Finale_(software)" title="Finale (software)">Finale</a></li>
+<li><a href="/wiki/Forte_(notation_program)" title="Forte (notation program)">Forte</a></li>
+<li><a href="/wiki/Guitar_Pro" title="Guitar Pro">Guitar Pro</a></li>
+<li><a href="/wiki/Igor_Engraver" title="Igor Engraver">Igor Engraver</a></li>
+<li><a href="/wiki/MagicScore" title="MagicScore">MagicScore</a></li>
+<li><a href="/wiki/Mozart_the_music_processor" title="Mozart the music processor">Mozart</a></li>
+<li><a href="/wiki/Mus2" title="Mus2">Mus2</a></li>
+<li><a href="/wiki/MusEdit" title="MusEdit">MusEdit</a></li>
+<li><a href="/wiki/Musink" title="Musink">Musink</a></li>
+<li><a href="/wiki/MusiCAD" title="MusiCAD">MusiCAD</a></li>
+<li><a href="/wiki/MusicEase" title="MusicEase">MusicEase</a></li>
+<li><a href="/wiki/Music_Write" title="Music Write">Music Write</a></li>
+<li><a href="/wiki/Notion_(software)" title="Notion (software)">NOTION</a></li>
+<li><a href="/wiki/NoteWorthy_Composer" title="NoteWorthy Composer">NoteWorthy Composer</a></li>
+<li><a href="/wiki/Overture_(software)" title="Overture (software)">Overture</a></li>
+<li><a href="/wiki/Power_Tab_Editor" title="Power Tab Editor">Power Tab Editor</a></li>
+<li><a href="/wiki/SCORE_(software)" title="SCORE (software)">SCORE</a></li>
+<li><a href="/wiki/ScoreCloud" title="ScoreCloud">ScoreCloud</a></li>
+<li><a href="/wiki/Sibelius_(software)" title="Sibelius (software)">Sibelius</a></li>
+<li><a href="/wiki/SmartScore" title="SmartScore">SmartScore</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" colspan="2">
+<div>
+<ul>
+<li><b><img alt="List-Class article" src="//upload.wikimedia.org/wikipedia/en/thumb/d/db/Symbol_list_class.svg/16px-Symbol_list_class.svg.png" title="List-Class article" width="16" height="16" srcset="//upload.wikimedia.org/wikipedia/en/thumb/d/db/Symbol_list_class.svg/23px-Symbol_list_class.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/d/db/Symbol_list_class.svg/31px-Symbol_list_class.svg.png 2x" data-file-width="180" data-file-height="185" /> <a href="/wiki/List_of_scorewriters" title="List of scorewriters">List</a></b></li>
+<li><b><img alt="Non-article page" src="//upload.wikimedia.org/wikipedia/en/thumb/8/89/Symbol_neutral_vote.svg/16px-Symbol_neutral_vote.svg.png" title="Non-article page" width="16" height="16" srcset="//upload.wikimedia.org/wikipedia/en/thumb/8/89/Symbol_neutral_vote.svg/23px-Symbol_neutral_vote.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/8/89/Symbol_neutral_vote.svg/31px-Symbol_neutral_vote.svg.png 2x" data-file-width="180" data-file-height="185" /> <a href="/wiki/Comparison_of_scorewriters" title="Comparison of scorewriters">Comparison</a></b></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1240
+Cached time: 20170129082151
+Cache expiry: 86400
+Dynamic content: true
+CPU time usage: 0.280 seconds
+Real time usage: 0.418 seconds
+Preprocessor visited node count: 2194/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 85747/2097152 bytes
+Template argument size: 3187/2097152 bytes
+Highest expansion depth: 29/40
+Expensive parser function count: 3/500
+Lua time usage: 0.124/10.000 seconds
+Lua memory usage: 4.95 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  348.283      1 -total
+ 32.68%  113.833      1 Template:Reflist
+ 31.27%  108.918      2 Template:Infobox
+ 23.95%   83.428      1 Template:Infobox_software
+ 21.55%   75.057     19 Template:Cite_web
+ 10.61%   36.961      1 Template:Refimprove
+  8.82%   30.715      1 Template:Infobox_software/simple
+  7.19%   25.050      1 Template:Ambox
+  5.65%   19.672      3 Template:Start_date_and_age
+  4.17%   14.526      2 Template:Navbox
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:169144-0!*!0!!en!4!* and timestamp 20170129082151 and revision id 759310334
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=LilyPond&amp;oldid=759310334">https://en.wikipedia.org/w/index.php?title=LilyPond&amp;oldid=759310334</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Cross-platform_software" title="Category:Cross-platform software">Cross-platform software</a></li><li><a href="/wiki/Category:Free_music_software" title="Category:Free music software">Free music software</a></li><li><a href="/wiki/Category:Free_software_programmed_in_C%2B%2B" title="Category:Free software programmed in C++">Free software programmed in C++</a></li><li><a href="/wiki/Category:GNU_Project_software" title="Category:GNU Project software">GNU Project software</a></li><li><a href="/wiki/Category:Music_notation_file_formats" title="Category:Music notation file formats">Music notation file formats</a></li><li><a href="/wiki/Category:Scorewriters" title="Category:Scorewriters">Scorewriters</a></li><li><a href="/wiki/Category:Scorewriters_for_Linux" title="Category:Scorewriters for Linux">Scorewriters for Linux</a></li><li><a href="/wiki/Category:1996_software" title="Category:1996 software">1996 software</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Articles_needing_additional_references_from_July_2016" title="Category:Articles needing additional references from July 2016">Articles needing additional references from July 2016</a></li><li><a href="/wiki/Category:All_articles_needing_additional_references" title="Category:All articles needing additional references">All articles needing additional references</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=LilyPond" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=LilyPond" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/LilyPond"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:LilyPond"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/LilyPond" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=LilyPond&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=LilyPond&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/LilyPond" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/LilyPond" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=LilyPond&amp;oldid=759310334" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=LilyPond&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q195946" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=LilyPond&amp;id=759310334" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=LilyPond">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=LilyPond&amp;returnto=LilyPond&amp;oldid=759310334&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=LilyPond&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-wikibase-otherprojects' aria-labelledby='p-wikibase-otherprojects-label'>
+			<h3 id='p-wikibase-otherprojects-label'>In other projects</h3>
+
+			<div class="body">
+									<ul>
+						<li class="wb-otherproject-link wb-otherproject-commons"><a href="https://commons.wikimedia.org/wiki/Category:LilyPond" hreflang="en">Wikimedia Commons</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-ca"><a href="https://ca.wikipedia.org/wiki/LilyPond" title="LilyPond – Catalan" lang="ca" hreflang="ca" class="interlanguage-link-target">Català</a></li><li class="interlanguage-link interwiki-cs"><a href="https://cs.wikipedia.org/wiki/LilyPond" title="LilyPond – Czech" lang="cs" hreflang="cs" class="interlanguage-link-target">Čeština</a></li><li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/LilyPond" title="LilyPond – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-es"><a href="https://es.wikipedia.org/wiki/LilyPond" title="LilyPond – Spanish" lang="es" hreflang="es" class="interlanguage-link-target">Español</a></li><li class="interlanguage-link interwiki-eo"><a href="https://eo.wikipedia.org/wiki/LilyPond" title="LilyPond – Esperanto" lang="eo" hreflang="eo" class="interlanguage-link-target">Esperanto</a></li><li class="interlanguage-link interwiki-fa"><a href="https://fa.wikipedia.org/wiki/%D9%84%DB%8C%D9%84%DB%8C%E2%80%8C%D9%BE%D8%A7%D9%86%D8%AF" title="لیلی‌پاند – Persian" lang="fa" hreflang="fa" class="interlanguage-link-target">فارسی</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/LilyPond" title="LilyPond – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-it"><a href="https://it.wikipedia.org/wiki/GNU_LilyPond" title="GNU LilyPond – Italian" lang="it" hreflang="it" class="interlanguage-link-target">Italiano</a></li><li class="interlanguage-link interwiki-la"><a href="https://la.wikipedia.org/wiki/LilyPond" title="LilyPond – Latin" lang="la" hreflang="la" class="interlanguage-link-target">Latina</a></li><li class="interlanguage-link interwiki-lv"><a href="https://lv.wikipedia.org/wiki/GNU_LilyPond" title="GNU LilyPond – Latvian" lang="lv" hreflang="lv" class="interlanguage-link-target">Latviešu</a></li><li class="interlanguage-link interwiki-hu"><a href="https://hu.wikipedia.org/wiki/GNU_LilyPond" title="GNU LilyPond – Hungarian" lang="hu" hreflang="hu" class="interlanguage-link-target">Magyar</a></li><li class="interlanguage-link interwiki-ms"><a href="https://ms.wikipedia.org/wiki/GNU_LilyPond" title="GNU LilyPond – Malay" lang="ms" hreflang="ms" class="interlanguage-link-target">Bahasa Melayu</a></li><li class="interlanguage-link interwiki-nl"><a href="https://nl.wikipedia.org/wiki/LilyPond" title="LilyPond – Dutch" lang="nl" hreflang="nl" class="interlanguage-link-target">Nederlands</a></li><li class="interlanguage-link interwiki-ja"><a href="https://ja.wikipedia.org/wiki/GNU_LilyPond" title="GNU LilyPond – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target">日本語</a></li><li class="interlanguage-link interwiki-no"><a href="https://no.wikipedia.org/wiki/LilyPond" title="LilyPond – Norwegian" lang="no" hreflang="no" class="interlanguage-link-target">Norsk bokmål</a></li><li class="interlanguage-link interwiki-pl"><a href="https://pl.wikipedia.org/wiki/LilyPond" title="LilyPond – Polish" lang="pl" hreflang="pl" class="interlanguage-link-target">Polski</a></li><li class="interlanguage-link interwiki-pt"><a href="https://pt.wikipedia.org/wiki/LilyPond" title="LilyPond – Portuguese" lang="pt" hreflang="pt" class="interlanguage-link-target">Português</a></li><li class="interlanguage-link interwiki-ru"><a href="https://ru.wikipedia.org/wiki/LilyPond" title="LilyPond – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li><li class="interlanguage-link interwiki-tr"><a href="https://tr.wikipedia.org/wiki/LilyPond" title="LilyPond – Turkish" lang="tr" hreflang="tr" class="interlanguage-link-target">Türkçe</a></li><li class="interlanguage-link interwiki-uk"><a href="https://uk.wikipedia.org/wiki/GNU_LilyPond" title="GNU LilyPond – Ukrainian" lang="uk" hreflang="uk" class="interlanguage-link-target">Українська</a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q195946#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 10 January 2017, at 12:27.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=LilyPond&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.280","walltime":"0.418","ppvisitednodes":{"value":2194,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":85747,"limit":2097152},"templateargumentsize":{"value":3187,"limit":2097152},"expansiondepth":{"value":29,"limit":40},"expensivefunctioncount":{"value":3,"limit":500},"entityaccesscount":{"value":1,"limit":400},"timingprofile":["100.00%  348.283      1 -total"," 32.68%  113.833      1 Template:Reflist"," 31.27%  108.918      2 Template:Infobox"," 23.95%   83.428      1 Template:Infobox_software"," 21.55%   75.057     19 Template:Cite_web"," 10.61%   36.961      1 Template:Refimprove","  8.82%   30.715      1 Template:Infobox_software/simple","  7.19%   25.050      1 Template:Ambox","  5.65%   19.672      3 Template:Start_date_and_age","  4.17%   14.526      2 Template:Navbox"]},"scribunto":{"limitreport-timeusage":{"value":"0.124","limit":"10.000"},"limitreport-memusage":{"value":5191458,"limit":52428800}},"cachereport":{"origin":"mw1240","timestamp":"20170129082151","ttl":86400,"transientcontent":true}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":61,"wgHostname":"mw1170"});});</script>
+	</body>
+</html>

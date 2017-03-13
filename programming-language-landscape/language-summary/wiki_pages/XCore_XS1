@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>XCore Architecture - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"XCore_Architecture","wgTitle":"XCore Architecture","wgCurRevisionId":759785555,"wgRevisionId":759785555,"wgArticleId":23041908,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Instruction set architectures"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"XCore_Architecture","wgRelevantArticleId":23041908,"wgRequestId":"WIyfhApAMFYAABgP6WgAAAAC","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgRedirectedFrom":"XCore_XS1","wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":true},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgInternalRedirectTargetUrl":"/wiki/XCore_Architecture","wgWikibaseItemId":"Q8041728","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.cite.styles":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.action.view.redirect","ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.legacy.wikibits","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.centralauth.centralautologin","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.29.0-wmf.9"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/XCore_Architecture"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=XCore_Architecture&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=XCore_Architecture&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/XCore_Architecture"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-XCore_Architecture rootpage-XCore_Architecture skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">XCore Architecture</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"><span class="mw-redirectedfrom">  (Redirected from <a href="/w/index.php?title=XCore_XS1&amp;redirect=no" class="mw-redirect" title="XCore XS1">XCore XS1</a>)</span></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><script>function mfTempOpenSection(id){var block=document.getElementById("mf-section-"+id);block.className+=" open-block";block.previousSibling.className+=" open-block";}</script><table class="infobox" style="width:22em">
+<caption>XCore XS1, XCore XS2</caption>
+<tr>
+<th scope="row">Designer</th>
+<td><a href="/wiki/XMOS" title="XMOS">XMOS</a></td>
+</tr>
+<tr>
+<th scope="row">Bits</th>
+<td>32-bit</td>
+</tr>
+<tr>
+<th scope="row">Introduced</th>
+<td>2007</td>
+</tr>
+<tr>
+<th scope="row">Version</th>
+<td>XS1, XS2</td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Computer_architecture" title="Computer architecture">Design</a></th>
+<td><a href="/wiki/RISC" class="mw-redirect" title="RISC">RISC</a></td>
+</tr>
+<tr>
+<th scope="row">Type</th>
+<td><a href="/wiki/Load-store_architecture" class="mw-redirect" title="Load-store architecture">Load-store</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Instruction_set" title="Instruction set">Encoding</a></th>
+<td>Variable</td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Branch_(computer_science)" title="Branch (computer science)">Branching</a></th>
+<td>Condition register</td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Endianness" title="Endianness">Endianness</a></th>
+<td>Little</td>
+</tr>
+<tr>
+<th colspan="2" style="text-align:center"><a href="/wiki/Processor_register" title="Processor register">Registers</a></th>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/General_purpose_register" class="mw-redirect" title="General purpose register">General purpose</a></th>
+<td>12</td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Floating_point" title="Floating point">Floating point</a></th>
+<td>0</td>
+</tr>
+</table>
+<p>The <b>XCore Architecture</b> is a 32-bit RISC microprocessor architecture designed by <a href="/wiki/XMOS" title="XMOS">XMOS</a>. The architecture is designed to be used in <a href="/wiki/Multi-core_processor" title="Multi-core processor">multi-core processors</a> for <a href="/wiki/Embedded_system" title="Embedded system">embedded systems</a>. Each XCore executes up to eight concurrent threads, each thread having its own register set, and the architecture directly supports inter-thread and inter-core communication and various forms of thread scheduling.</p>
+<p>Two versions of the XCore architecture exist: the XS1 architecture <sup id="cite_ref-1" class="reference"><a href="#cite_note-1">[1]</a></sup> and the XS2 architecture.<sup id="cite_ref-xs2_2-0" class="reference"><a href="#cite_note-xs2-2">[2]</a></sup> Processors with the XS1 architecture include the <a href="/wiki/XCore_XS1-G4" title="XCore XS1-G4">XCore XS1-G4</a> and <a href="/wiki/XCore_XS1-L1" title="XCore XS1-L1">XCore XS1-L1</a>. Processors with the XS2 architecture include <a href="/wiki/XCORE-200" title="XCORE-200">xCORE-200</a>.</p>
+<p>The architecture encodes instructions compactly, using 16 bits for frequently used instructions (with up to three operands) and 32 bits for less frequently used instructions (with up to 6 operands). Almost all instructions execute in a single cycle, and the architecture is event-driven in order to decouple the timings that a program needs to make from the execution speed of the program. A program will normally perform its computations and then wait for an <a href="/wiki/Event_(computing)" title="Event (computing)">event</a> (e.g. a <a href="/wiki/Message_passing" title="Message passing">message</a>, time, or external I/O event) before continuing.</p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Versions_and_Devices"><span class="tocnumber">1</span> <span class="toctext">Versions and Devices</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#XS1"><span class="tocnumber">1.1</span> <span class="toctext">XS1</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#XS2"><span class="tocnumber">1.2</span> <span class="toctext">XS2</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="#Architecture"><span class="tocnumber">2</span> <span class="toctext">Architecture</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="#Instruction_encoding"><span class="tocnumber">2.1</span> <span class="toctext">Instruction encoding</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="#Programming_model"><span class="tocnumber">3</span> <span class="toctext">Programming model</span></a>
+<ul>
+<li class="toclevel-2 tocsection-7"><a href="#Sequential_programming_model"><span class="tocnumber">3.1</span> <span class="toctext">Sequential programming model</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Parallel_programming_model"><span class="tocnumber">3.2</span> <span class="toctext">Parallel programming model</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#I.2FO_and_timing_instructions"><span class="tocnumber">3.3</span> <span class="toctext">I/O and timing instructions</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-10"><a href="#References"><span class="tocnumber">4</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#External_links"><span class="tocnumber">5</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Versions_and_Devices">Versions and Devices</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=XCore_Architecture&amp;action=edit&amp;section=1" title="Edit section: Versions and Devices">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>There are two versions of the xCORE architecture: XS1 and XS2; XS2 extending the XS1 architecture.</p>
+<h3><span class="mw-headline" id="XS1">XS1</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=XCore_Architecture&amp;action=edit&amp;section=2" title="Edit section: XS1">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The XS1 architecture was the first xCORE architecture, defined in 2007. It is implemented by the <a href="/wiki/XCore_XS1-G4" title="XCore XS1-G4">XCore XS1-G4</a>, <a href="/wiki/XCore_XS1-L1" title="XCore XS1-L1">XCore XS1-L1</a>, <a href="/wiki/XCore_XS1-SU" title="XCore XS1-SU">XCore XS1-SU</a>, and <a href="/wiki/XCore_XS1-AnA" title="XCore XS1-AnA">XCore XS1-AnA</a>. The former is a four-core processing node, the latter three are single and dual core processing nodes.</p>
+<h3><span class="mw-headline" id="XS2">XS2</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=XCore_Architecture&amp;action=edit&amp;section=3" title="Edit section: XS2">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The XS2 architecture was defined in 2015. It is implemented by the <a href="/wiki/XCORE-VOICE" title="XCORE-VOICE">xCORE-VOICE</a> processors and <a href="/wiki/XCORE-200" title="XCORE-200">xCORE-200</a> series processors. The latter are marketed as the XL2 series (general purpose), XU2 series (USB), XE2 series (RGMII), and versions with embedded flash.</p>
+<p>XS2 extends the XS1 architecture with a limited form of <a href="/w/index.php?title=Dual_Issue&amp;action=edit&amp;redlink=1" class="new" title="Dual Issue (page does not exist)">Dual Issue</a> execution.<sup id="cite_ref-xs2_2-1" class="reference"><a href="#cite_note-xs2-2">[2]</a></sup> The processor core comprises two lanes. The <i>Resource lane</i> can execute IO operations and general arithmetic. The <i>Memory lane</i> can execute memory operations, branches, and general arithmetic. Short resource or arithmetic instructions can be executed in the resource lane; short memory, branch, or arithmetic operations can be executed in the memory lane. Long instructions span both lanes. In dual issue mode all pairs of instructions are aligned on a 32-bit boundary.</p>
+<p>A few instructions have been added to aid in high bandwidth processing, such as dual-word load/store, dual-word zip and unzip (bit and byte strings), dual word arithmetic saturation and shift.</p>
+<h2><span class="mw-headline" id="Architecture">Architecture</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=XCore_Architecture&amp;action=edit&amp;section=4" title="Edit section: Architecture">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The architecture comprises a central execution unit that operates on a set of 25 registers, and surrounded by a number of <i>resources</i> that perform operations that interact with the environment. Each thread has its own set of hardware registers, enabling threads to execute concurrently. The instruction set comprises both a (more or less standard) sequential programming model, and instructions that implement multi-threading, multi-core and I/O operations.</p>
+<p>Most instructions can access only the 12 general-purpose registers r0–r11. In general, they are completely interchangeable, except that some instructions use r11 implicitly. There are also 4 base registers usable by some instructions:</p>
+<ul>
+<li>r12 = cp = Constant pool pointer</li>
+<li>r13 = dp = Data pointer</li>
+<li>r14 = sp = Stack pointer</li>
+<li>r15 = lr = Link register</li>
+</ul>
+<p>Registers 16 through 24 are only accessible to specialized instructions. Except for the first two (r16 = pc = program counter, r17 = sr = status register), they are dedicated to exception and interrupt handling.</p>
+<p>The status register contains various mode bits, but the processor does <i>not</i> have the standard ALU result flags like <a href="/wiki/Carry_flag" title="Carry flag">carry</a>, <a href="/wiki/Zero_flag" title="Zero flag">zero</a>, <a href="/wiki/Negative_flag" title="Negative flag">negative</a> or <a href="/wiki/Overflow_flag" title="Overflow flag">overflow</a>. Add and subtract with carry instructions exist, but specify five operand registers: two inputs and input carry, and one output and output carry.</p>
+<h3><span class="mw-headline" id="Instruction_encoding">Instruction encoding</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=XCore_Architecture&amp;action=edit&amp;section=5" title="Edit section: Instruction encoding">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Most instructions are 16-bit while a few have 32-bit encoding. Instructions can use between zero and six operands. Most common arithmetic operations (such as ADD, SUB, MULT) are <a href="/wiki/Instruction_set#Number_of_operands" title="Instruction set">three-operand instructions</a> based on a set of 12 general purpose registers.</p>
+<table class="wikitable" style="text-align:center">
+<caption>XMOS instruction formats</caption>
+<tr>
+<th>1<br />
+5</th>
+<th>1<br />
+4</th>
+<th>1<br />
+3</th>
+<th>1<br />
+2</th>
+<th>1<br />
+1</th>
+<th>1<br />
+0</th>
+<th><br />
+9</th>
+<th><br />
+8</th>
+<th><br />
+7</th>
+<th><br />
+6</th>
+<th><br />
+5</th>
+<th><br />
+4</th>
+<th><br />
+3</th>
+<th><br />
+2</th>
+<th><br />
+1</th>
+<th><br />
+0</th>
+<th>Description</th>
+</tr>
+<tr>
+<td colspan="6">opcode</td>
+<td colspan="10">immediate</td>
+<td align="left">10/20-bit immediate</td>
+</tr>
+<tr>
+<td colspan="6">opcode</td>
+<td colspan="4">register</td>
+<td colspan="6">immediate</td>
+<td align="left">register &amp; 6/16-bit immediate</td>
+</tr>
+<tr>
+<td colspan="6">opcode</td>
+<td colspan="2">1 1</td>
+<td colspan="2">opc</td>
+<td colspan="6">immediate</td>
+<td align="left">6/16-bit immediate</td>
+</tr>
+<tr>
+<td colspan="5">opcode</td>
+<td colspan="5">9×<i>a</i>+3×<i>b</i>+<i>c</i></td>
+<td colspan="2">a a</td>
+<td colspan="2">b b</td>
+<td colspan="2">c c</td>
+<td align="left">three-operand register</td>
+</tr>
+<tr>
+<td colspan="5">opcode</td>
+<td colspan="5">27+3×<i>b</i>+<i>c</i></td>
+<td><b>∗</b></td>
+<td>o</td>
+<td colspan="2">b b</td>
+<td colspan="2">c c</td>
+<td align="left">two-operand register</td>
+</tr>
+<tr>
+<td colspan="5">opcode</td>
+<td colspan="6">1 1 1 1 1 1</td>
+<td>o</td>
+<td colspan="4">c c c c</td>
+<td align="left">one-operand register</td>
+</tr>
+<tr>
+<td colspan="5">opcode</td>
+<td colspan="6">1 1 1 1 1 1</td>
+<td>o</td>
+<td colspan="2">1 1</td>
+<td colspan="2">opc</td>
+<td align="left">zero-operand</td>
+</tr>
+</table>
+<p>The last four forms share the same opcode range, because the number of operands is determined by bits 5 through 10. The last three forms use bit 4 as an additional opcode bit. (And the last form uses bits 1 and 0 as well.)</p>
+<p>In the second form, some instructions (loads and stores) use all four bits to encode the register number, allowing access to r12–r15. Other instructions (conditional branches) do not allow register numbers above 11, instead allowing the third form to share the opcode range.</p>
+<p>Because constants are always unsigned, many instructions come in add/subtract pairs, e.g. jump forward and backward.</p>
+<p>The form of an instruction is determined by its four most-significant bits:</p>
+<ul>
+<li><b>00__</b>: register operands (8 opcodes)</li>
+<li><b>0100</b>: register operands (2 opcodes)</li>
+<li><b>0101</b>: register + 6-bit immediate (4 opcodes, 16 registers allowed)</li>
+<li><b>0110</b>: register + 6-bit immediate (4 opcodes, 16 registers allowed)</li>
+<li><b>0111</b>: register + 6-bit immediate (4 opcodes, 12 registers allowed)</li>
+<li><b>10__</b>: register operands (8 opcodes)</li>
+<li><b>1100</b>: register operands (2 opcodes)</li>
+<li><b>1101</b>: 10-bit immediate (4 opcodes)</li>
+<li><b>1110</b>: 10-bit immediate (4 opcodes)</li>
+<li><b>1111</b>: Prefix opcodes:
+<ul>
+<li><b>111100</b>: 10 additional immediate bits, prepended to following instruction's 6 or 10 bits.</li>
+<li><b>11111</b>: three additional operands, in addition to the operands of the following register instruction</li>
+</ul>
+</li>
+</ul>
+<p>The encoding of the three-operand register opcodes is quite unusual, since 12 registers is not a power of 2. The encoding used fits zero to three operands, <i>and the number of operands</i>, into 11 bits. Thus, each 5-bit opcode can be assigned four times, once to a three-operand instruction, once to a two-operand, etc.</p>
+<p>In all cases, the low 2 bits of the register number are placed in a 2-bit field, reducing the problem to encoding the high bits, which are in the range of 0 to 2.</p>
+<p>The three-operand form places the low register numbers in the low 6 instruction bits. The high 2 bits of each register number are combined in base-3 into a number between 0 and 26 (using 9×<i>a</i>+3×<i>b</i>+<i>c</i>) and stored in the remaining 5 bits.</p>
+<p>The two-operand form uses the unused 5 combinations (27–31) in the 5-bit field. Operand <i>a</i> is not used, and the 2-bit field for its low bits is reassigned; one bit is used for an additional opcode bit, and the other is used as an additional combination register specifier, doubling the number of available combinations to 10, and allowing all 9 combinations of 3×<i>b</i>+<i>c</i> to be represented. This is done in a manner similar to <a href="/wiki/Bi-quinary_coded_decimal" title="Bi-quinary coded decimal">bi-quinary coded decimal</a>: the combination, modulo 5, is stored in the 5-bit field (as (3×<i>b</i>+<i>c</i>)&#160;mod&#160;5 + 27), and the 1-bit quotient (⌊(3×<i>b</i>+<i>c</i>)/5⌋) is stored in instruction bit 5 (marked with an asterisk in the table above).<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">[3]</a></sup></p>
+<p>One-operand instructions use the tenth combination value, with all 6 bits set, and place the register number in the 4 available bits. Only operand <i>c</i> is specified, and the high bits are stored in the <i>b</i> field.</p>
+<p>Finally, the one-operand encoding, with a register number 12 or more (the <i>b</i> field contains binary 11), is also used to encode zero-operand instructions. The two low-order bits of the <i>c</i> field are available for additional opcode bits (bringing the total to 8).</p>
+<p>(A few instructions use the register <i>c</i> field value 0–11 as a small immediate constant, or use it to select one of 12 convenient bit-shift constants 0–8, 16, 24, or 32.)</p>
+<p>Less frequently used instructions are encoded in 32 bits. 32-bit instructions allow 16- or 20-bit immediate operands (such as far branches), up to six register operands (for example long multiply which has four source and two destination operands) and additional opcode space for rarely used instructions.</p>
+<p>One 10-bit immediate opcode (PFIX, opcode 111100) is used to add an additional 10 bits to the 6- or 10-bit immediate in the following instruction.</p>
+<p>One three-operand opcode (EOPR, opcode 11111) is reserved for an "additional operands" prefix. Its 3 operands are used along with those of the following instruction word to produce additional 32-bit instructions with up to six operands. This is also used for rarely used three- and two-operand instructions; in such cases the EOPR specifies all three or two operands, and the following instruction word is a zero-operand instruction. (In the two-operand case, the extra opcode bit in the leading EOPR <i>is</i> used.)</p>
+<h2><span class="mw-headline" id="Programming_model">Programming model</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=XCore_Architecture&amp;action=edit&amp;section=6" title="Edit section: Programming model">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="Sequential_programming_model">Sequential programming model</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=XCore_Architecture&amp;action=edit&amp;section=7" title="Edit section: Sequential programming model">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Each thread has access to 12 general purpose registers R0...R11. In addition there are 4 special purpose registers the SP, LR (Link register - stores the return address), CP (constant pool, points to a part of memory that stores constants) and DP (data pool - points to global variables). In addition to those 16 there are another 9 registers that store the PC, kernel PC, Exception type, Exception data, and saved copies of all those in case of an exception or interrupt.<sup id="cite_ref-4" class="reference"><a href="#cite_note-4">[4]</a></sup> The instruction set is a <a href="/wiki/Load-store_architecture" class="mw-redirect" title="Load-store architecture">load-store</a> instruction set.</p>
+<p>Almost all instructions execute in a single cycle. If an instruction does not need data from memory (for example, arithmetic operations), the instruction will prefetch a word of instructions. Because most instructions are encoded in 16-bits, and because most instructions are not loads or stores (a typical number is 20% loads&amp;stores, 80% other instructions<sup id="cite_ref-5" class="reference"><a href="#cite_note-5">[5]</a></sup>), the <a href="/wiki/Instruction_prefetch" title="Instruction prefetch">prefetch</a> mechanism can stay ahead of the instructions stream. This acts like a very small <a href="/wiki/Instruction_cache" class="mw-redirect" title="Instruction cache">instruction cache</a>, but its behaviour can be predicted at <a href="/wiki/Compile_time" title="Compile time">compile time</a>, making timing behaviour as predictable as functional behaviour.</p>
+<p>Instructions that access memory all use a base register: SP, DP, CP, PC or any general purpose register. In a single 16-bit instruction a thread can access:</p>
+<ul>
+<li>Up to 64 words relative to the stack pointer (read or write, word access only)</li>
+<li>Up to 64 words relative to the data pointer (read or write, word access only)</li>
+<li>Up to 64 words relative to the constant pointer (read only, word access only)</li>
+<li>Up to 12 words relative to any general purpose register (read and write, word access only)</li>
+<li>An indexed word using any two general purpose registers</li>
+<li>An indexed 16-bit quantity using any two general purpose registers</li>
+<li>An indexed byte using any two general purpose registers</li>
+</ul>
+<p>Larger sections of memory can be accessed by means of extended instructions, which extend the above ranges to 64 KBytes.</p>
+<p>This scheme is designed in order to densely encode the common cases found in many programming patterns: access to small stack frames, a small set of globals and constants, structures, and arrays. Access to bit fields that have an odd length is facilitated by means of sign and zero extend instructions.</p>
+<p>All common arithmetic instructions are provided - including a divide and remainder (which are the only instructions that are not single cycle). Comparison instructions compute a <a href="/wiki/Truth_value" title="Truth value">truth value</a> (0 or 1) into a register, avoiding the use of flags. Many instructions have an immediate version that allows a single operand with a value of between 0 and 11 inclusive, encoding many common cases such as "i = i + 1". In the case of bit operations such as shift, the immediate value encodes common cases. Extra instructions are provided for reversing bits and bytes, count leading zeros, <a href="/wiki/Digital_signal_processing" title="Digital signal processing">digital signal processing</a>, and long integer arithmetic.</p>
+<p>The branch instructions include conditional and unconditional relative branches. A branch using the address in a register is provided; a relative branch which adds a scaled register operand to the program counter is provided to support jump tables. Branches to up to instructions distance are encoded in a single word. The procedure calling instructions include relative calls, calls via the constant pool, indexed calls via a dedicated register and calls via a register. Most calls within a single program module can be encoded in a single instruction; inter-module calling requires at most two instructions. It is up to the callee to save the link-register if it is not a leaf-function, a single instruction extends the stack and saves the link register.</p>
+<p>Dual issue mode, available on XS2, enables one short load, store, or brancg instruction to be paired with one short resource instruction. Short arithmetic instructions can be paired with any instruction. This enables inner-loops that, for example, transfer data from memory to IO to be halved in length by issuing the LOAD instruction together with the ADD instruction, and the change to the counter together with the branch instruction.</p>
+<h3><span class="mw-headline" id="Parallel_programming_model">Parallel programming model</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=XCore_Architecture&amp;action=edit&amp;section=8" title="Edit section: Parallel programming model">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The XS1 instruction set is designed to support both multi threading and multi-core computations. To this extent it supports channel communication (to support distributed memory computations) and barriers and locks (to support shared memory computations). A thread initiates execution on one or more newly allocated threads by setting their initial register values.</p>
+<p>Communication between threads is performed using channels that provide full-duplex data transfer between channel-ends. This enables, amongst others, the implementation of <a href="/wiki/Communicating_sequential_processes" title="Communicating sequential processes">CSP</a> based languages, languages based on the <a href="/wiki/Pi_calculus" class="mw-redirect" title="Pi calculus">Pi calculus</a>. The instruction set is agnostic as to where a channel is connected to - whether that is inside a core or outside the core. Channels carry messages constructed from data and control tokens between the two channel ends. The control tokens can be used to encode communication protocols.</p>
+<p>Channel ends have a buffer able to hold sufficient tokens to allow at least one word to be buffered. If an output instruction is executed when the channel is too full to take the data then the thread which executed the instruction is paused. It is restarted when there is enough room in the channel for the instruction to successfully complete. Likewise, when an input instruction is executed and there is not enough data available then the thread is paused and will be restarted when enough data becomes available.</p>
+<p>A thread can, with a single instruction, synchronise with a group of threads using a barrier synchronisation. Alternatively a thread can synchronise using a lock, providing mutual exclusion. In order to communicate data when using barriers and locks, threads can either write data into the registers of another thread, or they can access memory of another thread (provided both threads execute on the same core). If shared memory is used, then the compiler or the programmer must ensure that there are no race conditions.</p>
+<p>The XS2 architecture has a 'priority mode' that enables threads to run in high priority. Low priority threads are guaranteed progress, but high priority threads are guaranteed a thread cycle when they are ready to execute.</p>
+<h3><span class="mw-headline" id="I.2FO_and_timing_instructions">I/O and timing instructions</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=XCore_Architecture&amp;action=edit&amp;section=9" title="Edit section: I/O and timing instructions">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The XS1 architecture is event-driven. It has an instruction that can dispatch an external <a href="/wiki/Event_(computing)" title="Event (computing)">events</a> in addition to traditional <a href="/wiki/Interrupts" class="mw-redirect" title="Interrupts">interrupts</a>. If the program chooses to use events, then the underlying processor has to expect an event and wait in a specific place so that it can be handled synchronously. If desired, I/O can be handled asynchronously using interrupts. Events and interrupts can be used on any resource that the implementation supports.</p>
+<p>Common resources that are supported are ports (for external input and output), timers (that allow timing to a reference clock), channels (that allow communication and synchronization between threads within a core, and threads on different cores), locks (which allow controlled access to shared memory), and synchronizers (which implement barrier synchronizations between threads).</p>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=XCore_Architecture&amp;action=edit&amp;section=10" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist columns references-column-count references-column-count-2" style="-moz-column-count: 2; -webkit-column-count: 2; column-count: 2; list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://www.xmos.com/published/xmos-xs1-architecture?format=pdf">"XMOS XS1 Architecture"</a> <span style="font-size:85%;">(PDF)</span>. <a href="/wiki/XMOS" title="XMOS">XMOS</a>. 2016-12-21.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AXCore+Architecture&amp;rft.btitle=XMOS+XS1+Architecture&amp;rft.date=2016-12-21&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fwww.xmos.com%2Fpublished%2Fxmos-xs1-architecture%3Fformat%3Dpdf&amp;rft.pub=XMOS&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-xs2-2"><span class="mw-cite-backlink">^ <a href="#cite_ref-xs2_2-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-xs2_2-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://www.xmos.com/published/xs2-isa-specification">"xCORE-200: The XMOS XS2 Architecture"</a> <span style="font-size:85%;">(PDF)</span>. <a href="/wiki/XMOS" title="XMOS">XMOS</a>. 2016-12-21.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AXCore+Architecture&amp;rft.btitle=xCORE-200%3A+The+XMOS+XS2+Architecture&amp;rft.date=2016-12-21&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fwww.xmos.com%2Fpublished%2Fxs2-isa-specification&amp;rft.pub=XMOS&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text">The architecture manual documents bit 5 as the "most significant bit", but fails to mention the non-binary base; some <a rel="nofollow" class="external text" href="http://git.infradead.org/users/segher/dis-xs1.git/blob/HEAD:/dis-xs1.fs">XS-1 disassembler source code</a> makes it clear. In the definition of <code>parse-inssn-r2</code>, the <code>1 #split 1b - swap 5 * +</code> portion splits the 6-bit register field into a 5-bit and a 1-bit part, subtracts 27 (hex 1b) from the high part, multiplies the low part by 5, and adds them.</span></li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text"><cite class="citation web">David May. <a rel="nofollow" class="external text" href="https://www.xmos.com/published/xmos-xs1-architecture">"XMOS XS1 Architecture"</a> <span style="font-size:85%;">(PDF)</span>. <a href="/wiki/XMOS" title="XMOS">XMOS</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AXCore+Architecture&amp;rft.au=David+May&amp;rft.btitle=XMOS+XS1+Architecture&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fwww.xmos.com%2Fpublished%2Fxmos-xs1-architecture&amp;rft.pub=XMOS&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span> (Free registration required)</span></li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text"><cite class="citation book">Jurij Šilc; Borut Robič; Theo Ungerer (1999). <i>Processor Architecture</i>. Springer. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/3-540-64798-8" title="Special:BookSources/3-540-64798-8">3-540-64798-8</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AXCore+Architecture&amp;rft.au=Borut+Robi%C4&amp;rft.au=Jurij+%C5%A0ilc&amp;rft.au=Theo+Ungerer&amp;rft.btitle=Processor+Architecture&amp;rft.date=1999&amp;rft.genre=book&amp;rft.isbn=3-540-64798-8&amp;rft.pub=Springer&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=XCore_Architecture&amp;action=edit&amp;section=11" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="https://www.xmos.com/">XMOS website</a> (Free registration required to access documents etc.)</li>
+</ul>
+<div role="navigation" class="navbox" aria-labelledby="Reduced_instruction_set_computing_.28RISC.29_processor_architectures" style="padding:3px">
+<table class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:RISC-based_processor_architectures" title="Template:RISC-based processor architectures"><abbr title="View this template" style=";;background:none transparent;border:none;">v</abbr></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:RISC-based_processor_architectures" title="Template talk:RISC-based processor architectures"><abbr title="Discuss this template" style=";;background:none transparent;border:none;">t</abbr></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:RISC-based_processor_architectures&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;">e</abbr></a></li>
+</ul>
+</div>
+<div id="Reduced_instruction_set_computing_.28RISC.29_processor_architectures" style="font-size:114%"><a href="/wiki/Reduced_instruction_set_computing" title="Reduced instruction set computing">Reduced instruction set computing</a> (RISC) processor architectures</div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Active</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li>Altera <a href="/wiki/Nios_II" title="Nios II">Nios II</a></li>
+<li>Analog Devices <a href="/wiki/Blackfin" title="Blackfin">Blackfin</a></li>
+<li><a href="/wiki/ARC_(processor)" title="ARC (processor)">ARC</a></li>
+<li><a href="/wiki/ARM_architecture" title="ARM architecture">ARM</a></li>
+<li><a href="/wiki/Atmel_AVR" title="Atmel AVR">Atmel AVR</a></li>
+<li>Atmel <a href="/wiki/AVR32" title="AVR32">AVR32</a></li>
+<li><a href="/wiki/DLX" title="DLX">DLX</a></li>
+<li><a href="/wiki/ESi-RISC" title="ESi-RISC">eSi-RISC</a></li>
+<li><a href="/wiki/M32R" title="M32R">M32R</a></li>
+<li><a href="/wiki/LatticeMico8" title="LatticeMico8">LatticeMico8</a></li>
+<li><a href="/wiki/LatticeMico32" title="LatticeMico32">LatticeMico32</a></li>
+<li><a href="/wiki/Imagination_META" title="Imagination META">Meta</a></li>
+<li><a href="/wiki/MIPS_instruction_set" title="MIPS instruction set">MIPS</a></li>
+<li><a href="/wiki/OpenRISC" title="OpenRISC">OpenRISC</a></li>
+<li><a href="/wiki/Power_Architecture" title="Power Architecture">Power</a>
+<ul>
+<li><a href="/wiki/PowerPC" title="PowerPC">PowerPC</a></li>
+</ul>
+</li>
+<li><a href="/wiki/RISC-V" title="RISC-V">RISC-V</a></li>
+<li><a href="/wiki/S%2Bcore" title="S+core">S+core</a></li>
+<li><a href="/wiki/Sunway" title="Sunway">Sunway</a></li>
+<li><a href="/wiki/SPARC" title="SPARC">SPARC</a></li>
+<li>Renesas <a href="/wiki/SuperH" title="SuperH">SuperH</a></li>
+<li><a href="/wiki/Unicore" title="Unicore">Unicore</a></li>
+<li>Xilinx <a href="/wiki/MicroBlaze" title="MicroBlaze">MicroBlaze</a></li>
+<li>Xilinx <a href="/wiki/PicoBlaze" title="PicoBlaze">PicoBlaze</a></li>
+<li>XMOS <a href="/wiki/XCore_XS1" class="mw-redirect" title="XCore XS1">XCore XS1</a></li>
+<li><a href="/w/index.php?title=VISC_architecture&amp;action=edit&amp;redlink=1" class="new" title="VISC architecture (page does not exist)">VISC</a></li>
+<li><a href="/wiki/Mill_architecture" title="Mill architecture">Mill</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Historic</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/AMD_Am29000" title="AMD Am29000">AMD Am29000</a></li>
+<li><a href="/wiki/Apollo_PRISM" title="Apollo PRISM">Apollo PRISM</a></li>
+<li><a href="/wiki/Berkeley_RISC" title="Berkeley RISC">Berkeley RISC</a></li>
+<li><a href="/wiki/Clipper_architecture" title="Clipper architecture">Clipper</a></li>
+<li><a href="/wiki/AT%26T_Hobbit" title="AT&amp;T Hobbit">CRISP</a></li>
+<li><a href="/wiki/DEC_Alpha" title="DEC Alpha">DEC Alpha</a></li>
+<li><a href="/wiki/DEC_Prism" title="DEC Prism">DEC Prism</a></li>
+<li><a href="/wiki/Intel_i860" title="Intel i860">Intel i860</a></li>
+<li><a href="/wiki/Intel_i960" title="Intel i960">Intel i960</a></li>
+<li><a href="/wiki/Motorola_88000" title="Motorola 88000">Motorola 88000</a></li>
+<li><a href="/wiki/PA-RISC" title="PA-RISC">PA-RISC</a></li>
+<li><a href="/wiki/ROMP" title="ROMP">ROMP</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1221
+Cached time: 20170113040519
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.100 seconds
+Real time usage: 0.133 seconds
+Preprocessor visited node count: 445/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 15194/2097152 bytes
+Template argument size: 139/2097152 bytes
+Highest expansion depth: 7/40
+Expensive parser function count: 0/500
+Lua time usage: 0.042/10.000 seconds
+Lua memory usage: 2.23 MB/50 MB
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  105.435      1 - -total
+ 55.03%   58.018      1 - Template:Reflist
+ 37.48%   39.517      3 - Template:Cite_web
+ 31.36%   33.064      1 - Template:Infobox_CPU_architecture
+ 28.93%   30.504      1 - Template:Infobox
+  8.50%    8.962      1 - Template:RISC-based_processor_architectures
+  6.79%    7.159      1 - Template:Navbox
+  4.43%    4.675      1 - Template:Cite_book
+  1.08%    1.142      1 - Template:Column-count
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:23041908-0!*!0!!en!*!* and timestamp 20170113040519 and revision id 759785555
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=XCore_Architecture&amp;oldid=759785555">https://en.wikipedia.org/w/index.php?title=XCore_Architecture&amp;oldid=759785555</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Instruction_set_architectures" title="Category:Instruction set architectures">Instruction set architectures</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=XCore+Architecture" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=XCore+Architecture" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/XCore_Architecture"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:XCore_Architecture"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/XCore_Architecture" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=XCore_Architecture&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=XCore_Architecture&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/XCore_Architecture" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/XCore_Architecture" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=XCore_Architecture&amp;oldid=759785555" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=XCore_Architecture&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q8041728" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=XCore_Architecture&amp;id=759785555" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=XCore+Architecture">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=XCore+Architecture&amp;returnto=XCore+Architecture&amp;oldid=759785555&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=XCore_Architecture&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+											</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-add wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q8041728#sitelinks-wikipedia" title="Add interlanguage links" class="wbc-editpage">Add links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 13 January 2017, at 04:05.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=XCore_Architecture&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":62,"wgHostname":"mw1251"});});</script>
+	</body>
+</html>

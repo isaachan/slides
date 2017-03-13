@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Citrine (programming language) - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Citrine_(programming_language)","wgTitle":"Citrine (programming language)","wgCurRevisionId":716324360,"wgRevisionId":716324360,"wgArticleId":49208585,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Official website not in Wikidata","Procedural programming languages"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Citrine_(programming_language)","wgRelevantArticleId":49208585,"wgRequestId":"WI6b1wpAMCYAAAj3A@QAAAAN","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":true},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q25345930","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.pygments":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.legacy.wikibits","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.pygments%2CwikimediaBadges%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.29.0-wmf.9"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Citrine_(programming_language)"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Citrine_(programming_language)&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Citrine_(programming_language)&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Citrine_(programming_language)"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Citrine_programming_language rootpage-Citrine_programming_language skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Citrine (programming language)</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><script>function mfTempOpenSection(id){var block=document.getElementById("mf-section-"+id);block.className+=" open-block";block.previousSibling.className+=" open-block";}</script><table class="infobox vevent" style="width:22em">
+<caption class="summary">Citrine</caption>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/File:Citrine_programming_language_logo.png" class="image"><img alt="Citrine programming language logo.png" src="//upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Citrine_programming_language_logo.png/220px-Citrine_programming_language_logo.png" width="220" height="35" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Citrine_programming_language_logo.png/330px-Citrine_programming_language_logo.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Citrine_programming_language_logo.png/440px-Citrine_programming_language_logo.png 2x" data-file-width="616" data-file-height="99" /></a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Programming_paradigm" title="Programming paradigm">Paradigm</a></th>
+<td><a href="/wiki/Object-oriented_programming" title="Object-oriented programming">Object-oriented</a>, <a href="/wiki/Prototype-based_programming" title="Prototype-based programming">prototype-based</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_design" title="Software design">Designed&#160;by</a></th>
+<td>Gabor de Mooij</td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_developer" title="Software developer">Developer</a></th>
+<td class="organiser">Gabor de Mooij</td>
+</tr>
+<tr>
+<th scope="row">First&#160;appeared</th>
+<td>2014</td>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Software_release_life_cycle" title="Software release life cycle">Stable release</a></th>
+<td>
+<div style="margin:0px;">0.2 / 2014<span class="noprint">; 3&#160;years ago</span><span style="display:none">&#160;(<span class="bday dtstart published updated">2014</span>)</span></div>
+</td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Type_system" title="Type system">Typing discipline</a></th>
+<td><a href="/wiki/Dynamic_typing" class="mw-redirect" title="Dynamic typing">dynamic</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Operating_system" title="Operating system">OS</a></th>
+<td><a href="/wiki/Unix" title="Unix">Unix</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_license" title="Software license">License</a></th>
+<td><a href="/wiki/BSD_licenses" title="BSD licenses">BSD</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Filename_extension" title="Filename extension">Filename extensions</a></th>
+<td>ctr</td>
+</tr>
+<tr>
+<th scope="row">Website</th>
+<td><span class="url"><a rel="nofollow" class="external text" href="http://citrine-lang.org">citrine-lang<wbr />.org</a></span></td>
+</tr>
+<tr>
+<th colspan="2" style="text-align:center;background-color: #eee;">Major <a href="/wiki/Programming_language_implementation" title="Programming language implementation">implementations</a></th>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center">C</td>
+</tr>
+<tr>
+<th colspan="2" style="text-align:center;background-color: #eee;">Influenced by</th>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/Smalltalk" title="Smalltalk">Smalltalk</a> <a href="/wiki/Self_(programming_language)" title="Self (programming language)">Self</a></td>
+</tr>
+</table>
+<p><b>Citrine</b> is a general purpose <a href="/wiki/Programming_language" title="Programming language">programming language</a> for <a href="/wiki/Unix-like" title="Unix-like">Unix-like</a> operating systems. It focuses on readability and maintainability. Readability is achieved by syntactic and conceptual minimalism. The language is heavily inspired by <a href="/wiki/Smalltalk" title="Smalltalk">Smalltalk</a> and <a href="/wiki/Self_(programming_language)" title="Self (programming language)">Self</a> but has some very distinctive features. Like Smalltalk, Citrine treats everything as an object and focuses on sending messages to these objects. However unlike Smalltalk, Citrine lacks the concept of a class. In this regard, Citrine is more like Self and <a href="/wiki/JavaScript" title="JavaScript">JavaScript</a> because it uses <a href="/wiki/Prototype-based_programming" title="Prototype-based programming">prototypes</a>. The combination of Smalltalk like messages and prototypes is what makes Citrine unique.</p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Syntax"><span class="tocnumber">1</span> <span class="toctext">Syntax</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Control_flow"><span class="tocnumber">2</span> <span class="toctext">Control flow</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Pipelines"><span class="tocnumber">3</span> <span class="toctext">Pipelines</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Prototypes"><span class="tocnumber">4</span> <span class="toctext">Prototypes</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Unicode"><span class="tocnumber">5</span> <span class="toctext">Unicode</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Scoping"><span class="tocnumber">6</span> <span class="toctext">Scoping</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#See_also"><span class="tocnumber">7</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#References"><span class="tocnumber">8</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#External_links"><span class="tocnumber">9</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Syntax">Syntax</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Citrine_(programming_language)&amp;action=edit&amp;section=1" title="Edit section: Syntax">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Citrine has a very limited syntax and it's very closely related to Smalltalk. Everything in Citrine is an <i>object</i>, there are 5 literals:</p>
+<ul>
+<li><code class="mw-highlight" id="" style="" dir="ltr">Nil</code></li>
+<li><code class="mw-highlight" id="" style="" dir="ltr">True, False</code></li>
+<li><code class="mw-highlight" id="" style="" dir="ltr">0,1,2,3</code></li>
+<li><code class="mw-highlight" id="" style="" dir="ltr">'String'</code></li>
+<li><code>{ param | ...block of code... }</code></li>
+</ul>
+<p>The code block literal uses a <i>pipe</i> symbol to separate the parameters from the logic '|', if there are no parameters, the backslash should be used instead '\'.</p>
+<p>Citrine only supports full line comments, comments start with a '#'.</p>
+<p>A Citrine program is basically a sequence of messages sent to objects. For instance, to calculate the factorial of the number 5, the message 'factorial' is sent to the number 5.</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="m">5</span> <span class="nf">factorial</span><span class="p">.</span>
+</pre></div>
+<p>This is called a <i>unary</i> message because it takes no arguments. A <i>binary</i> message is always a single UTF-8 character; this differs from Smalltalk, where there is a fixed set of binary messages. Here is an example:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="m">6</span> <span class="nf">+</span> <span class="m">7</span><span class="p">.</span>
+</pre></div>
+<p>Here a binary message '+' is sent to number 6, the argument of this binary message is '7', this will result in a new number object '13'. Assigning the outcome of this operation to a variable uses the assignment operator:&#160;:=.</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="nv">total</span> <span class="o">:=</span> <span class="nv">money</span> <span class="nf">+</span> <span class="nv">debt</span><span class="p">.</span>
+</pre></div>
+<p>Also note that each line in a Citrine program ends with a dot, just like in Smalltalk. Besides unary and binary messages, Citrine offers <i>keyword messages</i>, which take arguments interspersed with the message itself just like Smalltalk and <a href="/wiki/Objective-C" title="Objective-C">Objective-C</a>.</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="m">3</span> <span class="nf">between:</span> <span class="m">1</span> <span class="nf">and:</span> <span class="m">5</span><span class="p">.</span>
+</pre></div>
+<p>The code snippet above will return a boolean object <i>True</i>.</p>
+<h2><span class="mw-headline" id="Control_flow">Control flow</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Citrine_(programming_language)&amp;action=edit&amp;section=2" title="Edit section: Control flow">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Just like Smalltalk, control flow in Citrine is implemented by strategic use of messages. For instance, writing a conditional statement requires sending a block of code to a boolean.</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+(<span class="nv">money</span> <span class="nf">&gt;=</span> <span class="nv">price</span>) <span class="nb">ifTrue:</span> {<span class="err">\</span> <span class="nc">Pen</span> <span class="nf">write:</span> <span class="s">'Yes, you can afford this'</span><span class="p">.</span> }.
+</pre></div>
+<p>Likewise, a for-loop is written as:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="m">1</span> <span class="nf">to:</span> <span class="m">10</span> <span class="nf">step:</span> <span class="m">1</span> <span class="nf">do:</span> { <span class="nv">step</span> <span class="nf">|</span> <span class="nc">Pen</span> <span class="nf">write:</span> <span class="s">'this is step:'</span> <span class="nf">+</span> <span class="nv">step</span><span class="p">.</span> }.
+</pre></div>
+<p>Besides for-loops, Citrine features each-loops, while-loops and a simple times loop, the latter uses the binary message '*'.</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="m">7</span> <span class="nf">*</span> { <span class="nv">step</span> <span class="nf">|</span> <span class="nc">Pen</span> <span class="nf">write:</span> <span class="s">'this is step:'</span> <span class="nf">+</span> <span class="nv">step</span><span class="p">.</span> }.
+</pre></div>
+<p>To break out of a loop in Citrine one has to send the message 'break' to a boolean, this allows a conditional break from a loop without having to factor out the break conditions:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="ss">#0</span><span class="nf">-</span><span class="m">4</span>
+<span class="nf">0</span> <span class="nf">to:</span> <span class="nv">10</span> <span class="nf">step:</span> <span class="nv">1</span> <span class="err">do:</span> { <span class="nv">i</span> <span class="nf">|</span>
+	<span class="nc">Pen</span> <span class="nf">write:</span> <span class="s">'iteration #'</span> <span class="nf">+</span> <span class="nv">i</span><span class="nf">,</span> <span class="nv">brk</span><span class="p">.</span>
+	(<span class="nv">i</span> <span class="nf">=</span> <span class="m">4</span>) <span class="nf">break</span><span class="p">.</span>
+}.
+</pre></div>
+<h2><span class="mw-headline" id="Pipelines">Pipelines</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Citrine_(programming_language)&amp;action=edit&amp;section=3" title="Edit section: Pipelines">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Unlike Smalltalk, Citrine has no semi-colon to send a message to the original receiver. Instead Citrine has a comma token ',' used to chain keyword messages, this allows writing Unix-like <i><a href="/wiki/Pipeline_(Unix)" title="Pipeline (Unix)">pipelines</a></i>. The following code uses a pipeline-like syntax to replace all the 'o' characters with zeroes, the resulting string would be something like: '1010101...'.</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="nv">onesAndZeroes</span> <span class="o">:=</span> <span class="s">'1o1o1o1o1o1'</span> <span class="nf">split:</span> <span class="s">'o'</span><span class="nf">,</span> <span class="nf">map:</span> <span class="nv">mapUp</span><span class="err">,</span> <span class="err">join:</span> <span class="s">'0'</span><span class="p">.</span>
+</pre></div>
+<h2><span class="mw-headline" id="Prototypes">Prototypes</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Citrine_(programming_language)&amp;action=edit&amp;section=4" title="Edit section: Prototypes">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The biggest difference from Smalltalk is the use of prototypes. Citrine does not have a concept of a class, it only knows about objects. An object is created using the new message:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="nv">cat</span> <span class="o">:=</span> <span class="nc">Object</span> <span class="nb">new</span><span class="p">.</span>
+</pre></div>
+<p>This object can be made to respond to messages by ordering the object to listen to events. This is kind of similar to adding methods in languages like <a href="/wiki/Java_(programming_language)" title="Java (programming language)">Java</a>:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="nv">cat</span> <span class="nf">on:</span> <span class="s">'meow'</span> <span class="nf">do:</span> {<span class="err">\</span> 
+  <span class="nc">Pen</span> <span class="nf">write:</span> <span class="s">'meow!'</span><span class="p">.</span>
+}.
+</pre></div>
+<p>As stated above, inheritance is based on prototypes. To derive an object from another object, the new message must be sent to the object to be extended:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="nc">Animal</span> <span class="o">:=</span> <span class="nc">Object</span> <span class="nb">new</span><span class="p">.</span>
+<span class="nc">Animal</span> <span class="nf">on:</span> <span class="s">'makeSound'</span> <span class="nf">do:</span> {<span class="err">\</span>
+	<span class="nc">Pen</span> <span class="nf">write:</span> <span class="s">'?'</span><span class="p">.</span>
+}.
+<span class="nc">Cat</span> <span class="o">:=</span> <span class="nc">Animal</span> <span class="nb">new</span><span class="p">.</span>
+<span class="nc">Cat</span> <span class="nf">on:</span> <span class="s">'makeSound'</span> <span class="nf">do:</span> {<span class="err">\</span>
+	<span class="nc">Pen</span> <span class="nf">write:</span> <span class="s">'meow!'</span><span class="p">.</span>
+}.
+<span class="nc">Tom</span> <span class="o">:=</span> <span class="nc">Cat</span> <span class="nb">new</span><span class="p">.</span>
+<span class="nc">Tom</span> <span class="nf">makeSound</span><span class="p">.</span>
+</pre></div>
+<h2><span class="mw-headline" id="Unicode">Unicode</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Citrine_(programming_language)&amp;action=edit&amp;section=5" title="Edit section: Unicode">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Citrine uses UTF-8 unicode extensively, both objects and messages can consist of unicode symbols. All string length are calculated using UTF-8. Citrine distinguishes string length and size in bytes:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="s">'text'</span> <span class="nf">length</span><span class="p">.</span>
+</pre></div>
+<p>returns the length of the string in UTF-8 code pointes, while:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="s">'text'</span> <span class="nf">bytes</span><span class="p">.</span>
+</pre></div>
+<p>returns the number of bytes.</p>
+<h2><span class="mw-headline" id="Scoping">Scoping</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Citrine_(programming_language)&amp;action=edit&amp;section=6" title="Edit section: Scoping">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Citrine uses <a href="/wiki/Dynamic_scoping" class="mw-redirect" title="Dynamic scoping">dynamic scoping</a> instead of <a href="/wiki/Lexical_scoping" class="mw-redirect" title="Lexical scoping">lexical scoping</a>. Thus, there is no need for <a href="/wiki/Dependency_injection" title="Dependency injection">dependency injection</a> or global variables, but it might be harder to reason about than lexical scope. This is similar in programming languages like <a href="/wiki/Emacs_Lisp" title="Emacs Lisp">Emacs Lisp</a> and <a href="/wiki/BASIC" title="BASIC">BASIC</a>. In code blocks the <i>var</i> keyword needs to be used to declare a local variable.</p>
+<p>Demonstration:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="nc">Application</span> <span class="o">:=</span> {<span class="err">\</span>
+   <span class="nv">var</span> <span class="nf">mailer</span> <span class="o">:=</span> <span class="nc">Mailer</span> <span class="nb">new</span><span class="p">.</span> <span class="ss">#make</span> <span class="nf">mailer</span> <span class="nf">available</span> <span class="nf">to</span> <span class="nf">all</span> <span class="nf">modules</span>
+   <span class="nf">module</span> <span class="nf">run</span><span class="p">.</span> <span class="ss">#mailer</span> <span class="nf">is</span> <span class="nf">now</span> <span class="nf">available</span> <span class="nf">in</span> <span class="nf">module</span>
+}<span class="p">.</span>
+</pre></div>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Citrine_(programming_language)&amp;action=edit&amp;section=7" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a href="/wiki/Smalltalk" title="Smalltalk">Smalltalk</a> programming language</li>
+</ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Citrine_(programming_language)&amp;action=edit&amp;section=8" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://fll.presidentbeef.com/lang/citrine/">demo in new programming languages community</a></li>
+<li><a rel="nofollow" class="external text" href="https://jaxenter.com/citrine-a-new-all-purpose-programming-language-for-unixoid-systems-123558.html">Citrine Review Jaxenter</a></li>
+<li><a rel="nofollow" class="external text" href="https://www.reddit.com/r/programming/comments/42gqu4/new_programming_language_citrine/">Announcement on Reddis</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.infoworld.com/article/3028559/application-development/citrine-borrows-from-ruby-javascript-c-for-object-oriented-programming.html">InfoWorld interview</a></li>
+</ul>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Citrine_(programming_language)&amp;action=edit&amp;section=9" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><span class="official-website"><span class="url"><a rel="nofollow" class="external text" href="http://citrine-lang.org">Official website</a></span></span></li>
+<li><a rel="nofollow" class="external text" href="https://github.com/gabordemooij/citrine">source code</a>, Source code on github</li>
+</ul>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1227
+Cached time: 20170130010900
+Cache expiry: 86400
+Dynamic content: true
+CPU time usage: 0.112 seconds
+Real time usage: 1.214 seconds
+Preprocessor visited node count: 716/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 9010/2097152 bytes
+Template argument size: 1262/2097152 bytes
+Highest expansion depth: 20/40
+Expensive parser function count: 2/500
+Lua time usage: 0.038/10.000 seconds
+Lua memory usage: 970 KB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00% 1190.858      1 -total
+ 32.97%  392.618      4 Template:Code
+  8.77%  104.453      2 Template:Infobox
+  6.91%   82.334      1 Template:Infobox_programming_language
+  2.62%   31.186      1 Template:Infobox_software/simple
+  2.24%   26.617      1 Template:Official_website
+  0.91%   10.805      1 Template:Start_date_and_age
+  0.44%    5.251      1 Template:URL
+  0.29%    3.406      1 Template:Years_or_months_ago
+  0.28%    3.336      6 Template:Yesno
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:49208585-0!*!0!!en!4!* and timestamp 20170130010859 and revision id 716324360
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Citrine_(programming_language)&amp;oldid=716324360">https://en.wikipedia.org/w/index.php?title=Citrine_(programming_language)&amp;oldid=716324360</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Procedural_programming_languages" title="Category:Procedural programming languages">Procedural programming languages</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Official_website_not_in_Wikidata" title="Category:Official website not in Wikidata">Official website not in Wikidata</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Citrine+%28programming+language%29" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Citrine+%28programming+language%29" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/Citrine_(programming_language)"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:Citrine_(programming_language)"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/Citrine_(programming_language)" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=Citrine_(programming_language)&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Citrine_(programming_language)&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Citrine_(programming_language)" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Citrine_(programming_language)" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Citrine_(programming_language)&amp;oldid=716324360" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Citrine_(programming_language)&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q25345930" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Citrine_%28programming_language%29&amp;id=716324360" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Citrine+%28programming+language%29">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Citrine+%28programming+language%29&amp;returnto=Citrine+%28programming+language%29&amp;oldid=716324360&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Citrine_(programming_language)&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+											</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-add wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q25345930#sitelinks-wikipedia" title="Add interlanguage links" class="wbc-editpage">Add links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 21 April 2016, at 04:06.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Citrine_(programming_language)&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.112","walltime":"1.214","ppvisitednodes":{"value":716,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":9010,"limit":2097152},"templateargumentsize":{"value":1262,"limit":2097152},"expansiondepth":{"value":20,"limit":40},"expensivefunctioncount":{"value":2,"limit":500},"entityaccesscount":{"value":1,"limit":400},"timingprofile":["100.00% 1190.858      1 -total"," 32.97%  392.618      4 Template:Code","  8.77%  104.453      2 Template:Infobox","  6.91%   82.334      1 Template:Infobox_programming_language","  2.62%   31.186      1 Template:Infobox_software/simple","  2.24%   26.617      1 Template:Official_website","  0.91%   10.805      1 Template:Start_date_and_age","  0.44%    5.251      1 Template:URL","  0.29%    3.406      1 Template:Years_or_months_ago","  0.28%    3.336      6 Template:Yesno"]},"scribunto":{"limitreport-timeusage":{"value":"0.038","limit":"10.000"},"limitreport-memusage":{"value":993672,"limit":52428800}},"cachereport":{"origin":"mw1227","timestamp":"20170130010900","ttl":86400,"transientcontent":true}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":68,"wgHostname":"mw1210"});});</script>
+	</body>
+</html>

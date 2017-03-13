@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>LotusScript - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"LotusScript","wgTitle":"LotusScript","wgCurRevisionId":756099164,"wgRevisionId":756099164,"wgArticleId":239268,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["BASIC programming language family","Lotus Software software","Scripting languages"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"LotusScript","wgRelevantArticleId":239268,"wgRequestId":"WITMvwpAMFgAAApjeTgAAABO","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":true},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q3260092","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.action.view.postEdit","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.legacy.wikibits","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.centralauth.centralautologin","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.29.0-wmf.8"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/LotusScript"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=LotusScript&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=LotusScript&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/LotusScript"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-LotusScript rootpage-LotusScript skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">LotusScript</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><script>function mfTempOpenSection(id){var block=document.getElementById("mf-section-"+id);block.className+=" open-block";block.previousSibling.className+=" open-block";}</script><p><b>LotusScript</b> is an object oriented programming language used by <a href="/wiki/Lotus_Notes" class="mw-redirect" title="Lotus Notes">Lotus Notes</a> (since version 4.0) and other <a href="/wiki/IBM" title="IBM">IBM</a> <a href="/wiki/Lotus_Software" title="Lotus Software">Lotus Software</a> products.</p>
+<p>LotusScript is similar to <a href="/wiki/Visual_Basic" title="Visual Basic">Visual Basic</a>. Developers familiar with one can easily understand the syntax and structure of code in the other. The major differences between the two are in their respective Integrated Development Environments and in the product-specific <a href="/wiki/Object-oriented_programming" title="Object-oriented programming">object</a> classes provided in each language that are included. VB includes a richer set of classes for UI manipulation, whereas LotusScript includes a richer set of application-specific classes for <a href="/wiki/Lotus_Notes" class="mw-redirect" title="Lotus Notes">Lotus Notes</a>, <a href="/wiki/Lotus_Word_Pro" class="mw-redirect" title="Lotus Word Pro">Lotus Word Pro</a> and <a href="/wiki/Lotus_1-2-3" title="Lotus 1-2-3">Lotus 1-2-3</a>. In the case of Lotus Notes, there are classes to work with Notes databases, documents (records) in those databases, etc. These classes can also be used as <a href="/wiki/Object_Linking_and_Embedding" title="Object Linking and Embedding">OLE</a> <a href="/wiki/OLE_Automation" title="OLE Automation">Automation</a> objects outside of the Lotus Notes environment, from Visual Basic.</p>
+<p>LotusScript also allows the definition of user-defined types and classes, although it is not possible to inherit from the product-specific classes.</p>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=LotusScript&amp;action=edit&amp;section=1" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.ibm.com/developerworks/lotus/documentation/dominodesigner/">Lotus Domino Designer documentation</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.redbooks.ibm.com/redbooks/pdfs/sg244856.pdf">IBM Redbook - "LotusScript for VisualBasic Programmers"</a></li>
+</ul>
+<div role="navigation" class="navbox" aria-labelledby="Dialects_of_the_BASIC_programming_language_.28list.29" style="padding:3px">
+<table class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:BASIC" title="Template:BASIC"><abbr title="View this template" style=";;background:none transparent;border:none;">v</abbr></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:BASIC" title="Template talk:BASIC"><abbr title="Discuss this template" style=";;background:none transparent;border:none;">t</abbr></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:BASIC&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;">e</abbr></a></li>
+</ul>
+</div>
+<div id="Dialects_of_the_BASIC_programming_language_.28list.29" style="font-size:114%">Dialects of the <a href="/wiki/BASIC" title="BASIC">BASIC</a> programming language (<a href="/wiki/List_of_BASIC_dialects" title="List of BASIC dialects">list</a>)</div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Classic</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Altair_BASIC" title="Altair BASIC">Altair BASIC</a></li>
+<li><a href="/wiki/Applesoft_BASIC" title="Applesoft BASIC">Applesoft BASIC</a></li>
+<li><a href="/wiki/Atari_BASIC" title="Atari BASIC">Atari BASIC</a></li>
+<li><a href="/wiki/Atari_Microsoft_BASIC" title="Atari Microsoft BASIC">Atari Microsoft BASIC</a></li>
+<li><a href="/wiki/Atari_ST_BASIC" title="Atari ST BASIC">Atari ST BASIC</a></li>
+<li><a href="/wiki/IBM_BASIC" title="IBM BASIC">BASICA</a></li>
+<li><a href="/wiki/BASIC_A%2B" title="BASIC A+">BASIC A+</a></li>
+<li><a href="/wiki/BASIC_Programming" title="BASIC Programming">BASIC Programming</a></li>
+<li><a href="/wiki/Optimized_Systems_Software#BASIC_XE" title="Optimized Systems Software">BASIC XE</a></li>
+<li><a href="/wiki/Optimized_Systems_Software#BASIC_XL" title="Optimized Systems Software">BASIC XL</a></li>
+<li><a href="/wiki/Casio_BASIC" title="Casio BASIC">Casio BASIC</a></li>
+<li><a href="/wiki/Chipmunk_Basic" title="Chipmunk Basic">Chipmunk Basic</a></li>
+<li><a href="/wiki/Color_BASIC" title="Color BASIC">Color BASIC</a></li>
+<li><a href="/wiki/Commodore_BASIC" title="Commodore BASIC">Commodore BASIC</a></li>
+<li><a href="/wiki/Extended_Color_BASIC" title="Extended Color BASIC">Extended Color BASIC</a></li>
+<li><a href="/wiki/Dartmouth_BASIC" title="Dartmouth BASIC">Dartmouth BASIC</a></li>
+<li><a href="/wiki/Disk_Extended_Color_BASIC" title="Disk Extended Color BASIC">Disk Extended Color BASIC</a></li>
+<li><a href="/wiki/Family_BASIC" title="Family BASIC">Family BASIC</a></li>
+<li><a href="/wiki/GFA_BASIC" title="GFA BASIC">GFA BASIC</a></li>
+<li><a href="/wiki/GW-BASIC" title="GW-BASIC">GW-BASIC</a></li>
+<li><a href="/wiki/HP_BASIC_for_OpenVMS" title="HP BASIC for OpenVMS">HP BASIC for OpenVMS</a></li>
+<li><a href="/wiki/HP_Time-Shared_BASIC" title="HP Time-Shared BASIC">HP Time-Shared BASIC</a></li>
+<li><a href="/wiki/IBM_BASIC" title="IBM BASIC">IBM BASIC</a></li>
+<li><a href="/wiki/Integer_BASIC" title="Integer BASIC">Integer BASIC</a></li>
+<li><a href="/wiki/Locomotive_BASIC" title="Locomotive BASIC">Locomotive BASIC</a></li>
+<li><a href="/wiki/Mallard_BASIC" title="Mallard BASIC">Mallard BASIC</a></li>
+<li><a href="/wiki/Microsoft_BASIC" title="Microsoft BASIC">Microsoft BASIC</a></li>
+<li><a href="/wiki/MSX_BASIC" title="MSX BASIC">MSX BASIC</a></li>
+<li><a href="/wiki/PureBasic" title="PureBasic">Pure Basic</a></li>
+<li><a href="/wiki/Rocky_Mountain_BASIC" title="Rocky Mountain BASIC">Rocky Mountain BASIC</a></li>
+<li><a href="/wiki/S-BASIC" title="S-BASIC">S'-BASIC</a> (Tandy, Casio, Sharp Pocket Computers)</li>
+<li><a href="/wiki/ScriptBasic" title="ScriptBasic">ScriptBasic</a></li>
+<li><a href="/wiki/Sinclair_BASIC" title="Sinclair BASIC">Sinclair BASIC</a></li>
+<li><a href="/wiki/Southampton_BASIC_System" title="Southampton BASIC System">Southampton BASIC System</a></li>
+<li><a href="/wiki/STOS_BASIC" title="STOS BASIC">STOS BASIC</a></li>
+<li><a href="/wiki/TI_BASIC_(TI_99/4A)" title="TI BASIC (TI 99/4A)">TI BASIC (TI 99/4A)</a></li>
+<li><a href="/wiki/TI-BASIC" title="TI-BASIC">TI-BASIC (calculators)</a></li>
+<li><a href="/wiki/TI_Extended_BASIC" title="TI Extended BASIC">TI Extended BASIC</a> (aka XBasic)</li>
+<li><a href="/wiki/Tiny_BASIC" title="Tiny BASIC">Tiny BASIC</a></li>
+<li><a href="/wiki/Turbo-Basic_XL" title="Turbo-Basic XL">Turbo-Basic XL</a></li>
+<li><a href="/wiki/Tymshare_Super_BASIC" class="mw-redirect" title="Tymshare Super BASIC">Tymshare SUPER BASIC</a></li>
+<li><a href="/wiki/UBASIC" title="UBASIC">UBASIC</a></li>
+<li><a href="/wiki/Vilnius_BASIC" title="Vilnius BASIC">Vilnius BASIC</a></li>
+<li><a href="/wiki/XBasic" title="XBasic">XBasic</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Procedure-oriented</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/AmigaBASIC" title="AmigaBASIC">AmigaBASIC</a></li>
+<li><a href="/wiki/AMOS_(programming_language)" title="AMOS (programming language)">AMOS BASIC</a></li>
+<li><a href="/wiki/ASIC_programming_language" title="ASIC programming language">ASIC</a></li>
+<li><a href="/wiki/BBC_BASIC" title="BBC BASIC">BBC BASIC</a></li>
+<li><a href="/wiki/Beta_BASIC" title="Beta BASIC">Beta BASIC</a></li>
+<li><a href="/wiki/DarkBASIC" class="mw-redirect" title="DarkBASIC">DarkBASIC</a></li>
+<li><a href="/wiki/FreeBASIC" title="FreeBASIC">FreeBASIC</a></li>
+<li><a href="/wiki/FutureBASIC" title="FutureBASIC">FutureBASIC</a></li>
+<li><a href="/wiki/GFA_BASIC" title="GFA BASIC">GFA BASIC</a></li>
+<li><a href="/wiki/GLBasic" title="GLBasic">GLBasic</a></li>
+<li><a href="/wiki/Liberty_BASIC" title="Liberty BASIC">Liberty BASIC</a></li>
+<li><a href="/wiki/Microsoft_Small_Basic" title="Microsoft Small Basic">Microsoft Small Basic</a></li>
+<li><a href="/wiki/PowerBASIC" title="PowerBASIC">PowerBASIC</a></li>
+<li><a href="/wiki/PureBasic" title="PureBasic">PureBasic</a></li>
+<li><a href="/wiki/QBasic" title="QBasic">QBasic</a></li>
+<li><a href="/wiki/QB64" title="QB64">QB64</a></li>
+<li><a href="/wiki/QuickBASIC" title="QuickBASIC">QuickBASIC</a></li>
+<li><a href="/wiki/SmallBASIC" title="SmallBASIC">SmallBASIC</a></li>
+<li><a href="/wiki/SuperBASIC" title="SuperBASIC">SuperBASIC</a></li>
+<li><a href="/wiki/ThinBasic" title="ThinBasic">ThinBasic</a></li>
+<li><a href="/wiki/True_BASIC" title="True BASIC">True BASIC</a></li>
+<li><a href="/wiki/Turbo_Basic" class="mw-redirect" title="Turbo Basic">Turbo Basic</a></li>
+<li><a href="/wiki/XBasic" title="XBasic">XBasic</a></li>
+<li><a href="/wiki/XBLite" title="XBLite">Xblite</a></li>
+<li><a href="/wiki/Basic4ppc" title="Basic4ppc">Basic4ppc</a></li>
+<li><a href="/wiki/Visual_Test" title="Visual Test">Visual Test</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">With object extensions</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/AutoIt" title="AutoIt">AutoIt</a></li>
+<li><a href="/wiki/Basic_For_Qt" title="Basic For Qt">Basic For Qt</a> (KBasic)</li>
+<li><a href="/wiki/Blitz_BASIC" title="Blitz BASIC">BlitzMax</a></li>
+<li><a href="/wiki/Chipmunk_Basic" title="Chipmunk Basic">Chipmunk Basic</a></li>
+<li><a href="/wiki/FreeBASIC" title="FreeBASIC">FreeBASIC</a></li>
+<li><a href="/wiki/Gambas" title="Gambas">Gambas</a></li>
+<li><a href="/wiki/GLBasic" title="GLBasic">GLBasic</a></li>
+<li><a href="/wiki/Monkey_X" title="Monkey X">Monkey X</a></li>
+<li><a href="/wiki/OpenOffice_Basic" title="OpenOffice Basic">OpenOffice Basic</a></li>
+<li><a href="/wiki/PowerBASIC" title="PowerBASIC">PowerBASIC</a></li>
+<li><a href="/wiki/ProvideX" title="ProvideX">ProvideX</a></li>
+<li><a href="/wiki/RapidQ" title="RapidQ">RapidQ</a></li>
+<li><a href="/wiki/Xojo" title="Xojo">REALbasic</a></li>
+<li><a href="/wiki/Run_BASIC" title="Run BASIC">Run BASIC</a></li>
+<li><a href="/wiki/Visual_Basic" title="Visual Basic">Visual Basic</a></li>
+<li><a href="/wiki/Visual_Basic_.NET" title="Visual Basic .NET">Visual Basic .NET</a></li>
+<li><a href="/wiki/Xojo" title="Xojo">Xojo</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">For mobile devices</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Basic4android" title="Basic4android">Basic4android</a></li>
+<li><a href="/wiki/Basic4ppc" title="Basic4ppc">Basic4ppc</a></li>
+<li><a href="/wiki/GLBasic" title="GLBasic">GLBasic</a></li>
+<li><a href="/wiki/NS_Basic" title="NS Basic">NS Basic</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Microsoft</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Microsoft_BASIC" title="Microsoft BASIC">Microsoft BASIC</a>
+<ul>
+<li><a href="/wiki/MBASIC" title="MBASIC">MBASIC</a></li>
+<li><a href="/wiki/IBM_BASIC" title="IBM BASIC">IBM BASIC</a>/BASICA</li>
+<li><a href="/wiki/GW-BASIC" title="GW-BASIC">GW-BASIC</a></li>
+<li><a href="/wiki/QuickBASIC" title="QuickBASIC">QuickBASIC</a></li>
+<li><a href="/wiki/QBasic" title="QBasic">QBasic</a></li>
+</ul>
+</li>
+<li><a href="/wiki/VBScript" title="VBScript">VBScript</a></li>
+<li><a href="/wiki/Visual_Basic" title="Visual Basic">Visual Basic</a></li>
+<li><a href="/wiki/Visual_Basic_for_Applications" title="Visual Basic for Applications">VBA</a></li>
+<li><a href="/wiki/Visual_Basic_.NET" title="Visual Basic .NET">Visual Basic .NET</a></li>
+<li><a href="/wiki/Embedded_Visual_Basic" title="Embedded Visual Basic">Embedded Visual Basic</a></li>
+<li>VB 5 for <a href="/wiki/Microsoft_Excel" title="Microsoft Excel">Microsoft Excel</a> 5.0
+<ul>
+<li><a href="/wiki/Visual_Studio_Tools_for_Office" title="Visual Studio Tools for Office">VSTO</a></li>
+<li><a href="/wiki/Visual_Studio_Tools_for_Applications" title="Visual Studio Tools for Applications">VSTA</a></li>
+</ul>
+</li>
+<li><a href="/wiki/WordBASIC" title="WordBASIC">WordBASIC</a></li>
+<li>TRS-80 Basics (Level I, Level II, Level III)</li>
+<li><a href="/wiki/Microsoft_Small_Basic" title="Microsoft Small Basic">Microsoft Small Basic</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Third-party VB-like</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Basic_For_Qt" title="Basic For Qt">Basic For Qt</a></li>
+<li><a href="/wiki/Gambas" title="Gambas">Gambas</a></li>
+<li><a href="/wiki/Visual_Basic" title="Visual Basic">Hummingbird Basic</a></li>
+<li><strong class="selflink">LotusScript</strong></li>
+<li><a href="/wiki/WinWrap_Basic" title="WinWrap Basic">WinWrapBasic</a></li>
+<li><a href="/wiki/Xojo" title="Xojo">Xojo</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1185
+Cached time: 20170121100139
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.040 seconds
+Real time usage: 0.057 seconds
+Preprocessor visited node count: 94/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 16186/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 3/40
+Expensive parser function count: 0/500
+Lua time usage: 0.009/10.000 seconds
+Lua memory usage: 695 KB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%   26.887      1 Template:BASIC
+100.00%   26.887      1 -total
+ 91.74%   24.665      1 Template:Navbox
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:239268-0!*!0!*!*!*!* and timestamp 20170121100139 and revision id 756099164
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=LotusScript&amp;oldid=756099164">https://en.wikipedia.org/w/index.php?title=LotusScript&amp;oldid=756099164</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:BASIC_programming_language_family" title="Category:BASIC programming language family">BASIC programming language family</a></li><li><a href="/wiki/Category:Lotus_Software_software" title="Category:Lotus Software software">Lotus Software software</a></li><li><a href="/wiki/Category:Scripting_languages" title="Category:Scripting languages">Scripting languages</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=LotusScript" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=LotusScript" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/LotusScript"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:LotusScript"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/LotusScript" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=LotusScript&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=LotusScript&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/LotusScript" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/LotusScript" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=LotusScript&amp;oldid=756099164" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=LotusScript&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q3260092" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=LotusScript&amp;id=756099164" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=LotusScript">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=LotusScript&amp;returnto=LotusScript&amp;oldid=756099164&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=LotusScript&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-es"><a href="https://es.wikipedia.org/wiki/LotusScript" title="LotusScript – Spanish" lang="es" hreflang="es" class="interlanguage-link-target">Español</a></li><li class="interlanguage-link interwiki-eo"><a href="https://eo.wikipedia.org/wiki/Lotus_Script" title="Lotus Script – Esperanto" lang="eo" hreflang="eo" class="interlanguage-link-target">Esperanto</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/Lotus_script" title="Lotus script – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-ja"><a href="https://ja.wikipedia.org/wiki/Lotus_Script" title="Lotus Script – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target">日本語</a></li><li class="interlanguage-link interwiki-pt"><a href="https://pt.wikipedia.org/wiki/LotusScript" title="LotusScript – Portuguese" lang="pt" hreflang="pt" class="interlanguage-link-target">Português</a></li><li class="interlanguage-link interwiki-sv"><a href="https://sv.wikipedia.org/wiki/Lotusscript" title="Lotusscript – Swedish" lang="sv" hreflang="sv" class="interlanguage-link-target">Svenska</a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q3260092#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 22 December 2016, at 00:26.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=LotusScript&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.040","walltime":"0.057","ppvisitednodes":{"value":94,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":16186,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":3,"limit":40},"expensivefunctioncount":{"value":0,"limit":500},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%   26.887      1 Template:BASIC","100.00%   26.887      1 -total"," 91.74%   24.665      1 Template:Navbox"]},"scribunto":{"limitreport-timeusage":{"value":"0.009","limit":"10.000"},"limitreport-memusage":{"value":711646,"limit":52428800}},"cachereport":{"origin":"mw1185","timestamp":"20170121100139","ttl":2592000,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":53,"wgHostname":"mw1253"});});</script>
+	</body>
+</html>

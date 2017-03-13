@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Magik (programming language) - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Magik_(programming_language)","wgTitle":"Magik (programming language)","wgCurRevisionId":751662066,"wgRevisionId":751662066,"wgArticleId":2988758,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles lacking reliable references from January 2008","All articles lacking reliable references","Class-based programming languages","Dynamically typed programming languages"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Magik_(programming_language)","wgRelevantArticleId":2988758,"wgRequestId":"WIvGXApAIDoAADTwEY8AAAAE","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":true},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q9026871","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.cite.styles":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.legacy.wikibits","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.29.0-wmf.9"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Magik_(programming_language)"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Magik_(programming_language)&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Magik_(programming_language)&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Magik_(programming_language)"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Magik_programming_language rootpage-Magik_programming_language skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Magik (programming language)</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><script>function mfTempOpenSection(id){var block=document.getElementById("mf-section-"+id);block.className+=" open-block";block.previousSibling.className+=" open-block";}</script><table class="plainlinks metadata ambox ambox-content ambox-Primary_sources" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><a href="/wiki/File:Question_book-new.svg" class="image"><img alt="Question book-new.svg" src="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" width="50" height="39" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/75px-Question_book-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/100px-Question_book-new.svg.png 2x" data-file-width="512" data-file-height="399" /></a></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">This article <b>relies too much on <a href="/wiki/Wikipedia:Verifiability" title="Wikipedia:Verifiability">references</a> to <a href="/wiki/Wikipedia:No_original_research#Primary.2C_secondary_and_tertiary_sources" title="Wikipedia:No original research">primary sources</a></b>. <span class="hide-when-compact">Please improve this by adding <a href="/wiki/Wikipedia:No_original_research#Primary.2C_secondary_and_tertiary_sources" title="Wikipedia:No original research">secondary or tertiary sources</a>.</span> <small><i>(January 2008)</i></small> <small class="hide-when-compact"><i>(<a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove this template message</a>)</i></small></span></td>
+</tr>
+</table>
+<p><b>Magik</b> is an <a href="/wiki/Object-oriented_programming" title="Object-oriented programming">object-oriented programming</a> language that supports <a href="/wiki/Multiple_inheritance" title="Multiple inheritance">multiple inheritance</a>, <a href="/wiki/Polymorphism_(computer_science)" title="Polymorphism (computer science)">polymorphism</a> and is <a href="/wiki/Dynamic_typing" class="mw-redirect" title="Dynamic typing">dynamically typed</a>. It was designed implemented in 1989 by Arthur Chance, of <a href="/wiki/Smallworld" title="Smallworld">Smallworld</a> Systems Ltd, as part of Smallworld Geographical Information System (GIS). Following Smallworld's acquisition in 2000, Magik is now is provided by <a href="/wiki/GE_Energy" title="GE Energy">GE Energy</a>, still as part of its <a href="/wiki/Smallworld" title="Smallworld">Smallworld</a> technology platform.</p>
+<p>Magik (Inspirational Magik) was originally introduced in 1990 and has been improved and updated over the years. Its current version is 4.0 or Magik SF (Small Footprint).</p>
+<p>In July 2012, Magik developers announced that they were in the process of porting Magik language on the <a href="/wiki/Java_virtual_machine" title="Java virtual machine">Java virtual machine</a>. The successful porting was confirmed by <a href="/wiki/Oracle_Corporation" title="Oracle Corporation">Oracle Corporation</a> in November of the same year.<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">[1]</a></sup></p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Similarities_with_Smalltalk"><span class="tocnumber">1</span> <span class="toctext">Similarities with Smalltalk</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Language_features"><span class="tocnumber">2</span> <span class="toctext">Language features</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Comments"><span class="tocnumber">2.1</span> <span class="toctext">Comments</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Assignments"><span class="tocnumber">2.2</span> <span class="toctext">Assignments</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Symbols"><span class="tocnumber">2.3</span> <span class="toctext">Symbols</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Dynamic_typing"><span class="tocnumber">2.4</span> <span class="toctext">Dynamic typing</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Comparison"><span class="tocnumber">2.5</span> <span class="toctext">Comparison</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Methods"><span class="tocnumber">2.6</span> <span class="toctext">Methods</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Iteration"><span class="tocnumber">2.7</span> <span class="toctext">Iteration</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Procedures"><span class="tocnumber">2.8</span> <span class="toctext">Procedures</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#Language_Quirks"><span class="tocnumber">2.9</span> <span class="toctext">Language Quirks</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#Collections"><span class="tocnumber">2.10</span> <span class="toctext">Collections</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-13"><a href="#Hello_World_example"><span class="tocnumber">3</span> <span class="toctext">Hello World example</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="#References"><span class="tocnumber">4</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-15"><a href="#External_links"><span class="tocnumber">5</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Similarities_with_Smalltalk">Similarities with Smalltalk</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Magik_(programming_language)&amp;action=edit&amp;section=1" title="Edit section: Similarities with Smalltalk">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Magik itself shares some similarities with <a href="/wiki/Smalltalk" title="Smalltalk">Smalltalk</a> in terms of its language features and its architecture: the Magik language is compiled into <a href="/wiki/Byte-code" class="mw-redirect" title="Byte-code">byte codes</a> interpreted by the Magik <a href="/wiki/Virtual_machine" title="Virtual machine">virtual machine</a>. The Magik virtual machine is available on several platforms including <a href="/wiki/Microsoft_Windows" title="Microsoft Windows">Microsoft Windows</a>, various flavours of <a href="/wiki/Unix" title="Unix">Unix</a> and <a href="/wiki/Linux" title="Linux">Linux</a>.</p>
+<p>Magik is console based and code can be modified on the fly even when an application is running. The console can also be used to execute Magik code and to see the results.</p>
+<p>Compiled code is stored in a single file called an image file. Each image file holds the compiled byte-codes and the state of the session (for example variable values) when the image was last saved.</p>
+<h2><span class="mw-headline" id="Language_features">Language features</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Magik_(programming_language)&amp;action=edit&amp;section=2" title="Edit section: Language features">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="Comments">Comments</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Magik_(programming_language)&amp;action=edit&amp;section=3" title="Edit section: Comments">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Magik uses the <code>#</code> token to mark sections of code as comments:</p>
+<pre>
+ # This is a comment.
+</pre>
+<h3><span class="mw-headline" id="Assignments">Assignments</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Magik_(programming_language)&amp;action=edit&amp;section=4" title="Edit section: Assignments">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Magik uses the <code>&lt;&lt;</code> operator to make <a href="/wiki/Assignment_(computer_science)" title="Assignment (computer science)">assignments</a>:</p>
+<pre>
+  a &lt;&lt; 1.234
+  b &lt;&lt; b + a
+  c &lt;&lt; "foo" + "bar" # Concat strings
+</pre>
+<p>For clarity, this notation is read as "a becomes 1.234" or "b becomes b plus a". This terminology separates assignment from <a href="/wiki/Comparison_(computer_programming)" class="mw-redirect" title="Comparison (computer programming)">comparison</a>.</p>
+<p>Magik also supports a compressed variation of this operator that works in a similar way to those found in <a href="/wiki/C_(programming_language)" title="C (programming language)">C</a>:</p>
+<pre>
+  b +&lt;&lt; a # Equivalent to b &lt;&lt; b + a
+</pre>
+<p>To print a variable you can use the following command</p>
+<pre>
+ a &lt;&lt; "hello"
+ write(a)
+</pre>
+<h3><span class="mw-headline" id="Symbols">Symbols</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Magik_(programming_language)&amp;action=edit&amp;section=5" title="Edit section: Symbols">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>As well as conventional data types such as integers, floats and strings Magik also implements symbols. Symbols are a special token data type that are used extensively throughout Magik to uniquely identify objects. They are represented by a colon followed by a string of characters. Symbols can be escaped using the <a href="/wiki/Vertical_bar" title="Vertical bar">vertical bar</a> character. For example:</p>
+<pre>
+  a &lt;&lt; :hello  # whenever :hello is encountered, it is the same instance
+  b &lt;&lt; :|hello world|
+</pre>
+<h3><span class="mw-headline" id="Dynamic_typing">Dynamic typing</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Magik_(programming_language)&amp;action=edit&amp;section=6" title="Edit section: Dynamic typing">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Magik variables are not typed as they are in say <a href="/wiki/C_Sharp_(programming_language)" title="C Sharp (programming language)">C#</a> and can reference different objects at runtime. Everything in Magik is an object (there is no distinction between objects and primitive types such as integers):</p>
+<pre>
+  a &lt;&lt; 1.2     # a floating point number is assigned to variable 'a'
+  a &lt;&lt; "1.2"   # later, a string is assigned to variable 'a'
+</pre>
+<dl>
+<dt>Objects</dt>
+</dl>
+<p>Objects are implemented in Magik using exemplars. Exemplars have similarities to classes in other programming languages such as <a href="/wiki/Java_(programming_language)" title="Java (programming language)">Java</a>, but with important differences. Magik supports multiple inheritance, and <a href="/wiki/Mixin" title="Mixin">mixins</a> (which implement functionality with no data). New instances are made by cloning an existing instance (which will typically be the exemplar but does not have to be).</p>
+<p>New exemplars are created using the statement <code>def_slotted_exemplar()</code>, for example:</p>
+<pre>
+  def_slotted_exemplar(:my_object,
+  {
+    {:slot_a, 34},
+    {:slot_b, "hello"}
+  }, {:parent_object_a, :parent_object_b})
+</pre>
+<p>This code fragment will define a new exemplar called <code>my_object</code> that has two slots (or fields) called <code>slot_a</code> (pre-initialized to 34) and <code>slot_b</code> (pre-initialised to "hello") that inherits from two existing exemplars called <code>parent_object_a</code> and <code>parent_object_b</code>.</p>
+<h3><span class="mw-headline" id="Comparison">Comparison</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Magik_(programming_language)&amp;action=edit&amp;section=7" title="Edit section: Comparison">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Magik implements all usual logical operators (<code>=</code>, <code>&lt;</code>, <code>&lt;=</code>, <code>&gt;</code>, <code>&gt;=</code>, <code>~=/&lt;&gt;</code>) for comparison, as well as a few unusual ones. The <code>_is</code> and <code>_isnt</code> operators are used for comparing specific instances of objects, or object references rather than values.</p>
+<p>For example:</p>
+<pre>
+  a &lt;&lt; "hello"
+  b &lt;&lt; "hello"
+
+  a = b # returns True (_true) because the values of a and b are equal
+  a _is b # returns False (_false) because a is not the same instance as b
+
+  a &lt;&lt; "hello"
+  b &lt;&lt; a = b # returns True (_true) because the values of a and b are equal
+  a _is b # returns True (_true) because b was assigned the specific instance of the same object as a, rather than the value of a.
+</pre>
+<h3><span class="mw-headline" id="Methods">Methods</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Magik_(programming_language)&amp;action=edit&amp;section=8" title="Edit section: Methods">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Methods are defined on exemplars using the statements <code>_method</code> and <code>_endmethod</code>:</p>
+<pre>
+  _method my_object.my_method(a, b)
+    _return a + b
+  _endmethod
+</pre>
+<p>It is convention to supply two methods <code>new()</code> (to create a new instance) and <code>init()</code> (to initialize an instance).</p>
+<pre>
+  # New method
+  _method person.new(name, age)
+    _return _clone.init(name, age)
+  _endmethod
+
+  # Initialize method.
+  _private _method person.init(name, age)
+     # Call the parent implementation.
+     _super.init(name, age)
+     # Initialise the slots.
+     .name &lt;&lt; name
+     .age &lt;&lt; age
+    _return _self
+  _endmethod
+</pre>
+<p>The <code>_clone</code> creates a physical copy of the <code>person</code> object. The <code>_super</code> statement allows objects to invoke an implementation of a method on the parent exemplar. Objects can reference themselves using the <code>_self</code> statement. An object's slots are accessed and assigned using a dot notation.</p>
+<p>Methods that are not part of the public interface of the object can be marked private using the <code>_private</code> statement. Private methods can only be called by <code>_self</code>, <code>_super</code> and <code>_clone</code>.</p>
+<p>Optional arguments can be declared using the <code>_optional</code> statement. Optional arguments that are not passed are assigned by Magik to the special object <code>_unset</code> (the equivalent of null). The <code>_gather</code> statement can be used to declare a list of optional arguments.</p>
+<pre>
+  _method my_object.my_method(_gather values)     
+  _endmethod
+</pre>
+<h3><span class="mw-headline" id="Iteration">Iteration</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Magik_(programming_language)&amp;action=edit&amp;section=9" title="Edit section: Iteration">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>In Magik the <code>_for</code>, <code>_over</code>, <code>_loop</code> and <code>_endloop</code> statements allow iteration.</p>
+<pre>
+  _method my_object.my_method(_gather values)
+    total &lt;&lt; 0.0
+    _for a _over values.elements()
+    _loop
+       total +&lt;&lt; a
+    _endloop
+    _return total
+  _endmethod
+
+  m &lt;&lt; my_object.new()
+  x &lt;&lt; m.my_method(1.0, 2, 3.0, 4) # x = 10.0
+</pre>
+<p>Here values.elements() is an iterator which helps to iterate the values.</p>
+<p>In Magik <a href="/wiki/Generator_(computer_science)" class="mw-redirect" title="Generator (computer science)">generator</a> methods are called iterator methods. New iterator methods can be defined using the <code>_iter</code> and <code>_loopbody</code> statements:</p>
+<pre>
+  _iter _method my_object.even_elements()
+    _for a _over _self.elements()
+    _loop
+      _if a.even? _is _true
+      _then
+         _loopbody(a)       
+      _endif
+    _endloop
+  _endmethod
+</pre>
+<h3><span class="mw-headline" id="Procedures">Procedures</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Magik_(programming_language)&amp;action=edit&amp;section=10" title="Edit section: Procedures">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Magik also supports functions called procedures. Procedures are also objects and are declared using the <code>_proc</code> and <code>_endproc</code> statements. Procedures are assigned to variables which may then be invoked:</p>
+<pre>
+  my_procedure &lt;&lt; _proc @my_procedure(a, b, c)
+    _return a + b + c
+  _endproc
+
+  x &lt;&lt; my_procedure(1, 2, 3) # x = 6
+</pre>
+<h3><span class="mw-headline" id="Language_Quirks">Language Quirks</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Magik_(programming_language)&amp;action=edit&amp;section=11" title="Edit section: Language Quirks">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Because Magik was originally developed in England, methods in the core smallworld libraries are spelled using <a href="/wiki/British_English" title="British English">British English</a>. For example:</p>
+<pre>
+  Use "initialise", not "initialize".
+</pre>
+<h3><span class="mw-headline" id="Collections">Collections</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Magik_(programming_language)&amp;action=edit&amp;section=12" title="Edit section: Collections">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Like other programming language Magik too has collections. They include the following:</p>
+<ul>
+<li>Simple Vector</li>
+<li>Rope</li>
+<li>Hash Table</li>
+<li>Property List</li>
+<li>Equality set</li>
+<li>Bags</li>
+</ul>
+<h2><span class="mw-headline" id="Hello_World_example">Hello World example</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Magik_(programming_language)&amp;action=edit&amp;section=13" title="Edit section: Hello World example">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The following is an example of the <a href="/wiki/Hello_world_program" class="mw-redirect" title="Hello world program">Hello world program</a> written in Magik:</p>
+<pre>
+ write("Hello World!")
+</pre>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Magik_(programming_language)&amp;action=edit&amp;section=14" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><cite class="citation web">Jim Connors (2012-11-05). <a rel="nofollow" class="external text" href="https://blogs.oracle.com/jtc/entry/sprinkle_some_magik_on_that">"Sprinkle Some Magik on that Java Virtual Machine"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2012-11-06</span></span>. <q><i>With this new capability GE Energy has succeeded in hosting their Magik environment on top of the Java Virtual Machine</i></q></cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMagik+%28programming+language%29&amp;rft.au=Jim+Connors&amp;rft.btitle=Sprinkle+Some+Magik+on+that+Java+Virtual+Machine&amp;rft.date=2012-11-05&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fblogs.oracle.com%2Fjtc%2Fentry%2Fsprinkle_some_magik_on_that&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Magik_(programming_language)&amp;action=edit&amp;section=15" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.ge-energy.com/products_and_services/products/geospatial_systems_and_mobile_workforce/index.jsp">Smallworld Product Suite Technology</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.mdt.net/">MDT - Magik Development Tools</a> IDE for GE Smallworld GIS developers</li>
+<li><a rel="nofollow" class="external text" href="http://sourceforge.net/projects/magikcmpnts">Open Source (SourceForge)</a></li>
+<li><a rel="nofollow" class="external text" href="http://lambda-the-ultimate.org/classic/message5839.html#5886">Language forum post on Magik</a></li>
+<li><a rel="nofollow" class="external text" href="http://cfis.savagexi.com/pages/technical_paper_5">Technical Paper No. 5 - An Overview of Smallworld Magik</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.magikemacs.com/page/6/">GE Smallworld, Emacs Extensions for Magik developers</a></li>
+</ul>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1179
+Cached time: 20161231041436
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.056 seconds
+Real time usage: 0.080 seconds
+Preprocessor visited node count: 274/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 5519/2097152 bytes
+Template argument size: 12/2097152 bytes
+Highest expansion depth: 6/40
+Expensive parser function count: 1/500
+Lua time usage: 0.027/10.000 seconds
+Lua memory usage: 1.71 MB/50 MB
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%   64.739      1 - -total
+ 53.33%   34.526      1 - Template:Primary_sources
+ 44.20%   28.616      1 - Template:Reflist
+ 39.22%   25.389      1 - Template:Cite_web
+ 33.59%   21.743      1 - Template:Ambox
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:2988758-0!*!0!!en!4!* and timestamp 20161231041436 and revision id 751662066
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Magik_(programming_language)&amp;oldid=751662066">https://en.wikipedia.org/w/index.php?title=Magik_(programming_language)&amp;oldid=751662066</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Class-based_programming_languages" title="Category:Class-based programming languages">Class-based programming languages</a></li><li><a href="/wiki/Category:Dynamically_typed_programming_languages" title="Category:Dynamically typed programming languages">Dynamically typed programming languages</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Articles_lacking_reliable_references_from_January_2008" title="Category:Articles lacking reliable references from January 2008">Articles lacking reliable references from January 2008</a></li><li><a href="/wiki/Category:All_articles_lacking_reliable_references" title="Category:All articles lacking reliable references">All articles lacking reliable references</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Magik+%28programming+language%29" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Magik+%28programming+language%29" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/Magik_(programming_language)"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:Magik_(programming_language)"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/Magik_(programming_language)" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=Magik_(programming_language)&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Magik_(programming_language)&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Magik_(programming_language)" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Magik_(programming_language)" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Magik_(programming_language)&amp;oldid=751662066" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Magik_(programming_language)&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q9026871" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Magik_%28programming_language%29&amp;id=751662066" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Magik+%28programming+language%29">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Magik+%28programming+language%29&amp;returnto=Magik+%28programming+language%29&amp;oldid=751662066&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Magik_(programming_language)&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-es"><a href="https://es.wikipedia.org/wiki/Magik_(lenguaje_de_programaci%C3%B3n)" title="Magik (lenguaje de programación) – Spanish" lang="es" hreflang="es" class="interlanguage-link-target">Español</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/Magik_(langage)" title="Magik (langage) – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-id"><a href="https://id.wikipedia.org/wiki/Magik" title="Magik – Indonesian" lang="id" hreflang="id" class="interlanguage-link-target">Bahasa Indonesia</a></li><li class="interlanguage-link interwiki-pl"><a href="https://pl.wikipedia.org/wiki/Magik_(j%C4%99zyk_programowania)" title="Magik (język programowania) – Polish" lang="pl" hreflang="pl" class="interlanguage-link-target">Polski</a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q9026871#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 27 November 2016, at 03:36.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Magik_(programming_language)&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":79,"wgHostname":"mw1188"});});</script>
+	</body>
+</html>

@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Opa (programming language) - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Opa_(programming_language)","wgTitle":"Opa (programming language)","wgCurRevisionId":754105146,"wgRevisionId":754105146,"wgArticleId":32976878,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["CS1 French-language sources (fr)","Pages using deprecated image syntax","Official website different in Wikidata and Wikipedia","Pages using ISBN magic links","Functional languages","Web programming","Cross-platform free software","Programming languages created in 2011","Software using the GNU AGPL license"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Opa_(programming_language)","wgRelevantArticleId":32976878,"wgRequestId":"WI8O5ApAAEMAALWCt84AAABK","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":true},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q3353033","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.cite.styles":"ready","ext.pygments":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.legacy.wikibits","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.pygments%2CwikimediaBadges%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.29.0-wmf.9"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Opa_(programming_language)"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Opa_(programming_language)&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Opa_(programming_language)&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Opa_(programming_language)"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Opa_programming_language rootpage-Opa_programming_language skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Opa (programming language)</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><script>function mfTempOpenSection(id){var block=document.getElementById("mf-section-"+id);block.className+=" open-block";block.previousSibling.className+=" open-block";}</script><table class="infobox vevent" style="width:22em">
+<caption class="summary">Opa</caption>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/File:Opa_logo_cloud.png" class="image"><img alt="Opa logo cloud.png" src="//upload.wikimedia.org/wikipedia/en/6/64/Opa_logo_cloud.png" width="66" height="43" data-file-width="66" data-file-height="43" /></a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Programming_paradigm" title="Programming paradigm">Paradigm</a></th>
+<td><a href="/wiki/Multi-paradigm_programming_language" class="mw-redirect" title="Multi-paradigm programming language">multi-paradigm</a>: <a href="/wiki/Functional_programming" title="Functional programming">functional</a>, <a href="/wiki/Imperative_programming" title="Imperative programming">imperative</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_developer" title="Software developer">Developer</a></th>
+<td class="organiser"><a rel="nofollow" class="external text" href="http://www.linkedin.com/company/mlstate">MLstate</a></td>
+</tr>
+<tr>
+<th scope="row">First&#160;appeared</th>
+<td>2011</td>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Software_release_life_cycle" title="Software release life cycle">Stable release</a></th>
+<td>
+<div style="margin:0px;">1.1.0 (stable) / February&#160;13, 2013<span class="noprint">; 3 years ago</span><span style="display:none">&#160;(<span class="bday dtstart published updated">2013-02-13</span>)</span><sup id="cite_ref-1" class="reference"><a href="#cite_note-1">[1]</a></sup></div>
+</td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Type_system" title="Type system">Typing discipline</a></th>
+<td><a href="/wiki/Static_typing" class="mw-redirect" title="Static typing">static</a>, <a href="/wiki/Strong_typing" class="mw-redirect" title="Strong typing">strong</a>, <a href="/wiki/Type_inference" title="Type inference">inferred</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Operating_system" title="Operating system">OS</a></th>
+<td><a href="/wiki/Linux" title="Linux">Linux</a>, <a href="/wiki/OS_X" class="mw-redirect" title="OS X">OS X</a>, <a href="/wiki/Windows" class="mw-redirect" title="Windows">Windows</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_license" title="Software license">License</a></th>
+<td><a href="/wiki/MIT_License" title="MIT License">MIT License</a>, <a href="/wiki/Affero_General_Public_License" title="Affero General Public License">AGPLv3</a></td>
+</tr>
+<tr>
+<th scope="row">Website</th>
+<td><span class="url"><a rel="nofollow" class="external text" href="http://opalang.org">opalang<wbr />.org</a></span></td>
+</tr>
+<tr>
+<th colspan="2" style="text-align:center;background-color: #eee;">Influenced by</th>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/OCaml" title="OCaml">OCaml</a>, <a href="/wiki/Erlang_(programming_language)" title="Erlang (programming language)">Erlang</a>, <a href="/wiki/JavaScript" title="JavaScript">JavaScript</a></td>
+</tr>
+</table>
+<p><b>Opa</b> is an <a href="/wiki/Open-source_software" title="Open-source software">open-source</a> <a href="/wiki/Programming_language" title="Programming language">programming language</a> for developing <a href="/wiki/Scalability" title="Scalability">scalable</a> <a href="/wiki/Web_applications" class="mw-redirect" title="Web applications">web applications</a>.</p>
+<p>It can be used for both <a href="/wiki/Client-side_scripting" title="Client-side scripting">client-side</a> and <a href="/wiki/Server-side_scripting" title="Server-side scripting">server-side scripting</a>, where complete programs are written in Opa and subsequently compiled to <a href="/wiki/Nodejs" class="mw-redirect" title="Nodejs">Nodejs</a> on the <a href="/wiki/Server_(computing)" title="Server (computing)">server</a> and <a href="/wiki/JavaScript" title="JavaScript">JavaScript</a> on the <a href="/wiki/Client_(computing)" title="Client (computing)">client</a>, with the <a href="/wiki/Compiler" title="Compiler">compiler</a> automating all communication between the two.<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">[2]</a></sup><sup id="cite_ref-3" class="reference"><a href="#cite_note-3">[3]</a></sup> Opa implements <a href="/wiki/Strong_typing" class="mw-redirect" title="Strong typing">strong</a>, <a href="/wiki/Static_typing" class="mw-redirect" title="Static typing">static typing</a>, which can be helpful in protecting against security issues such as <a href="/wiki/SQL_injection" title="SQL injection">SQL injections</a> and <a href="/wiki/Cross-site_scripting" title="Cross-site scripting">cross-site scripting</a> attacks.<sup id="cite_ref-4" class="reference"><a href="#cite_note-4">[4]</a></sup></p>
+<p>The language was first officially presented at the <a href="/wiki/OWASP" title="OWASP">OWASP</a> conference in 2010,<sup id="cite_ref-5" class="reference"><a href="#cite_note-5">[5]</a></sup> and the source code was released on <a href="/wiki/GitHub" title="GitHub">GitHub</a><sup id="cite_ref-6" class="reference"><a href="#cite_note-6">[6]</a></sup> in June 2011, under a <a href="/wiki/GNU" title="GNU">GNU</a> <a href="/wiki/Affero_General_Public_License" title="Affero General Public License">Affero General Public License</a>. Later, the license changed to the MIT license for the framework part (library) and AGPL for the compiler so that applications written in Opa can be released under any license, proprietary or open source.</p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Design_and_features"><span class="tocnumber">1</span> <span class="toctext">Design and features</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Examples"><span class="tocnumber">2</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Hello_world"><span class="tocnumber">2.1</span> <span class="toctext">Hello world</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="#See_also"><span class="tocnumber">3</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#References"><span class="tocnumber">4</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Bibliography"><span class="tocnumber">5</span> <span class="toctext">Bibliography</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#External_links"><span class="tocnumber">6</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Design_and_features">Design and features</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Opa_(programming_language)&amp;action=edit&amp;section=1" title="Edit section: Design and features">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Opa consists of a <a href="/wiki/Web_server" title="Web server">web server</a>, a <a href="/wiki/Database" title="Database">database</a> and distributed execution engine.<sup id="cite_ref-7" class="reference"><a href="#cite_note-7">[7]</a></sup> Code written in Opa is compiled to <a href="/wiki/JavaScript" title="JavaScript">JavaScript</a> using <a href="/wiki/Node.js" title="Node.js">Node.js</a> on the <a href="/wiki/Server-side_scripting" title="Server-side scripting">server side</a> and to <a href="/wiki/JavaScript" title="JavaScript">JavaScript</a> using <a href="/wiki/JQuery" title="JQuery">jQuery</a> for cross-browser compatibility on the <a href="/wiki/Client-side_scripting" title="Client-side scripting">client side</a>.<sup id="cite_ref-8" class="reference"><a href="#cite_note-8">[8]</a></sup> The advantage of the approach compared to certain <a href="/wiki/Rich_Internet_Application" class="mw-redirect" title="Rich Internet Application">Rich Internet Application</a> (RIA) platforms is that users are not required to install a <a href="/wiki/Browser_plugin" class="mw-redirect" title="Browser plugin">plugin</a> in their browser.<sup id="cite_ref-9" class="reference"><a href="#cite_note-9">[9]</a></sup> Opa shares motivations with <a href="/wiki/Web_framework" title="Web framework">web frameworks</a>, but takes a different approach.<sup id="cite_ref-10" class="reference"><a href="#cite_note-10">[10]</a></sup> Its designers assert that this helps Opa to avoid many security issues, like <a href="/wiki/SQL_injection" title="SQL injection">SQL injections</a> or <a href="/wiki/Cross-site_scripting" title="Cross-site scripting">cross-site scripting</a> (XSS) attacks.<sup id="cite_ref-11" class="reference"><a href="#cite_note-11">[11]</a></sup></p>
+<p>The core language is <a href="/wiki/Functional_programming" title="Functional programming">functional</a> and has a static <a href="/wiki/Type_system" title="Type system">type system</a> with <a href="/wiki/Type_inference" title="Type inference">type inference</a>. Opa also provides sessions which encapsulate an <a href="/wiki/Imperative_programming" title="Imperative programming">imperative</a> state and communicate using <a href="/wiki/Message_passing" title="Message passing">message passing</a>, similar to <a href="/wiki/Erlang_(programming_language)" title="Erlang (programming language)">Erlang</a> processes. Opa provides many structures or functions that are common in web development, as <a href="/wiki/First-class_object" class="mw-redirect" title="First-class object">first-class objects</a>, for instance <a href="/wiki/HTML" title="HTML">HTML</a><sup id="cite_ref-12" class="reference"><a href="#cite_note-12">[12]</a></sup> and <a href="/wiki/Parser" class="mw-redirect" title="Parser">parsers</a>, based on <a href="/wiki/Parsing_Expression_Grammar" class="mw-redirect" title="Parsing Expression Grammar">Parsing Expression Grammars</a>.<sup id="cite_ref-13" class="reference"><a href="#cite_note-13">[13]</a></sup> Because of this adhesion between the language and web-related concepts, Opa is not intended for non-web applications (for instance <a href="/wiki/Desktop_application" class="mw-redirect" title="Desktop application">desktop applications</a>).<sup id="cite_ref-14" class="reference"><a href="#cite_note-14">[14]</a></sup></p>
+<p>The 0.9.0 release in February 2012 introduced database mapping technology for the non-relational, document-oriented database <a href="/wiki/MongoDB" title="MongoDB">MongoDB</a>, similar to <a href="/wiki/Object-relational_mapping" title="Object-relational mapping">object-relational mapping</a>.<sup id="cite_ref-15" class="reference"><a href="#cite_note-15">[15]</a></sup><sup id="cite_ref-16" class="reference"><a href="#cite_note-16">[16]</a></sup><sup id="cite_ref-17" class="reference"><a href="#cite_note-17">[17]</a></sup> The 1.1.0 release in February 2013 also added support for <a href="/wiki/PostgreSQL" title="PostgreSQL">PostgreSQL</a>, paving the way for the support of several <a href="/wiki/SQL" title="SQL">SQL</a> databases.</p>
+<h2><span class="mw-headline" id="Examples">Examples</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Opa_(programming_language)&amp;action=edit&amp;section=2" title="Edit section: Examples">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="Hello_world">Hello world</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Opa_(programming_language)&amp;action=edit&amp;section=3" title="Edit section: Hello world">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The traditional <a href="/wiki/Hello_world_program" class="mw-redirect" title="Hello world program">Hello world program</a>, producing a web server that serves a static page with "Hello, web!" as its content, can be written in Opa as:<sup id="cite_ref-18" class="reference"><a href="#cite_note-18">[18]</a></sup></p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="nn">Server</span><span class="o">.</span>start<span class="o">(</span><span class="nn">Server</span><span class="o">.</span>http<span class="o">,</span>
+  <span class="o">{</span> title<span class="o">:</span> <span class="s2">"Hello"</span>
+  <span class="o">,</span> page<span class="o">:</span> <span class="kt">function()</span> <span class="o">{</span> <span class="s1">&lt;h1&gt;Hello, web!&lt;/h1&gt;</span> <span class="o">}</span>
+  <span class="o">}</span>
+<span class="o">)</span>
+</pre></div>
+<p>It can be compiled to a stand-alone executable JS file with:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+$ opa hello_web.opa
+</pre></div>
+<p>Running the resulting executable JS file launches the web application:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+$ ./hello_web.js
+</pre></div>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Opa_(programming_language)&amp;action=edit&amp;section=4" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div role="navigation" aria-label="Portals" class="noprint portal plainlist tright" style="margin:0.5em 0 0.5em 1em;border:solid #aaa 1px">
+<ul style="display:table;box-sizing:border-box;padding:0.1em;max-width:175px;background:#f9f9f9;font-size:85%;line-height:110%;font-style:italic;font-weight:bold">
+<li style="display:table-row"><span style="display:table-cell;padding:0.2em;vertical-align:middle;text-align:center"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/3/31/Free_and_open-source_software_logo_%282009%29.svg/28px-Free_and_open-source_software_logo_%282009%29.svg.png" width="28" height="28" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/3/31/Free_and_open-source_software_logo_%282009%29.svg/42px-Free_and_open-source_software_logo_%282009%29.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/3/31/Free_and_open-source_software_logo_%282009%29.svg/56px-Free_and_open-source_software_logo_%282009%29.svg.png 2x" data-file-width="512" data-file-height="512" /></span><span style="display:table-cell;padding:0.2em 0.2em 0.2em 0.3em;vertical-align:middle"><a href="/wiki/Portal:Free_software" class="mw-redirect" title="Portal:Free software">Free software portal</a></span></li>
+</ul>
+</div>
+<ul>
+<li><a href="/wiki/Dart_(programming_language)" title="Dart (programming language)">Dart</a> - a Javascript alternative for web apps</li>
+<li><a href="/wiki/Haxe" title="Haxe">Haxe</a> - similar programming language for web apps</li>
+<li><a href="/wiki/CoffeeScript" title="CoffeeScript">CoffeeScript</a> - a programming language transcompiled to Javascript for web apps</li>
+</ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Opa_(programming_language)&amp;action=edit&amp;section=5" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://blog.opalang.org/2013/02/some-great-news-on-opa.html">http://blog.opalang.org/2013/02/some-great-news-on-opa.html</a></span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><cite class="citation web">Adam Koprowski (24 February 2012). <a rel="nofollow" class="external text" href="http://www.developer.com/open/opa-vs.-node.js-javascript-framework-comparison.html">"Node.js vs. Opa: Web Framework Showdown"</a>. developer.com.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AOpa+%28programming+language%29&amp;rft.au=Adam+Koprowski&amp;rft.btitle=Node.js+vs.+Opa%3A+Web+Framework+Showdown&amp;rft.date=2012-02-24&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.developer.com%2Fopen%2Fopa-vs.-node.js-javascript-framework-comparison.html&amp;rft.pub=developer.com&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text">Opa actually supports various server-side backends, Nodejs being the most popular one</span></li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text"><cite class="citation journal">Robertson, William; Giovanni, Vigna (2009). <a rel="nofollow" class="external text" href="http://www.mendeley.com/research/static-enforcement-of-web-application-integrity-through-strong-typing/">"Static Enforcement of Web Application Integrity Through Strong Typing"</a>. <i>SSYM'09 Proceedings of the 18th conference on USENIX security symposium</i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AOpa+%28programming+language%29&amp;rft.atitle=Static+Enforcement+of+Web+Application+Integrity+Through+Strong+Typing&amp;rft.aufirst=William&amp;rft.au=Giovanni%2C+Vigna&amp;rft.aulast=Robertson&amp;rft.date=2009&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fwww.mendeley.com%2Fresearch%2Fstatic-enforcement-of-web-application-integrity-through-strong-typing%2F&amp;rft.jtitle=SSYM%2709+Proceedings+of+the+18th+conference+on+USENIX+security+symposium&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://www.owasp.org/index.php/OWASP_AppSec_Research_2010_-_Stockholm,_Sweden#OPA:_Language_Support_for_a_Sane.2C_Safe_and_Secure_Web">"OPA: Language Support for a Sane, Safe and Secure Web, at OWASP 2010"</a>. OWASP. June 2010.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AOpa+%28programming+language%29&amp;rft.btitle=OPA%3A+Language+Support+for+a+Sane%2C+Safe+and+Secure+Web%2C+at+OWASP+2010&amp;rft.date=2010-06&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fwww.owasp.org%2Findex.php%2FOWASP_AppSec_Research_2010_-_Stockholm%2C_Sweden%23OPA%3A_Language_Support_for_a_Sane.2C_Safe_and_Secure_Web&amp;rft.pub=OWASP&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://github.com/MLstate/opalang">"GitHub repository"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AOpa+%28programming+language%29&amp;rft.btitle=GitHub+repository&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fgithub.com%2FMLstate%2Fopalang&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.webappers.com/2011/07/22/opa-the-scalable-open-source-cloud-language/">"Opa – The Scalable Open Source Cloud Language"</a>. WebAppers. 22 July 2011.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AOpa+%28programming+language%29&amp;rft.btitle=Opa+%93+The+Scalable+Open+Source+Cloud+Language&amp;rft.date=2011-07-22&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.webappers.com%2F2011%2F07%2F22%2Fopa-the-scalable-open-source-cloud-language%2F&amp;rft.pub=WebAppers&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.infoq.com/articles/Opa">"Interview: François-Régis Sinot on Opa, a Web Development Platform"</a>. InfoQ. 7 September 2011.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AOpa+%28programming+language%29&amp;rft.btitle=Interview%3A+Fran%C3%A7ois-R%C3%A9gis+Sinot+on+Opa%2C+a+Web+Development+Platform&amp;rft.date=2011-09-07&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.infoq.com%2Farticles%2FOpa&amp;rft.pub=InfoQ&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-9">^</a></b></span> <span class="reference-text"><cite class="citation web">Neil McAllister (8 September 2011). <a rel="nofollow" class="external text" href="http://www.infoworld.com/d/application-development/introducing-opa-web-dev-language-rule-them-all-172060">"Introducing Opa, a Web dev language to rule them all"</a>. InfoWorld.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AOpa+%28programming+language%29&amp;rft.au=Neil+McAllister&amp;rft.btitle=Introducing+Opa%2C+a+Web+dev+language+to+rule+them+all&amp;rft.date=2011-09-08&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.infoworld.com%2Fd%2Fapplication-development%2Fintroducing-opa-web-dev-language-rule-them-all-172060&amp;rft.pub=InfoWorld&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-10">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.infoworld.com/d/developer-world/infoworld-review-tools-rapid-web-development-297">"InfoWorld review: Tools for rapid Web development"</a>. <a href="/wiki/InfoWorld" title="InfoWorld">InfoWorld</a>. 12 May 2010.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AOpa+%28programming+language%29&amp;rft.btitle=InfoWorld+review%3A+Tools+for+rapid+Web+development&amp;rft.date=2010-05-12&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.infoworld.com%2Fd%2Fdeveloper-world%2Finfoworld-review-tools-rapid-web-development-297&amp;rft.pub=InfoWorld&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-11"><span class="mw-cite-backlink"><b><a href="#cite_ref-11">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.heise.de/developer/meldung/Auch-Opa-ist-fuer-Cloud-Anwendungen-1288588.html">"Auch Opa ist für Cloud-Anwendungen"</a>. <a href="/wiki/Heise_Online" class="mw-redirect" title="Heise Online">Heise Online</a>. 29 July 2011.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AOpa+%28programming+language%29&amp;rft.btitle=Auch+Opa+ist+f%C3%BCr+Cloud-Anwendungen&amp;rft.date=2011-07-29&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.heise.de%2Fdeveloper%2Fmeldung%2FAuch-Opa-ist-fuer-Cloud-Anwendungen-1288588.html&amp;rft.pub=Heise+Online&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-12"><span class="mw-cite-backlink"><b><a href="#cite_ref-12">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.i-programmer.info/news/98-languages/2961-opa-a-unified-approach-to-web-programming.html">"Opa - a unified approach to web programming"</a>. i-Programmer. 28 August 2011.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AOpa+%28programming+language%29&amp;rft.btitle=Opa+-+a+unified+approach+to+web+programming&amp;rft.date=2011-08-28&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.i-programmer.info%2Fnews%2F98-languages%2F2961-opa-a-unified-approach-to-web-programming.html&amp;rft.pub=i-Programmer&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-13"><span class="mw-cite-backlink"><b><a href="#cite_ref-13">^</a></b></span> <span class="reference-text"><cite class="citation web">Koprowski, Binsztok (2011). <a rel="nofollow" class="external text" href="http://www.lmcs-online.org/ojs/viewarticle.php?id=708&amp;layout=abstract">"TRX: A Formally Verified Parser Interpreter"</a>. Logical Methods in Computer Science.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AOpa+%28programming+language%29&amp;rft.au=Koprowski%2C+Binsztok&amp;rft.btitle=TRX%3A+A+Formally+Verified+Parser+Interpreter&amp;rft.date=2011&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.lmcs-online.org%2Fojs%2Fviewarticle.php%3Fid%3D708%26layout%3Dabstract&amp;rft.pub=Logical+Methods+in+Computer+Science&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-14"><span class="mw-cite-backlink"><b><a href="#cite_ref-14">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://linuxfr.org/news/opa-un-nouveau-langage-pour-le-d%C3%A9veloppement-d%E2%80%99applications-web">"Opa, un nouveau langage pour le développement d'applications Web"</a> (in French). LinuxFr. 22 June 2011.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AOpa+%28programming+language%29&amp;rft.btitle=Opa%2C+un+nouveau+langage+pour+le+d%C3%A9veloppement+d%99applications+Web&amp;rft.date=2011-06-22&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Flinuxfr.org%2Fnews%2Fopa-un-nouveau-langage-pour-le-d%25C3%25A9veloppement-d%25E2%2580%2599applications-web&amp;rft.pub=LinuxFr&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-15"><span class="mw-cite-backlink"><b><a href="#cite_ref-15">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://doc.opalang.org/#!/manual/Hello--database">"Hello, database"</a>. Opa Documentation.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AOpa+%28programming+language%29&amp;rft.btitle=Hello%2C+database&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fdoc.opalang.org%2F%23%21%2Fmanual%2FHello--database&amp;rft.pub=Opa+Documentation&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-16"><span class="mw-cite-backlink"><b><a href="#cite_ref-16">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://doc.opalang.org/#!/manual/Low-level-MongoDB-support">"Low-level MongoDB support"</a>. Opa Documentation.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AOpa+%28programming+language%29&amp;rft.btitle=Low-level+MongoDB+support&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fdoc.opalang.org%2F%23%21%2Fmanual%2FLow-level-MongoDB-support&amp;rft.pub=Opa+Documentation&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-17"><span class="mw-cite-backlink"><b><a href="#cite_ref-17">^</a></b></span> <span class="reference-text"><cite class="citation news"><a rel="nofollow" class="external text" href="http://news.idg.no/cw/art.cfm?id=36C6A408-F2EE-3929-CB53260EBA6B884F">"Programming Opa: Web development, reimagined"</a>. <a href="/wiki/Computerworld" title="Computerworld">Computerworld</a>. 1 February 2012.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AOpa+%28programming+language%29&amp;rft.atitle=Programming+Opa%3A+Web+development%2C+reimagined&amp;rft.date=2012-02-01&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fnews.idg.no%2Fcw%2Fart.cfm%3Fid%3D36C6A408-F2EE-3929-CB53260EBA6B884F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-18"><span class="mw-cite-backlink"><b><a href="#cite_ref-18">^</a></b></span> <span class="reference-text"><cite class="citation web">Alastair Aitken (26 July 2011). <a rel="nofollow" class="external text" href="http://www.morganhill.co.uk/cloud/opa-the-cloud-language-test-drive/">"Opa, the cloud language – a test drive"</a>. Morgan Hill.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AOpa+%28programming+language%29&amp;rft.au=Alastair+Aitken&amp;rft.btitle=Opa%2C+the+cloud+language+%93+a+test+drive&amp;rft.date=2011-07-26&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.morganhill.co.uk%2Fcloud%2Fopa-the-cloud-language-test-drive%2F&amp;rft.pub=Morgan+Hill&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="Bibliography">Bibliography</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Opa_(programming_language)&amp;action=edit&amp;section=6" title="Edit section: Bibliography">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><i>Opa: Up and Running</i>, 2013, <a href="/wiki/O%27Reilly_Media" title="O'Reilly Media">O'Reilly Media</a> <a href="/wiki/Special:BookSources/9781449328856" class="internal mw-magiclink-isbn">ISBN 978-1449328856</a></li>
+</ul>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Opa_(programming_language)&amp;action=edit&amp;section=7" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><span class="official-website"><span class="url"><a rel="nofollow" class="external text" href="http://opalang.org">Official website</a></span></span></li>
+</ul>
+<div role="navigation" class="navbox" aria-labelledby="JavaScript" style="padding:3px">
+<table class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:JavaScript" title="Template:JavaScript"><abbr title="View this template" style=";;background:none transparent;border:none;">v</abbr></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:JavaScript" title="Template talk:JavaScript"><abbr title="Discuss this template" style=";;background:none transparent;border:none;">t</abbr></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:JavaScript&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;">e</abbr></a></li>
+</ul>
+</div>
+<div id="JavaScript" style="font-size:114%"><a href="/wiki/JavaScript" title="JavaScript">JavaScript</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Static_code_analysis" class="mw-redirect" title="Static code analysis">Code analysis</a></th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/JSHint" title="JSHint">JSHint</a></li>
+<li><a href="/wiki/JSLint" title="JSLint">JSLint</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Compiler" title="Compiler">Compilers</a></th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/CoffeeScript" title="CoffeeScript">CoffeeScript</a></li>
+<li><a href="/wiki/Dart_(programming_language)" title="Dart (programming language)">Dart</a></li>
+<li><a href="/wiki/Emscripten" title="Emscripten">Emscripten</a></li>
+<li><a href="/wiki/Google_Closure_Compiler" class="mw-redirect" title="Google Closure Compiler">Google Closure Compiler</a></li>
+<li><a href="/wiki/Google_Web_Toolkit" title="Google Web Toolkit">Google Web Toolkit</a></li>
+<li><a href="/wiki/Morfik" title="Morfik">Morfik</a></li>
+<li><a href="/wiki/TypeScript" title="TypeScript">TypeScript</a></li>
+<li><a href="/wiki/AtScript" title="AtScript">AtScript</a></li>
+<li><strong class="selflink">Opa</strong></li>
+<li><a href="/wiki/Haxe" title="Haxe">Haxe</a></li>
+<li><a href="/wiki/ClojureScript" class="mw-redirect" title="ClojureScript">ClojureScript</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Concepts</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Ajax_(programming)" title="Ajax (programming)">Ajax</a></li>
+<li><a href="/wiki/Client-side_JavaScript" class="mw-redirect" title="Client-side JavaScript">Client-side</a></li>
+<li><a href="/wiki/Dynamic_HTML" title="Dynamic HTML">Dynamic HTML</a></li>
+<li><a href="/wiki/JavaScript_library" title="JavaScript library">JavaScript library</a></li>
+<li><a href="/wiki/JavaScript_syntax" title="JavaScript syntax">JavaScript syntax</a></li>
+<li><a href="/wiki/Unobtrusive_JavaScript" title="Unobtrusive JavaScript">Unobtrusive JavaScript</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Debugger" title="Debugger">Debuggers</a></th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Firebug_(software)" title="Firebug (software)">Firebug</a></li>
+<li><a href="/wiki/Komodo_IDE" title="Komodo IDE">Komodo IDE</a></li>
+<li><a href="/wiki/Microsoft_Script_Debugger" title="Microsoft Script Debugger">Microsoft Script Debugger</a></li>
+<li><a href="/wiki/Microsoft_Script_Editor" title="Microsoft Script Editor">Microsoft Script Editor</a></li>
+<li><a href="/wiki/Opera_Dragonfly" title="Opera Dragonfly">Opera Dragonfly</a></li>
+<li><a href="/wiki/Venkman" title="Venkman">Venkman</a></li>
+<li><a href="/wiki/Web_Inspector" class="mw-redirect" title="Web Inspector">Web Inspector</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Documentation_generator" title="Documentation generator">Doc generators</a></th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/JSDoc" title="JSDoc">JSDoc</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Editors (<span style="font-weight:normal"><a href="/wiki/Comparison_of_JavaScript-based_source_code_editors" title="Comparison of JavaScript-based source code editors">comparison</a></span>)</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Ace_(editor)" title="Ace (editor)">Ace</a></li>
+<li><a href="/wiki/Atom_(text_editor)" title="Atom (text editor)">Atom</a></li>
+<li><a href="/wiki/Cloud9_IDE" title="Cloud9 IDE">Cloud9 IDE</a></li>
+<li><a href="/wiki/CodeMirror" title="CodeMirror">CodeMirror</a></li>
+<li><a href="/wiki/Koding" title="Koding">Koding</a></li>
+<li><a href="/wiki/Light_Table_(software)" title="Light Table (software)">Light Table</a></li>
+<li><a href="/wiki/List_of_Eclipse_projects#Top-level_sub-projects" title="List of Eclipse projects">Orion</a></li>
+<li><a href="/wiki/Microsoft_Visual_Studio" title="Microsoft Visual Studio">Visual Studio</a>
+<ul>
+<li><a href="/wiki/Microsoft_Visual_Studio_Express" title="Microsoft Visual Studio Express">Visual Studio Express</a></li>
+</ul>
+</li>
+<li><a href="/wiki/Visual_Studio_Code" title="Visual Studio Code">Visual Studio Code</a></li>
+<li><a href="/wiki/Visual_Studio#Visual_Studio_Online" class="mw-redirect" title="Visual Studio">Visual Studio Online</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Engines</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Comparison_of_layout_engines_(ECMAScript)" title="Comparison of layout engines (ECMAScript)">Comparison of layout engines</a></li>
+<li><a href="/wiki/List_of_ECMAScript_engines" title="List of ECMAScript engines">List of ECMAScript engines</a></li>
+<li><a href="/wiki/JavaScript_engine#JavaScript_engines" title="JavaScript engine">List of JavaScript engines</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Software_framework" title="Software framework">Frameworks</a></th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Comparison_of_JavaScript_frameworks" title="Comparison of JavaScript frameworks">Comparison of JavaScript frameworks</a></li>
+<li><a href="/wiki/List_of_JavaScript_libraries" title="List of JavaScript libraries">List of JavaScript libraries</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Related <a href="/wiki/Technology" title="Technology">technologies</a></th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Cascading_Style_Sheets" title="Cascading Style Sheets">Cascading Style Sheets</a></li>
+<li><a href="/wiki/Document_Object_Model" title="Document Object Model">Document Object Model</a></li>
+<li><a href="/wiki/HTML" title="HTML">HTML</a></li>
+<li><a href="/wiki/JSON" title="JSON">JSON</a></li>
+<li><a href="/wiki/WebAssembly" title="WebAssembly">WebAssembly</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Package_manager" title="Package manager">Package managers</a></th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Npm_(software)" title="Npm (software)">npm</a></li>
+<li><a href="/wiki/NuGet" title="NuGet">NuGet</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Server-side_JavaScript" class="mw-redirect" title="Server-side JavaScript">Server-side</a></th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Active_Server_Pages" title="Active Server Pages">Active Server Pages</a></li>
+<li><a href="/wiki/CommonJS" title="CommonJS">CommonJS</a></li>
+<li><a href="/wiki/JSGI" title="JSGI">JSGI</a></li>
+<li><a href="/wiki/Node.js" title="Node.js">Node.js</a></li>
+<li><a href="/wiki/Wakanda_(software)" title="Wakanda (software)">Wakanda</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Unit_testing" title="Unit testing">Unit testing</a></th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Jasmine_(JavaScript_framework)" class="mw-redirect" title="Jasmine (JavaScript framework)">Jasmine</a></li>
+<li><a href="/wiki/Mocha_(JavaScript_framework)" title="Mocha (JavaScript framework)">Mocha</a></li>
+<li><a href="/wiki/QUnit" title="QUnit">QUnit</a></li>
+<li><a href="/wiki/List_of_unit_testing_frameworks#JavaScript" title="List of unit testing frameworks">List of JavaScript unit testing frameworks</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">People</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Douglas_Crockford" title="Douglas Crockford">Douglas Crockford</a></li>
+<li><a href="/wiki/Brendan_Eich" title="Brendan Eich">Brendan Eich</a></li>
+<li><a href="/wiki/John_Resig" title="John Resig">John Resig</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1288
+Cached time: 20170120103058
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.184 seconds
+Real time usage: 0.377 seconds
+Preprocessor visited node count: 1258/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 50937/2097152 bytes
+Template argument size: 1577/2097152 bytes
+Highest expansion depth: 25/40
+Expensive parser function count: 2/500
+Lua time usage: 0.086/10.000 seconds
+Lua memory usage: 4.27 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  337.166      1 -total
+ 28.01%   94.441      2 Template:Infobox
+ 26.46%   89.203      1 Template:Reflist
+ 21.05%   70.963      1 Template:Infobox_programming_language
+ 19.53%   65.856     14 Template:Cite_web
+ 10.05%   33.891      1 Template:Infobox_software/simple
+  5.56%   18.742      1 Template:Release_date_and_age
+  4.52%   15.227      1 Template:Official_website
+  2.76%    9.310      1 Template:JavaScript
+  2.73%    9.205      1 Template:Time_ago
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:32976878-0!*!0!!en!4!* and timestamp 20170120103058 and revision id 754105146
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Opa_(programming_language)&amp;oldid=754105146">https://en.wikipedia.org/w/index.php?title=Opa_(programming_language)&amp;oldid=754105146</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Functional_languages" title="Category:Functional languages">Functional languages</a></li><li><a href="/wiki/Category:Web_programming" title="Category:Web programming">Web programming</a></li><li><a href="/wiki/Category:Cross-platform_free_software" title="Category:Cross-platform free software">Cross-platform free software</a></li><li><a href="/wiki/Category:Programming_languages_created_in_2011" title="Category:Programming languages created in 2011">Programming languages created in 2011</a></li><li><a href="/wiki/Category:Software_using_the_GNU_AGPL_license" title="Category:Software using the GNU AGPL license">Software using the GNU AGPL license</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:CS1_French-language_sources_(fr)" title="Category:CS1 French-language sources (fr)">CS1 French-language sources (fr)</a></li><li><a href="/wiki/Category:Pages_using_deprecated_image_syntax" title="Category:Pages using deprecated image syntax">Pages using deprecated image syntax</a></li><li><a href="/wiki/Category:Official_website_different_in_Wikidata_and_Wikipedia" title="Category:Official website different in Wikidata and Wikipedia">Official website different in Wikidata and Wikipedia</a></li><li><a href="/wiki/Category:Pages_using_ISBN_magic_links" title="Category:Pages using ISBN magic links">Pages using ISBN magic links</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Opa+%28programming+language%29" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Opa+%28programming+language%29" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/Opa_(programming_language)"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:Opa_(programming_language)"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/Opa_(programming_language)" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=Opa_(programming_language)&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Opa_(programming_language)&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Opa_(programming_language)" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Opa_(programming_language)" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Opa_(programming_language)&amp;oldid=754105146" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Opa_(programming_language)&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q3353033" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Opa_%28programming_language%29&amp;id=754105146" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Opa+%28programming+language%29">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Opa+%28programming+language%29&amp;returnto=Opa+%28programming+language%29&amp;oldid=754105146&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Opa_(programming_language)&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-fa"><a href="https://fa.wikipedia.org/wiki/%D8%A7%D9%88%D9%BE%D8%A7" title="اوپا – Persian" lang="fa" hreflang="fa" class="interlanguage-link-target">فارسی</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/Opa" title="Opa – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-pt"><a href="https://pt.wikipedia.org/wiki/Opa_(linguagem_de_programa%C3%A7%C3%A3o)" title="Opa (linguagem de programação) – Portuguese" lang="pt" hreflang="pt" class="interlanguage-link-target">Português</a></li><li class="interlanguage-link interwiki-tr"><a href="https://tr.wikipedia.org/wiki/Opa_(programlama_dili)" title="Opa (programlama dili) – Turkish" lang="tr" hreflang="tr" class="interlanguage-link-target">Türkçe</a></li><li class="interlanguage-link interwiki-uk"><a href="https://uk.wikipedia.org/wiki/Opa_(%D0%BC%D0%BE%D0%B2%D0%B0_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F)" title="Opa (мова програмування) – Ukrainian" lang="uk" hreflang="uk" class="interlanguage-link-target">Українська</a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q3353033#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 10 December 2016, at 22:04.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Opa_(programming_language)&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.184","walltime":"0.377","ppvisitednodes":{"value":1258,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":50937,"limit":2097152},"templateargumentsize":{"value":1577,"limit":2097152},"expansiondepth":{"value":25,"limit":40},"expensivefunctioncount":{"value":2,"limit":500},"entityaccesscount":{"value":1,"limit":400},"timingprofile":["100.00%  337.166      1 -total"," 28.01%   94.441      2 Template:Infobox"," 26.46%   89.203      1 Template:Reflist"," 21.05%   70.963      1 Template:Infobox_programming_language"," 19.53%   65.856     14 Template:Cite_web"," 10.05%   33.891      1 Template:Infobox_software/simple","  5.56%   18.742      1 Template:Release_date_and_age","  4.52%   15.227      1 Template:Official_website","  2.76%    9.310      1 Template:JavaScript","  2.73%    9.205      1 Template:Time_ago"]},"scribunto":{"limitreport-timeusage":{"value":"0.086","limit":"10.000"},"limitreport-memusage":{"value":4477728,"limit":52428800}},"cachereport":{"origin":"mw1288","timestamp":"20170120103058","ttl":2592000,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":83,"wgHostname":"mw1272"});});</script>
+	</body>
+</html>

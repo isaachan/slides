@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Racket (programming language) - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Racket_(programming_language)","wgTitle":"Racket (programming language)","wgCurRevisionId":761795885,"wgRevisionId":761795885,"wgArticleId":3350021,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Official website different in Wikidata and Wikipedia","Functional languages","Object-oriented programming languages","Extensible syntax programming languages","Scheme (programming language) implementations","Scheme (programming language) compilers","Scheme (programming language) interpreters","R6RS Scheme","Academic programming languages","Educational programming languages","Pedagogic integrated development environments","Cross-platform free software","Free compilers and interpreters","Programming languages created in 1994","Articles with example Racket code","Software using the LGPL license","Scheme (programming language)"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Racket_(programming_language)","wgRelevantArticleId":3350021,"wgRequestId":"WJSlRwpAICoAAAyd9agAAABB","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":true},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q1254148","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.cite.styles":"ready","ext.pygments":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.legacy.wikibits","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.pygments%2CwikimediaBadges%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.29.0-wmf.10"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/b/b5/Drracket.png"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Racket_(programming_language)"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Racket_(programming_language)&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Racket_(programming_language)&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Racket_(programming_language)"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Racket_programming_language rootpage-Racket_programming_language skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Racket (programming language)</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><table class="infobox vevent" style="width:22em">
+<caption class="summary">Racket</caption>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/File:Racket_logo.png" class="image"><img alt="Racket logo.png" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Racket_logo.png/66px-Racket_logo.png" width="66" height="64" srcset="//upload.wikimedia.org/wikipedia/commons/e/e5/Racket_logo.png 1.5x" data-file-width="88" data-file-height="85" /></a></td>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/File:Drracket.png" class="image"><img alt="Drracket.png" src="//upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Drracket.png/300px-Drracket.png" width="300" height="354" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Drracket.png/450px-Drracket.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Drracket.png/600px-Drracket.png 2x" data-file-width="739" data-file-height="873" /></a>
+<div>DrRacket on Ubuntu Linux</div>
+</td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Programming_paradigm" title="Programming paradigm">Paradigm</a></th>
+<td><a href="/wiki/Multi-paradigm_programming_language" class="mw-redirect" title="Multi-paradigm programming language">Multi-paradigm</a>: <a href="/wiki/Functional_programming" title="Functional programming">functional</a>, <a href="/wiki/Procedural_programming" title="Procedural programming">procedural</a>, <a href="/wiki/Modular_programming" title="Modular programming">modular</a>, <a href="/wiki/Object-oriented_programming" title="Object-oriented programming">object-oriented</a>, <a href="/wiki/Logic_programming" title="Logic programming">logic</a>, <a href="/wiki/Reflection_(computer_science)" class="mw-redirect" title="Reflection (computer science)">reflective</a>, <a href="/wiki/Metaprogramming" title="Metaprogramming">meta</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_design" title="Software design">Designed&#160;by</a></th>
+<td>PLT Inc.</td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_developer" title="Software developer">Developer</a></th>
+<td class="organiser">PLT Inc.</td>
+</tr>
+<tr>
+<th scope="row">First&#160;appeared</th>
+<td>1994<span class="noprint">; 23&#160;years ago</span><span style="display:none">&#160;(<span class="bday dtstart published updated">1994</span>)</span></td>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Software_release_life_cycle" title="Software release life cycle">Stable release</a></th>
+<td>
+<div style="margin:0px;">6.8<sup id="cite_ref-latestversion_1-0" class="reference"><a href="#cite_note-latestversion-1">[1]</a></sup> / January&#160;24, 2017<span class="noprint">; 10 days ago</span><span style="display:none">&#160;(<span class="bday dtstart published updated">2017-01-24</span>)</span></div>
+</td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Type_system" title="Type system">Typing discipline</a></th>
+<td><a href="/wiki/Dynamic_typing" class="mw-redirect" title="Dynamic typing">Dynamic</a>, <a href="/wiki/Strong_typing" class="mw-redirect" title="Strong typing">strong</a>, <a href="/wiki/Static_typing" class="mw-redirect" title="Static typing">static</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Computing_platform" title="Computing platform">Platform</a></th>
+<td><a href="/wiki/X86" title="X86">x86</a>, <a href="/wiki/PowerPC" title="PowerPC">PowerPC</a>, <a href="/wiki/SPARC" title="SPARC">SPARC</a>, <a href="/wiki/MIPS_instruction_set" title="MIPS instruction set">MIPS</a>, <a href="/wiki/ARM_architecture" title="ARM architecture">ARM</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Operating_system" title="Operating system">OS</a></th>
+<td><a href="/wiki/Cross-platform" title="Cross-platform">Cross-platform</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_license" title="Software license">License</a></th>
+<td><a href="/wiki/GNU_Lesser_General_Public_License" title="GNU Lesser General Public License">LGPL</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Filename_extension" title="Filename extension">Filename extensions</a></th>
+<td><code>.rkt</code>, <code>.rktl</code>, <code>.rktd</code>, <code>.scrbl</code>, <code>.plt</code>, <code>.ss</code>, <code>.scm</code></td>
+</tr>
+<tr>
+<th scope="row">Website</th>
+<td><span class="url"><a rel="nofollow" class="external text" href="http://racket-lang.org">racket-lang<wbr />.org</a></span></td>
+</tr>
+<tr>
+<th colspan="2" style="text-align:center;background-color: #eee;"><a href="/wiki/Dialect_(computing)" title="Dialect (computing)">Dialects</a></th>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"><a rel="nofollow" class="external text" href="http://docs.racket-lang.org/ts-guide/">Typed Racket</a>, <a rel="nofollow" class="external text" href="http://docs.racket-lang.org/lazy/">Lazy Racket</a>, <a rel="nofollow" class="external text" href="http://docs.racket-lang.org/scribble/">Scribble</a>, <a rel="nofollow" class="external text" href="http://docs.racket-lang.org/frtime/">FrTime</a></td>
+</tr>
+<tr>
+<th colspan="2" style="text-align:center;background-color: #eee;">Influenced by</th>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/Scheme_(programming_language)" title="Scheme (programming language)">Scheme</a>, <a href="/wiki/Eiffel_(programming_language)" title="Eiffel (programming language)">Eiffel</a><sup id="cite_ref-2" class="reference"><a href="#cite_note-2">[2]</a></sup></td>
+</tr>
+<tr>
+<th colspan="2" style="text-align:center;background-color: #eee;">Influenced</th>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/Scheme_(programming_language)" title="Scheme (programming language)">Scheme</a>,<sup id="cite_ref-r6rs_3-0" class="reference"><a href="#cite_note-r6rs-3">[3]</a></sup> <a href="/wiki/Rust_(programming_language)" title="Rust (programming language)">Rust</a>,<sup id="cite_ref-4" class="reference"><a href="#cite_note-4">[4]</a></sup><sup id="cite_ref-5" class="reference"><a href="#cite_note-5">[5]</a></sup> <a href="/wiki/Clojure" title="Clojure">Clojure</a><sup id="cite_ref-typed-clojure-thesis_6-0" class="reference"><a href="#cite_note-typed-clojure-thesis-6">[6]</a></sup></td>
+</tr>
+</table>
+<p><b>Racket</b> (formerly <b>PLT Scheme</b>) is a <a href="/wiki/General-purpose_programming_language" title="General-purpose programming language">general purpose</a>, <a href="/wiki/Multi-paradigm_programming_language" class="mw-redirect" title="Multi-paradigm programming language">multi-paradigm programming language</a> in the <a href="/wiki/Lisp_(programming_language)" title="Lisp (programming language)">Lisp</a>-<a href="/wiki/Scheme_(programming_language)" title="Scheme (programming language)">Scheme</a> family. One of its design goals is to serve as a platform for language creation, design, and implementation.<sup id="cite_ref-7" class="reference"><a href="#cite_note-7">[7]</a></sup><sup id="cite_ref-8" class="reference"><a href="#cite_note-8">[8]</a></sup> The language is used in a variety of contexts such as <a href="/wiki/Script_(computing)" class="mw-redirect" title="Script (computing)">scripting</a>, general-purpose programming, computer science education, and research.</p>
+<p>The platform provides an implementation of the Racket language (including a sophisticated <a href="/wiki/Run-time_system" class="mw-redirect" title="Run-time system">run-time system</a>,<sup id="cite_ref-mred_9-0" class="reference"><a href="#cite_note-mred-9">[9]</a></sup> various libraries, <a href="/wiki/Just-in-time_compilation" title="Just-in-time compilation">JIT compiler</a>, and more) along with a development environment called DrRacket (formerly named DrScheme) written in Racket itself.<sup id="cite_ref-drscheme_10-0" class="reference"><a href="#cite_note-drscheme-10">[10]</a></sup> The IDE and an accompanying programming curriculum is used in the <a href="/wiki/ProgramByDesign" title="ProgramByDesign">ProgramByDesign</a> outreach program, an attempt to turn computing and programming into "an indispensable part of the liberal arts curriculum".<sup id="cite_ref-teachscheme_11-0" class="reference"><a href="#cite_note-teachscheme-11">[11]</a></sup><sup id="cite_ref-12" class="reference"><a href="#cite_note-12">[12]</a></sup> The core language is known for its extensive <a href="/wiki/Macro_(computer_science)" title="Macro (computer science)">macro</a> system which enables the creation of embedded and <a href="/wiki/Domain-specific_language" title="Domain-specific language">domain-specific languages</a>, language constructs such as <a href="/wiki/Class_(computer_programming)" title="Class (computer programming)">classes</a> or <a href="/wiki/Modular_programming" title="Modular programming">modules</a>, and separate dialects of Racket with different <a href="/wiki/Semantics_of_programming_languages" class="mw-redirect" title="Semantics of programming languages">semantics</a>.<sup id="cite_ref-macros-matter_13-0" class="reference"><a href="#cite_note-macros-matter-13">[13]</a></sup><sup id="cite_ref-scheme-with-classes_14-0" class="reference"><a href="#cite_note-scheme-with-classes-14">[14]</a></sup><sup id="cite_ref-units_15-0" class="reference"><a href="#cite_note-units-15">[15]</a></sup><sup id="cite_ref-languages-as-libraries_16-0" class="reference"><a href="#cite_note-languages-as-libraries-16">[16]</a></sup></p>
+<p>The platform distribution is <a href="/wiki/Free_and_open-source_software" title="Free and open-source software">free and open-source software</a> distributed under the <a href="/wiki/GNU_Lesser_General_Public_License" title="GNU Lesser General Public License">GNU Lesser General Public License</a> (LGPL) license.<sup id="cite_ref-racket-lgpl-license_17-0" class="reference"><a href="#cite_note-racket-lgpl-license-17">[17]</a></sup> Extensions and packages written by the community are uploaded to Racket's centralized package catalog.</p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#History"><span class="tocnumber">1</span> <span class="toctext">History</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Development"><span class="tocnumber">1.1</span> <span class="toctext">Development</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Version_history"><span class="tocnumber">1.2</span> <span class="toctext">Version history</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Rename"><span class="tocnumber">1.3</span> <span class="toctext">Rename</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="#Features"><span class="tocnumber">2</span> <span class="toctext">Features</span></a>
+<ul>
+<li class="toclevel-2 tocsection-6"><a href="#Macros_and_extensibility"><span class="tocnumber">2.1</span> <span class="toctext">Macros and extensibility</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a href="#Programming_environment"><span class="tocnumber">3</span> <span class="toctext">Programming environment</span></a>
+<ul>
+<li class="toclevel-2 tocsection-8"><a href="#DrRacket_IDE"><span class="tocnumber">3.1</span> <span class="toctext">DrRacket IDE</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-9"><a href="#Code_examples"><span class="tocnumber">4</span> <span class="toctext">Code examples</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#Applications_and_practical_use"><span class="tocnumber">5</span> <span class="toctext">Applications and practical use</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#References"><span class="tocnumber">6</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="#Further_reading"><span class="tocnumber">7</span> <span class="toctext">Further reading</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="#External_links"><span class="tocnumber">8</span> <span class="toctext">External links</span></a>
+<ul>
+<li class="toclevel-2 tocsection-14"><a href="#Official_documentation"><span class="tocnumber">8.1</span> <span class="toctext">Official documentation</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="#Miscellaneous"><span class="tocnumber">8.2</span> <span class="toctext">Miscellaneous</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="History">History</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Racket_(programming_language)&amp;action=edit&amp;section=1" title="Edit section: History">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="Development">Development</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Racket_(programming_language)&amp;action=edit&amp;section=2" title="Edit section: Development">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p><a href="/wiki/Matthias_Felleisen" title="Matthias Felleisen">Matthias Felleisen</a> founded PLT in the mid 1990s, first as a research group, soon after as a project dedicated to the production of <a href="/wiki/Pedagogic" class="mw-redirect" title="Pedagogic">pedagogic</a> materials for novice programmers (lectures, exercises/projects, software). In January 1995, the group decided to develop a pedagogic programming environment based on <a href="/wiki/Scheme_(programming_language)" title="Scheme (programming language)">Scheme</a>. <a href="/wiki/Matthew_Flatt" title="Matthew Flatt">Matthew Flatt</a> cobbled together MrEd—the original <a href="/wiki/Virtual_machine" title="Virtual machine">virtual machine</a> for Racket—from libscheme,<sup id="cite_ref-libscheme_18-0" class="reference"><a href="#cite_note-libscheme-18">[18]</a></sup> <a href="/wiki/WxWidgets" title="WxWidgets">wxWidgets</a>, and a few other free systems.<sup id="cite_ref-gui-rebuild_19-0" class="reference"><a href="#cite_note-gui-rebuild-19">[19]</a></sup> In the years that followed, a team including Flatt, <a href="/wiki/Robert_Bruce_Findler" title="Robert Bruce Findler">Robby Findler</a>, <a href="/wiki/Shriram_Krishnamurthi" title="Shriram Krishnamurthi">Shriram Krishnamurthi</a>, Cormac Flanagan, and many others produced <b>DrScheme</b>, a programming environment for novice Scheme programmers and a research environment for <a href="/wiki/Type_system#Combining_static_and_dynamic_type_checking" title="Type system">soft typing</a>.<sup id="cite_ref-drscheme_10-1" class="reference"><a href="#cite_note-drscheme-10">[10]</a></sup> The main development language that DrScheme supported was called PLT Scheme.</p>
+<p>In parallel, the team started conducting workshops for high school teachers, training them in program design and functional programming. Field tests with these teachers and their students provided essential clues for the direction of the development.</p>
+<p>Over the following years, PLT added teaching languages, an algebraic stepper,<sup id="cite_ref-20" class="reference"><a href="#cite_note-20">[20]</a></sup> a transparent <a href="/wiki/REPL" class="mw-redirect" title="REPL">read-eval-print loop</a>, a constructor-based printer, and many other innovations to DrScheme, producing an application-quality pedagogic program development environment. By 2001, the core team (Felleisen, Findler, Flatt, Krishnamurthi) had also written and published their first textbook, <i><a href="/wiki/How_to_Design_Programs" title="How to Design Programs">How to Design Programs</a></i>, based on their teaching philosophy.</p>
+<h3><span class="mw-headline" id="Version_history">Version history</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Racket_(programming_language)&amp;action=edit&amp;section=3" title="Edit section: Version history">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The first generation of PLT Scheme revisions introduced features for <a href="/wiki/Programming_in_the_large_and_programming_in_the_small#Programming_in_the_large" title="Programming in the large and programming in the small">programming in the large</a> with both <a href="/wiki/Modular_programming" title="Modular programming">modules</a> and <a href="/wiki/Class_(computer_programming)" title="Class (computer programming)">classes</a>. Version 42 introduced units — a first-class module system — to complement classes for large scale development.<sup id="cite_ref-release-notes_21-0" class="reference"><a href="#cite_note-release-notes-21">[21]</a></sup> The class system gained features (e.g. <a href="/wiki/Java_(programming_language)" title="Java (programming language)">Java</a>-style <a href="/wiki/Protocol_(object-oriented_programming)" title="Protocol (object-oriented programming)">interfaces</a>) and also lost several features (e.g. <a href="/wiki/Multiple_inheritance" title="Multiple inheritance">multiple inheritance</a>) throughout these versions.<sup id="cite_ref-scheme-with-classes_14-1" class="reference"><a href="#cite_note-scheme-with-classes-14">[14]</a></sup> The language evolved throughout a number of successive versions, and gaining milestone popularity in Version 53, leading to extensive work and the following Version 100, which would be equivalent to a "1.0" release in current popular version systems.</p>
+<p>The next major revision was named Version 200, which introduced a new default module system that cooperates with macros.<sup id="cite_ref-release-notes_21-1" class="reference"><a href="#cite_note-release-notes-21">[21]</a></sup> In particular, the module system ensures that run-time and <a href="/wiki/Compile-time" class="mw-redirect" title="Compile-time">compile-time</a> computation are separated to support a "tower of languages."<sup id="cite_ref-22" class="reference"><a href="#cite_note-22">[22]</a></sup> Unlike units, these modules are not <a href="/wiki/First-class_object" class="mw-redirect" title="First-class object">first-class objects</a>.</p>
+<p>Version 300 introduced <a href="/wiki/Unicode" title="Unicode">Unicode</a> support, <a href="/wiki/Foreign_function_interface" title="Foreign function interface">foreign library</a> support, and refinements to the class system.<sup id="cite_ref-release-notes_21-2" class="reference"><a href="#cite_note-release-notes-21">[21]</a></sup> Later on, the 300 series improved the <a href="/wiki/Computer_performance" title="Computer performance">performance</a> of the language runtime with an addition of a JIT compiler and a switch to a default <a href="/wiki/Generational_garbage_collection" class="mw-redirect" title="Generational garbage collection">generational garbage collection</a>.</p>
+<p>By the next major release, the project had switched to a more conventional <a href="/wiki/Software_versioning#Sequence-based_identifiers" title="Software versioning">sequence-based</a> version numbering. Version 4.0 introduced the <code>#lang</code> shorthand to specify the language that a module is written in. In addition, the revision introduced <a href="/wiki/Immutable_object" title="Immutable object">immutable</a> pairs and lists, support for fine-grained <a href="/wiki/Parallel_computing" title="Parallel computing">parallelism</a>, and a <a href="/wiki/Static_typing" class="mw-redirect" title="Static typing">statically-typed</a> dialect.<sup id="cite_ref-4.0_23-0" class="reference"><a href="#cite_note-4.0-23">[23]</a></sup></p>
+<h3><span class="mw-headline" id="Rename">Rename</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Racket_(programming_language)&amp;action=edit&amp;section=4" title="Edit section: Rename">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>On June 7, 2010, PLT Scheme was renamed Racket.<sup id="cite_ref-24" class="reference"><a href="#cite_note-24">[24]</a></sup> The renaming coincided with the release of Version 5.0. Subsequently, the GUI backend was rewritten in Racket from <a href="/wiki/C%2B%2B" title="C++">C++</a> in Version 5.1 using native <a href="/wiki/Widget_toolkit" title="Widget toolkit">UI toolkits</a> on all platforms.<sup id="cite_ref-gui-rebuild_19-1" class="reference"><a href="#cite_note-gui-rebuild-19">[19]</a></sup> Version 5.2 included a background <a href="/wiki/Static_code_analysis" class="mw-redirect" title="Static code analysis">syntax checking</a> tool, a new plotting library, a database library, and a new extended REPL.<sup id="cite_ref-5.2_25-0" class="reference"><a href="#cite_note-5.2-25">[25]</a></sup> Version 5.3 included a new submodule feature for optionally loaded modules,<sup id="cite_ref-submodules_26-0" class="reference"><a href="#cite_note-submodules-26">[26]</a></sup> new <a href="/wiki/Program_optimization" title="Program optimization">optimization</a> tools, a <a href="/wiki/JSON" title="JSON">JSON</a> library, and other features.<sup id="cite_ref-5.3_27-0" class="reference"><a href="#cite_note-5.3-27">[27]</a></sup> Version 5.3.1 introduced major improvements to DrRacket: the background syntax checker was turned on by default and a new documentation preview tool was added.<sup id="cite_ref-5.3.1_28-0" class="reference"><a href="#cite_note-5.3.1-28">[28]</a></sup></p>
+<p>In version 6.0, Racket rolled out its second-generation package management system. As part of this development, the principal DrRacket and Racket repository was reorganized and split into a large set of small packages, making it possible to install a "minimal racket" and to install only those packages necessary.<sup id="cite_ref-6.0_29-0" class="reference"><a href="#cite_note-6.0-29">[29]</a></sup></p>
+<h2><span class="mw-headline" id="Features">Features</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Racket_(programming_language)&amp;action=edit&amp;section=5" title="Edit section: Features">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div role="note" class="hatnote">Main article: <a href="/wiki/Racket_features" title="Racket features">Racket features</a></div>
+<p>Racket's core language includes <a href="/wiki/Macro_(computer_science)#Syntactic_macros" title="Macro (computer science)">macros</a>, <a href="/wiki/Modular_programming" title="Modular programming">modules</a>, <a href="/wiki/Closure_(computer_science)" class="mw-redirect" title="Closure (computer science)">lexical closures</a>, <a href="/wiki/Tail_call" title="Tail call">tail calls</a>, <a href="/wiki/Delimited_continuation" title="Delimited continuation">delimited continuations</a>,<sup id="cite_ref-icfp2007_30-0" class="reference"><a href="#cite_note-icfp2007-30">[30]</a></sup> parameters (fluid variables), <a href="/wiki/Design_by_contract" title="Design by contract">software contracts</a>,<sup id="cite_ref-31" class="reference"><a href="#cite_note-31">[31]</a></sup> <a href="/wiki/Green_threads" title="Green threads">green</a> and OS <a href="/wiki/Thread_(computer_science)" class="mw-redirect" title="Thread (computer science)">threads</a>,<sup id="cite_ref-32" class="reference"><a href="#cite_note-32">[32]</a></sup><sup id="cite_ref-33" class="reference"><a href="#cite_note-33">[33]</a></sup><sup id="cite_ref-34" class="reference"><a href="#cite_note-34">[34]</a></sup> and more. The language also comes with primitives, such as eventspaces and custodians, which control resource management and enables the language to act like an <a href="/wiki/Operating_system" title="Operating system">operating system</a> for loading and managing other programs.<sup id="cite_ref-mred_9-1" class="reference"><a href="#cite_note-mred-9">[9]</a></sup> Further extensions to the language are created with the powerful macro system, which together with the module system and custom parsers can control all aspects of a language.<sup id="cite_ref-creating-languages_35-0" class="reference"><a href="#cite_note-creating-languages-35">[35]</a></sup> Unlike programming languages that lack macro systems, most language constructs in Racket are written on top of the base language using macros. These include a <a href="/wiki/Mixin" title="Mixin">mixin</a> class system,<sup id="cite_ref-scheme-with-classes_14-2" class="reference"><a href="#cite_note-scheme-with-classes-14">[14]</a></sup> a component (or module) system as expressive as <a href="/wiki/Opaque_ascription" class="mw-redirect" title="Opaque ascription">ML</a>'s,<sup id="cite_ref-units_15-1" class="reference"><a href="#cite_note-units-15">[15]</a></sup> and <a href="/wiki/Pattern_matching" title="Pattern matching">pattern matching</a>.</p>
+<p>In addition, the language features the first contract system for a <a href="/wiki/Higher-order_programming" title="Higher-order programming">higher-order</a> language.<sup id="cite_ref-36" class="reference"><a href="#cite_note-36">[36]</a></sup> Racket's contract system is inspired by the <a href="/wiki/Design_by_Contract" class="mw-redirect" title="Design by Contract">Design by Contract</a> work for <a href="/wiki/Eiffel_(programming_language)" title="Eiffel (programming language)">Eiffel</a> and extends it to work for higher-order values such as <a href="/wiki/First-class_function" title="First-class function">first-class functions</a>, objects, <a href="/wiki/Reference_(computer_science)" title="Reference (computer science)">reference</a> cells, and so on. For example, an object that is checked by a contract can be ensured to make contract checks when its methods are eventually invoked.</p>
+<p>Racket's compiler is a <a href="/wiki/Bytecode" title="Bytecode">bytecode</a> compiler that translates to an internal bytecode format that is run by the Racket <a href="/wiki/Virtual_machine" title="Virtual machine">virtual machine</a>. On <a href="/wiki/X86" title="X86">x86</a> and <a href="/wiki/PowerPC" title="PowerPC">PowerPC</a> platforms, the bytecode is further compiled using a <a href="/wiki/JIT_compiler" class="mw-redirect" title="JIT compiler">JIT compiler</a> at runtime.</p>
+<p>Since 2004, the language has also shipped with PLaneT, a package manager that is integrated into the module system so that <a href="/wiki/Third-party_software_component" title="Third-party software component">third-party libraries</a> can be transparently imported and used. Additionally, PLaneT has a built-in <a href="/wiki/Software_versioning" title="Software versioning">versioning</a> policy to prevent <a href="/wiki/Dependency_hell" title="Dependency hell">dependency hell</a>.<sup id="cite_ref-planet_37-0" class="reference"><a href="#cite_note-planet-37">[37]</a></sup></p>
+<p>At the end of 2014, much of Racket's code was moved into a new packaging system separate from the main code base. This new packaging system is serviced by a client program called <tt>raco</tt>. The new package system provides fewer features than PLaneT; a blog post by Jay McCarthy on the Racket blog explains the rationale for the change and how to duplicate the older system.<sup id="cite_ref-38" class="reference"><a href="#cite_note-38">[38]</a></sup></p>
+<h3><span class="mw-headline" id="Macros_and_extensibility">Macros and extensibility</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Racket_(programming_language)&amp;action=edit&amp;section=6" title="Edit section: Macros and extensibility">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div role="note" class="hatnote">See also: <a href="/wiki/Racket_features#Language_Extensions" title="Racket features">Racket language extensions</a></div>
+<p>The feature that distinguishes Racket from other languages in the Lisp family is its integrated language <a href="/wiki/Extensible_programming" title="Extensible programming">extensibility</a>. Racket's extensibility features are built into the module system to allow context-sensitive and module-level control over syntax.<sup id="cite_ref-languages-as-libraries_16-1" class="reference"><a href="#cite_note-languages-as-libraries-16">[16]</a></sup> For example, the <code>#%app</code> syntactic form can be overridden to change the semantics of <a href="/wiki/Function_application" title="Function application">function application</a>. Similarly, the <code>#%module-begin</code> form allows arbitrary static analysis of the entire module.<sup id="cite_ref-languages-as-libraries_16-2" class="reference"><a href="#cite_note-languages-as-libraries-16">[16]</a></sup> Since any module can be used as a language, via the <code>#lang</code> notation, this effectively means a programmer can control virtually any aspect of the language.</p>
+<p>The module-level extensibility features are combined with a <a href="/wiki/Scheme_(programming_language)" title="Scheme (programming language)">Scheme</a>-like hygienic macro system, which provides more features than <a href="/wiki/Lisp_(programming_language)" title="Lisp (programming language)">Lisp's</a> S-expression manipulation system,<sup id="cite_ref-you-want-it-when_39-0" class="reference"><a href="#cite_note-you-want-it-when-39">[39]</a></sup><sup id="cite_ref-40" class="reference"><a href="#cite_note-40">[40]</a></sup> Scheme 84's <a href="/wiki/Hygienic_macro" title="Hygienic macro">hygienic</a> extend-syntax macros, or <a href="/wiki/R5RS" class="mw-redirect" title="R5RS">R5RS</a>'s <a href="/wiki/Syntax-rules" class="mw-redirect" title="Syntax-rules">syntax-rules</a>. Indeed, it is fair to say that the macro system is a carefully tuned <a href="/wiki/Application_programming_interface" title="Application programming interface">application programming interface</a> (API) for <a href="/wiki/Compiler" title="Compiler">compiler</a> extensions. Using this compiler API, programmers can add features and entire <a href="/wiki/Domain-specific_language" title="Domain-specific language">domain-specific languages</a> in a manner that makes them completely indistinguishable from built-in language constructs.</p>
+<p>The macro system in Racket has been used to construct entire language <a href="/wiki/Dialect_(computing)" title="Dialect (computing)">dialects</a>. This includes Typed Racket—a statically typed dialect of Racket that eases the migration from <a href="/wiki/Dynamically_typed" class="mw-redirect" title="Dynamically typed">untyped</a> to typed code,<sup id="cite_ref-41" class="reference"><a href="#cite_note-41">[41]</a></sup> and Lazy Racket—a dialect with <a href="/wiki/Lazy_evaluation" title="Lazy evaluation">lazy evaluation</a>.<sup id="cite_ref-42" class="reference"><a href="#cite_note-42">[42]</a></sup> Other dialects include FrTime (<a href="/wiki/Functional_reactive_programming" title="Functional reactive programming">functional reactive programming</a>), Scribble (documentation language),<sup id="cite_ref-43" class="reference"><a href="#cite_note-43">[43]</a></sup> Slideshow (<a href="/wiki/Slide_show" title="Slide show">presentation</a> language),<sup id="cite_ref-44" class="reference"><a href="#cite_note-44">[44]</a></sup> and several languages for education.<sup id="cite_ref-functional-io_45-0" class="reference"><a href="#cite_note-functional-io-45">[45]</a></sup><sup id="cite_ref-46" class="reference"><a href="#cite_note-46">[46]</a></sup> Racket's core distribution provides libraries to aid the process of constructing new programming languages.<sup id="cite_ref-languages-as-libraries_16-3" class="reference"><a href="#cite_note-languages-as-libraries-16">[16]</a></sup></p>
+<p>Such languages are not restricted to S-expression based syntax. In addition to conventional readtable-based syntax extensions, Racket's <code>#lang</code> makes it possible for a language programmer to define any arbitrary parser, for example, using the parser tools library.<sup id="cite_ref-parsers_47-0" class="reference"><a href="#cite_note-parsers-47">[47]</a></sup> See <a href="/wiki/Racket_features#Logic_Programming" title="Racket features">Racket logic programming</a> for an example of such a language.</p>
+<h2><span class="mw-headline" id="Programming_environment">Programming environment</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Racket_(programming_language)&amp;action=edit&amp;section=7" title="Edit section: Programming environment">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The language platform provides a self-hosted <a href="/wiki/Integrated_development_environment" title="Integrated development environment">IDE</a><sup id="cite_ref-drscheme_10-2" class="reference"><a href="#cite_note-drscheme-10">[10]</a></sup> named DrRacket, a continuation-based <a href="/wiki/Web_server" title="Web server">web server</a>,<sup id="cite_ref-web-server_48-0" class="reference"><a href="#cite_note-web-server-48">[48]</a></sup> a <a href="/wiki/Graphical_user_interface" title="Graphical user interface">graphical user interface</a>,<sup id="cite_ref-gui-rebuild_19-2" class="reference"><a href="#cite_note-gui-rebuild-19">[19]</a></sup> and other tools. Racket is also a viable scripting tool and can be used for scripting the Unix shell. It can parse <a href="/wiki/Command_line_arguments" class="mw-redirect" title="Command line arguments">command line arguments</a>, execute external tools and includes libraries like all common <a href="/wiki/Scripting_language" title="Scripting language">scripting languages</a>.</p>
+<h3><span class="mw-headline" id="DrRacket_IDE">DrRacket IDE</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Racket_(programming_language)&amp;action=edit&amp;section=8" title="Edit section: DrRacket IDE">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>DrRacket (formerly DrScheme) is widely used among introductory Computer Science courses that teach Scheme or Racket and is lauded for its simplicity and appeal to beginner programmers. The IDE was originally built for use with the TeachScheme! project (now <a href="/wiki/ProgramByDesign" title="ProgramByDesign">ProgramByDesign</a>), an outreach effort by <a href="/wiki/Northeastern_University" title="Northeastern University">Northeastern University</a> and a number of affiliated universities for attracting high school students to computer science courses at the college level.</p>
+<p>The editor provides <a href="/wiki/Syntax_highlighting" title="Syntax highlighting">source highlighting</a> for syntax and run-time errors, parenthesis matching, a <a href="/wiki/Debugger" title="Debugger">debugger</a> and an algebraic stepper. Its student-friendly features include support for multiple "language levels" (Beginning Student, Intermediate Student and so on). It also has integrated library support, and sophisticated <a href="/wiki/Program_analysis" title="Program analysis">analysis</a> tools for advanced programmers. In addition, <a href="/wiki/Modular_programming" title="Modular programming">module-oriented programming</a> is supported with the module browser, a contour view, integrated <a href="/wiki/Software_testing" title="Software testing">testing</a> and <a href="/wiki/Fault_coverage" title="Fault coverage">coverage</a> measurements, and <a href="/wiki/Refactoring" class="mw-redirect" title="Refactoring">refactoring</a> support. It provides integrated, context-sensitive access to an extensive hyper-linked help system named "Help Desk".</p>
+<p>DrRacket is available for <a href="/wiki/Microsoft_Windows" title="Microsoft Windows">Windows</a> (95 and up), <a href="/wiki/Mac_OS_X" class="mw-redirect" title="Mac OS X">Mac OS X</a>, <a href="/wiki/Unix" title="Unix">Unix</a>, and <a href="/wiki/Linux" title="Linux">Linux</a> with the <a href="/wiki/X_Window_System" title="X Window System">X Window System</a> and programs behave similarly on all these platforms.</p>
+<h2><span class="mw-headline" id="Code_examples">Code examples</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Racket_(programming_language)&amp;action=edit&amp;section=9" title="Edit section: Code examples">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Here's a trivial <a href="/wiki/Hello_world" class="mw-redirect" title="Hello world">hello world</a> program:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="kn">#lang </span><span class="nn">racket/base</span>
+<span class="s2">"Hello, World!"</span>
+</pre></div>
+<p>Running this program produces the output:</p>
+<dl>
+<dd><samp style="padding-left:0.4em; padding-right:0.4em; color: #666666;">"Hello, World!"</samp></dd>
+</dl>
+<p>Here's a slightly less trivial program:</p>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;"><a href="/wiki/File:Sierpinski_Racket_example.png" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Sierpinski_Racket_example.png/220px-Sierpinski_Racket_example.png" width="220" height="165" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Sierpinski_Racket_example.png/330px-Sierpinski_Racket_example.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Sierpinski_Racket_example.png/440px-Sierpinski_Racket_example.png 2x" data-file-width="513" data-file-height="385" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:Sierpinski_Racket_example.png" class="internal" title="Enlarge"></a></div>
+The result of this program, as shown in DrRacket</div>
+</div>
+</div>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="kn">#lang </span><span class="nn">racket</span>
+<span class="p">(</span><span class="k">require</span> <span class="n">2htdp/image</span><span class="p">)</span>
+
+<span class="p">(</span><span class="k">let</span> <span class="n">sierpinski</span> <span class="p">([</span><span class="n">n</span> <span class="mi">8</span><span class="p">])</span>
+  <span class="p">(</span><span class="k">if</span> <span class="p">(</span><span class="nb">zero?</span> <span class="n">n</span><span class="p">)</span>
+    <span class="p">(</span><span class="n">triangle</span> <span class="mi">2</span> <span class="o">'</span><span class="ss">solid</span> <span class="o">'</span><span class="ss">red</span><span class="p">)</span>
+    <span class="p">(</span><span class="k">let</span> <span class="p">([</span><span class="n">t</span> <span class="p">(</span><span class="n">sierpinski</span> <span class="p">(</span><span class="nb">-</span> <span class="n">n</span> <span class="mi">1</span><span class="p">))])</span>
+      <span class="p">(</span><span class="n">freeze</span> <span class="p">(</span><span class="n">above</span> <span class="n">t</span> <span class="p">(</span><span class="n">beside</span> <span class="n">t</span> <span class="n">t</span><span class="p">))))))</span>
+</pre></div>
+<p>This program, taken from the Racket website, draws a <a href="/wiki/Sierpinski_triangle" title="Sierpinski triangle">Sierpinski triangle</a>, nested to depth 8.</p>
+<p>Using the <code>#lang</code> directive, a source file can be written in different dialects of Racket. Here is an example of the factorial program in Typed Racket, a <a href="/wiki/Statically_typed" class="mw-redirect" title="Statically typed">statically typed</a> dialect of Racket:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="kn">#lang </span><span class="nn">typed/racket</span>
+
+<span class="p">(</span><span class="n">:</span> <span class="n">fact</span> <span class="p">(</span><span class="n">Integer</span> <span class="k">-&gt;</span> <span class="n">Integer</span><span class="p">))</span>
+<span class="p">(</span><span class="k">define</span> <span class="p">(</span><span class="n">fact</span> <span class="n">n</span><span class="p">)</span>
+  <span class="p">(</span><span class="k">cond</span> <span class="p">[(</span><span class="nb">zero?</span> <span class="n">n</span><span class="p">)</span> <span class="mi">1</span><span class="p">]</span>
+        <span class="p">[</span><span class="k">else</span> <span class="p">(</span><span class="nb">*</span> <span class="n">n</span> <span class="p">(</span><span class="n">fact</span> <span class="p">(</span><span class="nb">-</span> <span class="n">n</span> <span class="mi">1</span><span class="p">)))]))</span>
+</pre></div>
+<h2><span class="mw-headline" id="Applications_and_practical_use">Applications and practical use</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Racket_(programming_language)&amp;action=edit&amp;section=10" title="Edit section: Applications and practical use">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Apart from having a basis in <a href="/wiki/Programming_language_theory" title="Programming language theory">programming language theory</a>, Racket was designed to be used as a general-purpose language in production systems. Thus, the Racket distribution features an extensive library that covers systems and network programming, web development,<sup id="cite_ref-web-server_48-1" class="reference"><a href="#cite_note-web-server-48">[48]</a></sup> a uniform interface to the underlying operating system, a dynamic <a href="/wiki/Foreign_function_interface" title="Foreign function interface">foreign function interface</a>,<sup id="cite_ref-ffi_49-0" class="reference"><a href="#cite_note-ffi-49">[49]</a></sup> several flavours of <a href="/wiki/Regular_expressions" class="mw-redirect" title="Regular expressions">regular expressions</a>, lexer/parser generators,<sup id="cite_ref-parsers_47-1" class="reference"><a href="#cite_note-parsers-47">[47]</a></sup> <a href="/wiki/Logic_programming" title="Logic programming">logic programming</a>, and a complete <a href="/wiki/GUI_framework" class="mw-redirect" title="GUI framework">GUI framework</a>.</p>
+<p>Racket has several features useful for a commercial language, among them an ability to generate standalone executables under Windows, Mac OS X and Unix, a <a href="/wiki/Profiling_(computer_programming)" title="Profiling (computer programming)">profiler</a> and <a href="/wiki/Debugger" title="Debugger">debugger</a> included in the <a href="/wiki/Integrated_development_environment" title="Integrated development environment">integrated development environment</a> (IDE), and a <a href="/wiki/Unit_testing" title="Unit testing">unit testing</a> framework.</p>
+<p>Racket has been used for commercial projects and web applications. A notable example is the <a href="/wiki/Hacker_News" title="Hacker News">Hacker News</a> website, which runs on <a href="/wiki/Arc_(programming_language)" title="Arc (programming language)">Arc</a>, which is developed in Racket. <a href="/wiki/Naughty_Dog" title="Naughty Dog">Naughty Dog</a> has used it as a scripting language in several of their video games.<sup id="cite_ref-50" class="reference"><a href="#cite_note-50">[50]</a></sup></p>
+<p>Racket is used to teach students algebra through game design in the <a href="/wiki/Bootstrap_curriculum" title="Bootstrap curriculum">Bootstrap program</a>.<sup id="cite_ref-51" class="reference"><a href="#cite_note-51">[51]</a></sup></p>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Racket_(programming_language)&amp;action=edit&amp;section=11" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist columns references-column-width" style="-moz-column-width: 30em; -webkit-column-width: 30em; column-width: 30em; list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-latestversion-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-latestversion_1-0">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://blog.racket-lang.org/2017/01/racket-v6-8.html">"Racket v6.8"</a>. <i>The Racket Blog</i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARacket+%28programming+language%29&amp;rft.atitle=Racket+v6.8&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fblog.racket-lang.org%2F2017%2F01%2Fracket-v6-8.html&amp;rft.jtitle=The+Racket+Blog&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><cite class="citation web">Strickland, T.S.; Fellesisen, Matthias (2010). <a rel="nofollow" class="external text" href="http://www.ccs.neu.edu/racket/pubs/dls10-sf.pdf">"DLS 2010: Contracts for First-Class Classes"</a> <span style="font-size:85%;">(PDF)</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARacket+%28programming+language%29&amp;rft.au=Fellesisen%2C+Matthias&amp;rft.aufirst=T.S.&amp;rft.aulast=Strickland&amp;rft.btitle=DLS+2010%3A+Contracts+for+First-Class+Classes&amp;rft.date=2010&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.ccs.neu.edu%2Fracket%2Fpubs%2Fdls10-sf.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-r6rs-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-r6rs_3-0">^</a></b></span> <span class="reference-text"><cite class="citation web">Sperber, Michael; Dybvig, R. Kent; Flatt, Matthew; Van Straaten, Anton; et al. (August 2007). <a rel="nofollow" class="external text" href="http://www.r6rs.org">"Revised<sup>6</sup> Report on the Algorithmic Language Scheme (R6RS)"</a>. Scheme Steering Committee<span class="reference-accessdate">. Retrieved <span class="nowrap">2011-09-13</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARacket+%28programming+language%29&amp;rft.au=Dybvig%2C+R.+Kent&amp;rft.aufirst=Michael&amp;rft.au=Flatt%2C+Matthew&amp;rft.aulast=Sperber&amp;rft.au=Van+Straaten%2C+Anton&amp;rft.btitle=Revised%3Csup%3E6%3C%2Fsup%3E+Report+on+the+Algorithmic+Language+Scheme+%28R6RS%29&amp;rft.date=2007-08&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.r6rs.org&amp;rft.pub=Scheme+Steering+Committee&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://mail.mozilla.org/pipermail/rust-dev/2013-May/003947.html">"Planet2 questions"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARacket+%28programming+language%29&amp;rft.btitle=Planet2+questions&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fmail.mozilla.org%2Fpipermail%2Frust-dev%2F2013-May%2F003947.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://github.com/rust-lang/rust/blob/0486e12ad0661adcfdbd926dea17d7edfda419c1/src/doc/book/bibliography.md">"Rust Bibliography"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARacket+%28programming+language%29&amp;rft.btitle=Rust+Bibliography&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fgithub.com%2Frust-lang%2Frust%2Fblob%2F0486e12ad0661adcfdbd926dea17d7edfda419c1%2Fsrc%2Fdoc%2Fbook%2Fbibliography.md&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-typed-clojure-thesis-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-typed-clojure-thesis_6-0">^</a></b></span> <span class="reference-text"><cite class="citation thesis">Bonnaire-Sergeant, Ambrose (2012). <i>A Practical Optional Type System for Clojure</i> (Thesis). The University of Western Australia.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARacket+%28programming+language%29&amp;rft.aufirst=Ambrose&amp;rft.aulast=Bonnaire-Sergeant&amp;rft.date=2012&amp;rft.inst=The+University+of+Western+Australia&amp;rft.title=A+Practical+Optional+Type+System+for+Clojure&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adissertation" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://docs.racket-lang.org/guide/intro.html">"Welcome to Racket"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2011-08-15</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARacket+%28programming+language%29&amp;rft.btitle=Welcome+to+Racket&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fdocs.racket-lang.org%2Fguide%2Fintro.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://docs.racket-lang.org/guide/dialects.html">"Dialects of Racket and Scheme"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2011-08-15</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARacket+%28programming+language%29&amp;rft.btitle=Dialects+of+Racket+and+Scheme&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fdocs.racket-lang.org%2Fguide%2Fdialects.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-mred-9"><span class="mw-cite-backlink">^ <a href="#cite_ref-mred_9-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-mred_9-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><cite class="citation conference">Flatt; Findler; Krishnamurthi; Felleisen (1999). <i>Programming Languages as Operating Systems (or, Revenge of the Son of the Lisp Machine)</i>. International Conference on Functional Programming.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARacket+%28programming+language%29&amp;rft.au=Felleisen&amp;rft.au=Findler&amp;rft.au=Flatt&amp;rft.au=Krishnamurthi&amp;rft.btitle=Programming+Languages+as+Operating+Systems+%28or%2C+Revenge+of+the+Son+of+the+Lisp+Machine%29&amp;rft.date=1999&amp;rft.genre=conference&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-drscheme-10"><span class="mw-cite-backlink">^ <a href="#cite_ref-drscheme_10-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-drscheme_10-1"><sup><i><b>b</b></i></sup></a> <a href="#cite_ref-drscheme_10-2"><sup><i><b>c</b></i></sup></a></span> <span class="reference-text"><cite class="citation journal">Findler; Clements; Flanagan; Flatt; Krishnamurthi; Steckler; Felleisen (2001). <a rel="nofollow" class="external text" href="http://www.ccs.neu.edu/racket/pubs/jfp01-fcffksf.pdf">"DrScheme: A Programming Environment for Scheme"</a> <span style="font-size:85%;">(PDF)</span>. <i>Journal of Functional Programming</i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARacket+%28programming+language%29&amp;rft.atitle=DrScheme%3A+A+Programming+Environment+for+Scheme&amp;rft.au=Clements&amp;rft.au=Felleisen&amp;rft.au=Findler&amp;rft.au=Flanagan&amp;rft.au=Flatt&amp;rft.au=Krishnamurthi&amp;rft.au=Steckler&amp;rft.date=2001&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fwww.ccs.neu.edu%2Fracket%2Fpubs%2Fjfp01-fcffksf.pdf&amp;rft.jtitle=Journal+of+Functional+Programming&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-teachscheme-11"><span class="mw-cite-backlink"><b><a href="#cite_ref-teachscheme_11-0">^</a></b></span> <span class="reference-text"><cite class="citation news">Felleisen; Findler; Flatt; Krishnamurthi (2004). <a rel="nofollow" class="external text" href="http://www.ccs.neu.edu/scheme/pubs/#cse2003-fffk">"The TeachScheme! Project: Computing and Programming for Every Student"</a>. <i>Journal of Computer Science Education</i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARacket+%28programming+language%29&amp;rft.atitle=The+TeachScheme%21+Project%3A+Computing+and+Programming+for+Every+Student&amp;rft.au=Felleisen&amp;rft.au=Findler&amp;rft.au=Flatt&amp;rft.au=Krishnamurthi&amp;rft.date=2004&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fwww.ccs.neu.edu%2Fscheme%2Fpubs%2F%23cse2003-fffk&amp;rft.jtitle=Journal+of+Computer+Science+Education&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-12"><span class="mw-cite-backlink"><b><a href="#cite_ref-12">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://programbydesign.org/overview">"Overview"</a>. Program by Design<span class="reference-accessdate">. Retrieved <span class="nowrap">2011-08-17</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARacket+%28programming+language%29&amp;rft.btitle=Overview&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fprogrambydesign.org%2Foverview&amp;rft.pub=Program+by+Design&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-macros-matter-13"><span class="mw-cite-backlink"><b><a href="#cite_ref-macros-matter_13-0">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://blog.racket-lang.org/2007/05/macros-matter.html">"Macros Matter"</a>. 2007-05-03<span class="reference-accessdate">. Retrieved <span class="nowrap">2011-08-08</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARacket+%28programming+language%29&amp;rft.btitle=Macros+Matter&amp;rft.date=2007-05-03&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fblog.racket-lang.org%2F2007%2F05%2Fmacros-matter.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-scheme-with-classes-14"><span class="mw-cite-backlink">^ <a href="#cite_ref-scheme-with-classes_14-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-scheme-with-classes_14-1"><sup><i><b>b</b></i></sup></a> <a href="#cite_ref-scheme-with-classes_14-2"><sup><i><b>c</b></i></sup></a></span> <span class="reference-text"><cite class="citation conference">Flatt, M.; Findler, R. B.; Felleisen, M. (2006). <a rel="nofollow" class="external text" href="http://www.ccs.neu.edu/scheme/pubs/asplas06-fff.pdf">"Scheme with Classes, Mixins, and Traits"</a> <span style="font-size:85%;">(PDF)</span>. <i>Asian Symposium on Programming Languages and Systems</i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARacket+%28programming+language%29&amp;rft.atitle=Scheme+with+Classes%2C+Mixins%2C+and+Traits&amp;rft.au=Felleisen%2C+M.&amp;rft.au=Findler%2C+R.+B.&amp;rft.aufirst=M.&amp;rft.aulast=Flatt&amp;rft.btitle=Asian+Symposium+on+Programming+Languages+and+Systems&amp;rft.date=2006&amp;rft.genre=conference&amp;rft_id=http%3A%2F%2Fwww.ccs.neu.edu%2Fscheme%2Fpubs%2Fasplas06-fff.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-units-15"><span class="mw-cite-backlink">^ <a href="#cite_ref-units_15-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-units_15-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><cite class="citation conference">Flatt, M.; Felleisen, M. (1998). <a rel="nofollow" class="external text" href="http://www.ccs.neu.edu/scheme/pubs/pldi98-ff.ps.gz">"Units: Cool Modules for Hot Languages"</a>. <i>Programming Language Design and Implementation</i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARacket+%28programming+language%29&amp;rft.atitle=Units%3A+Cool+Modules+for+Hot+Languages&amp;rft.au=Felleisen%2C+M.&amp;rft.aufirst=M.&amp;rft.aulast=Flatt&amp;rft.btitle=Programming+Language+Design+and+Implementation&amp;rft.date=1998&amp;rft.genre=conference&amp;rft_id=http%3A%2F%2Fwww.ccs.neu.edu%2Fscheme%2Fpubs%2Fpldi98-ff.ps.gz&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-languages-as-libraries-16"><span class="mw-cite-backlink">^ <a href="#cite_ref-languages-as-libraries_16-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-languages-as-libraries_16-1"><sup><i><b>b</b></i></sup></a> <a href="#cite_ref-languages-as-libraries_16-2"><sup><i><b>c</b></i></sup></a> <a href="#cite_ref-languages-as-libraries_16-3"><sup><i><b>d</b></i></sup></a></span> <span class="reference-text"><cite class="citation conference">Tobin-Hochstadt, S.; St-Amour, V.; Culpepper, R.; Flatt, M.; Felleisen, M. (2011). <a rel="nofollow" class="external text" href="http://www.ccs.neu.edu/scheme/pubs/pldi11-thacff.pdf">"Languages as Libraries"</a> <span style="font-size:85%;">(PDF)</span>. <i>Programming Language Design and Implementation</i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARacket+%28programming+language%29&amp;rft.atitle=Languages+as+Libraries&amp;rft.au=Culpepper%2C+R.&amp;rft.au=Felleisen%2C+M.&amp;rft.aufirst=S.&amp;rft.au=Flatt%2C+M.&amp;rft.aulast=Tobin-Hochstadt&amp;rft.au=St-Amour%2C+V.&amp;rft.btitle=Programming+Language+Design+and+Implementation&amp;rft.date=2011&amp;rft.genre=conference&amp;rft_id=http%3A%2F%2Fwww.ccs.neu.edu%2Fscheme%2Fpubs%2Fpldi11-thacff.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-racket-lgpl-license-17"><span class="mw-cite-backlink"><b><a href="#cite_ref-racket-lgpl-license_17-0">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://download.racket-lang.org/license.html">"Racket: Software License"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2015-10-20</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARacket+%28programming+language%29&amp;rft.btitle=Racket%3A+Software+License&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fdownload.racket-lang.org%2Flicense.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-libscheme-18"><span class="mw-cite-backlink"><b><a href="#cite_ref-libscheme_18-0">^</a></b></span> <span class="reference-text"><cite class="citation conference">Benson, Brent W. Jr. (October 26–28, 1994). <a rel="nofollow" class="external text" href="https://www.usenix.org/legacy/publications/library/proceedings/vhll/benson.html">"libscheme: Scheme as a C Library"</a>. Written at Santa Fe, NM. <i>Proceedings of the USENIX Symposium on Very High Level Languages</i>. Berkeley, CA: USENIX Association. pp.&#160;7–19. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-1880446652" title="Special:BookSources/978-1880446652">978-1880446652</a><span class="reference-accessdate">. Retrieved <span class="nowrap">July 7,</span> 2013</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARacket+%28programming+language%29&amp;rft.atitle=libscheme%3A+Scheme+as+a+C+Library&amp;rft.aufirst=Brent+W.+Jr.&amp;rft.aulast=Benson&amp;rft.btitle=Proceedings+of+the+USENIX+Symposium+on+Very+High+Level+Languages&amp;rft.date=1994-10-26%2F1994-10-28&amp;rft.genre=conference&amp;rft_id=https%3A%2F%2Fwww.usenix.org%2Flegacy%2Fpublications%2Flibrary%2Fproceedings%2Fvhll%2Fbenson.html&amp;rft.isbn=978-1880446652&amp;rft.pages=7-19&amp;rft.place=Berkeley%2C+CA&amp;rft.pub=USENIX+Association&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-gui-rebuild-19"><span class="mw-cite-backlink">^ <a href="#cite_ref-gui-rebuild_19-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-gui-rebuild_19-1"><sup><i><b>b</b></i></sup></a> <a href="#cite_ref-gui-rebuild_19-2"><sup><i><b>c</b></i></sup></a></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://blog.racket-lang.org/2010/12/racket-version-5.html">"Rebuilding Racket's Graphics Layer"</a>. 2010-12-08<span class="reference-accessdate">. Retrieved <span class="nowrap">2011-08-23</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARacket+%28programming+language%29&amp;rft.btitle=Rebuilding+Racket%27s+Graphics+Layer&amp;rft.date=2010-12-08&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fblog.racket-lang.org%2F2010%2F12%2Fracket-version-5.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-20"><span class="mw-cite-backlink"><b><a href="#cite_ref-20">^</a></b></span> <span class="reference-text"><cite class="citation conference">Clements, J.; Flatt, M.; Felleisen, M. (2001). <a rel="nofollow" class="external text" href="http://www.ccs.neu.edu/scheme/pubs/esop2001-cff.pdf">"Modeling an Algebraic Stepper"</a> <span style="font-size:85%;">(PDF)</span>. <i>European Symposium on Programming Languages</i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARacket+%28programming+language%29&amp;rft.atitle=Modeling+an+Algebraic+Stepper&amp;rft.au=Felleisen%2C+M.&amp;rft.aufirst=J.&amp;rft.au=Flatt%2C+M.&amp;rft.aulast=Clements&amp;rft.btitle=European+Symposium+on+Programming+Languages&amp;rft.date=2001&amp;rft.genre=conference&amp;rft_id=http%3A%2F%2Fwww.ccs.neu.edu%2Fscheme%2Fpubs%2Fesop2001-cff.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-release-notes-21"><span class="mw-cite-backlink">^ <a href="#cite_ref-release-notes_21-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-release-notes_21-1"><sup><i><b>b</b></i></sup></a> <a href="#cite_ref-release-notes_21-2"><sup><i><b>c</b></i></sup></a></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://docs.racket-lang.org/release-notes/racket/HISTORY.txt">"Racket Core Release Notes"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2012-04-15</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARacket+%28programming+language%29&amp;rft.btitle=Racket+Core+Release+Notes&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fdocs.racket-lang.org%2Frelease-notes%2Fracket%2FHISTORY.txt&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-22"><span class="mw-cite-backlink"><b><a href="#cite_ref-22">^</a></b></span> <span class="reference-text"><cite class="citation conference">Flatt, M. (2002). "Composable and Compilable Macros". <i>International Conference on Functional Programming</i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARacket+%28programming+language%29&amp;rft.atitle=Composable+and+Compilable+Macros&amp;rft.aufirst=M.&amp;rft.aulast=Flatt&amp;rft.btitle=International+Conference+on+Functional+Programming&amp;rft.date=2002&amp;rft.genre=conference&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-4.0-23"><span class="mw-cite-backlink"><b><a href="#cite_ref-4.0_23-0">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://blog.racket-lang.org/2008/06/plt-scheme-version-4.html">"PLT Scheme version 4.0"</a>. 2008-06-12<span class="reference-accessdate">. Retrieved <span class="nowrap">2012-08-07</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARacket+%28programming+language%29&amp;rft.btitle=PLT+Scheme+version+4.0&amp;rft.date=2008-06-12&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fblog.racket-lang.org%2F2008%2F06%2Fplt-scheme-version-4.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-24"><span class="mw-cite-backlink"><b><a href="#cite_ref-24">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://racket-lang.org/new-name.html">"From PLT Scheme to Racket"</a>. Racket-lang.org<span class="reference-accessdate">. Retrieved <span class="nowrap">2011-08-17</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARacket+%28programming+language%29&amp;rft.btitle=From+PLT+Scheme+to+Racket&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fracket-lang.org%2Fnew-name.html&amp;rft.pub=Racket-lang.org&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-5.2-25"><span class="mw-cite-backlink"><b><a href="#cite_ref-5.2_25-0">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://blog.racket-lang.org/2011/11/racket-v52.html">"Racket 5.2"</a>. PLT, Inc. 2011-11-09<span class="reference-accessdate">. Retrieved <span class="nowrap">2012-06-16</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARacket+%28programming+language%29&amp;rft.btitle=Racket+5.2&amp;rft.date=2011-11-09&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fblog.racket-lang.org%2F2011%2F11%2Fracket-v52.html&amp;rft.pub=PLT%2C+Inc&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-submodules-26"><span class="mw-cite-backlink"><b><a href="#cite_ref-submodules_26-0">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://blog.racket-lang.org/2012/06/submodules.html">"Submodules"</a>. 2012-06-03<span class="reference-accessdate">. Retrieved <span class="nowrap">2012-08-07</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARacket+%28programming+language%29&amp;rft.btitle=Submodules&amp;rft.date=2012-06-03&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fblog.racket-lang.org%2F2012%2F06%2Fsubmodules.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-5.3-27"><span class="mw-cite-backlink"><b><a href="#cite_ref-5.3_27-0">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://blog.racket-lang.org/2012/08/racket-v53.html">"Racket 5.3"</a>. PLT, Inc. 2012-08-07<span class="reference-accessdate">. Retrieved <span class="nowrap">2012-08-07</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARacket+%28programming+language%29&amp;rft.btitle=Racket+5.3&amp;rft.date=2012-08-07&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fblog.racket-lang.org%2F2012%2F08%2Fracket-v53.html&amp;rft.pub=PLT%2C+Inc&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-5.3.1-28"><span class="mw-cite-backlink"><b><a href="#cite_ref-5.3.1_28-0">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://blog.racket-lang.org/2012/11/racket-v531.html">"Racket 5.3.1"</a>. PLT, Inc. 2012-11-07<span class="reference-accessdate">. Retrieved <span class="nowrap">2012-11-07</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARacket+%28programming+language%29&amp;rft.btitle=Racket+5.3.1&amp;rft.date=2012-11-07&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fblog.racket-lang.org%2F2012%2F11%2Fracket-v531.html&amp;rft.pub=PLT%2C+Inc&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-6.0-29"><span class="mw-cite-backlink"><b><a href="#cite_ref-6.0_29-0">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://blog.racket-lang.org/2014/02/racket-v60.html">"Racket 6.0"</a>. PLT, Inc. 2014-02-26<span class="reference-accessdate">. Retrieved <span class="nowrap">2016-02-23</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARacket+%28programming+language%29&amp;rft.btitle=Racket+6.0&amp;rft.date=2014-02-26&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fblog.racket-lang.org%2F2014%2F02%2Fracket-v60.html&amp;rft.pub=PLT%2C+Inc&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-icfp2007-30"><span class="mw-cite-backlink"><b><a href="#cite_ref-icfp2007_30-0">^</a></b></span> <span class="reference-text"><cite class="citation conference">Flatt, M.; Yu, G.; Findler, R. B.; Felleisen, M. (2007). <a rel="nofollow" class="external text" href="http://www.ccs.neu.edu/scheme/pubs/icfp07-fyff.pdf">"Adding Delimited and Composable Control to a Production Programming Environment"</a> <span style="font-size:85%;">(PDF)</span>. <i>International Conference on Functional Programming</i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARacket+%28programming+language%29&amp;rft.atitle=Adding+Delimited+and+Composable+Control+to+a+Production+Programming+Environment&amp;rft.au=Felleisen%2C+M.&amp;rft.au=Findler%2C+R.+B.&amp;rft.aufirst=M.&amp;rft.aulast=Flatt&amp;rft.au=Yu%2C+G.&amp;rft.btitle=International+Conference+on+Functional+Programming&amp;rft.date=2007&amp;rft.genre=conference&amp;rft_id=http%3A%2F%2Fwww.ccs.neu.edu%2Fscheme%2Fpubs%2Ficfp07-fyff.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-31"><span class="mw-cite-backlink"><b><a href="#cite_ref-31">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://docs.racket-lang.org/guide/contracts.html">"Contracts"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARacket+%28programming+language%29&amp;rft.btitle=Contracts&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fdocs.racket-lang.org%2Fguide%2Fcontracts.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-32"><span class="mw-cite-backlink"><b><a href="#cite_ref-32">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://docs.racket-lang.org/reference/threads.html">"Threads"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARacket+%28programming+language%29&amp;rft.btitle=Threads&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fdocs.racket-lang.org%2Freference%2Fthreads.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-33"><span class="mw-cite-backlink"><b><a href="#cite_ref-33">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://docs.racket-lang.org/reference/futures.html">"Futures"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARacket+%28programming+language%29&amp;rft.btitle=Futures&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fdocs.racket-lang.org%2Freference%2Ffutures.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-34"><span class="mw-cite-backlink"><b><a href="#cite_ref-34">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://docs.racket-lang.org/reference/places.html">"Places"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARacket+%28programming+language%29&amp;rft.btitle=Places&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fdocs.racket-lang.org%2Freference%2Fplaces.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-creating-languages-35"><span class="mw-cite-backlink"><b><a href="#cite_ref-creating-languages_35-0">^</a></b></span> <span class="reference-text"><cite class="citation news">Flatt, Matthew (2012). <a rel="nofollow" class="external text" href="http://cacm.acm.org/magazines/2012/1/144809-creating-languages-in-racket">"Creating Languages in Racket"</a>. <i>Communications of the ACM</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2012-04-08</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARacket+%28programming+language%29&amp;rft.atitle=Creating+Languages+in+Racket&amp;rft.aufirst=Matthew&amp;rft.aulast=Flatt&amp;rft.date=2012&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fcacm.acm.org%2Fmagazines%2F2012%2F1%2F144809-creating-languages-in-racket&amp;rft.jtitle=Communications+of+the+ACM&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-36"><span class="mw-cite-backlink"><b><a href="#cite_ref-36">^</a></b></span> <span class="reference-text"><cite class="citation conference">Findler, R. B.; Felleisen, M. (2002). <a rel="nofollow" class="external text" href="http://www.eecs.northwestern.edu/~robby/pubs/papers/ho-contracts-icfp2002.pdf">"Contracts for Higher-Order Functions"</a> <span style="font-size:85%;">(PDF)</span>. <i>International Conference on Functional Programming</i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARacket+%28programming+language%29&amp;rft.atitle=Contracts+for+Higher-Order+Functions&amp;rft.au=Felleisen%2C+M.&amp;rft.aufirst=R.+B.&amp;rft.aulast=Findler&amp;rft.btitle=International+Conference+on+Functional+Programming&amp;rft.date=2002&amp;rft.genre=conference&amp;rft_id=http%3A%2F%2Fwww.eecs.northwestern.edu%2F~robby%2Fpubs%2Fpapers%2Fho-contracts-icfp2002.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-planet-37"><span class="mw-cite-backlink"><b><a href="#cite_ref-planet_37-0">^</a></b></span> <span class="reference-text"><cite class="citation conference">Matthews, J. (2006). "Component Deployment with PLaneT: You Want it Where?". <i>Scheme and Functional Programming Workshop</i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARacket+%28programming+language%29&amp;rft.atitle=Component+Deployment+with+PLaneT%3A+You+Want+it+Where%3F&amp;rft.aufirst=J.&amp;rft.aulast=Matthews&amp;rft.btitle=Scheme+and+Functional+Programming+Workshop&amp;rft.date=2006&amp;rft.genre=conference&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-38"><span class="mw-cite-backlink"><b><a href="#cite_ref-38">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://blog.racket-lang.org/2014/12/the-racket-package-system-and-planet.html">"The Racket package system and Planet"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARacket+%28programming+language%29&amp;rft.btitle=The+Racket+package+system+and+Planet&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fblog.racket-lang.org%2F2014%2F12%2Fthe-racket-package-system-and-planet.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-you-want-it-when-39"><span class="mw-cite-backlink"><b><a href="#cite_ref-you-want-it-when_39-0">^</a></b></span> <span class="reference-text"><cite class="citation conference">Flatt, Matthew (2002). <a rel="nofollow" class="external text" href="http://www.cs.utah.edu/plt/publications/macromod.pdf">"Composable and Compilable Macros, You Want it When?"</a> <span style="font-size:85%;">(PDF)</span>. <i>International Conference on Functional Programming</i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARacket+%28programming+language%29&amp;rft.atitle=Composable+and+Compilable+Macros%2C+You+Want+it+When%3F&amp;rft.aufirst=Matthew&amp;rft.aulast=Flatt&amp;rft.btitle=International+Conference+on+Functional+Programming&amp;rft.date=2002&amp;rft.genre=conference&amp;rft_id=http%3A%2F%2Fwww.cs.utah.edu%2Fplt%2Fpublications%2Fmacromod.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-40"><span class="mw-cite-backlink"><b><a href="#cite_ref-40">^</a></b></span> <span class="reference-text">Flatt, Culpepper, Darais, Findler, <a rel="nofollow" class="external text" href="http://www.cs.utah.edu/plt/publications/jfp12-draft-fcdf.pdf">Macros that Work Together; Compile-Time Bindings, Partial Expansion, and Deﬁnition Contexts</a></span></li>
+<li id="cite_note-41"><span class="mw-cite-backlink"><b><a href="#cite_ref-41">^</a></b></span> <span class="reference-text"><cite class="citation conference">Tobin-Hochstadt, S.; Felleisen, M. (2008). "The Design and Implementation of Typed Scheme". <i>Principles of Programming Languages</i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARacket+%28programming+language%29&amp;rft.atitle=The+Design+and+Implementation+of+Typed+Scheme&amp;rft.au=Felleisen%2C+M.&amp;rft.aufirst=S.&amp;rft.aulast=Tobin-Hochstadt&amp;rft.btitle=Principles+of+Programming+Languages&amp;rft.date=2008&amp;rft.genre=conference&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-42"><span class="mw-cite-backlink"><b><a href="#cite_ref-42">^</a></b></span> <span class="reference-text"><cite class="citation conference">Barzilay, E.; Clements, J. (2005). "Laziness Without All the Hard Work: Combining Lazy and Strict Languages for Teaching". <i>Functional and Declarative Programming in Education</i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARacket+%28programming+language%29&amp;rft.atitle=Laziness+Without+All+the+Hard+Work%3A+Combining+Lazy+and+Strict+Languages+for+Teaching&amp;rft.au=Clements%2C+J.&amp;rft.aufirst=E.&amp;rft.aulast=Barzilay&amp;rft.btitle=Functional+and+Declarative+Programming+in+Education&amp;rft.date=2005&amp;rft.genre=conference&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-43"><span class="mw-cite-backlink"><b><a href="#cite_ref-43">^</a></b></span> <span class="reference-text"><cite class="citation conference">Flatt, M.; Barzilay, E.; Findler, R. B. (2009). "Scribble: Closing the Book on Ad Hoc Documentation Tools". <i>International Conference on Functional Programming</i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARacket+%28programming+language%29&amp;rft.atitle=Scribble%3A+Closing+the+Book+on+Ad+Hoc+Documentation+Tools&amp;rft.au=Barzilay%2C+E.&amp;rft.au=Findler%2C+R.+B.&amp;rft.aufirst=M.&amp;rft.aulast=Flatt&amp;rft.btitle=International+Conference+on+Functional+Programming&amp;rft.date=2009&amp;rft.genre=conference&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-44"><span class="mw-cite-backlink"><b><a href="#cite_ref-44">^</a></b></span> <span class="reference-text"><cite class="citation conference">Findler, R. B.; Flatt, M. (2004). "Slideshow: Functional Presentations". <i>International Conference on Functional Programming</i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARacket+%28programming+language%29&amp;rft.atitle=Slideshow%3A+Functional+Presentations&amp;rft.aufirst=R.+B.&amp;rft.au=Flatt%2C+M.&amp;rft.aulast=Findler&amp;rft.btitle=International+Conference+on+Functional+Programming&amp;rft.date=2004&amp;rft.genre=conference&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-functional-io-45"><span class="mw-cite-backlink"><b><a href="#cite_ref-functional-io_45-0">^</a></b></span> <span class="reference-text"><cite class="citation conference">Felleisen, M.; Findler, R. B.; Flatt, M.; Krishnamurthi, S. (2009). <a rel="nofollow" class="external text" href="http://www.ccs.neu.edu/scheme/pubs/icfp09-fffk.pdf">"A Functional I/O System (or Fun for Freshman Kids)"</a> <span style="font-size:85%;">(PDF)</span>. <i>International Conference on Functional Programming</i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARacket+%28programming+language%29&amp;rft.atitle=A+Functional+I%2FO+System+%28or+Fun+for+Freshman+Kids%29&amp;rft.au=Findler%2C+R.+B.&amp;rft.aufirst=M.&amp;rft.au=Flatt%2C+M.&amp;rft.au=Krishnamurthi%2C+S.&amp;rft.aulast=Felleisen&amp;rft.btitle=International+Conference+on+Functional+Programming&amp;rft.date=2009&amp;rft.genre=conference&amp;rft_id=http%3A%2F%2Fwww.ccs.neu.edu%2Fscheme%2Fpubs%2Ficfp09-fffk.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-46"><span class="mw-cite-backlink"><b><a href="#cite_ref-46">^</a></b></span> <span class="reference-text"><cite class="citation journal">Felleisen, M.; Findler, R. B.; Flatt, M.; Krishnamurthi, S. (2004). <a rel="nofollow" class="external text" href="http://www.ccs.neu.edu/scheme/pubs/fdpe2002-fffk.pdf">"The Structure and Interpretation of the Computer Science Curriculum"</a> <span style="font-size:85%;">(PDF)</span>. <i>Journal of Functional Programming</i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARacket+%28programming+language%29&amp;rft.atitle=The+Structure+and+Interpretation+of+the+Computer+Science+Curriculum&amp;rft.au=Findler%2C+R.+B.&amp;rft.aufirst=M.&amp;rft.au=Flatt%2C+M.&amp;rft.au=Krishnamurthi%2C+S.&amp;rft.aulast=Felleisen&amp;rft.date=2004&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fwww.ccs.neu.edu%2Fscheme%2Fpubs%2Ffdpe2002-fffk.pdf&amp;rft.jtitle=Journal+of+Functional+Programming&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-parsers-47"><span class="mw-cite-backlink">^ <a href="#cite_ref-parsers_47-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-parsers_47-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://docs.racket-lang.org/parser-tools/">"Parser Tools: lex and yacc-style Parsing"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2011-08-16</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARacket+%28programming+language%29&amp;rft.btitle=Parser+Tools%3A+lex+and+yacc-style+Parsing&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fdocs.racket-lang.org%2Fparser-tools%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-web-server-48"><span class="mw-cite-backlink">^ <a href="#cite_ref-web-server_48-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-web-server_48-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><cite class="citation journal">Krishnamurthi, Hopkins; McCarthy; Graunke; Pettyjohn; Felleisen (2007). <a rel="nofollow" class="external text" href="http://www.ccs.neu.edu/racket/pubs/hosc07-sk-mf.pdf">"Implementation and Use of the PLT Scheme Web Server"</a> <span style="font-size:85%;">(PDF)</span>. <i>Journal of Higher-Order and Symbolic Programming</i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARacket+%28programming+language%29&amp;rft.atitle=Implementation+and+Use+of+the+PLT+Scheme+Web+Server&amp;rft.au=Felleisen&amp;rft.au=Graunke&amp;rft.au=Krishnamurthi%2C+Hopkins&amp;rft.au=McCarthy&amp;rft.au=Pettyjohn&amp;rft.date=2007&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fwww.ccs.neu.edu%2Fracket%2Fpubs%2Fhosc07-sk-mf.pdf&amp;rft.jtitle=Journal+of+Higher-Order+and+Symbolic+Programming&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-ffi-49"><span class="mw-cite-backlink"><b><a href="#cite_ref-ffi_49-0">^</a></b></span> <span class="reference-text"><cite class="citation conference">Barzilay, E.; Orlovsky, D. (2004). <a rel="nofollow" class="external text" href="http://www.ccs.neu.edu/racket/pubs/scheme04-bo.pdf">"Foreign Interface for PLT Scheme"</a> <span style="font-size:85%;">(PDF)</span>. <i>Scheme and Functional Programming</i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARacket+%28programming+language%29&amp;rft.atitle=Foreign+Interface+for+PLT+Scheme&amp;rft.aufirst=E.&amp;rft.aulast=Barzilay&amp;rft.au=Orlovsky%2C+D.&amp;rft.btitle=Scheme+and+Functional+Programming&amp;rft.date=2004&amp;rft.genre=conference&amp;rft_id=http%3A%2F%2Fwww.ccs.neu.edu%2Fracket%2Fpubs%2Fscheme04-bo.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-50"><span class="mw-cite-backlink"><b><a href="#cite_ref-50">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://cufp.org/conference/sessions/2011/functional-mzscheme-dsls-game-development">"Functional mzScheme DSLs in Game Development"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2012-05-08</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARacket+%28programming+language%29&amp;rft.btitle=Functional+mzScheme+DSLs+in+Game+Development&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fcufp.org%2Fconference%2Fsessions%2F2011%2Ffunctional-mzscheme-dsls-game-development&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-51"><span class="mw-cite-backlink"><b><a href="#cite_ref-51">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.bootstrapworld.org/materials/fall2015/index.shtml">"Bootstrap"</a>. <i>bootstrapworld.org</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2015-08-11</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARacket+%28programming+language%29&amp;rft.atitle=Bootstrap&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.bootstrapworld.org%2Fmaterials%2Ffall2015%2Findex.shtml&amp;rft.jtitle=bootstrapworld.org&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="Further_reading">Further reading</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Racket_(programming_language)&amp;action=edit&amp;section=12" title="Edit section: Further reading">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li>Felleisen <i>et al.</i>, 2013. <a rel="nofollow" class="external text" href="http://realmofracket.com/"><i>Realm of Racket</i></a>. No Starch Press.</li>
+<li>Felleisen <i>et al.</i>, 2003. <i><a href="/wiki/How_to_Design_Programs" title="How to Design Programs">How to Design Programs</a></i>. MIT Press.</li>
+</ul>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Racket_(programming_language)&amp;action=edit&amp;section=13" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><span class="official-website"><span class="url"><a rel="nofollow" class="external text" href="http://racket-lang.org">Official website</a></span></span></li>
+<li><a rel="nofollow" class="external text" href="https://github.com/racket/racket">Racket source code repository</a> on <a href="/wiki/GitHub" title="GitHub">GitHub</a></li>
+<li><a rel="nofollow" class="external text" href="http://pkgs.racket-lang.org/">Package management system</a></li>
+</ul>
+<h3><span class="mw-headline" id="Official_documentation">Official documentation</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Racket_(programming_language)&amp;action=edit&amp;section=14" title="Edit section: Official documentation">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://docs.racket-lang.org/quick/">Quick: An Introduction to Racket with Pictures</a></li>
+<li><a rel="nofollow" class="external text" href="http://docs.racket-lang.org/guide/">The Racket Guide</a></li>
+<li><a rel="nofollow" class="external text" href="http://docs.racket-lang.org/reference/">The Racket Reference</a></li>
+<li><a rel="nofollow" class="external text" href="http://docs.racket-lang.org/style/index.html">How to Program Racket</a>&#160;– Racket style guide</li>
+</ul>
+<h3><span class="mw-headline" id="Miscellaneous">Miscellaneous</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Racket_(programming_language)&amp;action=edit&amp;section=15" title="Edit section: Miscellaneous">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://hashcollision.org/brainfudge/">F*dging up a Racket</a>&#160;– shows how to write a <a href="/wiki/Brainfuck" title="Brainfuck">Brainfuck</a> dialect for Racket</li>
+</ul>
+<table class="navbox">
+<caption>Timeline of Lisp dialects<sup>(<a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Lisp&amp;action=edit">edit</a>)</sup></caption>
+<tr>
+<th></th>
+<th>1955</th>
+<th>1960</th>
+<th>1965</th>
+<th>1970</th>
+<th>1975</th>
+<th>1980</th>
+<th>1985</th>
+<th>1990</th>
+<th>1995</th>
+<th>2000</th>
+<th>2005</th>
+<th>2010</th>
+<th>2015</th>
+</tr>
+<tr>
+<th>Lisp 1.5</th>
+<td align="center" colspan="3" style="background:lightgray"><a href="/wiki/Lisp_(programming_language)" title="Lisp (programming language)">Lisp 1.5</a></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+</tr>
+<tr>
+<th>Maclisp</th>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td align="center" colspan="5" style="background:lightgray"><a href="/wiki/Maclisp" title="Maclisp">Maclisp</a></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+</tr>
+<tr>
+<th>Interlisp</th>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td align="center" colspan="5" style="background:lightgray"><a href="/wiki/Interlisp" title="Interlisp">Interlisp</a></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+</tr>
+<tr>
+<th>ZetaLisp</th>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td align="center" colspan="5" style="background:lightgray"><a href="/wiki/Lisp_Machine_Lisp" title="Lisp Machine Lisp">Lisp Machine Lisp</a></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+</tr>
+<tr>
+<th>Scheme</th>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td align="center" colspan="9" style="background:lightgray"><a href="/wiki/Scheme_(programming_language)" title="Scheme (programming language)">Scheme</a></td>
+</tr>
+<tr>
+<th>NIL</th>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td align="center" colspan="2" style="background:lightgray"><a href="/wiki/NIL_(programming_language)" title="NIL (programming language)">NIL</a></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+</tr>
+<tr>
+<th>Common Lisp</th>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td align="center" colspan="8" style="background:lightgray"><a href="/wiki/Common_Lisp" title="Common Lisp">Common Lisp</a></td>
+</tr>
+<tr>
+<th>T</th>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td align="center" colspan="3" style="background:lightgray"><a href="/wiki/T_(programming_language)" title="T (programming language)">T</a></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+</tr>
+<tr>
+<th>Emacs Lisp</th>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td align="center" colspan="8" style="background:lightgray"><a href="/wiki/Emacs_Lisp" title="Emacs Lisp">Emacs Lisp</a></td>
+</tr>
+<tr>
+<th>AutoLISP</th>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td align="center" colspan="7" style="background:lightgray"><a href="/wiki/AutoLISP" title="AutoLISP">AutoLISP</a></td>
+</tr>
+<tr>
+<th>ISLISP</th>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td align="center" colspan="7" style="background:lightgray"><a href="/wiki/ISLISP" title="ISLISP">ISLISP</a></td>
+</tr>
+<tr>
+<th>EuLisp</th>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td align="center" colspan="4" style="background:lightgray"><a href="/wiki/EuLisp" title="EuLisp">EuLisp</a></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+</tr>
+<tr>
+<th>PicoLisp</th>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td align="center" colspan="6" style="background:lightgray"><a href="/wiki/PicoLisp" title="PicoLisp">PicoLisp</a></td>
+</tr>
+<tr>
+<th>Racket</th>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td align="center" colspan="5" style="background:lightgray"><strong class="selflink">Racket</strong></td>
+</tr>
+<tr>
+<th>Arc</th>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td align="center" colspan="4" style="background:lightgray"><a href="/wiki/Arc_(programming_language)" title="Arc (programming language)">Arc</a></td>
+</tr>
+<tr>
+<th>Clojure</th>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td align="center" colspan="3" style="background:lightgray"><a href="/wiki/Clojure" title="Clojure">Clojure</a></td>
+</tr>
+<tr>
+<th>LFE</th>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td align="center" colspan="3" style="background:lightgray"><a href="/wiki/LFE_(programming_language)" title="LFE (programming language)">LFE</a></td>
+</tr>
+<tr>
+<th>Hy</th>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td colspan="1"></td>
+<td align="center" colspan="2" style="background:lightgray"><a href="/wiki/Hy" title="Hy">Hy</a></td>
+</tr>
+</table>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1172
+Cached time: 20170203154408
+Cache expiry: 86400
+Dynamic content: true
+CPU time usage: 0.404 seconds
+Real time usage: 0.472 seconds
+Preprocessor visited node count: 2745/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 83677/2097152 bytes
+Template argument size: 3281/2097152 bytes
+Highest expansion depth: 25/40
+Expensive parser function count: 2/500
+Lua time usage: 0.202/10.000 seconds
+Lua memory usage: 4.19 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  394.820      1 -total
+ 62.99%  248.711      1 Template:Reflist
+ 27.26%  107.637     27 Template:Cite_web
+ 25.12%   99.191      2 Template:Infobox
+ 19.78%   78.111      1 Template:Infobox_programming_language
+ 15.73%   62.120     17 Template:Cite_conference
+  7.50%   29.630      1 Template:Infobox_software/simple
+  6.11%   24.117      2 Template:Start_date_and_age
+  3.58%   14.141      1 Template:Official_website
+  3.18%   12.560      3 Template:Cite_journal
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:3350021-0!*!0!!en!4!* and timestamp 20170203154407 and revision id 761795885
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Racket_(programming_language)&amp;oldid=761795885">https://en.wikipedia.org/w/index.php?title=Racket_(programming_language)&amp;oldid=761795885</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Functional_languages" title="Category:Functional languages">Functional languages</a></li><li><a href="/wiki/Category:Object-oriented_programming_languages" title="Category:Object-oriented programming languages">Object-oriented programming languages</a></li><li><a href="/wiki/Category:Extensible_syntax_programming_languages" title="Category:Extensible syntax programming languages">Extensible syntax programming languages</a></li><li><a href="/wiki/Category:Scheme_(programming_language)_implementations" title="Category:Scheme (programming language) implementations">Scheme (programming language) implementations</a></li><li><a href="/wiki/Category:Scheme_(programming_language)_compilers" title="Category:Scheme (programming language) compilers">Scheme (programming language) compilers</a></li><li><a href="/wiki/Category:Scheme_(programming_language)_interpreters" title="Category:Scheme (programming language) interpreters">Scheme (programming language) interpreters</a></li><li><a href="/wiki/Category:R6RS_Scheme" title="Category:R6RS Scheme">R6RS Scheme</a></li><li><a href="/wiki/Category:Academic_programming_languages" title="Category:Academic programming languages">Academic programming languages</a></li><li><a href="/wiki/Category:Educational_programming_languages" title="Category:Educational programming languages">Educational programming languages</a></li><li><a href="/wiki/Category:Pedagogic_integrated_development_environments" title="Category:Pedagogic integrated development environments">Pedagogic integrated development environments</a></li><li><a href="/wiki/Category:Cross-platform_free_software" title="Category:Cross-platform free software">Cross-platform free software</a></li><li><a href="/wiki/Category:Free_compilers_and_interpreters" title="Category:Free compilers and interpreters">Free compilers and interpreters</a></li><li><a href="/wiki/Category:Programming_languages_created_in_1994" title="Category:Programming languages created in 1994">Programming languages created in 1994</a></li><li><a href="/wiki/Category:Articles_with_example_Racket_code" title="Category:Articles with example Racket code">Articles with example Racket code</a></li><li><a href="/wiki/Category:Software_using_the_LGPL_license" title="Category:Software using the LGPL license">Software using the LGPL license</a></li><li><a href="/wiki/Category:Scheme_(programming_language)" title="Category:Scheme (programming language)">Scheme (programming language)</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Official_website_different_in_Wikidata_and_Wikipedia" title="Category:Official website different in Wikidata and Wikipedia">Official website different in Wikidata and Wikipedia</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Racket+%28programming+language%29" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Racket+%28programming+language%29" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/Racket_(programming_language)"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:Racket_(programming_language)"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/Racket_(programming_language)" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=Racket_(programming_language)&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Racket_(programming_language)&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Racket_(programming_language)" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Racket_(programming_language)" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Racket_(programming_language)&amp;oldid=761795885" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Racket_(programming_language)&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q1254148" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Racket_%28programming_language%29&amp;id=761795885" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Racket+%28programming+language%29">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Racket+%28programming+language%29&amp;returnto=Racket+%28programming+language%29&amp;oldid=761795885&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Racket_(programming_language)&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/DrRacket" title="DrRacket – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-es"><a href="https://es.wikipedia.org/wiki/Racket_(lenguaje_de_programaci%C3%B3n)" title="Racket (lenguaje de programación) – Spanish" lang="es" hreflang="es" class="interlanguage-link-target">Español</a></li><li class="interlanguage-link interwiki-fa"><a href="https://fa.wikipedia.org/wiki/%D8%AF%DA%A9%D8%AA%D8%B1_%D8%A7%D8%B3%DA%A9%DB%8C%D9%85" title="دکتر اسکیم – Persian" lang="fa" hreflang="fa" class="interlanguage-link-target">فارسی</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/DrRacket" title="DrRacket – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-it"><a href="https://it.wikipedia.org/wiki/Racket_(linguaggio_di_programmazione)" title="Racket (linguaggio di programmazione) – Italian" lang="it" hreflang="it" class="interlanguage-link-target">Italiano</a></li><li class="interlanguage-link interwiki-ja"><a href="https://ja.wikipedia.org/wiki/Racket" title="Racket – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target">日本語</a></li><li class="interlanguage-link interwiki-pl"><a href="https://pl.wikipedia.org/wiki/Racket" title="Racket – Polish" lang="pl" hreflang="pl" class="interlanguage-link-target">Polski</a></li><li class="interlanguage-link interwiki-pt"><a href="https://pt.wikipedia.org/wiki/Racket" title="Racket – Portuguese" lang="pt" hreflang="pt" class="interlanguage-link-target">Português</a></li><li class="interlanguage-link interwiki-ru"><a href="https://ru.wikipedia.org/wiki/Racket_(%D1%8F%D0%B7%D1%8B%D0%BA_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F)" title="Racket (язык программирования) – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li><li class="interlanguage-link interwiki-sr"><a href="https://sr.wikipedia.org/wiki/DrScheme" title="DrScheme – Serbian" lang="sr" hreflang="sr" class="interlanguage-link-target">Српски / srpski</a></li><li class="interlanguage-link interwiki-zh"><a href="https://zh.wikipedia.org/wiki/Racket" title="Racket – Chinese" lang="zh" hreflang="zh" class="interlanguage-link-target">中文</a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q1254148#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 24 January 2017, at 21:09.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Racket_(programming_language)&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.404","walltime":"0.472","ppvisitednodes":{"value":2745,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":83677,"limit":2097152},"templateargumentsize":{"value":3281,"limit":2097152},"expansiondepth":{"value":25,"limit":40},"expensivefunctioncount":{"value":2,"limit":500},"entityaccesscount":{"value":1,"limit":400},"timingprofile":["100.00%  394.820      1 -total"," 62.99%  248.711      1 Template:Reflist"," 27.26%  107.637     27 Template:Cite_web"," 25.12%   99.191      2 Template:Infobox"," 19.78%   78.111      1 Template:Infobox_programming_language"," 15.73%   62.120     17 Template:Cite_conference","  7.50%   29.630      1 Template:Infobox_software/simple","  6.11%   24.117      2 Template:Start_date_and_age","  3.58%   14.141      1 Template:Official_website","  3.18%   12.560      3 Template:Cite_journal"]},"scribunto":{"limitreport-timeusage":{"value":"0.202","limit":"10.000"},"limitreport-memusage":{"value":4389064,"limit":52428800}},"cachereport":{"origin":"mw1172","timestamp":"20170203154408","ttl":86400,"transientcontent":true}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":548,"wgHostname":"mw1172"});});</script>
+	</body>
+</html>

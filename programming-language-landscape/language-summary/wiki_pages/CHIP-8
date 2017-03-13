@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>CHIP-8 - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"CHIP-8","wgTitle":"CHIP-8","wgCurRevisionId":755836389,"wgRevisionId":755836389,"wgArticleId":1119698,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Virtual machines","Virtualization software","Graphing calculators","Microcomputer software"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"CHIP-8","wgRelevantArticleId":1119698,"wgRequestId":"WIVzkgpAAEIAAZnAMGgAAACF","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":true},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q1023623","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.cite.styles":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.legacy.wikibits","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.29.0-wmf.8"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/CHIP-8"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=CHIP-8&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=CHIP-8&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/CHIP-8"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-CHIP-8 rootpage-CHIP-8 skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">CHIP-8</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><script>function mfTempOpenSection(id){var block=document.getElementById("mf-section-"+id);block.className+=" open-block";block.previousSibling.className+=" open-block";}</script><div class="thumb tright">
+<div class="thumbinner" style="width:258px;"><a href="/wiki/File:PONG_CHIP8.png" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/9/9e/PONG_CHIP8.png" width="256" height="128" class="thumbimage" data-file-width="256" data-file-height="128" /></a>
+<div class="thumbcaption">Screenshot of <a href="/wiki/Pong" title="Pong">Pong</a> implemented in CHIP-8</div>
+</div>
+</div>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;"><a href="/wiki/File:Space_intercept.png" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/5/54/Space_intercept.png/220px-Space_intercept.png" width="220" height="164" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/5/54/Space_intercept.png/330px-Space_intercept.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/5/54/Space_intercept.png/440px-Space_intercept.png 2x" data-file-width="2592" data-file-height="1936" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:Space_intercept.png" class="internal" title="Enlarge"></a></div>
+<a href="/wiki/Telmac_1800" title="Telmac 1800">Telmac 1800</a> running CHIP-8 game Space Intercept (Joseph Weisbecker, 1978)</div>
+</div>
+</div>
+<p><b>CHIP-8</b> is an <a href="/wiki/Interpreter_(computing)" title="Interpreter (computing)">interpreted</a> <a href="/wiki/Programming_language" title="Programming language">programming language</a>, developed by <a href="/w/index.php?title=Joseph_Weisbecker&amp;action=edit&amp;redlink=1" class="new" title="Joseph Weisbecker (page does not exist)">Joseph Weisbecker</a>. It was initially used on the <a href="/wiki/COSMAC_VIP" title="COSMAC VIP">COSMAC VIP</a> and <a href="/wiki/Telmac_1800" title="Telmac 1800">Telmac 1800</a> <a href="/wiki/8-bit" title="8-bit">8-bit</a> <a href="/wiki/Microcomputer" title="Microcomputer">microcomputers</a> in the mid-1970s. CHIP-8 <a href="/wiki/Computer_program" title="Computer program">programs</a> are run on a CHIP-8 <a href="/wiki/Virtual_machine" title="Virtual machine">virtual machine</a>. It was made to allow <a href="/wiki/Video_game" title="Video game">video games</a> to be more easily programmed for said computers.</p>
+<p>Roughly twenty years after CHIP-8 was introduced, derived interpreters appeared for some models of <a href="/wiki/Graphing_calculator" title="Graphing calculator">graphing calculators</a> (from the late 1980s onward, these handheld devices in many ways have more computing power than most mid-1970s microcomputers for hobbyists).</p>
+<p>An active community of users and developers existed in the late 1970s, beginning with ARESCO's "VIPer" newsletter whose first three issues revealed the machine code behind the CHIP-8 interpreter.<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">[1]</a></sup></p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#CHIP-8_applications"><span class="tocnumber">1</span> <span class="toctext">CHIP-8 applications</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#CHIP-8_today"><span class="tocnumber">2</span> <span class="toctext">CHIP-8 today</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Virtual_machine_description"><span class="tocnumber">3</span> <span class="toctext">Virtual machine description</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="#Memory"><span class="tocnumber">3.1</span> <span class="toctext">Memory</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Registers"><span class="tocnumber">3.2</span> <span class="toctext">Registers</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#The_stack"><span class="tocnumber">3.3</span> <span class="toctext">The stack</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Timers"><span class="tocnumber">3.4</span> <span class="toctext">Timers</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Input"><span class="tocnumber">3.5</span> <span class="toctext">Input</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Graphics_and_sound"><span class="tocnumber">3.6</span> <span class="toctext">Graphics and sound</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Opcode_table"><span class="tocnumber">3.7</span> <span class="toctext">Opcode table</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-11"><a href="#Notes"><span class="tocnumber">4</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="#Additional_Resources"><span class="tocnumber">5</span> <span class="toctext">Additional Resources</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="CHIP-8_applications">CHIP-8 applications</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=CHIP-8&amp;action=edit&amp;section=1" title="Edit section: CHIP-8 applications">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>There are a number of classic video games ported to CHIP-8, such as <a href="/wiki/Pong" title="Pong">Pong</a>, <a href="/wiki/Space_Invaders" title="Space Invaders">Space Invaders</a>, <a href="/wiki/Tetris" title="Tetris">Tetris</a>, and <a href="/wiki/Pac-Man" title="Pac-Man">Pac-Man</a>. There's also a random maze generator available. These programs are reportedly placed in the <a href="/wiki/Public_domain" title="Public domain">public domain</a>, and can be easily found on the <a href="/wiki/Internet" title="Internet">Internet</a>.</p>
+<h2><span class="mw-headline" id="CHIP-8_today">CHIP-8 today</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=CHIP-8&amp;action=edit&amp;section=2" title="Edit section: CHIP-8 today">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>There is a CHIP-8 implementation for almost every platform, as well as some development tools. Despite this, there are only a small number of games for the CHIP-8.</p>
+<p>CHIP-8 has a descendant called SCHIP (Super Chip), introduced by Erik Bryntse. In 1990, a CHIP-8 interpreter called CHIP-48 was made for <a href="/wiki/HP-48" class="mw-redirect" title="HP-48">HP-48</a> <a href="/wiki/Graphing_calculator" title="Graphing calculator">graphing calculators</a> so that games could be programmed more easily. Its extensions to CHIP-8 are what became known as SCHIP. It features a larger resolution and several additional opcodes which make programming easier. If it were not for the development of the CHIP-48 interpreter, CHIP-8 would not be as well known today.</p>
+<p>The next most influential developments (which popularized S/CHIP-8 on many other platforms) were David Winter's emulator, disassembler, and extended technical documentation. It laid out a complete list of undocumented opcodes and features, and was distributed across many hobbyist forums. Many emulators had these works as a starting point.</p>
+<p>While CHIP-8 and SCHIP have commonly been implemented as <a href="/wiki/Emulator" title="Emulator">emulators</a>, a pure hardware implementation (written in the <a href="/wiki/Verilog" title="Verilog">Verilog</a> language) also exists for certain <a href="/wiki/FPGA" class="mw-redirect" title="FPGA">FPGA</a> boards.</p>
+<h2><span class="mw-headline" id="Virtual_machine_description">Virtual machine description</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=CHIP-8&amp;action=edit&amp;section=3" title="Edit section: Virtual machine description">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="Memory">Memory</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=CHIP-8&amp;action=edit&amp;section=4" title="Edit section: Memory">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>CHIP-8 was most commonly implemented on 4K systems, such as the Cosmac VIP and the Telmac 1800. These machines had 4096 (0x1000) memory locations, all of which are 8 bits (a <a href="/wiki/Byte" title="Byte">byte</a>) which is where the term CHIP-8 originated. However, the CHIP-8 interpreter itself occupies the first 512 bytes of the memory space on these machines. For this reason, most programs written for the original system begin at memory location 512 (0x200) and do not access any of the memory below the location 512 (0x200). The uppermost 256 bytes (0xF00-0xFFF) are reserved for display refresh, and the 96 bytes below that (0xEA0-0xEFF) were reserved for call stack, internal use, and other variables.</p>
+<p>In modern CHIP-8 implementations, where the interpreter is running natively outside the 4K memory space, there is no need for any of the lower 512 bytes memory space to be used, but it is common to store font data in those lower 512 bytes (0x000-0x200).</p>
+<h3><span class="mw-headline" id="Registers">Registers</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=CHIP-8&amp;action=edit&amp;section=5" title="Edit section: Registers">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>CHIP-8 has 16 8-<a href="/wiki/Bit" title="Bit">bit</a> data <a href="/wiki/Processor_register" title="Processor register">registers</a> named from V0 to VF. The VF register doubles as a flag for some instructions, thus should avoid using. In addition operation VF is for <a href="/wiki/Status_register" title="Status register">carry flag</a>. While in subtraction, it is the "not borrow" flag. In the draw instruction the VF is set upon pixel collision.</p>
+<p>The address register, which is named I, is 16 bits wide and is used with several <a href="/wiki/Opcode" title="Opcode">opcodes</a> that involve memory operations.</p>
+<h3><span class="mw-headline" id="The_stack">The stack</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=CHIP-8&amp;action=edit&amp;section=6" title="Edit section: The stack">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The <a href="/wiki/Call_stack" title="Call stack">stack</a> is only used to store return addresses when <a href="/wiki/Subroutine" title="Subroutine">subroutines</a> are called. The original 1802 version allocated 48 bytes for up to 12 levels of nesting; modern implementations normally have at least 16 levels.</p>
+<h3><span class="mw-headline" id="Timers">Timers</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=CHIP-8&amp;action=edit&amp;section=7" title="Edit section: Timers">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>CHIP-8 has two timers. They both count down at 60 <a href="/wiki/Hertz" title="Hertz">hertz</a>, until they reach 0.</p>
+<ul>
+<li>Delay timer: This timer is intended to be used for timing the events of games. Its value can be set and read.</li>
+<li>Sound timer: This timer is used for sound effects. When its value is nonzero, a beeping sound is made.</li>
+</ul>
+<h3><span class="mw-headline" id="Input">Input</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=CHIP-8&amp;action=edit&amp;section=8" title="Edit section: Input">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Input is done with a <a href="/wiki/Hexadecimal" title="Hexadecimal">hex</a> <a href="/wiki/Computer_keyboard" title="Computer keyboard">keyboard</a> that has 16 keys which range from 0 to F. The '8', '4', '6', and '2' keys are typically used for directional input. Three opcodes are used to detect input. One skips an instruction if a specific key is pressed, while another does the same if a specific key is <i>not</i> pressed. The third waits for a key press, and then stores it in one of the data registers.</p>
+<h3><span class="mw-headline" id="Graphics_and_sound">Graphics and sound</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=CHIP-8&amp;action=edit&amp;section=9" title="Edit section: Graphics and sound">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Original CHIP-8 <a href="/wiki/Display_resolution" title="Display resolution">Display resolution</a> is 64×32 <a href="/wiki/Pixel" title="Pixel">pixels</a>, and color is <a href="/wiki/Monochrome" title="Monochrome">monochrome</a>. Graphics are drawn to the screen solely by drawing <a href="/wiki/Sprite_(computer_science)" class="mw-redirect" title="Sprite (computer science)">sprites</a>, which are 8 pixels wide and may be from 1 to 15 pixels in height. Sprite pixels that are set flip the color of the corresponding screen pixel, while unset sprite pixels do nothing. The carry flag (VF) is set to 1 if any screen pixels are flipped from set to unset when a sprite is drawn and set to 0 otherwise. This is used for collision detection.</p>
+<p>As previously described, a beeping sound is played when the value of the sound timer is nonzero.</p>
+<h3><span class="mw-headline" id="Opcode_table">Opcode table</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=CHIP-8&amp;action=edit&amp;section=10" title="Edit section: Opcode table">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>CHIP-8 has 35 <a href="/wiki/Opcode" title="Opcode">opcodes</a>, which are all two bytes long and stored <a href="/wiki/Endianness" title="Endianness">big-endian</a>. The opcodes are listed below, in hexadecimal and with the following symbols:</p>
+<ul>
+<li>NNN: address</li>
+<li>NN: 8-bit constant</li>
+<li>N: 4-bit constant</li>
+<li>X and Y: 4-bit register identifier</li>
+<li>PC&#160;: Program Counter</li>
+<li>I&#160;: 16bit register (For memory address) (Similar to void pointer)</li>
+</ul>
+<table class="wikitable">
+<tr>
+<th>Opcode</th>
+<th>Type</th>
+<th>C Pseudo</th>
+<th>Explanation</th>
+</tr>
+<tr>
+<td>0NNN</td>
+<td>Call</td>
+<td></td>
+<td>Calls <a href="/wiki/RCA_1802" title="RCA 1802">RCA 1802</a> program at address NNN. Not necessary for most ROMs.</td>
+</tr>
+<tr>
+<td>00E0</td>
+<td>Display</td>
+<td>disp_clear()</td>
+<td>Clears the screen.</td>
+</tr>
+<tr>
+<td>00EE</td>
+<td>Flow</td>
+<td>return;</td>
+<td>Returns from a subroutine.</td>
+</tr>
+<tr>
+<td>1NNN</td>
+<td>Flow</td>
+<td>goto NNN;</td>
+<td>Jumps to address NNN.</td>
+</tr>
+<tr>
+<td>2NNN</td>
+<td>Flow</td>
+<td>*(0xNNN)()</td>
+<td>Calls subroutine at NNN.</td>
+</tr>
+<tr>
+<td>3XNN</td>
+<td>Cond</td>
+<td>if(Vx==NN)</td>
+<td>Skips the next instruction if VX equals NN. (Usually the next instruction is a jump to skip a code block)</td>
+</tr>
+<tr>
+<td>4XNN</td>
+<td>Cond</td>
+<td>if(Vx!=NN)</td>
+<td>Skips the next instruction if VX doesn't equal NN. (Usually the next instruction is a jump to skip a code block)</td>
+</tr>
+<tr>
+<td>5XY0</td>
+<td>Cond</td>
+<td>if(Vx==Vy)</td>
+<td>Skips the next instruction if VX equals VY. (Usually the next instruction is a jump to skip a code block)</td>
+</tr>
+<tr>
+<td>6XNN</td>
+<td>Const</td>
+<td>V<i>x</i> = NN</td>
+<td>Sets VX to NN.</td>
+</tr>
+<tr>
+<td>7XNN</td>
+<td>Const</td>
+<td>V<i>x</i> += NN</td>
+<td>Adds NN to VX.</td>
+</tr>
+<tr>
+<td>8XY0</td>
+<td>Assign</td>
+<td>V<i>x</i>=Vy</td>
+<td>Sets VX to the value of VY.</td>
+</tr>
+<tr>
+<td>8XY1</td>
+<td>BitOp</td>
+<td>Vx=V<i>x</i>|V<i>y</i></td>
+<td>Sets VX to VX <a href="/wiki/Logical_disjunction" title="Logical disjunction">or</a> VY. (Bitwise OR operation)</td>
+</tr>
+<tr>
+<td>8XY2</td>
+<td>BitOp</td>
+<td>Vx=V<i>x&amp;</i>V<i>y</i></td>
+<td>Sets VX to VX <a href="/wiki/Logical_conjunction" title="Logical conjunction">and</a> VY. (Bitwise AND operation)</td>
+</tr>
+<tr>
+<td>8XY3</td>
+<td>BitOp</td>
+<td>Vx=Vx^Vy</td>
+<td>Sets VX to VX <a href="/wiki/Xor" class="mw-redirect" title="Xor">xor</a> VY.</td>
+</tr>
+<tr>
+<td>8XY4</td>
+<td>Math</td>
+<td>Vx += Vy</td>
+<td>Adds VY to VX. VF is set to 1 when there's a carry, and to 0 when there isn't.</td>
+</tr>
+<tr>
+<td>8XY5</td>
+<td>Math</td>
+<td>Vx -= Vy</td>
+<td>VY is subtracted from VX. VF is set to 0 when there's a borrow, and 1 when there isn't.</td>
+</tr>
+<tr>
+<td>8XY6</td>
+<td>BitOp</td>
+<td>Vx &gt;&gt; 1</td>
+<td>Shifts VX right by one. VF is set to the value of the <a href="/wiki/Least_significant_bit" title="Least significant bit">least significant bit</a> of VX before the shift.<sup id="cite_ref-shift_2-0" class="reference"><a href="#cite_note-shift-2">[2]</a></sup></td>
+</tr>
+<tr>
+<td>8XY7</td>
+<td>Math</td>
+<td>Vx=Vy-Vx</td>
+<td>Sets VX to VY minus VX. VF is set to 0 when there's a borrow, and 1 when there isn't.</td>
+</tr>
+<tr>
+<td>8XYE</td>
+<td>BitOp</td>
+<td>Vx &lt;&lt; 1</td>
+<td>Shifts VX left by one. VF is set to the value of the <a href="/wiki/Most_significant_bit" title="Most significant bit">most significant bit</a> of VX before the shift.<sup id="cite_ref-shift_2-1" class="reference"><a href="#cite_note-shift-2">[2]</a></sup></td>
+</tr>
+<tr>
+<td>9XY0</td>
+<td>Cond</td>
+<td>if(Vx!=Vy)</td>
+<td>Skips the next instruction if VX doesn't equal VY. (Usually the next instruction is a jump to skip a code block)</td>
+</tr>
+<tr>
+<td>ANNN</td>
+<td>MEM</td>
+<td>I = NNN</td>
+<td>Sets I to the address NNN.</td>
+</tr>
+<tr>
+<td>BNNN</td>
+<td>Flow</td>
+<td>PC=V0+NNN</td>
+<td>Jumps to the address NNN plus V0.</td>
+</tr>
+<tr>
+<td>CXNN</td>
+<td>Rand</td>
+<td>Vx=rand()&amp;NN</td>
+<td>Sets VX to the result of a bitwise and operation on a random number (Typically: 0 to 255) and NN.</td>
+</tr>
+<tr>
+<td>DXYN</td>
+<td>Disp</td>
+<td>draw(Vx,Vy,N)</td>
+<td>Draws a sprite at coordinate (VX, VY) that has a width of 8 pixels and a height of N pixels. Each row of 8 pixels is read as bit-coded starting from memory location I; I value doesn’t change after the execution of this instruction. As described above, VF is set to 1 if any screen pixels are flipped from set to unset when the sprite is drawn, and to 0 if that doesn’t happen</td>
+</tr>
+<tr>
+<td>EX9E</td>
+<td>KeyOp</td>
+<td>if(key()==Vx)</td>
+<td>Skips the next instruction if the key stored in VX is pressed. (Usually the next instruction is a jump to skip a code block)</td>
+</tr>
+<tr>
+<td>EXA1</td>
+<td>KeyOp</td>
+<td>if(key()!=Vx)</td>
+<td>Skips the next instruction if the key stored in VX isn't pressed. (Usually the next instruction is a jump to skip a code block)</td>
+</tr>
+<tr>
+<td>FX07</td>
+<td>Timer</td>
+<td>Vx = get_delay()</td>
+<td>Sets VX to the value of the delay timer.</td>
+</tr>
+<tr>
+<td>FX0A</td>
+<td>KeyOp</td>
+<td>Vx = get_key()</td>
+<td>A key press is awaited, and then stored in VX. (Blocking Operation. All instruction halted until next key event)</td>
+</tr>
+<tr>
+<td>FX15</td>
+<td>Timer</td>
+<td>delay_timer(Vx)</td>
+<td>Sets the delay timer to VX.</td>
+</tr>
+<tr>
+<td>FX18</td>
+<td>Sound</td>
+<td>sound_timer(Vx)</td>
+<td>Sets the sound timer to VX.</td>
+</tr>
+<tr>
+<td>FX1E</td>
+<td>MEM</td>
+<td>I +=Vx</td>
+<td>Adds VX to I.<sup id="cite_ref-onlgame_3-0" class="reference"><a href="#cite_note-onlgame-3">[3]</a></sup></td>
+</tr>
+<tr>
+<td>FX29</td>
+<td>MEM</td>
+<td>I=sprite_addr[Vx]</td>
+<td>Sets I to the location of the sprite for the character in VX. Characters 0-F (in hexadecimal) are represented by a 4x5 font.</td>
+</tr>
+<tr>
+<td>FX33</td>
+<td>BCD</td>
+<td>set_BCD(Vx);
+<p>*(I+0)=BCD(3);</p>
+<p>*(I+1)=BCD(2);</p>
+<p>*(I+2)=BCD(1);</p>
+</td>
+<td>Stores the <a href="/wiki/Binary-coded_decimal" title="Binary-coded decimal">binary-coded decimal</a> representation of VX, with the most significant of three digits at the address in I, the middle digit at I plus 1, and the least significant digit at I plus 2. (In other words, take the decimal representation of VX, place the hundreds digit in memory at location in I, the tens digit at location I+1, and the ones digit at location I+2.)</td>
+</tr>
+<tr>
+<td>FX55</td>
+<td>MEM</td>
+<td>reg_dump(Vx,&amp;I)</td>
+<td>Stores V0 to VX (including VX) in memory starting at address I.<sup id="cite_ref-memi_4-0" class="reference"><a href="#cite_note-memi-4">[4]</a></sup></td>
+</tr>
+<tr>
+<td>FX65</td>
+<td>MEM</td>
+<td>reg_load(Vx,&amp;I)</td>
+<td>Fills V0 to VX (including VX) with values from memory starting at address I.<sup id="cite_ref-memi_4-1" class="reference"><a href="#cite_note-memi-4">[4]</a></sup></td>
+</tr>
+</table>
+<h2><span class="mw-headline" id="Notes">Notes</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=CHIP-8&amp;action=edit&amp;section=11" title="Edit section: Notes">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><cite class="citation news"><a rel="nofollow" class="external text" href="https://books.google.com/books?id=IT4EAAAAMBAJ&amp;pg=PA9&amp;lpg=PA9&amp;dq=aresco+viper#v=onepage&amp;q=aresco%20viper&amp;f=false">"<i>VIPER</i> for RCA VIP owner"</a>. <i>Intelligent Machines Journal (InfoWorld)</i>. InfoWorld Media Group. 1978-12-11. p.&#160;9<span class="reference-accessdate">. Retrieved <span class="nowrap">2010-01-30</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACHIP-8&amp;rft.atitle=VIPER+for+RCA+VIP+owner&amp;rft.date=1978-12-11&amp;rft.genre=article&amp;rft_id=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DIT4EAAAAMBAJ%26pg%3DPA9%26lpg%3DPA9%26dq%3Daresco%2Bviper%23v%3Donepage%26q%3Daresco%2520viper%26f%3Dfalse&amp;rft.jtitle=Intelligent+Machines+Journal+%28InfoWorld%29&amp;rft.pages=9&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-shift-2"><span class="mw-cite-backlink">^ <a href="#cite_ref-shift_2-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-shift_2-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text">On the original interpreter, the value of VY is shifted, and the result is stored into VX. On current implementations, Y is ignored.</span></li>
+<li id="cite_note-onlgame-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-onlgame_3-0">^</a></b></span> <span class="reference-text">VF is set to 1 when there is a range overflow (I+VX&gt;0xFFF), and to 0 when there isn't. This is an <a href="/wiki/Undocumented_feature" title="Undocumented feature">undocumented feature</a> of the CHIP-8 and used by the Spacefight 2091! game.</span></li>
+<li id="cite_note-memi-4"><span class="mw-cite-backlink">^ <a href="#cite_ref-memi_4-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-memi_4-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text">On the original interpreter, when the operation is done, I=I+X+1. On current implementations, I is left unchanged.</span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="Additional_Resources">Additional Resources</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=CHIP-8&amp;action=edit&amp;section=12" title="Edit section: Additional Resources">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li>"RCA COSMAC VIP CDP18S711 Instruction Manual," RCA Solid State Division, Somerville, NJ 08776, February 1978. Part VIP-311. pp.&#160;13–18, 35-37.</li>
+<li><a href="/wiki/BYTE_magazine" class="mw-redirect" title="BYTE magazine">BYTE magazine</a>, <a rel="nofollow" class="external text" href="https://archive.org/details/byte-magazine-1978-12">December 1978</a>, pp.&#160;108–122. "An Easy Programming System," by <a href="/w/index.php?title=Joseph_Weisbecker&amp;action=edit&amp;redlink=1" class="new" title="Joseph Weisbecker (page does not exist)">Joseph Weisbecker</a>. Describes CHIP-8 with specific example of a rocketship and UFO shooting-gallery game.</li>
+<li>Archive of <a rel="nofollow" class="external text" href="https://web.archive.org/web/20131030034311/http://www.chip8.com/">Chip8.com</a> Website dedicated to CHIP-8 and related systems. Maintains the most complete collection of CHIP-8 programs on the net.</li>
+<li><a rel="nofollow" class="external text" href="http://www.pong-story.com/chip8">David Winter's CHIP-8</a> Emulator, utilities and games.</li>
+<li><a rel="nofollow" class="external text" href="http://www.geocities.co.jp/Playtown-Yoyo/6130/chip8.htm">Let's Emu&#160;: CHIP-8 Emulator</a> – A list of CHIP-8 and SCHIP emulators.</li>
+<li><a rel="nofollow" class="external text" href="http://esolangs.org/wiki/BytePusher">BytePusher</a> A minimalist virtual machine inspired by the CHIP-8.</li>
+<li><a rel="nofollow" class="external text" href="http://dir.groups.yahoo.com/group/rcacosmac/">RCA COSMAC group on Yahoo</a>, with authorized scans of the VIPER magazine.</li>
+<li><a rel="nofollow" class="external text" href="http://ochip8.com/">OChip8</a> A CHIP-8 emulator in a browser</li>
+<li><a rel="nofollow" class="external text" href="http://www.mjbauer.biz/DREAM6800.htm">Dream 6800</a> The popular Dream 6800 Microcomputer featured in Electronics Australia in 1979 ran CHIP-8.</li>
+<li><a rel="nofollow" class="external text" href="https://bitbucket.org/csoren/fpga-chip8">FPGA SuperChip</a> A Verilog implementation of the SCHIP specification.</li>
+<li><a rel="nofollow" class="external text" href="http://johnearnest.github.io/Octo/">Octo</a> is an Online CHIP-8 IDE, Development System, Compiler/Assembler and Emulator, with a proprietary scripting language</li>
+<li><a rel="nofollow" class="external text" href="http://devernay.free.fr/hacks/chip8/C8TECH10.HTM">Cowgod's Chip-8</a> Technical Reference</li>
+</ul>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1238
+Cached time: 20170119141651
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.056 seconds
+Real time usage: 0.081 seconds
+Preprocessor visited node count: 216/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 1863/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 4/40
+Expensive parser function count: 0/500
+Lua time usage: 0.015/10.000 seconds
+Lua memory usage: 1.28 MB/50 MB
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%   42.650      1 - Template:Reflist
+100.00%   42.650      1 - -total
+ 84.49%   36.035      1 - Template:Cite_news
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:1119698-0!*!0!!en!4!* and timestamp 20170119141651 and revision id 755836389
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=CHIP-8&amp;oldid=755836389">https://en.wikipedia.org/w/index.php?title=CHIP-8&amp;oldid=755836389</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Virtual_machines" title="Category:Virtual machines">Virtual machines</a></li><li><a href="/wiki/Category:Virtualization_software" title="Category:Virtualization software">Virtualization software</a></li><li><a href="/wiki/Category:Graphing_calculators" title="Category:Graphing calculators">Graphing calculators</a></li><li><a href="/wiki/Category:Microcomputer_software" title="Category:Microcomputer software">Microcomputer software</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=CHIP-8" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=CHIP-8" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/CHIP-8"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:CHIP-8"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/CHIP-8" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=CHIP-8&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=CHIP-8&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/CHIP-8" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/CHIP-8" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=CHIP-8&amp;oldid=755836389" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=CHIP-8&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q1023623" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=CHIP-8&amp;id=755836389" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=CHIP-8">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=CHIP-8&amp;returnto=CHIP-8&amp;oldid=755836389&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=CHIP-8&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/CHIP-8" title="CHIP-8 – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-es"><a href="https://es.wikipedia.org/wiki/CHIP-8" title="CHIP-8 – Spanish" lang="es" hreflang="es" class="interlanguage-link-target">Español</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/CHIP-8" title="CHIP-8 – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-uk"><a href="https://uk.wikipedia.org/wiki/CHIP-8" title="CHIP-8 – Ukrainian" lang="uk" hreflang="uk" class="interlanguage-link-target">Українська</a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q1023623#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 20 December 2016, at 13:18.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=CHIP-8&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":53,"wgHostname":"mw1271"});});</script>
+	</body>
+</html>

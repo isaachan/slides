@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Job Control Language - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Job_Control_Language","wgTitle":"Job Control Language","wgCurRevisionId":750194798,"wgRevisionId":750194798,"wgArticleId":391487,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Webarchive template wayback links","Wikipedia introduction cleanup from May 2014","All pages needing cleanup","Articles covered by WikiProject Wikify from May 2014","All articles covered by WikiProject Wikify","Articles needing additional references from June 2011","All articles needing additional references","All articles with unsourced statements","Articles with unsourced statements from October 2012","Articles with unsourced statements from April 2014","CS1 errors: dates","Scripting languages","Job scheduling","IBM mainframe operating systems"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Job_Control_Language","wgRelevantArticleId":391487,"wgRequestId":"WI8mqQpAAEIAAFq4m1MAAABG","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":true},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q1505372","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.cite.styles":"ready","ext.pygments":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.legacy.wikibits","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.pygments%2CwikimediaBadges%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.29.0-wmf.9"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Job_Control_Language"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Job_Control_Language&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Job_Control_Language&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Job_Control_Language"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Job_Control_Language rootpage-Job_Control_Language skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Job Control Language</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><script>function mfTempOpenSection(id){var block=document.getElementById("mf-section-"+id);block.className+=" open-block";block.previousSibling.className+=" open-block";}</script><div role="note" class="hatnote">This article is about IBM mainframe job control language. For open systems, see <a href="/wiki/Job_control_(Unix)" title="Job control (Unix)">job control (Unix)</a>. For general term, see <a href="/wiki/Job_control_(disambiguation)" class="mw-redirect mw-disambig" title="Job control (disambiguation)">job control</a>.</div>
+<table class="plainlinks metadata ambox ambox-content ambox-multiple_issues compact-ambox" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ambox_important.svg/40px-Ambox_important.svg.png" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ambox_important.svg/60px-Ambox_important.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ambox_important.svg/80px-Ambox_important.svg.png 2x" data-file-width="40" data-file-height="40" /></div>
+</td>
+<td class="mbox-text">
+<div class="mw-collapsible" style="width:95%; margin: 0.2em 0;"><span class="mbox-text-span"><b>This article has multiple issues.</b> Please help <b><a class="external text" href="//en.wikipedia.org/w/index.php?title=Job_Control_Language&amp;action=edit">improve it</a></b> or discuss these issues on the <b><a href="/wiki/Talk:Job_Control_Language" title="Talk:Job Control Language">talk page</a></b>. <small><i>(<a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove these template messages</a>)</i></small></span>
+<div class="mw-collapsible-content" style="margin-top: 0.3em;">
+<table class="plainlinks metadata ambox ambox-content ambox-lead_too_short" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><a href="/wiki/File:Wiki_letter_w.svg" class="image"><img alt="Wiki letter w.svg" src="//upload.wikimedia.org/wikipedia/en/thumb/6/6c/Wiki_letter_w.svg/40px-Wiki_letter_w.svg.png" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/en/thumb/6/6c/Wiki_letter_w.svg/60px-Wiki_letter_w.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/6/6c/Wiki_letter_w.svg/80px-Wiki_letter_w.svg.png 2x" data-file-width="44" data-file-height="44" /></a></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">This article's <b><a href="/wiki/Wikipedia:Manual_of_Style/Lead_section" title="Wikipedia:Manual of Style/Lead section">lead section</a> may not adequately <a href="/wiki/Wikipedia:Summary_style" title="Wikipedia:Summary style">summarize</a> key points of its contents</b>. <span class="hide-when-compact">Please consider expanding the lead to <a href="/wiki/Wikipedia:Manual_of_Style/Lead_section#Provide_an_accessible_overview" title="Wikipedia:Manual of Style/Lead section">provide an accessible overview</a> of all important aspects of the article. Please discuss this issue on the article's <a href="/wiki/Talk:Job_Control_Language" title="Talk:Job Control Language">talk page</a>.</span> <small><i>(May 2014)</i></small></span></td>
+</tr>
+</table>
+<table class="plainlinks metadata ambox ambox-content ambox-Refimprove" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><a href="/wiki/File:Question_book-new.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" width="50" height="39" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/75px-Question_book-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/100px-Question_book-new.svg.png 2x" data-file-width="512" data-file-height="399" /></a></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">This article <b>needs additional citations for <a href="/wiki/Wikipedia:Verifiability" title="Wikipedia:Verifiability">verification</a></b>. <span class="hide-when-compact">Please help <a class="external text" href="//en.wikipedia.org/w/index.php?title=Job_Control_Language&amp;action=edit">improve this article</a> by <a href="/wiki/Help:Introduction_to_referencing_with_Wiki_Markup/1" title="Help:Introduction to referencing with Wiki Markup/1">adding citations to reliable sources</a>. Unsourced material may be challenged and removed.</span> <small><i>(June 2011)</i></small> <small class="hide-when-compact"><i>(<a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove this template message</a>)</i></small></span></td>
+</tr>
+</table>
+</div>
+</div>
+<small class="hide-when-compact"><i>(<a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove this template message</a>)</i></small></td>
+</tr>
+</table>
+<p><b>Job Control Language</b> (<b>JCL</b>) is a name for <a href="/wiki/Scripting_language" title="Scripting language">scripting languages</a> used on <a href="/wiki/IBM_mainframe" title="IBM mainframe">IBM mainframe</a> operating systems to instruct the system on how to run a <a href="/wiki/Batch_processing" title="Batch processing">batch job</a> or start a subsystem.</p>
+<p>There are two distinct job control languages: one for the operating system lineage that begins with <a href="/wiki/DOS/360" class="mw-redirect" title="DOS/360">DOS/360</a> and whose latest member is <a href="/wiki/Z/VSE" class="mw-redirect" title="Z/VSE">z/VSE</a>; and the other for the lineage from <a href="/wiki/OS/360" class="mw-redirect" title="OS/360">OS/360</a> to <a href="/wiki/Z/OS" title="Z/OS">z/OS</a>. They share some basic syntax rules and a few basic concepts, but are otherwise very different.</p>
+<p>Other mainframe <a href="/wiki/Batch_processing" title="Batch processing">batch</a> systems had some form of job control language, whether called that or not; their syntax was completely different from IBM versions, but they usually provided similar capabilities. <a href="/wiki/Interactive_computing" title="Interactive computing">Interactive</a> systems include "<a href="/wiki/Command_language" title="Command language">command languages</a>"—command files (such as PCDOS ".bat" files) can be run non-interactively, but these usually do not provide as robust an environment for running unattended jobs as JCL. On some computer systems the job control language and the interactive command language may be different. For example, <a href="/wiki/Time_Sharing_Option" title="Time Sharing Option">TSO</a> on z/OS systems uses <a href="/wiki/CLIST" title="CLIST">CLIST</a> or <a href="/wiki/Rexx" title="Rexx">Rexx</a> as command languages along with JCL for batch work. On other systems these may be the same.</p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Features_common_to_DOS_and_OS_JCL"><span class="tocnumber">1</span> <span class="toctext">Features common to DOS and OS JCL</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Jobs.2C_steps_and_procedures"><span class="tocnumber">1.1</span> <span class="toctext">Jobs, steps and procedures</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Basic_syntax"><span class="tocnumber">1.2</span> <span class="toctext">Basic syntax</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#In-stream_input"><span class="tocnumber">1.3</span> <span class="toctext">In-stream input</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Complexity"><span class="tocnumber">1.4</span> <span class="toctext">Complexity</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="#DOS_JCL"><span class="tocnumber">2</span> <span class="toctext">DOS JCL</span></a>
+<ul>
+<li class="toclevel-2 tocsection-7"><a href="#Positional_parameters"><span class="tocnumber">2.1</span> <span class="toctext">Positional parameters</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Device_dependence"><span class="tocnumber">2.2</span> <span class="toctext">Device dependence</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Manual_file_allocation"><span class="tocnumber">2.3</span> <span class="toctext">Manual file allocation</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-10"><a href="#OS_JCL"><span class="tocnumber">3</span> <span class="toctext">OS JCL</span></a>
+<ul>
+<li class="toclevel-2 tocsection-11"><a href="#Rules_for_Coding_JCL_Statements"><span class="tocnumber">3.1</span> <span class="toctext">Rules for Coding JCL Statements</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#Keyword_parameters"><span class="tocnumber">3.2</span> <span class="toctext">Keyword parameters</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="#Data_access"><span class="tocnumber">3.3</span> <span class="toctext">Data access</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="#Device_independence"><span class="tocnumber">3.4</span> <span class="toctext">Device independence</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="#Parameterized_procedures"><span class="tocnumber">3.5</span> <span class="toctext">Parameterized procedures</span></a></li>
+<li class="toclevel-2 tocsection-16"><a href="#Referbacks"><span class="tocnumber">3.6</span> <span class="toctext">Referbacks</span></a></li>
+<li class="toclevel-2 tocsection-17"><a href="#Comments"><span class="tocnumber">3.7</span> <span class="toctext">Comments</span></a></li>
+<li class="toclevel-2 tocsection-18"><a href="#Concatenating_input_files"><span class="tocnumber">3.8</span> <span class="toctext">Concatenating input files</span></a></li>
+<li class="toclevel-2 tocsection-19"><a href="#Conditional_processing"><span class="tocnumber">3.9</span> <span class="toctext">Conditional processing</span></a></li>
+<li class="toclevel-2 tocsection-20"><a href="#Utilities"><span class="tocnumber">3.10</span> <span class="toctext">Utilities</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-21"><a href="#Job_Entry_Control_Language"><span class="tocnumber">4</span> <span class="toctext">Job Entry Control Language</span></a>
+<ul>
+<li class="toclevel-2 tocsection-22"><a href="#OS.2F360"><span class="tocnumber">4.1</span> <span class="toctext">OS/360</span></a></li>
+<li class="toclevel-2 tocsection-23"><a href="#z.2FOS"><span class="tocnumber">4.2</span> <span class="toctext">z/OS</span></a>
+<ul>
+<li class="toclevel-3 tocsection-24"><a href="#JES2_JECL"><span class="tocnumber">4.2.1</span> <span class="toctext">JES2 JECL</span></a></li>
+<li class="toclevel-3 tocsection-25"><a href="#JES3_JECL"><span class="tocnumber">4.2.2</span> <span class="toctext">JES3 JECL</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-26"><a href="#z.2FVSE"><span class="tocnumber">4.3</span> <span class="toctext">z/VSE</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-27"><a href="#See_also"><span class="tocnumber">5</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-28"><a href="#References"><span class="tocnumber">6</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-29"><a href="#Sources"><span class="tocnumber">7</span> <span class="toctext">Sources</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Features_common_to_DOS_and_OS_JCL">Features common to DOS and OS JCL</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Job_Control_Language&amp;action=edit&amp;section=1" title="Edit section: Features common to DOS and OS JCL">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="Jobs.2C_steps_and_procedures">Jobs, steps and procedures</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Job_Control_Language&amp;action=edit&amp;section=2" title="Edit section: Jobs, steps and procedures">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>For both DOS and OS the unit of work is the <a href="/wiki/Job_stream" title="Job stream">job</a>. A job consists of one or several steps, each of which is a request to run one specific program. For example, before the days of <a href="/wiki/Relational_database" title="Relational database">relational databases</a>, a job to produce a printed report for management might consist of the following steps: a user-written program to select the appropriate records and copy them to a temporary file; <a href="/wiki/Sorting_algorithm" title="Sorting algorithm">sort</a> the temporary file into the required order, usually using a general-purpose utility; a user-written program to present the information in a way that is easy for the end-users to read and includes other useful information such as sub-totals; and a user-written program to format selected pages of the end-user information for display on a monitor or terminal.</p>
+<p>In both DOS and OS JCL the first "card" must be the JOB card, which:</p>
+<ul>
+<li>Identifies the job.</li>
+<li>Usually provides information to enable the computer services department to bill the appropriate user department.</li>
+<li>Defines how the job as a whole is to be run, e.g. its priority relative to other jobs in the queue.</li>
+</ul>
+<p>Procedures (commonly called <i>procs</i>) are pre-written JCL for steps or groups of steps, inserted into a job. Both JCLs allow such procedures. Procs are used for repeating steps which are used several times in one job, or in several different jobs. They save programmer time and reduce the risk of errors. To run a procedure one simply includes in the JCL file a single "card" which copies the procedure from a specified file, and inserts it into the jobstream. Also, procs can include <i>parameters</i> to customize the procedure for each use.</p>
+<h3><span class="mw-headline" id="Basic_syntax">Basic syntax</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Job_Control_Language&amp;action=edit&amp;section=3" title="Edit section: Basic syntax">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Both DOS and OS JCL have a maximum usable line length of 80 characters, because when DOS/360 and OS/360 were first used the main method of providing new input to a computer system was 80-column <a href="/wiki/Punched_card" title="Punched card">punched cards</a>. It later became possible to submit jobs via disk or tape files with longer record lengths, but the operating system's job submission components ignored everything after character 80.</p>
+<p>Strictly speaking both operating system families use only 71 characters per line. Characters 73-80 are usually card sequence numbers which the system printed on the end-of-job report and are useful for identifying the locations of any errors reported by the operating system. Character 72 is usually left blank, but it can contain a nonblank character to indicate that the JCL statement is continued onto the next card.</p>
+<p>All commands, parameter names and values have to be in capitals, except for <a href="/wiki/UNIX_System_Services" title="UNIX System Services">USS</a> filenames.</p>
+<p>All lines except for in-stream input (see below) have to begin with a slash "<code>/</code>", and all lines which the operating system processes have to begin with two slashes <code>//</code> - always starting in the <i>first column</i>. However, there are two exceptions: the delimiter statement and the comment statement. A delimiter statements begins with a slash and an asterisk (<code>/*</code>), and a comment statement in OS JCL begins with a pair of slashes and asterisk (<code>//*</code>) or an asterisk in DOS JCL.</p>
+<p>Many JCL statements are too long to fit within 71 characters, but can be extended on to an indefinite number of continuation cards by:</p>
+<table class="wikitable">
+<tr>
+<th>OS JCL</th>
+<th>DOS JCL</th>
+</tr>
+<tr>
+<td>Ending all actual JCL cards except the last at a point where the syntax requires a comma (<code>,</code>)</td>
+<td>Ending all actual JCL cards except the last at a point where the syntax requires a comma (<code>,</code>) and a non-blank character in column 72</td>
+</tr>
+<tr>
+<td>Starting each continuation card with <code>//</code> in column 1 and then at least 1 space</td>
+<td>Starting each continuation card with spaces and continuing in column 15</td>
+</tr>
+</table>
+<p>The structure of the most common types of card is:</p>
+<table class="wikitable">
+<tr>
+<th>OS JCL</th>
+<th>DOS JCL</th>
+</tr>
+<tr>
+<td>
+<ul>
+<li><code>//</code></li>
+<li>Name field for this statement, following <code>//</code> with no space between. If this statement does not have a name at least one blank immediately follows the <code>//</code>.</li>
+<li>Space(s)</li>
+<li>Statement type</li>
+<li>Space(s)</li>
+<li>Parameters, which vary depending on the statement type, separated by commas and with no space between them.</li>
+</ul>
+</td>
+<td>
+<ul>
+<li><code>//</code> (spaces if this is a continuation of a previous line)</li>
+<li>Statement type for this statement, following <code>//</code> with a space between.</li>
+<li>Space(s)</li>
+<li>Name of resource</li>
+<li>Space(s)</li>
+<li>Parameters, which vary depending on the statement type, separated by commas and with no space between them. Positional parameters, followed by keyword parameters.</li>
+</ul>
+</td>
+</tr>
+</table>
+<h3><span class="mw-headline" id="In-stream_input">In-stream input</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Job_Control_Language&amp;action=edit&amp;section=4" title="Edit section: In-stream input">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>DOS and OS JCL both allow in-stream input, i.e. "cards" which are to be processed by the application program rather than the operating system. Data which is to be kept for a long time will normally be stored on disk, but before the use of <a href="/wiki/Interactive" class="mw-redirect" title="Interactive">interactive</a> terminals became common the only way to create and edit such disk files was by supplying the new data on cards.</p>
+<p>DOS and OS JCL have different ways of signaling the start of in-stream input, but both end in-stream input with <code>/*</code> at column 1 of the card following the last in-stream data card. This makes the operating system resume processing JCL in the card following the <code>/*</code> card.</p>
+<ul>
+<li>OS JCL: DD statements can be used to describe in-stream data, as well as data sets. A DD statement dealing with in-stream data has an asterisk (*) following the DD identifier, e.g. <code>//SYSIN DD *</code>. JCL statements can be included as part of in-stream data by using the DD DATA statements.</li>
+<li>DOS JCL: Simply enter the in-stream data after the EXEC card for the program.</li>
+</ul>
+<h3><span class="mw-headline" id="Complexity">Complexity</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Job_Control_Language&amp;action=edit&amp;section=5" title="Edit section: Complexity">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Much of the complexity of OS JCL, in particular, derives from the large number of options for specifying <a href="/wiki/Data_set_(IBM_mainframe)" title="Data set (IBM mainframe)">dataset</a> information. While files on unix-like operating systems are abstracted into arbitrary collections of bytes with the details handled in large part by the OS, datasets on OS/360 and successors expose their file types and sizes, record types and lengths, block sizes and device-specific information such as <a href="/wiki/Magnetic_tape_data_storage" title="Magnetic tape data storage">magnetic tape</a> density and label information. Although there are system defaults for many options, there is still a lot to be specified by the programmer, through a combination of JCL and information coded in the program. The more information coded in the program the less flexible it is, so most information is usually supplied through JCL.</p>
+<p>For example, to <a href="/wiki/File_copying" title="File copying">copy a file</a> on <a href="/wiki/Unix" title="Unix">Unix</a> the user enters a command like:</p>
+<pre>
+cp oldFile newFile
+</pre>
+<p>JCL like the following might be used to copy a file on OS/360:</p>
+<pre>
+//IS198CPY JOB (IS198T30500),'COPY JOB',CLASS=L,MSGCLASS=X
+//COPY01   EXEC PGM=<a href="/wiki/IEBGENER" class="mw-redirect" title="IEBGENER">IEBGENER</a>
+//SYSPRINT DD <a href="/wiki/SYSOUT" class="mw-redirect" title="SYSOUT">SYSOUT</a>=*
+//SYSUT1   DD DSN=OLDFILE,DISP=SHR
+//SYSUT2   DD DSN=NEWFILE,
+//            DISP=(NEW,CATLG,DELETE),
+//            SPACE=(CYL,(40,5),RLSE),
+//            DCB=(LRECL=115,BLKSIZE=1150)
+//<a href="/wiki/SYSIN" class="mw-redirect" title="SYSIN">SYSIN</a>    DD <a href="/w/index.php?title=DUMMY&amp;action=edit&amp;redlink=1" class="new" title="DUMMY (page does not exist)">DUMMY</a>
+</pre>
+<p>A second explanation for the complexity of JCL is the different expectations for running a job than are found in a <a href="/wiki/IBM_PC" class="mw-redirect" title="IBM PC">PC</a> or <a href="/wiki/Unix" title="Unix">unix</a> environment.</p>
+<ul>
+<li>Low-end System/360 CPUs were less powerful and more expensive than the mid-1980s PCs for which MS-DOS was designed. OS/360 was intended for systems with a minimum memory size of 32&#160;KB and DOS/360 for systems with a minimum of 16&#160;KB. A <a href="/wiki/IBM_2030" class="mw-redirect" title="IBM 2030">360/30</a> CPU—low-end when System/360 was announced in 1964—processed 1.8K to 34.5K instructions per second.<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">[1]</a></sup> The first IBM PC in 1981 had 16&#160;KB or 64&#160;KB of memory and would process about 330K instructions per second.<sup id="cite_ref-vintageComputerIBMPC_2-0" class="reference"><a href="#cite_note-vintageComputerIBMPC-2">[2]</a></sup><sup id="cite_ref-iathVirginiaEduPCs_3-0" class="reference"><a href="#cite_note-iathVirginiaEduPCs-3">[3]</a></sup> As a result, JCL had to be easy for the <i>computer</i> to process, and ease of use by programmers was a much lower priority. In this era, programmers were much cheaper than computers.</li>
+<li>JCL was designed for <a href="/wiki/Batch_processing" title="Batch processing">batch processing</a> so it has to tell the operating system everything, including what to do depending on the result of the step. For example, <code>DISP=(NEW,CATLG,DELETE)</code> means "if the program runs successfully, create a new file and catalog it; otherwise delete the new file." Programs run on a PC frequently depend on the user to clean up after processing problems.</li>
+<li>System/360 machines were designed to be shared by all the users in an organization. So the <code>JOB</code> card tells the operating system how to bill the user's account (<code>IS198T30500</code>), what predefined amount of storage and other resources may be allocated (<code>CLASS=L</code>), and several other things. <code><span class="nowrap">//SYSPRINT DD SYSOUT=*</span></code> tells the computer to print the program's report on the default <a href="/wiki/Printer_(computing)" title="Printer (computing)">printer</a> which is loaded with ordinary paper, not on some other printer which might be loaded with blank checks. <code>DISP=SHR</code> tells the operating system that other programs can read <code>OLDFILE</code> <a href="/wiki/Multiprogramming" class="mw-redirect" title="Multiprogramming">at the same time</a>.</li>
+</ul>
+<p>Later versions of the DOS/360 and OS/360 operating systems retain most features of the original JCL—although some simplification has been made, to avoid forcing customers to rewrite all their JCL files.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (October 2012)">citation needed</span></a></i>]</sup> Many users save as a <i>procedure</i> any set of JCL statements which is likely to be used more than once or twice.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (October 2012)">citation needed</span></a></i>]</sup></p>
+<p>The syntax of OS JCL is similar to the syntax of <a href="/wiki/Macro_instruction" title="Macro instruction">macros</a> in System/360 <a href="/wiki/Assembly_language" title="Assembly language">assembly language</a>, and would therefore have been familiar to programmers at a time when many programs were coded in assembly language.</p>
+<h2><span class="mw-headline" id="DOS_JCL">DOS JCL</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Job_Control_Language&amp;action=edit&amp;section=6" title="Edit section: DOS JCL">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="Positional_parameters">Positional parameters</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Job_Control_Language&amp;action=edit&amp;section=7" title="Edit section: Positional parameters">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="kp">//</span><span class="nv">TLBL</span><span class="w"> </span><span class="c1">TAPEFIL,'COPYTAPE.JOB',,,,2</span>
+<span class="kp">//</span><span class="nv">ASSGN</span><span class="w"> </span><span class="c1">SYS005,200</span>
+<span class="kp">//</span><span class="nv">DLBL</span><span class="w"> </span><span class="c1">DISKFIL,'COPYTAPE.JOB',0,SD</span>
+<span class="kp">//</span><span class="nv">EXTENT</span><span class="w"> </span><span class="c1">SYS005,VOL01,1,0,800,1600</span>
+</pre></div>
+<p>DOS JCL parameters are positional, which makes them harder to read and write, but easier for the system to parse.</p>
+<ul>
+<li>The programmer must remember which item goes in which position in every type of statement.</li>
+<li>If some optional parameters are omitted but later ones are included, the omitted parameters must be represented by commas with no spaces, as in the TLBL statement above.</li>
+</ul>
+<p>DOS JCL to some extent mitigates the difficulties of positional parameters by using more statements with fewer parameters than OS JCL. In the example the ASSGN, DLBL and EXTENT statements do the same work (specifying where a new disk file should be stored) as a single <code>DD</code> statement in OS JCL.</p>
+<h3><span class="mw-headline" id="Device_dependence">Device dependence</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Job_Control_Language&amp;action=edit&amp;section=8" title="Edit section: Device dependence">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>In the original DOS/360 and in most versions of DOS/VS one had to specify the model number of the device which was to be used for each disk or tape file—even for existing files and for temporary files which would be deleted at the end of the job. This meant that, if a customer upgraded to more modern equipment, many JCL files had to be changed.</p>
+<p>Later members of the DOS/360 family reduced the number of situations in which device model numbers were required.</p>
+<h3><span class="mw-headline" id="Manual_file_allocation">Manual file allocation</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Job_Control_Language&amp;action=edit&amp;section=9" title="Edit section: Manual file allocation">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>DOS/360 originally required the programmer to specify the location and size of all files on <a href="/wiki/Direct-access_storage_device" title="Direct-access storage device">DASD</a>. The <code>EXTENT</code> card specifies the volume on which the extent resides, the starting absolute track, and the number of tracks. for z/VSE a file can have up to 256 extents on different volumes.</p>
+<h2><span class="mw-headline" id="OS_JCL">OS JCL</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Job_Control_Language&amp;action=edit&amp;section=10" title="Edit section: OS JCL">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>OS JCL consists of three basic statement types:</p>
+<ul>
+<li><code>JOB</code> statement, which identifies the start of the job, and information about the whole job, such as billing, run priority, and time and space limits.</li>
+<li><code>EXEC</code> statement, which identifies the program to be executed in this step of the job, and information about the step.</li>
+<li><code>DD</code> (Data Definition) statements, which identify a data file to be used in a step, and detailed info about that file. <code>DD</code> statements can be in any order within the step.</li>
+</ul>
+<p>Right from the start, JCL for the OS family (up to and including <a href="/wiki/Z/OS" title="Z/OS">z/OS</a>) was more flexible and easier to use.</p>
+<p>The following examples use the old style of syntax which was provided right from the launch of <a href="/wiki/System/360" class="mw-redirect" title="System/360">System/360</a> in 1964. The old syntax is still quite common in jobs that have been running for over 20 years with only minor changes.</p>
+<h3><span class="mw-headline" id="Rules_for_Coding_JCL_Statements">Rules for Coding JCL Statements</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Job_Control_Language&amp;action=edit&amp;section=11" title="Edit section: Rules for Coding JCL Statements">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Each JCL Statement is Divided into 5 fields.</p>
+<pre>
+ Identifier-Field Name-Field Operation-Field Parameter-Field Comments-Field
+                 ^          ^               ^               ^
+              no space     space          space           space
+</pre>
+<p><var>Identifier-Field</var> should be concatenated with <var>Name-Field</var>, i.e. there should be no spaces between them.</p>
+<ul>
+<li><var>Identifier-Field</var> (<code>//</code>): The identifier field indicates to the system that a statement is a JCL statement rather than data. The identifier field consists of the following:
+<ul>
+<li>Columns 1 and 2 of all JCL statements, except the delimiter statement, contain <code>//</code></li>
+<li>Columns 1 and 2 of the delimiter statement contain <code>/*</code></li>
+<li>Columns 1, 2, and 3 of a JCL comment statement contain <code>//*</code></li>
+</ul>
+</li>
+<li><var>Name-Field</var>: The name field identifies a particular statement so that other statements and the system can refer to it. For JCL statements, it should be coded as follows:
+<ul>
+<li>The name must begin in column 3.</li>
+<li>The name is 1 through 8 alphanumeric or national (<code>$</code>, <code>#</code>, <code>@</code>) characters.</li>
+<li>The first character must be an alphabetic.</li>
+<li>The name must be followed by at least one blank.</li>
+</ul>
+</li>
+<li><var>Operation-Field</var>: The operation field specifies the type of statement, or, for the command statement, the command. <var>Operation-Field</var> should be coded as follows:
+<ul>
+<li>The operation field consists of the characters in the syntax box for the statement.</li>
+<li>The operation follows the name field.</li>
+<li>The operation must be preceded and followed by at least one blank.</li>
+<li>The operation will be one of <code>JOB</code>, <code>EXEC</code> and <code>DD</code>.</li>
+</ul>
+</li>
+<li><var>Parameter-Field</var>: The parameter field, also sometimes referred to as the operand field, contains parameters separated by commas. Parameter field should be coded as follows:
+<ul>
+<li>The parameter field follows the operation field.</li>
+<li>The parameter field must be preceded by at least one blank.</li>
+<li>The parameter field contains parameters which are keywords that used in the statement to provide information such as the program or dataset name.</li>
+</ul>
+</li>
+<li><var>Comments-Field</var>: This contains <a href="/wiki/Comment_(computer_programming)" title="Comment (computer programming)">comments</a>. <var>Comments-Field</var> should be coded as Follows:
+<ul>
+<li>The comments field follows the parameter field.</li>
+<li>The comments field must be preceded by at least one blank.</li>
+</ul>
+</li>
+</ul>
+<h3><span class="mw-headline" id="Keyword_parameters">Keyword parameters</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Job_Control_Language&amp;action=edit&amp;section=12" title="Edit section: Keyword parameters">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="kp">//</span><span class="nv">NEWFILE</span><span class="kr"> DD </span><span class="n">DSN</span><span class="o">=</span><span class="n">MYFILE01</span><span class="p">,</span><span class="n">UNIT</span><span class="o">=</span><span class="n">DISK</span><span class="p">,</span><span class="n">SPACE</span><span class="o">=</span><span class="p">(</span><span class="n">TRK</span><span class="p">,</span><span class="mi">80</span><span class="p">,</span><span class="mi">10</span><span class="p">),</span>
+<span class="kp">//</span><span class="w">           </span><span class="n">DCB</span><span class="o">=</span><span class="p">(</span><span class="n">LRECL</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span><span class="n">BLKSIZE</span><span class="o">=</span><span class="mi">1000</span><span class="p">),</span>
+<span class="kp">//</span><span class="w">           </span><span class="n">DISP</span><span class="o">=</span><span class="p">(</span><span class="n">NEW</span><span class="p">,</span><span class="n">CATLG</span><span class="p">,</span><span class="n">DELETE</span><span class="p">)</span>
+</pre></div>
+<p>All of the major parameters of OS JCL statements are identified by keywords and can be presented in any order. A few of these contain two or more sub-parameters, such as <code>SPACE</code> (how much disk space to allocate to a new file) and <code>DCB</code> (detailed specification of a file's layout) in the example above. Sub-parameters are sometimes positional, as in <code>SPACE</code>, but the most complex parameters, such as <code>DCB</code>, have keyword sub-parameters.</p>
+<p>Positional parameter must precede keyword parameters. Keyword parameters always assign values to a keyword using the equals sign (<code>=</code>).</p>
+<h3><span class="mw-headline" id="Data_access">Data access</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Job_Control_Language&amp;action=edit&amp;section=13" title="Edit section: Data access">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The <code>DD</code> statement is used to reference data. This statement links a program's internal description of a dataset to the data on external devices: disks, tapes, cards, printers, etc. The DD may provide information such as a device type (e.g. '181','2400-5','TAPE'), a <a href="/wiki/Volume_(computing)" title="Volume (computing)">volume serial</a> number for tapes or disks, and the description of the data file, called the <code>DCB</code> subparameter after the <a href="/wiki/Data_Control_Block" title="Data Control Block">Data Control Block</a> (DCB) in the program used to identify the file. Information describing the file can come from three sources: The DD card information, the dataset label information for an existing file stored on tape or disk, and the DCB macro coded in the program. When the file is opened this data is merged, with the DD information taking precedence over the label information, and the DCB information taking precedence over both. The updated description is then written back to the dataset label. This can lead to unintended consequences if incorrect DCB information is provided.<sup id="cite_ref-4" class="reference"><a href="#cite_note-4">[4]</a></sup></p>
+<h3><span class="mw-headline" id="Device_independence">Device independence</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Job_Control_Language&amp;action=edit&amp;section=14" title="Edit section: Device independence">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>From the very beginning, the JCL for the OS family of operating systems offered a high degree of device independence. Even for new files which were to be kept after the end of the job one could specify the device type in generic terms, e.g., <code>UNIT=DISK</code> or <code>UNIT=TAPE</code>. Of course, if it mattered one could specify a model number or even a specific device address.</p>
+<h3><span class="mw-headline" id="Parameterized_procedures">Parameterized procedures</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Job_Control_Language&amp;action=edit&amp;section=15" title="Edit section: Parameterized procedures">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>OS JCL procedures were parameterized from the start, making them rather like <a href="/wiki/Macro_assembler" class="mw-redirect" title="Macro assembler">macros</a> or even simple <a href="/wiki/Subroutine" title="Subroutine">subroutines</a> and thus increasing their <a href="/wiki/Code_reuse" title="Code reuse">reusability</a> in a wide range of situations.</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="kp">//</span><span class="nv">MYPROC</span><span class="kr"> PROC </span><span class="n">FNAME</span><span class="o">=</span><span class="n">MYFILE01</span><span class="p">,</span><span class="n">SPTYPE</span><span class="o">=</span><span class="n">TRK</span><span class="p">,</span><span class="n">SPINIT</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span><span class="n">SPEXT</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span><span class="n">LR</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span><span class="n">BLK</span><span class="o">=</span><span class="mi">1000</span>
+<span class="x">.....</span>
+<span class="kp">//</span><span class="nv">NEWFILE</span><span class="kr"> DD </span><span class="n">DSN</span><span class="o">=&amp;</span><span class="n">FNAME</span><span class="p">,</span><span class="n">UNIT</span><span class="o">=</span><span class="n">DISK</span><span class="p">,</span><span class="n">SPACE</span><span class="o">=</span><span class="p">(</span><span class="o">&amp;</span><span class="n">SPTYPE</span><span class="p">,</span><span class="o">&amp;</span><span class="n">SPINIT</span><span class="p">,</span><span class="o">&amp;</span><span class="n">SPEXT</span><span class="p">),</span>
+<span class="kp">//</span><span class="w">           </span><span class="n">DCB</span><span class="o">=</span><span class="p">(</span><span class="n">LRECL</span><span class="o">=&amp;</span><span class="n">LR</span><span class="p">,</span><span class="n">BLKSIZE</span><span class="o">=&amp;</span><span class="n">BLK</span><span class="p">),</span><span class="n">DISP</span><span class="o">=</span><span class="p">(</span><span class="n">NEW</span><span class="p">,</span><span class="n">CATLG</span><span class="p">,</span><span class="n">DELETE</span><span class="p">)</span>
+<span class="x">....</span>
+</pre></div>
+<p>In this example, all the values beginning with ampersands "<code>&amp;</code>" are parameters which will be specified when a job requests that the procedure be used. The PROC statement, in addition to giving the procedure a name, allows the programmer to specify default values for each parameter. So one could use the one procedure in this example to create new files of many different sizes and layouts. For example:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="kp">//</span><span class="nl">JOB01</span><span class="w">  </span><span class="kr">JOB</span><span class="w"> </span><span class="p">..........</span>
+<span class="kp">//</span><span class="nl">STEP01</span><span class="w"> </span><span class="kr">EXEC</span><span class="w"> </span><span class="n">MYPROC</span><span class="w"> </span><span class="c1">FNAME=JOESFILE,SPTYPE=CYL,SPINIT=10,SPEXT=2,LR=100,BLK=2000</span>
+<span class="x">or</span>
+<span class="kp">//</span><span class="nl">JOB02</span><span class="w">  </span><span class="kr">JOB</span><span class="w"> </span><span class="p">..........</span>
+<span class="kp">//</span><span class="nl">STEP01</span><span class="w"> </span><span class="kr">EXEC</span><span class="w"> </span><span class="n">MYPROC</span><span class="w"> </span><span class="c1">FNAME=SUESFILE,SPTYPE=TRK,SPINIT=500,SPEXT=100,LR=100,BLK=5000</span>
+</pre></div>
+<h3><span class="mw-headline" id="Referbacks">Referbacks</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Job_Control_Language&amp;action=edit&amp;section=16" title="Edit section: Referbacks">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>In multi-step jobs, a later step can use a <i>referback</i> instead of specifying in full a file which has already been specified in an earlier step. For example:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="kp">//</span><span class="nv">MYPROC</span><span class="w"> </span><span class="c1">................</span>
+<span class="kp">//</span><span class="nl">MYPR01</span><span class="w"> </span><span class="kr">EXEC</span><span class="w"> </span><span class="n">PGM</span><span class="o">=</span><span class="p">..........</span>
+<span class="kp">//</span><span class="nv">NEWFILE</span><span class="kr"> DD </span><span class="n">DSN</span><span class="o">=&amp;</span><span class="n">MYFILE</span><span class="p">,</span><span class="n">UNIT</span><span class="o">=</span><span class="n">DISK</span><span class="p">,</span><span class="n">SPACE</span><span class="o">=</span><span class="p">(</span><span class="n">TRK</span><span class="p">,</span><span class="mi">50</span><span class="p">,</span><span class="mi">10</span><span class="p">),</span>
+<span class="kp">//</span><span class="w">           </span><span class="n">DCB</span><span class="o">=</span><span class="p">(</span><span class="n">LRECL</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span><span class="n">BLKSIZE</span><span class="o">=</span><span class="mi">1000</span><span class="p">),</span><span class="n">DISP</span><span class="o">=</span><span class="p">(</span><span class="n">NEW</span><span class="p">,</span><span class="n">CATLG</span><span class="p">,</span><span class="n">DELETE</span><span class="p">)</span>
+<span class="x">....</span>
+<span class="kp">//</span><span class="nl">MYPR02</span><span class="w"> </span><span class="kr">EXEC</span><span class="w"> </span><span class="n">PGM</span><span class="o">=</span><span class="p">..........</span>
+<span class="kp">//</span><span class="nv">INPUT01</span><span class="kr"> DD </span><span class="n">DSN</span><span class="o">=</span><span class="nb">*</span><span class="p">.</span><span class="n">MYPR01</span><span class="p">.</span><span class="n">NEWFILE</span>
+</pre></div>
+<p>Here, <code>MYPR02</code> uses the file identified as <code>NEWFILE</code> in step <code>MYPR01</code> (<code>DSN</code> means "dataset name" and specifies the name of the file).</p>
+<p>In jobs which contain a mixture of job-specific JCL and procedure calls, a job-specific step can refer back to a file which was fully specified in a procedure, for example:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="kp">//</span><span class="nl">MYJOB</span><span class="w"> </span><span class="kr">JOB</span><span class="w"> </span><span class="p">..........</span>
+<span class="kp">//</span><span class="nl">STEP01</span><span class="w"> </span><span class="kr">EXEC</span><span class="w"> </span><span class="n">MYPROC</span><span class="w">             </span><span class="c1">Using a procedure</span>
+<span class="kp">//</span><span class="nl">STEP02</span><span class="w"> </span><span class="kr">EXEC</span><span class="w"> </span><span class="n">PGM</span><span class="o">=</span><span class="p">.........</span><span class="w">      </span><span class="c1">Step which is specific to this job</span>
+<span class="kp">//</span><span class="nv">INPUT01</span><span class="kr"> DD </span><span class="n">DSN</span><span class="o">=</span><span class="nb">*</span><span class="p">.</span><span class="n">STEP01</span><span class="p">.</span><span class="n">MYPR01</span><span class="p">.</span><span class="n">NEWFILE</span>
+</pre></div>
+<p>where <code>DSN=*.STEP01.MYPR01.NEWFILE</code> means "use the file identified as <code>NEWFILE</code> in step <code>MYPR01</code> of the procedure used by step <code>STEP01</code> of this job". Using the name of the step which called the procedure rather than the name of the procedure allows a programmer to use the same procedure several times in the same job without confusion about which instance of the procedure is used in the referback.</p>
+<h3><span class="mw-headline" id="Comments">Comments</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Job_Control_Language&amp;action=edit&amp;section=17" title="Edit section: Comments">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>JCL files can be long and complex, and the language is not easy to read. (JCL has been described as "user hostile".) OS JCL allows programmers to include two types of explanatory comment:</p>
+<ul>
+<li>On the same line as a JCL statement. They can be extended by placing a continuation character (usually "<code>X</code>") in column 72, followed by "<code>//</code> " in columns 1–3 of the next line.</li>
+<li>Lines which contain only comment, often used to explain major points about the overall structure of the JCL rather than local details. Comment-only lines are also used to divide long, complex JCL files into sections.</li>
+</ul>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="kp">//</span><span class="nl">MYJOB</span><span class="w"> </span><span class="kr">JOB</span><span class="w"> </span><span class="p">..........</span>
+<span class="c1">//*  Lines containing only comments.</span>
+<span class="c1">//******** Often used to divide JCL listing into sections ********</span>
+<span class="kp">//</span><span class="nl">STEP01</span><span class="w"> </span><span class="kr">EXEC</span><span class="w"> </span><span class="n">MYPROC</span><span class="w">             </span><span class="c1">Comment 2 on same line as statement</span>
+<span class="kp">//</span><span class="nl">STEP02</span><span class="w"> </span><span class="kr">EXEC</span><span class="w"> </span><span class="n">PGM</span><span class="o">=</span><span class="p">.........</span><span class="w">      </span><span class="c1">Comment 3 has been extended and       X</span>
+<span class="kp">//</span><span class="w">         </span><span class="n">overflows</span><span class="w"> </span><span class="c1">into another line.</span>
+<span class="kp">//</span><span class="nv">INPUT01</span><span class="kr"> DD </span><span class="n">DSN</span><span class="o">=</span><span class="n">STEP01</span><span class="p">.</span><span class="n">MYPR01</span><span class="p">.</span><span class="n">NEWFILE</span>
+</pre></div>
+<h3><span class="mw-headline" id="Concatenating_input_files">Concatenating input files</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Job_Control_Language&amp;action=edit&amp;section=18" title="Edit section: Concatenating input files">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>OS JCL allows programmers to concatenate ("chain") input files so that they appear to the program as <i>one</i> file, for example</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="kp">//</span><span class="nv">INPUT01</span><span class="kr"> DD </span><span class="n">DSN</span><span class="o">=</span><span class="n">MYFILE01</span><span class="p">,</span><span class="n">DISP</span><span class="o">=</span><span class="n">SHR</span>
+<span class="kp">//</span><span class="w">        </span><span class="n">DD</span><span class="w"> </span><span class="c1">DSN=JOESFILE,DISP=SHR</span>
+<span class="kp">//</span><span class="w">        </span><span class="n">DD</span><span class="w"> </span><span class="c1">DSN=SUESFILE,DISP=SHR</span>
+</pre></div>
+<p>The 2nd and third statements have no value in the name field, so OS treats them as concatenations. The files must be of the same basic type (almost always sequential), and must have the same record length.</p>
+<h3><span class="mw-headline" id="Conditional_processing">Conditional processing</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Job_Control_Language&amp;action=edit&amp;section=19" title="Edit section: Conditional processing">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>OS expects programs to set a return code which specifies how successful the <i>program</i> thought it was. The most common conventional values are:<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (April 2014)">citation needed</span></a></i>]</sup></p>
+<ul>
+<li>0 = Normal - all OK</li>
+<li>4 = Warning - minor errors or problems</li>
+<li>8 = Error - significant errors or problems</li>
+<li>12 = Severe error - major errors or problems, the results (e.g. files or reports produced) should not be trusted.</li>
+<li>16 = Terminal error - very serious problems, do not use the results!</li>
+</ul>
+<p>OS JCL refers to the return code as <code>COND</code> ("condition code"), and can use it to decide whether to run subsequent steps. However, unlike most modern programming languages, conditional steps in OS JCL are <i>not</i> executed if the specified condition is true—thus giving rise to the <a href="/wiki/Mnemonic" title="Mnemonic">mnemonic</a>, "If it's true, pass on through [without running the code]." To complicate matters further, the condition can only be specified <i>after</i> the step to which it refers. For example:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="kp">//</span><span class="nl">MYJOB</span><span class="w"> </span><span class="kr">JOB</span><span class="w"> </span><span class="p">...........</span>
+<span class="kp">//</span><span class="nl">STEP01</span><span class="w"> </span><span class="kr">EXEC</span><span class="w"> </span><span class="n">PGM</span><span class="o">=</span><span class="n">PROG01</span>
+<span class="x">....</span>
+<span class="kp">//</span><span class="nl">STEP02</span><span class="w"> </span><span class="kr">EXEC</span><span class="w"> </span><span class="n">PGM</span><span class="o">=</span><span class="n">PROG02</span><span class="p">,</span><span class="n">COND</span><span class="o">=</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="n">GT</span><span class="p">,</span><span class="n">STEP01</span><span class="p">)</span>
+<span class="x">....</span>
+<span class="kp">//</span><span class="nl">STEP03</span><span class="w"> </span><span class="kr">EXEC</span><span class="w"> </span><span class="n">PGM</span><span class="o">=</span><span class="n">PROG03</span><span class="p">,</span><span class="n">COND</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span><span class="n">LE</span><span class="p">)</span>
+<span class="x">....</span>
+<span class="kp">//</span><span class="nl">STEP04</span><span class="w"> </span><span class="kr">EXEC</span><span class="w"> </span><span class="n">PGM</span><span class="o">=</span><span class="n">PROG04</span><span class="p">,</span><span class="n">COND</span><span class="o">=</span><span class="p">(</span><span class="n">ONLY</span><span class="p">,</span><span class="n">STEP01</span><span class="p">)</span>
+<span class="x">....</span>
+<span class="kp">//</span><span class="nl">STEP05</span><span class="w"> </span><span class="kr">EXEC</span><span class="w"> </span><span class="n">PGM</span><span class="o">=</span><span class="n">PROG05</span><span class="p">,</span><span class="n">COND</span><span class="o">=</span><span class="p">(</span><span class="n">EVEN</span><span class="p">,</span><span class="n">STEP03</span><span class="p">)</span>
+<span class="x">....</span>
+</pre></div>
+<p>means:</p>
+<ol>
+<li>Run <code>STEP01</code>, and collect its return code.</li>
+<li>Don't run <code>STEP02</code> if the number 4 is greater than <code>STEP01</code>'s return code.</li>
+<li>Don't run <code>STEP03</code> if the number 8 is less than or equal to any previous return code.</li>
+<li>Run <code>STEP04</code> only if <code>STEP01</code> abnormally ended.</li>
+<li>Run <code>STEP05</code>, even if <code>STEP03</code> abnormally ended.</li>
+</ol>
+<p>This translates to the following <a href="/wiki/Pseudocode" title="Pseudocode">pseudocode</a>:</p>
+<pre>
+run STEP01
+<b>if</b> STEP01's return code <b>is greater than or equal to </b> 4 <b>then</b>
+    run STEP02
+<b>end if</b>
+<b>if</b> any previous return code <b>is less than </b> 8 <b>then</b>
+    run STEP03
+<b>end if</b>
+<b>if</b> STEP01 abnormally ended <b>then</b>
+    run STEP04
+<b>end if</b>
+<b>if</b> STEP03 abnormally ended <b>then</b>
+    run STEP05
+<b>else</b>
+    run STEP05
+<b>end if</b>
+</pre>
+<p>Note that by reading the steps containing <code>COND</code> statements backwards, one can understand them fairly easily. This is an example of <a href="/wiki/Transposition_(logic)" title="Transposition (logic)">logical transposition</a>. However, IBM later introduced IF condition in JCL thereby making coding somewhat easier for programmers while retaining the <code>COND</code> parameter (to avoid making changes to the existing JCLs where <code class="mw-highlight" id="" style="" dir="ltr">COND parm</code> is used).</p>
+<h3><span class="mw-headline" id="Utilities">Utilities</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Job_Control_Language&amp;action=edit&amp;section=20" title="Edit section: Utilities">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Jobs use a number of <a href="/wiki/IBM_mainframe_utility_programs" title="IBM mainframe utility programs">IBM utility programs</a> to assist in the processing of data. Utilities are most useful in batch processing. The utilities can be grouped into three sets:</p>
+<ul>
+<li>Data Set Utilities - Create, print, copy, move and delete data sets.</li>
+<li>System Utilities - Maintain and manage catalogs and other system information.</li>
+<li>Access Method Services - Process <a href="/wiki/Virtual_Storage_Access_Method" class="mw-redirect" title="Virtual Storage Access Method">Virtual Storage Access Method</a> (VSAM) and non-VSAM data sets.</li>
+</ul>
+<h2><span class="mw-headline" id="Job_Entry_Control_Language">Job Entry Control Language</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Job_Control_Language&amp;action=edit&amp;section=21" title="Edit section: Job Entry Control Language">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>On IBM mainframe systems <i>Job Entry Control Language</i> or <i>JECL</i> is the set of <a href="/wiki/Command_language" title="Command language">command language</a> control statements that provide information for the <a href="/wiki/Spooling" title="Spooling">spooling</a> subsystem – <a href="/wiki/Job_Entry_Subsystem_2/3" title="Job Entry Subsystem 2/3">JES2 or JES3</a> on <a href="/wiki/Z/OS" title="Z/OS">z/OS</a> or <a href="/wiki/IBM_Power_(software)" title="IBM Power (software)">VSE/POWER</a> for <a href="/wiki/VSE_(operating_system)" title="VSE (operating system)">z/VSE</a>. JECL statements may "specify on which network computer to run the <a href="/wiki/Job_stream" title="Job stream">job</a>, when to run the job, and where to send the resulting output."<sup id="cite_ref-5" class="reference"><a href="#cite_note-5">[5]</a></sup></p>
+<p>JECL is distinct from <a href="/wiki/Job_control_language" class="mw-redirect" title="Job control language">job control language</a> (JCL), which instructs the <a href="/wiki/Operating_system" title="Operating system">operating system</a> <i>how</i> to run the job.</p>
+<p>There are different versions of JECL for the three environments.</p>
+<h3><span class="mw-headline" id="OS.2F360">OS/360</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Job_Control_Language&amp;action=edit&amp;section=22" title="Edit section: OS/360">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>An early version of Job Entry Control Language for OS/360 Remote Job Entry (Program Number 360S-RC-536) used the identifier &#160;<code>..</code>&#160; in columns 1–2 of the input record and consisted of a single control statement: <code>JED</code> (Job Entry Definition). "Workstation Commands" such as <code>LOGON</code>, <code>LOGOFF</code>, and <code>STATUS</code> also began with &#160;<code>..</code>&#160;.<sup id="cite_ref-6" class="reference"><a href="#cite_note-6">[6]</a></sup></p>
+<h3><span class="mw-headline" id="z.2FOS">z/OS</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Job_Control_Language&amp;action=edit&amp;section=23" title="Edit section: z/OS">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>For JES2 JECL statements start with <code>/*</code>, for JES3 they start with <code>//*</code>, except for remote &#160;<code>/*SIGNON</code>&#160; and &#160;<code>/*SIGNOFF</code>&#160; commands. The commands for the two systems are completely different.</p>
+<h4><span class="mw-headline" id="JES2_JECL">JES2 JECL</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Job_Control_Language&amp;action=edit&amp;section=24" title="Edit section: JES2 JECL">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>The following JES2 JECL statements are used in z/OS 1.2.0.<sup id="cite_ref-7" class="reference"><a href="#cite_note-7">[7]</a></sup></p>
+<table class="wikitable">
+<tr>
+<th>JECL statement</th>
+<th>Function</th>
+<th>Example</th>
+</tr>
+<tr>
+<td><code>/*$<i>command</i></code></td>
+<td>Enters an operator (console) command</td>
+<td><code>/*$S PRINTER3</code></td>
+</tr>
+<tr>
+<td><code>/*JOBPARM</code></td>
+<td>Specifies values for job-related parameters</td>
+<td><code>/*JOBPARM TIME=10</code></td>
+</tr>
+<tr>
+<td><code>/*MESSAGE</code></td>
+<td>Sends a message to the operator console</td>
+<td><code>/*MESSAGE CALL JOE AT HOME IF JOB ABENDS</code></td>
+</tr>
+<tr>
+<td><code>/*NETACCT</code></td>
+<td>Specifies account number for network job</td>
+<td><code>/*NETACCT 12345</code></td>
+</tr>
+<tr>
+<td><code>/*NOTIFY</code></td>
+<td>Specifies destination for notification messages</td>
+<td><code>/*NOTIFY SAM</code></td>
+</tr>
+<tr>
+<td><code>/*OUTPUT</code></td>
+<td>Specifies <i>SYSOUT</i> dataset options</td>
+<td><code>/*OUTPUT FORMS=BILL</code></td>
+</tr>
+<tr>
+<td><code>/*PRIORITY</code></td>
+<td>Sets job selection priority</td>
+<td><code>/*PRIORITY 15</code></td>
+</tr>
+<tr>
+<td><code>/*ROUTE</code></td>
+<td>Specifies output destination or execution node</td>
+<td><code>/*ROUTE PRT RMT5</code></td>
+</tr>
+<tr>
+<td><code>/*SETUP</code></td>
+<td>Requests volume mounting or other offline operation</td>
+<td><code>/*SETUP TAPE01,TAPE02</code></td>
+</tr>
+<tr>
+<td><code>/*SIGNOFF</code></td>
+<td>Ends remote session</td>
+<td><code>/*SIGNOFF</code></td>
+</tr>
+<tr>
+<td><code>/*SIGNON</code></td>
+<td>Begins remote session</td>
+<td><code>/*SIGNON REMOTE5 <i>password</i></code></td>
+</tr>
+<tr>
+<td><code>/*XEQ</code></td>
+<td>Specifies execution node</td>
+<td><code>/*XEQ DENVER</code></td>
+</tr>
+<tr>
+<td><code>/*XMIT</code></td>
+<td>Indicates job or dataset to be transmitted to another network node</td>
+<td><code>/*XMIT NYC</code></td>
+</tr>
+</table>
+<h4><span class="mw-headline" id="JES3_JECL">JES3 JECL</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Job_Control_Language&amp;action=edit&amp;section=25" title="Edit section: JES3 JECL">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>The following JES3 JECL statements are used in z/OS 1.2.0<sup id="cite_ref-8" class="reference"><a href="#cite_note-8">[8]</a></sup></p>
+<table class="wikitable">
+<tr>
+<th>JECL statement</th>
+<th>Function</th>
+<th>Example</th>
+</tr>
+<tr>
+<td><code>//**<i>command</i></code></td>
+<td>Enters a JES3 operator (console) command</td>
+<td></td>
+</tr>
+<tr>
+<td><code>//*DATASET</code></td>
+<td>Marks the beginning of an in-stream dataset</td>
+<td></td>
+</tr>
+<tr>
+<td><code>//*ENDDATASET</code></td>
+<td>Marks the end of an in-stream dataset</td>
+<td></td>
+</tr>
+<tr>
+<td><code>//*ENDPROCESS</code></td>
+<td>Marks the end of a series of &#160;<code>//*PROCESS</code>&#160; statements</td>
+<td></td>
+</tr>
+<tr>
+<td><code>//*FORMAT</code></td>
+<td>Specifies &#160;<code>SYSOUT</code>&#160; dataset options</td>
+<td></td>
+</tr>
+<tr>
+<td><code>//*MAIN</code></td>
+<td>Specifies values for job-related parameters</td>
+<td></td>
+</tr>
+<tr>
+<td><code>//*NET</code></td>
+<td>Identifies relationships among jobs using JES3 <i>dependent job control</i></td>
+<td></td>
+</tr>
+<tr>
+<td><code>//*NETACCT</code></td>
+<td>Specifies account number for network job</td>
+<td></td>
+</tr>
+<tr>
+<td><code>//*OPERATOR</code></td>
+<td>Sends a message to the operator console</td>
+<td></td>
+</tr>
+<tr>
+<td><code>//*PAUSE</code></td>
+<td>Stops the input reader</td>
+<td></td>
+</tr>
+<tr>
+<td><code>//*PROCESS</code></td>
+<td>Identifies a non-standard job</td>
+<td></td>
+</tr>
+<tr>
+<td><code>//*ROUTE</code></td>
+<td>Specifies the execution node for the job</td>
+<td></td>
+</tr>
+<tr>
+<td><code>/*SIGNOFF</code></td>
+<td>Ends remote session</td>
+<td><code>/*SIGNOFF</code></td>
+</tr>
+<tr>
+<td><code>/*SIGNON</code></td>
+<td>Begins remote session</td>
+<td></td>
+</tr>
+</table>
+<h3><span class="mw-headline" id="z.2FVSE">z/VSE</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Job_Control_Language&amp;action=edit&amp;section=26" title="Edit section: z/VSE">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>For VSE JECL statements start with '<code>* $$</code>' (note the <i>single</i> space). The Job Entry Control Language defines the start and end lines of JCL jobs. It advises <a href="/wiki/VSE_(operating_system)" title="VSE (operating system)">VSE</a>/<a href="/wiki/IBM_Power_(software)" title="IBM Power (software)">POWER</a> how this job is handled. JECL statements define the job name (used by VSE/POWER), the class in which the job is processed, and the disposition of the job (i.e. <code>D</code>, <code>L</code>, <code>K</code>, <code>H</code>).</p>
+<table class="wikitable">
+<tr>
+<th>JECL statement<sup id="cite_ref-9" class="reference"><a href="#cite_note-9">[9]</a></sup></th>
+<th>Function</th>
+<th>Example</th>
+</tr>
+<tr>
+<td><code>* $$ CTL</code></td>
+<td>Establishes a default <i>input class</i></td>
+<td><code>* $$ CTL CLASS=A</code></td>
+</tr>
+<tr>
+<td><code>* $$ JOB</code></td>
+<td>Specifies attributes of a job</td>
+<td><code>* $$ JOB JNM=PYRL,PRI=9</code></td>
+</tr>
+<tr>
+<td><code>* $$ EOJ</code></td>
+<td>Marks the end of a job</td>
+<td><code>* $$ EOJ</code></td>
+</tr>
+<tr>
+<td><code>* $$ RDR</code></td>
+<td>Inserts a file from a 3540 diskette into the input stream</td>
+<td><code>* $$ RDR SYS005,'fname',2</code></td>
+</tr>
+<tr>
+<td><code>* $$ PRT</code></td>
+<td>Specifies characteristics of spooled print files<br />
+"LST' is a synonym for "PRT"</td>
+<td><code>* $$ PRT FNO=STD,COPY=2</code></td>
+</tr>
+<tr>
+<td><code>* $$ PUN</code></td>
+<td>Specifies characteristics of spooled punch files</td>
+<td><code>* $$&#160;PUN&#160;DISP=T,TADDR=280</code></td>
+</tr>
+<tr>
+<td><code>* $$ SLI</code></td>
+<td>Inserts data ("book") from source statement library into the input stream</td>
+<td><code>* $$ SLI A.JCL1</code></td>
+</tr>
+<tr>
+<td><code>* $$ DATA</code></td>
+<td>Inserts data from the card reader into a book retrieved from the source statement library</td>
+<td><code>* $$ DATA INPUT1</code></td>
+</tr>
+</table>
+<p>Example:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="x">* $$ JOB JNM=NAME,DISP=K,CLASS=2</span>
+
+<span class="x">[some JCL statements here]</span>
+
+<span class="x">* $$ EOJ</span>
+</pre></div>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Job_Control_Language&amp;action=edit&amp;section=27" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a href="/wiki/Dd_(Unix)" class="mw-redirect" title="Dd (Unix)">dd (Unix)</a>, Unix program inspired by <code>DD</code></li>
+<li><a href="/wiki/IBM_mainframe_utility_programs" title="IBM mainframe utility programs">IBM mainframe utility programs</a></li>
+<li><a href="/wiki/Batch_processing" title="Batch processing">Batch processing</a></li>
+</ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Job_Control_Language&amp;action=edit&amp;section=28" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www-03.ibm.com/ibm/history/exhibits/mainframe/mainframe_PP2030.html">"IBM Archives: System/360 Model 30"</a>. <i>www-03.ibm.com</i>. 2003-01-23<span class="reference-accessdate">. Retrieved <span class="nowrap">2016-04-25</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJob+Control+Language&amp;rft.atitle=IBM+Archives%3A+System%2F360+Model+30&amp;rft.date=2003-01-23&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww-03.ibm.com%2Fibm%2Fhistory%2Fexhibits%2Fmainframe%2Fmainframe_PP2030.html&amp;rft.jtitle=www-03.ibm.com&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-vintageComputerIBMPC-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-vintageComputerIBMPC_2-0">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.vintage-computer.com/ibm_pc.shtml">IBM PC</a></span></li>
+<li id="cite_note-iathVirginiaEduPCs-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-iathVirginiaEduPCs_3-0">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www3.iath.virginia.edu/elab/hfl0108.html">IBM-compatible computers</a> History of PCs <a rel="nofollow" class="external text" href="https://web.archive.org/web/20070814010809/http://www3.iath.virginia.edu/elab/hfl0108.html">Archived</a> August 14, 2007, at the <a href="/wiki/Wayback_Machine" title="Wayback Machine">Wayback Machine</a>.</span></li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text"><cite id="DataMgmt" class="citation book">IBM Corporation (August 1978). <a rel="nofollow" class="external text" href="http://www.prycroft6.com.au/misc/download/GC26-3875-0_MVS_DataMgmtSrvcsGde_Aug78OCR.pdf"><i>OS/VS MVS Data Management Services Guide</i></a> <span style="font-size:85%;">(PDF)</span><span class="reference-accessdate">. Retrieved <span class="nowrap">Oct 17,</span> 2014</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJob+Control+Language&amp;rft.au=IBM+Corporation&amp;rft.btitle=OS%2FVS+MVS+Data+Management+Services+Guide&amp;rft.date=1978-08&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fwww.prycroft6.com.au%2Fmisc%2Fdownload%2FGC26-3875-0_MVS_DataMgmtSrvcsGde_Aug78OCR.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text"><cite class="citation book">Brown, Gary DeWard (2002). <a rel="nofollow" class="external text" href="https://books.google.com/books?id=K8kMJa8arlIC&amp;lpg=PA467&amp;dq=jecl%20definition&amp;pg=PA3#v=onepage&amp;q=jecl%20definition&amp;f=false"><i>zOS JCL</i></a>. John Wiley &amp; Sons,<span class="reference-accessdate">. Retrieved <span class="nowrap">2014-05-05</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJob+Control+Language&amp;rft.aufirst=Gary+DeWard&amp;rft.aulast=Brown&amp;rft.btitle=zOS+JCL&amp;rft.date=2002&amp;rft.genre=book&amp;rft_id=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DK8kMJa8arlIC%26lpg%3DPA467%26dq%3Djecl%2520definition%26pg%3DPA3%23v%3Donepage%26q%3Djecl%2520definition%26f%3Dfalse&amp;rft.pub=John+Wiley+%26+Sons%2C&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text"><cite class="citation book">IBM Corporation (1968). <a rel="nofollow" class="external text" href="http://bitsavers.informatik.uni-stuttgart.de/pdf/ibm/360/rje/C30-2006-1_Remote_Job_Entry_May68.pdf"><i>IBM System/360 Operating System Remote Job Entry</i></a> <span style="font-size:85%;">(PDF)</span><span class="reference-accessdate">. Retrieved <span class="nowrap">2014-05-05</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJob+Control+Language&amp;rft.au=IBM+Corporation&amp;rft.btitle=IBM+System%2F360+Operating+System+Remote+Job+Entry&amp;rft.date=1968&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fbitsavers.informatik.uni-stuttgart.de%2Fpdf%2Fibm%2F360%2Frje%2FC30-2006-1_Remote_Job_Entry_May68.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text"><cite class="citation web">IBM Corporation. <a rel="nofollow" class="external text" href="http://publibz.boulder.ibm.com/cgi-bin/bookmgr_OS390/BOOKS/iea2b510/1.1.2?SHELF=EZ2ZO103&amp;DT=20010626133938&amp;CASE=">"Job Entry Subsystem 2 (JES2) Control Statements"</a>. <i>z/OS V1R2.0 MVS JCL</i><span class="reference-accessdate">. Retrieved <span class="nowrap">February 25,</span> 2013</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJob+Control+Language&amp;rft.atitle=Job+Entry+Subsystem+2+%28JES2%29+Control+Statements&amp;rft.au=IBM+Corporation&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fpublibz.boulder.ibm.com%2Fcgi-bin%2Fbookmgr_OS390%2FBOOKS%2Fiea2b510%2F1.1.2%3FSHELF%3DEZ2ZO103%26DT%3D20010626133938%26CASE%3D&amp;rft.jtitle=z%2FOS+V1R2.0+MVS+JCL&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text"><cite class="citation web">IBM Corporation. <a rel="nofollow" class="external text" href="http://publibz.boulder.ibm.com/cgi-bin/bookmgr_OS390/BOOKS/iea2b510/1.1.2?SHELF=EZ2ZO103&amp;DT=20010626133938&amp;CASE=">"Job Entry Subsystem 3 (JES3) Control Statements"</a>. <i>z/OS V1R2.0 MVS JCL</i><span class="reference-accessdate">. Retrieved <span class="nowrap">February 25,</span> 2013</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJob+Control+Language&amp;rft.atitle=Job+Entry+Subsystem+3+%28JES3%29+Control+Statements&amp;rft.au=IBM+Corporation&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fpublibz.boulder.ibm.com%2Fcgi-bin%2Fbookmgr_OS390%2FBOOKS%2Fiea2b510%2F1.1.2%3FSHELF%3DEZ2ZO103%26DT%3D20010626133938%26CASE%3D&amp;rft.jtitle=z%2FOS+V1R2.0+MVS+JCL&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-9">^</a></b></span> <span class="reference-text"><cite class="citation book">IBM Corporation (1974). <a rel="nofollow" class="external text" href="http://bitsavers.trailing-edge.com/pdf/ibm/370/DOS_VS/GC33-5403-1_DOS_VS_POWER_VS_Installation_and_Operation_Sep74.pdf"><i>DOS/VS POWER/VS Installation and Operations</i></a> <span style="font-size:85%;">(PDF)</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJob+Control+Language&amp;rft.au=IBM+Corporation&amp;rft.btitle=DOS%2FVS+POWER%2FVS+Installation+and+Operations&amp;rft.date=1974&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fbitsavers.trailing-edge.com%2Fpdf%2Fibm%2F370%2FDOS_VS%2FGC33-5403-1_DOS_VS_POWER_VS_Installation_and_Operation_Sep74.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="Sources">Sources</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Job_Control_Language&amp;action=edit&amp;section=29" title="Edit section: Sources">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><cite class="citation web"><a rel="nofollow" class="external text" href="http://publibz.boulder.ibm.com/epubs/pdf/iea2b540.pdf">"z/OS V1R6.0 MVS JCL User's Guide"</a> <span style="font-size:85%;">(PDF)</span> (5th ed.). IBM. September 2004.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJob+Control+Language&amp;rft.btitle=z%2FOS+V1R6.0+MVS+JCL+User%99s+Guide&amp;rft.date=2004-09&amp;rft.edition=5th&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fpublibz.boulder.ibm.com%2Fepubs%2Fpdf%2Fiea2b540.pdf&amp;rft.pub=IBM&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation web"><a rel="nofollow" class="external text" href="http://publibz.boulder.ibm.com/epubs/pdf/iea2b661.pdf">"z/OS V1R7.0 MVS JCL Reference"</a> <span style="font-size:85%;">(PDF)</span> (11th ed.). IBM. April 2006.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJob+Control+Language&amp;rft.btitle=z%2FOS+V1R7.0+MVS+JCL+Reference&amp;rft.date=2006-04&amp;rft.edition=11th&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fpublibz.boulder.ibm.com%2Fepubs%2Fpdf%2Fiea2b661.pdf&amp;rft.pub=IBM&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation web">Johnston, Jerry (1 April 2005). <a rel="nofollow" class="external text" href="https://web.archive.org/web/20090304014628/http://www.zjournal.com/index.cfm?section=article&amp;aid=293">"VSE: A Look at the Past 40 Years"</a>. <i>z/Journal</i>. Thomas Communications. Archived from <a rel="nofollow" class="external text" href="http://www.zjournal.com/index.cfm?section=article&amp;aid=293">the original</a> on 4 March 2009.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJob+Control+Language&amp;rft.atitle=VSE%3A+A+Look+at+the+Past+40+Years&amp;rft.aufirst=Jerry&amp;rft.aulast=Johnston&amp;rft.date=2005-04-01&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.zjournal.com%2Findex.cfm%3Fsection%3Darticle%26aid%3D293&amp;rft.jtitle=z%2FJournal&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation web"><a rel="nofollow" class="external text" href="https://web.archive.org/web/20090621080529/http://library.thinkquest.org/22522/timeline3_en.html">"Computer Chronicles: 1972 - 1981"</a>. <i>ThinkQuest</i>. <a href="/wiki/Oracle_Corporation" title="Oracle Corporation">Oracle Corporation</a>. 1998. Archived from <a rel="nofollow" class="external text" href="http://library.thinkquest.org/22522/timeline3b_en.html">the original</a> on 21 June 2009.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJob+Control+Language&amp;rft.atitle=Computer+Chronicles%3A+1972+-+1981&amp;rft.date=1998&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Flibrary.thinkquest.org%2F22522%2Ftimeline3b_en.html&amp;rft.jtitle=ThinkQuest&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation book">DeWard Brown, Gary (7 June 2002). <i>zOS JCL</i> (5th ed.). Wiley. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-0-471-23635-1" title="Special:BookSources/978-0-471-23635-1">978-0-471-23635-1</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJob+Control+Language&amp;rft.aufirst=Gary&amp;rft.aulast=DeWard+Brown&amp;rft.btitle=zOS+JCL&amp;rft.date=2002-06-07&amp;rft.edition=5th&amp;rft.genre=book&amp;rft.isbn=978-0-471-23635-1&amp;rft.pub=Wiley&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation web"><a rel="nofollow" class="external text" href="http://publib.boulder.ibm.com/infocenter/zos/v1r11/index.jsp?topic=/com.ibm.zos.r11.ieab600/iea2b69009.htm">"JCL Statement Fields"</a>. <i>z/OS V1R11.0 MVS JCL Reference z/OS V1R10.0-V1R11.0</i>. IBM. 2010.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJob+Control+Language&amp;rft.atitle=JCL+Statement+Fields&amp;rft.date=2010&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fpublib.boulder.ibm.com%2Finfocenter%2Fzos%2Fv1r11%2Findex.jsp%3Ftopic%3D%2Fcom.ibm.zos.r11.ieab600%2Fiea2b69009.htm&amp;rft.jtitle=z%2FOS+V1R11.0+MVS+JCL+Reference+z%2FOS+V1R10.0-V1R11.0&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation book">IBM Corporation (March 2007). <a rel="nofollow" class="external text" href="http://www.redbooks.ibm.com/redbooks/pdfs/sg247436.pdf"><i>Introduction to the New Mainframe: z/VSE Basics</i></a> <span style="font-size:85%;">(PDF)</span>. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-73-848624-8" title="Special:BookSources/0-73-848624-8">0-73-848624-8</a><span class="reference-accessdate">. Retrieved October 2014</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJob+Control+Language&amp;rft.au=IBM+Corporation&amp;rft.btitle=Introduction+to+the+New+Mainframe%3A+z%2FVSE+Basics&amp;rft.date=2007-03&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fwww.redbooks.ibm.com%2Fredbooks%2Fpdfs%2Fsg247436.pdf&amp;rft.isbn=0-73-848624-8&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span> <span style="font-size:100%" class="error citation-comment">Check date values in: <code style="color:inherit; border:inherit; padding:inherit;">|access-date=</code> (<a href="/wiki/Help:CS1_errors#bad_date" title="Help:CS1 errors">help</a>)</span></li>
+</ul>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1271
+Cached time: 20170130113259
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.220 seconds
+Real time usage: 1.618 seconds
+Preprocessor visited node count: 1283/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 48763/2097152 bytes
+Template argument size: 7369/2097152 bytes
+Highest expansion depth: 11/40
+Expensive parser function count: 5/500
+Lua time usage: 0.105/10.000 seconds
+Lua memory usage: 4.02 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00% 1570.483      1 -total
+  6.03%   94.682      1 Template:Code
+  4.23%   66.424      1 Template:Reflist
+  3.51%   55.098      3 Template:Ambox
+  3.29%   51.648      8 Template:Cite_web
+  2.84%   44.620      1 Template:Multiple_issues
+  2.58%   40.448      3 Template:Citation_needed
+  2.32%   36.458      3 Template:Fix
+  1.44%   22.592      1 Template:About
+  1.35%   21.148      3 Template:Delink
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:391487-0!*!0!!en!4!* and timestamp 20170130113257 and revision id 750194798
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Job_Control_Language&amp;oldid=750194798">https://en.wikipedia.org/w/index.php?title=Job_Control_Language&amp;oldid=750194798</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Scripting_languages" title="Category:Scripting languages">Scripting languages</a></li><li><a href="/wiki/Category:Job_scheduling" title="Category:Job scheduling">Job scheduling</a></li><li><a href="/wiki/Category:IBM_mainframe_operating_systems" title="Category:IBM mainframe operating systems">IBM mainframe operating systems</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Webarchive_template_wayback_links" title="Category:Webarchive template wayback links">Webarchive template wayback links</a></li><li><a href="/wiki/Category:Wikipedia_introduction_cleanup_from_May_2014" title="Category:Wikipedia introduction cleanup from May 2014">Wikipedia introduction cleanup from May 2014</a></li><li><a href="/wiki/Category:All_pages_needing_cleanup" title="Category:All pages needing cleanup">All pages needing cleanup</a></li><li><a href="/wiki/Category:Articles_covered_by_WikiProject_Wikify_from_May_2014" title="Category:Articles covered by WikiProject Wikify from May 2014">Articles covered by WikiProject Wikify from May 2014</a></li><li><a href="/wiki/Category:All_articles_covered_by_WikiProject_Wikify" title="Category:All articles covered by WikiProject Wikify">All articles covered by WikiProject Wikify</a></li><li><a href="/wiki/Category:Articles_needing_additional_references_from_June_2011" title="Category:Articles needing additional references from June 2011">Articles needing additional references from June 2011</a></li><li><a href="/wiki/Category:All_articles_needing_additional_references" title="Category:All articles needing additional references">All articles needing additional references</a></li><li><a href="/wiki/Category:All_articles_with_unsourced_statements" title="Category:All articles with unsourced statements">All articles with unsourced statements</a></li><li><a href="/wiki/Category:Articles_with_unsourced_statements_from_October_2012" title="Category:Articles with unsourced statements from October 2012">Articles with unsourced statements from October 2012</a></li><li><a href="/wiki/Category:Articles_with_unsourced_statements_from_April_2014" title="Category:Articles with unsourced statements from April 2014">Articles with unsourced statements from April 2014</a></li><li><a href="/wiki/Category:CS1_errors:_dates" title="Category:CS1 errors: dates">CS1 errors: dates</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Job+Control+Language" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Job+Control+Language" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/Job_Control_Language"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:Job_Control_Language"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/Job_Control_Language" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=Job_Control_Language&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Job_Control_Language&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Job_Control_Language" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Job_Control_Language" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Job_Control_Language&amp;oldid=750194798" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Job_Control_Language&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q1505372" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Job_Control_Language&amp;id=750194798" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Job+Control+Language">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Job+Control+Language&amp;returnto=Job+Control+Language&amp;oldid=750194798&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Job_Control_Language&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-cs"><a href="https://cs.wikipedia.org/wiki/Job_Control_Language" title="Job Control Language – Czech" lang="cs" hreflang="cs" class="interlanguage-link-target">Čeština</a></li><li class="interlanguage-link interwiki-da"><a href="https://da.wikipedia.org/wiki/Job_Control_Language" title="Job Control Language – Danish" lang="da" hreflang="da" class="interlanguage-link-target">Dansk</a></li><li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/Job_Control_Language" title="Job Control Language – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-es"><a href="https://es.wikipedia.org/wiki/Job_Control_Language" title="Job Control Language – Spanish" lang="es" hreflang="es" class="interlanguage-link-target">Español</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/Job_Control_Language" title="Job Control Language – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-gl"><a href="https://gl.wikipedia.org/wiki/Job_Control_Language" title="Job Control Language – Galician" lang="gl" hreflang="gl" class="interlanguage-link-target">Galego</a></li><li class="interlanguage-link interwiki-ko"><a href="https://ko.wikipedia.org/wiki/%EC%9E%91%EC%97%85_%EC%A0%9C%EC%96%B4_%EC%96%B8%EC%96%B4" title="작업 제어 언어 – Korean" lang="ko" hreflang="ko" class="interlanguage-link-target">한국어</a></li><li class="interlanguage-link interwiki-it"><a href="https://it.wikipedia.org/wiki/Job_Control_Language" title="Job Control Language – Italian" lang="it" hreflang="it" class="interlanguage-link-target">Italiano</a></li><li class="interlanguage-link interwiki-nl"><a href="https://nl.wikipedia.org/wiki/Job_Control_Language" title="Job Control Language – Dutch" lang="nl" hreflang="nl" class="interlanguage-link-target">Nederlands</a></li><li class="interlanguage-link interwiki-ja"><a href="https://ja.wikipedia.org/wiki/Job_Control_Language" title="Job Control Language – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target">日本語</a></li><li class="interlanguage-link interwiki-pl"><a href="https://pl.wikipedia.org/wiki/Job_Control_Language" title="Job Control Language – Polish" lang="pl" hreflang="pl" class="interlanguage-link-target">Polski</a></li><li class="interlanguage-link interwiki-pt"><a href="https://pt.wikipedia.org/wiki/Job_Control_Language" title="Job Control Language – Portuguese" lang="pt" hreflang="pt" class="interlanguage-link-target">Português</a></li><li class="interlanguage-link interwiki-ru"><a href="https://ru.wikipedia.org/wiki/JCL" title="JCL – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li><li class="interlanguage-link interwiki-sv"><a href="https://sv.wikipedia.org/wiki/JCL" title="JCL – Swedish" lang="sv" hreflang="sv" class="interlanguage-link-target">Svenska</a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q1505372#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 18 November 2016, at 07:26.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Job_Control_Language&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.220","walltime":"1.618","ppvisitednodes":{"value":1283,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":48763,"limit":2097152},"templateargumentsize":{"value":7369,"limit":2097152},"expansiondepth":{"value":11,"limit":40},"expensivefunctioncount":{"value":5,"limit":500},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00% 1570.483      1 -total","  6.03%   94.682      1 Template:Code","  4.23%   66.424      1 Template:Reflist","  3.51%   55.098      3 Template:Ambox","  3.29%   51.648      8 Template:Cite_web","  2.84%   44.620      1 Template:Multiple_issues","  2.58%   40.448      3 Template:Citation_needed","  2.32%   36.458      3 Template:Fix","  1.44%   22.592      1 Template:About","  1.35%   21.148      3 Template:Delink"]},"scribunto":{"limitreport-timeusage":{"value":"0.105","limit":"10.000"},"limitreport-memusage":{"value":4219525,"limit":52428800}},"cachereport":{"origin":"mw1271","timestamp":"20170130113259","ttl":2592000,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":52,"wgHostname":"mw1271"});});</script>
+	</body>
+</html>

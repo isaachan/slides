@@ -1,0 +1,1236 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Oxygene (programming language) - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Oxygene_(programming_language)","wgTitle":"Oxygene (programming language)","wgCurRevisionId":763514066,"wgRevisionId":763514066,"wgArticleId":4249746,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles with a promotional tone from October 2009","All articles with a promotional tone","Wikipedia articles needing style editing from February 2017","All articles needing style editing","Articles lacking reliable references from February 2017","All articles lacking reliable references","Pages using deprecated image syntax","Wikipedia articles needing clarification from July 2014","Articles with German-language external links","Object-oriented programming languages","Class-based programming languages",".NET programming languages","Pascal compilers","Mono (software)","Pascal programming language family"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Oxygene_(programming_language)","wgRelevantArticleId":4249746,"wgRequestId":"WJTPEgpAIC4AAHVxENgAAABR","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":true},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q910482","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.cite.styles":"ready","ext.pygments":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.legacy.wikibits","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.pygments%2CwikimediaBadges%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.29.0-wmf.10"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/en/9/9e/Chrome-128.png"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Oxygene_(programming_language)"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Oxygene_(programming_language)&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Oxygene_(programming_language)&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Oxygene_(programming_language)"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Oxygene_programming_language rootpage-Oxygene_programming_language skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Oxygene (programming language)</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><table class="plainlinks metadata ambox ambox-content ambox-Advert" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ambox_important.svg/40px-Ambox_important.svg.png" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ambox_important.svg/60px-Ambox_important.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ambox_important.svg/80px-Ambox_important.svg.png 2x" data-file-width="40" data-file-height="40" /></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">This article <b>contains content that is written like <a href="/wiki/Wikipedia:What_Wikipedia_is_not#Wikipedia_is_not_a_soapbox_or_means_of_promotion" title="Wikipedia:What Wikipedia is not">an advertisement</a></b>. <span class="hide-when-compact">Please help <a class="external text" href="//en.wikipedia.org/w/index.php?title=Oxygene_(programming_language)&amp;action=edit">improve it</a> by removing <a href="/wiki/Wikipedia:Spam" title="Wikipedia:Spam">promotional content</a> and inappropriate <a href="/wiki/Wikipedia:External_links" title="Wikipedia:External links">external links</a>, and by adding encyclopedic content written from a <a href="/wiki/Wikipedia:Neutral_point_of_view" title="Wikipedia:Neutral point of view">neutral point of view</a>.</span> <small><i>(October 2009)</i></small> <small class="hide-when-compact"><i>(<a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove this template message</a>)</i></small></span></td>
+</tr>
+</table>
+<table class="plainlinks metadata ambox ambox-style" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/40px-Edit-clear.svg.png" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/60px-Edit-clear.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/80px-Edit-clear.svg.png 2x" data-file-width="48" data-file-height="48" /></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">This article <b>is written like <a href="/wiki/Wikipedia:What_Wikipedia_is_not#GUIDE" title="Wikipedia:What Wikipedia is not">a manual or guidebook</a>.</b> <span class="hide-when-compact">Please help <a class="external text" href="//en.wikipedia.org/w/index.php?title=Oxygene_(programming_language)&amp;action=edit">rewrite this article</a> from a descriptive, <a href="/wiki/Wikipedia:Neutral_point_of_view" title="Wikipedia:Neutral point of view">neutral point of view</a>, and remove advice or instruction.</span> <small><i>(February 2017)</i></small> <small class="hide-when-compact"><i>(<a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove this template message</a>)</i></small></span></td>
+</tr>
+</table>
+<table class="plainlinks metadata ambox ambox-content ambox-Primary_sources" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><a href="/wiki/File:Question_book-new.svg" class="image"><img alt="Question book-new.svg" src="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" width="50" height="39" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/75px-Question_book-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/100px-Question_book-new.svg.png 2x" data-file-width="512" data-file-height="399" /></a></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">This article <b>relies too much on <a href="/wiki/Wikipedia:Verifiability" title="Wikipedia:Verifiability">references</a> to <a href="/wiki/Wikipedia:No_original_research#Primary.2C_secondary_and_tertiary_sources" title="Wikipedia:No original research">primary sources</a></b>. <span class="hide-when-compact">Please improve this by adding <a href="/wiki/Wikipedia:No_original_research#Primary.2C_secondary_and_tertiary_sources" title="Wikipedia:No original research">secondary or tertiary sources</a>.</span> <small><i>(February 2017)</i></small> <small class="hide-when-compact"><i>(<a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove this template message</a>)</i></small></span></td>
+</tr>
+</table>
+<table class="infobox vevent" style="width:22em">
+<caption class="summary">Oxygene</caption>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/File:Chrome-128.png" class="image"><img alt="Chrome-128.png" src="//upload.wikimedia.org/wikipedia/en/9/9e/Chrome-128.png" width="128" height="128" data-file-width="128" data-file-height="128" /></a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_developer" title="Software developer">Developer</a></th>
+<td class="organiser"><a href="/wiki/RemObjects_Software" title="RemObjects Software">RemObjects Software</a></td>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Software_release_life_cycle" title="Software release life cycle">Stable release</a></th>
+<td>
+<div style="margin:0px;">8.2 / November&#160;13, 2015<span class="noprint">; 14 months ago</span><span style="display:none">&#160;(<span class="bday dtstart published updated">2015-11-13</span>)</span></div>
+</td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Computing_platform" title="Computing platform">Platform</a></th>
+<td><a href="/wiki/Common_Language_Infrastructure" title="Common Language Infrastructure">Common Language Infrastructure</a>, <a href="/wiki/Java_(software_platform)" title="Java (software platform)">Java</a>, <a href="/wiki/Cocoa_(API)" title="Cocoa (API)">Cocoa</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_license" title="Software license">License</a></th>
+<td>Commercial</td>
+</tr>
+<tr>
+<th scope="row">Website</th>
+<td><span class="url"><a rel="nofollow" class="external text" href="http://elementscompiler.com">elementscompiler<wbr />.com</a></span></td>
+</tr>
+<tr>
+<th colspan="2" style="text-align:center;background-color: #eee;">Influenced by</th>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/Object_Pascal" title="Object Pascal">Object Pascal</a>, <a href="/wiki/C_Sharp_(programming_language)" title="C Sharp (programming language)">C#</a></td>
+</tr>
+</table>
+<p><b>Oxygene</b> (formerly known as <b>Chrome</b>) is a <a href="/wiki/Programming_language" title="Programming language">programming language</a> developed by <a href="/wiki/RemObjects_Software" title="RemObjects Software">RemObjects Software</a> for <a href="/wiki/Microsoft" title="Microsoft">Microsoft's</a> <a href="/wiki/Common_Language_Infrastructure" title="Common Language Infrastructure">Common Language Infrastructure</a>, the <a href="/wiki/Java_(software_platform)" title="Java (software platform)">Java</a> Platform and <a href="/wiki/Cocoa_(API)" title="Cocoa (API)">Cocoa</a>. Oxygene is <a href="/wiki/Object_Pascal" title="Object Pascal">Object Pascal</a>-based, but also has influences from <a href="/wiki/C_Sharp_(programming_language)" title="C Sharp (programming language)">C#</a>, <a href="/wiki/Eiffel_(programming_language)" title="Eiffel (programming language)">Eiffel</a>, <a href="/wiki/Java_(programming_language)" title="Java (programming language)">Java</a>, <a href="/wiki/F_Sharp_(programming_language)" title="F Sharp (programming language)">F#</a> and other languages.</p>
+<p>Compared to the now deprecated Delphi.NET, Oxygene does not emphasize total backward compatibility, but is designed to be a "reinvention" of the language, be a good citizen on the managed development platforms, and leverage all the features and technologies provided by the <a href="/wiki/.NET_Framework" title=".NET Framework">.NET</a> and Java runtimes.</p>
+<p>Oxygene is commercial product, and offers full integration into <a href="/wiki/Microsoft" title="Microsoft">Microsoft</a>'s <a href="/wiki/Visual_Studio" class="mw-redirect" title="Visual Studio">Visual Studio</a> IDE on Windows, as well as its own IDE, <a href="/w/index.php?title=Fire_(IDE)&amp;action=edit&amp;redlink=1" class="new" title="Fire (IDE) (page does not exist)">Fire</a> for use on <a href="/wiki/MacOS" title="MacOS">macOS</a>. The command line compiler is available free. Oxygene is one of three languages supported by the underlying <a href="/w/index.php?title=Elements_Compiler&amp;action=edit&amp;redlink=1" class="new" title="Elements Compiler (page does not exist)">Elements Compiler</a> toolchain, next to <a href="/wiki/C_Sharp_(programming_language)" title="C Sharp (programming language)">C#</a> and <a href="/wiki/Swift_(programming_language)" title="Swift (programming language)">Swift</a>.</p>
+<p>From 2008 to 2012, RemObjects Software has licensed its compiler and IDE technology to <a href="/wiki/Embarcadero_Technologies" title="Embarcadero Technologies">Embarcadero</a> to be used in their <a href="/wiki/Delphi_Prism" class="mw-redirect" title="Delphi Prism">Embarcadero Prism</a> product.<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">[1]</a></sup> Starting in the Fall of 2011, Oxygene became available in two separate editions, with the second edition adding support for the Java and Android runtimes. Starting with the release of XE4, Embarcadero Prism is no longer part of the RAD Studio SKU. Numerous support and upgrade paths for Prism customers exist to migrate to Oxygene.<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">[2]</a></sup> As of 2016, there is only one edition of Oxygene, which allows development on Windows or macOS, and which can create executables for Windows .NET, iOS, Android, Java and macOS.</p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#The_language"><span class="tocnumber">1</span> <span class="toctext">The language</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Program_structure"><span class="tocnumber">1.1</span> <span class="toctext">Program structure</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Types"><span class="tocnumber">1.2</span> <span class="toctext">Types</span></a>
+<ul>
+<li class="toclevel-3 tocsection-4"><a href="#Records"><span class="tocnumber">1.2.1</span> <span class="toctext">Records</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-5"><a href="#Interfaces"><span class="tocnumber">1.3</span> <span class="toctext">Interfaces</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Delegates"><span class="tocnumber">1.4</span> <span class="toctext">Delegates</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Anonymous_methods"><span class="tocnumber">1.5</span> <span class="toctext">Anonymous methods</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Property_notification"><span class="tocnumber">1.6</span> <span class="toctext">Property notification</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-9"><a href="#Code_examples"><span class="tocnumber">2</span> <span class="toctext">Code examples</span></a>
+<ul>
+<li class="toclevel-2 tocsection-10"><a href="#Hello_World"><span class="tocnumber">2.1</span> <span class="toctext">Hello World</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#Generic_container"><span class="tocnumber">2.2</span> <span class="toctext">Generic container</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#Generic_method"><span class="tocnumber">2.3</span> <span class="toctext">Generic method</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-13"><a href="#Differences_between_native_Delphi_and_Oxygene"><span class="tocnumber">3</span> <span class="toctext">Differences between native Delphi and Oxygene</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="#Criticism"><span class="tocnumber">4</span> <span class="toctext">Criticism</span></a></li>
+<li class="toclevel-1 tocsection-15"><a href="#See_also"><span class="tocnumber">5</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-16"><a href="#References"><span class="tocnumber">6</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-17"><a href="#External_links"><span class="tocnumber">7</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="The_language">The language</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Oxygene_(programming_language)&amp;action=edit&amp;section=1" title="Edit section: The language">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The Oxygene language has its origins in Object Pascal in general and Delphi in particular, but was designed to reflect the guidelines of .NET programming and to create fully CLR-compliant assemblies. Therefore, some minor language features known from Object Pascal / Delphi have been dropped or revised, while a slew of new and more modern features, such as Generics or Sequences and Queries have been added to the language.</p>
+<p>Oxygene is an <a href="/wiki/Object-oriented_programming" title="Object-oriented programming">object-oriented</a> language, which means it uses classes, which can hold data and execute code, to design programs.<sup class="noprint Inline-Template" style="margin-left:0.1em; white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Please_clarify" title="Wikipedia:Please clarify"><span title="The text near this tag may need clarification or removal of jargon. (July 2014)">clarification needed</span></a></i>]</sup> Classes are "prototypes" for objects, like the idea of an apple is the prototype for the apple one can actually buy in a shop. It is known that an apple has a colour, and that it can be peeled: those are the data and executable "code" for the apple class.</p>
+<p>Oxygene provides language-level support for some features of parallel programming. The goal is to use all cores or processors of a computer to improve performance. To reach this goal, tasks have to be distributed among several threads. The <a href="/wiki/.NET_Framework" title=".NET Framework">.NET Framework</a>'s <code>ThreadPool</code> class offered a way to efficiently work with several threads. The <a href="/wiki/Task_Parallel_Library" class="mw-redirect" title="Task Parallel Library">Task Parallel Library</a> (TPL) was introduced in .NET 4.0 to provide more features for parallel programming.</p>
+<p>Operators can be overloaded in Oxygene using the <code>class operator</code> syntax:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="k">class</span> <span class="k">operator</span> <span class="nf">implicit</span><span class="p">(</span><span class="n">i</span> <span class="o">:</span> <span class="kt">Integer</span><span class="p">)</span> <span class="o">:</span> <span class="n">MyClass</span><span class="o">;</span>
+</pre></div>
+<p>Note, that for operator overloading each operator has a name, that has to be used in the operator overloading syntax, because for example "+" would not be a valid method name in Oxygene.<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">[3]</a></sup></p>
+<h3><span class="mw-headline" id="Program_structure">Program structure</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Oxygene_(programming_language)&amp;action=edit&amp;section=2" title="Edit section: Program structure">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Oxygene does not use "Units" like Delphi does, but uses .NET-namespaces to organize and group types. A namespace can span multiple files (and assemblies), but one file can only contain types of one namespace. This namespace is defined at the very top of the file:</p>
+<pre>
+namespace ConsoleApplication1;
+</pre>
+<p>Oxygene files are separated into an interface and an implementation section, which is the structure known from Delphi. The interface section follows the declaration of the namespace. It contains the <code>uses</code>-clause, which in Oxygene imports types from other namespaces:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="k">uses</span>
+  <span class="n">System</span><span class="o">.</span><span class="n">Linq</span><span class="o">;</span>
+</pre></div>
+<p>Imported namespaces have to be in the project itself or in referenced assemblies. Unlike in C#, in Oxygene alias names cannot be defined for namespaces, only for single type names (see below).</p>
+<p>Following the <code>uses</code>-clause a file contains type declarations, like they are known from Delphi:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="k">interface</span>
+
+<span class="k">type</span>
+  <span class="n">ConsoleApp</span> <span class="o">=</span> <span class="k">class</span>
+  <span class="kp">public</span>
+    <span class="k">class</span> <span class="n">method</span> <span class="n">Main</span><span class="o">;</span>
+  <span class="k">end</span><span class="o">;</span>
+</pre></div>
+<p>As in C#, the Main-method is the entry point for every program. It can have a parameter <code>args&#160;: Array of String</code> for passing command line arguments to the program.</p>
+<p>More types can be declared without repeating the <code>type</code>-keyword.</p>
+<p>The implementation of the declared methods is placed in the implementation section:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="k">implementation</span>
+
+<span class="k">class</span> <span class="n">method</span> <span class="n">ConsoleApp</span><span class="o">.</span><span class="n">Main</span><span class="o">;</span>
+<span class="k">begin</span>
+  <span class="c1">// add your own code here</span>
+  <span class="n">Console</span><span class="o">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">'Hello World.'</span><span class="p">)</span><span class="o">;</span>
+<span class="k">end</span><span class="o">;</span>
+
+<span class="k">end</span><span class="o">.</span>
+</pre></div>
+<p>Files are always ended with <code>end.</code></p>
+<h3><span class="mw-headline" id="Types">Types</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Oxygene_(programming_language)&amp;action=edit&amp;section=3" title="Edit section: Types">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>As a .NET language, Oxygene uses the .NET type system: There are value types (like structs) and reference types (like arrays or classes).</p>
+<p>Although it does not introduce own "pre-defined" types, Oxygene offers more "pascalish" generic names for some of them,<sup id="cite_ref-4" class="reference"><a href="#cite_note-4">[4]</a></sup> so that for example the <code>System.Int32</code> can be used as <code>Integer</code> and <code>Boolean</code> (<code>System.Boolean</code>), <code>Char</code> (<code>System.Char</code>), <code>Real</code> (<code>System.Double</code>) join the family of pascal-typenames, too. The struct character of these types, which is part of .NET, is fully preserved.</p>
+<p>As in all .NET languages types in Oxygene have a visibility. In Oxygene the default visibility is <code>assembly</code>, which is equivalent to the <code>internal</code> visibility in C#. The other possible type visibility is <code>public</code>.</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="k">type</span>
+  <span class="n">MyClass</span> <span class="o">=</span> <span class="kp">public</span> <span class="k">class</span>
+<span class="k">end</span><span class="o">;</span>
+</pre></div>
+<p>The visibility can be set for every type defined (classes, interfaces, records, ...).</p>
+<p>An alias name can be defined for types, which can be used locally or in other Oxygene assemblies.</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="k">type</span>
+  <span class="n">IntList</span> <span class="o">=</span> <span class="kp">public</span> <span class="n">List</span><span class="o">&lt;</span><span class="kt">Integer</span><span class="o">&gt;;</span> <span class="c1">//visible in other Oxygene-assemblies</span>
+  <span class="n">SecretEnumerable</span> <span class="o">=</span> <span class="n">IEnumerable</span><span class="o">&lt;</span><span class="k">String</span><span class="o">&gt;;</span> <span class="c1">//not visible in other assemblies</span>
+</pre></div>
+<p>Public type aliases won't be visible for other languages.</p>
+<h4><span class="mw-headline" id="Records">Records</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Oxygene_(programming_language)&amp;action=edit&amp;section=4" title="Edit section: Records">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>Records are what .NET-structs are called in Oxygene. They are declared just like classes, but with the <code>record</code> keyword:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="k">type</span>
+  <span class="n">MyRecord</span> <span class="o">=</span> <span class="k">record</span>
+    <span class="n">method</span> <span class="n">Foo</span><span class="o">;</span>
+  <span class="k">end</span><span class="o">;</span>
+</pre></div>
+<p>As they're just .NET-structs, records can have fields, methods and properties, but do not have inheritance and cannot implement interfaces.</p>
+<h3><span class="mw-headline" id="Interfaces">Interfaces</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Oxygene_(programming_language)&amp;action=edit&amp;section=5" title="Edit section: Interfaces">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Interfaces are very important concept in the .NET world, the framework itself makes heavy use of them. Interfaces are the specification of a small set of methods, properties and events a class has to implement when implementing the interface. For example, contains the interface <code>IEnumerable&lt;T&gt;</code> specifies the <code>GetEnumerator</code> method which is used to iterate over sequences.</p>
+<p>Interfaces are declared just like classes:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="k">type</span>
+  <span class="n">MyInterface</span> <span class="o">=</span> <span class="kp">public</span> <span class="k">interface</span>
+    <span class="n">method</span> <span class="n">MakeItSo</span> <span class="o">:</span> <span class="n">IEnumerable</span><span class="o">;</span>
+    <span class="k">property</span> <span class="py">Bar</span> <span class="o">:</span> <span class="k">String</span> <span class="kp">read</span> <span class="kp">write</span><span class="o">;</span>
+  <span class="k">end</span><span class="o">;</span>
+</pre></div>
+<p>Please notice, that for properties the getter and setter are not explicitly specified.</p>
+<h3><span class="mw-headline" id="Delegates">Delegates</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Oxygene_(programming_language)&amp;action=edit&amp;section=6" title="Edit section: Delegates">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Delegates define signatures for methods, so that these methods can be passed in parameters (e.g. callbacks) or stored in variables, etc. They're the type-safe NET-equivalent to function pointers. They're also used in events. When assigning a method to a delegate, one has to use the <code>@</code> operator, so the compiler knows, that one doesn't want to call the method but just assign it.</p>
+<p>Oxygene can create anonymous delegates; for example methods can be passed to the <code>Invoke</code> method of a control without declaring the delegate:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="n">method</span> <span class="n">MainForm</span><span class="o">.</span><span class="n">MainForm_Load</span><span class="p">(</span><span class="n">sender</span><span class="o">:</span> <span class="n">System</span><span class="o">.</span><span class="k">Object</span><span class="o">;</span> <span class="n">e</span><span class="o">:</span> <span class="n">System</span><span class="o">.</span><span class="n">EventArgs</span><span class="p">)</span><span class="o">;</span>
+<span class="k">begin</span>
+  <span class="n">Invoke</span><span class="p">(</span><span class="o">@</span><span class="n">DoSomething</span><span class="p">)</span><span class="o">;</span>
+<span class="k">end</span><span class="o">;</span>
+</pre></div>
+<p>An anonymous delegate with the signature of the method <code>DoSomething</code> will be created by the compiler.</p>
+<p>Oxygene supports polymorphic delegates, which means, that delegates which have parameters of descending types are assignment compatible. Assume two classes <code>MyClass</code> and <code>MyClassEx = class(MyClass)</code>, then in the following code <code>BlubbEx</code> is assignment compatible to <code>Blubb</code>.</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="k">type</span>
+  <span class="n">delegate</span> <span class="n">Blubb</span><span class="p">(</span><span class="n">sender</span> <span class="o">:</span> <span class="k">Object</span><span class="o">;</span> <span class="n">m</span> <span class="o">:</span> <span class="n">MyClass</span><span class="p">)</span><span class="o">;</span>
+  <span class="n">delegate</span> <span class="n">BlubbEx</span><span class="p">(</span><span class="n">sender</span> <span class="o">:</span> <span class="k">Object</span><span class="o">;</span> <span class="n">mx</span> <span class="o">:</span> <span class="n">MyClassEx</span><span class="p">)</span><span class="o">;</span>
+</pre></div>
+<p>Fields can be used to delegate the implementation of an interface, if the type they're of implements this interface:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="n">Implementor</span> <span class="o">=</span> <span class="kp">public</span> <span class="k">class</span><span class="p">(</span><span class="n">IMyInterface</span><span class="p">)</span>
+  <span class="c1">// ... implement interface ...</span>
+<span class="k">end</span><span class="o">;</span>
+
+<span class="n">MyClass</span> <span class="o">=</span> <span class="kp">public</span> <span class="k">class</span><span class="p">(</span><span class="n">IMyInterface</span><span class="p">)</span>
+  <span class="n">fSomeImplementor</span> <span class="o">:</span> <span class="n">Implementor</span><span class="o">;</span> <span class="kp">public</span> <span class="n">implements</span> <span class="n">IMyInterface</span><span class="o">;</span> <span class="c1">//takes care of implementing the interface</span>
+<span class="k">end</span><span class="o">;</span>
+</pre></div>
+<p>In this example the compiler will create public methods and properties in <code>MyClass</code>, which call the methods / properties of <code>fSomeImplementor</code>, to implement the members of IMyInterface. This can be used to provide mixin-like functionality.<sup id="cite_ref-5" class="reference"><a href="#cite_note-5">[5]</a></sup></p>
+<h3><span class="mw-headline" id="Anonymous_methods">Anonymous methods</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Oxygene_(programming_language)&amp;action=edit&amp;section=7" title="Edit section: Anonymous methods">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Anonymous methods are implemented inside other methods. They are not accessible outside of the method unless stored inside a delegate field. Anonymous methods can use the local variables of the method they're implemented in and the fields of the class they belong to.</p>
+<p>Anonymous methods are especially useful when working with code that is supposed to be executed in a GUI thread, which is done in .NET by passing a method do the <code>Invoke</code> method (<code>Control.Invoke</code> in WinForms, <code>Dispatcher.Invoke</code> in WPF):</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="n">method</span> <span class="n">Window1</span><span class="o">.</span><span class="n">PredictNearFuture</span><span class="o">;</span>  <span class="c1">//declared as async in the interface</span>
+<span class="k">begin</span>
+  <span class="c1">// ... Calculate result here, store in variable "theFuture"</span>
+    <span class="n">Dispatcher</span><span class="o">.</span><span class="n">Invoke</span><span class="p">(</span><span class="n">DispatcherPriority</span><span class="o">.</span><span class="n">ApplicationIdle</span><span class="o">,</span> <span class="n">method</span><span class="o">;</span> <span class="k">begin</span>
+      <span class="n">theFutureTextBox</span><span class="o">.</span><span class="n">Text</span> <span class="o">:=</span> <span class="n">theFuture</span><span class="o">;</span>
+    <span class="k">end</span><span class="p">)</span><span class="o">;</span>
+<span class="k">end</span><span class="o">;</span>
+</pre></div>
+<p>Anonymous methods can have parameters, too:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="n">method</span> <span class="n">Window1</span><span class="o">.</span><span class="n">PredictNearFuture</span><span class="o">;</span>  <span class="c1">//declared as async in the interface</span>
+<span class="k">begin</span>
+  <span class="c1">// ... Calculate result here, store in variable "theFuture"</span>
+    <span class="n">Dispatcher</span><span class="o">.</span><span class="n">Invoke</span><span class="p">(</span><span class="n">DispatcherPriority</span><span class="o">.</span><span class="n">ApplicationIdle</span><span class="o">,</span> <span class="n">method</span><span class="p">(</span><span class="n">aFuture</span> <span class="o">:</span> <span class="k">String</span><span class="p">)</span><span class="o">;</span> <span class="k">begin</span>
+      <span class="n">theFutureTextBox</span><span class="o">.</span><span class="n">Text</span> <span class="o">:=</span> <span class="n">aFuture</span> <span class="o">;</span>
+    <span class="k">end</span><span class="o">,</span> <span class="n">theFuture</span><span class="p">)</span><span class="o">;</span>
+<span class="k">end</span><span class="o">;</span>
+</pre></div>
+<p>Both source codes use <a href="#Delegates">anonymous delegates</a>.</p>
+<h3><span class="mw-headline" id="Property_notification">Property notification</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Oxygene_(programming_language)&amp;action=edit&amp;section=8" title="Edit section: Property notification">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Property notification is used mainly for data binding, when the <a href="/wiki/Graphical_user_interface" title="Graphical user interface">GUI</a> has to know when the value of a property changes. The .NET framework provides the interfaces <code>INotifyPropertyChanged</code> and <code>INotifyPropertyChanging</code> (in .NET 3.5) for this purpose. These interfaces define events which have to be fired when a property is changed / was changed.</p>
+<p>Oxygene provides the <code>notify</code> modifier, which can be used on properties. If this modifier is used, the compiler will add the interfaces to the class, implement them and create code to raise the events when the property changes / was changed.</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="k">property</span> <span class="py">Foo</span> <span class="o">:</span> <span class="k">String</span> <span class="kp">read</span> <span class="nf">fFoo</span> <span class="kp">write</span> <span class="nf">SetFoo</span><span class="o">;</span> <span class="n">notify</span><span class="o">;</span>
+<span class="k">property</span> <span class="py">Bar</span> <span class="o">:</span> <span class="k">String</span><span class="o">;</span> <span class="n">notify</span> <span class="s">'Blubb'</span><span class="o">;</span> <span class="c1">//will notify that property "Blubb" was changed instead of "Bar"</span>
+</pre></div>
+<p>The modifier can be used on properties which have a setter method. The code to raise the events will then be added to this method during compile time.</p>
+<h2><span class="mw-headline" id="Code_examples">Code examples</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Oxygene_(programming_language)&amp;action=edit&amp;section=9" title="Edit section: Code examples">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="Hello_World">Hello World</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Oxygene_(programming_language)&amp;action=edit&amp;section=10" title="Edit section: Hello World">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="n">namespace</span> <span class="n">HelloWorld</span><span class="o">;</span>
+
+<span class="k">interface</span>
+
+<span class="k">type</span>
+  <span class="n">HelloClass</span> <span class="o">=</span> <span class="k">class</span>
+  <span class="kp">public</span>
+    <span class="k">class</span> <span class="n">method</span> <span class="n">Main</span><span class="o">;</span>
+  <span class="k">end</span><span class="o">;</span>
+
+<span class="k">implementation</span>
+
+<span class="k">class</span> <span class="n">method</span> <span class="n">HelloClass</span><span class="o">.</span><span class="n">Main</span><span class="o">;</span>
+<span class="k">begin</span>
+  <span class="n">System</span><span class="o">.</span><span class="n">Console</span><span class="o">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">'Hello World!'</span><span class="p">)</span><span class="o">;</span>
+<span class="k">end</span><span class="o">;</span>
+
+<span class="k">end</span><span class="o">.</span>
+</pre></div>
+<h3><span class="mw-headline" id="Generic_container">Generic container</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Oxygene_(programming_language)&amp;action=edit&amp;section=11" title="Edit section: Generic container">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="n">namespace</span> <span class="n">GenericContainer</span><span class="o">;</span>
+
+<span class="k">interface</span>
+
+<span class="k">type</span>
+  <span class="n">TestApp</span> <span class="o">=</span> <span class="k">class</span>
+  <span class="kp">public</span>
+    <span class="k">class</span> <span class="n">method</span> <span class="n">Main</span><span class="o">;</span>
+  <span class="k">end</span><span class="o">;</span>
+
+  <span class="n">Person</span> <span class="o">=</span> <span class="k">class</span>
+  <span class="kp">public</span>
+    <span class="k">property</span> <span class="py">FirstName</span><span class="o">:</span> <span class="k">String</span><span class="o">;</span>
+    <span class="k">property</span> <span class="py">LastName</span><span class="o">:</span> <span class="k">String</span><span class="o">;</span>     
+  <span class="k">end</span><span class="o">;</span>
+
+<span class="k">implementation</span>
+
+<span class="k">uses</span>
+  <span class="n">System</span><span class="o">.</span><span class="n">Collections</span><span class="o">.</span><span class="n">Generic</span><span class="o">;</span>
+
+<span class="k">class</span> <span class="n">method</span> <span class="n">TestApp</span><span class="o">.</span><span class="n">Main</span><span class="o">;</span>
+<span class="k">begin</span>
+  <span class="k">var</span> <span class="n">myList</span> <span class="o">:=</span> <span class="k">new</span> <span class="n">List</span><span class="o">&lt;</span><span class="n">Person</span><span class="o">&gt;;</span> <span class="c1">//type inference</span>
+  <span class="n">myList</span><span class="o">.</span><span class="n">Add</span><span class="p">(</span><span class="k">new</span> <span class="n">Person</span><span class="p">(</span><span class="n">FirstName</span> <span class="o">:=</span> <span class="s">'John'</span><span class="o">,</span> <span class="n">LastName</span> <span class="o">:=</span> <span class="s">'Doe'</span><span class="p">))</span><span class="o">;</span> 
+  <span class="n">myList</span><span class="o">.</span><span class="n">Add</span><span class="p">(</span><span class="k">new</span> <span class="n">Person</span><span class="p">(</span><span class="n">FirstName</span> <span class="o">:=</span> <span class="s">'Jane'</span><span class="o">,</span> <span class="n">LastName</span> <span class="o">:=</span> <span class="s">'Doe'</span><span class="p">))</span><span class="o">;</span>
+  <span class="n">myList</span><span class="o">.</span><span class="n">Add</span><span class="p">(</span><span class="k">new</span> <span class="n">Person</span><span class="p">(</span><span class="n">FirstName</span> <span class="o">:=</span> <span class="s">'James'</span><span class="o">,</span> <span class="n">LastName</span> <span class="o">:=</span> <span class="s">'Doe'</span><span class="p">))</span><span class="o">;</span> 
+  <span class="n">Console</span><span class="o">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">myList</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">FirstName</span><span class="p">)</span><span class="o">;</span>  <span class="c1">//No casting needed</span>
+  <span class="n">Console</span><span class="o">.</span><span class="n">ReadLine</span><span class="o">;</span>       
+<span class="k">end</span><span class="o">;</span>
+
+<span class="k">end</span><span class="o">.</span>
+</pre></div>
+<h3><span class="mw-headline" id="Generic_method">Generic method</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Oxygene_(programming_language)&amp;action=edit&amp;section=12" title="Edit section: Generic method">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="n">namespace</span> <span class="n">GenericMethodTest</span><span class="o">;</span>
+
+<span class="k">interface</span>
+
+<span class="k">type</span>
+<span class="n">GenericMethodTest</span> <span class="o">=</span> <span class="n">static</span> <span class="k">class</span>
+<span class="kp">public</span>
+  <span class="k">class</span> <span class="n">method</span> <span class="n">Main</span><span class="o">;</span>
+<span class="kp">private</span>
+  <span class="k">class</span> <span class="n">method</span> <span class="nb">Swap</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">(</span><span class="k">var</span> <span class="n">left</span><span class="o">,</span> <span class="n">right</span> <span class="o">:</span> <span class="n">T</span><span class="p">)</span><span class="o">;</span>
+  <span class="k">class</span> <span class="n">method</span> <span class="n">DoSwap</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">left</span><span class="o">,</span> <span class="n">right</span> <span class="o">:</span> <span class="n">T</span><span class="p">)</span><span class="o">;</span>
+<span class="k">end</span><span class="o">;</span>
+
+<span class="k">implementation</span>
+
+<span class="k">class</span> <span class="n">method</span> <span class="n">GenericMethodTest</span><span class="o">.</span><span class="n">DoSwap</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">left</span><span class="o">,</span> <span class="n">right</span> <span class="o">:</span> <span class="n">T</span><span class="p">)</span><span class="o">;</span>
+<span class="k">begin</span>
+  <span class="k">var</span> <span class="n">a</span> <span class="o">:=</span> <span class="n">left</span><span class="o">;</span>
+  <span class="k">var</span> <span class="n">b</span> <span class="o">:=</span> <span class="n">right</span><span class="o">;</span>
+  <span class="n">Console</span><span class="o">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">'Type: {0}'</span><span class="o">,</span> <span class="n">typeof</span><span class="p">(</span><span class="n">T</span><span class="p">))</span><span class="o">;</span>
+  <span class="n">Console</span><span class="o">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">'-&gt; a = {0}, b = {1}'</span><span class="o">,</span> <span class="n">a</span> <span class="o">,</span> <span class="n">b</span><span class="p">)</span><span class="o">;</span>
+  <span class="nb">Swap</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">(</span><span class="k">var</span> <span class="n">a</span><span class="o">,</span> <span class="k">var</span> <span class="n">b</span><span class="p">)</span><span class="o">;</span>
+  <span class="n">Console</span><span class="o">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">'-&gt; a = {0}, b = {1}'</span><span class="o">,</span> <span class="n">a</span> <span class="o">,</span> <span class="n">b</span><span class="p">)</span><span class="o">;</span>
+<span class="k">end</span><span class="o">;</span>
+
+<span class="k">class</span> <span class="n">method</span> <span class="n">GenericMethodTest</span><span class="o">.</span><span class="n">Main</span><span class="o">;</span>
+<span class="k">begin</span>
+  <span class="k">var</span> <span class="n">a</span> <span class="o">:=</span> <span class="mi">23</span><span class="o">;</span><span class="c1">// type inference</span>
+  <span class="k">var</span> <span class="n">b</span> <span class="o">:=</span> <span class="mi">15</span><span class="o">;</span>
+  <span class="n">DoSwap</span><span class="o">&lt;</span><span class="kt">Integer</span><span class="o">&gt;</span><span class="p">(</span><span class="n">a</span><span class="o">,</span> <span class="n">b</span><span class="p">)</span><span class="o">;</span> <span class="c1">// no downcasting to Object in this method.</span>
+
+  <span class="k">var</span> <span class="n">aa</span> <span class="o">:=</span> <span class="s">'abc'</span><span class="o">;</span><span class="c1">// type inference</span>
+  <span class="k">var</span> <span class="n">bb</span> <span class="o">:=</span> <span class="s">'def'</span><span class="o">;</span>
+  <span class="n">DoSwap</span><span class="o">&lt;</span><span class="k">String</span><span class="o">&gt;</span><span class="p">(</span><span class="n">aa</span><span class="o">,</span> <span class="n">bb</span><span class="p">)</span><span class="o">;</span> <span class="c1">// no downcasting to Object in this method.</span>
+
+  <span class="n">DoSwap</span><span class="p">(</span><span class="mf">1.1</span><span class="o">,</span> <span class="mf">1.2</span><span class="p">)</span><span class="o">;</span> <span class="c1">// type inference for generic parameters</span>
+  <span class="n">Console</span><span class="o">.</span><span class="n">ReadLine</span><span class="p">()</span><span class="o">;</span>
+<span class="k">end</span><span class="o">;</span>
+
+<span class="k">class</span> <span class="n">method</span> <span class="n">GenericMethodTest</span><span class="o">.</span><span class="n">Swap</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">(</span><span class="k">var</span> <span class="n">left</span><span class="o">,</span> <span class="n">right</span> <span class="o">:</span> <span class="n">T</span><span class="p">)</span><span class="o">;</span>
+<span class="k">begin</span>
+  <span class="k">var</span> <span class="n">temp</span> <span class="o">:=</span> <span class="n">left</span><span class="o">;</span>
+  <span class="n">left</span><span class="o">:=</span> <span class="n">right</span><span class="o">;</span>
+  <span class="n">right</span> <span class="o">:=</span> <span class="n">temp</span><span class="o">;</span>
+<span class="k">end</span><span class="o">;</span>
+
+<span class="k">end</span><span class="o">.</span>
+</pre></div>
+<p>Program output:</p>
+<pre>
+Type: System.Int32
+-&gt; a = 23, b = 15
+-&gt; a = 15, b = 23
+Type: System.String
+-&gt; a = abc, b = def
+-&gt; a = def, b = abc
+Type: System.Double
+-&gt; a = 1,1, b = 1,2
+-&gt; a = 1,2, b = 1,1
+</pre>
+<h2><span class="mw-headline" id="Differences_between_native_Delphi_and_Oxygene">Differences between native Delphi and Oxygene</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Oxygene_(programming_language)&amp;action=edit&amp;section=13" title="Edit section: Differences between native Delphi and Oxygene">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><b>unit</b>: Replaced with the <a href="/wiki/Namespace" title="Namespace">namespace</a> keyword. Since Oxygene doesn't compile per-file but per-project, it does not depend on the name of the file. Instead the unit or namespace keyword is used to denote the default namespace that all types are defined in for that file</li>
+<li><b>procedure</b> and <b>function</b>: <b>method</b> is the preferred keyword, though <b>procedure</b> and <b>function</b> still work.</li>
+<li><b>overload</b>: In Oxygene all methods are overloaded by default, so no special keyword is needed for this</li>
+<li><b>.Create()</b>: This constructor call has been replaced by the <b>new</b> keyword. It can still be enabled in the <b>project options</b> for legacy reasons</li>
+<li><b>string</b>: Characters in strings are zero-based and read-only. Strings can have nil values, so testing against empty string is not always sufficient.</li>
+</ul>
+<h2><span class="mw-headline" id="Criticism">Criticism</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Oxygene_(programming_language)&amp;action=edit&amp;section=14" title="Edit section: Criticism">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Some people would like to port their Win32 Delphi code to Oxygene without making major changes. This is not possible because while Oxygene looks like Delphi there are enough changes so as to make it incompatible for a simple recompile. While the name gives it the appearance of another version of Delphi that is not completely true.<sup id="cite_ref-6" class="reference"><a href="#cite_note-6">[6]</a></sup></p>
+<p>On top of the language difference, the <a href="/wiki/Visual_Component_Library" title="Visual Component Library">Visual Component Library</a> framework is not available in Delphi Prism.<sup id="cite_ref-7" class="reference"><a href="#cite_note-7">[7]</a></sup> This makes porting even more difficult because classic Delphi code relies heavily on the VCL.</p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Oxygene_(programming_language)&amp;action=edit&amp;section=15" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a href="/wiki/C_Sharp_(programming_language)" title="C Sharp (programming language)">C#</a></li>
+<li><a href="/wiki/Object_Pascal" title="Object Pascal">Object Pascal</a></li>
+<li><a href="/wiki/Embarcadero_Delphi" class="mw-redirect" title="Embarcadero Delphi">Embarcadero Delphi</a></li>
+<li><a href="/wiki/Free_Pascal" title="Free Pascal">Free Pascal</a></li>
+<li><a href="/wiki/Eiffel_(programming_language)" title="Eiffel (programming language)">Eiffel</a></li>
+<li><a href="/wiki/Java_(programming_language)" title="Java (programming language)">Java</a></li>
+</ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Oxygene_(programming_language)&amp;action=edit&amp;section=16" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist columns references-column-count references-column-count-2" style="-moz-column-count: 2; -webkit-column-count: 2; column-count: 2; list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.embarcadero.com/products/prism">Embarcadero Prism page</a>, at the bottom of the page an image stating it is powered by RemObjects Oxygene.</span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://blogs.remobjects.com/blogs/mh/2013/04/17/p5822">http://blogs.remobjects.com/blogs/mh/2013/04/17/p5822</a></span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://prismwiki.codegear.com/en/Operator_Overloading">http://prismwiki.codegear.com/en/Operator_Overloading</a></span></li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://prismwiki.codegear.com/en/Built-In_Types">http://prismwiki.codegear.com/en/Built-In_Types</a></span></li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://prismwiki.codegear.com/en/Provide_Mixin-like_functionality">http://prismwiki.codegear.com/en/Provide_Mixin-like_functionality</a></span></li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external autonumber" href="https://stackoverflow.com/questions/242584/will-you-use-delphi-prism">[1]</a> A Stack Overflow discussion where people remark that Oxygene is not Delphi Win32.</span></li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external autonumber" href="http://www.infoq.com/news/2009/09/Delphi-Prism-2010">[2]</a> Delphi Prism 2010 review where they state in the third paragraph that VCL.net is not available.</span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Oxygene_(programming_language)&amp;action=edit&amp;section=17" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><span class="official-website"><span class="url"><a rel="nofollow" class="external text" href="http://www.remobjects.com/oxygene">Official website</a></span></span></li>
+<li><a rel="nofollow" class="external text" href="http://wiki.oxygenelanguage.com">The Oxygene Wiki</a></li>
+<li><a rel="nofollow" class="external text" href="http://developerpublish.com/tag/oxygene/">Oxygene and WP8 Tutorials</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.oxygene-forum.de">Oxygene / Chrome Forum on C-Sharp-Forum.de</a> <span class="languageicon" style="font-size:0.95em; font-weight:bold; color:#555;">(German)</span></li>
+<li><a rel="nofollow" class="external text" href="http://www.bitwisemag.com/copy/programming/chrome/hoffman_qanda.html">Bitwise Magazine Interview with Oxygene Chief Architect</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.bitwisemag.com/copy/reviews/software/programming/chrome/1.5/chrome1_5.html">Bitwise Magazine review of Oxygene (then <i>Chrome</i>) 1.5</a></li>
+</ul>
+<div role="navigation" class="navbox" aria-labelledby="Pascal_programming_language_family" style="padding:3px">
+<table class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="3">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:Pascal_programming_language_family" title="Template:Pascal programming language family"><abbr title="View this template" style=";;background:none transparent;border:none;">v</abbr></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:Pascal_programming_language_family" title="Template talk:Pascal programming language family"><abbr title="Discuss this template" style=";;background:none transparent;border:none;">t</abbr></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:Pascal_programming_language_family&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;">e</abbr></a></li>
+</ul>
+</div>
+<div id="Pascal_programming_language_family" style="font-size:114%"><a href="/wiki/Pascal_(programming_language)" title="Pascal (programming language)">Pascal programming language</a> family</div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Dialects</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Pascal_(programming_language)" title="Pascal (programming language)">Pascal</a></li>
+<li><a href="/wiki/Object_Pascal" title="Object Pascal">Object Pascal</a></li>
+<li><a href="/wiki/Pascal_Script" title="Pascal Script">Pascal Script</a></li>
+<li><strong class="selflink">Oxygene</strong></li>
+<li><a href="/wiki/Clascal" title="Clascal">Clascal</a></li>
+<li><a href="/wiki/Concurrent_Pascal" title="Concurrent Pascal">Concurrent Pascal</a></li>
+<li><a href="/wiki/SuperPascal" title="SuperPascal">SuperPascal</a></li>
+</ul>
+</div>
+</td>
+<td class="navbox-image" rowspan="5" style="width:0%;padding:0px 0px 0px 2px">
+<div><a href="/wiki/File:Blaise_pascal.jpg" class="image"><img alt="Blaise pascal.jpg" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/79/Blaise_pascal.jpg/90px-Blaise_pascal.jpg" width="90" height="94" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/79/Blaise_pascal.jpg/135px-Blaise_pascal.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/7/79/Blaise_pascal.jpg/180px-Blaise_pascal.jpg 2x" data-file-width="300" data-file-height="314" /></a></div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Compilers</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks navbox-subgroup" style="border-spacing:0">
+<tr>
+<th scope="row" class="navbox-group" style="padding-left:0;padding-right:0;">
+<div style="padding:0em 0.75em;">Current</div>
+</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Delphi_(programming_language)" title="Delphi (programming language)">Delphi</a></li>
+<li><strong class="selflink">Oxygene</strong></li>
+<li><a href="/wiki/PocketStudio" title="PocketStudio">PocketStudio</a></li>
+<li><a href="/wiki/HP_Pascal" title="HP Pascal">HP Pascal</a></li>
+<li><a href="/wiki/IP_Pascal" title="IP Pascal">IP Pascal</a></li>
+<li><a href="/wiki/Free_Pascal" title="Free Pascal">Free Pascal</a> (<a href="/wiki/Lazarus_(IDE)" title="Lazarus (IDE)">Lazarus</a>)</li>
+<li><a href="/wiki/PascalABC.NET" title="PascalABC.NET">PascalABC.NET</a></li>
+<li><a href="/wiki/GNU_Pascal" title="GNU Pascal">GNU Pascal</a></li>
+<li><a href="/wiki/Turbo51" title="Turbo51">Turbo51</a></li>
+<li><a href="/wiki/MIDletPascal" title="MIDletPascal">MIDletPascal</a></li>
+<li><a href="/wiki/Pic_Micro_Pascal" title="Pic Micro Pascal">Pic Micro Pascal</a></li>
+<li><a href="/wiki/Amsterdam_Compiler_Kit" title="Amsterdam Compiler Kit">ACK</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="padding-left:0;padding-right:0;">
+<div style="padding:0em 0.75em;">Historic</div>
+</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Virtual_Pascal" title="Virtual Pascal">Virtual Pascal</a></li>
+<li><a href="/wiki/Apple_Pascal" title="Apple Pascal">Apple Pascal</a></li>
+<li><a href="/wiki/Turbo_Pascal" title="Turbo Pascal">Turbo Pascal</a></li>
+<li><a href="/wiki/Microsoft_Pascal" title="Microsoft Pascal">Microsoft Pascal</a></li>
+<li><a href="/wiki/UCSD_Pascal" title="UCSD Pascal">UCSD Pascal</a></li>
+<li><a href="/wiki/JRT_(programming_language)" title="JRT (programming language)">JRT</a></li>
+<li><a href="/wiki/Pascal/MT%2B" title="Pascal/MT+">Pascal/MT+</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Application_programming_interface" title="Application programming interface">API</a></th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Component_Library_for_Cross_Platform" title="Component Library for Cross Platform">CLX</a></li>
+<li><a href="/wiki/Free_Component_Library" title="Free Component Library">FCL</a></li>
+<li><a href="/wiki/FireMonkey" title="FireMonkey">FireMonkey</a></li>
+<li><a href="/wiki/Lazarus_Component_Library" title="Lazarus Component Library">LCL</a></li>
+<li><a href="/wiki/Object_Windows_Library" title="Object Windows Library">Object Windows Library</a></li>
+<li><a href="/wiki/OpenWire_(library)" title="OpenWire (library)">OpenWire</a></li>
+<li><a href="/wiki/Free_Pascal_Runtime_Library" title="Free Pascal Runtime Library">RTL</a></li>
+<li><a href="/wiki/Turbo_Vision" title="Turbo Vision">Turbo Vision</a></li>
+<li><a href="/wiki/Visual_Component_Library" title="Visual Component Library">Visual Component Library</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow hlist" colspan="3">
+<div>
+<ul>
+<li><a href="/wiki/Comparison_of_Pascal_and_C" title="Comparison of Pascal and C">Comparison of Pascal and C</a></li>
+<li><a href="/wiki/Comparison_of_Pascal_and_Delphi" title="Comparison of Pascal and Delphi">Comparison of Pascal and Delphi</a></li>
+</ul>
+<ul>
+<li>Related to: <a href="/wiki/ALGOL" title="ALGOL">ALGOL</a> (1958)</li>
+<li><a href="/wiki/Modula-2" title="Modula-2">Modula-2</a> (1977)</li>
+<li><a href="/wiki/Ada_(programming_language)" title="Ada (programming language)">Ada</a> (1983)</li>
+<li><a href="/wiki/Oberon_(programming_language)" title="Oberon (programming language)">Oberon</a> (1986)</li>
+<li><a href="/wiki/Modula-3" title="Modula-3">Modula-3</a> (1988)</li>
+<li><a href="/wiki/Oberon-2" title="Oberon-2">Oberon-2</a> (1991)</li>
+<li><a href="/wiki/Component_Pascal" title="Component Pascal">Component Pascal</a> (1991)</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div role="navigation" class="navbox" aria-labelledby="Common_Language_Infrastructure" style="padding:3px">
+<table class="nowraplinks hlist collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:Common_Language_Infrastructure" title="Template:Common Language Infrastructure"><abbr title="View this template" style=";;background:none transparent;border:none;">v</abbr></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:Common_Language_Infrastructure" title="Template talk:Common Language Infrastructure"><abbr title="Discuss this template" style=";;background:none transparent;border:none;">t</abbr></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:Common_Language_Infrastructure&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;">e</abbr></a></li>
+</ul>
+</div>
+<div id="Common_Language_Infrastructure" style="font-size:114%"><a href="/wiki/Common_Language_Infrastructure" title="Common Language Infrastructure">Common Language Infrastructure</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Architecture</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Application_domain" title="Application domain">Application domain</a></li>
+<li><a href="/wiki/Code_Access_Security" title="Code Access Security">Code Access Security</a></li>
+<li><a href="/wiki/Common_Intermediate_Language" title="Common Intermediate Language">Common Intermediate Language</a> (CIL)
+<ul>
+<li><a href="/wiki/List_of_CIL_instructions" title="List of CIL instructions">CIL instructions</a></li>
+</ul>
+</li>
+<li><a href="/wiki/Common_Type_System" title="Common Type System">Common Type System</a> (CTS)</li>
+<li><a href="/wiki/Platform_Invocation_Services" title="Platform Invocation Services">Platform Invocation Services</a> (P/Invoke)</li>
+<li><a href="/wiki/Virtual_Execution_System" title="Virtual Execution System">Virtual Execution System</a> (VES)</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Components</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Assembly_(CLI)" title="Assembly (CLI)">Assembly</a></li>
+<li><a href="/wiki/Delegate_(CLI)" title="Delegate (CLI)">Delegate</a></li>
+<li><a href="/wiki/Global_Assembly_Cache" title="Global Assembly Cache">Global Assembly Cache</a> (GAC)</li>
+<li><a href="/wiki/Manifest_(CLI)" title="Manifest (CLI)">Manifest</a></li>
+<li><a href="/wiki/Metadata_(CLI)" title="Metadata (CLI)">Metadata</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Standard_Libraries_(CLI)" title="Standard Libraries (CLI)">Standard<br />
+Libraries</a></th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks navbox-subgroup" style="border-spacing:0">
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Standard_Libraries_(CLI)#Kernel_Profile" title="Standard Libraries (CLI)">Kernel Profile</a></th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Standard_Libraries_(CLI)#Base_Class_Library" title="Standard Libraries (CLI)">Base Class Library</a> (BCL)</li>
+<li><a href="/wiki/Standard_Libraries_(CLI)#Runtime_Infrastructure_Library" title="Standard Libraries (CLI)">Runtime Infrastructure Library</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Standard_Libraries_(CLI)#Compact_Profile" title="Standard Libraries (CLI)">Compact Profile</a></th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Standard_Libraries_(CLI)#Network_Library" title="Standard Libraries (CLI)">Network Library</a></li>
+<li><a href="/wiki/Standard_Libraries_(CLI)#Reflection_Library" title="Standard Libraries (CLI)">Reflection Library</a></li>
+<li><a href="/wiki/Standard_Libraries_(CLI)#XML_Library" title="Standard Libraries (CLI)">XML Library</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Standard_Libraries_(CLI)#Extended_Array_Library" title="Standard Libraries (CLI)">Extended Array Library</a></li>
+<li><a href="/wiki/Standard_Libraries_(CLI)#Extended_Numerics_Library" title="Standard Libraries (CLI)">Extended Numerics Library</a></li>
+<li><a href="/wiki/Standard_Libraries_(CLI)#Parallel_Library" title="Standard Libraries (CLI)">Parallel Library</a></li>
+<li><a href="/wiki/Standard_Libraries_(CLI)#Vararg_Library" title="Standard Libraries (CLI)">Vararg Library</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Implementations</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks navbox-subgroup" style="border-spacing:0">
+<tr>
+<th scope="row" class="navbox-group">Microsoft</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/.NET_Framework" title=".NET Framework">.NET Framework</a></li>
+<li><a href="/wiki/.NET_Compact_Framework" title=".NET Compact Framework">.NET Compact Framework</a></li>
+<li><a href="/wiki/.NET_Micro_Framework" title=".NET Micro Framework">.NET Micro Framework</a></li>
+<li><a href="/wiki/Shared_Source_Common_Language_Infrastructure" title="Shared Source Common Language Infrastructure">Shared Source Common Language Infrastructure</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Other</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/.NET_Core" class="mw-redirect" title=".NET Core">.NET Core</a></li>
+<li><a href="/wiki/Mono_(software)" title="Mono (software)">Mono</a></li>
+<li><a href="/wiki/Portable.NET" title="Portable.NET">Portable.NET</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/List_of_CLI_languages" title="List of CLI languages">Languages</a></th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks navbox-subgroup" style="border-spacing:0">
+<tr>
+<th scope="row" class="navbox-group">Microsoft</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/C_Sharp_(programming_language)" title="C Sharp (programming language)">C#</a>
+<ul>
+<li><a href="/wiki/Microsoft_Visual_C_Sharp" title="Microsoft Visual C Sharp">Visual C#</a></li>
+</ul>
+</li>
+<li><a href="/wiki/Visual_Basic_.NET" title="Visual Basic .NET">Visual Basic .NET</a></li>
+<li><a href="/wiki/C%2B%2B/CLI" title="C++/CLI">C++/CLI</a>
+<ul>
+<li><a href="/wiki/Managed_Extensions_for_C%2B%2B" title="Managed Extensions for C++">Managed</a></li>
+</ul>
+</li>
+<li><a href="/wiki/F_Sharp_(programming_language)" title="F Sharp (programming language)">F#</a></li>
+<li><a href="/wiki/J_Sharp" title="J Sharp">J#</a></li>
+<li><a href="/wiki/JScript_.NET" title="JScript .NET">JScript .NET</a></li>
+<li><a href="/wiki/PowerShell" title="PowerShell">Windows PowerShell</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Other</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Axum_(programming_language)" title="Axum (programming language)">Axum</a></li>
+<li><a href="/wiki/A_Sharp_(.NET)" title="A Sharp (.NET)">A#</a></li>
+<li><a href="/wiki/Boo_(programming_language)" title="Boo (programming language)">Boo</a></li>
+<li><a href="/wiki/Cobra_(programming_language)" title="Cobra (programming language)">Cobra</a></li>
+<li><a href="/wiki/IronScheme" title="IronScheme">IronScheme</a>
+<ul>
+<li><a href="/wiki/IronLisp" title="IronLisp">IronLisp</a></li>
+</ul>
+</li>
+<li><a href="/wiki/IronPython" title="IronPython">IronPython</a></li>
+<li><a href="/wiki/IronRuby" title="IronRuby">IronRuby</a></li>
+<li><a href="/wiki/Nemerle" title="Nemerle">Nemerle</a></li>
+<li><strong class="selflink">Oxygene</strong></li>
+<li><a href="/wiki/Phalanger_(compiler)" title="Phalanger (compiler)">Phalanger</a></li>
+<li><a href="/wiki/P_Sharp" title="P Sharp">P#</a></li>
+<li><a href="/wiki/Scala_(programming_language)" title="Scala (programming language)">Scala</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Comparison</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Comparison_of_C_Sharp_and_Java" title="Comparison of C Sharp and Java">C# and Java</a></li>
+<li><a href="/wiki/Comparison_of_C_Sharp_and_Visual_Basic_.NET" title="Comparison of C Sharp and Visual Basic .NET">C# and Visual Basic .NET</a></li>
+<li><a href="/wiki/Comparison_of_the_Java_and_.NET_platforms" title="Comparison of the Java and .NET platforms">Java and .NET platforms</a></li>
+<li><a href="/wiki/Comparison_of_Visual_Basic_and_Visual_Basic_.NET" title="Comparison of Visual Basic and Visual Basic .NET">Visual Basic and Visual Basic .NET</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Organizations</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/.NET_Foundation" title=".NET Foundation">.NET Foundation</a></li>
+<li><a href="/wiki/DotGNU" title="DotGNU">DotGNU</a></li>
+<li><a href="/wiki/Microsoft" title="Microsoft">Microsoft</a></li>
+<li><a href="/wiki/Xamarin" title="Xamarin">Xamarin</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div role="navigation" class="navbox" aria-labelledby="Java" style="padding:3px">
+<table class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="3">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:Java_(software_platform)" title="Template:Java (software platform)"><abbr title="View this template" style=";;background:none transparent;border:none;">v</abbr></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:Java_(software_platform)" title="Template talk:Java (software platform)"><abbr title="Discuss this template" style=";;background:none transparent;border:none;">t</abbr></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:Java_(software_platform)&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;">e</abbr></a></li>
+</ul>
+</div>
+<div id="Java" style="font-size:114%"><a href="/wiki/Java_(software_platform)" title="Java (software platform)">Java</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Java platforms</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Java_(programming_language)" title="Java (programming language)">Java language</a></li>
+<li><a href="/wiki/Java_virtual_machine" title="Java virtual machine">JVM</a></li>
+<li><a href="/wiki/Java_Platform,_Micro_Edition" title="Java Platform, Micro Edition">Micro Edition</a></li>
+<li><a href="/wiki/Java_Platform,_Standard_Edition" title="Java Platform, Standard Edition">Standard Edition</a></li>
+<li><a href="/wiki/Java_Platform,_Enterprise_Edition" title="Java Platform, Enterprise Edition">Enterprise Edition</a></li>
+<li><a href="/wiki/Java_Card" title="Java Card">Java Card</a></li>
+<li><a href="/wiki/Android_software_development#SDK" title="Android software development">Android SDK</a></li>
+</ul>
+</div>
+</td>
+<td class="navbox-image" rowspan="13" style="width:0%;padding:0px 0px 0px 2px">
+<div><a href="/wiki/File:Wave.svg" class="image"><img alt="Wave.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/4/40/Wave.svg/75px-Wave.svg.png" width="75" height="135" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/4/40/Wave.svg/113px-Wave.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/4/40/Wave.svg/150px-Wave.svg.png 2x" data-file-width="226" data-file-height="407" /></a></div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Oracle technologies</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Squawk_virtual_machine" title="Squawk virtual machine">Squawk</a></li>
+<li><a href="/wiki/Java_Development_Kit" title="Java Development Kit">Java Development Kit</a></li>
+<li><a href="/wiki/OpenJDK" title="OpenJDK">OpenJDK</a></li>
+<li><a href="/wiki/Java_virtual_machine" title="Java virtual machine">Java virtual machine</a></li>
+<li><a href="/wiki/JavaFX" title="JavaFX">JavaFX</a></li>
+<li><a href="/wiki/Maxine_Virtual_Machine" title="Maxine Virtual Machine">Maxine VM</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Platform technologies</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Java_applet" title="Java applet">Applets</a></li>
+<li><a href="/wiki/Java_servlet" title="Java servlet">Servlets</a></li>
+<li><a href="/wiki/MIDlet" title="MIDlet">MIDlets</a></li>
+<li><a href="/wiki/JavaServer_Pages" title="JavaServer Pages">JSP</a></li>
+<li><a href="/wiki/Java_Web_Start" title="Java Web Start">Web Start (JNLP)</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Major third-party technologies</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Blackdown_Java" title="Blackdown Java">Blackdown</a></li>
+<li><a href="/wiki/Eclipse_(software)" title="Eclipse (software)">Eclipse</a></li>
+<li><a href="/wiki/GNU_Classpath" title="GNU Classpath">GNU Classpath</a></li>
+<li><a href="/wiki/Google_Web_Toolkit" title="Google Web Toolkit">GWT</a></li>
+<li><a href="/wiki/Apache_Harmony" title="Apache Harmony">Harmony</a></li>
+<li><a href="/wiki/Hibernate_(Java)" class="mw-redirect" title="Hibernate (Java)">Hibernate</a></li>
+<li><a href="/wiki/IcedTea" title="IcedTea">IcedTea</a></li>
+<li><a href="/wiki/Jazelle" title="Jazelle">Jazelle</a></li>
+<li><a href="/wiki/Spring_Framework" title="Spring Framework">Spring</a></li>
+<li><a href="/wiki/Apache_Struts" class="mw-redirect" title="Apache Struts">Struts</a></li>
+<li><a href="/wiki/TopLink" title="TopLink">TopLink</a></li>
+<li><a href="/wiki/WildFly" title="WildFly">WildFly</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">History</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Java_version_history" title="Java version history">Java version history</a></li>
+<li><a href="/wiki/Java_Community_Process" title="Java Community Process">Java Community Process</a></li>
+<li><a href="/wiki/Sun_Microsystems" title="Sun Microsystems">Sun Microsystems</a></li>
+<li><a href="/wiki/Free_Java_implementations" title="Free Java implementations">Free Java implementations</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/List_of_JVM_languages" title="List of JVM languages">Major programming languages</a></th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/BeanShell" title="BeanShell">BeanShell</a></li>
+<li><a href="/wiki/Clojure" title="Clojure">Clojure</a></li>
+<li><a href="/wiki/Groovy_(programming_language)" title="Groovy (programming language)">Groovy</a></li>
+<li><strong class="selflink">Oxygene</strong></li>
+<li><a href="/wiki/Tcl/Java" title="Tcl/Java">Java Tcl</a></li>
+<li><a href="/wiki/JRuby" title="JRuby">JRuby</a></li>
+<li><a href="/wiki/Jython" title="Jython">Jython</a></li>
+<li><a href="/wiki/Kotlin_(programming_language)" title="Kotlin (programming language)">Kotlin</a></li>
+<li><a href="/wiki/Processing_(programming_language)" title="Processing (programming language)">Processing</a></li>
+<li><a href="/wiki/Rhino_(JavaScript_engine)" title="Rhino (JavaScript engine)">Rhino</a></li>
+<li><a href="/wiki/Scala_(programming_language)" title="Scala (programming language)">Scala</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Java conferences</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/JavaOne" title="JavaOne">JavaOne</a></li>
+<li><a href="/wiki/Devoxx" title="Devoxx">Devoxx</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="boilerplate metadata plainlinks" id="tfd" style="background-color: transparent; padding: 0; font-size:x-small; color:#000000; text-align: center; border-bottom:1px solid #AAAAAA;">‹ The <a href="/wiki/Help:Template" title="Help:Template">template</a> below (<i><a href="/wiki/Template:RemObjects" title="Template:RemObjects">RemObjects</a></i>) is being considered for deletion. See <a href="/wiki/Wikipedia:Templates_for_discussion/Log/2017_February_3#Template:RemObjects" title="Wikipedia:Templates for discussion/Log/2017 February 3">templates for discussion</a> to help reach a consensus.›</div>
+<div role="navigation" class="navbox" aria-labelledby="RemObjects_Software" style="padding:3px">
+<table class="nowraplinks hlist collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:RemObjects" title="Template:RemObjects"><abbr title="View this template" style=";;background:none transparent;border:none;">v</abbr></a></li>
+<li class="nv-talk"><a href="/w/index.php?title=Template_talk:RemObjects&amp;action=edit&amp;redlink=1" class="new" title="Template talk:RemObjects (page does not exist)"><abbr title="Discuss this template" style=";;background:none transparent;border:none;">t</abbr></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:RemObjects&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;">e</abbr></a></li>
+</ul>
+</div>
+<div id="RemObjects_Software" style="font-size:114%"><a href="/wiki/RemObjects_Software" title="RemObjects Software">RemObjects Software</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Executive Team</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li>Marc Hoffman</li>
+<li>Mike Orriss</li>
+<li>Carlo Kok</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Commercial products</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/w/index.php?title=Elements_Compiler&amp;action=edit&amp;redlink=1" class="new" title="Elements Compiler (page does not exist)">Elements Compiler</a></li>
+<li><strong class="selflink">Oxygene</strong></li>
+<li><a href="/w/index.php?title=RemObjects_C&amp;action=edit&amp;redlink=1" class="new" title="RemObjects C (page does not exist)">RemObjects C#</a></li>
+<li><a href="/w/index.php?title=RemObjects_Silver&amp;action=edit&amp;redlink=1" class="new" title="RemObjects Silver (page does not exist)">RemObjects Silver</a></li>
+<li><a href="/w/index.php?title=Data_Abstract&amp;action=edit&amp;redlink=1" class="new" title="Data Abstract (page does not exist)">Data Abstract</a></li>
+<li><a href="/wiki/Remoting_SDK" class="mw-redirect" title="Remoting SDK">Remoting SDK</a></li>
+<li><a href="/w/index.php?title=RemObjects_Hydra&amp;action=edit&amp;redlink=1" class="new" title="RemObjects Hydra (page does not exist)">Hydra</a></li>
+<li><a href="/w/index.php?title=Oxfuscator&amp;action=edit&amp;redlink=1" class="new" title="Oxfuscator (page does not exist)">Oxfuscator</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Open_source" class="mw-redirect" title="Open source">Open source</a> products</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/w/index.php?title=RemObjects_Script&amp;action=edit&amp;redlink=1" class="new" title="RemObjects Script (page does not exist)">RemObjects Script</a></li>
+<li><a href="/wiki/Pascal_Script" title="Pascal Script">Pascal Script</a></li>
+<li><a href="/w/index.php?title=Internet_Pack&amp;action=edit&amp;redlink=1" class="new" title="Internet Pack (page does not exist)">Internet Pack</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" colspan="2">
+<div>
+<dl>
+<dt>Website</dt>
+<dd><a rel="nofollow" class="external text" href="http://www.remobjects.com">www.remobjects.com</a></dd>
+</dl>
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1176
+Cached time: 20170203184226
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.244 seconds
+Real time usage: 0.315 seconds
+Preprocessor visited node count: 2067/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 92352/2097152 bytes
+Template argument size: 2686/2097152 bytes
+Highest expansion depth: 25/40
+Expensive parser function count: 7/500
+Lua time usage: 0.091/10.000 seconds
+Lua memory usage: 2.55 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  240.234      1 -total
+ 36.34%   87.311      2 Template:Infobox
+ 26.42%   63.469      1 Template:Infobox_programming_language
+ 19.10%   45.883      1 Template:Advert
+ 17.73%   42.586      8 Template:Navbox
+ 15.04%   36.120      3 Template:Ambox
+ 13.85%   33.280      1 Template:Infobox_software/simple
+ 10.94%   26.288      1 Template:Clarify
+  9.91%   23.808      1 Template:Fix-span
+  7.08%   16.998      1 Template:Pascal_programming_language_family
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:4249746-0!*!0!!en!4!* and timestamp 20170203184226 and revision id 763514066
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Oxygene_(programming_language)&amp;oldid=763514066">https://en.wikipedia.org/w/index.php?title=Oxygene_(programming_language)&amp;oldid=763514066</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Object-oriented_programming_languages" title="Category:Object-oriented programming languages">Object-oriented programming languages</a></li><li><a href="/wiki/Category:Class-based_programming_languages" title="Category:Class-based programming languages">Class-based programming languages</a></li><li><a href="/wiki/Category:.NET_programming_languages" title="Category:.NET programming languages">.NET programming languages</a></li><li><a href="/wiki/Category:Pascal_compilers" title="Category:Pascal compilers">Pascal compilers</a></li><li><a href="/wiki/Category:Mono_(software)" title="Category:Mono (software)">Mono (software)</a></li><li><a href="/wiki/Category:Pascal_programming_language_family" title="Category:Pascal programming language family">Pascal programming language family</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Articles_with_a_promotional_tone_from_October_2009" title="Category:Articles with a promotional tone from October 2009">Articles with a promotional tone from October 2009</a></li><li><a href="/wiki/Category:All_articles_with_a_promotional_tone" title="Category:All articles with a promotional tone">All articles with a promotional tone</a></li><li><a href="/wiki/Category:Wikipedia_articles_needing_style_editing_from_February_2017" title="Category:Wikipedia articles needing style editing from February 2017">Wikipedia articles needing style editing from February 2017</a></li><li><a href="/wiki/Category:All_articles_needing_style_editing" title="Category:All articles needing style editing">All articles needing style editing</a></li><li><a href="/wiki/Category:Articles_lacking_reliable_references_from_February_2017" title="Category:Articles lacking reliable references from February 2017">Articles lacking reliable references from February 2017</a></li><li><a href="/wiki/Category:All_articles_lacking_reliable_references" title="Category:All articles lacking reliable references">All articles lacking reliable references</a></li><li><a href="/wiki/Category:Pages_using_deprecated_image_syntax" title="Category:Pages using deprecated image syntax">Pages using deprecated image syntax</a></li><li><a href="/wiki/Category:Wikipedia_articles_needing_clarification_from_July_2014" title="Category:Wikipedia articles needing clarification from July 2014">Wikipedia articles needing clarification from July 2014</a></li><li><a href="/wiki/Category:Articles_with_German-language_external_links" title="Category:Articles with German-language external links">Articles with German-language external links</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Oxygene+%28programming+language%29" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Oxygene+%28programming+language%29" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/Oxygene_(programming_language)"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:Oxygene_(programming_language)"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/Oxygene_(programming_language)" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=Oxygene_(programming_language)&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Oxygene_(programming_language)&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Oxygene_(programming_language)" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Oxygene_(programming_language)" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Oxygene_(programming_language)&amp;oldid=763514066" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Oxygene_(programming_language)&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q910482" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Oxygene_%28programming_language%29&amp;id=763514066" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Oxygene+%28programming+language%29">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Oxygene+%28programming+language%29&amp;returnto=Oxygene+%28programming+language%29&amp;oldid=763514066&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Oxygene_(programming_language)&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-cs"><a href="https://cs.wikipedia.org/wiki/Oxygene_(programovac%C3%AD_jazyk)" title="Oxygene (programovací jazyk) – Czech" lang="cs" hreflang="cs" class="interlanguage-link-target">Čeština</a></li><li class="interlanguage-link interwiki-ko"><a href="https://ko.wikipedia.org/wiki/%EC%98%A5%EC%8B%9C%EC%A6%8C_(%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D_%EC%96%B8%EC%96%B4)" title="옥시즌 (프로그래밍 언어) – Korean" lang="ko" hreflang="ko" class="interlanguage-link-target">한국어</a></li><li class="interlanguage-link interwiki-it"><a href="https://it.wikipedia.org/wiki/Oxygene_(linguaggio)" title="Oxygene (linguaggio) – Italian" lang="it" hreflang="it" class="interlanguage-link-target">Italiano</a></li><li class="interlanguage-link interwiki-pl"><a href="https://pl.wikipedia.org/wiki/Oxygene_(j%C4%99zyk_programowania)" title="Oxygene (język programowania) – Polish" lang="pl" hreflang="pl" class="interlanguage-link-target">Polski</a></li><li class="interlanguage-link interwiki-ru"><a href="https://ru.wikipedia.org/wiki/Oxygene_(%D1%8F%D0%B7%D1%8B%D0%BA_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F)" title="Oxygene (язык программирования) – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q910482#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 3 February 2017, at 18:14.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Oxygene_(programming_language)&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.244","walltime":"0.315","ppvisitednodes":{"value":2067,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":92352,"limit":2097152},"templateargumentsize":{"value":2686,"limit":2097152},"expansiondepth":{"value":25,"limit":40},"expensivefunctioncount":{"value":7,"limit":500},"entityaccesscount":{"value":1,"limit":400},"timingprofile":["100.00%  240.234      1 -total"," 36.34%   87.311      2 Template:Infobox"," 26.42%   63.469      1 Template:Infobox_programming_language"," 19.10%   45.883      1 Template:Advert"," 17.73%   42.586      8 Template:Navbox"," 15.04%   36.120      3 Template:Ambox"," 13.85%   33.280      1 Template:Infobox_software/simple"," 10.94%   26.288      1 Template:Clarify","  9.91%   23.808      1 Template:Fix-span","  7.08%   16.998      1 Template:Pascal_programming_language_family"]},"scribunto":{"limitreport-timeusage":{"value":"0.091","limit":"10.000"},"limitreport-memusage":{"value":2670150,"limit":52428800}},"cachereport":{"origin":"mw1176","timestamp":"20170203184226","ttl":2592000,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":406,"wgHostname":"mw1176"});});</script>
+	</body>
+</html>

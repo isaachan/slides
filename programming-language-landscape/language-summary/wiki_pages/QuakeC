@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>QuakeC - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"QuakeC","wgTitle":"QuakeC","wgCurRevisionId":749838110,"wgRevisionId":749838110,"wgArticleId":25207,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["All articles with unsourced statements","Articles with unsourced statements from March 2009","Domain-specific programming languages","Quake (series)","Scripting languages","Id Tech"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"QuakeC","wgRelevantArticleId":25207,"wgRequestId":"WJX4cQpAMFQAAIlEF2YAAAAO","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":true},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q2122062","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.cite.styles":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.legacy.wikibits","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.29.0-wmf.10"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/QuakeC"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=QuakeC&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=QuakeC&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/QuakeC"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-QuakeC rootpage-QuakeC skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">QuakeC</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><table class="infobox vevent" style="width:22em">
+<caption class="summary">QuakeC</caption>
+<tr>
+<th scope="row"><a href="/wiki/Programming_paradigm" title="Programming paradigm">Paradigm</a></th>
+<td><a href="/wiki/Imperative_programming" title="Imperative programming">imperative</a> (<a href="/wiki/Procedural_programming" title="Procedural programming">procedural</a>), <a href="/wiki/Structured_programming" title="Structured programming">structured</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_design" title="Software design">Designed&#160;by</a></th>
+<td><a href="/wiki/John_Carmack" title="John Carmack">John Carmack</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_developer" title="Software developer">Developer</a></th>
+<td class="organiser"><a href="/wiki/Id_Software" title="Id Software">id Software</a></td>
+</tr>
+<tr>
+<th scope="row">First&#160;appeared</th>
+<td>1996</td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Type_system" title="Type system">Typing discipline</a></th>
+<td><a href="/wiki/Type_system" title="Type system">static</a>, <a href="/wiki/Strong_typing" class="mw-redirect" title="Strong typing">strong</a></td>
+</tr>
+<tr>
+<th colspan="2" style="text-align:center;background-color: #eee;">Major <a href="/wiki/Programming_language_implementation" title="Programming language implementation">implementations</a></th>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center">Quake C Compiler, FastQCC, FTEQCC, QCCx, GMQCC</td>
+</tr>
+<tr>
+<th colspan="2" style="text-align:center;background-color: #eee;">Influenced by</th>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/C_(programming_language)" title="C (programming language)">C</a></td>
+</tr>
+</table>
+<p><b>QuakeC</b> is an <a href="/wiki/Interpreted_programming_language" class="mw-redirect" title="Interpreted programming language">interpreted language</a> developed in 1996 by <a href="/wiki/John_D._Carmack" class="mw-redirect" title="John D. Carmack">John Carmack</a> of <a href="/wiki/Id_Software" title="Id Software">id Software</a> to program parts of the <a href="/wiki/Video_game" title="Video game">video game</a> <i><a href="/wiki/Quake_(video_game)" title="Quake (video game)">Quake</a></i>. Using QuakeC, a programmer is able to customize <i>Quake</i> to great extents by adding weapons, changing game logic and physics, and programming complex scenarios. It can be used to control many aspects of the game itself, such as parts of the AI, triggers, or changes in the level. The <a href="/wiki/Quake_engine" title="Quake engine"><i>Quake</i> engine</a> was the only game engine to use QuakeC. Following engines used DLL game modules for customization written in <a href="/wiki/C_(programming_language)" title="C (programming language)">C</a> and <a href="/wiki/C%2B%2B" title="C++">C++</a> from <a href="/wiki/Id_Tech_4" title="Id Tech 4">id Tech 4</a> on.</p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Limitations"><span class="tocnumber">2</span> <span class="toctext">Limitations</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Modified_compilers_and_language_extensions"><span class="tocnumber">3</span> <span class="toctext">Modified compilers and language extensions</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Client_Side_QuakeC_.28CSQC.29"><span class="tocnumber">4</span> <span class="toctext">Client Side QuakeC (CSQC)</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#See_also"><span class="tocnumber">5</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#References"><span class="tocnumber">6</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#External_links"><span class="tocnumber">7</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Overview">Overview</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=QuakeC&amp;action=edit&amp;section=1" title="Edit section: Overview">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The QuakeC source to the original <a href="/wiki/Id_Software" title="Id Software">id Software</a> <i>Quake</i> game logic was published in 1996 and used as the basis for modifications like <a href="/wiki/Capture_the_flag" title="Capture the flag">capture the flag</a> and others.<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">[1]</a></sup> QuakeC source code is compiled using a tool called <a href="/w/index.php?title=Qcc&amp;action=edit&amp;redlink=1" class="new" title="Qcc (page does not exist)">qcc</a> into a <a href="/wiki/Bytecode" title="Bytecode">bytecode</a> kept in a file called <tt>progs.dat</tt>. The programmers of <i>Quake</i> modifications could then publish their <tt>progs.dat</tt> bytecode without revealing their source code. Most <i>Quake</i> mods were published this way.</p>
+<p>QuakeC allowed the <a href="/wiki/Quake_engine" title="Quake engine"><i>Quake</i> engine</a> to dominate the direction of the <a href="/wiki/First-person_shooter" title="First-person shooter">first-person shooter</a> genre. Thanks to Carmack's idea of extending video game life by adding unlimited expandability (extensibility already played a big role in <i><a href="/wiki/Doom_(1993_video_game)" title="Doom (1993 video game)">Doom</a></i>), an enormous Internet community of gamers and programmers alike has arisen and many modern multiplayer games are extensible in some form.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (March 2009)">citation needed</span></a></i>]</sup></p>
+<p>QuakeC is known as interpreted because as <i>Quake</i> runs, it is continually interpreting the progs.dat file.<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">[2]</a></sup></p>
+<h2><span class="mw-headline" id="Limitations">Limitations</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=QuakeC&amp;action=edit&amp;section=2" title="Edit section: Limitations">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The <a href="/wiki/Syntax" title="Syntax">syntax</a> of QuakeC is based on that of the <a href="/wiki/C_(programming_language)" title="C (programming language)">C programming language</a>, explaining its name, but it does not support the implementation of new types, structures, arrays, or any kind of referencing other than the "entity" type (which is always a reference). QuakeC also suffers from the fact that many built-in functions (functions prototyped in the QuakeC code but actually defined within the game engine and written in C) return strings in a temporary string buffer, which can only hold one string at any given time. In other words, a construct such as</p>
+<dl>
+<dd><code>SomeFunction (ftos (num1), ftos (num2));</code></dd>
+</dl>
+<p>will fail because the second call to <code>ftos</code> (which converts a floating-point value to a string) overwrites the string returned by the first call before SomeFunction can do something with it. QuakeC does not contain any string handling functions or file handling functions, which were simply not needed by the original game.</p>
+<p>Most video games at the time had their game logic written in plain C/C++ and <a href="/wiki/Compiler" title="Compiler">compiled</a> into the executable, which is faster. However, this makes it harder for the community to create <a href="/wiki/Mod_(computer_gaming)" class="mw-redirect" title="Mod (computer gaming)">mods</a> and it makes the process of <a href="/wiki/Porting" title="Porting">porting</a> the game to another platform (such as <a href="/wiki/Linux" title="Linux">GNU/Linux</a>) more costly.</p>
+<p>Despite its advantages, the concept of implementing the game logic in a separate scripting language and writing an <a href="/wiki/Interpreter_(computing)" title="Interpreter (computing)">interpreter</a> for it was soon dropped (even by <a href="/wiki/John_D._Carmack" class="mw-redirect" title="John D. Carmack">John Carmack</a> who had implemented this concept) because of the overall inflexibility of an interpreted language,<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">[3]</a></sup> the increasingly complex game logic and the fact that the game logic could be packaged into a native <a href="/wiki/Dynamic_link_library" class="mw-redirect" title="Dynamic link library">dynamic link library</a> whose source code could be released to the mod community.</p>
+<h2><span class="mw-headline" id="Modified_compilers_and_language_extensions">Modified compilers and language extensions</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=QuakeC&amp;action=edit&amp;section=3" title="Edit section: Modified compilers and language extensions">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>As is their custom to do with nearly everything they make, <a href="/wiki/Id_Software" title="Id Software">id Software</a> released the source of <code>qcc</code>, their QuakeC compiler, along with the original QuakeC code in 1996. Modified versions soon sprung up, including Jonathan Roy's <code>fastqcc</code> and Ryan "FrikaC" Smith's <a href="/w/index.php?title=FrikQCC&amp;action=edit&amp;redlink=1" class="new" title="FrikQCC (page does not exist)">FrikQCC</a>. These added functionality, optimizations, and compiling speed boosts.</p>
+<p>In 1999, when id Software released the code from Quake's engine under the <a href="/wiki/GNU_General_Public_License" title="GNU General Public License">GNU General Public License</a> (GPL), the workings of the bytecode interpreter were examined and new QuakeC compilers were released, such as J.P. Grossman's <code>qccx</code> and a new version of FrikQCC. These compilers took advantage of newly discovered features in a backwards-compatible way so that the bytecode could still be properly interpreted by unmodified Quake engines. New features include arrays, pointers, integers, for loops and string manipulation.</p>
+<p>With the <i>Quake</i> engine source code now able to be changed, further features were added to QuakeC in the form of new built-in functions. Features long yearned for by QuakeC coders finally reached realization as QuakeC now had file and string handling functions, enlarged string buffers, more math functions, and so on. However, programmers taking advantage of these changes lost backwards compatibility with the unmodified Quake engine.</p>
+<p><i><a href="/wiki/Xonotic" title="Xonotic">Xonotic</a></i> since version 0.7 uses the <a rel="nofollow" class="external text" href="https://github.com/graphitemaster/gmqcc">gmqcc</a> compiler.<sup id="cite_ref-4" class="reference"><a href="#cite_note-4">[4]</a></sup></p>
+<h2><span class="mw-headline" id="Client_Side_QuakeC_.28CSQC.29">Client Side QuakeC (CSQC)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=QuakeC&amp;action=edit&amp;section=4" title="Edit section: Client Side QuakeC (CSQC)">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Some enhanced Quake engines (notably Darkplaces and FTEQW) have support for an extension of regular QuakeC (now commonly referred to as Server Side QuakeC or SSQC) that allows client side only scripting of the Quake engine. This is especially useful for GUIs, HUDs and any visually heavy effects that do not need to be simulated on the server and transferred over the network.<sup id="cite_ref-5" class="reference"><a href="#cite_note-5">[5]</a></sup></p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=QuakeC&amp;action=edit&amp;section=5" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a href="/wiki/Computer_programming" title="Computer programming">Computer programming</a></li>
+</ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=QuakeC&amp;action=edit&amp;section=6" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><cite class="citation web">Lasse Lehtinen (1996-07-25). <a rel="nofollow" class="external text" href="http://www.satanicslaughter.com/news/?news_id=94">"QuakeC released"</a>. <i>Quake and QuakeWorld history</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2011-01-14</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AQuakeC&amp;rft.atitle=QuakeC+released&amp;rft.au=Lasse+Lehtinen&amp;rft.date=1996-07-25&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.satanicslaughter.com%2Fnews%2F%3Fnews_id%3D94&amp;rft.jtitle=Quake+and+QuakeWorld+history&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><cite class="citation web">Andrew Wu. <a rel="nofollow" class="external text" href="http://www.bluesnews.com/guide/quakec2.htm">"Quake C Basics"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2013-04-06</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AQuakeC&amp;rft.au=Andrew+Wu&amp;rft.btitle=Quake+C+Basics&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.bluesnews.com%2Fguide%2Fquakec2.htm&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><cite class="citation web"><a href="/wiki/John_Carmack" title="John Carmack">Carmack, John</a> (13 March 1997). <a rel="nofollow" class="external text" href="http://www.team5150.com/~andrew/carmack/johnc_plan_1997.html#d19970313">"Here is a technical issue to be discussed"</a>. <i><a href="/wiki/.plan" class="mw-redirect" title=".plan">.plan</a></i>. <a href="/wiki/Id_Software" title="Id Software">id Software</a><span class="reference-accessdate">. Retrieved <span class="nowrap">20 August</span> 2009</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AQuakeC&amp;rft.atitle=Here+is+a+technical+issue+to+be+discussed&amp;rft.aufirst=John&amp;rft.aulast=Carmack&amp;rft.date=1997-03-13&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.team5150.com%2F~andrew%2Fcarmack%2Fjohnc_plan_1997.html%23d19970313&amp;rft.jtitle=.plan&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.xonotic.org/2013/06/xonotic-0-7-release/">Xonotic 0.7 Release</a></span></li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.quakewiki.net/darkplaces-wiki/client-side-quakec/">"Client-Side QuakeC"</a>. <i>QuakeWiki</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2016-11-16</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AQuakeC&amp;rft.atitle=Client-Side+QuakeC&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.quakewiki.net%2Fdarkplaces-wiki%2Fclient-side-quakec%2F&amp;rft.jtitle=QuakeWiki&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=QuakeC&amp;action=edit&amp;section=7" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="https://github.com/id-Software/Quake-Tools/tree/master/qcc">id's github repository containing the C source code of qcc (QuakeC compiler)</a></li>
+<li><a rel="nofollow" class="external text" href="https://github.com/id-Software/Quake/tree/master/qw-qc">id's github repository containing the QuakeC source code to QuakeWorld game logic</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.gamers.org/dEngine/quake/spec/quake-spec34/qc-menu.htm">Unofficial QuakeC specifications</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.gamers.org/pub/idgames2/quakec/">Large collection of QC mods, including their source</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.insideqc.com/qctut/">Inside3d - nice collection of QC tutorials here</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.insideqc.com/">InsideQC - New website to inherit Inside3D's legacy after it was shut down</a></li>
+</ul>
+<div role="navigation" class="navbox" aria-labelledby="Quake_series" style="padding:3px">
+<table class="nowraplinks hlist collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:Quake_series" title="Template:Quake series"><abbr title="View this template" style=";;background:none transparent;border:none;">v</abbr></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:Quake_series" title="Template talk:Quake series"><abbr title="Discuss this template" style=";;background:none transparent;border:none;">t</abbr></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:Quake_series&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;">e</abbr></a></li>
+</ul>
+</div>
+<div id="Quake_series" style="font-size:114%"><a href="/wiki/Quake_(series)" title="Quake (series)"><i>Quake</i> series</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Games</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><i><a href="/wiki/Quake_(video_game)" title="Quake (video game)">Quake</a></i></li>
+<li><i><a href="/wiki/Quake_II" title="Quake II">II</a></i></li>
+<li><i><a href="/wiki/Quake_III_Arena" title="Quake III Arena">III Arena</a></i></li>
+<li><i><a href="/wiki/Quake_4" title="Quake 4">4</a></i></li>
+<li><i><a href="/wiki/Enemy_Territory:_Quake_Wars" title="Enemy Territory: Quake Wars">Enemy Territory: Quake Wars</a></i></li>
+<li><i><a href="/wiki/Quake_Live" title="Quake Live">Quake Live</a></i></li>
+<li><i><a href="/wiki/Quake_Champions" title="Quake Champions">Champions</a></i></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">People</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/American_McGee" title="American McGee">American McGee</a></li>
+<li><a href="/wiki/Graeme_Devine" title="Graeme Devine">Graeme Devine</a></li>
+<li><a href="/wiki/John_Carmack" title="John Carmack">John Carmack</a></li>
+<li><a href="/wiki/John_Romero" title="John Romero">John Romero</a></li>
+<li><a href="/wiki/Jennell_Jaquays" title="Jennell Jaquays">Jennell Jaquays</a></li>
+<li><a href="/wiki/Tim_Willits" title="Tim Willits">Tim Willits</a></li>
+<li><a href="/wiki/Timothee_Besset" title="Timothee Besset">Timothee Besset</a></li>
+<li><a href="/wiki/Trent_Reznor" title="Trent Reznor">Trent Reznor</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Machinima</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><i><a href="/wiki/Blahbalicious" title="Blahbalicious">Blahbalicious</a></i></li>
+<li><i><a href="/wiki/Diary_of_a_Camper" title="Diary of a Camper">Diary of a Camper</a></i></li>
+<li><i><a href="/wiki/Operation_Bayshield" title="Operation Bayshield">Operation Bayshield</a></i></li>
+<li><i><a href="/wiki/Quad_God" title="Quad God">Quad God</a></i></li>
+<li><i><a href="/wiki/Quake_Done_Quick" title="Quake Done Quick">Quake Done Quick</a></i></li>
+<li><i><a href="/wiki/The_Seal_of_Nehahra" title="The Seal of Nehahra">The Seal of Nehahra</a></i></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Quake_mods" title="Quake mods">Mods</a></th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks navbox-subgroup" style="border-spacing:0">
+<tr>
+<th scope="row" class="navbox-group" style="padding-left:0;padding-right:0;">
+<div style="padding:0em 0.75em;"><i>Quake</i></div>
+</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><i><a href="/wiki/Malice_(1997_video_game)" title="Malice (1997 video game)">Malice</a></i></li>
+<li><i><a href="/wiki/Nexuiz" title="Nexuiz">Nexuiz</a></i></li>
+<li><i><a href="/wiki/Rocket_Arena" title="Rocket Arena">Rocket Arena</a></i></li>
+<li><i><a href="/wiki/Shrak" title="Shrak">Shrak</a></i></li>
+<li><i><a href="/wiki/Team_Fortress_Classic" title="Team Fortress Classic">Team Fortress Classic</a></i></li>
+<li><i><a href="/wiki/X-Men:_The_Ravages_of_Apocalypse" title="X-Men: The Ravages of Apocalypse">X-Men: The Ravages of Apocalypse</a></i></li>
+<li><i><a href="/wiki/Xonotic" title="Xonotic">Xonotic</a></i></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="padding-left:0;padding-right:0;">
+<div style="padding:0em 0.75em;"><i>Quake II</i></div>
+</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><i><a href="/wiki/Action_Quake_2" title="Action Quake 2">Action Quake 2</a></i></li>
+<li><i><a href="/wiki/Rocket_Arena" title="Rocket Arena">Rocket Arena</a></i></li>
+<li><i><a href="/wiki/Zaero" title="Zaero">Zaero</a></i></li>
+<li><i><a href="/wiki/Juggernaut:_The_New_Story" title="Juggernaut: The New Story">Juggernaut: The New Story</a></i></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="padding-left:0;padding-right:0;">
+<div style="padding:0em 0.75em;"><i>Quake III</i></div>
+</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><i><a href="/wiki/Challenge_ProMode_Arena" title="Challenge ProMode Arena">Challenge ProMode Arena</a></i></li>
+<li><i><a href="/wiki/DeFRaG" title="DeFRaG">DeFRaG</a></i></li>
+<li><i><a href="/wiki/OpenArena" title="OpenArena">OpenArena</a></i></li>
+<li><i><a href="/wiki/Quake_3_Fortress" title="Quake 3 Fortress">Quake 3 Fortress</a></i></li>
+<li><i><a href="/wiki/Rocket_Arena" title="Rocket Arena">Rocket Arena</a></i></li>
+<li><i><a href="/wiki/Smokin%27_Guns" title="Smokin' Guns">Smokin' Guns</a></i></li>
+<li><i><a href="/wiki/Tremulous" title="Tremulous">Tremulous</a></i></li>
+<li><i><a href="/wiki/Urban_Terror" title="Urban Terror">Urban Terror</a></i></li>
+<li><i><a href="/wiki/World_of_Padman" title="World of Padman">World of Padman</a></i></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="padding-left:0;padding-right:0;">
+<div style="padding:0em 0.75em;"><i>Quake 4</i></div>
+</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><i><a href="/wiki/Rocket_Arena" title="Rocket Arena">Rocket Arena</a></i></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Professional players</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Av3k" title="Av3k">av3k</a> (Maciej Krzykowski)</li>
+<li><a href="/wiki/Cypher_(video_gamer)" class="mw-redirect" title="Cypher (video gamer)">Cypher</a> (Alexey Yanushevsky)</li>
+<li><a href="/wiki/Johnathan_Wendel" title="Johnathan Wendel">Fatal1ty</a> (Johnathan Wendel)</li>
+<li><a href="/wiki/Rapha_(video_gamer)" title="Rapha (video gamer)">rapha</a> (Shane Hendrixson)</li>
+<li><a href="/wiki/Sujoy_Roy" title="Sujoy Roy">Sujoy</a> (Sujoy Roy)</li>
+<li><a href="/wiki/Dennis_Fong" title="Dennis Fong">Thresh</a> (Dennis Fong)</li>
+<li><a href="/wiki/Sander_%22Vo0%22_Kaasjager" title="Sander &quot;Vo0&quot; Kaasjager">Vo0</a> (Sander Kaasjager)</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Technology</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks navbox-subgroup" style="border-spacing:0">
+<tr>
+<th scope="row" class="navbox-group" style="padding-left:0;padding-right:0;">
+<div style="padding:0em 0.75em;">Engines</div>
+</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Quake_engine" title="Quake engine"><i>Quake</i> engine</a></li>
+<li><a href="/wiki/Quake_II_engine" title="Quake II engine"><i>Quake II</i> engine</a></li>
+<li><a href="/wiki/Id_Tech_3" title="Id Tech 3">id Tech 3</a></li>
+<li><a href="/wiki/Id_Tech_4" title="Id Tech 4">id Tech 4</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="padding-left:0;padding-right:0;">
+<div style="padding:0em 0.75em;">Other</div>
+</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Fast_inverse_square_root" title="Fast inverse square root">Fast inverse square root</a></li>
+<li><a href="/wiki/Quake_Army_Knife" title="Quake Army Knife">Quake Army Knife</a></li>
+<li><strong class="selflink">QuakeC</strong></li>
+<li><a href="/wiki/QuakeWorld" title="QuakeWorld">QuakeWorld</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Related</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/BFG_(weapon)" title="BFG (weapon)">BFG</a></li>
+<li><a href="/wiki/QuakeCon" title="QuakeCon">QuakeCon</a></li>
+<li><a href="/wiki/QuakeNet" title="QuakeNet">QuakeNet</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" colspan="2">
+<div>
+<ul>
+<li><b><img alt="Wikipedia book" src="//upload.wikimedia.org/wikipedia/commons/thumb/8/89/Symbol_book_class2.svg/16px-Symbol_book_class2.svg.png" title="Wikipedia book" width="16" height="16" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/89/Symbol_book_class2.svg/23px-Symbol_book_class2.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/8/89/Symbol_book_class2.svg/31px-Symbol_book_class2.svg.png 2x" data-file-width="180" data-file-height="185" /> <a href="/wiki/Book:Quake_series" title="Book:Quake series">Book:Quake series</a></b></li>
+<li><b><img alt="Category" src="//upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/16px-Folder_Hexagonal_Icon.svg.png" title="Category" width="16" height="14" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/24px-Folder_Hexagonal_Icon.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/32px-Folder_Hexagonal_Icon.svg.png 2x" data-file-width="36" data-file-height="31" /> <a href="/wiki/Category:Quake_(series)" title="Category:Quake (series)">Category:Quake (series)</a></b></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1172
+Cached time: 20170129160236
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.144 seconds
+Real time usage: 0.202 seconds
+Preprocessor visited node count: 1476/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 41157/2097152 bytes
+Template argument size: 1717/2097152 bytes
+Highest expansion depth: 11/40
+Expensive parser function count: 3/500
+Lua time usage: 0.064/10.000 seconds
+Lua memory usage: 2.71 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  166.099      1 -total
+ 27.49%   45.654      1 Template:Reflist
+ 25.79%   42.845      1 Template:Infobox_programming_language
+ 25.38%   42.161      1 Template:Citation_needed
+ 23.47%   38.983      1 Template:Infobox
+ 23.42%   38.901      1 Template:Fix
+ 23.35%   38.779      3 Template:Navbox
+ 22.89%   38.012      4 Template:Cite_web
+ 19.34%   32.121      1 Template:Quake
+ 14.98%   24.878      2 Template:Category_handler
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:25207-0!*!0!!en!4!* and timestamp 20170129160235 and revision id 749838110
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=QuakeC&amp;oldid=749838110">https://en.wikipedia.org/w/index.php?title=QuakeC&amp;oldid=749838110</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Domain-specific_programming_languages" title="Category:Domain-specific programming languages">Domain-specific programming languages</a></li><li><a href="/wiki/Category:Quake_(series)" title="Category:Quake (series)">Quake (series)</a></li><li><a href="/wiki/Category:Scripting_languages" title="Category:Scripting languages">Scripting languages</a></li><li><a href="/wiki/Category:Id_Tech" title="Category:Id Tech">Id Tech</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:All_articles_with_unsourced_statements" title="Category:All articles with unsourced statements">All articles with unsourced statements</a></li><li><a href="/wiki/Category:Articles_with_unsourced_statements_from_March_2009" title="Category:Articles with unsourced statements from March 2009">Articles with unsourced statements from March 2009</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=QuakeC" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=QuakeC" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/QuakeC"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:QuakeC"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/QuakeC" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=QuakeC&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=QuakeC&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/QuakeC" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/QuakeC" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=QuakeC&amp;oldid=749838110" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=QuakeC&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q2122062" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=QuakeC&amp;id=749838110" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=QuakeC">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=QuakeC&amp;returnto=QuakeC&amp;oldid=749838110&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=QuakeC&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/QuakeC" title="QuakeC – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/QuakeC" title="QuakeC – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-ms"><a href="https://ms.wikipedia.org/wiki/QuakeC" title="QuakeC – Malay" lang="ms" hreflang="ms" class="interlanguage-link-target">Bahasa Melayu</a></li><li class="interlanguage-link interwiki-pl"><a href="https://pl.wikipedia.org/wiki/Quake_C" title="Quake C – Polish" lang="pl" hreflang="pl" class="interlanguage-link-target">Polski</a></li><li class="interlanguage-link interwiki-pt"><a href="https://pt.wikipedia.org/wiki/QuakeC" title="QuakeC – Portuguese" lang="pt" hreflang="pt" class="interlanguage-link-target">Português</a></li><li class="interlanguage-link interwiki-ru"><a href="https://ru.wikipedia.org/wiki/QuakeC" title="QuakeC – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li><li class="interlanguage-link interwiki-zh"><a href="https://zh.wikipedia.org/wiki/%E9%9B%B7%E7%A5%9E%E4%B9%8B%E9%94%A4C" title="雷神之锤C – Chinese" lang="zh" hreflang="zh" class="interlanguage-link-target">中文</a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q2122062#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 16 November 2016, at 12:19.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=QuakeC&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.144","walltime":"0.202","ppvisitednodes":{"value":1476,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":41157,"limit":2097152},"templateargumentsize":{"value":1717,"limit":2097152},"expansiondepth":{"value":11,"limit":40},"expensivefunctioncount":{"value":3,"limit":500},"entityaccesscount":{"value":1,"limit":400},"timingprofile":["100.00%  166.099      1 -total"," 27.49%   45.654      1 Template:Reflist"," 25.79%   42.845      1 Template:Infobox_programming_language"," 25.38%   42.161      1 Template:Citation_needed"," 23.47%   38.983      1 Template:Infobox"," 23.42%   38.901      1 Template:Fix"," 23.35%   38.779      3 Template:Navbox"," 22.89%   38.012      4 Template:Cite_web"," 19.34%   32.121      1 Template:Quake"," 14.98%   24.878      2 Template:Category_handler"]},"scribunto":{"limitreport-timeusage":{"value":"0.064","limit":"10.000"},"limitreport-memusage":{"value":2840772,"limit":52428800}},"cachereport":{"origin":"mw1172","timestamp":"20170129160236","ttl":2592000,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":63,"wgHostname":"mw1249"});});</script>
+	</body>
+</html>

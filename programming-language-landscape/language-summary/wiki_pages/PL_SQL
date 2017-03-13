@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>PL/SQL - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"PL/SQL","wgTitle":"PL/SQL","wgCurRevisionId":763416622,"wgRevisionId":763416622,"wgArticleId":33862363,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["CS1 maint: Multiple names: authors list","Articles lacking in-text citations from February 2008","All articles lacking in-text citations","Articles needing additional references from January 2008","All articles needing additional references","Wikipedia articles with LCCN identifiers","Wikipedia articles with BNF identifiers","Oracle software","SQL","Ada programming language family","Data-centric programming languages"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"PL/SQL","wgRelevantArticleId":33862363,"wgRequestId":"WJP3UQpAEKgAAGMGTVgAAAAH","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":true},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q41574","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.cite.styles":"ready","ext.pygments":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.legacy.wikibits","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.pygments%2CwikimediaBadges%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.29.0-wmf.10"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/PL/SQL"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=PL/SQL&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=PL/SQL&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/PL/SQL"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-PL_SQL rootpage-PL_SQL skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">PL/SQL</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><table class="plainlinks metadata ambox ambox-content ambox-multiple_issues compact-ambox" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ambox_important.svg/40px-Ambox_important.svg.png" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ambox_important.svg/60px-Ambox_important.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ambox_important.svg/80px-Ambox_important.svg.png 2x" data-file-width="40" data-file-height="40" /></div>
+</td>
+<td class="mbox-text">
+<div class="mw-collapsible" style="width:95%; margin: 0.2em 0;"><span class="mbox-text-span"><b>This article has multiple issues.</b> Please help <b><a class="external text" href="//en.wikipedia.org/w/index.php?title=PL/SQL&amp;action=edit">improve it</a></b> or discuss these issues on the <b><a href="/wiki/Talk:PL/SQL" title="Talk:PL/SQL">talk page</a></b>. <small><i>(<a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove these template messages</a>)</i></small></span>
+<div class="mw-collapsible-content" style="margin-top: 0.3em;">
+<table class="plainlinks metadata ambox ambox-style ambox-More_footnotes" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Text_document_with_red_question_mark.svg/40px-Text_document_with_red_question_mark.svg.png" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Text_document_with_red_question_mark.svg/60px-Text_document_with_red_question_mark.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Text_document_with_red_question_mark.svg/80px-Text_document_with_red_question_mark.svg.png 2x" data-file-width="48" data-file-height="48" /></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">This article includes a <a href="/wiki/Wikipedia:Citing_sources" title="Wikipedia:Citing sources">list of references</a>, but <b>its sources remain unclear</b> because it has <b>insufficient <a href="/wiki/Wikipedia:Citing_sources#Inline_citations" title="Wikipedia:Citing sources">inline citations</a></b>. <span class="hide-when-compact">Please help to <a href="/wiki/Wikipedia:WikiProject_Fact_and_Reference_Check" title="Wikipedia:WikiProject Fact and Reference Check">improve</a> this article by <a href="/wiki/Wikipedia:When_to_cite" title="Wikipedia:When to cite">introducing</a> more precise citations.</span> <small><i>(February 2008)</i></small> <small class="hide-when-compact"><i>(<a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove this template message</a>)</i></small></span></td>
+</tr>
+</table>
+<table class="plainlinks metadata ambox ambox-content ambox-Refimprove" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><a href="/wiki/File:Question_book-new.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" width="50" height="39" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/75px-Question_book-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/100px-Question_book-new.svg.png 2x" data-file-width="512" data-file-height="399" /></a></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">This article <b>needs additional citations for <a href="/wiki/Wikipedia:Verifiability" title="Wikipedia:Verifiability">verification</a></b>. <span class="hide-when-compact">Please help <a class="external text" href="//en.wikipedia.org/w/index.php?title=PL/SQL&amp;action=edit">improve this article</a> by <a href="/wiki/Help:Introduction_to_referencing_with_Wiki_Markup/1" title="Help:Introduction to referencing with Wiki Markup/1">adding citations to reliable sources</a>. Unsourced material may be challenged and removed.</span> <small><i>(January 2008)</i></small> <small class="hide-when-compact"><i>(<a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove this template message</a>)</i></small></span></td>
+</tr>
+</table>
+</div>
+</div>
+<small class="hide-when-compact"><i>(<a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove this template message</a>)</i></small></td>
+</tr>
+</table>
+<p><b>PL/SQL</b> (<b>Procedural Language/Structured Query Language</b>) is <a href="/wiki/Oracle_Corporation" title="Oracle Corporation">Oracle Corporation</a>'s <a href="/wiki/Procedural_programming" title="Procedural programming">procedural</a> <a href="/wiki/Programming_language" title="Programming language">extension</a> for <a href="/wiki/SQL" title="SQL">SQL</a> and the <a href="/wiki/Oracle_Database" title="Oracle Database">Oracle relational database</a>. PL/SQL is available in Oracle Database (since version 6 - stored pl/sql procedures/functions/packages/triggers since version 7), <a href="/wiki/TimesTen" title="TimesTen">TimesTen in-memory database</a> (since version 11.2.1), and <a href="/wiki/IBM_DB2" title="IBM DB2">IBM DB2</a> (since version 9.7).<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">[1]</a></sup> Oracle Corporation usually extends PL/SQL functionality with each successive release of the Oracle Database.</p>
+<p>PL/SQL includes procedural language elements such as <a href="/wiki/Conditional_(programming)" class="mw-redirect" title="Conditional (programming)">conditions</a> and <a href="/wiki/Program_loop" class="mw-redirect" title="Program loop">loops</a>. It allows declaration of constants and <a href="/wiki/Variable_(programming)" class="mw-redirect" title="Variable (programming)">variables</a>, procedures and functions, types and variables of those types, and triggers. It can handle <a href="/wiki/Exception_handling" title="Exception handling">exceptions</a> (runtime errors). <a href="/wiki/Array_data_type" title="Array data type">Arrays</a> are supported involving the use of PL/SQL collections. Implementations from version 8 of Oracle Database onwards have included features associated with <a href="/wiki/Object-PL/SQL" title="Object-PL/SQL">object-orientation</a>. One can create PL/SQL units such as procedures, functions, packages, types, and triggers, which are stored in the database for reuse by applications that use any of the Oracle Database programmatic interfaces.</p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Similar_languages"><span class="tocnumber">1</span> <span class="toctext">Similar languages</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#PL.2FSQL_program_unit"><span class="tocnumber">2</span> <span class="toctext">PL/SQL program unit</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#PL.2FSQL_anonymous_block"><span class="tocnumber">2.1</span> <span class="toctext">PL/SQL anonymous block</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Function"><span class="tocnumber">2.2</span> <span class="toctext">Function</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Procedure"><span class="tocnumber">2.3</span> <span class="toctext">Procedure</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Package"><span class="tocnumber">2.4</span> <span class="toctext">Package</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Trigger"><span class="tocnumber">2.5</span> <span class="toctext">Trigger</span></a>
+<ul>
+<li class="toclevel-3 tocsection-8"><a href="#Purpose_of_triggers"><span class="tocnumber">2.5.1</span> <span class="toctext">Purpose of triggers</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-9"><a href="#Data_types"><span class="tocnumber">3</span> <span class="toctext">Data types</span></a>
+<ul>
+<li class="toclevel-2 tocsection-10"><a href="#Numeric_variables"><span class="tocnumber">3.1</span> <span class="toctext">Numeric variables</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#Character_variables"><span class="tocnumber">3.2</span> <span class="toctext">Character variables</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#Date_variables"><span class="tocnumber">3.3</span> <span class="toctext">Date variables</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="#Exceptions"><span class="tocnumber">3.4</span> <span class="toctext">Exceptions</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="#Datatypes_for_specific_columns"><span class="tocnumber">3.5</span> <span class="toctext">Datatypes for specific columns</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-15"><a href="#Conditional_statements"><span class="tocnumber">4</span> <span class="toctext">Conditional statements</span></a></li>
+<li class="toclevel-1 tocsection-16"><a href="#Array_handling"><span class="tocnumber">5</span> <span class="toctext">Array handling</span></a>
+<ul>
+<li class="toclevel-2 tocsection-17"><a href="#Associative_arrays_.28index-by_tables.29"><span class="tocnumber">5.1</span> <span class="toctext">Associative arrays (index-by tables)</span></a></li>
+<li class="toclevel-2 tocsection-18"><a href="#Nested_tables"><span class="tocnumber">5.2</span> <span class="toctext">Nested tables</span></a></li>
+<li class="toclevel-2 tocsection-19"><a href="#Varrays_.28variable-size_arrays.29"><span class="tocnumber">5.3</span> <span class="toctext">Varrays (variable-size arrays)</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-20"><a href="#Cursors"><span class="tocnumber">6</span> <span class="toctext">Cursors</span></a></li>
+<li class="toclevel-1 tocsection-21"><a href="#Looping"><span class="tocnumber">7</span> <span class="toctext">Looping</span></a>
+<ul>
+<li class="toclevel-2 tocsection-22"><a href="#LOOP_statements"><span class="tocnumber">7.1</span> <span class="toctext">LOOP statements</span></a></li>
+<li class="toclevel-2 tocsection-23"><a href="#FOR_loops"><span class="tocnumber">7.2</span> <span class="toctext">FOR loops</span></a></li>
+<li class="toclevel-2 tocsection-24"><a href="#Cursor_FOR_loops"><span class="tocnumber">7.3</span> <span class="toctext">Cursor FOR loops</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-25"><a href="#Dynamic_SQL"><span class="tocnumber">8</span> <span class="toctext">Dynamic SQL</span></a></li>
+<li class="toclevel-1 tocsection-26"><a href="#See_also"><span class="tocnumber">9</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-27"><a href="#References"><span class="tocnumber">10</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-28"><a href="#Further_reading"><span class="tocnumber">11</span> <span class="toctext">Further reading</span></a></li>
+<li class="toclevel-1 tocsection-29"><a href="#External_links"><span class="tocnumber">12</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Similar_languages">Similar languages</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=PL/SQL&amp;action=edit&amp;section=1" title="Edit section: Similar languages">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>PL/SQL works analogously to the embedded procedural languages associated with other <a href="/wiki/Relational_database" title="Relational database">relational databases</a>. For example, <a href="/wiki/Sybase" title="Sybase">Sybase</a> <a href="/wiki/Adaptive_Server_Enterprise" title="Adaptive Server Enterprise">ASE</a> and <a href="/wiki/Microsoft" title="Microsoft">Microsoft</a> <a href="/wiki/Microsoft_SQL_Server" title="Microsoft SQL Server">SQL Server</a> have <a href="/wiki/Transact-SQL" title="Transact-SQL">Transact-SQL</a>, <a href="/wiki/PostgreSQL" title="PostgreSQL">PostgreSQL</a> has <a href="/wiki/PL/pgSQL" title="PL/pgSQL">PL/pgSQL</a> (which emulates PL/SQL to an extent), and <a href="/wiki/IBM_DB2" title="IBM DB2">IBM DB2</a> includes SQL Procedural Language,<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">[2]</a></sup> which conforms to the <a href="/wiki/SQL" title="SQL">ISO SQL</a>’s <a href="/wiki/SQL/PSM" title="SQL/PSM">SQL/PSM</a> standard.</p>
+<p>The designers of PL/SQL modeled its syntax on that of <a href="/wiki/Ada_programming_language" class="mw-redirect" title="Ada programming language">Ada</a>. Both Ada and PL/SQL have <a href="/wiki/Pascal_programming_language" class="mw-redirect" title="Pascal programming language">Pascal</a> as a common ancestor, and so PL/SQL also resembles Pascal in several aspects. However, the structure of a PL/SQL package does not resemble the basic <a href="/wiki/Object_Pascal" title="Object Pascal">Object Pascal</a> program structure as implemented by a <a href="/wiki/Borland_Delphi" class="mw-redirect" title="Borland Delphi">Borland Delphi</a> or <a href="/wiki/Free_Pascal" title="Free Pascal">Free Pascal</a> unit. Programmers can define public and private global data-types, constants and static variables in a PL/SQL package.<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">[3]</a></sup></p>
+<p>PL/SQL also allows for the definition of classes and instantiating these as objects in PL/SQL code. This resembles usage in <a href="/wiki/Object-oriented_programming" title="Object-oriented programming">object-oriented programming</a> languages like <a href="/wiki/Object_Pascal" title="Object Pascal">Object Pascal</a>, <a href="/wiki/C%2B%2B" title="C++">C++</a> and <a href="/wiki/Java_(programming_language)" title="Java (programming language)">Java</a>. PL/SQL refers to a class as an "Abstract Data Type" (ADT) or "User Defined Type" (UDT), and defines it as an <a href="/wiki/Oracle_database" class="mw-redirect" title="Oracle database">Oracle</a> SQL data-type as opposed to a PL/SQL user-defined type, allowing its use in both the <a href="/wiki/Oracle_database" class="mw-redirect" title="Oracle database">Oracle</a> SQL Engine and the <a href="/wiki/Oracle_database" class="mw-redirect" title="Oracle database">Oracle</a> PL/SQL engine. The constructor and methods of an Abstract Data Type are written in PL/SQL. The resulting Abstract Data Type can operate as an object class in PL/SQL. Such objects can also persist as column values in Oracle database tables.</p>
+<p>PL/SQL is fundamentally distinct from <a href="/wiki/Transact-SQL" title="Transact-SQL">Transact-SQL</a>, despite superficial similarities. Porting code from one to the other usually involves non-trivial work, not only due to the differences in the feature sets of the two languages,<sup id="cite_ref-4" class="reference"><a href="#cite_note-4">[4]</a></sup> but also due to the very significant differences in the way Oracle and SQL Server deal with <a href="/wiki/Concurrency_control" title="Concurrency control">concurrency</a> and <a href="/wiki/Lock_(computer_science)" title="Lock (computer science)">locking</a>. There are software tools available that claim to facilitate porting including Oracle Translation Scratch Editor,<sup id="cite_ref-5" class="reference"><a href="#cite_note-5">[5]</a></sup> CEITON MSSQL/Oracle Compiler <sup id="cite_ref-6" class="reference"><a href="#cite_note-6">[6]</a></sup> and SwisSQL.<sup id="cite_ref-7" class="reference"><a href="#cite_note-7">[7]</a></sup></p>
+<p>The <i>StepSqlite</i> product is a PL/SQL compiler for the popular small database <a href="/wiki/SQLite" title="SQLite">SQLite</a> which supports a subset of PL/SQL syntax. Oracle's <a href="/wiki/Berkeley_DB" title="Berkeley DB">Berkeley DB</a> 11g R2 release added support for <a href="/wiki/SQL" title="SQL">SQL</a> based on the popular SQLite API by including a version of SQLite in Berkeley DB.<sup id="cite_ref-8" class="reference"><a href="#cite_note-8">[8]</a></sup> Consequently, StepSqlite can also be used as a third-party tool to run PL/SQL code on Berkeley DB.<sup id="cite_ref-9" class="reference"><a href="#cite_note-9">[9]</a></sup></p>
+<h2><span class="mw-headline" id="PL.2FSQL_program_unit">PL/SQL program unit</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=PL/SQL&amp;action=edit&amp;section=2" title="Edit section: PL/SQL program unit">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The main feature of SQL (non procedural) is also a drawback of SQL. One can use control statements like decision making, iterative control if only SQL is to be used. PL/SQL is basically a procedural language, which provides functionality of decision making, iteration and many more features like other procedural programming languages. A PL/SQL program unit is one of the following: PL/SQL anonymous block, <a href="/wiki/Procedure_(computer_science)" class="mw-redirect" title="Procedure (computer science)">procedure</a>, <a href="/wiki/Function_(computer_science)" class="mw-redirect" title="Function (computer science)">function</a>, <a href="/wiki/Modular_programming" title="Modular programming">package</a> specification, package body, trigger, type specification, type body, library. Program units are the PL/SQL source code that is compiled, developed and ultimately executed on the database.</p>
+<h3><span class="mw-headline" id="PL.2FSQL_anonymous_block">PL/SQL anonymous block</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=PL/SQL&amp;action=edit&amp;section=3" title="Edit section: PL/SQL anonymous block">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The basic unit of a PL/SQL source program is the block, which groups together related declarations and statements. A PL/SQL block is defined by the keywords DECLARE, BEGIN, EXCEPTION, and END. These keywords divide the block into a declarative part, an executable part, and an exception-handling part. The declaration section is optional and may be used to define and initialize constants and variables. If a variable is not initialized then it defaults to <a href="/wiki/Null_(SQL)" title="Null (SQL)">NULL</a> value. The optional exception-handling part is used to handle run time errors. Only the executable part is required. A block can have a label.</p>
+<p>For example:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="o">&lt;&lt;</span><span class="n">label</span><span class="o">&gt;&gt;</span>   <span class="c1">-- this is optional</span>
+<span class="k">DECLARE</span>
+<span class="c1">-- this section is optional</span>
+  <span class="n">number1</span> <span class="nb">NUMBER</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+  <span class="n">number2</span> <span class="n">number1</span><span class="o">%</span><span class="k">TYPE</span> <span class="p">:</span><span class="o">=</span> <span class="mi">17</span><span class="p">;</span>             <span class="c1">-- value default</span>
+  <span class="n">text1</span>   <span class="n">VARCHAR2</span><span class="p">(</span><span class="mi">12</span><span class="p">)</span> <span class="p">:</span><span class="o">=</span> <span class="s1">'Hello world'</span><span class="p">;</span>
+  <span class="n">text2</span>   <span class="nb">DATE</span>         <span class="p">:</span><span class="o">=</span> <span class="n">SYSDATE</span><span class="p">;</span>        <span class="c1">-- current date and time</span>
+<span class="k">BEGIN</span>
+<span class="c1">-- this section is mandatory, must contain at least one executable statement</span>
+  <span class="k">SELECT</span> <span class="n">street_number</span>
+    <span class="k">INTO</span> <span class="n">number1</span>
+    <span class="k">FROM</span> <span class="n">address</span>
+    <span class="k">WHERE</span> <span class="n">name</span> <span class="o">=</span> <span class="s1">'INU'</span><span class="p">;</span>
+<span class="k">EXCEPTION</span>
+<span class="c1">-- this section is optional</span>
+   <span class="k">WHEN</span> <span class="n">OTHERS</span> <span class="k">THEN</span>
+     <span class="n">DBMS_OUTPUT</span><span class="p">.</span><span class="n">PUT_LINE</span><span class="p">(</span><span class="s1">'Error Code is '</span> <span class="o">||</span> <span class="n">TO_CHAR</span><span class="p">(</span><span class="k">sqlcode</span> <span class="p">)</span>  <span class="p">);</span>
+     <span class="n">DBMS_OUTPUT</span><span class="p">.</span><span class="n">PUT_LINE</span><span class="p">(</span><span class="s1">'Error Message is '</span> <span class="o">||</span> <span class="n">sqlerrm</span>   <span class="p">);</span>
+<span class="k">END</span><span class="p">;</span>
+</pre></div>
+<p>The symbol := functions as an <a href="/wiki/Assignment_operator" class="mw-redirect" title="Assignment operator">assignment operator</a> to store a value in a variable.</p>
+<p>Blocks can be nested – i.e. because a block is an executable statement, it can appear in another block wherever an executable statement is allowed. A block can be submitted to an interactive tool (such as SQL*Plus) or embedded within an Oracle Precompiler or <a href="/wiki/Oracle_Call_Interface" title="Oracle Call Interface">OCI</a> program. The interactive tool or program runs the block once. The block is not stored in the database, and for that reason, it is called an anonymous block (even if it has a label).</p>
+<h3><span class="mw-headline" id="Function">Function</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=PL/SQL&amp;action=edit&amp;section=4" title="Edit section: Function">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The purpose of a PL/SQL function is generally to compute and return a single value. This returned value may be a single scalar value (such as a number, date or character string) or a single collection (such as a nested table or varray). User-defined functions supplement the built-in functions provided by Oracle Corporation.</p>
+<p>The PL/SQL function has the form:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="k">CREATE</span> <span class="k">OR</span> <span class="k">REPLACE</span> <span class="k">FUNCTION</span> <span class="o">&lt;</span><span class="n">function_name</span><span class="o">&gt;</span> <span class="p">[(</span><span class="k">input</span><span class="o">/</span><span class="k">output</span> <span class="k">variable</span> <span class="n">declarations</span><span class="p">)]</span> <span class="k">RETURN</span> <span class="n">return_type</span>
+<span class="p">[</span><span class="n">AUTHID</span> <span class="o">&lt;</span><span class="k">CURRENT_USER</span> <span class="o">|</span> <span class="k">DEFINER</span><span class="o">&gt;</span><span class="p">]</span> <span class="o">&lt;</span><span class="k">IS</span><span class="o">|</span><span class="k">AS</span><span class="o">&gt;</span>   <span class="c1">-- heading part</span>
+<span class="n">amount</span> <span class="nb">number</span><span class="p">;</span>   <span class="c1">-- declaration block</span>
+<span class="k">BEGIN</span>   <span class="c1">-- executable part</span>
+	<span class="o">&lt;</span><span class="n">PL</span><span class="o">/</span><span class="k">SQL</span> <span class="n">block</span> <span class="k">with</span> <span class="k">return</span> <span class="k">statement</span><span class="o">&gt;</span>
+        <span class="k">RETURN</span> <span class="o">&lt;</span><span class="n">return_value</span><span class="o">&gt;</span><span class="p">;</span>
+<span class="p">[</span><span class="k">Exception</span>
+	<span class="k">none</span><span class="p">]</span>
+        <span class="k">RETURN</span> <span class="o">&lt;</span><span class="n">return_value</span><span class="o">&gt;</span><span class="p">;</span>
+<span class="k">END</span><span class="p">;</span>
+</pre></div>
+<p>Pipelined table functions return collections<sup id="cite_ref-10" class="reference"><a href="#cite_note-10">[10]</a></sup> and take the form:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="k">CREATE</span> <span class="k">OR</span> <span class="k">REPLACE</span> <span class="k">FUNCTION</span> <span class="o">&lt;</span><span class="n">function_name</span><span class="o">&gt;</span> <span class="p">[(</span><span class="k">input</span><span class="o">/</span><span class="k">output</span> <span class="k">variable</span> <span class="n">declarations</span><span class="p">)]</span> <span class="k">RETURN</span> <span class="n">return_type</span>
+<span class="p">[</span><span class="n">AUTHID</span> <span class="o">&lt;</span><span class="k">CURRENT_USER</span> <span class="o">|</span> <span class="k">DEFINER</span><span class="o">&gt;</span><span class="p">]</span> <span class="p">[</span><span class="o">&lt;</span><span class="k">AGGREGATE</span> <span class="o">|</span> <span class="n">PIPELINED</span><span class="o">&gt;</span><span class="p">]</span> <span class="o">&lt;</span><span class="k">IS</span><span class="o">|</span><span class="k">USING</span><span class="o">&gt;</span>
+	<span class="p">[</span><span class="n">declaration</span> <span class="n">block</span><span class="p">]</span>
+<span class="k">BEGIN</span>
+	<span class="o">&lt;</span><span class="n">PL</span><span class="o">/</span><span class="k">SQL</span> <span class="n">block</span> <span class="k">with</span> <span class="k">return</span> <span class="k">statement</span><span class="o">&gt;</span>
+        <span class="n">PIPE</span> <span class="k">ROW</span> <span class="o">&lt;</span><span class="k">return</span> <span class="k">type</span><span class="o">&gt;</span><span class="p">;</span>
+        <span class="k">RETURN</span><span class="p">;</span>
+<span class="p">[</span><span class="k">Exception</span>
+	<span class="k">exception</span> <span class="n">block</span><span class="p">]</span>
+        <span class="n">PIPE</span> <span class="k">ROW</span> <span class="o">&lt;</span><span class="k">return</span> <span class="k">type</span><span class="o">&gt;</span><span class="p">;</span>
+        <span class="k">RETURN</span><span class="p">;</span>
+<span class="k">END</span><span class="p">;</span>
+</pre></div>
+<p>A function should only use the default IN type of parameter. The only out value from the function should be the value it returns.</p>
+<h3><span class="mw-headline" id="Procedure">Procedure</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=PL/SQL&amp;action=edit&amp;section=5" title="Edit section: Procedure">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Procedures are similar to functions, in that they are named program units that can be invoked repeatedly. The primary difference is that <b>functions can be used in a SQL statement whereas procedures cannot</b>. Another difference is that the procedure can return multiple values whereas a function should only return a single value.</p>
+<p>The procedure begins with a mandatory heading part to hold the procedure name and optionally the procedure parameter list. Next are the declarative, executable and exception-handling parts, as in the PL/SQL Anonymous Block. Here is an example of a simple procedure.</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="k">CREATE</span> <span class="k">PROCEDURE</span> <span class="n">create_email_address</span> <span class="p">(</span> <span class="c1">-- Procedure heading part begins</span>
+    <span class="n">name1</span> <span class="n">VARCHAR2</span><span class="p">,</span>
+    <span class="n">name2</span> <span class="n">VARCHAR2</span><span class="p">,</span>
+    <span class="n">company</span> <span class="n">VARCHAR2</span><span class="p">,</span>
+    <span class="n">email</span> <span class="k">OUT</span> <span class="n">VARCHAR2</span>
+<span class="p">)</span> <span class="c1">-- Procedure heading part ends</span>
+<span class="k">AS</span>
+<span class="c1">-- Declarative part begins (optional)</span>
+<span class="n">error_message</span> <span class="n">VARCHAR2</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span> <span class="p">:</span><span class="o">=</span> <span class="s1">'Email address is too long.'</span><span class="p">;</span>
+<span class="k">BEGIN</span> <span class="c1">-- Executable part begins (mandatory)</span>
+    <span class="n">email</span> <span class="p">:</span><span class="o">=</span> <span class="n">name1</span> <span class="o">||</span> <span class="s1">'.'</span> <span class="o">||</span> <span class="n">name2</span> <span class="o">||</span> <span class="s1">'@'</span> <span class="o">||</span> <span class="n">company</span><span class="p">;</span>
+<span class="k">EXCEPTION</span> <span class="c1">-- Exception-handling part begins (optional)</span>
+<span class="k">WHEN</span> <span class="n">VALUE_ERROR</span> <span class="k">THEN</span>
+    <span class="n">DBMS_OUTPUT</span><span class="p">.</span><span class="n">PUT_LINE</span><span class="p">(</span><span class="n">error_message</span><span class="p">);</span>
+<span class="k">END</span> <span class="n">create_email_address</span><span class="p">;</span>
+</pre></div>
+<p>The example above shows a standalone procedure - this type of procedure is created and stored in a database schema using the CREATE PROCEDURE statement. A procedure may also be created in a PL/SQL package - this is called a Package Procedure. A procedure created in a PL/SQL anonymous block is called a nested procedure. The standalone or package procedures are stored in the database and so are referred to as 'stored procedures'.</p>
+<p>There are three types of parameters: IN, OUT and IN OUT.</p>
+<ol>
+<li>An IN parameter is used as input only. An IN parameter is passed by reference, though it can be changed by the inactive program.</li>
+<li>An OUT parameter is initially NULL. The program assigns the parameter a value and that value is returned to the calling program.</li>
+<li>An IN OUT parameter may or may not have an initial value. That initial value may or may not be modified by the called program. Any changes made to the parameter are returned to the calling program by default by copying but - with the NOCOPY hint - may be passed <a href="/wiki/Call_by_reference" class="mw-redirect" title="Call by reference">by reference</a>.</li>
+</ol>
+<h3><span class="mw-headline" id="Package">Package</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=PL/SQL&amp;action=edit&amp;section=6" title="Edit section: Package">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Packages are groups of conceptually linked functions, procedures, variables, PL/SQL table and record TYPE statements, constants, cursors etc. The use of packages promotes re-use of code. Packages are composed of the package specification and an optional package body. The specification is the interface to the application; it declares the types, variables, constants, exceptions, cursors, and subprograms available. The body fully defines cursors and subprograms, and so implements the specification. Two advantages of packages are:</p>
+<ol>
+<li>Modular approach, encapsulation/hiding of business logic, security, performance improvement, re-usability. They support <a href="/wiki/Object-oriented_programming" title="Object-oriented programming">object-oriented programming</a> features like function overloading and encapsulation.</li>
+<li>Using package variables one can declare session level (scoped) variables, since variables declared in the package specification have a session scope.</li>
+</ol>
+<h3><span class="mw-headline" id="Trigger">Trigger</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=PL/SQL&amp;action=edit&amp;section=7" title="Edit section: Trigger">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div role="note" class="hatnote">Main article: <a href="/wiki/Database_trigger" title="Database trigger">Database trigger</a></div>
+<p>A <a href="/wiki/Database_trigger" title="Database trigger">database trigger</a> is like a stored procedure that Oracle Database invokes automatically whenever a specified event occurs. It is a named PL/SQL unit that is stored in the database and can be invoked repeatedly. Unlike a stored procedure, you can enable and disable a trigger, but you cannot explicitly invoke it. While a trigger is enabled, the database automatically invokes it—that is, the trigger fires—whenever its triggering event occurs. While a trigger is disabled, it does not fire.</p>
+<p>You create a trigger with the CREATE TRIGGER statement. You specify the triggering event in terms of triggering statements, and the item they act on. The trigger is said to be created on or defined on the item—which is either a table, a view, a schema, or the database. You also specify the timing point, which determines whether the trigger fires before or after the triggering statement runs and whether it fires for each row that the triggering statement affects.</p>
+<p>If the trigger is created on a table or view, then the triggering event is composed of DML statements, and the trigger is called a DML trigger. If the trigger is created on a schema or the database, then the triggering event is composed of either DDL or database operation statements, and the trigger is called a system trigger.</p>
+<p>An INSTEAD OF trigger is either: A DML trigger created on a view or a system trigger defined on a CREATE statement. The database fires the INSTEAD OF trigger instead of running the triggering statement.</p>
+<h4><span class="mw-headline" id="Purpose_of_triggers">Purpose of triggers</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=PL/SQL&amp;action=edit&amp;section=8" title="Edit section: Purpose of triggers">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>Triggers can be written for the following purposes:</p>
+<ul>
+<li>Generating some derived column values automatically</li>
+<li>Enforcing referential integrity</li>
+<li>Event logging and storing information on table access</li>
+<li>Auditing</li>
+<li>Synchronous replication of tables</li>
+<li>Imposing security authorizations</li>
+<li>Preventing invalid transactions</li>
+</ul>
+<h2><span class="mw-headline" id="Data_types">Data types</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=PL/SQL&amp;action=edit&amp;section=9" title="Edit section: Data types">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The major <a href="/wiki/Datatype" class="mw-redirect" title="Datatype">datatypes</a> in PL/SQL include NUMBER, CHAR, VARCHAR2, DATE and TIMESTAMP.</p>
+<h3><span class="mw-headline" id="Numeric_variables">Numeric variables</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=PL/SQL&amp;action=edit&amp;section=10" title="Edit section: Numeric variables">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="n">variable_name</span> <span class="nb">number</span><span class="p">([</span><span class="n">P</span><span class="p">,</span> <span class="n">S</span><span class="p">])</span> <span class="p">:</span><span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</pre></div>
+<p>To define a numeric variable, the programmer appends the variable type <b>NUMBER</b> to the name definition. To specify the (optional) precision (P) and the (optional) scale (S), one can further append these in round brackets, separated by a comma. ("Precision" in this context refers to the number of digits the variable can hold, and "scale" refers to the number of digits that can follow the decimal point.)</p>
+<p>A selection of other datatypes for numeric variables would include: binary_float, binary_double, dec, decimal, double precision, float, integer, int, numeric, real, smallint, binary_integer.</p>
+<h3><span class="mw-headline" id="Character_variables">Character variables</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=PL/SQL&amp;action=edit&amp;section=11" title="Edit section: Character variables">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="n">variable_name</span> <span class="n">varchar2</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span> <span class="p">:</span><span class="o">=</span> <span class="s1">'Text'</span><span class="p">;</span>
+</pre></div>
+<p>e.g.: address varchar2(20)&#160;:= 'lake view road';</p>
+<p>To define a character variable, the programmer normally appends the variable type VARCHAR2 to the name definition. There follows in brackets the maximum number of characters the variable can store.</p>
+<p>Other datatypes for character variables include: varchar, char, long, raw, long raw, nchar, nchar2, clob, blob, bfile</p>
+<h3><span class="mw-headline" id="Date_variables">Date variables</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=PL/SQL&amp;action=edit&amp;section=12" title="Edit section: Date variables">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="n">variable_name</span> <span class="nb">date</span> <span class="p">:</span><span class="o">=</span> <span class="n">to_date</span><span class="p">(</span><span class="s1">'01-01-2005 14:20:23'</span><span class="p">,</span> <span class="s1">'DD-MM-YYYY hh24:mi:ss'</span><span class="p">);</span>
+</pre></div>
+<p>Date variables can contain date and time. The time may be left out, but there is no way to define a variable that only contains the time. There is no DATETIME type. And there is a TIME type. But there is no TIMESTAMP type that can contain fine grained timestamp up to millisecond or nanosecond. <a rel="nofollow" class="external text" href="http://download.oracle.com/docs/cd/B19306_01/server.102/b14200/sql_elements001.htm">Oracle Datatypes</a></p>
+<p>The <code>TO_DATE</code> function can be used to convert strings to date values. The function converts the first quoted string into a date, using as a definition the second quoted string, for example:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+ <span class="n">to_date</span><span class="p">(</span><span class="s1">'31-12-2004'</span><span class="p">,</span> <span class="s1">'dd-mm-yyyy'</span><span class="p">)</span>
+</pre></div>
+<p>or</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+ <span class="n">to_date</span> <span class="p">(</span><span class="s1">'31-Dec-2004'</span><span class="p">,</span> <span class="s1">'dd-mon-yyyy'</span><span class="p">,</span> <span class="s1">'NLS_DATE_LANGUAGE = American'</span><span class="p">)</span>
+</pre></div>
+<p>To convert the dates to strings one uses the function <code>TO_CHAR (date_string, format_string)</code>.</p>
+<p>PL/SQL also supports the use of ANSI date and interval literals.<sup id="cite_ref-OraDTLit_11-0" class="reference"><a href="#cite_note-OraDTLit-11">[11]</a></sup> The following clause gives an 18-month range:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="k">WHERE</span> <span class="n">dateField</span> <span class="k">BETWEEN</span> <span class="nb">DATE</span> <span class="s1">'2004-12-30'</span> <span class="o">-</span> <span class="nb">INTERVAL</span> <span class="s1">'1-6'</span> <span class="k">YEAR</span> <span class="k">TO</span> <span class="k">MONTH</span>
+    <span class="k">AND</span> <span class="nb">DATE</span> <span class="s1">'2004-12-30'</span>
+</pre></div>
+<h3><span class="mw-headline" id="Exceptions">Exceptions</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=PL/SQL&amp;action=edit&amp;section=13" title="Edit section: Exceptions">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Exceptions—errors during code execution—are of two types: user defined and predefined.</p>
+<p><i>User-defined</i> exceptions are always raised explicitly by the programmers, using the <code>RAISE</code> or <code>RAISE_APPLICATION_ERROR</code> commands, in any situation where they determine it is impossible for normal execution to continue. The <code>RAISE</code> command has the syntax:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="n">RAISE</span> <span class="o">&lt;</span><span class="k">exception</span> <span class="n">name</span><span class="o">&gt;</span><span class="p">;</span>
+</pre></div>
+<p>Oracle Corporation has <i>predefined</i> several exceptions like <code>NO_DATA_FOUND</code>, <code>TOO_MANY_ROWS</code>, <i>etc.</i> Each exception has an SQL error number and SQL error message associated with it. Programmers can access these by using the <code>SQLCODE</code> and <code>SQLERRM</code> functions.</p>
+<h3><span class="mw-headline" id="Datatypes_for_specific_columns">Datatypes for specific columns</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=PL/SQL&amp;action=edit&amp;section=14" title="Edit section: Datatypes for specific columns">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Variable_name <span style="color:#B8860B">Table_name</span><span style="color:#00f;">.</span>Column_name<span style="color:#00f;">%type;</span></p>
+<p>This syntax defines a variable of the type of the referenced column on the referenced tables.</p>
+<p>Programmers specify user-defined datatypes with the syntax:</p>
+<pre>
+type data_type is record (field_1 type_1 := xyz, field_2 type_2 := xyz, ..., field_n type_n := xyz);
+</pre>
+<p>For example:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="k">declare</span>
+    <span class="k">type</span> <span class="n">t_address</span> <span class="k">is</span>  <span class="n">record</span> <span class="p">(</span>
+        <span class="n">name</span> <span class="n">address</span><span class="p">.</span><span class="n">name</span><span class="o">%</span><span class="k">type</span><span class="p">,</span>
+        <span class="n">street</span> <span class="n">address</span><span class="p">.</span><span class="n">street</span><span class="o">%</span><span class="k">type</span><span class="p">,</span>
+        <span class="n">street_number</span> <span class="n">address</span><span class="p">.</span><span class="n">street_number</span><span class="o">%</span><span class="k">type</span><span class="p">,</span>
+        <span class="n">postcode</span> <span class="n">address</span><span class="p">.</span><span class="n">postcode</span><span class="o">%</span><span class="k">type</span><span class="p">);</span>
+    <span class="n">v_address</span> <span class="n">t_address</span><span class="p">;</span>
+<span class="k">begin</span>
+    <span class="k">select</span> <span class="n">name</span><span class="p">,</span> <span class="n">street</span><span class="p">,</span> <span class="n">street_number</span><span class="p">,</span> <span class="n">postcode</span> <span class="k">into</span> <span class="n">v_address</span> <span class="k">from</span> <span class="n">address</span> <span class="k">where</span> <span class="n">rownum</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+<span class="k">end</span><span class="p">;</span>
+</pre></div>
+<p>This sample program defines its own datatype, called <i>t_address</i>, which contains the fields <i>name, street, street_number</i> and <i>postcode</i>.</p>
+<p>So according to the example, we are able to copy the data from the database to the fields in the program.</p>
+<p>Using this datatype the programmer has defined a variable called <i>v_address</i> and loaded it with data from the ADDRESS table.</p>
+<p>Programmers can address individual attributes in such a structure by means of the dot-notation, thus: <i>"v_address.street&#160;:= 'High Street';"</i></p>
+<h2><span class="mw-headline" id="Conditional_statements">Conditional statements</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=PL/SQL&amp;action=edit&amp;section=15" title="Edit section: Conditional statements">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The following code segment shows the IF-THEN-ELSIF construct. The ELSIF and ELSE parts are optional so it is possible to create simpler IF-THEN or, IF-THEN-ELSE constructs.</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="k">IF</span> <span class="n">x</span> <span class="o">=</span> <span class="mf">1</span> <span class="k">THEN</span>
+   <span class="n">sequence_of_statements_1</span><span class="p">;</span>
+<span class="k">ELSIF</span> <span class="n">x</span> <span class="o">=</span> <span class="mf">2</span> <span class="k">THEN</span>
+   <span class="n">sequence_of_statements_2</span><span class="p">;</span>
+<span class="k">ELSIF</span> <span class="n">x</span> <span class="o">=</span> <span class="mf">3</span> <span class="k">THEN</span>
+   <span class="n">sequence_of_statements_3</span><span class="p">;</span>
+<span class="k">ELSIF</span> <span class="n">x</span> <span class="o">=</span> <span class="mf">4</span> <span class="k">THEN</span>
+   <span class="n">sequence_of_statements_4</span><span class="p">;</span>
+<span class="k">ELSIF</span> <span class="n">x</span> <span class="o">=</span> <span class="mf">5</span> <span class="k">THEN</span>
+   <span class="n">sequence_of_statements_5</span><span class="p">;</span>
+<span class="k">ELSE</span>
+   <span class="n">sequence_of_statements_N</span><span class="p">;</span>
+<span class="k">END</span> <span class="k">IF</span><span class="p">;</span>
+</pre></div>
+<p>The CASE statement simplifies some large IF-THEN-ELSE structures.</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="k">CASE</span>
+   <span class="k">WHEN</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">1</span> <span class="k">THEN</span> <span class="n">sequence_of_statements_1</span><span class="p">;</span>
+   <span class="k">WHEN</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">2</span> <span class="k">THEN</span> <span class="n">sequence_of_statements_2</span><span class="p">;</span>
+   <span class="k">WHEN</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">3</span> <span class="k">THEN</span> <span class="n">sequence_of_statements_3</span><span class="p">;</span>
+   <span class="k">WHEN</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">4</span> <span class="k">THEN</span> <span class="n">sequence_of_statements_4</span><span class="p">;</span>
+   <span class="k">WHEN</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">5</span> <span class="k">THEN</span> <span class="n">sequence_of_statements_5</span><span class="p">;</span>
+   <span class="k">ELSE</span> <span class="n">sequence_of_statements_N</span><span class="p">;</span>
+<span class="k">END</span> <span class="k">CASE</span><span class="p">;</span>
+</pre></div>
+<p>CASE statement can be used with predefined selector:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="k">CASE</span> <span class="n">x</span>
+   <span class="k">WHEN</span> <span class="mi">1</span> <span class="k">THEN</span> <span class="n">sequence_of_statements_1</span><span class="p">;</span>
+   <span class="k">WHEN</span> <span class="mi">2</span> <span class="k">THEN</span> <span class="n">sequence_of_statements_2</span><span class="p">;</span>
+   <span class="k">WHEN</span> <span class="mi">3</span> <span class="k">THEN</span> <span class="n">sequence_of_statements_3</span><span class="p">;</span>
+   <span class="k">WHEN</span> <span class="mi">4</span> <span class="k">THEN</span> <span class="n">sequence_of_statements_4</span><span class="p">;</span>
+   <span class="k">WHEN</span> <span class="mi">5</span> <span class="k">THEN</span> <span class="n">sequence_of_statements_5</span><span class="p">;</span>
+   <span class="k">ELSE</span> <span class="n">sequence_of_statements_N</span><span class="p">;</span>
+<span class="k">END</span> <span class="k">CASE</span><span class="p">;</span>
+</pre></div>
+<h2><span class="mw-headline" id="Array_handling">Array handling</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=PL/SQL&amp;action=edit&amp;section=16" title="Edit section: Array handling">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>PL/SQL refers to <a href="/wiki/Array_data_type" title="Array data type">arrays</a> as "collections". The language offers three types of collections:</p>
+<ol>
+<li><a href="/wiki/Associative_array" title="Associative array">Associative arrays</a> (Index-by tables)</li>
+<li>Nested tables</li>
+<li>Varrays (variable-size arrays)</li>
+</ol>
+<p>Programmers must specify an upper limit for varrays, but need not for index-by tables or for nested tables. The language includes several collection <a href="/wiki/Method_(computer_science)" class="mw-redirect" title="Method (computer science)">methods</a> used to manipulate collection elements: for example FIRST, LAST, NEXT, PRIOR, EXTEND, TRIM, DELETE, etc. Index-by tables can be used to simulate associative arrays, as in this <a href="/wiki/Ackermann_function#cite_note-10" title="Ackermann function">example of a memo function for Ackermann's function in PL/SQL</a>.</p>
+<h3><span class="mw-headline" id="Associative_arrays_.28index-by_tables.29">Associative arrays (index-by tables)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=PL/SQL&amp;action=edit&amp;section=17" title="Edit section: Associative arrays (index-by tables)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>With index-by tables, the array can be indexed by numbers or strings. It parallels a <a href="/wiki/Java_(programming_language)" title="Java (programming language)">Java</a> <i>map</i>, which comprises key-value pairs. There is only one dimension and it is unbounded.</p>
+<h3><span class="mw-headline" id="Nested_tables">Nested tables</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=PL/SQL&amp;action=edit&amp;section=18" title="Edit section: Nested tables">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>With nested tables the programmer needs to understand what is nested. Here, a new type is created that may be composed of a number of components. That type can then be used to make a column in a table, and nested within that column are those components.</p>
+<h3><span class="mw-headline" id="Varrays_.28variable-size_arrays.29">Varrays (variable-size arrays)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=PL/SQL&amp;action=edit&amp;section=19" title="Edit section: Varrays (variable-size arrays)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>With Varrays you need to understand that the word "variable" in the phrase "variable-size arrays" doesn't apply to the size of the array in the way you might think that it would. The size the array is declared with is in fact fixed. The number of elements in the array is variable up to the declared size. Arguably then, variable-sized arrays aren't that variable in size.</p>
+<h2><span class="mw-headline" id="Cursors">Cursors</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=PL/SQL&amp;action=edit&amp;section=20" title="Edit section: Cursors">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>A <a href="/wiki/Cursor_(databases)" title="Cursor (databases)">cursor</a> is a mechanism, pointer to a private SQL area that stores information coming from a SELECT or data manipulation language (DML) statement (INSERT, UPDATE, DELETE, or MERGE). A <a href="/wiki/Cursor_(databases)" title="Cursor (databases)">cursor</a> holds the rows (one or more) returned by a SQL statement. The set of rows the <a href="/wiki/Cursor_(databases)" title="Cursor (databases)">cursor</a> holds is referred to as the active set.<sup id="cite_ref-12" class="reference"><a href="#cite_note-12">[12]</a></sup></p>
+<p>A <a href="/wiki/Cursor_(databases)" title="Cursor (databases)">cursor</a> can be explicit or implicit. In a FOR loop, an explicit cursor shall be used if the query will be reused, otherwise an implicit cursor is preferred. If using a cursor inside a loop, use a FETCH is recommended when needing to bulk collect or when needing dynamic SQL.</p>
+<h2><span class="mw-headline" id="Looping">Looping</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=PL/SQL&amp;action=edit&amp;section=21" title="Edit section: Looping">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>As a procedural language by definition, PL/SQL provides several <a href="/wiki/Iteration" title="Iteration">iteration</a> constructs, including basic LOOP statements, <a href="/wiki/While_loop" title="While loop">WHILE loops</a>, <a href="/wiki/For_loop" title="For loop">FOR loops</a>, and Cursor FOR loops. Since Oracle 7.3 the REF CURSOR type was introduced to allow recordsets to be returned from stored procedures and functions. Oracle 9i introduced the predefined SYS_REFCURSOR type, meaning we no longer have to define our own REF CURSOR types.</p>
+<h3><span class="mw-headline" id="LOOP_statements">LOOP statements</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=PL/SQL&amp;action=edit&amp;section=22" title="Edit section: LOOP statements">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="nl">&lt;&lt;parent_loop&gt;&gt;</span>
+<span class="k">LOOP</span>
+	<span class="n">statements</span>
+
+	<span class="nl">&lt;&lt;child_loop&gt;&gt;</span>
+	<span class="k">loop</span>
+		<span class="n">statements</span>
+		<span class="k">exit</span> <span class="n">parent_loop</span> <span class="k">when</span> <span class="o">&lt;</span><span class="n">condition</span><span class="o">&gt;</span><span class="p">;</span> <span class="c1">-- Terminates both loops</span>
+		<span class="k">exit</span> <span class="k">when</span> <span class="o">&lt;</span><span class="n">condition</span><span class="o">&gt;</span><span class="p">;</span> <span class="c1">-- Returns control to parent_loop</span>
+	<span class="k">end</span> <span class="k">loop</span> <span class="n">child_loop</span><span class="p">;</span>
+        <span class="k">if</span> <span class="o">&lt;</span><span class="n">condition</span><span class="o">&gt;</span> <span class="k">then</span>
+           <span class="k">continue</span><span class="p">;</span> <span class="c1">-- continue to next iteration</span>
+        <span class="k">end</span> <span class="k">if</span><span class="p">;</span>
+
+	<span class="k">exit</span> <span class="k">when</span> <span class="o">&lt;</span><span class="n">condition</span><span class="o">&gt;</span><span class="p">;</span>
+<span class="k">END</span> <span class="k">LOOP</span> <span class="n">parent_loop</span><span class="p">;</span>
+</pre></div>
+<p><sup id="cite_ref-13" class="reference"><a href="#cite_note-13">[13]</a></sup></p>
+<p>Loops can be terminated by using the <code>EXIT</code> <a href="/wiki/Keyword_(computer_programming)" class="mw-redirect" title="Keyword (computer programming)">keyword</a>, or by raising an <a href="/wiki/Exception_handling" title="Exception handling">exception</a>.</p>
+<h3><span class="mw-headline" id="FOR_loops">FOR loops</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=PL/SQL&amp;action=edit&amp;section=23" title="Edit section: FOR loops">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="k">DECLARE</span>
+    <span class="n">var</span> <span class="n">NUMBER</span><span class="p">;</span>
+<span class="k">BEGIN</span>
+     <span class="cm">/*N.B. for loop variables in pl/sql are new declarations, with scope only inside the loop */</span>
+     <span class="k">FOR</span> <span class="n">var</span> <span class="k">IN</span> <span class="mf">0</span> <span class="mf">..</span> <span class="mf">10</span> <span class="k">LOOP</span>
+          <span class="n">DBMS_OUTPUT</span><span class="mf">.</span><span class="n">PUT_LINE</span><span class="p">(</span><span class="n">var</span><span class="p">);</span>
+     <span class="k">END</span> <span class="k">LOOP</span><span class="p">;</span>
+
+     <span class="k">IF</span> <span class="p">(</span><span class="n">var</span> <span class="k">IS</span> <span class="k">NULL</span><span class="p">)</span> <span class="k">THEN</span>
+          <span class="n">DBMS_OUTPUT</span><span class="mf">.</span><span class="n">PUT_LINE</span><span class="p">(</span><span class="s1">'var is null'</span><span class="p">);</span>
+     <span class="k">ELSE</span>
+          <span class="n">DBMS_OUTPUT</span><span class="mf">.</span><span class="n">PUT_LINE</span><span class="p">(</span><span class="s1">'var is not null'</span><span class="p">);</span>
+     <span class="k">END</span> <span class="k">IF</span><span class="p">;</span>
+<span class="k">END</span><span class="p">;</span>
+</pre></div>
+<p>Output:</p>
+<pre>
+ 0
+ 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+ 10
+ var is null
+</pre>
+<h3><span class="mw-headline" id="Cursor_FOR_loops">Cursor FOR loops</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=PL/SQL&amp;action=edit&amp;section=24" title="Edit section: Cursor FOR loops">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="k">FOR</span> <span class="n">RecordIndex</span> <span class="k">IN</span> <span class="p">(</span><span class="k">SELECT</span> <span class="n">person_code</span> <span class="k">FROM</span> <span class="n">people_table</span><span class="p">)</span>
+<span class="k">LOOP</span>
+  <span class="n">DBMS_OUTPUT</span><span class="mf">.</span><span class="n">PUT_LINE</span><span class="p">(</span><span class="n">RecordIndex</span><span class="mf">.</span><span class="n">person_code</span><span class="p">);</span>
+<span class="k">END</span> <span class="k">LOOP</span><span class="p">;</span>
+</pre></div>
+<p>Cursor-for loops automatically open a <a href="/wiki/Cursor_(databases)" title="Cursor (databases)">cursor</a>, read in their data and close the cursor again.</p>
+<p>As an alternative, the PL/SQL programmer can pre-define the cursor's SELECT-statement in advance to (for example) allow re-use or make the code more understandable (especially useful in the case of long or complex queries).</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="k">DECLARE</span>
+  <span class="k">CURSOR</span> <span class="n">cursor_person</span> <span class="k">IS</span>
+    <span class="k">SELECT</span> <span class="n">person_code</span> <span class="k">FROM</span> <span class="n">people_table</span><span class="p">;</span>
+<span class="k">BEGIN</span>
+  <span class="k">FOR</span> <span class="n">RecordIndex</span> <span class="k">IN</span> <span class="n">cursor_person</span>
+  <span class="k">LOOP</span>
+    <span class="n">DBMS_OUTPUT</span><span class="mf">.</span><span class="n">PUT_LINE</span><span class="p">(</span><span class="n">recordIndex</span><span class="mf">.</span><span class="n">person_code</span><span class="p">);</span>
+  <span class="k">END</span> <span class="k">LOOP</span><span class="p">;</span>
+<span class="k">END</span><span class="p">;</span>
+</pre></div>
+<p>The concept of the person_code within the FOR-loop gets expressed with dot-notation ("."):</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="n">RecordIndex</span><span class="mf">.</span><span class="n">person_code</span>
+</pre></div>
+<h2><span class="mw-headline" id="Dynamic_SQL">Dynamic SQL</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=PL/SQL&amp;action=edit&amp;section=25" title="Edit section: Dynamic SQL">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>While programmers can readily embed <a href="/wiki/Data_Manipulation_Language" class="mw-redirect" title="Data Manipulation Language">Data Manipulation Language</a> (DML) statements directly into PL/SQL code using straightforward SQL statements, <a href="/wiki/Data_Definition_Language" class="mw-redirect" title="Data Definition Language">Data Definition Language</a> (DDL) requires more complex "Dynamic SQL" statements in the PL/SQL code. However, DML statements underpin the majority of PL/SQL code in typical software applications.</p>
+<p>In the case of PL/SQL dynamic SQL, early versions of the Oracle Database required the use of a complicated Oracle <code>DBMS_SQL</code> package library. More recent versions have however introduced a simpler "Native Dynamic SQL", along with an associated <code>EXECUTE IMMEDIATE</code> syntax.</p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=PL/SQL&amp;action=edit&amp;section=26" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a href="/wiki/Transact-SQL" title="Transact-SQL">T-SQL</a></li>
+<li><a href="/wiki/SQL_PL" title="SQL PL">SQL PL</a></li>
+<li><a href="/wiki/SQL/PSM" title="SQL/PSM">SQL/PSM</a></li>
+<li><a href="/wiki/Category:PL/SQL_editors" title="Category:PL/SQL editors">PL/SQL editors</a></li>
+<li><a href="/wiki/Relational_database_management_system" title="Relational database management system">Relational database management systems</a></li>
+</ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=PL/SQL&amp;action=edit&amp;section=27" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist columns references-column-width" style="-moz-column-width: 30em; -webkit-column-width: 30em; column-width: 30em; list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><cite class="citation web">Serge Rielau (srielau@ca.ibm.com), SQL Architect, STSM, IBM. <a rel="nofollow" class="external text" href="http://www.ibm.com/developerworks/data/library/techarticle/dm-0907oracleappsondb2/index.html">"DB2 10: Run Oracle applications on DB2 10 for Linux, UNIX, and Windows"</a>. Ibm.com<span class="reference-accessdate">. Retrieved <span class="nowrap">2012-07-26</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APL%2FSQL&amp;rft.au=Serge+Rielau+%28srielau%40ca.ibm.com%29%2C+SQL+Architect%2C+STSM%2C+IBM&amp;rft.btitle=DB2+10%3A+Run+Oracle+applications+on+DB2+10+for+Linux%2C+UNIX%2C+and+Windows&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.ibm.com%2Fdeveloperworks%2Fdata%2Flibrary%2Ftecharticle%2Fdm-0907oracleappsondb2%2Findex.html&amp;rft.pub=Ibm.com&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span> <span class="citation-comment" style="display:none; color:#33aa33">CS1 maint: Multiple names: authors list (<a href="/wiki/Category:CS1_maint:_Multiple_names:_authors_list" title="Category:CS1 maint: Multiple names: authors list">link</a>)</span></span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://publib.boulder.ibm.com/infocenter/db2help/index.jsp?topic=/com.ibm.db2.udb.doc/ad/c0011916.htm">"SQL PL"</a>. Publib.boulder.ibm.com<span class="reference-accessdate">. Retrieved <span class="nowrap">2012-07-26</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APL%2FSQL&amp;rft.btitle=SQL+PL&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fpublib.boulder.ibm.com%2Finfocenter%2Fdb2help%2Findex.jsp%3Ftopic%3D%2Fcom.ibm.db2.udb.doc%2Fad%2Fc0011916.htm&amp;rft.pub=Publib.boulder.ibm.com&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text">Oracle documentation <a rel="nofollow" class="external text" href="http://docs.oracle.com/cd/B28359_01/appdev.111/b28370/packages.htm#LNPLS00913">"Private and public items in PL/SQL"</a></span></li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://vyaskn.tripod.com/oracle_sql_server_differences_equivalents.htm">http://vyaskn.tripod.com/oracle_sql_server_differences_equivalents.htm</a></span></li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text">Scratchlauncher <a rel="nofollow" class="external text" href="http://www.oracle.com/technetwork/database/migration/scratchlauncher-098387.html">"Oracle Scratchlauncher"</a></span></li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text">CEITON <a rel="nofollow" class="external text" href="http://www.ceiton.com/CMS/EN/technologies/sql-compiler.html">"MSSQL/Oracle Compiler"</a></span></li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://www.swissql.com/">http://www.swissql.com/</a></span></li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://twitter.com/gregburd/statuses/10979336891">"Twitter / Gregory Burd: @humanications We didn't r ..."</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APL%2FSQL&amp;rft.btitle=Twitter+%2F+Gregory+Burd%3A+%40humanications+We+didn%27t+r+...&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Ftwitter.com%2Fgregburd%2Fstatuses%2F10979336891&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-9">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.oracle.com/technetwork/database/berkeleydb/db-faq-095848.html#DoesBerkeleyDBsupportPLSQL">"Official Berkeley DB FAQ"</a>. <a href="/wiki/Oracle_Corporation" title="Oracle Corporation">Oracle Corporation</a><span class="reference-accessdate">. Retrieved <span class="nowrap">March 30,</span> 2010</span>. <q>Does Berkeley DB support PL/SQL?</q></cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APL%2FSQL&amp;rft.btitle=Official+Berkeley+DB+FAQ&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.oracle.com%2Ftechnetwork%2Fdatabase%2Fberkeleydb%2Fdb-faq-095848.html%23DoesBerkeleyDBsupportPLSQL&amp;rft.pub=Oracle+Corporation&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-10">^</a></b></span> <span class="reference-text"><cite class="citation book">Nanda, Arup; Feuerstein, Steven (2005). <a rel="nofollow" class="external text" href="https://books.google.com/books?id=-wFDRRSxQFMC"><i>Oracle PL/SQL for DBAs</i></a>. O'Reilly Series. O'Reilly Media, Inc. pp.&#160;122,429. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-0-596-00587-0" title="Special:BookSources/978-0-596-00587-0">978-0-596-00587-0</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2011-01-11</span></span>. <q>A pipelined table function [...] returns a result set as a collection [...] iteratively. [... A]s each row is ready to be assigned to the collection, it is 'piped out' of the function.</q></cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APL%2FSQL&amp;rft.au=Feuerstein%2C+Steven&amp;rft.aufirst=Arup&amp;rft.aulast=Nanda&amp;rft.btitle=Oracle+PL%2FSQL+for+DBAs&amp;rft.date=2005&amp;rft.genre=book&amp;rft_id=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3D-wFDRRSxQFMC&amp;rft.isbn=978-0-596-00587-0&amp;rft.pages=122%2C429&amp;rft.pub=O%27Reilly+Media%2C+Inc.&amp;rft.series=O%27Reilly+Series&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-OraDTLit-11"><span class="mw-cite-backlink"><b><a href="#cite_ref-OraDTLit_11-0">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://download.oracle.com/docs/cd/B19306_01/server.102/b14200/sql_elements003.htm#sthref365">"Literals"</a>. <i>Oracle Database SQL Reference 10g Release 2 (10.2)</i>. Oracle<span class="reference-accessdate">. Retrieved <span class="nowrap">2009-03-20</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APL%2FSQL&amp;rft.atitle=Literals&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fdownload.oracle.com%2Fdocs%2Fcd%2FB19306_01%2Fserver.102%2Fb14200%2Fsql_elements003.htm%23sthref365&amp;rft.jtitle=Oracle+Database+SQL+Reference+10g+Release+2+%2810.2%29&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-12"><span class="mw-cite-backlink"><b><a href="#cite_ref-12">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.oracle.com/technetwork/issue-archive/2013/13-mar/o23plsql-1906474.html">Working with Cursors by Steven Feuerstein</a></span></li>
+<li id="cite_note-13"><span class="mw-cite-backlink"><b><a href="#cite_ref-13">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://download.oracle.com/docs/cd/B19306_01/appdev.102/b14261/controlstructures.htm#sthref921">Syntax</a></span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="Further_reading">Further reading</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=PL/SQL&amp;action=edit&amp;section=28" title="Edit section: Further reading">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><cite class="citation book"><a href="/wiki/Steven_Feuerstein" title="Steven Feuerstein">Feuerstein, Steven</a>; Bill Pribyl (2005). <i>Oracle PL/SQL Programming</i> (4th ed.). <a href="/wiki/O%27Reilly_%26_Associates" class="mw-redirect" title="O'Reilly &amp; Associates">O'Reilly &amp; Associates</a>. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-596-00977-1" title="Special:BookSources/0-596-00977-1">0-596-00977-1</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APL%2FSQL&amp;rft.au=Bill+Pribyl&amp;rft.aufirst=Steven&amp;rft.aulast=Feuerstein&amp;rft.btitle=Oracle+PL%2FSQL+Programming&amp;rft.date=2005&amp;rft.edition=4th&amp;rft.genre=book&amp;rft.isbn=0-596-00977-1&amp;rft.pub=O%27Reilly+%26+Associates&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation web">Naudé, Frank (June 9, 2005). <a rel="nofollow" class="external text" href="http://www.orafaq.com/faqplsql.htm">"Oracle PL/SQL FAQ rev 2.08"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APL%2FSQL&amp;rft.aufirst=Frank&amp;rft.aulast=Naud%C3%A9&amp;rft.btitle=Oracle+PL%2FSQL+FAQ+rev+2.08&amp;rft.date=2005-06-09&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.orafaq.com%2Ffaqplsql.htm&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+</ul>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=PL/SQL&amp;action=edit&amp;section=29" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<table role="presentation" class="mbox-small plainlinks sistersitebox" style="border:1px solid #aaa;background-color:#f9f9f9">
+<tr>
+<td class="mbox-image"><a href="/wiki/File:Wikibooks-logo-en-noslogan.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/40px-Wikibooks-logo-en-noslogan.svg.png" width="40" height="40" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/60px-Wikibooks-logo-en-noslogan.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/80px-Wikibooks-logo-en-noslogan.svg.png 2x" data-file-width="400" data-file-height="400" /></a></td>
+<td class="mbox-text plainlist">The Wikibook <i><a href="https://en.wikibooks.org/wiki/Oracle_Programming" class="extiw" title="wikibooks:Oracle Programming">Oracle Programming</a></i> has a page on the topic of: <i><b><a href="https://en.wikibooks.org/wiki/Oracle_Programming/SQL_Cheatsheet" class="extiw" title="wikibooks:Oracle Programming/SQL Cheatsheet">SQL Cheatsheet</a></b></i></td>
+</tr>
+</table>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.orafaq.com/wiki/PL/SQL_FAQ">Oracle FAQ: PL/SQL</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.oracle.com/technology/tech/pl_sql/index.html">Oracle Technology Center</a></li>
+<li><a rel="nofollow" class="external text" href="http://tahiti.oracle.com">Oracle Tahiti Search Engine</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.morganslibrary.org/library.html">Morgan's Library</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.oracle-base.com/articles/plsql/ArticlesPLSQL.php">ORACLE-BASE: PL/SQL Articles</a></li>
+</ul>
+<div role="navigation" class="navbox" aria-labelledby="Oracle_Corporation" style="padding:3px">
+<table class="nowraplinks hlist collapsible collapsed navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:Oracle" title="Template:Oracle"><abbr title="View this template" style=";;background:none transparent;border:none;">v</abbr></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:Oracle" title="Template talk:Oracle"><abbr title="Discuss this template" style=";;background:none transparent;border:none;">t</abbr></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:Oracle&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;">e</abbr></a></li>
+</ul>
+</div>
+<div id="Oracle_Corporation" style="font-size:114%"><a href="/wiki/Oracle_Corporation" title="Oracle Corporation">Oracle Corporation</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Corporation" title="Corporation">Corporate</a> <a href="/wiki/Board_of_directors" title="Board of directors">directors</a></th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/w/index.php?title=Jeffrey_Berg&amp;action=edit&amp;redlink=1" class="new" title="Jeffrey Berg (page does not exist)">Jeffrey Berg</a></li>
+<li><a href="/w/index.php?title=H._Raymond_Bingham&amp;action=edit&amp;redlink=1" class="new" title="H. Raymond Bingham (page does not exist)">H. Raymond Bingham</a></li>
+<li><a href="/wiki/Michael_Boskin" title="Michael Boskin">Michael Boskin</a></li>
+<li><a href="/wiki/Safra_A._Catz" title="Safra A. Catz">Safra A. Catz</a></li>
+<li><a href="/wiki/Larry_Ellison" title="Larry Ellison">Larry Ellison</a></li>
+<li><a href="/wiki/H%C3%A9ctor_Garc%C3%ADa-Molina" title="Héctor García-Molina">Héctor García-Molina</a></li>
+<li><a href="/wiki/Joseph_Grundfest" title="Joseph Grundfest">Joseph Grundfest</a></li>
+<li><a href="/wiki/Jeffrey_O._Henley" class="mw-redirect" title="Jeffrey O. Henley">Jeffrey O. Henley</a></li>
+<li><a href="/wiki/Mark_Hurd" title="Mark Hurd">Mark Hurd</a></li>
+<li><a href="/wiki/Jack_Kemp" title="Jack Kemp">Jack F. Kemp</a></li>
+<li><a href="/w/index.php?title=Donald_L._Lucas&amp;action=edit&amp;redlink=1" class="new" title="Donald L. Lucas (page does not exist)">Donald L. Lucas</a></li>
+<li><a href="/wiki/Naomi_O._Seligman" title="Naomi O. Seligman">Naomi O. Seligman</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Mergers_and_acquisitions" title="Mergers and acquisitions">Acquisitions</a> (<a href="/wiki/List_of_acquisitions_by_Oracle" title="List of acquisitions by Oracle">list</a>)</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Sun_Microsystems" title="Sun Microsystems">Sun</a></li>
+<li><a href="/wiki/PeopleSoft" title="PeopleSoft">PeopleSoft</a></li>
+<li><a href="/wiki/Oracle_Hyperion" title="Oracle Hyperion">Hyperion</a></li>
+<li><a href="/wiki/Siebel_Systems" title="Siebel Systems">Siebel</a></li>
+<li><a href="/wiki/BEA_Systems" title="BEA Systems">BEA</a></li>
+<li><a href="/wiki/JD_Edwards" title="JD Edwards">JD Edwards</a></li>
+<li><a href="/wiki/RightNow_Technologies" title="RightNow Technologies">RightNow</a></li>
+<li><a href="/wiki/Virtual_Iron" title="Virtual Iron">Virtual Iron</a></li>
+<li><a href="/wiki/TimesTen" title="TimesTen">TimesTen</a></li>
+<li><a href="/w/index.php?title=Retek&amp;action=edit&amp;redlink=1" class="new" title="Retek (page does not exist)">Retek</a></li>
+<li><a href="/wiki/Sunopsis" title="Sunopsis">Sunopsis</a></li>
+<li><a href="/wiki/NetSuite" title="NetSuite">NetSuite</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Database" title="Database">DBMS</a></th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Oracle_Database" title="Oracle Database">Oracle Database</a></li>
+<li><a href="/wiki/MySQL" title="MySQL">MySQL</a></li>
+<li><a href="/wiki/InnoDB" title="InnoDB">InnoDB</a></li>
+<li><a href="/wiki/Berkeley_DB" title="Berkeley DB">Berkeley DB</a></li>
+<li><a href="/wiki/TimesTen" title="TimesTen">TimesTen</a></li>
+<li><a href="/wiki/Oracle_Rdb" title="Oracle Rdb">Rdb</a></li>
+<li><a href="/wiki/Essbase" title="Essbase">Essbase</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Programming_language" title="Programming language">Programming languages</a></th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Java_(programming_language)" title="Java (programming language)">Java</a></li>
+<li><strong class="selflink">PL/SQL</strong></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Integrated_development_environment" title="Integrated development environment">IDE</a></th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/JDeveloper" title="JDeveloper">JDeveloper</a></li>
+<li><a href="/wiki/Oracle_Forms" title="Oracle Forms">Forms</a></li>
+<li><a href="/wiki/NetBeans" title="NetBeans">NetBeans</a></li>
+<li><a href="/wiki/Oracle_Application_Express" title="Oracle Application Express">Apex</a></li>
+<li><a href="/wiki/Oracle_SQL_Developer" title="Oracle SQL Developer">SQL Developer</a></li>
+<li><a href="/wiki/Oracle_Developer_Studio" title="Oracle Developer Studio">Developer Studio</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Middleware_(distributed_applications)" title="Middleware (distributed applications)">Middleware</a></th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Oracle_Fusion_Middleware" title="Oracle Fusion Middleware">Fusion Middleware</a></li>
+<li><a href="/wiki/Oracle_WebCenter" title="Oracle WebCenter">WebCenter</a></li>
+<li><a href="/wiki/Oracle_SOA_Suite" title="Oracle SOA Suite">SOA Suite</a></li>
+<li><a href="/wiki/Oracle_WebLogic_Server" title="Oracle WebLogic Server">WebLogic Server</a></li>
+<li><a href="/wiki/Oracle_Coherence" title="Oracle Coherence">Coherence</a></li>
+<li><a href="/wiki/Tuxedo_(software)" title="Tuxedo (software)">Tuxedo</a></li>
+<li><a href="/wiki/GlassFish" title="GlassFish">GlassFish</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Operating_system" title="Operating system">Operating systems</a></th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Oracle_Linux" title="Oracle Linux">Oracle Linux</a></li>
+<li><a href="/wiki/Solaris_(operating_system)" title="Solaris (operating system)">Oracle Solaris</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Computer_hardware" title="Computer hardware">Computer hardware</a></th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Sun_Fire" title="Sun Fire">Sun Fire</a></li>
+<li><a href="/wiki/SPARC" title="SPARC">SPARC</a> (<a href="/wiki/SPARC_T-Series" title="SPARC T-Series">T-Series</a>, <a href="/wiki/SPARC_Enterprise" title="SPARC Enterprise">Enterprise</a>)</li>
+<li><a href="/wiki/Storage_Technology_Corporation" title="Storage Technology Corporation">StorageTek</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Computer_appliance" title="Computer appliance">Computer appliances</a></th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Oracle_Exadata" title="Oracle Exadata">Oracle Exadata</a></li>
+<li><a href="/wiki/Oracle_Exalogic" title="Oracle Exalogic">Oracle Exalogic</a></li>
+<li><a href="/w/index.php?title=Oracle_Exalytics&amp;action=edit&amp;redlink=1" class="new" title="Oracle Exalytics (page does not exist)">Oracle Exalytics</a></li>
+<li><a href="/wiki/Oracle_Big_Data_Appliance" title="Oracle Big Data Appliance">Big Data Appliance</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Education and recognition</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Oracle_Certification_Program" title="Oracle Certification Program">Oracle Certification Program</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" colspan="2">
+<div>
+<ul>
+<li><img alt="Category" src="//upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/16px-Folder_Hexagonal_Icon.svg.png" title="Category" width="16" height="14" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/24px-Folder_Hexagonal_Icon.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/32px-Folder_Hexagonal_Icon.svg.png 2x" data-file-width="36" data-file-height="31" /> <b><a href="/wiki/Category:Oracle_Corporation" title="Category:Oracle Corporation">Category</a></b></li>
+<li><img alt="Commons page" src="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/12px-Commons-logo.svg.png" title="Commons page" width="12" height="16" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/18px-Commons-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/24px-Commons-logo.svg.png 2x" data-file-width="1024" data-file-height="1376" /> <a href="https://commons.wikimedia.org/wiki/Category:Oracle_Corporation" class="extiw" title="commons:Category:Oracle Corporation"><b>Commons</b></a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div role="navigation" class="navbox" aria-label="Navbox" style="padding:3px">
+<table class="nowraplinks hlist navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Help:Authority_control" title="Help:Authority control">Authority control</a></th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><span style="white-space:nowrap;"><a href="/wiki/Library_of_Congress_Control_Number" title="Library of Congress Control Number">LCCN</a>: <span class="uid"><a rel="nofollow" class="external text" href="http://id.loc.gov/authorities/subjects/sh96008008">sh96008008</a></span></span></li>
+<li><span style="white-space:nowrap;"><a href="/wiki/Biblioth%C3%A8que_nationale_de_France" title="Bibliothèque nationale de France">BNF</a>: <span class="uid"><a rel="nofollow" class="external text" href="http://catalogue.bnf.fr/ark:/12148/cb135115170">cb135115170</a> <a rel="nofollow" class="external text" href="http://data.bnf.fr/ark:/12148/cb135115170">(data)</a></span></span></li>
+<li><span style="white-space:nowrap;"><a href="/wiki/Biblioteca_Nacional_de_Espa%C3%B1a" title="Biblioteca Nacional de España">BNE</a>: <span class="uid"><a rel="nofollow" class="external text" href="http://catalogo.bne.es/uhtbin/authoritybrowse.cgi?action=display&amp;authority_id=XX544855">XX544855</a></span></span></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1224
+Cached time: 20170203032121
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.184 seconds
+Real time usage: 0.254 seconds
+Preprocessor visited node count: 1174/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 55502/2097152 bytes
+Template argument size: 6415/2097152 bytes
+Highest expansion depth: 12/40
+Expensive parser function count: 2/500
+Lua time usage: 0.074/10.000 seconds
+Lua memory usage: 3.98 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  191.728      1 -total
+ 36.10%   69.220      3 Template:Ambox
+ 30.05%   57.615      1 Template:Reflist
+ 29.19%   55.957      1 Template:Multiple_issues
+ 21.70%   41.608      6 Template:Cite_web
+ 11.45%   21.948      1 Template:More_footnotes
+ 10.38%   19.897      1 Template:Authority_control
+  9.43%   18.071      1 Template:Oracle
+  8.64%   16.570      1 Template:Navbox
+  5.44%   10.424      1 Template:Wikibooks
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:33862363-0!*!0!!en!4!* and timestamp 20170203032122 and revision id 763416622
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=PL/SQL&amp;oldid=763416622">https://en.wikipedia.org/w/index.php?title=PL/SQL&amp;oldid=763416622</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Oracle_software" title="Category:Oracle software">Oracle software</a></li><li><a href="/wiki/Category:SQL" title="Category:SQL">SQL</a></li><li><a href="/wiki/Category:Ada_programming_language_family" title="Category:Ada programming language family">Ada programming language family</a></li><li><a href="/wiki/Category:Data-centric_programming_languages" title="Category:Data-centric programming languages">Data-centric programming languages</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:CS1_maint:_Multiple_names:_authors_list" title="Category:CS1 maint: Multiple names: authors list">CS1 maint: Multiple names: authors list</a></li><li><a href="/wiki/Category:Articles_lacking_in-text_citations_from_February_2008" title="Category:Articles lacking in-text citations from February 2008">Articles lacking in-text citations from February 2008</a></li><li><a href="/wiki/Category:All_articles_lacking_in-text_citations" title="Category:All articles lacking in-text citations">All articles lacking in-text citations</a></li><li><a href="/wiki/Category:Articles_needing_additional_references_from_January_2008" title="Category:Articles needing additional references from January 2008">Articles needing additional references from January 2008</a></li><li><a href="/wiki/Category:All_articles_needing_additional_references" title="Category:All articles needing additional references">All articles needing additional references</a></li><li><a href="/wiki/Category:Wikipedia_articles_with_LCCN_identifiers" title="Category:Wikipedia articles with LCCN identifiers">Wikipedia articles with LCCN identifiers</a></li><li><a href="/wiki/Category:Wikipedia_articles_with_BNF_identifiers" title="Category:Wikipedia articles with BNF identifiers">Wikipedia articles with BNF identifiers</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=PL%2FSQL" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=PL%2FSQL" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/PL/SQL"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:PL/SQL"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/PL/SQL" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=PL/SQL&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=PL/SQL&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/PL/SQL" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/PL/SQL" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=PL/SQL&amp;oldid=763416622" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=PL/SQL&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q41574" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=PL%2FSQL&amp;id=763416622" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=PL%2FSQL">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=PL%2FSQL&amp;returnto=PL%2FSQL&amp;oldid=763416622&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=PL/SQL&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-wikibase-otherprojects' aria-labelledby='p-wikibase-otherprojects-label'>
+			<h3 id='p-wikibase-otherprojects-label'>In other projects</h3>
+
+			<div class="body">
+									<ul>
+						<li class="wb-otherproject-link wb-otherproject-wikibooks"><a href="https://en.wikibooks.org/wiki/Oracle_Database/PL/SQL" hreflang="en">Wikibooks</a></li><li class="wb-otherproject-link wb-otherproject-wikiversity"><a href="https://en.wikiversity.org/wiki/Oracle_SQL_Fundamentals" hreflang="en">Wikiversity</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-ca"><a href="https://ca.wikipedia.org/wiki/PL/SQL" title="PL/SQL – Catalan" lang="ca" hreflang="ca" class="interlanguage-link-target">Català</a></li><li class="interlanguage-link interwiki-cs"><a href="https://cs.wikipedia.org/wiki/PL/SQL" title="PL/SQL – Czech" lang="cs" hreflang="cs" class="interlanguage-link-target">Čeština</a></li><li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/PL/SQL" title="PL/SQL – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-es"><a href="https://es.wikipedia.org/wiki/PL/SQL" title="PL/SQL – Spanish" lang="es" hreflang="es" class="interlanguage-link-target">Español</a></li><li class="interlanguage-link interwiki-fa"><a href="https://fa.wikipedia.org/wiki/%D9%BE%DB%8C%E2%80%8C%D8%A7%D9%84/%D8%A7%D8%B3%E2%80%8C%DA%A9%DB%8C%D9%88%D8%A7%D9%84" title="پی‌ال/اس‌کیوال – Persian" lang="fa" hreflang="fa" class="interlanguage-link-target">فارسی</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/PL/SQL" title="PL/SQL – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-ko"><a href="https://ko.wikipedia.org/wiki/PL/SQL" title="PL/SQL – Korean" lang="ko" hreflang="ko" class="interlanguage-link-target">한국어</a></li><li class="interlanguage-link interwiki-is"><a href="https://is.wikipedia.org/wiki/PL/SQL" title="PL/SQL – Icelandic" lang="is" hreflang="is" class="interlanguage-link-target">Íslenska</a></li><li class="interlanguage-link interwiki-it"><a href="https://it.wikipedia.org/wiki/PL/SQL" title="PL/SQL – Italian" lang="it" hreflang="it" class="interlanguage-link-target">Italiano</a></li><li class="interlanguage-link interwiki-he"><a href="https://he.wikipedia.org/wiki/PL/SQL" title="PL/SQL – Hebrew" lang="he" hreflang="he" class="interlanguage-link-target">עברית</a></li><li class="interlanguage-link interwiki-kk"><a href="https://kk.wikipedia.org/wiki/PL/SQL" title="PL/SQL – Kazakh" lang="kk" hreflang="kk" class="interlanguage-link-target">Қазақша</a></li><li class="interlanguage-link interwiki-lv"><a href="https://lv.wikipedia.org/wiki/PL/SQL" title="PL/SQL – Latvian" lang="lv" hreflang="lv" class="interlanguage-link-target">Latviešu</a></li><li class="interlanguage-link interwiki-hu"><a href="https://hu.wikipedia.org/wiki/PL/SQL" title="PL/SQL – Hungarian" lang="hu" hreflang="hu" class="interlanguage-link-target">Magyar</a></li><li class="interlanguage-link interwiki-nl"><a href="https://nl.wikipedia.org/wiki/PL/SQL" title="PL/SQL – Dutch" lang="nl" hreflang="nl" class="interlanguage-link-target">Nederlands</a></li><li class="interlanguage-link interwiki-ja"><a href="https://ja.wikipedia.org/wiki/PL/SQL" title="PL/SQL – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target">日本語</a></li><li class="interlanguage-link interwiki-pl"><a href="https://pl.wikipedia.org/wiki/PL/SQL" title="PL/SQL – Polish" lang="pl" hreflang="pl" class="interlanguage-link-target">Polski</a></li><li class="interlanguage-link interwiki-pt"><a href="https://pt.wikipedia.org/wiki/PL/SQL" title="PL/SQL – Portuguese" lang="pt" hreflang="pt" class="interlanguage-link-target">Português</a></li><li class="interlanguage-link interwiki-ro"><a href="https://ro.wikipedia.org/wiki/PL/SQL" title="PL/SQL – Romanian" lang="ro" hreflang="ro" class="interlanguage-link-target">Română</a></li><li class="interlanguage-link interwiki-ru"><a href="https://ru.wikipedia.org/wiki/PL/SQL" title="PL/SQL – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li><li class="interlanguage-link interwiki-sk"><a href="https://sk.wikipedia.org/wiki/PL/SQL" title="PL/SQL – Slovak" lang="sk" hreflang="sk" class="interlanguage-link-target">Slovenčina</a></li><li class="interlanguage-link interwiki-sv"><a href="https://sv.wikipedia.org/wiki/PL/SQL" title="PL/SQL – Swedish" lang="sv" hreflang="sv" class="interlanguage-link-target">Svenska</a></li><li class="interlanguage-link interwiki-th"><a href="https://th.wikipedia.org/wiki/%E0%B8%9E%E0%B8%B5%E0%B9%81%E0%B8%AD%E0%B8%A5/%E0%B9%80%E0%B8%AD%E0%B8%AA%E0%B8%84%E0%B8%B4%E0%B8%A7%E0%B9%81%E0%B8%AD%E0%B8%A5" title="พีแอล/เอสคิวแอล – Thai" lang="th" hreflang="th" class="interlanguage-link-target">ไทย</a></li><li class="interlanguage-link interwiki-tg"><a href="https://tg.wikipedia.org/wiki/PL/SQL" title="PL/SQL – Tajik" lang="tg" hreflang="tg" class="interlanguage-link-target">Тоҷикӣ</a></li><li class="interlanguage-link interwiki-tr"><a href="https://tr.wikipedia.org/wiki/PL/SQL" title="PL/SQL – Turkish" lang="tr" hreflang="tr" class="interlanguage-link-target">Türkçe</a></li><li class="interlanguage-link interwiki-uk"><a href="https://uk.wikipedia.org/wiki/PL/SQL" title="PL/SQL – Ukrainian" lang="uk" hreflang="uk" class="interlanguage-link-target">Українська</a></li><li class="interlanguage-link interwiki-zh"><a href="https://zh.wikipedia.org/wiki/PL-SQL" title="PL-SQL – Chinese" lang="zh" hreflang="zh" class="interlanguage-link-target">中文</a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q41574#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 3 February 2017, at 03:21.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=PL/SQL&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.184","walltime":"0.254","ppvisitednodes":{"value":1174,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":55502,"limit":2097152},"templateargumentsize":{"value":6415,"limit":2097152},"expansiondepth":{"value":12,"limit":40},"expensivefunctioncount":{"value":2,"limit":500},"entityaccesscount":{"value":1,"limit":400},"timingprofile":["100.00%  191.728      1 -total"," 36.10%   69.220      3 Template:Ambox"," 30.05%   57.615      1 Template:Reflist"," 29.19%   55.957      1 Template:Multiple_issues"," 21.70%   41.608      6 Template:Cite_web"," 11.45%   21.948      1 Template:More_footnotes"," 10.38%   19.897      1 Template:Authority_control","  9.43%   18.071      1 Template:Oracle","  8.64%   16.570      1 Template:Navbox","  5.44%   10.424      1 Template:Wikibooks"]},"scribunto":{"limitreport-timeusage":{"value":"0.074","limit":"10.000"},"limitreport-memusage":{"value":4169919,"limit":52428800}},"cachereport":{"origin":"mw1224","timestamp":"20170203032121","ttl":2592000,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":59,"wgHostname":"mw1213"});});</script>
+	</body>
+</html>

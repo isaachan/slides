@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Lasso (programming language) - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Lasso_(programming_language)","wgTitle":"Lasso (programming language)","wgCurRevisionId":758093933,"wgRevisionId":758093933,"wgArticleId":524247,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles with a promotional tone from January 2015","All articles with a promotional tone","Pages using deprecated image syntax","All articles with unsourced statements","Articles with unsourced statements from October 2013","Official website not in Wikidata","Cross-platform software","Object-oriented programming languages","Scripting languages","Dynamically typed programming languages","Filename extensions","High-level programming languages","Programming languages created in 1995","Class-based programming languages"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Lasso_(programming_language)","wgRelevantArticleId":524247,"wgRequestId":"WI6YlgpAICsAAB44iOcAAABT","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":true},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q3218363","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.cite.styles":"ready","ext.pygments":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.legacy.wikibits","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.pygments%2CwikimediaBadges%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.29.0-wmf.9"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Lasso_(programming_language)"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Lasso_(programming_language)&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Lasso_(programming_language)&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Lasso_(programming_language)"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Lasso_programming_language rootpage-Lasso_programming_language skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Lasso (programming language)</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><script>function mfTempOpenSection(id){var block=document.getElementById("mf-section-"+id);block.className+=" open-block";block.previousSibling.className+=" open-block";}</script><table class="plainlinks metadata ambox ambox-content ambox-Advert" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ambox_important.svg/40px-Ambox_important.svg.png" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ambox_important.svg/60px-Ambox_important.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ambox_important.svg/80px-Ambox_important.svg.png 2x" data-file-width="40" data-file-height="40" /></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">This article <b>contains content that is written like <a href="/wiki/Wikipedia:What_Wikipedia_is_not#Wikipedia_is_not_a_soapbox_or_means_of_promotion" title="Wikipedia:What Wikipedia is not">an advertisement</a></b>. <span class="hide-when-compact">Please help <a class="external text" href="//en.wikipedia.org/w/index.php?title=Lasso_(programming_language)&amp;action=edit">improve it</a> by removing <a href="/wiki/Wikipedia:Spam" title="Wikipedia:Spam">promotional content</a> and inappropriate <a href="/wiki/Wikipedia:External_links" title="Wikipedia:External links">external links</a>, and by adding encyclopedic content written from a <a href="/wiki/Wikipedia:Neutral_point_of_view" title="Wikipedia:Neutral point of view">neutral point of view</a>.</span> <small><i>(January 2015)</i></small> <small class="hide-when-compact"><i>(<a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove this template message</a>)</i></small></span></td>
+</tr>
+</table>
+<table class="infobox vevent" style="width:22em">
+<caption class="summary">Lasso</caption>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/File:LassoSoft_and_Lasso_Logo.png" class="image"><img alt="LassoSoft and Lasso Logo.png" src="//upload.wikimedia.org/wikipedia/en/thumb/d/dc/LassoSoft_and_Lasso_Logo.png/220px-LassoSoft_and_Lasso_Logo.png" width="220" height="69" srcset="//upload.wikimedia.org/wikipedia/en/thumb/d/dc/LassoSoft_and_Lasso_Logo.png/330px-LassoSoft_and_Lasso_Logo.png 1.5x, //upload.wikimedia.org/wikipedia/en/d/dc/LassoSoft_and_Lasso_Logo.png 2x" data-file-width="400" data-file-height="126" /></a>
+<div>LassoSoft Inc. Logo</div>
+</td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Programming_paradigm" title="Programming paradigm">Paradigm</a></th>
+<td>
+<p><a href="/wiki/Multi-paradigm_programming_language" class="mw-redirect" title="Multi-paradigm programming language">Multi-paradigm</a>: <a href="/wiki/Structured_programming" title="Structured programming">structured</a> <a href="/wiki/Object-oriented_programming" title="Object-oriented programming">object-oriented</a> (<a href="/wiki/Multiple_dispatch" title="Multiple dispatch">multi-dis</a>), <a href="/wiki/Imperative_programming" title="Imperative programming">imperative</a>: <a href="/wiki/Procedural_programming" title="Procedural programming">procedural</a>, <a href="/wiki/Concurrent_computing" title="Concurrent computing">concurrent</a>, <a href="/wiki/Expression-oriented_programming_language" title="Expression-oriented programming language">exp-oriented</a>,</p>
+<a href="/wiki/Metaprogramming" title="Metaprogramming">Meta</a>: <a href="/wiki/Reflection_(computer_programming)" title="Reflection (computer programming)">reflective</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_design" title="Software design">Designed&#160;by</a></th>
+<td>Kyle Jessup</td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_developer" title="Software developer">Developer</a></th>
+<td class="organiser">LassoSoft Inc.</td>
+</tr>
+<tr>
+<th scope="row">First&#160;appeared</th>
+<td>1995<span class="noprint">; 22&#160;years ago</span><span style="display:none">&#160;(<span class="bday dtstart published updated">1995</span>)</span></td>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Software_release_life_cycle" title="Software release life cycle">Stable release</a></th>
+<td>
+<div style="margin:0px;">9.3.1 / October&#160;23, 2015<span class="noprint">; 14 months ago</span><span style="display:none">&#160;(<span class="bday dtstart published updated">2015-10-23</span>)</span></div>
+</td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Type_system" title="Type system">Typing discipline</a></th>
+<td><a href="/wiki/Type_system#Dynamic_type-checking_and_runtime_type_information" title="Type system">Dynamic</a> with constraints (strict-hybrid), <a href="/wiki/Nominative_type_system" class="mw-redirect" title="Nominative type system">nominative</a>, <a href="/wiki/Duck_typing" title="Duck typing">duck</a> (hybrid)</td>
+</tr>
+<tr>
+<th scope="row">Implementation language</th>
+<td><a href="/wiki/C_(programming_language)" title="C (programming language)">C</a>, Lasso</td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Computing_platform" title="Computing platform">Platform</a></th>
+<td><a href="/wiki/Cross-platform" title="Cross-platform">Cross-platform</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Operating_system" title="Operating system">OS</a></th>
+<td>(<a href="/wiki/OS_X" class="mw-redirect" title="OS X">OS X</a>, <a href="/wiki/Microsoft_Windows" title="Microsoft Windows">Windows</a>, <a href="/wiki/Linux" title="Linux">Linux</a>)</td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_license" title="Software license">License</a></th>
+<td><a href="/wiki/Proprietary_software" title="Proprietary software">Proprietary</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Filename_extension" title="Filename extension">Filename extensions</a></th>
+<td>.lasso .LassoApp</td>
+</tr>
+<tr>
+<th scope="row">Website</th>
+<td><span class="url"><a rel="nofollow" class="external text" href="http://www.lassosoft.com">www<wbr />.lassosoft<wbr />.com</a></span></td>
+</tr>
+<tr>
+<th colspan="2" style="text-align:center;background-color: #eee;">Major <a href="/wiki/Programming_language_implementation" title="Programming language implementation">implementations</a></th>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center">Lasso 8, Lasso 9</td>
+</tr>
+<tr>
+<th colspan="2" style="text-align:center;background-color: #eee;">Influenced by</th>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/Dylan_(programming_language)" title="Dylan (programming language)">Dylan</a>, <a href="/wiki/Smalltalk" title="Smalltalk">Smalltalk</a>, <a href="/wiki/Scala_(programming_language)" title="Scala (programming language)">Scala</a></td>
+</tr>
+</table>
+<p><b>Lasso</b> is an <a href="/wiki/Application_server" title="Application server">application server</a> and server management interface used to develop internet applications and is a <a href="/wiki/General-purpose_programming_language" title="General-purpose programming language">general-purpose</a>, <a href="/wiki/High-level_programming_language" title="High-level programming language">high-level programming language</a>. Originally a web datasource connection tool,<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">[1]</a></sup> for <a href="/wiki/Filemaker" class="mw-redirect" title="Filemaker">Filemaker</a> and later included in <a href="/wiki/Apple_Computer" class="mw-redirect" title="Apple Computer">Apple Computer</a>'s FileMaker 4.0 and <a href="/wiki/Claris_Homepage" class="mw-redirect" title="Claris Homepage">Claris Homepage</a> as CDML,<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">[2]</a></sup><sup id="cite_ref-3" class="reference"><a href="#cite_note-3">[3]</a></sup> it has since evolved into a complex language used to develop and serve large-scale internet applications and web pages.</p>
+<p>Lasso includes a simple template system allowing code to control generation of <a href="/wiki/HTML" title="HTML">HTML</a> and other <a href="/wiki/Internet_media_type" class="mw-redirect" title="Internet media type">content types</a>. Lasso is <a href="/wiki/Object-oriented" class="mw-redirect" title="Object-oriented">object-oriented</a> and every value is an <a href="/wiki/Object_(computer_science)" title="Object (computer science)">object</a>. It also supports <a href="/wiki/Procedural_programming" title="Procedural programming">procedural programming</a> through <i>unbound</i> methods. The language uses <a href="/wiki/Trait_(computer_programming)" title="Trait (computer programming)">traits</a> and <a href="/wiki/Multiple_dispatch" title="Multiple dispatch">multiple dispatch</a> extensively.</p>
+<p>Lasso has a dynamic <a href="/wiki/Type_system" title="Type system">type system</a>, where objects can be loaded and augmented at runtime, automatic <a href="/wiki/Memory_management" title="Memory management">memory management</a>, a comprehensive <a href="/wiki/Standard_library" title="Standard library">standard library</a>, and three <a href="/wiki/Compiler" title="Compiler">compiling</a> methodologies: <a href="/wiki/Dynamic_compilation" title="Dynamic compilation">dynamic</a> (comparable to <a href="/wiki/PHP" title="PHP">PHP</a>-<a href="/wiki/Python_(programming_language)" title="Python (programming language)">Python</a>), <a href="/wiki/Just-in-time_compilation" title="Just-in-time compilation">just-in-time compilation</a> (comparable to <a href="/wiki/Java_(programming_language)" title="Java (programming language)">Java</a> or <a href="/wiki/.NET_Framework" title=".NET Framework">.NET Framework</a>), and <a href="/wiki/Compiler" title="Compiler">pre-compiled</a> (comparable to <a href="/wiki/C_(programming_language)" title="C (programming language)">C</a>). Lasso also supports Query Expressions,<sup id="cite_ref-4" class="reference"><a href="#cite_note-4">[4]</a></sup> allowing elements within arrays and other types of sequences to be iterated, filtered, and manipulated using a natural language syntax similar to <a href="/wiki/SQL" title="SQL">SQL</a>.<sup id="cite_ref-5" class="reference"><a href="#cite_note-5">[5]</a></sup> Lasso includes full <a href="/wiki/Unicode" title="Unicode">Unicode</a> character support in the standard string object, allowing it to serve and support <a href="/wiki/Variable-width_encoding" title="Variable-width encoding">multi-byte characters</a> such as Japanese and Swedish, and supports transparent <a href="/wiki/UTF-8" title="UTF-8">UTF-8</a> conversion when writing string data to the network or file system.</p>
+<p>Lasso is often used as a <a href="/wiki/Scripting_language" title="Scripting language">scripting language</a>, and also used in a wide range of non-scripting contexts. Lasso code can be packaged into standalone executable programs called "LassoApps", in which folder structures are compiled into single files.<sup id="cite_ref-6" class="reference"><a href="#cite_note-6">[6]</a></sup></p>
+<p>The Lasso Server application server runs as a system service and receives requests from the <a href="/wiki/Webserver" class="mw-redirect" title="Webserver">web server</a> through <a href="/wiki/FastCGI" title="FastCGI">FastCGI</a>. It then hands the request off to the appropriate Lasso Instance, which formulates the response. Multiple individual instances are supported, allowing one server to handle multiple sites, each as separate processes. The server uses a high performance <a href="/wiki/Input/output" title="Input/output">IO</a>-based <a href="/wiki/Green_threads" title="Green threads">green threading</a> system designed for <a href="/wiki/Multi-core_processor" title="Multi-core processor">multi-core</a> systems.</p>
+<p>Lasso can be compared to the <a href="/wiki/Server-side_scripting" title="Server-side scripting">server-side scripting</a> languages <a href="/wiki/PHP" title="PHP">PHP</a><sup id="cite_ref-7" class="reference"><a href="#cite_note-7">[7]</a></sup><sup id="cite_ref-8" class="reference"><a href="#cite_note-8">[8]</a></sup> and <a href="/wiki/Python_(programming_language)" title="Python (programming language)">Python</a>, <a href="/wiki/ColdFusion_Markup_Language" title="ColdFusion Markup Language">ColdFusion</a>, <a href="/wiki/Ruby_programming_language" class="mw-redirect" title="Ruby programming language">Ruby</a>, etc.<sup id="cite_ref-9" class="reference"><a href="#cite_note-9">[9]</a></sup><sup id="cite_ref-10" class="reference"><a href="#cite_note-10">[10]</a></sup></p>
+<p>Free for development, Lasso allows partial access to its source code,<sup id="cite_ref-11" class="reference"><a href="#cite_note-11">[11]</a></sup> allowing developers to add or change major components of the language (for example, Ke Carlton's DS implementation of the Lasso Inline<sup id="cite_ref-12" class="reference"><a href="#cite_note-12">[12]</a></sup>). Licensing comes in both SAS and stand-alone versions.<sup id="cite_ref-13" class="reference"><a href="#cite_note-13">[13]</a></sup></p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#History"><span class="tocnumber">1</span> <span class="toctext">History</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Release_history"><span class="tocnumber">1.1</span> <span class="toctext">Release history</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-3"><a href="#Code_examples"><span class="tocnumber">2</span> <span class="toctext">Code examples</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="#Hello_World"><span class="tocnumber">2.1</span> <span class="toctext">Hello World</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Inlines"><span class="tocnumber">2.2</span> <span class="toctext">Inlines</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#99_Bottles_of_Beer"><span class="tocnumber">2.3</span> <span class="toctext">99 Bottles of Beer</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a href="#Development_tools.2C_environments"><span class="tocnumber">3</span> <span class="toctext">Development tools, environments</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#References"><span class="tocnumber">4</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#External_links"><span class="tocnumber">5</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="History">History</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Lasso_(programming_language)&amp;action=edit&amp;section=1" title="Edit section: History">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Lasso began in the mid-1990s when early web developers were attempting to connect Apple's FileMaker Pro database with the World Wide Web. On the Mac platform, there were two solutions: Eric Bickford's <a rel="nofollow" class="external text" href="http://webfm.com/webfm.html">WEB-FM</a>, and Russell Owens' <a rel="nofollow" class="external text" href="http://www.astro.washington.edu/owen/ROFM_CGI.html">FileMaker CGI (ROFM)</a>, both built in <a href="/wiki/AppleScript" title="AppleScript">AppleScript</a> and requiring the use of FileMaker Pro calculation fields for formatting. (WEB-FM was subsequently rewritten in C).</p>
+<p>In the Fall of 1995, developer Vince Bonafonti wrote a new CGI based on ROFM, using C/C++ for improved performance, and using the notion of HTML-based "templates" instead of relying on calculation fields. This proved very popular in the FileMaker community, and was brought to the attention of Bill Doerrfeld, owner of <a rel="nofollow" class="external text" href="https://web.archive.org/web/20030605131907/http://www.blueworld.com/blueworld/">Blue World Communications Inc.</a>, a print and website development firm based out of <a href="/wiki/Issaquah,_Washington" title="Issaquah, Washington">Issaquah, Washington</a>, who bought the <a href="/wiki/Source_code" title="Source code">source code</a>.<sup id="cite_ref-14" class="reference"><a href="#cite_note-14">[14]</a></sup></p>
+<p>At this time, Blue World experimented with improvements for the <a href="/wiki/Common_Gateway_Interface" title="Common Gateway Interface">CGI</a> in the <a href="/wiki/UserLand_Software" title="UserLand Software">Frontier</a> scripting environment, which inspired the name "Lasso". Further need for improvement drove the creation of a C-based CGI which was later released as "Lasso 1.0". At this point Lasso only worked with <a href="/wiki/FileMaker" title="FileMaker">FileMaker</a> Pro 3.x and <a href="/wiki/WebSTAR" title="WebSTAR">WebSTAR</a>, and only ran on <a href="/wiki/Apple_Inc." title="Apple Inc.">Apple</a> <a href="/wiki/Mac_OS_8" title="Mac OS 8">Mac OS 8</a> and above.<sup id="cite_ref-15" class="reference"><a href="#cite_note-15">[15]</a></sup></p>
+<p>Lasso's popularity grew most notably from reviews in print publications<sup id="cite_ref-16" class="reference"><a href="#cite_note-16">[16]</a></sup><sup class="noprint selfreference">[<i><a href="/wiki/Talk:Lasso_(programming_language)#Notability" title="Talk:Lasso (programming language)">discuss</a></i>]</sup> and Blue World's hosting of and participation in many email discussion lists, many of which specifically pertained to FileMaker Pro. Blue World also made frequent appearances and was known as a leading company at <a href="/wiki/Macworld/iWorld" title="Macworld/iWorld">MacWorld conferences</a>.<sup id="cite_ref-17" class="reference"><a href="#cite_note-17">[17]</a></sup></p>
+<p>Following the release of the Lasso 1.2 lineup in January 1997, Blue World and the Bonfantis entered private talks with <a href="/wiki/Claris" title="Claris">Claris</a>, the software division of <a href="/wiki/Apple_Computer" class="mw-redirect" title="Apple Computer">Apple Computer</a>, and owner of FileMaker Pro. Claris eventually licensed the post-version-1.2 Lasso <a href="/wiki/Source_code" title="Source code">source code</a>, and with the help of Vince and Paul Bonfanti released the FileMaker Web Companion as a component of FileMaker Pro 4.0. FileMaker Web Companion's language, <a href="/wiki/CDML" class="mw-redirect" title="CDML">CDML</a> (Claris Dynamic Markup Language),<sup id="cite_ref-18" class="reference"><a href="#cite_note-18">[18]</a></sup> differed from Lasso 1.2's LDML (Lasso Dynamic Markup Language), but was close enough as to offer an easy transition for developers looking to serve from FileMaker Pro through third-party servers<sup id="cite_ref-19" class="reference"><a href="#cite_note-19">[19]</a></sup> and offered more compelling features.<sup id="cite_ref-20" class="reference"><a href="#cite_note-20">[20]</a></sup></p>
+<p>Including the Lasso-like Web Companion in FileMaker 4.0 helped grow popularity for Lasso in the fast-growing Macintosh <a href="/wiki/Web_development" title="Web development">web development</a> community. Blue World continued developing Lasso with Kyle Jessup becoming Lasso's <a href="/wiki/Lead_programmer" title="Lead programmer">lead programmer</a>. Lasso 2.0 was released in July 1997, introducing some fundamental shifts in how Lasso could be used.<sup id="cite_ref-21" class="reference"><a href="#cite_note-21">[21]</a></sup></p>
+<p>On February 26, 2002, Blue World released Lasso 5, a radical departure from the FileMaker-centric language to date. (There was never a Lasso 4 release; the version number skipped from 3 to 5.) Lasso 5 included, among many updates, a completely rewritten architecture (for OS X, Windows, Linux), and an embedded <a href="/wiki/MySQL" title="MySQL">MySQL</a> database.<sup id="cite_ref-22" class="reference"><a href="#cite_note-22">[22]</a></sup> Though Lasso 5 still spoke to a FileMaker database (but not to a FileMaker Server), FileMaker as a data source remained relatively slow compared to an SQL engine, and was prohibitively more expensive. Since v2.0, Lasso was fully multithreaded, allowing many connections at once, but succumbed to FileMaker's latency or lag in certain operations, and there was no way to get around it reliably other than to make major changes to the data source.<sup id="cite_ref-23" class="reference"><a href="#cite_note-23">[23]</a></sup></p>
+<p>Lasso 5 also added support for <a href="/wiki/Apache_HTTP_Server" title="Apache HTTP Server">Apache HTTP Server</a> natively under OS X, Windows, and Linux, joining Webstar 5, <a href="/wiki/AppleShare_IP" class="mw-redirect" title="AppleShare IP">AppleShare IP</a> (which was replaced by OS X Server), and iTools (from Tenon<sup id="cite_ref-24" class="reference"><a href="#cite_note-24">[24]</a></sup>). (Mac OS 9, on which Lasso had been used for many years, was unsupported). This drove closer ties to a classic <a href="/wiki/LAMP_(software_bundle)" title="LAMP (software bundle)">LAMP</a> server architecture.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (October 2013)">citation needed</span></a></i>]</sup></p>
+<p>Blue World Communications released a series of plug-ins for popular Web development packages from Macromedia and Adobe. Lasso Studio 1.5 for Dreamweaver was a runner up in MacWorld magazine's Editors' Choice Awards for Internet and Development<sup id="cite_ref-25" class="reference"><a href="#cite_note-25">[25]</a></sup> in 2001, losing out to <a href="/wiki/Adobe_Dreamweaver" title="Adobe Dreamweaver">Adobe Dreamweaver</a> 3. Lasso Studio for Dreamweaver 1.5<sup id="cite_ref-26" class="reference"><a href="#cite_note-26">[26]</a></sup> was also reviewed favorably by MacWorld magazine earning 4 and a half mice. Later version of Lasso Studio supported both <a href="/wiki/Adobe_Dreamweaver" title="Adobe Dreamweaver">Macromedia Dreamweaver</a> and <a href="/wiki/Adobe_GoLive" title="Adobe GoLive">Adobe GoLive</a> including Lasso Studio 7 for Dreamweaver and GoLive<sup id="cite_ref-27" class="reference"><a href="#cite_note-27">[27]</a></sup> on March 26, 2004.</p>
+<p>With the release of FileMaker Server and FileMaker Server Advanced version 7 in 2004 FileMaker signaled a major change in their strategy for serving data to Web sites. They emphasized XML-XSLT, ODBC, and JDBC connectivity, but only through the more expensive FileMaker Server Advanced product.<sup id="cite_ref-28" class="reference"><a href="#cite_note-28">[28]</a></sup> Blue World began to distance the Lasso language from FileMaker and Apple. In 2005, Lasso Pro received MySQL Network certification<sup id="cite_ref-29" class="reference"><a href="#cite_note-29">[29]</a></sup> demonstrating the importance of the popular open source database to the future of Lasso.</p>
+<p>On August 1 of 2004, Bill Doerrfeld officially sold the Lasso product line to OmniPilot Software, Inc. in Ft. Lauderdale, Florida. Lasso 7.0.3 was the last version of Lasso released by Blue World.<sup id="cite_ref-30" class="reference"><a href="#cite_note-30">[30]</a></sup></p>
+<p>On October 25, 2004, OmniPilot officially announced the release of Lasso 8, a version including sandboxing for multiple sites on the same server and connectivity to many new datasources.<sup id="cite_ref-31" class="reference"><a href="#cite_note-31">[31]</a></sup> This also included the first "free" version of Lasso limited to IP addresses.<sup id="cite_ref-32" class="reference"><a href="#cite_note-32">[32]</a></sup> OmniPilot followed this release with a number of complementary products, including Lasso Studio 8 for Dreamweaver and GoLive<sup id="cite_ref-33" class="reference"><a href="#cite_note-33">[33]</a></sup> on March 28, 2005, Lasso Studio for <a href="/wiki/Eclipse_(software)" title="Eclipse (software)">Eclipse</a>, ChartFX integration and a number of free Lasso-based solutions.<sup id="cite_ref-34" class="reference"><a href="#cite_note-34">[34]</a></sup></p>
+<p>In 2007, three OmniPilot employees, Kyle Jessup (the original developer of Lasso 1.0), Fletcher Sandbeck (an early employee of Blue World known for regular Tips and Tricks) and Kerry Adams (an employee of OmniPilot) created a new company, LassoSoft LLC, to purchase the intellectual property of Lasso from OmniPilot and continue development.<sup id="cite_ref-35" class="reference"><a href="#cite_note-35">[35]</a></sup><sup id="cite_ref-36" class="reference"><a href="#cite_note-36">[36]</a></sup> Recognizing the need to be competitive against much more popular languages such as <a href="/wiki/PHP" title="PHP">PHP</a> and <a href="/wiki/Active_Server_Pages" title="Active Server Pages">ASP</a>, radical changes in architecture, syntax and structure were made and released as Lasso 9.0. Technical challenges caused by these changes, coupled with limited marketing resources, led to significant community decline as the company struggled to release documentation and support for the new language.<sup id="cite_ref-37" class="reference"><a href="#cite_note-37">[37]</a></sup><sup id="cite_ref-38" class="reference"><a href="#cite_note-38">[38]</a></sup></p>
+<p>In December 2010, a new Canadian company was formed, LassoSoft Inc., which bought and invested heavily in the Lasso 9.0 language, marketing and documentation. Kyle Jessup agreed to stay on as both Lasso's Lead Developer and <a href="/wiki/Benevolent_Dictator_for_Life" class="mw-redirect" title="Benevolent Dictator for Life">Benevolent Dictator for Life</a>. Several releases (9.1 and 9.2) have released further developments in recent years.<sup id="cite_ref-39" class="reference"><a href="#cite_note-39">[39]</a></sup></p>
+<h3><span class="mw-headline" id="Release_history">Release history</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Lasso_(programming_language)&amp;action=edit&amp;section=2" title="Edit section: Release history">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<table class="wikitable">
+<caption>Key</caption>
+<tr>
+<th>Color</th>
+<th>Meaning</th>
+<th>Development</th>
+</tr>
+<tr>
+<td style="background:salmon;">Red</td>
+<td>Old release</td>
+<td>No development</td>
+</tr>
+<tr>
+<td style="background:#FCED77;">Yellow</td>
+<td>Stable release</td>
+<td>Security fixes</td>
+</tr>
+<tr>
+<td style="background:#a0e75a;">Green</td>
+<td>Stable release</td>
+<td>Bug and security fixes</td>
+</tr>
+<tr>
+<td style="background:skyBlue;">Blue</td>
+<td>Future release</td>
+<td>New features</td>
+</tr>
+</table>
+<table class="wikitable">
+<tr>
+<th style="width:70px;">Version</th>
+<th style="width:100px;">Release date</th>
+<th>Notes</th>
+</tr>
+<tr>
+<td style="background:salmon;">ROFM</td>
+<td>&gt;1994-03-14</td>
+<td>Russell Owens' FileMaker CGI, early AppleScript-based connector for FileMaker Pro databases</td>
+</tr>
+<tr>
+<td style="background:salmon;">0.1</td>
+<td>Sep-1995</td>
+<td>CGI connector written by Vince Bonafonti in C/C++ to connect FileMaker Pro to the web</td>
+</tr>
+<tr>
+<td style="background:salmon;">1.0</td>
+<td>27-Sep-1996</td>
+<td>Connector for FileMaker Pro 3.x and WebSTAR<sup id="cite_ref-40" class="reference"><a href="#cite_note-40">[40]</a></sup><sup id="cite_ref-41" class="reference"><a href="#cite_note-41">[41]</a></sup></td>
+</tr>
+<tr>
+<td style="background:salmon;">1.1</td>
+<td>Dec-1996</td>
+<td>WebSTAR plug-in, client browser information, complete GUI security layer<sup id="cite_ref-42" class="reference"><a href="#cite_note-42">[42]</a></sup></td>
+</tr>
+<tr>
+<td style="background:salmon;">1.2</td>
+<td>Jan-1997</td>
+<td>Source code licensed to Claris (Apple Computer Inc), named CDML, installed in Claris Homepage</td>
+</tr>
+<tr>
+<td style="background:salmon;">2</td>
+<td>17-Jul-1997</td>
+<td>Included mathematical calculations, variables, complex data types, server side includes, client header information, advanced conditional statements, a Java-client interface, Apple Events control for other applications on the web server, multiple database actions, and Instant Web Publishing<sup id="cite_ref-43" class="reference"><a href="#cite_note-43">[43]</a></sup></td>
+</tr>
+<tr>
+<td style="background:salmon;">2.5</td>
+<td>1-Dec-1997</td>
+<td>Added tag standardization and interoperability, ability to communicate with the <a href="/w/index.php?title=WebTen&amp;action=edit&amp;redlink=1" class="new" title="WebTen (page does not exist)">WebTen</a> web server (a port of <a href="/wiki/Apache_HTTP_Server" title="Apache HTTP Server">Apache HTTP Server</a> to the Mac OS by Tenon Intersystems)<sup id="cite_ref-44" class="reference"><a href="#cite_note-44">[44]</a></sup></td>
+</tr>
+<tr>
+<td style="background:salmon;">3.0</td>
+<td>07-Oct-1998</td>
+<td>Added data validation filters, macros, file/directory management, date/time controls, list variables, multiple named tokens, robust error handling, MIME email, email attachments, extended math routines, enhanced string functions, enhanced encoding controls<sup id="cite_ref-45" class="reference"><a href="#cite_note-45">[45]</a></sup></td>
+</tr>
+<tr>
+<td style="background:salmon;">3.5</td>
+<td>14-Apr-1999</td>
+<td>Added <a href="/wiki/WYSIWYG" title="WYSIWYG">WYSIWYG</a> authoring using Macromedia Dreamweaver 2 and Adobe GoLive 4, multithreading, LJAPI, optional HTTP server, support for Netscape server, JavaScript, XML and advanced tag parser with built-in debug controls<sup id="cite_ref-46" class="reference"><a href="#cite_note-46">[46]</a></sup></td>
+</tr>
+<tr>
+<td style="background:salmon;">3.6</td>
+<td>5-Jan-2000</td>
+<td>Support for FileMaker 5 Data Sources, SQL wizard for interactive SQL queries, customizable global error pages and Studio for MacroMedia DreamWeaver<sup id="cite_ref-47" class="reference"><a href="#cite_note-47">[47]</a></sup></td>
+</tr>
+<tr>
+<td style="background:salmon;">3.6.5</td>
+<td>1-Oct-2000</td>
+<td>Added connector for MySQL, Red Hat and OS X support<sup id="cite_ref-48" class="reference"><a href="#cite_note-48">[48]</a></sup></td>
+</tr>
+<tr>
+<td style="background:salmon;">5</td>
+<td>26-Feb-2002</td>
+<td>Rewritten architecture for OS X, Windows, Linux, with embedded MySQL; added sessions, file manipulation, native connector for Apache, and LassoScript (adding "scripting" methodology to the language)<sup id="cite_ref-49" class="reference"><a href="#cite_note-49">[49]</a></sup></td>
+</tr>
+<tr>
+<td style="background:salmon;">6</td>
+<td>17-Sep-2002</td>
+<td>Added imaging, PDF manipulation, native XML, FTP integration, date math, durations<sup id="cite_ref-50" class="reference"><a href="#cite_note-50">[50]</a></sup></td>
+</tr>
+<tr>
+<td style="background:salmon;">7</td>
+<td>30-Aug-2004</td>
+<td>MySQL externalized (due to licensing), FileMaker closed connector</td>
+</tr>
+<tr>
+<td style="background:salmon;">7.1</td>
+<td>13-Sept-2004</td>
+<td>Added compatibility with Filemaker Pro 7<sup id="cite_ref-51" class="reference"><a href="#cite_note-51">[51]</a></sup></td>
+</tr>
+<tr>
+<td style="background:salmon;">8</td>
+<td>25-Oct-2004</td>
+<td>Lasso Server broken down into separate "sites" for hosting providers</td>
+</tr>
+<tr>
+<td style="background:salmon;">8.1</td>
+<td>19-Sep-2005</td>
+<td>Added document caching, stability fixes<sup id="cite_ref-52" class="reference"><a href="#cite_note-52">[52]</a></sup></td>
+</tr>
+<tr>
+<td style="background:salmon;">8.5</td>
+<td>9-Jun-2006</td>
+<td>Added full AJAX integration, multiple data source connectors pre-installed for FileMaker, FileMaker Server Advanced, MySQL, SQLite, MS SQL Server, Sybase, Oracle, PostgreSQL, OpenBase, ODBC, and Apple's Spotlight engine<sup id="cite_ref-53" class="reference"><a href="#cite_note-53">[53]</a></sup></td>
+</tr>
+<tr>
+<td style="background:salmon;">9</td>
+<td>29-Jan-2010</td>
+<td>Major architectural change: more syntax, strong-typing vs. weak-typing, JIT compiling, native serializing, 64-bit support<sup id="cite_ref-54" class="reference"><a href="#cite_note-54">[54]</a></sup></td>
+</tr>
+<tr>
+<td style="background:#a0e75a;">8.6</td>
+<td>20-Apr-2011</td>
+<td>Speed, stability increased<sup id="cite_ref-55" class="reference"><a href="#cite_note-55">[55]</a></sup></td>
+</tr>
+<tr>
+<td style="background:salmon;">9.1</td>
+<td>11-Jul-2011</td>
+<td>New administration interface, 64-bit connector, new SAS licensing<sup id="cite_ref-56" class="reference"><a href="#cite_note-56">[56]</a></sup></td>
+</tr>
+<tr>
+<td style="background:salmon;">9.2</td>
+<td>1-Jun-2012</td>
+<td>Windows support added, integrated debugging, integrated code profiling<sup id="cite_ref-57" class="reference"><a href="#cite_note-57">[57]</a></sup></td>
+</tr>
+<tr>
+<td style="background:#a0e75a;">9.3</td>
+<td>23-Jan-2015</td>
+<td>New admin interface, new compilation methodology, centralized server deployment<sup id="cite_ref-58" class="reference"><a href="#cite_note-58">[58]</a></sup></td>
+</tr>
+</table>
+<h2><span class="mw-headline" id="Code_examples">Code examples</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Lasso_(programming_language)&amp;action=edit&amp;section=3" title="Edit section: Code examples">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="Hello_World">Hello World</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Lasso_(programming_language)&amp;action=edit&amp;section=4" title="Edit section: Hello World">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Here are three ways to say "Hello world!" on a Lasso page.</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="cp">&lt;?lasso</span> <span class="s1">'Hello World!'</span> <span class="cp">?&gt;</span>
+
+<span class="cp">[</span><span class="s1">'Hello world!'</span><span class="cp">]</span>
+
+<span class="x">Hello world!</span>
+</pre></div>
+<p>Square brackets are reserved in Lasso, so html entities must be used to show square brackets on Lasso pages for other purposes than marking Lasso tags. Alternatively, printing square brackets can be by Lasso or be disabled by including [no_square_brackets] at the file top.</p>
+<h3><span class="mw-headline" id="Inlines">Inlines</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Lasso_(programming_language)&amp;action=edit&amp;section=5" title="Edit section: Inlines">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="c1">// Find all records in a table</span>
+<span class="k">inline</span><span class="p">(</span>		
+	<span class="na">-database</span><span class="o">=</span><span class="s1">'db_name'</span><span class="p">,</span> 
+	<span class="na">-table</span><span class="o">=</span><span class="s1">'table_name'</span><span class="p">,</span> 
+	<span class="na">-findall</span>	
+<span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+	<span class="c1">// Iterate through and process each row</span>
+	<span class="k">rows</span> <span class="o">=&gt;</span> <span class="p">{</span>	
+		<span class="c1">// Output each row to the current web request</span>
+		<span class="nb">content_body</span> <span class="o">+=</span> <span class="s1">'&lt;a href="'</span> <span class="o">+</span> <span class="nb">column</span><span class="p">(</span><span class="s1">'url'</span><span class="p">)</span> <span class="o">+</span> <span class="s1">'"&gt;'</span> <span class="o">+</span> <span class="nb">column</span><span class="p">(</span><span class="s1">'title'</span><span class="p">)</span> <span class="o">+</span> <span class="s1">'&lt;/a&gt;'</span>
+	<span class="p">}</span>	
+<span class="p">}</span>
+</pre></div>
+<p>Inlines are the basic Lasso tool for database actions. <a rel="nofollow" class="external text" href="http://www.lassosoft.com/lassoDocs/languageReference/obj/inline">Database commands</a> can be issued as above, in Lasso's db-independent metalanguage, in which case the same search code works for MySQL, FileMaker Pro or for any other database backend with which Lasso can connect.</p>
+<p>If needed, a <a href="/wiki/SQL" title="SQL">SQL</a> statement can of course be embedded in the inline when using a database server that supports SQL:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="x"> </span><span class="c1">// Execute SQL statement</span>
+ <span class="k">inline</span><span class="p">(</span>		
+ 	<span class="na">-database</span><span class="o">=</span><span class="s1">'db_name'</span><span class="p">,</span> 
+ 	<span class="na">-sql</span> <span class="o">=</span> <span class="s1">'SELECT * FROM table_name'</span>	
+ <span class="p">)</span><span class="nx">...</span>
+</pre></div>
+<p>In the above example, the dashes (-) before commands denote optional parameters. These can be specified in any order and generated dynamically; the last of any duplicate parameters take precedence. The inline command supports a large range of parameters<sup id="cite_ref-59" class="reference"><a href="#cite_note-59">[59]</a></sup> allowing developers to interact with databases that they may not have intimate knowledge of.</p>
+<p>Custom database connectors can be created which allows leveraging the abstracted nature of the inline command.</p>
+<h3><span class="mw-headline" id="99_Bottles_of_Beer">99 Bottles of Beer</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Lasso_(programming_language)&amp;action=edit&amp;section=6" title="Edit section: 99 Bottles of Beer">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The next procedural example prints out the lyrics for the song "99 Bottles of Beer".</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="c1">// Define a couple of useful methods</span>
+
+	<span class="kd">define</span> <span class="nf">br</span> <span class="o">=&gt;</span> <span class="s1">'&lt;br/&gt;'</span>
+	<span class="kd">define</span> <span class="nf">bottles</span><span class="p">(</span><span class="na">n</span><span class="nl">::integer</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="vi">#n</span> <span class="o">!=</span> <span class="mi">1</span> <span class="o">?</span> <span class="s1">' bottles'</span> <span class="o">|</span> <span class="s1">' bottle'</span>
+
+<span class="c1">// Declare the local that will store the lyrics as a string</span>
+
+	<span class="kd">local</span><span class="p">(</span><span class="n">out</span><span class="o"> =</span> <span class="s1">''</span><span class="p">)</span>
+
+<span class="c1">// Use Lasso query syntax to generate the lyric</span>
+
+	<span class="k">with</span> <span class="n">n</span> <span class="k">in</span> <span class="mi">99</span> <span class="k">to</span> <span class="mi">1</span> <span class="k">by</span> <span class="o">-</span><span class="mi">1</span> <span class="k">do</span> <span class="p">{</span>
+
+		<span class="vi">#out</span> <span class="o">+=</span>  <span class="vi">#n</span> <span class="o">+</span> <span class="nx">bottles</span><span class="p">(</span><span class="vi">#n</span><span class="p">)</span> <span class="o">+</span> <span class="s1">' of beer on the wall, '</span> <span class="o">+</span> <span class="nx">br</span>
+		<span class="vi">#out</span> <span class="o">+=</span>  <span class="vi">#n</span> <span class="o">+</span> <span class="nx">bottles</span><span class="p">(</span><span class="vi">#n</span><span class="p">)</span> <span class="o">+</span> <span class="s1">' of beer; '</span> <span class="o">+</span> <span class="nx">br</span>
+		<span class="vi">#n</span><span class="o">--</span>
+		<span class="vi">#out</span> <span class="o">+=</span> <span class="s1">'Take one down, pass it around, '</span> <span class="o">+</span> <span class="nx">br</span>
+		<span class="vi">#out</span> <span class="o">+=</span> <span class="vi">#n</span> <span class="o">+</span> <span class="nx">bottles</span><span class="p">(</span><span class="vi">#n</span><span class="p">)</span> <span class="o">+</span> <span class="s1">' of beer on the wall. '</span> <span class="o">+</span> <span class="p">(</span><span class="nx">br</span> <span class="o">*</span> <span class="mi">2</span><span class="p">)</span>
+	<span class="p">}</span>
+
+<span class="c1">// Output result</span>
+
+	<span class="vi">#out</span>
+</pre></div>
+<p>The next example uses an OOP approach to print out the lyrics when the object is represented as a string:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="c1">// Define type</span>
+<span class="kd">define</span> <span class="nc">bottles_of_beer</span><span class="o"> =&gt; </span><span class="k">type</span> <span class="p">{</span>
+
+	<span class="c1">// Define internal data </span>
+	<span class="kd">data</span> <span class="k">private</span> <span class="nf">bottles</span> <span class="o">=</span> <span class="mi">99</span>
+
+	<span class="c1">// Define private methods</span>
+	<span class="k">private</span> <span class="nf">br</span> <span class="o">=&gt;</span> <span class="s1">'&lt;br/&gt;'</span>
+	<span class="k">private</span> <span class="nf">s</span> <span class="o">=&gt;</span> <span class="bp">.</span><span class="nx nx-Member">bottles</span> <span class="o">!=</span> <span class="mi">1</span> <span class="o">?</span> <span class="s1">'s'</span> <span class="o">|</span> <span class="s1">''</span>
+	
+	<span class="c1">// Generate lyrics when object represented as a string</span>
+	<span class="k">public</span> <span class="nf">asstring</span> <span class="o">=&gt;</span> <span class="p">{</span>
+
+		<span class="kd">local</span><span class="p">(</span><span class="n">out</span><span class="o"> =</span> <span class="s1">''</span><span class="p">)</span>
+	
+		<span class="c1">// Use Lasso query syntax to generate the lyrics</span>
+	
+
+		<span class="k">with</span> <span class="n">n</span> <span class="k">in</span> <span class="mi">99</span> <span class="k">to</span> <span class="mi">1</span> <span class="k">by</span> <span class="o">-</span><span class="mi">1</span> <span class="k">do</span> <span class="p">{</span>
+			<span class="bp">.</span><span class="nx nx-Member">bottles</span> <span class="o">=</span> <span class="vi">#n</span>
+			<span class="vi">#out</span> <span class="o">+=</span>  <span class="bp">.</span><span class="nx nx-Member">bottles</span> <span class="o">+</span> <span class="s1">' bottle'</span> <span class="o">+</span> <span class="bp">.</span><span class="nb">s</span> <span class="o">+</span> <span class="s1">' of beer on the wall, '</span> <span class="o">+</span> <span class="bp">.</span><span class="nx nx-Member">br</span>
+			<span class="vi">#out</span> <span class="o">+=</span>  <span class="bp">.</span><span class="nx nx-Member">bottles</span> <span class="o">+</span> <span class="s1">' bottle'</span> <span class="o">+</span> <span class="bp">.</span><span class="nb">s</span> <span class="o">+</span> <span class="s1">' of beer; '</span> <span class="o">+</span> <span class="bp">.</span><span class="nx nx-Member">br</span>
+			<span class="bp">.</span><span class="nx nx-Member">bottles</span><span class="o">--</span>
+			<span class="vi">#out</span> <span class="o">+=</span> <span class="s1">'Take one down, pass it around, '</span> <span class="o">+</span> <span class="bp">.</span><span class="nx nx-Member">br</span>
+			<span class="vi">#out</span> <span class="o">+=</span> <span class="bp">.</span><span class="nx nx-Member">bottles</span> <span class="o">+</span> <span class="s1">' bottle'</span> <span class="o">+</span> <span class="bp">.</span><span class="nb">s</span> <span class="o">+</span> <span class="s1">' of beer on the wall. '</span> <span class="o">+</span> <span class="p">(</span><span class="bp">.</span><span class="nx nx-Member">br</span> <span class="o">*</span> <span class="mi">2</span><span class="p">)</span> 
+		<span class="p">}</span>
+
+		<span class="c1">// Return result</span>
+		<span class="k">return</span> <span class="vi">#out</span>
+	<span class="p">}</span>
+<span class="p">}</span>
+
+<span class="nx">bottles_of_beer</span>
+</pre></div>
+<h2><span class="mw-headline" id="Development_tools.2C_environments">Development tools, environments</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Lasso_(programming_language)&amp;action=edit&amp;section=7" title="Edit section: Development tools, environments">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li>LassoLab</li>
+<li>Lasso Studio for <a href="/wiki/Eclipse_(software)" title="Eclipse (software)">Eclipse</a></li>
+<li>Lasso language mode for <a href="/wiki/Coda_(web_development_software)" title="Coda (web development software)">Coda</a></li>
+<li>Lasso language module for <a href="/wiki/BBEdit" title="BBEdit">BBEdit</a></li>
+</ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Lasso_(programming_language)&amp;action=edit&amp;section=8" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist columns references-column-width" style="-moz-column-width: 30em; -webkit-column-width: 30em; column-width: 30em; list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><cite id="CITEREFDave1997" class="citation">Dave, Parkhurst (April 25, 1997), "New Web tools help servers link to legacy data", <i>MacWEEK Magazine</i></cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALasso+%28programming+language%29&amp;rft.atitle=New+Web+tools+help+servers+link+to+legacy+data&amp;rft.aufirst=Parkhurst&amp;rft.aulast=Dave&amp;rft.date=1997-04-25&amp;rft.genre=article&amp;rft.jtitle=MacWEEK+Magazine&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.macworld.com/article/1014068/filemakerpro.html">"Filemaker Pro Requires external connector"</a>. Feb 1, 2000.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALasso+%28programming+language%29&amp;rft.btitle=Filemaker+Pro+Requires+external+connector&amp;rft.date=2000-02-01&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.macworld.com%2Farticle%2F1014068%2Ffilemakerpro.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.macworld.com/article/1001543/lasso.html">"Web-Enabling Filemaker Pro Databases"</a>. Aug 1, 2002.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALasso+%28programming+language%29&amp;rft.btitle=Web-Enabling+Filemaker+Pro+Databases&amp;rft.date=2002-08-01&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.macworld.com%2Farticle%2F1001543%2Flasso.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://msdn.microsoft.com/en-us/library/bb384065.aspx">"Microsoft on Query Expressions"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALasso+%28programming+language%29&amp;rft.btitle=Microsoft+on+Query+Expressions&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fmsdn.microsoft.com%2Fen-us%2Flibrary%2Fbb384065.aspx&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.lassoguide.com/language/index_language.html">"Query Expressions Defined"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALasso+%28programming+language%29&amp;rft.btitle=Query+Expressions+Defined&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.lassoguide.com%2Flanguage%2Findex_language.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.lassoguide.com/operations/lassoapps.html">"An explanation of LassoApps"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALasso+%28programming+language%29&amp;rft.btitle=An+explanation+of+LassoApps&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.lassoguide.com%2Foperations%2Flassoapps.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text"><cite class="citation web">Chris, Tracewell (2006). <a rel="nofollow" class="external text" href="http://www.mactech.com/articles/mactech/Vol.22/22.07/PHPvsLasso/index.html">"A Closer Look at Two OS X Scripting Languages"</a>. <i>MACTech</i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALasso+%28programming+language%29&amp;rft.atitle=A+Closer+Look+at+Two+OS+X+Scripting+Languages&amp;rft.aufirst=Tracewell&amp;rft.aulast=Chris&amp;rft.date=2006&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.mactech.com%2Farticles%2Fmactech%2FVol.22%2F22.07%2FPHPvsLasso%2Findex.html&amp;rft.jtitle=MACTech&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text"><cite class="citation web">Brian, Dunning (February 1, 2005). <a rel="nofollow" class="external text" href="http://www.briandunning.com/browse/browse0205.shtml">"Pick the Right Tool for the Job"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALasso+%28programming+language%29&amp;rft.aufirst=Dunning&amp;rft.aulast=Brian&amp;rft.btitle=Pick+the+Right+Tool+for+the+Job&amp;rft.date=2005-02-01&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.briandunning.com%2Fbrowse%2Fbrowse0205.shtml&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-9">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://w3techs.com/technologies/reportlist/programming_language">"Lasso vs Scripting Languages on W3Techs"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALasso+%28programming+language%29&amp;rft.btitle=Lasso+vs+Scripting+Languages+on+W3Techs&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fw3techs.com%2Ftechnologies%2Freportlist%2Fprogramming_language&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-10">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.langpop.com">"Comparison of Popular Languages"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALasso+%28programming+language%29&amp;rft.btitle=Comparison+of+Popular+Languages&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.langpop.com&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-11"><span class="mw-cite-backlink"><b><a href="#cite_ref-11">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://lasso.2283332.n4.nabble.com/lasso-9-source-code-td4316556.html">"Forum discussion linking to Lasso 9 source"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALasso+%28programming+language%29&amp;rft.btitle=Forum+discussion+linking+to+Lasso+9+source&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Flasso.2283332.n4.nabble.com%2Flasso-9-source-code-td4316556.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-12"><span class="mw-cite-backlink"><b><a href="#cite_ref-12">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://github.com/zeroloop/ds">"DS on GitHUB"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALasso+%28programming+language%29&amp;rft.btitle=DS+on+GitHUB&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fgithub.com%2Fzeroloop%2Fds&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-13"><span class="mw-cite-backlink"><b><a href="#cite_ref-13">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.lassosoft.com/License-Levels">"Lasso Licensing"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALasso+%28programming+language%29&amp;rft.btitle=Lasso+Licensing&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.lassosoft.com%2FLicense-Levels&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-14"><span class="mw-cite-backlink"><b><a href="#cite_ref-14">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.lassosoft.com/lassotalk/msg/197947/Re+The+Top+ELEVEN+That+Made+Lasso+What+It+Is+Today">"Vince Bonafonti LassoTalk Post"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALasso+%28programming+language%29&amp;rft.btitle=Vince+Bonafonti+LassoTalk+Post&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.lassosoft.com%2Flassotalk%2Fmsg%2F197947%2FRe%2BThe%2BTop%2BELEVEN%2BThat%2BMade%2BLasso%2BWhat%2BIt%2BIs%2BToday&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-15"><span class="mw-cite-backlink"><b><a href="#cite_ref-15">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://web.archive.org/web/19961227172044/http://www.blueworld.com/lasso/documentation/Docs/intro.html">"Lasso 1.0 Requirements"</a>. Archived from <a rel="nofollow" class="external text" href="http://www.blueworld.com/lasso/documentation/Docs/intro.html">the original</a> on December 27, 1996.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALasso+%28programming+language%29&amp;rft.btitle=Lasso+1.0+Requirements&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.blueworld.com%2Flasso%2Fdocumentation%2FDocs%2Fintro.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-16"><span class="mw-cite-backlink"><b><a href="#cite_ref-16">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://web.archive.org/web/20030608120807/http://www.blueworld.com/blueworld/products/LassoPress.html">"Lasso in the Press (archived)"</a>. Archived from <a rel="nofollow" class="external text" href="http://www.blueworld.com/blueworld/products/LassoPress.html">the original</a> on June 8, 2003.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALasso+%28programming+language%29&amp;rft.btitle=Lasso+in+the+Press+%28archived%29&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.blueworld.com%2Fblueworld%2Fproducts%2FLassoPress.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-17"><span class="mw-cite-backlink"><b><a href="#cite_ref-17">^</a></b></span> <span class="reference-text"><cite id="CITEREFJim2002" class="citation">Jim, Dalrymple (January 4, 2002), "Apple offers Connect: Pro2Pro event at Macworld", <i>PCWorld</i></cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALasso+%28programming+language%29&amp;rft.atitle=Apple+offers+Connect%3A+Pro2Pro+event+at+Macworld&amp;rft.aufirst=Dalrymple&amp;rft.aulast=Jim&amp;rft.date=2002-01-04&amp;rft.genre=article&amp;rft.jtitle=PCWorld&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-18"><span class="mw-cite-backlink"><b><a href="#cite_ref-18">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://etutorials.org/XML/filemaker+pro+6+developers+guide+to+xml_xsl/Chapter+6+Using+HTML+and+XHTML+to+Format+Web+Pages/6.6+Claris+Dynamic+Markup+Language/">"Claris Dynamic Markup Language"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALasso+%28programming+language%29&amp;rft.btitle=Claris+Dynamic+Markup+Language&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fetutorials.org%2FXML%2Ffilemaker%2Bpro%2B6%2Bdevelopers%2Bguide%2Bto%2Bxml_xsl%2FChapter%2B6%2BUsing%2BHTML%2Band%2BXHTML%2Bto%2BFormat%2BWeb%2BPages%2F6.6%2BClaris%2BDynamic%2BMarkup%2BLanguage%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-19"><span class="mw-cite-backlink"><b><a href="#cite_ref-19">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://web.archive.org/web/20010430142254/http://www.blueworld.com/blueworld/news/9.8.97-clarisacq.html">"Blue World Technology Aqcuired by Claris"</a>. Archived from <a rel="nofollow" class="external text" href="http://www.blueworld.com/blueworld/news/9.8.97-clarisacq.html">the original</a> on April 30, 2001.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALasso+%28programming+language%29&amp;rft.btitle=Blue+World+Technology+Aqcuired+by+Claris&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.blueworld.com%2Fblueworld%2Fnews%2F9.8.97-clarisacq.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-20"><span class="mw-cite-backlink"><b><a href="#cite_ref-20">^</a></b></span> <span class="reference-text"><cite class="citation web">Yu, Chong-ho. <a rel="nofollow" class="external text" href="https://web.archive.org/web/20041226204149/http://www.creative-wisdom.com/computer/FMP/intro_FMP.shtml">"Lasso provides more features than Web Companion"</a>. Archived from <a rel="nofollow" class="external text" href="http://www.creative-wisdom.com/computer/FMP/intro_FMP.shtml">the original</a> on December 26, 2004.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALasso+%28programming+language%29&amp;rft.aufirst=Chong-ho&amp;rft.aulast=Yu&amp;rft.btitle=Lasso+provides+more+features+than+Web+Companion&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.creative-wisdom.com%2Fcomputer%2FFMP%2Fintro_FMP.shtml&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-21"><span class="mw-cite-backlink"><b><a href="#cite_ref-21">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://web.archive.org/web/20010501134629/http://www.blueworld.com/blueworld/news/lasso2.0.pr.html">"Changes in Lasso 2.0"</a>. Archived from <a rel="nofollow" class="external text" href="http://www.blueworld.com/blueworld/news/lasso2.0.pr.html">the original</a> on May 1, 2001.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALasso+%28programming+language%29&amp;rft.btitle=Changes+in+Lasso+2.0&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.blueworld.com%2Fblueworld%2Fnews%2Flasso2.0.pr.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-22"><span class="mw-cite-backlink"><b><a href="#cite_ref-22">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.macworld.com/article/1001543/lasso.html">"Lasso 5 released"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALasso+%28programming+language%29&amp;rft.btitle=Lasso+5+released&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.macworld.com%2Farticle%2F1001543%2Flasso.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-23"><span class="mw-cite-backlink"><b><a href="#cite_ref-23">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://ask.slashdot.org/story/04/08/31/0121250/replacing-filemaker-with-free-software">"Slashdot discussion about abandoning FileMaker"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALasso+%28programming+language%29&amp;rft.btitle=Slashdot+discussion+about+abandoning+FileMaker&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fask.slashdot.org%2Fstory%2F04%2F08%2F31%2F0121250%2Freplacing-filemaker-with-free-software&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-24"><span class="mw-cite-backlink"><b><a href="#cite_ref-24">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.tenon.com/">Tenon</a></span></li>
+<li id="cite_note-25"><span class="mw-cite-backlink"><b><a href="#cite_ref-25">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.macworld.com/article/1001745/09internet.html">"Editors' Choice Awards: Internet and Development"</a>. <i>MacWorld</i>. IDG<span class="reference-accessdate">. Retrieved <span class="nowrap">28 October</span> 2013</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALasso+%28programming+language%29&amp;rft.atitle=Editors%27+Choice+Awards%3A+Internet+and+Development&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.macworld.com%2Farticle%2F1001745%2F09internet.html&amp;rft.jtitle=MacWorld&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-26"><span class="mw-cite-backlink"><b><a href="#cite_ref-26">^</a></b></span> <span class="reference-text"><cite class="citation web">Seiter, Charles. <a rel="nofollow" class="external text" href="http://www.macworld.com/article/1015763/lasso.html">"Lasso Studio for Dreamweaver 1.5"</a>. <i>MacWorld</i>. IDG<span class="reference-accessdate">. Retrieved <span class="nowrap">28 October</span> 2013</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALasso+%28programming+language%29&amp;rft.atitle=Lasso+Studio+for+Dreamweaver+1.5&amp;rft.aufirst=Charles&amp;rft.aulast=Seiter&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.macworld.com%2Farticle%2F1015763%2Flasso.html&amp;rft.jtitle=MacWorld&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-27"><span class="mw-cite-backlink"><b><a href="#cite_ref-27">^</a></b></span> <span class="reference-text"><cite class="citation web">Cohen, Peter. <a rel="nofollow" class="external text" href="http://www.macworld.com/article/1030112/lasso.html">"Lasso Studio 7 for Dreamweaver, GoLive released"</a>. <i>MacWorld</i>. IDG<span class="reference-accessdate">. Retrieved <span class="nowrap">28 October</span> 2013</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALasso+%28programming+language%29&amp;rft.atitle=Lasso+Studio+7+for+Dreamweaver%2C+GoLive+released&amp;rft.aufirst=Peter&amp;rft.aulast=Cohen&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.macworld.com%2Farticle%2F1030112%2Flasso.html&amp;rft.jtitle=MacWorld&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-28"><span class="mw-cite-backlink"><b><a href="#cite_ref-28">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.cmo.com.au/mediareleases/6711/filemaker-server-7-advanced-now-available/">"FileMaker Server 7 Advanced Now Available"</a>. <i>CMO</i><span class="reference-accessdate">. Retrieved <span class="nowrap">28 October</span> 2013</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALasso+%28programming+language%29&amp;rft.atitle=FileMaker+Server+7+Advanced+Now+Available&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.cmo.com.au%2Fmediareleases%2F6711%2Ffilemaker-server-7-advanced-now-available%2F&amp;rft.jtitle=CMO&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-29"><span class="mw-cite-backlink"><b><a href="#cite_ref-29">^</a></b></span> <span class="reference-text"><cite class="citation web">Cook, Brad. <a rel="nofollow" class="external text" href="http://www.macworld.com/article/1042860/lasso.html">"Lasso Pro receives MySQL Network certification"</a>. <i>MacWorld</i>. IDG<span class="reference-accessdate">. Retrieved <span class="nowrap">28 October</span> 2013</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALasso+%28programming+language%29&amp;rft.atitle=Lasso+Pro+receives+MySQL+Network+certification&amp;rft.aufirst=Brad&amp;rft.aulast=Cook&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.macworld.com%2Farticle%2F1042860%2Flasso.html&amp;rft.jtitle=MacWorld&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-30"><span class="mw-cite-backlink"><b><a href="#cite_ref-30">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.lassosoft.com/Omnipilot-Acquires-Lasso-Product-Line-From-Blue-World-Communications-Inc">"OmniPilot Software acquisition article"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALasso+%28programming+language%29&amp;rft.btitle=OmniPilot+Software+acquisition+article&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.lassosoft.com%2FOmnipilot-Acquires-Lasso-Product-Line-From-Blue-World-Communications-Inc&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-31"><span class="mw-cite-backlink"><b><a href="#cite_ref-31">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.macworld.com/article/1040256/lasso.html">"Lasso 8 release announcement"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALasso+%28programming+language%29&amp;rft.btitle=Lasso+8+release+announcement&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.macworld.com%2Farticle%2F1040256%2Flasso.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-32"><span class="mw-cite-backlink"><b><a href="#cite_ref-32">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.lassosoft.com/Omnipilot-Offers-Lasso-Developer-85-For-Free">"8.5 for free"</a>. <i>MacNN</i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALasso+%28programming+language%29&amp;rft.atitle=8.5+for+free&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.lassosoft.com%2FOmnipilot-Offers-Lasso-Developer-85-For-Free&amp;rft.jtitle=MacNN&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-33"><span class="mw-cite-backlink"><b><a href="#cite_ref-33">^</a></b></span> <span class="reference-text"><cite class="citation web">Cohen, Peter. <a rel="nofollow" class="external text" href="http://www.macworld.com/article/1043914/lassostudio8.html">"Lasso Studio 8 for Dreamweaver &amp; GoLive released"</a>. <i>MacWorld</i>. IDG<span class="reference-accessdate">. Retrieved <span class="nowrap">28 October</span> 2013</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALasso+%28programming+language%29&amp;rft.atitle=Lasso+Studio+8+for+Dreamweaver+%26+GoLive+released&amp;rft.aufirst=Peter&amp;rft.aulast=Cohen&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.macworld.com%2Farticle%2F1043914%2Flassostudio8.html&amp;rft.jtitle=MacWorld&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-34"><span class="mw-cite-backlink"><b><a href="#cite_ref-34">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.macnn.com/search/omnipilot/">"List of releases by OmniPilot on MacNN"</a>. <i>MacNN</i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALasso+%28programming+language%29&amp;rft.atitle=List+of+releases+by+OmniPilot+on+MacNN&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.macnn.com%2Fsearch%2Fomnipilot%2F&amp;rft.jtitle=MacNN&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-35"><span class="mw-cite-backlink"><b><a href="#cite_ref-35">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.macnn.com/articles/07/03/05/omnipilot.sells.lasso/">"LassoSoft acquires OmniPilot's Lasso"</a>. <i>MacNN</i>. March 5, 2007.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALasso+%28programming+language%29&amp;rft.atitle=LassoSoft+acquires+OmniPilot%27s+Lasso&amp;rft.date=2007-03-05&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.macnn.com%2Farticles%2F07%2F03%2F05%2Fomnipilot.sells.lasso%2F&amp;rft.jtitle=MacNN&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-36"><span class="mw-cite-backlink"><b><a href="#cite_ref-36">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.lassosoft.com/Lassosoft-Acquires-OmniPilot-And-The-Lasso-Product-Line">"LassoSoft LLC acquisition article"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALasso+%28programming+language%29&amp;rft.btitle=LassoSoft+LLC+acquisition+article&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.lassosoft.com%2FLassosoft-Acquires-OmniPilot-And-The-Lasso-Product-Line&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-37"><span class="mw-cite-backlink"><b><a href="#cite_ref-37">^</a></b></span> <span class="reference-text"><cite class="citation web">Gunderson, Lars. <a rel="nofollow" class="external text" href="http://www.lassosoft.com/lassotalk/msg/258902/What+I+hope+Lassosoft+is+doing+right+now">"What I hope Lassosoft is doing right now"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALasso+%28programming+language%29&amp;rft.aufirst=Lars&amp;rft.aulast=Gunderson&amp;rft.btitle=What+I+hope+Lassosoft+is+doing+right+now&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.lassosoft.com%2Flassotalk%2Fmsg%2F258902%2FWhat%2BI%2Bhope%2BLassosoft%2Bis%2Bdoing%2Bright%2Bnow&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-38"><span class="mw-cite-backlink"><b><a href="#cite_ref-38">^</a></b></span> <span class="reference-text"><cite class="citation web">Gunderson, Lars. <a rel="nofollow" class="external text" href="http://bildr.no/view/730908">"Graph of LassoTalk community decline"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALasso+%28programming+language%29&amp;rft.aufirst=Lars&amp;rft.aulast=Gunderson&amp;rft.btitle=Graph+of+LassoTalk+community+decline&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fbildr.no%2Fview%2F730908&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-39"><span class="mw-cite-backlink"><b><a href="#cite_ref-39">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://www.macupdate.com/app/mac/7277/lasso-server">"9.2 Release"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALasso+%28programming+language%29&amp;rft.btitle=9.2+Release&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fwww.macupdate.com%2Fapp%2Fmac%2F7277%2Flasso-server&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-40"><span class="mw-cite-backlink"><b><a href="#cite_ref-40">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://web.archive.org/web/19961019190348/http://www.blueworld.com/">"First Version of Lasso Released"</a>. Archived from <a rel="nofollow" class="external text" href="http://www.blueworld.com/">the original</a> on October 19, 1996.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALasso+%28programming+language%29&amp;rft.btitle=First+Version+of+Lasso+Released&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.blueworld.com%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-41"><span class="mw-cite-backlink"><b><a href="#cite_ref-41">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://web.archive.org/web/19961227171843/http://www.blueworld.com/lasso/Lasso%20Manual.pdf">"Lasso 1.0.4 Manual"</a> <span style="font-size:85%;">(PDF)</span>. Archived from <a rel="nofollow" class="external text" href="http://www.blueworld.com/lasso/Lasso%20Manual.pdf">the original</a> <span style="font-size:85%;">(PDF)</span> on December 27, 1996.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALasso+%28programming+language%29&amp;rft.btitle=Lasso+1.0.4+Manual&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.blueworld.com%2Flasso%2FLasso%2520Manual.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-42"><span class="mw-cite-backlink"><b><a href="#cite_ref-42">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://web.archive.org/web/19961227162936/http://www.blueworld.com/lasso/">"Lasso 1.1 Released"</a>. Archived from <a rel="nofollow" class="external text" href="http://www.blueworld.com/lasso/">the original</a> on December 27, 1996.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALasso+%28programming+language%29&amp;rft.btitle=Lasso+1.1+Released&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.blueworld.com%2Flasso%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-43"><span class="mw-cite-backlink"><b><a href="#cite_ref-43">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://web.archive.org/web/20030612124837/http://blueworld.com/blueworld/news/lasso2.0.pr.html">"Lasso 2.0 Release"</a>. Archived from <a rel="nofollow" class="external text" href="http://blueworld.com/blueworld/news/lasso2.0.pr.html">the original</a> on June 12, 2003.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALasso+%28programming+language%29&amp;rft.btitle=Lasso+2.0+Release&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fblueworld.com%2Fblueworld%2Fnews%2Flasso2.0.pr.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-44"><span class="mw-cite-backlink"><b><a href="#cite_ref-44">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://web.archive.org/web/19980422040818/http://www.blueworld.com/">"Broken Link to MacWeek Review"</a>. Archived from <a rel="nofollow" class="external text" href="http://www.blueworld.com/">the original</a> on April 22, 1998.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALasso+%28programming+language%29&amp;rft.btitle=Broken+Link+to+MacWeek+Review&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.blueworld.com%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-45"><span class="mw-cite-backlink"><b><a href="#cite_ref-45">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://web.archive.org/web/20030612040411/http://blueworld.com/blueworld/news/10.7.98-L3Release.html">"Lasso 3.0 Released"</a>. Archived from <a rel="nofollow" class="external text" href="http://blueworld.com/blueworld/news/10.7.98-L3Release.html">the original</a> on June 12, 2003.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALasso+%28programming+language%29&amp;rft.btitle=Lasso+3.0+Released&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fblueworld.com%2Fblueworld%2Fnews%2F10.7.98-L3Release.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-46"><span class="mw-cite-backlink"><b><a href="#cite_ref-46">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://web.archive.org/web/20030608113803/http://www.blueworld.com/blueworld/news/4.14.99-Lasso3.5Ship.html">"Lasso 3.5 Released"</a>. Archived from <a rel="nofollow" class="external text" href="http://www.blueworld.com/blueworld/news/4.14.99-Lasso3.5Ship.html">the original</a> on June 8, 2003.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALasso+%28programming+language%29&amp;rft.btitle=Lasso+3.5+Released&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.blueworld.com%2Fblueworld%2Fnews%2F4.14.99-Lasso3.5Ship.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-47"><span class="mw-cite-backlink"><b><a href="#cite_ref-47">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://web.archive.org/web/20030611094829/http://blueworld.com/blueworld/news/01.05.00-LassoWDE3.6Ship.html">"Lasso 3.6 Release"</a>. Archived from <a rel="nofollow" class="external text" href="http://blueworld.com/blueworld/news/01.05.00-LassoWDE3.6Ship.html">the original</a> on June 11, 2003.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALasso+%28programming+language%29&amp;rft.btitle=Lasso+3.6+Release&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fblueworld.com%2Fblueworld%2Fnews%2F01.05.00-LassoWDE3.6Ship.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-48"><span class="mw-cite-backlink"><b><a href="#cite_ref-48">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://web.archive.org/web/20030611230547/http://blueworld.com/blueworld/news/10.02.00LassoLite365.html">"Lasso 3.6.5 Released"</a>. Archived from <a rel="nofollow" class="external text" href="http://blueworld.com/blueworld/news/10.02.00LassoLite365.html">the original</a> on June 11, 2003.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALasso+%28programming+language%29&amp;rft.btitle=Lasso+3.6.5+Released&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fblueworld.com%2Fblueworld%2Fnews%2F10.02.00LassoLite365.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-49"><span class="mw-cite-backlink"><b><a href="#cite_ref-49">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://web.archive.org/web/20030802080855/http://www.blueworld.com/blueworld/news/02.26.02-LP5Release.html">"Lasso 5.0 Release"</a>. Archived from <a rel="nofollow" class="external text" href="http://www.blueworld.com/blueworld/news/02.26.02-LP5Release.html">the original</a> on August 2, 2003.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALasso+%28programming+language%29&amp;rft.btitle=Lasso+5.0+Release&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.blueworld.com%2Fblueworld%2Fnews%2F02.26.02-LP5Release.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-50"><span class="mw-cite-backlink"><b><a href="#cite_ref-50">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://web.archive.org/web/20030622143136/http://www.blueworld.com/blueworld/news/09.04.02-L6ProdLine.html">"Lasso 6.0 Released"</a>. Archived from <a rel="nofollow" class="external text" href="http://www.blueworld.com/blueworld/news/09.04.02-L6ProdLine.html">the original</a> on June 22, 2003.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALasso+%28programming+language%29&amp;rft.btitle=Lasso+6.0+Released&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.blueworld.com%2Fblueworld%2Fnews%2F09.04.02-L6ProdLine.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-51"><span class="mw-cite-backlink"><b><a href="#cite_ref-51">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.lassosoft.com/Omnipilot-Announces-Lasso-Professional-71-Compatible-With-Filemaker-Pro-7">"Lasso 7.1 Release (copy)"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALasso+%28programming+language%29&amp;rft.btitle=Lasso+7.1+Release+%28copy%29&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.lassosoft.com%2FOmnipilot-Announces-Lasso-Professional-71-Compatible-With-Filemaker-Pro-7&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-52"><span class="mw-cite-backlink"><b><a href="#cite_ref-52">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.lassosoft.com/Omnipilot-Announces-Lasso-Professional-81">"Lasso 8.1 Released"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALasso+%28programming+language%29&amp;rft.btitle=Lasso+8.1+Released&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.lassosoft.com%2FOmnipilot-Announces-Lasso-Professional-81&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-53"><span class="mw-cite-backlink"><b><a href="#cite_ref-53">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.lassosoft.com/Lasso-Professional-Server-85-Officially-Released">"Lasso 8.5 Released"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALasso+%28programming+language%29&amp;rft.btitle=Lasso+8.5+Released&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.lassosoft.com%2FLasso-Professional-Server-85-Officially-Released&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-54"><span class="mw-cite-backlink"><b><a href="#cite_ref-54">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.lassosoft.com/News-Update-Jan-29-2010">"Lasso 9 Release"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALasso+%28programming+language%29&amp;rft.btitle=Lasso+9+Release&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.lassosoft.com%2FNews-Update-Jan-29-2010&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-55"><span class="mw-cite-backlink"><b><a href="#cite_ref-55">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.lassosoft.com/lasso-8_6-release">"Lasso 8.6 Release"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALasso+%28programming+language%29&amp;rft.btitle=Lasso+8.6+Release&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.lassosoft.com%2Flasso-8_6-release&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-56"><span class="mw-cite-backlink"><b><a href="#cite_ref-56">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.lassosoft.com/Lasso-9-1-Product-Release">"Lasso 9.1 Release"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALasso+%28programming+language%29&amp;rft.btitle=Lasso+9.1+Release&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.lassosoft.com%2FLasso-9-1-Product-Release&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-57"><span class="mw-cite-backlink"><b><a href="#cite_ref-57">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.lassosoft.com/News-Lasso-Server-92-Released">"Lasso 9.2 Release"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALasso+%28programming+language%29&amp;rft.btitle=Lasso+9.2+Release&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.lassosoft.com%2FNews-Lasso-Server-92-Released&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-58"><span class="mw-cite-backlink"><b><a href="#cite_ref-58">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.lassosoft.com/lasso-9-3-release-notes">"Lasso 9.3 Release"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALasso+%28programming+language%29&amp;rft.btitle=Lasso+9.3+Release&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.lassosoft.com%2Flasso-9-3-release-notes&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-59"><span class="mw-cite-backlink"><b><a href="#cite_ref-59">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.lassosoft.com/lassoDocs/languageReference/obj/inline">large range of parameters</a></span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Lasso_(programming_language)&amp;action=edit&amp;section=9" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><span class="official-website"><span class="url"><a rel="nofollow" class="external text" href="http://www.LassoSoft.com">Official website</a></span></span>, LassoSoft</li>
+<li><span class="official-website"><span class="url"><a rel="nofollow" class="external text" href="http://www.LassoGuide.com">Official website</a></span></span>, LassoGuide</li>
+<li><a rel="nofollow" class="external text" href="http://www.LassoRef.com">LassoReference</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.filemaker.com">FileMaker</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.listsearch.com">ListSearch - LassoSoft's ListSearch Engine</a></li>
+<li><a rel="nofollow" class="external text" href="http://lasso.2283332.n4.nabble.com/Lasso-Talk-f3096191.html">LassoTalk Archive on Nabble</a></li>
+<li><a rel="nofollow" class="external text" href="https://groups.google.com/forum/#!forum/lassotalk">LassoTalk Archive on Google Groups</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.execuchoice.net">ExecuChoice - PDF Tag Suite - PassThru - ShortString</a></li>
+<li><a rel="nofollow" class="external text" href="https://github.com/knop-project/knop">Knop - an open source web application framework for Lasso 8 and 9</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.lassofusebox.org">LassoFusebox - a Lasso port of the popular open source Fusebox web application framework, for Lasso 8 and 9</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.lassobin.com">LassoBin - A PasteBin for Lasso</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.lassoforge.com/">LassoForge - OpenSource Lasso Projects</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.LassoSoft.com/tagSwap">tagSwap - A public exchange for Lasso custom tags</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.l-debug.org/">L-Debug - Debugging suite for Lasso 8 &amp; Lasso 9</a></li>
+<li>This Wikipedia entry relies heavily on <a rel="nofollow" class="external text" href="https://web.archive.org/web/20030610160817/http://blueworld.com/blueworld/news/1998_announce.html">early announcements</a> and many <a rel="nofollow" class="external text" href="https://web.archive.org/web/20030608120807/http://www.blueworld.com/blueworld/products/LassoPress.html">notable sources</a> no longer available on the web.</li>
+</ul>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1261
+Cached time: 20170129040228
+Cache expiry: 86400
+Dynamic content: true
+CPU time usage: 0.380 seconds
+Real time usage: 0.748 seconds
+Preprocessor visited node count: 2647/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 84164/2097152 bytes
+Template argument size: 2809/2097152 bytes
+Highest expansion depth: 25/40
+Expensive parser function count: 4/500
+Lua time usage: 0.201/10.000 seconds
+Lua memory usage: 5.31 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  702.402      1 -total
+ 32.27%  226.649      1 Template:Reflist
+ 20.89%  146.697     55 Template:Cite_web
+  9.81%   68.908      2 Template:Infobox
+  7.72%   54.202      1 Template:Infobox_programming_language
+  5.82%   40.862      1 Template:Advert
+  4.71%   33.088      2 Template:Citation
+  3.64%   25.547      1 Template:Ambox
+  3.11%   21.867      1 Template:Infobox_software/simple
+  2.65%   18.604      1 Template:Citation_needed
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:524247-0!*!0!!en!4!* and timestamp 20170129040227 and revision id 758093933
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Lasso_(programming_language)&amp;oldid=758093933">https://en.wikipedia.org/w/index.php?title=Lasso_(programming_language)&amp;oldid=758093933</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Cross-platform_software" title="Category:Cross-platform software">Cross-platform software</a></li><li><a href="/wiki/Category:Object-oriented_programming_languages" title="Category:Object-oriented programming languages">Object-oriented programming languages</a></li><li><a href="/wiki/Category:Scripting_languages" title="Category:Scripting languages">Scripting languages</a></li><li><a href="/wiki/Category:Dynamically_typed_programming_languages" title="Category:Dynamically typed programming languages">Dynamically typed programming languages</a></li><li><a href="/wiki/Category:Filename_extensions" title="Category:Filename extensions">Filename extensions</a></li><li><a href="/wiki/Category:High-level_programming_languages" title="Category:High-level programming languages">High-level programming languages</a></li><li><a href="/wiki/Category:Programming_languages_created_in_1995" title="Category:Programming languages created in 1995">Programming languages created in 1995</a></li><li><a href="/wiki/Category:Class-based_programming_languages" title="Category:Class-based programming languages">Class-based programming languages</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Articles_with_a_promotional_tone_from_January_2015" title="Category:Articles with a promotional tone from January 2015">Articles with a promotional tone from January 2015</a></li><li><a href="/wiki/Category:All_articles_with_a_promotional_tone" title="Category:All articles with a promotional tone">All articles with a promotional tone</a></li><li><a href="/wiki/Category:Pages_using_deprecated_image_syntax" title="Category:Pages using deprecated image syntax">Pages using deprecated image syntax</a></li><li><a href="/wiki/Category:All_articles_with_unsourced_statements" title="Category:All articles with unsourced statements">All articles with unsourced statements</a></li><li><a href="/wiki/Category:Articles_with_unsourced_statements_from_October_2013" title="Category:Articles with unsourced statements from October 2013">Articles with unsourced statements from October 2013</a></li><li><a href="/wiki/Category:Official_website_not_in_Wikidata" title="Category:Official website not in Wikidata">Official website not in Wikidata</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Lasso+%28programming+language%29" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Lasso+%28programming+language%29" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/Lasso_(programming_language)"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:Lasso_(programming_language)"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/Lasso_(programming_language)" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=Lasso_(programming_language)&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Lasso_(programming_language)&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Lasso_(programming_language)" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Lasso_(programming_language)" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Lasso_(programming_language)&amp;oldid=758093933" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Lasso_(programming_language)&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q3218363" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Lasso_%28programming_language%29&amp;id=758093933" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Lasso+%28programming+language%29">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Lasso+%28programming+language%29&amp;returnto=Lasso+%28programming+language%29&amp;oldid=758093933&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Lasso_(programming_language)&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-ar"><a href="https://ar.wikipedia.org/wiki/%D9%84%D8%A7%D8%B3%D9%88" title="لاسو – Arabic" lang="ar" hreflang="ar" class="interlanguage-link-target">العربية</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/Lasso_(langage)" title="Lasso (langage) – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q3218363#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 3 January 2017, at 12:53.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Lasso_(programming_language)&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.380","walltime":"0.748","ppvisitednodes":{"value":2647,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":84164,"limit":2097152},"templateargumentsize":{"value":2809,"limit":2097152},"expansiondepth":{"value":25,"limit":40},"expensivefunctioncount":{"value":4,"limit":500},"entityaccesscount":{"value":1,"limit":400},"timingprofile":["100.00%  702.402      1 -total"," 32.27%  226.649      1 Template:Reflist"," 20.89%  146.697     55 Template:Cite_web","  9.81%   68.908      2 Template:Infobox","  7.72%   54.202      1 Template:Infobox_programming_language","  5.82%   40.862      1 Template:Advert","  4.71%   33.088      2 Template:Citation","  3.64%   25.547      1 Template:Ambox","  3.11%   21.867      1 Template:Infobox_software/simple","  2.65%   18.604      1 Template:Citation_needed"]},"scribunto":{"limitreport-timeusage":{"value":"0.201","limit":"10.000"},"limitreport-memusage":{"value":5565702,"limit":52428800}},"cachereport":{"origin":"mw1261","timestamp":"20170129040228","ttl":86400,"transientcontent":true}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":57,"wgHostname":"mw1173"});});</script>
+	</body>
+</html>

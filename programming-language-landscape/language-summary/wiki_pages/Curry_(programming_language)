@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Curry (programming language) - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Curry_(programming_language)","wgTitle":"Curry (programming language)","wgCurRevisionId":732325292,"wgRevisionId":732325292,"wgArticleId":302187,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Concurrent programming languages","Functional logic programming languages","Haskell programming language family","Programming languages created in the 1990s","Nondeterministic programming languages","Literate programming","Academic programming languages"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Curry_(programming_language)","wgRelevantArticleId":302187,"wgRequestId":"WIlO5gpAEKsAAH4AGFYAAAAB","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":true},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q2368856","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.cite.styles":"ready","ext.pygments":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.legacy.wikibits","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.centralauth.centralautologin","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.pygments%2CwikimediaBadges%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.29.0-wmf.8"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Curry_(programming_language)"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Curry_(programming_language)&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Curry_(programming_language)&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Curry_(programming_language)"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Curry_programming_language rootpage-Curry_programming_language skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Curry (programming language)</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><script>function mfTempOpenSection(id){var block=document.getElementById("mf-section-"+id);block.className+=" open-block";block.previousSibling.className+=" open-block";}</script><div role="note" class="hatnote">This article is about the programming language Curry (named in honour of a mathematician and logician). For the mathematician and logician, see <a href="/wiki/Haskell_Curry" title="Haskell Curry">Haskell Curry</a>. For the computer science technique, see <a href="/wiki/Currying" title="Currying">Currying</a>.</div>
+<table class="infobox vevent" style="width:22em">
+<caption class="summary">Curry</caption>
+<tr>
+<th scope="row"><a href="/wiki/Programming_paradigm" title="Programming paradigm">Paradigm</a></th>
+<td><a href="/wiki/Functional_programming" title="Functional programming">functional</a>, <a href="/wiki/Logic_programming" title="Logic programming">logic</a>, non-strict, modular</td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_design" title="Software design">Designed&#160;by</a></th>
+<td>Michael Hanus, Sergio Antoy, et al.</td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Type_system" title="Type system">Typing discipline</a></th>
+<td><a href="/wiki/Static_typing" class="mw-redirect" title="Static typing">static</a>, <a href="/wiki/Strong_typing" class="mw-redirect" title="Strong typing">strong</a>, <a href="/wiki/Type_inference" title="Type inference">inferred</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Operating_system" title="Operating system">OS</a></th>
+<td>portable</td>
+</tr>
+<tr>
+<th scope="row">Website</th>
+<td><a rel="nofollow" class="external text" href="http://curry-language.org/">Curry</a></td>
+</tr>
+<tr>
+<th colspan="2" style="text-align:center;background-color: #eee;">Major <a href="/wiki/Programming_language_implementation" title="Programming language implementation">implementations</a></th>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"><a rel="nofollow" class="external text" href="http://www.informatik.uni-kiel.de/~pakcs">PAKCS</a> (with <a href="/wiki/Prolog_(programming_language)" class="mw-redirect" title="Prolog (programming language)">Prolog</a> as the target), <a rel="nofollow" class="external text" href="http://danae.uni-muenster.de/curry/">mcc</a> (with <a href="/wiki/C_(programming_language)" title="C (programming language)">C</a> as the target), <a rel="nofollow" class="external text" href="http://www-ps.informatik.uni-kiel.de/kics2/">KiCS2</a> (with <a href="/wiki/Haskell_(programming_language)" title="Haskell (programming language)">Haskell</a> as the target)</td>
+</tr>
+<tr>
+<th colspan="2" style="text-align:center;background-color: #eee;">Influenced by</th>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/Haskell_(programming_language)" title="Haskell (programming language)">Haskell</a></td>
+</tr>
+</table>
+<p><b>Curry</b><sup id="cite_ref-1" class="reference"><a href="#cite_note-1">[1]</a></sup> is an experimental <a href="/wiki/Functional_logic_programming" title="Functional logic programming">functional logic programming</a> language,<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">[2]</a></sup> based on the <a href="/wiki/Haskell_(programming_language)" title="Haskell (programming language)">Haskell</a> language. It merges elements of functional and logic programming, including <a href="/wiki/Constraint_programming" title="Constraint programming">constraint programming</a> integration.</p>
+<p>It is nearly a superset of Haskell, lacking support mostly for overloading using <a href="/wiki/Polymorphism_(computer_science)#Subtyping" title="Polymorphism (computer science)">type classes</a>, which some implementations provide anyway as a language extension, such as the Münster Curry Compiler.<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">[3]</a></sup></p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Foundations_of_Functional_Logic_Programming"><span class="tocnumber">1</span> <span class="toctext">Foundations of Functional Logic Programming</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Basic_Concepts"><span class="tocnumber">1.1</span> <span class="toctext">Basic Concepts</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Narrowing"><span class="tocnumber">1.2</span> <span class="toctext">Narrowing</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Functional_Patterns"><span class="tocnumber">1.3</span> <span class="toctext">Functional Patterns</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Non-determinism"><span class="tocnumber">1.4</span> <span class="toctext">Non-determinism</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Strategies"><span class="tocnumber">1.5</span> <span class="toctext">Strategies</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a href="#References"><span class="tocnumber">2</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#External_links"><span class="tocnumber">3</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Foundations_of_Functional_Logic_Programming">Foundations of Functional Logic Programming</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Curry_(programming_language)&amp;action=edit&amp;section=1" title="Edit section: Foundations of Functional Logic Programming">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="Basic_Concepts">Basic Concepts</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Curry_(programming_language)&amp;action=edit&amp;section=2" title="Edit section: Basic Concepts">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>A functional program is a set of functions defined by equations or rules. A functional computation consists of replacing subexpressions by equal (with regards to the function definitions) subexpressions until no more replacements (or reductions) are possible and a value or normal form is obtained. For instance, consider the function double defined by</p>
+<pre>
+double x = x+x
+</pre>
+<p>The expression “<tt>double 1</tt>” is replaced by <tt>1+1</tt>. The latter can be replaced by <tt>2</tt> if we interpret the operator “<tt>+</tt>” to be defined by an infinite set of equations, e.g., <tt>1+1 = 2</tt>, <tt>1+2 = 3</tt>, etc. In a similar way, one can evaluate nested expressions (where the subexpressions to be replaced are quoted):</p>
+<pre>
+'double (1+2)' → '(1+2)'+(1+2) → 3+'(1+2)' → '3+3' → 6
+</pre>
+<p>There is also another order of evaluation if we replace the arguments of operators from right to left:</p>
+<pre>
+'double (1+2)' → (1+2)+'(1+2)' → '(1+2)'+3 → '3+3' → 6
+</pre>
+<p>In this case, both derivations lead to the same result, a property known as <a href="/wiki/Confluence_(term_rewriting)" class="mw-redirect" title="Confluence (term rewriting)">confluence</a>. This follows from a fundamental property of pure functional languages, termed referential transparency: the value of a computed result does not depend on the order or time of evaluation, due to the absence of side effects. This simplifies the reasoning about and maintenance of pure functional programs.</p>
+<p>As many functional languages like <a href="/wiki/Haskell_(programming_language)" title="Haskell (programming language)">Haskell</a> do, Curry supports the definition of algebraic data types by enumerating their constructors. For instance, the type of Boolean values consists of the constructors <tt>True</tt> and <tt>False</tt> that are declared as follows:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+ <span class="kr">data</span> <span class="kt">Bool</span> <span class="ow">=</span> <span class="kt">True</span> <span class="o">|</span> <span class="kt">False</span>
+</pre></div>
+<p>Functions on Booleans can be defined by pattern matching, i.e., by providing several equations for different argument values:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+ <span class="n">not</span> <span class="kt">True</span> <span class="ow">=</span> <span class="kt">False</span>
+ <span class="n">not</span> <span class="kt">False</span> <span class="ow">=</span> <span class="kt">True</span>
+</pre></div>
+<p>The principle of replacing equals by equals is still valid provided that the actual arguments have the required form, e.g.:</p>
+<pre>
+not '(not False)' → 'not True' → False
+</pre>
+<p>More complex data structures can be obtained by recursive data types. For instance, a list of elements, where the type of elements is arbitrary (denoted by the type variable <tt>a</tt>), is either the empty list “<tt>[]</tt>” or the non-empty list “<tt>x:xs</tt>” consisting of a first element <tt>x</tt> and a list <tt>xs</tt>:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+ <span class="kr">data</span> <span class="kt">List</span> <span class="n">a</span> <span class="ow">=</span> <span class="kt">[]</span> <span class="o">|</span> <span class="n">a</span> <span class="kt">:</span> <span class="kt">List</span> <span class="n">a</span>
+</pre></div>
+<p>The type “<tt>List a</tt>” is usually written as <tt>[a]</tt> and finite lists x1<tt>:</tt>x2<tt>:</tt>...<tt>:</tt>xn<tt>:[]</tt> are written as <tt>[</tt>x1<tt>,</tt>x2<tt>,</tt>...<tt>,</tt>xn<tt>]</tt>. We can define operations on recursive types by inductive definitions where pattern matching supports the convenient separation of the different cases. For instance, the concatenation operation “<tt>++</tt>” on polymorphic lists can be defined as follows (the optional type declaration in the first line specifies that “<tt>++</tt>” takes two lists as input and produces an output list, where all list elements are of the same unspecified type):</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+ <span class="p">(</span><span class="o">++</span><span class="p">)</span> <span class="ow">::</span> <span class="p">[</span><span class="n">a</span><span class="p">]</span> <span class="ow">-&gt;</span> <span class="p">[</span><span class="n">a</span><span class="p">]</span> <span class="ow">-&gt;</span> <span class="p">[</span><span class="n">a</span><span class="p">]</span> 
+ <span class="kt">[]</span> <span class="o">++</span> <span class="n">ys</span> <span class="ow">=</span> <span class="n">ys</span> 
+ <span class="p">(</span><span class="n">x</span><span class="kt">:</span><span class="n">xs</span><span class="p">)</span> <span class="o">++</span> <span class="n">ys</span> <span class="ow">=</span> <span class="n">x</span> <span class="kt">:</span> <span class="n">xs</span><span class="o">++</span><span class="n">ys</span>
+</pre></div>
+<p>Beyond its application for various programming tasks, the operation “<tt>++</tt>” is also useful to specify the behavior of other functions on lists. For instance, the behavior of a function last that yields the last element of a list can be specified as follows: for all lists xs and elements e, <tt>last</tt> xs = e iff ∃ys<tt>:</tt>ys<tt>++[</tt>e<tt>]</tt> = xs.</p>
+<p>Based on this specification, one can define a function that satisfies this specification by employing logic programming features. Similarly to logic languages, functional logic languages provide search for solutions for existentially quantified variables. In contrast to pure logic languages, they support equation solving over nested functional expressions so that an equation like ys<tt>++[</tt>e<tt>]</tt> = <tt>[1,2,3]</tt> is solved by instantiating ys to the list <tt>[1,2]</tt> and e to the value <tt>3</tt>. In Curry one can define the operation last as follows:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+ <span class="n">last</span> <span class="n">xs</span> <span class="o">|</span> <span class="n">ys</span><span class="o">++</span><span class="p">[</span><span class="n">e</span><span class="p">]</span> <span class="o">=:=</span> <span class="n">xs</span> <span class="ow">=</span> <span class="n">e</span> <span class="kr">where</span> <span class="n">ys</span><span class="p">,</span><span class="n">e</span> <span class="n">free</span>
+</pre></div>
+<p>Here, the symbol “<tt>=:=</tt>” is used for equational constraints in order to provide a syntactic distinction from defining equations. Similarly, extra variables (i.e., variables not occurring in the left-hand side of the defining equation) are explicitly declared by “<tt>where...free</tt>” in order to provide some opportunities to detect bugs caused by typos. A conditional equation of the form l <tt>|</tt> c <tt>=</tt> r is applicable for reduction if its condition c has been solved. In contrast to purely functional languages where conditions are only evaluated to a Boolean value, functional logic languages support the solving of conditions by guessing values for the unknowns in the condition. Narrowing as discussed in the next section is used to solve this kind of conditions.</p>
+<h3><span class="mw-headline" id="Narrowing">Narrowing</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Curry_(programming_language)&amp;action=edit&amp;section=3" title="Edit section: Narrowing">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Narrowing is a mechanism whereby a variable is <a href="/wiki/Name_binding" title="Name binding">bound</a> to a value selected from among alternatives imposed by constraints. Each possible value is tried in some order, with the remainder of the program invoked in each case to determine the validity of the binding. Narrowing is an extension of logic programming, in that it performs a similar search, but can actually generate values as part of the search rather than just being limited to testing them.</p>
+<p>Narrowing is useful because it allows a function to be treated as a relation: its value can be computed "in both directions". The Curry examples of the previous section illustrate this.</p>
+<p>As noted in the previous section, narrowing can be thought of as reduction on a program term graph, and there are often many different ways (<i>strategies</i>) to reduce a given term graph. Antoy et al.<sup id="cite_ref-4" class="reference"><a href="#cite_note-4">[4]</a></sup> proved in the 1990s that a particular narrowing strategy, <i>needed narrowing</i>, is optimal in the sense of doing a number of reductions to get to a "normal form" corresponding to a solution that is minimal among sound and complete strategies. Needed narrowing corresponds to a lazy strategy, in contrast to the <a href="/wiki/SLD_resolution" title="SLD resolution">SLD-resolution</a> strategy of <a href="/wiki/Prolog" title="Prolog">Prolog</a>.</p>
+<h3><span class="mw-headline" id="Functional_Patterns">Functional Patterns</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Curry_(programming_language)&amp;action=edit&amp;section=4" title="Edit section: Functional Patterns">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The rule defining <tt>last</tt> shown above expresses the fact that the actual argument must match the result of narrowing the expression <tt>ys++[e]</tt>. Curry can express this property also in the following more concise way:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+ <span class="n">last</span> <span class="p">(</span><span class="n">ys</span><span class="o">++</span><span class="p">[</span><span class="n">e</span><span class="p">])</span> <span class="ow">=</span> <span class="n">e</span>
+</pre></div>
+<p>Haskell does not allow such a declaration since the pattern in the left-hand side contains a defined function (<tt>++</tt>). Such a pattern is also called <i>functional pattern</i>.<sup id="cite_ref-5" class="reference"><a href="#cite_note-5">[5]</a></sup> Functional patterns are enabled by the combined functional and logic features of Curry and support concise definitions of tasks requiring deep pattern matching in hierarchical data structures.</p>
+<h3><span class="mw-headline" id="Non-determinism">Non-determinism</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Curry_(programming_language)&amp;action=edit&amp;section=5" title="Edit section: Non-determinism">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Since Curry is able to solve equations containing function calls with unknown values, its execution mechanism is based on non-deterministic computations, similarly to logic programming. This mechanism supports also the definition of <i>non-deterministic operations</i>, i.e., operations that delivers more than one result for a given input. The archetype of non-deterministic operations is the predefined infix operation <tt>?</tt>, called <i>choice</i> operator, that returns one of its arguments. This operator is defined by the following rules:</p>
+<pre>
+ x ? y = x
+ x ? y = y
+</pre>
+<p>Thus, the evaluation of the expression <tt>0&#160;? 1</tt> returns <tt>0</tt> as well as <tt>1</tt>. Computing with non-deterministic operations and computing with free variables by narrowing has the same expressive power.<sup id="cite_ref-6" class="reference"><a href="#cite_note-6">[6]</a></sup></p>
+<p>The rules defining <tt>?</tt> show an important feature of Curry: all rules are tried in order to evaluate some operation. Hence, one can define by</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+ <span class="n">insert</span> <span class="n">x</span> <span class="n">ys</span>     <span class="ow">=</span> <span class="n">x</span> <span class="kt">:</span> <span class="n">ys</span>
+ <span class="n">insert</span> <span class="n">x</span> <span class="p">(</span><span class="n">y</span><span class="kt">:</span><span class="n">ys</span><span class="p">)</span> <span class="ow">=</span> <span class="n">y</span> <span class="kt">:</span> <span class="n">insert</span> <span class="n">x</span> <span class="n">ys</span>
+</pre></div>
+<p>an operation to insert an element into a list at an indeterminate position so that the operation <tt>perm</tt> defined by</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+ <span class="n">perm</span> <span class="kt">[]</span>     <span class="ow">=</span> <span class="kt">[]</span>
+ <span class="n">perm</span> <span class="p">(</span><span class="n">x</span><span class="kt">:</span><span class="n">xs</span><span class="p">)</span> <span class="ow">=</span> <span class="n">insert</span> <span class="n">x</span> <span class="p">(</span><span class="n">perm</span> <span class="n">xs</span><span class="p">)</span>
+</pre></div>
+<p>returns any permutation of a given input list.</p>
+<h3><span class="mw-headline" id="Strategies">Strategies</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Curry_(programming_language)&amp;action=edit&amp;section=6" title="Edit section: Strategies">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Due to the absence of side effects, a functional logic program can be executed with different strategies. To evaluate expressions, Curry uses a variant of the <i>needed narrowing</i> strategy which combines <a href="/wiki/Lazy_evaluation" title="Lazy evaluation">lazy evaluation</a> with non-deterministic search strategies. In contrast to Prolog, which uses backtracking to search for solutions, Curry does not fix a particular search strategy. Hence, there are implementations of Curry, like <a rel="nofollow" class="external text" href="http://www-ps.informatik.uni-kiel.de/kics2/">KiCS2</a>, where the user can easily select a search strategy, like <a href="/wiki/Depth-first_search" title="Depth-first search">depth-first search</a> (backtracking), <a href="/wiki/Breadth-first_search" title="Breadth-first search">breadth-first search</a>, iterative deepening, or parallel search.</p>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Curry_(programming_language)&amp;action=edit&amp;section=7" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><cite class="citation web">Michael Hanus (ed.). <a rel="nofollow" class="external text" href="http://www.curry-language.org/">"Curry: A Truly Integrated Functional Logic Language"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACurry+%28programming+language%29&amp;rft.au=Michael+Hanus+%28ed.%29&amp;rft.btitle=Curry%3A+A+Truly+Integrated+Functional+Logic+Language&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.curry-language.org%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><cite class="citation journal">Sergio Antoy and Michael Hanus (2010). <a rel="nofollow" class="external text" href="http://doi.acm.org/10.1145/1721654.1721675">"Functional Logic Programming"</a>. <i>Communications of the ACM</i>. ACM. <b>53</b> (4): 74–85. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1145%2F1721654.1721675">10.1145/1721654.1721675</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACurry+%28programming+language%29&amp;rft.atitle=Functional+Logic+Programming&amp;rft.au=Sergio+Antoy+and+Michael+Hanus&amp;rft.date=2010&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fdoi.acm.org%2F10.1145%2F1721654.1721675&amp;rft_id=info%3Adoi%2F10.1145%2F1721654.1721675&amp;rft.issue=4&amp;rft.jtitle=Communications+of+the+ACM&amp;rft.pages=74-85&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=53" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://danae.uni-muenster.de/curry/">The Münster Curry Compiler</a></span></li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text"><cite class="citation journal">Sergio Antoy, Rachid Echahed and Michael Hanus (2007). <a rel="nofollow" class="external text" href="http://doi.acm.org/10.1145/347476.347484">"A Needed Narrowing Strategy"</a>. <i>Journal of the ACM</i>. ACM. <b>47</b> (4): 776–822. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1145%2F347476.347484">10.1145/347476.347484</a>. <a href="/wiki/International_Standard_Serial_Number" title="International Standard Serial Number">ISSN</a>&#160;<a rel="nofollow" class="external text" href="//www.worldcat.org/issn/0004-5411">0004-5411</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACurry+%28programming+language%29&amp;rft.atitle=A+Needed+Narrowing+Strategy&amp;rft.au=Sergio+Antoy%2C+Rachid+Echahed+and+Michael+Hanus&amp;rft.date=2007&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fdoi.acm.org%2F10.1145%2F347476.347484&amp;rft_id=info%3Adoi%2F10.1145%2F347476.347484&amp;rft.issn=0004-5411&amp;rft.issue=4&amp;rft.jtitle=Journal+of+the+ACM&amp;rft.pages=776-822&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=47" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://dx.doi.org/10.1007/11680093_2">Sergio Antoy and Michael Hanus: Declarative Programming with Function Patterns</a>, LOPSTR 2005</span></li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://dx.doi.org/10.1007/11799573_9">Sergio Antoy and Michael Hanus: Overlapping Rules and Logic Variables in Functional Logic Programs</a>, International Conference on Logic Programming 2006</span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Curry_(programming_language)&amp;action=edit&amp;section=8" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.curry-language.org/">Curry</a> - The home page of Curry</li>
+<li><a rel="nofollow" class="external text" href="http://www-ps.informatik.uni-kiel.de/smap/">Smap</a> - A web-based execution environment for Curry and Haskell with various example programs</li>
+<li><a rel="nofollow" class="external text" href="http://danae.uni-muenster.de/curry/">MCC</a> - The Münster Curry Compiler, which uses <a href="/wiki/C_(programming_language)" title="C (programming language)">C</a> as the target</li>
+<li><a rel="nofollow" class="external text" href="http://www.informatik.uni-kiel.de/~pakcs/">PAKCS</a> A major Curry implementation with a WWW interface, which uses <a href="/wiki/Prolog_(programming_language)" class="mw-redirect" title="Prolog (programming language)">Prolog</a> as the target</li>
+<li><a rel="nofollow" class="external text" href="http://www.informatik.uni-kiel.de/prog/mitarbeiter/bernd-brassel/projects/">KiCS</a>, <a rel="nofollow" class="external text" href="http://www-ps.informatik.uni-kiel.de/kics2/">KiCS2</a> A Curry implementation, which uses <a href="/wiki/Haskell_(programming_language)" title="Haskell (programming language)">Haskell</a> as the target</li>
+<li><a rel="nofollow" class="external text" href="http://wiki.curry-language.org/documentation/mailing">Curry Mailing List</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.informatik.uni-kiel.de/~mh">Michael Hanus's home page</a></li>
+<li><i><a rel="nofollow" class="external text" href="http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.148.524">Purely Functional Lazy Non-deterministic Programming</a></i> (Fischer, Shan), <i><a rel="nofollow" class="external text" href="http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.157.4578">Transforming Functional Logic Programs into Monadic Functional Programs</a></i> (Braßel, Fischer, Hanus, Reck, 2010) on modeling lazy non-deterministic (logic) programming (like in Curry) in a purely functional language (<a href="/wiki/Haskell_(programming_language)" title="Haskell (programming language)">Haskell</a>); such approach might give the programmer more flexibility in the control over the strategies that—in the case of Curry—are built-in.</li>
+</ul>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1244
+Cached time: 20170119205543
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.112 seconds
+Real time usage: 1.201 seconds
+Preprocessor visited node count: 502/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 9572/2097152 bytes
+Template argument size: 1098/2097152 bytes
+Highest expansion depth: 10/40
+Expensive parser function count: 2/500
+Lua time usage: 0.043/10.000 seconds
+Lua memory usage: 1.91 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00% 1177.705      1 -total
+  3.97%   46.772      1 Template:Reflist
+  2.66%   31.315      1 Template:Infobox_programming_language
+  2.52%   29.707      1 Template:Cite_web
+  2.26%   26.634      1 Template:Infobox
+  1.91%   22.469      1 Template:About
+  0.77%    9.016      2 Template:Cite_journal
+  0.35%    4.064      1 Template:Infobox_software/simple
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:302187-0!*!0!!en!*!* and timestamp 20170119205542 and revision id 732325292
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Curry_(programming_language)&amp;oldid=732325292">https://en.wikipedia.org/w/index.php?title=Curry_(programming_language)&amp;oldid=732325292</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Concurrent_programming_languages" title="Category:Concurrent programming languages">Concurrent programming languages</a></li><li><a href="/wiki/Category:Functional_logic_programming_languages" title="Category:Functional logic programming languages">Functional logic programming languages</a></li><li><a href="/wiki/Category:Haskell_programming_language_family" title="Category:Haskell programming language family">Haskell programming language family</a></li><li><a href="/wiki/Category:Programming_languages_created_in_the_1990s" title="Category:Programming languages created in the 1990s">Programming languages created in the 1990s</a></li><li><a href="/wiki/Category:Nondeterministic_programming_languages" title="Category:Nondeterministic programming languages">Nondeterministic programming languages</a></li><li><a href="/wiki/Category:Literate_programming" title="Category:Literate programming">Literate programming</a></li><li><a href="/wiki/Category:Academic_programming_languages" title="Category:Academic programming languages">Academic programming languages</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Curry+%28programming+language%29" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Curry+%28programming+language%29" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/Curry_(programming_language)"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:Curry_(programming_language)"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/Curry_(programming_language)" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=Curry_(programming_language)&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Curry_(programming_language)&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Curry_(programming_language)" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Curry_(programming_language)" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Curry_(programming_language)&amp;oldid=732325292" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Curry_(programming_language)&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q2368856" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Curry_%28programming_language%29&amp;id=732325292" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Curry+%28programming+language%29">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Curry+%28programming+language%29&amp;returnto=Curry+%28programming+language%29&amp;oldid=732325292&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Curry_(programming_language)&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-ca"><a href="https://ca.wikipedia.org/wiki/Curry_(llenguatge_de_programaci%C3%B3)" title="Curry (llenguatge de programació) – Catalan" lang="ca" hreflang="ca" class="interlanguage-link-target">Català</a></li><li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/Curry_(Programmiersprache)" title="Curry (Programmiersprache) – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-es"><a href="https://es.wikipedia.org/wiki/Curry_(lenguaje_de_programaci%C3%B3n)" title="Curry (lenguaje de programación) – Spanish" lang="es" hreflang="es" class="interlanguage-link-target">Español</a></li><li class="interlanguage-link interwiki-fa"><a href="https://fa.wikipedia.org/wiki/%DA%A9%DB%8C%D9%88%D8%B1%DB%8C" title="کیوری – Persian" lang="fa" hreflang="fa" class="interlanguage-link-target">فارسی</a></li><li class="interlanguage-link interwiki-nl"><a href="https://nl.wikipedia.org/wiki/Curry_(programmeertaal)" title="Curry (programmeertaal) – Dutch" lang="nl" hreflang="nl" class="interlanguage-link-target">Nederlands</a></li><li class="interlanguage-link interwiki-ru"><a href="https://ru.wikipedia.org/wiki/Curry" title="Curry – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li><li class="interlanguage-link interwiki-uk"><a href="https://uk.wikipedia.org/wiki/Curry" title="Curry – Ukrainian" lang="uk" hreflang="uk" class="interlanguage-link-target">Українська</a></li><li class="interlanguage-link interwiki-zh"><a href="https://zh.wikipedia.org/wiki/Curry" title="Curry – Chinese" lang="zh" hreflang="zh" class="interlanguage-link-target">中文</a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q2368856#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 31 July 2016, at 05:43.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Curry_(programming_language)&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.112","walltime":"1.201","ppvisitednodes":{"value":502,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":9572,"limit":2097152},"templateargumentsize":{"value":1098,"limit":2097152},"expansiondepth":{"value":10,"limit":40},"expensivefunctioncount":{"value":2,"limit":500},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00% 1177.705      1 -total","  3.97%   46.772      1 Template:Reflist","  2.66%   31.315      1 Template:Infobox_programming_language","  2.52%   29.707      1 Template:Cite_web","  2.26%   26.634      1 Template:Infobox","  1.91%   22.469      1 Template:About","  0.77%    9.016      2 Template:Cite_journal","  0.35%    4.064      1 Template:Infobox_software/simple"]},"scribunto":{"limitreport-timeusage":{"value":"0.043","limit":"10.000"},"limitreport-memusage":{"value":2005542,"limit":52428800}},"cachereport":{"origin":"mw1244","timestamp":"20170119205543","ttl":2592000,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":62,"wgHostname":"mw1216"});});</script>
+	</body>
+</html>

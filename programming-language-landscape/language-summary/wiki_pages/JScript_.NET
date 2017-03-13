@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>JScript .NET - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"JScript_.NET","wgTitle":"JScript .NET","wgCurRevisionId":719162649,"wgRevisionId":719162649,"wgArticleId":840451,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles that may contain original research from November 2013","All articles that may contain original research","Articles lacking sources from November 2013","All articles lacking sources","Wikipedia articles in need of updating from June 2015","All Wikipedia articles in need of updating","All articles that are too technical","Wikipedia articles that are too technical from February 2012","All articles needing expert attention","Articles needing expert attention from February 2012",".NET programming languages","JavaScript programming language family","Object-based programming languages"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"JScript_.NET","wgRelevantArticleId":840451,"wgRequestId":"WI6mQwpAICkAABV9GpsAAAJX","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":true},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q1417175","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.pygments":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.legacy.wikibits","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.pygments%2CwikimediaBadges%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.29.0-wmf.9"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/JScript_.NET"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=JScript_.NET&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=JScript_.NET&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/JScript_.NET"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-JScript_NET rootpage-JScript_NET skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">JScript .NET</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><script>function mfTempOpenSection(id){var block=document.getElementById("mf-section-"+id);block.className+=" open-block";block.previousSibling.className+=" open-block";}</script><table class="plainlinks metadata ambox ambox-content ambox-multiple_issues compact-ambox" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ambox_important.svg/40px-Ambox_important.svg.png" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ambox_important.svg/60px-Ambox_important.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ambox_important.svg/80px-Ambox_important.svg.png 2x" data-file-width="40" data-file-height="40" /></div>
+</td>
+<td class="mbox-text">
+<div class="mw-collapsible" style="width:95%; margin: 0.2em 0;"><span class="mbox-text-span"><b>This article has multiple issues.</b> Please help <b><a class="external text" href="//en.wikipedia.org/w/index.php?title=JScript_.NET&amp;action=edit">improve it</a></b> or discuss these issues on the <b><a href="/wiki/Talk:JScript_.NET" title="Talk:JScript .NET">talk page</a></b>. <small><i>(<a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove these template messages</a>)</i></small></span>
+<div class="mw-collapsible-content" style="margin-top: 0.3em;">
+<table class="plainlinks metadata ambox ambox-content ambox-Original_research" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ambox_important.svg/40px-Ambox_important.svg.png" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ambox_important.svg/60px-Ambox_important.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ambox_important.svg/80px-Ambox_important.svg.png 2x" data-file-width="40" data-file-height="40" /></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">This article <b>possibly contains <a href="/wiki/Wikipedia:No_original_research" title="Wikipedia:No original research">original research</a></b>. <span class="hide-when-compact">Please <a class="external text" href="//en.wikipedia.org/w/index.php?title=JScript_.NET&amp;action=edit">improve it</a> by <a href="/wiki/Wikipedia:Verifiability" title="Wikipedia:Verifiability">verifying</a> the claims made and adding <a href="/wiki/Wikipedia:Citing_sources#Inline_citations" title="Wikipedia:Citing sources">inline citations</a>. Statements consisting only of original research should be removed.</span> <small><i>(November 2013)</i></small> <small class="hide-when-compact"><i>(<a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove this template message</a>)</i></small></span></td>
+</tr>
+</table>
+<table class="plainlinks metadata ambox ambox-content ambox-Unreferenced" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><a href="/wiki/File:Question_book-new.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" width="50" height="39" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/75px-Question_book-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/100px-Question_book-new.svg.png 2x" data-file-width="512" data-file-height="399" /></a></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">This article <b>does not <a href="/wiki/Wikipedia:Citing_sources" title="Wikipedia:Citing sources">cite</a> any <a href="/wiki/Wikipedia:Verifiability" title="Wikipedia:Verifiability">sources</a></b>. <span class="hide-when-compact">Please help <a class="external text" href="//en.wikipedia.org/w/index.php?title=JScript_.NET&amp;action=edit">improve this article</a> by <a href="/wiki/Help:Introduction_to_referencing_with_Wiki_Markup/1" title="Help:Introduction to referencing with Wiki Markup/1">adding citations to reliable sources</a>. Unsourced material may be challenged and <a href="/wiki/Wikipedia:Verifiability#Burden_of_evidence" title="Wikipedia:Verifiability">removed</a>.</span> <small><i>(November 2013)</i></small> <small class="hide-when-compact"><i>(<a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove this template message</a>)</i></small></span></td>
+</tr>
+</table>
+<table class="plainlinks metadata ambox ambox-content ambox-Update" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><a href="/wiki/File:Ambox_current_red.svg" class="image"><img alt="Ambox current red.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/98/Ambox_current_red.svg/42px-Ambox_current_red.svg.png" width="42" height="34" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/98/Ambox_current_red.svg/63px-Ambox_current_red.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/9/98/Ambox_current_red.svg/84px-Ambox_current_red.svg.png 2x" data-file-width="360" data-file-height="290" /></a></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">This article needs to be <b>updated</b>. <span class="hide-when-compact">Please update this article to reflect recent events or newly available information.</span> <small><i>(June 2015)</i></small></span></td>
+</tr>
+</table>
+</div>
+</div>
+<small class="hide-when-compact"><i>(<a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove this template message</a>)</i></small></td>
+</tr>
+</table>
+<table class="infobox vevent" style="width:22em">
+<caption class="summary">JScript .NET</caption>
+<tr>
+<th scope="row"><a href="/wiki/Programming_paradigm" title="Programming paradigm">Paradigm</a></th>
+<td><a href="/wiki/Multi-paradigm" class="mw-redirect" title="Multi-paradigm">multi-paradigm</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_developer" title="Software developer">Developer</a></th>
+<td class="organiser"><a href="/wiki/Microsoft" title="Microsoft">Microsoft Corporation</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Type_system" title="Type system">Typing discipline</a></th>
+<td><a href="/wiki/Duck_typing" title="Duck typing">duck</a>, <a href="/wiki/Weak_typing" class="mw-redirect" title="Weak typing">weak</a>, <a href="/wiki/Dynamic_typing" class="mw-redirect" title="Dynamic typing">dynamic</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Computing_platform" title="Computing platform">Platform</a></th>
+<td><a href="/wiki/.NET_Framework" title=".NET Framework">.NET Framework</a></td>
+</tr>
+<tr>
+<th colspan="2" style="text-align:center;background-color: #eee;">Influenced by</th>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/JScript" title="JScript">JScript</a> / <a href="/wiki/ECMAScript" title="ECMAScript">ECMAScript</a></td>
+</tr>
+</table>
+<table class="infobox" style="width:22em">
+<caption style="font-size:130%; padding-bottom:0.15em;">JScript .NET</caption>
+<tr>
+<th scope="row" style="padding:0.2em 0;line-height:1.2em; padding-right:0.65em;"><a href="/wiki/Filename_extension" title="Filename extension">Filename extension</a></th>
+<td style="line-height:1.35em;"><code>.js</code></td>
+</tr>
+</table>
+<p><b>JScript .NET</b> is a <a href="/wiki/.NET_Framework" title=".NET Framework">.NET</a> <a href="/wiki/Programming_language" title="Programming language">programming language</a> developed by <a href="/wiki/Microsoft" title="Microsoft">Microsoft</a>.</p>
+<p>The primary differences between <a href="/wiki/JScript" title="JScript">JScript</a> and JScript .NET can be summarized as follows:</p>
+<p>Firstly, JScript is a <a href="/wiki/Script_(computer_programming)" class="mw-redirect" title="Script (computer programming)">scripting</a> language, and as such <a href="/wiki/Computer_program" title="Computer program">programs</a> (or more suggestively, <a href="/wiki/Script_(computer_programming)" class="mw-redirect" title="Script (computer programming)">scripts</a>) can be executed without the need to compile the code first. This is not the case with the JScript .NET command-line compiler, since this next-generation version relies on the .NET <a href="/wiki/Common_Language_Runtime" title="Common Language Runtime">Common Language Runtime</a> (CLR) for execution, which requires that the code be compiled to <a href="/wiki/Common_Intermediate_Language" title="Common Intermediate Language">Common Intermediate Language</a> (CIL), formerly called Microsoft Intermediate Language (MSIL), code before it can be run. Nevertheless, JScript .NET still provides full support for interpreting code at runtime (e.g., via the <code>Function</code> constructor or the <code><a href="/wiki/Eval#JavaScript" title="Eval">eval</a></code> function) and indeed the interpreter can be exposed by custom applications hosting the JScript .NET engine via the VSA<sup class="noprint Inline-Template" style="white-space:nowrap;">[<i><a href="/wiki/MOS:JARGON" class="mw-redirect" title="MOS:JARGON"><span title="The material near this tag may be using jargon that limits the article's accessibility. (February 2012)">jargon</span></a></i>]</sup> interfaces.</p>
+<p>Secondly, JScript has a strong foundation in Microsoft's <a href="/wiki/ActiveX" title="ActiveX">ActiveX</a>/<a href="/wiki/Component_Object_Model" title="Component Object Model">COM</a> technologies, and relies primarily on ActiveX components to provide much of its functionality (including database access via <a href="/wiki/ActiveX_Data_Objects" title="ActiveX Data Objects">ADO</a>, file handling, etc.), whereas JScript .NET uses the <a href="/wiki/.NET_Framework" title=".NET Framework">.NET Framework</a> to provide equivalent functionality. For backwards-compatibility (or for where no .NET equivalent library exists), JScript .NET still provides full access to ActiveX objects via .NET / COM interop using both the ActiveXObject constructor and the standard methods of the .NET <b>Type</b> class.</p>
+<p>Although the .NET Framework and .NET languages such as <a href="/wiki/C_Sharp_(programming_language)" title="C Sharp (programming language)">C#</a> and <a href="/wiki/Visual_Basic_.NET" title="Visual Basic .NET">Visual Basic .NET</a> have seen widespread adoption, JScript .NET has never received much attention, by the media or by developers. It is not supported in Microsoft's premier development tool, <a href="/wiki/Visual_Studio_.NET" class="mw-redirect" title="Visual Studio .NET">Visual Studio .NET</a>. However, <a href="/wiki/ASP.NET" title="ASP.NET">ASP.NET</a> supports JScript .NET.</p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Language_differences"><span class="tocnumber">1</span> <span class="toctext">Language differences</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Differences_with_C.23"><span class="tocnumber">1.1</span> <span class="toctext">Differences with C#</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Differences_with_C.2B.2B"><span class="tocnumber">1.2</span> <span class="toctext">Differences with C++</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Differences_with_Java"><span class="tocnumber">1.3</span> <span class="toctext">Differences with Java</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Differences_with_older_versions_of_JScript"><span class="tocnumber">1.4</span> <span class="toctext">Differences with older versions of JScript</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="#See_also"><span class="tocnumber">2</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#References"><span class="tocnumber">4</span> <span class="toctext">References</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Language_differences">Language differences</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=JScript_.NET&amp;action=edit&amp;section=1" title="Edit section: Language differences">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The following are prime examples of language differences between JScript .NET and other .NET languages, including comparisons.</p>
+<h3><span class="mw-headline" id="Differences_with_C.23">Differences with C#</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=JScript_.NET&amp;action=edit&amp;section=2" title="Edit section: Differences with C#">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<ul>
+<li>JScript .NET does not require a <a href="/wiki/Main_function_(programming)" class="mw-redirect" title="Main function (programming)">main()</a> <a href="/wiki/Function_(programming)" class="mw-redirect" title="Function (programming)">function</a> that the operating system must call directly when executing a JScript .NET application, as such, JScript .NET program flow can be based on global code.</li>
+<li>JScript .NET, because of its very loose type checking system can be very easy to learn, since the convention of explicit type declaration is not required at all.</li>
+<li>JScript .NET does not require explicit references to the .NET Framework Base Class Library, as certain functions found in earlier versions of JScript are present in JScript .NET (e.g. functions for finding the <a href="/wiki/Trigonometric_function" class="mw-redirect" title="Trigonometric function">tangent</a> of an angle for a <a href="/wiki/Right_triangle" title="Right triangle">right triangle</a>).</li>
+<li>JScript .NET is closely linked to <a href="/wiki/C_syntax" title="C syntax">C syntax</a>, and is thus very easy to learn for <a href="/wiki/C_Sharp_(programming_language)" title="C Sharp (programming language)">C#</a>, <a href="/wiki/Java_(programming_language)" title="Java (programming language)">Java</a> or <a href="/wiki/C%2B%2B" title="C++">C++</a> developers.</li>
+<li>While JScript .NET can be used to create Windows Forms applications, JScript .NET will have some trouble, as delegates can only be consumed in JScript .NET and not created. Thus, custom events are hard to emulate in JScript .NET.</li>
+</ul>
+<h3><span class="mw-headline" id="Differences_with_C.2B.2B">Differences with C++</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=JScript_.NET&amp;action=edit&amp;section=3" title="Edit section: Differences with C++">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<ul>
+<li>JScript .NET does not require a <a href="/wiki/Main_function_(programming)" class="mw-redirect" title="Main function (programming)">main()</a> <a href="/wiki/Function_(programming)" class="mw-redirect" title="Function (programming)">function</a>.</li>
+<li>JScript .NET does not require explicit <a href="/wiki/Type_declaration" class="mw-redirect" title="Type declaration">type declaration</a> on variables. (In <a href="/wiki/C%2B%2B" title="C++">C++</a>, the use of templates and generics can be compared to this, loosely emulated with template specialization, etc.)</li>
+<li>JScript .NET also does not require explicit <a href="/wiki/Type_conversion" title="Type conversion">type casts</a> on variable use in the program. Code used to retrieve a string of characters, but only used for integer numbers can be cast implicitly; the vice versa can be done without error at compile time, but there is a chance of loss of precision or data.</li>
+</ul>
+<p>e.g.:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="kr">import</span> <span class="nx">System</span><span class="p">;</span>
+
+<span class="nx">Console</span><span class="p">.</span><span class="nx">WriteLine</span><span class="p">(</span><span class="s2">"Hello, what's your name?"</span><span class="p">);</span>
+<span class="nx">Console</span><span class="p">.</span><span class="nx">WriteLine</span><span class="p">(</span><span class="s2">"Type your name: "</span><span class="p">);</span>
+
+<span class="kd">var</span> <span class="nx">_name</span> <span class="o">=</span> <span class="nx">Console</span><span class="p">.</span><span class="nx">ReadLine</span><span class="p">();</span>
+
+<span class="nx">Console</span><span class="p">.</span><span class="nx">WriteLine</span><span class="p">(</span><span class="s2">"Hello, "</span> <span class="o">+</span> <span class="nx">_name</span><span class="p">);</span>
+</pre></div>
+<h3><span class="mw-headline" id="Differences_with_Java">Differences with Java</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=JScript_.NET&amp;action=edit&amp;section=4" title="Edit section: Differences with Java">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<ul>
+<li>JScript .NET syntax and <a href="/w/index.php?title=Lexical_conventions&amp;action=edit&amp;redlink=1" class="new" title="Lexical conventions (page does not exist)">lexical conventions</a> are similar to <a href="/wiki/Java_(programming_language)" title="Java (programming language)">Java</a> in that both are derived from <a href="/wiki/C_(programming_language)" title="C (programming language)">C</a>. JScript was originally Microsoft's implementation of <a href="/wiki/ECMAScript" title="ECMAScript">ECMAScript</a>, which is more commonly known as <a href="/wiki/JavaScript" title="JavaScript">JavaScript</a>, though it is unrelated to Java. Thus, users of Java and other C-derived languages will find JScript easier to learn.</li>
+<li>JScript .NET allows developers to use <a href="/wiki/Variable_(computer_science)#Typing" title="Variable (computer science)">untyped variables</a>, and can sometimes infer their type from their usage to optimize the compiled code. On the other hand, Java requires all variables to be typed.</li>
+<li>JScript .NET can add properties and methods to objects in <a href="/wiki/Run_time_(program_lifecycle_phase)" title="Run time (program lifecycle phase)">run-time</a>, while Java objects always conform to their declared interface.</li>
+<li>JScript .NET supports <a href="/wiki/Global_variables" class="mw-redirect" title="Global variables">global variables</a>, something Java does not.</li>
+</ul>
+<h3><span class="mw-headline" id="Differences_with_older_versions_of_JScript">Differences with older versions of JScript</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=JScript_.NET&amp;action=edit&amp;section=5" title="Edit section: Differences with older versions of JScript">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<ul>
+<li>JScript .NET allows developers to declare variables and functions with type information (e.g., <b>var x&#160;: String;</b>), while type information for JScript's variables and functions can not be declared (e.g., <b>var x;</b>).</li>
+<li>JScript .NET scripts are not interpreted, but executed independently. When executed, a JScript .NET application will invoke the <a href="/wiki/Common_Language_Runtime" title="Common Language Runtime">CLR</a>. The CLR will execute the <a href="/wiki/Common_Intermediate_Language" title="Common Intermediate Language">CIL</a> instructions without using an interpreter.</li>
+<li>JScript .NET can be run without the presence of a browser or another <a href="/wiki/Scripting_language" title="Scripting language">scripting engine</a> as the compiler can generate standalone <a href="/wiki/Executable" title="Executable">executables</a> and assemblies. However these still require <a href="/wiki/.NET_Framework" title=".NET Framework">.NET Framework</a> to be installed in order to run.</li>
+<li>JScript .NET provides access to the .NET Framework BCL (<a href="/wiki/Base_Class_Library" class="mw-redirect" title="Base Class Library">Base Class Library</a>), providing much more functionality.</li>
+<li>JScript .NET is only available as a scripting language for <a href="/wiki/ASP.NET" title="ASP.NET">ASP.NET</a>, the technology used to generate web pages; thus, JScript .NET takes a similar role to <a href="/wiki/PHP" title="PHP">PHP</a> and other server-side scripting languages. Internet Explorer, however, is still using only the older JScript engine, so JScript.NET cannot be used to script web pages (or HTAs or HTCs). In this regard, JScript is much more versatile than JScript .NET.</li>
+</ul>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=JScript_.NET&amp;action=edit&amp;section=6" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a href="/wiki/JavaScript_OSA" title="JavaScript OSA">JavaScript OSA</a>&#160;– A system-level scripting language for the <a href="/wiki/Apple_Macintosh" class="mw-redirect" title="Apple Macintosh">Apple Macintosh</a></li>
+<li><a href="/wiki/JScript" title="JScript">JScript</a></li>
+<li><a href="/wiki/ActionScript" title="ActionScript">ActionScript</a></li>
+</ul>
+<h2><span class="mw-headline" id="Notes">Notes</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=JScript_.NET&amp;action=edit&amp;section=7" title="Edit section: Notes">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;"></div>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=JScript_.NET&amp;action=edit&amp;section=8" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://msdn.microsoft.com/en-us/library/3bf5fs13.aspx">Getting Started With JScript .NET</a></li>
+<li><a rel="nofollow" class="external text" href="http://msdn.microsoft.com/en-us/library/ms974588.aspx">Introducing JScript .NET</a></li>
+<li><a rel="nofollow" class="external text" href="http://web.archive.org/web/20091027083329/http://geocities.com/Jeff_Louie/jscript_net_windows_form.htm">JScript.NET tutorial and form tutorial</a></li>
+</ul>
+<div role="navigation" class="navbox" aria-labelledby="Common_Language_Infrastructure" style="padding:3px">
+<table class="nowraplinks hlist collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:Common_Language_Infrastructure" title="Template:Common Language Infrastructure"><abbr title="View this template" style=";;background:none transparent;border:none;">v</abbr></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:Common_Language_Infrastructure" title="Template talk:Common Language Infrastructure"><abbr title="Discuss this template" style=";;background:none transparent;border:none;">t</abbr></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:Common_Language_Infrastructure&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;">e</abbr></a></li>
+</ul>
+</div>
+<div id="Common_Language_Infrastructure" style="font-size:114%"><a href="/wiki/Common_Language_Infrastructure" title="Common Language Infrastructure">Common Language Infrastructure</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Architecture</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Application_domain" title="Application domain">Application domain</a></li>
+<li><a href="/wiki/Code_Access_Security" title="Code Access Security">Code Access Security</a></li>
+<li><a href="/wiki/Common_Intermediate_Language" title="Common Intermediate Language">Common Intermediate Language</a> (CIL)
+<ul>
+<li><a href="/wiki/List_of_CIL_instructions" title="List of CIL instructions">CIL instructions</a></li>
+</ul>
+</li>
+<li><a href="/wiki/Common_Type_System" title="Common Type System">Common Type System</a> (CTS)</li>
+<li><a href="/wiki/Platform_Invocation_Services" title="Platform Invocation Services">Platform Invocation Services</a> (P/Invoke)</li>
+<li><a href="/wiki/Virtual_Execution_System" title="Virtual Execution System">Virtual Execution System</a> (VES)</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Components</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Assembly_(CLI)" title="Assembly (CLI)">Assembly</a></li>
+<li><a href="/wiki/Delegate_(CLI)" title="Delegate (CLI)">Delegate</a></li>
+<li><a href="/wiki/Global_Assembly_Cache" title="Global Assembly Cache">Global Assembly Cache</a> (GAC)</li>
+<li><a href="/wiki/Manifest_(CLI)" title="Manifest (CLI)">Manifest</a></li>
+<li><a href="/wiki/Metadata_(CLI)" title="Metadata (CLI)">Metadata</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Standard_Libraries_(CLI)" title="Standard Libraries (CLI)">Standard<br />
+Libraries</a></th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks navbox-subgroup" style="border-spacing:0">
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Standard_Libraries_(CLI)#Kernel_Profile" title="Standard Libraries (CLI)">Kernel Profile</a></th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Standard_Libraries_(CLI)#Base_Class_Library" title="Standard Libraries (CLI)">Base Class Library</a> (BCL)</li>
+<li><a href="/wiki/Standard_Libraries_(CLI)#Runtime_Infrastructure_Library" title="Standard Libraries (CLI)">Runtime Infrastructure Library</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Standard_Libraries_(CLI)#Compact_Profile" title="Standard Libraries (CLI)">Compact Profile</a></th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Standard_Libraries_(CLI)#Network_Library" title="Standard Libraries (CLI)">Network Library</a></li>
+<li><a href="/wiki/Standard_Libraries_(CLI)#Reflection_Library" title="Standard Libraries (CLI)">Reflection Library</a></li>
+<li><a href="/wiki/Standard_Libraries_(CLI)#XML_Library" title="Standard Libraries (CLI)">XML Library</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Standard_Libraries_(CLI)#Extended_Array_Library" title="Standard Libraries (CLI)">Extended Array Library</a></li>
+<li><a href="/wiki/Standard_Libraries_(CLI)#Extended_Numerics_Library" title="Standard Libraries (CLI)">Extended Numerics Library</a></li>
+<li><a href="/wiki/Standard_Libraries_(CLI)#Parallel_Library" title="Standard Libraries (CLI)">Parallel Library</a></li>
+<li><a href="/wiki/Standard_Libraries_(CLI)#Vararg_Library" title="Standard Libraries (CLI)">Vararg Library</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Implementations</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks navbox-subgroup" style="border-spacing:0">
+<tr>
+<th scope="row" class="navbox-group">Microsoft</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/.NET_Framework" title=".NET Framework">.NET Framework</a></li>
+<li><a href="/wiki/.NET_Compact_Framework" title=".NET Compact Framework">.NET Compact Framework</a></li>
+<li><a href="/wiki/.NET_Micro_Framework" title=".NET Micro Framework">.NET Micro Framework</a></li>
+<li><a href="/wiki/Shared_Source_Common_Language_Infrastructure" title="Shared Source Common Language Infrastructure">Shared Source Common Language Infrastructure</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Other</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/.NET_Core" class="mw-redirect" title=".NET Core">.NET Core</a></li>
+<li><a href="/wiki/Mono_(software)" title="Mono (software)">Mono</a></li>
+<li><a href="/wiki/Portable.NET" title="Portable.NET">Portable.NET</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/List_of_CLI_languages" title="List of CLI languages">Languages</a></th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks navbox-subgroup" style="border-spacing:0">
+<tr>
+<th scope="row" class="navbox-group">Microsoft</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/C_Sharp_(programming_language)" title="C Sharp (programming language)">C#</a>
+<ul>
+<li><a href="/wiki/Microsoft_Visual_C_Sharp" title="Microsoft Visual C Sharp">Visual C#</a></li>
+</ul>
+</li>
+<li><a href="/wiki/Visual_Basic_.NET" title="Visual Basic .NET">Visual Basic .NET</a></li>
+<li><a href="/wiki/C%2B%2B/CLI" title="C++/CLI">C++/CLI</a>
+<ul>
+<li><a href="/wiki/Managed_Extensions_for_C%2B%2B" title="Managed Extensions for C++">Managed</a></li>
+</ul>
+</li>
+<li><a href="/wiki/F_Sharp_(programming_language)" title="F Sharp (programming language)">F#</a></li>
+<li><a href="/wiki/J_Sharp" title="J Sharp">J#</a></li>
+<li><strong class="selflink">JScript .NET</strong></li>
+<li><a href="/wiki/PowerShell" title="PowerShell">Windows PowerShell</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Other</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Axum_(programming_language)" title="Axum (programming language)">Axum</a></li>
+<li><a href="/wiki/A_Sharp_(.NET)" title="A Sharp (.NET)">A#</a></li>
+<li><a href="/wiki/Boo_(programming_language)" title="Boo (programming language)">Boo</a></li>
+<li><a href="/wiki/Cobra_(programming_language)" title="Cobra (programming language)">Cobra</a></li>
+<li><a href="/wiki/IronScheme" title="IronScheme">IronScheme</a>
+<ul>
+<li><a href="/wiki/IronLisp" title="IronLisp">IronLisp</a></li>
+</ul>
+</li>
+<li><a href="/wiki/IronPython" title="IronPython">IronPython</a></li>
+<li><a href="/wiki/IronRuby" title="IronRuby">IronRuby</a></li>
+<li><a href="/wiki/Nemerle" title="Nemerle">Nemerle</a></li>
+<li><a href="/wiki/Oxygene_(programming_language)" title="Oxygene (programming language)">Oxygene</a></li>
+<li><a href="/wiki/Phalanger_(compiler)" title="Phalanger (compiler)">Phalanger</a></li>
+<li><a href="/wiki/P_Sharp" title="P Sharp">P#</a></li>
+<li><a href="/wiki/Scala_(programming_language)" title="Scala (programming language)">Scala</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Comparison</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Comparison_of_C_Sharp_and_Java" title="Comparison of C Sharp and Java">C# and Java</a></li>
+<li><a href="/wiki/Comparison_of_C_Sharp_and_Visual_Basic_.NET" title="Comparison of C Sharp and Visual Basic .NET">C# and Visual Basic .NET</a></li>
+<li><a href="/wiki/Comparison_of_the_Java_and_.NET_platforms" title="Comparison of the Java and .NET platforms">Java and .NET platforms</a></li>
+<li><a href="/wiki/Comparison_of_Visual_Basic_and_Visual_Basic_.NET" title="Comparison of Visual Basic and Visual Basic .NET">Visual Basic and Visual Basic .NET</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Organizations</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/.NET_Foundation" title=".NET Foundation">.NET Foundation</a></li>
+<li><a href="/wiki/DotGNU" title="DotGNU">DotGNU</a></li>
+<li><a href="/wiki/Microsoft" title="Microsoft">Microsoft</a></li>
+<li><a href="/wiki/Xamarin" title="Xamarin">Xamarin</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div role="navigation" class="navbox" aria-labelledby="ECMAScript" style="padding:3px">
+<table class="nowraplinks hlist collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:ECMAScript" title="Template:ECMAScript"><abbr title="View this template" style=";;background:none transparent;border:none;">v</abbr></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:ECMAScript" title="Template talk:ECMAScript"><abbr title="Discuss this template" style=";;background:none transparent;border:none;">t</abbr></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:ECMAScript&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;">e</abbr></a></li>
+</ul>
+</div>
+<div id="ECMAScript" style="font-size:114%"><a href="/wiki/ECMAScript" title="ECMAScript">ECMAScript</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Dialects</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/ActionScript" title="ActionScript">ActionScript</a></li>
+<li><a href="/wiki/Caja_project" title="Caja project">Caja</a></li>
+<li><a href="/wiki/JavaScript" title="JavaScript">JavaScript</a>
+<ul>
+<li><a href="/wiki/JavaScript_engine" title="JavaScript engine">engines</a></li>
+<li><a href="/wiki/Asm.js" title="Asm.js">asm.js</a></li>
+</ul>
+</li>
+<li><a href="/wiki/JScript" title="JScript">JScript</a></li>
+<li><strong class="selflink">JScript .NET</strong></li>
+<li><a href="/wiki/QtScript" title="QtScript">QtScript</a></li>
+<li><a href="/wiki/TypeScript" title="TypeScript">TypeScript</a></li>
+<li><a href="/wiki/WMLScript" title="WMLScript">WMLScript</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/List_of_ECMAScript_engines" title="List of ECMAScript engines">Engines</a><br />
+(<a href="/wiki/Comparison_of_layout_engines_(ECMAScript)" title="Comparison of layout engines (ECMAScript)">comparison</a>)</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Presto_(layout_engine)#JavaScript_engines" title="Presto (layout engine)">Carakan</a></li>
+<li><a href="/wiki/Presto_(layout_engine)#JavaScript_engines" title="Presto (layout engine)">Futhark</a></li>
+<li><a href="/wiki/InScript_(JavaScript_engine)" title="InScript (JavaScript engine)">InScript</a></li>
+<li><a href="/wiki/JavaScriptCore" class="mw-redirect" title="JavaScriptCore">JavaScriptCore</a>
+<ul>
+<li><a href="/wiki/WebKit#JavaScriptCore" title="WebKit">SquirrelFish</a></li>
+</ul>
+</li>
+<li><a href="/wiki/JScript" title="JScript">JScript</a></li>
+<li><a href="/wiki/KJS_(software)" title="KJS (software)">KJS</a></li>
+<li><a href="/wiki/Presto_(layout_engine)#JavaScript_engines" title="Presto (layout engine)">Linear B</a></li>
+<li><a href="/wiki/Narcissus_(JavaScript_engine)" title="Narcissus (JavaScript engine)">Narcissus</a></li>
+<li><a href="/wiki/QtScript" title="QtScript">QtScript</a></li>
+<li><a href="/wiki/Rhino_(JavaScript_engine)" title="Rhino (JavaScript engine)">Rhino</a></li>
+<li><a href="/wiki/SpiderMonkey_(software)" class="mw-redirect" title="SpiderMonkey (software)">SpiderMonkey</a>
+<ul>
+<li><a href="/wiki/SpiderMonkey_(software)#TraceMonkey" class="mw-redirect" title="SpiderMonkey (software)">TraceMonkey</a></li>
+<li><a href="/wiki/J%C3%A4gerMonkey" class="mw-redirect" title="JägerMonkey">JägerMonkey</a></li>
+</ul>
+</li>
+<li><a href="/wiki/Tamarin_(software)" title="Tamarin (software)">Tamarin</a></li>
+<li><a href="/wiki/V8_(JavaScript_engine)" title="V8 (JavaScript engine)">V8</a></li>
+<li><a href="/wiki/Chakra_(JScript_engine)" title="Chakra (JScript engine)">Chakra</a> (<a href="/wiki/Chakra_(JavaScript_engine)" title="Chakra (JavaScript engine)">JavaScript engine</a>)</li>
+<li><strong class="selflink">JScript .NET</strong></li>
+<li><a href="/wiki/Nashorn_(JavaScript_engine)" title="Nashorn (JavaScript engine)">Nashorn</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Software_framework" title="Software framework">Frameworks</a></th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks navbox-subgroup" style="border-spacing:0">
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Client-side_JavaScript" class="mw-redirect" title="Client-side JavaScript">Client-side</a></th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Ample_SDK" title="Ample SDK">Ample SDK</a></li>
+<li><a href="/wiki/Chaplin.js" title="Chaplin.js">Chaplin.js</a></li>
+<li><a href="/wiki/Dojo_Toolkit" title="Dojo Toolkit">Dojo</a></li>
+<li><a href="/wiki/Echo_(framework)" title="Echo (framework)">Echo</a></li>
+<li><a href="/wiki/Ext_JS" title="Ext JS">Ext JS</a></li>
+<li><a href="/wiki/Google_Web_Toolkit" title="Google Web Toolkit">Google Web Toolkit</a></li>
+<li><a href="/wiki/JQuery" title="JQuery">jQuery</a></li>
+<li><a href="/wiki/Lively_Kernel" title="Lively Kernel">Lively Kernel</a></li>
+<li><a href="/wiki/Midori_JavaScript_Framework" title="Midori JavaScript Framework">midori</a></li>
+<li><a href="/wiki/MochiKit" title="MochiKit">MochiKit</a></li>
+<li><a href="/wiki/MooTools" title="MooTools">MooTools</a></li>
+<li><a href="/wiki/Prototype_JavaScript_Framework" title="Prototype JavaScript Framework">Prototype</a></li>
+<li><a href="/wiki/Pyjamas_(software)" class="mw-redirect" title="Pyjamas (software)">Pyjamas</a></li>
+<li><a href="/wiki/Qooxdoo" title="Qooxdoo">qooxdoo</a></li>
+<li><a href="/wiki/Rialto_Toolkit" title="Rialto Toolkit">Rialto</a></li>
+<li><a href="/wiki/Rico_(Ajax)" title="Rico (Ajax)">Rico</a></li>
+<li><a href="/wiki/Script.aculo.us" title="Script.aculo.us">script.aculo.us</a></li>
+<li><a href="/wiki/SmartClient" title="SmartClient">SmartClient</a></li>
+<li><a href="/wiki/SproutCore" title="SproutCore">SproutCore</a></li>
+<li><a href="/wiki/Spry_framework" title="Spry framework">Spry</a></li>
+<li><a href="/wiki/Wakanda_(software)" title="Wakanda (software)">Wakanda Framework</a></li>
+<li><a href="/wiki/YUI_Library" title="YUI Library">YUI Library</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Server-side_JavaScript" class="mw-redirect" title="Server-side JavaScript">Server-side</a></th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/AppJet" title="AppJet">AppJet</a></li>
+<li><a href="/wiki/Jaxer#Aptana_Jaxer" class="mw-redirect" title="Jaxer">Jaxer</a></li>
+<li><a href="/wiki/Node.js" title="Node.js">Node.js</a></li>
+<li><a href="/wiki/Wakanda_(software)" title="Wakanda (software)">WakandaDB</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Multiple</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Cappuccino_(application_development_framework)" title="Cappuccino (application development framework)">Cappuccino</a>
+<ul>
+<li><a href="/wiki/Objective-J" title="Objective-J">Objective-J</a></li>
+</ul>
+</li>
+<li><a href="/wiki/PureMVC" title="PureMVC">PureMVC</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/JavaScript_library" title="JavaScript library">Libraries</a></th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Backbone.js" title="Backbone.js">Backbone.js</a></li>
+<li><a href="/wiki/SWFObject" title="SWFObject">SWFObject</a></li>
+<li><a href="/wiki/SWFAddress" title="SWFAddress">SWFAddress</a></li>
+<li><a href="/wiki/Underscore.js" title="Underscore.js">Underscore.js</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">People</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Brendan_Eich" title="Brendan Eich">Brendan Eich</a></li>
+<li><a href="/wiki/Douglas_Crockford" title="Douglas Crockford">Douglas Crockford</a></li>
+<li><a href="/wiki/John_Resig" title="John Resig">John Resig</a></li>
+<li><a href="/wiki/Scott_Isaacs" title="Scott Isaacs">Scott Isaacs</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Other</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Dynamic_HTML" title="Dynamic HTML">DHTML</a></li>
+<li><a href="/wiki/Ecma_International" title="Ecma International">Ecma International</a></li>
+<li><a href="/wiki/JSDoc" title="JSDoc">JSDoc</a></li>
+<li><a href="/wiki/JSGI" title="JSGI">JSGI</a></li>
+<li><a href="/wiki/JSHint" title="JSHint">JSHint</a></li>
+<li><a href="/wiki/JSLint" title="JSLint">JSLint</a></li>
+<li><a href="/wiki/JSON" title="JSON">JSON</a></li>
+<li><a href="/wiki/JavaScript_Style_Sheets" title="JavaScript Style Sheets">JSSS</a></li>
+<li><a href="/wiki/Sputnik_(JavaScript_conformance_test)" title="Sputnik (JavaScript conformance test)">Sputnik</a></li>
+<li><a href="/wiki/Browser_speed_test#SunSpider" title="Browser speed test">SunSpider</a></li>
+<li><a href="/wiki/Asynchronous_module_definition" title="Asynchronous module definition">Asynchronous module definition</a></li>
+<li><a href="/wiki/CommonJS" title="CommonJS">CommonJS</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" colspan="2">
+<div>
+<dl>
+<dt><img alt="List-Class article" src="//upload.wikimedia.org/wikipedia/en/thumb/d/db/Symbol_list_class.svg/16px-Symbol_list_class.svg.png" title="List-Class article" width="16" height="16" srcset="//upload.wikimedia.org/wikipedia/en/thumb/d/db/Symbol_list_class.svg/23px-Symbol_list_class.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/d/db/Symbol_list_class.svg/31px-Symbol_list_class.svg.png 2x" data-file-width="180" data-file-height="185" /> Lists</dt>
+<dd><a href="/wiki/List_of_JavaScript_libraries" title="List of JavaScript libraries">JavaScript libraries</a></dd>
+<dd><a href="/wiki/List_of_Ajax_frameworks#JavaScript" title="List of Ajax frameworks">Ajax frameworks</a></dd>
+<dt><img alt="List-Class article" src="//upload.wikimedia.org/wikipedia/en/thumb/d/db/Symbol_list_class.svg/16px-Symbol_list_class.svg.png" title="List-Class article" width="16" height="16" srcset="//upload.wikimedia.org/wikipedia/en/thumb/d/db/Symbol_list_class.svg/23px-Symbol_list_class.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/d/db/Symbol_list_class.svg/31px-Symbol_list_class.svg.png 2x" data-file-width="180" data-file-height="185" /> Comparisons</dt>
+<dd><a href="/wiki/Comparison_of_JavaScript_frameworks" title="Comparison of JavaScript frameworks">JavaScript frameworks</a></dd>
+<dd><a href="/wiki/Comparison_of_server-side_JavaScript_solutions" title="Comparison of server-side JavaScript solutions">server-side JavaScript</a></dd>
+</dl>
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1219
+Cached time: 20170119170141
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.200 seconds
+Real time usage: 0.261 seconds
+Preprocessor visited node count: 1316/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 87250/2097152 bytes
+Template argument size: 9678/2097152 bytes
+Highest expansion depth: 14/40
+Expensive parser function count: 7/500
+Lua time usage: 0.083/10.000 seconds
+Lua memory usage: 2.34 MB/50 MB
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  195.322      1 - -total
+ 51.46%  100.511      4 - Template:Ambox
+ 40.95%   79.988      1 - Template:Multiple_issues
+ 21.98%   42.936      2 - Template:Infobox
+ 19.25%   37.599      6 - Template:Navbox
+ 19.19%   37.483      1 - Template:Infobox_programming_language
+ 12.98%   25.359      1 - Template:Technical-statement
+ 11.33%   22.124      1 - Template:Fix
+  9.78%   19.109      1 - Template:Original_research
+  8.49%   16.590      1 - Template:Common_Language_Infrastructure
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:840451-0!*!0!!en!4!* and timestamp 20170119170141 and revision id 719162649
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=JScript_.NET&amp;oldid=719162649">https://en.wikipedia.org/w/index.php?title=JScript_.NET&amp;oldid=719162649</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:.NET_programming_languages" title="Category:.NET programming languages">.NET programming languages</a></li><li><a href="/wiki/Category:JavaScript_programming_language_family" title="Category:JavaScript programming language family">JavaScript programming language family</a></li><li><a href="/wiki/Category:Object-based_programming_languages" title="Category:Object-based programming languages">Object-based programming languages</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Articles_that_may_contain_original_research_from_November_2013" title="Category:Articles that may contain original research from November 2013">Articles that may contain original research from November 2013</a></li><li><a href="/wiki/Category:All_articles_that_may_contain_original_research" title="Category:All articles that may contain original research">All articles that may contain original research</a></li><li><a href="/wiki/Category:Articles_lacking_sources_from_November_2013" title="Category:Articles lacking sources from November 2013">Articles lacking sources from November 2013</a></li><li><a href="/wiki/Category:All_articles_lacking_sources" title="Category:All articles lacking sources">All articles lacking sources</a></li><li><a href="/wiki/Category:Wikipedia_articles_in_need_of_updating_from_June_2015" title="Category:Wikipedia articles in need of updating from June 2015">Wikipedia articles in need of updating from June 2015</a></li><li><a href="/wiki/Category:All_Wikipedia_articles_in_need_of_updating" title="Category:All Wikipedia articles in need of updating">All Wikipedia articles in need of updating</a></li><li><a href="/wiki/Category:All_articles_that_are_too_technical" title="Category:All articles that are too technical">All articles that are too technical</a></li><li><a href="/wiki/Category:Wikipedia_articles_that_are_too_technical_from_February_2012" title="Category:Wikipedia articles that are too technical from February 2012">Wikipedia articles that are too technical from February 2012</a></li><li><a href="/wiki/Category:All_articles_needing_expert_attention" title="Category:All articles needing expert attention">All articles needing expert attention</a></li><li><a href="/wiki/Category:Articles_needing_expert_attention_from_February_2012" title="Category:Articles needing expert attention from February 2012">Articles needing expert attention from February 2012</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=JScript+.NET" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=JScript+.NET" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/JScript_.NET"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:JScript_.NET"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/JScript_.NET" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=JScript_.NET&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=JScript_.NET&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/JScript_.NET" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/JScript_.NET" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=JScript_.NET&amp;oldid=719162649" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=JScript_.NET&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q1417175" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=JScript_.NET&amp;id=719162649" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=JScript+.NET">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=JScript+.NET&amp;returnto=JScript+.NET&amp;oldid=719162649&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=JScript_.NET&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-ar"><a href="https://ar.wikipedia.org/wiki/%D8%AC%D8%B3%D9%83%D8%B1%D8%A8%D8%AA_.%D9%86%D8%AA" title="جسكربت .نت – Arabic" lang="ar" hreflang="ar" class="interlanguage-link-target">العربية</a></li><li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/JScript_.NET" title="JScript .NET – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-es"><a href="https://es.wikipedia.org/wiki/JScript_.NET" title="JScript .NET – Spanish" lang="es" hreflang="es" class="interlanguage-link-target">Español</a></li><li class="interlanguage-link interwiki-fa"><a href="https://fa.wikipedia.org/wiki/%D8%AC%DB%8C%E2%80%8C%D8%A7%D8%B3%DA%A9%D8%B1%DB%8C%D9%BE%D8%AA_%D8%AF%D8%A7%D8%AA%E2%80%8C%D9%86%D8%AA" title="جی‌اسکریپت دات‌نت – Persian" lang="fa" hreflang="fa" class="interlanguage-link-target">فارسی</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/JScript_.NET" title="JScript .NET – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-zh"><a href="https://zh.wikipedia.org/wiki/JScript_.NET" title="JScript .NET – Chinese" lang="zh" hreflang="zh" class="interlanguage-link-target">中文</a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q1417175#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 8 May 2016, at 00:44.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=JScript_.NET&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":101,"wgHostname":"mw1171"});});</script>
+	</body>
+</html>

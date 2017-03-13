@@ -1,0 +1,1790 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>ECMAScript - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"ECMAScript","wgTitle":"ECMAScript","wgCurRevisionId":762887963,"wgRevisionId":762887963,"wgArticleId":188515,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Pages using deprecated image syntax","Vague or ambiguous time from January 2017","All articles with unsourced statements","Articles with unsourced statements from May 2012","Articles containing potentially dated statements from 2013","All articles containing potentially dated statements","C programming language family","Computer standards","Dynamically typed programming languages","Ecma standards","JavaScript dialect engines","JavaScript programming language family","Object-based programming languages","Programming languages with an ISO standard","Prototype-based programming languages","Scripting languages"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"ECMAScript","wgRelevantArticleId":188515,"wgRequestId":"WJA34QpAME8AAKCx-MsAAACW","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":true},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q259138","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.cite.styles":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.legacy.wikibits","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.29.0-wmf.9"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/ECMAScript"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=ECMAScript&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=ECMAScript&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/ECMAScript"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ECMAScript rootpage-ECMAScript skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">ECMAScript</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><script>function mfTempOpenSection(id){var block=document.getElementById("mf-section-"+id);block.className+=" open-block";block.previousSibling.className+=" open-block";}</script><table class="infobox vevent" style="width:22em">
+<caption class="summary">ECMAScript</caption>
+<tr>
+<th scope="row"><a href="/wiki/Programming_paradigm" title="Programming paradigm">Paradigm</a></th>
+<td><a href="/wiki/Multi-paradigm" class="mw-redirect" title="Multi-paradigm">Multi-paradigm</a>: <a href="/wiki/Prototype-based_programming" title="Prototype-based programming">prototype-based</a>, <a href="/wiki/Functional_programming" title="Functional programming">functional</a>, <a href="/wiki/Imperative_programming" title="Imperative programming">imperative</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_design" title="Software design">Designed&#160;by</a></th>
+<td><a href="/wiki/Brendan_Eich" title="Brendan Eich">Brendan Eich</a>, <a href="/wiki/Ecma_International" title="Ecma International">Ecma International</a></td>
+</tr>
+<tr>
+<th scope="row">First&#160;appeared</th>
+<td>1997<span class="noprint">; 20&#160;years ago</span><span style="display:none">&#160;(<span class="bday dtstart published updated">1997</span>)</span></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Type_system" title="Type system">Typing discipline</a></th>
+<td><a href="/wiki/Weak_typing" class="mw-redirect" title="Weak typing">weak</a>, <a href="/wiki/Dynamic_typing" class="mw-redirect" title="Dynamic typing">dynamic</a></td>
+</tr>
+<tr>
+<th scope="row">Website</th>
+<td><span class="url"><a rel="nofollow" class="external text" href="http://www.ecmascript.org">www<wbr />.ecmascript<wbr />.org</a></span></td>
+</tr>
+<tr>
+<th colspan="2" style="text-align:center;background-color: #eee;">Major <a href="/wiki/Programming_language_implementation" title="Programming language implementation">implementations</a></th>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/JavaScript" title="JavaScript">JavaScript</a>, <a href="/wiki/SpiderMonkey" title="SpiderMonkey">SpiderMonkey</a>, <a href="/wiki/V8_(JavaScript_engine)" title="V8 (JavaScript engine)">V8</a>, <a href="/wiki/ActionScript" title="ActionScript">ActionScript</a>, <a href="/wiki/JScript" title="JScript">JScript</a>, <a href="/wiki/QtScript" title="QtScript">QtScript</a>, <a href="/wiki/InScript_(JavaScript_engine)" title="InScript (JavaScript engine)">InScript</a></td>
+</tr>
+<tr>
+<th colspan="2" style="text-align:center;background-color: #eee;">Influenced by</th>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/Self_(programming_language)" title="Self (programming language)">Self</a>, <a href="/wiki/HyperTalk" title="HyperTalk">HyperTalk</a>, <a href="/wiki/AWK" title="AWK">AWK</a>, <a href="/wiki/C_(programming_language)" title="C (programming language)">C</a>, <a href="/wiki/Perl" title="Perl">Perl</a>, <a href="/wiki/Python_(programming_language)" title="Python (programming language)">Python</a>, <a href="/wiki/Java_(programming_language)" title="Java (programming language)">Java</a>, <a href="/wiki/Scheme_(programming_language)" title="Scheme (programming language)">Scheme</a></td>
+</tr>
+</table>
+<table class="infobox" style="width:22em">
+<caption style="font-size:130%; padding-bottom:0.15em;">ECMAScript</caption>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/File:Crystal_source.png" class="image"><img alt="Crystal source.png" src="//upload.wikimedia.org/wikipedia/commons/d/d3/Crystal_source.png" width="64" height="64" data-file-width="64" data-file-height="64" /></a></td>
+</tr>
+<tr>
+<th scope="row" style="padding:0.2em 0;line-height:1.2em; padding-right:0.65em;"><a href="/wiki/Filename_extension" title="Filename extension">Filename extensions</a></th>
+<td style="line-height:1.35em;"><code>.es</code></td>
+</tr>
+<tr>
+<th scope="row" style="padding:0.2em 0;line-height:1.2em; padding-right:0.65em;"><a href="/wiki/Media_type" title="Media type">Internet media&#160;type</a></th>
+<td style="line-height:1.35em;"><code>application/ecmascript</code></td>
+</tr>
+<tr>
+<th scope="row" style="padding:0.2em 0;line-height:1.2em; padding-right:0.65em;">Developed&#160;by</th>
+<td style="line-height:1.35em;"><a href="/wiki/Sun_Microsystems" title="Sun Microsystems">Sun Microsystems</a>,<br />
+Ecma International</td>
+</tr>
+<tr>
+<th scope="row" style="padding:0.2em 0;line-height:1.2em; padding-right:0.65em;">Initial release</th>
+<td style="line-height:1.35em;">June&#160;1997<span class="noprint">; 19&#160;years ago</span><span style="display:none">&#160;(<span class="bday dtstart published updated">1997-06</span>)</span></td>
+</tr>
+<tr>
+<th scope="row" style="padding:0.2em 0;line-height:1.2em; padding-right:0.65em;"><a href="/wiki/Software_release_life_cycle" title="Software release life cycle">Latest release</a></th>
+<td style="line-height:1.35em;">
+<div style="padding:0.1em 0;line-height:1.2em;">Edition 7<br />
+<span style="font-size:90%;">(June&#160;17, 2016<span class="noprint">; 7 months ago</span><span style="display:none">&#160;(<span class="bday dtstart published updated">2016-06-17</span>)</span>)</span></div>
+</td>
+</tr>
+<tr>
+<th scope="row" style="padding:0.2em 0;line-height:1.2em; padding-right:0.65em;">Type of format</th>
+<td style="line-height:1.35em;"><a href="/wiki/Scripting_language" title="Scripting language">Scripting language</a></td>
+</tr>
+<tr>
+<th scope="row" style="padding:0.2em 0;line-height:1.2em; padding-right:0.65em;">Website</th>
+<td style="line-height:1.35em;"><a rel="nofollow" class="external text" href="http://www.ecma-international.org/publications/standards/Ecma-262.htm">ECMA-262</a>, <a rel="nofollow" class="external text" href="http://www.ecma-international.org/publications/standards/Ecma-290.htm">ECMA-290</a>,<br />
+<a rel="nofollow" class="external text" href="http://www.ecma-international.org/publications/standards/Ecma-327.htm">ECMA-327</a>, <a rel="nofollow" class="external text" href="http://www.ecma-international.org/publications/standards/Ecma-357.htm">ECMA-357</a>,<br />
+<a rel="nofollow" class="external text" href="http://www.ecma-international.org/publications/standards/Ecma-402.htm">ECMA-402</a></td>
+</tr>
+</table>
+<table class="vertical-navbox nowraplinks" style="float:right;clear:right;width:22.0em;margin:0 0 1.0em 1.0em;background:#f9f9f9;border:1px solid #aaa;padding:0.2em;border-spacing:0.4em 0;text-align:center;line-height:1.4em;font-size:88%;width:auto">
+<tr>
+<td style="padding-top:0.4em;line-height:1.2em;background:#F0DB4F">Part of a <a href="/wiki/Category:JavaScript" title="Category:JavaScript">series</a> on</td>
+</tr>
+<tr>
+<th style="padding:0.2em 0.4em 0.2em;padding-top:0;font-size:145%;line-height:1.2em;background:#F0DB4F"><a href="/wiki/JavaScript" title="JavaScript">JavaScript</a></th>
+</tr>
+<tr>
+<td class="plainlist" style="padding:0 0.1em 0.4em">
+<ul>
+<li><a href="/wiki/JavaScript_syntax" title="JavaScript syntax">JavaScript syntax</a></li>
+<li><a href="/wiki/JavaScript_library" title="JavaScript library">JavaScript library</a></li>
+<li><a href="/wiki/Unobtrusive_JavaScript" title="Unobtrusive JavaScript">Unobtrusive JavaScript</a></li>
+<li><a href="/wiki/JavaScript_engine" title="JavaScript engine">JavaScript engine</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<th style="padding:0.1em;background:#e4e4f0">Lists of Frameworks and Libraries</th>
+</tr>
+<tr>
+<td class="plainlist" style="padding:0 0.1em 0.4em">
+<ul>
+<li><a href="/wiki/List_of_Ajax_frameworks#JavaScript" title="List of Ajax frameworks">Ajax frameworks</a></li>
+<li><a href="/wiki/Comparison_of_web_frameworks#JavaScript" title="Comparison of web frameworks">JavaScript web frameworks</a></li>
+<li><a href="/wiki/Comparison_of_JavaScript_frameworks" title="Comparison of JavaScript frameworks">Comparison of JavaScript frameworks</a></li>
+<li><a href="/wiki/List_of_JavaScript_libraries" title="List of JavaScript libraries">List of JavaScript libraries</a></li>
+<li><a href="/wiki/List_of_unit_testing_frameworks#JavaScript" title="List of unit testing frameworks">JavaScript unit testing frameworks</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="plainlist" style="padding:0 0.1em 0.4em"><b><a href="/wiki/JSON" title="JSON">JavaScript Object Notation</a></b></td>
+</tr>
+<tr>
+<td class="plainlist" style="padding:0 0.1em 0.4em">
+<p><i>See also</i></p>
+<ul>
+<li><strong class="selflink">ECMAScript</strong></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;font-size:115%">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:JavaScriptSidebar" title="Template:JavaScriptSidebar"><abbr title="View this template">v</abbr></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:JavaScriptSidebar" title="Template talk:JavaScriptSidebar"><abbr title="Discuss this template">t</abbr></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:JavaScriptSidebar&amp;action=edit"><abbr title="Edit this template">e</abbr></a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+<p><b>ECMAScript</b> (or <b>ES</b>)<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">[1]</a></sup> is a <a href="/wiki/Trademarked" class="mw-redirect" title="Trademarked">trademarked</a><sup id="cite_ref-2" class="reference"><a href="#cite_note-2">[2]</a></sup> <a href="/wiki/Scripting-language" class="mw-redirect" title="Scripting-language">scripting-language</a> <a href="/wiki/Specification_(technical_standard)" title="Specification (technical standard)">specification</a> standardized by <a href="/wiki/Ecma_International" title="Ecma International">Ecma International (European Computer Manufacturers Association)</a> in <b>ECMA-262</b> and ISO/IEC 16262. It was based on <a href="/wiki/JavaScript" title="JavaScript">JavaScript</a>, which now<sup class="noprint Inline-Template" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Manual_of_Style/Dates_and_numbers#Chronological_items" title="Wikipedia:Manual of Style/Dates and numbers"><span title="The time period mentioned near this tag is ambiguous. (January 2017)">when?</span></a></i>]</sup> tracks ECMAScript. Coders commonly use ECMAScript for <a href="/wiki/Client-side_scripting" title="Client-side scripting">client-side scripting</a> on the <a href="/wiki/World_Wide_Web" title="World Wide Web">World Wide Web</a>, and it is increasingly being used for writing server applications and services using <a href="/wiki/Node.js" title="Node.js">Node.js</a>. Other implementations of ECMAScript include <a href="/wiki/JScript" title="JScript">JScript</a> and <a href="/wiki/ActionScript" title="ActionScript">ActionScript</a>.</p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#History"><span class="tocnumber">1</span> <span class="toctext">History</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Versions"><span class="tocnumber">1.1</span> <span class="toctext">Versions</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#4th_Edition_.28abandoned.29"><span class="tocnumber">1.2</span> <span class="toctext">4th Edition (abandoned)</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#5th_Edition"><span class="tocnumber">1.3</span> <span class="toctext">5th Edition</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#6th_Edition_-_ECMAScript_2015"><span class="tocnumber">1.4</span> <span class="toctext">6th Edition - ECMAScript 2015</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#7th_Edition_-_ECMAScript_2016"><span class="tocnumber">1.5</span> <span class="toctext">7th Edition - ECMAScript 2016</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#ES.Next"><span class="tocnumber">1.6</span> <span class="toctext">ES.Next</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-8"><a href="#Features"><span class="tocnumber">2</span> <span class="toctext">Features</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#Syntax"><span class="tocnumber">3</span> <span class="toctext">Syntax</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#Implementations"><span class="tocnumber">4</span> <span class="toctext">Implementations</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#Version_correspondence"><span class="tocnumber">5</span> <span class="toctext">Version correspondence</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="#Conformance_tests"><span class="tocnumber">6</span> <span class="toctext">Conformance tests</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="#See_also"><span class="tocnumber">7</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="#References"><span class="tocnumber">8</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-15"><a href="#External_links"><span class="tocnumber">9</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="History">History</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=ECMAScript&amp;action=edit&amp;section=1" title="Edit section: History">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The ECMAScript specification is a standardized specification of a scripting language developed by <a href="/wiki/Brendan_Eich" title="Brendan Eich">Brendan Eich</a> of <a href="/wiki/Netscape_Communications_Corporation" class="mw-redirect" title="Netscape Communications Corporation">Netscape</a>; initially it was named Mocha, later LiveScript, and finally JavaScript.<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">[3]</a></sup> In December 1995, <a href="/wiki/Sun_Microsystems" title="Sun Microsystems">Sun Microsystems</a> and Netscape announced JavaScript in a press release.<sup id="cite_ref-4" class="reference"><a href="#cite_note-4">[4]</a></sup> In March 1996, <a href="/wiki/Netscape_Navigator" title="Netscape Navigator">Netscape Navigator</a> 2.0 was released, featuring support for JavaScript.</p>
+<p>Owing to the widespread success of JavaScript as a client-side scripting language for Web pages, <a href="/wiki/Microsoft" title="Microsoft">Microsoft</a> developed a compatible dialect of the language, naming it <a href="/wiki/JScript" title="JScript">JScript</a> to avoid trademark issues. JScript added new date methods to alleviate the <a href="/wiki/Year_2000_problem" title="Year 2000 problem">Year 2000 problem</a> caused by the JavaScript methods that were based on the Java <i>Date</i> class.<sup id="cite_ref-5" class="reference"><a href="#cite_note-5">[5]</a></sup> JScript was included in <a href="/wiki/Internet_Explorer" title="Internet Explorer">Internet Explorer</a> 3.0, released in August 1996.</p>
+<p>Netscape delivered JavaScript to <a href="/wiki/Ecma_International" title="Ecma International">Ecma International</a> for standardization and the work on the specification, ECMA-262, began in November 1996.<sup id="cite_ref-6" class="reference"><a href="#cite_note-6">[6]</a></sup> The first edition of ECMA-262 was adopted by the Ecma General Assembly in June 1997. Several editions of the language standard have been published since then. The name "ECMAScript" was a compromise between the organizations involved in standardizing the language, especially Netscape and Microsoft, whose disputes dominated the early standards sessions. Eich commented that "ECMAScript was always an unwanted trade name that sounds like <a href="/wiki/Eczema" class="mw-redirect" title="Eczema">a skin disease</a>."<sup id="cite_ref-7" class="reference"><a href="#cite_note-7">[7]</a></sup></p>
+<p>While both JavaScript and JScript aim to be compatible with ECMAScript, they also provide additional features not described in the ECMA specifications.<sup id="cite_ref-8" class="reference"><a href="#cite_note-8">[8]</a></sup></p>
+<h3><span class="mw-headline" id="Versions">Versions</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=ECMAScript&amp;action=edit&amp;section=2" title="Edit section: Versions">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>There are seven editions of ECMA-262 published. Work on version 7 of the standard, was finalized in June 2016.<sup id="cite_ref-auto_9-0" class="reference"><a href="#cite_note-auto-9">[9]</a></sup></p>
+<table class="wikitable">
+<tr style="background:#ccf;">
+<th>Edition</th>
+<th>Date published</th>
+<th>Changes from prior edition</th>
+<th>Editor</th>
+</tr>
+<tr>
+<td>1</td>
+<td>June 1997</td>
+<td>First edition</td>
+<td><a href="/wiki/Guy_L._Steele_Jr." title="Guy L. Steele Jr.">Guy L. Steele Jr.</a></td>
+</tr>
+<tr>
+<td>2</td>
+<td>June 1998</td>
+<td>Editorial changes to keep the specification fully aligned with ISO/IEC 16262 international standard</td>
+<td><a href="/wiki/Mike_Cowlishaw" title="Mike Cowlishaw">Mike Cowlishaw</a></td>
+</tr>
+<tr>
+<td>3</td>
+<td>December 1999</td>
+<td>Added <a href="/wiki/Regular_expression" title="Regular expression">regular expressions</a>, better string handling, new control statements, try/catch exception handling, tighter definition of errors, formatting for numeric output and other enhancements</td>
+<td>Mike Cowlishaw</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Abandoned</td>
+<td>Fourth Edition was abandoned, due to political differences concerning language complexity. Many features proposed for the Fourth Edition have been completely dropped; some are proposed for ECMAScript Harmony.</td>
+<td></td>
+</tr>
+<tr>
+<td>5</td>
+<td>December 2009</td>
+<td>Adds "strict mode," a subset intended to provide more thorough error checking and avoid error-prone constructs. Clarifies many ambiguities in the 3rd edition specification, and accommodates behaviour of real-world implementations that differed consistently from that specification. Adds some new features, such as getters and setters, library support for <a href="/wiki/JSON" title="JSON">JSON</a>, and more complete <a href="/wiki/Reflection_(computer_science)" class="mw-redirect" title="Reflection (computer science)">reflection</a> on object properties.<sup id="cite_ref-10" class="reference"><a href="#cite_note-10">[10]</a></sup></td>
+<td><a href="/w/index.php?title=Pratap_Lakshman&amp;action=edit&amp;redlink=1" class="new" title="Pratap Lakshman (page does not exist)">Pratap Lakshman</a>, <a href="/w/index.php?title=Allen_Wirfs-Brock&amp;action=edit&amp;redlink=1" class="new" title="Allen Wirfs-Brock (page does not exist)">Allen Wirfs-Brock</a></td>
+</tr>
+<tr>
+<td>5.1</td>
+<td>June 2011</td>
+<td>This edition 5.1 of the ECMAScript Standard is fully aligned with third edition of the international standard ISO/IEC 16262:2011.</td>
+<td>Pratap Lakshman, Allen Wirfs-Brock</td>
+</tr>
+<tr>
+<td>6</td>
+<td>June 2015<sup id="cite_ref-ES2015_11-0" class="reference"><a href="#cite_note-ES2015-11">[11]</a></sup></td>
+<td>The Sixth Edition, initially known as ECMAScript 6 (ES6) and later renamed to ECMAScript 2015 (ES2015)<sup id="cite_ref-ES2015_11-1" class="reference"><a href="#cite_note-ES2015-11">[11]</a></sup> adds significant new syntax for writing complex applications, including classes and modules, but defines them semantically in the same terms as ECMAScript 5 strict mode. Other new features include iterators and <tt>for</tt>/<tt>of</tt> loops, <a href="/wiki/Python_(programming_language)" title="Python (programming language)">Python</a>-style generators and generator expressions, arrow functions, binary data, typed arrays, collections (maps, sets and weak maps), promises, number and math enhancements, reflection, and proxies (metaprogramming for virtual objects and wrappers). As the first "ECMAScript Harmony" specification, it is also known as "ES6 Harmony."</td>
+<td>Allen Wirfs-Brock</td>
+</tr>
+<tr>
+<td>7</td>
+<td>June 2016<sup id="cite_ref-ES2016_12-0" class="reference"><a href="#cite_note-ES2016-12">[12]</a></sup></td>
+<td>The Seventh Edition, also known as ECMAScript 2016,<sup id="cite_ref-ES2016_12-1" class="reference"><a href="#cite_note-ES2016-12">[12]</a></sup> intended to continue the themes of language reform, code isolation, control of effects and library/tool enabling from ES2015, includes two new features: the exponentiation operator (**) and Array.prototype.includes.</td>
+<td><a href="/w/index.php?title=Brian_Terlson&amp;action=edit&amp;redlink=1" class="new" title="Brian Terlson (page does not exist)">Brian Terlson</a></td>
+</tr>
+<tr>
+<td>8</td>
+<td></td>
+<td>New features proposed include concurrency and atomics, zero-copy binary data transfer, more number and math enhancements, syntactic integration with promises, observable streams, <a href="/wiki/SIMD" title="SIMD">SIMD</a> types, better metaprogramming with classes, class and instance properties, operator overloading, value types (first-class primitive-like objects), records and tuples, and traits.<sup id="cite_ref-13" class="reference"><a href="#cite_note-13">[13]</a></sup><sup id="cite_ref-14" class="reference"><a href="#cite_note-14">[14]</a></sup></td>
+<td></td>
+</tr>
+</table>
+<p>In June 2004, Ecma International published ECMA-357 standard, defining an extension to ECMAScript, known as <a href="/wiki/ECMAScript_for_XML" title="ECMAScript for XML">ECMAScript for XML</a> (E4X). Ecma also defined a "Compact Profile" for ECMAScript – known as ES-CP, or ECMA 327 – that was designed for resource-constrained devices, which was withdrawn in 2015.<sup id="cite_ref-ES-CP-withdrawn_15-0" class="reference"><a href="#cite_note-ES-CP-withdrawn-15">[15]</a></sup></p>
+<h3><span class="mw-headline" id="4th_Edition_.28abandoned.29">4th Edition (abandoned)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=ECMAScript&amp;action=edit&amp;section=3" title="Edit section: 4th Edition (abandoned)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The proposed fourth edition of ECMA-262 (<b>ECMAScript 4</b> or <b>ES4</b>) would have been the first major update to ECMAScript since the third edition was published in 1999. The specification (along with a reference implementation) was originally targeted for completion by October 2008.<sup id="cite_ref-16" class="reference"><a href="#cite_note-16">[16]</a></sup> An overview of the language was released by the working group on October 23, 2007.<sup id="cite_ref-17" class="reference"><a href="#cite_note-17">[17]</a></sup></p>
+<p>By August 2008, the ECMAScript 4th edition proposal had been scaled back into a project codenamed <a href="#6th_Edition_-_ECMAScript_2015">ECMAScript Harmony</a>. Features under discussion for Harmony at the time included</p>
+<ul>
+<li><a href="/wiki/Class_(computer_programming)" title="Class (computer programming)">classes</a>,</li>
+<li><a href="/wiki/Modular_programming" title="Modular programming">a module system</a>,</li>
+<li>optional <a href="/wiki/Type_signature" title="Type signature">type annotations</a> and <a href="/wiki/Static_typing" class="mw-redirect" title="Static typing">static typing</a>, probably using a <a href="/wiki/Structural_type_system" title="Structural type system">structural type system</a>,</li>
+<li><a href="/wiki/Generator_(computer_programming)" title="Generator (computer programming)">generators</a> and <a href="/wiki/Iterator" title="Iterator">iterators</a>,</li>
+<li><a href="/wiki/JavaScript_syntax#Destructuring_assignment" title="JavaScript syntax">destructuring assignment</a>, and</li>
+<li><a href="/wiki/Algebraic_data_type" title="Algebraic data type">algebraic data types</a>.</li>
+</ul>
+<p>The intent of these features was partly to better support <i><a href="/wiki/Programming_in_the_large" class="mw-redirect" title="Programming in the large">programming in the large</a></i>, and to allow sacrificing some of the script's ability to be dynamic to improve performance. For example, <a href="/wiki/Tamarin_(JIT)" class="mw-redirect" title="Tamarin (JIT)">Tamarin</a> – the virtual machine for ActionScript developed and open sourced by Adobe – has <a href="/wiki/Just-in-time_compilation" title="Just-in-time compilation">just-in-time compilation</a> (JIT) support for certain classes of scripts.</p>
+<p>In addition to introducing new features, some ES3 bugs were proposed to be fixed in edition 4.<sup id="cite_ref-18" class="reference"><a href="#cite_note-18">[18]</a></sup><sup id="cite_ref-19" class="reference"><a href="#cite_note-19">[19]</a></sup> These fixes and others, and support for <a href="/wiki/JSON" title="JSON">JSON</a> encoding/decoding, have been folded into the ECMAScript, 5th Edition specification.<sup id="cite_ref-20" class="reference"><a href="#cite_note-20">[20]</a></sup></p>
+<p>Work started on Edition 4 after the ES-CP (Compact Profile) specification was completed, and continued for approximately 18 months where slow progress was made balancing the theory of Netscape's JavaScript 2 specification with the implementation experience of Microsoft's JScript .NET. After some time, the focus shifted to the <a href="/wiki/ECMAScript_for_XML" title="ECMAScript for XML">ECMAScript for XML</a> (E4X) standard. The update has not been without controversy. In late 2007, a debate between Eich, later the <a href="/wiki/Mozilla_Foundation" title="Mozilla Foundation">Mozilla Foundation</a>'s CTO, and <a href="/w/index.php?title=Chris_Wilson_(open_web_advocate)&amp;action=edit&amp;redlink=1" class="new" title="Chris Wilson (open web advocate) (page does not exist)">Chris Wilson</a>, <a href="/wiki/Microsoft" title="Microsoft">Microsoft</a>'s platform architect for <a href="/wiki/Internet_Explorer" title="Internet Explorer">Internet Explorer</a>, became public on a number of <a href="/wiki/Blog" title="Blog">blogs</a>. Wilson cautioned that because the proposed changes to ECMAScript made it backwards incompatible in some respects to earlier versions of the language, the update amounted to "breaking the Web,"<sup id="cite_ref-21" class="reference"><a href="#cite_note-21">[21]</a></sup> and that stakeholders who opposed the changes were being "hidden from view".<sup id="cite_ref-22" class="reference"><a href="#cite_note-22">[22]</a></sup> Eich responded by stating that Wilson seemed to be "repeating falsehoods in blogs" and denied that there was attempt to suppress dissent and challenged critics to give specific examples of incompatibility.<sup id="cite_ref-23" class="reference"><a href="#cite_note-23">[23]</a></sup> He also pointed out that <a href="/wiki/Microsoft_Silverlight" title="Microsoft Silverlight">Microsoft Silverlight</a> and <a href="/wiki/Adobe_AIR" title="Adobe AIR">Adobe AIR</a> rely on <a href="/wiki/C_Sharp_(programming_language)" title="C Sharp (programming language)">C#</a> and <a href="/wiki/ActionScript" title="ActionScript">ActionScript</a> 3 respectively, both of which are larger and more complex than ECMAScript Edition 3.<sup id="cite_ref-24" class="reference"><a href="#cite_note-24">[24]</a></sup></p>
+<h3><span class="mw-headline" id="5th_Edition">5th Edition</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=ECMAScript&amp;action=edit&amp;section=4" title="Edit section: 5th Edition">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Yahoo, Microsoft, Google, and other 4th edition dissenters formed their own subcommittee to design a less ambitious update of ECMAScript 3, tentatively named ECMAScript 3.1. This edition would focus on security and library updates with a large emphasis on compatibility. After the aforementioned public sparring, the ECMAScript 3.1 and ECMAScript 4 teams agreed on a compromise: the two editions would be worked on, in parallel, with coordination between the teams to ensure that ECMAScript 3.1 remains a strict subset of ECMAScript 4 in both semantics and syntax.</p>
+<p>However, the differing philosophies in each team resulted in repeated breakages of the subset rule, and it remained doubtful that the ECMAScript 4 dissenters would ever support or implement ECMAScript 4 in the future. After over a year since the disagreement over the future of ECMAScript within the Ecma Technical Committee 39, the two teams reached a new compromise in July 2008: <a href="/wiki/Brendan_Eich" title="Brendan Eich">Brendan Eich</a> announced that Ecma TC39 would focus work on the ECMAScript 3.1 (later renamed to ECMAScript, 5th Edition) project with full collaboration of all parties, and vendors would target at least two interoperable implementations by early 2009.<sup id="cite_ref-25" class="reference"><a href="#cite_note-25">[25]</a></sup><sup id="cite_ref-26" class="reference"><a href="#cite_note-26">[26]</a></sup> In April 2009, Ecma TC39 published the "final" draft of the 5th edition and announced that testing of interoperable implementations was expected to be completed by mid-July.<sup id="cite_ref-27" class="reference"><a href="#cite_note-27">[27]</a></sup> On December 3, 2009, ECMA-262 5th edition was published.<sup id="cite_ref-28" class="reference"><a href="#cite_note-28">[28]</a></sup></p>
+<p><span id="ES2015"></span></p>
+<h3><span class="mw-headline" id="6th_Edition_-_ECMAScript_2015">6th Edition - ECMAScript 2015</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=ECMAScript&amp;action=edit&amp;section=5" title="Edit section: 6th Edition - ECMAScript 2015">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The 6th edition, officially known as ECMAScript 2015, was finalized in June 2015.<sup id="cite_ref-ES2015_11-2" class="reference"><a href="#cite_note-ES2015-11">[11]</a></sup><sup id="cite_ref-29" class="reference"><a href="#cite_note-29">[29]</a></sup><sup id="cite_ref-auto_9-1" class="reference"><a href="#cite_note-auto-9">[9]</a></sup> This update adds significant new syntax for writing complex applications, including classes and modules, but defines them semantically in the same terms as ECMAScript 5 strict mode. Other new features include iterators and <tt>for</tt>/<tt>of</tt> loops, <a href="/wiki/Python_(programming_language)" title="Python (programming language)">Python</a>-style generators and generator expressions, arrow functions, binary data, typed arrays, collections (maps, sets and weak maps), promises, number and math enhancements, reflection, and proxies (metaprogramming for virtual objects and wrappers).<sup id="cite_ref-30" class="reference"><a href="#cite_note-30">[30]</a></sup><sup id="cite_ref-31" class="reference"><a href="#cite_note-31">[31]</a></sup> The complete list is extensive.<sup id="cite_ref-32" class="reference"><a href="#cite_note-32">[32]</a></sup></p>
+<p>Browser support for ES2015 is still incomplete.<sup id="cite_ref-33" class="reference"><a href="#cite_note-33">[33]</a></sup> However, ES2015 code can be <a href="/wiki/Transpiler" class="mw-redirect" title="Transpiler">transpiled</a> into ES5 code, which has more consistent support across browsers.<sup id="cite_ref-34" class="reference"><a href="#cite_note-34">[34]</a></sup> Transpiling adds an extra step to build processes whereas polyfills allow adding extra functionalities by including another javascript file.</p>
+<p><span id="ES7"></span></p>
+<h3><span class="mw-headline" id="7th_Edition_-_ECMAScript_2016">7th Edition - ECMAScript 2016</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=ECMAScript&amp;action=edit&amp;section=6" title="Edit section: 7th Edition - ECMAScript 2016">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The 7th edition, officially known as ECMAScript 2016, was finalized in June 2016.<sup id="cite_ref-ES2016_12-2" class="reference"><a href="#cite_note-ES2016-12">[12]</a></sup> New features include the exponentiation operator (**), Array.prototype.includes (not to be confused with <a rel="nofollow" class="external text" href="https://developer.mozilla.org/en-US/docs/Web/API/Element/classList">ClassList.contains</a>) and <a href="/wiki/Await" title="Await">await</a>/async (<a rel="nofollow" class="external text" href="https://nodejs.org/en/docs/es6/">stable</a> since V8 5.5, used since Node 7 releases from February 2017<sup id="cite_ref-35" class="reference"><a href="#cite_note-35">[35]</a></sup>). Await/async works using generators and promises. As of January 2017, it is included in the draft.<sup id="cite_ref-36" class="reference"><a href="#cite_note-36">[36]</a></sup></p>
+<h3><span class="mw-headline" id="ES.Next">ES.Next</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=ECMAScript&amp;action=edit&amp;section=7" title="Edit section: ES.Next">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>ES.Next is a dynamic name that refers to whatever the next version is at time of writing. ES.Next features are more correctly called <i>proposals</i>, because, by definition, the specification has not been finalized yet.</p>
+<h2><span class="mw-headline" id="Features">Features</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=ECMAScript&amp;action=edit&amp;section=8" title="Edit section: Features">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div role="note" class="hatnote">Main article: <a href="/wiki/JavaScript#Features" title="JavaScript">JavaScript §&#160;Features</a></div>
+<p>The ECMAScript language includes <a href="/wiki/Structured_programming" title="Structured programming">structured</a>, <a href="/wiki/Dynamic_programming_language" title="Dynamic programming language">dynamic</a>, <a href="/wiki/Functional_programming" title="Functional programming">functional</a>, and <a href="/wiki/Prototype-based_programming" title="Prototype-based programming">prototype-based</a> features.<sup id="cite_ref-37" class="reference"><a href="#cite_note-37">[37]</a></sup></p>
+<h2><span class="mw-headline" id="Syntax">Syntax</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=ECMAScript&amp;action=edit&amp;section=9" title="Edit section: Syntax">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div role="note" class="hatnote">Main article: <a href="/wiki/ECMAScript_syntax" class="mw-redirect" title="ECMAScript syntax">ECMAScript syntax</a></div>
+<h2><span class="mw-headline" id="Implementations">Implementations</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=ECMAScript&amp;action=edit&amp;section=10" title="Edit section: Implementations">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div role="note" class="hatnote">Main article: <a href="/wiki/List_of_ECMAScript_engines" title="List of ECMAScript engines">List of ECMAScript engines</a></div>
+<p>ECMAScript is supported in many applications, especially <a href="/wiki/Web_browser" title="Web browser">Web browsers</a>, where it is implemented by JavaScript, or, in the case of Internet Explorer, JScript. Implementations sometimes include extensions to the language, or to the <a href="/wiki/Standard_library" title="Standard library">standard library</a> and related <a href="/wiki/Application_programming_interface" title="Application programming interface">application programming interfaces</a> (API) such as the <a href="/wiki/World_Wide_Web_Consortium" title="World Wide Web Consortium">World Wide Web Consortium</a> (W3C) specified <a href="/wiki/Document_Object_Model" title="Document Object Model">Document Object Model</a> (DOM). This means that applications written in one implementation may be incompatible with another, unless they are written to use only a common subset of supported features and APIs.</p>
+<table class="wikitable sortable">
+<tr style="background:#ccf;">
+<th>Implementation</th>
+<th>Applications</th>
+<th>ECMAScript edition</th>
+</tr>
+<tr>
+<td><a href="/wiki/SpiderMonkey" title="SpiderMonkey">SpiderMonkey</a></td>
+<td><a href="/wiki/Firefox" title="Firefox">Firefox</a>, the <a href="/wiki/Gecko_(layout_engine)" class="mw-redirect" title="Gecko (layout engine)">Gecko</a> <a href="/wiki/Layout_engine" title="Layout engine">layout engine</a>, <a href="/wiki/Adobe_Acrobat" title="Adobe Acrobat">Adobe Acrobat</a><sup id="cite_ref-38" class="reference"><a href="#cite_note-38">[d 1]</a></sup></td>
+<td>5.1, and features from 6 and 7<sup id="cite_ref-39" class="reference"><a href="#cite_note-39">[d 2]</a></sup></td>
+</tr>
+<tr>
+<td><a href="/wiki/V8_(JavaScript_engine)" title="V8 (JavaScript engine)">V8</a></td>
+<td><a href="/wiki/Google_Chrome" title="Google Chrome">Google Chrome</a>, <a href="/wiki/Node.js" title="Node.js">Node.js</a>, <a href="/wiki/Opera_(web_browser)" title="Opera (web browser)">Opera</a>, <a href="/wiki/MarkLogic" title="MarkLogic">MarkLogic</a>.<sup id="cite_ref-40" class="reference"><a href="#cite_note-40">[38]</a></sup></td>
+<td>6,<sup id="cite_ref-41" class="reference"><a href="#cite_note-41">[d 3]</a></sup> and features from 7<sup id="cite_ref-42" class="reference"><a href="#cite_note-42">[39]</a></sup></td>
+</tr>
+<tr>
+<td><a href="/wiki/JavaScriptCore" class="mw-redirect" title="JavaScriptCore">JavaScriptCore</a> (Nitro)</td>
+<td><a href="/wiki/WebKit" title="WebKit">WebKit</a>, <a href="/wiki/Safari_(web_browser)" title="Safari (web browser)">Safari</a>, <a href="/wiki/Qt_(software)" title="Qt (software)">Qt 5</a></td>
+<td>8<sup id="cite_ref-43" class="reference"><a href="#cite_note-43">[40]</a></sup></td>
+</tr>
+<tr>
+<td><a href="/wiki/Chakra_(JavaScript_engine)" title="Chakra (JavaScript engine)">Chakra</a></td>
+<td><a href="/wiki/Microsoft_Edge" title="Microsoft Edge">Microsoft Edge</a></td>
+<td>5.1, and features from 6<sup id="cite_ref-44" class="reference"><a href="#cite_note-44">[d 4]</a></sup></td>
+</tr>
+<tr>
+<td><a href="/wiki/JerryScript" title="JerryScript">JerryScript</a></td>
+<td>Resource constrained IoT devices, <a href="/wiki/Pebble_(watch)" title="Pebble (watch)">Pebble</a></td>
+<td>5.1<sup id="cite_ref-45" class="reference"><a href="#cite_note-45">[41]</a></sup></td>
+</tr>
+<tr>
+<td><a href="/wiki/JScript" title="JScript">JScript</a> 9.0</td>
+<td><a href="/wiki/Internet_Explorer" title="Internet Explorer">Internet Explorer</a>, the <a href="/wiki/Trident_(layout_engine)" title="Trident (layout engine)">Trident</a> layout engine</td>
+<td>5.1</td>
+</tr>
+<tr>
+<td><a href="/wiki/Nashorn_(JavaScript_engine)" title="Nashorn (JavaScript engine)">Nashorn</a></td>
+<td><a href="/wiki/Java_(software_platform)" title="Java (software platform)">Java</a></td>
+<td>5.1<sup id="cite_ref-46" class="reference"><a href="#cite_note-46">[42]</a></sup></td>
+</tr>
+<tr>
+<td><a href="/wiki/Rhino_(JavaScript_engine)" title="Rhino (JavaScript engine)">Rhino</a></td>
+<td><a href="/wiki/Java_Platform,_Standard_Edition" title="Java Platform, Standard Edition">Java Platform, Standard Edition</a></td>
+<td>3</td>
+</tr>
+<tr>
+<td>Carakan <small>(deprecated)</small></td>
+<td><a href="/wiki/Opera_(web_browser)" title="Opera (web browser)">Opera 12</a></td>
+<td>5<sup id="cite_ref-47" class="reference"><a href="#cite_note-47">[d 5]</a></sup><sup id="cite_ref-48" class="reference"><a href="#cite_note-48">[d 6]</a></sup></td>
+</tr>
+<tr>
+<td><a href="/wiki/KJS_(software)" title="KJS (software)">KJS</a></td>
+<td><a href="/wiki/KHTML" title="KHTML">KHTML</a></td>
+<td>5.1 and features from 6</td>
+</tr>
+<tr>
+<td>Ejscript</td>
+<td>Appweb Web Server, <a href="/wiki/Samba_(software)" title="Samba (software)">Samba</a> 4</td>
+<td>6<sup id="cite_ref-49" class="reference"><a href="#cite_note-49">[43]</a></sup></td>
+</tr>
+<tr>
+<td><a href="/wiki/JScript_.NET" title="JScript .NET">JScript .NET</a></td>
+<td>Microsoft <a href="/wiki/.NET_Framework" title=".NET Framework">.NET Framework</a></td>
+<td>3<sup id="cite_ref-50" class="reference"><a href="#cite_note-50">[d 7]</a></sup></td>
+</tr>
+<tr>
+<td><a href="/wiki/ActionScript" title="ActionScript">ActionScript</a></td>
+<td><a href="/wiki/Adobe_Flash" title="Adobe Flash">Adobe Flash</a>, <a href="/wiki/Adobe_Flex" class="mw-redirect" title="Adobe Flex">Adobe Flex</a>, <a href="/wiki/Adobe_AIR" title="Adobe AIR">Adobe AIR</a></td>
+<td>4<sup id="cite_ref-51" class="reference"><a href="#cite_note-51">[44]</a></sup></td>
+</tr>
+<tr>
+<td><a href="/wiki/ExtendScript" title="ExtendScript">ExtendScript</a></td>
+<td><a href="/wiki/Adobe_Creative_Suite" title="Adobe Creative Suite">Adobe Creative Suite</a> products: <a href="/wiki/Adobe_InDesign" title="Adobe InDesign">InDesign</a>, <a href="/wiki/Adobe_Illustrator" title="Adobe Illustrator">Illustrator</a>, <a href="/wiki/Adobe_Photoshop" title="Adobe Photoshop">Photoshop</a>,<br />
+<a href="/wiki/Adobe_Bridge" title="Adobe Bridge">Bridge</a>, <a href="/wiki/Adobe_After_Effects" title="Adobe After Effects">After Effects</a>, <a href="/wiki/Adobe_Premiere_Pro" title="Adobe Premiere Pro">Premiere Pro</a></td>
+<td>3<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (May 2012)">citation needed</span></a></i>]</sup></td>
+</tr>
+<tr>
+<td><a href="/wiki/InScript_(JavaScript_engine)" title="InScript (JavaScript engine)">InScript</a></td>
+<td><a href="/wiki/ICab" title="ICab">iCab</a></td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="/wiki/Max_(software)" title="Max (software)">Max/MSP</a> engine</td>
+<td><a href="/wiki/Max_(software)" title="Max (software)">Max</a></td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="/wiki/QtScript" title="QtScript">QtScript</a> <small>(deprecated)</small></td>
+<td><a href="/wiki/KDE_SC_4" class="mw-redirect" title="KDE SC 4">KDE SC 4</a></td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="/wiki/Caja_project" title="Caja project">Caja</a></td>
+<td></td>
+<td>5<sup id="cite_ref-52" class="reference"><a href="#cite_note-52">[45]</a></sup></td>
+</tr>
+</table>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-38"><span class="mw-cite-backlink"><b><a href="#cite_ref-38">^</a></b></span> <span class="reference-text">Adobe Acrobat 9.0 uses the SpiderMonkey 1.7 engine: <a rel="nofollow" class="external text" href="http://livedocs.adobe.com/acrobat_sdk/9/Acrobat9_HTMLHelp/wwhelp/wwhimpl/common/html/wwhelp.htm?context=Acrobat9_HTMLHelp&amp;file=JS_API_AcroJS.88.1.html">JavaScript for Acrobat API Reference</a></span></li>
+<li id="cite_note-39"><span class="mw-cite-backlink"><b><a href="#cite_ref-39">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_6_support_in_Mozilla">ECMAScript 6 support in Mozilla</a> and <a rel="nofollow" class="external text" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_7_support_in_Mozilla">ECMAScript 7 support in Mozilla</a></span></li>
+<li id="cite_note-41"><span class="mw-cite-backlink"><b><a href="#cite_ref-41">^</a></b></span> <span class="reference-text">According to the widely used <a rel="nofollow" class="external text" href="https://kangax.github.io/compat-table/es6/">compatibility table</a>, Chrome supports the vast majority, but not all, of ECMAScript 2015.</span></li>
+<li id="cite_note-44"><span class="mw-cite-backlink"><b><a href="#cite_ref-44">^</a></b></span> <span class="reference-text">Microsoft states that Edge "supports most ES2015 features," supporting 81% of the specification as of May 2015 and 93% as of November 2016.<a rel="nofollow" class="external autonumber" href="http://blogs.windows.com/msedgedev/2015/05/12/javascript-moves-forward-in-microsoft-edge-with-ecmascript-6-and-beyond/">[1]</a><a rel="nofollow" class="external autonumber" href="https://kangax.github.io/compat-table/es6/">[2]</a></span></li>
+<li id="cite_note-47"><span class="mw-cite-backlink"><b><a href="#cite_ref-47">^</a></b></span> <span class="reference-text">Full ECMAScript 5.1 support in Opera 11.51+.<a rel="nofollow" class="external autonumber" href="http://my.opera.com/desktopteam/blog/2011/09/13/es5">[3]</a></span></li>
+<li id="cite_note-48"><span class="mw-cite-backlink"><b><a href="#cite_ref-48">^</a></b></span> <span class="reference-text">Opera's implementation includes some JavaScript and JScript extensions: <a rel="nofollow" class="external text" href="http://www.opera.com/docs/specs/presto23/ecmascript/">ECMAScript support in Opera Presto 2.3</a></span></li>
+<li id="cite_note-50"><span class="mw-cite-backlink"><b><a href="#cite_ref-50">^</a></b></span> <span class="reference-text">Microsoft asserts that JScript 8.0 supports "almost all of the features of the ECMAScript Edition 3 Language Specification", but does not list the unsupported features.</span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="Version_correspondence">Version correspondence</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=ECMAScript&amp;action=edit&amp;section=11" title="Edit section: Version correspondence">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Items on the same line are approximately the same language.<sup id="cite_ref-53" class="reference"><a href="#cite_note-53">[46]</a></sup><sup id="cite_ref-54" class="reference"><a href="#cite_note-54">[47]</a></sup></p>
+<table class="wikitable">
+<tr style="background:#ccf;">
+<th>JavaScript</th>
+<th>JScript</th>
+<th>ECMAScript</th>
+</tr>
+<tr>
+<td>1.0 (Netscape 2.0, March 1996)</td>
+<td>1.0 (IE 3.0 – early versions, August 1996)</td>
+<td></td>
+</tr>
+<tr>
+<td>1.1 (Netscape 3.0, August 1996)</td>
+<td>2.0 (IE 3.0 – later versions, January 1997)</td>
+<td></td>
+</tr>
+<tr>
+<td>1.2 (Netscape 4.0-4.05, June 1997)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>1.3 (Netscape 4.06-4.7x, October 1998)</td>
+<td>3.0 (IE 4.0, Oct 1997)</td>
+<td>Edition 1 (June 1997) / Edition 2 (June 1998)</td>
+</tr>
+<tr>
+<td>1.4 (Netscape Server only)</td>
+<td>4.0 (Visual Studio 6, no IE release)</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>5.0 (IE 5.0, March 1999)</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>5.1 (IE 5.01)</td>
+<td></td>
+</tr>
+<tr>
+<td>1.5 (Netscape 6.0, Nov 2000; also<br />
+later Netscape and <a href="/wiki/Mozilla" title="Mozilla">Mozilla</a> releases)</td>
+<td>5.5 (IE 5.5, July 2000)</td>
+<td>Edition 3 (December 1999)</td>
+</tr>
+<tr>
+<td></td>
+<td>5.6 (IE 6.0, October 2001)</td>
+<td></td>
+</tr>
+<tr>
+<td>1.6 (Gecko 1.8, Firefox 1.5, November 2005)</td>
+<td></td>
+<td>Edition 3, with some compliant enhancements: <a href="/wiki/ECMAScript_for_XML" title="ECMAScript for XML">ECMAScript for XML</a> (E4X), <tt>Array</tt> extras (e.g. <tt>Array.prototype.forEach</tt>), <tt>Array</tt> and <tt>String</tt> generics (<a rel="nofollow" class="external text" href="https://developer.mozilla.org/en/docs/New_in_JavaScript_1.6">New in JavaScript 1.6</a>)</td>
+</tr>
+<tr>
+<td>1.7 (Gecko 1.8.1, Firefox 2, October 2006)</td>
+<td></td>
+<td>Edition 3 plus all JavaScript 1.6 enhancements, plus <a href="/wiki/Python_(programming_language)" title="Python (programming language)">Pythonic</a> generators and <a href="/wiki/List_comprehension" title="List comprehension">array comprehensions</a> (<tt>[a*a for (a in iter)]</tt>), block <a href="/wiki/Scope_(programming)" class="mw-redirect" title="Scope (programming)">scope</a> with <tt>let</tt>, destructuring assignment (<tt>var [a,b]=[1,2]</tt>) (<a rel="nofollow" class="external text" href="https://developer.mozilla.org/en/docs/New_in_JavaScript_1.7">New in JavaScript 1.7</a>)</td>
+</tr>
+<tr>
+<td>1.8 (Gecko 1.9, Firefox 3, June 2008)</td>
+<td></td>
+<td>Edition 3 plus all JavaScript 1.7 enhancements, plus expression closures (<tt>function(x) x * x</tt>), generator expressions, and more (<a rel="nofollow" class="external text" href="https://developer.mozilla.org/en/docs/New_in_JavaScript_1.8">New in JavaScript 1.8</a>)</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="/wiki/JScript_.NET" title="JScript .NET">JScript .NET</a> (<a href="/wiki/ASP.NET" title="ASP.NET">ASP.NET</a>; no IE release)</td>
+<td>(JScript .NET is said to have been designed with the participation of other Ecma members)<sup id="cite_ref-55" class="reference"><a href="#cite_note-55">[48]</a></sup></td>
+</tr>
+</table>
+<h2><span class="mw-headline" id="Conformance_tests">Conformance tests</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=ECMAScript&amp;action=edit&amp;section=12" title="Edit section: Conformance tests">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>In 2010, Ecma International started developing a standards test for Ecma 262 ECMAScript.<sup id="cite_ref-56" class="reference"><a href="#cite_note-56">[49]</a></sup> Test262 is an ECMAScript conformance test suite that can be used to check how closely a JavaScript implementation follows the ECMAScript 5th Edition Specification. The test suite contains thousands of individual tests, each of which tests some specific requirements of the ECMAScript specification.</p>
+<p>Development of test262 is a project of Ecma Technical Committee 39 (TC39). The testing framework and individual tests are created by member organizations of TC39 and contributed to Ecma for use in Test262.</p>
+<p>Important contributions were made by Google (Sputnik testsuite) and Microsoft who both contributed thousands of tests. The Test262 testsuite already contains more than 11,000 tests and is being developed further as of 2013<sup class="plainlinks noprint asof-tag update" style="display:none;"><a class="external text" href="//en.wikipedia.org/w/index.php?title=ECMAScript&amp;action=edit">[update]</a></sup>.</p>
+<p>The following table shows current conformance results of browser products. Lower scores are better, although scores can not be compared, as tests are not weighted. Also, be aware that Test262 itself is likely to contain <a rel="nofollow" class="external text" href="https://bugs.ecmascript.org/buglist.cgi?order=Importance&amp;query_format=advanced&amp;bug_status=CONFIRMED&amp;bug_status=IN_PROGRESS&amp;component=ECMA-262%20Tests&amp;product=Test262">bugs</a> that may impact a browser's score. So browsers with a score significantly lower than the current test suite bug count may not necessarily do better than those with a higher one.<sup id="cite_ref-57" class="reference"><a href="#cite_note-57">[50]</a></sup> That may be particularly true when several browsers have a higher score in their current development builds as compared to their last released version.</p>
+<table class="wikitable sortable" style="margin-bottom:0px">
+<caption>Results of test262 (suite version: ES5, suite date: 2014-09-18)</caption>
+<tr style="background:#ccf; margin-top: 0 px;">
+<th>Product</th>
+<th class="unsortable">Latest Stable</th>
+<th>Test262 failed</th>
+<th class="unsortable">Preview/Beta</th>
+<th>Test262 failed</th>
+<th class="unsortable">Alpha</th>
+<th>Test262 failed</th>
+<th class="unsortable">Nightly</th>
+<th>Test262 failed</th>
+</tr>
+<tr>
+<td><a href="/wiki/Google_Chrome" title="Google Chrome">Google Chrome</a></td>
+<td>46.0.2490.86 m</td>
+<td><span style="display:none" class="sortkey">7002207000000000000♠</span>207/11552</td>
+<td>47.0.2526.69 beta-m</td>
+<td><span style="display:none" class="sortkey">7002208000000000000♠</span>208/11552</td>
+<td>48.0.2564.10 dev-m</td>
+<td><span style="display:none" class="sortkey">7002203000000000000♠</span>203/11552</td>
+<td>48.0.2569.0 canary</td>
+<td><span style="display:none" class="sortkey">7002203000000000000♠</span>203/11552</td>
+</tr>
+<tr>
+<td rowspan="2"><a href="/wiki/Firefox" title="Firefox">Mozilla Firefox</a></td>
+<td>42.0</td>
+<td><span style="display:none" class="sortkey">7002260000000000000♠</span>260/11552</td>
+<td>43.0 Beta 5</td>
+<td><span style="display:none" class="sortkey">7002260000000000000♠</span>260/11552</td>
+<td>44.0a2 (20151120004044)</td>
+<td><span style="display:none" class="sortkey">7002260000000000000♠</span>260/11552</td>
+<td>45.0a1 (20151120030227)</td>
+<td><span style="display:none" class="sortkey">7002260000000000000♠</span>260/11552</td>
+</tr>
+<tr>
+<td>ESR 38.4.0</td>
+<td><span style="display:none" class="sortkey">7002228000000000000♠</span>228/11552</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="/wiki/Internet_Explorer" title="Internet Explorer">Internet Explorer</a></td>
+<td>11.0.25 (11.0.9600.18097)</td>
+<td><span style="display:none" class="sortkey">7000800000000000000♠</span>8/11552</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="/wiki/Maxthon" title="Maxthon">Maxthon</a></td>
+<td>4.4.2.2000</td>
+<td><span style="display:none" class="sortkey">7001180000000000000♠</span>18/11552</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td rowspan="2"><a href="/wiki/Opera_(web_browser)" title="Opera (web browser)">Opera</a></td>
+<td>33.0.1990.115</td>
+<td><span style="display:none" class="sortkey">7002207000000000000♠</span>207/11552</td>
+<td>beta 34.0.2036.3</td>
+<td><span style="display:none" class="sortkey">7002208000000000000♠</span>208/11552</td>
+<td>developer 35.0.2052.0</td>
+<td><span style="display:none" class="sortkey">7002210000000000000♠</span>210/11552</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>12.17 (classic)</td>
+<td><span style="display:none" class="sortkey">7001110000000000000♠</span>11/11552</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="/wiki/Safari_(web_browser)" title="Safari (web browser)">Safari</a></td>
+<td>7.1 (9537.85)</td>
+<td><span style="display:none" class="sortkey">7000700000000000000♠</span>7/11552</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</table>
+<div class="plainlinks hlist navbar">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:ECMAScript_test262" title="Template:ECMAScript test262"><span title="View this template">view</span></a></li>
+<li class="nv-talk"><a href="/w/index.php?title=Template_talk:ECMAScript_test262&amp;action=edit&amp;redlink=1" class="new" title="Template talk:ECMAScript test262 (page does not exist)"><span title="Discuss this template">talk</span></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:ECMAScript_test262&amp;action=edit"><span title="Edit this template">edit</span></a></li>
+</ul>
+</div>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=ECMAScript&amp;action=edit&amp;section=13" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a href="/wiki/ActionScript" title="ActionScript">ActionScript</a></li>
+<li><a href="/wiki/Comparison_of_layout_engines_(ECMAScript)" title="Comparison of layout engines (ECMAScript)">Comparison of layout engines (ECMAScript)</a></li>
+<li><a href="/wiki/Dart_(programming_language)" title="Dart (programming language)">Dart (programming language)</a></li>
+<li><a href="/wiki/Document_Object_Model" title="Document Object Model">Document Object Model</a> (DOM)</li>
+<li><a href="/wiki/ECMAScript_for_XML" title="ECMAScript for XML">ECMAScript for XML</a> (E4X)</li>
+<li><a href="/wiki/JavaScript" title="JavaScript">JavaScript</a></li>
+<li><a href="/wiki/JScript" title="JScript">JScript</a></li>
+<li><a href="/wiki/List_of_ECMAScript_engines" title="List of ECMAScript engines">List of ECMAScript engines</a></li>
+<li>Qt Meta (or Modeling) Language (<a href="/wiki/QML" title="QML">QML</a>)</li>
+<li><a href="/wiki/Server-side_JavaScript" class="mw-redirect" title="Server-side JavaScript">Server-side JavaScript</a></li>
+<li><a href="/wiki/TypeScript" title="TypeScript">TypeScript</a></li>
+<li><a href="/wiki/Gulp.js" title="Gulp.js">Gulp.js</a></li>
+</ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=ECMAScript&amp;action=edit&amp;section=14" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist columns references-column-width" style="-moz-column-width: 30em; -webkit-column-width: 30em; column-width: 30em; list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><cite class="citation book">Stefanov, Stoyan (2010). <a rel="nofollow" class="external text" href="https://books.google.com/books?id=WTZqecc9olUC"><i>JavaScript Patterns</i></a>. O'Reilly Media, Inc. p.&#160;5. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/9781449396947" title="Special:BookSources/9781449396947">9781449396947</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2016-01-12</span></span>. <q>The core JavaScript programming language [...] is based on the <i>ECMAScript</i> standard, or ES for short.</q></cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AECMAScript&amp;rft.aufirst=Stoyan&amp;rft.aulast=Stefanov&amp;rft.btitle=JavaScript+Patterns&amp;rft.date=2010&amp;rft.genre=book&amp;rft_id=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DWTZqecc9olUC&amp;rft.isbn=9781449396947&amp;rft.pages=5&amp;rft.pub=O%27Reilly+Media%2C+Inc.&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.ecma-international.org/memento/TC39.htm">"TC39 - ECMAScript® (formerly TC39-TG1)"</a>. <i>ecma-international.org</i>. <a href="/wiki/Ecma_International" title="Ecma International">Ecma International</a><span class="reference-accessdate">. Retrieved <span class="nowrap">22 August</span> 2015</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AECMAScript&amp;rft.atitle=TC39+-+ECMAScript%AE+%28formerly+TC39-TG1%29&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.ecma-international.org%2Fmemento%2FTC39.htm&amp;rft.jtitle=ecma-international.org&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><cite class="citation web">Krill, Paul (2008-06-23). <a rel="nofollow" class="external text" href="http://www.infoworld.com/article/2653798/application-development/javascript-creator-ponders-past--future.html">"JavaScript creator ponders past, future"</a>. InfoWorld<span class="reference-accessdate">. Retrieved <span class="nowrap">2013-10-31</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AECMAScript&amp;rft.aufirst=Paul&amp;rft.aulast=Krill&amp;rft.btitle=JavaScript+creator+ponders+past%2C+future&amp;rft.date=2008-06-23&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.infoworld.com%2Farticle%2F2653798%2Fapplication-development%2Fjavascript-creator-ponders-past--future.html&amp;rft.pub=InfoWorld&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://web.archive.org/web/20070916144913/http://wp.netscape.com/newsref/pr/newsrelease67.html">"Netscape and Sun Announce JavaScript, the Open, Cross-platform Object Scripting Language for Enterprise Networks and the Internet"</a>. Netscape. December 4, 1995. Archived from <a rel="nofollow" class="external text" href="http://wp.netscape.com/newsref/pr/newsrelease67.html">the original</a> on 2007-09-16<span class="reference-accessdate">. Retrieved <span class="nowrap">2013-10-31</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AECMAScript&amp;rft.btitle=Netscape+and+Sun+Announce+JavaScript%2C+the+Open%2C+Cross-platform+Object+Scripting+Language+for+Enterprise+Networks+and+the+Internet&amp;rft.date=1995-12-04&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwp.netscape.com%2Fnewsref%2Fpr%2Fnewsrelease67.html&amp;rft.pub=Netscape&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://web.archive.org/web/20080517011912/http://weblogs.mozillazine.org/roadmap/archives/2008/04/popularity.html">"Brendan's Roadmap Updates: Popularity"</a>. <i>weblogs.mozillazine.org</i>. Archived from <a rel="nofollow" class="external text" href="http://weblogs.mozillazine.org/roadmap/archives/2008/04/popularity.html">the original</a> on 17 May 2008.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AECMAScript&amp;rft.atitle=Brendan%27s+Roadmap+Updates%3A+Popularity&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fweblogs.mozillazine.org%2Froadmap%2Farchives%2F2008%2F04%2Fpopularity.html&amp;rft.jtitle=weblogs.mozillazine.org&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://web.archive.org/web/19981203070212/http://cgi.netscape.com/newsref/pr/newsrelease289.html">"Industry Leaders to Advance Standardization of Netscape's JavaScript at Standards Body Meeting"</a>. Netscape. November 15, 1996. Archived from <a rel="nofollow" class="external text" href="http://cgi.netscape.com/newsref/pr/newsrelease289.html">the original</a> on 1998-12-03<span class="reference-accessdate">. Retrieved <span class="nowrap">2013-10-31</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AECMAScript&amp;rft.btitle=Industry+Leaders+to+Advance+Standardization+of+Netscape%27s+JavaScript+at+Standards+Body+Meeting&amp;rft.date=1996-11-15&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fcgi.netscape.com%2Fnewsref%2Fpr%2Fnewsrelease289.html&amp;rft.pub=Netscape&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://mail.mozilla.org/pipermail/es4-discuss/2006-October/000133.html">"Will there be a suggested file suffix for es4?"</a>. Mail.mozilla.org. 2006-10-03<span class="reference-accessdate">. Retrieved <span class="nowrap">2013-10-31</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AECMAScript&amp;rft.btitle=Will+there+be+a+suggested+file+suffix+for+es4%3F&amp;rft.date=2006-10-03&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fmail.mozilla.org%2Fpipermail%2Fes4-discuss%2F2006-October%2F000133.html&amp;rft.pub=Mail.mozilla.org&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://javascript.about.com/od/reference/a/jscript.htm">"JScript VS JavaScript"</a>. About.com. 2015-11-25.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AECMAScript&amp;rft.btitle=JScript+VS+JavaScript&amp;rft.date=2015-11-25&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fjavascript.about.com%2Fod%2Freference%2Fa%2Fjscript.htm&amp;rft.pub=About.com&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-auto-9"><span class="mw-cite-backlink">^ <a href="#cite_ref-auto_9-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-auto_9-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><a rel="nofollow" class="external autonumber" href="http://www.ecma-international.org/publications/files/ECMA-ST/Ecma-262.pdf">[4]</a>. EMCAScript. Retrieved on 2016-06-20.</span></li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-10">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://www.youtube.com/watch?v=Kq4FpMe6cRs">"Changes to JavaScript, Part 1: EcmaScript 5"</a>. YouTube. 2009-05-18<span class="reference-accessdate">. Retrieved <span class="nowrap">2013-10-31</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AECMAScript&amp;rft.btitle=Changes+to+JavaScript%2C+Part+1%3A+EcmaScript+5&amp;rft.date=2009-05-18&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DKq4FpMe6cRs&amp;rft.pub=YouTube&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-ES2015-11"><span class="mw-cite-backlink">^ <a href="#cite_ref-ES2015_11-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-ES2015_11-1"><sup><i><b>b</b></i></sup></a> <a href="#cite_ref-ES2015_11-2"><sup><i><b>c</b></i></sup></a></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.ecma-international.org/ecma-262/6.0/index.html">"ECMAScript 2015 Language Specification"</a>. <a href="/wiki/Ecma_International" title="Ecma International">Ecma International</a>. June 2015.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AECMAScript&amp;rft.btitle=ECMAScript+2015+Language+Specification&amp;rft.date=2015-06&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.ecma-international.org%2Fecma-262%2F6.0%2Findex.html&amp;rft.pub=Ecma+International&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-ES2016-12"><span class="mw-cite-backlink">^ <a href="#cite_ref-ES2016_12-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-ES2016_12-1"><sup><i><b>b</b></i></sup></a> <a href="#cite_ref-ES2016_12-2"><sup><i><b>c</b></i></sup></a></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.ecma-international.org/ecma-262/7.0/index.html">"ECMAScript 2016 Language Specification"</a>. <a href="/wiki/Ecma_International" title="Ecma International">Ecma International</a>. June 2016.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AECMAScript&amp;rft.btitle=ECMAScript+2016+Language+Specification&amp;rft.date=2016-06&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.ecma-international.org%2Fecma-262%2F7.0%2Findex.html&amp;rft.pub=Ecma+International&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-13"><span class="mw-cite-backlink"><b><a href="#cite_ref-13">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://wiki.ecmascript.org/doku.php?id=strawman:strawman">"strawman:strawman [ES Wiki]"</a>. Wiki.ecmascript.org. 2013-09-18<span class="reference-accessdate">. Retrieved <span class="nowrap">2013-10-31</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AECMAScript&amp;rft.btitle=strawman%3Astrawman+%5BES+Wiki%26%2393%3B&amp;rft.date=2013-09-18&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwiki.ecmascript.org%2Fdoku.php%3Fid%3Dstrawman%3Astrawman&amp;rft.pub=Wiki.ecmascript.org&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-14"><span class="mw-cite-backlink"><b><a href="#cite_ref-14">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://github.com/tc39/ecma262">"tc39/ecma262"</a>. <i>TC39</i>. GitHub<span class="reference-accessdate">. Retrieved <span class="nowrap">27 December</span> 2015</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AECMAScript&amp;rft.atitle=tc39%2Fecma262&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fgithub.com%2Ftc39%2Fecma262&amp;rft.jtitle=TC39&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-ES-CP-withdrawn-15"><span class="mw-cite-backlink"><b><a href="#cite_ref-ES-CP-withdrawn_15-0">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://esdiscuss.org/notes/2015-03-24">2015-03-24 Meeting Notes</a>. ESDiscuss. Also see <a rel="nofollow" class="external text" href="http://www.ecma-international.org/publications/standards/Standardwithdrawn.htm">Ecma withdrawn Standards</a>. ECMA.</span></li>
+<li id="cite_note-16"><span class="mw-cite-backlink"><b><a href="#cite_ref-16">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://mail.mozilla.org/pipermail/es-discuss/2007-October/001281.html">"ES4 overview paper released"</a>. Mail.mozilla.org<span class="reference-accessdate">. Retrieved <span class="nowrap">2013-10-31</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AECMAScript&amp;rft.btitle=ES4+overview+paper+released&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fmail.mozilla.org%2Fpipermail%2Fes-discuss%2F2007-October%2F001281.html&amp;rft.pub=Mail.mozilla.org&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-17"><span class="mw-cite-backlink"><b><a href="#cite_ref-17">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.ecmascript.org/es4/spec/overview.pdf">"Proposed ECMAScript 4th Edition – Language Overview"</a> <span style="font-size:85%;">(PDF)</span>. <i>ecmascript.org</i>. 23 October 2007.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AECMAScript&amp;rft.atitle=Proposed+ECMAScript+4th+Edition+%93+Language+Overview&amp;rft.date=2007-10-23&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.ecmascript.org%2Fes4%2Fspec%2Foverview.pdf&amp;rft.jtitle=ecmascript.org&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-18"><span class="mw-cite-backlink"><b><a href="#cite_ref-18">^</a></b></span> <span class="reference-text"><cite class="citation web">John Resig. <a rel="nofollow" class="external text" href="http://ejohn.org/blog/bug-fixes-in-javascript-2/">"John Resig – Bug Fixes in JavaScript 2"</a>. Ejohn.org<span class="reference-accessdate">. Retrieved <span class="nowrap">2013-10-31</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AECMAScript&amp;rft.au=John+Resig&amp;rft.btitle=John+Resig+%93+Bug+Fixes+in+JavaScript+2&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fejohn.org%2Fblog%2Fbug-fixes-in-javascript-2%2F&amp;rft.pub=Ejohn.org&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-19"><span class="mw-cite-backlink"><b><a href="#cite_ref-19">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.ecmascript.org/es4/spec/incompatibilities.pdf">"Compatibility Between ES3 and Proposed ES4"</a> <span style="font-size:85%;">(PDF)</span>. Ecmascript.org<span class="reference-accessdate">. Retrieved <span class="nowrap">2013-10-31</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AECMAScript&amp;rft.btitle=Compatibility+Between+ES3+and+Proposed+ES4&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.ecmascript.org%2Fes4%2Fspec%2Fincompatibilities.pdf&amp;rft.pub=Ecmascript.org&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-20"><span class="mw-cite-backlink"><b><a href="#cite_ref-20">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="https://web.archive.org/web/20090419044026/http://www.ecma-international.org/publications/files/drafts/tc39-2009-025.pdf">https://web.archive.org/web/20090419044026/http://www.ecma-international.org/publications/files/drafts/tc39-2009-025.pdf</a></span></li>
+<li id="cite_note-21"><span class="mw-cite-backlink"><b><a href="#cite_ref-21">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://blogs.msdn.com/ie/archive/2007/10/30/ecmascript-3-and-beyond.aspx#5788577">"ECMAScript 3 and Beyond – IEBlog – Site Home – MSDN Blogs"</a>. Blogs.msdn.com. 2007-10-30<span class="reference-accessdate">. Retrieved <span class="nowrap">2013-10-31</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AECMAScript&amp;rft.btitle=ECMAScript+3+and+Beyond+%93+IEBlog+%93+Site+Home+%93+MSDN+Blogs&amp;rft.date=2007-10-30&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fblogs.msdn.com%2Fie%2Farchive%2F2007%2F10%2F30%2Fecmascript-3-and-beyond.aspx%235788577&amp;rft.pub=Blogs.msdn.com&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-22"><span class="mw-cite-backlink"><b><a href="#cite_ref-22">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://blogs.msdn.com/cwilso/archive/2007/10/31/what-i-think-about-es4.aspx">"What I think about ES4. - Albatross! - Site Home – MSDN Blogs"</a>. Blogs.msdn.com. 2007-10-31<span class="reference-accessdate">. Retrieved <span class="nowrap">2013-10-31</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AECMAScript&amp;rft.btitle=What+I+think+about+ES4.+-+Albatross%21+-+Site+Home+%93+MSDN+Blogs&amp;rft.date=2007-10-31&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fblogs.msdn.com%2Fcwilso%2Farchive%2F2007%2F10%2F31%2Fwhat-i-think-about-es4.aspx&amp;rft.pub=Blogs.msdn.com&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-23"><span class="mw-cite-backlink"><b><a href="#cite_ref-23">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://brendaneich.com/2007/10/open-letter-to-chris-wilson/">"Open letter to Chris Wilson"</a>. Brendan Eich. 2007-10-31<span class="reference-accessdate">. Retrieved <span class="nowrap">2013-10-31</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AECMAScript&amp;rft.btitle=Open+letter+to+Chris+Wilson&amp;rft.date=2007-10-31&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fbrendaneich.com%2F2007%2F10%2Fopen-letter-to-chris-wilson%2F&amp;rft.pub=Brendan+Eich&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-24"><span class="mw-cite-backlink"><b><a href="#cite_ref-24">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://brendaneich.com/2007/11/my-media-ajax-keynote/">"JavaScript 2 and the Open Web"</a>. 2007-11-20<span class="reference-accessdate">. Retrieved <span class="nowrap">2014-01-20</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AECMAScript&amp;rft.btitle=JavaScript+2+and+the+Open+Web&amp;rft.date=2007-11-20&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fbrendaneich.com%2F2007%2F11%2Fmy-media-ajax-keynote%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-25"><span class="mw-cite-backlink"><b><a href="#cite_ref-25">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://mail.mozilla.org/pipermail/es-discuss/2008-August/003400.html">"ECMAScript Harmony"</a>. Mail.mozilla.org<span class="reference-accessdate">. Retrieved <span class="nowrap">2013-10-31</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AECMAScript&amp;rft.btitle=ECMAScript+Harmony&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fmail.mozilla.org%2Fpipermail%2Fes-discuss%2F2008-August%2F003400.html&amp;rft.pub=Mail.mozilla.org&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-26"><span class="mw-cite-backlink"><b><a href="#cite_ref-26">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://blogs.msdn.com/jscript/archive/2009/04/09/a-major-milestone-in-javascript-standardization.aspx">"A Major Milestone in JavaScript Standardization – JScript Blog – Site Home – MSDN Blogs"</a>. Blogs.msdn.com. 2009-04-09<span class="reference-accessdate">. Retrieved <span class="nowrap">2013-10-31</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AECMAScript&amp;rft.btitle=A+Major+Milestone+in+JavaScript+Standardization+%93+JScript+Blog+%93+Site+Home+%93+MSDN+Blogs&amp;rft.date=2009-04-09&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fblogs.msdn.com%2Fjscript%2Farchive%2F2009%2F04%2F09%2Fa-major-milestone-in-javascript-standardization.aspx&amp;rft.pub=Blogs.msdn.com&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-27"><span class="mw-cite-backlink"><b><a href="#cite_ref-27">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.ecma-international.org/news/PressReleases/PR_Ecma_finalises_major_revision_of_ECMAScript.htm">"Ecma International finalises major revision of ECMAScript"</a>. Ecma International. 2009-04-09<span class="reference-accessdate">. Retrieved <span class="nowrap">2009-05-22</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AECMAScript&amp;rft.btitle=Ecma+International+finalises+major+revision+of+ECMAScript&amp;rft.date=2009-04-09&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.ecma-international.org%2Fnews%2FPressReleases%2FPR_Ecma_finalises_major_revision_of_ECMAScript.htm&amp;rft.pub=Ecma+International&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-28"><span class="mw-cite-backlink"><b><a href="#cite_ref-28">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.ecma-international.org/news/index.html#Docs98thGA">"Ecma latest news"</a>. Ecma-international.org<span class="reference-accessdate">. Retrieved <span class="nowrap">2013-10-31</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AECMAScript&amp;rft.btitle=Ecma+latest+news&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.ecma-international.org%2Fnews%2Findex.html%23Docs98thGA&amp;rft.pub=Ecma-international.org&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-29"><span class="mw-cite-backlink"><b><a href="#cite_ref-29">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://www.infoworld.com/article/2937716/javascript/its-official-ecmascript-6-is-approved.html">http://www.infoworld.com/article/2937716/javascript/its-official-ecmascript-6-is-approved.html</a></span></li>
+<li id="cite_note-30"><span class="mw-cite-backlink"><b><a href="#cite_ref-30">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://www.wintellect.com/devcenter/nstieglitz/5-great-features-in-es6-harmony">http://www.wintellect.com/devcenter/nstieglitz/5-great-features-in-es6-harmony</a></span></li>
+<li id="cite_note-31"><span class="mw-cite-backlink"><b><a href="#cite_ref-31">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="https://www.smashingmagazine.com/2015/10/es6-whats-new-next-version-javascript/">https://www.smashingmagazine.com/2015/10/es6-whats-new-next-version-javascript/</a></span></li>
+<li id="cite_note-32"><span class="mw-cite-backlink"><b><a href="#cite_ref-32">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://es6-features.org/">http://es6-features.org/</a></span></li>
+<li id="cite_note-33"><span class="mw-cite-backlink"><b><a href="#cite_ref-33">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="https://kangax.github.io/compat-table/es6/">https://kangax.github.io/compat-table/es6/</a></span></li>
+<li id="cite_note-34"><span class="mw-cite-backlink"><b><a href="#cite_ref-34">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://wisdomgeek.com/web-development/using-es6-today-future-of-javascript/">http://wisdomgeek.com/web-development/using-es6-today-future-of-javascript/</a></span></li>
+<li id="cite_note-35"><span class="mw-cite-backlink"><b><a href="#cite_ref-35">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="https://github.com/nodejs/node/pull/11029">https://github.com/nodejs/node/pull/11029</a></span></li>
+<li id="cite_note-36"><span class="mw-cite-backlink"><b><a href="#cite_ref-36">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="https://github.com/tc39/proposals/blob/856e38f/finished-proposals.md">https://github.com/tc39/proposals/blob/856e38f/finished-proposals.md</a></span></li>
+<li id="cite_note-37"><span class="mw-cite-backlink"><b><a href="#cite_ref-37">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.ecmascript.org/about.php">"About"</a>. ECMAScript<span class="reference-accessdate">. Retrieved <span class="nowrap">2009-12-17</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AECMAScript&amp;rft.btitle=About&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.ecmascript.org%2Fabout.php&amp;rft.pub=ECMAScript&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-40"><span class="mw-cite-backlink"><b><a href="#cite_ref-40">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://developer.marklogic.com/features/javascript">"Server-side Javascript for Developers"</a>. <i>marklogic.com</i>. 1 January 2015<span class="reference-accessdate">. Retrieved <span class="nowrap">9 August</span> 2016</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AECMAScript&amp;rft.atitle=Server-side+Javascript+for+Developers&amp;rft.date=2015-01-01&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fdeveloper.marklogic.com%2Ffeatures%2Fjavascript&amp;rft.jtitle=marklogic.com&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-42"><span class="mw-cite-backlink"><b><a href="#cite_ref-42">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes</a></span></li>
+<li id="cite_note-43"><span class="mw-cite-backlink"><b><a href="#cite_ref-43">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://developer.apple.com/library/prerelease/content/releasenotes/General/WhatsNewInSafari/Articles/Safari_10_1.html">"Safari 10.1"</a>. <i>Apple Developer</i>. 24 January 2017. <q>Support for ECMAScript 2016 and ECMAScript 2017 is available in Safari for macOS and iOS.</q></cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AECMAScript&amp;rft.atitle=Safari+10.1&amp;rft.date=2017-01-24&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fdeveloper.apple.com%2Flibrary%2Fprerelease%2Fcontent%2Freleasenotes%2FGeneral%2FWhatsNewInSafari%2FArticles%2FSafari_10_1.html&amp;rft.jtitle=Apple+Developer&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-45"><span class="mw-cite-backlink"><b><a href="#cite_ref-45">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://github.com/Samsung/jerryscript">"Samsung/jerryscript"</a>. <i>GitHub</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2016-11-24</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AECMAScript&amp;rft.atitle=Samsung%2Fjerryscript&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fgithub.com%2FSamsung%2Fjerryscript&amp;rft.jtitle=GitHub&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-46"><span class="mw-cite-backlink"><b><a href="#cite_ref-46">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://wiki.openjdk.java.net/display/Nashorn/Nashorn+extensions">"Nashorn extensions"</a>. <i>OpenJDK Wiki</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2016-11-24</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AECMAScript&amp;rft.atitle=Nashorn+extensions&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fwiki.openjdk.java.net%2Fdisplay%2FNashorn%2FNashorn%2Bextensions&amp;rft.jtitle=OpenJDK+Wiki&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-49"><span class="mw-cite-backlink"><b><a href="#cite_ref-49">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://embedthis.com/ejscript/doc/">"Ejscript Overview"</a>. <i>Embedthis Software</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2016-11-14</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AECMAScript&amp;rft.atitle=Ejscript+Overview&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fembedthis.com%2Fejscript%2Fdoc%2F&amp;rft.jtitle=Embedthis+Software&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-51"><span class="mw-cite-backlink"><b><a href="#cite_ref-51">^</a></b></span> <span class="reference-text"><cite class="citation web">Darrick Brown (May 25, 2006). <a rel="nofollow" class="external text" href="http://blogs.adobe.com/kiwi/2006/05/as3_language_101_for_cc_coders.html">"AS3 language 101 for C/C++ coders"</a>. <i>Adobe Blogs: The Kiwi Project</i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AECMAScript&amp;rft.atitle=AS3+language+101+for+C%2FC%2B%2B+coders&amp;rft.au=Darrick+Brown&amp;rft.date=2006-05-25&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fblogs.adobe.com%2Fkiwi%2F2006%2F05%2Fas3_language_101_for_cc_coders.html&amp;rft.jtitle=Adobe+Blogs%3A+The+Kiwi+Project&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-52"><span class="mw-cite-backlink"><b><a href="#cite_ref-52">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://developers.google.com/caja/">"Caja Introduction"</a>. <i>Google Developers</i>. February 28, 2012.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AECMAScript&amp;rft.atitle=Caja+Introduction&amp;rft.date=2012-02-28&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fdevelopers.google.com%2Fcaja%2F&amp;rft.jtitle=Google+Developers&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-53"><span class="mw-cite-backlink"><b><a href="#cite_ref-53">^</a></b></span> <span class="reference-text"><cite class="citation web">tedster (March 12, 2002). <a rel="nofollow" class="external text" href="http://www.webmasterworld.com/forum91/68.htm">"JavaScript – JScript – ECMAScript version history"</a>. Webmasterworld.com<span class="reference-accessdate">. Retrieved <span class="nowrap">2009-12-17</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AECMAScript&amp;rft.au=tedster&amp;rft.btitle=JavaScript+%93+JScript+%93+ECMAScript+version+history&amp;rft.date=2002-03-12&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.webmasterworld.com%2Fforum91%2F68.htm&amp;rft.pub=Webmasterworld.com&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-54"><span class="mw-cite-backlink"><b><a href="#cite_ref-54">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://web.archive.org/web/20091217110415/http://msdn.microsoft.com/en-us/library/s4esdbwz%28VS.71%29.aspx">"Version Information (JScript)"</a>. Msdn.microsoft.com. Archived from <a rel="nofollow" class="external text" href="http://msdn.microsoft.com/en-us/library/s4esdbwz%28VS.71%29.aspx">the original</a> on 2009-12-17<span class="reference-accessdate">. Retrieved <span class="nowrap">2009-12-17</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AECMAScript&amp;rft.btitle=Version+Information+%28JScript%29&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fmsdn.microsoft.com%2Fen-us%2Flibrary%2Fs4esdbwz%2528VS.71%2529.aspx&amp;rft.pub=Msdn.microsoft.com&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-55"><span class="mw-cite-backlink"><b><a href="#cite_ref-55">^</a></b></span> <span class="reference-text"><cite class="citation web">Andrew Clinick (July 14, 2000). <a rel="nofollow" class="external text" href="http://msdn.microsoft.com/en-us/library/ms974588.aspx#scripting0714_topic4">"Introducing JScript .NET"</a>. Microsoft.com<span class="reference-accessdate">. Retrieved <span class="nowrap">2010-01-12</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AECMAScript&amp;rft.au=Andrew+Clinick&amp;rft.btitle=Introducing+JScript+.NET&amp;rft.date=2000-07-14&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fmsdn.microsoft.com%2Fen-us%2Flibrary%2Fms974588.aspx%23scripting0714_topic4&amp;rft.pub=Microsoft.com&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-56"><span class="mw-cite-backlink"><b><a href="#cite_ref-56">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://test262.ecmascript.org/">"ECMAScript Language – test262"</a>. Test262.ecmascript.org<span class="reference-accessdate">. Retrieved <span class="nowrap">2013-10-31</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AECMAScript&amp;rft.btitle=ECMAScript+Language+%93+test262&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Ftest262.ecmascript.org%2F&amp;rft.pub=Test262.ecmascript.org&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-57"><span class="mw-cite-backlink"><b><a href="#cite_ref-57">^</a></b></span> <span class="reference-text"><cite id="note1" class="citation web">Schuster, Tom. <a rel="nofollow" class="external text" href="https://bugs.ecmascript.org/show_bug.cgi?id=1453#c16">"Bug 1453"</a>. <i>ecmascript.org bug database</i><span class="reference-accessdate">. Retrieved <span class="nowrap">12 October</span> 2014</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AECMAScript&amp;rft.atitle=Bug+1453&amp;rft.aufirst=Tom&amp;rft.aulast=Schuster&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fbugs.ecmascript.org%2Fshow_bug.cgi%3Fid%3D1453%23c16&amp;rft.jtitle=ecmascript.org+bug+database&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=ECMAScript&amp;action=edit&amp;section=15" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><span class="official-website"><span class="url"><a rel="nofollow" class="external text" href="http://www.ecmascript.org">Official website</a></span></span></li>
+<li><a rel="nofollow" class="external text" href="http://ejohn.org/blog/the-world-of-ecmascript">The World of ECMAScript</a>: John Resig's map on ECMAScript</li>
+</ul>
+<dl>
+<dt>ISO Standard</dt>
+</dl>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.iso.org/iso/iso_catalogue/catalogue_tc/catalogue_detail.htm?csnumber=55755">ISO 16262</a></li>
+</ul>
+<dl>
+<dt>Ecma Standards</dt>
+</dl>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.ecma-international.org/publications/standards/Ecma-262.htm">ECMA-262</a>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.ecma-international.org/publications/files/ECMA-ST-ARCH/ECMA-262,%203rd%20edition,%20December%201999.pdf">ECMA-262 ECMAScript Language Specification 3rd edition (December 1999)</a></li>
+<li><a rel="nofollow" class="external text" href="https://web.archive.org/web/20100201000000*/http://www.mozilla.org/js/language/E262-3.pdf">ECMAScript Language Specification, Edition 3 Final, 24-Mar-00</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.ecma-international.org/publications/files/ECMA-ST-ARCH/ECMA-262%205th%20edition%20December%202009.pdf">ECMA-262 ECMAScript Language Specification 5th edition (December 2009)</a></li>
+<li><a rel="nofollow" class="external text" href="https://web.archive.org/web/20111103184035/http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-262%20edition%205.1,%20June%202011.pdf">ECMA-262 ECMAScript Language Specification 5.1 edition (June 2011)</a></li>
+</ul>
+</li>
+<li><a rel="nofollow" class="external text" href="http://www.ecma-international.org/publications/standards/Ecma-290.htm">ECMA-290 ECMAScript Components Specification (June 1999)</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.ecma-international.org/publications/standards/Ecma-327.htm">ECMA-327 ECMAScript 3rd Edition Compact Profile (June 2001)</a></li>
+<li><a rel="nofollow" class="external text" href="https://web.archive.org/web/20131104082608/http://www.ecma-international.org/publications/standards/Ecma-357.htm">ECMA-357 ECMAScript for XML (E4X) Specification (June 2004)</a></li>
+</ul>
+<p><br /></p>
+<div role="navigation" class="navbox" aria-labelledby="Layout_engines" style="padding:3px">
+<table class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:Layout_engines" title="Template:Layout engines"><abbr title="View this template" style=";;background:none transparent;border:none;">v</abbr></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:Layout_engines" title="Template talk:Layout engines"><abbr title="Discuss this template" style=";;background:none transparent;border:none;">t</abbr></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:Layout_engines&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;">e</abbr></a></li>
+</ul>
+</div>
+<div id="Layout_engines" style="font-size:114%"><a href="/wiki/Layout_engine" title="Layout engine">Layout engines</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Active</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Blink_(web_engine)" title="Blink (web engine)">Blink</a></li>
+<li><a href="/wiki/EdgeHTML" title="EdgeHTML">EdgeHTML</a></li>
+<li><a href="/wiki/Gecko_(software)" title="Gecko (software)">Gecko</a></li>
+<li><a href="/wiki/Goanna_(software)" title="Goanna (software)">Goanna</a></li>
+<li><a href="/wiki/KHTML" title="KHTML">KHTML</a></li>
+<li><a href="/wiki/MARTHA_(layout_engine)" title="MARTHA (layout engine)">MARTHA</a></li>
+<li><a href="/wiki/Prince_(software)" title="Prince (software)">Prince</a></li>
+<li><a href="/wiki/Qt_(software)" title="Qt (software)">QtWebEngine</a></li>
+<li><a href="/wiki/Servo_(layout_engine)" title="Servo (layout engine)">Servo</a></li>
+<li><a href="/wiki/WebKit" title="WebKit">WebKit</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Discontinued</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Amaya_(web_browser)" class="mw-redirect" title="Amaya (web browser)">Amaya</a></li>
+<li><a href="/wiki/Boxely" title="Boxely">Boxely</a></li>
+<li><a href="/wiki/Gazelle_(web_browser)" title="Gazelle (web browser)">Gazelle</a></li>
+<li><a href="/wiki/GtkHTML" title="GtkHTML">GtkHTML</a></li>
+<li><a href="/wiki/HTMLayout" title="HTMLayout">HTMLayout</a></li>
+<li><a href="/wiki/ICab" title="ICab">iCab</a></li>
+<li><a href="/wiki/Mariner_(layout_engine)" title="Mariner (layout engine)">Mariner</a></li>
+<li><a href="/wiki/Presto_(layout_engine)" title="Presto (layout engine)">Presto</a></li>
+<li><a href="/wiki/Tasman_(layout_engine)" title="Tasman (layout engine)">Tasman</a></li>
+<li><a href="/wiki/Tkhtml" title="Tkhtml">Tkhtml</a></li>
+<li><a href="/wiki/Trident_(layout_engine)" title="Trident (layout engine)">Trident</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Comparison_of_layout_engines" class="mw-redirect" title="Comparison of layout engines">Comparisons</a></th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Comparison_of_layout_engines_(HTML)" title="Comparison of layout engines (HTML)">HTML</a>
+<ul>
+<li><a href="/wiki/Comparison_of_layout_engines_(non-standard_HTML)" title="Comparison of layout engines (non-standard HTML)">non-standard HTML</a></li>
+</ul>
+</li>
+<li><a href="/wiki/Comparison_of_layout_engines_(HTML5)" title="Comparison of layout engines (HTML5)">HTML5</a>
+<ul>
+<li><a href="/wiki/Comparison_of_layout_engines_(HTML5_media)" title="Comparison of layout engines (HTML5 media)">media</a></li>
+<li><a href="/wiki/Comparison_of_layout_engines_(HTML5_canvas)" title="Comparison of layout engines (HTML5 canvas)">canvas</a></li>
+</ul>
+</li>
+<li><a href="/wiki/Comparison_of_layout_engines_(XML)" title="Comparison of layout engines (XML)">XML</a>
+<ul>
+<li><a href="/wiki/Comparison_of_layout_engines_(XHTML)" title="Comparison of layout engines (XHTML)">XHTML</a>
+<ul>
+<li><a href="/wiki/Comparison_of_layout_engines_(XHTML_1.1)" title="Comparison of layout engines (XHTML 1.1)">1.1</a></li>
+</ul>
+</li>
+<li><a href="/wiki/Comparison_of_layout_engines_(MathML)" title="Comparison of layout engines (MathML)">MathML</a></li>
+<li><a href="/wiki/Comparison_of_layout_engines_(Scalable_Vector_Graphics)" title="Comparison of layout engines (Scalable Vector Graphics)">SVG</a></li>
+</ul>
+</li>
+<li><a href="/wiki/Comparison_of_layout_engines_(Cascading_Style_Sheets)" title="Comparison of layout engines (Cascading Style Sheets)">CSS</a></li>
+<li><a href="/wiki/Comparison_of_layout_engines_(ECMAScript)" title="Comparison of layout engines (ECMAScript)">ECMAScript</a></li>
+<li><a href="/wiki/Comparison_of_layout_engines_(Document_Object_Model)" title="Comparison of layout engines (Document Object Model)">DOM</a></li>
+<li><a href="/wiki/Comparison_of_layout_engines_(graphics)" title="Comparison of layout engines (graphics)">Graphics</a></li>
+<li><a href="/wiki/Comparison_of_layout_engines_(web_typography)" title="Comparison of layout engines (web typography)">Typography</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div role="navigation" class="navbox" aria-labelledby="ECMAScript" style="padding:3px">
+<table class="nowraplinks hlist collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:ECMAScript" title="Template:ECMAScript"><abbr title="View this template" style=";;background:none transparent;border:none;">v</abbr></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:ECMAScript" title="Template talk:ECMAScript"><abbr title="Discuss this template" style=";;background:none transparent;border:none;">t</abbr></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:ECMAScript&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;">e</abbr></a></li>
+</ul>
+</div>
+<div id="ECMAScript" style="font-size:114%"><strong class="selflink">ECMAScript</strong></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Dialects</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/ActionScript" title="ActionScript">ActionScript</a></li>
+<li><a href="/wiki/Caja_project" title="Caja project">Caja</a></li>
+<li><a href="/wiki/JavaScript" title="JavaScript">JavaScript</a>
+<ul>
+<li><a href="/wiki/JavaScript_engine" title="JavaScript engine">engines</a></li>
+<li><a href="/wiki/Asm.js" title="Asm.js">asm.js</a></li>
+</ul>
+</li>
+<li><a href="/wiki/JScript" title="JScript">JScript</a></li>
+<li><a href="/wiki/JScript_.NET" title="JScript .NET">JScript .NET</a></li>
+<li><a href="/wiki/QtScript" title="QtScript">QtScript</a></li>
+<li><a href="/wiki/TypeScript" title="TypeScript">TypeScript</a></li>
+<li><a href="/wiki/WMLScript" title="WMLScript">WMLScript</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/List_of_ECMAScript_engines" title="List of ECMAScript engines">Engines</a><br />
+(<a href="/wiki/Comparison_of_layout_engines_(ECMAScript)" title="Comparison of layout engines (ECMAScript)">comparison</a>)</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Presto_(layout_engine)#JavaScript_engines" title="Presto (layout engine)">Carakan</a></li>
+<li><a href="/wiki/Presto_(layout_engine)#JavaScript_engines" title="Presto (layout engine)">Futhark</a></li>
+<li><a href="/wiki/InScript_(JavaScript_engine)" title="InScript (JavaScript engine)">InScript</a></li>
+<li><a href="/wiki/JavaScriptCore" class="mw-redirect" title="JavaScriptCore">JavaScriptCore</a>
+<ul>
+<li><a href="/wiki/WebKit#JavaScriptCore" title="WebKit">SquirrelFish</a></li>
+</ul>
+</li>
+<li><a href="/wiki/JScript" title="JScript">JScript</a></li>
+<li><a href="/wiki/KJS_(software)" title="KJS (software)">KJS</a></li>
+<li><a href="/wiki/Presto_(layout_engine)#JavaScript_engines" title="Presto (layout engine)">Linear B</a></li>
+<li><a href="/wiki/Narcissus_(JavaScript_engine)" title="Narcissus (JavaScript engine)">Narcissus</a></li>
+<li><a href="/wiki/QtScript" title="QtScript">QtScript</a></li>
+<li><a href="/wiki/Rhino_(JavaScript_engine)" title="Rhino (JavaScript engine)">Rhino</a></li>
+<li><a href="/wiki/SpiderMonkey_(software)" class="mw-redirect" title="SpiderMonkey (software)">SpiderMonkey</a>
+<ul>
+<li><a href="/wiki/SpiderMonkey_(software)#TraceMonkey" class="mw-redirect" title="SpiderMonkey (software)">TraceMonkey</a></li>
+<li><a href="/wiki/J%C3%A4gerMonkey" class="mw-redirect" title="JägerMonkey">JägerMonkey</a></li>
+</ul>
+</li>
+<li><a href="/wiki/Tamarin_(software)" title="Tamarin (software)">Tamarin</a></li>
+<li><a href="/wiki/V8_(JavaScript_engine)" title="V8 (JavaScript engine)">V8</a></li>
+<li><a href="/wiki/Chakra_(JScript_engine)" title="Chakra (JScript engine)">Chakra</a> (<a href="/wiki/Chakra_(JavaScript_engine)" title="Chakra (JavaScript engine)">JavaScript engine</a>)</li>
+<li><a href="/wiki/JScript_.NET" title="JScript .NET">JScript .NET</a></li>
+<li><a href="/wiki/Nashorn_(JavaScript_engine)" title="Nashorn (JavaScript engine)">Nashorn</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Software_framework" title="Software framework">Frameworks</a></th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks navbox-subgroup" style="border-spacing:0">
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Client-side_JavaScript" class="mw-redirect" title="Client-side JavaScript">Client-side</a></th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Ample_SDK" title="Ample SDK">Ample SDK</a></li>
+<li><a href="/wiki/Chaplin.js" title="Chaplin.js">Chaplin.js</a></li>
+<li><a href="/wiki/Dojo_Toolkit" title="Dojo Toolkit">Dojo</a></li>
+<li><a href="/wiki/Echo_(framework)" title="Echo (framework)">Echo</a></li>
+<li><a href="/wiki/Ext_JS" title="Ext JS">Ext JS</a></li>
+<li><a href="/wiki/Google_Web_Toolkit" title="Google Web Toolkit">Google Web Toolkit</a></li>
+<li><a href="/wiki/JQuery" title="JQuery">jQuery</a></li>
+<li><a href="/wiki/Lively_Kernel" title="Lively Kernel">Lively Kernel</a></li>
+<li><a href="/wiki/Midori_JavaScript_Framework" title="Midori JavaScript Framework">midori</a></li>
+<li><a href="/wiki/MochiKit" title="MochiKit">MochiKit</a></li>
+<li><a href="/wiki/MooTools" title="MooTools">MooTools</a></li>
+<li><a href="/wiki/Prototype_JavaScript_Framework" title="Prototype JavaScript Framework">Prototype</a></li>
+<li><a href="/wiki/Pyjamas_(software)" class="mw-redirect" title="Pyjamas (software)">Pyjamas</a></li>
+<li><a href="/wiki/Qooxdoo" title="Qooxdoo">qooxdoo</a></li>
+<li><a href="/wiki/Rialto_Toolkit" title="Rialto Toolkit">Rialto</a></li>
+<li><a href="/wiki/Rico_(Ajax)" title="Rico (Ajax)">Rico</a></li>
+<li><a href="/wiki/Script.aculo.us" title="Script.aculo.us">script.aculo.us</a></li>
+<li><a href="/wiki/SmartClient" title="SmartClient">SmartClient</a></li>
+<li><a href="/wiki/SproutCore" title="SproutCore">SproutCore</a></li>
+<li><a href="/wiki/Spry_framework" title="Spry framework">Spry</a></li>
+<li><a href="/wiki/Wakanda_(software)" title="Wakanda (software)">Wakanda Framework</a></li>
+<li><a href="/wiki/YUI_Library" title="YUI Library">YUI Library</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Server-side_JavaScript" class="mw-redirect" title="Server-side JavaScript">Server-side</a></th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/AppJet" title="AppJet">AppJet</a></li>
+<li><a href="/wiki/Jaxer#Aptana_Jaxer" class="mw-redirect" title="Jaxer">Jaxer</a></li>
+<li><a href="/wiki/Node.js" title="Node.js">Node.js</a></li>
+<li><a href="/wiki/Wakanda_(software)" title="Wakanda (software)">WakandaDB</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Multiple</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Cappuccino_(application_development_framework)" title="Cappuccino (application development framework)">Cappuccino</a>
+<ul>
+<li><a href="/wiki/Objective-J" title="Objective-J">Objective-J</a></li>
+</ul>
+</li>
+<li><a href="/wiki/PureMVC" title="PureMVC">PureMVC</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/JavaScript_library" title="JavaScript library">Libraries</a></th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Backbone.js" title="Backbone.js">Backbone.js</a></li>
+<li><a href="/wiki/SWFObject" title="SWFObject">SWFObject</a></li>
+<li><a href="/wiki/SWFAddress" title="SWFAddress">SWFAddress</a></li>
+<li><a href="/wiki/Underscore.js" title="Underscore.js">Underscore.js</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">People</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Brendan_Eich" title="Brendan Eich">Brendan Eich</a></li>
+<li><a href="/wiki/Douglas_Crockford" title="Douglas Crockford">Douglas Crockford</a></li>
+<li><a href="/wiki/John_Resig" title="John Resig">John Resig</a></li>
+<li><a href="/wiki/Scott_Isaacs" title="Scott Isaacs">Scott Isaacs</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Other</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Dynamic_HTML" title="Dynamic HTML">DHTML</a></li>
+<li><a href="/wiki/Ecma_International" title="Ecma International">Ecma International</a></li>
+<li><a href="/wiki/JSDoc" title="JSDoc">JSDoc</a></li>
+<li><a href="/wiki/JSGI" title="JSGI">JSGI</a></li>
+<li><a href="/wiki/JSHint" title="JSHint">JSHint</a></li>
+<li><a href="/wiki/JSLint" title="JSLint">JSLint</a></li>
+<li><a href="/wiki/JSON" title="JSON">JSON</a></li>
+<li><a href="/wiki/JavaScript_Style_Sheets" title="JavaScript Style Sheets">JSSS</a></li>
+<li><a href="/wiki/Sputnik_(JavaScript_conformance_test)" title="Sputnik (JavaScript conformance test)">Sputnik</a></li>
+<li><a href="/wiki/Browser_speed_test#SunSpider" title="Browser speed test">SunSpider</a></li>
+<li><a href="/wiki/Asynchronous_module_definition" title="Asynchronous module definition">Asynchronous module definition</a></li>
+<li><a href="/wiki/CommonJS" title="CommonJS">CommonJS</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" colspan="2">
+<div>
+<dl>
+<dt><img alt="List-Class article" src="//upload.wikimedia.org/wikipedia/en/thumb/d/db/Symbol_list_class.svg/16px-Symbol_list_class.svg.png" title="List-Class article" width="16" height="16" srcset="//upload.wikimedia.org/wikipedia/en/thumb/d/db/Symbol_list_class.svg/23px-Symbol_list_class.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/d/db/Symbol_list_class.svg/31px-Symbol_list_class.svg.png 2x" data-file-width="180" data-file-height="185" /> Lists</dt>
+<dd><a href="/wiki/List_of_JavaScript_libraries" title="List of JavaScript libraries">JavaScript libraries</a></dd>
+<dd><a href="/wiki/List_of_Ajax_frameworks#JavaScript" title="List of Ajax frameworks">Ajax frameworks</a></dd>
+<dt><img alt="List-Class article" src="//upload.wikimedia.org/wikipedia/en/thumb/d/db/Symbol_list_class.svg/16px-Symbol_list_class.svg.png" title="List-Class article" width="16" height="16" srcset="//upload.wikimedia.org/wikipedia/en/thumb/d/db/Symbol_list_class.svg/23px-Symbol_list_class.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/d/db/Symbol_list_class.svg/31px-Symbol_list_class.svg.png 2x" data-file-width="180" data-file-height="185" /> Comparisons</dt>
+<dd><a href="/wiki/Comparison_of_JavaScript_frameworks" title="Comparison of JavaScript frameworks">JavaScript frameworks</a></dd>
+<dd><a href="/wiki/Comparison_of_server-side_JavaScript_solutions" title="Comparison of server-side JavaScript solutions">server-side JavaScript</a></dd>
+</dl>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div role="navigation" class="navbox" aria-labelledby="Standards_of_Ecma_International" style="padding:3px">
+<table class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:Ecma_International_Standards" title="Template:Ecma International Standards"><abbr title="View this template" style=";;background:none transparent;border:none;">v</abbr></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:Ecma_International_Standards" title="Template talk:Ecma International Standards"><abbr title="Discuss this template" style=";;background:none transparent;border:none;">t</abbr></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:Ecma_International_Standards&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;">e</abbr></a></li>
+</ul>
+</div>
+<div id="Standards_of_Ecma_International" style="font-size:114%">Standards of <a href="/wiki/Ecma_International" title="Ecma International">Ecma International</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Application Interfaces</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/ANSI_escape_code" title="ANSI escape code">ANSI escape code</a></li>
+<li><a href="/wiki/Common_Language_Infrastructure" title="Common Language Infrastructure">Common Language Infrastructure</a></li>
+<li><a href="/wiki/Office_Open_XML" title="Office Open XML">Office Open XML</a></li>
+<li><a href="/wiki/Open_XML_Paper_Specification" title="Open XML Paper Specification">OpenXPS</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">File Systems (Tape)</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Advanced_Intelligent_Tape" title="Advanced Intelligent Tape">Advanced Intelligent Tape</a></li>
+<li><a href="/wiki/Digital_Data_Storage" title="Digital Data Storage">DDS</a></li>
+<li><a href="/wiki/Digital_Linear_Tape" title="Digital Linear Tape">DLT</a></li>
+<li><a href="/wiki/Digital_Linear_Tape" title="Digital Linear Tape">Super DLT</a></li>
+<li><a href="/wiki/Holographic_Versatile_Disc" title="Holographic Versatile Disc">Holographic Versatile Disc</a></li>
+<li><a href="/wiki/Linear_Tape-Open" title="Linear Tape-Open">Linear Tape-Open</a> (Ultrium-1)</li>
+<li><a href="/wiki/VXA" title="VXA">VXA</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">File Systems (Disk)</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/CD-ROM" title="CD-ROM">CD-ROM</a></li>
+<li><a href="/wiki/ISO_9660" title="ISO 9660">CD File System</a> (CDFS)</li>
+<li><a href="/wiki/File_Allocation_Table" title="File Allocation Table">FAT</a>
+<ul>
+<li><a href="/wiki/FAT12" class="mw-redirect" title="FAT12">FAT12</a></li>
+<li><a href="/wiki/FAT16" class="mw-redirect" title="FAT16">FAT16</a></li>
+<li><a href="/wiki/FAT16B" class="mw-redirect" title="FAT16B">FAT16B</a></li>
+</ul>
+</li>
+<li><a href="/wiki/Floppy_disk" title="Floppy disk">FD</a></li>
+<li><a href="/wiki/Universal_Disk_Format" title="Universal Disk Format">UDF</a></li>
+<li><a href="/wiki/Ultra_Density_Optical" title="Ultra Density Optical">Ultra Density Optical</a></li>
+<li><a href="/wiki/Universal_Media_Disc" title="Universal Media Disc">Universal Media Disc</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Graphics</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Universal_3D" title="Universal 3D">Universal 3D</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Programming Languages</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/C%2B%2B/CLI" title="C++/CLI">C++/CLI</a></li>
+<li><a href="/wiki/C_Sharp_(programming_language)" title="C Sharp (programming language)">C#</a></li>
+<li><a href="/wiki/Eiffel_(programming_language)" title="Eiffel (programming language)">Eiffel</a></li>
+<li><a href="/wiki/JavaScript" title="JavaScript">JavaScript</a> (<a href="/wiki/ECMAScript_for_XML" title="ECMAScript for XML">E4X</a>, <strong class="selflink">ECMAScript</strong>)</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Radio Link Interfaces</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Near_field_communication" title="Near field communication">NFC</a></li>
+<li><a href="/wiki/Ultra-wideband" title="Ultra-wideband">UWB</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Other</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/ISO/IEC_2022" title="ISO/IEC 2022">ECMA-35</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" colspan="2">
+<div><a href="/wiki/List_of_Ecma_standards" title="List of Ecma standards">List of Ecma standards</a> (1961 - Present)</div>
+</td>
+</tr>
+</table>
+</div>
+<div role="navigation" class="navbox" aria-labelledby="ISO_standards_by_standard_number" style="padding:3px">
+<table class="nowraplinks hlist collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:ISO_standards" title="Template:ISO standards"><abbr title="View this template" style=";;background:none transparent;border:none;">v</abbr></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:ISO_standards" title="Template talk:ISO standards"><abbr title="Discuss this template" style=";;background:none transparent;border:none;">t</abbr></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:ISO_standards&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;">e</abbr></a></li>
+</ul>
+</div>
+<div id="ISO_standards_by_standard_number" style="font-size:114%"><a href="/wiki/International_Organization_for_Standardization" title="International Organization for Standardization">ISO</a> standards <span style="font-weight:normal;"><span style="font-size:90%;">by standard number</span></span></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" colspan="2">
+<div>List of <a href="/wiki/List_of_International_Organization_for_Standardization_standards" title="List of International Organization for Standardization standards">ISO standards</a>&#160;/ <a href="/wiki/List_of_ISO_romanizations" title="List of ISO romanizations">ISO romanizations</a>&#160;/ <a href="/wiki/List_of_IEC_standards" title="List of IEC standards">IEC standards</a></div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">1–9999</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/ISO_1" title="ISO 1">1</a></li>
+<li><a href="/wiki/ISO_2" title="ISO 2">2</a></li>
+<li><a href="/wiki/Preferred_number" title="Preferred number">3</a></li>
+<li><a href="/wiki/ISO_4" title="ISO 4">4</a></li>
+<li><a href="/wiki/ISO_5" title="ISO 5">5</a></li>
+<li><a href="/wiki/ISO_6" class="mw-redirect" title="ISO 6">6</a></li>
+<li><a href="/wiki/ISO_7" class="mw-redirect" title="ISO 7">7</a></li>
+<li><a href="/wiki/ISO_9" title="ISO 9">9</a></li>
+<li><a href="/wiki/A440_(pitch_standard)" title="A440 (pitch standard)">16</a></li>
+<li><a href="/wiki/ISO_31" title="ISO 31">31</a>
+<ul>
+<li><a href="/wiki/ISO_31-0" title="ISO 31-0">-0</a></li>
+<li><a href="/wiki/ISO_31-1" title="ISO 31-1">-1</a></li>
+<li><a href="/wiki/ISO_31-2" title="ISO 31-2">-2</a></li>
+<li><a href="/wiki/ISO_31-3" title="ISO 31-3">-3</a></li>
+<li><a href="/wiki/ISO_31-4" title="ISO 31-4">-4</a></li>
+<li><a href="/wiki/ISO_31-5" title="ISO 31-5">-5</a></li>
+<li><a href="/wiki/ISO_31-6" title="ISO 31-6">-6</a></li>
+<li><a href="/wiki/ISO_31-7" title="ISO 31-7">-7</a></li>
+<li><a href="/wiki/ISO_31-8" title="ISO 31-8">-8</a></li>
+<li><a href="/wiki/ISO_31-9" title="ISO 31-9">-9</a></li>
+<li><a href="/wiki/ISO_31-10" title="ISO 31-10">-10</a></li>
+<li><a href="/wiki/ISO_31-11" title="ISO 31-11">-11</a></li>
+<li><a href="/wiki/ISO_31-12" title="ISO 31-12">-12</a></li>
+<li><a href="/wiki/ISO_31-13" title="ISO 31-13">-13</a></li>
+</ul>
+</li>
+<li><a href="/wiki/ISO_128" title="ISO 128">128</a></li>
+<li><a href="/wiki/ISO_216" title="ISO 216">216</a></li>
+<li><a href="/wiki/ISO_217" title="ISO 217">217</a></li>
+<li><a href="/wiki/ISO_226" class="mw-redirect" title="ISO 226">226</a></li>
+<li><a href="/wiki/British_standard_pipe_thread" class="mw-redirect" title="British standard pipe thread">228</a></li>
+<li><a href="/wiki/ISO_233" title="ISO 233">233</a></li>
+<li><a href="/wiki/ISO_259" title="ISO 259">259</a></li>
+<li><a href="/wiki/Envelope" title="Envelope">269</a></li>
+<li><a href="/wiki/Kappa_number" title="Kappa number">302</a></li>
+<li><a href="/wiki/Vicat_softening_point" title="Vicat softening point">306</a></li>
+<li><a href="/wiki/ISO_428" title="ISO 428">428</a></li>
+<li><a href="/wiki/ISO_518" class="mw-redirect" title="ISO 518">518</a></li>
+<li><a href="/wiki/ISO_519" class="mw-redirect" title="ISO 519">519</a></li>
+<li><a href="/wiki/ISO_639" title="ISO 639">639</a>
+<ul>
+<li><a href="/wiki/ISO_639-1" title="ISO 639-1">-1</a></li>
+<li><a href="/wiki/ISO_639-2" title="ISO 639-2">-2</a></li>
+<li><a href="/wiki/ISO_639-3" title="ISO 639-3">-3</a></li>
+<li><a href="/wiki/ISO_639-5" title="ISO 639-5">-5</a></li>
+<li><a href="/wiki/ISO_639-6" title="ISO 639-6">-6</a></li>
+</ul>
+</li>
+<li><a href="/wiki/ISO/IEC_646" title="ISO/IEC 646">646</a></li>
+<li><a href="/wiki/ISO_690" title="ISO 690">690</a></li>
+<li><a href="/wiki/ISO_732" title="ISO 732">732</a></li>
+<li><a href="/wiki/Antimagnetic_watch" title="Antimagnetic watch">764</a></li>
+<li><a href="/wiki/ISO_843" title="ISO 843">843</a></li>
+<li><a href="/wiki/ISO_898" title="ISO 898">898</a></li>
+<li><a href="/wiki/ISO_965" title="ISO 965">965</a></li>
+<li><a href="/wiki/ISO_1000" title="ISO 1000">1000</a></li>
+<li><a href="/wiki/Magnetic_ink_character_recognition" title="Magnetic ink character recognition">1004</a></li>
+<li><a href="/wiki/135_film" title="135 film">1007</a></li>
+<li><a href="/wiki/OCR-A_font" class="mw-redirect" title="OCR-A font">1073-1</a></li>
+<li><a href="/wiki/ISO_1413" class="mw-redirect" title="ISO 1413">1413</a></li>
+<li><a href="/wiki/ALGOL_60" title="ALGOL 60">1538</a></li>
+<li><a href="/wiki/ISO_1745" title="ISO 1745">1745</a></li>
+<li><a href="/wiki/ISO_1989" class="mw-redirect" title="ISO 1989">1989</a></li>
+<li><a href="/wiki/ISO_2014" title="ISO 2014">2014</a></li>
+<li><a href="/wiki/ISO_2015" title="ISO 2015">2015</a></li>
+<li><a href="/wiki/ISO/IEC_2022" title="ISO/IEC 2022">2022</a></li>
+<li><a href="/wiki/ISO_2047" title="ISO 2047">2047</a></li>
+<li><a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">2108</a></li>
+<li><a href="/wiki/ISO_2145" title="ISO 2145">2145</a></li>
+<li><a href="/wiki/ISO_2146" title="ISO 2146">2146</a></li>
+<li><a href="/wiki/ISO_2240" class="mw-redirect" title="ISO 2240">2240</a></li>
+<li><a href="/wiki/Water_Resistant_mark" title="Water Resistant mark">2281</a></li>
+<li><a href="/wiki/ISO_2709" title="ISO 2709">2709</a></li>
+<li><a href="/wiki/ISO_2711" title="ISO 2711">2711</a></li>
+<li><a href="/wiki/ISO_2788" title="ISO 2788">2788</a></li>
+<li><a href="/wiki/ISO_2852" title="ISO 2852">2852</a></li>
+<li><a href="/wiki/126_film" title="126 film">3029</a></li>
+<li><a href="/wiki/ISO_3103" title="ISO 3103">3103</a></li>
+<li><a href="/wiki/ISO_3166" title="ISO 3166">3166</a>
+<ul>
+<li><a href="/wiki/ISO_3166-1" title="ISO 3166-1">-1</a></li>
+<li><a href="/wiki/ISO_3166-2" title="ISO 3166-2">-2</a></li>
+<li><a href="/wiki/ISO_3166-3" title="ISO 3166-3">-3</a></li>
+</ul>
+</li>
+<li><a href="/wiki/International_Standard_Serial_Number" title="International Standard Serial Number">3297</a></li>
+<li><a href="/wiki/ISO_3307" title="ISO 3307">3307</a></li>
+<li><a href="/wiki/Kunrei-shiki_romanization" title="Kunrei-shiki romanization">3602</a></li>
+<li><a href="/wiki/ISO_3864" title="ISO 3864">3864</a></li>
+<li><a href="/wiki/International_Standard_Recording_Code" title="International Standard Recording Code">3901</a></li>
+<li><a href="/wiki/ISO_3977" title="ISO 3977">3977</a></li>
+<li><a href="/wiki/ISO_4031" title="ISO 4031">4031</a></li>
+<li><a href="/wiki/ISO_4157" title="ISO 4157">4157</a></li>
+<li><a href="/wiki/ISO_4217" title="ISO 4217">4217</a></li>
+<li><a href="/wiki/ISO/IEC_4909" title="ISO/IEC 4909">4909</a></li>
+<li><a href="/wiki/ISO/IEC_5218" title="ISO/IEC 5218">5218</a></li>
+<li><a href="/wiki/ISO_5428" title="ISO 5428">5428</a></li>
+<li><a href="/wiki/ISO_5775" title="ISO 5775">5775</a></li>
+<li><a href="/wiki/ISO_5776" title="ISO 5776">5776</a></li>
+<li><a href="/wiki/ISO_5800" class="mw-redirect" title="ISO 5800">5800</a></li>
+<li><a href="/wiki/ISO_5964" title="ISO 5964">5964</a></li>
+<li><a href="/wiki/ISO_6166" class="mw-redirect" title="ISO 6166">6166</a></li>
+<li><a href="/wiki/ISO_6344" title="ISO 6344">6344</a></li>
+<li><a href="/wiki/ISO_6346" title="ISO 6346">6346</a></li>
+<li><a href="/wiki/ISO_6385" title="ISO 6385">6385</a></li>
+<li><a href="/wiki/Water_Resistant_mark" title="Water Resistant mark">6425</a></li>
+<li><a href="/wiki/ANSI_escape_code" title="ANSI escape code">6429</a></li>
+<li><a href="/wiki/ISO_6438" title="ISO 6438">6438</a></li>
+<li><a href="/wiki/ISO_6523" class="mw-redirect" title="ISO 6523">6523</a></li>
+<li><a href="/wiki/ISO_6709" title="ISO 6709">6709</a></li>
+<li><a href="/wiki/ISO_7001" title="ISO 7001">7001</a></li>
+<li><a href="/wiki/ISO_7002" title="ISO 7002">7002</a></li>
+<li><a href="/wiki/Pinyin" title="Pinyin">7098</a></li>
+<li><a href="/wiki/Pascal_(programming_language)" title="Pascal (programming language)">7185</a></li>
+<li><a href="/wiki/ISO_7200" title="ISO 7200">7200</a></li>
+<li><a href="/wiki/OSI_model" title="OSI model">7498</a></li>
+<li><a href="/wiki/ISO_7736" title="ISO 7736">7736</a></li>
+<li><a href="/wiki/ISO/IEC_7810" title="ISO/IEC 7810">7810</a></li>
+<li><a href="/wiki/ISO/IEC_7811" title="ISO/IEC 7811">7811</a></li>
+<li><a href="/wiki/ISO/IEC_7812" title="ISO/IEC 7812">7812</a></li>
+<li><a href="/wiki/ISO/IEC_7813" title="ISO/IEC 7813">7813</a></li>
+<li><a href="/wiki/ISO/IEC_7816" title="ISO/IEC 7816">7816</a></li>
+<li><a href="/wiki/ISO_8000" title="ISO 8000">8000</a></li>
+<li><a href="/wiki/ISO_8178" title="ISO 8178">8178</a></li>
+<li><a href="/wiki/Fuel_oil" title="Fuel oil">8217</a></li>
+<li><a href="/wiki/FTAM" title="FTAM">8571</a></li>
+<li><a href="/wiki/ISO_8583" title="ISO 8583">8583</a></li>
+<li><a href="/wiki/ISO_8601" title="ISO 8601">8601</a></li>
+<li><a href="/wiki/Computer_Graphics_Metafile" title="Computer Graphics Metafile">8632</a></li>
+<li><a href="/wiki/ISO/IEC_8652" title="ISO/IEC 8652">8652</a></li>
+<li><a href="/wiki/ISO_8691" title="ISO 8691">8691</a></li>
+<li><a href="/wiki/Language_Of_Temporal_Ordering_Specification" title="Language Of Temporal Ordering Specification">8807</a></li>
+<li><a href="/wiki/ISO/IEC_8820-5" title="ISO/IEC 8820-5">8820-5</a></li>
+<li><a href="/wiki/ISO/IEC_8859" title="ISO/IEC 8859">8859</a>
+<ul>
+<li><a href="/wiki/ISO/IEC_8859-1" title="ISO/IEC 8859-1">-1</a></li>
+<li><a href="/wiki/ISO/IEC_8859-2" title="ISO/IEC 8859-2">-2</a></li>
+<li><a href="/wiki/ISO/IEC_8859-3" title="ISO/IEC 8859-3">-3</a></li>
+<li><a href="/wiki/ISO/IEC_8859-4" title="ISO/IEC 8859-4">-4</a></li>
+<li><a href="/wiki/ISO/IEC_8859-5" title="ISO/IEC 8859-5">-5</a></li>
+<li><a href="/wiki/ISO/IEC_8859-6" title="ISO/IEC 8859-6">-6</a></li>
+<li><a href="/wiki/ISO/IEC_8859-7" title="ISO/IEC 8859-7">-7</a></li>
+<li><a href="/wiki/ISO/IEC_8859-8" title="ISO/IEC 8859-8">-8</a></li>
+<li><a href="/wiki/ISO-8859-8-I" title="ISO-8859-8-I">-8-I</a></li>
+<li><a href="/wiki/ISO/IEC_8859-9" title="ISO/IEC 8859-9">-9</a></li>
+<li><a href="/wiki/ISO/IEC_8859-10" title="ISO/IEC 8859-10">-10</a></li>
+<li><a href="/wiki/ISO/IEC_8859-11" title="ISO/IEC 8859-11">-11</a></li>
+<li><a href="/wiki/ISO/IEC_8859-12" title="ISO/IEC 8859-12">-12</a></li>
+<li><a href="/wiki/ISO/IEC_8859-13" title="ISO/IEC 8859-13">-13</a></li>
+<li><a href="/wiki/ISO/IEC_8859-14" title="ISO/IEC 8859-14">-14</a></li>
+<li><a href="/wiki/ISO/IEC_8859-15" title="ISO/IEC 8859-15">-15</a></li>
+<li><a href="/wiki/ISO/IEC_8859-16" title="ISO/IEC 8859-16">-16</a></li>
+</ul>
+</li>
+<li><a href="/wiki/Standard_Generalized_Markup_Language" title="Standard Generalized Markup Language">8879</a></li>
+<li><a href="/wiki/ISO_9000" title="ISO 9000">9000/9001</a></li>
+<li><a href="/wiki/SQL" title="SQL">9075</a></li>
+<li><a href="/wiki/ISO/IEC_9126" title="ISO/IEC 9126">9126</a></li>
+<li><a href="/wiki/File_Allocation_Table" title="File Allocation Table">9293</a></li>
+<li><a href="/wiki/ISO_9241" title="ISO 9241">9241</a></li>
+<li><a href="/wiki/ISO_9362" title="ISO 9362">9362</a></li>
+<li><a href="/wiki/Shoe_size" title="Shoe size">9407</a></li>
+<li><a href="/wiki/Manufacturing_Message_Specification" title="Manufacturing Message Specification">9506</a></li>
+<li><a href="/wiki/ISO_9529" title="ISO 9529">9529</a></li>
+<li><a href="/wiki/ISO_9564" title="ISO 9564">9564</a></li>
+<li><a href="/wiki/X.500" title="X.500">9594</a></li>
+<li><a href="/wiki/ISO_9660" title="ISO 9660">9660</a></li>
+<li><a href="/wiki/ISO_9897" title="ISO 9897">9897</a></li>
+<li><a href="/wiki/C_(programming_language)" title="C (programming language)">9899</a></li>
+<li><a href="/wiki/POSIX" title="POSIX">9945</a></li>
+<li><a href="/wiki/ISO_9984" class="mw-redirect" title="ISO 9984">9984</a></li>
+<li><a href="/wiki/ISO_9985" class="mw-redirect" title="ISO 9985">9985</a></li>
+<li><a href="/wiki/ISO/IEC_9995" title="ISO/IEC 9995">9995</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">10000–19999</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/ISO_10005" class="mw-redirect" title="ISO 10005">10005</a></li>
+<li><a href="/wiki/ISO_10006" title="ISO 10006">10006</a></li>
+<li><a href="/wiki/ISO_10007" title="ISO 10007">10007</a></li>
+<li><a href="/wiki/ISO/IEC_10116" title="ISO/IEC 10116">10116</a></li>
+<li><a href="/wiki/Whirlpool_(cryptography)" title="Whirlpool (cryptography)">10118-3</a></li>
+<li><a href="/wiki/ISO_10160" title="ISO 10160">10160</a></li>
+<li><a href="/wiki/ISO_10161" title="ISO 10161">10161</a></li>
+<li><a href="/wiki/Guidelines_for_the_Definition_of_Managed_Objects" title="Guidelines for the Definition of Managed Objects">10165</a></li>
+<li><a href="/wiki/Document_Style_Semantics_and_Specification_Language" title="Document Style Semantics and Specification Language">10179</a></li>
+<li><a href="/wiki/ISO_10206" class="mw-redirect" title="ISO 10206">10206</a></li>
+<li><a href="/wiki/ISO_10218" title="ISO 10218">10218</a></li>
+<li><a href="/wiki/ISO_10303" title="ISO 10303">10303</a>
+<ul>
+<li><a href="/wiki/EXPRESS_(data_modeling_language)" title="EXPRESS (data modeling language)">-11</a></li>
+<li><a href="/wiki/ISO_10303-21" title="ISO 10303-21">-21</a></li>
+<li><a href="/wiki/ISO_10303-22" title="ISO 10303-22">-22</a></li>
+<li><a href="/wiki/ISO_10303-28" title="ISO 10303-28">-28</a></li>
+<li><a href="/wiki/STEP-NC" title="STEP-NC">-238</a></li>
+</ul>
+</li>
+<li><a href="/wiki/ISO_10383" class="mw-redirect" title="ISO 10383">10383</a></li>
+<li><a href="/wiki/ISO_10487" class="mw-redirect" title="ISO 10487">10487</a></li>
+<li><a href="/wiki/ArmSCII" title="ArmSCII">10585</a></li>
+<li><a href="/wiki/IS-IS" title="IS-IS">10589</a></li>
+<li><a href="/wiki/Universal_Character_Set" class="mw-redirect" title="Universal Character Set">10646</a></li>
+<li><a href="/wiki/Torx" title="Torx">10664</a></li>
+<li><a href="/wiki/RM-ODP" title="RM-ODP">10746</a></li>
+<li><a href="/wiki/Multibus" title="Multibus">10861</a></li>
+<li><a href="/wiki/International_Standard_Music_Number" title="International Standard Music Number">10957</a></li>
+<li><a href="/wiki/ISO_10962" title="ISO 10962">10962</a></li>
+<li><a href="/wiki/ISO/IEC_10967" title="ISO/IEC 10967">10967</a></li>
+<li><a href="/wiki/ISO/IEEE_11073" title="ISO/IEEE 11073">11073</a></li>
+<li><a href="/wiki/ISO_11170" title="ISO 11170">11170</a></li>
+<li><a href="/wiki/ISO/IEC_11179" title="ISO/IEC 11179">11179</a></li>
+<li><a href="/wiki/ISO/IEC_11404" title="ISO/IEC 11404">11404</a></li>
+<li><a href="/wiki/JBIG" title="JBIG">11544</a></li>
+<li><a href="/wiki/ISO_11783" title="ISO 11783">11783</a></li>
+<li><a href="/wiki/ISO_11784_%26_11785" title="ISO 11784 &amp; 11785">11784</a></li>
+<li><a href="/wiki/ISO_11784_%26_11785" title="ISO 11784 &amp; 11785">11785</a></li>
+<li><a href="/wiki/ISO/IEC_11801" title="ISO/IEC 11801">11801</a></li>
+<li><a href="/wiki/ISO_11898" class="mw-redirect" title="ISO 11898">11898</a></li>
+<li><a href="/wiki/ISO_11940" title="ISO 11940">11940</a> (<a href="/wiki/ISO_11940-2" title="ISO 11940-2">-2</a>)</li>
+<li><a href="/wiki/ISO/TR_11941" title="ISO/TR 11941">11941</a></li>
+<li><a href="/wiki/ISO/TR_11941" title="ISO/TR 11941">11941 (TR)</a></li>
+<li><a href="/wiki/ISO_11992" title="ISO 11992">11992</a></li>
+<li><a href="/wiki/ISO_12006" title="ISO 12006">12006</a></li>
+<li><a href="/wiki/ISO/IEC_TR_12182" title="ISO/IEC TR 12182">12182</a></li>
+<li><a href="/wiki/ISO/IEC_12207" title="ISO/IEC 12207">12207</a></li>
+<li><a href="/wiki/Tag_Image_File_Format_/_Electronic_Photography" class="mw-redirect" title="Tag Image File Format / Electronic Photography">12234-2</a></li>
+<li><a href="/wiki/Prolog" title="Prolog">13211</a>
+<ul>
+<li><a href="/wiki/Prolog" title="Prolog">-1</a></li>
+<li><a href="/wiki/Prolog" title="Prolog">-2</a></li>
+</ul>
+</li>
+<li><a href="/wiki/Isofix" title="Isofix">13216</a></li>
+<li><a href="/wiki/Topic_Maps" title="Topic Maps">13250</a></li>
+<li><a href="/wiki/ISO_13399" title="ISO 13399">13399</a></li>
+<li><a href="/wiki/ISO_13406-2" title="ISO 13406-2">13406-2</a></li>
+<li><a href="/wiki/110_film" title="110 film">13450</a></li>
+<li><a href="/wiki/ISO_13485" title="ISO 13485">13485</a></li>
+<li><a href="/wiki/ISO_13490" title="ISO 13490">13490</a></li>
+<li><a href="/wiki/ISO_13567" title="ISO 13567">13567</a></li>
+<li><a href="/wiki/Z_notation" title="Z notation">13568</a></li>
+<li><a href="/wiki/ISO_13584" title="ISO 13584">13584</a></li>
+<li><a href="/wiki/International_Bank_Account_Number" title="International Bank Account Number">13616</a></li>
+<li><a href="/wiki/ISO_14000" title="ISO 14000">14000</a></li>
+<li><a href="/wiki/ISO_14031" title="ISO 14031">14031</a></li>
+<li><a href="/wiki/ISO_14224" title="ISO 14224">14224</a></li>
+<li><a href="/wiki/PDF/UA" title="PDF/UA">14289</a></li>
+<li><a href="/wiki/Horsepower" title="Horsepower">14396</a></li>
+<li><a href="/wiki/ISO/IEC_14443" title="ISO/IEC 14443">14443</a></li>
+<li><a href="/wiki/MPEG-4" title="MPEG-4">14496</a>
+<ul>
+<li><a href="/wiki/MPEG-4_Part_2" title="MPEG-4 Part 2">-2</a></li>
+<li><a href="/wiki/MPEG-4_Part_3" title="MPEG-4 Part 3">-3</a></li>
+<li><a href="/wiki/Delivery_Multimedia_Integration_Framework" title="Delivery Multimedia Integration Framework">-6</a></li>
+<li><a href="/wiki/H.264/MPEG-4_AVC" title="H.264/MPEG-4 AVC">-10</a></li>
+<li><a href="/wiki/MPEG-4_Part_11" title="MPEG-4 Part 11">-11</a></li>
+<li><a href="/wiki/MPEG-4_Part_12" class="mw-redirect" title="MPEG-4 Part 12">-12</a></li>
+<li><a href="/wiki/MPEG-4_Part_14" title="MPEG-4 Part 14">-14</a></li>
+<li><a href="/wiki/MPEG-4_Part_14" title="MPEG-4 Part 14">-17</a></li>
+<li><a href="/wiki/MPEG-4_Part_14" title="MPEG-4 Part 14">-20</a></li>
+</ul>
+</li>
+<li><a href="/wiki/ISO_14644" title="ISO 14644">14644</a></li>
+<li><a href="/wiki/STEP-NC" title="STEP-NC">14649</a></li>
+<li><a href="/wiki/ISO_14651" title="ISO 14651">14651</a></li>
+<li><a href="/wiki/ISO_14698" title="ISO 14698">14698</a></li>
+<li><a href="/wiki/ISO_14750" title="ISO 14750">14750</a></li>
+<li><a href="/wiki/Software_maintenance" title="Software maintenance">14764</a></li>
+<li><a href="/wiki/C%2B%2B" title="C++">14882</a></li>
+<li><a href="/wiki/ISO_14971" title="ISO 14971">14971</a></li>
+<li><a href="/wiki/ISO_15022" title="ISO 15022">15022</a></li>
+<li><a href="/wiki/ISO_15189" title="ISO 15189">15189</a></li>
+<li><a href="/wiki/ISO/IEC_15288" title="ISO/IEC 15288">15288</a></li>
+<li><a href="/wiki/Ada_Semantic_Interface_Specification" title="Ada Semantic Interface Specification">15291</a></li>
+<li><a href="/wiki/ISO_15292" title="ISO 15292">15292</a></li>
+<li><a href="/wiki/ISO_15398" title="ISO 15398">15398</a></li>
+<li><a href="/wiki/Common_Criteria" title="Common Criteria">15408</a></li>
+<li><a href="/wiki/JPEG_2000" title="JPEG 2000">15444</a>
+<ul>
+<li><a href="/wiki/Motion_JPEG_2000" title="Motion JPEG 2000">-3</a></li>
+</ul>
+</li>
+<li><a href="/wiki/HTML" title="HTML">15445</a></li>
+<li><a href="/wiki/PDF417" title="PDF417">15438</a></li>
+<li><a href="/wiki/ISO/IEC_15504" title="ISO/IEC 15504">15504</a></li>
+<li><a href="/wiki/International_Standard_Identifier_for_Libraries_and_Related_Organizations" title="International Standard Identifier for Libraries and Related Organizations">15511</a></li>
+<li><a href="/wiki/ISO_15686" title="ISO 15686">15686</a></li>
+<li><a href="/wiki/ISO/IEC_15693" title="ISO/IEC 15693">15693</a></li>
+<li><a href="/wiki/International_Standard_Audiovisual_Number" title="International Standard Audiovisual Number">15706</a>
+<ul>
+<li><a href="/wiki/ISO_15706-2" title="ISO 15706-2">-2</a></li>
+</ul>
+</li>
+<li><a href="/wiki/International_Standard_Musical_Work_Code" title="International Standard Musical Work Code">15707</a></li>
+<li><a href="/wiki/ISO_15897" title="ISO 15897">15897</a></li>
+<li><a href="/wiki/ISO_15919" title="ISO 15919">15919</a></li>
+<li><a href="/wiki/ISO_15924" title="ISO 15924">15924</a></li>
+<li><a href="/wiki/ISO_15926" title="ISO 15926">15926</a></li>
+<li><a href="/wiki/ISO_15926_WIP" title="ISO 15926 WIP">15926 WIP</a></li>
+<li><a href="/wiki/PDF/X" title="PDF/X">15930</a></li>
+<li><a href="/wiki/MaxiCode" title="MaxiCode">16023</a></li>
+<li><strong class="selflink">16262</strong></li>
+<li><a href="/wiki/PDF/VT" title="PDF/VT">16612-2</a></li>
+<li><a href="/wiki/ISO_16750" title="ISO 16750">16750</a></li>
+<li><a href="/wiki/ISO/TS_16949" title="ISO/TS 16949">16949 (TS)</a></li>
+<li><a href="/wiki/ISO/IEC_17024" title="ISO/IEC 17024">17024</a></li>
+<li><a href="/wiki/ISO/IEC_17025" title="ISO/IEC 17025">17025</a></li>
+<li><a href="/wiki/Open_Virtualization_Format" title="Open Virtualization Format">17203</a></li>
+<li><a href="/wiki/SDMX" title="SDMX">17369</a></li>
+<li><a href="/wiki/Legal_Entity_Identifier" title="Legal Entity Identifier">17442</a></li>
+<li><a href="/wiki/ISO/IEC_27002" title="ISO/IEC 27002">17799</a></li>
+<li><a href="/wiki/ISO/IEC_18000" title="ISO/IEC 18000">18000</a></li>
+<li><a href="/wiki/QR_code" title="QR code">18004</a></li>
+<li><a href="/wiki/ISO/IEC_18014" title="ISO/IEC 18014">18014</a></li>
+<li><a href="/wiki/ISO_18245" title="ISO 18245">18245</a></li>
+<li><a href="/wiki/Process_Specification_Language" title="Process Specification Language">18629</a></li>
+<li><a href="/wiki/Photographic_Activity_Test" title="Photographic Activity Test">18916</a></li>
+<li><a href="/wiki/PDF/A" title="PDF/A">19005</a></li>
+<li><a href="/wiki/ISO_19011" title="ISO 19011">19011</a></li>
+<li><a href="/wiki/ISO_19092-1" title="ISO 19092-1">19092 (-1</a></li>
+<li><a href="/wiki/ISO_19092-2" title="ISO 19092-2">-2)</a></li>
+<li><a href="/wiki/ISO_19114" title="ISO 19114">19114</a></li>
+<li><a href="/wiki/ISO_19115" class="mw-redirect" title="ISO 19115">19115</a></li>
+<li><a href="/wiki/Simple_feature_access" class="mw-redirect" title="Simple feature access">19125</a></li>
+<li><a href="/wiki/ISO_19136" class="mw-redirect" title="ISO 19136">19136</a></li>
+<li><a href="/wiki/ISO_19439" title="ISO 19439">19439</a></li>
+<li><a href="/wiki/Common_Object_Request_Broker_Architecture" title="Common Object Request Broker Architecture">19500</a></li>
+<li><a href="/wiki/Unified_Modeling_Language" title="Unified Modeling Language">19501</a></li>
+<li><a href="/wiki/Meta-Object_Facility" title="Meta-Object Facility">19502</a></li>
+<li><a href="/wiki/XML_Metadata_Interchange" title="XML Metadata Interchange">19503</a></li>
+<li><a href="/wiki/Unified_Modeling_Language" title="Unified Modeling Language">19505</a></li>
+<li><a href="/wiki/Knowledge_Discovery_Metamodel" title="Knowledge Discovery Metamodel">19506</a></li>
+<li><a href="/wiki/Object_Constraint_Language" title="Object Constraint Language">19507</a></li>
+<li><a href="/wiki/Meta-Object_Facility" title="Meta-Object Facility">19508</a></li>
+<li><a href="/wiki/XML_Metadata_Interchange" title="XML Metadata Interchange">19509</a></li>
+<li><a href="/wiki/Business_Process_Model_and_Notation" title="Business Process Model and Notation">19510</a></li>
+<li><a href="/wiki/ISO_19600:2014" title="ISO 19600:2014">19600:2014</a></li>
+<li><a href="/wiki/ISO/IEC_19752" title="ISO/IEC 19752">19752</a></li>
+<li><a href="/wiki/RELAX_NG" title="RELAX NG">19757</a></li>
+<li><a href="/wiki/ISO/IEC_19770" title="ISO/IEC 19770">19770</a></li>
+<li><a href="/wiki/X3D" title="X3D">19775-1</a></li>
+<li><a href="/wiki/ISO/IEC_19794-5" title="ISO/IEC 19794-5">19794-5</a></li>
+<li><a href="/wiki/Cloud_Infrastructure_Management_Interface" title="Cloud Infrastructure Management Interface">19831</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">20000+</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/ISO/IEC_20000" title="ISO/IEC 20000">20000</a></li>
+<li><a href="/wiki/ISO_20022" title="ISO 20022">20022</a></li>
+<li><a href="/wiki/ISO_20121" title="ISO 20121">20121</a></li>
+<li><a href="/wiki/MPEG-21" title="MPEG-21">21000</a></li>
+<li><a href="/wiki/International_Standard_Text_Code" title="International Standard Text Code">21047</a></li>
+<li><a href="/wiki/ISO_21500" title="ISO 21500">21500</a></li>
+<li><a href="/wiki/ISO/IEC_21827" title="ISO/IEC 21827">21827:2002</a></li>
+<li><a href="/wiki/ISO_22000" title="ISO 22000">22000</a></li>
+<li><a href="/wiki/C_Sharp_(programming_language)" title="C Sharp (programming language)">23270</a></li>
+<li><a href="/wiki/Common_Language_Infrastructure" title="Common Language Infrastructure">23271</a></li>
+<li><a href="/wiki/Linux_Standard_Base" title="Linux Standard Base">23360</a></li>
+<li><a href="/wiki/PDF/E" title="PDF/E">24517</a></li>
+<li><a href="/wiki/Lexical_Markup_Framework" title="Lexical Markup Framework">24613</a></li>
+<li><a href="/wiki/ISO-TimeML" title="ISO-TimeML">24617</a></li>
+<li><a href="/wiki/Common_Logic" title="Common Logic">24707</a></li>
+<li><a href="/wiki/ISO_25178" title="ISO 25178">25178</a></li>
+<li><a href="/wiki/ISO_25964" title="ISO 25964">25964</a></li>
+<li><a href="/wiki/ISO_26000" title="ISO 26000">26000</a></li>
+<li><a href="/wiki/OpenDocument" title="OpenDocument">26300</a></li>
+<li><a href="/wiki/Digital_object_identifier" title="Digital object identifier">26324</a></li>
+<li><a href="/wiki/ISO/IEC_27000-series" title="ISO/IEC 27000-series">27000 series</a></li>
+<li><a href="/wiki/ISO/IEC_27000" title="ISO/IEC 27000">27000</a></li>
+<li><a href="/wiki/ISO/IEC_27001:2005" title="ISO/IEC 27001:2005">27001:2005</a></li>
+<li><a href="/wiki/ISO/IEC_27001:2013" title="ISO/IEC 27001:2013">27001:2013</a></li>
+<li><a href="/wiki/ISO/IEC_27002" title="ISO/IEC 27002">27002</a></li>
+<li><a href="/wiki/ISO/IEC_27006" title="ISO/IEC 27006">27006</a></li>
+<li><a href="/wiki/International_Standard_Name_Identifier" title="International Standard Name Identifier">27729</a></li>
+<li><a href="/wiki/ISO/PAS_28000" title="ISO/PAS 28000">28000</a></li>
+<li><a href="/wiki/ISO_29110" title="ISO 29110">29110</a></li>
+<li><a href="/wiki/Requirements_engineering" title="Requirements engineering">29148</a></li>
+<li><a href="/wiki/JPEG_XR" title="JPEG XR">29199-2</a></li>
+<li><a href="/wiki/Office_Open_XML" title="Office Open XML">29500</a></li>
+<li><a href="/wiki/Ruby_(programming_language)" title="Ruby (programming language)">30170</a></li>
+<li><a href="/wiki/ISO_31000" title="ISO 31000">31000</a></li>
+<li><a href="/wiki/Portable_Document_Format" title="Portable Document Format">32000</a></li>
+<li><a href="/wiki/ISO/IEC_38500" title="ISO/IEC 38500">38500</a></li>
+<li><a href="/wiki/Web_Content_Accessibility_Guidelines" title="Web Content Accessibility Guidelines">40500</a></li>
+<li><a href="/wiki/ISO/IEC_42010" title="ISO/IEC 42010">42010</a></li>
+<li><a href="/wiki/ISO/IEC_80000" title="ISO/IEC 80000">80000</a>
+<ul>
+<li><a href="/wiki/ISO_80000-1" title="ISO 80000-1">-1</a></li>
+<li><a href="/wiki/ISO_80000-2" title="ISO 80000-2">-2</a></li>
+<li><a href="/wiki/ISO_80000-3" title="ISO 80000-3">-3</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" colspan="2">
+<div>
+<ul>
+<li><img alt="Category" src="//upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/16px-Folder_Hexagonal_Icon.svg.png" title="Category" width="16" height="14" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/24px-Folder_Hexagonal_Icon.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/32px-Folder_Hexagonal_Icon.svg.png 2x" data-file-width="36" data-file-height="31" /> <a href="/wiki/Category:ISO_standards" title="Category:ISO standards">Category</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1289
+Cached time: 20170131070751
+Cache expiry: 86400
+Dynamic content: true
+CPU time usage: 0.428 seconds
+Real time usage: 0.550 seconds
+Preprocessor visited node count: 4919/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 164207/2097152 bytes
+Template argument size: 5517/2097152 bytes
+Highest expansion depth: 21/40
+Expensive parser function count: 5/500
+Lua time usage: 0.174/10.000 seconds
+Lua memory usage: 5.88 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  425.583      1 -total
+ 38.70%  164.720      2 Template:Reflist
+ 23.58%  100.354     37 Template:Cite_web
+ 18.12%   77.131      2 Template:Infobox
+ 12.54%   53.362      1 Template:Infobox_programming_language
+  8.02%   34.142      1 Template:Infobox_file_format
+  7.71%   32.833      2 Template:Fix
+  7.13%   30.351      5 Template:Navbox
+  6.46%   27.482      1 Template:When
+  6.15%   26.165      1 Template:Cite_book
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:188515-0!*!0!!en!4!* and timestamp 20170131070751 and revision id 762887963
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=ECMAScript&amp;oldid=762887963">https://en.wikipedia.org/w/index.php?title=ECMAScript&amp;oldid=762887963</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:C_programming_language_family" title="Category:C programming language family">C programming language family</a></li><li><a href="/wiki/Category:Computer_standards" title="Category:Computer standards">Computer standards</a></li><li><a href="/wiki/Category:Dynamically_typed_programming_languages" title="Category:Dynamically typed programming languages">Dynamically typed programming languages</a></li><li><a href="/wiki/Category:Ecma_standards" title="Category:Ecma standards">Ecma standards</a></li><li><a href="/wiki/Category:JavaScript_dialect_engines" title="Category:JavaScript dialect engines">JavaScript dialect engines</a></li><li><a href="/wiki/Category:JavaScript_programming_language_family" title="Category:JavaScript programming language family">JavaScript programming language family</a></li><li><a href="/wiki/Category:Object-based_programming_languages" title="Category:Object-based programming languages">Object-based programming languages</a></li><li><a href="/wiki/Category:Programming_languages_with_an_ISO_standard" title="Category:Programming languages with an ISO standard">Programming languages with an ISO standard</a></li><li><a href="/wiki/Category:Prototype-based_programming_languages" title="Category:Prototype-based programming languages">Prototype-based programming languages</a></li><li><a href="/wiki/Category:Scripting_languages" title="Category:Scripting languages">Scripting languages</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Pages_using_deprecated_image_syntax" title="Category:Pages using deprecated image syntax">Pages using deprecated image syntax</a></li><li><a href="/wiki/Category:Vague_or_ambiguous_time_from_January_2017" title="Category:Vague or ambiguous time from January 2017">Vague or ambiguous time from January 2017</a></li><li><a href="/wiki/Category:All_articles_with_unsourced_statements" title="Category:All articles with unsourced statements">All articles with unsourced statements</a></li><li><a href="/wiki/Category:Articles_with_unsourced_statements_from_May_2012" title="Category:Articles with unsourced statements from May 2012">Articles with unsourced statements from May 2012</a></li><li><a href="/wiki/Category:Articles_containing_potentially_dated_statements_from_2013" title="Category:Articles containing potentially dated statements from 2013">Articles containing potentially dated statements from 2013</a></li><li><a href="/wiki/Category:All_articles_containing_potentially_dated_statements" title="Category:All articles containing potentially dated statements">All articles containing potentially dated statements</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=ECMAScript" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=ECMAScript" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/ECMAScript"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:ECMAScript"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/ECMAScript" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=ECMAScript&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=ECMAScript&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/ECMAScript" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/ECMAScript" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=ECMAScript&amp;oldid=762887963" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=ECMAScript&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q259138" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=ECMAScript&amp;id=762887963" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=ECMAScript">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=ECMAScript&amp;returnto=ECMAScript&amp;oldid=762887963&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=ECMAScript&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-bg"><a href="https://bg.wikipedia.org/wiki/ECMAScript" title="ECMAScript – Bulgarian" lang="bg" hreflang="bg" class="interlanguage-link-target">Български</a></li><li class="interlanguage-link interwiki-ca"><a href="https://ca.wikipedia.org/wiki/ECMAScript" title="ECMAScript – Catalan" lang="ca" hreflang="ca" class="interlanguage-link-target">Català</a></li><li class="interlanguage-link interwiki-cs"><a href="https://cs.wikipedia.org/wiki/ECMAScript" title="ECMAScript – Czech" lang="cs" hreflang="cs" class="interlanguage-link-target">Čeština</a></li><li class="interlanguage-link interwiki-da"><a href="https://da.wikipedia.org/wiki/ECMAScript" title="ECMAScript – Danish" lang="da" hreflang="da" class="interlanguage-link-target">Dansk</a></li><li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/ECMAScript" title="ECMAScript – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-et"><a href="https://et.wikipedia.org/wiki/ECMAScript" title="ECMAScript – Estonian" lang="et" hreflang="et" class="interlanguage-link-target">Eesti</a></li><li class="interlanguage-link interwiki-es"><a href="https://es.wikipedia.org/wiki/ECMAScript" title="ECMAScript – Spanish" lang="es" hreflang="es" class="interlanguage-link-target">Español</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/ECMAScript" title="ECMAScript – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-ko"><a href="https://ko.wikipedia.org/wiki/ECMA%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8" title="ECMA스크립트 – Korean" lang="ko" hreflang="ko" class="interlanguage-link-target">한국어</a></li><li class="interlanguage-link interwiki-is"><a href="https://is.wikipedia.org/wiki/ECMAScript" title="ECMAScript – Icelandic" lang="is" hreflang="is" class="interlanguage-link-target">Íslenska</a></li><li class="interlanguage-link interwiki-it"><a href="https://it.wikipedia.org/wiki/ECMAScript" title="ECMAScript – Italian" lang="it" hreflang="it" class="interlanguage-link-target">Italiano</a></li><li class="interlanguage-link interwiki-hu"><a href="https://hu.wikipedia.org/wiki/ECMAScript" title="ECMAScript – Hungarian" lang="hu" hreflang="hu" class="interlanguage-link-target">Magyar</a></li><li class="interlanguage-link interwiki-ms"><a href="https://ms.wikipedia.org/wiki/ECMAScript" title="ECMAScript – Malay" lang="ms" hreflang="ms" class="interlanguage-link-target">Bahasa Melayu</a></li><li class="interlanguage-link interwiki-nl"><a href="https://nl.wikipedia.org/wiki/ECMAScript" title="ECMAScript – Dutch" lang="nl" hreflang="nl" class="interlanguage-link-target">Nederlands</a></li><li class="interlanguage-link interwiki-ja"><a href="https://ja.wikipedia.org/wiki/ECMAScript" title="ECMAScript – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target">日本語</a></li><li class="interlanguage-link interwiki-no"><a href="https://no.wikipedia.org/wiki/ECMAScript" title="ECMAScript – Norwegian" lang="no" hreflang="no" class="interlanguage-link-target">Norsk bokmål</a></li><li class="interlanguage-link interwiki-pl"><a href="https://pl.wikipedia.org/wiki/ECMAScript" title="ECMAScript – Polish" lang="pl" hreflang="pl" class="interlanguage-link-target">Polski</a></li><li class="interlanguage-link interwiki-pt"><a href="https://pt.wikipedia.org/wiki/ECMAScript" title="ECMAScript – Portuguese" lang="pt" hreflang="pt" class="interlanguage-link-target">Português</a></li><li class="interlanguage-link interwiki-ru"><a href="https://ru.wikipedia.org/wiki/ECMAScript" title="ECMAScript – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li><li class="interlanguage-link interwiki-sv"><a href="https://sv.wikipedia.org/wiki/Ecmascript" title="Ecmascript – Swedish" lang="sv" hreflang="sv" class="interlanguage-link-target">Svenska</a></li><li class="interlanguage-link interwiki-th"><a href="https://th.wikipedia.org/wiki/%E0%B8%AD%E0%B8%B5%E0%B8%8B%E0%B8%B5%E0%B9%80%E0%B8%AD%E0%B9%87%E0%B8%A1%E0%B9%80%E0%B8%AD%E0%B8%AA%E0%B8%84%E0%B8%A3%E0%B8%B4%E0%B8%9B%E0%B8%95%E0%B9%8C" title="อีซีเอ็มเอสคริปต์ – Thai" lang="th" hreflang="th" class="interlanguage-link-target">ไทย</a></li><li class="interlanguage-link interwiki-tr"><a href="https://tr.wikipedia.org/wiki/ECMAScript" title="ECMAScript – Turkish" lang="tr" hreflang="tr" class="interlanguage-link-target">Türkçe</a></li><li class="interlanguage-link interwiki-uk"><a href="https://uk.wikipedia.org/wiki/ECMAScript" title="ECMAScript – Ukrainian" lang="uk" hreflang="uk" class="interlanguage-link-target">Українська</a></li><li class="interlanguage-link interwiki-yo"><a href="https://yo.wikipedia.org/wiki/ECMAScript" title="ECMAScript – Yoruba" lang="yo" hreflang="yo" class="interlanguage-link-target">Yorùbá</a></li><li class="interlanguage-link interwiki-zh"><a href="https://zh.wikipedia.org/wiki/ECMAScript" title="ECMAScript – Chinese" lang="zh" hreflang="zh" class="interlanguage-link-target">中文</a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q259138#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 31 January 2017, at 07:07.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=ECMAScript&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.428","walltime":"0.550","ppvisitednodes":{"value":4919,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":164207,"limit":2097152},"templateargumentsize":{"value":5517,"limit":2097152},"expansiondepth":{"value":21,"limit":40},"expensivefunctioncount":{"value":5,"limit":500},"entityaccesscount":{"value":1,"limit":400},"timingprofile":["100.00%  425.583      1 -total"," 38.70%  164.720      2 Template:Reflist"," 23.58%  100.354     37 Template:Cite_web"," 18.12%   77.131      2 Template:Infobox"," 12.54%   53.362      1 Template:Infobox_programming_language","  8.02%   34.142      1 Template:Infobox_file_format","  7.71%   32.833      2 Template:Fix","  7.13%   30.351      5 Template:Navbox","  6.46%   27.482      1 Template:When","  6.15%   26.165      1 Template:Cite_book"]},"scribunto":{"limitreport-timeusage":{"value":"0.174","limit":"10.000"},"limitreport-memusage":{"value":6169241,"limit":52428800}},"cachereport":{"origin":"mw1289","timestamp":"20170131070751","ttl":86400,"transientcontent":true}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":62,"wgHostname":"mw1244"});});</script>
+	</body>
+</html>

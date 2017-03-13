@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>ParaSail (programming language) - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"ParaSail_(programming_language)","wgTitle":"ParaSail (programming language)","wgCurRevisionId":753578947,"wgRevisionId":753578947,"wgArticleId":36619168,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Official website different in Wikidata and Wikipedia","Use dmy dates from August 2012","Pascal programming language family","Concurrent programming languages","Procedural programming languages","Systems programming languages","Cross-platform software","Programming languages created in 2009"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"ParaSail_(programming_language)","wgRelevantArticleId":36619168,"wgRequestId":"WJWNxwpAAEAAAedmw3cAAACX","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":true},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q7133637","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.cite.styles":"ready","ext.pygments":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.legacy.wikibits","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.pygments%2CwikimediaBadges%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.29.0-wmf.10"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/en/c/c1/Logo_for_ParaSail_Programming_Language.jpg"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/ParaSail_(programming_language)"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=ParaSail_(programming_language)&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=ParaSail_(programming_language)&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/ParaSail_(programming_language)"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ParaSail_programming_language rootpage-ParaSail_programming_language skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">ParaSail (programming language)</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div role="note" class="hatnote">For the recreational kiting activity, see <a href="/wiki/Parasailing" title="Parasailing">Parasailing</a>.</div>
+<table class="infobox vevent" style="width:22em">
+<caption class="summary">ParaSail</caption>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/File:Logo_for_ParaSail_Programming_Language.jpg" class="image"><img alt="Logo for ParaSail Programming Language.jpg" src="//upload.wikimedia.org/wikipedia/en/c/c1/Logo_for_ParaSail_Programming_Language.jpg" width="96" height="93" data-file-width="96" data-file-height="93" /></a>
+<div>Logo designed by Abouzar Abbasi</div>
+</td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Programming_paradigm" title="Programming paradigm">Paradigm</a></th>
+<td><a href="/wiki/Compiled_language" title="Compiled language">compiled</a>, <a href="/wiki/Concurrent_programming" class="mw-redirect" title="Concurrent programming">concurrent</a>, <a href="/wiki/Imperative_programming" title="Imperative programming">imperative</a>, <a href="/wiki/Structured_programming" title="Structured programming">structured</a>, <a href="/wiki/Object-oriented_programming" title="Object-oriented programming">object-oriented</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_design" title="Software design">Designed&#160;by</a></th>
+<td>S. Tucker Taft</td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_developer" title="Software developer">Developer</a></th>
+<td class="organiser">AdaCore</td>
+</tr>
+<tr>
+<th scope="row">First&#160;appeared</th>
+<td>2009<span class="noprint">; 8&#160;years ago</span><span style="display:none">&#160;(<span class="bday dtstart published updated">2009</span>)</span></td>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Software_release_life_cycle" title="Software release life cycle">Stable release</a></th>
+<td>
+<div style="margin:0px;">7.0 / 2&#160;November 2016<span class="noprint">; 3 months ago</span><span style="display:none">&#160;(<span class="bday dtstart published updated">2016-11-02</span>)</span></div>
+</td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Type_system" title="Type system">Typing discipline</a></th>
+<td><a href="/wiki/Strong_and_weak_typing" title="Strong and weak typing">strong</a>, <a href="/wiki/Type_system#Static_type_checking" title="Type system">static</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Computing_platform" title="Computing platform">Platform</a></th>
+<td><a href="/wiki/X86" title="X86">x86</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Operating_system" title="Operating system">OS</a></th>
+<td><a href="/wiki/Linux" title="Linux">Linux</a>, <a href="/wiki/OS_X" class="mw-redirect" title="OS X">OS X</a>, <a href="/wiki/Microsoft_Windows" title="Microsoft Windows">Windows</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_license" title="Software license">License</a></th>
+<td><a href="/wiki/GNU_General_Public_License" title="GNU General Public License">GPL v3</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Filename_extension" title="Filename extension">Filename extensions</a></th>
+<td>.psi .psl</td>
+</tr>
+<tr>
+<th scope="row">Website</th>
+<td><span class="url"><a rel="nofollow" class="external text" href="http://forge.open-do.org/plugins/moinmoin/parasail/">forge<wbr />.open-do<wbr />.org<wbr />/plugins<wbr />/moinmoin<wbr />/parasail<wbr />/</a></span></td>
+</tr>
+<tr>
+<th colspan="2" style="text-align:center;background-color: #eee;">Major <a href="/wiki/Programming_language_implementation" title="Programming language implementation">implementations</a></th>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center">psli, pslc</td>
+</tr>
+<tr>
+<th colspan="2" style="text-align:center;background-color: #eee;">Influenced by</th>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/Modula" title="Modula">Modula</a>, <a href="/wiki/Ada_(programming_language)" title="Ada (programming language)">Ada</a>, <a href="/wiki/Pascal_(programming_language)" title="Pascal (programming language)">Pascal</a>, <a href="/wiki/ML_(programming_language)" title="ML (programming language)">ML</a></td>
+</tr>
+</table>
+<p><b>Parallel Specification and Implementation Language</b> (<b>ParaSail</b>) is an <a href="/wiki/Object-oriented_programming" title="Object-oriented programming">object-oriented</a> <a href="/wiki/Parallel_computing#Parallel_programming_languages" title="Parallel computing">parallel programming language</a>. Its design and ongoing implementation is described in a blog<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">[1]</a></sup> and on its official website.<sup id="cite_ref-ParaWebsite_2-0" class="reference"><a href="#cite_note-ParaWebsite-2">[2]</a></sup></p>
+<p>ParaSail uses a <a href="/wiki/Pointer_(computer_programming)" title="Pointer (computer programming)">pointer</a>-free programming model, where <a href="/wiki/Object_(computer_science)" title="Object (computer science)">objects</a> can grow and shrink, and value semantics are used for assignment. It has no global <a href="/wiki/Garbage_collection_(computer_science)" title="Garbage collection (computer science)">garbage collected</a> heap. Instead, <a href="/wiki/Region-based_memory_management" title="Region-based memory management">region-based memory management</a> is used throughout. Types can be recursive, so long as the recursive components are declared <i>optional</i>. There are no global variables, no parameter aliasing, and all subexpressions of an expression can be evaluated in parallel. <a href="/wiki/Assertion_(software_development)" title="Assertion (software development)">Assertions</a>, <a href="/wiki/Precondition" title="Precondition">preconditions</a>, <a href="/wiki/Postcondition" title="Postcondition">postconditions</a>, <a href="/wiki/Class_invariant" title="Class invariant">class invariants</a>, etc., are part of the standard syntax, using a <a href="/wiki/Tony_Hoare" title="Tony Hoare">Hoare</a>-like notation. Any possible <a href="/wiki/Race_condition" title="Race condition">race conditions</a> are detected at <a href="/wiki/Compile_time" title="Compile time">compile time</a>.</p>
+<p>Initial design of ParaSail began in September 2009, by S. Tucker Taft.</p>
+<p>Both an <a href="/wiki/Interpreter_(computing)" title="Interpreter (computing)">interpreter</a> using the ParaSail <a href="/wiki/Virtual_machine" title="Virtual machine">virtual machine</a>, and an <a href="/wiki/LLVM" title="LLVM">LLVM</a>-based ParaSail <a href="/wiki/Compiler" title="Compiler">compiler</a> are available. <a href="/wiki/Work_stealing" title="Work stealing">Work stealing</a> is used for scheduling ParaSail's light-weight <a href="/wiki/Thread_(computing)" title="Thread (computing)">threads</a>. The latest version can be downloaded from the ParaSail website.<sup id="cite_ref-ParaWebsite_2-1" class="reference"><a href="#cite_note-ParaWebsite-2">[2]</a></sup></p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Goals"><span class="tocnumber">1</span> <span class="toctext">Goals</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Description"><span class="tocnumber">2</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Examples"><span class="tocnumber">3</span> <span class="toctext">Examples</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Articles"><span class="tocnumber">4</span> <span class="toctext">Articles</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#External_links"><span class="tocnumber">6</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Goals">Goals</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=ParaSail_(programming_language)&amp;action=edit&amp;section=1" title="Edit section: Goals">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>ParaSail goals:</p>
+<ul>
+<li>Pervasive, safe support for implicit and explicit parallelism.</li>
+<li>Compile-time enforcement of assertions, preconditions, postconditions, and class invariants.</li>
+<li>Efficient, pointer-free region-based storage management.</li>
+<li>Familiar class-and-interface-based object-oriented programming model.</li>
+</ul>
+<h2><span class="mw-headline" id="Description">Description</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=ParaSail_(programming_language)&amp;action=edit&amp;section=2" title="Edit section: Description">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The <a href="/wiki/Syntax_(programming_languages)" title="Syntax (programming languages)">syntax</a> of ParaSail is similar to <a href="/wiki/Modula" title="Modula">Modula</a>, but with a class-and-interface-based object-oriented programming model more similar to <a href="/wiki/Java_(programming_language)" title="Java (programming language)">Java</a> or <a href="/wiki/C_Sharp_(programming_language)" title="C Sharp (programming language)">C#</a>.</p>
+<p>More recently, the parallel constructs of ParaSail have been adapted to other syntaxes, to produce <a href="/wiki/Java_(programming_language)" title="Java (programming language)">Java</a>-like, <a href="/wiki/Python_(programming_language)" title="Python (programming language)">Python</a>-like, and <a href="/wiki/Ada_(programming_language)" title="Ada (programming language)">Ada</a>-like <a href="/wiki/Parallel_programming_language" class="mw-redirect" title="Parallel programming language">parallel languages</a>, dubbed, respectively, Javallel, Parython, and Sparkel (named after the Ada subset <a href="/wiki/SPARK_(programming_language)" title="SPARK (programming language)">SPARK</a> on which it is based). Compilers and interpreters for these languages are included with the ParaSail implementation.<sup id="cite_ref-ParaWebsite_2-2" class="reference"><a href="#cite_note-ParaWebsite-2">[2]</a></sup></p>
+<h2><span class="mw-headline" id="Examples">Examples</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=ParaSail_(programming_language)&amp;action=edit&amp;section=3" title="Edit section: Examples">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The following is a <a href="/wiki/Hello_world_program" class="mw-redirect" title="Hello world program">Hello world program</a> in ParaSail:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="kr">func</span> <span class="n">Hello_World</span><span class="p">(</span><span class="kr">var</span> <span class="n">IO</span><span class="p">)</span> <span class="kr">is</span>
+    <span class="n">IO</span><span class="p">.</span><span class="n">Println</span><span class="p">(</span><span class="s">"Hello, World"</span><span class="p">);</span>
+<span class="kr">end</span> <span class="kr">func</span> <span class="n">Hello_World</span><span class="p">;</span>
+</pre></div>
+<p>The following is an interface to a basic map module:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="kr">interface</span> <span class="n">BMap</span><span class="p">&lt;</span><span class="n">Key_Type</span> <span class="kr">is</span> <span class="n">Ordered</span><span class="p">&lt;&gt;;</span> <span class="n">Element_Type</span> <span class="kr">is</span> <span class="n">Assignable</span><span class="p">&lt;</span><span class="o">&gt;&gt;</span> <span class="kr">is</span>
+    <span class="kr">op</span> <span class="s">"[]"</span><span class="p">()</span> <span class="o">-</span><span class="p">&gt;</span> <span class="n">BMap</span><span class="p">;</span>  <span class="c1">// Create an empty map</span>
+
+    <span class="kr">func</span> <span class="n">Insert</span><span class="p">(</span><span class="kr">var</span> <span class="n">BMap</span><span class="p">;</span> <span class="n">Key</span> <span class="p">:</span> <span class="n">Key_Type</span><span class="p">;</span> <span class="n">Value</span> <span class="p">:</span> <span class="n">Element_Type</span><span class="p">);</span>
+    <span class="kr">func</span> <span class="n">Find</span><span class="p">(</span><span class="n">BMap</span><span class="p">;</span> <span class="n">Key</span> <span class="p">:</span> <span class="n">Key_Type</span><span class="p">)</span> <span class="o">-</span><span class="p">&gt;</span> <span class="kr">optional</span> <span class="n">Element_Type</span><span class="p">;</span>
+    <span class="kr">func</span> <span class="n">Delete</span><span class="p">(</span><span class="kr">var</span> <span class="n">BMap</span><span class="p">;</span> <span class="n">Key</span> <span class="p">:</span> <span class="n">Key_Type</span><span class="p">);</span>
+    <span class="kr">func</span> <span class="n">Count</span><span class="p">(</span><span class="n">BMap</span><span class="p">)</span> <span class="o">-</span><span class="p">&gt;</span> <span class="n">Univ_Integer</span><span class="p">;</span>
+<span class="kr">end</span> <span class="kr">interface</span> <span class="n">BMap</span><span class="p">;</span>
+</pre></div>
+<p>Here is a possible implementation of this map module, using a binary tree:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="kr">class</span> <span class="n">BMap</span> <span class="kr">is</span>
+
+    <span class="kr">interface</span> <span class="n">Binary_Node</span><span class="p">&lt;&gt;</span> <span class="kr">is</span>
+      <span class="c1">// A simple "concrete" binary node module</span>
+        <span class="kr">var</span> <span class="n">Left</span> <span class="p">:</span> <span class="kr">optional</span> <span class="n">Binary_Node</span><span class="p">;</span>
+        <span class="kr">var</span> <span class="n">Right</span> <span class="p">:</span> <span class="kr">optional</span> <span class="n">Binary_Node</span><span class="p">;</span>
+        <span class="kr">const</span> <span class="n">Key</span> <span class="p">:</span> <span class="n">Key_Type</span><span class="p">;</span>
+        <span class="kr">var</span> <span class="n">Value</span> <span class="p">:</span> <span class="kr">optional</span> <span class="n">Element_Type</span><span class="p">;</span>  <span class="c1">// null means deleted</span>
+    <span class="kr">end</span> <span class="kr">interface</span> <span class="n">Binary_Node</span><span class="p">;</span>
+
+    <span class="kr">var</span> <span class="n">Tree</span> <span class="p">:</span> <span class="kr">optional</span> <span class="n">Binary_Node</span><span class="p">;</span>
+    <span class="kr">var</span> <span class="n">Count</span> <span class="o">:=</span> <span class="mi">0</span><span class="p">;</span>
+
+  <span class="kr">exports</span>
+
+    <span class="kr">op</span> <span class="s">"[]"</span><span class="p">()</span> <span class="o">-</span><span class="p">&gt;</span> <span class="n">BMap</span> <span class="kr">is</span>  <span class="c1">// Create an empty map</span>
+        <span class="kr">return</span> <span class="p">(</span><span class="n">Tree</span> <span class="o">=&gt;</span> <span class="kr">null</span><span class="p">,</span> <span class="n">Count</span> <span class="o">=&gt;</span> <span class="mi">0</span><span class="p">);</span>
+    <span class="kr">end</span> <span class="kr">op</span> <span class="s">"[]"</span><span class="p">;</span>
+
+    <span class="kr">func</span> <span class="n">Insert</span><span class="p">(</span><span class="kr">var</span> <span class="n">BMap</span><span class="p">;</span> <span class="n">Key</span> <span class="p">:</span> <span class="n">Key_Type</span><span class="p">;</span> <span class="n">Value</span> <span class="p">:</span> <span class="n">Element_Type</span><span class="p">)</span> <span class="kr">is</span>
+      <span class="c1">// Search for Key, overwrite if found, insert new node if not</span>
+        <span class="kr">for</span> <span class="n">M</span> <span class="o">=&gt;</span> <span class="n">BMap</span><span class="p">.</span><span class="n">Tree</span> <span class="kr">loop</span>
+            <span class="kr">if</span> <span class="n">M</span> <span class="ow">is null</span> <span class="kr">then</span>
+                <span class="c1">// Not already in the map; add it</span>
+                <span class="n">M</span> <span class="o">:=</span> <span class="p">(</span><span class="n">Key</span> <span class="o">=&gt;</span> <span class="n">Key</span><span class="p">,</span> <span class="n">Value</span> <span class="o">=&gt;</span> <span class="n">Value</span><span class="p">,</span> <span class="n">Left</span> <span class="o">=&gt;</span> <span class="kr">null</span><span class="p">,</span> <span class="n">Right</span> <span class="o">=&gt;</span> <span class="kr">null</span><span class="p">);</span>
+                <span class="n">BMap</span><span class="p">.</span><span class="n">Count</span> <span class="o">+=</span> <span class="mi">1</span><span class="p">;</span>
+            <span class="kr">else</span>
+               <span class="kr">case</span> <span class="n">Key</span> <span class="o">=?</span> <span class="n">M</span><span class="p">.</span><span class="n">Key</span> <span class="kr">of</span>
+                 <span class="p">[</span><span class="l">#less</span><span class="p">]</span> <span class="o">=&gt;</span>
+                   <span class="kr">continue</span> <span class="kr">loop</span> <span class="kr">with</span> <span class="n">M</span><span class="p">.</span><span class="n">Left</span><span class="p">;</span>
+                 <span class="p">[</span><span class="l">#greater</span><span class="p">]</span> <span class="o">=&gt;</span>
+                   <span class="kr">continue</span> <span class="kr">loop</span> <span class="kr">with</span> <span class="n">M</span><span class="p">.</span><span class="n">Right</span><span class="p">;</span>
+                 <span class="p">[</span><span class="l">#equal</span><span class="p">]</span> <span class="o">=&gt;</span>
+                   <span class="c1">// Key is already in the map;</span>
+                   <span class="c1">// bump count if Value was null;</span>
+                   <span class="kr">if</span> <span class="n">M</span><span class="p">.</span><span class="n">Value</span> <span class="ow">is null</span> <span class="kr">then</span>
+                       <span class="n">BMap</span><span class="p">.</span><span class="n">Count</span> <span class="o">+=</span> <span class="mi">1</span><span class="p">;</span>
+                   <span class="kr">end</span> <span class="kr">if</span><span class="p">;</span>
+                   <span class="c1">// in any case overwrite the Value field</span>
+                   <span class="n">M</span><span class="p">.</span><span class="n">Value</span> <span class="o">:=</span> <span class="n">Value</span><span class="p">;</span>
+                   <span class="kr">return</span><span class="p">;</span>
+               <span class="kr">end</span> <span class="kr">case</span><span class="p">;</span>
+            <span class="kr">end</span> <span class="kr">if</span><span class="p">;</span>
+        <span class="kr">end</span> <span class="kr">loop</span><span class="p">;</span>
+    <span class="kr">end</span> <span class="kr">func</span> <span class="n">Insert</span><span class="p">;</span>
+
+    <span class="kr">func</span> <span class="n">Find</span><span class="p">(</span><span class="n">BMap</span><span class="p">;</span> <span class="n">Key</span> <span class="p">:</span> <span class="n">Key_Type</span><span class="p">)</span> <span class="o">-</span><span class="p">&gt;</span> <span class="kr">optional</span> <span class="n">Element_Type</span> <span class="kr">is</span>
+      <span class="c1">// Search for Key, return associated Value if present, or null otherwise</span>
+        <span class="kr">for</span> <span class="n">M</span> <span class="o">=&gt;</span> <span class="n">BMap</span><span class="p">.</span><span class="n">Tree</span> <span class="kr">while</span> <span class="n">M</span> <span class="ow">not null</span> <span class="kr">loop</span>
+            <span class="kr">case</span> <span class="n">Key</span> <span class="o">=?</span> <span class="n">M</span><span class="p">.</span><span class="n">Key</span> <span class="kr">of</span>
+              <span class="p">[</span><span class="l">#less</span><span class="p">]</span> <span class="o">=&gt;</span>
+                <span class="kr">continue</span> <span class="kr">loop</span> <span class="kr">with</span> <span class="n">M</span><span class="p">.</span><span class="n">Left</span><span class="p">;</span>
+              <span class="p">[</span><span class="l">#greater</span><span class="p">]</span> <span class="o">=&gt;</span>
+                <span class="kr">continue</span> <span class="kr">loop</span> <span class="kr">with</span> <span class="n">M</span><span class="p">.</span><span class="n">Right</span><span class="p">;</span>
+              <span class="p">[</span><span class="l">#equal</span><span class="p">]</span> <span class="o">=&gt;</span>
+                <span class="c1">// Found it; return the value</span>
+                <span class="kr">return</span> <span class="n">M</span><span class="p">.</span><span class="n">Value</span><span class="p">;</span>
+            <span class="kr">end</span> <span class="kr">case</span><span class="p">;</span>
+        <span class="kr">end</span> <span class="kr">loop</span><span class="p">;</span>
+        <span class="c1">// Not found in BMap</span>
+        <span class="kr">return</span> <span class="kr">null</span><span class="p">;</span>
+    <span class="kr">end</span> <span class="kr">func</span> <span class="n">Find</span><span class="p">;</span>
+
+    <span class="kr">func</span> <span class="n">Delete</span><span class="p">(</span><span class="kr">var</span> <span class="n">BMap</span><span class="p">;</span> <span class="n">Key</span> <span class="p">:</span> <span class="n">Key_Type</span><span class="p">)</span> <span class="kr">is</span>
+      <span class="c1">// Search for Key; delete associated node if found</span>
+        <span class="kr">for</span> <span class="n">M</span> <span class="o">=&gt;</span> <span class="n">BMap</span><span class="p">.</span><span class="n">Tree</span> <span class="kr">while</span> <span class="n">M</span> <span class="ow">not null</span> <span class="kr">loop</span>
+            <span class="kr">case</span> <span class="n">Key</span> <span class="o">=?</span> <span class="n">M</span><span class="p">.</span><span class="n">Key</span> <span class="kr">of</span>
+              <span class="p">[</span><span class="l">#less</span><span class="p">]</span> <span class="o">=&gt;</span>
+                <span class="kr">continue</span> <span class="kr">loop</span> <span class="kr">with</span> <span class="n">M</span><span class="p">.</span><span class="n">Left</span><span class="p">;</span>
+              <span class="p">[</span><span class="l">#greater</span><span class="p">]</span> <span class="o">=&gt;</span>
+                <span class="kr">continue</span> <span class="kr">loop</span> <span class="kr">with</span> <span class="n">M</span><span class="p">.</span><span class="n">Right</span><span class="p">;</span>
+              <span class="p">[</span><span class="l">#equal</span><span class="p">]</span> <span class="o">=&gt;</span>
+                <span class="c1">// Found it; if at most one subtree is non-null, overwrite</span>
+                <span class="c1">// it; otherwise, set its value field to null</span>
+                <span class="c1">// (to avoid a more complex re-balancing).</span>
+                <span class="kr">if</span> <span class="n">M</span><span class="p">.</span><span class="n">Left</span> <span class="ow">is null</span> <span class="kr">then</span>
+                    <span class="c1">// Move right subtree into M</span>
+                    <span class="n">M</span> <span class="o">&lt;==</span> <span class="n">M</span><span class="p">.</span><span class="n">Right</span><span class="p">;</span>
+                <span class="kr">elsif</span> <span class="n">M</span><span class="p">.</span><span class="n">Right</span> <span class="ow">is null</span> <span class="kr">then</span>
+                    <span class="c1">// Move left subtree into M</span>
+                    <span class="n">M</span> <span class="o">&lt;==</span> <span class="n">M</span><span class="p">.</span><span class="n">Left</span><span class="p">;</span>
+                <span class="kr">else</span>
+                    <span class="c1">// Cannot immediately reclaim node;</span>
+                    <span class="c1">// set value field to null instead.</span>
+                    <span class="n">M</span><span class="p">.</span><span class="n">Value</span> <span class="o">:=</span> <span class="kr">null</span><span class="p">;</span>
+                <span class="kr">end</span> <span class="kr">if</span><span class="p">;</span>
+                <span class="c1">// Decrement count</span>
+                <span class="n">BMap</span><span class="p">.</span><span class="n">Count</span> <span class="o">-=</span> <span class="mi">1</span><span class="p">;</span>
+            <span class="kr">end</span> <span class="kr">case</span><span class="p">;</span>
+        <span class="kr">end</span> <span class="kr">loop</span><span class="p">;</span>
+        <span class="c1">// Not found in the map</span>
+    <span class="kr">end</span> <span class="kr">func</span> <span class="n">Delete</span><span class="p">;</span>
+
+    <span class="kr">func</span> <span class="n">Count</span><span class="p">(</span><span class="n">BMap</span><span class="p">)</span> <span class="o">-</span><span class="p">&gt;</span> <span class="n">Univ_Integer</span> <span class="kr">is</span>
+      <span class="c1">// Return count of number of items in map</span>
+        <span class="kr">return</span> <span class="n">BMap</span><span class="p">.</span><span class="n">Count</span><span class="p">;</span>
+    <span class="kr">end</span> <span class="kr">func</span> <span class="n">Count</span><span class="p">;</span>
+
+<span class="kr">end</span> <span class="kr">class</span> <span class="n">BMap</span><span class="p">;</span>
+</pre></div>
+<p>Here is a simple test program for the BMap module:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="kr">import</span> <span class="n">PSL</span><span class="p">::</span><span class="n">Core</span><span class="p">::</span><span class="n">Random</span><span class="p">;</span>
+<span class="kr">import</span> <span class="n">BMap</span><span class="p">;</span>
+<span class="kr">func</span> <span class="n">Test_BMap</span><span class="p">(</span><span class="n">Num</span> <span class="p">:</span> <span class="n">Univ_Integer</span><span class="p">;</span> <span class="n">Seed</span> <span class="p">:</span> <span class="n">Univ_Integer</span><span class="p">)</span> <span class="kr">is</span>
+    <span class="c1">// Test the Binary-Tree-based Map</span>
+    <span class="kr">var</span> <span class="n">Ran</span> <span class="p">:</span> <span class="n">Random</span> <span class="o">:=</span> <span class="n">Start</span><span class="p">(</span><span class="n">Seed</span><span class="p">);</span>  <span class="c1">// Start a random-number sequence</span>
+
+    <span class="c1">// Declare a map from integers to strings</span>
+    <span class="kr">var</span> <span class="n">M</span> <span class="p">:</span> <span class="n">BMap</span><span class="p">&lt;</span><span class="n">Key_Type</span> <span class="o">=&gt;</span> <span class="n">Univ_Integer</span><span class="p">,</span> <span class="n">Element_Type</span> <span class="o">=&gt;</span> <span class="n">Univ_String</span><span class="p">&gt;;</span>
+
+    <span class="n">M</span> <span class="o">:=</span> <span class="p">[];</span>  <span class="c1">// Initialize the map to the empty map</span>
+
+    <span class="kr">for</span> <span class="n">I</span> <span class="kr">in</span> <span class="mi">1</span><span class="o">..</span><span class="n">Num</span><span class="o">*</span><span class="mi">2</span> <span class="kr">forward</span> <span class="kr">loop</span>  <span class="c1">// Add elements to the map</span>
+        <span class="kr">const</span> <span class="n">Key</span> <span class="o">:=</span> <span class="n">Next</span><span class="p">(</span><span class="n">Ran</span><span class="p">)</span> <span class="ow">mod</span> <span class="n">Num</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+        <span class="kr">const</span> <span class="n">Val</span> <span class="o">:=</span> <span class="s">"Val"</span> <span class="o">|</span> <span class="n">To_String</span><span class="p">(</span><span class="n">I</span><span class="p">);</span>
+        <span class="n">Println</span><span class="p">(</span><span class="s">"About to insert "</span> <span class="o">|</span> <span class="n">Key</span> <span class="o">|</span> <span class="s">" =&gt; "</span> <span class="o">|</span> <span class="n">Val</span><span class="p">);</span>
+        <span class="n">Insert</span><span class="p">(</span><span class="n">M</span><span class="p">,</span> <span class="n">Key</span><span class="p">,</span> <span class="n">Val</span><span class="p">);</span>
+    <span class="kr">end</span> <span class="kr">loop</span><span class="p">;</span>
+    <span class="n">Println</span><span class="p">(</span><span class="s">"Count = "</span> <span class="o">|</span> <span class="n">Count</span><span class="p">(</span><span class="n">M</span><span class="p">));</span>
+
+    <span class="kr">for</span> <span class="n">I</span> <span class="kr">in</span> <span class="mi">1</span><span class="o">..</span><span class="n">Num</span> <span class="kr">loop</span> <span class="c1">// Search for elements in the map</span>
+        <span class="kr">const</span> <span class="n">Key</span> <span class="o">:=</span> <span class="n">Next</span><span class="p">(</span><span class="n">Ran</span><span class="p">)</span> <span class="ow">mod</span> <span class="n">Num</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+        <span class="n">Println</span><span class="p">(</span><span class="s">"Looking for "</span> <span class="o">|</span> <span class="n">Key</span> <span class="o">|</span> <span class="s">", found "</span> <span class="o">|</span> <span class="n">Find</span><span class="p">(</span><span class="n">M</span><span class="p">,</span> <span class="n">Key</span><span class="p">));</span>
+    <span class="kr">end</span> <span class="kr">loop</span><span class="p">;</span>
+
+    <span class="kr">for</span> <span class="n">I</span> <span class="kr">in</span> <span class="mi">1</span><span class="o">..</span><span class="n">Num</span><span class="o">/</span><span class="mi">3</span> <span class="kr">loop</span>  <span class="c1">// Delete some elements from the map</span>
+        <span class="kr">const</span> <span class="n">Key</span> <span class="o">:=</span> <span class="n">Next</span><span class="p">(</span><span class="n">Ran</span><span class="p">)</span> <span class="ow">mod</span> <span class="n">Num</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+        <span class="n">Println</span><span class="p">(</span><span class="s">"About to delete "</span> <span class="o">|</span> <span class="n">Key</span><span class="p">);</span>
+        <span class="n">Delete</span><span class="p">(</span><span class="n">M</span><span class="p">,</span> <span class="n">Key</span><span class="p">);</span>
+    <span class="kr">end</span> <span class="kr">loop</span><span class="p">;</span>
+    <span class="n">Println</span><span class="p">(</span><span class="s">"Count = "</span> <span class="o">|</span> <span class="n">Count</span><span class="p">(</span><span class="n">M</span><span class="p">));</span>
+
+    <span class="kr">for</span> <span class="n">I</span> <span class="kr">in</span> <span class="mi">1</span><span class="o">..</span><span class="n">Num</span> <span class="kr">forward</span> <span class="kr">loop</span>  <span class="c1">// Search again for elements in the map</span>
+        <span class="n">Println</span><span class="p">(</span><span class="s">"Looking for "</span> <span class="o">|</span> <span class="n">I</span> <span class="o">|</span> <span class="s">", found "</span> <span class="o">|</span> <span class="n">Find</span><span class="p">(</span><span class="n">M</span><span class="p">,</span> <span class="n">I</span><span class="p">));</span>
+    <span class="kr">end</span> <span class="kr">loop</span><span class="p">;</span>
+
+<span class="kr">end</span> <span class="kr">func</span> <span class="n">Test_BMap</span><span class="p">;</span>
+</pre></div>
+<h2><span class="mw-headline" id="Articles">Articles</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=ParaSail_(programming_language)&amp;action=edit&amp;section=4" title="Edit section: Articles">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Articles on ParaSail have appeared in various forums:</p>
+<ul>
+<li><cite class="citation news">Graham-Rowe, Duncan (28 July 2011). <a rel="nofollow" class="external text" href="http://www.technologyreview.com/news/424836/new-language-for-programming-in-parallel/">"New Language for Programming in Parallel"</a>. <i>Technology Review</i>. MIT.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AParaSail+%28programming+language%29&amp;rft.atitle=New+Language+for+Programming+in+Parallel&amp;rft.aufirst=Duncan&amp;rft.aulast=Graham-Rowe&amp;rft.date=2011-07-28&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fwww.technologyreview.com%2Fnews%2F424836%2Fnew-language-for-programming-in-parallel%2F&amp;rft.jtitle=Technology+Review&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation news">Clarke, Peter (28 July 2011). <a rel="nofollow" class="external text" href="http://www.eetimes.com/electronics-news/4218331/SofCheck-ParaSail-parallel-language">"SofCheck preps ParaSail parallel language"</a>. <i>EETimes</i>. UBM Electronics.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AParaSail+%28programming+language%29&amp;rft.atitle=SofCheck+preps+ParaSail+parallel+language&amp;rft.aufirst=Peter&amp;rft.aulast=Clarke&amp;rft.date=2011-07-28&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fwww.eetimes.com%2Felectronics-news%2F4218331%2FSofCheck-ParaSail-parallel-language&amp;rft.jtitle=EETimes&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation news">Taft, S. Tucker (9 June 2012). <a rel="nofollow" class="external text" href="http://www.eetimes.com/design/embedded/4375616/ParaSail--Less-is-more-with-multicore">"ParaSail: Less is more with multicore"</a>. <i>EETimes</i>. UBM Electronics.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AParaSail+%28programming+language%29&amp;rft.atitle=ParaSail%3A+Less+is+more+with+multicore&amp;rft.aufirst=S.+Tucker&amp;rft.aulast=Taft&amp;rft.date=2012-06-09&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fwww.eetimes.com%2Fdesign%2Fembedded%2F4375616%2FParaSail--Less-is-more-with-multicore&amp;rft.jtitle=EETimes&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation news">Selwood, Dick (18 July 2012). <a rel="nofollow" class="external text" href="http://www.eejournal.com/archives/articles/20120718-language/">"Does the World Need a New Programming Language?"</a>. <i>EEJournal</i>. techfocus media, inc.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AParaSail+%28programming+language%29&amp;rft.atitle=Does+the+World+Need+a+New+Programming+Language%3F&amp;rft.aufirst=Dick&amp;rft.aulast=Selwood&amp;rft.date=2012-07-18&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fwww.eejournal.com%2Farchives%2Farticles%2F20120718-language%2F&amp;rft.jtitle=EEJournal&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+</ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=ParaSail_(programming_language)&amp;action=edit&amp;section=5" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist columns references-column-count references-column-count-2" style="-moz-column-count: 2; -webkit-column-count: 2; column-count: 2; list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://parasail-programming-language.blogspot.com">ParaSail blog</a></span></li>
+<li id="cite_note-ParaWebsite-2"><span class="mw-cite-backlink">^ <a href="#cite_ref-ParaWebsite_2-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-ParaWebsite_2-1"><sup><i><b>b</b></i></sup></a> <a href="#cite_ref-ParaWebsite_2-2"><sup><i><b>c</b></i></sup></a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://forge.open-do.org/plugins/moinmoin/parasail/">ParaSail website</a></span></li>
+</ol>
+</div>
+<p><br /></p>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=ParaSail_(programming_language)&amp;action=edit&amp;section=6" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><span class="official-website"><span class="url"><a rel="nofollow" class="external text" href="http://forge.open-do.org/plugins/moinmoin/parasail/">Official website</a></span></span></li>
+<li><a rel="nofollow" class="external text" href="http://parasail-programming-language.blogspot.com">Blog of design and implementation process</a></li>
+<li><a rel="nofollow" class="external text" href="https://groups.google.com/group/parasail-programming-language">ParaSail language newsgroup</a></li>
+</ul>
+<div role="navigation" class="navbox" aria-labelledby="Programming_languages" style="padding:3px">
+<table class="nowraplinks hlist collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:Programming_languages" title="Template:Programming languages"><abbr title="View this template" style=";;background:none transparent;border:none;">v</abbr></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:Programming_languages" title="Template talk:Programming languages"><abbr title="Discuss this template" style=";;background:none transparent;border:none;">t</abbr></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:Programming_languages&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;">e</abbr></a></li>
+</ul>
+</div>
+<div id="Programming_languages" style="font-size:114%"><a href="/wiki/Programming_language" title="Programming language">Programming languages</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" colspan="2">
+<div>
+<ul>
+<li><a href="/wiki/Comparison_of_programming_languages" title="Comparison of programming languages">Comparison</a></li>
+<li><a href="/wiki/Timeline_of_programming_languages" title="Timeline of programming languages">Timeline</a></li>
+<li><a href="/wiki/History_of_programming_languages" title="History of programming languages">History</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Assembly_language" title="Assembly language">Assembly</a></li>
+<li><a href="/wiki/BASIC" title="BASIC">BASIC</a></li>
+<li><a href="/wiki/C_(programming_language)" title="C (programming language)">C</a></li>
+<li><a href="/wiki/C%2B%2B" title="C++">C++</a></li>
+<li><a href="/wiki/C_Sharp_(programming_language)" title="C Sharp (programming language)">C#</a></li>
+<li><a href="/wiki/COBOL" title="COBOL">COBOL</a></li>
+<li><a href="/wiki/Fortran" title="Fortran">Fortran</a></li>
+<li><a href="/wiki/Go_(programming_language)" title="Go (programming language)">Go</a></li>
+<li><a href="/wiki/Haskell_(programming_language)" title="Haskell (programming language)">Haskell</a></li>
+<li><a href="/wiki/Java_(programming_language)" title="Java (programming language)">Java</a></li>
+<li><a href="/wiki/JavaScript" title="JavaScript">JavaScript</a> (JS)</li>
+<li><a href="/wiki/Lisp_(programming_language)" title="Lisp (programming language)">Lisp</a></li>
+<li><a href="/wiki/Lua_(programming_language)" title="Lua (programming language)">Lua</a></li>
+<li><a href="/wiki/Objective-C" title="Objective-C">Objective-C</a></li>
+<li><a href="/wiki/Pascal_(programming_language)" title="Pascal (programming language)">Pascal</a></li>
+<li><a href="/wiki/Perl" title="Perl">Perl</a></li>
+<li><a href="/wiki/PHP" title="PHP">PHP</a></li>
+<li><a href="/wiki/Python_(programming_language)" title="Python (programming language)">Python</a></li>
+<li><a href="/wiki/Ruby_(programming_language)" title="Ruby (programming language)">Ruby</a></li>
+<li><a href="/wiki/Shell_script" title="Shell script">Shell</a></li>
+<li><a href="/wiki/Smalltalk" title="Smalltalk">Smalltalk</a></li>
+<li><a href="/wiki/Swift_(programming_language)" title="Swift (programming language)">Swift</a></li>
+<li><a href="/wiki/Visual_Basic_.NET" title="Visual Basic .NET">Visual Basic .NET</a> (VB.NET)</li>
+<li><i><a href="/wiki/List_of_programming_languages" title="List of programming languages">more...</a></i></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" colspan="2">
+<div>
+<ul>
+<li><img alt="Category" src="//upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/16px-Folder_Hexagonal_Icon.svg.png" title="Category" width="16" height="14" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/24px-Folder_Hexagonal_Icon.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/32px-Folder_Hexagonal_Icon.svg.png 2x" data-file-width="36" data-file-height="31" /> <b><a href="/wiki/Category:Programming_languages" title="Category:Programming languages">Category</a></b></li>
+<li><img alt="Non-article page" src="//upload.wikimedia.org/wikipedia/en/thumb/8/89/Symbol_neutral_vote.svg/16px-Symbol_neutral_vote.svg.png" title="Non-article page" width="16" height="16" srcset="//upload.wikimedia.org/wikipedia/en/thumb/8/89/Symbol_neutral_vote.svg/23px-Symbol_neutral_vote.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/8/89/Symbol_neutral_vote.svg/31px-Symbol_neutral_vote.svg.png 2x" data-file-width="180" data-file-height="185" /> <b><a href="/wiki/Comparison_of_programming_languages" title="Comparison of programming languages">Comparison</a></b></li>
+<li><img alt="List-Class article" src="//upload.wikimedia.org/wikipedia/en/thumb/d/db/Symbol_list_class.svg/16px-Symbol_list_class.svg.png" title="List-Class article" width="16" height="16" srcset="//upload.wikimedia.org/wikipedia/en/thumb/d/db/Symbol_list_class.svg/23px-Symbol_list_class.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/d/db/Symbol_list_class.svg/31px-Symbol_list_class.svg.png 2x" data-file-width="180" data-file-height="185" /> <b>Lists</b>
+<ul>
+<li><a href="/wiki/List_of_programming_languages" title="List of programming languages">Alphabetical</a></li>
+<li><a href="/wiki/Categorical_list_of_programming_languages" class="mw-redirect" title="Categorical list of programming languages">Categorical</a></li>
+<li><a href="/wiki/Generational_list_of_programming_languages" title="Generational list of programming languages">Generational</a></li>
+<li><a href="/wiki/Non-English-based_programming_languages" title="Non-English-based programming languages">Non-English-based</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1302
+Cached time: 20170204080519
+Cache expiry: 86400
+Dynamic content: true
+CPU time usage: 0.132 seconds
+Real time usage: 0.181 seconds
+Preprocessor visited node count: 1126/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 27334/2097152 bytes
+Template argument size: 2330/2097152 bytes
+Highest expansion depth: 25/40
+Expensive parser function count: 3/500
+Lua time usage: 0.055/10.000 seconds
+Lua memory usage: 2.53 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  150.713      1 -total
+ 45.17%   68.074      2 Template:Infobox
+ 36.15%   54.482      1 Template:Infobox_programming_language
+ 21.00%   31.644      4 Template:Cite_news
+ 13.54%   20.403      1 Template:Infobox_software/simple
+ 12.59%   18.973      2 Template:Start_date_and_age
+  9.71%   14.635      1 Template:For
+  9.61%   14.482      1 Template:Programming_languages
+  9.19%   13.847      1 Template:Official_website
+  8.70%   13.113      1 Template:Navbox
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:36619168-0!*!*!!en!4!* and timestamp 20170204080519 and revision id 753578947
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=ParaSail_(programming_language)&amp;oldid=753578947">https://en.wikipedia.org/w/index.php?title=ParaSail_(programming_language)&amp;oldid=753578947</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Pascal_programming_language_family" title="Category:Pascal programming language family">Pascal programming language family</a></li><li><a href="/wiki/Category:Concurrent_programming_languages" title="Category:Concurrent programming languages">Concurrent programming languages</a></li><li><a href="/wiki/Category:Procedural_programming_languages" title="Category:Procedural programming languages">Procedural programming languages</a></li><li><a href="/wiki/Category:Systems_programming_languages" title="Category:Systems programming languages">Systems programming languages</a></li><li><a href="/wiki/Category:Cross-platform_software" title="Category:Cross-platform software">Cross-platform software</a></li><li><a href="/wiki/Category:Programming_languages_created_in_2009" title="Category:Programming languages created in 2009">Programming languages created in 2009</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Official_website_different_in_Wikidata_and_Wikipedia" title="Category:Official website different in Wikidata and Wikipedia">Official website different in Wikidata and Wikipedia</a></li><li><a href="/wiki/Category:Use_dmy_dates_from_August_2012" title="Category:Use dmy dates from August 2012">Use dmy dates from August 2012</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=ParaSail+%28programming+language%29" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=ParaSail+%28programming+language%29" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/ParaSail_(programming_language)"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk" class="new"><span><a href="/w/index.php?title=Talk:ParaSail_(programming_language)&amp;action=edit&amp;redlink=1"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/ParaSail_(programming_language)" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=ParaSail_(programming_language)&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=ParaSail_(programming_language)&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/ParaSail_(programming_language)" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/ParaSail_(programming_language)" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=ParaSail_(programming_language)&amp;oldid=753578947" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=ParaSail_(programming_language)&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q7133637" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=ParaSail_%28programming_language%29&amp;id=753578947" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=ParaSail+%28programming+language%29">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=ParaSail+%28programming+language%29&amp;returnto=ParaSail+%28programming+language%29&amp;oldid=753578947&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=ParaSail_(programming_language)&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-uk"><a href="https://uk.wikipedia.org/wiki/ParaSail" title="ParaSail – Ukrainian" lang="uk" hreflang="uk" class="interlanguage-link-target">Українська</a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q7133637#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 8 December 2016, at 00:27.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=ParaSail_(programming_language)&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.132","walltime":"0.181","ppvisitednodes":{"value":1126,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":27334,"limit":2097152},"templateargumentsize":{"value":2330,"limit":2097152},"expansiondepth":{"value":25,"limit":40},"expensivefunctioncount":{"value":3,"limit":500},"entityaccesscount":{"value":1,"limit":400},"timingprofile":["100.00%  150.713      1 -total"," 45.17%   68.074      2 Template:Infobox"," 36.15%   54.482      1 Template:Infobox_programming_language"," 21.00%   31.644      4 Template:Cite_news"," 13.54%   20.403      1 Template:Infobox_software/simple"," 12.59%   18.973      2 Template:Start_date_and_age","  9.71%   14.635      1 Template:For","  9.61%   14.482      1 Template:Programming_languages","  9.19%   13.847      1 Template:Official_website","  8.70%   13.113      1 Template:Navbox"]},"scribunto":{"limitreport-timeusage":{"value":"0.055","limit":"10.000"},"limitreport-memusage":{"value":2655436,"limit":52428800}},"cachereport":{"origin":"mw1302","timestamp":"20170204080519","ttl":86400,"transientcontent":true}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":71,"wgHostname":"mw1269"});});</script>
+	</body>
+</html>

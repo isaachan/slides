@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Bourne shell - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Bourne_shell","wgTitle":"Bourne shell","wgCurRevisionId":762778129,"wgRevisionId":762778129,"wgArticleId":92839,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Use dmy dates from October 2012","Articles needing additional references from January 2008","All articles needing additional references","All articles with unsourced statements","Articles with unsourced statements from January 2017","Wikipedia external links cleanup from August 2016","Wikipedia spam cleanup from August 2016","Unix shells","1977 software","POSIX","Scripting languages","Text-oriented programming languages","Unix SUS2008 utilities"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Bourne_shell","wgRelevantArticleId":92839,"wgRequestId":"WI@B3gpAAD4AAeSLcccAAACD","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":true},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q844595","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.cite.styles":"ready","ext.pygments":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.legacy.wikibits","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.pygments%2CwikimediaBadges%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.29.0-wmf.9"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Bourne_shell"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Bourne_shell&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Bourne_shell&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Bourne_shell"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Bourne_shell rootpage-Bourne_shell skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Bourne shell</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><script>function mfTempOpenSection(id){var block=document.getElementById("mf-section-"+id);block.className+=" open-block";block.previousSibling.className+=" open-block";}</script><table class="plainlinks metadata ambox ambox-content ambox-Refimprove" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><a href="/wiki/File:Question_book-new.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" width="50" height="39" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/75px-Question_book-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/100px-Question_book-new.svg.png 2x" data-file-width="512" data-file-height="399" /></a></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">This article <b>needs additional citations for <a href="/wiki/Wikipedia:Verifiability" title="Wikipedia:Verifiability">verification</a></b>. <span class="hide-when-compact">Please help <a class="external text" href="//en.wikipedia.org/w/index.php?title=Bourne_shell&amp;action=edit">improve this article</a> by <a href="/wiki/Help:Introduction_to_referencing_with_Wiki_Markup/1" title="Help:Introduction to referencing with Wiki Markup/1">adding citations to reliable sources</a>. Unsourced material may be challenged and removed.</span> <small><i>(January 2008)</i></small> <small class="hide-when-compact"><i>(<a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove this template message</a>)</i></small></span></td>
+</tr>
+</table>
+<table class="infobox vevent" style="width:22em">
+<caption class="summary">Bourne shell</caption>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/File:Version_7_UNIX_SIMH_PDP11_Kernels_Shell.png" class="image"><img alt="Version 7 UNIX SIMH PDP11 Kernels Shell.png" src="//upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Version_7_UNIX_SIMH_PDP11_Kernels_Shell.png/300px-Version_7_UNIX_SIMH_PDP11_Kernels_Shell.png" width="300" height="191" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Version_7_UNIX_SIMH_PDP11_Kernels_Shell.png/450px-Version_7_UNIX_SIMH_PDP11_Kernels_Shell.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Version_7_UNIX_SIMH_PDP11_Kernels_Shell.png/600px-Version_7_UNIX_SIMH_PDP11_Kernels_Shell.png 2x" data-file-width="652" data-file-height="416" /></a>
+<div>Bourne shell interaction on <a href="/wiki/Version_7_Unix" title="Version 7 Unix">Version 7 Unix</a></div>
+</td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Software_developer" title="Software developer">Original author(s)</a></th>
+<td><a href="/wiki/Stephen_R._Bourne" title="Stephen R. Bourne">Stephen Bourne</a></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;">Initial release</th>
+<td>1977<span class="noprint">; 40&#160;years ago</span><span style="display:none">&#160;(<span class="bday dtstart published updated">1977</span>)</span></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Operating_system" title="Operating system">Operating system</a></th>
+<td><a href="/wiki/Unix" title="Unix">Unix</a></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Software_categories#Broad_categories" title="Software categories">Type</a></th>
+<td><a href="/wiki/Unix_shell" title="Unix shell">Unix shell</a></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Software_license" title="Software license">License</a></th>
+<td><sup style="white-space:nowrap;">[<i>under <a href="/wiki/Talk:Bourne_shell#License" title="Talk:Bourne shell">discussion</a></i>]</sup></td>
+</tr>
+</table>
+<p>The <b>Bourne shell</b> (<b><tt>sh</tt></b>) is a <a href="/wiki/Shell_(computing)" title="Shell (computing)">shell</a>, or <a href="/wiki/Command-line_interface#Command-line_interpreter" title="Command-line interface">command-line interpreter</a>, for computer <a href="/wiki/Operating_system" title="Operating system">operating systems</a>.</p>
+<p>The Bourne shell was the default <a href="/wiki/Unix_shell" title="Unix shell">shell</a> for <a href="/wiki/Version_7_Unix" title="Version 7 Unix">Unix Version 7</a>. Most Unix-like systems continue to have <tt>/bin/sh</tt>—which will be the Bourne shell, or a <a href="/wiki/Symbolic_link" title="Symbolic link">symbolic link</a> or <a href="/wiki/Hard_link" title="Hard link">hard link</a> to a compatible shell even when other shells are used by most users.</p>
+<p>Developed by <a href="/wiki/Stephen_R._Bourne" title="Stephen R. Bourne">Stephen Bourne</a> at <a href="/wiki/Bell_Labs" title="Bell Labs">Bell Labs</a>, it was a replacement for the <a href="/wiki/Thompson_shell" title="Thompson shell">Thompson shell</a>, whose executable file had the same name—<tt>sh</tt>. It was released in 1977 in the <a href="/wiki/Version_7_Unix" title="Version 7 Unix">Version 7 Unix</a> release distributed to colleges and universities. Although it is used as an interactive command interpreter, it was also intended as a <a href="/wiki/Scripting_language" title="Scripting language">scripting language</a> and contains most of the features that are commonly considered to produce structured programs.</p>
+<p>It gained popularity with the publication of <i><a href="/wiki/The_Unix_Programming_Environment" title="The Unix Programming Environment">The Unix Programming Environment</a></i> by <a href="/wiki/Brian_Kernighan" title="Brian Kernighan">Brian Kernighan</a> and <a href="/wiki/Rob_Pike" title="Rob Pike">Rob Pike</a>—the first commercially published book that presented the shell as a programming language in a tutorial form.</p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#History"><span class="tocnumber">1</span> <span class="toctext">History</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Origins"><span class="tocnumber">1.1</span> <span class="toctext">Origins</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Features_of_the_original_version"><span class="tocnumber">1.2</span> <span class="toctext">Features of the original version</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Features_introduced_after_1979"><span class="tocnumber">1.3</span> <span class="toctext">Features introduced after 1979</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="#Variants"><span class="tocnumber">2</span> <span class="toctext">Variants</span></a>
+<ul>
+<li class="toclevel-2 tocsection-6"><a href="#DMERT_shell"><span class="tocnumber">2.1</span> <span class="toctext">DMERT shell</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Korn_shell"><span class="tocnumber">2.2</span> <span class="toctext">Korn shell</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-8"><a href="#Relationship_to_other_shells"><span class="tocnumber">3</span> <span class="toctext">Relationship to other shells</span></a>
+<ul>
+<li class="toclevel-2 tocsection-9"><a href="#C_shell"><span class="tocnumber">3.1</span> <span class="toctext">C shell</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Almquist_shells"><span class="tocnumber">3.2</span> <span class="toctext">Almquist shells</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#Other_shells"><span class="tocnumber">3.3</span> <span class="toctext">Other shells</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-12"><a href="#Usage"><span class="tocnumber">4</span> <span class="toctext">Usage</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="#See_also"><span class="tocnumber">5</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="#References"><span class="tocnumber">6</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-15"><a href="#External_links"><span class="tocnumber">7</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="History">History</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Bourne_shell&amp;action=edit&amp;section=1" title="Edit section: History">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;"><a href="/wiki/File:Version_7_UNIX_SIMH_PDP11_Bourne_Shell_Manual.png" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/1/14/Version_7_UNIX_SIMH_PDP11_Bourne_Shell_Manual.png/220px-Version_7_UNIX_SIMH_PDP11_Bourne_Shell_Manual.png" width="220" height="140" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/1/14/Version_7_UNIX_SIMH_PDP11_Bourne_Shell_Manual.png/330px-Version_7_UNIX_SIMH_PDP11_Bourne_Shell_Manual.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/1/14/Version_7_UNIX_SIMH_PDP11_Bourne_Shell_Manual.png/440px-Version_7_UNIX_SIMH_PDP11_Bourne_Shell_Manual.png 2x" data-file-width="652" data-file-height="416" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:Version_7_UNIX_SIMH_PDP11_Bourne_Shell_Manual.png" class="internal" title="Enlarge"></a></div>
+<a href="/wiki/Version_7_Unix" title="Version 7 Unix">Version 7 Unix</a>: the original Bourne shell <a href="/wiki/Man_page" title="Man page">manual page</a>. <a href="/wiki/PDP-11" title="PDP-11">PDP-11</a> simulation with <a href="/wiki/SIMH" title="SIMH">SIMH</a></div>
+</div>
+</div>
+<h3><span class="mw-headline" id="Origins">Origins</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Bourne_shell&amp;action=edit&amp;section=2" title="Edit section: Origins">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Coding started in 1976<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">[1]</a></sup></p>
+<p>First appearing in <a href="/wiki/Version_7_Unix" title="Version 7 Unix">Version 7 Unix</a>,<sup id="cite_ref-reader_2-0" class="reference"><a href="#cite_note-reader-2">[2]</a></sup> the Bourne shell superseded the <a href="/wiki/PWB_shell" title="PWB shell">Mashey shell</a>.</p>
+<p>Among the primary goals were:<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">[3]</a></sup></p>
+<ul>
+<li>To allow <a href="/wiki/Shell_script" title="Shell script">shell scripts</a> to be used as <a href="/wiki/Filter_(software)" title="Filter (software)">filters</a>.</li>
+<li>To provide programmability including <a href="/wiki/Control_flow" title="Control flow">control flow</a> and <a href="/wiki/Variable_(computer_science)" title="Variable (computer science)">variables</a>.</li>
+<li>Control over all input/output <a href="/wiki/File_descriptor" title="File descriptor">file descriptors</a>.</li>
+<li>Control over <a href="/wiki/Unix_signal" title="Unix signal">signal handling</a> within scripts.</li>
+<li>No limits on string lengths when interpreting shell scripts.</li>
+<li>Rationalize and generalize string quoting mechanism.</li>
+<li>The <a href="/wiki/Environment_variable" title="Environment variable">environment mechanism</a>. This allowed context to be established at startup and provided a way for shell scripts to pass context to sub scripts (<a href="/wiki/Process_(computing)" title="Process (computing)">processes</a>) without having to use explicit <a href="/wiki/Parameter_(computer_science)" class="mw-redirect" title="Parameter (computer science)">positional parameters</a>.</li>
+</ul>
+<h3><span class="mw-headline" id="Features_of_the_original_version">Features of the original version</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Bourne_shell&amp;action=edit&amp;section=3" title="Edit section: Features of the original version">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Features of the UNIX Version 7 Bourne shell include:</p>
+<ul>
+<li>Scripts can be invoked as commands by using their filename</li>
+<li>May be used interactively or non-interactively</li>
+<li>Allow both synchronous and asynchronous execution of commands</li>
+<li>supports input and output redirection and pipelines</li>
+<li>provides a set of built-in commands</li>
+<li>provides flow control constructs, quotation facilities, and functions.</li>
+<li>typeless variables</li>
+<li>provides local and global variable scope</li>
+<li>scripts do not require compilation before execution</li>
+<li>does not have a goto facility, so code restructuring may be necessary</li>
+<li><i><a href="/wiki/Command_substitution" title="Command substitution">Command substitution</a></i> using back quotes: <code>`command`</code>.</li>
+<li><i><a href="/wiki/Here_document" title="Here document">Here documents</a></i> using <code>&lt;&lt;</code> to embed a block of input text within a script.</li>
+<li>"<i><code>for ~ do ~ done</code></i>" loops, in particular the use of <code>$*</code> to loop over arguments.</li>
+<li>"<i><code>case ~ in ~ esac</code></i>" selection mechanism, primarily intended to assist argument parsing.</li>
+<li><i><code>sh</code></i> provided support for environment variables using keyword parameters and exportable variables.</li>
+<li>It contains strong provisions for controlling input and output and in its expression matching facilities.</li>
+</ul>
+<p>The Bourne shell also was the first to feature the convention of using <a href="/wiki/File_descriptor" title="File descriptor">file descriptor</a> <code>2&gt;</code> for <a href="/wiki/Error_message" title="Error message">error messages</a>, allowing much greater programmatic control during scripting by keeping error messages separate from data.</p>
+<p>Stephen Bourne's coding style was influenced by his experience with the <a href="/wiki/ALGOL_68C" title="ALGOL 68C">ALGOL 68C</a> compiler<sup id="cite_ref-reader_2-1" class="reference"><a href="#cite_note-reader-2">[2]</a></sup> that he had been working on at <a href="/wiki/University_of_Cambridge" title="University of Cambridge">Cambridge University</a>. In addition to the style in which the program was written, Bourne reused portions of <a href="/wiki/ALGOL_68" title="ALGOL 68">ALGOL 68</a>'s "<code><u><b>if</b></u> ~ <u>then</u> ~ <u>elif</u> ~ <u>else</u> ~ <u><b>fi</b></u></code>", "<code><u><b>case</b></u> ~ <u>in</u> ~ <u><b>esac</b></u></code>" and "<code><u>for</u> ~ <u>while</u> ~ <u><b>do</b></u> ~ <u><b>od</b></u></code>" (using <code>done</code> instead of <code><u><b>od</b></u></code>) clauses in the common <a href="/wiki/Unix" title="Unix">Unix</a> Bourne shell syntax. Moreover, – although the v7 shell is written in <a href="/wiki/C_(programming_language)" title="C (programming language)">C</a> – Bourne took advantage of some <a href="/wiki/Macro_(computer_science)" title="Macro (computer science)">macros</a><sup id="cite_ref-4" class="reference"><a href="#cite_note-4">[4]</a></sup> to give the C <a href="/wiki/Source_code" title="Source code">source code</a> an ALGOL 68 flavor. These macros (along with the <a href="/wiki/Finger_protocol" title="Finger protocol">finger</a> command distributed in Unix version <a href="/wiki/Berkeley_Software_Distribution#4.2BSD" title="Berkeley Software Distribution">4.2BSD</a>) inspired the <i><a href="/wiki/International_Obfuscated_C_Code_Contest" title="International Obfuscated C Code Contest">IOCCC</a> – International Obfuscated <a href="/wiki/C_(programming_language)" title="C (programming language)">C</a> Code Contest</i>.<sup id="cite_ref-5" class="reference"><a href="#cite_note-5">[5]</a></sup></p>
+<h3><span class="mw-headline" id="Features_introduced_after_1979">Features introduced after 1979</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Bourne_shell&amp;action=edit&amp;section=4" title="Edit section: Features introduced after 1979">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Over the years, the Bourne shell was enhanced at AT&amp;T. The various variants are thus called like the respective AT&amp;T Unix version it was released with (some important variants being Version7, SystemIII, SVR2, SVR3, SVR4). As the shell was never versioned, the only way to identify it was testing its features.<sup id="cite_ref-6" class="reference"><a href="#cite_note-6">[6]</a></sup></p>
+<p>Features of the Bourne shell versions since 1979 include:<sup id="cite_ref-7" class="reference"><a href="#cite_note-7">[7]</a></sup></p>
+<ul>
+<li>Built-in <code class="mw-highlight" id="" style="" dir="ltr">test</code> command – System III shell (1981)</li>
+<li># as comment character – System III shell (1981)</li>
+<li>Colon in parameter substitutions "${parameter:=word}" – System III shell (1981)</li>
+<li><code class="mw-highlight" id="" style="" dir="ltr">continue</code> with argument – System III shell (1981)</li>
+<li><code class="mw-highlight" id="" style="" dir="ltr">cat &lt;&lt;-EOF</code> for indented here documents – System III shell (1981)</li>
+<li>Functions and the <code class="mw-highlight" id="" style="" dir="ltr">return</code> builtin – SVR2 shell (1984)</li>
+<li>Built-ins <code class="mw-highlight" id="" style="" dir="ltr">unset</code>, <code class="mw-highlight" id="" style="" dir="ltr">echo</code>, <code class="mw-highlight" id="" style="" dir="ltr">type</code> – SVR2 shell (1984)</li>
+<li>Source code de-ALGOL68-ized – SVR2 shell (1984)</li>
+<li>Modern "<code class="mw-highlight" id="" style="" dir="ltr">$@</code>" – SVR3 shell (1986)</li>
+<li>Built-in <code class="mw-highlight" id="" style="" dir="ltr">getopts</code> – SVR3 shell (1986)</li>
+<li>Cleaned up parameter handling allows recursively callable functions – SVR3 shell (1986)</li>
+<li>8-bit clean – SVR3 shell (1986)</li>
+<li>Job control – SVR4 shell (1989)</li>
+<li>Multi-byte support – SVR4 shell (1989)</li>
+</ul>
+<h2><span class="mw-headline" id="Variants">Variants</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Bourne_shell&amp;action=edit&amp;section=5" title="Edit section: Variants">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="DMERT_shell">DMERT shell</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Bourne_shell&amp;action=edit&amp;section=6" title="Edit section: DMERT shell">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Duplex Multi-Environment Real-Time (<a href="/wiki/DMERT" class="mw-redirect" title="DMERT">DMERT</a>) is a hybrid time-sharing/real-time operating system developed in the 1970s at Bell Labs Indian Hill location in <a href="/wiki/Naperville,_Illinois" title="Naperville, Illinois">Naperville, Illinois</a> uses a 1978 snapshot of Bourne Shell "VERSION sys137 DATE 1978 Oct 12 22:39:57".<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (January 2017)">citation needed</span></a></i>]</sup> The DMERT shell runs on <a href="/wiki/3B21D" class="mw-redirect" title="3B21D">3B21D</a> computers still in use in the telecommunications industry.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (January 2017)">citation needed</span></a></i>]</sup></p>
+<h3><span class="mw-headline" id="Korn_shell">Korn shell</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Bourne_shell&amp;action=edit&amp;section=7" title="Edit section: Korn shell">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;"><a href="/wiki/File:OpenBSD_ksh_Interaction.png" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/1/16/OpenBSD_ksh_Interaction.png/220px-OpenBSD_ksh_Interaction.png" width="220" height="130" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/1/16/OpenBSD_ksh_Interaction.png/330px-OpenBSD_ksh_Interaction.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/1/16/OpenBSD_ksh_Interaction.png/440px-OpenBSD_ksh_Interaction.png 2x" data-file-width="730" data-file-height="430" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:OpenBSD_ksh_Interaction.png" class="internal" title="Enlarge"></a></div>
+Interaction with <i><a href="/wiki/Korn_shell" class="mw-redirect" title="Korn shell">pdksh</a></i> in <a href="/wiki/OpenBSD" title="OpenBSD">OpenBSD</a> (default shell)</div>
+</div>
+</div>
+<p>The <a href="/wiki/Korn_shell" class="mw-redirect" title="Korn shell">Korn shell</a> (ksh) written by <a href="/wiki/David_Korn_(computer_scientist)" title="David Korn (computer scientist)">David Korn</a> based on the original Bourne Shell source code,<sup id="cite_ref-8" class="reference"><a href="#cite_note-8">[8]</a></sup> was a middle road between the Bourne shell and the <a href="/wiki/C_shell" title="C shell">C shell</a>. Its syntax was chiefly drawn from the Bourne shell, while its <a href="/wiki/Job_control_(Unix)" title="Job control (Unix)">job control</a> features resembled those of the C shell. The functionality of the original Korn Shell (known as ksh88 from the year of its introduction) was used as a basis for the <a href="/wiki/POSIX" title="POSIX">POSIX</a> shell standard. A newer version, ksh93, has been open source since 2000 and is used on some <a href="/wiki/Linux_distribution" title="Linux distribution">Linux distributions</a>. A clone of ksh88 known as <a href="/wiki/Korn_shell" class="mw-redirect" title="Korn shell">pdksh</a> is the default shell in OpenBSD.</p>
+<h2><span class="mw-headline" id="Relationship_to_other_shells">Relationship to other shells</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Bourne_shell&amp;action=edit&amp;section=8" title="Edit section: Relationship to other shells">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="C_shell">C shell</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Bourne_shell&amp;action=edit&amp;section=9" title="Edit section: C shell">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p><a href="/wiki/Bill_Joy" title="Bill Joy">Bill Joy</a>, the author of the <a href="/wiki/C_shell" title="C shell">C shell</a>, criticized the Bourne shell as being unfriendly for interactive use,<sup id="cite_ref-9" class="reference"><a href="#cite_note-9">[9]</a></sup> a task for which Stephen Bourne himself acknowledged C shell's superiority. Bourne stated, however, that his shell was superior for scripting and was available on any Unix system,<sup id="cite_ref-bourne198310_10-0" class="reference"><a href="#cite_note-bourne198310-10">[10]</a></sup> and <a href="/wiki/Tom_Christiansen" title="Tom Christiansen">Tom Christiansen</a> also criticized C shell as being unsuitable for scripting and programming.<sup id="cite_ref-11" class="reference"><a href="#cite_note-11">[11]</a></sup></p>
+<h3><span class="mw-headline" id="Almquist_shells">Almquist shells</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Bourne_shell&amp;action=edit&amp;section=10" title="Edit section: Almquist shells">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Due to copyright issues surrounding the Bourne Shell as it was used in historic <a href="/wiki/Computer_Systems_Research_Group" title="Computer Systems Research Group">CSRG</a> BSD releases, Kenneth Almquist developed a clone of the Bourne Shell, known by some as the <a href="/wiki/Almquist_shell" title="Almquist shell">Almquist shell</a> and available under the <a href="/wiki/BSD_licenses" title="BSD licenses">BSD license</a>, which is in use today on some BSD descendants and in low-memory situations. The Almquist Shell was ported to Linux, and the port renamed the <a href="/wiki/Almquist_shell" title="Almquist shell">Debian Almquist shell</a>, or dash. This shell provides faster execution of standard <tt>sh</tt> (and POSIX-standard <tt>sh</tt>, in modern descendants) scripts with a smaller memory footprint than its counterpart, Bash. Its use tends to expose <a href="/wiki/Bash_(Unix_shell)#Portability" title="Bash (Unix shell)">bashisms</a> – bash-centric assumptions made in scripts meant to run on sh.</p>
+<h3><span class="mw-headline" id="Other_shells">Other shells</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Bourne_shell&amp;action=edit&amp;section=11" title="Edit section: Other shells">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p><a href="/wiki/Bash_(Unix_shell)" title="Bash (Unix shell)">Bash</a> (the <i>Bourne-Again shell</i>) was later developed for the <a href="/wiki/GNU" title="GNU">GNU project</a> and incorporates features from the Bourne shell, csh, and ksh. It is meant to be POSIX-compliant.</p>
+<p><a href="/wiki/Rc" title="Rc">rc</a> was created at <a href="/wiki/Bell_Labs" title="Bell Labs">Bell Labs</a> by <a href="/wiki/Tom_Duff" title="Tom Duff">Tom Duff</a> as a replacement for sh for <a href="/wiki/Version_10_Unix" class="mw-redirect" title="Version 10 Unix">Version 10 Unix</a>. It is the default shell for <a href="/wiki/Plan_9_from_Bell_Labs" title="Plan 9 from Bell Labs">Plan 9 from Bell Labs</a>. It has been ported to UNIX as part of <a href="/wiki/Plan_9_from_User_Space" title="Plan 9 from User Space">Plan 9 from User Space</a>.</p>
+<h2><span class="mw-headline" id="Usage">Usage</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Bourne_shell&amp;action=edit&amp;section=12" title="Edit section: Usage">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The Bourne shell was once standard on all branded <a href="/wiki/Unix" title="Unix">Unix</a> systems, although historically <a href="/wiki/BSD" class="mw-redirect" title="BSD">BSD</a>-based systems had many scripts written in <a href="/wiki/C_shell" title="C shell">csh</a>. As the basis of <a href="/wiki/POSIX" title="POSIX">POSIX</a> <tt>sh</tt> syntax, Bourne shell scripts can typically be run with <a href="/wiki/Bash_(Unix_shell)" title="Bash (Unix shell)">Bash</a> or <a href="/wiki/Debian_Almquist_shell" class="mw-redirect" title="Debian Almquist shell">dash</a> on <a href="/wiki/GNU" title="GNU">GNU</a>/<a href="/wiki/Linux" title="Linux">Linux</a> or other <a href="/wiki/Unix-like" title="Unix-like">Unix-like</a> systems.</p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Bourne_shell&amp;action=edit&amp;section=13" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a href="/wiki/Comparison_of_command_shells" title="Comparison of command shells">Comparison of command shells</a></li>
+<li><a href="/wiki/Unix_shell" title="Unix shell">Unix shell</a></li>
+</ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Bourne_shell&amp;action=edit&amp;section=14" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist columns references-column-width" style="-moz-column-width: 30em; -webkit-column-width: 30em; column-width: 30em; list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="https://www.bsdcan.org/2015/schedule/events/612.en.html">https://www.bsdcan.org/2015/schedule/events/612.en.html</a> Stephen Bourne Keynote for BSDCan 2015</span></li>
+<li id="cite_note-reader-2"><span class="mw-cite-backlink">^ <a href="#cite_ref-reader_2-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-reader_2-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><cite class="citation techreport"><a href="/wiki/Doug_McIlroy" class="mw-redirect" title="Doug McIlroy">McIlroy, M. D.</a> (1987). <a rel="nofollow" class="external text" href="http://www.cs.dartmouth.edu/~doug/reader.pdf"><i>A Research Unix reader: annotated excerpts from the Programmer's Manual, 1971–1986</i></a> <span style="font-size:85%;">(PDF)</span> (Technical report). CSTR. Bell Labs. 139.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABourne+shell&amp;rft.aufirst=M.+D.&amp;rft.aulast=McIlroy&amp;rft.btitle=A+Research+Unix+reader%3A+annotated+excerpts+from+the+Programmer%27s+Manual%2C+1971%931986&amp;rft.date=1987&amp;rft.genre=report&amp;rft_id=http%3A%2F%2Fwww.cs.dartmouth.edu%2F~doug%2Freader.pdf&amp;rft.pub=Bell+Labs&amp;rft.series=CSTR&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.computerworld.com.au/article/279011/-z_programming_languages_bourne_shell_sh">"The A-Z of Programming Languages: Bourne shell, or sh"</a> March 2009, <a href="/wiki/Computerworld" title="Computerworld">Computerworld</a></span></li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text"><cite class="citation web"><a href="/wiki/Stephen_R._Bourne" title="Stephen R. Bourne">Bourne, Steve</a> (12 January 1979). <a rel="nofollow" class="external text" href="http://minnie.tuhs.org/cgi-bin/utree.pl?file=V7/usr/src/cmd/sh/mac.h">"mac.h – Macros used by Bourne to structure C like Algol68C"</a>. <a href="/wiki/AT%26T_Corporation" title="AT&amp;T Corporation">AT&amp;T Corporation</a><span class="reference-accessdate">. Retrieved <span class="nowrap">9 September</span> 2006</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABourne+shell&amp;rft.au=Bourne%2C+Steve&amp;rft.btitle=mac.h+%93+Macros+used+by+Bourne+to+structure+C+like+Algol68C&amp;rft.date=1979-01-12&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fminnie.tuhs.org%2Fcgi-bin%2Futree.pl%3Ffile%3DV7%2Fusr%2Fsrc%2Fcmd%2Fsh%2Fmac.h&amp;rft.pub=AT%26T+Corporation&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text"><cite class="citation web"><a href="/wiki/Landon_Curt_Noll" title="Landon Curt Noll">Landon Curt Noll</a>; Simon Cooper; Peter Seebach &amp; Leonid A. Broukhis (2004). <a rel="nofollow" class="external text" href="http://www.ioccc.org/faq.html">"The IOCCC FAQ – Q/A: How did the IOCCC get started?"</a>. www.ioccc.org<span class="reference-accessdate">. Retrieved <span class="nowrap">9 September</span> 2006</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABourne+shell&amp;rft.au=Landon+Curt+Noll&amp;rft.au=Leonid+A.+Broukhis&amp;rft.au=Peter+Seebach&amp;rft.au=Simon+Cooper&amp;rft.btitle=The+IOCCC+FAQ+%93+Q%2FA%3A+How+did+the+IOCCC+get+started%3F&amp;rft.date=2004&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.ioccc.org%2Ffaq.html&amp;rft.pub=www.ioccc.org&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.in-ulm.de/~mascheck/various/whatshell/">Bourne Shell release testing script from Sven Mascheck</a></span></li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.in-ulm.de/~mascheck/bourne/">History of the Bourne Shell family</a></span></li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text"><cite id="CITEREFKorn1994" class="citation">Korn, David G. (October 26, 1994), <a rel="nofollow" class="external text" href="https://www.usenix.org/legacy/publications/library/proceedings/vhll/full_papers/korn.ksh.a">"ksh - An Extensible High Level Language"</a>, <i>Proceedings of the USENIX 1994 Very High Level Languages Symposium</i>, USENIX Association<span class="reference-accessdate">, retrieved <span class="nowrap">February 5,</span> 2015</span>, <q>Instead of inventing a new script language, we built a form entry system by modifying the Bourne shell, adding built-in commands as necessary.</q></cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABourne+shell&amp;rft.atitle=ksh+-+An+Extensible+High+Level+Language&amp;rft.aufirst=David+G.&amp;rft.aulast=Korn&amp;rft.date=1994-10-26&amp;rft.genre=article&amp;rft_id=https%3A%2F%2Fwww.usenix.org%2Flegacy%2Fpublications%2Flibrary%2Fproceedings%2Fvhll%2Ffull_papers%2Fkorn.ksh.a&amp;rft.jtitle=Proceedings+of+the+USENIX+1994+Very+High+Level+Languages+Symposium&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-9">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.kitebird.com/csh-tcsh-book/csh-intro.pdf"><i>An Introduction to the C shell</i></a> by <a href="/wiki/Bill_Joy" title="Bill Joy">Bill Joy</a>.</span></li>
+<li id="cite_note-bourne198310-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-bourne198310_10-0">^</a></b></span> <span class="reference-text"><cite class="citation news">Bourne, Stephen R. (October 1983). <a rel="nofollow" class="external text" href="https://archive.org/stream/byte-magazine-1983-10/1983_10_BYTE_08-10_UNIX#page/n187/mode/2up">"The Unix Shell"</a>. <i>BYTE</i>. p.&#160;187<span class="reference-accessdate">. Retrieved <span class="nowrap">30 January</span> 2015</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABourne+shell&amp;rft.atitle=The+Unix+Shell&amp;rft.au=Bourne%2C+Stephen+R.&amp;rft.date=1983-10&amp;rft.genre=article&amp;rft_id=https%3A%2F%2Farchive.org%2Fstream%2Fbyte-magazine-1983-10%2F1983_10_BYTE_08-10_UNIX%23page%2Fn187%2Fmode%2F2up&amp;rft.jtitle=BYTE&amp;rft.pages=187&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-11"><span class="mw-cite-backlink"><b><a href="#cite_ref-11">^</a></b></span> <span class="reference-text"><cite class="citation web">Tom Christiansen (28 September 1995). <a rel="nofollow" class="external text" href="http://www.faqs.org/faqs/unix-faq/shell/csh-whynot/">"Csh Programming Considered Harmful"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">17 February</span> 2014</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABourne+shell&amp;rft.au=Tom+Christiansen&amp;rft.btitle=Csh+Programming+Considered+Harmful&amp;rft.date=1995-09-28&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.faqs.org%2Ffaqs%2Funix-faq%2Fshell%2Fcsh-whynot%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Bourne_shell&amp;action=edit&amp;section=15" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<table class="plainlinks metadata ambox ambox-style ambox-external_links" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/40px-Edit-clear.svg.png" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/60px-Edit-clear.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/80px-Edit-clear.svg.png 2x" data-file-width="48" data-file-height="48" /></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">This section's <b>use of <a href="/wiki/Wikipedia:External_links" title="Wikipedia:External links">external links</a> may not follow Wikipedia's policies or guidelines</b>. <span class="hide-when-compact">Please <a class="external text" href="//en.wikipedia.org/w/index.php?title=Bourne_shell&amp;action=edit">improve this article</a> by removing <a href="/wiki/Wikipedia:What_Wikipedia_is_not#Wikipedia_is_not_a_mirror_or_a_repository_of_links.2C_images.2C_or_media_files" title="Wikipedia:What Wikipedia is not">excessive</a> or <a href="/wiki/Wikipedia:External_links" title="Wikipedia:External links">inappropriate</a> external links, and converting useful links where appropriate into <a href="/wiki/Wikipedia:Citing_sources" title="Wikipedia:Citing sources">footnote references</a>.</span> <small><i>(August 2016)</i></small> <small class="hide-when-compact"><i>(<a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove this template message</a>)</i></small></span></td>
+</tr>
+</table>
+<table role="presentation" class="mbox-small plainlinks sistersitebox" style="border:1px solid #aaa;background-color:#f9f9f9">
+<tr>
+<td class="mbox-image"><a href="/wiki/File:Wikibooks-logo-en-noslogan.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/40px-Wikibooks-logo-en-noslogan.svg.png" width="40" height="40" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/60px-Wikibooks-logo-en-noslogan.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/80px-Wikibooks-logo-en-noslogan.svg.png 2x" data-file-width="400" data-file-height="400" /></a></td>
+<td class="mbox-text plainlist">Wikibooks has a book on the topic of: <i><b><a href="https://en.wikibooks.org/wiki/Bourne_Shell_Scripting" class="extiw" title="wikibooks:Bourne Shell Scripting">Bourne Shell Scripting</a></b></i></td>
+</tr>
+</table>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.in-ulm.de/~mascheck/bourne/">The individual members of "The Traditional Bourne Shell Family"</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.in-ulm.de/~mascheck/bourne/common.html">Characteristical common properties of the traditional Bourne shells"</a></li>
+<li><a rel="nofollow" class="external text" href="http://minnie.tuhs.org/cgi-bin/utree.pl?file=V7/usr/src/cmd/sh">Historical C source code for the Bourne shell using mac.h macros from 1979</a></li>
+<li><a rel="nofollow" class="external text" href="http://steve-parker.org/sh/bourne.shtml">Original Bourne Shell documentation from 1978</a></li>
+<li><a rel="nofollow" class="external text" href="http://heirloom.sourceforge.net/sh.html">A port of the "heirloom" SVR4 Bourne shell from OpenSolaris to some other Unix-like systems</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.grymoire.com/Unix/Sh.html">Bourne Shell Tutorial (syntax)</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.faqs.org/faqs/unix-faq/shell/shell-differences/">Faqs shell differences</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.computerworld.com.au/article/279011/-z_programming_languages_bourne_shell_sh?fp=&amp;fpid=&amp;pf=1">Howard Dahdah, The A–Z of Programming Languages: Bourne shell, or sh — An in-depth interview with Steve Bourne, creator of the Bourne shell, or sh</a>, <i><a href="/wiki/Computerworld" title="Computerworld">Computerworld</a></i>, 5 March 2009.</li>
+</ul>
+<div role="navigation" class="navbox" aria-labelledby="Unix_shells" style="padding:3px">
+<table class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:Unix_shells" title="Template:Unix shells"><abbr title="View this template" style=";;background:none transparent;border:none;">v</abbr></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:Unix_shells" title="Template talk:Unix shells"><abbr title="Discuss this template" style=";;background:none transparent;border:none;">t</abbr></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:Unix_shells&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;">e</abbr></a></li>
+</ul>
+</div>
+<div id="Unix_shells" style="font-size:114%"><a href="/wiki/Unix_shell" title="Unix shell">Unix shells</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-odd hlist" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Bash_(Unix_shell)" title="Bash (Unix shell)">Bash</a></li>
+<li><strong class="selflink">Bourne</strong></li>
+<li><a href="/wiki/Almquist_shell" title="Almquist shell">Almquist</a></li>
+<li><a href="/wiki/C_shell" title="C shell">csh</a></li>
+<li><a href="/wiki/Es_(Unix_shell)" class="mw-redirect" title="Es (Unix shell)">es</a></li>
+<li><a href="/wiki/Friendly_interactive_shell" title="Friendly interactive shell">fish</a></li>
+<li><a href="/wiki/Hamilton_C_shell" title="Hamilton C shell">Hamilton</a></li>
+<li><a href="/wiki/Korn_shell" class="mw-redirect" title="Korn shell">Korn</a></li>
+<li><a href="/wiki/PWB_shell" title="PWB shell">PWB</a></li>
+<li><a href="/wiki/Rc" title="Rc">rc</a></li>
+<li><a href="/wiki/Stand-alone_shell" title="Stand-alone shell">sash</a></li>
+<li><a href="/wiki/Tcsh" title="Tcsh">tcsh</a></li>
+<li><a href="/wiki/Thompson_shell" title="Thompson shell">Thompson</a></li>
+<li><a href="/wiki/Wish_(Unix_shell)" title="Wish (Unix shell)">Wish</a></li>
+<li><a href="/wiki/Z_shell" title="Z shell">zsh</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1227
+Cached time: 20170130181121
+Cache expiry: 86400
+Dynamic content: true
+CPU time usage: 0.216 seconds
+Real time usage: 0.307 seconds
+Preprocessor visited node count: 1701/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 35537/2097152 bytes
+Template argument size: 2125/2097152 bytes
+Highest expansion depth: 12/40
+Expensive parser function count: 7/500
+Lua time usage: 0.090/10.000 seconds
+Lua memory usage: 3.54 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  265.177      1 -total
+ 23.42%   62.112      1 Template:Reflist
+ 22.21%   58.907      1 Template:Infobox_software
+ 20.70%   54.889      1 Template:Infobox
+ 14.48%   38.395      2 Template:Ambox
+ 14.31%   37.947      1 Template:Refimprove
+ 12.11%   32.125      1 Template:Use_dmy_dates
+ 11.99%   31.790      2 Template:Cn
+ 10.38%   27.526      2 Template:Fix
+ 10.18%   27.003      1 Template:Cite_techreport
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:92839-0!*!0!!en!4!* and timestamp 20170130181121 and revision id 762778129
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Bourne_shell&amp;oldid=762778129">https://en.wikipedia.org/w/index.php?title=Bourne_shell&amp;oldid=762778129</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Unix_shells" title="Category:Unix shells">Unix shells</a></li><li><a href="/wiki/Category:1977_software" title="Category:1977 software">1977 software</a></li><li><a href="/wiki/Category:POSIX" title="Category:POSIX">POSIX</a></li><li><a href="/wiki/Category:Scripting_languages" title="Category:Scripting languages">Scripting languages</a></li><li><a href="/wiki/Category:Text-oriented_programming_languages" title="Category:Text-oriented programming languages">Text-oriented programming languages</a></li><li><a href="/wiki/Category:Unix_SUS2008_utilities" title="Category:Unix SUS2008 utilities">Unix SUS2008 utilities</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Use_dmy_dates_from_October_2012" title="Category:Use dmy dates from October 2012">Use dmy dates from October 2012</a></li><li><a href="/wiki/Category:Articles_needing_additional_references_from_January_2008" title="Category:Articles needing additional references from January 2008">Articles needing additional references from January 2008</a></li><li><a href="/wiki/Category:All_articles_needing_additional_references" title="Category:All articles needing additional references">All articles needing additional references</a></li><li><a href="/wiki/Category:All_articles_with_unsourced_statements" title="Category:All articles with unsourced statements">All articles with unsourced statements</a></li><li><a href="/wiki/Category:Articles_with_unsourced_statements_from_January_2017" title="Category:Articles with unsourced statements from January 2017">Articles with unsourced statements from January 2017</a></li><li><a href="/wiki/Category:Wikipedia_external_links_cleanup_from_August_2016" title="Category:Wikipedia external links cleanup from August 2016">Wikipedia external links cleanup from August 2016</a></li><li><a href="/wiki/Category:Wikipedia_spam_cleanup_from_August_2016" title="Category:Wikipedia spam cleanup from August 2016">Wikipedia spam cleanup from August 2016</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Bourne+shell" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Bourne+shell" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/Bourne_shell"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:Bourne_shell"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/Bourne_shell" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=Bourne_shell&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Bourne_shell&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Bourne_shell" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Bourne_shell" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Bourne_shell&amp;oldid=762778129" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Bourne_shell&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q844595" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Bourne_shell&amp;id=762778129" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Bourne+shell">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Bourne+shell&amp;returnto=Bourne+shell&amp;oldid=762778129&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Bourne_shell&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-az"><a href="https://az.wikipedia.org/wiki/Bourne_shell" title="Bourne shell – Azerbaijani" lang="az" hreflang="az" class="interlanguage-link-target">Azərbaycanca</a></li><li class="interlanguage-link interwiki-bg"><a href="https://bg.wikipedia.org/wiki/Bourne_shell" title="Bourne shell – Bulgarian" lang="bg" hreflang="bg" class="interlanguage-link-target">Български</a></li><li class="interlanguage-link interwiki-ca"><a href="https://ca.wikipedia.org/wiki/Bourne_Shell" title="Bourne Shell – Catalan" lang="ca" hreflang="ca" class="interlanguage-link-target">Català</a></li><li class="interlanguage-link interwiki-cs"><a href="https://cs.wikipedia.org/wiki/Bourne_shell" title="Bourne shell – Czech" lang="cs" hreflang="cs" class="interlanguage-link-target">Čeština</a></li><li class="interlanguage-link interwiki-da"><a href="https://da.wikipedia.org/wiki/Bourne_shell" title="Bourne shell – Danish" lang="da" hreflang="da" class="interlanguage-link-target">Dansk</a></li><li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/Unix-Shell#Die_Bourne-Shell" title="Unix-Shell – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-el"><a href="https://el.wikipedia.org/wiki/%CE%9A%CE%AD%CE%BB%CF%85%CF%86%CE%BF%CF%82_Bourne" title="Κέλυφος Bourne – Greek" lang="el" hreflang="el" class="interlanguage-link-target">Ελληνικά</a></li><li class="interlanguage-link interwiki-es"><a href="https://es.wikipedia.org/wiki/Bourne_Shell" title="Bourne Shell – Spanish" lang="es" hreflang="es" class="interlanguage-link-target">Español</a></li><li class="interlanguage-link interwiki-eo"><a href="https://eo.wikipedia.org/wiki/Sh_(%C5%9Delo)" title="Sh (ŝelo) – Esperanto" lang="eo" hreflang="eo" class="interlanguage-link-target">Esperanto</a></li><li class="interlanguage-link interwiki-fa"><a href="https://fa.wikipedia.org/wiki/%D9%BE%D9%88%D8%B3%D8%AA%D9%87_%D8%A8%D9%88%D8%B1%D9%86" title="پوسته بورن – Persian" lang="fa" hreflang="fa" class="interlanguage-link-target">فارسی</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/Bourne_shell" title="Bourne shell – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-ko"><a href="https://ko.wikipedia.org/wiki/%EB%B3%B8_%EC%85%B8" title="본 셸 – Korean" lang="ko" hreflang="ko" class="interlanguage-link-target">한국어</a></li><li class="interlanguage-link interwiki-it"><a href="https://it.wikipedia.org/wiki/Bourne_shell" title="Bourne shell – Italian" lang="it" hreflang="it" class="interlanguage-link-target">Italiano</a></li><li class="interlanguage-link interwiki-he"><a href="https://he.wikipedia.org/wiki/Bourne_Shell" title="Bourne Shell – Hebrew" lang="he" hreflang="he" class="interlanguage-link-target">עברית</a></li><li class="interlanguage-link interwiki-ja"><a href="https://ja.wikipedia.org/wiki/Bourne_Shell" title="Bourne Shell – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target">日本語</a></li><li class="interlanguage-link interwiki-no"><a href="https://no.wikipedia.org/wiki/Bourne_Shell" title="Bourne Shell – Norwegian" lang="no" hreflang="no" class="interlanguage-link-target">Norsk bokmål</a></li><li class="interlanguage-link interwiki-nn"><a href="https://nn.wikipedia.org/wiki/Bourne_Shell" title="Bourne Shell – Norwegian Nynorsk" lang="nn" hreflang="nn" class="interlanguage-link-target">Norsk nynorsk</a></li><li class="interlanguage-link interwiki-pl"><a href="https://pl.wikipedia.org/wiki/Pow%C5%82oka_Bourne%E2%80%99a" title="Powłoka Bourne’a – Polish" lang="pl" hreflang="pl" class="interlanguage-link-target">Polski</a></li><li class="interlanguage-link interwiki-pt"><a href="https://pt.wikipedia.org/wiki/Bourne_shell" title="Bourne shell – Portuguese" lang="pt" hreflang="pt" class="interlanguage-link-target">Português</a></li><li class="interlanguage-link interwiki-ru"><a href="https://ru.wikipedia.org/wiki/Bourne_shell" title="Bourne shell – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li><li class="interlanguage-link interwiki-sk"><a href="https://sk.wikipedia.org/wiki/Bourne_shell" title="Bourne shell – Slovak" lang="sk" hreflang="sk" class="interlanguage-link-target">Slovenčina</a></li><li class="interlanguage-link interwiki-sv"><a href="https://sv.wikipedia.org/wiki/Bourne_shell" title="Bourne shell – Swedish" lang="sv" hreflang="sv" class="interlanguage-link-target">Svenska</a></li><li class="interlanguage-link interwiki-th"><a href="https://th.wikipedia.org/wiki/%E0%B8%9A%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%99%E0%B9%80%E0%B8%8A%E0%B8%A5%E0%B8%A5%E0%B9%8C" title="บอร์นเชลล์ – Thai" lang="th" hreflang="th" class="interlanguage-link-target">ไทย</a></li><li class="interlanguage-link interwiki-uk"><a href="https://uk.wikipedia.org/wiki/%D0%9E%D0%B1%D0%BE%D0%BB%D0%BE%D0%BD%D0%BA%D0%B0_%D0%91%D0%BE%D1%80%D0%BD%D0%B0" title="Оболонка Борна – Ukrainian" lang="uk" hreflang="uk" class="interlanguage-link-target">Українська</a></li><li class="interlanguage-link interwiki-zh"><a href="https://zh.wikipedia.org/wiki/Bourne_shell" title="Bourne shell – Chinese" lang="zh" hreflang="zh" class="interlanguage-link-target">中文</a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q844595#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 30 January 2017, at 18:11.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Bourne_shell&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.216","walltime":"0.307","ppvisitednodes":{"value":1701,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":35537,"limit":2097152},"templateargumentsize":{"value":2125,"limit":2097152},"expansiondepth":{"value":12,"limit":40},"expensivefunctioncount":{"value":7,"limit":500},"entityaccesscount":{"value":1,"limit":400},"timingprofile":["100.00%  265.177      1 -total"," 23.42%   62.112      1 Template:Reflist"," 22.21%   58.907      1 Template:Infobox_software"," 20.70%   54.889      1 Template:Infobox"," 14.48%   38.395      2 Template:Ambox"," 14.31%   37.947      1 Template:Refimprove"," 12.11%   32.125      1 Template:Use_dmy_dates"," 11.99%   31.790      2 Template:Cn"," 10.38%   27.526      2 Template:Fix"," 10.18%   27.003      1 Template:Cite_techreport"]},"scribunto":{"limitreport-timeusage":{"value":"0.090","limit":"10.000"},"limitreport-memusage":{"value":3716347,"limit":52428800}},"cachereport":{"origin":"mw1227","timestamp":"20170130181121","ttl":86400,"transientcontent":true}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":62,"wgHostname":"mw1267"});});</script>
+	</body>
+</html>

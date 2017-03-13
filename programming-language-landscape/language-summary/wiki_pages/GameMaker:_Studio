@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>GameMaker: Studio - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"GameMaker:_Studio","wgTitle":"GameMaker: Studio","wgCurRevisionId":760835532,"wgRevisionId":760835532,"wgArticleId":555154,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Wikipedia indefinitely semi-protected pages","Use dmy dates from April 2016","Pages using deprecated image syntax","Commons category without a link on Wikidata","Video game IDE","Video game engines","1999 software","IPhone video game engines","Programming tools for Windows"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"GameMaker:_Studio","wgRelevantArticleId":555154,"wgRequestId":"WJCQtwpAEKkAAEwOFokAAAAK","wgIsProbablyEditable":false,"wgRestrictionEdit":["autoconfirmed"],"wgRestrictionMove":["autoconfirmed"],"wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":true},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q16195922","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.math.styles":"ready","ext.cite.styles":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.legacy.wikibits","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.math.scripts%2Cstyles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.29.0-wmf.9"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/GameMaker:_Studio"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/GameMaker:_Studio"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-GameMaker_Studio rootpage-GameMaker_Studio skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+<div id="mw-indicator-pp-default" class="mw-indicator"><a href="/wiki/Wikipedia:Protection_policy#semi" title="This article is semi-protected."><img alt="Page semi-protected" src="//upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Padlock-silver.svg/20px-Padlock-silver.svg.png" width="20" height="20" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Padlock-silver.svg/30px-Padlock-silver.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Padlock-silver.svg/40px-Padlock-silver.svg.png 2x" data-file-width="128" data-file-height="128" /></a></div>
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">GameMaker: Studio</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><script>function mfTempOpenSection(id){var block=document.getElementById("mf-section-"+id);block.className+=" open-block";block.previousSibling.className+=" open-block";}</script><div role="note" class="hatnote">For other uses, see <a href="/wiki/Gamemaker_(disambiguation)" class="mw-redirect mw-disambig" title="Gamemaker (disambiguation)">Gamemaker (disambiguation)</a>.</div>
+<table class="infobox vevent" style="width:22em">
+<caption class="summary">Game Maker</caption>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/File:The_game_maker_logo.png" class="image"><img alt="The game maker logo.png" src="//upload.wikimedia.org/wikipedia/en/thumb/1/1b/The_game_maker_logo.png/250px-The_game_maker_logo.png" width="250" height="250" srcset="//upload.wikimedia.org/wikipedia/en/1/1b/The_game_maker_logo.png 1.5x" data-file-width="256" data-file-height="256" /></a></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Software_developer" title="Software developer">Original author(s)</a></th>
+<td><a href="/wiki/Mark_Overmars" title="Mark Overmars">Mark Overmars</a></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Software_developer" title="Software developer">Developer(s)</a></th>
+<td><a href="/wiki/YoYo_Games" title="YoYo Games">YoYo Games</a></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;">Initial release</th>
+<td>15&#160;November 1999<span class="noprint">; 17 years ago</span><span style="display:none">&#160;(<span class="bday dtstart published updated">1999-11-15</span>)</span></td>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Software_release_life_cycle" title="Software release life cycle">Stable release</a></th>
+<td>
+<div style="margin:0px;">v1.4.1760 / 30&#160;August 2016<span class="noprint">; 4 months ago</span><span style="display:none">&#160;(<span class="bday dtstart published updated">2016-08-30</span>)</span></div>
+</td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Software_release_life_cycle" title="Software release life cycle">Preview release</a></th>
+<td>
+<div style="margin:0px;">v1.99.505 Early Access / 25&#160;August 2016<span class="noprint">; 5 months ago</span><span style="display:none">&#160;(<span class="bday dtstart published updated">2016-08-25</span>)</span></div>
+</td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;">Written in</th>
+<td><a href="/wiki/Delphi_programming_language" class="mw-redirect" title="Delphi programming language">Delphi</a></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Operating_system" title="Operating system">Operating system</a></th>
+<td>
+<div class="NavFrame" style="border: none; padding: 0;">
+<div class="NavHead" style="font-size: 105%; background: transparent; text-align: left;">Creation:</div>
+<ul class="NavContent" style="list-style: none none; margin-left: 0; text-align: left; font-size: 105%; margin-top: 0; margin-bottom: 0; line-height: inherit;">
+<li style="line-height: inherit; margin: 0"><a href="/wiki/Microsoft_Windows" title="Microsoft Windows">Microsoft Windows</a></li>
+</ul>
+</div>
+<div class="NavFrame collapsed" style="border: none; padding: 0;">
+<div class="NavHead" style="font-size: 105%; background: transparent; text-align: left;">Deployment:</div>
+<ul class="NavContent" style="list-style: none none; margin-left: 0; text-align: left; font-size: 105%; margin-top: 0; margin-bottom: 0; line-height: inherit;">
+<li style="line-height: inherit; margin: 0"><a href="/wiki/Microsoft_Windows" title="Microsoft Windows">Microsoft Windows</a></li>
+<li style="line-height: inherit; margin: 0"><a href="/wiki/Windows_Runtime" title="Windows Runtime">Windows Runtime</a></li>
+<li style="line-height: inherit; margin: 0"><a href="/wiki/OS_X" class="mw-redirect" title="OS X">OS X</a></li>
+<li style="line-height: inherit; margin: 0"><a href="/wiki/Ubuntu_(operating_system)" title="Ubuntu (operating system)">Ubuntu</a></li>
+<li style="line-height: inherit; margin: 0"><a href="/wiki/HTML5" title="HTML5">HTML5</a></li>
+<li style="line-height: inherit; margin: 0"><a href="/wiki/Android_(operating_system)" title="Android (operating system)">Android</a></li>
+<li style="line-height: inherit; margin: 0"><a href="/wiki/IOS" title="IOS">iOS</a></li>
+<li style="line-height: inherit; margin: 0"><a href="/wiki/Windows_Phone_8" title="Windows Phone 8">Windows Phone 8</a></li>
+<li style="line-height: inherit; margin: 0"><a href="/wiki/Tizen" title="Tizen">Tizen</a></li>
+<li style="line-height: inherit; margin: 0"><a href="/wiki/Xbox_One" title="Xbox One">Xbox One</a></li>
+<li style="line-height: inherit; margin: 0"><a href="/wiki/PlayStation_4" title="PlayStation 4">PlayStation 4</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;">Available in</th>
+<td><a href="/wiki/English_language" title="English language">English</a></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Software_categories#Broad_categories" title="Software categories">Type</a></th>
+<td><a href="/wiki/Game_creation_system" title="Game creation system">Game creation system</a></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Software_license" title="Software license">License</a></th>
+<td><a href="/wiki/Proprietary_software" title="Proprietary software">Proprietary</a></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;">Website</th>
+<td><span class="url"><a rel="nofollow" class="external text" href="http://www.yoyogames.com/">www<wbr />.yoyogames<wbr />.com</a></span></td>
+</tr>
+</table>
+<p><b>GameMaker: Studio</b> (originally named <b>Animo</b> and later <b>Game Maker</b>) is a <a href="/wiki/Proprietary_software" title="Proprietary software">proprietary</a> <a href="/wiki/Game_creation_system" title="Game creation system">game creation system</a> created by <a href="/wiki/Mark_Overmars" title="Mark Overmars">Mark Overmars</a> in the <a href="/wiki/Delphi_programming_language" class="mw-redirect" title="Delphi programming language">Delphi</a> <a href="/wiki/Programming_language" title="Programming language">programming language</a>.<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">[1]</a></sup></p>
+<p>GameMaker accommodates the creation of <a href="/wiki/Cross-platform" title="Cross-platform">cross-platform</a> and multi-genre <a href="/wiki/Video_game" title="Video game">video games</a> using <a href="/wiki/Drag_and_drop" title="Drag and drop">drag and drop</a> action sequences or a <a href="/wiki/Sandbox_(software_development)" title="Sandbox (software development)">sandboxed</a> scripting language known as Game Maker Language, which can be used to develop more advanced games that could not be created just by using the drag and drop features. GameMaker was designed to allow novice <a href="/wiki/Computer_programmers" class="mw-redirect" title="Computer programmers">computer programmers</a> to be able to make computer games without much programming knowledge by use of these actions.</p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Controversy"><span class="tocnumber">2</span> <span class="toctext">Controversy</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Reverse_engineering"><span class="tocnumber">2.1</span> <span class="toctext">Reverse engineering</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Digital_rights_management"><span class="tocnumber">2.2</span> <span class="toctext">Digital rights management</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="#Reception"><span class="tocnumber">3</span> <span class="toctext">Reception</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#See_also"><span class="tocnumber">4</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#External_links"><span class="tocnumber">6</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Overview">Overview</span></h2>
+<p>Originally titled Animo, the program was first released in 1999,<sup id="cite_ref-gm1999_2-0" class="reference"><a href="#cite_note-gm1999-2">[2]</a></sup> and began as a program for creating 2D animations. The name was later changed to GameMaker, lacking a space to avoid <a href="/wiki/Intellectual_property" title="Intellectual property">intellectual property</a> conflicts with the 1991 software <i><a href="/wiki/Game-Maker" title="Game-Maker">Game-Maker</a></i>.<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">[3]</a></sup> GameMaker primarily runs games that use <a href="/wiki/2D_graphics" class="mw-redirect" title="2D graphics">2D graphics</a>, allowing the use of limited <a href="/wiki/3D_graphics" class="mw-redirect" title="3D graphics">3D graphics</a>.<sup id="cite_ref-4" class="reference"><a href="#cite_note-4">[4]</a></sup></p>
+<p>GameMaker is designed to allow its users to easily develop <a href="/wiki/Video_game" title="Video game">video games</a> without having to learn a complex <a href="/wiki/Programming_language" title="Programming language">programming language</a> such as <a href="/wiki/C%2B%2B" title="C++">C++</a> or <a href="/wiki/Java_(programming_language)" title="Java (programming language)">Java</a> through its proprietary <a href="/wiki/Drag_and_drop" title="Drag and drop">drag and drop</a> system.<sup id="cite_ref-5" class="reference"><a href="#cite_note-5">[5]</a></sup><sup id="cite_ref-6" class="reference"><a href="#cite_note-6">[6]</a></sup> These icons represent actions that would occur in a game, such as movement, basic drawing, and simple control structures. It is also possible to create custom "action libraries" using the Library Maker. <b>Game Maker Language</b> (GML) is the primary interpreted <a href="/wiki/Scripting_language" title="Scripting language">scripting language</a> used in GameMaker, which is usually significantly slower than compiled languages such as <a href="/wiki/C%2B%2B" title="C++">C++</a> or <a href="/wiki/Delphi_programming_language" class="mw-redirect" title="Delphi programming language">Delphi</a>.<sup id="cite_ref-7" class="reference"><a href="#cite_note-7">[7]</a></sup> It is used to further enhance and control the design of a game through more conventional programming, as opposed to the <a href="/wiki/Drag_and_drop" title="Drag and drop">drag and drop</a> system.</p>
+<p>GameMaker accommodates redistribution on multiple platforms.<sup id="cite_ref-8" class="reference"><a href="#cite_note-8">[8]</a></sup> The program builds for these platforms: <a href="/wiki/Windows" class="mw-redirect" title="Windows">Windows</a>, <a href="/wiki/Windows_8" title="Windows 8">Windows 8</a>, <a href="/wiki/Mac_OS_X" class="mw-redirect" title="Mac OS X">Mac OS X</a>, <a href="/wiki/Ubuntu_(operating_system)" title="Ubuntu (operating system)">Ubuntu</a>, <a href="/wiki/HTML5" title="HTML5">HTML5</a>, <a href="/wiki/Android_(operating_system)" title="Android (operating system)">Android</a>, <a href="/wiki/IOS" title="IOS">iOS</a>, <a href="/wiki/Windows_Phone_8" title="Windows Phone 8">Windows Phone 8</a>, <a href="/wiki/Tizen" title="Tizen">Tizen</a>, <a href="/wiki/Xbox_One" title="Xbox One">Xbox One</a>, and <a href="/wiki/Playstation" class="mw-redirect" title="Playstation">Playstation</a>.<sup id="cite_ref-9" class="reference"><a href="#cite_note-9">[9]</a></sup><sup id="cite_ref-10" class="reference"><a href="#cite_note-10">[10]</a></sup> However, a Windows desktop computer with system requirements equal to that of the game produced is required in order to develop the games along with a broadband internet connection.<sup id="cite_ref-11" class="reference"><a href="#cite_note-11">[11]</a></sup></p>
+<h2><span class="mw-headline" id="Controversy">Controversy</span></h2>
+<h3><span class="mw-headline" id="Reverse_engineering">Reverse engineering</span></h3>
+<p>Several versions of the software made reverse engineering easy by packing resource data to the end of the executable with no encryption or internal obfuscation.<sup id="cite_ref-12" class="reference"><a href="#cite_note-12">[12]</a></sup> A decompiler was released specifically for decompiling games distributed with the early iOS runner.<sup id="cite_ref-13" class="reference"><a href="#cite_note-13">[13]</a></sup> Obfuscation programs were later developed and released to deter hackers from extracting the game resources from executable files built with the program.<sup id="cite_ref-14" class="reference"><a href="#cite_note-14">[14]</a></sup> YoYoGames later issued a formal cease and desist to the hackers warning against further infringement of their intellectual property posing as a financial threat to the company.<sup id="cite_ref-15" class="reference"><a href="#cite_note-15">[15]</a></sup> The latest version of the software, GM: Studio, makes it harder to decompile games given its compiled nature and it has built in obfuscation.<sup id="cite_ref-16" class="reference"><a href="#cite_note-16">[16]</a></sup></p>
+<h3><span class="mw-headline" id="Digital_rights_management">Digital rights management</span></h3>
+<div class="thumb tright">
+<div class="thumbinner" style="width:202px;"><a href="/wiki/File:Game_Maker_Studio_DRM_Misfire_screenshot.jpg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/a/ab/Game_Maker_Studio_DRM_Misfire_screenshot.jpg/200px-Game_Maker_Studio_DRM_Misfire_screenshot.jpg" width="200" height="113" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/en/thumb/a/ab/Game_Maker_Studio_DRM_Misfire_screenshot.jpg/300px-Game_Maker_Studio_DRM_Misfire_screenshot.jpg 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/a/ab/Game_Maker_Studio_DRM_Misfire_screenshot.jpg/400px-Game_Maker_Studio_DRM_Misfire_screenshot.jpg 2x" data-file-width="528" data-file-height="297" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:Game_Maker_Studio_DRM_Misfire_screenshot.jpg" class="internal" title="Enlarge"></a></div>
+Screenshot showing the DRM image</div>
+</div>
+</div>
+<p>In late 2012 and early 2013, YoYo Games released a version of their new Studio IDE for cross-platform development that would import games and destroy all of the image type resources for some legitimate purchasers of the software by superimposing a pirate symbol on top of the image.<sup id="cite_ref-17" class="reference"><a href="#cite_note-17">[17]</a></sup> This was due to a fault in their <a href="/wiki/Digital_rights_management" title="Digital rights management">digital rights management</a> software implementation which they use as a method of combating infringing copies of the software.<sup id="cite_ref-18" class="reference"><a href="#cite_note-18">[18]</a></sup><sup id="cite_ref-19" class="reference"><a href="#cite_note-19">[19]</a></sup> YoYoGames publicly stated they would remove the DRM at a later point in time,<sup id="cite_ref-20" class="reference"><a href="#cite_note-20">[20]</a></sup> but that other less-invasive DRM techniques would remain.<sup id="cite_ref-21" class="reference"><a href="#cite_note-21">[21]</a></sup></p>
+<h2><span class="mw-headline" id="Reception">Reception</span></h2>
+<p>The program currently holds a rating of 8.4/10 on <a href="/wiki/Mod_DB" title="Mod DB">Mod DB</a> based on 196 user reviews many citing its flexibility and ease of use as positives and instability, crashes, project corruption and outdated features as negatives.<sup id="cite_ref-22" class="reference"><a href="#cite_note-22">[22]</a></sup> Douglas Clements of <i>Indie Game Magazine</i> wrote that the program "[s]implifies and streamlines game development" and is "easy for beginners yet powerful enough to grow as you develop", though noting that "resource objects have to be gathered if unable to create" and that licensing between <a href="/wiki/Steam_(software)" title="Steam (software)">Steam</a> and the YoYo Games website is "convoluted".<sup id="cite_ref-23" class="reference"><a href="#cite_note-23">[23]</a></sup></p>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<ul>
+<li><a href="/wiki/List_of_game_engines" title="List of game engines">List of game engines</a></li>
+<li><a href="/wiki/Game_engine" title="Game engine">Game engine</a></li>
+<li><a href="/wiki/Unity_(game_engine)" title="Unity (game engine)">Unity (game engine)</a></li>
+<li><a href="/wiki/Construct_(game_engine)" title="Construct (game engine)">Construct (game engine)</a></li>
+</ul>
+<h2><span class="mw-headline" id="References">References</span></h2>
+<div class="reflist columns references-column-width" style="-moz-column-width: 30em; -webkit-column-width: 30em; column-width: 30em; list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.desura.com/engines/game-maker">"Game Maker Studio engine"</a>. Desura<span class="reference-accessdate">. Retrieved <span class="nowrap">29 May</span> 2013</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AGameMaker%3A+Studio&amp;rft.btitle=Game+Maker+Studio+engine&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.desura.com%2Fengines%2Fgame-maker&amp;rft.pub=Desura&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-gm1999-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-gm1999_2-0">^</a></b></span> <span class="reference-text"><cite class="citation web">Unknown. <a rel="nofollow" class="external text" href="http://bentibbetts.net/animo/">"Old versions of "Game Maker<span style="padding-right:0.2em;">"</span>"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">16 January</span> 2014</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AGameMaker%3A+Studio&amp;rft.au=Unknown&amp;rft.btitle=Old+versions+of+%22Game+Maker%22&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fbentibbetts.net%2Fanimo%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><cite class="citation web">Eric-Jon Rössel, Tairne (30 April 2010). <a rel="nofollow" class="external text" href="https://web.archive.org/web/20140301005957/http://www.diygamer.com/2010/04/original-gamemaker/">"The Original Game-Maker"</a>. Archived from <a rel="nofollow" class="external text" href="http://www.diygamer.com/2010/04/original-gamemaker/">the original</a> on 1 March 2014<span class="reference-accessdate">. Retrieved <span class="nowrap">15 January</span> 2015</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AGameMaker%3A+Studio&amp;rft.aufirst=Tairne&amp;rft.aulast=Eric-Jon+R%C3%B6ssel&amp;rft.btitle=The+Original+Game-Maker&amp;rft.date=2010-04-30&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.diygamer.com%2F2010%2F04%2Foriginal-gamemaker%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text"><cite class="citation book">Ford, Jerry (2010). <a rel="nofollow" class="external text" href="https://books.google.com/books?id=0cs4Jv7ik5gC&amp;pg=PA11&amp;lpg=PA11&amp;dq=game+maker+2d+news&amp;source=bl&amp;ots=Hp3AdMgqvZ&amp;sig=p_9dzQZ7QXHP7GNC44Con2Fa130&amp;hl=en&amp;sa=X&amp;ei=xjXiUqCOGNLKsQTu64LQAQ&amp;ved=0CH4Q6AEwCQ#v=onepage&amp;q=game%20maker%202d%20news&amp;f=false"><i>Getting Started with Game Maker</i></a>. Course Technology, a part of Cengage Learning. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/9781133168966" title="Special:BookSources/9781133168966">9781133168966</a>. Archived from <a rel="nofollow" class="external text" href="http://www.amazon.com/Getting-Started-Game-Maker-Jerry/dp/1598638823">the original</a> on 24 January 2014<span class="reference-accessdate">. Retrieved <span class="nowrap">24 January</span> 2014</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AGameMaker%3A+Studio&amp;rft.aufirst=Jerry&amp;rft.aulast=Ford&amp;rft.btitle=Getting+Started+with+Game+Maker&amp;rft.date=2010&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fwww.amazon.com%2FGetting-Started-Game-Maker-Jerry%2Fdp%2F1598638823&amp;rft.isbn=9781133168966&amp;rft.pub=Course+Technology%2C+a+part+of+Cengage+Learning&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://www.packtpub.com/sites/default/files/downloads/4100OT_Appendix_Drag_and_drop_Icons_to_GameMaker_Language_Reference.pdf">"Drag-and-drop Icons to GameMaker Language Reference"</a> <span style="font-size:85%;">(PDF)</span><span class="reference-accessdate">. Retrieved <span class="nowrap">15 January</span> 2015</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AGameMaker%3A+Studio&amp;rft.btitle=Drag-and-drop+Icons+to+GameMaker+Language+Reference&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fwww.packtpub.com%2Fsites%2Fdefault%2Ffiles%2Fdownloads%2F4100OT_Appendix_Drag_and_drop_Icons_to_GameMaker_Language_Reference.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.pcgamer.com/no-coding-required-how-new-designers-are-using-gamemaker-to-create-indie-smash-hits/">"No coding required: How new designers are using GameMaker to create indie smash hits"</a>. <i>PC Gamer</i><span class="reference-accessdate">. Retrieved <span class="nowrap">15 January</span> 2015</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AGameMaker%3A+Studio&amp;rft.atitle=No+coding+required%3A+How+new+designers+are+using+GameMaker+to+create+indie+smash+hits&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.pcgamer.com%2Fno-coding-required-how-new-designers-are-using-gamemaker-to-create-indie-smash-hits%2F&amp;rft.jtitle=PC+Gamer&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text"><cite class="citation book">Ford, Jerry (2009). <a rel="nofollow" class="external text" href="https://books.google.com/books?id=5UAIAAAAQBAJ&amp;printsec=frontcover#v=onepage&amp;q&amp;f=false"><i>Getting Started with Game Maker</i></a>. Cengage Learning. p.&#160;333. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/1133168965" title="Special:BookSources/1133168965">1133168965</a><span class="reference-accessdate">. Retrieved <span class="nowrap">14 January</span> 2014</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AGameMaker%3A+Studio&amp;rft.aufirst=Jerry&amp;rft.aulast=Ford&amp;rft.btitle=Getting+Started+with+Game+Maker&amp;rft.date=2009&amp;rft.genre=book&amp;rft_id=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3D5UAIAAAAQBAJ%26printsec%3Dfrontcover%23v%3Donepage%26q%26f%3Dfalse&amp;rft.isbn=1133168965&amp;rft.pages=333&amp;rft.pub=Cengage+Learning&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text"><cite class="citation web">Evan Lewis (6 November 2014). <a rel="nofollow" class="external text" href="http://www.syracuse.com/entertainment/index.ssf/2014/11/learn_how_to_make_your_own_games_with_gamemaker_studio_at_retrogamecon.html">"Learn how to make your own video games with GameMaker: Studio at RetroGameCon"</a>. Syracuse Media Group<span class="reference-accessdate">. Retrieved <span class="nowrap">2 December</span> 2014</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AGameMaker%3A+Studio&amp;rft.au=Evan+Lewis&amp;rft.btitle=Learn+how+to+make+your+own+video+games+with+GameMaker%3A+Studio+at+RetroGameCon&amp;rft.date=2014-11-06&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.syracuse.com%2Fentertainment%2Findex.ssf%2F2014%2F11%2Flearn_how_to_make_your_own_games_with_gamemaker_studio_at_retrogamecon.html&amp;rft.pub=Syracuse+Media+Group&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-9">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.polygon.com/2014/1/22/5333982/this-will-let-you-say-happy-birthday-get-well-soon-with-a-video-game">"This will let you say 'Happy Birthday,' 'Get Well Soon' with a video game"</a>. Alexa Ray Corriea. 22 January 2014<span class="reference-accessdate">. Retrieved <span class="nowrap">23 January</span> 2014</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AGameMaker%3A+Studio&amp;rft.btitle=This+will+let+you+say+%27Happy+Birthday%2C%27+%27Get+Well+Soon%27+with+a+video+game&amp;rft.date=2014-01-22&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.polygon.com%2F2014%2F1%2F22%2F5333982%2Fthis-will-let-you-say-happy-birthday-get-well-soon-with-a-video-game&amp;rft.pub=Alexa+Ray+Corriea&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-10">^</a></b></span> <span class="reference-text"><cite class="citation web">Danny Cowan (1 October 2014). <a rel="nofollow" class="external text" href="http://www.joystiq.com/2014/08/11/gamemaker-studio-gets-xbox-one-windows-export-this-year/">"GameMaker Studio gets Xbox One, Windows export this year"</a>. Joystiq<span class="reference-accessdate">. Retrieved <span class="nowrap">2 December</span> 2014</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AGameMaker%3A+Studio&amp;rft.au=Danny+Cowan&amp;rft.btitle=GameMaker+Studio+gets+Xbox+One%2C+Windows+export+this+year&amp;rft.date=2014-10-01&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.joystiq.com%2F2014%2F08%2F11%2Fgamemaker-studio-gets-xbox-one-windows-export-this-year%2F&amp;rft.pub=Joystiq&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-11"><span class="mw-cite-backlink"><b><a href="#cite_ref-11">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://store.steampowered.com/app/214850/">"GameMaker: Studio"</a>. Valve Corporation<span class="reference-accessdate">. Retrieved <span class="nowrap">15 January</span> 2015</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AGameMaker%3A+Studio&amp;rft.btitle=GameMaker%3A+Studio&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fstore.steampowered.com%2Fapp%2F214850%2F&amp;rft.pub=Valve+Corporation&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-12"><span class="mw-cite-backlink"><b><a href="#cite_ref-12">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://gamejolt.com/articles/gamemaker-8-1-decompiler-released/6533/">"GameMaker 8.1 Decompiler Released"</a>. Game Jolt. 6 June 2011<span class="reference-accessdate">. Retrieved <span class="nowrap">14 January</span> 2014</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AGameMaker%3A+Studio&amp;rft.btitle=GameMaker+8.1+Decompiler+Released&amp;rft.date=2011-06-06&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fgamejolt.com%2Farticles%2Fgamemaker-8-1-decompiler-released%2F6533%2F&amp;rft.pub=Game+Jolt&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-13"><span class="mw-cite-backlink"><b><a href="#cite_ref-13">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://gamejolt.com/articles/game-maker-ios-decompiler-released/5812/">"Game Maker iOS Decompiler Released"</a>. Game Jolt. 19 December 2010<span class="reference-accessdate">. Retrieved <span class="nowrap">14 January</span> 2014</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AGameMaker%3A+Studio&amp;rft.btitle=Game+Maker+iOS+Decompiler+Released&amp;rft.date=2010-12-19&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fgamejolt.com%2Farticles%2Fgame-maker-ios-decompiler-released%2F5812%2F&amp;rft.pub=Game+Jolt&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-14"><span class="mw-cite-backlink"><b><a href="#cite_ref-14">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://gamejolt.com/articles/game-maker-obfuscator-now-supports-sprite-obfuscation/6644/">"Game Maker Obfuscator – Now Supports Sprite Obfuscation"</a>. Game Jolt. 2 October 2011<span class="reference-accessdate">. Retrieved <span class="nowrap">14 January</span> 2014</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AGameMaker%3A+Studio&amp;rft.btitle=Game+Maker+Obfuscator+%93+Now+Supports+Sprite+Obfuscation&amp;rft.date=2011-10-02&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fgamejolt.com%2Farticles%2Fgame-maker-obfuscator-now-supports-sprite-obfuscation%2F6644%2F&amp;rft.pub=Game+Jolt&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-15"><span class="mw-cite-backlink"><b><a href="#cite_ref-15">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://www.yoyogames.com/news/2">"Serious Legal Issues with "Decompilers<span style="padding-right:0.2em;">"</span>"</a>. YoYo Games. 5 January 2011<span class="reference-accessdate">. Retrieved <span class="nowrap">15 January</span> 2015</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AGameMaker%3A+Studio&amp;rft.btitle=Serious+Legal+Issues+with+%22Decompilers%22&amp;rft.date=2011-01-05&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fwww.yoyogames.com%2Fnews%2F2&amp;rft.pub=YoYo+Games&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-16"><span class="mw-cite-backlink"><b><a href="#cite_ref-16">^</a></b></span> <span class="reference-text"><cite class="citation book">Elliott, Jason (22 April 2013). <a rel="nofollow" class="external text" href="https://books.google.com/books?id=uDWG1gYWxokC&amp;dq=books+HTML5+Game+Development+with+GameMaker&amp;source=gbs_navlinks_s"><i>HTML5 Game Development with GameMaker</i></a>. Packt Publishing Ltd. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/1849694117" title="Special:BookSources/1849694117">1849694117</a><span class="reference-accessdate">. Retrieved <span class="nowrap">29 December</span> 2014</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AGameMaker%3A+Studio&amp;rft.aufirst=Jason&amp;rft.aulast=Elliott&amp;rft.btitle=HTML5+Game+Development+with+GameMaker&amp;rft.date=2013-04-22&amp;rft.genre=book&amp;rft_id=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DuDWG1gYWxokC%26dq%3Dbooks%2BHTML5%2BGame%2BDevelopment%2Bwith%2BGameMaker%26source%3Dgbs_navlinks_s&amp;rft.isbn=1849694117&amp;rft.pub=Packt+Publishing+Ltd&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-17"><span class="mw-cite-backlink"><b><a href="#cite_ref-17">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.techdirt.com/articles/20121127/14455221158/game-maker-studio-drm-misfires-permanently-replaces-created-game-resources-with-pirate-symbols.shtml">"Game Maker Studio DRM Misfires; Permanently Replaces Created Game Resources With Pirate Symbols"</a>. Techdirt. 28 November 2012<span class="reference-accessdate">. Retrieved <span class="nowrap">29 January</span> 2014</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AGameMaker%3A+Studio&amp;rft.btitle=Game+Maker+Studio+DRM+Misfires%3B+Permanently+Replaces+Created+Game+Resources+With+Pirate+Symbols&amp;rft.date=2012-11-28&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.techdirt.com%2Farticles%2F20121127%2F14455221158%2Fgame-maker-studio-drm-misfires-permanently-replaces-created-game-resources-with-pirate-symbols.shtml&amp;rft.pub=Techdirt&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-18"><span class="mw-cite-backlink"><b><a href="#cite_ref-18">^</a></b></span> <span class="reference-text"><cite class="citation web">27 November 2012 by David Hing (27 November 2012). <a rel="nofollow" class="external text" href="http://www.bit-tech.net/news/gaming/2012/11/27/game-maker-accidentally-brands-customers-as/">"Game Maker accidentally brands customers as pirates | bit-gamer.net"</a>. Bit-tech.net<span class="reference-accessdate">. Retrieved <span class="nowrap">29 January</span> 2014</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AGameMaker%3A+Studio&amp;rft.au=27+November+2012+by+David+Hing&amp;rft.btitle=Game+Maker+accidentally+brands+customers+as+pirates+%26%23124%3B+bit-gamer.net&amp;rft.date=2012-11-27&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.bit-tech.net%2Fnews%2Fgaming%2F2012%2F11%2F27%2Fgame-maker-accidentally-brands-customers-as%2F&amp;rft.pub=Bit-tech.net&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-19"><span class="mw-cite-backlink"><b><a href="#cite_ref-19">^</a></b></span> <span class="reference-text"><cite class="citation web">Chapple, Craig (29 November 2012). <a rel="nofollow" class="external text" href="http://www.develop-online.net/news/42651/GameMaker-fixes-anti-piracy-bug-afflicting-users">"Gamemaker anti-piracy bug destroys developer assets | Latest news from the game development industry | Develop"</a>. Develop-online.net<span class="reference-accessdate">. Retrieved <span class="nowrap">29 January</span> 2014</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AGameMaker%3A+Studio&amp;rft.aufirst=Craig&amp;rft.aulast=Chapple&amp;rft.btitle=Gamemaker+anti-piracy+bug+destroys+developer+assets+%26%23124%3B+Latest+news+from+the+game+development+industry+%26%23124%3B+Develop&amp;rft.date=2012-11-29&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.develop-online.net%2Fnews%2F42651%2FGameMaker-fixes-anti-piracy-bug-afflicting-users&amp;rft.pub=Develop-online.net&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-20"><span class="mw-cite-backlink"><b><a href="#cite_ref-20">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.escapistmagazine.com/news/view/120850-GameMaker-Studio-DRM-Bug-Trashes-Legit-Resources">"GameMaker Studio DRM Bug Trashes Legit Resources"</a>. Defy Media, LLC. 28 November 2012<span class="reference-accessdate">. Retrieved <span class="nowrap">2 December</span> 2014</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AGameMaker%3A+Studio&amp;rft.btitle=GameMaker+Studio+DRM+Bug+Trashes+Legit+Resources&amp;rft.date=2012-11-28&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.escapistmagazine.com%2Fnews%2Fview%2F120850-GameMaker-Studio-DRM-Bug-Trashes-Legit-Resources&amp;rft.pub=Defy+Media%2C+LLC&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-21"><span class="mw-cite-backlink"><b><a href="#cite_ref-21">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://gamepolitics.com/2012/11/28/game-maker-drm-permanently-vandalizing-paying-users-games#.VH4PQ8ms9dQ">"Game Maker DRM Permanently Vandalizing Paying Users' Games"</a>. Entertainment Consumers Association. 28 November 2012<span class="reference-accessdate">. Retrieved <span class="nowrap">2 December</span> 2014</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AGameMaker%3A+Studio&amp;rft.btitle=Game+Maker+DRM+Permanently+Vandalizing+Paying+Users%27+Games&amp;rft.date=2012-11-28&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fgamepolitics.com%2F2012%2F11%2F28%2Fgame-maker-drm-permanently-vandalizing-paying-users-games%23.VH4PQ8ms9dQ&amp;rft.pub=Entertainment+Consumers+Association&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-22"><span class="mw-cite-backlink"><b><a href="#cite_ref-22">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.indiedb.com/engines/gamemaker/reviews">"GameMaker: Studio Reviews"</a>. DBolical Pty Ltd<span class="reference-accessdate">. Retrieved <span class="nowrap">15 January</span> 2015</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AGameMaker%3A+Studio&amp;rft.btitle=GameMaker%3A+Studio+Reviews&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.indiedb.com%2Fengines%2Fgamemaker%2Freviews&amp;rft.pub=DBolical+Pty+Ltd.&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-23"><span class="mw-cite-backlink"><b><a href="#cite_ref-23">^</a></b></span> <span class="reference-text"><cite class="citation web">Douglas Clements. <a rel="nofollow" class="external text" href="http://indiegamemag.com/gamemaker-studio-lord-over-the-pixels/">"<span style="padding-left:0.2em;">'</span>GameMaker: Studio' – Lord Over The Pixels"</a>. <i>Indie Games Magazine</i><span class="reference-accessdate">. Retrieved <span class="nowrap">19 January</span> 2017</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AGameMaker%3A+Studio&amp;rft.atitle=%27GameMaker%3A+Studio%27+%93+Lord+Over+The+Pixels&amp;rft.au=Douglas+Clements&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Findiegamemag.com%2Fgamemaker-studio-lord-over-the-pixels%2F&amp;rft.jtitle=Indie+Games+Magazine&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="External_links">External links</span></h2>
+<table role="presentation" class="mbox-small plainlinks sistersitebox" style="border:1px solid #aaa;background-color:#f9f9f9">
+<tr>
+<td class="mbox-image"><a href="/wiki/File:Wikibooks-logo-en-noslogan.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/40px-Wikibooks-logo-en-noslogan.svg.png" width="40" height="40" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/60px-Wikibooks-logo-en-noslogan.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/80px-Wikibooks-logo-en-noslogan.svg.png 2x" data-file-width="400" data-file-height="400" /></a></td>
+<td class="mbox-text plainlist">Wikibooks has a book on the topic of: <i><b><a href="https://en.wikibooks.org/wiki/Programming:Game_Maker" class="extiw" title="wikibooks:Programming:Game Maker">Programming:Game Maker</a></b></i></td>
+</tr>
+</table>
+<table role="presentation" class="mbox-small plainlinks sistersitebox" style="border:1px solid #aaa;background-color:#f9f9f9">
+<tr>
+<td class="mbox-image"><a href="/wiki/File:Commons-logo.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/30px-Commons-logo.svg.png" width="30" height="40" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/45px-Commons-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/59px-Commons-logo.svg.png 2x" data-file-width="1024" data-file-height="1376" /></a></td>
+<td class="mbox-text plainlist">Wikimedia Commons has media related to <i><b><a href="https://commons.wikimedia.org/wiki/Category:Game_Maker" class="extiw" title="commons:Category:Game Maker">Game Maker</a></b></i>.</td>
+</tr>
+</table>
+<ul>
+<li><span class="official-website"><span class="url"><a rel="nofollow" class="external text" href="http://www.yoyogames.com/">Official website</a></span></span></li>
+</ul>
+<div role="navigation" class="navbox" aria-labelledby="Game_engines_.28list.29" style="padding:3px">
+<table class="nowraplinks hlist collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:Video_game_engines" title="Template:Video game engines"><abbr title="View this template" style=";;background:none transparent;border:none;">v</abbr></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:Video_game_engines" title="Template talk:Video game engines"><abbr title="Discuss this template" style=";;background:none transparent;border:none;">t</abbr></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:Video_game_engines&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;">e</abbr></a></li>
+</ul>
+</div>
+<div id="Game_engines_.28list.29" style="font-size:114%"><a href="/wiki/Game_engine" title="Game engine">Game engines</a> <small>(<a href="/wiki/List_of_game_engines" title="List of game engines">list</a>)</small></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" colspan="2">
+<div>
+<ul>
+<li><a href="/wiki/Source_port" title="Source port">Source port</a></li>
+<li><a href="/wiki/First-person_shooter_engine" title="First-person shooter engine">First-person shooter engine</a>
+<ul>
+<li><a href="/wiki/List_of_first-person_shooter_engines" title="List of first-person shooter engines">list</a></li>
+</ul>
+</li>
+<li><a href="/wiki/Tile_engine" class="mw-redirect" title="Tile engine">Tile engine</a></li>
+<li><a href="/wiki/Game_engine_recreation" title="Game engine recreation">Game engine recreation</a>
+<ul>
+<li><a href="/wiki/List_of_game_engine_recreations" title="List of game engine recreations">list</a></li>
+</ul>
+</li>
+<li><a href="/wiki/Game_creation_system" title="Game creation system">Game creation system</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Free_and_open-source_software" title="Free and open-source software">Free and<br />
+open-source</a></th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks navbox-subgroup" style="border-spacing:0">
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/2D_computer_graphics" title="2D computer graphics">2D</a></th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Adventure_Game_Studio" title="Adventure Game Studio">Adventure Game Studio</a></li>
+<li><a href="/wiki/Beats_of_Rage" title="Beats of Rage">Beats of Rage</a></li>
+<li><a href="/wiki/Cocos2d" title="Cocos2d">Cocos2d</a></li>
+<li><a href="/wiki/Flixel" class="mw-redirect" title="Flixel">Flixel</a></li>
+<li><a href="/wiki/List_of_visual_novel_engines#KiriKiri" title="List of visual novel engines">KiriKiri</a></li>
+<li><a href="/wiki/LibGDX" title="LibGDX">libGDX</a></li>
+<li><a href="/wiki/Moai_(software)" title="Moai (software)">Moai</a></li>
+<li><a href="/wiki/OHRRPGCE" title="OHRRPGCE">OHRRPGCE</a></li>
+<li><a href="/wiki/OpenFL" title="OpenFL">OpenFL</a></li>
+<li><a href="/wiki/ORX" title="ORX">ORX</a></li>
+<li><a href="/wiki/Pygame" title="Pygame">Pygame</a></li>
+<li><a href="/wiki/Ren%27Py" title="Ren'Py">Ren'Py</a></li>
+<li><a href="/wiki/Stratagus" title="Stratagus">Stratagus</a></li>
+<li><a href="/wiki/Thousand_Parsec" title="Thousand Parsec">Thousand Parsec</a></li>
+<li><a href="/wiki/VASSAL_Engine" class="mw-redirect" title="VASSAL Engine">VASSAL</a></li>
+<li><a href="/wiki/Xconq" title="Xconq">Xconq</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/2.5D" title="2.5D">2.5D</a></th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Marathon_Trilogy#Modern_developments_.282000.E2.80.93present.29" title="Marathon Trilogy">Aleph One</a></li>
+<li><a href="/wiki/Cube_(video_game)#Game_engine" title="Cube (video game)">Cube</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/3D_computer_graphics" title="3D computer graphics">3D</a></th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Away3D" title="Away3D">Away3D</a></li>
+<li><a href="/wiki/Blender_Game_Engine" title="Blender Game Engine">Blender Game</a></li>
+<li><a href="/wiki/Cafu_Engine" title="Cafu Engine">Cafu</a></li>
+<li><a href="/wiki/Crystal_Space" title="Crystal Space">Crystal Space</a></li>
+<li><a href="/wiki/Cube_2:_Sauerbraten#Development" title="Cube 2: Sauerbraten">Cube 2</a></li>
+<li><a href="/wiki/Delta3D" title="Delta3D">Delta3D</a></li>
+<li><a href="/wiki/Dim3" title="Dim3">Dim3</a></li>
+<li><a href="/wiki/GLScene" title="GLScene">GLScene</a></li>
+<li><a href="/wiki/Horde3D" title="Horde3D">Horde3D</a></li>
+<li><a href="/wiki/HPL_Engine#HPL_Engine_1" title="HPL Engine">HPL 1</a></li>
+<li><a href="/wiki/Irrlicht_Engine" title="Irrlicht Engine">Irrlicht</a></li>
+<li><a href="/wiki/Id_Tech_3" title="Id Tech 3">id Tech 3</a></li>
+<li><a href="/wiki/Id_Tech_4" title="Id Tech 4">id Tech 4</a></li>
+<li><a href="/wiki/JMonkeyEngine" title="JMonkeyEngine">JMonkey</a></li>
+<li><a href="/wiki/OGRE" title="OGRE">OGRE</a></li>
+<li><a href="/wiki/Open_Wonderland" title="Open Wonderland">Open Wonderland</a></li>
+<li><a href="/wiki/Panda3D" title="Panda3D">Panda3D</a></li>
+<li><a href="/wiki/Papervision3D" title="Papervision3D">Papervision3D</a></li>
+<li><a href="/wiki/Platinum_Arts_Sandbox_Free_3D_Game_Maker" title="Platinum Arts Sandbox Free 3D Game Maker">Platinum Arts Sandbox Free 3D Game Maker</a></li>
+<li><a href="/wiki/PlayCanvas" title="PlayCanvas">PlayCanvas</a></li>
+<li><a href="/wiki/PLIB" title="PLIB">PLIB</a></li>
+<li><a href="/wiki/Quake_engine" title="Quake engine">Quake</a></li>
+<li><a href="/wiki/Quake_II_engine" title="Quake II engine">Quake II</a></li>
+<li><a href="/wiki/RealmForge_Game_Engine" class="mw-redirect" title="RealmForge Game Engine">RealmForge</a></li>
+<li><a href="/wiki/Retribution_Engine" title="Retribution Engine">Retribution</a></li>
+<li><a href="/wiki/Torque_(game_engine)#Torque_3D" title="Torque (game engine)">Torque 3D</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Mix</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Allegro_(software)" title="Allegro (software)">Allegro</a></li>
+<li><a href="/wiki/Construct_(game_engine)#Construct_Classic" title="Construct (game engine)">Construct Classic</a></li>
+<li><a href="/wiki/Godot_(game_engine)" title="Godot (game engine)">Godot</a></li>
+<li><a href="/wiki/Lightweight_Java_Game_Library" title="Lightweight Java Game Library">Lightweight Java Game Library</a></li>
+<li><a href="/wiki/Spring_Engine" title="Spring Engine">Spring</a></li>
+<li><a href="/wiki/Wintermute_Engine" title="Wintermute Engine">Wintermute Engine</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Proprietary_software" title="Proprietary software">Proprietary</a></th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks navbox-subgroup" style="border-spacing:0">
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/2D_computer_graphics" title="2D computer graphics">2D</a></th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Construct_(game_engine)" title="Construct (game engine)">Construct 2</a></li>
+<li><a href="/wiki/Corona_(software)" title="Corona (software)">Corona</a></li>
+<li><a href="/wiki/Clickteam_Fusion" class="mw-redirect" title="Clickteam Fusion">Clickteam Fusion</a></li>
+<li><strong class="selflink">GameMaker: Studio</strong></li>
+<li><a href="/wiki/GameSalad" title="GameSalad">GameSalad</a></li>
+<li><a href="/wiki/M.U.G.E.N" title="M.U.G.E.N">M.U.G.E.N</a></li>
+<li><a href="/wiki/List_of_visual_novel_engines#NScripter" title="List of visual novel engines">NScripter</a></li>
+<li><a href="/wiki/RPG_Maker" title="RPG Maker">RPG Maker</a></li>
+<li><a href="/wiki/Southpaw_Engine" title="Southpaw Engine">Southpaw</a></li>
+<li><a href="/wiki/Stencyl" title="Stencyl">Stencyl</a></li>
+<li><a href="/wiki/UbiArt_Framework" title="UbiArt Framework">UbiArt Framework</a></li>
+<li><a href="/wiki/Vicious_Engine" title="Vicious Engine">Vicious</a></li>
+<li><a href="/wiki/Virtual_Theatre" title="Virtual Theatre">Virtual Theatre</a></li>
+<li><a href="/wiki/V-Play_Game_Engine" class="mw-redirect" title="V-Play Game Engine">V-Play</a></li>
+<li><a href="/wiki/Zillions_of_Games" title="Zillions of Games">Zillions of Games</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/3D_computer_graphics" title="3D computer graphics">3D</a></th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/4A_Engine" title="4A Engine">4A</a></li>
+<li><a href="/wiki/Amazon_Lumberyard" title="Amazon Lumberyard">Amazon Lumberyard</a></li>
+<li><a href="/wiki/Anvil_(game_engine)" title="Anvil (game engine)">Anvil</a></li>
+<li><a href="/wiki/Bork3D_Game_Engine" title="Bork3D Game Engine">Bork3D</a></li>
+<li><a href="/wiki/C4_Engine" title="C4 Engine">C4</a></li>
+<li><a href="/wiki/Chrome_Engine" title="Chrome Engine">Chrome</a></li>
+<li><a href="/wiki/Clausewitz_Engine" class="mw-redirect" title="Clausewitz Engine">Clausewitz Engine</a></li>
+<li><a href="/wiki/Creation_Engine" title="Creation Engine">Creation</a></li>
+<li><a href="/wiki/CryEngine" title="CryEngine">CryEngine</a></li>
+<li><a href="/wiki/Crystal_Tools" title="Crystal Tools">Crystal Tools</a></li>
+<li><a href="/wiki/Decima_(game_engine)" title="Decima (game engine)">Decima</a></li>
+<li><a href="/wiki/Diesel_(game_engine)" title="Diesel (game engine)">Diesel</a></li>
+<li><a href="/wiki/Dunia_Engine" title="Dunia Engine">Dunia</a></li>
+<li><a href="/wiki/EA_Canada#EA_Graphics_Library" title="EA Canada">EAGL</a></li>
+<li><a href="/wiki/EGO_(game_engine)" title="EGO (game engine)">EGO</a></li>
+<li><a href="/wiki/Elflight_Engine" title="Elflight Engine">Elflight</a></li>
+<li><a href="/wiki/Enforce_(game_engine)" class="mw-redirect" title="Enforce (game engine)">Enforce</a></li>
+<li><a href="/wiki/Enigma_Engine" title="Enigma Engine">Enigma</a></li>
+<li><a href="/wiki/Essence_Engine" title="Essence Engine">Essence</a></li>
+<li><a href="/wiki/Flare3D" title="Flare3D">Flare3D</a></li>
+<li><a href="/wiki/Fox_Engine" title="Fox Engine">Fox</a></li>
+<li><a href="/wiki/Frostbite_(game_engine)" title="Frostbite (game engine)">Frostbite</a></li>
+<li><a href="/wiki/Geo-Mod" class="mw-redirect" title="Geo-Mod">Geo-Mod</a></li>
+<li><a href="/wiki/GoldSrc" title="GoldSrc">GoldSrc</a></li>
+<li><a href="/wiki/HeroEngine" title="HeroEngine">HeroEngine</a></li>
+<li><a href="/wiki/HydroEngine" title="HydroEngine">HydroEngine</a></li>
+<li><a href="/wiki/HPL_Engine" title="HPL Engine">HPL 2-3</a></li>
+<li><a href="/wiki/Id_Tech_5" title="Id Tech 5">id Tech 5</a></li>
+<li><a href="/wiki/Id_Tech_6" title="Id Tech 6">id Tech 6</a></li>
+<li><a href="/wiki/Ignite_(game_engine)" title="Ignite (game engine)">Ignite</a></li>
+<li><a href="/wiki/IW_engine" title="IW engine">IW</a></li>
+<li><a href="/wiki/Jade_(game_engine)" title="Jade (game engine)">Jade</a></li>
+<li><a href="/wiki/Kinetica_(game_engine)" class="mw-redirect" title="Kinetica (game engine)">Kinetica</a></li>
+<li><a href="/wiki/LS3D" class="mw-redirect" title="LS3D">LS3D</a></li>
+<li><a href="/wiki/LithTech" title="LithTech">LithTech</a></li>
+<li><a href="/wiki/Luminous_Studio" title="Luminous Studio">Luminous Studio</a></li>
+<li><a href="/wiki/LyN_(game_engine)" title="LyN (game engine)">LyN</a></li>
+<li><a href="/wiki/Marmalade_(software)" title="Marmalade (software)">Marmalade</a></li>
+<li><a href="/wiki/Silicon_Studio" title="Silicon Studio">Mizuchi</a></li>
+<li><a href="/wiki/MT_Framework" title="MT Framework">MT Framework</a></li>
+<li><a href="/wiki/Outerra" title="Outerra">Outerra</a></li>
+<li><a href="/wiki/Panta_Rhei_(game_engine)" title="Panta Rhei (game engine)">Panta Rhei</a></li>
+<li><a href="/wiki/PhyreEngine" title="PhyreEngine">PhyreEngine</a></li>
+<li><a href="/wiki/Q_(game_engine)" title="Q (game engine)">Q</a></li>
+<li><a href="/wiki/Real_Virtuality_(game_engine)" class="mw-redirect" title="Real Virtuality (game engine)">Real Virtuality</a></li>
+<li><a href="/wiki/REDengine" title="REDengine">REDengine</a></li>
+<li><a href="/wiki/Refractor_Engine" title="Refractor Engine">Refractor</a></li>
+<li><a href="/wiki/Riot_Engine" title="Riot Engine">Riot</a></li>
+<li><a href="/wiki/Rockstar_Advanced_Game_Engine" title="Rockstar Advanced Game Engine">RAGE</a></li>
+<li><a href="/wiki/SAGE_(game_engine)" title="SAGE (game engine)">SAGE</a></li>
+<li><a href="/wiki/Serious_Sam_(series)#Development" class="mw-redirect" title="Serious Sam (series)">Serious</a></li>
+<li><a href="/wiki/Shark_3D" title="Shark 3D">Shark 3D</a></li>
+<li><a href="/wiki/ShiVa" title="ShiVa">ShiVa</a></li>
+<li><a href="/wiki/Silent_Storm_engine" title="Silent Storm engine">Silent Storm</a></li>
+<li><a href="/wiki/Snowdrop_(game_engine)" title="Snowdrop (game engine)">Snowdrop</a></li>
+<li><a href="/wiki/Source_(game_engine)" title="Source (game engine)">Source</a></li>
+<li><a href="/wiki/Titan_(game_engine)" title="Titan (game engine)">Titan</a></li>
+<li><a href="/wiki/TOSHI" class="mw-redirect" title="TOSHI">TOSHI</a></li>
+<li><a href="/wiki/Truevision3D" title="Truevision3D">Truevision3D</a></li>
+<li><a href="/wiki/Unigine" title="Unigine">Unigine</a></li>
+<li><a href="/wiki/Unity_(game_engine)" title="Unity (game engine)">Unity</a></li>
+<li><a href="/wiki/Unreal_Engine" title="Unreal Engine">Unreal</a></li>
+<li><a href="/wiki/Vision_(game_engine)" title="Vision (game engine)">Vision</a></li>
+<li><a href="/wiki/Visual3D_Game_Engine" title="Visual3D Game Engine">Visual3D</a></li>
+<li><a href="/wiki/XnGine" title="XnGine">XnGine</a></li>
+<li><a href="/wiki/X-Ray_Engine" title="X-Ray Engine">X-Ray</a></li>
+<li><a href="/wiki/YETI_(game_engine)" title="YETI (game engine)">YETI</a></li>
+<li><a href="/wiki/Zero_(game_engine)" title="Zero (game engine)">Zero</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Mix</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Gamebryo" title="Gamebryo">Gamebryo</a></li>
+<li><a href="/wiki/Hybrid_Graphics" title="Hybrid Graphics">Hybrid Graphics</a></li>
+<li><a href="/wiki/Kaneva" title="Kaneva">Kaneva Game Platform</a></li>
+<li><a href="/wiki/Metismo" title="Metismo">Metismo</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Historical interest</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Argonaut_Games#BRender" title="Argonaut Games">BRender</a></li>
+<li><a href="/wiki/Build_(game_engine)" title="Build (game engine)">Build</a></li>
+<li><a href="/wiki/Dark_Engine" title="Dark Engine">Dark</a></li>
+<li><a href="/wiki/Doom_engine" title="Doom engine">Doom</a></li>
+<li><a href="/wiki/Game-Maker" title="Game-Maker">Game-Maker</a></li>
+<li><a href="/wiki/GameMaker" title="GameMaker">GameMaker</a></li>
+<li><a href="/wiki/Garry_Kitchen%27s_GameMaker" title="Garry Kitchen's GameMaker">Garry Kitchen's GameMaker</a></li>
+<li><a href="/wiki/Genesis3D" title="Genesis3D">Genesis3D</a></li>
+<li><a href="/wiki/Genie_Engine" title="Genie Engine">Genie</a></li>
+<li><a href="/wiki/Filmation_(game_engine)" title="Filmation (game engine)">Filmation</a></li>
+<li><a href="/wiki/Freescape" title="Freescape">Freescape</a></li>
+<li><a href="/wiki/INSANE_(software)" title="INSANE (software)">INSANE</a></li>
+<li><a href="/wiki/Jedi_(game_engine)" title="Jedi (game engine)">Jedi</a></li>
+<li><a href="/wiki/Multimedia_Applications_Development_Environment" title="Multimedia Applications Development Environment">MADE</a></li>
+<li><a href="/wiki/Pie_in_the_Sky_(game_engine)" title="Pie in the Sky (game engine)">Pie in the Sky</a></li>
+<li><a href="/wiki/RenderWare" title="RenderWare">RenderWare</a></li>
+<li><a href="/wiki/Sim_RPG_Maker" title="Sim RPG Maker">Sim RPG Maker</a></li>
+<li><a href="/wiki/Sith_(game_engine)" title="Sith (game engine)">Sith</a></li>
+<li><a href="/wiki/Voxel_Space" title="Voxel Space">Voxel Space</a></li>
+<li><a href="/wiki/Wolfenstein_3D_engine" class="mw-redirect" title="Wolfenstein 3D engine">Wolfenstein 3D</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Proprietary<br />
+<a href="/wiki/Game_engine#Game_middleware" title="Game engine">middleware</a><br />
+<a href="/wiki/List_of_game_middleware" title="List of game middleware">(list)</a></th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Euphoria_(software)" title="Euphoria (software)">Euphoria</a></li>
+<li><a href="/wiki/Autodesk_Gameware" title="Autodesk Gameware">Gameware</a></li>
+<li><a href="/wiki/Nvidia_GameWorks" title="Nvidia GameWorks">GameWorks</a></li>
+<li><a href="/wiki/Havok_(software)" title="Havok (software)">Havok</a></li>
+<li><a href="/wiki/IMUSE" title="IMUSE">iMUSE</a></li>
+<li><a href="/wiki/Kynapse" title="Kynapse">Kynapse</a></li>
+<li><a href="/wiki/Quazal" title="Quazal">Quazal</a></li>
+<li><a href="/wiki/SpeedTree" title="SpeedTree">SpeedTree</a></li>
+<li><a href="/wiki/Xaitment" title="Xaitment">Xaitment</a></li>
+<li><a href="/wiki/FaceGen" title="FaceGen">FaceGen</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1214
+Cached time: 20170131132719
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.316 seconds
+Real time usage: 0.407 seconds
+Preprocessor visited node count: 2304/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 100192/2097152 bytes
+Template argument size: 4240/2097152 bytes
+Highest expansion depth: 25/40
+Expensive parser function count: 6/500
+Lua time usage: 0.156/10.000 seconds
+Lua memory usage: 4.57 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  344.568      1 -total
+ 39.29%  135.377      1 Template:Reflist
+ 28.02%   96.539      2 Template:Infobox
+ 27.77%   95.671     20 Template:Cite_web
+ 23.42%   80.697      1 Template:Infobox_software
+ 12.53%   43.160      1 Template:Pp-semi-indef
+  7.20%   24.817      1 Template:Infobox_software/simple
+  6.97%   24.022      3 Template:Release_date_and_age
+  6.14%   21.162      1 Template:Other_uses
+  4.25%   14.659      3 Template:Navbox
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:555154-0!*!0!!en!4!* and timestamp 20170131132719 and revision id 760835532
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=GameMaker:_Studio&amp;oldid=760835532">https://en.wikipedia.org/w/index.php?title=GameMaker:_Studio&amp;oldid=760835532</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Video_game_IDE" title="Category:Video game IDE">Video game IDE</a></li><li><a href="/wiki/Category:Video_game_engines" title="Category:Video game engines">Video game engines</a></li><li><a href="/wiki/Category:1999_software" title="Category:1999 software">1999 software</a></li><li><a href="/wiki/Category:IPhone_video_game_engines" title="Category:IPhone video game engines">IPhone video game engines</a></li><li><a href="/wiki/Category:Programming_tools_for_Windows" title="Category:Programming tools for Windows">Programming tools for Windows</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Wikipedia_indefinitely_semi-protected_pages" title="Category:Wikipedia indefinitely semi-protected pages">Wikipedia indefinitely semi-protected pages</a></li><li><a href="/wiki/Category:Use_dmy_dates_from_April_2016" title="Category:Use dmy dates from April 2016">Use dmy dates from April 2016</a></li><li><a href="/wiki/Category:Pages_using_deprecated_image_syntax" title="Category:Pages using deprecated image syntax">Pages using deprecated image syntax</a></li><li><a href="/wiki/Category:Commons_category_without_a_link_on_Wikidata" title="Category:Commons category without a link on Wikidata">Commons category without a link on Wikidata</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=GameMaker%3A+Studio" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=GameMaker%3A+Studio" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/GameMaker:_Studio"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:GameMaker:_Studio"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/GameMaker:_Studio" >Read</a></span></li>
+															<li id="ca-viewsource"><span><a href="/w/index.php?title=GameMaker:_Studio&amp;action=edit"  title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=GameMaker:_Studio&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/GameMaker:_Studio" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/GameMaker:_Studio" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=GameMaker:_Studio&amp;oldid=760835532" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=GameMaker:_Studio&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q16195922" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=GameMaker%3A_Studio&amp;id=760835532" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=GameMaker%3A+Studio">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=GameMaker%3A+Studio&amp;returnto=GameMaker%3A+Studio&amp;oldid=760835532&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=GameMaker:_Studio&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-ar"><a href="https://ar.wikipedia.org/wiki/%D8%AC%D9%8A%D9%85_%D9%85%D9%8A%D9%83%D8%B1" title="جيم ميكر – Arabic" lang="ar" hreflang="ar" class="interlanguage-link-target">العربية</a></li><li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/GameMaker:_Studio" title="GameMaker: Studio – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-es"><a href="https://es.wikipedia.org/wiki/GameMaker:_Studio" title="GameMaker: Studio – Spanish" lang="es" hreflang="es" class="interlanguage-link-target">Español</a></li><li class="interlanguage-link interwiki-fa"><a href="https://fa.wikipedia.org/wiki/%DA%AF%DB%8C%D9%85_%D9%85%DB%8C%DA%A9%D8%B1" title="گیم میکر – Persian" lang="fa" hreflang="fa" class="interlanguage-link-target">فارسی</a></li><li class="interlanguage-link interwiki-pt"><a href="https://pt.wikipedia.org/wiki/GameMaker:_Studio" title="GameMaker: Studio – Portuguese" lang="pt" hreflang="pt" class="interlanguage-link-target">Português</a></li><li class="interlanguage-link interwiki-ru"><a href="https://ru.wikipedia.org/wiki/GameMaker:_Studio" title="GameMaker: Studio – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li><li class="interlanguage-link interwiki-zh"><a href="https://zh.wikipedia.org/wiki/GameMaker:_Studio" title="GameMaker: Studio – Chinese" lang="zh" hreflang="zh" class="interlanguage-link-target">中文</a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q16195922#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 19 January 2017, at 10:40.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=GameMaker:_Studio&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.316","walltime":"0.407","ppvisitednodes":{"value":2304,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":100192,"limit":2097152},"templateargumentsize":{"value":4240,"limit":2097152},"expansiondepth":{"value":25,"limit":40},"expensivefunctioncount":{"value":6,"limit":500},"entityaccesscount":{"value":1,"limit":400},"timingprofile":["100.00%  344.568      1 -total"," 39.29%  135.377      1 Template:Reflist"," 28.02%   96.539      2 Template:Infobox"," 27.77%   95.671     20 Template:Cite_web"," 23.42%   80.697      1 Template:Infobox_software"," 12.53%   43.160      1 Template:Pp-semi-indef","  7.20%   24.817      1 Template:Infobox_software/simple","  6.97%   24.022      3 Template:Release_date_and_age","  6.14%   21.162      1 Template:Other_uses","  4.25%   14.659      3 Template:Navbox"]},"scribunto":{"limitreport-timeusage":{"value":"0.156","limit":"10.000"},"limitreport-memusage":{"value":4797078,"limit":52428800}},"cachereport":{"origin":"mw1214","timestamp":"20170131132719","ttl":2592000,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":480,"wgHostname":"mw1214"});});</script>
+	</body>
+</html>

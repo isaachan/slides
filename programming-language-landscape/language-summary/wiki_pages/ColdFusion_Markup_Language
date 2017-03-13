@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>ColdFusion Markup Language - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"ColdFusion_Markup_Language","wgTitle":"ColdFusion Markup Language","wgCurRevisionId":751733433,"wgRevisionId":751733433,"wgArticleId":962933,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Webarchive template wayback links","Articles needing expert attention with no reason or talk parameter","Articles needing expert attention from November 2008","All articles needing expert attention","Computing articles needing expert attention","All articles with unsourced statements","Articles with unsourced statements from August 2015","CFML programming language"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"ColdFusion_Markup_Language","wgRelevantArticleId":962933,"wgRequestId":"WJHoOApAMFMAACqAFc0AAAKV","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":true},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q2524362","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.cite.styles":"ready","ext.pygments":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.legacy.wikibits","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.pygments%2CwikimediaBadges%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.29.0-wmf.9"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/ColdFusion_Markup_Language"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=ColdFusion_Markup_Language&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=ColdFusion_Markup_Language&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/ColdFusion_Markup_Language"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ColdFusion_Markup_Language rootpage-ColdFusion_Markup_Language skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">ColdFusion Markup Language</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><script>function mfTempOpenSection(id){var block=document.getElementById("mf-section-"+id);block.className+=" open-block";block.previousSibling.className+=" open-block";}</script><div role="note" class="hatnote">"CFML" redirects here. For the radio station, see <a href="/wiki/CFML-FM" title="CFML-FM">CFML-FM</a>.</div>
+<table class="plainlinks metadata ambox ambox-content" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ambox_important.svg/40px-Ambox_important.svg.png" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ambox_important.svg/60px-Ambox_important.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ambox_important.svg/80px-Ambox_important.svg.png 2x" data-file-width="40" data-file-height="40" /></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">This ColdFusion Markup Language <b>needs attention from an expert in Computing</b>. <span class="hide-when-compact">Please add a <i>reason</i> or a <i>talk</i> parameter to this template to explain the issue with the ColdFusion Markup Language. <a href="/wiki/Wikipedia:WikiProject_Computing" title="Wikipedia:WikiProject Computing">WikiProject Computing</a> may be able to help recruit an expert.</span> <small><i>(November 2008)</i></small></span></td>
+</tr>
+</table>
+<table class="infobox vevent" style="width:22em">
+<caption class="summary">Cold Fusion Markup Language (CFML)</caption>
+<tr>
+<th scope="row"><a href="/wiki/Programming_paradigm" title="Programming paradigm">Paradigm</a></th>
+<td><a href="/wiki/Imperative_programming" title="Imperative programming">imperative</a>, <a href="/wiki/Object-oriented_programming" title="Object-oriented programming">object-oriented</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_design" title="Software design">Designed&#160;by</a></th>
+<td><a href="/wiki/Jeremy_Allaire" title="Jeremy Allaire">Jeremy Allaire</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_developer" title="Software developer">Developer</a></th>
+<td class="organiser"><a href="/wiki/Adobe_Systems" title="Adobe Systems">Adobe Systems</a> (<a href="/wiki/ColdFusion" class="mw-redirect" title="ColdFusion">ColdFusion</a>), Lucee Association (<a href="/wiki/Lucee" title="Lucee">Lucee</a>), <a href="/wiki/New_Atlanta" title="New Atlanta">New Atlanta</a> and aw2.0 (<a href="/wiki/OpenBD" class="mw-redirect" title="OpenBD">openBD</a>), The Railo Company (<a href="/wiki/Railo" title="Railo">Railo</a>)</td>
+</tr>
+<tr>
+<th scope="row">First&#160;appeared</th>
+<td>1995<span class="noprint">; 22&#160;years ago</span><span style="display:none">&#160;(<span class="bday dtstart published updated">1995</span>)</span></td>
+</tr>
+<tr>
+<th scope="row">Implementation language</th>
+<td><a href="/wiki/Java_(programming_language)" title="Java (programming language)">Java</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Operating_system" title="Operating system">OS</a></th>
+<td><a href="/wiki/Cross-platform" title="Cross-platform">Cross-platform</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_license" title="Software license">License</a></th>
+<td>Depends on the implementation. <a href="/wiki/Proprietary_software" title="Proprietary software">Proprietary</a>, <a href="/wiki/LGPL" class="mw-redirect" title="LGPL">LGPL</a>, and <a href="/wiki/GPL" class="mw-redirect" title="GPL">GPL</a>-licensed engines are all available.</td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Filename_extension" title="Filename extension">Filename extensions</a></th>
+<td>.cfm, .cfc</td>
+</tr>
+<tr>
+<th scope="row">Website</th>
+<td><span class="url"><a rel="nofollow" class="external text" href="http://www.adobe.com/products/coldfusion">www<wbr />.adobe<wbr />.com<wbr />/products<wbr />/coldfusion</a></span></td>
+</tr>
+<tr>
+<th colspan="2" style="text-align:center;background-color: #eee;">Major <a href="/wiki/Programming_language_implementation" title="Programming language implementation">implementations</a></th>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/Adobe_ColdFusion" title="Adobe ColdFusion">Adobe ColdFusion</a>, <a href="/wiki/Lucee" title="Lucee">Lucee</a>, <a href="/wiki/Railo" title="Railo">Railo</a>, <a href="/wiki/BlueDragon" title="BlueDragon">BlueDragon</a>, <a href="/wiki/Open_BlueDragon" class="mw-redirect" title="Open BlueDragon">Open BlueDragon</a></td>
+</tr>
+<tr>
+<th colspan="2" style="text-align:center;background-color: #eee;">Influenced</th>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/Lucee" title="Lucee">Lucee</a></td>
+</tr>
+</table>
+<p><b>ColdFusion Markup Language</b>, more commonly known as <b>CFML</b>, is a <a href="/wiki/Server-side_scripting" title="Server-side scripting">scripting language</a> for web development that runs on the <a href="/wiki/JVM" class="mw-redirect" title="JVM">JVM</a>, the <a href="/wiki/.NET_Framework" title=".NET Framework">.NET</a> framework, and <a href="/wiki/Google_App_Engine" title="Google App Engine">Google App Engine</a>. Multiple commercial and <a href="/wiki/Open_source" class="mw-redirect" title="Open source">open source</a> implementations of CFML engines are available, including <a href="/wiki/Adobe_ColdFusion" title="Adobe ColdFusion">Adobe ColdFusion</a>, <a href="/wiki/Lucee" title="Lucee">Lucee</a>, <a href="/wiki/New_Atlanta" title="New Atlanta">New Atlanta</a> <a href="/wiki/BlueDragon" title="BlueDragon">BlueDragon</a> (who makes both a Java-based and a .NET-based version), <a href="/wiki/Railo" title="Railo">Railo</a>, and <a href="/wiki/Open_BlueDragon" class="mw-redirect" title="Open BlueDragon">Open BlueDragon</a> as well as <a href="/wiki/ColdFusion#Alternative_server_environments" class="mw-redirect" title="ColdFusion">other CFML server engines</a>.</p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Synopsis"><span class="tocnumber">1</span> <span class="toctext">Synopsis</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#History"><span class="tocnumber">2</span> <span class="toctext">History</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Syntax"><span class="tocnumber">3</span> <span class="toctext">Syntax</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Built-in_tags"><span class="tocnumber">4</span> <span class="toctext">Built-in tags</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Custom_tags"><span class="tocnumber">5</span> <span class="toctext">Custom tags</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Functions"><span class="tocnumber">6</span> <span class="toctext">Functions</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#ColdFusion_Components_.28CFCs.29"><span class="tocnumber">7</span> <span class="toctext">ColdFusion Components (CFCs)</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#References"><span class="tocnumber">8</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#External_links"><span class="tocnumber">9</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Synopsis">Synopsis</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=ColdFusion_Markup_Language&amp;action=edit&amp;section=1" title="Edit section: Synopsis">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>In its simplest form, like many other web scripting languages, CFML augments standard HTML files with <a href="/wiki/Database" title="Database">database</a> commands, conditional <a href="/wiki/Operator_(programming)" class="mw-redirect" title="Operator (programming)">operators</a>, high-level formatting <a href="/wiki/Function_(computer_science)" class="mw-redirect" title="Function (computer science)">functions</a>, and other elements to produce <a href="/wiki/Web_applications" class="mw-redirect" title="Web applications">web applications</a>.<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">[1]</a></sup><sup id="cite_ref-2" class="reference"><a href="#cite_note-2">[2]</a></sup> CFML also includes numerous other constructs including ColdFusion Components (CFCs), CFML's version of <a href="/wiki/Object-oriented_programming" title="Object-oriented programming">objects</a>, that allow for separation of business logic from presentation.</p>
+<p>CFML can be written using either tags or <a href="/wiki/CFScript" title="CFScript">CFScript</a>, which resembles <a href="/wiki/JavaScript" title="JavaScript">JavaScript</a> (<a href="/wiki/ECMA_Script" class="mw-redirect" title="ECMA Script">ECMA script</a>).</p>
+<p>The pages in a CFML <a href="/wiki/Application_software" title="Application software">application</a> include the <a href="/wiki/Server-side" title="Server-side">server-side</a> CFML tags and functions in addition to HTML tags, and modern CFML applications also tend to have CFCs that are accessed by the CFML pages for executing business logic. When a <a href="/wiki/Web_browser" title="Web browser">web browser</a> requests a page in a ColdFusion application, it is automatically pre-processed by the ColdFusion <a href="/wiki/Application_server" title="Application server">application server</a>.<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">[3]</a></sup></p>
+<p>CFML can also be used to generate other languages, aside from HTML, such as <a href="/wiki/XML" title="XML">XML</a>, <a href="/wiki/JavaScript" title="JavaScript">JavaScript</a>, <a href="/wiki/CSS" class="mw-redirect" title="CSS">CSS</a>, and so on.</p>
+<p>Despite the name, CFML is <i>not</i> a markup language. It is also not <a href="/wiki/SGML" class="mw-redirect" title="SGML">SGML</a>, since certain core CFML features prevent it from complying.</p>
+<p>The CFML engine is configured in such a way that certain file extensions on the server (.cfm, .cfc) are handed off to the CFML engine for processing. In the case of the Java-based engines this is accomplished via <a href="/wiki/Java_servlet" title="Java servlet">Java servlets</a>. The CFML engine only processes CFML tags and functions; it returns text outside of CFML tags and functions to the web server unchanged.<sup id="cite_ref-4" class="reference"><a href="#cite_note-4">[4]</a></sup></p>
+<h2><span class="mw-headline" id="History">History</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=ColdFusion_Markup_Language&amp;action=edit&amp;section=2" title="Edit section: History">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Named Cold Fusion at the outset, the software was created by the <a href="/wiki/Allaire_Corporation" title="Allaire Corporation">Allaire Corporation</a>, originally located in <a href="/wiki/Minnesota" title="Minnesota">Minnesota</a>. It later moved to Cambridge, Massachusetts and then finally to Newton, Massachusetts before being acquired by <a href="/wiki/Macromedia" title="Macromedia">Macromedia</a> in 2001. Allaire Cold Fusion thus became Macromedia Cold Fusion. At the release of version 4, the space in the name was removed to become ColdFusion. Adobe acquired Macromedia in 2005 and is still actively developing ColdFusion.</p>
+<p>In 1998 Alan Williamson and his Scottish company, "n-ary", began creating a templating engine for Java to simplify common programming tasks.<sup id="cite_ref-5" class="reference"><a href="#cite_note-5">[5]</a></sup> Williamson was using curly-brace notation instead of tags, but when he saw an example of CFML and how it was solving similar problems (although not in Java) using a tag syntax, he started developing what would eventually become BlueDragon, which was the first Java implementation of the CFML language. (ColdFusion was written in C and C++ until version 6.0&#160;— the first Java-based version of ColdFusion&#160;— was released in 2002.) New Atlanta licensed BlueDragon around 2001 and made it available as a commercial product, eventually creating a .NET implementation of CFML. Open BlueDragon is a fork of the commercial BlueDragon product and was first released in 2008.</p>
+<p>The Railo CFML engine began as a student project in 2002 and was first launched as a commercial project in 2005.<sup id="cite_ref-6" class="reference"><a href="#cite_note-6">[6]</a></sup> Railo announced they were making the engine open source in 2008, and the first open source version was released in 2009.</p>
+<p>On June 18, 2009, <a href="/wiki/Adobe_Systems" title="Adobe Systems">Adobe</a> announced at the CFUnited conference that it had formed a CFML Advisory Committee<sup id="cite_ref-7" class="reference"><a href="#cite_note-7">[7]</a></sup> that would be responsible for guiding and reviewing changes to the CFML language. This effort was disbanded in 2010. The <a href="/wiki/Google_Group" class="mw-redirect" title="Google Group">Google Group</a> CFML Conventional Wisdom was created as a forum for open, public discussions about language and engine features; its use has dwindled since 2011.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (August 2015)">citation needed</span></a></i>]</sup></p>
+<p>In 2012, the OpenCFML Foundation was launched. Its function is to push <a href="/wiki/Open-source" class="mw-redirect" title="Open-source">open-source</a> CFML applications and platforms.</p>
+<p>On January 29, 2015 former Railo lead developer Michael Offner launched <a href="/wiki/Lucee" title="Lucee">Lucee</a> in London, a fork of the <a href="/wiki/Railo" title="Railo">Railo</a>, backed by community supporters and members of the Lucee Association. The goal of the project is to provide the functionality of CFML using fewer resources, giving better performance and to move CFML past its roots and into a modern and dynamic Web programming platform.</p>
+<h2><span class="mw-headline" id="Syntax">Syntax</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=ColdFusion_Markup_Language&amp;action=edit&amp;section=3" title="Edit section: Syntax">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>CFML tags have a similar format to HTML tags. They are enclosed in <a href="/wiki/Angle_brackets" class="mw-redirect" title="Angle brackets">angle brackets</a> (&lt; and &gt;) and generally have zero or more named <a href="/wiki/Attribute_(computing)" title="Attribute (computing)">attributes</a>, though some tags (e.g. cfset, cfif) contain an expression rather than attributes. Many CFML tags have bodies; that is, they have beginning and end tags with text to be processed between them. For example:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="nb">&lt;cfoutput&gt;</span>
+   <span class="p">#</span><span class="nv">value</span><span class="p">#</span> Bob!
+<span class="nb">&lt;/cfoutput&gt;</span>
+</pre></div>
+<p>Other tags, such as cfset and cfftp, never have bodies; all the required information goes between the beginning (&lt;) character and the ending (&gt;) character in the form of tag attributes (name/value pairs), as in the example below. If it is legal for tags not to have a body, it is syntactically acceptable to leave them unclosed as in the first example, though many CFML developers choose to self-close tags as in the second example to (arguably) make the code more legible.</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="nb">&lt;cfset</span> <span class="nv">value</span> <span class="o">=</span> <span class="s2">"Hello"</span><span class="nb">&gt;</span>
+<span class="nb">&lt;cfset</span> <span class="nv">value</span> <span class="o">=</span> <span class="s2">"Hello"</span> <span class="o">/</span><span class="nb">&gt;</span>
+</pre></div>
+<p>Even if the tag can have a body, including a body may not be necessary in some instances because the attributes specify all the required information. In these cases, as with the second example above, the end tag (and hence, the tag body) may be omitted and the tag may be self-closing as in the following example:<sup id="cite_ref-8" class="reference"><a href="#cite_note-8">[8]</a></sup></p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="p">&lt;</span><span class="nt">cfexecute</span> <span class="na">name</span><span class="o">=</span><span class="s">"C:\\winNT\\System32\\netstat.exe"</span> <span class="na">arguments</span><span class="o">=</span><span class="s">"-e"</span> <span class="na">outputfile</span><span class="o">=</span><span class="s">"C:\\Temp\\out.txt"</span> <span class="na">timeout</span><span class="o">=</span><span class="s">"1"</span> <span class="p">/&gt;</span>
+</pre></div>
+<p>Various tags offer the ability to type-check input parameters (e.g. cffunction, cfparam, cfqueryparam) if the <a href="/wiki/Programmer" title="Programmer">programmer</a> declares their type specifically. This functionality is used with cfqueryparam to <a href="/wiki/Information_security" title="Information security">secure</a> web applications and databases from <a href="/wiki/Hacker_(computer_security)" class="mw-redirect" title="Hacker (computer security)">hackers</a> and malicious web requests such as <a href="/wiki/SQL_injection" title="SQL injection">SQL injection</a>.</p>
+<h2><span class="mw-headline" id="Built-in_tags">Built-in tags</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=ColdFusion_Markup_Language&amp;action=edit&amp;section=4" title="Edit section: Built-in tags">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Nearly 100 tags and many more functions make up the heart of the CFML language. The following lists CFML tags by their function or purpose.<sup id="cite_ref-9" class="reference"><a href="#cite_note-9">[9]</a></sup></p>
+<ul>
+<li>Application framework</li>
+<li>Communications</li>
+<li>Control
+<ul>
+<li>Flow-control</li>
+<li>Database manipulation</li>
+<li><a href="/wiki/Exception_handling" title="Exception handling">Exception handling</a></li>
+</ul>
+</li>
+<li>Data output</li>
+<li><a href="/wiki/Debugging" title="Debugging">Debugging</a></li>
+<li>Display management</li>
+<li>Extensibility</li>
+<li><a href="/wiki/File_management" class="mw-redirect" title="File management">File management</a></li>
+<li><a href="/wiki/Form_(web)" class="mw-redirect" title="Form (web)">form</a></li>
+<li><a href="/wiki/Internet_protocol" class="mw-redirect" title="Internet protocol">Internet protocol</a></li>
+<li>Page processing</li>
+<li><a href="/wiki/Security" title="Security">Security</a></li>
+<li><a href="/wiki/Variable_(programming)" class="mw-redirect" title="Variable (programming)">Variable</a> manipulation</li>
+<li>Other tags (cfimage, cfregistry etc.)</li>
+</ul>
+<h2><span class="mw-headline" id="Custom_tags">Custom tags</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=ColdFusion_Markup_Language&amp;action=edit&amp;section=5" title="Edit section: Custom tags">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>CFML allows language extensions in the form of custom tags, which are tags created by the developer that are not part of the CFML language itself. Custom tags are regular CFML files which are intended to be invoked as tags, although it is possible to treat a <a href="/wiki/Template_(programming)" class="mw-redirect" title="Template (programming)">template</a> as both a custom tag and a regular template. Custom tags are written in CFML and are typically invoked by prefixing the custom tag's file name with <i>cf_</i>, although there are other ways to invoke custom tags.</p>
+<p>If a template is invoked as a custom tag, the attributes used to invoke that tag are available within the tag in an <i>attributes</i> scope and the variables for the calling page are accessible via the <i>caller</i> scope.</p>
+<p>For example, if writing a custom tag to perform <a href="/wiki/Addition" title="Addition">addition</a>, taking two attributes and adding them together, the tag would be an addition.cfm file which could look like this:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="nb">&lt;cfset</span> <span class="nv">caller.addition</span> <span class="o">=</span> <span class="nv">attributes.first</span> <span class="o">+</span> <span class="nv">attributes.second</span> <span class="o">/</span><span class="nb">&gt;</span>
+<span class="p">&lt;</span><span class="nt">cfexit</span> <span class="na">method</span><span class="o">=</span><span class="s">"exitTag"</span> <span class="p">/&gt;</span>
+</pre></div>
+<p>Assuming the tag is in the same directory as the file (or in a pre-defined customtags directory), it can be invoked thus:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="p">&lt;</span><span class="nt">cf_addition</span> <span class="na">first</span><span class="o">=</span><span class="s">"1"</span> <span class="na">second</span><span class="o">=</span><span class="s">"2"</span><span class="p">&gt;</span>
+</pre></div>
+<p>CFX tags are custom tags which are developed using <a href="/wiki/Java_language" class="mw-redirect" title="Java language">Java</a> or <a href="/wiki/C%2B%2B" title="C++">C++</a>, and are prefixed with cfx_ just like cf_. Java and C++ tags are added to the CFML runtime environment using the CFML engine's administrator or by editing configuration files.</p>
+<p>On some CFML engines <a href="/wiki/JavaServer_Pages" title="JavaServer Pages">JSP</a> tags can also be included in CFML pages using the &lt;cfimport&gt; tag.</p>
+<h2><span class="mw-headline" id="Functions">Functions</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=ColdFusion_Markup_Language&amp;action=edit&amp;section=6" title="Edit section: Functions">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>ColdFusion Markup Language includes a set of functions that you use to perform logical and arithmetic operations and manipulate data.</p>
+<table class="wikitable sortable">
+<tr>
+<th>function</th>
+<th>reference</th>
+<th>code</th>
+</tr>
+<tr>
+<td><a href="/wiki/Array_data_structure" title="Array data structure">Array</a></td>
+<td><sup id="cite_ref-10" class="reference"><a href="#cite_note-10">[10]</a></sup></td>
+<td>(ArraySort, ArrayAppend, ArrayDeleteAt...)</td>
+</tr>
+<tr>
+<td>Conversion</td>
+<td><sup id="cite_ref-11" class="reference"><a href="#cite_note-11">[11]</a></sup></td>
+<td>(URLEncodedFormat, ToString...)</td>
+</tr>
+<tr>
+<td>Date and time</td>
+<td><sup id="cite_ref-12" class="reference"><a href="#cite_note-12">[12]</a></sup></td>
+<td>(LsTimeFormat, DateAdd, DateDiff...)</td>
+</tr>
+<tr>
+<td>Decision</td>
+<td><sup id="cite_ref-13" class="reference"><a href="#cite_note-13">[13]</a></sup></td>
+<td>(IsDefined, IIF...)</td>
+</tr>
+<tr>
+<td>Display and formatting</td>
+<td><sup id="cite_ref-14" class="reference"><a href="#cite_note-14">[14]</a></sup></td>
+<td>(CJustify, NumberFormat...)</td>
+</tr>
+<tr>
+<td>Dynamic evaluation</td>
+<td><sup id="cite_ref-15" class="reference"><a href="#cite_note-15">[15]</a></sup></td>
+<td>(DE, Evaluate...)</td>
+</tr>
+<tr>
+<td>Extensibility</td>
+<td><sup id="cite_ref-16" class="reference"><a href="#cite_note-16">[16]</a></sup></td>
+<td>(CreateObject, ToScript...)</td>
+</tr>
+<tr>
+<td><a href="/wiki/Image" title="Image">Image</a></td>
+<td><sup id="cite_ref-17" class="reference"><a href="#cite_note-17">[17]</a></sup></td>
+<td>(ImageRotate, ImageAddBorder...)</td>
+</tr>
+<tr>
+<td>International functions</td>
+<td><sup id="cite_ref-18" class="reference"><a href="#cite_note-18">[18]</a></sup></td>
+<td>(SetLocale, GetTimeZoneInfo...)</td>
+</tr>
+<tr>
+<td><a href="/wiki/List_(computing)" class="mw-redirect" title="List (computing)">List</a></td>
+<td><sup id="cite_ref-19" class="reference"><a href="#cite_note-19">[19]</a></sup></td>
+<td>(FindOneOf, ListSetAt...)</td>
+</tr>
+<tr>
+<td>Mathematical</td>
+<td><sup id="cite_ref-20" class="reference"><a href="#cite_note-20">[20]</a></sup></td>
+<td>(Randomize, Sqr...)</td>
+</tr>
+<tr>
+<td>Other functions</td>
+<td><sup id="cite_ref-21" class="reference"><a href="#cite_note-21">[21]</a></sup></td>
+<td>(WriteOutput, GetBaseTemplatePath...)</td>
+</tr>
+<tr>
+<td>Query</td>
+<td><sup id="cite_ref-22" class="reference"><a href="#cite_note-22">[22]</a></sup></td>
+<td>(QueryAddColumn, QuerySetCell...)</td>
+</tr>
+<tr>
+<td>Security</td>
+<td><sup id="cite_ref-23" class="reference"><a href="#cite_note-23">[23]</a></sup></td>
+<td>(Encrypt, Decrypt...)</td>
+</tr>
+<tr>
+<td><a href="/wiki/String_(computer_science)" title="String (computer science)">String</a></td>
+<td><sup id="cite_ref-24" class="reference"><a href="#cite_note-24">[24]</a></sup></td>
+<td>(Reverse, HTMLCodeFormat...)</td>
+</tr>
+<tr>
+<td><a href="/wiki/Structure" title="Structure">Structure</a></td>
+<td><sup id="cite_ref-25" class="reference"><a href="#cite_note-25">[25]</a></sup></td>
+<td>(StructKeyExists, StructDelete...)</td>
+</tr>
+<tr>
+<td><a href="/wiki/System" title="System">System</a></td>
+<td><sup id="cite_ref-26" class="reference"><a href="#cite_note-26">[26]</a></sup></td>
+<td>(GetTickCount, GetTempFile...)</td>
+</tr>
+<tr>
+<td><a href="/wiki/XML" title="XML">XML</a></td>
+<td><sup id="cite_ref-27" class="reference"><a href="#cite_note-27">[27]</a></sup></td>
+<td>(XMLParse, GetSOAPResponse...)</td>
+</tr>
+</table>
+<h2><span class="mw-headline" id="ColdFusion_Components_.28CFCs.29">ColdFusion Components (CFCs)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=ColdFusion_Markup_Language&amp;action=edit&amp;section=7" title="Edit section: ColdFusion Components (CFCs)">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>CFCs provide some (not all) of the typical features and functionality that are provided by <a href="/wiki/Object-oriented" class="mw-redirect" title="Object-oriented">object-oriented</a> (OOP) languages. To create a CFC:</p>
+<dl>
+<dd>Create a file with a .CFC extension (this distinguishes CFCs from ColdFusion templates, which have a .CFM extension).</dd>
+<dd>Use four tags to create the components, define their functions and <a href="/wiki/Arguments" class="mw-redirect" title="Arguments">arguments</a>, and return a value.
+<dl>
+<dd>&lt;cfcomponent&gt;: Defines a CFC</dd>
+<dd>&lt;cffunction&gt;: Defines the functions (methods) within a CFC</dd>
+<dd>&lt;cfargument&gt;: Defines the arguments (parameters) that a function accepts</dd>
+<dd>&lt;cfreturn&gt;: Returns a value or result from a function</dd>
+</dl>
+</dd>
+</dl>
+<p>CFCs are plain CFML. Within a CFC any CFML tag, function, custom tag, other components, etc. may be used.</p>
+<p>CFCs can be used in various ways. If a method contained in a CFC simply needs to be invoked, the &lt;cfinvoke&gt; tag will create an instance of the CFC, invoke the desired method, and then destroy the instance of the CFC. &lt;cfinvoke&gt; takes the name of the component (minus the .cfc extension) and the method to execute. To access any returned data, the RETURNVARIABLE attribute provides the name of a variable to contain whatever the function returns. CFCs are created using four tags, saved as .CFC files, and invoked using the &lt;cfinvoke&gt; tag.<sup id="cite_ref-28" class="reference"><a href="#cite_note-28">[28]</a></sup></p>
+<p>In the example below, component temperature.cfc has a method FtoC which converts temperature from Fahrenheit to Celsius. The test.cfm template invokes the method and converts 212 degrees Fahrenheit and outputs the result.</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="cm">&lt;!--- temperature.cfc ---&gt;</span>
+<span class="nb">&lt;cfcomponent&gt;</span>
+  <span class="nb">&lt;cffunction</span> <span class="nv">name</span><span class="o">=</span><span class="s2">"FtoC"</span> <span class="nv">access</span><span class="o">=</span><span class="s2">"public"</span> <span class="nv">returntype</span><span class="o">=</span><span class="s2">"numeric"</span><span class="nb">&gt;</span>
+    <span class="nb">&lt;cfargument</span> <span class="nv">name</span><span class="o">=</span><span class="s2">"fahrenheit"</span> <span class="k">required</span><span class="o">=</span><span class="s2">"yes"</span> <span class="nv">type</span><span class="o">=</span><span class="s2">"numeric"</span> <span class="o">/</span><span class="nb">&gt;</span>
+    <span class="nb">&lt;cfset</span> <span class="nv">answer</span><span class="o">=</span> <span class="p">(</span><span class="nv">fahrenheit</span> <span class="o">-</span> <span class="m">32</span><span class="p">)</span><span class="o">*</span><span class="m">100</span><span class="o">/</span><span class="m">180</span> <span class="o">/</span><span class="nb">&gt;</span>
+    <span class="nb">&lt;cfreturn</span> <span class="nv">answer</span> <span class="o">/</span><span class="nb">&gt;</span>
+  <span class="nb">&lt;/cffunction&gt;</span>
+<span class="nb">&lt;/cfcomponent&gt;</span>
+<span class="cm">&lt;!--- test.cfm ---&gt;</span>
+<span class="nb">&lt;cfset</span> <span class="nv">fDegrees</span> <span class="o">=</span> <span class="m">212</span> <span class="o">/</span><span class="nb">&gt;</span>
+<span class="nb">&lt;cfinvoke</span> <span class="k">component</span><span class="o">=</span><span class="s2">"temperature"</span> <span class="nv">method</span><span class="o">=</span><span class="s2">"FtoC"</span> <span class="nv">returnvariable</span><span class="o">=</span><span class="s2">"result"</span><span class="nb">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">cfinvokeargument</span> <span class="na">name</span><span class="o">=</span><span class="s">"fahrenheit"</span> <span class="na">value</span><span class="o">=</span><span class="s">"#fDegrees#"</span> <span class="p">/&gt;</span>
+<span class="nb">&lt;/cfinvoke&gt;</span>
+<span class="nb">&lt;cfoutput&gt;</span><span class="p">#</span><span class="nv">fDegrees</span><span class="p">#</span><span class="ni">&amp;deg;</span>F = <span class="p">#</span><span class="nv">result</span><span class="p">#</span><span class="ni">&amp;deg;</span>C<span class="nb">&lt;/cfoutput&gt;</span> <span class="p">&lt;</span><span class="nt">br</span> <span class="p">/&gt;</span>
+</pre></div>
+<p>CFCs may also be instantiated as objects. Assuming a CFC file called Person.cfc, an instance of this CFC would be instantiated as follows:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="nb">&lt;cfset</span> <span class="nv">person</span> <span class="o">=</span> <span class="nf">CreateObject</span><span class="p">(</span><span class="s2">"component"</span><span class="p">,</span> <span class="s2">"Person"</span><span class="p">)</span> <span class="o">/</span><span class="nb">&gt;</span>
+</pre></div>
+<p>CFCs also form the basis of the ability to create <a href="/wiki/Web_services" class="mw-redirect" title="Web services">web services</a> in CFML. A CFC is created in the usual way, and the attribute access="remote" added to any function within the CFC will make that function available to be called as a <a href="/wiki/SOAP" title="SOAP">SOAP</a>-based web service. The CFML engine auto-generates a <a href="/wiki/Wsdl" class="mw-redirect" title="Wsdl">WSDL</a> and creates all the necessary stubs for the web service to function.</p>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=ColdFusion_Markup_Language&amp;action=edit&amp;section=8" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist columns references-column-width" style="-moz-column-width: 30em; -webkit-column-width: 30em; column-width: 30em; list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://livedocs.adobe.com/coldfusion/8/htmldocs/help.html?content=Tags_g-h_09.html">Adobe ColdFusion 8 – About Internet applications and web application servers</a>. Livedocs.adobe.com. Retrieved on 2013-09-17.</span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://openbd.org/manual">Open BlueDragon Manual</a>. Openbd.org. Retrieved on 2013-09-17.</span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text">Smith, Michael <a rel="nofollow" class="external text" href="https://web.archive.org/web/20080701091733/http://www.fusionauthority.com/cfintro.cfm">What is ColdFusion?</a> fusionauthority.com</span></li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://livedocs.adobe.com/coldfusion/6.1/htmldocs/element4.htm">Tags</a> <a rel="nofollow" class="external text" href="https://web.archive.org/web/20080324005624/http://livedocs.adobe.com/coldfusion/6.1/htmldocs/element4.htm">Archived</a> March 24, 2008, at the <a href="/wiki/Wayback_Machine" title="Wayback Machine">Wayback Machine</a>.</span></li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://web.archive.org/web/20100917122859/http://alan.blog-city.com/interview_alanwilliamson.htm">Open BlueDragon Steering Committee Interview Series – Alan Williamson</a>. alan.blog-city.com</span></li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.getrailo.org/index.cfm/about-railo/">About Railo</a>. Getrailo.org. Retrieved on 2013-09-17.</span></li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://corfield.org/entry/CFML_Advisory_Committee">http://corfield.org/entry/CFML_Advisory_Committee</a> CFML Advisory Committee&#160;— An Architect's View. Corfield.org. Retrieved on 2013-07-21.</span></li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://livedocs.adobe.com/coldfusion/6.1/htmldocs/element5.htm">Tag syntax</a> <a rel="nofollow" class="external text" href="https://web.archive.org/web/20080527095947/http://livedocs.adobe.com/coldfusion/6.1/htmldocs/element5.htm">Archived</a> May 27, 2008, at the <a href="/wiki/Wayback_Machine" title="Wayback Machine">Wayback Machine</a>.</span></li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-9">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://livedocs.adobe.com/coldfusion/8/cf8_cfml_ref.pdf">Tags by function</a>. (PDF) . Retrieved on 2013-09-17.</span></li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-10">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://livedocs.adobe.com/coldfusion/8/htmldocs/functions-pt0_03.html#3473387">Array functions</a>. Livedocs.adobe.com. Retrieved on 2013-09-17.</span></li>
+<li id="cite_note-11"><span class="mw-cite-backlink"><b><a href="#cite_ref-11">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://livedocs.adobe.com/coldfusion/8/htmldocs/functions-pt0_04.html#1098761">Conversion functions</a>. Livedocs.adobe.com. Retrieved on 2013-09-17.</span></li>
+<li id="cite_note-12"><span class="mw-cite-backlink"><b><a href="#cite_ref-12">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://livedocs.adobe.com/coldfusion/8/htmldocs/functions-pt0_05.html#1098968">Date and time functions</a>. Livedocs.adobe.com. Retrieved on 2013-09-17.</span></li>
+<li id="cite_note-13"><span class="mw-cite-backlink"><b><a href="#cite_ref-13">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://livedocs.adobe.com/coldfusion/8/htmldocs/functions-pt0_06.html#3485787">Decision functions</a>. Livedocs.adobe.com. Retrieved on 2013-09-17.</span></li>
+<li id="cite_note-14"><span class="mw-cite-backlink"><b><a href="#cite_ref-14">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://livedocs.adobe.com/coldfusion/8/htmldocs/functions-pt0_07.html#1099219">Display and formatting functions</a>. Livedocs.adobe.com. Retrieved on 2013-09-17.</span></li>
+<li id="cite_note-15"><span class="mw-cite-backlink"><b><a href="#cite_ref-15">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://livedocs.adobe.com/coldfusion/8/htmldocs/functions-pt0_08.html#1099242">Dynamic evaluation functions</a>. Livedocs.adobe.com. Retrieved on 2013-09-17.</span></li>
+<li id="cite_note-16"><span class="mw-cite-backlink"><b><a href="#cite_ref-16">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://livedocs.adobe.com/coldfusion/8/htmldocs/functions-pt0_09.html#3490127">Extensibility</a>. Livedocs.adobe.com. Retrieved on 2013-09-17.</span></li>
+<li id="cite_note-17"><span class="mw-cite-backlink"><b><a href="#cite_ref-17">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://livedocs.adobe.com/coldfusion/8/htmldocs/functions-pt0_11.html#1099325">Image functions</a>. Livedocs.adobe.com. Retrieved on 2013-09-17.</span></li>
+<li id="cite_note-18"><span class="mw-cite-backlink"><b><a href="#cite_ref-18">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://livedocs.adobe.com/coldfusion/8/htmldocs/functions-pt0_12.html#3614227">International functions</a>. Livedocs.adobe.com. Retrieved on 2013-09-17.</span></li>
+<li id="cite_note-19"><span class="mw-cite-backlink"><b><a href="#cite_ref-19">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://livedocs.adobe.com/coldfusion/8/htmldocs/functions-pt0_13.html#1099435">List functions</a>. Livedocs.adobe.com. Retrieved on 2013-09-17.</span></li>
+<li id="cite_note-20"><span class="mw-cite-backlink"><b><a href="#cite_ref-20">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://livedocs.adobe.com/coldfusion/8/htmldocs/functions-pt0_14.html#1099613">Mathematical functions</a>. Livedocs.adobe.com. Retrieved on 2013-09-17.</span></li>
+<li id="cite_note-21"><span class="mw-cite-backlink"><b><a href="#cite_ref-21">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://livedocs.adobe.com/coldfusion/8/htmldocs/functions-pt0_15.html#3493621">Other functions</a>. Livedocs.adobe.com. Retrieved on 2013-09-17.</span></li>
+<li id="cite_note-22"><span class="mw-cite-backlink"><b><a href="#cite_ref-22">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://livedocs.adobe.com/coldfusion/8/htmldocs/functions-pt0_16.html#1099653">Query functions</a>. Livedocs.adobe.com. Retrieved on 2013-09-17.</span></li>
+<li id="cite_note-23"><span class="mw-cite-backlink"><b><a href="#cite_ref-23">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://livedocs.adobe.com/coldfusion/8/htmldocs/functions-pt0_17.html#3542210">Security functions</a>. Livedocs.adobe.com. Retrieved on 2013-09-17.</span></li>
+<li id="cite_note-24"><span class="mw-cite-backlink"><b><a href="#cite_ref-24">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://livedocs.adobe.com/coldfusion/8/htmldocs/functions-pt0_18.html#1099887">String functions</a>. Livedocs.adobe.com. Retrieved on 2013-09-17.</span></li>
+<li id="cite_note-25"><span class="mw-cite-backlink"><b><a href="#cite_ref-25">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://livedocs.adobe.com/coldfusion/8/htmldocs/functions-pt0_19.html#1099964">Structure functions</a>. Livedocs.adobe.com. Retrieved on 2013-09-17.</span></li>
+<li id="cite_note-26"><span class="mw-cite-backlink"><b><a href="#cite_ref-26">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://livedocs.adobe.com/coldfusion/8/htmldocs/functions-pt0_20.html#1100017">System functions</a>. Livedocs.adobe.com. Retrieved on 2013-09-17.</span></li>
+<li id="cite_note-27"><span class="mw-cite-backlink"><b><a href="#cite_ref-27">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://livedocs.adobe.com/coldfusion/8/htmldocs/functions-pt0_21.html#3468770">XML functions</a>. Livedocs.adobe.com. Retrieved on 2013-09-17.</span></li>
+<li id="cite_note-28"><span class="mw-cite-backlink"><b><a href="#cite_ref-28">^</a></b></span> <span class="reference-text">Forta, Ben <a rel="nofollow" class="external text" href="https://web.archive.org/web/20100528103657/http://www.adobe.com/devnet/coldfusion/articles/intro_cfcs.html">Using ColdFusion components</a>. adobe.com</span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=ColdFusion_Markup_Language&amp;action=edit&amp;section=9" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="https://cfdocs.org">CFML documentation maintained by the community.</a></li>
+<li><a rel="nofollow" class="external text" href="https://github.com/mhenke/CFML-in-100-minutes/blob/develop/cfml100mins.markdown">CFML in 100 minutes — introduction to the basics of the CFML language.</a></li>
+<li><a rel="nofollow" class="external text" href="http://learncfinaweek.com">A community driven training program that teaches the basics of CFML.</a></li>
+<li><a rel="nofollow" class="external text" href="http://cfml-slack.herokuapp.com">CFML Slack team</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.cfquickdocs.com/">CFQuickDocs — ColdFusion tags and functions reference.</a></li>
+<li><a rel="nofollow" class="external text" href="http://lucee.org">Lucee</a></li>
+<li><a rel="nofollow" class="external text" href="http://openbd.org">Open BlueDragon</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.newatlanta.com/products/bluedragon/product_info/overview.cfm">BlueDragon</a></li>
+<li><a rel="nofollow" class="external text" href="http://getrailo.com">Railo</a></li>
+<li><a rel="nofollow" class="external text" href="https://groups.google.com/group/cfml-conventional-wisdom">CFML Conventional Wisdom Google Group</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.opencfml.org/">CFML Advisory Committee</a> (this committee is now defunct)</li>
+</ul>
+<div role="navigation" class="navbox" aria-labelledby="CFML_programming_language" style="padding:3px">
+<table class="nowraplinks hlist collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:CFML_programming_language" title="Template:CFML programming language"><abbr title="View this template" style=";;background:none transparent;border:none;">v</abbr></a></li>
+<li class="nv-talk"><a href="/w/index.php?title=Template_talk:CFML_programming_language&amp;action=edit&amp;redlink=1" class="new" title="Template talk:CFML programming language (page does not exist)"><abbr title="Discuss this template" style=";;background:none transparent;border:none;">t</abbr></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:CFML_programming_language&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;">e</abbr></a></li>
+</ul>
+</div>
+<div id="CFML_programming_language" style="font-size:114%"><a href="/wiki/CFML" class="mw-redirect" title="CFML">CFML</a> programming language</div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Implementations</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Adobe_ColdFusion" title="Adobe ColdFusion">Adobe ColdFusion</a></li>
+<li><a href="/wiki/BlueDragon" title="BlueDragon">New Atlanta BlueDragon.NET</a></li>
+<li><a href="/wiki/Open_BlueDragon" class="mw-redirect" title="Open BlueDragon">Open BlueDragon</a></li>
+<li><a href="/wiki/Railo" title="Railo">Railo</a></li>
+<li><a href="/wiki/Lucee" title="Lucee">Lucee</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Applications</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/ContentBox_Modular_CMS" title="ContentBox Modular CMS">ContentBox Modular CMS</a></li>
+<li><a href="/wiki/FarCry_CMS" title="FarCry CMS">FarCry CMS</a></li>
+<li><a href="/wiki/Mura_CMS" title="Mura CMS">Mura CMS</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Frameworks</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/ColdBox_Platform" title="ColdBox Platform">ColdBox Platform</a></li>
+<li><a href="/wiki/ColdFusion_on_Wheels" title="ColdFusion on Wheels">cfWheels</a></li>
+<li><a href="/wiki/ColdSpring_Framework" title="ColdSpring Framework">ColdSpring</a></li>
+<li><a href="/wiki/Fusebox_(programming)" title="Fusebox (programming)">Fusebox</a></li>
+<li><a href="/wiki/Mach-II" title="Mach-II">Mach-II</a></li>
+<li><a href="/wiki/Model-Glue" title="Model-Glue">Model-Glue</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Development Resources</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks navbox-subgroup" style="border-spacing:0">
+<tr>
+<th scope="row" class="navbox-group">IDEs / Editors</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Adobe_ColdFusion_Builder" title="Adobe ColdFusion Builder">CFBuilder</a></li>
+<li><a href="/wiki/Dreamweaver" class="mw-redirect" title="Dreamweaver">Dreamweaver</a></li>
+<li><a href="/wiki/IntelliJ_IDEA" title="IntelliJ IDEA">IntelliJ IDEA</a></li>
+<li><a href="/wiki/HomeSite" class="mw-redirect" title="HomeSite">HomeSite</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Debugging and monitoring</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/FusionDebug" title="FusionDebug">FusionDebug</a></li>
+<li><a href="/wiki/FusionReactor" title="FusionReactor">FusionReactor</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" colspan="2">
+<div>
+<ul>
+<li><a href="/wiki/Category:CFML_programming_language" title="Category:CFML programming language">Category:CFML programming language</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1248
+Cached time: 20170201135256
+Cache expiry: 86400
+Dynamic content: true
+CPU time usage: 0.128 seconds
+Real time usage: 0.187 seconds
+Preprocessor visited node count: 1245/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 26410/2097152 bytes
+Template argument size: 2153/2097152 bytes
+Highest expansion depth: 12/40
+Expensive parser function count: 6/500
+Lua time usage: 0.043/10.000 seconds
+Lua memory usage: 1.97 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  149.314      1 -total
+ 23.24%   34.705      1 Template:Infobox_programming_language
+ 21.07%   31.457      1 Template:Infobox
+ 20.59%   30.744      1 Template:Expert_needed
+ 15.40%   22.996      1 Template:Ambox
+ 13.66%   20.398      1 Template:Reflist
+ 13.47%   20.109      1 Template:Redirect
+ 13.46%   20.100      1 Template:Citation_needed
+ 12.09%   18.045      1 Template:Fix
+  7.23%   10.801      1 Template:Delink
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:962933-0!*!0!!en!4!* and timestamp 20170201135256 and revision id 751733433
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=ColdFusion_Markup_Language&amp;oldid=751733433">https://en.wikipedia.org/w/index.php?title=ColdFusion_Markup_Language&amp;oldid=751733433</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:CFML_programming_language" title="Category:CFML programming language">CFML programming language</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Webarchive_template_wayback_links" title="Category:Webarchive template wayback links">Webarchive template wayback links</a></li><li><a href="/wiki/Category:Articles_needing_expert_attention_with_no_reason_or_talk_parameter" title="Category:Articles needing expert attention with no reason or talk parameter">Articles needing expert attention with no reason or talk parameter</a></li><li><a href="/wiki/Category:Articles_needing_expert_attention_from_November_2008" title="Category:Articles needing expert attention from November 2008">Articles needing expert attention from November 2008</a></li><li><a href="/wiki/Category:All_articles_needing_expert_attention" title="Category:All articles needing expert attention">All articles needing expert attention</a></li><li><a href="/wiki/Category:Computing_articles_needing_expert_attention" title="Category:Computing articles needing expert attention">Computing articles needing expert attention</a></li><li><a href="/wiki/Category:All_articles_with_unsourced_statements" title="Category:All articles with unsourced statements">All articles with unsourced statements</a></li><li><a href="/wiki/Category:Articles_with_unsourced_statements_from_August_2015" title="Category:Articles with unsourced statements from August 2015">Articles with unsourced statements from August 2015</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=ColdFusion+Markup+Language" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=ColdFusion+Markup+Language" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/ColdFusion_Markup_Language"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:ColdFusion_Markup_Language"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/ColdFusion_Markup_Language" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=ColdFusion_Markup_Language&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=ColdFusion_Markup_Language&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/ColdFusion_Markup_Language" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/ColdFusion_Markup_Language" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=ColdFusion_Markup_Language&amp;oldid=751733433" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=ColdFusion_Markup_Language&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q2524362" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=ColdFusion_Markup_Language&amp;id=751733433" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=ColdFusion+Markup+Language">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=ColdFusion+Markup+Language&amp;returnto=ColdFusion+Markup+Language&amp;oldid=751733433&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=ColdFusion_Markup_Language&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-ar"><a href="https://ar.wikipedia.org/wiki/%D8%B3%D9%8A_%D8%A5%D9%81_%D8%A5%D9%85" title="سي إف إم – Arabic" lang="ar" hreflang="ar" class="interlanguage-link-target">العربية</a></li><li class="interlanguage-link interwiki-ast"><a href="https://ast.wikipedia.org/wiki/CFML" title="CFML – Asturian" lang="ast" hreflang="ast" class="interlanguage-link-target">Asturianu</a></li><li class="interlanguage-link interwiki-bs"><a href="https://bs.wikipedia.org/wiki/CFML" title="CFML – Bosnian" lang="bs" hreflang="bs" class="interlanguage-link-target">Bosanski</a></li><li class="interlanguage-link interwiki-es"><a href="https://es.wikipedia.org/wiki/CFML" title="CFML – Spanish" lang="es" hreflang="es" class="interlanguage-link-target">Español</a></li><li class="interlanguage-link interwiki-hr"><a href="https://hr.wikipedia.org/wiki/ColdFusion_Markup_Language" title="ColdFusion Markup Language – Croatian" lang="hr" hreflang="hr" class="interlanguage-link-target">Hrvatski</a></li><li class="interlanguage-link interwiki-it"><a href="https://it.wikipedia.org/wiki/CFML" title="CFML – Italian" lang="it" hreflang="it" class="interlanguage-link-target">Italiano</a></li><li class="interlanguage-link interwiki-ja"><a href="https://ja.wikipedia.org/wiki/ColdFusion_Markup_Language" title="ColdFusion Markup Language – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target">日本語</a></li><li class="interlanguage-link interwiki-pt"><a href="https://pt.wikipedia.org/wiki/CFML" title="CFML – Portuguese" lang="pt" hreflang="pt" class="interlanguage-link-target">Português</a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q2524362#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 27 November 2016, at 14:56.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=ColdFusion_Markup_Language&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.128","walltime":"0.187","ppvisitednodes":{"value":1245,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":26410,"limit":2097152},"templateargumentsize":{"value":2153,"limit":2097152},"expansiondepth":{"value":12,"limit":40},"expensivefunctioncount":{"value":6,"limit":500},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  149.314      1 -total"," 23.24%   34.705      1 Template:Infobox_programming_language"," 21.07%   31.457      1 Template:Infobox"," 20.59%   30.744      1 Template:Expert_needed"," 15.40%   22.996      1 Template:Ambox"," 13.66%   20.398      1 Template:Reflist"," 13.47%   20.109      1 Template:Redirect"," 13.46%   20.100      1 Template:Citation_needed"," 12.09%   18.045      1 Template:Fix","  7.23%   10.801      1 Template:Delink"]},"scribunto":{"limitreport-timeusage":{"value":"0.043","limit":"10.000"},"limitreport-memusage":{"value":2067231,"limit":52428800}},"cachereport":{"origin":"mw1248","timestamp":"20170201135256","ttl":86400,"transientcontent":true}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":270,"wgHostname":"mw1248"});});</script>
+	</body>
+</html>

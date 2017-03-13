@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Ceylon (programming language) - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Ceylon_(programming_language)","wgTitle":"Ceylon (programming language)","wgCurRevisionId":759979755,"wgRevisionId":759979755,"wgArticleId":31483631,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles lacking reliable references from January 2017","All articles lacking reliable references","Pages using deprecated image syntax","Java programming language family","JVM programming languages","Red Hat software","Software using the Apache license","Programming languages created in 2011"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Ceylon_(programming_language)","wgRelevantArticleId":31483631,"wgRequestId":"WIugTwpAMFUAAFyOIhUAAACJ","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":true},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q93482","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.cite.styles":"ready","ext.pygments":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.legacy.wikibits","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.pygments%2CwikimediaBadges%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.29.0-wmf.9"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Ceylon_(programming_language)"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Ceylon_(programming_language)&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Ceylon_(programming_language)&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Ceylon_(programming_language)"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Ceylon_programming_language rootpage-Ceylon_programming_language skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Ceylon (programming language)</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><script>function mfTempOpenSection(id){var block=document.getElementById("mf-section-"+id);block.className+=" open-block";block.previousSibling.className+=" open-block";}</script><table class="plainlinks metadata ambox ambox-content ambox-Primary_sources" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><a href="/wiki/File:Question_book-new.svg" class="image"><img alt="Question book-new.svg" src="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" width="50" height="39" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/75px-Question_book-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/100px-Question_book-new.svg.png 2x" data-file-width="512" data-file-height="399" /></a></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">This article <b>relies too much on <a href="/wiki/Wikipedia:Verifiability" title="Wikipedia:Verifiability">references</a> to <a href="/wiki/Wikipedia:No_original_research#Primary.2C_secondary_and_tertiary_sources" title="Wikipedia:No original research">primary sources</a></b>. <span class="hide-when-compact">Please improve this by adding <a href="/wiki/Wikipedia:No_original_research#Primary.2C_secondary_and_tertiary_sources" title="Wikipedia:No original research">secondary or tertiary sources</a>.</span> <small><i>(January 2017)</i></small> <small class="hide-when-compact"><i>(<a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove this template message</a>)</i></small></span></td>
+</tr>
+</table>
+<table class="infobox vevent" style="width:22em">
+<caption class="summary">Ceylon</caption>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/File:Ceylon_(programming_language)_logo.png" class="image"><img alt="Ceylon (programming language) logo.png" src="//upload.wikimedia.org/wikipedia/en/2/20/Ceylon_%28programming_language%29_logo.png" width="200" height="141" data-file-width="200" data-file-height="141" /></a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Programming_paradigm" title="Programming paradigm">Paradigm</a></th>
+<td><a href="/wiki/Object-oriented_programming" title="Object-oriented programming">Object-oriented</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_design" title="Software design">Designed&#160;by</a></th>
+<td>Gavin King, <a href="/wiki/Red_Hat" title="Red Hat">Red Hat</a></td>
+</tr>
+<tr>
+<th scope="row">First&#160;appeared</th>
+<td>2011</td>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Software_release_life_cycle" title="Software release life cycle">Stable release</a></th>
+<td>
+<div style="margin:0px;">1.3.0 / September&#160;19, 2016<span class="noprint">; 3 months ago</span><span style="display:none">&#160;(<span class="bday dtstart published updated">2016-09-19</span>)</span></div>
+</td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Type_system" title="Type system">Typing discipline</a></th>
+<td><a href="/wiki/Type_system" title="Type system">Static, strong, safe</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_license" title="Software license">License</a></th>
+<td><a href="/wiki/Apache_License" title="Apache License">Apache v2</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Filename_extension" title="Filename extension">Filename extensions</a></th>
+<td>.ceylon<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">[1]</a></sup></td>
+</tr>
+<tr>
+<th scope="row">Website</th>
+<td><span class="url"><a rel="nofollow" class="external text" href="http://ceylon-lang.org">ceylon-lang<wbr />.org</a></span></td>
+</tr>
+<tr>
+<th colspan="2" style="text-align:center;background-color: #eee;">Influenced by</th>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/Java_(programming_language)" title="Java (programming language)">Java</a>,<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">[2]</a></sup> <a href="/wiki/Scala_(programming_language)" title="Scala (programming language)">Scala</a>, <a href="/wiki/Smalltalk" title="Smalltalk">Smalltalk</a>, <a href="/wiki/ML_(programming_language)" title="ML (programming language)">ML</a>,<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">[3]</a></sup> <a href="/wiki/Lisp_(programming_language)" title="Lisp (programming language)">Lisp</a><sup id="cite_ref-4" class="reference"><a href="#cite_note-4">[4]</a></sup></td>
+</tr>
+</table>
+<p><b>Ceylon</b> is an <a href="/wiki/Object-oriented_programming" title="Object-oriented programming">object-oriented</a>, <a href="/wiki/Strong_typing" class="mw-redirect" title="Strong typing">strongly</a> <a href="/wiki/Type_system" title="Type system">statically typed</a> programming language with an emphasis on <a href="/wiki/Immutable_object" title="Immutable object">immutability</a>, created by <a href="/wiki/Red_Hat" title="Red Hat">Red Hat</a>. Ceylon programs run on the <a href="/wiki/Java_Virtual_Machine" class="mw-redirect" title="Java Virtual Machine">Java Virtual Machine</a>, and can be compiled to <a href="/wiki/JavaScript" title="JavaScript">JavaScript</a>.<sup id="cite_ref-5" class="reference"><a href="#cite_note-5">[5]</a></sup><sup id="cite_ref-6" class="reference"><a href="#cite_note-6">[6]</a></sup> The language design focuses on <a href="/wiki/Computer_programming#Readability_of_source_code" title="Computer programming">readability</a>, <a href="/wiki/Predictability#Predictability_in_human.E2.80.93computer_interaction" title="Predictability">predictability</a>, <a href="/wiki/Programming_tool" title="Programming tool">toolability</a>, <a href="/wiki/Modular_programming" title="Modular programming">modularity</a>, and <a href="/wiki/Metaprogramming" title="Metaprogramming">metaprogrammability</a>.<sup id="cite_ref-7" class="reference"><a href="#cite_note-7">[7]</a></sup></p>
+<p>Important features of Ceylon include:<sup id="cite_ref-8" class="reference"><a href="#cite_note-8">[8]</a></sup></p>
+<ul>
+<li>a type system enforcing null safety and list element existence at compile time;</li>
+<li>regular syntax and semantics, avoiding special cases and primitively-defined constructs in favor of <a href="/wiki/Syntactic_sugar" title="Syntactic sugar">syntactic sugar</a>;</li>
+<li>support for generic programming and metaprogramming, with <a href="/wiki/Reification_(computer_science)" title="Reification (computer science)">reified</a> <a href="/wiki/Parametric_polymorphism" title="Parametric polymorphism">generics</a>;</li>
+<li>modularity built into the language, based on <a href="/wiki/WildFly" title="WildFly">JBoss modules</a>, interoperable with <a href="/wiki/OSGi" title="OSGi">OSGi</a><sup id="cite_ref-9" class="reference"><a href="#cite_note-9">[9]</a></sup> and <a href="/wiki/Apache_Maven" title="Apache Maven">Maven</a>;<sup id="cite_ref-10" class="reference"><a href="#cite_note-10">[10]</a></sup> and</li>
+<li>powerful tools, including an Eclipse-based IDE.<sup id="cite_ref-11" class="reference"><a href="#cite_note-11">[11]</a></sup></li>
+</ul>
+<p>The name "Ceylon" is an oblique reference to Java, in that <a href="/wiki/Java" title="Java">Java</a> and <a href="/wiki/Sri_Lanka" title="Sri Lanka">Sri Lanka</a>, formerly known as Ceylon, are islands known for growth and export of <a href="/wiki/Coffee" title="Coffee">coffee</a> and <a href="/wiki/Tea" title="Tea">tea</a>.</p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Language_features"><span class="tocnumber">1</span> <span class="toctext">Language features</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Type_System"><span class="tocnumber">1.1</span> <span class="toctext">Type System</span></a>
+<ul>
+<li class="toclevel-3 tocsection-3"><a href="#Null_safety"><span class="tocnumber">1.1.1</span> <span class="toctext">Null safety</span></a></li>
+<li class="toclevel-3 tocsection-4"><a href="#Functions"><span class="tocnumber">1.1.2</span> <span class="toctext">Functions</span></a></li>
+<li class="toclevel-3 tocsection-5"><a href="#Enumerated_Types"><span class="tocnumber">1.1.3</span> <span class="toctext">Enumerated Types</span></a></li>
+<li class="toclevel-3 tocsection-6"><a href="#Type_Inference"><span class="tocnumber">1.1.4</span> <span class="toctext">Type Inference</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-7"><a href="#Entry_point_with_names"><span class="tocnumber">1.2</span> <span class="toctext">Entry point with names</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-8"><a href="#License"><span class="tocnumber">2</span> <span class="toctext">License</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#See_also"><span class="tocnumber">3</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#References"><span class="tocnumber">4</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#External_links"><span class="tocnumber">5</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Language_features">Language features</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Ceylon_(programming_language)&amp;action=edit&amp;section=1" title="Edit section: Language features">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Ceylon is heavily-influenced by <a href="/wiki/Java_(programming_language)" title="Java (programming language)">Java</a>'s syntax, but adds many new features.</p>
+<h3><span class="mw-headline" id="Type_System">Type System</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Ceylon_(programming_language)&amp;action=edit&amp;section=2" title="Edit section: Type System">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>One of the most novel aspects of Ceylon is its <a href="/wiki/Type_system" title="Type system">type system</a>. Ceylon foregoes Java's primitive types<sup id="cite_ref-12" class="reference"><a href="#cite_note-12">[12]</a></sup> and <a href="/wiki/Object_type" class="mw-redirect" title="Object type">boxing</a> in favor of a type system composed entirely of first-class objects. While this may cause boxing overhead in certain situations, it makes the type system more uniform.</p>
+<p>Ceylon allows for union and intersection types, in a similar fashion to <a href="/wiki/TypeScript" title="TypeScript">TypeScript</a>, <a href="/wiki/Whiley_(programming_language)" title="Whiley (programming language)">Whiley</a> and Flow.</p>
+<p>Union types, written <code>A|B</code>, allow a variable to have more than one type. The following example shows a Ceylon function which may take either an <a href="/wiki/Integer_(computer_science)" title="Integer (computer science)">integer</a> or a <a href="/wiki/String_(computer_science)" title="String (computer science)">string</a>:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="nd">shared</span> <span class="kt">void</span> <span class="nf">integerOrString</span><span class="o">(</span><span class="n">Integer</span><span class="o">|</span><span class="n">String</span> <span class="n">input</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">if</span> <span class="o">(</span><span class="k">is</span> <span class="n">Integer</span> <span class="n">input</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">print</span><span class="o">(</span><span class="s">"Got the integer ``input``"</span><span class="o">);</span>
+    <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+        <span class="n">print</span><span class="o">(</span><span class="s">"Got the string '``input``'"</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+<p>Intersection types, written <code>A&amp;B</code>, are the theoretical foundation of <a href="/wiki/Flow-sensitive_typing" title="Flow-sensitive typing">flow-sensitive typing</a>:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="nd">shared</span> <span class="kt">void</span> <span class="nf">integerOrString</span><span class="o">(</span><span class="n">Integer</span><span class="o">|</span><span class="n">String</span> <span class="n">input</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">Integer</span> <span class="n">added</span> <span class="o">=</span> <span class="n">input</span> <span class="o">+</span> <span class="mi">6</span><span class="o">;</span> <span class="c1">// illegal; the + operator is not defined on Integer|String</span>
+
+    <span class="k">if</span> <span class="o">(</span><span class="k">is</span> <span class="n">Integer</span> <span class="n">input</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">Integer</span> <span class="n">added</span> <span class="o">=</span> <span class="n">input</span> <span class="o">+</span> <span class="mi">6</span><span class="o">;</span> <span class="c1">// legal; input is now known to be an Integer</span>
+        <span class="n">print</span><span class="o">(</span><span class="s">"Got the integer ``input``"</span><span class="o">);</span>
+    <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+        <span class="n">print</span><span class="o">(</span><span class="s">"Got the string '``input``'"</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+<p>The condition <code>is Integer input</code> narrows the type of <code>input</code> to <code>&lt;Integer|String&gt; &amp; Integer</code>, which <a href="/wiki/Distributive_property" title="Distributive property">distributes</a> to <code>Integer&amp;Integer | String&amp;Integer</code>, which, as <code>String</code> and <code>Integer</code> are disjoint types, is equivalent to <code>Integer&amp;Integer | Nothing</code> (<code>Nothing</code> is the empty bottom type), which simplifies to just <code>Integer</code>.</p>
+<h4><span class="mw-headline" id="Null_safety">Null safety</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Ceylon_(programming_language)&amp;action=edit&amp;section=3" title="Edit section: Null safety">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>Union and intersection types are used to provide null safety. The top type of the Ceylon type hierarchy is the class <code>Anything</code>, which has two subclasses: <code>Object</code>, the superclass of all normal classes and all interfaces, and <code>Null</code>, with the only instance <a href="/wiki/Null_pointer" title="Null pointer"><code>null</code></a>. Since <code>Object</code> and <code>Null</code> are disjoint types, most regular types like <code>Integer</code> or <code>List&lt;String&gt;</code> are not nullable; a <a href="/wiki/Nullable_type" title="Nullable type">nullable type</a> is the union <code>Integer|Null</code>, abbreviated <code>Integer?</code>.<sup id="cite_ref-13" class="reference"><a href="#cite_note-13">[13]</a></sup></p>
+<p>Intersection types can be used to get a non-optional type out of a possibly-optional type, such as a type parameter. For example, the signature of a function that removes <code>null</code> elements from a stream of values could be:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="n">Iterable</span><span class="o">&lt;</span><span class="n">Element</span><span class="o">&amp;</span><span class="n">Object</span><span class="o">&gt;</span> <span class="n">removeNulls</span><span class="o">&lt;</span><span class="n">Element</span><span class="o">&gt;(</span><span class="n">Iterable</span><span class="o">&lt;</span><span class="n">Element</span><span class="o">&gt;</span> <span class="n">stream</span><span class="o">);</span>
+</pre></div>
+<p>When <code>removeNulls</code> is called with a stream of <code>Integer|Null</code> elements, the result will be a stream of <code>&lt;Integer|Null&gt; &amp; Object</code> elements, which simplifies to <code>Integer</code>.</p>
+<h4><span class="mw-headline" id="Functions">Functions</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Ceylon_(programming_language)&amp;action=edit&amp;section=4" title="Edit section: Functions">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>Similarly to many modern languages, Ceylon supports first class functions and higher order functions, including function types and anonymous functions <sup id="cite_ref-14" class="reference"><a href="#cite_note-14">[14]</a></sup></p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="c1">// A top-level higher-order function using block syntax (not associated with any user-created classes)</span>
+<span class="n">String</span> <span class="nf">process</span><span class="o">(</span><span class="n">String</span> <span class="n">text</span><span class="o">,</span> <span class="n">String</span> <span class="n">transformString</span><span class="o">(</span><span class="n">String</span> <span class="n">toChange</span><span class="o">))</span> <span class="o">{</span>
+    <span class="k">return</span> <span class="nf">transformString</span><span class="o">(</span><span class="n">text</span><span class="o">);</span>
+<span class="o">}</span>
+
+<span class="c1">// A top-level function calling String.reverse in expression form.</span>
+<span class="n">String</span> <span class="nf">reverse</span><span class="o">(</span><span class="n">String</span> <span class="n">text</span><span class="o">)</span> <span class="o">=&gt;</span> <span class="n">text</span><span class="o">.</span><span class="na">reversed</span><span class="o">;</span>
+
+<span class="c1">// A function reference to String.reversed but mostly equivalent to the function above.</span>
+<span class="n">String</span><span class="o">(</span><span class="n">String</span><span class="o">)</span> <span class="n">reverseFunctionReference</span> <span class="o">=</span> <span class="n">String</span><span class="o">.</span><span class="na">reversed</span><span class="o">;</span>
+
+<span class="c1">// An example where the top-level function above is provided as an argument to the higher-order function above</span>
+<span class="n">String</span> <span class="n">reversed1</span> <span class="o">=</span> <span class="n">process</span><span class="o">(</span><span class="s">"one"</span><span class="o">,</span> <span class="n">reverse</span><span class="o">);</span>
+
+<span class="c1">// Any example where an anonymous function - (text) =&gt; text+text - is provided to the higher-order function above. </span>
+<span class="n">String</span> <span class="n">reversed2</span> <span class="o">=</span> <span class="n">process</span><span class="o">(</span><span class="s">"one"</span><span class="o">,</span> <span class="o">(</span><span class="n">text</span><span class="o">)</span> <span class="o">=&gt;</span> <span class="n">text</span><span class="o">+</span><span class="n">text</span><span class="o">);</span>
+</pre></div>
+<h4><span class="mw-headline" id="Enumerated_Types">Enumerated Types</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Ceylon_(programming_language)&amp;action=edit&amp;section=5" title="Edit section: Enumerated Types">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>Similar to Java and many other languages, and with a similar mechanism as algebraic types, Ceylon supports enumerated types, otherwise known as enums. This is implemented in Ceylon with a pattern of limiting the instances of an abstract class at declaration to a limited set of objects (in this case, singleton instances). Another way to implement this pattern is with the new constructor feature in Ceylon 1.2 where the objects are implemented as different named constructor declarations. <sup id="cite_ref-15" class="reference"><a href="#cite_note-15">[15]</a></sup></p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="c1">// Traditional syntax for enumerated type, in this case, limiting the instances to three objects(for this purpose: Singletons)</span>
+<span class="nd">abstract</span> <span class="kd">class</span> <span class="nf">Vehicle</span><span class="o">(</span><span class="nd">shared</span> <span class="n">String</span> <span class="n">name</span><span class="o">)</span> <span class="kd">of</span> <span class="n">plane</span> <span class="o">|</span> <span class="n">train</span> <span class="o">|</span> <span class="n">automobile</span> <span class="o">{}</span>
+
+<span class="kd">object</span> <span class="nc">plane</span> <span class="kd">extends</span> <span class="nf">Vehicle</span><span class="o">(</span><span class="s">"plane"</span><span class="o">)</span> <span class="o">{}</span>
+<span class="kd">object</span> <span class="nc">train</span> <span class="kd">extends</span> <span class="nf">Vehicle</span><span class="o">(</span><span class="s">"train"</span><span class="o">)</span> <span class="o">{}</span>
+<span class="kd">object</span> <span class="nc">automobile</span> <span class="kd">extends</span> <span class="nf">Vehicle</span><span class="o">(</span><span class="s">"automobile"</span><span class="o">)</span> <span class="o">{}</span>
+<span class="c1">// Compile error: type is not a subtype of any case of enumerated supertype: 'boat' inherits 'Vehicle'</span>
+<span class="c1">//object boat extends Vehicle("boat") {}</span>
+
+<span class="c1">// New (as of Ceylon 1.2.0) constructor-based syntax</span>
+<span class="kd">class</span> <span class="nc">Vehicle</span> <span class="kd">of</span> <span class="n">plane</span> <span class="o">|</span> <span class="n">train</span> <span class="o">|</span> <span class="n">automobile</span> <span class="o">{</span>
+    <span class="n">String</span> <span class="n">name</span><span class="o">;</span>
+
+    <span class="nd">abstract</span> <span class="kt">new</span> <span class="nf">named</span><span class="o">(</span><span class="n">String</span> <span class="n">pName</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">name</span> <span class="o">=</span> <span class="n">pName</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="nd">shared</span> <span class="kt">new</span> <span class="n">plane</span> <span class="kd">extends</span> <span class="nf">named</span><span class="o">(</span><span class="s">"plane"</span><span class="o">)</span> <span class="o">{}</span>
+    <span class="nd">shared</span> <span class="kt">new</span> <span class="n">train</span> <span class="kd">extends</span> <span class="nf">named</span><span class="o">(</span><span class="s">"train"</span><span class="o">)</span> <span class="o">{}</span>
+    <span class="nd">shared</span> <span class="kt">new</span> <span class="n">automobile</span> <span class="kd">extends</span> <span class="nf">named</span><span class="o">(</span><span class="s">"automobile"</span><span class="o">)</span> <span class="o">{}</span>
+    <span class="c1">// Compile error: value constructor does not occur in of clause of non-abstract enumerated class: 'boat' is not listed in the of clause of 'Vehicle'</span>
+    <span class="c1">//shared new boat extends named("boat") {}</span>
+<span class="o">}</span>
+</pre></div>
+<h4><span class="mw-headline" id="Type_Inference">Type Inference</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Ceylon_(programming_language)&amp;action=edit&amp;section=6" title="Edit section: Type Inference">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>Ceylon is strongly and statically typed, but also has support for type inference. The <code>value</code> keyword is used to infer the type of a variable, and the <code>function</code> keyword is used to infer the type of a function. The following two definition pairs are each equivalent:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="n">Integer</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">3</span><span class="o">;</span>
+<span class="kt">value</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">3</span><span class="o">;</span>
+
+<span class="n">Integer</span> <span class="nf">add</span><span class="o">(</span><span class="n">Integer</span> <span class="n">i1</span><span class="o">,</span> <span class="n">Integer</span> <span class="n">i2</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">return</span> <span class="n">i1</span> <span class="o">+</span> <span class="n">i2</span><span class="o">;</span>
+<span class="o">}</span>
+<span class="kt">function</span> <span class="nf">add</span><span class="o">(</span><span class="n">Integer</span> <span class="n">i1</span><span class="o">,</span> <span class="n">Integer</span> <span class="n">i2</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">return</span> <span class="n">i1</span> <span class="o">+</span> <span class="n">i2</span><span class="o">;</span>
+<span class="o">}</span>
+</pre></div>
+<p>However, to make single-pass type inference possible, type inference is only allowed for non-toplevel and unshared declarations.<sup id="cite_ref-16" class="reference"><a href="#cite_note-16">[16]</a></sup></p>
+<h3><span class="mw-headline" id="Entry_point_with_names">Entry point with names</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Ceylon_(programming_language)&amp;action=edit&amp;section=7" title="Edit section: Entry point with names">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>A Ceylon program must have a main function called run():</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="cm">/* The classic Hello World program */</span>
+<span class="nd">shared</span> <span class="kt">void</span> <span class="nf">run</span><span class="o">()</span> <span class="o">{</span>
+    <span class="n">print</span><span class="o">(</span><span class="s">"Hello, World!"</span><span class="o">);</span>
+<span class="o">}</span>
+</pre></div>
+<p>but any other function can be used as main calling the program with the --run parameter, like this:</p>
+<pre>
+ceylon run --compile=force --run hello default
+</pre>
+<h2><span class="mw-headline" id="License">License</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Ceylon_(programming_language)&amp;action=edit&amp;section=8" title="Edit section: License">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>All parts of Ceylon are available under open source licenses, mostly the <a href="/wiki/Apache_License" title="Apache License">Apache License</a>.<sup id="cite_ref-17" class="reference"><a href="#cite_note-17">[17]</a></sup> Part of the source code is licensed under LGPL.</p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Ceylon_(programming_language)&amp;action=edit&amp;section=9" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div role="navigation" aria-label="Portals" class="noprint portal plainlist tright" style="margin:0.5em 0 0.5em 1em;border:solid #aaa 1px">
+<ul style="display:table;box-sizing:border-box;padding:0.1em;max-width:175px;background:#f9f9f9;font-size:85%;line-height:110%;font-style:italic;font-weight:bold">
+<li style="display:table-row"><span style="display:table-cell;padding:0.2em;vertical-align:middle;text-align:center"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/3/31/Free_and_open-source_software_logo_%282009%29.svg/28px-Free_and_open-source_software_logo_%282009%29.svg.png" width="28" height="28" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/3/31/Free_and_open-source_software_logo_%282009%29.svg/42px-Free_and_open-source_software_logo_%282009%29.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/3/31/Free_and_open-source_software_logo_%282009%29.svg/56px-Free_and_open-source_software_logo_%282009%29.svg.png 2x" data-file-width="512" data-file-height="512" /></span><span style="display:table-cell;padding:0.2em 0.2em 0.2em 0.3em;vertical-align:middle"><a href="/wiki/Portal:Free_software" class="mw-redirect" title="Portal:Free software">Free software portal</a></span></li>
+</ul>
+</div>
+<ul>
+<li><a href="/wiki/Dart_(programming_language)" title="Dart (programming language)">Dart (programming language)</a>, has its own VM, compiles to JS. Type system not very strict, supports <a href="/wiki/Mixin" title="Mixin">mixins</a>.</li>
+<li><a href="/wiki/Fantom_(programming_language)" title="Fantom (programming language)">Fantom (programming language)</a>, compiles to JVM. Type system not very strict, supports <a href="/wiki/Mixin" title="Mixin">mixins</a>.</li>
+</ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Ceylon_(programming_language)&amp;action=edit&amp;section=10" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist columns references-column-count references-column-count-2" style="-moz-column-count: 2; -webkit-column-count: 2; column-count: 2; list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><cite class="citation web">King, Gavin. <a rel="nofollow" class="external text" href="http://ceylon-lang.org/documentation/1.2/spec/html_single/#compilationunitstructure">"The Ceylon Language: §4.1 Compilation unit structure"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2015-12-04</span></span>. <q>A <i>compilation unit</i> is a text file, with the filename extension <code>.ceylon</code>.</q></cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACeylon+%28programming+language%29&amp;rft.aufirst=Gavin&amp;rft.aulast=King&amp;rft.btitle=The+Ceylon+Language%3A+%A74.1+Compilation+unit+structure&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fceylon-lang.org%2Fdocumentation%2F1.2%2Fspec%2Fhtml_single%2F%23compilationunitstructure&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://ceylon-lang.org/documentation/1.2/faq/#what_is_ceylon">"Frequently Asked Questions: What is Ceylon?"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2015-12-04</span></span>. <q>Ceylon is a new programming language that's deeply influenced by Java</q></cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACeylon+%28programming+language%29&amp;rft.btitle=Frequently+Asked+Questions%3A+What+is+Ceylon%3F&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fceylon-lang.org%2Fdocumentation%2F1.2%2Ffaq%2F%23what_is_ceylon&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://gitter.im/ceylon/user?at=5660a7242cbea1d7054de9d9">"ceylon/user - Gitter"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2015-12-04</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACeylon+%28programming+language%29&amp;rft.btitle=ceylon%2Fuser+-+Gitter&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fgitter.im%2Fceylon%2Fuser%3Fat%3D5660a7242cbea1d7054de9d9&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://gitter.im/ceylon/user?at=5660a90e5057376520db6f8b">"ceylon/user - Gitter"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2015-12-04</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACeylon+%28programming+language%29&amp;rft.btitle=ceylon%2Fuser+-+Gitter&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fgitter.im%2Fceylon%2Fuser%3Fat%3D5660a90e5057376520db6f8b&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://ceylon-lang.org/blog/2013/09/22/ceylon-1/">"Ceylon 1.0 beta"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2013-09-26</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACeylon+%28programming+language%29&amp;rft.btitle=Ceylon+1.0+beta&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fceylon-lang.org%2Fblog%2F2013%2F09%2F22%2Fceylon-1%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.theregister.co.uk/2011/04/13/red_hat_unveils_project_ceylon">"Project Ceylon – Red Hat builds Java replacement"</a>. <a href="/wiki/The_Register" title="The Register">The Register</a>. 2011-04-13<span class="reference-accessdate">. Retrieved <span class="nowrap">2011-11-27</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACeylon+%28programming+language%29&amp;rft.btitle=Project+Ceylon+%93+Red+Hat+builds+Java+replacement&amp;rft.date=2011-04-13&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.theregister.co.uk%2F2011%2F04%2F13%2Fred_hat_unveils_project_ceylon&amp;rft.pub=The+Register&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text"><cite class="citation web">King, Gavin (2012-01-10). <a rel="nofollow" class="external text" href="http://ceylon-lang.org/blog/2012/01/10/goals/">"Principles that guide this project"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2015-12-04</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACeylon+%28programming+language%29&amp;rft.aufirst=Gavin&amp;rft.aulast=King&amp;rft.btitle=Principles+that+guide+this+project&amp;rft.date=2012-01-10&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fceylon-lang.org%2Fblog%2F2012%2F01%2F10%2Fgoals%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://ceylon-lang.org/documentation/1.2/faq/language-design/#goals">"FAQ about language design: Goals"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2015-12-04</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACeylon+%28programming+language%29&amp;rft.btitle=FAQ+about+language+design%3A+Goals&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fceylon-lang.org%2Fdocumentation%2F1.2%2Ffaq%2Flanguage-design%2F%23goals&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-9">^</a></b></span> <span class="reference-text"><cite class="citation web">Festal, David (2014-10-10). <a rel="nofollow" class="external text" href="http://ceylon-lang.org/blog/2014/10/10/ceylon-osgi-jee/">"Write in Ceylon, deploy as OSGI, use in Java EE"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2015-12-04</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACeylon+%28programming+language%29&amp;rft.aufirst=David&amp;rft.aulast=Festal&amp;rft.btitle=Write+in+Ceylon%2C+deploy+as+OSGI%2C+use+in+Java+EE&amp;rft.date=2014-10-10&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fceylon-lang.org%2Fblog%2F2014%2F10%2F10%2Fceylon-osgi-jee%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-10">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://ceylon-lang.org/documentation/1.2/reference/repository/maven/#maven_repositories">"Maven repositories"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2015-12-04</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACeylon+%28programming+language%29&amp;rft.btitle=Maven+repositories&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fceylon-lang.org%2Fdocumentation%2F1.2%2Freference%2Frepository%2Fmaven%2F%23maven_repositories&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-11"><span class="mw-cite-backlink"><b><a href="#cite_ref-11">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://ceylon-lang.org/documentation/1.2/ide/features/">"Features of Ceylon IDE"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2015-12-04</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACeylon+%28programming+language%29&amp;rft.btitle=Features+of+Ceylon+IDE&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fceylon-lang.org%2Fdocumentation%2F1.2%2Fide%2Ffeatures%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-12"><span class="mw-cite-backlink"><b><a href="#cite_ref-12">^</a></b></span> <span class="reference-text"><cite class="citation web">King, Gavin. <a rel="nofollow" class="external text" href="http://ceylon-lang.org/documentation/faq/language-design/">"Ceylon: Language Design FAQ"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACeylon+%28programming+language%29&amp;rft.aufirst=Gavin&amp;rft.aulast=King&amp;rft.btitle=Ceylon%3A+Language+Design+FAQ&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fceylon-lang.org%2Fdocumentation%2Ffaq%2Flanguage-design%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-13"><span class="mw-cite-backlink"><b><a href="#cite_ref-13">^</a></b></span> <span class="reference-text"><cite class="citation web">King, Gavin. <a rel="nofollow" class="external text" href="http://ceylon-lang.org/documentation/1.2/spec/html_single/#compiletimesafety">"The Ceylon Language: §1.4.3 Compile-time safety for null values and flow-sensitive typing"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2015-12-04</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACeylon+%28programming+language%29&amp;rft.aufirst=Gavin&amp;rft.aulast=King&amp;rft.btitle=The+Ceylon+Language%3A+%A71.4.3+Compile-time+safety+for+null+values+and+flow-sensitive+typing&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fceylon-lang.org%2Fdocumentation%2F1.2%2Fspec%2Fhtml_single%2F%23compiletimesafety&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-14"><span class="mw-cite-backlink"><b><a href="#cite_ref-14">^</a></b></span> <span class="reference-text"><cite class="citation web">King, Gavin. <a rel="nofollow" class="external text" href="http://ceylon-lang.org/documentation/1.2/spec/html/declarations.html#functions">"The Ceylon Language: 4.7 Functions"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">5 December</span> 2015</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACeylon+%28programming+language%29&amp;rft.aufirst=Gavin&amp;rft.aulast=King&amp;rft.btitle=The+Ceylon+Language%3A++4.7+Functions&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fceylon-lang.org%2Fdocumentation%2F1.2%2Fspec%2Fhtml%2Fdeclarations.html%23functions&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-15"><span class="mw-cite-backlink"><b><a href="#cite_ref-15">^</a></b></span> <span class="reference-text"><cite class="citation web">King, Gavin. <a rel="nofollow" class="external text" href="http://ceylon-lang.org/documentation/1.2/spec/html/declarations.html#classeswithcases">"The Ceylon Language: 4.5.8 Enumerated classes"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">6 December</span> 2015</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACeylon+%28programming+language%29&amp;rft.aufirst=Gavin&amp;rft.aulast=King&amp;rft.btitle=The+Ceylon+Language%3A++4.5.8+Enumerated+classes&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fceylon-lang.org%2Fdocumentation%2F1.2%2Fspec%2Fhtml%2Fdeclarations.html%23classeswithcases&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-16"><span class="mw-cite-backlink"><b><a href="#cite_ref-16">^</a></b></span> <span class="reference-text"><cite class="citation web">King, Gavin. <a rel="nofollow" class="external text" href="http://ceylon-lang.org/documentation/1.2/spec/html_single/#typeinference">"The Ceylon Language: §3.2.9 Type inference"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2015-12-04</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACeylon+%28programming+language%29&amp;rft.aufirst=Gavin&amp;rft.aulast=King&amp;rft.btitle=The+Ceylon+Language%3A+%A73.2.9+Type+inference&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fceylon-lang.org%2Fdocumentation%2F1.2%2Fspec%2Fhtml_single%2F%23typeinference&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-17"><span class="mw-cite-backlink"><b><a href="#cite_ref-17">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://ceylon-lang.org/code/licenses">"Ceylon: Licenses"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2015-12-04</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACeylon+%28programming+language%29&amp;rft.btitle=Ceylon%3A+Licenses&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fceylon-lang.org%2Fcode%2Flicenses&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Ceylon_(programming_language)&amp;action=edit&amp;section=11" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><span class="official-website"><span class="url"><a rel="nofollow" class="external text" href="http://ceylon-lang.org/">Official website</a></span></span></li>
+</ul>
+<div role="navigation" class="navbox" aria-labelledby="Programming_languages" style="padding:3px">
+<table class="nowraplinks hlist collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:Programming_languages" title="Template:Programming languages"><abbr title="View this template" style=";;background:none transparent;border:none;">v</abbr></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:Programming_languages" title="Template talk:Programming languages"><abbr title="Discuss this template" style=";;background:none transparent;border:none;">t</abbr></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:Programming_languages&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;">e</abbr></a></li>
+</ul>
+</div>
+<div id="Programming_languages" style="font-size:114%"><a href="/wiki/Programming_language" title="Programming language">Programming languages</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" colspan="2">
+<div>
+<ul>
+<li><a href="/wiki/Comparison_of_programming_languages" title="Comparison of programming languages">Comparison</a></li>
+<li><a href="/wiki/Timeline_of_programming_languages" title="Timeline of programming languages">Timeline</a></li>
+<li><a href="/wiki/History_of_programming_languages" title="History of programming languages">History</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Assembly_language" title="Assembly language">Assembly</a></li>
+<li><a href="/wiki/BASIC" title="BASIC">BASIC</a></li>
+<li><a href="/wiki/C_(programming_language)" title="C (programming language)">C</a></li>
+<li><a href="/wiki/C%2B%2B" title="C++">C++</a></li>
+<li><a href="/wiki/C_Sharp_(programming_language)" title="C Sharp (programming language)">C#</a></li>
+<li><a href="/wiki/COBOL" title="COBOL">COBOL</a></li>
+<li><a href="/wiki/Fortran" title="Fortran">Fortran</a></li>
+<li><a href="/wiki/Go_(programming_language)" title="Go (programming language)">Go</a></li>
+<li><a href="/wiki/Haskell_(programming_language)" title="Haskell (programming language)">Haskell</a></li>
+<li><a href="/wiki/Java_(programming_language)" title="Java (programming language)">Java</a></li>
+<li><a href="/wiki/JavaScript" title="JavaScript">JavaScript</a> (JS)</li>
+<li><a href="/wiki/Lisp_(programming_language)" title="Lisp (programming language)">Lisp</a></li>
+<li><a href="/wiki/Lua_(programming_language)" title="Lua (programming language)">Lua</a></li>
+<li><a href="/wiki/Objective-C" title="Objective-C">Objective-C</a></li>
+<li><a href="/wiki/Pascal_(programming_language)" title="Pascal (programming language)">Pascal</a></li>
+<li><a href="/wiki/Perl" title="Perl">Perl</a></li>
+<li><a href="/wiki/PHP" title="PHP">PHP</a></li>
+<li><a href="/wiki/Python_(programming_language)" title="Python (programming language)">Python</a></li>
+<li><a href="/wiki/Ruby_(programming_language)" title="Ruby (programming language)">Ruby</a></li>
+<li><a href="/wiki/Shell_script" title="Shell script">Shell</a></li>
+<li><a href="/wiki/Smalltalk" title="Smalltalk">Smalltalk</a></li>
+<li><a href="/wiki/Swift_(programming_language)" title="Swift (programming language)">Swift</a></li>
+<li><a href="/wiki/Visual_Basic_.NET" title="Visual Basic .NET">Visual Basic .NET</a> (VB.NET)</li>
+<li><i><a href="/wiki/List_of_programming_languages" title="List of programming languages">more...</a></i></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" colspan="2">
+<div>
+<ul>
+<li><img alt="Category" src="//upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/16px-Folder_Hexagonal_Icon.svg.png" title="Category" width="16" height="14" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/24px-Folder_Hexagonal_Icon.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/32px-Folder_Hexagonal_Icon.svg.png 2x" data-file-width="36" data-file-height="31" /> <b><a href="/wiki/Category:Programming_languages" title="Category:Programming languages">Category</a></b></li>
+<li><img alt="Non-article page" src="//upload.wikimedia.org/wikipedia/en/thumb/8/89/Symbol_neutral_vote.svg/16px-Symbol_neutral_vote.svg.png" title="Non-article page" width="16" height="16" srcset="//upload.wikimedia.org/wikipedia/en/thumb/8/89/Symbol_neutral_vote.svg/23px-Symbol_neutral_vote.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/8/89/Symbol_neutral_vote.svg/31px-Symbol_neutral_vote.svg.png 2x" data-file-width="180" data-file-height="185" /> <b><a href="/wiki/Comparison_of_programming_languages" title="Comparison of programming languages">Comparison</a></b></li>
+<li><img alt="List-Class article" src="//upload.wikimedia.org/wikipedia/en/thumb/d/db/Symbol_list_class.svg/16px-Symbol_list_class.svg.png" title="List-Class article" width="16" height="16" srcset="//upload.wikimedia.org/wikipedia/en/thumb/d/db/Symbol_list_class.svg/23px-Symbol_list_class.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/d/db/Symbol_list_class.svg/31px-Symbol_list_class.svg.png 2x" data-file-width="180" data-file-height="185" /> <b>Lists</b>
+<ul>
+<li><a href="/wiki/List_of_programming_languages" title="List of programming languages">Alphabetical</a></li>
+<li><a href="/wiki/Categorical_list_of_programming_languages" class="mw-redirect" title="Categorical list of programming languages">Categorical</a></li>
+<li><a href="/wiki/Generational_list_of_programming_languages" title="Generational list of programming languages">Generational</a></li>
+<li><a href="/wiki/Non-English-based_programming_languages" title="Non-English-based programming languages">Non-English-based</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1235
+Cached time: 20170114061329
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.204 seconds
+Real time usage: 0.252 seconds
+Preprocessor visited node count: 1319/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 44618/2097152 bytes
+Template argument size: 1735/2097152 bytes
+Highest expansion depth: 25/40
+Expensive parser function count: 3/500
+Lua time usage: 0.111/10.000 seconds
+Lua memory usage: 5.02 MB/50 MB
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  217.888      1 - -total
+ 40.52%   88.284      1 - Template:Reflist
+ 32.77%   71.402     17 - Template:Cite_web
+ 31.50%   68.634      2 - Template:Infobox
+ 23.24%   50.636      1 - Template:Infobox_programming_language
+ 14.68%   31.996      1 - Template:Primary_sources
+ 11.19%   24.384      1 - Template:Infobox_software/simple
+  9.31%   20.276      1 - Template:Official_website
+  9.07%   19.752      1 - Template:Ambox
+  5.85%   12.751      1 - Template:Programming_languages
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:31483631-0!*!0!!en!4!* and timestamp 20170114061330 and revision id 759979755
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Ceylon_(programming_language)&amp;oldid=759979755">https://en.wikipedia.org/w/index.php?title=Ceylon_(programming_language)&amp;oldid=759979755</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Java_programming_language_family" title="Category:Java programming language family">Java programming language family</a></li><li><a href="/wiki/Category:JVM_programming_languages" title="Category:JVM programming languages">JVM programming languages</a></li><li><a href="/wiki/Category:Red_Hat_software" title="Category:Red Hat software">Red Hat software</a></li><li><a href="/wiki/Category:Software_using_the_Apache_license" title="Category:Software using the Apache license">Software using the Apache license</a></li><li><a href="/wiki/Category:Programming_languages_created_in_2011" title="Category:Programming languages created in 2011">Programming languages created in 2011</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Articles_lacking_reliable_references_from_January_2017" title="Category:Articles lacking reliable references from January 2017">Articles lacking reliable references from January 2017</a></li><li><a href="/wiki/Category:All_articles_lacking_reliable_references" title="Category:All articles lacking reliable references">All articles lacking reliable references</a></li><li><a href="/wiki/Category:Pages_using_deprecated_image_syntax" title="Category:Pages using deprecated image syntax">Pages using deprecated image syntax</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Ceylon+%28programming+language%29" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Ceylon+%28programming+language%29" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/Ceylon_(programming_language)"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:Ceylon_(programming_language)"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/Ceylon_(programming_language)" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=Ceylon_(programming_language)&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Ceylon_(programming_language)&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Ceylon_(programming_language)" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Ceylon_(programming_language)" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Ceylon_(programming_language)&amp;oldid=759979755" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Ceylon_(programming_language)&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q93482" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Ceylon_%28programming_language%29&amp;id=759979755" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Ceylon+%28programming+language%29">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Ceylon+%28programming+language%29&amp;returnto=Ceylon+%28programming+language%29&amp;oldid=759979755&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Ceylon_(programming_language)&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-cs"><a href="https://cs.wikipedia.org/wiki/Ceylon_(programovac%C3%AD_jazyk)" title="Ceylon (programovací jazyk) – Czech" lang="cs" hreflang="cs" class="interlanguage-link-target">Čeština</a></li><li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/Ceylon_(Programmiersprache)" title="Ceylon (Programmiersprache) – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-es"><a href="https://es.wikipedia.org/wiki/Ceylon_(lenguaje_de_programaci%C3%B3n)" title="Ceylon (lenguaje de programación) – Spanish" lang="es" hreflang="es" class="interlanguage-link-target">Español</a></li><li class="interlanguage-link interwiki-fa"><a href="https://fa.wikipedia.org/wiki/%D8%B3%DB%8C%D9%84%D8%A7%D9%86_(%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C)" title="سیلان (برنامه‌نویسی) – Persian" lang="fa" hreflang="fa" class="interlanguage-link-target">فارسی</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/Ceylon" title="Ceylon – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-it"><a href="https://it.wikipedia.org/wiki/Ceylon_(linguaggio_di_programmazione)" title="Ceylon (linguaggio di programmazione) – Italian" lang="it" hreflang="it" class="interlanguage-link-target">Italiano</a></li><li class="interlanguage-link interwiki-ja"><a href="https://ja.wikipedia.org/wiki/Ceylon" title="Ceylon – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target">日本語</a></li><li class="interlanguage-link interwiki-pl"><a href="https://pl.wikipedia.org/wiki/Ceylon_(j%C4%99zyk_programowania)" title="Ceylon (język programowania) – Polish" lang="pl" hreflang="pl" class="interlanguage-link-target">Polski</a></li><li class="interlanguage-link interwiki-ksh"><a href="https://ksh.wikipedia.org/wiki/Projrammeerschprooch_Ceylon" title="Projrammeerschprooch Ceylon – Colognian" lang="ksh" hreflang="ksh" class="interlanguage-link-target">Ripoarisch</a></li><li class="interlanguage-link interwiki-ru"><a href="https://ru.wikipedia.org/wiki/Ceylon" title="Ceylon – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li><li class="interlanguage-link interwiki-sk"><a href="https://sk.wikipedia.org/wiki/Ceylon_(programovac%C3%AD_jazyk)" title="Ceylon (programovací jazyk) – Slovak" lang="sk" hreflang="sk" class="interlanguage-link-target">Slovenčina</a></li><li class="interlanguage-link interwiki-ta"><a href="https://ta.wikipedia.org/wiki/%E0%AE%9A%E0%AE%BF%E0%AE%B2%E0%AF%8B%E0%AE%A9%E0%AF%8D_(%E0%AE%A8%E0%AE%BF%E0%AE%B0%E0%AE%B2%E0%AE%BE%E0%AE%95%E0%AF%8D%E0%AE%95_%E0%AE%AE%E0%AF%8A%E0%AE%B4%E0%AE%BF)" title="சிலோன் (நிரலாக்க மொழி) – Tamil" lang="ta" hreflang="ta" class="interlanguage-link-target">தமிழ்</a></li><li class="interlanguage-link interwiki-tr"><a href="https://tr.wikipedia.org/wiki/Ceylon_(programlama_dili)" title="Ceylon (programlama dili) – Turkish" lang="tr" hreflang="tr" class="interlanguage-link-target">Türkçe</a></li><li class="interlanguage-link interwiki-uk"><a href="https://uk.wikipedia.org/wiki/Ceylon_(%D0%BC%D0%BE%D0%B2%D0%B0_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F)" title="Ceylon (мова програмування) – Ukrainian" lang="uk" hreflang="uk" class="interlanguage-link-target">Українська</a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q93482#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 14 January 2017, at 06:13.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Ceylon_(programming_language)&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":72,"wgHostname":"mw1250"});});</script>
+	</body>
+</html>

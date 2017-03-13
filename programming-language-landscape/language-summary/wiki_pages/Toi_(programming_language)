@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Toi (programming language) - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Toi_(programming_language)","wgTitle":"Toi (programming language)","wgCurRevisionId":754765925,"wgRevisionId":754765925,"wgArticleId":52078022,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Programming language topics"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Toi_(programming_language)","wgRelevantArticleId":52078022,"wgRequestId":"WIsKbApAICoAABAu79sAAAEQ","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":true},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q28457672","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.cite.styles":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.legacy.wikibits","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.centralauth.centralautologin","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.29.0-wmf.8"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Toi_(programming_language)"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Toi_(programming_language)&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Toi_(programming_language)&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Toi_(programming_language)"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Toi_programming_language rootpage-Toi_programming_language skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Toi (programming language)</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><script>function mfTempOpenSection(id){var block=document.getElementById("mf-section-"+id);block.className+=" open-block";block.previousSibling.className+=" open-block";}</script><p><b>Toi</b> is an imperative, type-sensitive language that provides the basic functionality of a <a href="/wiki/Programming_language" title="Programming language">programming language</a>. The language was designed and developed from the ground-up by Paul Longtine.<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">[1]</a></sup> Written in C, Toi was created with the intent to be an educational experience and serves as a learning tool (or toy, hence the name) for those looking to familiarize themselves with the inner-workings of a programming language.<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">[2]</a></sup></p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Specification.5B3.5D.5B4.5D"><span class="tocnumber">1</span> <span class="toctext">Specification<sup>[3]</sup><sup>[4]</sup></span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Types"><span class="tocnumber">1.1</span> <span class="toctext">Types</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Runtime"><span class="tocnumber">1.2</span> <span class="toctext">Runtime</span></a>
+<ul>
+<li class="toclevel-3 tocsection-4"><a href="#Runtime_context_definition"><span class="tocnumber">1.2.1</span> <span class="toctext">Runtime context definition</span></a></li>
+<li class="toclevel-3 tocsection-5"><a href="#Namespace_definition"><span class="tocnumber">1.2.2</span> <span class="toctext">Namespace definition</span></a></li>
+<li class="toclevel-3 tocsection-6"><a href="#Variable_definition"><span class="tocnumber">1.2.3</span> <span class="toctext">Variable definition</span></a></li>
+<li class="toclevel-3 tocsection-7"><a href="#Function_definition"><span class="tocnumber">1.2.4</span> <span class="toctext">Function definition</span></a></li>
+<li class="toclevel-3 tocsection-8"><a href="#Object_definition"><span class="tocnumber">1.2.5</span> <span class="toctext">Object definition</span></a></li>
+<li class="toclevel-3 tocsection-9"><a href="#Bytecode_spec"><span class="tocnumber">1.2.6</span> <span class="toctext">Bytecode spec</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-10"><a href="#Opcode"><span class="tocnumber">1.3</span> <span class="toctext">Opcode</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#Compiler.2FTranslator.2FAssembler"><span class="tocnumber">1.4</span> <span class="toctext">Compiler/Translator/Assembler</span></a>
+<ul>
+<li class="toclevel-3 tocsection-12"><a href="#Lexical_analysis"><span class="tocnumber">1.4.1</span> <span class="toctext">Lexical analysis</span></a>
+<ul>
+<li class="toclevel-4 tocsection-13"><a href="#Going_from_Binary_Trees_to_Bytecode"><span class="tocnumber">1.4.1.1</span> <span class="toctext">Going from Binary Trees to Bytecode</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-14"><a href="#Developer.27s_Website"><span class="tocnumber">2</span> <span class="toctext">Developer's Website</span></a></li>
+<li class="toclevel-1 tocsection-15"><a href="#References"><span class="tocnumber">3</span> <span class="toctext">References</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Specification.5B3.5D.5B4.5D">Specification<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">[3]</a></sup><sup id="cite_ref-4" class="reference"><a href="#cite_note-4">[4]</a></sup></span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Toi_(programming_language)&amp;action=edit&amp;section=1" title="Edit section: Specification[3][4]">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="Types"><a href="/wiki/Type_(computer_science)" class="mw-redirect" title="Type (computer science)">Types</a></span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Toi_(programming_language)&amp;action=edit&amp;section=2" title="Edit section: Types">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<pre>
+0 VOID    - Null, no data
+1 ADDR    - Address type (bytecode)
+2 TYPE    - A `type` type
+3 PLIST   - Parameter list
+4 FUNC    - Function
+5 OBJBLDR - Object builder
+6 OBJECT  - Object/Class
+7 G_PTR   - Generic pointer
+8 G_INT   - Generic integer
+9 G_FLOAT - Generic double
+10 G_CHAR  - Generic character
+11 G_STR   - Generic string
+12 S_ARRAY - Static array
+13 D_ARRAY - Dynamic array
+14 H_TABLE - Hashtable
+15 G_FIFO  - Stack
+</pre>
+<h3><span class="mw-headline" id="Runtime"><a href="/wiki/Runtime" class="mw-redirect mw-disambig" title="Runtime">Runtime</a></span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Toi_(programming_language)&amp;action=edit&amp;section=3" title="Edit section: Runtime">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h4><span class="mw-headline" id="Runtime_context_definition">Runtime context definition</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Toi_(programming_language)&amp;action=edit&amp;section=4" title="Edit section: Runtime context definition">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>The runtime context keeps track of an individual threads metadata, such as:</p>
+<ul>
+<li>The operating <a href="/wiki/Stack_(abstract_data_type)" title="Stack (abstract data type)">stack</a>
+<ul>
+<li>The operating stack where current running instructions push/pop to.</li>
+<li>refer to STACK DEFINITION</li>
+</ul>
+</li>
+<li>Namespace instance
+<ul>
+<li>Data structure that holds the references to variable containers, also proving the interface for Namespace Levels.</li>
+<li>refer to NAMESPACE DEFINITION</li>
+</ul>
+</li>
+<li>Argument stack
+<ul>
+<li>Arguments to function calls are pushed on to this stack, flushed on call.</li>
+<li>refer to STACK DEFINITION, FUNCTION DEFINITION</li>
+</ul>
+</li>
+<li>Program counter
+<ul>
+<li>An interface around bytecode to keep track of traversing line-numbered instructions.</li>
+<li>refer to PROGRAM COUNTER DEFINITION</li>
+</ul>
+</li>
+</ul>
+<p>This context gives definition to an 'environment' where code is executed.</p>
+<h4><span class="mw-headline" id="Namespace_definition"><a href="/wiki/Namespace" title="Namespace">Namespace</a> definition</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Toi_(programming_language)&amp;action=edit&amp;section=5" title="Edit section: Namespace definition">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>A key part to any operational computer language is the notion of a 'Namespace'. This notion of a 'Namespace' refers to the ability to declare a name, along with needed metadata, and call upon the same name to retrieve the values associated with that name.</p>
+<p>In this definition, the namespace will provide the following key mechanisms:</p>
+<ul>
+<li>Declaring a name</li>
+<li>Assigning a name to a value</li>
+<li>Retrieving a name's value</li>
+<li>Handle a name's scope</li>
+<li>Implicitly move in/out of scopes</li>
+</ul>
+<p>The scope argument is a single byte, where the format is as follows:</p>
+<pre>
+Namespace|Scope
+0000000  |0
+</pre>
+<p>Scopes are handled by referencing to either the Global Scope or the Local Scope. The Local Scope is denoted by '0' in the scope argument when referring to names, and this scope is initialized when evaluating any new block of code. When a different block of code is called, a new scope is added as a new Namespace level. Namespace levels act as context switches within function contexts. For example,the local namespace must be 'returned to' if that local namespace context needs to be preserved on return. Pushing 'Namespace levels' ensures that for every <i>n</i> function calls, you can traverse <i>n</i> instances of previous namespaces. For example, take this namespace level graphic, where each Level is a namespace instance:</p>
+<pre>
+Level 0: Global namespace, LSB == '1'.
+Level 1: Namespace level, where Local Level is at 1, LSB == '0'.
+</pre>
+<p>When a function is called, another namespace level is created and the local level increases, like so:</p>
+<pre>
+Level 0: Global namespace, LSB == '1'.
+Level 1: Namespace level.
+Level 2: Namespace level, where Local Level is at 2, LSB == '0'.
+</pre>
+<p>Global scope names (LSB == 1 in the scope argument) are persistent through the runtime as they handle all function definitions, objects, and names declared in the global scope. The "Local Level" is at where references that have a scope argument of '0' refer to when accessing names.</p>
+<p>The Namespace argument refers to which Namespace the variable exists in. When the namespace argument equals 0, the current namespace is referenced. The global namespace is 1 by default, and any other namespaces must be declared by using the</p>
+<h4><span class="mw-headline" id="Variable_definition"><a href="/wiki/Variable" class="mw-disambig" title="Variable">Variable</a> definition</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Toi_(programming_language)&amp;action=edit&amp;section=6" title="Edit section: Variable definition">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>Variables in this definition provide the following mechanisms:</p>
+<ul>
+<li>Provide a distinguishable area of typed data</li>
+<li>Provide a generic container around typed data, to allow for labeling</li>
+<li>Declare a set of fundamental datatypes, and methods to:
+<ul>
+<li>Allocate the proper space of memory for the given data type,</li>
+<li>Deallocate the space of memory a variables data may take up, and</li>
+<li>Set in place a notion of ownership</li>
+</ul>
+</li>
+</ul>
+<p>For a given variable V, V defines the following attributes</p>
+<pre>
+   V -&gt; Ownership
+   V -&gt; Type
+   V -&gt; Pointer to typed space in memory
+</pre>
+<p>Each variable then can be handled as a generic container.</p>
+<p>In the previous section, the notion of Namespace levels was introduced. Much like how names are scoped, generic variable containers must communicate their scope in terms of location within a given set of scopes. This is what is called 'Ownership'. In a given runtime, variable containers can exist in the following structures: A stack instance, Bytecode arguments, and Namespaces</p>
+<p>The concept of ownership differentiates variables existing on one or more of the structures. This is set in place to prevent accidental deallocation of variable containers that are not copied, but instead passed as references to these structures.</p>
+<h4><span class="mw-headline" id="Function_definition"><a href="/wiki/Function_(computer_science)" class="mw-redirect" title="Function (computer science)">Function</a> definition</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Toi_(programming_language)&amp;action=edit&amp;section=7" title="Edit section: Function definition">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>Functions in this virtual machine are a pointer to a set of instructions in a program with metadata about parameters defined.</p>
+<h4><span class="mw-headline" id="Object_definition"><a href="/wiki/Object_(computer_science)" title="Object (computer science)">Object</a> definition</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Toi_(programming_language)&amp;action=edit&amp;section=8" title="Edit section: Object definition">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>In this paradigm, objects are units that encapsulate a separate namespace and collection of methods.</p>
+<h4><span class="mw-headline" id="Bytecode_spec"><a href="/wiki/Bytecode" title="Bytecode">Bytecode</a> spec</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Toi_(programming_language)&amp;action=edit&amp;section=9" title="Edit section: Bytecode spec">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>Bytecode is arranged in the following order:</p>
+<pre>
+   &lt;opcode&gt;, &lt;arg 0&gt;, &lt;arg 1&gt;, &lt;arg 2&gt;
+</pre>
+<p>Where the &lt;opcode&gt; is a single byte denoting which subroutine to call with the following arguments when executed. Different opcodes have different argument lengths, some having 0 arguments, and others having 3 arguments.</p>
+<p><b>Interpreting Bytecode Instructions</b></p>
+<p>A bytecode instruction is a single-byte opcode, followed by at maximum 3 arguments, which can be in the following forms:</p>
+<pre>
+* Static (single byte)
+* Name (single word)
+* Address (depending on runtime state, usually a word)
+* Dynamic (size terminated by NULL, followed by (size)*bytes of data)
+** i.e. FF FF 00 &lt;0xFFFF bytes of data&gt;,
+**       01 00 &lt;0x1 bytes of data&gt;,
+**       06 00 &lt;0x6 bytes of data&gt;, etc.
+</pre>
+<p>Below is the specification of all the instructions with a short description for each instruction, and instruction category:</p>
+<h3><span class="mw-headline" id="Opcode"><a href="/wiki/Opcode" title="Opcode">Opcode</a></span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Toi_(programming_language)&amp;action=edit&amp;section=10" title="Edit section: Opcode">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Keywords:</p>
+<pre>
+TOS           - 'Top Of Stack' The top element
+TBI           - 'To be Implemented'
+S&lt;[variable]&gt; - Static Argument.
+N&lt;[variable]&gt; - Name.
+A&lt;[variable]&gt; - Address Argument.
+D&lt;[variable]&gt; - Dynamic bytecode argument.
+</pre>
+<hr />
+<pre>
+Hex | Memnonic | arguments - description
+</pre>
+<hr />
+<p><b>1 - Stack manipulation</b></p>
+<pre>
+   These subroutines operate on the current-working stack(1).
+</pre>
+<hr />
+<pre>
+10 POP S&lt;n&gt;  - pops the stack n times.
+11 ROT       - rotates top of stack
+12 DUP       - duplicates the top of the stack
+13 ROT_THREE - rotates top three elements of stack
+</pre>
+<hr />
+<p><b>2 - Variable management</b></p>
+<hr />
+<pre>
+20 DEC S&lt;scope&gt; S&lt;type&gt; N - declare variable of type
+21 LOV S&lt;scope&gt; N - loads reference variable on to stack
+22 STV S&lt;scope&gt; N - stores TOS to reference variable
+23 CTV S&lt;scope&gt; N D<data> - loads constant into variable
+24 CTS D</data>                 - loads constant into stack
+</pre>
+<hr />
+<p><b>3 - Type management</b></p>
+<p>Types are in the air at this moment. I'll detail what types there are when the time comes</p>
+<hr />
+<pre>
+30 TYPEOF       - pushes type of TOS on to the stack                        TBI
+31 CAST S&lt;type&gt; - Tries to cast TOS to &lt;type&gt;                               TBI
+</pre>
+<hr />
+<p><b>4 - Binary Ops</b></p>
+<p>OPS take the two top elements of the stack, perform an operation and push the result on the stack.</p>
+<hr />
+<pre>
+40 ADD  - adds
+41 SUB  - subtracts
+42 MULT - multiplies
+43 DIV  - divides 
+44 POW  - power, TOS^TOS1                                                   TBI
+45 BRT  - base root, TOS root TOS1                                          TBI
+46 SIN  - sine                                                              TBI
+47 COS  - cosine                                                            TBI
+48 TAN  - tangent                                                           TBI 
+49 ISIN - inverse sine                                                      TBI
+4A ICOS - inverse consine                                                   TBI
+4B ITAN - inverse tangent                                                   TBI
+4C MOD  - modulus                                                           TBI
+4D OR   - or's                                                              TBI
+4E XOR  - xor's                                                             TBI
+4F NAND - and's                                                             TBI 
+</pre>
+<hr />
+<p><b>5 - <a href="/wiki/Conditional_(computer_programming)" title="Conditional (computer programming)">Conditional Expressions</a></b></p>
+<p>Things for comparison, &lt; &gt; =&#160;! and so on and so forth. Behaves like Arithmetic instructions, besides NOT instruction. Pushes boolean to TOS</p>
+<hr />
+<pre>
+50 GTHAN    - Greater than
+51 LTHAN    - Less than
+52 GTHAN_EQ - Greater than or equal to
+53 LTHAN_EQ - Less than or equal to
+54 EQ       - Equal to
+55 NEQ      - Not equal to
+56 NOT      - Inverts TOS if TOS is boolean
+57 OR       - Boolean OR
+58 AND      - Boolean AND
+</pre>
+<hr />
+<p><b>6 - Loops</b></p>
+<hr />
+<pre>
+60 STARTL - Start of loop
+61 CLOOP  - Conditional loop. If TOS is true, continue looping, else break
+6E BREAK  - Breaks out of loop
+6F ENDL   - End of loop
+</pre>
+<hr />
+<p><b>7 - Code flow</b></p>
+<p>These instructions dictate code flow.</p>
+<hr />
+<pre>
+70 GOTO A&lt;addr&gt; - Goes to address
+71 JUMPF A&lt;n&gt;   - Goes forward &lt;n&gt; lines
+72 IFDO         - If TOS is TRUE, do until done, if not, jump to done
+73 ELSE         - Chained with an IFDO statement, if IFDO fails, execute ELSE
+                  block until DONE is reached.
+74 JTR          - jump-to-return.                                           TBI
+75 JTE          - jump-to-error. Error object on TOS                        TBI
+7D ERR          - Start error block, uses TOS to evaluate error             TBI
+7E DONE         - End of block
+7F CALL N - Calls function, pushes return value on to STACK.
+</pre>
+<hr />
+<p><b>8 - Generic object interface. Expects object on TOS</b></p>
+<hr />
+<pre>
+80 GETN N&lt;name&gt;   - Returns variable assosiated with name in object
+81 SETN N&lt;name&gt;   - Sets the variable assosiated with name in object
+                    Object on TOS, Variable on TOS1
+82 CALLM N&lt;name&gt;  - Calls method in object
+83 INDEXO         - Index an object, uses argument stack
+84 MODO S&lt;OP&gt;     - Modify an object based on op. [+, -, *, /, %, ^ .. etc.]
+</pre>
+<hr />
+<p><b>F - Functions/classes</b></p>
+<hr />
+<pre>
+FF DEFUN NS&lt;type&gt; D&lt;args&gt; - Un-funs everything. no, no- it defines a
+                                  function. D is its name, S&lt;type&gt; is
+                                  the return value, D&lt;args&gt; is the args.
+</pre>
+<pre>
+FE DECLASS ND&lt;args&gt;       - Defines a class.
+FD DENS S                 - Declares namespace
+F2 ENDCLASS               - End of class block
+F1 NEW S&lt;scope&gt; N         - Instantiates class
+F0 RETURN                 - Returns from function
+</pre>
+<hr />
+<p><b>0 - Special Bytes</b></p>
+<hr />
+<pre>
+00 NULL          - No-op
+01 LC N&lt;name&gt;    - Calls OS function library, i.e. I/O, opening files, etc.  TBI
+02 PRINT         - Prints whatever is on the TOS.
+03 DEBUG         - Toggle debug mode
+0E ARGB          - Builds argument stack
+0F PC S          - Primitive call, calls a subroutine A. A list of     TBI
+                   primitive subroutines providing methods to tweak
+                   objects this bytecode set cannot touch. Uses argstack.
+</pre>
+<h3><span class="mw-headline" id="Compiler.2FTranslator.2FAssembler"><a href="/wiki/Compiler" title="Compiler">Compiler/Translator/Assembler</a></span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Toi_(programming_language)&amp;action=edit&amp;section=11" title="Edit section: Compiler/Translator/Assembler">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h4><span class="mw-headline" id="Lexical_analysis"><a href="/wiki/Lexical_analysis" title="Lexical analysis">Lexical analysis</a></span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Toi_(programming_language)&amp;action=edit&amp;section=12" title="Edit section: Lexical analysis">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>Going from code to bytecode is what this section is all about. First off an abstract notation for the code will be broken down into a binary tree as so:</p>
+<pre>
+                                   &lt;node&gt;
+                                     /\
+                                    /  \
+                                   /    \
+                                 &lt;arg&gt; &lt;next&gt;
+</pre>
+<p>node&gt; can be an argument of its parent node, or the next instruction. Instruction nodes are nodes that will produce an instruction, or multiple based on the bytecode interpretation of its instruction. For example, this line of code:</p>
+<pre>
+                                  int x = 3
+</pre>
+<p>would translate into:</p>
+<pre>
+                                     def
+                                      /\
+                                     /  \
+                                    /    \
+                                   /      \
+                                  /        \
+                                int        set
+                                /\          /\
+                               /  \        /  \
+                             null 'x'    'x'  null
+                                         /\
+                                        /  \
+                                      null  3
+</pre>
+<p>Functions are expressed as individual <a href="/wiki/Binary_trees" class="mw-redirect" title="Binary trees">binary trees</a>. The root of any file is treated as an individual binary tree, as this is also a function.</p>
+<p>The various instruction nodes are as follows:</p>
+<ul>
+<li>def &lt;type&gt; &lt;name&gt;
+<ul>
+<li>Define a named space in memory with the type specified
+<ul>
+<li>See the 'TYPES' section under 'OVERVIEW'</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>set &lt;name&gt; &lt;value&gt;
+<ul>
+<li>Set a named space in memory with value specified</li>
+</ul>
+</li>
+</ul>
+<h5><span class="mw-headline" id="Going_from_Binary_Trees_to_Bytecode">Going from Binary Trees to Bytecode</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Toi_(programming_language)&amp;action=edit&amp;section=13" title="Edit section: Going from Binary Trees to Bytecode">edit</a><span class="mw-editsection-bracket">]</span></span></h5>
+<p>The various instruction nodes within the tree will call specific functions that will take arguments specified and lookahead and lookbehind to formulate the correct bytecode equivalent.</p>
+<h2><span class="mw-headline" id="Developer.27s_Website">Developer's Website</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Toi_(programming_language)&amp;action=edit&amp;section=14" title="Edit section: Developer's Website">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The developer of the language, Paul Longtine, operates a publicly available website and blog called <a rel="nofollow" class="external text" href="http://banna.tech">banna.tech</a>, named after his online alias 'banna'.</p>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Toi_(programming_language)&amp;action=edit&amp;section=15" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://github.com/bannana/language/blob/master/doc/OVERVIEW">"bannana/language"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AToi+%28programming+language%29&amp;rft.btitle=bannana%2Flanguage&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fgithub.com%2Fbannana%2Flanguage%2Fblob%2Fmaster%2Fdoc%2FOVERVIEW&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://banna.tech/projects/post/toy_language/">"banna - useless things"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AToi+%28programming+language%29&amp;rft.btitle=banna+-+useless+things&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fbanna.tech%2Fprojects%2Fpost%2Ftoy_language%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://github.com/bannana/language/blob/master/doc/SPECIFICATION">"bannana/language"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AToi+%28programming+language%29&amp;rft.btitle=bannana%2Flanguage&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fgithub.com%2Fbannana%2Flanguage%2Fblob%2Fmaster%2Fdoc%2FSPECIFICATION&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://dev.nanner.co/language/file/doc/SPECIFICATION.html">http://dev.nanner.co/language/file/doc/SPECIFICATION.html</a></span></li>
+</ol>
+</div>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1244
+Cached time: 20170122120020
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.048 seconds
+Real time usage: 0.061 seconds
+Preprocessor visited node count: 161/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 2907/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 4/40
+Expensive parser function count: 0/500
+Lua time usage: 0.019/10.000 seconds
+Lua memory usage: 1.61 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%   44.428      1 Template:Reflist
+100.00%   44.428      1 -total
+ 89.31%   39.680      3 Template:Cite_web
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:52078022-0!*!0!!en!*!* and timestamp 20170122120020 and revision id 754765925
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Toi_(programming_language)&amp;oldid=754765925">https://en.wikipedia.org/w/index.php?title=Toi_(programming_language)&amp;oldid=754765925</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Programming_language_topics" title="Category:Programming language topics">Programming language topics</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Toi+%28programming+language%29" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Toi+%28programming+language%29" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/Toi_(programming_language)"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk" class="new"><span><a href="/w/index.php?title=Talk:Toi_(programming_language)&amp;action=edit&amp;redlink=1"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/Toi_(programming_language)" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=Toi_(programming_language)&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Toi_(programming_language)&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Toi_(programming_language)" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Toi_(programming_language)" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Toi_(programming_language)&amp;oldid=754765925" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Toi_(programming_language)&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q28457672" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Toi_%28programming_language%29&amp;id=754765925" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Toi+%28programming+language%29">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Toi+%28programming+language%29&amp;returnto=Toi+%28programming+language%29&amp;oldid=754765925&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Toi_(programming_language)&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+											</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-add wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q28457672#sitelinks-wikipedia" title="Add interlanguage links" class="wbc-editpage">Add links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 14 December 2016, at 11:03.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Toi_(programming_language)&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.048","walltime":"0.061","ppvisitednodes":{"value":161,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":2907,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":4,"limit":40},"expensivefunctioncount":{"value":0,"limit":500},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%   44.428      1 Template:Reflist","100.00%   44.428      1 -total"," 89.31%   39.680      3 Template:Cite_web"]},"scribunto":{"limitreport-timeusage":{"value":"0.019","limit":"10.000"},"limitreport-memusage":{"value":1686094,"limit":52428800}},"cachereport":{"origin":"mw1244","timestamp":"20170122120020","ttl":2592000,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":74,"wgHostname":"mw1172"});});</script>
+	</body>
+</html>

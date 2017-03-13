@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>XC (programming language) - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"XC_(programming_language)","wgTitle":"XC (programming language)","wgCurRevisionId":749757046,"wgRevisionId":749757046,"wgArticleId":25080840,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Concurrent programming languages"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"XC_(programming_language)","wgRelevantArticleId":25080840,"wgRequestId":"WIZ12ApAAEAAAJu-X7IAAAAQ","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgRedirectedFrom":"XC_Programming_Language","wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":true},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgInternalRedirectTargetUrl":"/wiki/XC_(programming_language)","wgWikibaseItemId":"Q7665653","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.cite.styles":"ready","ext.pygments":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.action.view.redirect","ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.legacy.wikibits","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.centralauth.centralautologin","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.pygments%2CwikimediaBadges%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.29.0-wmf.8"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/XC_(programming_language)"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=XC_(programming_language)&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=XC_(programming_language)&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/XC_(programming_language)"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-XC_programming_language rootpage-XC_programming_language skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">XC (programming language)</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"><span class="mw-redirectedfrom">  (Redirected from <a href="/w/index.php?title=XC_Programming_Language&amp;redirect=no" class="mw-redirect" title="XC Programming Language">XC Programming Language</a>)</span></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><script>function mfTempOpenSection(id){var block=document.getElementById("mf-section-"+id);block.className+=" open-block";block.previousSibling.className+=" open-block";}</script><table class="infobox vevent" style="width:22em">
+<caption class="summary">XC</caption>
+<tr>
+<th scope="row"><a href="/wiki/Programming_paradigm" title="Programming paradigm">Paradigm</a></th>
+<td><a href="/wiki/Concurrent_programming" class="mw-redirect" title="Concurrent programming">concurrent</a>, <a href="/wiki/Parallel_programming" class="mw-redirect" title="Parallel programming">parallel</a>, <a href="/wiki/Distributed_programming" class="mw-redirect" title="Distributed programming">distributed</a>, <a href="/wiki/Multi-core_processor" title="Multi-core processor">multi-core</a>, <a href="/wiki/Real-time_computing" title="Real-time computing">real-time</a>, <a href="/wiki/Imperative_programming" title="Imperative programming">imperative</a></td>
+</tr>
+<tr>
+<th scope="row">First&#160;appeared</th>
+<td>2005</td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Type_system" title="Type system">Typing discipline</a></th>
+<td><a href="/wiki/Strong_typing" class="mw-redirect" title="Strong typing">strong</a>, <a href="/wiki/Static_typing" class="mw-redirect" title="Static typing">static</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Filename_extension" title="Filename extension">Filename extensions</a></th>
+<td>.xc</td>
+</tr>
+<tr>
+<th colspan="2" style="text-align:center;background-color: #eee;">Major <a href="/wiki/Programming_language_implementation" title="Programming language implementation">implementations</a></th>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center">xcc</td>
+</tr>
+<tr>
+<th colspan="2" style="text-align:center;background-color: #eee;">Influenced by</th>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/C_(programming_language)" title="C (programming language)">C</a>, <a href="/wiki/Occam_(programming_language)" title="Occam (programming language)">occam</a>, <a href="/wiki/Communicating_Sequential_Processes" class="mw-redirect" title="Communicating Sequential Processes">CSP</a></td>
+</tr>
+</table>
+<p>In computers, <b>XC</b> is a <a href="/wiki/Programming_language" title="Programming language">programming language</a> for real-time embedded parallel processors, targeted at the <a href="/wiki/XMOS" title="XMOS">XMOS</a> <a href="/wiki/XCore_XS1" class="mw-redirect" title="XCore XS1">XCore processor architecture</a>.<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">[1]</a></sup></p>
+<p>XC is an imperative language, based on the features for parallelism and communication in <a href="/wiki/Occam_(programming_language)" title="Occam (programming language)">occam</a>, and the syntax and sequential features of <a href="/wiki/C_(programming_language)" title="C (programming language)">C</a>.<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">[2]</a></sup> It provides primitive features that correspond to the various architectural resources provided, namely: channel ends, locks, ports and timers.</p>
+<p>In combination with XCore processors, XC is used to build embedded systems with levels of I/O, real-time performance and computational ability usually attributed to <a href="/wiki/Field-programmable_gate_array" title="Field-programmable gate array">field-programmable gate arrays</a> (FPGAs) or <a href="/wiki/Application-specific_integrated_circuit" title="Application-specific integrated circuit">application-specific integrated circuit</a> (ASIC) devices.</p>
+<div class="toclimit-3">
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Introduction"><span class="tocnumber">1</span> <span class="toctext">Introduction</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Architectural_model"><span class="tocnumber">1.1</span> <span class="toctext">Architectural model</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-3"><a href="#Features_of_XC"><span class="tocnumber">2</span> <span class="toctext">Features of XC</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="#Parallelism"><span class="tocnumber">2.1</span> <span class="toctext">Parallelism</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Communication"><span class="tocnumber">2.2</span> <span class="toctext">Communication</span></a>
+<ul>
+<li class="toclevel-3 tocsection-6"><a href="#Interfaces"><span class="tocnumber">2.2.1</span> <span class="toctext">Interfaces</span></a></li>
+<li class="toclevel-3 tocsection-7"><a href="#Channels"><span class="tocnumber">2.2.2</span> <span class="toctext">Channels</span></a></li>
+<li class="toclevel-3 tocsection-8"><a href="#Streaming_channels"><span class="tocnumber">2.2.3</span> <span class="toctext">Streaming channels</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-9"><a href="#Event_handling"><span class="tocnumber">2.3</span> <span class="toctext">Event handling</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Timing"><span class="tocnumber">2.4</span> <span class="toctext">Timing</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#IO"><span class="tocnumber">2.5</span> <span class="toctext">IO</span></a>
+<ul>
+<li class="toclevel-3 tocsection-12"><a href="#Port_events"><span class="tocnumber">2.5.1</span> <span class="toctext">Port events</span></a></li>
+<li class="toclevel-3 tocsection-13"><a href="#Port_timing"><span class="tocnumber">2.5.2</span> <span class="toctext">Port timing</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-14"><a href="#Multiplexing_tasks_onto_cores"><span class="tocnumber">2.6</span> <span class="toctext">Multiplexing tasks onto cores</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="#Memory_access"><span class="tocnumber">2.7</span> <span class="toctext">Memory access</span></a></li>
+<li class="toclevel-2 tocsection-16"><a href="#Additional_features"><span class="tocnumber">2.8</span> <span class="toctext">Additional features</span></a>
+<ul>
+<li class="toclevel-3 tocsection-17"><a href="#References"><span class="tocnumber">2.8.1</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-3 tocsection-18"><a href="#Nullable_types"><span class="tocnumber">2.8.2</span> <span class="toctext">Nullable types</span></a></li>
+<li class="toclevel-3 tocsection-19"><a href="#Multiple_returns"><span class="tocnumber">2.8.3</span> <span class="toctext">Multiple returns</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-20"><a href="#Example_programs"><span class="tocnumber">3</span> <span class="toctext">Example programs</span></a>
+<ul>
+<li class="toclevel-2 tocsection-21"><a href="#Multicore_Hello_World"><span class="tocnumber">3.1</span> <span class="toctext">Multicore Hello World</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-22"><a href="#Historical_influences"><span class="tocnumber">4</span> <span class="toctext">Historical influences</span></a></li>
+<li class="toclevel-1 tocsection-23"><a href="#See_also"><span class="tocnumber">5</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-24"><a href="#References_2"><span class="tocnumber">6</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-25"><a href="#Further_reading"><span class="tocnumber">7</span> <span class="toctext">Further reading</span></a></li>
+<li class="toclevel-1 tocsection-26"><a href="#External_links"><span class="tocnumber">8</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+</div>
+<h2><span class="mw-headline" id="Introduction">Introduction</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=XC_(programming_language)&amp;action=edit&amp;section=1" title="Edit section: Introduction">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="Architectural_model">Architectural model</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=XC_(programming_language)&amp;action=edit&amp;section=2" title="Edit section: Architectural model">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>An XC program executes on a collection of XCore <i>tiles</i>. Each tile contains one or more processing <i>cores</i> and resources that can be shared between the cores, including I/O and memory. All tiles are connected by a communication network that allows any tile to communicate with any other tile. A given target system is specified during compilation and the compiler ensures that a sufficient number of tiles, cores and resources are available to execute the program being compiled.</p>
+<h2><span class="mw-headline" id="Features_of_XC">Features of XC</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=XC_(programming_language)&amp;action=edit&amp;section=3" title="Edit section: Features of XC">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The following sections outline the key features of XC.</p>
+<h3><span class="mw-headline" id="Parallelism">Parallelism</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=XC_(programming_language)&amp;action=edit&amp;section=4" title="Edit section: Parallelism">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Statements in XC are executed in sequence (as they are in C), so that in the execution of:</p>
+<pre>
+f(); g();
+</pre>
+<p>the function <tt>g</tt> is only executed once the execution of the function <tt>f</tt> has completed. A set of statements can be made to execute in parallel using a <tt>par</tt> statement, so that</p>
+<pre>
+par { f(); g(); }
+</pre>
+<p>causes <tt>f</tt> and <tt>g</tt> to be executed simultaneously. The execution of parallel statement only completes when each of the component statements have completed. The component statements are called <i>tasks</i> in XC.</p>
+<p>Because the sharing of variables can lead to <a href="/wiki/Race_condition" title="Race condition">race conditions</a> and non-deterministic behaviour, XC enforces <i>parallel disjointness</i>. Disjointness means that a variable that is changed in one component statement of a <tt>par</tt> may not be used in any other statement.</p>
+<p>Parallel statements can be written with a <i>replicator</i>, in a similar fashion to a <tt>for</tt> loop, so that many similar instances of a task can be created without having to write each one separately, so that the statement:</p>
+<pre>
+par (size_t i=0; i&lt;4; ++i)
+  f(i);
+</pre>
+<p>is equivalent to:</p>
+<pre>
+par { f(0); f(1); f(2); f(3); }
+</pre>
+<p>The tasks in a parallel statement are executed by creating threads on the processor executing the statement. Tasks can be <i>placed</i> on different tiles by using a <tt>on</tt> prefix. In following example:</p>
+<pre>
+par {
+  on tile[0] : f();
+  par (size_t i=0; i&lt;4; ++i)
+    on tile[1].core[i] : g();
+}
+</pre>
+<p>the task <tt>f</tt> is placed on any available core of tile 0 and instances of the task <tt>g</tt> placed on cores 0, 1, 2 and 3 of tile 1. Task placement is restricted to the <tt>main</tt> function of an XC program. Conceptually, this is because when an XC program is compiled, it is divided up at its top level, into separately executable programs for each tile.</p>
+<h3><span class="mw-headline" id="Communication">Communication</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=XC_(programming_language)&amp;action=edit&amp;section=5" title="Edit section: Communication">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Parallel tasks are able to communicate with each other using <i>interfaces</i> or <i>channels</i>.</p>
+<h4><span class="mw-headline" id="Interfaces">Interfaces</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=XC_(programming_language)&amp;action=edit&amp;section=6" title="Edit section: Interfaces">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>An interface specifies a set of <i>transaction types</i>, where each type is defined as a function with parameter and return types. When two tasks are connected via an interface, one operates as a <i>server</i> and the other as a <i>client</i>. The client is able to initiate a transaction with the corresponding server, with syntax similar to a conventional function call. This interaction can be seen as a <a href="/wiki/Remote_procedure_call" title="Remote procedure call">remote procedure call</a>. For example, in the parallel statement:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="n">interface</span> <span class="n">I</span> <span class="p">{</span> <span class="kt">void</span> <span class="n">f</span><span class="p">(</span><span class="kt">int</span> <span class="n">x</span><span class="p">);</span> <span class="p">};</span>
+<span class="n">interface</span> <span class="n">I</span> <span class="n">i</span><span class="p">;</span>
+<span class="n">par</span> <span class="p">{</span>
+  <span class="n">select</span> <span class="p">{</span> <span class="c1">// server</span>
+    <span class="n">i</span><span class="p">.</span><span class="n">f</span><span class="p">(</span><span class="kt">int</span> <span class="n">x</span><span class="p">)</span><span class="o">:</span>
+      <span class="n">printf</span><span class="p">(</span><span class="s">"Received %d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">x</span><span class="p">);</span>
+      <span class="k">break</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="n">i</span><span class="p">.</span><span class="n">f</span><span class="p">(</span><span class="mi">42</span><span class="p">);</span> <span class="c1">// client</span>
+<span class="p">}</span>
+</pre></div>
+<p>the client initiates the transaction <tt>f</tt>, with the parameter value 42, from the interface <tt>i</tt>. The server waits on the transaction (as a case in the <a href="#Event_handling">select statement</a>) and responds when the client initiates it by printing out a message with the received parameter value. Transaction functions can also be used for two-way communication by using reference parameters, allowing data to be transferred from a client to a server, and then back again.</p>
+<p>Interfaces can only be used by two tasks; they do not allow multiple clients to be connected to one server. The types of either end of an interface connection of type <i>T</i> are <i>server interface T</i> and <i>client interface T</i>. Therefore, when interface types are passed as parameters, the type of connection must also be specified, for example:</p>
+<pre>
+interface T i;
+void s(server interface T i) { ... }
+void c(client interface T i) { ... }
+par {
+  s(i);
+  c(i);
+}
+</pre>
+<p>Transaction functions in an interface restrict servers to reacting only in response to client requests, but in some circumstances it is useful for a server to be able to trigger a response from the client. This can be achieved by annotating a function in the interface with no parameters and a void return type, with <tt>[[notification]] slave</tt>. The client waits on the notification transaction in a select statement for the server to initiate it. A corresponding function can be annotated with <tt>[[clears_notification]]</tt>, which is called by the slave to clear the notification. In the following simple example:</p>
+<pre>
+interface I {
+  void f(int x);
+  [[notification]] slave void isReady();
+  [[clears_notification]] int getValue();
+};
+interface I i1, i2;
+par {
+  for (size_t i=0; i&lt;2; ++i) { // server
+    select {
+      i2.f(int x):
+        i1.isReady();
+        break;
+      i1.getValue() -&gt; int data:
+        data = 100;
+        break;
+    }
+  }
+  { int d;                     // client 1
+    select {
+      i1.isReady():
+        d = i1.getValue();
+        break;
+    }
+  }
+  i2.f(42);                    // client 2
+}
+</pre>
+<p>when client 2 initiates the transaction function <tt>f</tt>, the server notifies client 1 via the transaction function <tt>isReady</tt>. Client 1 waits for the server notification, and then initiates <tt>getValue</tt> when it is received.</p>
+<p>So that it is easier to connect many clients to one server, interfaces can also be declared as arrays. A server can select over an interface array using an index variable.</p>
+<p>Interfaces can also be extended, so that basic client interfaces can be augmented with new functionality. In particular, client interface extensions can invoke transaction functions in the base interface to provide a layer of additional complexity.</p>
+<h4><span class="mw-headline" id="Channels">Channels</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=XC_(programming_language)&amp;action=edit&amp;section=7" title="Edit section: Channels">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>Communication channels provide a more primitive way of communicating between tasks than interfaces. A channel connects two tasks and allows them to send and receive data, using the in <tt>&lt;:</tt> and out <tt>:&gt;</tt> operators respectively. A communication only occurs when an input is matched with an output, and because either side waits for the other to be ready, this also causes the tasks to synchronise. In the following:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="kd">chan</span> <span class="nx">c</span><span class="p">;</span>
+<span class="kt">int</span> <span class="nx">x</span><span class="p">;</span>
+<span class="nx">par</span> <span class="p">{</span>
+  <span class="nx">c</span> <span class="p">&lt;:</span> <span class="mi">42</span><span class="p">;</span>
+  <span class="nx">c</span> <span class="p">:&gt;</span> <span class="nx">x</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+<p>the value 42 is sent over the channel <tt>c</tt> and assigned to the variable <tt>x</tt>.</p>
+<h4><span class="mw-headline" id="Streaming_channels">Streaming channels</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=XC_(programming_language)&amp;action=edit&amp;section=8" title="Edit section: Streaming channels">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>A <i>streaming channel</i> does not require each input and matching output to synchronise, so communication can occur asynchronously.</p>
+<h3><span class="mw-headline" id="Event_handling">Event handling</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=XC_(programming_language)&amp;action=edit&amp;section=9" title="Edit section: Event handling">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The <tt>select</tt> statement waits for events to occur. It is similar to the <a href="/wiki/Occam_(programming_language)" title="Occam (programming language)">alternation process</a> in occam. Each component of a select is an event, such as an interface transaction, channel input or port input (see <a href="#IO">#IO</a>), and an associated action. When a select is executed, it waits until the first event is <i>enabled</i> and then executes that event's action. In the following example:</p>
+<pre>
+select {
+  case left :&gt; v:
+    out &lt;: v;
+    break;
+  case right :&gt; v:
+    out &lt;: v;
+    break;
+}
+</pre>
+<p>the select statement merges data from <tt>left</tt> and <tt>right</tt> channels on to an <tt>out</tt> channel.</p>
+<p>A select case can be <i>guarded</i>, so that the case is only selected if the guard expression is true at the same time the event is enabled. For example, with a guard:</p>
+<pre>
+case enable =&gt; left :&gt; v:
+  out &lt;: v;
+  break;
+</pre>
+<p>the left-hand channel of the above example can only input data when the variable <tt>enable</tt> is true.</p>
+<p>The selection of events is arbitrary, but event priority can be enforced with the <tt>[[ordered]]</tt> attribute for selects. The effect is that higher-priority events occur earlier in the body of the statement.</p>
+<p>To aid in creating reusable components and libraries, <i>select functions</i> are be used to abstract multiple cases of a select into a single unit. The following select function encapsulates the cases of the above select statement:</p>
+<pre>
+select merge(chanend left, chanend right, chanend out) {
+  case left :&gt; v:
+    out &lt;: v;
+    break;
+  case right :&gt; v:
+    out &lt;: v;
+    break;
+}
+</pre>
+<p>so that the select statement can be written:</p>
+<pre>
+select {
+  merge(left, right, out);
+}
+</pre>
+<h3><span class="mw-headline" id="Timing">Timing</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=XC_(programming_language)&amp;action=edit&amp;section=10" title="Edit section: Timing">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Every tile has a reference clock that can be accessed via <i>timer</i> variables. Performing an output operation on a timer reads the current time in cycles. For example, to calculate the elapsed execution time of a function <tt>f</tt>:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="n">timer</span> <span class="n">t</span><span class="p">;</span>
+<span class="kt">uint32_t</span> <span class="n">start</span><span class="p">,</span> <span class="n">end</span><span class="p">;</span>
+<span class="nl">t</span> <span class="p">:</span><span class="o">&gt;</span> <span class="n">start</span><span class="p">;</span>
+<span class="n">f</span><span class="p">();</span>
+<span class="nl">t</span> <span class="p">:</span><span class="o">&gt;</span> <span class="n">end</span><span class="p">;</span>
+<span class="n">printf</span><span class="p">(</span><span class="s">"Elapsed time %u s</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="p">(</span><span class="n">end</span><span class="o">-</span><span class="n">start</span><span class="p">)</span><span class="o">/</span><span class="n">CYCLES_PER_SEC</span><span class="p">);</span>
+</pre></div>
+<p>where CYCLES_PER_SEC is defined to be the number of cycles per second.</p>
+<p>Timers can also be used in select statements to trigger events. For example, the select statement:</p>
+<pre>
+timer t;
+uint32_t time;
+...
+select {
+  case t when timerafter(time) :&gt; void:
+    // Action to be performed after the delay
+    ...
+    break;
+}
+</pre>
+<p>waits for the timer <tt>t</tt> to exceed the value of <tt>time</tt> before reacting to it. The value of <tt>t</tt> is discarded with the syntax <tt>:&gt; void</tt>, but it can be assigned to a variable <tt>x</tt> with the syntax <tt>:&gt; int x</tt>.</p>
+<h3><span class="mw-headline" id="IO">IO</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=XC_(programming_language)&amp;action=edit&amp;section=11" title="Edit section: IO">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Variables of the type <i>port</i> provide access to IO pins on an XCore device in XC. Ports can have power-of-two widths, allowing the same number of bits to be input or output every cycle. The same channel input and output operators <tt>&lt;:</tt> and <tt>:&gt;</tt> respectively are used for this.</p>
+<p>The following program continuously reads the value on one port and outputs it on another:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="cp">#include</span> <span class="cpf">&lt;xs1.h&gt;</span>
+<span class="n">in</span> <span class="n">port</span> <span class="n">p</span> <span class="o">=</span> <span class="n">XS1_PORT_1A</span><span class="p">;</span>
+<span class="n">out</span> <span class="n">port</span> <span class="n">q</span> <span class="o">=</span> <span class="n">XS1_PORT_1B</span><span class="p">;</span>
+<span class="kt">int</span> <span class="nf">main</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kt">bool</span> <span class="n">b</span><span class="p">;</span>
+  <span class="k">while</span> <span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nl">p</span> <span class="p">:</span><span class="o">&gt;</span> <span class="n">b</span><span class="p">;</span>
+    <span class="n">q</span> <span class="o">&lt;:</span> <span class="n">b</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+<p>The declaration of ports must have global scope and each port must specify whether it is inputting or outputting, and is assigned a fixed value to specify which pins it corresponds to. These values are defined as macros in a system header file (<tt>xs1.h</tt>).</p>
+<p>By default, ports are driven at the tile's reference clock. However, <i>clock block</i> resources can be used to provide different clock signals, either by dividing the reference clock, or based on an external signal. Ports can be further configured to use buffering and to synchronise with other ports. This configuration is performed using library functions.</p>
+<h4><span class="mw-headline" id="Port_events">Port events</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=XC_(programming_language)&amp;action=edit&amp;section=12" title="Edit section: Port events">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>Ports can generate events, which can be handled in select statements. For example, the statement:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="n">select</span> <span class="p">{</span>
+  <span class="k">case</span> <span class="n">p</span> <span class="n">when</span> <span class="n">pinseq</span><span class="p">(</span><span class="n">v</span><span class="p">)</span> <span class="o">:&gt;</span> <span class="kt">void</span><span class="o">:</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s">"Received input %d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">v</span><span class="p">);</span>
+    <span class="k">break</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+<p>uses the predicate <tt>when pinseq</tt> to wait for the value on the port <tt>p</tt> to equal <tt>v</tt> before triggering the response to print a notification.</p>
+<h4><span class="mw-headline" id="Port_timing">Port timing</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=XC_(programming_language)&amp;action=edit&amp;section=13" title="Edit section: Port timing">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>To be able to control when outputs on a port occur with respect to the port's clock, outputs can be <i>timestamped</i> or <i>timed</i>. The timestamped statement:</p>
+<pre>
+p &lt;: v @ count;
+</pre>
+<p>causes the value <tt>v</tt> to be output on the port <tt>p</tt> and for <tt>count</tt> to be set to the value of the port's counter (incremented by one each reference clock cycle). The timed output statement:</p>
+<pre>
+p @ count &lt;: v;
+</pre>
+<p>causes the port to wait until its counter reaches the value of <tt>count</tt> before the value <tt>v</tt> is output.</p>
+<h3><span class="mw-headline" id="Multiplexing_tasks_onto_cores">Multiplexing tasks onto cores</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=XC_(programming_language)&amp;action=edit&amp;section=14" title="Edit section: Multiplexing tasks onto cores">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>By default, each task maps to one core on a tile. Because the number of cores is limited (eight in current XCore devices), XC provides two ways to map multiple tasks to cores and better exploit the available cores.</p>
+<p>Server tasks that are composed of a never-ending loop containing a select statement can be marked as <i>combinable</i> with the attribute <tt>[[combinable]]</tt>. This allows the compiler to combine two or more combinable tasks to run on the same core, by merging the cases into a single select.</p>
+<p>Tasks of the same form as combinable ones, except that each case of the select handles a transaction function, can be marked with the attribute <tt>[[distributable]]</tt>. This allows the compiler to convert the select cases into local function calls.</p>
+<h3><span class="mw-headline" id="Memory_access">Memory access</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=XC_(programming_language)&amp;action=edit&amp;section=15" title="Edit section: Memory access">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>XC has two models of memory access: <i>safe</i> and <i>unsafe</i>. Safe access is the default in which checks are made to ensure that:</p>
+<ul>
+<li>memory accesses do not occur outside of their <a href="/wiki/Bounds_checking" title="Bounds checking">bounds</a>;</li>
+<li>memory <a href="/wiki/Aliasing_(computing)" title="Aliasing (computing)">aliases</a> are not created;</li>
+<li><a href="/wiki/Dangling_pointer" title="Dangling pointer">dangling pointers</a> are not created.</li>
+</ul>
+<p>These guarantees are achieved through a combination of a different kinds of <a href="/wiki/Pointer_(computer_programming)" title="Pointer (computer programming)">pointers</a> (restricted, aliasing, movable), static checking during compilation and run-time checks.</p>
+<p>Unsafe pointers provide the same behaviour as pointers in C. An unsafe pointer must be declared with the <tt>unsafe</tt> keyword, and they can only be used within <tt>unsafe { ... }</tt> regions.</p>
+<h3><span class="mw-headline" id="Additional_features">Additional features</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=XC_(programming_language)&amp;action=edit&amp;section=16" title="Edit section: Additional features">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h4><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=XC_(programming_language)&amp;action=edit&amp;section=17" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>XC provides <i>references</i>, that are similar to <a href="/wiki/Reference_(C%2B%2B)" title="Reference (C++)">those in C++</a> and are specified with the <tt>&amp;</tt> symbol after the type. A reference provides another name for an existing variable, such that reading and writing it is the same as reading and writing the original variable. References can refer to elements of an array or structure and can be used as parameters to regular and transaction functions.</p>
+<h4><span class="mw-headline" id="Nullable_types">Nullable types</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=XC_(programming_language)&amp;action=edit&amp;section=18" title="Edit section: Nullable types">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>Resource types such as interfaces, channel ends, ports and clocks must always have a valid value. The <i>nullable qualifier</i> allows these types to have no value, which is specified with the <tt>?</tt> symbol. For example, a nullable channel is declared with:</p>
+<pre>
+chan ?c;
+</pre>
+<p>Nullable resource types can also be used to implement optional resource arguments for functions. The <tt>isnull</tt> builtin function can be used to check if a resource is null.</p>
+<h4><span class="mw-headline" id="Multiple_returns">Multiple returns</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=XC_(programming_language)&amp;action=edit&amp;section=19" title="Edit section: Multiple returns">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>In XC, functions can return multiple values. For example, the following function implements the swap operation:</p>
+<pre>
+{int, int} swap(int a, int b) {
+  return {b, a};
+}
+</pre>
+<p>The function swap is called with a multiple assignment:</p>
+<pre>
+{x, y} = swap(x, y);
+</pre>
+<h2><span class="mw-headline" id="Example_programs">Example programs</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=XC_(programming_language)&amp;action=edit&amp;section=20" title="Edit section: Example programs">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="Multicore_Hello_World">Multicore Hello World</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=XC_(programming_language)&amp;action=edit&amp;section=21" title="Edit section: Multicore Hello World">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span>
+<span class="cp">#include</span> <span class="cpf">&lt;platform.h&gt;</span>
+
+<span class="kt">void</span> <span class="nf">hello</span><span class="p">(</span><span class="kt">int</span> <span class="n">id</span><span class="p">,</span> <span class="n">chanend</span> <span class="n">cin</span><span class="p">,</span> <span class="n">chanend</span> <span class="n">cout</span><span class="p">){</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">id</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="nl">cin</span> <span class="p">:</span><span class="o">&gt;</span> <span class="kt">int</span><span class="p">;</span>
+  <span class="n">printf</span><span class="p">(</span><span class="s">"Hello from core %d!"</span><span class="p">,</span> <span class="n">id</span><span class="p">);</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">id</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">)</span> <span class="n">cout</span> <span class="o">&lt;:</span> <span class="mi">1</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span> <span class="p">{</span>
+  <span class="n">chan</span> <span class="n">c</span><span class="p">[</span><span class="mi">3</span><span class="p">];</span>
+  <span class="n">par</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="mi">4</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+    <span class="n">on</span> <span class="n">tile</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">:</span> <span class="n">hello</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">c</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">c</span><span class="p">[(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">%</span><span class="mi">4</span><span class="p">]);</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+<p><br /></p>
+<h2><span class="mw-headline" id="Historical_influences">Historical influences</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=XC_(programming_language)&amp;action=edit&amp;section=22" title="Edit section: Historical influences">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The design of XC was heavily influenced by the <a href="/wiki/Occam_programming_language" class="mw-redirect" title="Occam programming language">occam programming language</a>, which first introduced channel communication, alternation, ports and timers. Occam was developed by <a href="/wiki/David_May_(computer_scientist)" title="David May (computer scientist)">David May</a> and built on the <a href="/wiki/Communicating_Sequential_Processes" class="mw-redirect" title="Communicating Sequential Processes">Communicating Sequential Processes</a> formalism, a process algebra developed by <a href="/wiki/Tony_Hoare" title="Tony Hoare">Tony Hoare</a>.</p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=XC_(programming_language)&amp;action=edit&amp;section=23" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a href="/wiki/Occam_(programming_language)" title="Occam (programming language)">occam (programming language)</a></li>
+<li><a href="/wiki/C_(programming_language)" title="C (programming language)">C (programming language)</a></li>
+<li><a href="/wiki/Communicating_Sequential_Processes" class="mw-redirect" title="Communicating Sequential Processes">Communicating Sequential Processes</a></li>
+<li><a href="/wiki/List_of_concurrent_and_parallel_programming_languages" title="List of concurrent and parallel programming languages">List of concurrent and parallel programming languages</a></li>
+</ul>
+<h2><span class="mw-headline" id="References_2">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=XC_(programming_language)&amp;action=edit&amp;section=24" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><cite class="citation book">David May. <a rel="nofollow" class="external text" href="http://www.xmos.com/download/public/The-XMOS-XS1-Architecture(X7879A).pdf"><i>The XMOS XS1 Architecture</i></a> <span style="font-size:85%;">(PDF)</span>. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/1-907361-01-4" title="Special:BookSources/1-907361-01-4">1-907361-01-4</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2012-03-01</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AXC+%28programming+language%29&amp;rft.au=David+May&amp;rft.btitle=The+XMOS+XS1+Architecture&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fwww.xmos.com%2Fdownload%2Fpublic%2FThe-XMOS-XS1-Architecture%28X7879A%29.pdf&amp;rft.isbn=1-907361-01-4&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><cite class="citation book">Douglas R. Watt. <a rel="nofollow" class="external text" href="https://www.xmos.com/download/public/XC-Programming-Guide(X1009B).pdf"><i>Programming XC on XMOS Devices</i></a> <span style="font-size:85%;">(PDF)</span>. XMOS Limited. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-1-907361-03-6" title="Special:BookSources/978-1-907361-03-6">978-1-907361-03-6</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2012-03-01</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AXC+%28programming+language%29&amp;rft.au=Douglas+R.+Watt&amp;rft.btitle=Programming+XC+on+XMOS+Devices&amp;rft.genre=book&amp;rft_id=https%3A%2F%2Fwww.xmos.com%2Fdownload%2Fpublic%2FXC-Programming-Guide%28X1009B%29.pdf&amp;rft.isbn=978-1-907361-03-6&amp;rft.pub=XMOS+Limited&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="Further_reading">Further reading</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=XC_(programming_language)&amp;action=edit&amp;section=25" title="Edit section: Further reading">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li>The XMOS programming guide (<a rel="nofollow" class="external text" href="https://web.archive.org/web/20141129060750/https://www.xmos.com/support/xtools/documentation?subcategory=Programming%20in%20C%20and%20XC&amp;component=17653">HTML</a>, <a rel="nofollow" class="external text" href="https://www.xmos.com/download/public/XMOS-Programming-Guide-(documentation)(E).pdf">PDF</a>)</li>
+<li>The XC Specification (<a rel="nofollow" class="external text" href="https://web.archive.org/web/20141129060737/https://www.xmos.com/support/xtools/documentation?subcategory=Programming%20in%20C%20and%20XC&amp;component=14805">HTML</a>, <a rel="nofollow" class="external text" href="https://www.xmos.com/download/public/XC-Specification(X5965C).pdf">PDF</a>)</li>
+</ul>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=XC_(programming_language)&amp;action=edit&amp;section=26" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://xmos.com">XMOS website</a></li>
+<li><a rel="nofollow" class="external text" href="http://xcore.com">Official XMOS community</a></li>
+<li><a rel="nofollow" class="external text" href="https://github.com/xcore">XCore open source project on Github</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.iraqigeek.com/2014/01/02/an-introduction-to-xmos-xc-language/">An Introduction to XMOS' XC language</a></li>
+</ul>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1174
+Cached time: 20170120222827
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.096 seconds
+Real time usage: 0.728 seconds
+Preprocessor visited node count: 607/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 6870/2097152 bytes
+Template argument size: 554/2097152 bytes
+Highest expansion depth: 10/40
+Expensive parser function count: 2/500
+Lua time usage: 0.031/10.000 seconds
+Lua memory usage: 1.55 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  700.477      1 -total
+  6.55%   45.891      1 Template:Infobox_programming_language
+  5.94%   41.595      1 Template:Infobox
+  5.19%   36.338      1 Template:Reflist
+  4.35%   30.441      2 Template:Cite_book
+  0.56%    3.919      1 Template:Infobox_software/simple
+  0.17%    1.191      1 Template:TOC_limit
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:25080840-0!*!0!!en!*!* and timestamp 20170120222826 and revision id 749757046
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=XC_(programming_language)&amp;oldid=749757046">https://en.wikipedia.org/w/index.php?title=XC_(programming_language)&amp;oldid=749757046</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Concurrent_programming_languages" title="Category:Concurrent programming languages">Concurrent programming languages</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=XC+%28programming+language%29" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=XC+%28programming+language%29" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/XC_(programming_language)"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:XC_(programming_language)"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/XC_(programming_language)" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=XC_(programming_language)&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=XC_(programming_language)&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/XC_(programming_language)" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/XC_(programming_language)" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=XC_(programming_language)&amp;oldid=749757046" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=XC_(programming_language)&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q7665653" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=XC_%28programming_language%29&amp;id=749757046" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=XC+%28programming+language%29">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=XC+%28programming+language%29&amp;returnto=XC+%28programming+language%29&amp;oldid=749757046&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=XC_(programming_language)&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-fi"><a href="https://fi.wikipedia.org/wiki/XC" title="XC – Finnish" lang="fi" hreflang="fi" class="interlanguage-link-target">Suomi</a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q7665653#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 16 November 2016, at 01:00.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=XC_(programming_language)&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.096","walltime":"0.728","ppvisitednodes":{"value":607,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":6870,"limit":2097152},"templateargumentsize":{"value":554,"limit":2097152},"expansiondepth":{"value":10,"limit":40},"expensivefunctioncount":{"value":2,"limit":500},"entityaccesscount":{"value":1,"limit":400},"timingprofile":["100.00%  700.477      1 -total","  6.55%   45.891      1 Template:Infobox_programming_language","  5.94%   41.595      1 Template:Infobox","  5.19%   36.338      1 Template:Reflist","  4.35%   30.441      2 Template:Cite_book","  0.56%    3.919      1 Template:Infobox_software/simple","  0.17%    1.191      1 Template:TOC_limit"]},"scribunto":{"limitreport-timeusage":{"value":"0.031","limit":"10.000"},"limitreport-memusage":{"value":1621803,"limit":52428800}},"cachereport":{"origin":"mw1174","timestamp":"20170120222827","ttl":2592000,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":79,"wgHostname":"mw1269"});});</script>
+	</body>
+</html>

@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Falcon (programming language) - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Falcon_(programming_language)","wgTitle":"Falcon (programming language)","wgCurRevisionId":763662169,"wgRevisionId":763662169,"wgArticleId":21628757,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles with topics of unclear notability from December 2015","All articles with topics of unclear notability","Articles lacking reliable references from December 2015","All articles lacking reliable references","All articles with unsourced statements","Articles with unsourced statements from December 2014","Official website different in Wikidata and Wikipedia","Class-based programming languages","Cross-platform software","Dynamically typed programming languages","Embedded systems","Free and open-source software licenses","Free compilers and interpreters","Free computer libraries","Functional languages","High-level programming languages","Multi-paradigm programming languages","Object-oriented programming languages","Procedural programming languages","Programming languages created in 2003","Prototype-based programming languages","Scripting languages","Text-oriented programming languages"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Falcon_(programming_language)","wgRelevantArticleId":21628757,"wgRequestId":"WJXh1wpAAEAAAEEC-@8AAACK","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":true},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q580448","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.cite.styles":"ready","ext.pygments":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.legacy.wikibits","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.pygments%2CwikimediaBadges%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.29.0-wmf.10"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/en/3/3a/FalconplLogo.png"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Falcon_(programming_language)"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Falcon_(programming_language)&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Falcon_(programming_language)&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Falcon_(programming_language)"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Falcon_programming_language rootpage-Falcon_programming_language skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Falcon (programming language)</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><table class="plainlinks metadata ambox ambox-content ambox-multiple_issues compact-ambox" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ambox_important.svg/40px-Ambox_important.svg.png" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ambox_important.svg/60px-Ambox_important.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ambox_important.svg/80px-Ambox_important.svg.png 2x" data-file-width="40" data-file-height="40" /></div>
+</td>
+<td class="mbox-text">
+<div class="mw-collapsible" style="width:95%; margin: 0.2em 0;"><span class="mbox-text-span"><b>This article has multiple issues.</b> Please help <b><a class="external text" href="//en.wikipedia.org/w/index.php?title=Falcon_(programming_language)&amp;action=edit">improve it</a></b> or discuss these issues on the <b><a href="/wiki/Talk:Falcon_(programming_language)" title="Talk:Falcon (programming language)">talk page</a></b>. <small><i>(<a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove these template messages</a>)</i></small></span>
+<div class="mw-collapsible-content" style="margin-top: 0.3em;">
+<table class="plainlinks metadata ambox ambox-content ambox-Notability" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ambox_important.svg/40px-Ambox_important.svg.png" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ambox_important.svg/60px-Ambox_important.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ambox_important.svg/80px-Ambox_important.svg.png 2x" data-file-width="40" data-file-height="40" /></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">The topic of this article <b>may not meet Wikipedia's <a href="/wiki/Wikipedia:Notability_(organizations_and_companies)#Products_and_services" title="Wikipedia:Notability (organizations and companies)">notability guidelines for products and services</a></b>. <span class="hide-when-compact">Please help to establish notability by citing <a href="/wiki/Wikipedia:Identifying_reliable_sources" title="Wikipedia:Identifying reliable sources">reliable secondary sources</a> that are <a href="/wiki/Wikipedia:Independent_sources" class="mw-redirect" title="Wikipedia:Independent sources">independent</a> of the topic and provide significant coverage of it beyond its mere trivial mention. If notability cannot be established, the article is likely to be <a href="/wiki/Wikipedia:Merging" title="Wikipedia:Merging">merged</a>, <a href="/wiki/Wikipedia:Redirect" title="Wikipedia:Redirect">redirected</a>, or <a href="/wiki/Wikipedia:Deletion_policy" title="Wikipedia:Deletion policy">deleted</a>.<br />
+<small><span class="plainlinks"><i>Find sources:</i>&#160;<a rel="nofollow" class="external text" href="//www.google.com/search?as_eq=wikipedia&amp;q=%22Falcon%22+programming+language&amp;num=50">"Falcon"&#160;programming language</a>&#160;–&#160;<a rel="nofollow" class="external text" href="//www.google.com/search?q=%22Falcon%22+programming+language&amp;tbm=nws">news</a>&#160;<b>·</b> <a rel="nofollow" class="external text" href="//www.google.com/search?&amp;q=%22Falcon%22+programming+language+site:news.google.com/newspapers&amp;source=newspapers">newspapers</a>&#160;<b>·</b> <a rel="nofollow" class="external text" href="//www.google.com/search?tbs=bks:1&amp;q=%22Falcon%22+programming+language">books</a>&#160;<b>·</b> <a rel="nofollow" class="external text" href="//scholar.google.com/scholar?q=%22Falcon%22+programming+language">scholar</a>&#160;<b>·</b> <a rel="nofollow" class="external text" href="http://www.jstor.org/action/doBasicSearch?Query=%22Falcon%22+programming+language&amp;acc=on&amp;wc=on">JSTOR</a>&#160;<b>·</b> <a rel="nofollow" class="external text" href="//www.google.com/images?safe=off&amp;tbm=isch&amp;tbs=sur:fmc&amp;q=%22Falcon%22+programming+language+-site:wikipedia.org+-site:wikimedia.org">free images</a></span></small></span> <small><i>(December 2015)</i></small> <small class="hide-when-compact"><i>(<a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove this template message</a>)</i></small></span></td>
+</tr>
+</table>
+<table class="plainlinks metadata ambox ambox-content ambox-Primary_sources" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><a href="/wiki/File:Question_book-new.svg" class="image"><img alt="Question book-new.svg" src="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" width="50" height="39" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/75px-Question_book-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/100px-Question_book-new.svg.png 2x" data-file-width="512" data-file-height="399" /></a></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">This article <b>relies too much on <a href="/wiki/Wikipedia:Verifiability" title="Wikipedia:Verifiability">references</a> to <a href="/wiki/Wikipedia:No_original_research#Primary.2C_secondary_and_tertiary_sources" title="Wikipedia:No original research">primary sources</a></b>. <span class="hide-when-compact">Please improve this by adding <a href="/wiki/Wikipedia:No_original_research#Primary.2C_secondary_and_tertiary_sources" title="Wikipedia:No original research">secondary or tertiary sources</a>.</span> <small><i>(December 2015)</i></small> <small class="hide-when-compact"><i>(<a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove this template message</a>)</i></small></span></td>
+</tr>
+</table>
+</div>
+</div>
+<small class="hide-when-compact"><i>(<a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove this template message</a>)</i></small></td>
+</tr>
+</table>
+<table class="infobox vevent" style="width:22em">
+<caption class="summary">Falcon</caption>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/File:FalconplLogo.png" class="image"><img alt="FalconplLogo.png" src="//upload.wikimedia.org/wikipedia/en/3/3a/FalconplLogo.png" width="200" height="200" data-file-width="200" data-file-height="200" /></a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Programming_paradigm" title="Programming paradigm">Paradigm</a></th>
+<td><a href="/wiki/Multi-paradigm_programming_language" class="mw-redirect" title="Multi-paradigm programming language">Multi-paradigm</a>: <a href="/wiki/Procedural_programming" title="Procedural programming">Procedural</a>, <a href="/wiki/Object-oriented_programming_language" class="mw-redirect" title="Object-oriented programming language">object-oriented</a> (<a href="/wiki/Class-based" class="mw-redirect" title="Class-based">class-based</a> and <a href="/wiki/Prototype-based" class="mw-redirect" title="Prototype-based">prototype-based</a>), <a href="/wiki/Functional_programming_language" class="mw-redirect" title="Functional programming language">functional</a>, <a href="/w/index.php?title=Tabular_programming&amp;action=edit&amp;redlink=1" class="new" title="Tabular programming (page does not exist)">tabular</a>, <a href="/wiki/Message_passing" title="Message passing">message passing</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_design" title="Software design">Designed&#160;by</a></th>
+<td>Giancarlo Niccolai</td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_developer" title="Software developer">Developer</a></th>
+<td class="organiser"><a rel="nofollow" class="external text" href="http://www.falconpl.org/index.ftd?page_id=authors">Falcon Committee</a></td>
+</tr>
+<tr>
+<th scope="row">First&#160;appeared</th>
+<td>2003<span class="noprint">; 14&#160;years ago</span><span style="display:none">&#160;(<span class="bday dtstart published updated">2003</span>)</span></td>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Software_release_life_cycle" title="Software release life cycle">Stable release</a></th>
+<td>
+<div style="margin:0px;">0.9.6.8 (Chimera) / December&#160;31, 2010<span class="noprint">; 6 years ago</span><span style="display:none">&#160;(<span class="bday dtstart published updated">2010-12-31</span>)</span><sup id="cite_ref-getting_Falcon_1-0" class="reference"><a href="#cite_note-getting_Falcon-1">[1]</a></sup></div>
+</td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Type_system" title="Type system">Typing discipline</a></th>
+<td><a href="/wiki/Dynamic_typing" class="mw-redirect" title="Dynamic typing">Dynamic</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Operating_system" title="Operating system">OS</a></th>
+<td><a href="/wiki/Cross-platform" title="Cross-platform">Cross-platform</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_license" title="Software license">License</a></th>
+<td><a href="/wiki/GPLv2" class="mw-redirect" title="GPLv2">GPLv2</a>, <a href="/wiki/Falcon_Programming_Language_License" class="mw-redirect" title="Falcon Programming Language License">FPLLv</a>1.1<sup id="cite_ref-falcon_programming_language_license_2-0" class="reference"><a href="#cite_note-falcon_programming_language_license-2">[2]</a></sup> (a modified version of the <a href="/wiki/Apache_License" title="Apache License">Apache License</a>)</td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Filename_extension" title="Filename extension">Filename extensions</a></th>
+<td>.ftd, .fal, .fam</td>
+</tr>
+<tr>
+<th scope="row">Website</th>
+<td><span class="url"><a rel="nofollow" class="external text" href="http://falconpl.org">falconpl<wbr />.org</a></span></td>
+</tr>
+<tr>
+<th colspan="2" style="text-align:center;background-color: #eee;">Influenced by</th>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/C%2B%2B" title="C++">C++</a>, <a href="/wiki/Perl" title="Perl">Perl</a>, <a href="/wiki/Lua_(programming_language)" title="Lua (programming language)">Lua</a>, <a href="/wiki/Smalltalk" title="Smalltalk">Smalltalk</a>, <a href="/wiki/PHP" title="PHP">PHP</a>, <a href="/wiki/Lisp_(programming_language)" title="Lisp (programming language)">Lisp</a>, <a href="/wiki/Python_(programming_language)" title="Python (programming language)">Python</a>, <a href="/wiki/Ruby_(programming_language)" title="Ruby (programming language)">Ruby</a></td>
+</tr>
+</table>
+<p><b>Falcon</b> is an <a href="/wiki/Open_source" class="mw-redirect" title="Open source">open source</a>, <a href="/wiki/Multi-paradigm_programming_language" class="mw-redirect" title="Multi-paradigm programming language">multi-paradigm</a> <a href="/wiki/Programming_language" title="Programming language">programming language</a>. Design and implementation is led by Giancarlo Niccolai,<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">[3]</a></sup><sup id="cite_ref-4" class="reference"><a href="#cite_note-4">[4]</a></sup> a native of <a href="/wiki/Bologna,_Italy" class="mw-redirect" title="Bologna, Italy">Bologna, Italy</a> and <a href="/wiki/Information_Technology" class="mw-redirect" title="Information Technology">Information Technology</a> graduate from <a href="/wiki/Pistoia" title="Pistoia">Pistoia</a>.</p>
+<p>Falcon translates computer <a href="/wiki/Source_code" title="Source code">source code</a> to <a href="/wiki/Virtual_machine" title="Virtual machine">virtual machine</a> instructions for evaluation. The virtual machine<sup id="cite_ref-5" class="reference"><a href="#cite_note-5">[5]</a></sup> is intended to be both a stand-alone interpreter as well as for integration in third-party embedding applications.</p>
+<p>A core design consideration for the Falcon programming language is to provide acceptably high performing scripting <a href="/wiki/Plug-in_(computing)" title="Plug-in (computing)">plug-ins</a> to <a href="/wiki/Thread_(computer_science)" class="mw-redirect" title="Thread (computer science)">multi threaded</a> data acquisition, reporting and dispersion applications.</p>
+<p>As programming languages go, Falcon design leans more towards conciseness of code and <a href="/wiki/Expressive_power_(computer_science)" title="Expressive power (computer science)">expressiveness</a> than <a href="/wiki/Code_readability" class="mw-redirect" title="Code readability">general readability</a>. The Falcon implementation does provide facilities for <a href="/wiki/Software_documentation" title="Software documentation">source level documentation</a> and this documentation may become important as the mixed paradigm potential of Falcon scripting attempts to meet the problems faced with <a href="/wiki/Programming_in_the_large_and_programming_in_the_small" title="Programming in the large and programming in the small">programming in the large</a>.</p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#History"><span class="tocnumber">1</span> <span class="toctext">History</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Philosophy"><span class="tocnumber">2</span> <span class="toctext">Philosophy</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#.22Hello_World.22_example"><span class="tocnumber">3</span> <span class="toctext">"Hello World" example</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Data_types"><span class="tocnumber">4</span> <span class="toctext">Data types</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Paradigms"><span class="tocnumber">5</span> <span class="toctext">Paradigms</span></a>
+<ul>
+<li class="toclevel-2 tocsection-6"><a href="#Procedural"><span class="tocnumber">5.1</span> <span class="toctext">Procedural</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Functional"><span class="tocnumber">5.2</span> <span class="toctext">Functional</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Class-based_object-orientation"><span class="tocnumber">5.3</span> <span class="toctext">Class-based object-orientation</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Prototype-based_object-orientation"><span class="tocnumber">5.4</span> <span class="toctext">Prototype-based object-orientation</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Message-oriented"><span class="tocnumber">5.5</span> <span class="toctext">Message-oriented</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#Tabular"><span class="tocnumber">5.6</span> <span class="toctext">Tabular</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-12"><a href="#Features"><span class="tocnumber">6</span> <span class="toctext">Features</span></a>
+<ul>
+<li class="toclevel-2 tocsection-13"><a href="#List_comprehensions"><span class="tocnumber">6.1</span> <span class="toctext">List comprehensions</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="#Template_documents"><span class="tocnumber">6.2</span> <span class="toctext">Template documents</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="#Exceptions"><span class="tocnumber">6.3</span> <span class="toctext">Exceptions</span></a></li>
+<li class="toclevel-2 tocsection-16"><a href="#Explicit_string_expansion"><span class="tocnumber">6.4</span> <span class="toctext">Explicit string expansion</span></a></li>
+<li class="toclevel-2 tocsection-17"><a href="#Embeddable_runtime"><span class="tocnumber">6.5</span> <span class="toctext">Embeddable runtime</span></a></li>
+<li class="toclevel-2 tocsection-18"><a href="#Documentation_generator"><span class="tocnumber">6.6</span> <span class="toctext">Documentation generator</span></a></li>
+<li class="toclevel-2 tocsection-19"><a href="#Virtual_filesystem"><span class="tocnumber">6.7</span> <span class="toctext">Virtual filesystem</span></a></li>
+<li class="toclevel-2 tocsection-20"><a href="#Concurrency_support"><span class="tocnumber">6.8</span> <span class="toctext">Concurrency support</span></a></li>
+<li class="toclevel-2 tocsection-21"><a href="#Coroutines"><span class="tocnumber">6.9</span> <span class="toctext">Coroutines</span></a></li>
+<li class="toclevel-2 tocsection-22"><a href="#Metacompiler"><span class="tocnumber">6.10</span> <span class="toctext">Metacompiler</span></a></li>
+<li class="toclevel-2 tocsection-23"><a href="#Native_internationalization"><span class="tocnumber">6.11</span> <span class="toctext">Native internationalization</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-24"><a href="#Feathers_standard_library"><span class="tocnumber">7</span> <span class="toctext">Feathers standard library</span></a></li>
+<li class="toclevel-1 tocsection-25"><a href="#Implementation"><span class="tocnumber">8</span> <span class="toctext">Implementation</span></a></li>
+<li class="toclevel-1 tocsection-26"><a href="#Supported_platforms"><span class="tocnumber">9</span> <span class="toctext">Supported platforms</span></a></li>
+<li class="toclevel-1 tocsection-27"><a href="#Falcon_Programming_Language_License"><span class="tocnumber">10</span> <span class="toctext">Falcon Programming Language License</span></a></li>
+<li class="toclevel-1 tocsection-28"><a href="#See_also"><span class="tocnumber">11</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-29"><a href="#References"><span class="tocnumber">12</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-30"><a href="#External_links"><span class="tocnumber">13</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="History">History</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Falcon_(programming_language)&amp;action=edit&amp;section=1" title="Edit section: History">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>A small project, HASTE,<sup id="cite_ref-computerworld_interview_6-0" class="reference"><a href="#cite_note-computerworld_interview-6">[6]</a></sup> developed in 2002, in an attempt to create a small fast <a href="/wiki/Virtual_machine" title="Virtual machine">virtual machine</a>, soon evolved into the Falcon programming language. In early 2008, the package was first shipped under open source licensing as a package in <a href="/wiki/Ubuntu_(operating_system)" title="Ubuntu (operating system)">Ubuntu</a>, and included in the <a href="/wiki/Kross_(KDE)" class="mw-redirect" title="Kross (KDE)">KDE 4 scripting framework</a>.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (December 2014)">citation needed</span></a></i>]</sup></p>
+<h2><span class="mw-headline" id="Philosophy">Philosophy</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Falcon_(programming_language)&amp;action=edit&amp;section=2" title="Edit section: Philosophy">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Rather than focusing on one programming style or <a href="/wiki/Programming_paradigm" title="Programming paradigm">paradigm</a>, Falcon merges several different styles into a single <a href="/wiki/Software_framework" title="Software framework">framework</a>. At the same time, it targets multiple <a href="/wiki/Application_domain" title="Application domain">application domains</a> (stand-alone, embedded into other applications and server-side dynamic pages), merging them into a single hood of a common <a href="/wiki/Software_architecture" title="Software architecture">architectural design</a>.</p>
+<p>At the implementation level, Falcon is driven by the concept of <a href="/wiki/Service_(systems_architecture)" title="Service (systems architecture)"><i>service</i></a>, where the <a href="/wiki/Scripting_language" title="Scripting language">scripting engine</a> is seen as a service for scripts, modules and in embedded applications when not used as a stand-alone tool.</p>
+<h2><span class="mw-headline" id=".22Hello_World.22_example">"Hello World" example</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Falcon_(programming_language)&amp;action=edit&amp;section=3" title="Edit section: &quot;Hello World&quot; example">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Although there are various forms of basic I/O, an example <a href="/wiki/Hello_world_program" class="mw-redirect" title="Hello world program">Hello world program</a> using <i>fast print</i>:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+&gt; "Hello World!"
+</pre></div>
+<p>Supporting <a href="/wiki/Unicode" title="Unicode">Unicode</a>,<sup id="cite_ref-falcon_unicode_7-0" class="reference"><a href="#cite_note-falcon_unicode-7">[7]</a></sup> below is an internationalized example of introductions:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+ // International class; name and street
+ class 国際( なまえ, Straße )
+    // set class name and street address
+    नाम = なまえ
+    شَارِع   =  Straße
+    // Say who I am
+    function 言え()
+      &gt;@"I am $(self.नाम) from ",self.شَارِع
+    end
+ end
+ // all the people of the world!
+ 民族 = [ 国際( "高田　Friederich", "台灣" ),
+    国際( "Smith Σωκράτης", "Cantù" ),
+    国際( "Stanisław Lec", "południow" ) ]
+ 
+ for garçon in 民族: garçon.言え()
+</pre></div>
+<p>which, when evaluated, displays</p>
+<pre>
+ I am 高田　Friederich from 台灣
+ I am Smith Σωκράτης from Cantù
+ I am Stanisław Lec from południow
+</pre>
+<h2><span class="mw-headline" id="Data_types">Data types</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Falcon_(programming_language)&amp;action=edit&amp;section=4" title="Edit section: Data types">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li>Nil - The <i>nil</i> keyword, a non-value.</li>
+<li><a href="/wiki/Integer_(computer_science)" title="Integer (computer science)">Integer</a> - an integer 64 bit value.</li>
+<li><a href="/wiki/Floating_point" title="Floating point">Numeric</a> - An IEEE 64 bit floating point value.</li>
+<li>Range - a triplet of lower bound, higher bound and step.</li>
+<li>MemBuf - Raw memory buffer, where each location is an unsigned 1, 2, 3, or 4 bytes integer.</li>
+<li><a href="/wiki/Subroutine" title="Subroutine">Function</a> - Functions (callable entities).</li>
+<li><a href="/wiki/String_(computer_science)" title="String (computer science)">String</a> - Mutable sequences of UNICODE characters (but they can be used as byte buffers).</li>
+<li><a href="/wiki/Array_(data_type)" class="mw-redirect" title="Array (data type)">Array</a> - Mutable sequences of items.</li>
+<li><a href="/wiki/Associative_array" title="Associative array">Dictionary</a> - Mutable ordered set of key/value pairs; the key can be any Falcon item.</li>
+<li><a href="/wiki/Object_(computer_science)" title="Object (computer science)">Object</a> - Instances derived from classes or stand-alone classless objects.</li>
+<li><a href="/wiki/Class_(computer_science)" class="mw-redirect" title="Class (computer science)">Class</a> - Classes, entities that can create instances.</li>
+<li><a href="/wiki/Method_(computer_science)" class="mw-redirect" title="Method (computer science)">Method</a> - Immutable pairs of instances and functions to be applied on them.</li>
+</ul>
+<h2><span class="mw-headline" id="Paradigms">Paradigms</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Falcon_(programming_language)&amp;action=edit&amp;section=5" title="Edit section: Paradigms">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Falcon merges six major programming paradigms:</p>
+<ul>
+<li><a href="/wiki/Procedural_programming" title="Procedural programming">procedural</a></li>
+<li><a href="/wiki/Functional_programming" title="Functional programming">functional</a></li>
+<li><a href="/wiki/Object-oriented_programming" title="Object-oriented programming">object-oriented</a> (OOP)
+<ul>
+<li><a href="/wiki/Class-based_programming" title="Class-based programming">class OOP</a></li>
+<li><a href="/wiki/Prototype-based_programming" title="Prototype-based programming">prototype OOP</a></li>
+</ul>
+</li>
+<li><a href="/wiki/Message_passing" title="Message passing">message oriented</a></li>
+<li>Tabular Programming<sup id="cite_ref-8" class="reference"><a href="#cite_note-8">[8]</a></sup></li>
+</ul>
+<h3><span class="mw-headline" id="Procedural">Procedural</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Falcon_(programming_language)&amp;action=edit&amp;section=6" title="Edit section: Procedural">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p><a href="/wiki/Procedural_programming" title="Procedural programming">Procedural programming</a> is supported through classic function declarations and calls.<sup id="cite_ref-9" class="reference"><a href="#cite_note-9">[9]</a></sup> Every function supports implicitly variable parameter calls and named/positional parameters. A set of procedural style statements (e.g. for, while, if, switch statements) is provided.</p>
+<p>The following is a complete procedural program:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+ function sayList( saying )
+    for elem in saying
+        &gt;&gt; elem
+        formiddle: &gt;&gt; " "
+        forlast: &gt; "!"
+    end
+ end
+ sayList( List("Have", "a", "nice", "day") )
+</pre></div>
+<p>If the above is saved to a text file as <b>niceday.fal</b>, a command line of <b>falcon niceday.fal</b> produces:</p>
+<pre>
+Have a nice day!
+</pre>
+<p>on <a href="/wiki/Standard_streams" title="Standard streams">standard output</a>.</p>
+<h3><span class="mw-headline" id="Functional">Functional</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Falcon_(programming_language)&amp;action=edit&amp;section=7" title="Edit section: Functional">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Falcon has an <a href="/wiki/Evaluation_strategy" title="Evaluation strategy">evaluation engine</a> called Sigma-reductor, which allows programmers to write completely <a href="/wiki/Functional_programming" title="Functional programming">functional programs</a> without the need to use any procedural construct,<sup id="cite_ref-10" class="reference"><a href="#cite_note-10">[10]</a></sup> not differently from what is seen in <a href="/wiki/Lisp_(programming_language)" title="Lisp (programming language)">Lisp</a>. The intermixed programming style allows use of different paradigms (such as <a href="/wiki/Object-oriented_programming" title="Object-oriented programming">OOP</a> or <a href="/wiki/Procedural_programming" title="Procedural programming">procedural</a> approaches) in functional sequences, or to use functional evaluations during the course of otherwise procedural programs.</p>
+<p>Functional sequences are represented by <a href="/wiki/Homoiconicity" title="Homoiconicity">standard language arrays</a>; this means that sequences can be created, inspected and changed dynamically by the program itself, either across different evaluations or during the course of a Sigma-reduction evaluation. The following example does that by changing a special variable reference, called <i><a href="/wiki/Name_binding" title="Name binding">late binding</a></i> in a list loop.</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+  seq = [ printl, '"', &amp;value, '"' ]
+
+  dolist( function(p); seq.value = p; eval(seq); end,
+          ["Have", "a", "nice", "day"] )
+</pre></div>
+<p>Standard arrays can be called as functions if their first member is itself a callable item, as in the following example.</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+  f = [printl, "Prompt&gt; "]
+  f( "Real data to print" )
+</pre></div>
+<p>One-level functional sequences (as in the above example) can be conceptually treated as cached calls, and once assigned to a variable, they are morphologically equivalent to a function symbol.</p>
+<p>The functional paradigm includes an <a href="/w/index.php?title=Out_of_band_data&amp;action=edit&amp;redlink=1" class="new" title="Out of band data (page does not exist)"><i>out-of-band</i></a> item marker. Items can receive an <i>oob</i> flag marker which can be tested through language operators and functions and indicate a special meaning for values traveling in functional sequences. For example, many functional loops, as <i>floop</i> and <i>times</i>, can perform loop restarts or can be interrupted by returning either an out-of-band <i>1</i> or <i>0</i> from any of the involved functions. The <i><a href="/wiki/Map_(higher-order_function)" title="Map (higher-order function)">map</a></i> function, transforming all the values in an array through a mapping function, will ignore the returned value (discarding it) if it's an out-of-band <i>nil</i>; in this way, it is possible to perform map-and-filter operations in place.</p>
+<h3><span class="mw-headline" id="Class-based_object-orientation">Class-based object-orientation</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Falcon_(programming_language)&amp;action=edit&amp;section=8" title="Edit section: Class-based object-orientation">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The Falcon programming language provides an OOP paradigm with <a href="/wiki/Class_(computer_science)" class="mw-redirect" title="Class (computer science)">classes</a>, an <a href="/wiki/Inheritance_(object-oriented_programming)" title="Inheritance (object-oriented programming)">inheritance</a> model, class-static members, property initializers and instance constructor.<sup id="cite_ref-objectclass_11-0" class="reference"><a href="#cite_note-objectclass-11">[11]</a></sup> <a href="/wiki/Multiple_inheritance" title="Multiple inheritance">Multiple inheritance</a> is supported under the condition that at most one underlying ancestor class is reflecting native data. Access to base class members is supported.</p>
+<p>Instance structure is fixed and <a href="/wiki/Immutable_object" title="Immutable object">immutable</a>,<sup id="cite_ref-objectclass_11-1" class="reference"><a href="#cite_note-objectclass-11">[11]</a></sup> but due to Falcon's functional nature where functions are seen as just a special kind of data, it is possible to set instance members to plain data or functions (making them methods) dynamically. Functional sequences can be assigned to properties, in which case they become functional methods for the given OOP instance.</p>
+<p>Falcon supports stand-alone objects, which can be either classless or derived by class ancestors, which are instantiated and readied before the Virtual Machine executes the main script. Instance Resolution order is tracked by the Falcon Linker to ensure proper initialization of stand-alone objects, which may refer one another in program modules.</p>
+<p>Class instances can be created through functional sequences, as instancing a class is morphologically equivalent to calling its symbol, and so, evaluating a functional sequence whose first element is a class has the effect of creating an instance.</p>
+<p>Falcon OOP model is completed by operator overloading,<sup id="cite_ref-objectclass_11-2" class="reference"><a href="#cite_note-objectclass-11">[11]</a></sup> which allows to create classes on which the mathematical and logical operators have a special behavior.</p>
+<p><i>The C++ classes that build the Falcon engine are <a href="/wiki/Doxygen" title="Doxygen">Doxygen</a> indexed at falconpl.org.</i><sup id="cite_ref-12" class="reference"><a href="#cite_note-12">[12]</a></sup></p>
+<h3><span class="mw-headline" id="Prototype-based_object-orientation">Prototype-based object-orientation</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Falcon_(programming_language)&amp;action=edit&amp;section=9" title="Edit section: Prototype-based object-orientation">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p><a href="/wiki/Prototype-based_programming" title="Prototype-based programming">Prototype OOP</a><sup id="cite_ref-13" class="reference"><a href="#cite_note-13">[13]</a></sup> is similar to classic <a href="/wiki/Class-based_programming" title="Class-based programming">Class-based OOP</a>, but it drops the concept of <a href="/wiki/Class-based_programming" title="Class-based programming">classes</a>. Instances are all classless, and their structure can be dynamically changed. Falcon language <a href="/wiki/Associative_array" title="Associative array">dictionaries</a> (ordered key/value pair collections) can include functions; dictionaries can then be <i>blessed</i> to inform the language that they are to be treated as classless instances, and applying <i>dot accessor</i> causes their values to be treated as <a href="/wiki/Property_(programming)" title="Property (programming)">properties</a> or <a href="/wiki/Method_(computer_science)" class="mw-redirect" title="Method (computer science)">methods</a>. In the following example, a dictionary becomes an object:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+ dict = bless([ 'state' =&gt; 0, 'incme' =&gt; function(); self.state++; end ])
+ dict.incme()
+ &gt; dict.state  // will print '1'
+</pre></div>
+<p><a href="/wiki/Name_binding" title="Name binding">Bindings</a> in arrays works similarly.</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+ array = [1,2,3]
+ array.showMe = function()
+    for item in self
+        &gt; item
+    end
+ end
+
+ array.showMe()
+</pre></div>
+<h3><span class="mw-headline" id="Message-oriented">Message-oriented</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Falcon_(programming_language)&amp;action=edit&amp;section=10" title="Edit section: Message-oriented">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p><a href="/wiki/Message_passing" title="Message passing">Message-oriented programming</a> allows indirect calls to one or more registered listeners when a message is broadcast. The contents of the message are arbitrary and can include any language item, including but not limited to classes from which to create instances, functional sequences or tables. Listeners can either compete to receive the message and exclude the others, or participate in building a common reply to the message in ordered steps. Messages can be broadcast and require an immediate reply or can be left in the environment to be received and processed by latecomers (termed <i>assertions</i> in <b>Falcon</b><sup id="cite_ref-14" class="reference"><a href="#cite_note-14">[14]</a></sup>).</p>
+<p>Message oriented programming has a direct interface into the Virtual Machine, on which external native modules and embedding applications can interact. For example, a multithreaded application may throw into the virtual machine messages coming from different threads, for serialized processing at script level and later broadcast of processed solutions directly from within the scripts.</p>
+<h3><span class="mw-headline" id="Tabular">Tabular</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Falcon_(programming_language)&amp;action=edit&amp;section=11" title="Edit section: Tabular">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Tabular programming<sup id="cite_ref-15" class="reference"><a href="#cite_note-15">[15]</a></sup> can be seen as a special extension of <a href="/wiki/Object-oriented_programming" title="Object-oriented programming">OOP programming</a>, where a class is represented by a table, whose columns are properties and where each row is an instance. Other than keeping all the instances together, and allowing each instance to work on the surrounding rows of the parent table, modification on the table are dynamically reflected into every instance.</p>
+<p>Tables offer a means to select behaviors between a finite set of choices, or to mix behaviors and merge them, providing <a href="/wiki/Fuzzy_logic" title="Fuzzy logic">fuzzy logic</a> engines. As each row, actually a Falcon array, can contain both table-specific data and logic or private logic (via array bindings), an entity selected in a table via global selection logic can provide specialized working abilities.</p>
+<h2><span class="mw-headline" id="Features">Features</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Falcon_(programming_language)&amp;action=edit&amp;section=12" title="Edit section: Features">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Along with the multiple paradigms, Falcon presents a variety of different features for programmers.</p>
+<h3><span class="mw-headline" id="List_comprehensions">List comprehensions</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Falcon_(programming_language)&amp;action=edit&amp;section=13" title="Edit section: List comprehensions">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div role="note" class="hatnote">Further information: <a href="/wiki/List_comprehension" title="List comprehension">List comprehension</a></div>
+<p>Base types and classes exposing the sequence interface to the internal engine offer a "comp" method which offers all the functionality of a list comprehension<sup id="cite_ref-16" class="reference"><a href="#cite_note-16">[16]</a></sup> construct. The comp method takes a mandatory "source" parameter, which can be another sequence, an item of range type or a generator function returning one item at a time, and a special marker at termination.</p>
+<p>A function (or in general a callable item) can be provided as second optional parameter, and acts both as a filter and modifier.</p>
+<p>Associative pair sequences (as i.e. dictionaries) are supported as well.</p>
+<p>The following is a simple example using a range to create a list comprehension; the result is an array of even numbers 2..10:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+   even_array = [].comp( [2:11:2] )
+</pre></div>
+<p>This generates a list of random integer numbers in the range 1,9; the list terminates when the random number is 10 (that is, each item as 1/10 probability to be the last).</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+  random_list = List().comp( function(); n = random(1,10); return n == 10 ? oob(0): n; end )
+</pre></div>
+<p>The next, more complete example, uses a generator to fill a <a href="/wiki/Set_(mathematics)" title="Set (mathematics)">set</a> of exactly 10 unique random numbers chosen in the 1..100 range. In this occasion, the role of determining the end of the comprehension is delegated to the filter.</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+  random_set = Set().comp(
+      [random, 1, 100],  // generator, callable array
+      function( number, myself )  // filter, using the optional "myself" param
+         if myself.len() == 10
+             return oob(0)  // return oob(0) as a generator to terminate
+         end
+         return number
+      end
+      )
+</pre></div>
+<p>The "comp" method returns the same object it operates on. So, it is possible to apply it on an already existing sequence to add more data to it.</p>
+<p>Similarly, the "mfcomp" generic method allows to create list comprehensions using more input sets, as in the following example.</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+ sums = [].mfcomp( {x,y=&gt; x+y}, .[1 2 3], .[4 5 6] )
+</pre></div>
+<p>The resulting array in "sums" contains the values obtained summing each element in the first set (x) with each element of the second set (y).</p>
+<h3><span class="mw-headline" id="Template_documents">Template documents</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Falcon_(programming_language)&amp;action=edit&amp;section=14" title="Edit section: Template documents">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Falcon allows scripts to be part of text documents, with the preprocessor <span class="nowrap"><b>&lt;? ..&#160;?&gt;</b></span> or <span class="nowrap"><b>&lt;?fal ..&#160;?&gt;</b></span> directive.<sup id="cite_ref-17" class="reference"><a href="#cite_note-17">[17]</a></sup> Scripts saved as ".ftd" files are treated as text documents and simply echoed until one of those processor directives is encountered. Inbound scripts are executed as in the following <i>.ftd</i> example:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+   You called this script with &lt;? print( args.len() ) ?&gt; parameters.
+</pre></div>
+<p>FTD documents can be merged with normal Falcon scripts to form applications, where the presentation logic is in dynamic templates (the FTD files), and the application logic is stored in Falcon modules.</p>
+<p>FTD documents can be used in driving dynamic websites. Some popular webservers (currently <a href="/wiki/Apache_HTTP_Server" title="Apache HTTP Server">Apache 2</a>), have modules which directly parse and execute ".fal" and ".ftd" scripts, providing an API which integrates in the webserver engine. It is also possible to use dynamic FTD pages along with CGI scripts.</p>
+<h3><span class="mw-headline" id="Exceptions">Exceptions</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Falcon_(programming_language)&amp;action=edit&amp;section=15" title="Edit section: Exceptions">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Falcon supports <a href="/wiki/Error_handling" class="mw-redirect" title="Error handling">error handling</a> via the <i>raise</i>, <i>try</i> and <i>catch</i> statements.<sup id="cite_ref-18" class="reference"><a href="#cite_note-18">[18]</a></sup> The raise statement can throw any Falcon item, including nil, numbers, strings, objects and so on. Library functions and external modules will usually raise instances of the Error class, or instances of a class derived from that.</p>
+<p>The catch statement can be used to catch any type of item, a certain type (i.e. strings or integers), or instances from a certain class. Caught classes are organized on a hierarchical base, so that it is possible to provide more generic error handlers like the following example (<i>TypeError</i> is a library class derived from <i>Error</i>):</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+ try
+  // ... code that can raise ...
+ catch TypeError in error
+  // ... if we mixed up types ...
+ catch Error in error
+  // ... another generic error ...
+ catch StringType in error
+  // ... an explicit raise "something" was issued ...
+ catch in error
+  // ... some other exception has been raised, referenced in the variable ''error''.
+ end
+</pre></div>
+<p>The <i>in</i> clause of the catch statement is optional (this means that the error itself may be discarded).</p>
+<p>The <i>catch</i> statement mimics the <i>select</i> statement, which can be used to switch on the type or class of a given variable.</p>
+<h3><span class="mw-headline" id="Explicit_string_expansion">Explicit string expansion</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Falcon_(programming_language)&amp;action=edit&amp;section=16" title="Edit section: Explicit string expansion">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Falcon includes an '@' unary string expansion operator<sup id="cite_ref-19" class="reference"><a href="#cite_note-19">[19]</a></sup> that returns a string with inline '$' variable references replaced. This operation allows for formatting during the substitution.</p>
+<p>For example:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+  a = 123456.789
+  v = "formatted as"
+  s = "a = $a, $v $(a:12rg3,.2), rounded hex as $(a:C)"
+  printl( @ s)
+</pre></div>
+<p>Which prints:</p>
+<pre>
+ a = 123456.789, formatted as   123,456.79, rounded hex as 0x1E241
+</pre>
+<ul>
+<li>a literal string, <i>a =</i> , the value of the variable <b>a</b>, and a literal comma</li>
+<li>an expanded string from the variable <b>v</b></li>
+<li>the value of <b>a</b>, right-aligned in a width of 12, <i>12r</i>, with a grouping of 3 using comma, <i>3g,</i> and then rounded to 2 decimal places, <i>.2</i></li>
+<li>the value in upper-case hexadecimal (rounded up to closest integer) prefixed with '0x'.</li>
+</ul>
+<h3><span class="mw-headline" id="Embeddable_runtime">Embeddable runtime</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Falcon_(programming_language)&amp;action=edit&amp;section=17" title="Edit section: Embeddable runtime">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Falcon is designed for embedding<sup id="cite_ref-20" class="reference"><a href="#cite_note-20">[20]</a></sup> into and extending other systems with a linkable runtime library, <i>libfalcon</i>.</p>
+<h3><span class="mw-headline" id="Documentation_generator">Documentation generator</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Falcon_(programming_language)&amp;action=edit&amp;section=18" title="Edit section: Documentation generator">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Falcon ships with an integrated <a href="/wiki/Documentation_generator" title="Documentation generator">documentation system</a>, called <i>faldoc</i>,<sup id="cite_ref-21" class="reference"><a href="#cite_note-21">[21]</a></sup> which is specifically designed to provide Falcon based libraries (be they native C++ code or module sets written in Falcon) with <a href="/wiki/Software_documentation" title="Software documentation">maintainable documentation</a>.</p>
+<h3><span class="mw-headline" id="Virtual_filesystem">Virtual filesystem</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Falcon_(programming_language)&amp;action=edit&amp;section=19" title="Edit section: Virtual filesystem">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>All I/O operations happening at engine or at virtual machine (script execution) level are delegated to a centralized <a href="/wiki/Virtual_file_system" title="Virtual file system">Virtual Filesystem Provider</a>, to which external modules or embedding application facilities are allowed to register dynamically. Subscribed Virtual Filesystems abstract I/O operations as directory read, file creation and stream opening, and can be addressed from within scripts by URI. This makes it possible to load modules or open resources from any VFS (as network resources or compressed/crypted archives), which may include special virtual locations provided by third party modules and/or by applications embedding the engine.</p>
+<h3><span class="mw-headline" id="Concurrency_support">Concurrency support</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Falcon_(programming_language)&amp;action=edit&amp;section=20" title="Edit section: Concurrency support">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>In versions 0.8.x, the separate <i>Threading</i> module provides full multithreading to scripts, while starting from version 0.9.x the "Threading" module is integrated in the standard modules and <a href="/wiki/Concurrency_(computer_science)" title="Concurrency (computer science)">threading support</a> is provided directly inside the main engine. The multithreading model is <i>agent oriented</i>, and data across threads must be explicitly shared through several possible sharing mechanisms. Each thread runs a different virtual machine, which runs separately from any operation happening in the others (as i.e. <a href="/wiki/Garbage_collection_(computer_science)" title="Garbage collection (computer science)">garbage collection</a>). This allows for efficient parallel processing and zero contention outside the control of the script developer.</p>
+<h3><span class="mw-headline" id="Coroutines">Coroutines</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Falcon_(programming_language)&amp;action=edit&amp;section=21" title="Edit section: Coroutines">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Falcon supports quasi-parallel coroutining.<sup id="cite_ref-22" class="reference"><a href="#cite_note-22">[22]</a></sup> <a href="/wiki/Coroutine" title="Coroutine">Coroutines</a> are code executed in <a href="/wiki/Time_slice" class="mw-redirect" title="Time slice">time slices</a> or during idle times by the Virtual Machine. They provide a lighter parallel approach than the full threading model and allow full visibility of program global data through different coroutines. Explicit cooperation of each coroutine is required, (i.e., each coroutine must check for data availability before blocking reads).</p>
+<h3><span class="mw-headline" id="Metacompiler">Metacompiler</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Falcon_(programming_language)&amp;action=edit&amp;section=22" title="Edit section: Metacompiler">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The Falcon compiler contains a <a href="/wiki/Metacompiler" title="Metacompiler">meta-compiler</a><sup id="cite_ref-23" class="reference"><a href="#cite_note-23">[23]</a></sup> that supports <a href="/wiki/Macro_(computer_science)" title="Macro (computer science)">macro expansions</a>. A Falcon Virtual Machine in the standard compiler drives the meta-compiler. Output generated from the meta-compiler is sent to the language <a href="/wiki/Lexical_analysis" title="Lexical analysis">lexer</a> as if part of the original source. Using <span class="nowrap"><b>\[ ...\]</b></span> escape sequences, it is possible to dynamically write the contents of the program being compiled by printing it:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+  \[ printl( "printl( 'Hello world' )" ) \]
+</pre></div>
+<p>The keyword <b>macro</b> provides a simplified <i>candy-grammar</i> interface to compile-time meta-programming.</p>
+<h3><span class="mw-headline" id="Native_internationalization">Native internationalization</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Falcon_(programming_language)&amp;action=edit&amp;section=23" title="Edit section: Native internationalization">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Strings prefixed with an 'i' are recognized as exported <a href="/wiki/Internationalization_and_localization" title="Internationalization and localization">(international) strings</a>.<sup id="cite_ref-falcon_unicode_7-1" class="reference"><a href="#cite_note-falcon_unicode-7">[7]</a></sup> Declaring the language used in a module through the <b>directive</b> statement, it is possible to indicate which is the native language in which strings are written, as in the following example:</p>
+<pre>
+ directive lang=fr_FR           // uses 5 characters <a href="/wiki/ISO_639" title="ISO 639">ISO language code</a>
+
+ &gt; i"Bonjour à tout le monde!"
+</pre>
+<p>A command line tool called <b>fallc</b> is provided to export 'i' strings into <a href="/wiki/XML" title="XML">XML</a> definition files, which can be used as templates to provide <a href="/wiki/Translation" title="Translation">translations</a> into different languages.</p>
+<p>The translated string table is applied to the modules at <a href="/wiki/Loader_(computing)" title="Loader (computing)">load time</a>.</p>
+<h2><span class="mw-headline" id="Feathers_standard_library">Feathers standard library</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Falcon_(programming_language)&amp;action=edit&amp;section=24" title="Edit section: Feathers standard library">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Supporting <a href="/wiki/Modular_programming" title="Modular programming">modular programming</a>, Falcon ships with <i>Feathers</i>,<sup id="cite_ref-24" class="reference"><a href="#cite_note-24">[24]</a></sup> the standard module suite, which integrates the built-in <i>core module</i>, containing the basic I/O and language-integrated base functions, classes and objects.</p>
+<p>Feather modules currently include:</p>
+<ul>
+<li><a href="/wiki/Compiler" title="Compiler">Compiler</a> - Reflexive compiler and dynamic plugin <a href="/wiki/Loader_(computing)" title="Loader (computing)">loader</a> module.</li>
+<li>Configuration Parser - Complete <a href="/wiki/Configuration_file" title="Configuration file">configuration file</a> parser support.</li>
+<li>DBI - Allows you to connect to various open source databases like <a href="/wiki/MySql" class="mw-redirect" title="MySql">MySql</a>, <a href="/wiki/PostgreSQL" title="PostgreSQL">PostgreSQL</a> and <a href="/wiki/SQLite" title="SQLite">SQLite</a>.</li>
+<li><a href="/wiki/JSON" title="JSON">JSON</a> - Module converting Falcon data and objects to and from JavaScript Object Notation.</li>
+<li>Logging - High performance parallel logging facility.</li>
+<li>MXML - Very fast and simple <i>Minimal</i> <a href="/wiki/XML" title="XML">XML</a> parser (compatible with XML 1.0).</li>
+<li><a href="/wiki/Process_(computing)" title="Process (computing)">Process</a> - Interface to cross platform process support (start, kill, pipes...)</li>
+<li><a href="/wiki/Regular_expression" title="Regular expression">Regular Expressions</a> - <a href="/wiki/Perl_Compatible_Regular_Expression" class="mw-redirect" title="Perl Compatible Regular Expression">PCRE 7.x compatible</a> regular expression library interface.</li>
+<li>Socket - implementation of BSD <a href="/wiki/Internet_socket" class="mw-redirect" title="Internet socket">sockets</a> cross platform networking support.</li>
+<li>Threading (since 0.9.0) - <a href="/wiki/Threads_(computer_science)" class="mw-redirect" title="Threads (computer science)">Multithreading</a> structures support.</li>
+<li><a href="/wiki/Zlib" title="Zlib">ZLib</a> - Interface for simple compression routines.</li>
+</ul>
+<h2><span class="mw-headline" id="Implementation">Implementation</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Falcon_(programming_language)&amp;action=edit&amp;section=25" title="Edit section: Implementation">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The core VM and official modules, (including Feather modules and other community provided support modules) are all written in C++. Some very low level module and engine elements are written in C and Assembly.</p>
+<h2><span class="mw-headline" id="Supported_platforms">Supported platforms</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Falcon_(programming_language)&amp;action=edit&amp;section=26" title="Edit section: Supported platforms">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Falcon is distributed through installers on <a href="/wiki/Mac_OS_X" class="mw-redirect" title="Mac OS X">Mac OS X</a> and <a href="/wiki/Microsoft_Windows" title="Microsoft Windows">Windows</a> systems (where building and installing is a more articulated process), or through self-building source packages on various open systems as <a href="/wiki/Linux" title="Linux">Linux</a> or <a href="/wiki/OpenSolaris" title="OpenSolaris">OpenSolaris</a>.<sup id="cite_ref-25" class="reference"><a href="#cite_note-25">[25]</a></sup></p>
+<p>On the latter systems, Falcon is usually supported and generally kept up to date on various distributions, among which:</p>
+<ul>
+<li><a href="/wiki/Ubuntu_(operating_system)" title="Ubuntu (operating system)">Ubuntu</a></li>
+<li><a href="/wiki/Fedora_(operating_system)" title="Fedora (operating system)">Fedora</a></li>
+<li><a href="/wiki/Debian" title="Debian">Debian</a></li>
+<li><a href="/wiki/Gentoo_Linux" title="Gentoo Linux">Gentoo</a></li>
+<li><a href="/wiki/Slackware" title="Slackware">Slackware</a></li>
+<li><a href="/wiki/Arch_Linux" title="Arch Linux">Arch Linux</a></li>
+<li><a href="/wiki/Mandriva" title="Mandriva">Mandriva</a></li>
+<li><a href="/wiki/OpenSUSE" title="OpenSUSE">openSUSE</a></li>
+<li><a href="/wiki/SUSE_Linux_distributions" title="SUSE Linux distributions">SUSE Enterprise Linux</a></li>
+</ul>
+<p>Falcon is available on <a href="/wiki/Solaris_(operating_system)" title="Solaris (operating system)">Solaris</a> based OS distributions through the <a href="/wiki/Blastwave" class="mw-redirect" title="Blastwave">Blastwave</a> project, and through the <a href="/wiki/DragonFly_BSD" title="DragonFly BSD">DragonFly BSD</a> system.</p>
+<h2><span class="mw-headline" id="Falcon_Programming_Language_License">Falcon Programming Language License</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Falcon_(programming_language)&amp;action=edit&amp;section=27" title="Edit section: Falcon Programming Language License">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<table class="infobox" style="width:22em">
+<caption>Falcon Programming Language License</caption>
+<tr>
+<th scope="row" style="width:45%;">Author</th>
+<td style="width:55%;">Giancarlo Niccolai</td>
+</tr>
+<tr>
+<th scope="row" style="width:45%;">Latest version</th>
+<td style="width:55%;">1.1</td>
+</tr>
+<tr>
+<th scope="row" style="width:45%;">Published</th>
+<td style="width:55%;">March 2008</td>
+</tr>
+<tr>
+<th scope="row" style="width:45%;"><a href="/wiki/Debian_Free_Software_Guidelines" title="Debian Free Software Guidelines">DFSG</a> compatible</th>
+<td style="width:55%;">Yes</td>
+</tr>
+<tr>
+<th scope="row" style="width:45%;"><a href="/wiki/Free_Software_Foundation" title="Free Software Foundation">FSF</a> <a href="/wiki/Comparison_of_free_and_open-source_software_licenses#Approvals" title="Comparison of free and open-source software licenses">approved</a></th>
+<td style="width:55%;">No</td>
+</tr>
+<tr>
+<th scope="row" style="width:45%;"><a href="/wiki/Open_Source_Initiative" title="Open Source Initiative">OSI</a> <a href="/wiki/Comparison_of_free_and_open-source_software_licenses#Approvals" title="Comparison of free and open-source software licenses">approved</a></th>
+<td style="width:55%;">No</td>
+</tr>
+<tr>
+<th scope="row" style="width:45%;"><a href="/wiki/GPL_compatible" class="mw-redirect" title="GPL compatible">GPL compatible</a></th>
+<td style="width:55%;">No</td>
+</tr>
+<tr>
+<th scope="row" style="width:45%;"><a href="/wiki/Copyleft" title="Copyleft">Copyleft</a></th>
+<td style="width:55%;">Yes</td>
+</tr>
+</table>
+<p>The <b>Falcon Programming Language License</b> is the <a href="/wiki/Free_software_license" title="Free software license">free software license</a> applied to the <a href="/wiki/Falcon_programming_language" class="mw-redirect" title="Falcon programming language">Falcon programming language</a> and also available to be used in other projects.</p>
+<p>The original FPLL 1.0 was described by its creator as being "... mainly an Apache2 license modified to extend the openness of the license to the embedding application and to the scripts."</p>
+<p>Version 1.1 has been redesigned not to extend to the scripts.</p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Falcon_(programming_language)&amp;action=edit&amp;section=28" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a href="/wiki/List_of_programming_languages" title="List of programming languages">List of programming languages</a></li>
+</ul>
+<div role="navigation" aria-label="Portals" class="noprint portal plainlist tright" style="margin:0.5em 0 0.5em 1em;border:solid #aaa 1px">
+<ul style="display:table;box-sizing:border-box;padding:0.1em;max-width:175px;background:#f9f9f9;font-size:85%;line-height:110%;font-style:italic;font-weight:bold">
+<li style="display:table-row"><span style="display:table-cell;padding:0.2em;vertical-align:middle;text-align:center"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/3/31/Free_and_open-source_software_logo_%282009%29.svg/28px-Free_and_open-source_software_logo_%282009%29.svg.png" width="28" height="28" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/3/31/Free_and_open-source_software_logo_%282009%29.svg/42px-Free_and_open-source_software_logo_%282009%29.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/3/31/Free_and_open-source_software_logo_%282009%29.svg/56px-Free_and_open-source_software_logo_%282009%29.svg.png 2x" data-file-width="512" data-file-height="512" /></span><span style="display:table-cell;padding:0.2em 0.2em 0.2em 0.3em;vertical-align:middle"><a href="/wiki/Portal:Free_software" class="mw-redirect" title="Portal:Free software">Free software portal</a></span></li>
+</ul>
+</div>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Falcon_(programming_language)&amp;action=edit&amp;section=29" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-getting_Falcon-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-getting_Falcon_1-0">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.falconpl.org/index.ftd?page_id=official_download">"Getting Falcon"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFalcon+%28programming+language%29&amp;rft.btitle=Getting+Falcon&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.falconpl.org%2Findex.ftd%3Fpage_id%3Dofficial_download&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-falcon_programming_language_license-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-falcon_programming_language_license_2-0">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.falconpl.org/index.ftd?page_id=license_1_1">"Falcon Programming Licence 1.1"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFalcon+%28programming+language%29&amp;rft.btitle=Falcon+Programming+Licence+1.1&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.falconpl.org%2Findex.ftd%3Fpage_id%3Dlicense_1_1&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.falconpl.org/index.ftd?page_id=authors">"Falcon authors"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFalcon+%28programming+language%29&amp;rft.btitle=Falcon+authors&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.falconpl.org%2Findex.ftd%3Fpage_id%3Dauthors&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.simple-talk.com/opinion/opinion-pieces/giancarlo-niccolai-geek-of-the-week/">"Geek of the Week"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFalcon+%28programming+language%29&amp;rft.btitle=Geek+of+the+Week&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.simple-talk.com%2Fopinion%2Fopinion-pieces%2Fgiancarlo-niccolai-geek-of-the-week%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://falconpl.org/docs/engine/current/opcode_format.html">"Falcon VM Opcode Format"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFalcon+%28programming+language%29&amp;rft.btitle=Falcon+VM+Opcode+Format&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Ffalconpl.org%2Fdocs%2Fengine%2Fcurrent%2Fopcode_format.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-computerworld_interview-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-computerworld_interview_6-0">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.computerworld.com.au/article/298655/-z_programming_languages_falcon?fp=16&amp;fpid=1">"ComputerWorld interterview with Giancarlo Niccolai, with some background on HASTE"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFalcon+%28programming+language%29&amp;rft.btitle=ComputerWorld+interterview+with+Giancarlo+Niccolai%2C+with+some+background+on+HASTE&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.computerworld.com.au%2Farticle%2F298655%2F-z_programming_languages_falcon%3Ffp%3D16%26fpid%3D1&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-falcon_unicode-7"><span class="mw-cite-backlink">^ <a href="#cite_ref-falcon_unicode_7-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-falcon_unicode_7-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://falconpl.org/index.ftd?page_id=sitewiki&amp;prj_id=_falcon_site&amp;sid=wiki&amp;pwid=Survival%20Guide&amp;wid=Survival%3ABasic+Structures#International-strings">"Falcon International strings"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFalcon+%28programming+language%29&amp;rft.btitle=Falcon+International+strings&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Ffalconpl.org%2Findex.ftd%3Fpage_id%3Dsitewiki%26prj_id%3D_falcon_site%26sid%3Dwiki%26pwid%3DSurvival%2520Guide%26wid%3DSurvival%253ABasic%2BStructures%23International-strings&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://falconpl.org/index.ftd?page_id=sitewiki&amp;prj_id=_falcon_site&amp;sid=wiki&amp;pwid=Survival%20Guide&amp;wid=Survival%3ATabular+programming">"Tabular Programming"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFalcon+%28programming+language%29&amp;rft.btitle=Tabular+Programming&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Ffalconpl.org%2Findex.ftd%3Fpage_id%3Dsitewiki%26prj_id%3D_falcon_site%26sid%3Dwiki%26pwid%3DSurvival%2520Guide%26wid%3DSurvival%253ATabular%2Bprogramming&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-9">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://falconpl.org/index.ftd?page_id=sitewiki&amp;prj_id=_falcon_site&amp;sid=wiki&amp;pwid=Survival%20Guide&amp;wid=Survival%3AFunctions">"Falcon functions and procedural programming"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFalcon+%28programming+language%29&amp;rft.btitle=Falcon+functions+and+procedural+programming&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Ffalconpl.org%2Findex.ftd%3Fpage_id%3Dsitewiki%26prj_id%3D_falcon_site%26sid%3Dwiki%26pwid%3DSurvival%2520Guide%26wid%3DSurvival%253AFunctions&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-10">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://falconpl.org/index.ftd?page_id=sitewiki&amp;prj_id=_falcon_site&amp;sid=wiki&amp;pwid=Survival%20Guide&amp;wid=Survival%3AFunctional+programming">"Functional Falcon"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFalcon+%28programming+language%29&amp;rft.btitle=Functional+Falcon&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Ffalconpl.org%2Findex.ftd%3Fpage_id%3Dsitewiki%26prj_id%3D_falcon_site%26sid%3Dwiki%26pwid%3DSurvival%2520Guide%26wid%3DSurvival%253AFunctional%2Bprogramming&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-objectclass-11"><span class="mw-cite-backlink">^ <a href="#cite_ref-objectclass_11-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-objectclass_11-1"><sup><i><b>b</b></i></sup></a> <a href="#cite_ref-objectclass_11-2"><sup><i><b>c</b></i></sup></a></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://falconpl.org/index.ftd?page_id=sitewiki&amp;prj_id=_falcon_site&amp;sid=wiki&amp;pwid=Survival%20Guide&amp;wid=Survival%3AObjects+and+classes">"Class object-oriented Falcon"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFalcon+%28programming+language%29&amp;rft.btitle=Class+object-oriented+Falcon&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Ffalconpl.org%2Findex.ftd%3Fpage_id%3Dsitewiki%26prj_id%3D_falcon_site%26sid%3Dwiki%26pwid%3DSurvival%2520Guide%26wid%3DSurvival%253AObjects%2Band%2Bclasses&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-12"><span class="mw-cite-backlink"><b><a href="#cite_ref-12">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://falconpl.org/docs/engine/current/annotated.html">"Falcon source code, class list"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFalcon+%28programming+language%29&amp;rft.btitle=Falcon+source+code%2C+class+list&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Ffalconpl.org%2Fdocs%2Fengine%2Fcurrent%2Fannotated.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-13"><span class="mw-cite-backlink"><b><a href="#cite_ref-13">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://falconpl.org/index.ftd?page_id=sitewiki&amp;prj_id=_falcon_site&amp;sid=wiki&amp;pwid=Survival%20Guide&amp;wid=Survival%3APrototype+based+OOP">"Falcon prototype-based object-orientation"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFalcon+%28programming+language%29&amp;rft.btitle=Falcon+prototype-based+object-orientation&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Ffalconpl.org%2Findex.ftd%3Fpage_id%3Dsitewiki%26prj_id%3D_falcon_site%26sid%3Dwiki%26pwid%3DSurvival%2520Guide%26wid%3DSurvival%253APrototype%2Bbased%2BOOP&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-14"><span class="mw-cite-backlink"><b><a href="#cite_ref-14">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://falconpl.org/index.ftd?page_id=sitewiki&amp;prj_id=_falcon_site&amp;sid=wiki&amp;pwid=Survival%20Guide&amp;wid=Survival%3AMessage+oriented+programming#Assertions">"Falcon message oriented assertions explained"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFalcon+%28programming+language%29&amp;rft.btitle=Falcon+message+oriented+assertions+explained&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Ffalconpl.org%2Findex.ftd%3Fpage_id%3Dsitewiki%26prj_id%3D_falcon_site%26sid%3Dwiki%26pwid%3DSurvival%2520Guide%26wid%3DSurvival%253AMessage%2Boriented%2Bprogramming%23Assertions&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-15"><span class="mw-cite-backlink"><b><a href="#cite_ref-15">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://falconpl.org/index.ftd?page_id=sitewiki&amp;prj_id=_falcon_site&amp;sid=wiki&amp;pwid=Survival%20Guide&amp;wid=Survival%3ATabular+programming">"Falcon Tabular Programming"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFalcon+%28programming+language%29&amp;rft.btitle=Falcon+Tabular+Programming&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Ffalconpl.org%2Findex.ftd%3Fpage_id%3Dsitewiki%26prj_id%3D_falcon_site%26sid%3Dwiki%26pwid%3DSurvival%2520Guide%26wid%3DSurvival%253ATabular%2Bprogramming&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-16"><span class="mw-cite-backlink"><b><a href="#cite_ref-16">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://falconpl.org/index.ftd?page_id=sitewiki&amp;prj_id=_falcon_site&amp;sid=wiki&amp;pwid=Survival%20Guide&amp;wid=Survival%3AListComp">"Falcon list comprehension"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFalcon+%28programming+language%29&amp;rft.btitle=Falcon+list+comprehension&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Ffalconpl.org%2Findex.ftd%3Fpage_id%3Dsitewiki%26prj_id%3D_falcon_site%26sid%3Dwiki%26pwid%3DSurvival%2520Guide%26wid%3DSurvival%253AListComp&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-17"><span class="mw-cite-backlink"><b><a href="#cite_ref-17">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.falconpl.org/docs/pdf/0.8.14/showdown.pdf">"Templates explained in the Falcon Showdown"</a> <span style="font-size:85%;">(PDF)</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFalcon+%28programming+language%29&amp;rft.btitle=Templates+explained+in+the+Falcon+Showdown&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.falconpl.org%2Fdocs%2Fpdf%2F0.8.14%2Fshowdown.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-18"><span class="mw-cite-backlink"><b><a href="#cite_ref-18">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://falconpl.org/index.ftd?page_id=sitewiki&amp;prj_id=_falcon_site&amp;sid=wiki&amp;pwid=Survival%20Guide&amp;wid=Survival%3AError+recovery">"Falcon exception handling"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFalcon+%28programming+language%29&amp;rft.btitle=Falcon+exception+handling&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Ffalconpl.org%2Findex.ftd%3Fpage_id%3Dsitewiki%26prj_id%3D_falcon_site%26sid%3Dwiki%26pwid%3DSurvival%2520Guide%26wid%3DSurvival%253AError%2Brecovery&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-19"><span class="mw-cite-backlink"><b><a href="#cite_ref-19">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://falconpl.org/index.ftd?page_id=sitewiki&amp;prj_id=_falcon_site&amp;sid=wiki&amp;pwid=Survival%20Guide&amp;wid=Survival%3ABasic+Structures#String-expansion-operator">"String expansion"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFalcon+%28programming+language%29&amp;rft.btitle=String+expansion&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Ffalconpl.org%2Findex.ftd%3Fpage_id%3Dsitewiki%26prj_id%3D_falcon_site%26sid%3Dwiki%26pwid%3DSurvival%2520Guide%26wid%3DSurvival%253ABasic%2BStructures%23String-expansion-operator&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-20"><span class="mw-cite-backlink"><b><a href="#cite_ref-20">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.falconpl.org/index.ftd?page_id=sitewiki&amp;prj_id=_falcon_site&amp;sid=wiki&amp;pwid=Home&amp;wid=Embedders+guide">"Embedding the Falcon engine in other applications"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFalcon+%28programming+language%29&amp;rft.btitle=Embedding+the+Falcon+engine+in+other+applications&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.falconpl.org%2Findex.ftd%3Fpage_id%3Dsitewiki%26prj_id%3D_falcon_site%26sid%3Dwiki%26pwid%3DHome%26wid%3DEmbedders%2Bguide&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-21"><span class="mw-cite-backlink"><b><a href="#cite_ref-21">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://falconpl.org/index.ftd?page_id=prjs&amp;prj_id=faldoc">"Faldoc"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFalcon+%28programming+language%29&amp;rft.btitle=Faldoc&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Ffalconpl.org%2Findex.ftd%3Fpage_id%3Dprjs%26prj_id%3Dfaldoc&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-22"><span class="mw-cite-backlink"><b><a href="#cite_ref-22">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://falconpl.org/index.ftd?page_id=sitewiki&amp;prj_id=_falcon_site&amp;sid=wiki&amp;pwid=Survival%20Guide&amp;wid=Survival%3AAdvanced+topics#Coroutines">"Falcon coroutines"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFalcon+%28programming+language%29&amp;rft.btitle=Falcon+coroutines&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Ffalconpl.org%2Findex.ftd%3Fpage_id%3Dsitewiki%26prj_id%3D_falcon_site%26sid%3Dwiki%26pwid%3DSurvival%2520Guide%26wid%3DSurvival%253AAdvanced%2Btopics%23Coroutines&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-23"><span class="mw-cite-backlink"><b><a href="#cite_ref-23">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://falconpl.org/index.ftd?page_id=sitewiki&amp;prj_id=_falcon_site&amp;sid=wiki&amp;pwid=Survival%20Guide&amp;wid=Survival%3AAdvanced+topics#Meta-compilation">"Falcon runtime meta compilation"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFalcon+%28programming+language%29&amp;rft.btitle=Falcon+runtime+meta+compilation&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Ffalconpl.org%2Findex.ftd%3Fpage_id%3Dsitewiki%26prj_id%3D_falcon_site%26sid%3Dwiki%26pwid%3DSurvival%2520Guide%26wid%3DSurvival%253AAdvanced%2Btopics%23Meta-compilation&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-24"><span class="mw-cite-backlink"><b><a href="#cite_ref-24">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://falconpl.org/project_docs/feathers/">"Falcon Feathers library"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFalcon+%28programming+language%29&amp;rft.btitle=Falcon+Feathers+library&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Ffalconpl.org%2Fproject_docs%2Ffeathers%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-25"><span class="mw-cite-backlink"><b><a href="#cite_ref-25">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.falconpl.org/index.ftd?page_id=official_download">"The Falcon programming language"</a>. Falconpl.org<span class="reference-accessdate">. Retrieved <span class="nowrap">2013-07-08</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFalcon+%28programming+language%29&amp;rft.btitle=The+Falcon+programming+language&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.falconpl.org%2Findex.ftd%3Fpage_id%3Dofficial_download&amp;rft.pub=Falconpl.org&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Falcon_(programming_language)&amp;action=edit&amp;section=30" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><span class="official-website"><span class="url"><a rel="nofollow" class="external text" href="http://www.falconpl.org">Official website</a></span></span></li>
+<li><a rel="nofollow" class="external text" href="http://www.linuxjournal.com/article/10161">The Falcon Programming Language in a Nutshell</a> (Linux Journal)</li>
+<li><a rel="nofollow" class="external text" href="http://www.freesoftwaremagazine.com/articles/falcon_programming_language_brief_tutorial">The Falcon Programming Language: a brief tutorial</a> (Free Software Magazine)</li>
+<li><a rel="nofollow" class="external text" href="http://www.freesoftwaremagazine.com/columns/falcon_virtual_machine_organic_virtual_machine_shown_practical_examples">The Falcon VM viewed as an organic virtual machine, with examples</a> (Free Software Magazine)</li>
+<li><a rel="nofollow" class="external text" href="http://www.computerworld.com.au/article/298655/-z_programming_languages_falcon?fp=16&amp;fpid=1">Interview with Giancarlo Niccolai on Falcon</a> (Computerworld)</li>
+<li><a rel="nofollow" class="external text" href="http://www.simple-talk.com/opinion/opinion-pieces/giancarlo-niccolai-geek-of-the-week/">Interview with Giancarlo Niccolai on Falcon</a> (Simple-Talk).</li>
+<li><a rel="nofollow" class="external text" href="http://falconpl.org/index.ftd?page_id=license_1_1">Text</a> of the Falcon Programming Language License</li>
+<li><a rel="nofollow" class="external text" href="https://www.gnu.org/philosophy/license-list.html#GPLCompatibleLicenses">GPL Compatible Licenses</a></li>
+</ul>
+<div role="navigation" class="navbox" aria-labelledby="Free_and_open-source_software" style="padding:3px">
+<table class="nowraplinks hlist collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:FOSS" title="Template:FOSS"><abbr title="View this template" style=";;background:none transparent;border:none;">v</abbr></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:FOSS" title="Template talk:FOSS"><abbr title="Discuss this template" style=";;background:none transparent;border:none;">t</abbr></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:FOSS&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;">e</abbr></a></li>
+</ul>
+</div>
+<div id="Free_and_open-source_software" style="font-size:114%"><a href="/wiki/Free_and_open-source_software" title="Free and open-source software">Free and open-source software</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">General</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Alternative_terms_for_free_software" title="Alternative terms for free software">Alternative terms for free software</a></li>
+<li><a href="/wiki/Comparison_of_open-source_and_closed-source_software" title="Comparison of open-source and closed-source software">Comparison of open-source and closed-source software</a></li>
+<li><a href="/wiki/Comparison_of_source_code_hosting_facilities" title="Comparison of source code hosting facilities">Comparison of source code hosting facilities</a></li>
+<li><a href="/wiki/Free_software" title="Free software">Free software</a></li>
+<li><a href="/wiki/List_of_free_software_project_directories" title="List of free software project directories">Free software project directories</a></li>
+<li><a href="/wiki/Gratis_versus_libre" title="Gratis versus libre">Gratis versus libre</a></li>
+<li><a href="/wiki/Long-term_support" title="Long-term support">Long-term support</a></li>
+<li><a href="/wiki/Open-source_software" title="Open-source software">Open-source software</a></li>
+<li><a href="/wiki/Open-source_software_development" title="Open-source software development">Open-source software development</a></li>
+<li><a href="/wiki/Outline_of_free_software" title="Outline of free software">Outline</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/List_of_free_and_open-source_software_packages" title="List of free and open-source software packages">Software<br />
+packages</a></th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Comparison_of_free_software_for_audio" title="Comparison of free software for audio">Audio</a></li>
+<li><a href="/wiki/List_of_open-source_bioinformatics_software" title="List of open-source bioinformatics software">Bioinformatics</a></li>
+<li><a href="/wiki/List_of_open-source_codecs" title="List of open-source codecs">Codecs</a></li>
+<li><a href="/wiki/List_of_collaborative_software#Open_source_software" title="List of collaborative software">Collaboration</a></li>
+<li><a href="/wiki/Comparison_of_open-source_configuration_management_software" title="Comparison of open-source configuration management software">Configuration management</a></li>
+<li><a href="/wiki/Device_driver#Open_drivers" title="Device driver">Device drivers</a>
+<ul>
+<li><a href="/wiki/Free_and_open-source_graphics_device_driver" title="Free and open-source graphics device driver">Graphics</a></li>
+<li><a href="/wiki/Comparison_of_open-source_wireless_drivers" title="Comparison of open-source wireless drivers">Wireless</a></li>
+</ul>
+</li>
+<li><a href="/wiki/Comparison_of_free_geophysics_software" title="Comparison of free geophysics software">Geophysics</a></li>
+<li><a href="/wiki/List_of_open-source_health_software" title="List of open-source health software">Health</a></li>
+<li><a href="/wiki/List_of_open-source_software_for_mathematics" title="List of open-source software for mathematics">Mathematics</a></li>
+<li><a href="/wiki/Comparison_of_open-source_operating_systems" title="Comparison of open-source operating systems">Operating systems</a></li>
+<li><a href="/wiki/Comparison_of_open-source_programming_language_licensing" title="Comparison of open-source programming language licensing">Programming languages</a></li>
+<li><a href="/wiki/List_of_open-source_routing_platforms" title="List of open-source routing platforms">Routing</a></li>
+<li><a href="/wiki/List_of_statistical_packages#Open-source_statistical_packages" title="List of statistical packages">Statistics</a></li>
+<li><a href="/wiki/List_of_free_television_software" title="List of free television software">Television</a></li>
+<li><a href="/wiki/List_of_open-source_video_games" title="List of open-source video games">Video games</a></li>
+<li><a href="/wiki/List_of_free_software_web_applications" title="List of free software web applications">Web applications</a>
+<ul>
+<li><a href="/wiki/List_of_content_management_systems#Open_source_software" title="List of content management systems">Content management systems</a></li>
+<li><a href="/wiki/Comparison_of_free_software_e-commerce_web_application_frameworks" class="mw-redirect" title="Comparison of free software e-commerce web application frameworks">E-commerce</a></li>
+</ul>
+</li>
+<li><a href="/wiki/List_of_word_processors#Free_and_open-source_software" title="List of word processors">Word processors</a></li>
+<li><a href="/wiki/List_of_free_and_open-source_Android_applications" title="List of free and open-source Android applications">Android apps</a></li>
+<li><a href="/wiki/List_of_free_and_open-source_iOS_applications" title="List of free and open-source iOS applications">iOS apps</a></li>
+<li><a href="/wiki/List_of_commercial_open-source_applications_and_services" title="List of commercial open-source applications and services">Commercial</a></li>
+<li><a href="/wiki/List_of_trademarked_open-source_software" title="List of trademarked open-source software">Trademarked</a></li>
+<li><a href="/wiki/List_of_formerly_proprietary_software" title="List of formerly proprietary software">Formerly proprietary</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Community</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Free_software_movement" title="Free software movement">Free software movement</a></li>
+<li><a href="/wiki/History_of_free_and_open-source_software" title="History of free and open-source software">History</a></li>
+<li><a href="/wiki/Open-source_software_movement" title="Open-source software movement">Open-source software movement</a></li>
+<li><a href="/wiki/List_of_free_and_open-source_software_organizations" title="List of free and open-source software organizations">Organizations</a></li>
+<li><a href="/wiki/List_of_free-software_events" title="List of free-software events">Events</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Free_software_license" title="Free software license">Licenses</a></th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Apache_License" title="Apache License">Apache</a></li>
+<li><a href="/wiki/Apple_Public_Source_License" title="Apple Public Source License">APSL</a></li>
+<li><a href="/wiki/Artistic_License" title="Artistic License">Artistic</a></li>
+<li><a href="/wiki/Beerware" title="Beerware">Beerware</a></li>
+<li><a href="/wiki/Boost_Software_License" class="mw-redirect" title="Boost Software License">Boost</a></li>
+<li><a href="/wiki/BSD_licenses" title="BSD licenses">BSD</a></li>
+<li><a href="/wiki/CC0" class="mw-redirect" title="CC0">CC0</a></li>
+<li><a href="/wiki/Common_Development_and_Distribution_License" title="Common Development and Distribution License">CDDL</a></li>
+<li><a href="/wiki/Eclipse_Public_License" title="Eclipse Public License">EPL</a></li>
+<li><a href="/wiki/GNU_General_Public_License" title="GNU General Public License">GNU GPL</a></li>
+<li><a href="/wiki/GNU_Lesser_General_Public_License" title="GNU Lesser General Public License">GNU LGPL</a></li>
+<li><a href="/wiki/ISC_license" title="ISC license">ISC</a></li>
+<li><a href="/wiki/MIT_License" title="MIT License">MIT</a></li>
+<li><a href="/wiki/Mozilla_Public_License" title="Mozilla Public License">MPL</a></li>
+<li><a href="/wiki/Shared_source#Open_Source_licenses" title="Shared source">Ms-PL/RL</a></li>
+<li><a href="/wiki/WTFPL" title="WTFPL">WTFPL</a></li>
+<li><a href="/wiki/Zlib_License" title="Zlib License">zlib</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">License types<br />
+and standards</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Comparison_of_free_and_open-source_software_licenses" title="Comparison of free and open-source software licenses">Comparison of free and open-source software licenses</a></li>
+<li><a href="/wiki/Contributor_License_Agreement" title="Contributor License Agreement">Contributor License Agreement</a></li>
+<li><a href="/wiki/Copyfree" class="mw-redirect" title="Copyfree">Copyfree</a></li>
+<li><a href="/wiki/Copyleft" title="Copyleft">Copyleft</a></li>
+<li><a href="/wiki/Debian_Free_Software_Guidelines" title="Debian Free Software Guidelines">Debian Free Software Guidelines</a></li>
+<li><a href="/wiki/Definition_of_Free_Cultural_Works" title="Definition of Free Cultural Works">Definition of Free Cultural Works</a></li>
+<li><a href="/wiki/Free_license" title="Free license">Free license</a></li>
+<li><a href="/wiki/The_Free_Software_Definition" title="The Free Software Definition">The Free Software Definition</a></li>
+<li><a href="/wiki/The_Open_Source_Definition" title="The Open Source Definition">The Open Source Definition</a></li>
+<li><a href="/wiki/Open-source_license" title="Open-source license">Open-source license</a></li>
+<li><a href="/wiki/Permissive_free_software_licence" class="mw-redirect" title="Permissive free software licence">Permissive free software licence</a></li>
+<li><a href="/wiki/Public_domain" title="Public domain">Public domain</a></li>
+<li><a href="/wiki/Viral_license" title="Viral license">Viral license</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Challenges</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Binary_blob" title="Binary blob">Binary blob</a></li>
+<li><a href="/wiki/Digital_rights_management" title="Digital rights management">Digital rights management</a></li>
+<li><a href="/wiki/Hardware_restriction" title="Hardware restriction">Hardware restrictions</a></li>
+<li><a href="/wiki/License_proliferation" title="License proliferation">License proliferation</a></li>
+<li><a href="/wiki/Mozilla_Corporation_software_rebranded_by_the_Debian_project" class="mw-redirect" title="Mozilla Corporation software rebranded by the Debian project">Mozilla software rebranding</a></li>
+<li><a href="/wiki/Proprietary_software" title="Proprietary software">Proprietary software</a></li>
+<li><a href="/wiki/SCO/Linux_controversies" title="SCO/Linux controversies">SCO/Linux controversies</a></li>
+<li><a href="/wiki/UEFI_Secure_Boot#Secure_boot" class="mw-redirect" title="UEFI Secure Boot">Secure boot</a></li>
+<li><a href="/wiki/Software_patents_and_free_software" title="Software patents and free software">Software patents</a></li>
+<li><a href="/wiki/Open-source_software_security" title="Open-source software security">Software security</a></li>
+<li><a href="/wiki/Trusted_Computing" title="Trusted Computing">Trusted Computing</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Related topics</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><i><a href="/wiki/The_Cathedral_and_the_Bazaar" title="The Cathedral and the Bazaar">The Cathedral and the Bazaar</a></i></li>
+<li><a href="/wiki/Fork_(software_development)" title="Fork (software development)">Forking</a></li>
+<li><a href="/wiki/Microsoft_Open_Specification_Promise" title="Microsoft Open Specification Promise">Microsoft Open Specification Promise</a></li>
+<li><i><a href="/wiki/Revolution_OS" title="Revolution OS">Revolution OS</a></i></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" colspan="2" style="font-weight:bold">
+<div>
+<ul>
+<li><img alt="Wikipedia book" src="//upload.wikimedia.org/wikipedia/commons/thumb/8/89/Symbol_book_class2.svg/16px-Symbol_book_class2.svg.png" title="Wikipedia book" width="16" height="16" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/89/Symbol_book_class2.svg/23px-Symbol_book_class2.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/8/89/Symbol_book_class2.svg/31px-Symbol_book_class2.svg.png 2x" data-file-width="180" data-file-height="185" /> <a href="/wiki/Book:Free_and_Open_Source_Software" title="Book:Free and Open Source Software">Book</a></li>
+<li><img alt="Category" src="//upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/16px-Folder_Hexagonal_Icon.svg.png" title="Category" width="16" height="14" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/24px-Folder_Hexagonal_Icon.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/32px-Folder_Hexagonal_Icon.svg.png 2x" data-file-width="36" data-file-height="31" /> <a href="/wiki/Category:Free_software" title="Category:Free software">Category</a></li>
+<li><img alt="Commons page" src="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/12px-Commons-logo.svg.png" title="Commons page" width="12" height="16" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/18px-Commons-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/24px-Commons-logo.svg.png 2x" data-file-width="1024" data-file-height="1376" /> <a href="https://commons.wikimedia.org/wiki/Category:Free_software" class="extiw" title="commons:Category:Free software">Commons</a></li>
+<li><img alt="Portal" src="//upload.wikimedia.org/wikipedia/en/thumb/f/fd/Portal-puzzle.svg/16px-Portal-puzzle.svg.png" title="Portal" width="16" height="14" srcset="//upload.wikimedia.org/wikipedia/en/thumb/f/fd/Portal-puzzle.svg/24px-Portal-puzzle.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/f/fd/Portal-puzzle.svg/32px-Portal-puzzle.svg.png 2x" data-file-width="32" data-file-height="28" /> <a href="/wiki/Portal:Free_software" class="mw-redirect" title="Portal:Free software">Portal</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1282
+Cached time: 20170204141402
+Cache expiry: 86400
+Dynamic content: true
+CPU time usage: 0.388 seconds
+Real time usage: 0.485 seconds
+Preprocessor visited node count: 2303/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 102337/2097152 bytes
+Template argument size: 12081/2097152 bytes
+Highest expansion depth: 25/40
+Expensive parser function count: 5/500
+Lua time usage: 0.178/10.000 seconds
+Lua memory usage: 7.14 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  378.053      1 -total
+ 34.90%  131.941      1 Template:Reflist
+ 27.78%  105.025     25 Template:Cite_web
+ 26.17%   98.932      3 Template:Ambox
+ 20.67%   78.157      3 Template:Infobox
+ 18.65%   70.494      1 Template:Multiple_issues
+ 14.60%   55.182      1 Template:Infobox_programming_language
+  9.28%   35.087      1 Template:Notability
+  6.18%   23.374      1 Template:FOSS
+  6.09%   23.040      1 Template:Official_website
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:21628757-0!*!0!!en!4!* and timestamp 20170204141410 and revision id 763662169
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Falcon_(programming_language)&amp;oldid=763662169">https://en.wikipedia.org/w/index.php?title=Falcon_(programming_language)&amp;oldid=763662169</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Class-based_programming_languages" title="Category:Class-based programming languages">Class-based programming languages</a></li><li><a href="/wiki/Category:Cross-platform_software" title="Category:Cross-platform software">Cross-platform software</a></li><li><a href="/wiki/Category:Dynamically_typed_programming_languages" title="Category:Dynamically typed programming languages">Dynamically typed programming languages</a></li><li><a href="/wiki/Category:Embedded_systems" title="Category:Embedded systems">Embedded systems</a></li><li><a href="/wiki/Category:Free_and_open-source_software_licenses" title="Category:Free and open-source software licenses">Free and open-source software licenses</a></li><li><a href="/wiki/Category:Free_compilers_and_interpreters" title="Category:Free compilers and interpreters">Free compilers and interpreters</a></li><li><a href="/wiki/Category:Free_computer_libraries" title="Category:Free computer libraries">Free computer libraries</a></li><li><a href="/wiki/Category:Functional_languages" title="Category:Functional languages">Functional languages</a></li><li><a href="/wiki/Category:High-level_programming_languages" title="Category:High-level programming languages">High-level programming languages</a></li><li><a href="/wiki/Category:Multi-paradigm_programming_languages" title="Category:Multi-paradigm programming languages">Multi-paradigm programming languages</a></li><li><a href="/wiki/Category:Object-oriented_programming_languages" title="Category:Object-oriented programming languages">Object-oriented programming languages</a></li><li><a href="/wiki/Category:Procedural_programming_languages" title="Category:Procedural programming languages">Procedural programming languages</a></li><li><a href="/wiki/Category:Programming_languages_created_in_2003" title="Category:Programming languages created in 2003">Programming languages created in 2003</a></li><li><a href="/wiki/Category:Prototype-based_programming_languages" title="Category:Prototype-based programming languages">Prototype-based programming languages</a></li><li><a href="/wiki/Category:Scripting_languages" title="Category:Scripting languages">Scripting languages</a></li><li><a href="/wiki/Category:Text-oriented_programming_languages" title="Category:Text-oriented programming languages">Text-oriented programming languages</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Articles_with_topics_of_unclear_notability_from_December_2015" title="Category:Articles with topics of unclear notability from December 2015">Articles with topics of unclear notability from December 2015</a></li><li><a href="/wiki/Category:All_articles_with_topics_of_unclear_notability" title="Category:All articles with topics of unclear notability">All articles with topics of unclear notability</a></li><li><a href="/wiki/Category:Articles_lacking_reliable_references_from_December_2015" title="Category:Articles lacking reliable references from December 2015">Articles lacking reliable references from December 2015</a></li><li><a href="/wiki/Category:All_articles_lacking_reliable_references" title="Category:All articles lacking reliable references">All articles lacking reliable references</a></li><li><a href="/wiki/Category:All_articles_with_unsourced_statements" title="Category:All articles with unsourced statements">All articles with unsourced statements</a></li><li><a href="/wiki/Category:Articles_with_unsourced_statements_from_December_2014" title="Category:Articles with unsourced statements from December 2014">Articles with unsourced statements from December 2014</a></li><li><a href="/wiki/Category:Official_website_different_in_Wikidata_and_Wikipedia" title="Category:Official website different in Wikidata and Wikipedia">Official website different in Wikidata and Wikipedia</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Falcon+%28programming+language%29" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Falcon+%28programming+language%29" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/Falcon_(programming_language)"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:Falcon_(programming_language)"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/Falcon_(programming_language)" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=Falcon_(programming_language)&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Falcon_(programming_language)&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Falcon_(programming_language)" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Falcon_(programming_language)" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Falcon_(programming_language)&amp;oldid=763662169" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Falcon_(programming_language)&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q580448" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Falcon_%28programming_language%29&amp;id=763662169" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Falcon+%28programming+language%29">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Falcon+%28programming+language%29&amp;returnto=Falcon+%28programming+language%29&amp;oldid=763662169&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Falcon_(programming_language)&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-es"><a href="https://es.wikipedia.org/wiki/Falcon_(lenguaje_de_programaci%C3%B3n)" title="Falcon (lenguaje de programación) – Spanish" lang="es" hreflang="es" class="interlanguage-link-target">Español</a></li><li class="interlanguage-link interwiki-fa"><a href="https://fa.wikipedia.org/wiki/%D9%81%D8%A7%D9%84%DA%A9%D9%86" title="فالکن – Persian" lang="fa" hreflang="fa" class="interlanguage-link-target">فارسی</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/Falcon_(langage)" title="Falcon (langage) – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-ko"><a href="https://ko.wikipedia.org/wiki/%ED%8C%B0%EC%BB%A8_(%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D_%EC%96%B8%EC%96%B4)" title="팰컨 (프로그래밍 언어) – Korean" lang="ko" hreflang="ko" class="interlanguage-link-target">한국어</a></li><li class="interlanguage-link interwiki-it"><a href="https://it.wikipedia.org/wiki/Falcon_(linguaggio_di_programmazione)" title="Falcon (linguaggio di programmazione) – Italian" lang="it" hreflang="it" class="interlanguage-link-target">Italiano</a></li><li class="interlanguage-link interwiki-zh"><a href="https://zh.wikipedia.org/wiki/Falcon" title="Falcon – Chinese" lang="zh" hreflang="zh" class="interlanguage-link-target">中文</a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q580448#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 4 February 2017, at 14:14.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Falcon_(programming_language)&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.388","walltime":"0.485","ppvisitednodes":{"value":2303,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":102337,"limit":2097152},"templateargumentsize":{"value":12081,"limit":2097152},"expansiondepth":{"value":25,"limit":40},"expensivefunctioncount":{"value":5,"limit":500},"entityaccesscount":{"value":1,"limit":400},"timingprofile":["100.00%  378.053      1 -total"," 34.90%  131.941      1 Template:Reflist"," 27.78%  105.025     25 Template:Cite_web"," 26.17%   98.932      3 Template:Ambox"," 20.67%   78.157      3 Template:Infobox"," 18.65%   70.494      1 Template:Multiple_issues"," 14.60%   55.182      1 Template:Infobox_programming_language","  9.28%   35.087      1 Template:Notability","  6.18%   23.374      1 Template:FOSS","  6.09%   23.040      1 Template:Official_website"]},"scribunto":{"limitreport-timeusage":{"value":"0.178","limit":"10.000"},"limitreport-memusage":{"value":7486438,"limit":52428800}},"cachereport":{"origin":"mw1282","timestamp":"20170204141402","ttl":86400,"transientcontent":true}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":65,"wgHostname":"mw1269"});});</script>
+	</body>
+</html>

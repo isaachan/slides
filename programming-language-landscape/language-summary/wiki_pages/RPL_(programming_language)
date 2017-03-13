@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>RPL (programming language) - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"RPL_(programming_language)","wgTitle":"RPL (programming language)","wgCurRevisionId":745367400,"wgRevisionId":745367400,"wgArticleId":512681,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Stack-oriented programming languages","Graphing calculators","HP calculators","Lisp programming language family"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"RPL_(programming_language)","wgRelevantArticleId":512681,"wgRequestId":"WI6n8ApAMEsAAGyrPmEAAAAU","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":true},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q960361","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.cite.styles":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.legacy.wikibits","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.centralauth.centralautologin","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.29.0-wmf.9"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/RPL_(programming_language)"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=RPL_(programming_language)&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=RPL_(programming_language)&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/RPL_(programming_language)"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-RPL_programming_language rootpage-RPL_programming_language skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">RPL (programming language)</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><script>function mfTempOpenSection(id){var block=document.getElementById("mf-section-"+id);block.className+=" open-block";block.previousSibling.className+=" open-block";}</script><div role="note" class="hatnote">For the programming language for the Commodore PET/CBM computers, see <a href="/wiki/Reverse_Polish_Language" class="mw-redirect" title="Reverse Polish Language">Reverse Polish Language</a>. For the compiled database programming language, see <a href="/wiki/Real-time_Programming_Language" title="Real-time Programming Language">Real-time Programming Language</a>.</div>
+<table class="infobox vevent" style="width:22em">
+<caption class="summary">RPL</caption>
+<tr>
+<th scope="row"><a href="/wiki/Programming_paradigm" title="Programming paradigm">Paradigm</a></th>
+<td><a href="/wiki/Stack-oriented_programming_language" title="Stack-oriented programming language">stack</a>, <a href="/wiki/Structured_programming" title="Structured programming">structured</a>, <a href="/wiki/Object-oriented" class="mw-redirect" title="Object-oriented">object-oriented</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_design" title="Software design">Designed&#160;by</a></th>
+<td><a href="/wiki/Hewlett-Packard" title="Hewlett-Packard">Hewlett-Packard</a></td>
+</tr>
+<tr>
+<th scope="row">First&#160;appeared</th>
+<td>1984 (1986)</td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Operating_system" title="Operating system">OS</a></th>
+<td><a href="/wiki/Hewlett-Packard" title="Hewlett-Packard">HP</a> <a href="/wiki/Calculators" class="mw-redirect" title="Calculators">calculators</a></td>
+</tr>
+<tr>
+<th colspan="2" style="text-align:center;background-color: #eee;"><a href="/wiki/Dialect_(computing)" title="Dialect (computing)">Dialects</a></th>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center">System RPL, User RPL</td>
+</tr>
+<tr>
+<th colspan="2" style="text-align:center;background-color: #eee;">Influenced by</th>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/Reverse_Polish_Notation" class="mw-redirect" title="Reverse Polish Notation">RPN</a>, <a href="/wiki/Forth_(programming_language)" title="Forth (programming language)">Forth</a>, <a href="/wiki/Lisp_(programming_language)" title="Lisp (programming language)">Lisp</a><sup id="cite_ref-HPJ38_1-0" class="reference"><a href="#cite_note-HPJ38-1">[1]</a></sup></td>
+</tr>
+</table>
+<p><b>RPL</b> (derived from <b>Reverse Polish Lisp</b> according to its original developers,<sup id="cite_ref-Wickes_1988_2-0" class="reference"><a href="#cite_note-Wickes_1988-2">[2]</a></sup><sup id="cite_ref-Wickes_1991_3-0" class="reference"><a href="#cite_note-Wickes_1991-3">[3]</a></sup><sup id="cite_ref-Schoorl_2000_4-0" class="reference"><a href="#cite_note-Schoorl_2000-4">[4]</a></sup><sup id="cite_ref-FAQ48_5-0" class="reference"><a href="#cite_note-FAQ48-5">[5]</a></sup><sup id="cite_ref-Nelson_2012_6-0" class="reference"><a href="#cite_note-Nelson_2012-6">[6]</a></sup><sup id="cite_ref-Jedrzejowicz_1996_7-0" class="reference"><a href="#cite_note-Jedrzejowicz_1996-7">[7]</a></sup> whilst for a short while in 1987 HP marketing attempted to coin the backronym <b>ROM-based Procedural Language</b> for it.<sup id="cite_ref-HPJ38_1-1" class="reference"><a href="#cite_note-HPJ38-1">[1]</a></sup><sup id="cite_ref-Jedrzejowicz_1996_7-1" class="reference"><a href="#cite_note-Jedrzejowicz_1996-7">[7]</a></sup><sup id="cite_ref-HP_2007_8-0" class="reference"><a href="#cite_note-HP_2007-8">[8]</a></sup>) is a <a href="/wiki/Calculator" title="Calculator">handheld calculator</a> operating system and application <a href="/wiki/Programming_language" title="Programming language">programming language</a> used on <a href="/wiki/Hewlett-Packard" title="Hewlett-Packard">Hewlett-Packard</a>'s scientific graphing <a href="/wiki/Reverse_Polish_Notation" class="mw-redirect" title="Reverse Polish Notation">RPN</a> (Reverse Polish Notation) calculators of the <a href="/wiki/HP-28_series" title="HP-28 series">HP 28</a>, <a href="/wiki/HP_48_series" title="HP 48 series">48</a>, <a href="/wiki/HP_49_series" class="mw-redirect" title="HP 49 series">49</a> and <a href="/wiki/HP_50g" class="mw-redirect" title="HP 50g">50</a> series, but it is also usable on non-RPN calculators, such as the <a href="/wiki/HP_38G" title="HP 38G">38</a>, <a href="/wiki/HP_39/40_series" title="HP 39/40 series">39 and 40</a> series.</p>
+<p>RPL is a <a href="/wiki/Structured_programming" title="Structured programming">structured programming</a> language based on RPN, but equally capable of processing <a href="/wiki/Infix_notation" title="Infix notation">algebraic</a> expressions and formulae, implemented as a <a href="/wiki/Threaded_code" title="Threaded code">threaded interpreter</a>.<sup id="cite_ref-RPL3_9-0" class="reference"><a href="#cite_note-RPL3-9">[9]</a></sup> RPL has many similarities to <a href="/wiki/Forth_(programming_language)" title="Forth (programming language)">Forth</a>, both languages being <a href="/wiki/Stack-oriented_programming_language" title="Stack-oriented programming language">stack</a>-based, as well as the list-based <a href="/wiki/LISP" class="mw-redirect" title="LISP">LISP</a>. Contrary to previous HP RPN calculators, which had a fixed <a href="/wiki/4-level_RPN" class="mw-redirect" title="4-level RPN">four-level stack</a>, the stack used by RPL is only limited by available calculator <a href="/wiki/Random-access_memory" title="Random-access memory">RAM</a>.</p>
+<p>RPL originated from HP's <a href="/wiki/Corvallis,_Oregon" title="Corvallis, Oregon">Corvallis, Oregon</a> development facility in 1984 as a replacement for the previous practice of implementing the <a href="/wiki/Operating_systems" class="mw-redirect" title="Operating systems">operating systems</a> of calculators in <a href="/wiki/Assembly_language" title="Assembly language">assembly language</a>.<sup id="cite_ref-RPLMAN_10-0" class="reference"><a href="#cite_note-RPLMAN-10">[10]</a></sup> The last calculator supporting RPL, the HP 50g, was discontinued in 2015.<sup id="cite_ref-Kuperus_2015_1_11-0" class="reference"><a href="#cite_note-Kuperus_2015_1-11">[11]</a></sup><sup id="cite_ref-Kuperus_2015_2_12-0" class="reference"><a href="#cite_note-Kuperus_2015_2-12">[12]</a></sup><sup id="cite_ref-Wessman_2015_13-0" class="reference"><a href="#cite_note-Wessman_2015-13">[13]</a></sup></p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Variants"><span class="tocnumber">1</span> <span class="toctext">Variants</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Control_blocks"><span class="tocnumber">2</span> <span class="toctext">Control blocks</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Conditional_statements"><span class="tocnumber">2.1</span> <span class="toctext">Conditional statements</span></a>
+<ul>
+<li class="toclevel-3 tocsection-4"><a href="#IF.2FTHEN.2FELSE.2FEND"><span class="tocnumber">2.1.1</span> <span class="toctext">IF/THEN/ELSE/END</span></a></li>
+<li class="toclevel-3 tocsection-5"><a href="#IFT.2FIFTE"><span class="tocnumber">2.1.2</span> <span class="toctext">IFT/IFTE</span></a></li>
+<li class="toclevel-3 tocsection-6"><a href="#CASE.2FTHEN.2FEND"><span class="tocnumber">2.1.3</span> <span class="toctext">CASE/THEN/END</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-7"><a href="#Looping_statements"><span class="tocnumber">2.2</span> <span class="toctext">Looping statements</span></a>
+<ul>
+<li class="toclevel-3 tocsection-8"><a href="#FOR.2FNEXT"><span class="tocnumber">2.2.1</span> <span class="toctext">FOR/NEXT</span></a></li>
+<li class="toclevel-3 tocsection-9"><a href="#START.2FNEXT"><span class="tocnumber">2.2.2</span> <span class="toctext">START/NEXT</span></a></li>
+<li class="toclevel-3 tocsection-10"><a href="#FOR.2FSTEP_and_START.2FSTEP"><span class="tocnumber">2.2.3</span> <span class="toctext">FOR/STEP and START/STEP</span></a></li>
+<li class="toclevel-3 tocsection-11"><a href="#WHILE.2FREPEAT.2FEND"><span class="tocnumber">2.2.4</span> <span class="toctext">WHILE/REPEAT/END</span></a></li>
+<li class="toclevel-3 tocsection-12"><a href="#DO.2FUNTIL.2FEND"><span class="tocnumber">2.2.5</span> <span class="toctext">DO/UNTIL/END</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-13"><a href="#See_also"><span class="tocnumber">3</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="#References"><span class="tocnumber">4</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-15"><a href="#Further_reading"><span class="tocnumber">5</span> <span class="toctext">Further reading</span></a></li>
+<li class="toclevel-1 tocsection-16"><a href="#External_links"><span class="tocnumber">6</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Variants">Variants</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=RPL_(programming_language)&amp;action=edit&amp;section=1" title="Edit section: Variants">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The internal low- to medium-level variant of RPL, called <b><a href="/wiki/HP_49_series#Programming" class="mw-redirect" title="HP 49 series">System RPL</a></b> (or <b>SysRPL</b>) is used on some earlier HP calculators as well as the aforementioned ones, as part of their <a href="/wiki/Operating_system" title="Operating system">operating system</a> implementation language. In the HP&#160;48 series this variant of RPL is not accessible to the calculator user without the use of external tools, but in the HP&#160;49/50 series there is a compiler built in ROM to use SysRPL. It is possible to cause a serious crash while coding in SysRPL, so caution must be used while using it. The high-level <b>User RPL</b> (or <b>UserRPL</b>) version of the language is available on said graphing calculators for developing textual as well as graphical application programs. All UserRPL programs are internally represented as SysRPL programs, but use only a safe subset of the available SysRPL commands. The error checking that is a part of UserRPL commands, however, makes UserRPL programs noticeably slower than equivalent SysRPL programs. The UserRPL command SYSEVAL tells the calculator to process designated parts of a UserRPL program as SysRPL code.</p>
+<h2><span class="mw-headline" id="Control_blocks">Control blocks</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=RPL_(programming_language)&amp;action=edit&amp;section=2" title="Edit section: Control blocks">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>RPL control blocks are not strictly postfix. Although there are some notable exceptions, the control block structures appear as they would in a standard infix language. The calculator manages this by allowing the implementation of these blocks to skip ahead in the program stream as necessary.</p>
+<h3><span class="mw-headline" id="Conditional_statements">Conditional statements</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=RPL_(programming_language)&amp;action=edit&amp;section=3" title="Edit section: Conditional statements">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h4><span class="mw-headline" id="IF.2FTHEN.2FELSE.2FEND">IF/THEN/ELSE/END</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=RPL_(programming_language)&amp;action=edit&amp;section=4" title="Edit section: IF/THEN/ELSE/END">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>RPL supports basic conditional testing through the IF/THEN/ELSE structure. The basic syntax of this block is:</p>
+<pre>
+<tt>IF condition THEN if-true [ELSE if-false] END</tt>
+</pre>
+<p>The following example tests to see if the number at the bottom of the stack is "1" and, if so, replaces it with "Equal to one":</p>
+<pre>
+<tt>« IF 1 == THEN "Equal to one" END »</tt>
+</pre>
+<p>The IF construct evaluates the condition then tests the bottom of the stack for the result. As a result RPL can optionally support FORTH-style IF blocks, allowing the condition to be determined before the block. By leaving the condition empty, the IF statement will not make any changes to the stack during the condition execution and will use the existing result at the bottom of the stack for the test:</p>
+<pre>
+<tt>« 1 == IF THEN "Equal to one" END »</tt>
+</pre>
+<h4><span class="mw-headline" id="IFT.2FIFTE">IFT/IFTE</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=RPL_(programming_language)&amp;action=edit&amp;section=5" title="Edit section: IFT/IFTE">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>Postfix conditional testing may be accomplished by using the IFT ("if-then") and IFTE ("if-then-else") functions.</p>
+<p>IFT and IFTE pop two or three commands off the stack, respectively. The topmost value is evaluated as a boolean and, if true, the second topmost value is pushed back on the stack. IFTE allows a third "else" value that will be pushed back on the stack if the boolean is false.</p>
+<p>The following example uses the IFT function to pop an object from the bottom of the stack and, if it is equal to 1, replaces it with "One":</p>
+<pre>
+<tt>« 1 == "One" IFT »</tt>
+</pre>
+<p>The following example uses the IFTE function to pop an object from the bottom of the stack and, if it is equal to 1, replaces it with "One". If it does not equal 1, it replaces it with the string "Not one":</p>
+<pre>
+<tt>« 1 == "One" "Not one" IFTE »</tt>
+</pre>
+<p>IFT and IFTE will evaluate a program block given as one of its arguments, allowing a more compact form of conditional logic than an IF/THEN/ELSE/END structure. The following example pops an object from the bottom of the stack, and replaces it with "One", "Less", or "More", depending on whether it is equal to, less than, or greater than 1.</p>
+<pre>
+<tt>«
+  DUP 1 ==
+  « DROP "One" »
+  « 1 &lt; "Less" "More" IFTE »
+  IFTE
+»</tt>
+</pre>
+<h4><span class="mw-headline" id="CASE.2FTHEN.2FEND">CASE/THEN/END</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=RPL_(programming_language)&amp;action=edit&amp;section=6" title="Edit section: CASE/THEN/END">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>To support more complex conditional logic, RPL provides the CASE/THEN/END structure for handling multiple exclusive tests. Only one of the branches within the CASE statement will be executed. The basic syntax of this block is:</p>
+<pre>
+<tt>CASE 
+ condition_1 THEN if-condition_1 END 
+  ...
+ condition_n THEN if-condition_n END
+ if-none
+END</tt>
+</pre>
+<p>The following code illustrates the use of a CASE/THEN/END block. Given a letter at the bottom of the stack, it replaces it with its string equivalent or "Unknown letter":</p>
+<pre>
+<tt>« 
+  CASE 
+     DUP "A" == THEN "Alpha" END
+     DUP "B" == THEN "Beta" END
+     DUP "G" == THEN "Gamma" END
+     "Unknown letter"
+  END
+  SWAP DROP  @ Get rid of the original letter
+»</tt>
+</pre>
+<p>This code is identical to the following nested IF/THEN/ELSE/END block equivalent:</p>
+<pre>
+<tt>«
+   IF DUP "A" ==
+   THEN
+      "Alpha"
+   ELSE 
+      IF DUP "B" == THEN
+         "Beta"
+      ELSE 
+         IF DUP "G" == THEN
+            "Gamma"
+         ELSE
+            "Unknown letter"
+         END
+      END 
+   END
+   SWAP DROP  @ Get rid of the original letter
+»</tt>
+</pre>
+<h3><span class="mw-headline" id="Looping_statements">Looping statements</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=RPL_(programming_language)&amp;action=edit&amp;section=7" title="Edit section: Looping statements">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h4><span class="mw-headline" id="FOR.2FNEXT">FOR/NEXT</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=RPL_(programming_language)&amp;action=edit&amp;section=8" title="Edit section: FOR/NEXT">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>RPL provides a FOR/NEXT statement for looping from one index to another. The index for the loop is stored in a temporary local variable that can be accessed in the loop. The syntax of the FOR/NEXT block is:</p>
+<pre>
+<tt>index_from index_to FOR variable_name loop_statement NEXT</tt>
+</pre>
+<p>The following example uses the FOR loop to sum the numbers from 1 to 10. The index variable of the FOR loop is "I":</p>
+<pre>
+<tt>« 
+   0       @ Start with zero on the stack
+   1 10    @ Loop from 1 to 10
+   FOR I   @ "I" is the local variable
+      I +  @ Add "I" to the running total
+   NEXT    @ Repeat...
+»</tt>
+</pre>
+<h4><span class="mw-headline" id="START.2FNEXT">START/NEXT</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=RPL_(programming_language)&amp;action=edit&amp;section=9" title="Edit section: START/NEXT">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>The START/NEXT block is used for a simple block that runs from a start index to an end index. Unlike the FOR/NEXT loop, the looping variable is not available. The syntax of the START/NEXT block is:</p>
+<pre>
+<tt>index_from index_to START loop_statement NEXT</tt>
+</pre>
+<h4><span class="mw-headline" id="FOR.2FSTEP_and_START.2FSTEP">FOR/STEP and START/STEP</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=RPL_(programming_language)&amp;action=edit&amp;section=10" title="Edit section: FOR/STEP and START/STEP">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>Both FOR/NEXT and START/NEXT support a user-defined step increment. By replacing the terminating NEXT keyword with an increment and the STEP keyword, the loop variable will be incremented or decremented by a different value than the default of +1. For instance, the following loop steps back from 10 to 2 by decrementing the loop index by 2:</p>
+<pre>
+<tt>« 10 2 START -2 STEP »</tt>
+</pre>
+<h4><span class="mw-headline" id="WHILE.2FREPEAT.2FEND">WHILE/REPEAT/END</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=RPL_(programming_language)&amp;action=edit&amp;section=11" title="Edit section: WHILE/REPEAT/END">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>The WHILE/REPEAT/END block in RPL supports an indefinite loop with the condition test at the start of the loop. The syntax of the WHILE/REPEAT/END block is:</p>
+<pre>
+<tt>WHILE condition REPEAT loop_statement END</tt>
+</pre>
+<h4><span class="mw-headline" id="DO.2FUNTIL.2FEND">DO/UNTIL/END</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=RPL_(programming_language)&amp;action=edit&amp;section=12" title="Edit section: DO/UNTIL/END">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>The DO/UNTIL/END block in RPL supports an indefinite loop with the condition test at the end of the loop. The syntax of the DO/UNTIL/END block is:</p>
+<pre>
+<tt>DO loop_statement UNTIL condition END</tt>
+</pre>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=RPL_(programming_language)&amp;action=edit&amp;section=13" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a href="/wiki/FOCAL_keystroke_programming" class="mw-redirect" title="FOCAL keystroke programming">FOCAL keystroke programming</a></li>
+<li><a href="/wiki/HPL_(programming_language)" class="mw-redirect" title="HPL (programming language)">High Performance Language</a> (HPL)</li>
+<li><a href="/wiki/Prime_Programming_Language" class="mw-redirect" title="Prime Programming Language">Prime Programming Language</a> (PPL)</li>
+<li><a href="/wiki/A_Programming_Language" class="mw-redirect" title="A Programming Language">A Programming Language</a> (APL)</li>
+<li><a href="/wiki/HP_trigraph" class="mw-redirect" title="HP trigraph">HP trigraphs</a></li>
+<li><a href="/wiki/RPL_character_set" title="RPL character set">RPL character set</a></li>
+</ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=RPL_(programming_language)&amp;action=edit&amp;section=14" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-HPJ38-1"><span class="mw-cite-backlink">^ <a href="#cite_ref-HPJ38_1-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-HPJ38_1-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><cite class="citation journal">Patton, Charles M. (August 1987). <a rel="nofollow" class="external text" href="http://www.hpl.hp.com/hpjournal/pdfs/IssuePDFs/1987-08.pdf">"Computation for Handheld Calculators"</a> <span style="font-size:85%;">(PDF)</span>. <i><a href="/wiki/Hewlett-Packard_Journal" title="Hewlett-Packard Journal">Hewlett-Packard Journal</a></i>. Palo Alto, California, USA: <a href="/wiki/Hewlett-Packard_Company" class="mw-redirect" title="Hewlett-Packard Company">Hewlett-Packard Company</a>. <b>38</b> (8): 21–25<span class="reference-accessdate">. Retrieved <span class="nowrap">2015-09-12</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARPL+%28programming+language%29&amp;rft.atitle=Computation+for+Handheld+Calculators&amp;rft.aufirst=Charles+M.&amp;rft.aulast=Patton&amp;rft.date=1987-08&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fwww.hpl.hp.com%2Fhpjournal%2Fpdfs%2FIssuePDFs%2F1987-08.pdf&amp;rft.issue=8&amp;rft.jtitle=Hewlett-Packard+Journal&amp;rft.pages=21-25&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=38" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-Wickes_1988-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-Wickes_1988_2-0">^</a></b></span> <span class="reference-text"><cite class="citation book">Wickes, William C. (1988). <i>RPL: A Mathematical Control Language</i>. <i>Proceedings Rochester Forth Conference on Programming Environments</i>. Rochester, New York, USA: Institute for Applied Forth Research, Inc. pp.&#160;27–32. <q>Several existing operating systems and languages were considered, but none could meet all of the design objectives. A new system was therefore developed, which merges the threaded interpretation of <a href="/wiki/Forth_(programming_language)" title="Forth (programming language)">Forth</a> with the functional approach of <a href="/wiki/Lisp_(programming_language)" title="Lisp (programming language)">Lisp</a>. The resulting operating system, known unofficially as RPL (for Reverse-Polish Lisp), made its first public appearance in June of 1986 in the <a href="/wiki/HP-18C" title="HP-18C">HP-18C</a> Business Consultant calculator.</q></cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARPL+%28programming+language%29&amp;rft.aufirst=William+C.&amp;rft.aulast=Wickes&amp;rft.btitle=RPL%3A+A+Mathematical+Control+Language&amp;rft.date=1988&amp;rft.genre=book&amp;rft.pages=27-32&amp;rft.place=Rochester%2C+New+York%2C+USA&amp;rft.pub=Institute+for+Applied+Forth+Research%2C+Inc.&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-Wickes_1991-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-Wickes_1991_3-0">^</a></b></span> <span class="reference-text"><cite class="citation web">Wickes, William C. (1991-03-11). <a rel="nofollow" class="external text" href="http://www.hpcalc.org/hp48/docs/programming/rpl.txt">"RPL stands for Reverse Polish Lisp"</a>. www.hpcalc.org<span class="reference-accessdate">. Retrieved <span class="nowrap">2015-09-12</span></span>. <q>RPL stands for Reverse Polish Lisp. In the early days of RPL development, we got tired of calling the unnamed system "the new system", and one of the development team came up with "RPL", both as a play on "RPN" which has been the loved/hated hallmark of HP calcs forever, and as an accurate indication of the derivation of the language from <a href="/wiki/Forth_(programming_language)" title="Forth (programming language)">Forth</a> and <a href="/wiki/Lisp_(programming_language)" title="Lisp (programming language)">Lisp</a>.<br />
+RPL was never particularly intended to be a public term; at the time of the <a href="/wiki/HP_Journal" class="mw-redirect" title="HP Journal">HP Journal</a> article (August 1987) on the <a href="/wiki/HP-28_series" title="HP-28 series">HP 28C</a> there was an attempt to create a less whimsical name--hence "ROM-based procedural language," which preserved the initials but had a more dignified sound. The development team never calls it anything but (the initials) RPL. You can choose either of the two full-word versions that you prefer. Or how about "Rich People's Language?" Bill Wickes, HP Corvallis.</q></cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARPL+%28programming+language%29&amp;rft.aufirst=William+C.&amp;rft.aulast=Wickes&amp;rft.btitle=RPL+stands+for+Reverse+Polish+Lisp&amp;rft.date=1991-03-11&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.hpcalc.org%2Fhp48%2Fdocs%2Fprogramming%2Frpl.txt&amp;rft.pub=www.hpcalc.org&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-Schoorl_2000-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-Schoorl_2000_4-0">^</a></b></span> <span class="reference-text"><cite class="citation web">Schoorl, André (2000-04-04) [1997]. <a rel="nofollow" class="external text" href="http://www.hpcalc.org/hp48/docs/faq/48faq-pdf.zip">"HP48 Frequently Asked Questions List"</a>. HP Calculator Archive. p.&#160;69<span class="reference-accessdate">. Retrieved <span class="nowrap">2015-09-12</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARPL+%28programming+language%29&amp;rft.aufirst=Andr%C3%A9&amp;rft.aulast=Schoorl&amp;rft.btitle=HP48+Frequently+Asked+Questions+List&amp;rft.date=2000-04-04&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.hpcalc.org%2Fhp48%2Fdocs%2Ffaq%2F48faq-pdf.zip&amp;rft.pages=69&amp;rft.pub=HP+Calculator+Archive&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-FAQ48-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-FAQ48_5-0">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.faqs.org/faqs/hp/hp48-faq/part2/">"I've heard the names RPL, Saturn, STAR, GL etc... What are they? - RPL"</a>. <i>FAQ: 2 of 4 - Hardware, Programs, and Programming</i>. 4.62. comp.sys.hp48. 2000-04-14. 8.1<span class="reference-accessdate">. Retrieved <span class="nowrap">2015-09-12</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARPL+%28programming+language%29&amp;rft.atitle=I%27ve+heard+the+names+RPL%2C+Saturn%2C+STAR%2C+GL+etc...++What+are+they%3F+-+RPL&amp;rft.date=2000-04-14&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.faqs.org%2Ffaqs%2Fhp%2Fhp48-faq%2Fpart2%2F&amp;rft.jtitle=FAQ%3A+2+of+4+-+Hardware%2C+Programs%2C+and+Programming&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-Nelson_2012-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-Nelson_2012_6-0">^</a></b></span> <span class="reference-text"><cite class="citation journal">Nelson, Richard J. (2012-04-04). <a rel="nofollow" class="external text" href="http://h20331.www2.hp.com/hpsub/downloads/HP_Calculator_eNL_04_April_2012%20(2).pdf">"HP RPN Evolves"</a> <span style="font-size:85%;">(PDF)</span>. <i>HP Solve</i>. <a href="/wiki/Hewlett-Packard" title="Hewlett-Packard">Hewlett-Packard</a> (27): 30–32<span class="reference-accessdate">. Retrieved <span class="nowrap">2015-09-12</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARPL+%28programming+language%29&amp;rft.atitle=HP+RPN+Evolves&amp;rft.aufirst=Richard+J.&amp;rft.aulast=Nelson&amp;rft.date=2012-04-04&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fh20331.www2.hp.com%2Fhpsub%2Fdownloads%2FHP_Calculator_eNL_04_April_2012%2520%282%29.pdf&amp;rft.issue=27&amp;rft.jtitle=HP+Solve&amp;rft.pages=30-32&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-Jedrzejowicz_1996-7"><span class="mw-cite-backlink">^ <a href="#cite_ref-Jedrzejowicz_1996_7-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-Jedrzejowicz_1996_7-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><cite class="citation book">Mier-Jedrzejowicz, Włodek A. C. (July 1991). <i>A Guide to HP Handheld Calculators and Computers</i> (5 ed.). HHC 2011. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-1888840308" title="Special:BookSources/978-1888840308">978-1888840308</a>. 1888840307. <q>RPL stands for Reverse Polish Lisp - it combined the RPN calculator language of earlier models with features of the <a href="/wiki/Lisp_(programming_language)" title="Lisp (programming language)">Lisp</a> and <a href="/wiki/Forth_(programming_language)" title="Forth (programming language)">Forth</a> programming languages. For a time HP explained the letters RPL as an acronym for "ROM-based Procedural Language".</q></cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARPL+%28programming+language%29&amp;rft.aufirst=W%C5%82odek+A.+C.&amp;rft.aulast=Mier-Jedrzejowicz&amp;rft.btitle=A+Guide+to+HP+Handheld+Calculators+and+Computers&amp;rft.date=1991-07&amp;rft.edition=5&amp;rft.genre=book&amp;rft.isbn=978-1888840308&amp;rft.pub=HHC+2011&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-HP_2007-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-HP_2007_8-0">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://web.archive.org/web/20070317053857/http://h20331.www2.hp.com/Hpsub/cache/457008-0-0-225-121.html">"HP Celebrates 35 Years of Handheld Calculator Innovation"</a>. <a href="/wiki/Hewlett-Packard_Development_Company,_L.P." class="mw-redirect" title="Hewlett-Packard Development Company, L.P.">Hewlett-Packard Development Company, L.P.</a> 2007. Archived from <a rel="nofollow" class="external text" href="http://h20331.www2.hp.com/Hpsub/cache/457008-0-0-225-121.html">the original</a> on 2007-03-17<span class="reference-accessdate">. Retrieved <span class="nowrap">2015-09-13</span></span>. <q>1987: <a href="/wiki/HP-28C" class="mw-redirect" title="HP-28C">HP-28C</a>: First full RPL calculator: In the late 1980s, HP developed a new programming language for its new series of extremely powerful calculators. By combing elements of RPN, <a href="/wiki/Lisp_(programming_language)" title="Lisp (programming language)">Lisp</a> and <a href="/wiki/Forth_(programming_language)" title="Forth (programming language)">Forth</a>, HP came up with a language called RPL (or ROM-based Procedural Language).</q></cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARPL+%28programming+language%29&amp;rft.btitle=HP+Celebrates+35+Years+of+Handheld+Calculator+Innovation&amp;rft.date=2007&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fh20331.www2.hp.com%2FHpsub%2Fcache%2F457008-0-0-225-121.html&amp;rft.pub=Hewlett-Packard+Development+Company%2C+L.P.&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-RPL3-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-RPL3_9-0">^</a></b></span> <span class="reference-text"><cite class="citation web">Horn, Joe K. <a rel="nofollow" class="external text" href="http://www.hpcalc.org/hp48/docs/programming/rpl3.txt">"RPL.DOC"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2015-09-12</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARPL+%28programming+language%29&amp;rft.aufirst=Joe+K.&amp;rft.aulast=Horn&amp;rft.btitle=RPL.DOC&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.hpcalc.org%2Fhp48%2Fdocs%2Fprogramming%2Frpl3.txt&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-RPLMAN-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-RPLMAN_10-0">^</a></b></span> <span class="reference-text"><cite class="citation web"><a href="/wiki/Hewlett-Packard" title="Hewlett-Packard">Hewlett-Packard</a>. <a rel="nofollow" class="external text" href="http://www.hpcalc.org/details.php?id=1743">"RPLMan from Goodies Disk 4"</a> <span style="font-size:85%;">(RPLMAN.ZIP)</span><span class="reference-accessdate">. Retrieved <span class="nowrap">2015-09-12</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARPL+%28programming+language%29&amp;rft.au=Hewlett-Packard&amp;rft.btitle=RPLMan+from+Goodies+Disk+4&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.hpcalc.org%2Fdetails.php%3Fid%3D1743&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-Kuperus_2015_1-11"><span class="mw-cite-backlink"><b><a href="#cite_ref-Kuperus_2015_1_11-0">^</a></b></span> <span class="reference-text"><cite class="citation web">Kuperus, Klaas (2015-03-04). <a rel="nofollow" class="external text" href="https://web.archive.org/web/20150402112232/http://forum.hp-prime.de/discussion/787/hp-50g-end-of-an-era">"HP 50g: End of an era"</a>. Moravia. Archived from <a rel="nofollow" class="external text" href="http://forum.hp-prime.de/discussion/787/hp-50g-end-of-an-era">the original</a> on 2015-04-02.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARPL+%28programming+language%29&amp;rft.aufirst=Klaas&amp;rft.aulast=Kuperus&amp;rft.btitle=HP+50g%3A+End+of+an+era&amp;rft.date=2015-03-04&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fforum.hp-prime.de%2Fdiscussion%2F787%2Fhp-50g-end-of-an-era&amp;rft.pub=Moravia&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-Kuperus_2015_2-12"><span class="mw-cite-backlink"><b><a href="#cite_ref-Kuperus_2015_2_12-0">^</a></b></span> <span class="reference-text"><cite class="citation web">Kuperus, Klaas (2015-03-06). <a rel="nofollow" class="external text" href="http://www.hpmuseum.org/forum/thread-3265-post-29694.html#pid29694">"HP 50g not so good news?"</a>. Moravia<span class="reference-accessdate">. Retrieved <span class="nowrap">2016-01-01</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARPL+%28programming+language%29&amp;rft.aufirst=Klaas&amp;rft.aulast=Kuperus&amp;rft.btitle=HP+50g+not+so+good+news%3F&amp;rft.date=2015-03-06&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.hpmuseum.org%2Fforum%2Fthread-3265-post-29694.html%23pid29694&amp;rft.pub=Moravia&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-Wessman_2015-13"><span class="mw-cite-backlink"><b><a href="#cite_ref-Wessman_2015_13-0">^</a></b></span> <span class="reference-text"><cite class="citation web">Wessman, Tim (2015-12-26). <a rel="nofollow" class="external text" href="http://www.hpmuseum.org/forum/thread-5386-post-48114.html#pid48114">"Windows 10 won't allow HP 50g USB drivers to be installed"</a>. HP Museum<span class="reference-accessdate">. Retrieved <span class="nowrap">2016-01-01</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARPL+%28programming+language%29&amp;rft.aufirst=Tim&amp;rft.aulast=Wessman&amp;rft.btitle=Windows+10+won%27t+allow+HP+50g+USB+drivers+to+be+installed&amp;rft.date=2015-12-26&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.hpmuseum.org%2Fforum%2Fthread-5386-post-48114.html%23pid48114&amp;rft.pub=HP+Museum&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="Further_reading">Further reading</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=RPL_(programming_language)&amp;action=edit&amp;section=15" title="Edit section: Further reading">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><cite class="citation book"><a rel="nofollow" class="external text" href="http://www.hpcalc.org/details.php?id=3937"><i>HP&#160;48G Series – User's Guide (UG)</i></a> (8th ed.). <a href="/wiki/Hewlett-Packard" title="Hewlett-Packard">Hewlett-Packard</a>. December 1994 [1993]. HP 00048-90126, (00048-90104). <a rel="nofollow" class="external text" href="https://web.archive.org/web/20160806145719/http://www.hpcalc.org/details.php?id=3937">Archived</a> from the original on 2016-08-06<span class="reference-accessdate">. Retrieved <span class="nowrap">2015-09-06</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARPL+%28programming+language%29&amp;rft.btitle=HP+48G+Series+%93+User%27s+Guide+%28UG%29&amp;rft.date=1994-12&amp;rft.edition=8th&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fwww.hpcalc.org%2Fdetails.php%3Fid%3D3937&amp;rft.pub=Hewlett-Packard&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span> <a rel="nofollow" class="external autonumber" href="http://www.hpcalc.org/hp48/docs/misc/hp48gug.zip">[1]</a></li>
+<li><cite class="citation book"><a rel="nofollow" class="external text" href="http://www.hpcalc.org/details.php?id=6036"><i>HP&#160;48G Series – Advanced User's Reference Manual (AUR)</i></a> (4th ed.). <a href="/wiki/Hewlett-Packard" title="Hewlett-Packard">Hewlett-Packard</a>. December 1994 [1993]. HP 00048-90136, 0-88698-01574-2. <a rel="nofollow" class="external text" href="https://web.archive.org/web/20160806145723/http://www.hpcalc.org/details.php?id=6036">Archived</a> from the original on 2016-08-06<span class="reference-accessdate">. Retrieved <span class="nowrap">2015-09-06</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARPL+%28programming+language%29&amp;rft.btitle=HP+48G+Series+%93+Advanced+User%27s+Reference+Manual+%28AUR%29&amp;rft.date=1994-12&amp;rft.edition=4th&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fwww.hpcalc.org%2Fdetails.php%3Fid%3D6036&amp;rft.pub=Hewlett-Packard&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span> <a rel="nofollow" class="external autonumber" href="http://www.hpcalc.org/hp48/docs/misc/hp48gaur.zip">[2]</a></li>
+<li><cite class="citation book"><a rel="nofollow" class="external text" href="http://www.hpcalc.org/details.php?id=6512"><i>HP 50g graphing calculator user's guide (UG)</i></a> (1 ed.). <a href="/wiki/Hewlett-Packard" title="Hewlett-Packard">Hewlett-Packard</a>. April 2006. HP F2229AA-90006<span class="reference-accessdate">. Retrieved <span class="nowrap">2015-09-06</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARPL+%28programming+language%29&amp;rft.btitle=HP+50g+graphing+calculator+user%27s+guide+%28UG%29&amp;rft.date=2006-04&amp;rft.edition=1&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fwww.hpcalc.org%2Fdetails.php%3Fid%3D6512&amp;rft.pub=Hewlett-Packard&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation book"><a rel="nofollow" class="external text" href="http://www.hpcalc.org/details.php?id=7141"><i>HP 50g / 49g+ / 48gII graphing calculator advanced user’s reference manual (AUR)</i></a> (2 ed.). <a href="/wiki/Hewlett-Packard" title="Hewlett-Packard">Hewlett-Packard</a>. 2009-07-14 [2005]. HP F2228-90010<span class="reference-accessdate">. Retrieved <span class="nowrap">2015-09-06</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARPL+%28programming+language%29&amp;rft.btitle=HP+50g+%2F+49g%2B+%2F+48gII+graphing+calculator+advanced+user%99s+reference+manual+%28AUR%29&amp;rft.date=2009-07-14&amp;rft.edition=2&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fwww.hpcalc.org%2Fdetails.php%3Fid%3D7141&amp;rft.pub=Hewlett-Packard&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation book">Kalinowski, Eduardo de Mattos; Dominik, Carsten (2002-04-24) [1998-07-12]. <a rel="nofollow" class="external text" href="http://isa.umh.es/calc/progsysrpl.pdf"><i>Programming in System RPL</i></a> <span style="font-size:85%;">(PDF)</span> (2 ed.). <a rel="nofollow" class="external text" href="https://web.archive.org/web/20160114100225/http://isa.umh.es/calc/progsysrpl.pdf">Archived</a> <span style="font-size:85%;">(PDF)</span> from the original on 2016-01-14<span class="reference-accessdate">. Retrieved <span class="nowrap">2016-08-16</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARPL+%28programming+language%29&amp;rft.au=Dominik%2C+Carsten&amp;rft.aufirst=Eduardo+de+Mattos&amp;rft.aulast=Kalinowski&amp;rft.btitle=Programming+in+System+RPL&amp;rft.date=2002-04-24&amp;rft.edition=2&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fisa.umh.es%2Fcalc%2Fprogsysrpl.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span> (Older version: <a rel="nofollow" class="external autonumber" href="http://www.hpcalc.org/details.php?id=1758">[3]</a>)</li>
+<li><cite class="citation book">Donnelly, James (2009-03-01). Rechlin, Eric, ed. <a rel="nofollow" class="external text" href="http://www.hpcalc.org/details.php?id=7114"><i>An Introduction to HP&#160;48 System RPL and Assembly Language Programming</i></a><span class="reference-accessdate">. Retrieved <span class="nowrap">2015-09-07</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARPL+%28programming+language%29&amp;rft.aufirst=James&amp;rft.aulast=Donnelly&amp;rft.btitle=An+Introduction+to+HP+48+System+RPL+and+Assembly+Language+Programming&amp;rft.date=2009-03-01&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fwww.hpcalc.org%2Fdetails.php%3Fid%3D7114&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+</ul>
+<h2><span class="mw-headline" id="External_links"><span id="RPL.2F2"></span><span id="newRPL"></span>External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=RPL_(programming_language)&amp;action=edit&amp;section=16" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><cite class="citation web">Rechlin, Eric (2015) [1997]. <a rel="nofollow" class="external text" href="http://www.hpcalc.org/hp49/docs/programming/">"HP 49/50 Programming Documentation Files"</a>. HP Calculator Archive<span class="reference-accessdate">. Retrieved <span class="nowrap">2015-09-12</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARPL+%28programming+language%29&amp;rft.aufirst=Eric&amp;rft.aulast=Rechlin&amp;rft.btitle=HP+49%2F50+Programming+Documentation+Files&amp;rft.date=2015&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.hpcalc.org%2Fhp49%2Fdocs%2Fprogramming%2F&amp;rft.pub=HP+Calculator+Archive&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation web">Rechlin, Eric (2015) [1997]. <a rel="nofollow" class="external text" href="http://www.hpcalc.org/hp48/docs/programming/">"HP 48 Programming Documentation Files"</a>. HP Calculator Archive<span class="reference-accessdate">. Retrieved <span class="nowrap">2015-09-12</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARPL+%28programming+language%29&amp;rft.aufirst=Eric&amp;rft.aulast=Rechlin&amp;rft.btitle=HP+48+Programming+Documentation+Files&amp;rft.date=2015&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.hpcalc.org%2Fhp48%2Fdocs%2Fprogramming%2F&amp;rft.pub=HP+Calculator+Archive&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation web">Hicks, David G. (2013) [1995]. <a rel="nofollow" class="external text" href="http://www.hpmuseum.org/rpl.htm">"RPL"</a>. The Museum of HP Calculators (MoHPC)<span class="reference-accessdate">. Retrieved <span class="nowrap">2015-09-12</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARPL+%28programming+language%29&amp;rft.aufirst=David+G.&amp;rft.aulast=Hicks&amp;rft.btitle=RPL&amp;rft.date=2013&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.hpmuseum.org%2Frpl.htm&amp;rft.pub=The+Museum+of+HP+Calculators+%28MoHPC%29&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation web">Bertrand, Joël (2015) [2009]. <a rel="nofollow" class="external text" href="http://www.rpl2.net">"RPL/2 - a new Reverse Polish Lisp"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2015-09-12</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARPL+%28programming+language%29&amp;rft.aufirst=Jo%C3%ABl&amp;rft.aulast=Bertrand&amp;rft.btitle=RPL%2F2+-+a+new+Reverse+Polish+Lisp&amp;rft.date=2015&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.rpl2.net&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span> (a GPL licensed RPL clone)</li>
+<li><cite class="citation web">Lapilli, Claudio Daniel (2014-01-03). <a rel="nofollow" class="external text" href="http://hpgcc3.org/projects/newrpl">"newRPL"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2015-09-12</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARPL+%28programming+language%29&amp;rft.aufirst=Claudio+Daniel&amp;rft.aulast=Lapilli&amp;rft.btitle=newRPL&amp;rft.date=2014-01-03&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fhpgcc3.org%2Fprojects%2Fnewrpl&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span> (an open source RPL derivative for <a href="/wiki/HP_50g" class="mw-redirect" title="HP 50g">HP 50g</a> etc.)</li>
+</ul>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1183
+Cached time: 20170107170732
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.212 seconds
+Real time usage: 0.248 seconds
+Preprocessor visited node count: 1269/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 43340/2097152 bytes
+Template argument size: 857/2097152 bytes
+Highest expansion depth: 10/40
+Expensive parser function count: 2/500
+Lua time usage: 0.111/10.000 seconds
+Lua memory usage: 3.71 MB/50 MB
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  212.720      1 - -total
+ 46.75%   99.457      1 - Template:Reflist
+ 23.40%   49.766     14 - Template:Cite_web
+ 17.39%   36.992      1 - Template:Infobox_programming_language
+ 16.27%   34.606      2 - Template:Cite_journal
+ 15.57%   33.117      1 - Template:Infobox
+ 14.95%   31.796      8 - Template:Cite_book
+  8.81%   18.733      1 - Template:About
+  2.34%    4.975      1 - Template:Anchor
+  1.96%    4.172      1 - Template:Infobox_software/simple
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:512681-0!*!0!!en!*!* and timestamp 20170107170731 and revision id 745367400
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=RPL_(programming_language)&amp;oldid=745367400">https://en.wikipedia.org/w/index.php?title=RPL_(programming_language)&amp;oldid=745367400</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Stack-oriented_programming_languages" title="Category:Stack-oriented programming languages">Stack-oriented programming languages</a></li><li><a href="/wiki/Category:Graphing_calculators" title="Category:Graphing calculators">Graphing calculators</a></li><li><a href="/wiki/Category:HP_calculators" title="Category:HP calculators">HP calculators</a></li><li><a href="/wiki/Category:Lisp_programming_language_family" title="Category:Lisp programming language family">Lisp programming language family</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=RPL+%28programming+language%29" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=RPL+%28programming+language%29" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/RPL_(programming_language)"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:RPL_(programming_language)"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/RPL_(programming_language)" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=RPL_(programming_language)&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=RPL_(programming_language)&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/RPL_(programming_language)" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/RPL_(programming_language)" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=RPL_(programming_language)&amp;oldid=745367400" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=RPL_(programming_language)&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q960361" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=RPL_%28programming_language%29&amp;id=745367400" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=RPL+%28programming+language%29">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=RPL+%28programming+language%29&amp;returnto=RPL+%28programming+language%29&amp;oldid=745367400&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=RPL_(programming_language)&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/Reverse_Polish_LISP" title="Reverse Polish LISP – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/RPL" title="RPL – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-ja"><a href="https://ja.wikipedia.org/wiki/RPL_(%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E8%A8%80%E8%AA%9E)" title="RPL (プログラミング言語) – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target">日本語</a></li><li class="interlanguage-link interwiki-pl"><a href="https://pl.wikipedia.org/wiki/RPL_(j%C4%99zyk_programowania)" title="RPL (język programowania) – Polish" lang="pl" hreflang="pl" class="interlanguage-link-target">Polski</a></li><li class="interlanguage-link interwiki-sl"><a href="https://sl.wikipedia.org/wiki/RPL_(programski_jezik)" title="RPL (programski jezik) – Slovenian" lang="sl" hreflang="sl" class="interlanguage-link-target">Slovenščina</a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q960361#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 20 October 2016, at 18:18.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=RPL_(programming_language)&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":52,"wgHostname":"mw1240"});});</script>
+	</body>
+</html>

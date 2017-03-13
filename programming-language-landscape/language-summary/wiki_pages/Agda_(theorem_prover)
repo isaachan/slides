@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Agda (programming language) - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Agda_(programming_language)","wgTitle":"Agda (programming language)","wgCurRevisionId":760814183,"wgRevisionId":760814183,"wgArticleId":4426773,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Official website different in Wikidata and Wikipedia","Dependently typed languages","Functional languages","Proof assistants","Free software programmed in Haskell","Haskell programming language family","Cross-platform free software","Free compilers and interpreters","Chalmers University of Technology"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Agda_(programming_language)","wgRelevantArticleId":4426773,"wgRequestId":"WJHqsApAMEgAAAuvOFEAAAJB","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgRedirectedFrom":"Agda_(theorem_prover)","wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":true},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgInternalRedirectTargetUrl":"/wiki/Agda_(programming_language)","wgWikibaseItemId":"Q20479","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.cite.styles":"ready","ext.pygments":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.action.view.redirect","ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.legacy.wikibits","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.centralauth.centralautologin","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.pygments%2CwikimediaBadges%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.29.0-wmf.9"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Agda_(programming_language)"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Agda_(programming_language)&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Agda_(programming_language)&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Agda_(programming_language)"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Agda_programming_language rootpage-Agda_programming_language skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Agda (programming language)</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"><span class="mw-redirectedfrom">  (Redirected from <a href="/w/index.php?title=Agda_(theorem_prover)&amp;redirect=no" class="mw-redirect" title="Agda (theorem prover)">Agda (theorem prover)</a>)</span></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><script>function mfTempOpenSection(id){var block=document.getElementById("mf-section-"+id);block.className+=" open-block";block.previousSibling.className+=" open-block";}</script><table class="infobox vevent" style="width:22em">
+<caption class="summary">Agda</caption>
+<tr>
+<th scope="row"><a href="/wiki/Programming_paradigm" title="Programming paradigm">Paradigm</a></th>
+<td><a href="/wiki/Functional_programming" title="Functional programming">Functional</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_design" title="Software design">Designed&#160;by</a></th>
+<td>Ulf Norell</td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_developer" title="Software developer">Developer</a></th>
+<td class="organiser">Ulf Norell</td>
+</tr>
+<tr>
+<th scope="row">First&#160;appeared</th>
+<td>2007<span class="noprint">; 10&#160;years ago</span><span style="display:none">&#160;(<span class="bday dtstart published updated">2007</span>)</span></td>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Software_release_life_cycle" title="Software release life cycle">Stable release</a></th>
+<td>
+<div style="margin:0px;">2.5.2 / December&#160;22, 2016<span class="noprint">; 40 days ago</span><span style="display:none">&#160;(<span class="bday dtstart published updated">2016-12-22</span>)</span></div>
+</td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Operating_system" title="Operating system">OS</a></th>
+<td><a href="/wiki/Cross-platform" title="Cross-platform">Cross-platform</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_license" title="Software license">License</a></th>
+<td><a href="/wiki/BSD_licenses" title="BSD licenses">BSD-like</a><sup id="cite_ref-1" class="reference"><a href="#cite_note-1">[1]</a></sup></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Filename_extension" title="Filename extension">Filename extensions</a></th>
+<td><code>.agda</code>, <code>.lagda</code></td>
+</tr>
+<tr>
+<th scope="row">Website</th>
+<td><span class="url"><a rel="nofollow" class="external text" href="http://wiki.portal.chalmers.se/agda">wiki<wbr />.portal<wbr />.chalmers<wbr />.se<wbr />/agda</a></span></td>
+</tr>
+<tr>
+<th colspan="2" style="text-align:center;background-color: #eee;">Influenced by</th>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/Coq" title="Coq">Coq</a>, <a href="/wiki/Epigram_(programming_language)" title="Epigram (programming language)">Epigram</a>, <a href="/wiki/Haskell_(programming_language)" title="Haskell (programming language)">Haskell</a></td>
+</tr>
+<tr>
+<th colspan="2" style="text-align:center;background-color: #eee;">Influenced</th>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/Idris_(programming_language)" title="Idris (programming language)">Idris</a></td>
+</tr>
+</table>
+<p><b>Agda</b> is a <a href="/wiki/Dependent_type" title="Dependent type">dependently typed</a> <a href="/wiki/Functional_programming" title="Functional programming">functional programming</a> language originally developed by Ulf Norell at <a href="/wiki/Chalmers_University_of_Technology" title="Chalmers University of Technology">Chalmers University of Technology</a> with implementation described in his PhD thesis.<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">[2]</a></sup> The current version of Agda was originally known as Agda 2. The original Agda system was developed at Chalmers by Catarina Coquand in 1999.<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">[3]</a></sup> The current version is a full rewrite, which should be considered a new language that shares a name and tradition.</p>
+<p>Agda, unlike <a href="/wiki/Coq" title="Coq">Coq</a>, has no support for tactics, and proofs are written in a functional programming style. The language has ordinary programming constructs such as <a href="/wiki/Data_type" title="Data type">data types</a>, <a href="/wiki/Pattern_matching" title="Pattern matching">pattern matching</a>, <a href="/wiki/Record_(computer_science)" title="Record (computer science)">records</a>, <a href="/wiki/Let_expression" title="Let expression">let expressions</a> and modules, and a <a href="/wiki/Haskell_(programming_language)" title="Haskell (programming language)">Haskell</a>-like syntax. The system has an <a href="/wiki/Emacs" title="Emacs">Emacs</a> interface<sup id="cite_ref-emacs-mode_4-0" class="reference"><a href="#cite_note-emacs-mode-4">[4]</a></sup> but can also be run in batch mode from the command line.</p>
+<p>Agda is based on Zhaohui Luo's <a href="/w/index.php?title=Unified_Theory_of_Dependent_Types&amp;action=edit&amp;redlink=1" class="new" title="Unified Theory of Dependent Types (page does not exist)">Unified Theory of Dependent Types</a> (UTT)<sup id="cite_ref-5" class="reference"><a href="#cite_note-5">[5]</a></sup> a type theory similar to <a href="/wiki/Martin-L%C3%B6f_type_theory" class="mw-redirect" title="Martin-Löf type theory">Martin-Löf type theory</a>.</p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Features"><span class="tocnumber">1</span> <span class="toctext">Features</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Inductive_types"><span class="tocnumber">1.1</span> <span class="toctext">Inductive types</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Dependently_typed_pattern_matching"><span class="tocnumber">1.2</span> <span class="toctext">Dependently typed pattern matching</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Metavariables"><span class="tocnumber">1.3</span> <span class="toctext">Metavariables</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Proof_automation"><span class="tocnumber">1.4</span> <span class="toctext">Proof automation</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Termination_checking"><span class="tocnumber">1.5</span> <span class="toctext">Termination checking</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Standard_library"><span class="tocnumber">1.6</span> <span class="toctext">Standard library</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Unicode"><span class="tocnumber">1.7</span> <span class="toctext">Unicode</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Backends"><span class="tocnumber">1.8</span> <span class="toctext">Backends</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-10"><a href="#References"><span class="tocnumber">2</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#External_links"><span class="tocnumber">3</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Features">Features</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Agda_(programming_language)&amp;action=edit&amp;section=1" title="Edit section: Features">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="Inductive_types">Inductive types</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Agda_(programming_language)&amp;action=edit&amp;section=2" title="Edit section: Inductive types">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The main way of defining data types in Agda is via inductive data types which are similar to algebraic data types in non-dependently typed programming languages.</p>
+<p>Here is a definition of <a href="/wiki/Peano_numbers" class="mw-redirect" title="Peano numbers">Peano numbers</a> in Agda:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+ <span class="kr">data</span> ℕ <span class="ow">:</span> <span class="kt">Set</span> <span class="kr">where</span>
+   <span class="nf">zero</span> <span class="ow">:</span> ℕ 
+   <span class="nf">suc</span> <span class="ow">:</span> ℕ <span class="ow">→</span> ℕ
+</pre></div>
+<p>Basically, it means that there are two ways to construct a natural number. Zero is a natural number, and if n is a natural number, then suc n is a natural number too.</p>
+<p>Here's a definition of less than or equal relation:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+ <span class="kr">data</span> _≤_ <span class="ow">:</span> ℕ <span class="ow">→</span> ℕ <span class="ow">→</span> <span class="kt">Set</span> <span class="kr">where</span>
+   <span class="nf">z≤n</span> <span class="ow">:</span> <span class="o">{</span>n <span class="ow">:</span> ℕ<span class="o">}</span> <span class="ow">→</span> zero ≤ n
+   <span class="nf">s≤s</span> <span class="ow">:</span> <span class="o">{</span>n m <span class="ow">:</span> ℕ<span class="o">}</span> <span class="ow">→</span> n ≤ m <span class="ow">→</span> suc n ≤ suc m
+</pre></div>
+<p>The first constructor allows us to state that zero is less than or equal to any number. The second constructor states that if n ≤ m then suc n ≤ suc m.<sup id="cite_ref-6" class="reference"><a href="#cite_note-6">[6]</a></sup></p>
+<h3><span class="mw-headline" id="Dependently_typed_pattern_matching">Dependently typed pattern matching</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Agda_(programming_language)&amp;action=edit&amp;section=3" title="Edit section: Dependently typed pattern matching">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>In core type theory, induction and recursion principles are used to prove theorems about inductive types. In Agda, dependently typed pattern matching is used instead. For example, natural number addition can be defined like this:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+ add zero n <span class="ow">=</span> n
+ add <span class="o">(</span>suc n<span class="o">)</span> m <span class="ow">=</span> suc <span class="o">(</span>add n m<span class="o">)</span>
+</pre></div>
+<p>This way of writing recursive functions/inductive proofs is more natural than applying raw induction principles. In Agda, dependently typed pattern matching is a primitive of the language; the core language lacks the induction/recursion principles that pattern matching translates to.</p>
+<h3><span class="mw-headline" id="Metavariables">Metavariables</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Agda_(programming_language)&amp;action=edit&amp;section=4" title="Edit section: Metavariables">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>One of the distinctive features of Agda, when compared with other similar systems such as <a href="/wiki/Coq" title="Coq">Coq</a>, is heavy reliance on metavariables for program construction. For example, we can write functions like this in Agda:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+ <span class="nf">add</span> <span class="ow">:</span> ℕ <span class="ow">→</span> ℕ <span class="ow">→</span> ℕ 
+ add x y <span class="ow">=</span> ?
+</pre></div>
+<p><code>?</code> here is a metavariable. When interacting with the system in emacs mode, it will show the user expected type and allow them to refine the metavariable, i.e., to replace it with more detailed code. This feature allows incremental program construction in a way similar to tactics-based proof assistants such as Coq.</p>
+<h3><span class="mw-headline" id="Proof_automation">Proof automation</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Agda_(programming_language)&amp;action=edit&amp;section=5" title="Edit section: Proof automation">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Programming in pure type theory involves a lot of tedious and repetitive proofs, and Agda has no support for tactics. Instead, Agda has support for automation via <a href="/wiki/Reflection_(computer_programming)" title="Reflection (computer programming)">reflection</a>. The reflection mechanism allows one to quote program fragments into – or unquote them from – the abstract syntax tree. The way reflection is used is similar to the way Template Haskell works.<sup id="cite_ref-7" class="reference"><a href="#cite_note-7">[7]</a></sup></p>
+<p>Another mechanism for proof automation is proof search action in emacs mode. It enumerates possible proof terms (limited to 5 seconds), and if one of the terms fits the specification, it will be put in the meta variable where the action is invoked. This action accepts hints, e.g., which theorems and from which modules can be used, whether the action can use pattern matching, etc.<sup id="cite_ref-8" class="reference"><a href="#cite_note-8">[8]</a></sup></p>
+<h3><span class="mw-headline" id="Termination_checking">Termination checking</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Agda_(programming_language)&amp;action=edit&amp;section=6" title="Edit section: Termination checking">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Agda is a total language, i.e., each program in it must terminate and all possible patterns must be matched. Without this feature, the logic behind the language becomes inconsistent, and it becomes possible to prove arbitrary statements. For termination checking, Agda uses the approach of the Foetus termination checker.<sup id="cite_ref-9" class="reference"><a href="#cite_note-9">[9]</a></sup></p>
+<h3><span class="mw-headline" id="Standard_library">Standard library</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Agda_(programming_language)&amp;action=edit&amp;section=7" title="Edit section: Standard library">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Agda has an extensive de facto standard library, which includes many useful definitions and theorems about basic data structures, such as natural numbers, lists, and vectors. The library is in beta, and is under active development.</p>
+<h3><span class="mw-headline" id="Unicode">Unicode</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Agda_(programming_language)&amp;action=edit&amp;section=8" title="Edit section: Unicode">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>One of the more notable features of Agda is a heavy reliance on <a href="/wiki/Unicode" title="Unicode">Unicode</a> in program source code. The standard emacs mode uses shortcuts for input, such as <code>\Sigma</code> for Σ.</p>
+<h3><span class="mw-headline" id="Backends">Backends</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Agda_(programming_language)&amp;action=edit&amp;section=9" title="Edit section: Backends">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>There are three compiler backends, MAlonzo for Haskell, and one each for <a href="/wiki/JavaScript" title="JavaScript">JavaScript</a>, and Epic.<sup id="cite_ref-10" class="reference"><a href="#cite_note-10">[10]</a></sup></p>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Agda_(programming_language)&amp;action=edit&amp;section=10" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://code.haskell.org/Agda/LICENSE">Agda license file</a></span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text">Ulf Norell. Towards a practical programming language based on dependent type theory. PhD Thesis. Chalmers University of Technology, 2007. <a rel="nofollow" class="external autonumber" href="http://www.cse.chalmers.se/~ulfn/papers/thesis.pdf">[1]</a></span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://ocvs.cfv.jp/Agda/index.html">"Agda: An Interactive Proof Editor"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2014-10-20</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AAgda+%28programming+language%29&amp;rft.btitle=Agda%3A+An+Interactive+Proof+Editor&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Focvs.cfv.jp%2FAgda%2Findex.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-emacs-mode-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-emacs-mode_4-0">^</a></b></span> <span class="reference-text"><cite class="citation conference">Coquand, Catarina; Synek, Dan; Takeyama, Makoto. <a rel="nofollow" class="external text" href="https://mailserver.di.unipi.it/ricerca/proceedings/ETAPS05/uitp/uitp_p05.pdf"><i>An Emacs interface for type directed support constructing proofs and programs</i></a> <span style="font-size:85%;">(PDF)</span>. European Joint Conferences on Theory and Practice of Software 2005.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AAgda+%28programming+language%29&amp;rft.aufirst=Catarina&amp;rft.aulast=Coquand&amp;rft.au=Synek%2C+Dan&amp;rft.au=Takeyama%2C+Makoto&amp;rft.btitle=An+Emacs+interface+for+type+directed+support+constructing+proofs+and+programs&amp;rft.genre=conference&amp;rft_id=https%3A%2F%2Fmailserver.di.unipi.it%2Fricerca%2Fproceedings%2FETAPS05%2Fuitp%2Fuitp_p05.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text">Luo, Zhaohui. <i>Computation and reasoning: a type theory for computer science</i>. Oxford University Press, Inc., 1994.</span></li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://github.com/agda/agda-stdlib/blob/master/src/Data/Nat.agda">"Nat from Agda standard library"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2014-07-20</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AAgda+%28programming+language%29&amp;rft.btitle=Nat+from+Agda+standard+library&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fgithub.com%2Fagda%2Fagda-stdlib%2Fblob%2Fmaster%2Fsrc%2FData%2FNat.agda&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text">Van Der Walt, Paul, and Wouter Swierstra. "Engineering proof by reflection in Agda." In <i>Implementation and Application of Functional Languages</i>, pp. 157-173. Springer Berlin Heidelberg, 2013. <a rel="nofollow" class="external autonumber" href="http://hal.inria.fr/docs/00/98/76/10/PDF/ReflectionProofs.pdf">[2]</a></span></li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.staff.science.uu.nl/~swier004/Publications/AutoInAgda.pdf">Kokke, Pepijn, and Wouter Swierstra. "Auto in Agda."</a></span></li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-9">^</a></b></span> <span class="reference-text">Abel, Andreas. "foetus – Termination checker for simple functional programs." <i>Programming Lab Report</i> 474 (1998). <a rel="nofollow" class="external autonumber" href="http://www.tcs.informatik.uni-muenchen.de/~abel/foetus.pdf">[3]</a></span></li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-10">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.cs.st-andrews.ac.uk/~eb/epic.php">Epic compiler backend</a></span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Agda_(programming_language)&amp;action=edit&amp;section=11" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><span class="official-website"><span class="url"><a rel="nofollow" class="external text" href="http://wiki.portal.chalmers.se/agda">Official website</a></span></span></li>
+<li><a rel="nofollow" class="external text" href="http://www.cse.chalmers.se/~ulfn/papers/afp08/tutorial.pdf">Dependently Typed Programming in Agda</a>, by <a href="/w/index.php?title=Ulf_Norell&amp;action=edit&amp;redlink=1" class="new" title="Ulf Norell (page does not exist)">Ulf Norell</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.cse.chalmers.se/~ulfn/papers/tphols09/tutorial.pdf">A Brief Overview of Agda</a>, by Ana Bove, Peter Dybjer, and <a href="/w/index.php?title=Ulf_Norell&amp;action=edit&amp;redlink=1" class="new" title="Ulf Norell (page does not exist)">Ulf Norell</a></li>
+<li><a rel="nofollow" class="external text" href="https://www.youtube.com/playlist?p=B7F836675DCE009C">Introduction to Agda</a>, a five-part YouTube playlist by Daniel Peebles</li>
+<li><a rel="nofollow" class="external text" href="http://oxij.org/note/BrutalDepTypes/">Brutal [Meta]Introduction to Dependent Types in Agda</a></li>
+<li><a rel="nofollow" class="external text" href="http://people.inf.elte.hu/divip/AgdaTutorial/Index.html">Agda Tutorial: "explore programming in Agda without theoretical background"</a></li>
+</ul>
+<div role="navigation" class="navbox" aria-labelledby="Chalmers_University_of_Technology" style="padding:3px">
+<table class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:Projects_at_Chalmers_University_of_Technology" title="Template:Projects at Chalmers University of Technology"><abbr title="View this template" style=";;background:none transparent;border:none;">v</abbr></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:Projects_at_Chalmers_University_of_Technology" title="Template talk:Projects at Chalmers University of Technology"><abbr title="Discuss this template" style=";;background:none transparent;border:none;">t</abbr></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:Projects_at_Chalmers_University_of_Technology&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;">e</abbr></a></li>
+</ul>
+</div>
+<div id="Chalmers_University_of_Technology" style="font-size:114%"><a href="/wiki/Chalmers_University_of_Technology" title="Chalmers University of Technology">Chalmers University of Technology</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Academics</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Johanneberg_Science_Park" title="Johanneberg Science Park">Johanneberg Science Park</a></li>
+<li><a href="/wiki/Chalmers_Lindholmen_University_College" title="Chalmers Lindholmen University College">Lindholmen University College</a></li>
+<li><a href="/wiki/Chalmers_School_of_Entrepreneurship" title="Chalmers School of Entrepreneurship">School of Entrepreneurship</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Organizations</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Chalmers_Ballong_Corps" title="Chalmers Ballong Corps">Ballong Corps</a></li>
+<li><a href="/wiki/CETAC" title="CETAC">Engineering Trainee Appointment Committee</a></li>
+<li><a href="/wiki/Chalmers_Naval_Architecture_Students%27_Society" title="Chalmers Naval Architecture Students' Society">Naval Architecture Students' Society</a></li>
+<li><a href="/wiki/Chalmers_Students%27_Union" title="Chalmers Students' Union">Students' Union</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Projects</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><strong class="selflink">Agda</strong></li>
+<li><a href="/wiki/Ogle_DVD_Player" title="Ogle DVD Player">DVD Player</a></li>
+<li><a href="/wiki/EcoProIT" title="EcoProIT">EcoProIT</a></li>
+<li><a href="/wiki/FEniCS_Project" title="FEniCS Project">FEniCS Project</a></li>
+<li><a href="/wiki/The_Humanoid_Project" class="mw-redirect" title="The Humanoid Project">Humanoid Project</a></li>
+<li><a href="/wiki/IT%2B%2B" title="IT++">IT++</a></li>
+<li><a href="/wiki/Lazy_ML" title="Lazy ML">Lazy ML</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Joint ventures</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Gothenburg_International_Bioscience_Business_School" title="Gothenburg International Bioscience Business School">Bioscience Business School</a></li>
+<li><a href="/wiki/Center_for_Intellectual_Property_Studies" title="Center for Intellectual Property Studies">Center for Intellectual Property Studies</a></li>
+<li><a href="/wiki/IT_University" title="IT University">IT University</a></li>
+<li><a href="/wiki/Lindholmen_Science_Park" title="Lindholmen Science Park">Lindholmen Science Park</a></li>
+<li><a href="/wiki/Viktoria_Institute" class="mw-redirect" title="Viktoria Institute">Viktoria Institute</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Related</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/William_Chalmers_(merchant)" title="William Chalmers (merchant)">William Chalmers</a></li>
+<li><a href="/wiki/The_Cort%C3%A8ge" title="The Cortège">Cortège</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1256
+Cached time: 20170131162426
+Cache expiry: 86400
+Dynamic content: true
+CPU time usage: 0.128 seconds
+Real time usage: 0.262 seconds
+Preprocessor visited node count: 1048/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 23821/2097152 bytes
+Template argument size: 1745/2097152 bytes
+Highest expansion depth: 25/40
+Expensive parser function count: 2/500
+Lua time usage: 0.053/10.000 seconds
+Lua memory usage: 2.44 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  239.160      1 -total
+ 36.65%   87.657      2 Template:Infobox
+ 29.32%   70.119      1 Template:Infobox_programming_language
+ 16.39%   39.209      1 Template:Reflist
+ 11.39%   27.248      2 Template:Cite_web
+ 10.57%   25.290      1 Template:Infobox_software/simple
+  8.44%   20.191      2 Template:Start_date_and_age
+  5.98%   14.307      1 Template:Official_website
+  4.39%   10.501      1 Template:Projects_at_Chalmers_University_of_Technology
+  3.30%    7.881      1 Template:Time_ago
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:4426773-0!*!0!!en!*!* and timestamp 20170131162425 and revision id 760814183
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Agda_(programming_language)&amp;oldid=760814183">https://en.wikipedia.org/w/index.php?title=Agda_(programming_language)&amp;oldid=760814183</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Dependently_typed_languages" title="Category:Dependently typed languages">Dependently typed languages</a></li><li><a href="/wiki/Category:Functional_languages" title="Category:Functional languages">Functional languages</a></li><li><a href="/wiki/Category:Proof_assistants" title="Category:Proof assistants">Proof assistants</a></li><li><a href="/wiki/Category:Free_software_programmed_in_Haskell" title="Category:Free software programmed in Haskell">Free software programmed in Haskell</a></li><li><a href="/wiki/Category:Haskell_programming_language_family" title="Category:Haskell programming language family">Haskell programming language family</a></li><li><a href="/wiki/Category:Cross-platform_free_software" title="Category:Cross-platform free software">Cross-platform free software</a></li><li><a href="/wiki/Category:Free_compilers_and_interpreters" title="Category:Free compilers and interpreters">Free compilers and interpreters</a></li><li><a href="/wiki/Category:Chalmers_University_of_Technology" title="Category:Chalmers University of Technology">Chalmers University of Technology</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Official_website_different_in_Wikidata_and_Wikipedia" title="Category:Official website different in Wikidata and Wikipedia">Official website different in Wikidata and Wikipedia</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Agda+%28programming+language%29" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Agda+%28programming+language%29" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/Agda_(programming_language)"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:Agda_(programming_language)"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/Agda_(programming_language)" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=Agda_(programming_language)&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Agda_(programming_language)&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Agda_(programming_language)" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Agda_(programming_language)" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Agda_(programming_language)&amp;oldid=760814183" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Agda_(programming_language)&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q20479" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Agda_%28programming_language%29&amp;id=760814183" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Agda+%28programming+language%29">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Agda+%28programming+language%29&amp;returnto=Agda+%28programming+language%29&amp;oldid=760814183&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Agda_(programming_language)&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-el"><a href="https://el.wikipedia.org/wiki/Agda" title="Agda – Greek" lang="el" hreflang="el" class="interlanguage-link-target">Ελληνικά</a></li><li class="interlanguage-link interwiki-ja"><a href="https://ja.wikipedia.org/wiki/Agda" title="Agda – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target">日本語</a></li><li class="interlanguage-link interwiki-ru"><a href="https://ru.wikipedia.org/wiki/Agda" title="Agda – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li><li class="interlanguage-link interwiki-zh"><a href="https://zh.wikipedia.org/wiki/Agda" title="Agda – Chinese" lang="zh" hreflang="zh" class="interlanguage-link-target">中文</a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q20479#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 19 January 2017, at 06:12.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Agda_(programming_language)&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.128","walltime":"0.262","ppvisitednodes":{"value":1048,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":23821,"limit":2097152},"templateargumentsize":{"value":1745,"limit":2097152},"expansiondepth":{"value":25,"limit":40},"expensivefunctioncount":{"value":2,"limit":500},"entityaccesscount":{"value":1,"limit":400},"timingprofile":["100.00%  239.160      1 -total"," 36.65%   87.657      2 Template:Infobox"," 29.32%   70.119      1 Template:Infobox_programming_language"," 16.39%   39.209      1 Template:Reflist"," 11.39%   27.248      2 Template:Cite_web"," 10.57%   25.290      1 Template:Infobox_software/simple","  8.44%   20.191      2 Template:Start_date_and_age","  5.98%   14.307      1 Template:Official_website","  4.39%   10.501      1 Template:Projects_at_Chalmers_University_of_Technology","  3.30%    7.881      1 Template:Time_ago"]},"scribunto":{"limitreport-timeusage":{"value":"0.053","limit":"10.000"},"limitreport-memusage":{"value":2563250,"limit":52428800}},"cachereport":{"origin":"mw1256","timestamp":"20170131162426","ttl":86400,"transientcontent":true}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":82,"wgHostname":"mw1237"});});</script>
+	</body>
+</html>

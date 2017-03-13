@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>IBM Basic assembly language and successors - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"IBM_Basic_assembly_language_and_successors","wgTitle":"IBM Basic assembly language and successors","wgCurRevisionId":751785628,"wgRevisionId":751785628,"wgArticleId":4321536,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["IBM software","Assembly languages","Software written primarily in assembly language","IBM System/360 mainframe line"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"IBM_Basic_assembly_language_and_successors","wgRelevantArticleId":4321536,"wgRequestId":"WIka4QpAMCUAABusCWEAAAAS","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgRedirectedFrom":"IBM_Basic_assembly_language","wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":true},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgInternalRedirectTargetUrl":"/wiki/IBM_Basic_assembly_language_and_successors","wgWikibaseItemId":"Q5968762","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.cite.styles":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.action.view.redirect","ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.legacy.wikibits","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.29.0-wmf.8"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/IBM_Basic_assembly_language_and_successors"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=IBM_Basic_assembly_language_and_successors&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=IBM_Basic_assembly_language_and_successors&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/IBM_Basic_assembly_language_and_successors"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-IBM_Basic_assembly_language_and_successors rootpage-IBM_Basic_assembly_language_and_successors skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">IBM Basic assembly language and successors</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"><span class="mw-redirectedfrom">  (Redirected from <a href="/w/index.php?title=IBM_Basic_assembly_language&amp;redirect=no" class="mw-redirect" title="IBM Basic assembly language">IBM Basic assembly language</a>)</span></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><script>function mfTempOpenSection(id){var block=document.getElementById("mf-section-"+id);block.className+=" open-block";block.previousSibling.className+=" open-block";}</script><p><b>Basic Assembly Language</b> (<b>BAL</b>) is the commonly used term for a low-level programming language used on <a href="/wiki/IBM_System/360" title="IBM System/360">IBM System/360</a> and successor mainframes. Originally "Basic Assembly Language" applied only to an extremely restricted dialect designed to run under control of <a href="/wiki/IBM_Basic_Programming_Support" title="IBM Basic Programming Support">IBM Basic Programming Support</a> (BPS/360) on systems with only 8&#160;KB of main memory, and only a <a href="/wiki/Card_reader" title="Card reader">card reader</a>, a <a href="/wiki/Card_punch" class="mw-redirect" title="Card punch">card punch</a>, and a printer for <a href="/wiki/Input/output" title="Input/output">input/output</a> — thus the word "Basic". However, the full name and the <a href="/wiki/Initialism" class="mw-redirect" title="Initialism">initialism</a> "BAL" almost immediately attached themselves in popular use to all assembly-language dialects on the System/360 and its descendants. BAL for BPS/360 was introduced with the <a href="/wiki/System/360" class="mw-redirect" title="System/360">System/360</a> in 1964.</p>
+<p>Assemblers on other System/360 operating systems through <a href="/wiki/IBM_System/370" title="IBM System/370">System/370</a>, <a href="/wiki/IBM_ESA/390" title="IBM ESA/390">System/390</a>, and <a href="/wiki/System_z" class="mw-redirect" title="System z">System z</a>, as well as the <a href="/wiki/UNIVAC_Series_90" title="UNIVAC Series 90">UNIVAC Series 90</a> mainframes made by <a href="/wiki/Sperry_Corporation" title="Sperry Corporation">Sperry Corporation</a>, and the <a href="/wiki/BS2000" title="BS2000">BS2000</a> Mainframes currently made by <a href="/wiki/Fujitsu" title="Fujitsu">Fujitsu</a>, inherited and extended its syntax. The latest derived language is known as the <a href="/wiki/IBM_High-Level_Assembler" class="mw-redirect" title="IBM High-Level Assembler">IBM High-Level Assembler</a> (HLASM). Programmers utilizing this family of assemblers also refer to them as ALC, (for Assembly Language Coding), or simply "assembler".</p>
+<p>BAL is also the mnemonic of the "Branch And Link" <a href="https://nl.wikipedia.org/wiki/Instructieset_van_IBM_360" class="extiw" title="nl:Instructieset van IBM 360">instruction</a>.<sup id="cite_ref-opl_bobm_1-0" class="reference"><a href="#cite_note-opl_bobm-1">[1]</a></sup></p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#General_characteristics"><span class="tocnumber">1</span> <span class="toctext">General characteristics</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Assembler_Statement_Format"><span class="tocnumber">2</span> <span class="toctext">Assembler Statement Format</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Types_of_instructions"><span class="tocnumber">3</span> <span class="toctext">Types of instructions</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="#Machine_instructions_.28mnemonic.29"><span class="tocnumber">3.1</span> <span class="toctext">Machine instructions (mnemonic)</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Assembler_instructions"><span class="tocnumber">3.2</span> <span class="toctext">Assembler instructions</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Macros_and_conditional_assembly"><span class="tocnumber">3.3</span> <span class="toctext">Macros and conditional assembly</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Operating_system_macros"><span class="tocnumber">3.4</span> <span class="toctext">Operating system macros</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-8"><a href="#Examples"><span class="tocnumber">4</span> <span class="toctext">Examples</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#Versions"><span class="tocnumber">5</span> <span class="toctext">Versions</span></a>
+<ul>
+<li class="toclevel-2 tocsection-10"><a href="#7090.2F7094_Support_Package_assembler"><span class="tocnumber">5.1</span> <span class="toctext">7090/7094 Support Package assembler</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#Basic_Programming_Support_assembler"><span class="tocnumber">5.2</span> <span class="toctext">Basic Programming Support assembler</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#Basic_Operating_System_assembler"><span class="tocnumber">5.3</span> <span class="toctext">Basic Operating System assembler</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="#Assembler_D"><span class="tocnumber">5.4</span> <span class="toctext">Assembler D</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="#Assembler_E_and_F"><span class="tocnumber">5.5</span> <span class="toctext">Assembler E and F</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="#Assembler_G"><span class="tocnumber">5.6</span> <span class="toctext">Assembler G</span></a></li>
+<li class="toclevel-2 tocsection-16"><a href="#Assembler_H"><span class="tocnumber">5.7</span> <span class="toctext">Assembler H</span></a></li>
+<li class="toclevel-2 tocsection-17"><a href="#Assembler_XF"><span class="tocnumber">5.8</span> <span class="toctext">Assembler XF</span></a></li>
+<li class="toclevel-2 tocsection-18"><a href="#High_Level_Assembler"><span class="tocnumber">5.9</span> <span class="toctext">High Level Assembler</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-19"><a href="#Specialized_versions"><span class="tocnumber">6</span> <span class="toctext">Specialized versions</span></a>
+<ul>
+<li class="toclevel-2 tocsection-20"><a href="#IBM_System.2F360_Model_44_PS_assembler"><span class="tocnumber">6.1</span> <span class="toctext">IBM System/360 Model 44 PS assembler</span></a></li>
+<li class="toclevel-2 tocsection-21"><a href="#IBM_System.2F360_TSS_assembler"><span class="tocnumber">6.2</span> <span class="toctext">IBM System/360 TSS assembler</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-22"><a href="#Non-IBM_assemblers"><span class="tocnumber">7</span> <span class="toctext">Non-IBM assemblers</span></a></li>
+<li class="toclevel-1 tocsection-23"><a href="#See_also"><span class="tocnumber">8</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-24"><a href="#References"><span class="tocnumber">9</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-25"><a href="#External_links"><span class="tocnumber">10</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="General_characteristics">General characteristics</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=IBM_Basic_assembly_language_and_successors&amp;action=edit&amp;section=1" title="Edit section: General characteristics">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The architecture of IBM mainframes has undergone several extensions over the years, including System/360, System/370, System/370 XA, ESA/370, <a href="/wiki/IBM_ESA/390" title="IBM ESA/390">ESA/390</a>, and <a href="/wiki/Z/Architecture" title="Z/Architecture">z/Architecture</a>. Each of these architectures has retained <a href="/wiki/Computer_compatibility" title="Computer compatibility">compatibility</a> with most of the features of its predecessor. BAL uses the native <a href="/wiki/Instruction_set" title="Instruction set">instruction set</a> of these machines. It is thus closer to the hardware than third-generation languages such as <a href="/wiki/COBOL" title="COBOL">COBOL</a>.</p>
+<p>The instruction set consists of the low-level operations supported by the hardware, such as:</p>
+<table class="wikitable">
+<tr>
+<th>Instruction</th>
+<th>Mnemonic</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>LOAD</td>
+<td>L</td>
+<td>copy a value from memory to a register</td>
+</tr>
+<tr>
+<td>STORE</td>
+<td>ST</td>
+<td>copy a value from a register to memory</td>
+</tr>
+<tr>
+<td>COMPARE</td>
+<td>C</td>
+<td>compare a register value with a value in memory</td>
+</tr>
+<tr>
+<td>Shift</td>
+<td>SLL, SRL</td>
+<td>move the bits of a register left or right</td>
+</tr>
+<tr>
+<td>START SUBCHANNEL</td>
+<td>SSCH</td>
+<td>start a sub-channel I/O operation using a string of Channel Command Words</td>
+</tr>
+</table>
+<p>The extreme simplicity of these operations means that the <a href="/wiki/Source_code" title="Source code">source code</a> of a program written in assembler will usually be much longer than an equivalent program in, say, <a href="/wiki/COBOL" title="COBOL">COBOL</a> or <a href="/wiki/Fortran" title="Fortran">Fortran</a>. In the past, the speed of hand-coded assembler programs was often felt to make up for this drawback, but with the advent of optimizing compilers, <b><a href="/wiki/C_(programming_language)" title="C (programming language)">C</a></b> for the mainframe, and other advances, assembler has lost much of its appeal. IBM continues to upgrade the assembler, however, and it is still used when the need for speed or very fine control is paramount.</p>
+<p>Another reason to use assembler is that not all operating system functions can be accessed in high level languages. The application program interface of mainframe operating systems is defined as a set of assembly language "macro" instructions, that typically invoke <a href="/wiki/Supervisor_Call_instruction" title="Supervisor Call instruction">Supervisor Call</a> (SVC) [on z/OS] or Diagnose (DIAG) [on z/VM] hardware instructions to invoke operating system routines. It is possible to use operating system services from programs written in high-level languages by use of assembler subroutines.</p>
+<h2><span class="mw-headline" id="Assembler_Statement_Format">Assembler Statement Format</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=IBM_Basic_assembly_language_and_successors&amp;action=edit&amp;section=2" title="Edit section: Assembler Statement Format">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The format of assembler language statements reflects the layout of an 80-column punched card, though successive versions have relaxed most of the restrictions.</p>
+<ul>
+<li>The optional statement label or <i>name</i> was one to six alphanumeric characters beginning in column 1. The first character had to be alphabetic.</li>
+<li>The operation code or mnemonic could begin in any column to the right of column 1, separated from the statement label by a blank.</li>
+<li>The operand field could begin in any column to the right of the operation code, separated from the operation code by at least one blank. Blanks were invalid in operands except in character constants. The operand field, consisting of one or more operands, was optional depending on the operation code.</li>
+<li>Optional comments could appear to the right of the operand field, separated by at least one blank.</li>
+<li><i>Basic</i> Assembly Language did not allow statement continuation. Later versions of the assembler indicated continuation by the appearance of any character in column 72 of the statement being continued. Basic Assembly Language required that column 72 be blank.</li>
+<li>A "full-card comment" was indicated by an asterisk (*) in column 1.</li>
+<li>Card columns 73–80, called the <i>identification-sequence field</i> could be used by the programmer for any purpose, but usually contained sequence numbers for resorting a jumbled card deck.</li>
+</ul>
+<p>Basic Assembly language also permitted an alternate statement format with the statement starting in column 25, allowing the assembled instruction to be punched into the same card beginning in column 1. This option was not continued in later versions of the assembler.</p>
+<h2><span class="mw-headline" id="Types_of_instructions">Types of instructions</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=IBM_Basic_assembly_language_and_successors&amp;action=edit&amp;section=3" title="Edit section: Types of instructions">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Three main types of instructions are found in the source code of a program written in assembler.</p>
+<h3><span class="mw-headline" id="Machine_instructions_.28mnemonic.29">Machine instructions (mnemonic)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=IBM_Basic_assembly_language_and_successors&amp;action=edit&amp;section=4" title="Edit section: Machine instructions (mnemonic)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>There is a "one-to-one" relationship with <a href="/wiki/Machine_instruction" class="mw-redirect" title="Machine instruction">machine instructions</a>. The full <a href="/wiki/Mnemonic" title="Mnemonic">mnemonic</a> instruction set is described in the <i>Principles of Operation</i> manual for each processor. Examples:</p>
+<pre>
+* This is a comment line
+* Load the fullword integer stored at the
+* location labeled 'ZIGGY' into general register 3:
+      L    3,ZIGGY
+      SLA  4,5             shift the value in general register 4 left by 5 bits
+      MVC  TARGET,SOURCE   move characters from location 'SOURCE' to 'TARGET'
+      AP   COUNT,=P'1'     add 1 to value in memory location 'COUNT' (packed decimal format)
+      B    NEXT            unconditional branch to label 'NEXT'
+HERE  EQU   *              This is a label
+      CLC   TARGET,=C'ADDRESS'  Compare memory location 'TARGET' to string 'ADDRESS'
+      BE    THERE               branch if equal to program label 'THERE'
+</pre>
+<p><br />
+Generally accepted standards, although by no means mandatory, include the identification of general purpose registers with mnemonics. Unlike assemblers for some other systems, such as <a href="/wiki/X86_assembly_language" title="X86 assembly language">X86 assembly language</a>, register mnemonics are not reserved symbols but are defined through EQU statements elsewhere in the program. This improves readability of assembler language programs and provides a cross-reference of register usage. Thus typically you may see the following in an assembler program:</p>
+<pre>
+R3    EQU  3
+      ...
+      L    R3,ZIGGY
+</pre>
+<p><br />
+Some notable <a href="https://nl.wikipedia.org/wiki/Instructieset_van_IBM_360" class="extiw" title="nl:Instructieset van IBM 360">instruction</a> mnemonics are <abbr title="Branch And Link Register">BALR</abbr> for a call storing the return address in a register before stacks were used, <abbr title="SuperVisor Call"><a href="/wiki/Supervisor_Call_instruction" title="Supervisor Call instruction">SVC</a></abbr>, <abbr title="Diagnose">DIAG</abbr>, and <abbr title="Zero and Add Packed decimal">ZAP</abbr>.<sup id="cite_ref-opl_bobm_1-1" class="reference"><a href="#cite_note-opl_bobm-1">[1]</a></sup> The latter inspired the name of the SuperZAP utility by a programmer using the pseudonym <tt>WAMOZART</tt>, cf. <span class="citation foldoc"><small><a rel="nofollow" class="external text" href="http://foldoc.org/SuperZap">SuperZap</a> at the <a href="/wiki/Free_On-line_Dictionary_of_Computing" title="Free On-line Dictionary of Computing">Free On-line Dictionary of Computing</a></small></span>.</p>
+<h3><span class="mw-headline" id="Assembler_instructions">Assembler instructions</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=IBM_Basic_assembly_language_and_successors&amp;action=edit&amp;section=5" title="Edit section: Assembler instructions">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Assembler instructions. sometimes termed <a href="/wiki/Assembly_language#Assembly_directives" title="Assembly language"><i>directives</i></a> on other systems, are a request to the assembler to perform various operations during the assembly. For instance, <i>CSECT</i> means "start a section of code here"; <i>DC</i> defines a constant to be placed in the object code.</p>
+<h3><span class="mw-headline" id="Macros_and_conditional_assembly">Macros and conditional assembly</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=IBM_Basic_assembly_language_and_successors&amp;action=edit&amp;section=6" title="Edit section: Macros and conditional assembly">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p><i>Basic</i> assembler language did not support <a href="/wiki/Macro_(computer_science)" title="Macro (computer science)">macros</a>. Later assembler versions allowed the programmer to group instructions together into macros and add them to a library, which can then be invoked in other programs, usually with parameters, like the preprocessor facilities in C and related languages. Macros can include conditional assembler instructions, such as AIF (an IF construct), used to generate different code according to the chosen parameters. That makes the macro facility of this assembler very powerful. While multiline macros in C are an exception, macro definitions in assembler can easily be hundreds of lines.</p>
+<h3><span class="mw-headline" id="Operating_system_macros">Operating system macros</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=IBM_Basic_assembly_language_and_successors&amp;action=edit&amp;section=7" title="Edit section: Operating system macros">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Most programs will require services from the <a href="/wiki/Operating_system" title="Operating system">operating system</a>, and the OS provides standard macros for requesting those services. These are analogous to <a href="/wiki/Unix" title="Unix">Unix</a> <a href="/wiki/System_call" title="System call">system calls</a>. For instance, in <a href="/wiki/MVS" title="MVS">MVS</a> (later z/OS), STORAGE (with the OBTAIN parameter) dynamically allocates a block of memory, and GET retrieves the next logical record from a file.</p>
+<p>Unlike Unix system calls, macros are not standardized across operating systems though. Even something as simple as writing a "sequential file" is coded differently e.g. in Z/OS than in Z/VSE.</p>
+<h2><span class="mw-headline" id="Examples">Examples</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=IBM_Basic_assembly_language_and_successors&amp;action=edit&amp;section=8" title="Edit section: Examples">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The following fragment shows how the logic "If SEX = 'M', add 1 to MALES; else, add 1 to FEMALES" would be performed in assembler.</p>
+<pre>
+         CLI   SEX,C'M'       Male?
+         BNE   IS_FEM         If not, branch around
+         L     7,MALES        Load current value of MALES into register 7
+         AL    7,=F'1'        add 1 
+         ST    7,MALES        store back the result
+         B     GO_ON          Finished with this portion
+IS_FEM   EQU   *              A label
+         L     7,FEMALES      Load current value in FEMALES into register 7 
+         AL    7,=F'1'        add 1 
+         ST    7,FEMALES      store back the result
+GO_ON    EQU   *              - rest of program -
+*
+MALES    DC    F'0'           Counter for MALES (initially=0)
+FEMALES  DC    F'0'           Counter for FEMALES (initially=0)
+</pre>
+<p><br />
+The following is the ubiquitous <a href="/wiki/Hello_world" class="mw-redirect" title="Hello world">Hello world</a> program, and would, executing under an IBM operating system such as <a href="/wiki/OS/VS1" title="OS/VS1">OS/VS1</a> or <a href="/wiki/MVS" title="MVS">MVS</a>, display the words 'Hello World' on the operator's console:</p>
+<pre>
+HELLO    CSECT               The name of this program is 'HELLO'
+*                            Register 15 points here on entry from OPSYS or caller.
+         STM   14,12,12(13)  Save registers 14,15, and 0 thru 12 in caller's Save area
+         LR    12,15         Set up base register with program's entry point address
+         USING HELLO,12      Tell assembler which register we are using for pgm. base
+         LA    15,SAVE       Now Point at our own save area
+         ST    15,8(13)      Set forward chain
+         ST    13,4(15)      Set back chain               
+         LR    13,15         Set R13 to address of new save area
+*                            -end of housekeeping (similar for most programs) -
+         WTO   'Hello World' Write To Operator  (Operating System macro)
+*
+         L     13,4(13)      restore address to caller-provided save area
+         XC    8(4,13),8(13) Clear forward chain
+         LM    14,12,12(13)  Restore registers as on entry
+         DROP  12            The opposite of 'USING'
+         SR    15,15         Set register 15 to 0 so that the return code (R15) is Zero
+         BR    14            Return to caller
+*           
+SAVE     DS    18F           Define 18 fullwords to save calling program registers 
+         END  HELLO          This is the end of the program           
+</pre>
+<p><br />
+"WTO" is an assembler macro that generates an operating system call. Because of saving registers and later restoring and returning, this small program is usable as a batch program invoked directly by the operating system <a href="/wiki/Job_control_language" class="mw-redirect" title="Job control language">Job control language</a> (JCL) like this:</p>
+<pre>
+// EXEC PGM=HELLO
+</pre>
+<p>or, alternatively, it can be CALLed as a subroutine from such a program:</p>
+<pre>
+CALL 'HELLO'
+</pre>
+<h2><span class="mw-headline" id="Versions">Versions</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=IBM_Basic_assembly_language_and_successors&amp;action=edit&amp;section=9" title="Edit section: Versions">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>With the exception of the assemblers for the <a href="/wiki/IBM_System/360_Model_20" title="IBM System/360 Model 20">IBM System/360 Model 20</a> the IBM assemblers were largely upward-compatible. The differences were mainly in the complexity of expressions allowed and in macro processing. <a href="/wiki/OS/360_and_successors" title="OS/360 and successors">OS/360</a> assemblers were originally designated according to their memory requirements.</p>
+<h3><span class="mw-headline" id="7090.2F7094_Support_Package_assembler">7090/7094 Support Package assembler</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=IBM_Basic_assembly_language_and_successors&amp;action=edit&amp;section=10" title="Edit section: 7090/7094 Support Package assembler">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>This cross-assembler ran on a <a href="/wiki/IBM_7090" title="IBM 7090">7090 or 7094</a> system and was used while System/360 was in development.<sup id="cite_ref-BAL_2-0" class="reference"><a href="#cite_note-BAL-2">[2]</a></sup><sup id="cite_ref-3" class="reference"><a href="#cite_note-3">[3]</a></sup></p>
+<h3><span class="mw-headline" id="Basic_Programming_Support_assembler">Basic Programming Support assembler</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=IBM_Basic_assembly_language_and_successors&amp;action=edit&amp;section=11" title="Edit section: Basic Programming Support assembler">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The assembler for <a href="/wiki/IBM_Basic_Programming_Support" title="IBM Basic Programming Support">BPS</a> is the true "basic assembler." It was intended to be loaded from cards and would run on an 8&#160;KB System/360 (except Model 20). It had no support for macro instructions or <i>extended mnemonics</i> (such as BH in place of BC 2 to branch if condition code 2 indicates a high compare). It could assemble only a single control section and did not allow <i>dummy sections</i> (structure definitions). Parenthesized expressions were not allowed and expressions were limited to three terms with the only operators being '+', '-', and '*'.<sup id="cite_ref-BAL_2-1" class="reference"><a href="#cite_note-BAL-2">[2]</a></sup><sup class="reference" style="white-space:nowrap;">:pp.59-61</sup></p>
+<h3><span class="mw-headline" id="Basic_Operating_System_assembler">Basic Operating System assembler</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=IBM_Basic_assembly_language_and_successors&amp;action=edit&amp;section=12" title="Edit section: Basic Operating System assembler">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The <a href="/wiki/BOS/360" title="BOS/360">Basic Operating System</a> had two assembler versions. Both required 16&#160;KB memory, one was tape resident and the other disk.<sup id="cite_ref-4" class="reference"><a href="#cite_note-4">[4]</a></sup><sup class="reference" style="white-space:nowrap;">:pp.7-8</sup></p>
+<h3><span class="mw-headline" id="Assembler_D">Assembler D</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=IBM_Basic_assembly_language_and_successors&amp;action=edit&amp;section=13" title="Edit section: Assembler D">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Assembler D was the <a href="/wiki/DOS/360_and_successors" title="DOS/360 and successors">DOS/360</a> assembler for machines with a memory size of 16&#160;KB. It came in two versions: A 10&#160;KB variant for machines with the minimum 16&#160;KB memory, and a 14&#160;KB variant for machines with 24&#160;KB. An F-level assembler was also available for DOS machines with 64&#160;KB or more. D assemblers offered nearly all the features of higher versions.<sup id="cite_ref-ASMD_5-0" class="reference"><a href="#cite_note-ASMD-5">[5]</a></sup><sup class="reference" style="white-space:nowrap;">:p.7</sup></p>
+<h3><span class="mw-headline" id="Assembler_E_and_F">Assembler E and F</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=IBM_Basic_assembly_language_and_successors&amp;action=edit&amp;section=14" title="Edit section: Assembler E and F">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Assembler E was designed to run on an OS/360 system with a minimum of 32&#160;KB of main storage, with the assembler itself requiring 15&#160;KB.<sup id="cite_ref-6" class="reference"><a href="#cite_note-6">[6]</a></sup><sup class="reference" style="white-space:nowrap;">:p.2</sup> Assembler F could run under either DOS/360 or OS/360 on a system with a 64&#160;KB memory, with the assembler requiring 44&#160;KB.<sup id="cite_ref-7" class="reference"><a href="#cite_note-7">[7]</a></sup><sup id="cite_ref-8" class="reference"><a href="#cite_note-8">[8]</a></sup><sup id="cite_ref-9" class="reference"><a href="#cite_note-9">[9]</a></sup> These assemblers were a standard part of OS/360; the version that was generated was specified at <a href="/wiki/System_Generation_(OS)" title="System Generation (OS)">system generation</a> (SYSGEN).</p>
+<h3><span class="mw-headline" id="Assembler_G">Assembler G</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=IBM_Basic_assembly_language_and_successors&amp;action=edit&amp;section=15" title="Edit section: Assembler G">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>"Assembler G" was a set of modifications made to Assembler F in the 1970s by the <a href="/wiki/University_of_Waterloo" title="University of Waterloo">University of Waterloo</a> (Assembler F was/is open source). Enhancements were mostly in better handling of input/output and improved buffering which speed up assemblies considerably.<sup id="cite_ref-10" class="reference"><a href="#cite_note-10">[10]</a></sup> "Assembler G" was never an IBM product.</p>
+<h3><span class="mw-headline" id="Assembler_H">Assembler H</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=IBM_Basic_assembly_language_and_successors&amp;action=edit&amp;section=16" title="Edit section: Assembler H">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Assembler H Version 2 was announced in 1981 and included support for Extended Architecture (XA), including the AMODE and RMODE directives.<sup id="cite_ref-11" class="reference"><a href="#cite_note-11">[11]</a></sup><sup class="reference" style="white-space:nowrap;">:p.3-28</sup> It was withdrawn from marketing in 1994 and support ended in 1995. It was replaced by High Level Assembler.<sup id="cite_ref-12" class="reference"><a href="#cite_note-12">[12]</a></sup></p>
+<h3><span class="mw-headline" id="Assembler_XF">Assembler XF</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=IBM_Basic_assembly_language_and_successors&amp;action=edit&amp;section=17" title="Edit section: Assembler XF">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Assembler XF was an upgrade of Assembler F which included the new System/370 architecture instructions. This version provided a common assembler for OS/VS and DOS/VS systems. Other changes included relaxing restrictions on expressions and macro processing. Assembler XF required a minimum partition/region size of 64&#160;KB (virtual). Recommended size was 128&#160;KB.<sup id="cite_ref-13" class="reference"><a href="#cite_note-13">[13]</a></sup><sup class="reference" style="white-space:nowrap;">:p.73</sup></p>
+<h3><span class="mw-headline" id="High_Level_Assembler">High Level Assembler</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=IBM_Basic_assembly_language_and_successors&amp;action=edit&amp;section=18" title="Edit section: High Level Assembler">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div role="note" class="hatnote">Main article: <a href="/wiki/IBM_High_Level_Assembler" title="IBM High Level Assembler">IBM High Level Assembler</a></div>
+<p>High Level Assembler (HLASM), announced in 1992 as a licensed program "becomes the default translator for System/370 (TM) and System/390 (TM) operating environments." The assembler supports the MVS, VSE, and VM operating systems and successors. As of Release 6 it now is able to run under Linux on zSeries and generate ELF or COFF object files.<sup id="cite_ref-14" class="reference"><a href="#cite_note-14">[14]</a></sup> It features a long list of mostly usability enhancements, and incorporates the SLAC (Stanford Linear Accelerator) modifications to Assembler H. Among features added were an indication of CSECT/DSECT for location counter, a list of "using" registers currently active, an indication of whether a variable is read or written in the cross-reference, and allowing mixed-case symbol names.<sup id="cite_ref-15" class="reference"><a href="#cite_note-15">[15]</a></sup> The <i>RSECT</i> directive (Read-only Control Section) allows the assembler to check reentrancy on a per-section basis. RSECT was previously "undocumented and inconsistently implemented in Assembler H."<sup id="cite_ref-16" class="reference"><a href="#cite_note-16">[16]</a></sup><sup class="reference" style="white-space:nowrap;">:p.43</sup> HLASM is the current assembler for IBM mainframe systems as of 2012.</p>
+<h2><span class="mw-headline" id="Specialized_versions">Specialized versions</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=IBM_Basic_assembly_language_and_successors&amp;action=edit&amp;section=19" title="Edit section: Specialized versions">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="IBM_System.2F360_Model_44_PS_assembler">IBM System/360 Model 44 PS assembler</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=IBM_Basic_assembly_language_and_successors&amp;action=edit&amp;section=20" title="Edit section: IBM System/360 Model 44 PS assembler">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The <a href="/wiki/IBM_System/360_Model_44" title="IBM System/360 Model 44">IBM System/360 Model 44</a> Programming System Assembler processed a language that was a "selected subset" of OS/360 and DOS/360 assembler language. It had no support for storage-to-storage (SS) instructions or the <i>convert to binary</i> (CVB), <i>convert to decimal</i> (CVD), <i>read direct</i> (RDD) and <i>write direct</i> (WRD) instructions.<sup id="cite_ref-M44_17-0" class="reference"><a href="#cite_note-M44-17">[17]</a></sup> It did include four instructions unique to the Model 44: <i>Change Priority Mask</i> (CHPM), <i>Load PSW Special</i> (LPSX), <i>Read Direct Word</i> (RDDW), and <i>Write Direct Word</i> (WRDW). It also included directives to update the source program, a function performed by utility programs in other systems (SKPTO, REWND, NUM, OMIT, and ENDUP). It provided <i>named common</i> and implicitly defined &amp;SETA symbols, but had some restrictions as well.<sup id="cite_ref-M44_17-1" class="reference"><a href="#cite_note-M44-17">[17]</a></sup><sup class="reference" style="white-space:nowrap;">:pp.53,73</sup></p>
+<h3><span class="mw-headline" id="IBM_System.2F360_TSS_assembler">IBM System/360 TSS assembler</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=IBM_Basic_assembly_language_and_successors&amp;action=edit&amp;section=21" title="Edit section: IBM System/360 TSS assembler">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The assembler for the <a href="/wiki/TSS/360" class="mw-redirect" title="TSS/360">System/360 Model 67 Time Sharing System</a> had a number of differences in directives to support unique TSS features. The <i>PSECT</i> directive generated a <i>Prototype Control Section</i> containing relocatable address constants and modifiable data used by the program.<sup id="cite_ref-18" class="reference"><a href="#cite_note-18">[18]</a></sup><sup class="reference" style="white-space:nowrap;">:p.143</sup></p>
+<h2><span class="mw-headline" id="Non-IBM_assemblers">Non-IBM assemblers</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=IBM_Basic_assembly_language_and_successors&amp;action=edit&amp;section=22" title="Edit section: Non-IBM assemblers">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>There have been several IBM-compatible assemblers for special environments.<sup id="cite_ref-19" class="reference"><a href="#cite_note-19">[19]</a></sup></p>
+<ul>
+<li>The <a href="/wiki/UNIVAC_Series_90" title="UNIVAC Series 90">Univac 90/60, 90/70 and 90/80</a> series from <a href="/wiki/Unisys" title="Unisys">Unisys</a> was designed to accept IBM-format assembler, as the machine series was a workalike to the S/360 and S/370.</li>
+<li>The <a href="/wiki/Fujitsu" title="Fujitsu">Fujitsu</a> BS2000 series was also built as a 370 workalike from the same resource as Univac, and is still in use in some parts of Europe.<sup id="cite_ref-20" class="reference"><a href="#cite_note-20">[20]</a></sup></li>
+<li>Dignus LLC <i>Systems/ASM</i> is an HLASM-compatible assembler that can run natively on IBM systems or as a cross-assembler.<sup id="cite_ref-21" class="reference"><a href="#cite_note-21">[21]</a></sup></li>
+<li>Freeware <i>PC/370</i>, written by Don Higgins, was later purchased by <a href="/wiki/Micro_Focus_International" title="Micro Focus International">Micro Focus</a>.</li>
+<li><i>z390</i> was an assembler and System 390 emulator also written by Don Higgins and is programmed in <a href="/wiki/Java_(programming_language)" title="Java (programming language)">Java</a>. It is open source and available from <a rel="nofollow" class="external free" href="http://www.z390.org/">http://www.z390.org/</a></li>
+<li>Penn State University authored a package called <i><a href="/wiki/ASSIST_(computing)" title="ASSIST (computing)">ASSIST</a></i>, which included a System 370 assembler and interpreter.</li>
+<li>Tachyon Software LLC markets the <i>Tachyon Assembler Workbench</i> which runs on Windows, Linux/x86, Linux for S/390 and zSeries, AIX and Solaris.<sup id="cite_ref-22" class="reference"><a href="#cite_note-22">[22]</a></sup></li>
+<li><a href="/wiki/GNU_Assembler" title="GNU Assembler">GNU Assembler</a> (gas) is part of the <a href="/wiki/GNU_Compiler_Collection" title="GNU Compiler Collection">GNU Compiler Collection</a> (gcc) for <a href="/wiki/Linux_on_System_z" class="mw-redirect" title="Linux on System z">Linux on OS/390 and System/z</a>. This assembler has a unique syntax that is incompatible with other assemblers for IBM architectures.</li>
+</ul>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=IBM_Basic_assembly_language_and_successors&amp;action=edit&amp;section=23" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a href="/wiki/IBM_System/360" title="IBM System/360">IBM System/360</a></li>
+<li><a href="/wiki/Assembly_language" title="Assembly language">Assembly language</a></li>
+<li><a href="/wiki/PC-based_IBM-compatible_mainframes" title="PC-based IBM-compatible mainframes">PC-based IBM-compatible mainframes</a> – list of compatible machines or virtual machines</li>
+<li><a href="/wiki/Disassembler" title="Disassembler">Disassembler</a> – reverse process of Assembly, reconstructing assembly-like source from machine code</li>
+</ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=IBM_Basic_assembly_language_and_successors&amp;action=edit&amp;section=24" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist columns references-column-width" style="-moz-column-width: 30em; -webkit-column-width: 30em; column-width: 30em; list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-opl_bobm-1"><span class="mw-cite-backlink">^ <a href="#cite_ref-opl_bobm_1-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-opl_bobm_1-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.bixoft.nl/english/opl_bobm.htm">"HLASM - List of all Opcodes, Extended Mnemonics and Function Codes, Sorted by Mnemonic"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">January 14,</span> 2013</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AIBM+Basic+assembly+language+and+successors&amp;rft.btitle=HLASM+-+List+of+all+Opcodes%2C+Extended+Mnemonics+and+Function+Codes%2C+Sorted+by+Mnemonic&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.bixoft.nl%2Fenglish%2Fopl_bobm.htm&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-BAL-2"><span class="mw-cite-backlink">^ <a href="#cite_ref-BAL_2-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-BAL_2-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><cite class="citation book">IBM Corporation (1965). <a rel="nofollow" class="external text" href="http://bitsavers.trailing-edge.com/pdf/ibm/360/bos_bps/C20-6503-0_BAL_Feb65.pdf"><i>IBM System/360 Basic Programming Support Basic Assembler Language</i></a> <span style="font-size:85%;">(PDF)</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AIBM+Basic+assembly+language+and+successors&amp;rft.au=IBM+Corporation&amp;rft.btitle=IBM+System%2F360+Basic+Programming+Support+Basic+Assembler+Language&amp;rft.date=1965&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fbitsavers.trailing-edge.com%2Fpdf%2Fibm%2F360%2Fbos_bps%2FC20-6503-0_BAL_Feb65.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><cite class="citation book">IBM Corporation (1964). <a rel="nofollow" class="external text" href="http://bitsavers.trailing-edge.com/pdf/ibm/7090/C28-6501-2_7090_SupportForSys360_Nov64.pdf"><i>IBM 7090/7094 Support Package for IBM System/360</i></a> <span style="font-size:85%;">(PDF)</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AIBM+Basic+assembly+language+and+successors&amp;rft.au=IBM+Corporation&amp;rft.btitle=IBM+7090%2F7094+Support+Package+for+IBM+System%2F360&amp;rft.date=1964&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fbitsavers.trailing-edge.com%2Fpdf%2Fibm%2F7090%2FC28-6501-2_7090_SupportForSys360_Nov64.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text"><cite class="citation book">IBM Corporation (1965). <a rel="nofollow" class="external text" href="http://bitsavers.informatik.uni-stuttgart.de/pdf/ibm/360/bos_bps/C24-3414-1_BOSasm_Dec65.pdf"><i>IBM System/360 Basic Operating System Language Specifications Assembler ('16K Disk/Tape)</i></a> <span style="font-size:85%;">(PDF)</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AIBM+Basic+assembly+language+and+successors&amp;rft.au=IBM+Corporation&amp;rft.btitle=IBM+System%2F360+Basic+Operating+System+Language+Specifications+Assembler+%28%2716K+Disk%2FTape%29&amp;rft.date=1965&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fbitsavers.informatik.uni-stuttgart.de%2Fpdf%2Fibm%2F360%2Fbos_bps%2FC24-3414-1_BOSasm_Dec65.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-ASMD-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-ASMD_5-0">^</a></b></span> <span class="reference-text"><cite class="citation book">IBM Corporation (1970). <a rel="nofollow" class="external text" href="http://bitsavers.trailing-edge.com/pdf/ibm/360/dos/GC24-3414-7_Disk_and_Tape_Operating_Systems_Assembler_Language_Aug70.pdf"><i>IBM System/360 Disk and Tape Operating Systems Assembler Language</i></a> <span style="font-size:85%;">(PDF)</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AIBM+Basic+assembly+language+and+successors&amp;rft.au=IBM+Corporation&amp;rft.btitle=IBM+System%2F360+Disk+and+Tape+Operating+Systems+Assembler+Language&amp;rft.date=1970&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fbitsavers.trailing-edge.com%2Fpdf%2Fibm%2F360%2Fdos%2FGC24-3414-7_Disk_and_Tape_Operating_Systems_Assembler_Language_Aug70.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text"><cite class="citation book">IBM Corporation (1966). <a rel="nofollow" class="external text" href="http://bitsavers.trailing-edge.com/pdf/ibm/360/asm/Y26-3598-0_32k_asmPLM_1966.pdf"><i>IBM System/360 Operating System Assembler (32K) Program Logic Manual</i></a> <span style="font-size:85%;">(PDF)</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AIBM+Basic+assembly+language+and+successors&amp;rft.au=IBM+Corporation&amp;rft.btitle=IBM+System%2F360+Operating+System+Assembler+%2832K%29+Program+Logic+Manual&amp;rft.date=1966&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fbitsavers.trailing-edge.com%2Fpdf%2Fibm%2F360%2Fasm%2FY26-3598-0_32k_asmPLM_1966.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text"><cite class="citation book">IBM Corporation (1968). <a rel="nofollow" class="external text" href="http://bitsavers.trailing-edge.com/pdf/ibm/360/asm/Y26-3716-0_asm%28f%29_plm_Mar68.pdf"><i>IBM System/360 Disk Operating System Assembler(F) Program Logic</i></a> <span style="font-size:85%;">(PDF)</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AIBM+Basic+assembly+language+and+successors&amp;rft.au=IBM+Corporation&amp;rft.btitle=IBM+System%2F360+Disk+Operating+System+Assembler%28F%29+Program+Logic&amp;rft.date=1968&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fbitsavers.trailing-edge.com%2Fpdf%2Fibm%2F360%2Fasm%2FY26-3716-0_asm%2528f%2529_plm_Mar68.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text"><cite class="citation book">IBM Corporation (1971). <a rel="nofollow" class="external text" href="http://bitsavers.trailing-edge.com/pdf/ibm/360/asm/GY26-3700-2_asm%28f%29_plm_Jun71.pdf"><i>IBM System/360 Assembler(F) Program Logic</i></a> <span style="font-size:85%;">(PDF)</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AIBM+Basic+assembly+language+and+successors&amp;rft.au=IBM+Corporation&amp;rft.btitle=IBM+System%2F360+Assembler%28F%29+Program+Logic&amp;rft.date=1971&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fbitsavers.trailing-edge.com%2Fpdf%2Fibm%2F360%2Fasm%2FGY26-3700-2_asm%2528f%2529_plm_Jun71.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-9">^</a></b></span> <span class="reference-text"><cite class="citation book">IBM Corporation (1974). <a rel="nofollow" class="external text" href="http://www.textfiles.com/bitsavers/pdf/ibm/360/asm/GC28-6514-9_OS_Assembler_Rel21_Jan74.pdf"><i>IBM OS Assembler Language</i></a> <span style="font-size:85%;">(PDF)</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AIBM+Basic+assembly+language+and+successors&amp;rft.au=IBM+Corporation&amp;rft.btitle=IBM+OS+Assembler+Language&amp;rft.date=1974&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fwww.textfiles.com%2Fbitsavers%2Fpdf%2Fibm%2F360%2Fasm%2FGC28-6514-9_OS_Assembler_Rel21_Jan74.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-10">^</a></b></span> <span class="reference-text"><cite class="citation web">Stanford Linear Accelerator Center. <a rel="nofollow" class="external text" href="http://www.slac.stanford.edu/cgi-wrap/getdoc/slac-pub-0715.pdf">"GENERALIZED IBM SYSTEM 360 SOFTWARE MEASUREMENT (SLAC-PUB-715)"</a> <span style="font-size:85%;">(PDF)</span><span class="reference-accessdate">. Retrieved <span class="nowrap">October 8,</span> 2012</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AIBM+Basic+assembly+language+and+successors&amp;rft.au=Stanford+Linear+Accelerator+Center&amp;rft.btitle=GENERALIZED+IBM+SYSTEM+360+SOFTWARE+MEASUREMENT+%28SLAC-PUB-715%29&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.slac.stanford.edu%2Fcgi-wrap%2Fgetdoc%2Fslac-pub-0715.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-11"><span class="mw-cite-backlink"><b><a href="#cite_ref-11">^</a></b></span> <span class="reference-text"><cite class="citation book">IBM Corporation (1984). <a rel="nofollow" class="external text" href="http://bitsavers.trailing-edge.com/pdf/ibm/370/MVS_XA/GC28-1143-2_MVS_EA_Conversion_Notebook_May84.pdf"><i>MVS/Extended Architecture Conversion Notebook</i></a> <span style="font-size:85%;">(PDF)</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AIBM+Basic+assembly+language+and+successors&amp;rft.au=IBM+Corporation&amp;rft.btitle=MVS%2FExtended+Architecture+Conversion+Notebook&amp;rft.date=1984&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fbitsavers.trailing-edge.com%2Fpdf%2Fibm%2F370%2FMVS_XA%2FGC28-1143-2_MVS_EA_Conversion_Notebook_May84.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-12"><span class="mw-cite-backlink"><b><a href="#cite_ref-12">^</a></b></span> <span class="reference-text"><cite class="citation web">IBM Corporation. <a rel="nofollow" class="external text" href="http://www-01.ibm.com/common/ssi/cgi-bin/ssialias?infotype=dd&amp;subtype=sm&amp;appname=ShopzSeries&amp;htmlfid=897/ENUS5668-962">"5668-962 IBM Assembler H Version 2 Release 1.0"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">October 8,</span> 2012</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AIBM+Basic+assembly+language+and+successors&amp;rft.au=IBM+Corporation&amp;rft.btitle=5668-962+IBM+Assembler+H+Version+2+Release+1.0&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww-01.ibm.com%2Fcommon%2Fssi%2Fcgi-bin%2Fssialias%3Finfotype%3Ddd%26subtype%3Dsm%26appname%3DShopzSeries%26htmlfid%3D897%2FENUS5668-962&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-13"><span class="mw-cite-backlink"><b><a href="#cite_ref-13">^</a></b></span> <span class="reference-text"><cite class="citation book">IBM Corporation (1973). <a rel="nofollow" class="external text" href="http://bitsavers.trailing-edge.com/pdf/ibm/370/OS_VS/GC33-4021-1_OS_VS_Assembler_Programmers_Guide_May73.pdf"><i>OS/VS Assembler Programmer's Guide</i></a> <span style="font-size:85%;">(PDF)</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AIBM+Basic+assembly+language+and+successors&amp;rft.au=IBM+Corporation&amp;rft.btitle=OS%2FVS+Assembler+Programmer%27s+Guide&amp;rft.date=1973&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fbitsavers.trailing-edge.com%2Fpdf%2Fibm%2F370%2FOS_VS%2FGC33-4021-1_OS_VS_Assembler_Programmers_Guide_May73.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-14"><span class="mw-cite-backlink"><b><a href="#cite_ref-14">^</a></b></span> <span class="reference-text"><cite class="citation book">IBM Corporation (2008). <a rel="nofollow" class="external text" href="http://publibfp.dhe.ibm.com/epubs/pdf/asml1020.pdf"><i>High Level Assembler for Linux on zSeries User's Guide</i></a> <span style="font-size:85%;">(PDF)</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AIBM+Basic+assembly+language+and+successors&amp;rft.au=IBM+Corporation&amp;rft.btitle=High+Level+Assembler+for+Linux+on+zSeries+User%27s+Guide&amp;rft.date=2008&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fpublibfp.dhe.ibm.com%2Fepubs%2Fpdf%2Fasml1020.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-15"><span class="mw-cite-backlink"><b><a href="#cite_ref-15">^</a></b></span> <span class="reference-text"><cite class="citation web">IBM Corporation. <a rel="nofollow" class="external text" href="http://www-01.ibm.com/common/ssi/cgi-bin/ssialias?infotype=an&amp;subtype=ca&amp;htmlfid=897/ENUS292-244&amp;language=enus">"Announcement Letter Number 292-244"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">October 8,</span> 2012</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AIBM+Basic+assembly+language+and+successors&amp;rft.au=IBM+Corporation&amp;rft.btitle=Announcement+Letter+Number+292-244&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww-01.ibm.com%2Fcommon%2Fssi%2Fcgi-bin%2Fssialias%3Finfotype%3Dan%26subtype%3Dca%26htmlfid%3D897%2FENUS292-244%26language%3Denus&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-16"><span class="mw-cite-backlink"><b><a href="#cite_ref-16">^</a></b></span> <span class="reference-text"><cite class="citation book">IBM Corporation (1995). <a rel="nofollow" class="external text" href="http://www.redbooks.ibm.com/redbooks/pdfs/sg243910.pdf"><i>IBM High Level Assembler for MVS &amp; VM &amp; VSE Release 2 Presentation Guide</i></a> <span style="font-size:85%;">(PDF)</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AIBM+Basic+assembly+language+and+successors&amp;rft.au=IBM+Corporation&amp;rft.btitle=IBM+High+Level+Assembler+for+MVS+%26+VM+%26+VSE+Release+2+Presentation+Guide&amp;rft.date=1995&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fwww.redbooks.ibm.com%2Fredbooks%2Fpdfs%2Fsg243910.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-M44-17"><span class="mw-cite-backlink">^ <a href="#cite_ref-M44_17-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-M44_17-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><cite class="citation book">IBM Corporation (1966). <a rel="nofollow" class="external text" href="http://bitsavers.trailing-edge.com/pdf/ibm/360/model44/c28-6811-1_360_44_Asm.pdf"><i>IBM System/360 Model 44 Programming System Assembler Language</i></a> <span style="font-size:85%;">(PDF)</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AIBM+Basic+assembly+language+and+successors&amp;rft.au=IBM+Corporation&amp;rft.btitle=IBM+System%2F360+Model+44+Programming+System+Assembler+Language&amp;rft.date=1966&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fbitsavers.trailing-edge.com%2Fpdf%2Fibm%2F360%2Fmodel44%2Fc28-6811-1_360_44_Asm.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-18"><span class="mw-cite-backlink"><b><a href="#cite_ref-18">^</a></b></span> <span class="reference-text"><cite class="citation book">IBM Corporation (1976). <a rel="nofollow" class="external text" href="http://bitsavers.informatik.uni-stuttgart.de/pdf/ibm/360/tss/GC28-2032-6_Time_Sharing_System_Assembler_Programmers_Guide_Apr76.pdf"><i>IBM Time Sharing System Assembler Programmer's Guide</i></a> <span style="font-size:85%;">(PDF)</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AIBM+Basic+assembly+language+and+successors&amp;rft.au=IBM+Corporation&amp;rft.btitle=IBM+Time+Sharing+System+Assembler+Programmer%27s+Guide&amp;rft.date=1976&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fbitsavers.informatik.uni-stuttgart.de%2Fpdf%2Fibm%2F360%2Ftss%2FGC28-2032-6_Time_Sharing_System_Assembler_Programmers_Guide_Apr76.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-19"><span class="mw-cite-backlink"><b><a href="#cite_ref-19">^</a></b></span> <span class="reference-text"><cite class="citation web">Alcock, David. <a rel="nofollow" class="external text" href="http://planetmvs.com/hlasm/s390faq.html#PCASM">"Dave's z/Architecture Assembler FAQ"</a>. <i>Planet MVS</i><span class="reference-accessdate">. Retrieved <span class="nowrap">December 15,</span> 2012</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AIBM+Basic+assembly+language+and+successors&amp;rft.atitle=Dave%27s+z%2FArchitecture+Assembler+FAQ&amp;rft.aufirst=David&amp;rft.aulast=Alcock&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fplanetmvs.com%2Fhlasm%2Fs390faq.html%23PCASM&amp;rft.jtitle=Planet+MVS&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-20"><span class="mw-cite-backlink"><b><a href="#cite_ref-20">^</a></b></span> <span class="reference-text">Fujitsu ASSEMH manuals available from <a rel="nofollow" class="external free" href="http://manuals.ts.fujitsu.com/index.php?id=1-2-2926-15435">http://manuals.ts.fujitsu.com/index.php?id=1-2-2926-15435</a> (Retrieved 2016-02-27)</span></li>
+<li id="cite_note-21"><span class="mw-cite-backlink"><b><a href="#cite_ref-21">^</a></b></span> <span class="reference-text"><cite class="citation web">Dignus, LLC. <a rel="nofollow" class="external text" href="http://www.dignus.com/dasm/">"Systems/ASM"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">December 15,</span> 2012</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AIBM+Basic+assembly+language+and+successors&amp;rft.au=Dignus%2C+LLC&amp;rft.btitle=Systems%2FASM&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.dignus.com%2Fdasm%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-22"><span class="mw-cite-backlink"><b><a href="#cite_ref-22">^</a></b></span> <span class="reference-text"><cite class="citation web">Tachyon Software LLC. <a rel="nofollow" class="external text" href="http://www.tachyonsoft.com/">"Tachyon Software"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">December 15,</span> 2012</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AIBM+Basic+assembly+language+and+successors&amp;rft.au=Tachyon+Software+LLC&amp;rft.btitle=Tachyon+Software&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.tachyonsoft.com%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+</ol>
+</div>
+<dl>
+<dt>Notes</dt>
+</dl>
+<ul>
+<li>Rudd, Anthony. An Illustrated Guide for z/Architecture Assembler Programmers. Create Space (2012).</li>
+</ul>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=IBM_Basic_assembly_language_and_successors&amp;action=edit&amp;section=25" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<table role="presentation" class="mbox-small plainlinks sistersitebox" style="border:1px solid #aaa;background-color:#f9f9f9">
+<tr>
+<td class="mbox-image"><a href="/wiki/File:Wikibooks-logo-en-noslogan.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/40px-Wikibooks-logo-en-noslogan.svg.png" width="40" height="40" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/60px-Wikibooks-logo-en-noslogan.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/80px-Wikibooks-logo-en-noslogan.svg.png 2x" data-file-width="400" data-file-height="400" /></a></td>
+<td class="mbox-text plainlist">Wikibooks has a book on the topic of: <i><b><a href="//en.wikibooks.org/wiki/360_Assembly" class="extiw" title="wikibooks:360 Assembly">360 Assembly</a></b></i></td>
+</tr>
+</table>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://bitsavers.informatik.uni-stuttgart.de/pdf/ibm/360/asm/SC20-1646-6_int360asm_Aug70.pdf">A Programmer's Introduction to IBM System/360 Assembler Language (Student Text)</a></li>
+<li><a rel="nofollow" class="external text" href="http://publibz.boulder.ibm.com/epubs/pdf/asmr1020.pdf">High Level Assembler for z/OS &amp; z/VM &amp; z/VSE Language Reference</a></li>
+<li><a rel="nofollow" class="external text" href="http://punctiliousprogrammer.com/">The Punctilious Programmer: IBM Mainframe Assembler</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.amazon.com/dp/B00NS797PQ">Basic IBM Mainframe Assembly Language Programming</a></li>
+<li><a rel="nofollow" class="external text" href="ftp://ulita.ms.mff.cuni.cz/predn/NSWI119/AssemblerIBM_390.pdf">OS/390 Assembler Programming Introduction</a></li>
+<li><a rel="nofollow" class="external text" href="http://vintagebigblue.org/Compilerator/ASMF/dosvsASMFCompile.php">Web enabled IBM Assembler F compiler for small experiments</a></li>
+<li><a rel="nofollow" class="external text" href="http://vintagebigblue.org/Compilerator/ASSIST/mvsAssistCompile.php">ASSIST – Assembler System for Student Instruction &amp; Systems Teaching</a></li>
+</ul>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1163
+Cached time: 20170103015746
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.260 seconds
+Real time usage: 0.288 seconds
+Preprocessor visited node count: 1136/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 35205/2097152 bytes
+Template argument size: 301/2097152 bytes
+Highest expansion depth: 12/40
+Expensive parser function count: 0/500
+Lua time usage: 0.131/10.000 seconds
+Lua memory usage: 3.15 MB/50 MB
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  245.362      1 - -total
+ 73.29%  179.819      1 - Template:Reflist
+ 32.55%   79.869     14 - Template:Cite_book
+ 27.69%   67.942      7 - Template:Cite_web
+  9.64%   23.653      1 - Template:Main
+  4.96%   12.171      1 - Template:Wikibooks
+  4.29%   10.516      1 - Template:Sister_project
+  3.46%    8.485      1 - Template:Side_box
+  1.83%    4.501      8 - Template:Rp
+  0.90%    2.201      1 - Template:FOLDOC
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:4321536-0!*!0!!en!4!* and timestamp 20170103015746 and revision id 751785628
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=IBM_Basic_assembly_language_and_successors&amp;oldid=751785628">https://en.wikipedia.org/w/index.php?title=IBM_Basic_assembly_language_and_successors&amp;oldid=751785628</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:IBM_software" title="Category:IBM software">IBM software</a></li><li><a href="/wiki/Category:Assembly_languages" title="Category:Assembly languages">Assembly languages</a></li><li><a href="/wiki/Category:Software_written_primarily_in_assembly_language" title="Category:Software written primarily in assembly language">Software written primarily in assembly language</a></li><li><a href="/wiki/Category:IBM_System/360_mainframe_line" title="Category:IBM System/360 mainframe line">IBM System/360 mainframe line</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=IBM+Basic+assembly+language+and+successors" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=IBM+Basic+assembly+language+and+successors" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/IBM_Basic_assembly_language_and_successors"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:IBM_Basic_assembly_language_and_successors"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/IBM_Basic_assembly_language_and_successors" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=IBM_Basic_assembly_language_and_successors&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=IBM_Basic_assembly_language_and_successors&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/IBM_Basic_assembly_language_and_successors" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/IBM_Basic_assembly_language_and_successors" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=IBM_Basic_assembly_language_and_successors&amp;oldid=751785628" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=IBM_Basic_assembly_language_and_successors&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q5968762" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=IBM_Basic_assembly_language_and_successors&amp;id=751785628" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=IBM+Basic+assembly+language+and+successors">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=IBM+Basic+assembly+language+and+successors&amp;returnto=IBM+Basic+assembly+language+and+successors&amp;oldid=751785628&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=IBM_Basic_assembly_language_and_successors&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+											</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-add wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q5968762#sitelinks-wikipedia" title="Add interlanguage links" class="wbc-editpage">Add links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 27 November 2016, at 20:58.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=IBM_Basic_assembly_language_and_successors&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":75,"wgHostname":"mw1209"});});</script>
+	</body>
+</html>

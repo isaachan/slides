@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>LabVIEW - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"LabVIEW","wgTitle":"LabVIEW","wgCurRevisionId":763635605,"wgRevisionId":763635605,"wgArticleId":544733,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles lacking reliable references from May 2015","All articles lacking reliable references","Pages using deprecated image syntax","All articles with unsourced statements","Articles with unsourced statements from June 2013","Articles with unsourced statements from August 2015","Articles with unsourced statements from July 2014","Articles containing potentially dated statements from 2016","All articles containing potentially dated statements","CS1 maint: Multiple names: authors list","Official website different in Wikidata and Wikipedia","Pages using ISBN magic links","Numerical software","Visual programming languages","Numerical programming languages","Numerical analysis software for Linux","Numerical analysis software for MacOS","Numerical analysis software for Windows","Cross-platform software","Pedagogic integrated development environments","Synchronous programming languages","Software modeling language"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"LabVIEW","wgRelevantArticleId":544733,"wgRequestId":"WJWb4gpAEK8AAD5S05AAAAAE","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":true},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q746261","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.cite.styles":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.legacy.wikibits","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.29.0-wmf.10"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/LabVIEW"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=LabVIEW&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=LabVIEW&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/LabVIEW"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-LabVIEW rootpage-LabVIEW skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">LabVIEW</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><table class="plainlinks metadata ambox ambox-content" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><a href="/wiki/File:Question_book-new.svg" class="image"><img alt="Question book-new.svg" src="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" width="50" height="39" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/75px-Question_book-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/100px-Question_book-new.svg.png 2x" data-file-width="512" data-file-height="399" /></a></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">This article <b>may rely excessively on sources too closely associated with the subject</b>, potentially preventing the article from being <a href="/wiki/Wikipedia:Verifiability" title="Wikipedia:Verifiability">verifiable</a> and <a href="/wiki/Wikipedia:Neutral_point_of_view" title="Wikipedia:Neutral point of view">neutral</a>. <span class="hide-when-compact">Please help <a class="external text" href="//en.wikipedia.org/w/index.php?title=LabVIEW&amp;action=edit">improve it</a> by replacing them with more appropriate <a href="/wiki/Wikipedia:Citing_sources" title="Wikipedia:Citing sources">citations</a> to <a href="/wiki/Wikipedia:Independent_sources" class="mw-redirect" title="Wikipedia:Independent sources">reliable, independent, third-party sources</a>.</span> <small><i>(May 2015)</i></small> <small class="hide-when-compact"><i>(<a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove this template message</a>)</i></small></span></td>
+</tr>
+</table>
+<table class="infobox vevent" style="width:22em">
+<caption class="summary">LabVIEW</caption>
+<tr>
+<td colspan="2" style="text-align:center">
+<div class="floatright"><a href="/wiki/File:Labview-logo.png" class="image" title="LabVIEW logo."><img alt="LabVIEW logo." src="//upload.wikimedia.org/wikipedia/en/thumb/3/38/Labview-logo.png/300px-Labview-logo.png" width="300" height="75" srcset="//upload.wikimedia.org/wikipedia/en/3/38/Labview-logo.png 1.5x" data-file-width="344" data-file-height="86" /></a></div>
+</td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Software_developer" title="Software developer">Developer(s)</a></th>
+<td><a href="/wiki/National_Instruments" title="National Instruments">National Instruments</a></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;">Initial release</th>
+<td>1986<span class="noprint">; 31&#160;years ago</span><span style="display:none">&#160;(<span class="bday dtstart published updated">1986</span>)</span></td>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Software_release_life_cycle" title="Software release life cycle">Stable release</a></th>
+<td>
+<div style="margin:0px;">2016 / August&#160;2016<span class="noprint">; 6&#160;months ago</span><span style="display:none">&#160;(<span class="bday dtstart published updated">2016-08</span>)</span></div>
+</td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Operating_system" title="Operating system">Operating system</a></th>
+<td><a href="/wiki/Cross-platform" title="Cross-platform">Cross-platform</a>: <a href="/wiki/Microsoft_Windows" title="Microsoft Windows">Windows</a>, <a href="/wiki/MacOS" title="MacOS">macOS</a>, <a href="/wiki/Linux" title="Linux">Linux</a></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Software_categories#Broad_categories" title="Software categories">Type</a></th>
+<td><a href="/wiki/Data_acquisition" title="Data acquisition">Data acquisition</a>, <a href="/wiki/Instrument_control" title="Instrument control">instrument control</a>, <a href="/wiki/Test_automation" title="Test automation">test automation</a>, analysis and <a href="/wiki/Signal_processing" title="Signal processing">signal processing</a>, <a href="/wiki/Industrial_control_system" title="Industrial control system">industrial control</a>, <a href="/wiki/Embedded_system" title="Embedded system">embedded system</a> design</td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Software_license" title="Software license">License</a></th>
+<td><a href="/wiki/Proprietary_software" title="Proprietary software">Proprietary</a></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;">Website</th>
+<td><span class="url"><a rel="nofollow" class="external text" href="http://www.ni.com/labview">www<wbr />.ni<wbr />.com<wbr />/labview</a></span></td>
+</tr>
+</table>
+<p><b>Laboratory Virtual Instrument Engineering Workbench</b> (<b>LabVIEW</b>) is a system-design platform and development environment for a <a href="/wiki/Visual_programming_language" title="Visual programming language">visual programming language</a> from <a href="/wiki/National_Instruments" title="National Instruments">National Instruments</a>.</p>
+<p>The graphical language is named "G"; not to be confused with <a href="/wiki/G-code" title="G-code">G-code</a>. Originally released for the Apple <a href="/wiki/Macintosh" title="Macintosh">Macintosh</a> in 1986, LabVIEW is commonly used for <a href="/wiki/Data_acquisition" title="Data acquisition">data acquisition</a>, <a href="/wiki/Instrument_control" title="Instrument control">instrument control</a>, and industrial <a href="/wiki/Automation" title="Automation">automation</a> on a variety of <a href="/wiki/Operating_system" title="Operating system">operating systems</a> (OSs), including <a href="/wiki/Microsoft_Windows" title="Microsoft Windows">Microsoft Windows</a>, various versions of <a href="/wiki/Unix" title="Unix">Unix</a>, <a href="/wiki/Linux" title="Linux">Linux</a>, and <a href="/wiki/MacOS" title="MacOS">macOS</a>. The latest version of LabVIEW is 2016, released in August 2016.</p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Dataflow_programming"><span class="tocnumber">1</span> <span class="toctext">Dataflow programming</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Graphical_programming"><span class="tocnumber">2</span> <span class="toctext">Graphical programming</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Benefits"><span class="tocnumber">3</span> <span class="toctext">Benefits</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="#Interfacing_to_devices"><span class="tocnumber">3.1</span> <span class="toctext">Interfacing to devices</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Code_compiling"><span class="tocnumber">3.2</span> <span class="toctext">Code compiling</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Large_libraries"><span class="tocnumber">3.3</span> <span class="toctext">Large libraries</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Parallel_programming"><span class="tocnumber">3.4</span> <span class="toctext">Parallel programming</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Ecosystem"><span class="tocnumber">3.5</span> <span class="toctext">Ecosystem</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#User_community"><span class="tocnumber">3.6</span> <span class="toctext">User community</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Home_Bundle_Edition"><span class="tocnumber">3.7</span> <span class="toctext">Home Bundle Edition</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-11"><a href="#Criticism"><span class="tocnumber">4</span> <span class="toctext">Criticism</span></a>
+<ul>
+<li class="toclevel-2 tocsection-12"><a href="#Dataflow_programming_model"><span class="tocnumber">4.1</span> <span class="toctext">Dataflow programming model</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="#Licensing"><span class="tocnumber">4.2</span> <span class="toctext">Licensing</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="#Run-time_environment"><span class="tocnumber">4.3</span> <span class="toctext">Run-time environment</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="#Parallel_execution_and_race_conditions"><span class="tocnumber">4.4</span> <span class="toctext">Parallel execution and race conditions</span></a></li>
+<li class="toclevel-2 tocsection-16"><a href="#Performance"><span class="tocnumber">4.5</span> <span class="toctext">Performance</span></a></li>
+<li class="toclevel-2 tocsection-17"><a href="#Light_weight_applications"><span class="tocnumber">4.6</span> <span class="toctext">Light weight applications</span></a></li>
+<li class="toclevel-2 tocsection-18"><a href="#Timing_system"><span class="tocnumber">4.7</span> <span class="toctext">Timing system</span></a></li>
+<li class="toclevel-2 tocsection-19"><a href="#Non-textual"><span class="tocnumber">4.8</span> <span class="toctext">Non-textual</span></a></li>
+<li class="toclevel-2 tocsection-20"><a href="#Not_backward_compatible"><span class="tocnumber">4.9</span> <span class="toctext">Not backward compatible</span></a></li>
+<li class="toclevel-2 tocsection-21"><a href="#No_zoom_function"><span class="tocnumber">4.10</span> <span class="toctext">No zoom function</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-22"><a href="#Release_history"><span class="tocnumber">5</span> <span class="toctext">Release history</span></a></li>
+<li class="toclevel-1 tocsection-23"><a href="#Repositories_and_libraries"><span class="tocnumber">6</span> <span class="toctext">Repositories and libraries</span></a></li>
+<li class="toclevel-1 tocsection-24"><a href="#Related_software"><span class="tocnumber">7</span> <span class="toctext">Related software</span></a></li>
+<li class="toclevel-1 tocsection-25"><a href="#See_also"><span class="tocnumber">8</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-26"><a href="#References"><span class="tocnumber">9</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-27"><a href="#Further_reading"><span class="tocnumber">10</span> <span class="toctext">Further reading</span></a>
+<ul>
+<li class="toclevel-2 tocsection-28"><a href="#Articles_on_specific_uses"><span class="tocnumber">10.1</span> <span class="toctext">Articles on specific uses</span></a></li>
+<li class="toclevel-2 tocsection-29"><a href="#Articles_on_education_uses"><span class="tocnumber">10.2</span> <span class="toctext">Articles on education uses</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-30"><a href="#External_links"><span class="tocnumber">11</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Dataflow_programming">Dataflow programming</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=LabVIEW&amp;action=edit&amp;section=1" title="Edit section: Dataflow programming">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The programming language used in LabVIEW, named G, is a <a href="/wiki/Dataflow_programming" title="Dataflow programming">dataflow programming</a> language. Execution is determined by the structure of a graphical block diagram (the LabVIEW-source code) on which the programmer connects different function-nodes by drawing wires. These wires propagate variables and any node can execute as soon as all its input data become available. Since this might be the case for multiple nodes simultaneously, G can execute inherently in parallel. <a href="/wiki/Multi-processing" class="mw-redirect" title="Multi-processing">Multi-processing</a> and <a href="/wiki/Thread_(computer_science)" class="mw-redirect" title="Thread (computer science)">multi-threading</a> hardware is exploited automatically by the built-in scheduler, which <a href="/wiki/Multiplexing" title="Multiplexing">multiplexes</a> multiple OS threads over the nodes ready for execution.</p>
+<h2><span class="mw-headline" id="Graphical_programming">Graphical programming</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=LabVIEW&amp;action=edit&amp;section=2" title="Edit section: Graphical programming">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>LabVIEW integrates the creation of user interfaces (termed front panels) into the development cycle. LabVIEW programs-subroutines are termed virtual instruments (VIs). Each VI has three components: a block diagram, a front panel, and a connector panel. The last is used to represent the VI in the block diagrams of other, calling VIs. The front panel is built using controls and indicators. Controls are inputs: they allow a user to supply information to the VI. Indicators are outputs: they indicate, or display, the results based on the inputs given to the VI. The back panel, which is a block diagram, contains the graphical source code. All of the objects placed on the front panel will appear on the back panel as terminals. The back panel also contains structures and functions which perform operations on controls and supply data to indicators. The structures and functions are found on the Functions palette and can be placed on the back panel. Collectively controls, indicators, structures, and functions will be referred to as nodes. Nodes are connected to one another using wires, e.g., two controls and an indicator can be wired to the addition function so that the indicator displays the sum of the two controls. Thus a virtual instrument can be run as either a program, with the front panel serving as a user interface, or, when dropped as a node onto the block diagram, the front panel defines the inputs and outputs for the node through the connector pane. This implies each VI can be easily tested before being embedded as a subroutine into a larger program.</p>
+<p>The graphical approach also allows nonprogrammers to build programs by dragging and dropping virtual representations of lab equipment with which they are already familiar. The LabVIEW programming environment, with the included examples and documentation, makes it simple to create small applications. This is a benefit on one side, but there is also a certain danger of underestimating the expertise needed for high-quality G programming. For complex algorithms or large-scale code, it is important that a programmer possess an extensive knowledge of the special LabVIEW syntax and the topology of its memory management. The most advanced LabVIEW development systems offer the ability to build stand-alone applications. Furthermore, it is possible to create distributed applications, which communicate by a <a href="/wiki/Client%E2%80%93server_model" title="Client–server model">client–server model</a>, and are thus easier to implement due to the inherently parallel nature of G.</p>
+<h2><span class="mw-headline" id="Benefits">Benefits</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=LabVIEW&amp;action=edit&amp;section=3" title="Edit section: Benefits">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="Interfacing_to_devices">Interfacing to devices</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=LabVIEW&amp;action=edit&amp;section=4" title="Edit section: Interfacing to devices">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>LabVIEW includes extensive support for interfacing to devices, instruments, cameras, and other devices. Users interface to hardware by either writing direct bus commands (USB, GPIB, Serial) or using high-level, device-specific, drivers that provide native LabVIEW function nodes for controlling the device.</p>
+<p>LabVIEW includes built-in support for NI hardware platforms such as <a href="/wiki/CompactDAQ" title="CompactDAQ">CompactDAQ</a> and <a href="/wiki/CompactRIO" title="CompactRIO">CompactRIO</a>, with a large number of device-specific blocks for such hardware, the <i>Measurement and Automation eXplorer</i> (MAX) and <i>Virtual Instrument Software Architecture</i> (VISA) toolsets.</p>
+<p>National Instruments makes thousands of device drivers available for download on the NI Instrument Driver Network (IDNet).<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">[1]</a></sup></p>
+<h3><span class="mw-headline" id="Code_compiling">Code compiling</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=LabVIEW&amp;action=edit&amp;section=5" title="Edit section: Code compiling">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>LabVIEW includes a <a href="/wiki/Compiler" title="Compiler">compiler</a> that produces native code for the CPU platform. This aids performance. The graphical code is translated into executable machine code by interpreting the syntax and by compiling. The LabVIEW syntax is strictly enforced during the editing process and compiled into the executable machine code when requested to run or upon saving. In the latter case, the executable and the source code are merged into a single file. The executable runs with the help of the LabVIEW <a href="/wiki/Run-time_system" class="mw-redirect" title="Run-time system">run-time</a> engine, which contains some precompiled code to perform common tasks that are defined by the G language. The run-time engine reduces compiling time and provides a consistent interface to various operating systems, graphic systems, hardware components, etc. The run-time environment makes the code portable across platforms. Generally, LabVIEW code can be slower than equivalent compiled C code, although the differences often lie more with program optimization than inherent execution speed.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (June 2013)">citation needed</span></a></i>]</sup></p>
+<h3><span class="mw-headline" id="Large_libraries">Large libraries</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=LabVIEW&amp;action=edit&amp;section=6" title="Edit section: Large libraries">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Many <a href="/wiki/Library_(computing)" title="Library (computing)">libraries</a> with a large number of functions for data acquisition, signal generation, mathematics, statistics, signal conditioning, analysis, etc., along with numerous graphical interface elements are provided in several LabVIEW package options. The number of advanced mathematic blocks for functions such as integration, filters, and other specialized abilities usually associated with data capture from hardware sensors is enormous. In addition, LabVIEW includes a text-based programming component named MathScript with added functions for signal processing, analysis, and mathematics. MathScript can be integrated with graphical programming using <i>script nodes</i> and uses a syntax that is compatible generally with <a href="/wiki/MATLAB" title="MATLAB">MATLAB</a>.<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">[2]</a></sup></p>
+<h3><span class="mw-headline" id="Parallel_programming">Parallel programming</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=LabVIEW&amp;action=edit&amp;section=7" title="Edit section: Parallel programming">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>LabVIEW is an inherently <a href="/wiki/Concurrent_language" class="mw-redirect" title="Concurrent language">concurrent language</a>, so it is very easy to program multiple tasks that are performed in parallel via multithreading. For example, this is done easily by drawing two or more parallel while loops. This is a great benefit for test system automation, where it is common practice to run processes like test sequencing, data recording, and hardware interfacing in parallel.</p>
+<h3><span class="mw-headline" id="Ecosystem">Ecosystem</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=LabVIEW&amp;action=edit&amp;section=8" title="Edit section: Ecosystem">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Due to the longevity and popularity of the LabVIEW language, and the ability for users to extend its functions, a large ecosystem of third party add-ons has developed via contributions from the community. This ecosystem is available on the LabVIEW Tools Network, which is a marketplace for both free and paid LabVIEW add-ons.</p>
+<h3><span class="mw-headline" id="User_community">User community</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=LabVIEW&amp;action=edit&amp;section=9" title="Edit section: User community">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>There is a low-cost LabVIEW Student Edition aimed at educational institutions for learning purposes. There is also an active community of LabVIEW users who communicate through several <a href="/wiki/Electronic_mailing_list" title="Electronic mailing list">electronic mailing lists</a> (email groups) and <a href="/wiki/Internet_forum" title="Internet forum">Internet forums</a>.</p>
+<h3><span class="mw-headline" id="Home_Bundle_Edition">Home Bundle Edition</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=LabVIEW&amp;action=edit&amp;section=10" title="Edit section: Home Bundle Edition">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p><a href="/wiki/National_Instruments" title="National Instruments">National Instruments</a> provides a low cost LabVIEW Home Bundle Edition.<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">[3]</a></sup></p>
+<h2><span class="mw-headline" id="Criticism">Criticism</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=LabVIEW&amp;action=edit&amp;section=11" title="Edit section: Criticism">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>LabVIEW is a <a href="/wiki/Proprietary_software" title="Proprietary software">proprietary</a> product of <a href="/wiki/National_Instruments" title="National Instruments">National Instruments</a>. Unlike common programming languages such as <a href="/wiki/C_Programming_Language" class="mw-redirect" title="C Programming Language">C</a> or <a href="/wiki/Fortran" title="Fortran">Fortran</a>, LabVIEW is not managed or specified by a third party standards committee such as <a href="/wiki/American_National_Standards_Institute" title="American National Standards Institute">American National Standards Institute</a> (ANSI), <a href="/wiki/Institute_of_Electrical_and_Electronics_Engineers" title="Institute of Electrical and Electronics Engineers">Institute of Electrical and Electronics Engineers</a> (IEEE), <a href="/wiki/International_Organization_for_Standardization" title="International Organization for Standardization">International Organization for Standardization</a> (ISO), etc.</p>
+<h3><span class="mw-headline" id="Dataflow_programming_model">Dataflow programming model</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=LabVIEW&amp;action=edit&amp;section=12" title="Edit section: Dataflow programming model">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Due to its thorough adoption of a data-flow programming model, as opposed to the sequential ordering of arbitrary commands like most other (usually text-based) languages, a barrier occurs for many people who attempt to apply already-learned principles from other programming approaches to LabVIEW. The inherent parallel nature of the execution of LabVIEW code is a perennial source of confusion among those accustomed to other approaches. Thus, most opinions tend to be highly polarised, with people being either very fond of it or very hostile to it.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (August 2015)">citation needed</span></a></i>]</sup></p>
+<h3><span class="mw-headline" id="Licensing">Licensing</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=LabVIEW&amp;action=edit&amp;section=13" title="Edit section: Licensing">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Building a stand-alone application with LabVIEW requires the Application Builder component which is included with the Professional Development System but requires a separate purchase if using the Base Package or Full Development System.<sup id="cite_ref-Building_a_Stand-Alone_Application_4-0" class="reference"><a href="#cite_note-Building_a_Stand-Alone_Application-4">[4]</a></sup></p>
+<h3><span class="mw-headline" id="Run-time_environment">Run-time environment</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=LabVIEW&amp;action=edit&amp;section=14" title="Edit section: Run-time environment">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Compiled <a href="/wiki/Executable" title="Executable">executables</a> produced by version 6.0 and later of the Application Builder are not truly standalone in that they also require the LabVIEW run-time engine be installed on any target computer which runs the application.<sup id="cite_ref-Using_the_LabVIEW_Run-Time_Engine_5-0" class="reference"><a href="#cite_note-Using_the_LabVIEW_Run-Time_Engine-5">[5]</a></sup> The use of standard controls requires a <a href="/wiki/Run-time_library" class="mw-redirect" title="Run-time library">run-time library</a> for any language. All major operating systems supply the libraries needed for common languages such as C, but no operating system supplies the run-time needed for LabVIEW. It must be installed specifically by an administrator or user. This can cause problems if an application is distributed to a user who is prepared to run the application, but lacks the inclination or permission to install added files on the host system before running the executable.</p>
+<h3><span class="mw-headline" id="Parallel_execution_and_race_conditions">Parallel execution and race conditions</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=LabVIEW&amp;action=edit&amp;section=15" title="Edit section: Parallel execution and race conditions">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The G language includes constructs for creating multiple execution threads. Like with any language that targets non-deterministic operating systems such as Windows, Mac OS, and Linux, parallel execution of multiple threads can lead to the possibility of <a href="/wiki/Race_conditions" class="mw-redirect" title="Race conditions">race conditions</a>. Although the G language greatly simplifies both the programming and thread management on multi-core and multi-processor systems, the G developer must still guard against race conditions; for which there are several functions and techniques available for doing so. Programming with the LabVIEW <a href="/wiki/Field-programmable_gate_array" title="Field-programmable gate array">field-programmable gate array</a> (FPGA) module results in true parallel implementation on FPGA targets.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (July 2014)">citation needed</span></a></i>]</sup></p>
+<h3><span class="mw-headline" id="Performance">Performance</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=LabVIEW&amp;action=edit&amp;section=16" title="Edit section: Performance">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>LabVIEW tends to produce applications that are slower than hand coded native languages such as C, although high performance can be achieved when using multi-core machines or dedicated toolkits for specific operations. LabVIEW makes multi-core programming much simpler than many other languages, due to its implicit parallelism and automatic thread management.<sup id="cite_ref-6" class="reference"><a href="#cite_note-6">[6]</a></sup></p>
+<h3><span class="mw-headline" id="Light_weight_applications">Light weight applications</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=LabVIEW&amp;action=edit&amp;section=17" title="Edit section: Light weight applications">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Very small applications still have to start the runtime environment which is a large and slow task. This tends to restrict LabVIEW to monolithic applications. Examples of this might be tiny programs to grab a single value from some hardware that can be used in a scripting language - the overheads of the runtime environment render this approach impractical with LabVIEW.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (July 2014)">citation needed</span></a></i>]</sup></p>
+<h3><span class="mw-headline" id="Timing_system">Timing system</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=LabVIEW&amp;action=edit&amp;section=18" title="Edit section: Timing system">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>LabVIEW uses the January 1, 1904 <a href="/wiki/Epoch_(reference_date)" title="Epoch (reference date)">epoch</a> as its <i>zero</i> time. Other programs that use the January 1, 1904 epoch are <a href="/wiki/Apple_Inc." title="Apple Inc.">Apple Inc.</a>'s <a href="/wiki/Classic_Mac_OS" title="Classic Mac OS">classic Mac OS</a>, <a href="/wiki/Palm_OS" title="Palm OS">Palm OS</a>, and Microsoft Excel (optionally).<sup id="cite_ref-excel-leapyear_7-0" class="reference"><a href="#cite_note-excel-leapyear-7">[7]</a></sup></p>
+<h3><span class="mw-headline" id="Non-textual">Non-textual</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=LabVIEW&amp;action=edit&amp;section=19" title="Edit section: Non-textual">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>G language being non-textual, software tools such as versioning, side-by-side (or diff) comparison, and version code change tracking cannot be applied in the same manner as for textual programming languages. There is some additional tool to make comparison and merge of code with source code control (versionning) like subversion, CVS, Perforce. <sup id="cite_ref-8" class="reference"><a href="#cite_note-8">[8]</a></sup><sup id="cite_ref-9" class="reference"><a href="#cite_note-9">[9]</a></sup> <sup id="cite_ref-10" class="reference"><a href="#cite_note-10">[10]</a></sup></p>
+<h3><span class="mw-headline" id="Not_backward_compatible">Not backward compatible</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=LabVIEW&amp;action=edit&amp;section=20" title="Edit section: Not backward compatible">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>A VI generated in a newer version of LabVIEW cannot be opened in an older version, not even for viewing. The "Save for Previous Version" feature can be a partial <sup id="cite_ref-Save-for-Previous-Version_11-0" class="reference"><a href="#cite_note-Save-for-Previous-Version-11">[11]</a></sup> solution, if a developer knows up-front that this would be needed.</p>
+<h3><span class="mw-headline" id="No_zoom_function">No zoom function</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=LabVIEW&amp;action=edit&amp;section=21" title="Edit section: No zoom function">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>There is no ability to zoom in to (or enlarge) a VI which will be hard to see on a large, high-resolution monitor, although this feature is under development as of 2016<sup class="plainlinks noprint asof-tag update" style="display:none;"><a class="external text" href="//en.wikipedia.org/w/index.php?title=LabVIEW&amp;action=edit">[update]</a></sup>.<sup id="cite_ref-no-zoom_12-0" class="reference"><a href="#cite_note-no-zoom-12">[12]</a></sup><sup id="cite_ref-13" class="reference"><a href="#cite_note-13">[13]</a></sup></p>
+<h2><span class="mw-headline" id="Release_history">Release history</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=LabVIEW&amp;action=edit&amp;section=22" title="Edit section: Release history">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>In 2005, starting with LabVIEW 8.0, major versions are released around the first week of August, to coincide with the annual National Instruments conference NI Week, and followed by a bug-fix release the following February.</p>
+<p>In 2009, National Instruments began naming releases after the year in which they are released. A bug-fix is termed a Service Pack, for example, the 2009 service pack 1 was released in February 2010.</p>
+<table class="wikitable" style="font-size: 90%; text-align: left;">
+<tr>
+<th>Name-version</th>
+<th>Build number</th>
+<th>Date</th>
+</tr>
+<tr>
+<td>LabVIEW project begins</td>
+<td></td>
+<td>April 1983</td>
+</tr>
+<tr>
+<td>LabVIEW 1.0 (for Macintosh)</td>
+<td>&#160;??</td>
+<td>October 1986</td>
+</tr>
+<tr>
+<td>LabVIEW 2.0</td>
+<td>&#160;??</td>
+<td>January 1990</td>
+</tr>
+<tr>
+<td>LabVIEW 2.5 (first release for Sun &amp; Windows)</td>
+<td>&#160;??</td>
+<td>August 1992</td>
+</tr>
+<tr>
+<td>LabVIEW 3.0 (Multiplatform)</td>
+<td>&#160;??</td>
+<td>July 1993</td>
+</tr>
+<tr>
+<td>LabVIEW 3.0.1 (first release for Windows NT)</td>
+<td>&#160;??</td>
+<td>1994</td>
+</tr>
+<tr>
+<td>LabVIEW 3.1</td>
+<td>&#160;??</td>
+<td>1994</td>
+</tr>
+<tr>
+<td>LabVIEW 3.1.1 (first release with "application builder" ability)</td>
+<td>&#160;??</td>
+<td>1995</td>
+</tr>
+<tr>
+<td>LabVIEW 4.0</td>
+<td>&#160;??</td>
+<td>April 1996</td>
+</tr>
+<tr>
+<td>LabVIEW 4.1</td>
+<td>&#160;??</td>
+<td>1997</td>
+</tr>
+<tr>
+<td>LabVIEW 5.0</td>
+<td>&#160;??</td>
+<td>February 1998</td>
+</tr>
+<tr>
+<td>LabVIEW RT (Real Time)</td>
+<td>&#160;??</td>
+<td>May 1999</td>
+</tr>
+<tr>
+<td>LabVIEW 6.0 (6i)</td>
+<td>6.0.0.4005</td>
+<td>26 July 2000</td>
+</tr>
+<tr>
+<td>LabVIEW 6.1</td>
+<td>6.1.0.4004</td>
+<td>12 April 2001</td>
+</tr>
+<tr>
+<td>LabVIEW 7.0 (Express)</td>
+<td>7.0.0.4000</td>
+<td>April 2003</td>
+</tr>
+<tr>
+<td>LabVIEW PDA module first released</td>
+<td>&#160;??</td>
+<td>May 2003</td>
+</tr>
+<tr>
+<td>LabVIEW FPGA module first released</td>
+<td>&#160;??</td>
+<td>June 2003</td>
+</tr>
+<tr>
+<td>LabVIEW 7.1</td>
+<td>7.1.0.4000</td>
+<td>2004</td>
+</tr>
+<tr>
+<td>LabVIEW Embedded module first released</td>
+<td>&#160;??</td>
+<td>May 2005</td>
+</tr>
+<tr>
+<td>LabVIEW 8.0</td>
+<td>8.0.0.4005</td>
+<td>September 2005</td>
+</tr>
+<tr>
+<td>LabVIEW 8.20 (native Object Oriented Programming)</td>
+<td>&#160;??</td>
+<td>August 2006</td>
+</tr>
+<tr>
+<td>LabVIEW 8.2.1</td>
+<td>8.2.1.4002</td>
+<td>21 February 2007</td>
+</tr>
+<tr>
+<td>LabVIEW 8.5</td>
+<td>8.5.0.4002</td>
+<td>2007</td>
+</tr>
+<tr>
+<td>LabVIEW 8.6</td>
+<td>8.6.0.4001</td>
+<td>24 July 2008</td>
+</tr>
+<tr>
+<td>LabVIEW 8.6.1</td>
+<td>8.6.0.4001</td>
+<td>10 December 2008</td>
+</tr>
+<tr>
+<td>LabVIEW 2009 (32 and 64-bit)</td>
+<td>9.0.0.4022</td>
+<td>4 August 2009</td>
+</tr>
+<tr>
+<td>LabVIEW 2009 SP1</td>
+<td>9.0.1.4011</td>
+<td>8 January 2010</td>
+</tr>
+<tr>
+<td>LabVIEW 2010</td>
+<td>10.0.0.4032</td>
+<td>4 August 2010</td>
+</tr>
+<tr>
+<td>LabVIEW 2010 f2</td>
+<td>10.0.0.4033</td>
+<td>16 September 2010</td>
+</tr>
+<tr>
+<td>LabVIEW 2010 SP1</td>
+<td>10.0.1.4004</td>
+<td>17 May 2011</td>
+</tr>
+<tr>
+<td>LabVIEW for LEGO MINDSTORMS (2010 SP1 with some modules)</td>
+<td></td>
+<td>August 2011</td>
+</tr>
+<tr>
+<td>LabVIEW 2011</td>
+<td>11.0.0.4029</td>
+<td>22 June 2011</td>
+</tr>
+<tr>
+<td>LabVIEW 2011 SP1</td>
+<td>11.0.1.4015</td>
+<td>1 March 2012</td>
+</tr>
+<tr>
+<td>LabVIEW 2012</td>
+<td>12.0.0.4029</td>
+<td>August 2012</td>
+</tr>
+<tr>
+<td>LabVIEW 2012 SP1</td>
+<td>12.0.1.4013</td>
+<td>December 2012</td>
+</tr>
+<tr>
+<td>LabVIEW 2013</td>
+<td>13.0.0.4047</td>
+<td>August 2013</td>
+</tr>
+<tr>
+<td>LabVIEW 2013 SP1</td>
+<td>13.0.1.4017</td>
+<td>March 2014<sup id="cite_ref-14" class="reference"><a href="#cite_note-14">[14]</a></sup></td>
+</tr>
+<tr>
+<td>LabVIEW 2014</td>
+<td></td>
+<td>August 2014</td>
+</tr>
+<tr>
+<td>LabVIEW 2014 SP1</td>
+<td>14.0.1.4008</td>
+<td>March 2015</td>
+</tr>
+<tr>
+<td>LabVIEW 2015</td>
+<td>15.0f2</td>
+<td>August 2015</td>
+</tr>
+<tr>
+<td>LabVIEW 2015 SP1</td>
+<td>15.0.1f1</td>
+<td>March 2016</td>
+</tr>
+<tr>
+<td>LabVIEW 2016</td>
+<td>16.0.0</td>
+<td>August 2016</td>
+</tr>
+</table>
+<h2><span class="mw-headline" id="Repositories_and_libraries">Repositories and libraries</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=LabVIEW&amp;action=edit&amp;section=23" title="Edit section: Repositories and libraries">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p><a href="/wiki/OpenG" class="mw-redirect" title="OpenG">OpenG</a>, as well as LAVA Code Repository (LAVAcr), serve as repositories for a wide range of Open Source LabVIEW applications and <a href="/wiki/Library_(computing)" title="Library (computing)">libraries</a>. <a href="/wiki/SourceForge" title="SourceForge">SourceForge</a> has LabVIEW listed as one of the possible languages in which code can be written.</p>
+<p>VI Package Manager has become the standard <a href="/wiki/Package_manager" title="Package manager">package manager</a> for LabVIEW libraries. It is very similar in purpose to Ruby's <a href="/wiki/RubyGems" title="RubyGems">RubyGems</a> and Perl's <a href="/wiki/CPAN" title="CPAN">CPAN</a>, although it provides a graphical user interface similar to the <a href="/wiki/Synaptic_Package_Manager" class="mw-redirect" title="Synaptic Package Manager">Synaptic Package Manager</a>. VI Package Manager provides access to a repository of the OpenG (and other) libraries for LabVIEW.</p>
+<p>Tools exist to convert <a href="/wiki/MathML" title="MathML">MathML</a> into G code.<sup id="cite_ref-15" class="reference"><a href="#cite_note-15">[15]</a></sup></p>
+<h2><span class="mw-headline" id="Related_software">Related software</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=LabVIEW&amp;action=edit&amp;section=24" title="Edit section: Related software">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>National Instruments also offers a product named <a href="/wiki/Measurement_Studio" title="Measurement Studio">Measurement Studio</a>, which offers many of the test, measurement, and control abilities of LabVIEW, as a set of classes for use with <a href="/wiki/Microsoft" title="Microsoft">Microsoft</a> <a href="/wiki/Visual_Studio" class="mw-redirect" title="Visual Studio">Visual Studio</a>. This allows developers to harness some of LabVIEW's strengths within the text-based <a href="/wiki/.NET_Framework" title=".NET Framework">.NET Framework</a>. National Instruments also offers <a href="/wiki/LabWindows/CVI" title="LabWindows/CVI">LabWindows/CVI</a> as an alternative for ANSI C programmers.</p>
+<p>When applications need sequencing, users often use LabVIEW with TestStand test management software, also from National Instruments.</p>
+<p>The <a href="/wiki/Ch_interpreter" class="mw-redirect" title="Ch interpreter">Ch interpreter</a> is a <a href="/wiki/C_(programming_language)" title="C (programming language)">C</a>/<a href="/wiki/C%2B%2B" title="C++">C++</a> interpreter that can be embedded in LabVIEW for scripting.<sup id="cite_ref-chlabview_16-0" class="reference"><a href="#cite_note-chlabview-16">[16]</a></sup></p>
+<p>The TRIL Centre Ireland BioMobius platform and DSP Robotics' FlowStone DSP also use a form of graphical programming similar to LabVIEW, but are limited to the biomedical and robotics industries respectively.</p>
+<p>LabVIEW has a direct node with <a href="/wiki/ModeFRONTIER" title="ModeFRONTIER">modeFRONTIER</a>, a multidisciplinary and multi-objective optimization and design environment, written to allow coupling to almost any <a href="/wiki/Computer-aided_engineering" title="Computer-aided engineering">computer-aided engineering</a> tool. Both can be part of the same process workflow description and can be virtually driven by the optimization technologies available in modeFRONTIER.</p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=LabVIEW&amp;action=edit&amp;section=25" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a href="/wiki/20-sim" title="20-sim">20-sim</a></li>
+<li><a href="/wiki/Comparison_of_numerical_analysis_software" title="Comparison of numerical analysis software">Comparison of numerical analysis software</a></li>
+<li><a href="/wiki/Dataflow_programming" title="Dataflow programming">Dataflow programming</a></li>
+<li><a href="/wiki/DRAKON" title="DRAKON">DRAKON</a></li>
+<li><a href="/wiki/Fourth-generation_programming_language" title="Fourth-generation programming language">Fourth-generation programming language</a></li>
+<li><a href="/wiki/Graphical_programming" class="mw-redirect" title="Graphical programming">Graphical programming</a></li>
+<li><a href="/wiki/Graphical_system_design" title="Graphical system design">Graphical system design</a></li>
+<li><a href="/wiki/LabWindows/CVI" title="LabWindows/CVI">LabWindows/CVI</a></li>
+<li><a href="/wiki/Lego_Mindstorms_NXT" title="Lego Mindstorms NXT">Lego Mindstorms NXT</a>, whose programming environment, NXT-G is based on LabVIEW, and can be programmed within LabVIEW.</li>
+<li><a href="/wiki/MATLAB" title="MATLAB">MATLAB</a>/<a href="/wiki/Simulink" title="Simulink">Simulink</a></li>
+<li><a href="/wiki/Virtual_instrumentation" title="Virtual instrumentation">Virtual instrumentation</a></li>
+<li><a href="/wiki/CompactDAQ" title="CompactDAQ">CompactDAQ</a></li>
+<li><a href="/wiki/CompactRIO" title="CompactRIO">CompactRIO</a></li>
+</ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=LabVIEW&amp;action=edit&amp;section=26" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.ni.com/downloads/instrument-drivers/">NI Instrument Driver Network</a></span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.ni.com/labview/mathscript/">"LabVIEW MathScript RT Module"</a>. <i>www.ni.com</i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALabVIEW&amp;rft.atitle=LabVIEW+MathScript+RT+Module&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.ni.com%2Flabview%2Fmathscript%2F&amp;rft.jtitle=www.ni.com&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://sine.ni.com/nips/cds/view/p/lang/en/nid/213095">LabView Home Bundle for Windows</a></span></li>
+<li id="cite_note-Building_a_Stand-Alone_Application-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-Building_a_Stand-Alone_Application_4-0">^</a></b></span> <span class="reference-text"><cite class="citation news"><a rel="nofollow" class="external text" href="http://zone.ni.com/reference/en-XX/help/371361B-01/lvhowto/building_a_stand_alone_app/">"Building a Stand-Alone Application"</a>. National Instruments.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALabVIEW&amp;rft.atitle=Building+a+Stand-Alone+Application&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fzone.ni.com%2Freference%2Fen-XX%2Fhelp%2F371361B-01%2Flvhowto%2Fbuilding_a_stand_alone_app%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-Using_the_LabVIEW_Run-Time_Engine-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-Using_the_LabVIEW_Run-Time_Engine_5-0">^</a></b></span> <span class="reference-text"><cite class="citation news"><a rel="nofollow" class="external text" href="http://zone.ni.com/reference/en-XX/help/371361B-01/lvhowto/using_the_lv_run_time_eng/">"Using the LabVIEW Run-Time Engine"</a>. National Instruments.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALabVIEW&amp;rft.atitle=Using+the+LabVIEW+Run-Time+Engine&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fzone.ni.com%2Freference%2Fen-XX%2Fhelp%2F371361B-01%2Flvhowto%2Fusing_the_lv_run_time_eng%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.ni.com/white-paper/6098/en/">Why Dataflow Programming Languages are Ideal for Programming Parallel Hardware</a></span></li>
+<li id="cite_note-excel-leapyear-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-excel-leapyear_7-0">^</a></b></span> <span class="reference-text"><cite class="citation web">Spolsky, Joel. <a rel="nofollow" class="external text" href="http://www.joelonsoftware.com/items/2008/02/19.html">"Why are the Microsoft Office file formats so complicated? (And some workarounds)"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">March 8,</span> 2009</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALabVIEW&amp;rft.aufirst=Joel&amp;rft.aulast=Spolsky&amp;rft.btitle=Why+are+the+Microsoft+Office+file+formats+so+complicated%3F+%28And+some+workarounds%29&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.joelonsoftware.com%2Fitems%2F2008%2F02%2F19.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://thinkinging.com/2007/06/17/top-5-bad-excuses-for-not-using-source-code-control/">http://thinkinging.com/2007/06/17/top-5-bad-excuses-for-not-using-source-code-control/</a></span></li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-9">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://www.ni.com/white-paper/4114/en/">http://www.ni.com/white-paper/4114/en/</a></span></li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-10">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://www.ni.com/tutorial/14304/en/">http://www.ni.com/tutorial/14304/en/</a></span></li>
+<li id="cite_note-Save-for-Previous-Version-11"><span class="mw-cite-backlink"><b><a href="#cite_ref-Save-for-Previous-Version_11-0">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://digital.ni.com/public.nsf/allkb/DA470EB199497F4086256931007050C0">"Can I Save VIs in My Current LabVIEW Version for Use in a Previous Version?"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">February 1,</span> 2016</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALabVIEW&amp;rft.btitle=Can+I+Save+VIs+in+My+Current+LabVIEW+Version+for+Use+in+a+Previous+Version%3F&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fdigital.ni.com%2Fpublic.nsf%2Fallkb%2FDA470EB199497F4086256931007050C0&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-no-zoom-12"><span class="mw-cite-backlink"><b><a href="#cite_ref-no-zoom_12-0">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://digital.ni.com/public.nsf/allkb/B3C995A3E576730D8625647A0063F265">"Can I Zoom In or Out on a LabVIEW Diagram (for Wiring or Viewing Purposes)?"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">February 1,</span> 2016</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALabVIEW&amp;rft.btitle=Can+I+Zoom+In+or+Out+on+a+LabVIEW+Diagram+%28for+Wiring+or+Viewing+Purposes%29%3F&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fdigital.ni.com%2Fpublic.nsf%2Fallkb%2FB3C995A3E576730D8625647A0063F265&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-13"><span class="mw-cite-backlink"><b><a href="#cite_ref-13">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://forums.ni.com/t5/LabVIEW-Idea-Exchange/Add-a-zoom-function-yes-I-said-zoom-So-sue-me/idi-p/918306">"Add a zoom function (yes, I said zoom. So sue me)"</a>. <i>forums.ni.com</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2016-03-31</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALabVIEW&amp;rft.atitle=Add+a+zoom+function+%28yes%2C+I+said+zoom.+So+sue+me%29&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fforums.ni.com%2Ft5%2FLabVIEW-Idea-Exchange%2FAdd-a-zoom-function-yes-I-said-zoom-So-sue-me%2Fidi-p%2F918306&amp;rft.jtitle=forums.ni.com&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-14"><span class="mw-cite-backlink"><b><a href="#cite_ref-14">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://www.ni.com/white-paper/5920/en/">http://www.ni.com/white-paper/5920/en/</a></span></li>
+<li id="cite_note-15"><span class="mw-cite-backlink"><b><a href="#cite_ref-15">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="https://decibel.ni.com/content/docs/DOC-13859">https://decibel.ni.com/content/docs/DOC-13859</a></span></li>
+<li id="cite_note-chlabview-16"><span class="mw-cite-backlink"><b><a href="#cite_ref-chlabview_16-0">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://iel.ucdavis.edu/projects/chlabview/">Embedding a C/C++ Interpreter Ch into LabVIEW for Scripting</a></span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="Further_reading">Further reading</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=LabVIEW&amp;action=edit&amp;section=27" title="Edit section: Further reading">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li>Peter A. Blume: <i>The LabVIEW Style Book</i>, February 27, 2007, Prentice Hall. Part of the National Instruments Virtual Instrumentation Series. <a href="/wiki/Special:BookSources/0131458353" class="internal mw-magiclink-isbn">ISBN 0-13-145835-3</a></li>
+<li>Jeffrey Travis, Jim Kring: <i>LabVIEW for Everyone: Graphical Programming Made Easy and Fun, 3rd Edition</i>, July 27, 2006, Prentice Hall. Part of the National Instruments Virtual Instrumentation Series. <a href="/wiki/Special:BookSources/0131856723" class="internal mw-magiclink-isbn">ISBN 0-13-185672-3</a></li>
+</ul>
+<h3><span class="mw-headline" id="Articles_on_specific_uses">Articles on specific uses</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=LabVIEW&amp;action=edit&amp;section=28" title="Edit section: Articles on specific uses">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<ul>
+<li><cite class="citation journal">Desnica V, Schreiner M, Vladan; Schreiner, Manfred (October 2006). <a rel="nofollow" class="external text" href="http://www3.interscience.wiley.com/cgi-bin/abstract/112748693/ABSTRACT">"A LabVIEW-controlled portable x-ray fluorescence spectrometer for the analysis of art objects"</a>. <i>X-Ray Spectrometry</i>. <b>35</b> (5): 280–286. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1002%2Fxrs.906">10.1002/xrs.906</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALabVIEW&amp;rft.atitle=A+LabVIEW-controlled+portable+x-ray+fluorescence+spectrometer+for+the+analysis+of+art+objects&amp;rft.aufirst=Vladan&amp;rft.aulast=Desnica+V%2C+Schreiner+M&amp;rft.au=Schreiner%2C+Manfred&amp;rft.date=2006-10&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fwww3.interscience.wiley.com%2Fcgi-bin%2Fabstract%2F112748693%2FABSTRACT&amp;rft_id=info%3Adoi%2F10.1002%2Fxrs.906&amp;rft.issue=5&amp;rft.jtitle=X-Ray+Spectrometry&amp;rft.pages=280-286&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=35" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation journal">Keleshis C, Ionita C, Rudin S, C.; Ionita, C.; Rudin, S. (June 2006). <a rel="nofollow" class="external text" href="http://scitation.aip.org/getabs/servlet/GetabsServlet?prog=normal&amp;id=MPHYA6000033000006002007000001&amp;idtype=cvips&amp;gifs=Yes">"Labview [sic] graphical user interface for micro angio-fluoroscopic high resolution detector"</a>. <i>Medical Physics</i>. <b>33</b> (6): 2007. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1118%2F1.2240285">10.1118/1.2240285</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALabVIEW&amp;rft.atitle=Labview+%5Bsic%5D+graphical+user+interface+for+micro+angio-fluoroscopic+high+resolution+detector&amp;rft.aufirst=C.&amp;rft.au=Ionita%2C+C.&amp;rft.aulast=Keleshis+C%2C+Ionita+C%2C+Rudin+S&amp;rft.au=Rudin%2C+S.&amp;rft.date=2006-06&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fscitation.aip.org%2Fgetabs%2Fservlet%2FGetabsServlet%3Fprog%3Dnormal%26id%3DMPHYA6000033000006002007000001%26idtype%3Dcvips%26gifs%3DYes&amp;rft_id=info%3Adoi%2F10.1118%2F1.2240285&amp;rft.issue=6&amp;rft.jtitle=Medical+Physics&amp;rft.pages=2007&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=33" class="Z3988"><span style="display:none;">&#160;</span></span> <span class="citation-comment" style="display:none; color:#33aa33">CS1 maint: Multiple names: authors list (<a href="/wiki/Category:CS1_maint:_Multiple_names:_authors_list" title="Category:CS1 maint: Multiple names: authors list">link</a>)</span></li>
+<li><cite class="citation journal">Fedak W., Bord D., Smith C., Gawrych D., Lindeman K., W.; Bord, D.; Smith, C.; Gawrych, D.; Lindeman, K. (May 2003). <a rel="nofollow" class="external text" href="http://scitation.aip.org/getabs/servlet/GetabsServlet?prog=normal&amp;id=AJPIAS000071000005000501000001&amp;idtype=cvips&amp;gifs=Yes">"Automation of the Franck-Hertz experiment and the Tel-X-Ometer x-ray machine using LABVIEW"</a>. <i>American Journal of Physics</i>. AAPT. <b>71</b> (5): 501–506. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1119%2F1.1527949">10.1119/1.1527949</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALabVIEW&amp;rft.atitle=Automation+of+the+Franck-Hertz+experiment+and+the+Tel-X-Ometer+x-ray+machine+using+LABVIEW&amp;rft.au=Bord%2C+D.&amp;rft.aufirst=W.&amp;rft.au=Gawrych%2C+D.&amp;rft.aulast=Fedak+W.%2C+Bord+D.%2C+Smith+C.%2C+Gawrych+D.%2C+Lindeman+K.&amp;rft.au=Lindeman%2C+K.&amp;rft.au=Smith%2C+C.&amp;rft.date=2003-05&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fscitation.aip.org%2Fgetabs%2Fservlet%2FGetabsServlet%3Fprog%3Dnormal%26id%3DAJPIAS000071000005000501000001%26idtype%3Dcvips%26gifs%3DYes&amp;rft_id=info%3Adoi%2F10.1119%2F1.1527949&amp;rft.issue=5&amp;rft.jtitle=American+Journal+of+Physics&amp;rft.pages=501-506&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=71" class="Z3988"><span style="display:none;">&#160;</span></span> <span class="citation-comment" style="display:none; color:#33aa33">CS1 maint: Multiple names: authors list (<a href="/wiki/Category:CS1_maint:_Multiple_names:_authors_list" title="Category:CS1 maint: Multiple names: authors list">link</a>)</span></li>
+</ul>
+<h3><span class="mw-headline" id="Articles_on_education_uses">Articles on education uses</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=LabVIEW&amp;action=edit&amp;section=29" title="Edit section: Articles on education uses">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<ul>
+<li><cite class="citation journal">Belletti A., Borromei R., Ingletto G., A.; Borromei, R.; Ingletto, G. (September 2006). <a rel="nofollow" class="external text" href="http://jchemed.chem.wisc.edu/Journal/Issues/2006/Sep/abs1353.html">"Teaching physical chemistry experiments with a computer simulation by LabVIEW"</a>. <i>Journal of Chemical Education</i>. ACS. <b>83</b> (9): 1353–1355. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1021%2Fed083p1353">10.1021/ed083p1353</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALabVIEW&amp;rft.atitle=Teaching+physical+chemistry+experiments+with+a+computer+simulation+by+LabVIEW&amp;rft.au=Borromei%2C+R.&amp;rft.aufirst=A.&amp;rft.au=Ingletto%2C+G.&amp;rft.aulast=Belletti+A.%2C+Borromei+R.%2C+Ingletto+G.&amp;rft.date=2006-09&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fjchemed.chem.wisc.edu%2FJournal%2FIssues%2F2006%2FSep%2Fabs1353.html&amp;rft_id=info%3Adoi%2F10.1021%2Fed083p1353&amp;rft.issue=9&amp;rft.jtitle=Journal+of+Chemical+Education&amp;rft.pages=1353-1355&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=83" class="Z3988"><span style="display:none;">&#160;</span></span> <span class="citation-comment" style="display:none; color:#33aa33">CS1 maint: Multiple names: authors list (<a href="/wiki/Category:CS1_maint:_Multiple_names:_authors_list" title="Category:CS1 maint: Multiple names: authors list">link</a>)</span></li>
+<li><cite class="citation journal">Moriarty P.J., Gallagher B.L., Mellor C.J., Baines R.R., P. J.; Gallagher, B. L.; Mellor, C. J.; Baines, R. R. (October 2003). <a rel="nofollow" class="external text" href="http://scitation.aip.org/getabs/servlet/GetabsServlet?prog=normal&amp;id=AJPIAS000071000010001062000001&amp;idtype=cvips&amp;gifs=Yes">"Graphical computing in the undergraduate laboratory: Teaching and interfacing with LabVIEW"</a>. <i>American Journal of Physics</i>. AAPT. <b>71</b> (10): 1062–1074. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1119%2F1.1582189">10.1119/1.1582189</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALabVIEW&amp;rft.atitle=Graphical+computing+in+the+undergraduate+laboratory%3A+Teaching+and+interfacing+with+LabVIEW&amp;rft.au=Baines%2C+R.+R.&amp;rft.aufirst=P.+J.&amp;rft.au=Gallagher%2C+B.+L.&amp;rft.aulast=Moriarty+P.J.%2C+Gallagher+B.L.%2C+Mellor+C.J.%2C+Baines+R.R.&amp;rft.au=Mellor%2C+C.+J.&amp;rft.date=2003-10&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fscitation.aip.org%2Fgetabs%2Fservlet%2FGetabsServlet%3Fprog%3Dnormal%26id%3DAJPIAS000071000010001062000001%26idtype%3Dcvips%26gifs%3DYes&amp;rft_id=info%3Adoi%2F10.1119%2F1.1582189&amp;rft.issue=10&amp;rft.jtitle=American+Journal+of+Physics&amp;rft.pages=1062-1074&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=71" class="Z3988"><span style="display:none;">&#160;</span></span> <span class="citation-comment" style="display:none; color:#33aa33">CS1 maint: Multiple names: authors list (<a href="/wiki/Category:CS1_maint:_Multiple_names:_authors_list" title="Category:CS1 maint: Multiple names: authors list">link</a>)</span></li>
+<li><cite class="citation journal">Lauterburg, Urs (June 2001). <a rel="nofollow" class="external text" href="http://www.lauterburg.ch/UrsLPublications/LV-PhysicsWPPrint.pdf">"LabVIEW in Physics Education"</a> <span style="font-size:85%;">(PDF)</span>. <i>A white paper about using LabVIEW in physics demonstration and laboratory experiments and simulations</i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALabVIEW&amp;rft.atitle=LabVIEW+in+Physics+Education&amp;rft.aufirst=Urs&amp;rft.aulast=Lauterburg&amp;rft.date=2001-06&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fwww.lauterburg.ch%2FUrsLPublications%2FLV-PhysicsWPPrint.pdf&amp;rft.jtitle=A+white+paper+about+using+LabVIEW+in+physics+demonstration+and+laboratory+experiments+and+simulations.&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation journal">Drew SM, Steven M. (December 1996). <a rel="nofollow" class="external text" href="http://jchemed.chem.wisc.edu/Journal/Issues/1996/Dec/abs1107.html">"Integration of National Instruments' LabVIEW software into the chemistry curriculum"</a>. <i>Journal of Chemical Education</i>. ACS. <b>73</b> (12): 1107–1111. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1021%2Fed073p1107">10.1021/ed073p1107</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALabVIEW&amp;rft.atitle=Integration+of+National+Instruments%27+LabVIEW+software+into+the+chemistry+curriculum&amp;rft.aufirst=Steven+M.&amp;rft.aulast=Drew+SM&amp;rft.date=1996-12&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fjchemed.chem.wisc.edu%2FJournal%2FIssues%2F1996%2FDec%2Fabs1107.html&amp;rft_id=info%3Adoi%2F10.1021%2Fed073p1107&amp;rft.issue=12&amp;rft.jtitle=Journal+of+Chemical+Education&amp;rft.pages=1107-1111&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=73" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation journal">Muyskens MA, Glass SV, Wietsma TW, Gray TM, Mark A.; Glass, Samuel V.; Wietsma, Thomas W.; Gray, Terry M. (December 1996). <a rel="nofollow" class="external text" href="http://jchemed.chem.wisc.edu/Journal/Issues/1996/Dec/abs1112.html">"Data acquisition in the chemistry laboratory using LabVIEW software"</a>. <i>Journal of Chemical Education</i>. ACS. <b>73</b> (12): 1112–1114. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1021%2Fed073p1112">10.1021/ed073p1112</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALabVIEW&amp;rft.atitle=Data+acquisition+in+the+chemistry+laboratory+using+LabVIEW+software&amp;rft.aufirst=Mark+A.&amp;rft.au=Glass%2C+Samuel+V.&amp;rft.au=Gray%2C+Terry+M.&amp;rft.aulast=Muyskens+MA%2C+Glass+SV%2C+Wietsma+TW%2C+Gray+TM&amp;rft.au=Wietsma%2C+Thomas+W.&amp;rft.date=1996-12&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fjchemed.chem.wisc.edu%2FJournal%2FIssues%2F1996%2FDec%2Fabs1112.html&amp;rft_id=info%3Adoi%2F10.1021%2Fed073p1112&amp;rft.issue=12&amp;rft.jtitle=Journal+of+Chemical+Education&amp;rft.pages=1112-1114&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=73" class="Z3988"><span style="display:none;">&#160;</span></span> <span class="citation-comment" style="display:none; color:#33aa33">CS1 maint: Multiple names: authors list (<a href="/wiki/Category:CS1_maint:_Multiple_names:_authors_list" title="Category:CS1 maint: Multiple names: authors list">link</a>)</span></li>
+<li><cite class="citation journal">Ogren PJ, Jones TP, Paul J.; Jones, Thomas P. (December 1996). <a rel="nofollow" class="external text" href="http://jchemed.chem.wisc.edu/Journal/Issues/1996/Dec/abs1115.html">"Laboratory interfacing using the LabVIEW software package"</a>. <i>Journal of Chemical Education</i>. ACS. <b>73</b> (12): 1115–1116. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1021%2Fed073p1115">10.1021/ed073p1115</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALabVIEW&amp;rft.atitle=Laboratory+interfacing+using+the+LabVIEW+software+package&amp;rft.aufirst=Paul+J.&amp;rft.au=Jones%2C+Thomas+P.&amp;rft.aulast=Ogren+PJ%2C+Jones+TP&amp;rft.date=1996-12&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fjchemed.chem.wisc.edu%2FJournal%2FIssues%2F1996%2FDec%2Fabs1115.html&amp;rft_id=info%3Adoi%2F10.1021%2Fed073p1115&amp;rft.issue=12&amp;rft.jtitle=Journal+of+Chemical+Education&amp;rft.pages=1115-1116&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=73" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation journal">Trevelyan, J.P. (June 2004). <a rel="nofollow" class="external text" href="http://telerobot.mech.uwa.edu.au/Information/Trevelyan-INEER-2004.pdf">"10 Years Experience with Remote Laboratories"</a> <span style="font-size:85%;">(PDF)</span>. <i>International Conference on Engineering Education Research</i>. ACS.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALabVIEW&amp;rft.atitle=10+Years+Experience+with+Remote+Laboratories&amp;rft.aufirst=J.P.&amp;rft.aulast=Trevelyan&amp;rft.date=2004-06&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Ftelerobot.mech.uwa.edu.au%2FInformation%2FTrevelyan-INEER-2004.pdf&amp;rft.jtitle=International+Conference+on+Engineering+Education+Research&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+</ul>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=LabVIEW&amp;action=edit&amp;section=30" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><span class="official-website"><span class="url"><a rel="nofollow" class="external text" href="http://www.ni.com/labview">Official website</a></span></span>, National Instruments
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.ni.com/labviewtools">LabVIEW Tools Network</a> - Ecosystem of LabVIEW Add-on products, contributed by NI and the community.</li>
+<li><a rel="nofollow" class="external text" href="http://zone.ni.com/reference/en-XX/help/371361J-01/">LabVIEW Help</a> - NI's entire set of online help documentation for LabVIEW 2012.</li>
+<li><a rel="nofollow" class="external text" href="http://zone.ni.com/reference/en-XX/help/371361G-01/">LabVIEW Help</a> - NI's entire set of online help documentation for LabVIEW 2010.</li>
+<li><a rel="nofollow" class="external text" href="http://zone.ni.com/reference/en-XX/help/371361F-01/">LabVIEW Help</a> - NI's entire set of online help documentation for LabVIEW 2009.</li>
+<li><a rel="nofollow" class="external text" href="http://zone.ni.com/reference/en-XX/help/371361D-01/">LabVIEW Help</a> - NI's entire set of online help documentation for LabVIEW 8.5.</li>
+<li><a rel="nofollow" class="external text" href="http://zone.ni.com/reference/en-XX/help/371361B-01/">LabVIEW Help</a> - NI's entire set of online help documentation for LabVIEW 8.20.</li>
+<li><a rel="nofollow" class="external text" href="http://www.ni.com/labviewzone">Official LabVIEW Community Home Page</a> - NI's "LabVIEW Zone" web site.</li>
+</ul>
+</li>
+<li><a rel="nofollow" class="external text" href="http://lavag.org/">LAVA (LabVIEW Advanced Virtual Architects)</a> - Independent community, with discussion forums and a code repository.</li>
+<li><a rel="nofollow" class="external text" href="http://www.info-labview.org">Info-LabVIEW</a> - A LabVIEW <a href="/wiki/Electronic_mailing_list" title="Electronic mailing list">electronic mailing list</a></li>
+<li><a rel="nofollow" class="external text" href="http://sourceforge.net/projects/opengtoolkit/?source=directory">OpenG</a> - <a href="/wiki/Open-source" class="mw-redirect" title="Open-source">Open-source</a> LabVIEW utilities.</li>
+<li><a rel="nofollow" class="external text" href="http://labviewwiki.org/">The LabVIEW Wiki</a> - A user editable LabVIEW knowledge base powered by <a href="/wiki/MediaWiki" title="MediaWiki">MediaWiki</a>.</li>
+<li><a rel="nofollow" class="external text" href="http://cnx.org/content/col10241/latest/">Free, online LabVIEW programming course</a> - This course was authored by NI, and is hosted by <a href="/wiki/Connexions" class="mw-redirect" title="Connexions">Connexions</a>.</li>
+<li><a rel="nofollow" class="external text" href="http://www.labviewportal.eu/">International multi-language (mostly Russian and German) forum and site dedicated to LabVIEW</a></li>
+<li><a rel="nofollow" class="external text" href="http://itpointed.com/">ITpointed LabVIEW Forum</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.lvug.nl/">Dutch-language based user group dedicated to LabVIEW</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.lab-view.com/">LabVIEW Turkey Project Community</a> - Turkish</li>
+<li><a rel="nofollow" class="external text" href="http://www.ilvg.it/">Italian LabVIEW user Group</a> - Italian</li>
+<li><a rel="nofollow" class="external text" href="http://labview.lap.hu/">LabVIEW link collection: tutorials, blogs, toolkits, hardwares</a></li>
+<li>[Labview source codes for labview programmers, Visit <a rel="nofollow" class="external text" href="http://www.rfwireless-world.com/source-code/labview/">RFWireless World labview section</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.radio-electronics.com/info/circuits/labview/what-is-labview.php">What is LabVIEW?</a> Basics of LabVIEW including tutorial</li>
+</ul>
+<div role="navigation" class="navbox" aria-labelledby="National_Instruments" style="padding:3px">
+<table class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:National_Instruments" title="Template:National Instruments"><abbr title="View this template" style=";;background:none transparent;border:none;">v</abbr></a></li>
+<li class="nv-talk"><a href="/w/index.php?title=Template_talk:National_Instruments&amp;action=edit&amp;redlink=1" class="new" title="Template talk:National Instruments (page does not exist)"><abbr title="Discuss this template" style=";;background:none transparent;border:none;">t</abbr></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:National_Instruments&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;">e</abbr></a></li>
+</ul>
+</div>
+<div id="National_Instruments" style="font-size:114%"><a href="/wiki/National_Instruments" title="National Instruments">National Instruments</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Products</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><strong class="selflink">LabVIEW</strong></li>
+<li><a href="/wiki/LabWindows/CVI" title="LabWindows/CVI">LabWindows/CVI</a></li>
+<li><a href="/wiki/NI_Multisim" title="NI Multisim">NI Multisim</a></li>
+<li><a href="/wiki/NI_Ultiboard" title="NI Ultiboard">NI Ultiboard</a></li>
+<li><a href="/wiki/Measurement_Studio" title="Measurement Studio">Measurement Studio</a></li>
+<li><a href="/wiki/CompactRIO" title="CompactRIO">CompactRIO</a></li>
+<li><a href="/wiki/CompactDAQ" title="CompactDAQ">CompactDAQ</a></li>
+<li><a href="/wiki/MyRIO" title="MyRIO">MyRIO</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div role="navigation" class="navbox" aria-labelledby="Numerical_analysis_software" style="padding:3px">
+<table class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:Numerical_analysis_software" title="Template:Numerical analysis software"><abbr title="View this template" style=";;background:none transparent;border:none;">v</abbr></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:Numerical_analysis_software" title="Template talk:Numerical analysis software"><abbr title="Discuss this template" style=";;background:none transparent;border:none;">t</abbr></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:Numerical_analysis_software&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;">e</abbr></a></li>
+</ul>
+</div>
+<div id="Numerical_analysis_software" style="font-size:114%"><a href="/wiki/List_of_numerical_analysis_software" title="List of numerical analysis software">Numerical analysis software</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Free_software" title="Free software">Free</a></th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Advanced_Simulation_Library" title="Advanced Simulation Library">Advanced Simulation Library</a></li>
+<li><a href="/wiki/ADMB" title="ADMB">ADMB</a></li>
+<li><a href="/wiki/Chapel_(programming_language)" title="Chapel (programming language)">Chapel</a></li>
+<li><a href="/wiki/Euler_(software)" title="Euler (software)">Euler</a></li>
+<li><a href="/wiki/Fortress_(programming_language)" title="Fortress (programming language)">Fortress</a></li>
+<li><a href="/wiki/FreeFem%2B%2B" title="FreeFem++">FreeFem++</a></li>
+<li><a href="/wiki/FreeMat" title="FreeMat">FreeMat</a></li>
+<li><a href="/wiki/Genius_(mathematics_software)" title="Genius (mathematics software)">Genius</a></li>
+<li><a href="/wiki/Gmsh" title="Gmsh">Gmsh</a></li>
+<li><a href="/wiki/GNU_Octave" title="GNU Octave">GNU Octave</a></li>
+<li><a href="/wiki/Gretl" title="Gretl">gretl</a></li>
+<li><a href="/wiki/Julia_(programming_language)" title="Julia (programming language)">Julia</a></li>
+<li><a href="/wiki/Maxima_(software)" title="Maxima (software)">Maxima</a></li>
+<li><a href="/wiki/OpenFOAM" title="OpenFOAM">OpenFOAM</a></li>
+<li><a href="/wiki/R_(programming_language)" title="R (programming language)">R</a></li>
+<li><a href="/wiki/SageMath" title="SageMath">SageMath</a></li>
+<li><a href="/wiki/Salome_(software)" title="Salome (software)">Salome</a></li>
+<li><a href="/wiki/ScicosLab" title="ScicosLab">ScicosLab</a></li>
+<li><a href="/wiki/Scilab" title="Scilab">Scilab</a></li>
+<li><a href="/wiki/X10_(programming_language)" title="X10 (programming language)">X10</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Proprietary_software" title="Proprietary software">Proprietary</a></th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/DADiSP" title="DADiSP">DADiSP</a></li>
+<li><a href="/wiki/GAUSS_(software)" title="GAUSS (software)">GAUSS</a></li>
+<li><strong class="selflink">LabVIEW</strong></li>
+<li><a href="/wiki/Maple_(software)" title="Maple (software)">Maple</a></li>
+<li><a href="/wiki/Mathcad" title="Mathcad">Mathcad</a></li>
+<li><a href="/wiki/Mathematica" class="mw-redirect" title="Mathematica">Mathematica</a></li>
+<li><a href="/wiki/MATLAB" title="MATLAB">MATLAB</a></li>
+<li><a href="/wiki/Speakeasy_(computational_environment)" title="Speakeasy (computational environment)">Speakeasy</a></li>
+<li><a href="/wiki/VisSim" title="VisSim">VisSim</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow hlist" colspan="2">
+<div>
+<ul>
+<li><b><a href="/wiki/List_of_numerical_analysis_software" title="List of numerical analysis software">List of numerical analysis software</a></b></li>
+<li><b><a href="/wiki/Comparison_of_numerical_analysis_software" title="Comparison of numerical analysis software">Comparison of numerical analysis software</a></b></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1279
+Cached time: 20170204091602
+Cache expiry: 86400
+Dynamic content: true
+CPU time usage: 0.328 seconds
+Real time usage: 0.398 seconds
+Preprocessor visited node count: 2486/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 67364/2097152 bytes
+Template argument size: 4105/2097152 bytes
+Highest expansion depth: 24/40
+Expensive parser function count: 7/500
+Lua time usage: 0.158/10.000 seconds
+Lua memory usage: 4.9 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  331.141      1 -total
+ 26.22%   86.814      2 Template:Infobox
+ 22.34%   73.980      1 Template:Infobox_Software
+ 19.15%   63.415      1 Template:Reflist
+ 18.41%   60.971      4 Template:Citation_needed
+ 16.45%   54.456      4 Template:Fix
+ 16.14%   53.436      1 Template:Third-party
+ 13.67%   45.254      5 Template:Cite_web
+ 10.99%   36.391     10 Template:Cite_journal
+  9.33%   30.893      4 Template:Delink
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:544733-0!*!0!!en!4!* and timestamp 20170204091602 and revision id 763635605
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=LabVIEW&amp;oldid=763635605">https://en.wikipedia.org/w/index.php?title=LabVIEW&amp;oldid=763635605</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Numerical_software" title="Category:Numerical software">Numerical software</a></li><li><a href="/wiki/Category:Visual_programming_languages" title="Category:Visual programming languages">Visual programming languages</a></li><li><a href="/wiki/Category:Numerical_programming_languages" title="Category:Numerical programming languages">Numerical programming languages</a></li><li><a href="/wiki/Category:Numerical_analysis_software_for_Linux" title="Category:Numerical analysis software for Linux">Numerical analysis software for Linux</a></li><li><a href="/wiki/Category:Numerical_analysis_software_for_MacOS" title="Category:Numerical analysis software for MacOS">Numerical analysis software for MacOS</a></li><li><a href="/wiki/Category:Numerical_analysis_software_for_Windows" title="Category:Numerical analysis software for Windows">Numerical analysis software for Windows</a></li><li><a href="/wiki/Category:Cross-platform_software" title="Category:Cross-platform software">Cross-platform software</a></li><li><a href="/wiki/Category:Pedagogic_integrated_development_environments" title="Category:Pedagogic integrated development environments">Pedagogic integrated development environments</a></li><li><a href="/wiki/Category:Synchronous_programming_languages" title="Category:Synchronous programming languages">Synchronous programming languages</a></li><li><a href="/wiki/Category:Software_modeling_language" title="Category:Software modeling language">Software modeling language</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Articles_lacking_reliable_references_from_May_2015" title="Category:Articles lacking reliable references from May 2015">Articles lacking reliable references from May 2015</a></li><li><a href="/wiki/Category:All_articles_lacking_reliable_references" title="Category:All articles lacking reliable references">All articles lacking reliable references</a></li><li><a href="/wiki/Category:Pages_using_deprecated_image_syntax" title="Category:Pages using deprecated image syntax">Pages using deprecated image syntax</a></li><li><a href="/wiki/Category:All_articles_with_unsourced_statements" title="Category:All articles with unsourced statements">All articles with unsourced statements</a></li><li><a href="/wiki/Category:Articles_with_unsourced_statements_from_June_2013" title="Category:Articles with unsourced statements from June 2013">Articles with unsourced statements from June 2013</a></li><li><a href="/wiki/Category:Articles_with_unsourced_statements_from_August_2015" title="Category:Articles with unsourced statements from August 2015">Articles with unsourced statements from August 2015</a></li><li><a href="/wiki/Category:Articles_with_unsourced_statements_from_July_2014" title="Category:Articles with unsourced statements from July 2014">Articles with unsourced statements from July 2014</a></li><li><a href="/wiki/Category:Articles_containing_potentially_dated_statements_from_2016" title="Category:Articles containing potentially dated statements from 2016">Articles containing potentially dated statements from 2016</a></li><li><a href="/wiki/Category:All_articles_containing_potentially_dated_statements" title="Category:All articles containing potentially dated statements">All articles containing potentially dated statements</a></li><li><a href="/wiki/Category:CS1_maint:_Multiple_names:_authors_list" title="Category:CS1 maint: Multiple names: authors list">CS1 maint: Multiple names: authors list</a></li><li><a href="/wiki/Category:Official_website_different_in_Wikidata_and_Wikipedia" title="Category:Official website different in Wikidata and Wikipedia">Official website different in Wikidata and Wikipedia</a></li><li><a href="/wiki/Category:Pages_using_ISBN_magic_links" title="Category:Pages using ISBN magic links">Pages using ISBN magic links</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=LabVIEW" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=LabVIEW" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/LabVIEW"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:LabVIEW"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/LabVIEW" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=LabVIEW&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=LabVIEW&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/LabVIEW" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/LabVIEW" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=LabVIEW&amp;oldid=763635605" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=LabVIEW&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q746261" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=LabVIEW&amp;id=763635605" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=LabVIEW">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=LabVIEW&amp;returnto=LabVIEW&amp;oldid=763635605&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=LabVIEW&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-wikibase-otherprojects' aria-labelledby='p-wikibase-otherprojects-label'>
+			<h3 id='p-wikibase-otherprojects-label'>In other projects</h3>
+
+			<div class="body">
+									<ul>
+						<li class="wb-otherproject-link wb-otherproject-commons"><a href="https://commons.wikimedia.org/wiki/Category:LabVIEW" hreflang="en">Wikimedia Commons</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-ar"><a href="https://ar.wikipedia.org/wiki/%D9%84%D8%A7%D8%A8%D9%81%D9%8A%D9%88" title="لابفيو – Arabic" lang="ar" hreflang="ar" class="interlanguage-link-target">العربية</a></li><li class="interlanguage-link interwiki-az"><a href="https://az.wikipedia.org/wiki/LabVIEW" title="LabVIEW – Azerbaijani" lang="az" hreflang="az" class="interlanguage-link-target">Azərbaycanca</a></li><li class="interlanguage-link interwiki-bg"><a href="https://bg.wikipedia.org/wiki/LabVIEW" title="LabVIEW – Bulgarian" lang="bg" hreflang="bg" class="interlanguage-link-target">Български</a></li><li class="interlanguage-link interwiki-ca"><a href="https://ca.wikipedia.org/wiki/LabVIEW" title="LabVIEW – Catalan" lang="ca" hreflang="ca" class="interlanguage-link-target">Català</a></li><li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/LabVIEW" title="LabVIEW – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-et"><a href="https://et.wikipedia.org/wiki/LabVIEW" title="LabVIEW – Estonian" lang="et" hreflang="et" class="interlanguage-link-target">Eesti</a></li><li class="interlanguage-link interwiki-es"><a href="https://es.wikipedia.org/wiki/LabVIEW" title="LabVIEW – Spanish" lang="es" hreflang="es" class="interlanguage-link-target">Español</a></li><li class="interlanguage-link interwiki-fa"><a href="https://fa.wikipedia.org/wiki/%D9%84%D8%A8%E2%80%8C%D9%88%DB%8C%D9%88" title="لب‌ویو – Persian" lang="fa" hreflang="fa" class="interlanguage-link-target">فارسی</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/LabVIEW" title="LabVIEW – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-hy"><a href="https://hy.wikipedia.org/wiki/%D4%BC%D5%A1%D5%A2%D5%8E%D4%BB%D5%88%D5%92" title="ԼաբՎԻՈՒ – Armenian" lang="hy" hreflang="hy" class="interlanguage-link-target">Հայերեն</a></li><li class="interlanguage-link interwiki-id"><a href="https://id.wikipedia.org/wiki/LabVIEW" title="LabVIEW – Indonesian" lang="id" hreflang="id" class="interlanguage-link-target">Bahasa Indonesia</a></li><li class="interlanguage-link interwiki-it"><a href="https://it.wikipedia.org/wiki/LabVIEW" title="LabVIEW – Italian" lang="it" hreflang="it" class="interlanguage-link-target">Italiano</a></li><li class="interlanguage-link interwiki-he"><a href="https://he.wikipedia.org/wiki/LabVIEW" title="LabVIEW – Hebrew" lang="he" hreflang="he" class="interlanguage-link-target">עברית</a></li><li class="interlanguage-link interwiki-kk"><a href="https://kk.wikipedia.org/wiki/LabVIEW" title="LabVIEW – Kazakh" lang="kk" hreflang="kk" class="interlanguage-link-target">Қазақша</a></li><li class="interlanguage-link interwiki-ml"><a href="https://ml.wikipedia.org/wiki/%E0%B4%B2%E0%B4%BE%E0%B4%AC%E0%B5%8D%E2%80%8C%E0%B4%B5%E0%B5%8D%E0%B4%AF%E0%B5%82" title="ലാബ്‌വ്യൂ – Malayalam" lang="ml" hreflang="ml" class="interlanguage-link-target">മലയാളം</a></li><li class="interlanguage-link interwiki-nl"><a href="https://nl.wikipedia.org/wiki/LabVIEW" title="LabVIEW – Dutch" lang="nl" hreflang="nl" class="interlanguage-link-target">Nederlands</a></li><li class="interlanguage-link interwiki-ja"><a href="https://ja.wikipedia.org/wiki/LabVIEW" title="LabVIEW – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target">日本語</a></li><li class="interlanguage-link interwiki-pl"><a href="https://pl.wikipedia.org/wiki/LabVIEW" title="LabVIEW – Polish" lang="pl" hreflang="pl" class="interlanguage-link-target">Polski</a></li><li class="interlanguage-link interwiki-pt"><a href="https://pt.wikipedia.org/wiki/LabVIEW" title="LabVIEW – Portuguese" lang="pt" hreflang="pt" class="interlanguage-link-target">Português</a></li><li class="interlanguage-link interwiki-ro"><a href="https://ro.wikipedia.org/wiki/LabVIEW" title="LabVIEW – Romanian" lang="ro" hreflang="ro" class="interlanguage-link-target">Română</a></li><li class="interlanguage-link interwiki-ru"><a href="https://ru.wikipedia.org/wiki/LabVIEW" title="LabVIEW – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li><li class="interlanguage-link interwiki-fi"><a href="https://fi.wikipedia.org/wiki/LabVIEW" title="LabVIEW – Finnish" lang="fi" hreflang="fi" class="interlanguage-link-target">Suomi</a></li><li class="interlanguage-link interwiki-sv"><a href="https://sv.wikipedia.org/wiki/Labview" title="Labview – Swedish" lang="sv" hreflang="sv" class="interlanguage-link-target">Svenska</a></li><li class="interlanguage-link interwiki-tr"><a href="https://tr.wikipedia.org/wiki/LabVIEW" title="LabVIEW – Turkish" lang="tr" hreflang="tr" class="interlanguage-link-target">Türkçe</a></li><li class="interlanguage-link interwiki-uk"><a href="https://uk.wikipedia.org/wiki/LabVIEW" title="LabVIEW – Ukrainian" lang="uk" hreflang="uk" class="interlanguage-link-target">Українська</a></li><li class="interlanguage-link interwiki-vi"><a href="https://vi.wikipedia.org/wiki/LabVIEW" title="LabVIEW – Vietnamese" lang="vi" hreflang="vi" class="interlanguage-link-target">Tiếng Việt</a></li><li class="interlanguage-link interwiki-zh"><a href="https://zh.wikipedia.org/wiki/LabVIEW" title="LabVIEW – Chinese" lang="zh" hreflang="zh" class="interlanguage-link-target">中文</a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q746261#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 4 February 2017, at 09:16.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=LabVIEW&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.328","walltime":"0.398","ppvisitednodes":{"value":2486,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":67364,"limit":2097152},"templateargumentsize":{"value":4105,"limit":2097152},"expansiondepth":{"value":24,"limit":40},"expensivefunctioncount":{"value":7,"limit":500},"entityaccesscount":{"value":1,"limit":400},"timingprofile":["100.00%  331.141      1 -total"," 26.22%   86.814      2 Template:Infobox"," 22.34%   73.980      1 Template:Infobox_Software"," 19.15%   63.415      1 Template:Reflist"," 18.41%   60.971      4 Template:Citation_needed"," 16.45%   54.456      4 Template:Fix"," 16.14%   53.436      1 Template:Third-party"," 13.67%   45.254      5 Template:Cite_web"," 10.99%   36.391     10 Template:Cite_journal","  9.33%   30.893      4 Template:Delink"]},"scribunto":{"limitreport-timeusage":{"value":"0.158","limit":"10.000"},"limitreport-memusage":{"value":5140590,"limit":52428800}},"cachereport":{"origin":"mw1279","timestamp":"20170204091602","ttl":86400,"transientcontent":true}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":66,"wgHostname":"mw1220"});});</script>
+	</body>
+</html>

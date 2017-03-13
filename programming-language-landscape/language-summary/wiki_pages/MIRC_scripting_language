@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>mIRC scripting language - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"MIRC_scripting_language","wgTitle":"MIRC scripting language","wgCurRevisionId":751662971,"wgRevisionId":751662971,"wgArticleId":310996,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles lacking in-text citations from August 2012","All articles lacking in-text citations","Articles needing cleanup from August 2012","All pages needing cleanup","Articles with sections that need to be turned into prose from August 2012","All articles with unsourced statements","Articles with unsourced statements from March 2011","Wikipedia articles that are too technical from August 2012","All articles that are too technical","Articles needing expert attention from August 2012","All articles needing expert attention","Articles with DMOZ links","Scripting languages"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"MIRC_scripting_language","wgRelevantArticleId":310996,"wgRequestId":"WJQFuApAME0AABPX@6QAAAAO","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":true},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q300841","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.legacy.wikibits","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.29.0-wmf.10"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/en/8/8f/MIRC_scripts_editor.png"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/MIRC_scripting_language"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=MIRC_scripting_language&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=MIRC_scripting_language&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/MIRC_scripting_language"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-MIRC_scripting_language rootpage-MIRC_scripting_language skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">mIRC scripting language</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><table class="plainlinks metadata ambox ambox-content ambox-multiple_issues compact-ambox" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ambox_important.svg/40px-Ambox_important.svg.png" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ambox_important.svg/60px-Ambox_important.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ambox_important.svg/80px-Ambox_important.svg.png 2x" data-file-width="40" data-file-height="40" /></div>
+</td>
+<td class="mbox-text">
+<div class="mw-collapsible" style="width:95%; margin: 0.2em 0;"><span class="mbox-text-span"><b>This article has multiple issues.</b> Please help <b><a class="external text" href="//en.wikipedia.org/w/index.php?title=MIRC_scripting_language&amp;action=edit">improve it</a></b> or discuss these issues on the <b><a href="/wiki/Talk:MIRC_scripting_language" title="Talk:MIRC scripting language">talk page</a></b>. <small><i>(<a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove these template messages</a>)</i></small></span>
+<div class="mw-collapsible-content" style="margin-top: 0.3em;">
+<table class="plainlinks metadata ambox ambox-style ambox-No_footnotes" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Text_document_with_red_question_mark.svg/40px-Text_document_with_red_question_mark.svg.png" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Text_document_with_red_question_mark.svg/60px-Text_document_with_red_question_mark.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Text_document_with_red_question_mark.svg/80px-Text_document_with_red_question_mark.svg.png 2x" data-file-width="48" data-file-height="48" /></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">This article includes a <a href="/wiki/Wikipedia:Citing_sources" title="Wikipedia:Citing sources">list of references</a>, related reading or <a href="/wiki/Wikipedia:External_links" title="Wikipedia:External links">external links</a>, <b>but its sources remain unclear because it lacks <a href="/wiki/Wikipedia:Citing_sources#Inline_citations" title="Wikipedia:Citing sources">inline citations</a></b>. <span class="hide-when-compact">Please help to <a href="/wiki/Wikipedia:WikiProject_Fact_and_Reference_Check" title="Wikipedia:WikiProject Fact and Reference Check">improve</a> this article by <a href="/wiki/Wikipedia:When_to_cite" title="Wikipedia:When to cite">introducing</a> more precise citations.</span> <small><i>(August 2012)</i></small> <small class="hide-when-compact"><i>(<a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove this template message</a>)</i></small></span></td>
+</tr>
+</table>
+<table class="plainlinks metadata ambox ambox-style ambox-Prose" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/40px-Edit-clear.svg.png" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/60px-Edit-clear.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/80px-Edit-clear.svg.png 2x" data-file-width="48" data-file-height="48" /></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">This article <b>contains <a href="/wiki/Wikipedia:Manual_of_Style/Embedded_lists" title="Wikipedia:Manual of Style/Embedded lists">embedded lists</a> that may be better presented using <a href="/wiki/Wikipedia:Prose" class="mw-redirect" title="Wikipedia:Prose">prose</a>.</b> <span class="hide-when-compact">You can help by converting the list or lists to prose, if <a href="/wiki/Wikipedia:Manual_of_Style/Embedded_lists" title="Wikipedia:Manual of Style/Embedded lists">appropriate</a>. <a href="/wiki/Help:Editing" title="Help:Editing">Editing help</a> is available.</span> <small><i>(August 2012)</i></small> <small class="hide-when-compact"><i>(<a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove this template message</a>)</i></small></span></td>
+</tr>
+</table>
+</div>
+</div>
+<small class="hide-when-compact"><i>(<a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove this template message</a>)</i></small></td>
+</tr>
+</table>
+<table class="infobox vevent" style="width:22em">
+<caption class="summary">mIRC Scripting Language</caption>
+<tr>
+<th scope="row"><a href="/wiki/Programming_paradigm" title="Programming paradigm">Paradigm</a></th>
+<td><a href="/wiki/Event-driven_programming" title="Event-driven programming">Event-driven programming</a>, <a href="/wiki/Procedural_programming" title="Procedural programming">Procedural programming</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_design" title="Software design">Designed&#160;by</a></th>
+<td><a href="/wiki/Khaled_Mardam-Bey" class="mw-redirect" title="Khaled Mardam-Bey">Khaled Mardam-Bey</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_developer" title="Software developer">Developer</a></th>
+<td class="organiser">Khaled Mardam-Bey</td>
+</tr>
+<tr>
+<th scope="row">First&#160;appeared</th>
+<td>1995<span style="display:none">&#160;(<span class="bday dtstart published updated">1995</span>)</span></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Type_system" title="Type system">Typing discipline</a></th>
+<td><a href="/wiki/Dynamic_typing" class="mw-redirect" title="Dynamic typing">Dynamic typing</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Operating_system" title="Operating system">OS</a></th>
+<td><a href="/wiki/Microsoft_Windows" title="Microsoft Windows">Microsoft Windows</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_license" title="Software license">License</a></th>
+<td><a href="/wiki/Proprietary_software" title="Proprietary software">Proprietary software</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Filename_extension" title="Filename extension">Filename extensions</a></th>
+<td>.mrc, .ini</td>
+</tr>
+<tr>
+<th scope="row">Website</th>
+<td><a rel="nofollow" class="external text" href="http://mirc.com/">http://mirc.com</a></td>
+</tr>
+<tr>
+<th colspan="2" style="text-align:center;background-color: #eee;">Major <a href="/wiki/Programming_language_implementation" title="Programming language implementation">implementations</a></th>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/MIRC" title="MIRC">mIRC</a></td>
+</tr>
+</table>
+<div class="thumb tright">
+<div class="thumbinner" style="width:302px;"><a href="/wiki/File:MIRC_scripts_editor.png" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/8/8f/MIRC_scripts_editor.png/300px-MIRC_scripts_editor.png" width="300" height="183" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/en/thumb/8/8f/MIRC_scripts_editor.png/450px-MIRC_scripts_editor.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/8/8f/MIRC_scripts_editor.png/600px-MIRC_scripts_editor.png 2x" data-file-width="731" data-file-height="445" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:MIRC_scripts_editor.png" class="internal" title="Enlarge"></a></div>
+mIRC scripts editor (built-in)</div>
+</div>
+</div>
+<p>The <b>mIRC scripting language</b>, often unofficially abbreviated to "mSL"<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (March 2011)">citation needed</span></a></i>]</sup>, is the <a href="/wiki/Scripting_programming_language" class="mw-redirect" title="Scripting programming language">scripting language</a> embedded in <a href="/wiki/MIRC" title="MIRC">mIRC</a>, an <a href="/wiki/IRC" class="mw-redirect" title="IRC">IRC</a> client for <a href="/wiki/Microsoft_Windows" title="Microsoft Windows">Windows</a>.</p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Primary_uses"><span class="tocnumber">1</span> <span class="toctext">Primary uses</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Script_storage"><span class="tocnumber">2</span> <span class="toctext">Script storage</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Language_features"><span class="tocnumber">3</span> <span class="toctext">Language features</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="#File_handling"><span class="tocnumber">3.1</span> <span class="toctext">File handling</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Binary_variables"><span class="tocnumber">3.2</span> <span class="toctext">Binary variables</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Hash_tables"><span class="tocnumber">3.3</span> <span class="toctext">Hash tables</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Global_variables"><span class="tocnumber">3.4</span> <span class="toctext">Global variables</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Local_variables"><span class="tocnumber">3.5</span> <span class="toctext">Local variables</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-9"><a href="#Limitations"><span class="tocnumber">4</span> <span class="toctext">Limitations</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#Code_examples"><span class="tocnumber">5</span> <span class="toctext">Code examples</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="#References"><span class="tocnumber">7</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="#External_links"><span class="tocnumber">8</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Primary_uses">Primary uses</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=MIRC_scripting_language&amp;action=edit&amp;section=1" title="Edit section: Primary uses">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li>Channel and personal protection against any types of attacks (flooding, spamming, CTCP floods, etc.).</li>
+<li>Dialog windows can be created in mIRC to better serve user-compatibility.
+<ul>
+<li>Popular mIRC dialog extensions include MDX (<b>m</b>IRC <b>D</b>ialog <b>Ex</b>tension) and DCX (<b>D</b>ialog <b>C</b>ontrol <b>Ex</b>tension). There are also a few versions of mdx.dll and dcx.dll modded by IRC hackers.</li>
+</ul>
+</li>
+<li><a href="/wiki/IRC_bot" title="IRC bot">Bots</a> that provide automated IRC channel management, trivia or other games, and other desired functions for chatters.</li>
+<li>Commands that save typing or otherwise simplify life on IRC (such as automatically <a href="/wiki/IRC_services" class="mw-redirect" title="IRC services">identifying</a> as the owner of a nickname).</li>
+</ul>
+<h2><span class="mw-headline" id="Script_storage">Script storage</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=MIRC_scripting_language&amp;action=edit&amp;section=2" title="Edit section: Script storage">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Scripts are stored as either plain text files, usually with a .mrc <a href="/wiki/File_extension" class="mw-redirect" title="File extension">file extension</a>, or as <a href="/wiki/INI_file" title="INI file">INI files</a>. They however can be stored with any extension. It can be: .exe, .script, etc. Multiple script files can be loaded at one time, although in some cases, one script will conflict with another and cause one or both of them to no longer work properly.</p>
+<h2><span class="mw-headline" id="Language_features">Language features</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=MIRC_scripting_language&amp;action=edit&amp;section=3" title="Edit section: Language features">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<table class="plainlinks metadata ambox ambox-style ambox-technical" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/40px-Edit-clear.svg.png" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/60px-Edit-clear.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/80px-Edit-clear.svg.png 2x" data-file-width="48" data-file-height="48" /></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">This section <b>may be too <a href="https://en.wiktionary.org/wiki/technical#Adjective" class="extiw" title="wikt:technical">technical</a> for most readers to understand</b>. <span class="hide-when-compact">Please help <a class="external text" href="//en.wikipedia.org/w/index.php?title=MIRC_scripting_language&amp;action=edit">improve</a> this section to <a href="/wiki/Wikipedia:Make_technical_articles_understandable" title="Wikipedia:Make technical articles understandable">make it understandable to non-experts</a>, without removing the technical details. The <a href="/wiki/Talk:MIRC_scripting_language" title="Talk:MIRC scripting language">talk page</a> may contain suggestions.</span> <small><i>(August 2012)</i></small> <small class="hide-when-compact"><i>(<a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove this template message</a>)</i></small></span></td>
+</tr>
+</table>
+<p>mIRC scripting involves a peculiar nomenclature that is not entirely consistent with most of the rest of the programming world. (Most notably, the term identifier—which in most languages refers to the name of a variable or function (whether it returns a value or not)—in mIRC refers specifically to a value returning function.)</p>
+<ul>
+<li>Built-in functions are termed <b>commands</b> or, if they return a value, <b>identifiers</b>.</li>
+<li>Custom scripted <a href="/wiki/Function_(computer_science)" class="mw-redirect" title="Function (computer science)">functions</a> are called <b>aliases</b>. Aliases that return a value are known as <b>custom identifiers</b>. Both are called from the command line or other parts of a script in the same ways as built-in commands and identifiers (and can even supersede them).</li>
+<li><b>Popups</b> are scripted <a href="/wiki/Context_menu" title="Context menu">context menu</a> items. Popups are called when they are selected by the user. The term originally referred to the menus—which pop up upon a right click. It is still used this way in the manual. But the user community (who tend not to read scripting manuals) took to calling the individual items popups—perhaps thinking of the colourful novelty actions that are popular with many users as pages of a popup book.</li>
+<li>Remotes are <a href="/wiki/Event_handler" class="mw-redirect" title="Event handler">event-handling</a> scripts. Remotes are called when the event they handle occurs.</li>
+<li>All variables are <a href="/wiki/Dynamic_typing" class="mw-redirect" title="Dynamic typing">dynamically typed</a>.</li>
+<li>mIRC scripts make use of <a href="/wiki/Sigil_(computer_programming)" title="Sigil (computer programming)">sigils</a>. Identifiers (whether custom or built-in) are preceded by <code>$</code>, binary variables are preceded by <code>&amp;</code>, and other variables (whether local or global) are preceded by <code>%</code>. Commands and aliases are not preceded by any particular character (although when entered from a window's command line they must be preceded by the command prefix, usually <code>/</code>).</li>
+</ul>
+<h3><span class="mw-headline" id="File_handling">File handling</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=MIRC_scripting_language&amp;action=edit&amp;section=4" title="Edit section: File handling">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<ul>
+<li>Scripts can read from and write to files [<code>$read(file,[args])</code> | <code>/write</code> ]</li>
+</ul>
+<p>The above is intended for singular access to the file. Because each time you issue <code>$read</code> or <code>/write</code> you open and close the file for access. Multiple accesses, during a loop for instance, is best handled through <code>/fopen</code>, <code>/fwrite</code> and <code>/fclose</code>. Since this opens the file only once. In some cases <code>/filter</code> and <code>/savebuf</code> is an even more efficient (non scripted loop) method.</p>
+<ul>
+<li>Scripts can also copy and delete files. [<code>/copy</code> | <code>/remove</code>]</li>
+</ul>
+<h3><span class="mw-headline" id="Binary_variables">Binary variables</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=MIRC_scripting_language&amp;action=edit&amp;section=5" title="Edit section: Binary variables">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<ul>
+<li>Contain unlimited (8192 bytes prior to mIRC 6.1) raw data</li>
+<li>Globally accessible via commands and identifiers</li>
+<li>Automatically unset when script returns control to mIRC (and not to another part of a script)</li>
+<li>Prefixed with <code>&amp;</code> (e.g. <code>&amp;Variable</code>)</li>
+<li>Cannot be accessed other than by <code>/bread</code> and <code>/bwrite</code>, so these variables cannot be passed onto other parts of the script</li>
+</ul>
+<h3><span class="mw-headline" id="Hash_tables">Hash tables</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=MIRC_scripting_language&amp;action=edit&amp;section=6" title="Edit section: Hash tables">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<ul>
+<li>May contain unlimited binary data or up to 4,150 (950 prior to mIRC 6.32) bytes of plain text. This limit is imposed by mIRC's scripting parser's own line length limitation (unless assigning a binary variable)</li>
+<li>Globally accessible via commands and identifiers</li>
+<li>Automatically unset when exiting mIRC as they are only stored in memory</li>
+<li>Can be saved for later use</li>
+<li>Not prefixed</li>
+<li>Faster than accessing from a file, as hash tables are stored in memory rather than the hard disk</li>
+<li>Size limited only by the computer's memory limits.</li>
+<li>Allows any bucket size to be used</li>
+</ul>
+<h3><span class="mw-headline" id="Global_variables">Global variables</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=MIRC_scripting_language&amp;action=edit&amp;section=7" title="Edit section: Global variables">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<ul>
+<li>May contain up to 4,150 (950 prior to mIRC 6.32) bytes of data including its name (however due to line-length limitations in mIRC's scripting parser, a maximum of 4,146 bytes can be assigned explicitly using /set or /var&#160;— this number decreasing as the variable's name grows longer)</li>
+<li>Cannot store NUL (ASCII 0) or trailing spaces</li>
+<li>Globally accessible</li>
+<li>Do not automatically unset unless a switch is used (stored automatically in a mIRC initialization file)</li>
+<li>Prefixed with <code>%</code> (e.g. <code>%Variable</code>)</li>
+<li>Created using the <code>set</code> command or <code>var -g</code> or <code>%Variable = value</code> notation</li>
+</ul>
+<h3><span class="mw-headline" id="Local_variables">Local variables</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=MIRC_scripting_language&amp;action=edit&amp;section=8" title="Edit section: Local variables">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<ul>
+<li>May contain up to 4,150 (950 prior to mIRC 6.32) bytes of data including the variable name (however due to line-length limitations in mIRC's scripting parser, a maximum of 4,146 bytes can be assigned explicitly using the /set or /var commands&#160;— this number decreasing as the variable's name grows longer)</li>
+<li>Can store NUL (ASCII 0) or trailing spaces</li>
+<li>Are destroyed when the triggered alias or event ends</li>
+<li>Prefixed with <code>%</code> (e.g. <code>%Variable</code>)</li>
+<li>Created using the <code>var</code> command. <code>var</code> is merely an internal alias for <code>set -l</code> but <code>var</code> poses the means to declare multiple local variables on a single line (e.g. <code>var&#160;%a = 1,&#160;%b,&#160;%c = 2</code>)</li>
+</ul>
+<h2><span class="mw-headline" id="Limitations">Limitations</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=MIRC_scripting_language&amp;action=edit&amp;section=9" title="Edit section: Limitations">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li>Scripting parser supports a maximum of 4,150 (950 prior to mIRC 6.32) characters per line (not including newlines or indentation).</li>
+<li>Strings are not syntactically enclosed, creating ambiguities in code where characters meant as literal strings are treated as part of the language's <a href="/wiki/Syntax" title="Syntax">syntax</a>.</li>
+<li>Each line of code is broken down into a set of space-delimited tokens. As mIRC's parser does not support null tokens and the language doesn't provide a syntax to clearly differentiate literal strings from code; Prior to mIRC version 6.2 it was impossible to pass multiple consecutive spaces to any command or alias. However, this was fixed with the introduction of the returnex command which allows the preservation of spaces.</li>
+</ul>
+<h2><span class="mw-headline" id="Code_examples">Code examples</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=MIRC_scripting_language&amp;action=edit&amp;section=10" title="Edit section: Code examples">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The code below is in the remote scripts format. If placed into an alias file, the command names should not be preceded by the word "<code>alias</code>". Test Comments include the common <code>/* comment */</code> and <code>;comment</code>.</p>
+<p>Here is an example of a <a href="/wiki/Hello_World" class="mw-redirect" title="Hello World">Hello World</a> alias:</p>
+<pre>
+;Defines the alias 'hello' in the remote script
+
+;Note: if this is placed in an alias script,
+;the 'alias' part must be removed (result: hello {)
+;Usage: /hello
+
+alias hello {
+
+  ;Displays(/echo) 'Hello World!' into the active window(-a)
+  echo -a Hello World!
+
+}
+</pre>
+<p>A remote script to automatically respond to certain text</p>
+<pre>
+;Placed in a remote script
+
+;When a user types Hello! in a channel,
+;you answer back: Hello, [nickname]!
+
+on *:TEXT:Hello!:#:{ msg $chan Hello, $nick $+ ! }
+
+;When a user types Hello! in a private message,
+;you answer back: Hello, [nickname]!
+
+on *:TEXT:Hello!:?: { msg $nick Hello, $nick $+ ! }
+
+;Here is a script which automatically gives voice to a user
+;who joins a particular channel (The Bot or user should have HOP)
+
+on *:JOIN:#?: { mode $chan +v $nick }
+
+;A bad word script
+
+on *:Text:die*:#: { .mode $chan +b $nick | kick $chan $nick Dont say that again }
+</pre>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=MIRC_scripting_language&amp;action=edit&amp;section=11" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a href="/wiki/Internet_Relay_Chat" title="Internet Relay Chat">Internet Relay Chat</a></li>
+<li><a href="/wiki/MIRC" title="MIRC">mIRC</a></li>
+</ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=MIRC_scripting_language&amp;action=edit&amp;section=12" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li>Smith, Chris. (2004). <a rel="nofollow" class="external text" href="https://books.google.com/books?id=MbHAnBh9AqQC&amp;pg=PA71&amp;lpg=PA71&amp;dq=mIRC+scripting+language&amp;source=bl&amp;ots=c6vMlSuCHM&amp;sig=0FN0NLYGLyKNc2yddeeS4j6ITFg&amp;hl=en&amp;sa=X&amp;ei=nRowUNLtOs70igLLt4HIAw&amp;ved=0CE4Q6AEwBg#v=onepage&amp;q=mIRC%20scripting%20language&amp;f=false">"Hack #20 Automate IRC with Scripting" in <i>IRC Hacks: 100 Industrial-Strength Tips &amp; Tools</i></a>. Paul Mutton, ed. O'Reilly Media, Inc. pp.&#160;71–74. <i>(In-depth example of script features and usage)</i></li>
+<li>Jose Nazario (2004)<a rel="nofollow" class="external text" href="https://books.google.com/books?id=swfZIwWZepYC&amp;pg=PA53&amp;lpg=PA53&amp;dq=mIRC+scripting+language&amp;source=bl&amp;ots=YoLpSH3ZPg&amp;sig=uZa1_pBdf7O59r7oeIOL0fiU3JU&amp;hl=en&amp;sa=X&amp;ei=hiEwUPDPM6KuiQL2rIHoBg&amp;ved=0CEwQ6AEwBTgK#v=onepage&amp;q=mIRC%20scripting%20language&amp;f=false"><i>Defense and Detection Strategies Against Internet Worms</i></a>. Artech House, 2004. p.&#160;53, 55. <i>(Discusses 1997 mIRC script attack.)</i></li>
+<li>Ken Dunham, Jim Melnick (2008) <a rel="nofollow" class="external text" href="https://books.google.com/books?id=nmgK7KcibSUC&amp;pg=PA9&amp;lpg=PA9&amp;dq=mIRC+scripting+language&amp;source=bl&amp;ots=xcpyDvnlSX&amp;sig=DolGjRf-rch1WtSFUxj9HEEGaFg&amp;hl=en&amp;sa=X&amp;ei=hiEwUPDPM6KuiQL2rIHoBg&amp;ved=0CFEQ6AEwBjgK#v=onepage&amp;q=mIRC%20scripting%20language&amp;f=false"><i>Malicious Bots: An Inside Look into the Cyber-Criminal Underground of the Internet</i></a>. CRC Press. p.&#160;7-31. <i>(In-depth analysis/reverse engineering of mIRC-script-based malware bot)</i></li>
+<li><a href="/wiki/Peter_Szor" class="mw-redirect" title="Peter Szor">Peter Szor</a> (2005). <a rel="nofollow" class="external text" href="https://books.google.com/books?id=XE-ddYF6uhYC&amp;pg=PT141&amp;lpg=PT141&amp;dq=mIRC+scripting+language&amp;source=bl&amp;ots=GfIPdo_XIY&amp;sig=4SMQqjKAuJp2vCFRAh1e0nRVpRM&amp;hl=en&amp;sa=X&amp;ei=nRowUNLtOs70igLLt4HIAw&amp;ved=0CFQQ6AEwBw#v=onepage&amp;q=mIRC%20scripting%20language&amp;f=false"><i>The Art of Computer Virus Research and Defense</i></a>. Pearson Education. Ch. 3.7.7.</li>
+<li>David Harley, Robert S. Vibert (2007). <a rel="nofollow" class="external text" href="https://books.google.com/books?id=LBzXf0A-jQwC&amp;pg=PA147&amp;lpg=PA147&amp;dq=mIRC+scripting+language&amp;source=bl&amp;ots=B0LoItXxVC&amp;sig=d6KWjWy_TAB7GcWN3_CSVTBfOfU&amp;hl=en&amp;sa=X&amp;ei=hiEwUPDPM6KuiQL2rIHoBg&amp;ved=0CC8Q6AEwADgK#v=onepage&amp;q=mIRC%20scripting%20language&amp;f=false"><i>AVIEN Malware Defense Guide for the Enterprise</i></a>. Elsevier. p.&#160;147. (usage in script attacks)</li>
+<li>Esharenana E. Adomi (2008). <a rel="nofollow" class="external text" href="https://books.google.com/books?id=jZwaZhCqbEAC&amp;pg=PT195&amp;lpg=PT195&amp;dq=mIRC+scripting+language&amp;source=bl&amp;ots=QfDne0xOL5&amp;sig=Uz6eoJa0ZrvOuTgJU8G99eSK4W0&amp;hl=en&amp;sa=X&amp;ei=nRowUNLtOs70igLLt4HIAw&amp;ved=0CD0Q6AEwAw#v=onepage&amp;q=mIRC%20scripting%20language&amp;f=false"><i>Security and Software for Cybercafés</i></a>. Idea Group Inc (IGI). p.&#160;173.</li>
+<li>Markus Jakobsson, Zulfikar Ramzan. (2008). <a rel="nofollow" class="external text" href="https://books.google.com/books?id=U8bh6a9Jvz0C&amp;pg=PA194&amp;lpg=PA194&amp;dq=mIRC+scripting+language&amp;source=bl&amp;ots=W9NRyfnP65&amp;sig=Wn-sngYCf-yFoowegQpv7pUaYDA&amp;hl=en&amp;sa=X&amp;ei=nRowUNLtOs70igLLt4HIAw&amp;ved=0CEIQ6AEwBA#v=onepage&amp;q=mIRC%20scripting%20language&amp;f=false"><i>Crimeware: Understanding New Attacks and Defenses</i></a>. Addison-Wesley Professional. p.&#160;194.</li>
+</ul>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=MIRC_scripting_language&amp;action=edit&amp;section=13" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<table role="presentation" class="mbox-small plainlinks sistersitebox" style="border:1px solid #aaa;background-color:#f9f9f9">
+<tr>
+<td class="mbox-image"><a href="/wiki/File:Wikibooks-logo-en-noslogan.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/40px-Wikibooks-logo-en-noslogan.svg.png" width="40" height="40" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/60px-Wikibooks-logo-en-noslogan.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/80px-Wikibooks-logo-en-noslogan.svg.png 2x" data-file-width="400" data-file-height="400" /></a></td>
+<td class="mbox-text plainlist">Wikibooks has a book on the topic of: <i><b><a href="https://en.wikibooks.org/wiki/mIRC_Scripting" class="extiw" title="wikibooks:mIRC Scripting">mIRC Scripting</a></b></i></td>
+</tr>
+</table>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.mirc.com/">Official mIRC website</a></li>
+<li><a rel="nofollow" class="external text" href="https://www.dmoz.org/Computers/Software/Internet/Clients/Chat/IRC/mIRC/Scripts">mIRC Scripts</a> at <a href="/wiki/DMOZ" title="DMOZ">DMOZ</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.mircscripting.net">mIRC Scripting Help</a>&#160;— Turkish/English mIRC Scripting Help unofficial</li>
+</ul>
+<div role="navigation" class="navbox" aria-labelledby="Internet_Relay_Chat_.28IRC.29" style="padding:3px">
+<table class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:IRC_footer" title="Template:IRC footer"><abbr title="View this template" style=";;background:none transparent;border:none;">v</abbr></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:IRC_footer" title="Template talk:IRC footer"><abbr title="Discuss this template" style=";;background:none transparent;border:none;">t</abbr></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:IRC_footer&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;">e</abbr></a></li>
+</ul>
+</div>
+<div id="Internet_Relay_Chat_.28IRC.29" style="font-size:114%"><a href="/wiki/Internet_Relay_Chat" title="Internet Relay Chat">Internet Relay Chat</a> (IRC)</div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-odd hlist" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks collapsible collapsed navbox-subgroup" style="border-spacing:0">
+<tr>
+<th scope="col" class="navbox-title" colspan="2"><span style="float:left;width:6em">&#160;</span>
+<div id="General_topics" style="font-size:114%"><a href="/wiki/Category:Internet_Relay_Chat" title="Category:Internet Relay Chat">General topics</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Common terms</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/BNC_(software)#IRC" title="BNC (software)">BNC</a></li>
+<li><a href="/wiki/Internet_Relay_Chat_bot" class="mw-redirect" title="Internet Relay Chat bot">Bot</a></li>
+<li><a href="/wiki/Internet_Relay_Chat#Channels" title="Internet Relay Chat">Channel</a></li>
+<li><a href="/wiki/Denial-of-service_attack" title="Denial-of-service attack">DoS attack</a></li>
+<li><a href="/wiki/Internet_Relay_Chat_channel_operator" class="mw-redirect" title="Internet Relay Chat channel operator">Channel Operator</a></li>
+<li><a href="/wiki/Internet_Relay_Chat#Clients" title="Internet Relay Chat">Client</a></li>
+<li><a href="/wiki/Internet_Relay_Chat_flood" title="Internet Relay Chat flood">Flood</a></li>
+<li><a href="/wiki/Internet_Relay_Chat#Hostmasks" title="Internet Relay Chat">Hostmask</a></li>
+<li><a href="/wiki/Internet_Relay_Chat" title="Internet Relay Chat">IRC</a></li>
+<li><a href="/wiki/Netsplit" title="Netsplit">Netsplit</a></li>
+<li><a href="/wiki/Internet_Relay_Chat#Networks" title="Internet Relay Chat">Network</a></li>
+<li><a href="/wiki/Internet_Relay_Chat_operator" class="mw-redirect" title="Internet Relay Chat operator">Operator</a></li>
+<li><a href="/wiki/Internet_Relay_Chat_script" title="Internet Relay Chat script">Script</a></li>
+<li><a href="/wiki/IRCd" title="IRCd">Server</a></li>
+<li><a href="/wiki/Internet_Relay_Chat_services" title="Internet Relay Chat services">Services</a></li>
+<li><a href="/wiki/Internet_Relay_Chat_takeover" title="Internet Relay Chat takeover">Takeover</a></li>
+<li><a href="/wiki/Internet_Relay_Chat" title="Internet Relay Chat">vhost</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Lists and comparisons</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/List_of_Internet_Relay_Chat_commands" title="List of Internet Relay Chat commands">List of IRC commands</a></li>
+<li><a href="/wiki/Comparison_of_Internet_Relay_Chat_bots" title="Comparison of Internet Relay Chat bots">Comparison of IRC bots</a></li>
+<li><a href="/wiki/Comparison_of_Internet_Relay_Chat_clients" title="Comparison of Internet Relay Chat clients">Comparison of IRC clients</a></li>
+<li><a href="/wiki/Comparison_of_mobile_Internet_Relay_Chat_clients" title="Comparison of mobile Internet Relay Chat clients">Comparison of mobile IRC clients</a></li>
+<li><a href="/wiki/Comparison_of_Internet_Relay_Chat_daemons" title="Comparison of Internet Relay Chat daemons">Comparison of IRC daemons</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Related protocols</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Internet_Relay_Chat#Technical_information" title="Internet Relay Chat">IRC</a></li>
+<li><a href="/wiki/IRCX" title="IRCX">IRCX</a></li>
+<li><a href="/wiki/MSN_Chat" title="MSN Chat">MSN Chat</a></li>
+<li><a href="/wiki/IRCd#P10" title="IRCd">P10</a></li>
+<li><a href="/wiki/Client-to-client_protocol" title="Client-to-client protocol">CTCP</a></li>
+<li><a href="/wiki/Direct_Client-to-Client" title="Direct Client-to-Client">DCC</a></li>
+<li><a href="/wiki/XDCC" title="XDCC">XDCC</a></li>
+<li><a href="/wiki/Ident_protocol" title="Ident protocol">Ident</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">See also</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Internet_Relay_Chat_subculture" title="Internet Relay Chat subculture">IRC subculture</a></li>
+<li><a href="/wiki/Jarkko_Oikarinen" title="Jarkko Oikarinen">Jarkko Oikarinen</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-even hlist" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks collapsible collapsed navbox-subgroup" style="border-spacing:0">
+<tr>
+<th scope="col" class="navbox-title" colspan="2"><span style="float:left;width:6em">&#160;</span>
+<div id="Clients_.28comparison.29" style="font-size:114%"><a href="/wiki/Category:Internet_Relay_Chat_clients" title="Category:Internet Relay Chat clients">Clients</a> (<a href="/wiki/Comparison_of_Internet_Relay_Chat_clients" title="Comparison of Internet Relay Chat clients">comparison</a>)</div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/MacOS" title="MacOS">macOS</a></th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Colloquy_(IRC_client)" class="mw-redirect" title="Colloquy (IRC client)">Colloquy</a></li>
+<li><a href="/wiki/Fire_(instant_messaging_client)" title="Fire (instant messaging client)">Fire</a></li>
+<li><a href="/wiki/Homer_(software)" title="Homer (software)">Homer</a><small>(Mac OS)</small></li>
+<li><a href="/wiki/Ircle" title="Ircle">Ircle</a></li>
+<li><a href="/wiki/Linkinus" title="Linkinus">Linkinus</a></li>
+<li><a href="/wiki/Irssi" title="Irssi">MacIrssi</a></li>
+<li><a href="/wiki/Snak" title="Snak">Snak</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Microsoft_Windows" title="Microsoft Windows">Microsoft Windows</a></th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Bersirc" title="Bersirc">Bersirc</a></li>
+<li><a href="/wiki/MIRC" title="MIRC">mIRC</a></li>
+<li><a href="/wiki/Microsoft_Comic_Chat" title="Microsoft Comic Chat">Microsoft Comic Chat</a></li>
+<li><a href="/wiki/PIRCH" title="PIRCH">PIRCH</a></li>
+<li><a href="/wiki/Shareaza" title="Shareaza">Shareaza</a></li>
+<li><a href="/wiki/Visual_IRC" title="Visual IRC">Visual IRC</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Unix-like" title="Unix-like">Unix-like</a></th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/IrcII" title="IrcII">ircII</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Cross-platform" title="Cross-platform">Cross-platform</a></th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/BitchX" title="BitchX">BitchX</a></li>
+<li><a href="/wiki/Irssi" title="Irssi">Irssi</a></li>
+<li><a href="/wiki/Konversation" title="Konversation">Konversation</a></li>
+<li><a href="/wiki/KVIrc" title="KVIrc">KVIrc</a></li>
+<li><a href="/wiki/LeafChat" title="LeafChat">LeafChat</a></li>
+<li><a href="/wiki/Naim_(chat_program)" class="mw-redirect" title="Naim (chat program)">naim</a></li>
+<li><a href="/wiki/Smuxi" title="Smuxi">Smuxi</a></li>
+<li><a href="/wiki/WeeChat" title="WeeChat">WeeChat</a></li>
+<li><a href="/wiki/XChat" title="XChat">XChat</a></li>
+<li><a href="/wiki/PJIRC" title="PJIRC">PJIRC</a></li>
+<li><a href="/wiki/Quassel_IRC" title="Quassel IRC">Quassel IRC</a></li>
+<li><a href="/wiki/IceChat" title="IceChat">IceChat</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Instant_messaging" title="Instant messaging">Multi-IM</a></th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Centericq" title="Centericq">Centericq</a></li>
+<li><a href="/wiki/Empathy_(software)" title="Empathy (software)">Empathy</a></li>
+<li><a href="/wiki/Kopete" title="Kopete">Kopete</a></li>
+<li><a href="/wiki/Miranda_IM" title="Miranda IM">Miranda IM</a></li>
+<li><a href="/wiki/Pidgin_(software)" title="Pidgin (software)">Pidgin</a></li>
+<li><a href="/wiki/Trillian_(software)" title="Trillian (software)">Trillian</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Web_application" title="Web application">Web-based</a></th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/CGI:IRC" title="CGI:IRC">CGI:IRC</a></li>
+<li><a href="/wiki/PJIRC" title="PJIRC">PJIRC</a></li>
+<li><a href="/wiki/Mibbit" title="Mibbit">Mibbit</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Web_browser" title="Web browser">Web browser</a> components</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/ChatZilla" title="ChatZilla">ChatZilla</a></li>
+<li><a href="/wiki/Mozilla_Application_Suite" title="Mozilla Application Suite">Mozilla Application Suite</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Library_(computing)" title="Library (computing)">Library</a> and <a href="/wiki/Plug-in_(computing)" title="Plug-in (computing)">plug-ins</a></th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/ERC_(software)" title="ERC (software)">ERC</a></li>
+<li><a href="/wiki/Rcirc" title="Rcirc">rcirc</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-odd hlist" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks collapsible collapsed navbox-subgroup" style="border-spacing:0">
+<tr>
+<th scope="col" class="navbox-title" colspan="2" style=";"><span style="float:left;width:6em">&#160;</span>
+<div id="Bots_.28comparison.29" style="font-size:114%"><a href="/wiki/Category:Internet_Relay_Chat_bots" title="Category:Internet Relay Chat bots">Bots</a> (<a href="/wiki/Comparison_of_Internet_Relay_Chat_bots" title="Comparison of Internet Relay Chat bots">comparison</a>)</div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Eggdrop" title="Eggdrop">Eggdrop</a></li>
+<li><a href="/wiki/Infobot" title="Infobot">Infobot</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-even hlist" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks collapsible collapsed navbox-subgroup" style="border-spacing:0">
+<tr>
+<th scope="col" class="navbox-title" colspan="2" style=";"><span style="float:left;width:6em">&#160;</span>
+<div id="Bouncers.2C_Gateways_and_Proxies" style="font-size:114%"><a href="/wiki/Category:Internet_Relay_Chat_bouncers,_gateways_and_proxies" title="Category:Internet Relay Chat bouncers, gateways and proxies">Bouncers, Gateways and Proxies</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/BitlBee" title="BitlBee">BitlBee</a></li>
+<li><a href="/wiki/ZNC" title="ZNC">ZNC</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-even hlist" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks collapsible collapsed navbox-subgroup" style="border-spacing:0">
+<tr>
+<th scope="col" class="navbox-title" colspan="2" style=";"><span style="float:left;width:6em">&#160;</span>
+<div id="Daemons_.28comparison.29" style="font-size:114%"><a href="/wiki/Category:Internet_Relay_Chat_daemons" title="Category:Internet Relay Chat daemons">Daemons</a> (<a href="/wiki/Comparison_of_Internet_Relay_Chat_daemons" title="Comparison of Internet Relay Chat daemons">comparison</a>)</div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/IRCd" title="IRCd">IRCd</a></li>
+<li><a href="/wiki/Ircu" title="Ircu">ircu</a></li>
+<li><a href="/wiki/UnrealIRCd" title="UnrealIRCd">UnrealIRCd</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-odd hlist" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks collapsible collapsed navbox-subgroup" style="border-spacing:0">
+<tr>
+<th scope="col" class="navbox-title" colspan="2" style=";"><span style="float:left;width:6em">&#160;</span>
+<div id="Networks" style="font-size:114%"><a href="/wiki/Category:Internet_Relay_Chat_networks" title="Category:Internet Relay Chat networks">Networks</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/DALnet" title="DALnet">DALnet</a></li>
+<li><a href="/wiki/EFnet" title="EFnet">EFnet</a></li>
+<li><a href="/wiki/Freenode" title="Freenode">freenode</a></li>
+<li><a href="/wiki/GameSurge" title="GameSurge">GameSurge</a></li>
+<li><a href="/wiki/2channel#IRC.402ch" title="2channel">IRC@2ch</a></li>
+<li><a href="/wiki/IRCnet" title="IRCnet">IRCnet</a></li>
+<li><a href="/wiki/Open_and_Free_Technology_Community" title="Open and Free Technology Community">OFTC</a></li>
+<li><a href="/wiki/QuakeNet" title="QuakeNet">QuakeNet</a></li>
+<li><a href="/wiki/Rizon" title="Rizon">Rizon</a></li>
+<li><a href="/wiki/RusNet" title="RusNet">RusNet</a></li>
+<li><a href="/wiki/SlashNET" title="SlashNET">SlashNET</a></li>
+<li><a href="/wiki/Undernet" title="Undernet">Undernet</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1216
+Cached time: 20170130202916
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.172 seconds
+Real time usage: 0.230 seconds
+Preprocessor visited node count: 1683/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 90674/2097152 bytes
+Template argument size: 14874/2097152 bytes
+Highest expansion depth: 12/40
+Expensive parser function count: 8/500
+Lua time usage: 0.062/10.000 seconds
+Lua memory usage: 2.52 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  171.692      1 -total
+ 46.09%   79.130      4 Template:Ambox
+ 34.88%   59.892      1 Template:Multiple_issues
+ 23.91%   41.059      1 Template:IRC_footer
+ 22.09%   37.930      1 Template:Navbox_with_collapsible_groups
+ 16.62%   28.541      1 Template:Infobox_programming_language
+ 14.47%   24.838      1 Template:Infobox
+ 12.77%   21.933      1 Template:No_footnotes
+ 12.38%   21.251      1 Template:Citation_needed
+ 11.12%   19.090      1 Template:Fix
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:310996-0!*!0!!en!4!* and timestamp 20170130202916 and revision id 751662971
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=MIRC_scripting_language&amp;oldid=751662971">https://en.wikipedia.org/w/index.php?title=MIRC_scripting_language&amp;oldid=751662971</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Scripting_languages" title="Category:Scripting languages">Scripting languages</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Articles_lacking_in-text_citations_from_August_2012" title="Category:Articles lacking in-text citations from August 2012">Articles lacking in-text citations from August 2012</a></li><li><a href="/wiki/Category:All_articles_lacking_in-text_citations" title="Category:All articles lacking in-text citations">All articles lacking in-text citations</a></li><li><a href="/wiki/Category:Articles_needing_cleanup_from_August_2012" title="Category:Articles needing cleanup from August 2012">Articles needing cleanup from August 2012</a></li><li><a href="/wiki/Category:All_pages_needing_cleanup" title="Category:All pages needing cleanup">All pages needing cleanup</a></li><li><a href="/wiki/Category:Articles_with_sections_that_need_to_be_turned_into_prose_from_August_2012" title="Category:Articles with sections that need to be turned into prose from August 2012">Articles with sections that need to be turned into prose from August 2012</a></li><li><a href="/wiki/Category:All_articles_with_unsourced_statements" title="Category:All articles with unsourced statements">All articles with unsourced statements</a></li><li><a href="/wiki/Category:Articles_with_unsourced_statements_from_March_2011" title="Category:Articles with unsourced statements from March 2011">Articles with unsourced statements from March 2011</a></li><li><a href="/wiki/Category:Wikipedia_articles_that_are_too_technical_from_August_2012" title="Category:Wikipedia articles that are too technical from August 2012">Wikipedia articles that are too technical from August 2012</a></li><li><a href="/wiki/Category:All_articles_that_are_too_technical" title="Category:All articles that are too technical">All articles that are too technical</a></li><li><a href="/wiki/Category:Articles_needing_expert_attention_from_August_2012" title="Category:Articles needing expert attention from August 2012">Articles needing expert attention from August 2012</a></li><li><a href="/wiki/Category:All_articles_needing_expert_attention" title="Category:All articles needing expert attention">All articles needing expert attention</a></li><li><a href="/wiki/Category:Articles_with_DMOZ_links" title="Category:Articles with DMOZ links">Articles with DMOZ links</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=MIRC+scripting+language" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=MIRC+scripting+language" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/MIRC_scripting_language"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:MIRC_scripting_language"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/MIRC_scripting_language" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=MIRC_scripting_language&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=MIRC_scripting_language&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/MIRC_scripting_language" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/MIRC_scripting_language" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=MIRC_scripting_language&amp;oldid=751662971" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=MIRC_scripting_language&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q300841" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=MIRC_scripting_language&amp;id=751662971" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=MIRC+scripting+language">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=MIRC+scripting+language&amp;returnto=MIRC+scripting+language&amp;oldid=751662971&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=MIRC_scripting_language&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-da"><a href="https://da.wikipedia.org/wiki/MIRC_Scripting" title="MIRC Scripting – Danish" lang="da" hreflang="da" class="interlanguage-link-target">Dansk</a></li><li class="interlanguage-link interwiki-ko"><a href="https://ko.wikipedia.org/wiki/MIRC_%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8" title="MIRC 스크립트 – Korean" lang="ko" hreflang="ko" class="interlanguage-link-target">한국어</a></li><li class="interlanguage-link interwiki-it"><a href="https://it.wikipedia.org/wiki/MIRC_scripting" title="MIRC scripting – Italian" lang="it" hreflang="it" class="interlanguage-link-target">Italiano</a></li><li class="interlanguage-link interwiki-nl"><a href="https://nl.wikipedia.org/wiki/MIRC_Scripting_Language" title="MIRC Scripting Language – Dutch" lang="nl" hreflang="nl" class="interlanguage-link-target">Nederlands</a></li><li class="interlanguage-link interwiki-pt"><a href="https://pt.wikipedia.org/wiki/MIRC_script" title="MIRC script – Portuguese" lang="pt" hreflang="pt" class="interlanguage-link-target">Português</a></li><li class="interlanguage-link interwiki-ro"><a href="https://ro.wikipedia.org/wiki/Limbajul_de_scripting_mIRC" title="Limbajul de scripting mIRC – Romanian" lang="ro" hreflang="ro" class="interlanguage-link-target">Română</a></li><li class="interlanguage-link interwiki-sv"><a href="https://sv.wikipedia.org/wiki/Mirc#MSL_.28mIRC_Scripting_Language.29" title="Mirc – Swedish" lang="sv" hreflang="sv" class="interlanguage-link-target">Svenska</a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q300841#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 27 November 2016, at 03:44.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=MIRC_scripting_language&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.172","walltime":"0.230","ppvisitednodes":{"value":1683,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":90674,"limit":2097152},"templateargumentsize":{"value":14874,"limit":2097152},"expansiondepth":{"value":12,"limit":40},"expensivefunctioncount":{"value":8,"limit":500},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  171.692      1 -total"," 46.09%   79.130      4 Template:Ambox"," 34.88%   59.892      1 Template:Multiple_issues"," 23.91%   41.059      1 Template:IRC_footer"," 22.09%   37.930      1 Template:Navbox_with_collapsible_groups"," 16.62%   28.541      1 Template:Infobox_programming_language"," 14.47%   24.838      1 Template:Infobox"," 12.77%   21.933      1 Template:No_footnotes"," 12.38%   21.251      1 Template:Citation_needed"," 11.12%   19.090      1 Template:Fix"]},"scribunto":{"limitreport-timeusage":{"value":"0.062","limit":"10.000"},"limitreport-memusage":{"value":2645296,"limit":52428800}},"cachereport":{"origin":"mw1216","timestamp":"20170130202916","ttl":2592000,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":61,"wgHostname":"mw1242"});});</script>
+	</body>
+</html>

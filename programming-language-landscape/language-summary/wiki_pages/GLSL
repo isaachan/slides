@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>OpenGL Shading Language - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"OpenGL_Shading_Language","wgTitle":"OpenGL Shading Language","wgCurRevisionId":760025727,"wgRevisionId":760025727,"wgArticleId":2152476,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Wikipedia articles with GND identifiers","C programming language family","OpenGL","Shading languages"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"OpenGL_Shading_Language","wgRelevantArticleId":2152476,"wgRequestId":"WIppDwpAMFgAAH12SK4AAAAN","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgRedirectedFrom":"GLSL","wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":true},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgInternalRedirectTargetUrl":"/wiki/OpenGL_Shading_Language","wgWikibaseItemId":"Q779819","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.cite.styles":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.action.view.redirect","ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.legacy.wikibits","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.29.0-wmf.8"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/OpenGL_Shading_Language"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=OpenGL_Shading_Language&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=OpenGL_Shading_Language&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/OpenGL_Shading_Language"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-OpenGL_Shading_Language rootpage-OpenGL_Shading_Language skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">OpenGL Shading Language</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"><span class="mw-redirectedfrom">  (Redirected from <a href="/w/index.php?title=GLSL&amp;redirect=no" class="mw-redirect" title="GLSL">GLSL</a>)</span></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><script>function mfTempOpenSection(id){var block=document.getElementById("mf-section-"+id);block.className+=" open-block";block.previousSibling.className+=" open-block";}</script><div class="thumb tright">
+<div class="thumbinner" style="width:302px;"><a href="/wiki/File:Linux_kernel_and_OpenGL_video_games.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/99/Linux_kernel_and_OpenGL_video_games.svg/300px-Linux_kernel_and_OpenGL_video_games.svg.png" width="300" height="225" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/99/Linux_kernel_and_OpenGL_video_games.svg/450px-Linux_kernel_and_OpenGL_video_games.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/9/99/Linux_kernel_and_OpenGL_video_games.svg/600px-Linux_kernel_and_OpenGL_video_games.svg.png 2x" data-file-width="960" data-file-height="720" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:Linux_kernel_and_OpenGL_video_games.svg" class="internal" title="Enlarge"></a></div>
+<a href="/wiki/Video_games" class="mw-redirect" title="Video games">Video games</a> outsource rendering calculations to the <a href="/wiki/Graphics_processing_unit" title="Graphics processing unit">GPU</a> over <a href="/wiki/OpenGL" title="OpenGL">OpenGL</a> in real-time. Shaders are written in <b>OpenGL Shading Language</b> and compiled. The compiled programs are executed on the GPU.</div>
+</div>
+</div>
+<p><b>OpenGL Shading Language</b> (abbreviated: <b>GLSL</b> or <b>GLslang</b>), is a <a href="/wiki/High_level_programming_language" class="mw-redirect" title="High level programming language">high-level</a> <a href="/wiki/Shading_language" title="Shading language">shading language</a> based on the syntax of the <a href="/wiki/C_(programming_language)" title="C (programming language)">C programming language</a>. It was created by the <a href="/wiki/OpenGL_ARB" class="mw-redirect" title="OpenGL ARB">OpenGL ARB</a> (OpenGL Architecture Review Board) to give developers more direct control of the <a href="/wiki/Graphics_pipeline" title="Graphics pipeline">graphics pipeline</a> without having to use <a href="/wiki/ARB_assembly_language" title="ARB assembly language">ARB assembly language</a> or hardware-specific languages.</p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Background"><span class="tocnumber">1</span> <span class="toctext">Background</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Versions"><span class="tocnumber">2</span> <span class="toctext">Versions</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Operators"><span class="tocnumber">3</span> <span class="toctext">Operators</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Functions_and_control_structures"><span class="tocnumber">4</span> <span class="toctext">Functions and control structures</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Compilation_and_execution"><span class="tocnumber">5</span> <span class="toctext">Compilation and execution</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a>
+<ul>
+<li class="toclevel-2 tocsection-7"><a href="#Other_shading_languages"><span class="tocnumber">6.1</span> <span class="toctext">Other shading languages</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-8"><a href="#References"><span class="tocnumber">7</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#Books"><span class="tocnumber">8</span> <span class="toctext">Books</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#External_links"><span class="tocnumber">9</span> <span class="toctext">External links</span></a>
+<ul>
+<li class="toclevel-2 tocsection-11"><a href="#IDE"><span class="tocnumber">9.1</span> <span class="toctext">IDE</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Background">Background</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=OpenGL_Shading_Language&amp;action=edit&amp;section=1" title="Edit section: Background">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>With advances in graphics cards, new features have been added to allow for increased flexibility in the rendering pipeline at the <a href="/wiki/Vertex_(computer_graphics)" title="Vertex (computer graphics)">vertex</a> and <a href="/wiki/Fragment_(computer_graphics)" title="Fragment (computer graphics)">fragment</a> level. Programmability at this level is achieved with the use of fragment and vertex <a href="/wiki/Shader" title="Shader">shaders</a>.</p>
+<p>Originally, this functionality was achieved by writing shaders in <a href="/wiki/ARB_assembly_language" title="ARB assembly language">ARB assembly language</a> – a complex and unintuitive task. The <a href="/wiki/OpenGL_ARB" class="mw-redirect" title="OpenGL ARB">OpenGL ARB</a> created the OpenGL Shading Language to provide a more intuitive method for programming the <a href="/wiki/Graphics_processing_unit" title="Graphics processing unit">graphics processing unit</a> while maintaining the open standards advantage that has driven OpenGL throughout its history.</p>
+<p>Originally introduced as an extension to OpenGL 1.4, GLSL was formally included into the OpenGL 2.0 core in 2004 by the OpenGL ARB. It was the first major revision to OpenGL since the creation of <a href="/wiki/OpenGL" title="OpenGL">OpenGL</a> 1.0 in 1992.</p>
+<p>Some benefits of using GLSL are:</p>
+<ul>
+<li><a href="/wiki/Cross-platform" title="Cross-platform">Cross-platform</a> compatibility on multiple operating systems, including <a href="/wiki/GNU" title="GNU">GNU</a>/<a href="/wiki/Linux" title="Linux">Linux</a>, <a href="/wiki/MacOS" title="MacOS">macOS</a> and <a href="/wiki/Microsoft_Windows" title="Microsoft Windows">Windows</a>.</li>
+<li>The ability to write shaders that can be used on any hardware vendor's graphics card that supports the OpenGL Shading Language.</li>
+<li>Each hardware vendor includes the GLSL compiler in their driver, thus allowing each vendor to create code optimized for their particular graphics card’s architecture.</li>
+</ul>
+<h2><span class="mw-headline" id="Versions">Versions</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=OpenGL_Shading_Language&amp;action=edit&amp;section=2" title="Edit section: Versions">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>GLSL versions have evolved alongside specific versions of the OpenGL API. It is only with OpenGL versions 3.3 and above that the GLSL and OpenGL major and minor version numbers match. These versions for GLSL and OpenGL are related in the following table:</p>
+<table class="wikitable">
+<tr>
+<th>GLSL Version</th>
+<th>OpenGL Version</th>
+<th>Date</th>
+<th>Shader Preprocessor</th>
+</tr>
+<tr>
+<td>1.10.59<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">[1]</a></sup></td>
+<td>2.0</td>
+<td>April 2004</td>
+<td>#version 110</td>
+</tr>
+<tr>
+<td>1.20.8<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">[2]</a></sup></td>
+<td>2.1</td>
+<td>September 2006</td>
+<td>#version 120</td>
+</tr>
+<tr>
+<td>1.30.10<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">[3]</a></sup></td>
+<td>3.0</td>
+<td>August 2008</td>
+<td>#version 130</td>
+</tr>
+<tr>
+<td>1.40.08<sup id="cite_ref-4" class="reference"><a href="#cite_note-4">[4]</a></sup></td>
+<td>3.1</td>
+<td>March 2009</td>
+<td>#version 140</td>
+</tr>
+<tr>
+<td>1.50.11<sup id="cite_ref-5" class="reference"><a href="#cite_note-5">[5]</a></sup></td>
+<td>3.2</td>
+<td>August 2009</td>
+<td>#version 150</td>
+</tr>
+<tr>
+<td>3.30.6<sup id="cite_ref-6" class="reference"><a href="#cite_note-6">[6]</a></sup></td>
+<td>3.3</td>
+<td>February 2010</td>
+<td>#version 330</td>
+</tr>
+<tr>
+<td>4.00.9<sup id="cite_ref-7" class="reference"><a href="#cite_note-7">[7]</a></sup></td>
+<td>4.0</td>
+<td>March 2010</td>
+<td>#version 400</td>
+</tr>
+<tr>
+<td>4.10.6<sup id="cite_ref-8" class="reference"><a href="#cite_note-8">[8]</a></sup></td>
+<td>4.1</td>
+<td>July 2010</td>
+<td>#version 410</td>
+</tr>
+<tr>
+<td>4.20.11<sup id="cite_ref-9" class="reference"><a href="#cite_note-9">[9]</a></sup></td>
+<td>4.2</td>
+<td>August 2011</td>
+<td>#version 420</td>
+</tr>
+<tr>
+<td>4.30.8<sup id="cite_ref-10" class="reference"><a href="#cite_note-10">[10]</a></sup></td>
+<td>4.3</td>
+<td>August 2012</td>
+<td>#version 430</td>
+</tr>
+<tr>
+<td>4.40<sup id="cite_ref-11" class="reference"><a href="#cite_note-11">[11]</a></sup></td>
+<td>4.4</td>
+<td>July 2013</td>
+<td>#version 440</td>
+</tr>
+<tr>
+<td>4.50<sup id="cite_ref-12" class="reference"><a href="#cite_note-12">[12]</a></sup></td>
+<td>4.5</td>
+<td>August 2014</td>
+<td>#version 450</td>
+</tr>
+</table>
+<h2><span class="mw-headline" id="Operators">Operators</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=OpenGL_Shading_Language&amp;action=edit&amp;section=3" title="Edit section: Operators">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>GLSL contains the <a href="/wiki/Operators_in_C_and_C%2B%2B" title="Operators in C and C++">operators in C and C++</a>, with the exception of <a href="/wiki/Pointer_(computer_programming)" title="Pointer (computer programming)">pointers</a>. <a href="/wiki/Bitwise_operators" class="mw-redirect" title="Bitwise operators">Bitwise operators</a> were added in version 1.30.</p>
+<h2><span class="mw-headline" id="Functions_and_control_structures">Functions and control structures</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=OpenGL_Shading_Language&amp;action=edit&amp;section=4" title="Edit section: Functions and control structures">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Similar to the <a href="/wiki/C_(programming_language)" title="C (programming language)">C programming language</a>, GLSL supports loops and branching, for instance: if-else, for, switch, etc. Recursion is forbidden.</p>
+<p>User-defined functions are supported and built-in functions are provided. The graphics card manufacturer may optimize built-in functions at the hardware level. Many of these functions are similar to those in the math library of the C programming language while others are specific to graphics programming.</p>
+<h2><span class="mw-headline" id="Compilation_and_execution">Compilation and execution</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=OpenGL_Shading_Language&amp;action=edit&amp;section=5" title="Edit section: Compilation and execution">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>GLSL shaders are not stand-alone applications; they require an application that utilizes the OpenGL API, which is available on many different platforms (e.g., <a href="/wiki/GNU" title="GNU">GNU</a>/<a href="/wiki/Linux" title="Linux">Linux</a>, <a href="/wiki/MacOS" title="MacOS">macOS</a>, <a href="/wiki/Microsoft_Windows" title="Microsoft Windows">Windows</a>). There are language bindings for <a href="/wiki/C_(programming_language)" title="C (programming language)">C</a>, <a href="/wiki/C%2B%2B" title="C++">C++</a>, <a href="/wiki/C_sharp_(programming_language)" class="mw-redirect" title="C sharp (programming language)">C#</a>, <a href="/wiki/Delphi_(programming_language)" title="Delphi (programming language)">Delphi</a>, <a href="/wiki/Java_(programming_language)" title="Java (programming language)">Java</a> and many more.</p>
+<p>GLSL shaders themselves are simply a set of <a href="/wiki/String_(computer_science)" title="String (computer science)">strings</a> that are passed to the hardware vendor's driver for compilation from within an application using the OpenGL API's entry points. Shaders can be created <a href="https://en.wiktionary.org/wiki/on_the_fly" class="extiw" title="wiktionary:on the fly">on the fly</a> from within an application, or read-in as text files, but must be sent to the driver in the form of a string.</p>
+<p>The set of APIs used to compile, link, and pass parameters to GLSL programs are specified in three OpenGL extensions, and became part of core OpenGL as of <a rel="nofollow" class="external text" href="http://www.opengl.org/documentation/specs/version2.0/glspec20.pdf">OpenGL Version 2.0</a>. The API was expanded with geometry shaders in OpenGL 3.2, tessellation shaders in OpenGL 4.0 and <a href="/wiki/Compute_kernel" title="Compute kernel">compute shaders</a> in OpenGL 4.3. These OpenGL APIs are found in the extensions:</p>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.opengl.org/registry/specs/ARB/vertex_shader.txt">ARB vertex shader</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.opengl.org/registry/specs/ARB/fragment_shader.txt">ARB fragment shader</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.opengl.org/registry/specs/ARB/shader_objects.txt">ARB shader objects</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.opengl.org/registry/specs/ARB/geometry_shader4.txt">ARB geometry shader 4</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.opengl.org/registry/specs/ARB/tessellation_shader.txt">ARB tessellation shader</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.opengl.org/registry/specs/ARB/compute_shader.txt">ARB compute shader</a></li>
+</ul>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=OpenGL_Shading_Language&amp;action=edit&amp;section=6" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a href="/wiki/Standard_Portable_Intermediate_Representation" title="Standard Portable Intermediate Representation">Standard Portable Intermediate Representation</a>, an intermediate shader language by Khronos Group</li>
+<li><a href="/wiki/3D_computer_graphics" title="3D computer graphics">3D computer graphics</a></li>
+<li><a href="/wiki/Khronos_Group" title="Khronos Group">Khronos Group</a></li>
+<li><a href="/wiki/WebGL" title="WebGL">WebGL</a>, an OpenGL-ES dialect for web browsers, which uses GLSL for shaders</li>
+</ul>
+<h3><span class="mw-headline" id="Other_shading_languages">Other shading languages</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=OpenGL_Shading_Language&amp;action=edit&amp;section=7" title="Edit section: Other shading languages">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<ul>
+<li><a href="/wiki/ARB_assembly_language" title="ARB assembly language">ARB assembly language</a>, a low-level shading language</li>
+<li><a href="/wiki/Cg_(programming_language)" title="Cg (programming language)">Cg</a>, a high-level shading language for programming vertex and pixel shaders</li>
+<li><a href="/wiki/High-level_shader_language" class="mw-redirect" title="High-level shader language">HLSL</a>, a high-level shading language for use with <a href="/wiki/Direct3D" title="Direct3D">Direct3D</a></li>
+<li><a href="/wiki/TGSI" class="mw-redirect" title="TGSI">TGSI</a>, a low-level intermediate language introduced by <a href="/wiki/Gallium3D" title="Gallium3D">Gallium3D</a></li>
+<li><a href="/w/index.php?title=AMDIL&amp;action=edit&amp;redlink=1" class="new" title="AMDIL (page does not exist)">AMDIL</a>, a low-level intermediate language used internally at AMD</li>
+</ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=OpenGL_Shading_Language&amp;action=edit&amp;section=8" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<dl>
+<dt>Notes</dt>
+</dl>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.opengl.org/registry/doc/GLSLangSpec.Full.1.10.59.pdf">"GLSL Language Specification, Version 1.10.59"</a> <span style="font-size:85%;">(PDF)</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AOpenGL+Shading+Language&amp;rft.btitle=GLSL+Language+Specification%2C+Version+1.10.59&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.opengl.org%2Fregistry%2Fdoc%2FGLSLangSpec.Full.1.10.59.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.opengl.org/registry/doc/GLSLangSpec.Full.1.20.8.pdf">"GLSL Language Specification, Version 1.20.8"</a> <span style="font-size:85%;">(PDF)</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AOpenGL+Shading+Language&amp;rft.btitle=GLSL+Language+Specification%2C+Version+1.20.8&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.opengl.org%2Fregistry%2Fdoc%2FGLSLangSpec.Full.1.20.8.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.opengl.org/registry/doc/GLSLangSpec.Full.1.30.10.pdf">"GLSL Language Specification, Version 1.30.10"</a> <span style="font-size:85%;">(PDF)</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AOpenGL+Shading+Language&amp;rft.btitle=GLSL+Language+Specification%2C+Version+1.30.10&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.opengl.org%2Fregistry%2Fdoc%2FGLSLangSpec.Full.1.30.10.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.opengl.org/registry/doc/GLSLangSpec.Full.1.40.08.pdf">"GLSL Language Specification, Version 1.40.08"</a> <span style="font-size:85%;">(PDF)</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AOpenGL+Shading+Language&amp;rft.btitle=GLSL+Language+Specification%2C+Version+1.40.08&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.opengl.org%2Fregistry%2Fdoc%2FGLSLangSpec.Full.1.40.08.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.opengl.org/registry/doc/GLSLangSpec.1.50.11.pdf">"GLSL Language Specification, Version 1.50.11"</a> <span style="font-size:85%;">(PDF)</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AOpenGL+Shading+Language&amp;rft.btitle=GLSL+Language+Specification%2C+Version+1.50.11&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.opengl.org%2Fregistry%2Fdoc%2FGLSLangSpec.1.50.11.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.opengl.org/registry/doc/GLSLangSpec.3.30.6.pdf">"GLSL Language Specification, Version 3.30.6"</a> <span style="font-size:85%;">(PDF)</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AOpenGL+Shading+Language&amp;rft.btitle=GLSL+Language+Specification%2C+Version+3.30.6&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.opengl.org%2Fregistry%2Fdoc%2FGLSLangSpec.3.30.6.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.opengl.org/registry/doc/GLSLangSpec.4.00.9.clean.pdf">"GLSL Language Specification, Version 4.00.9"</a> <span style="font-size:85%;">(PDF)</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AOpenGL+Shading+Language&amp;rft.btitle=GLSL+Language+Specification%2C+Version+4.00.9&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.opengl.org%2Fregistry%2Fdoc%2FGLSLangSpec.4.00.9.clean.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.opengl.org/registry/doc/GLSLangSpec.4.10.6.clean.pdf">"GLSL Language Specification, Version 4.10.6"</a> <span style="font-size:85%;">(PDF)</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AOpenGL+Shading+Language&amp;rft.btitle=GLSL+Language+Specification%2C+Version+4.10.6&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.opengl.org%2Fregistry%2Fdoc%2FGLSLangSpec.4.10.6.clean.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-9">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.opengl.org/registry/doc/GLSLangSpec.4.20.11.clean.pdf">"GLSL Language Specification, Version 4.20.11"</a> <span style="font-size:85%;">(PDF)</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AOpenGL+Shading+Language&amp;rft.btitle=GLSL+Language+Specification%2C+Version+4.20.11&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.opengl.org%2Fregistry%2Fdoc%2FGLSLangSpec.4.20.11.clean.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-10">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.opengl.org/registry/doc/GLSLangSpec.4.30.8.pdf">"GLSL Language Specification, Version 4.30.8"</a> <span style="font-size:85%;">(PDF)</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AOpenGL+Shading+Language&amp;rft.btitle=GLSL+Language+Specification%2C+Version+4.30.8&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.opengl.org%2Fregistry%2Fdoc%2FGLSLangSpec.4.30.8.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-11"><span class="mw-cite-backlink"><b><a href="#cite_ref-11">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.opengl.org/registry/doc/GLSLangSpec.4.40.pdf">"GLSL Language Specification, Version 4.40"</a> <span style="font-size:85%;">(PDF)</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AOpenGL+Shading+Language&amp;rft.btitle=GLSL+Language+Specification%2C+Version+4.40&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.opengl.org%2Fregistry%2Fdoc%2FGLSLangSpec.4.40.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-12"><span class="mw-cite-backlink"><b><a href="#cite_ref-12">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.opengl.org/registry/doc/GLSLangSpec.4.50.pdf">"GLSL Language Specification, Version 4.50"</a> <span style="font-size:85%;">(PDF)</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AOpenGL+Shading+Language&amp;rft.btitle=GLSL+Language+Specification%2C+Version+4.50&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.opengl.org%2Fregistry%2Fdoc%2FGLSLangSpec.4.50.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="Books">Books</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=OpenGL_Shading_Language&amp;action=edit&amp;section=9" title="Edit section: Books">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><cite class="citation book"><a href="/wiki/Randi_J._Rost" title="Randi J. Rost">Rost, Randi J.</a> (30 July 2009). <i>OpenGL Shading Language</i> (3rd ed.). Addison-Wesley. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-0-321-63763-5" title="Special:BookSources/978-0-321-63763-5">978-0-321-63763-5</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AOpenGL+Shading+Language&amp;rft.aufirst=Randi+J.&amp;rft.aulast=Rost&amp;rft.btitle=OpenGL+Shading+Language&amp;rft.date=2009-07-30&amp;rft.edition=3rd&amp;rft.genre=book&amp;rft.isbn=978-0-321-63763-5&amp;rft.pub=Addison-Wesley&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation book">Kessenich, John; Baldwin, David; Rost, Randi. <i>The OpenGL Shading Language</i>. Version 1.10.59. 3Dlabs, Inc. Ltd.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AOpenGL+Shading+Language&amp;rft.au=Baldwin%2C+David&amp;rft.aufirst=John&amp;rft.aulast=Kessenich&amp;rft.au=Rost%2C+Randi&amp;rft.btitle=The+OpenGL+Shading+Language&amp;rft.genre=book&amp;rft.pub=3Dlabs%2C+Inc.+Ltd.&amp;rft.series=Version+1.10.59&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+</ul>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=OpenGL_Shading_Language&amp;action=edit&amp;section=10" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<table role="presentation" class="mbox-small plainlinks sistersitebox" style="border:1px solid #aaa;background-color:#f9f9f9">
+<tr>
+<td class="mbox-image"><a href="/wiki/File:Wikibooks-logo-en-noslogan.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/40px-Wikibooks-logo-en-noslogan.svg.png" width="40" height="40" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/60px-Wikibooks-logo-en-noslogan.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/80px-Wikibooks-logo-en-noslogan.svg.png 2x" data-file-width="400" data-file-height="400" /></a></td>
+<td class="mbox-text plainlist">Wikibooks has a book on the topic of: <i><b><a href="https://en.wikibooks.org/wiki/GLSL_Programming" class="extiw" title="wikibooks:GLSL Programming">GLSL Programming</a></b></i></td>
+</tr>
+</table>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://oss.sgi.com/projects/ogl-sample/registry/ARB/fragment_shader.txt">OpenGL Fragment Shader Specification</a></li>
+<li><a rel="nofollow" class="external text" href="http://oss.sgi.com/projects/ogl-sample/registry/ARB/vertex_shader.txt">OpenGL Vertex Shader Specification</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.opengl.org/registry/specs/ARB/shader_objects.txt">OpenGL Shader Objects Specification</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.opengl.org/">The official OpenGL website</a></li>
+</ul>
+<h3><span class="mw-headline" id="IDE">IDE</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=OpenGL_Shading_Language&amp;action=edit&amp;section=11" title="Edit section: IDE">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://developer.amd.com/archive/gpu/rendermonkey/Pages/default.aspx">RenderMonkey</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.opengl.org/sdk/tools/ShaderDesigner/">OpenGL Shader Designer</a></li>
+<li><a rel="nofollow" class="external text" href="http://developer.apple.com/mac/library/documentation/GraphicsImaging/Conceptual/OpenGLShaderBuilderUserGuide/Introduction/Introduction.html">Mac OpenGL Shader Builder User Guide</a></li>
+<li><a rel="nofollow" class="external text" href="http://cgvr.cs.uni-bremen.de/teaching/shader_maker/index.shtml">Shader Maker (GPL)</a></li>
+<li><a rel="nofollow" class="external text" href="http://advsys.net/ken/download.htm#polydraw">Polydraw</a></li>
+<li><a rel="nofollow" class="external text" href="https://sourceforge.net/projects/quickshader/">QuickShader</a> on <a href="/wiki/SourceForge" title="SourceForge">SourceForge.net</a></li>
+</ul>
+<div role="navigation" class="navbox" aria-labelledby="Standards_of_the_Khronos_Group" style="padding:3px">
+<table class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:Khronos_Group_standards" title="Template:Khronos Group standards"><abbr title="View this template" style=";;background:none transparent;border:none;">v</abbr></a></li>
+<li class="nv-talk"><a href="/w/index.php?title=Template_talk:Khronos_Group_standards&amp;action=edit&amp;redlink=1" class="new" title="Template talk:Khronos Group standards (page does not exist)"><abbr title="Discuss this template" style=";;background:none transparent;border:none;">t</abbr></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:Khronos_Group_standards&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;">e</abbr></a></li>
+</ul>
+</div>
+<div id="Standards_of_the_Khronos_Group" style="font-size:114%">Standards of the <a href="/wiki/Khronos_Group" title="Khronos Group">Khronos Group</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-odd hlist" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/COLLADA" title="COLLADA">COLLADA</a></li>
+<li><a href="/wiki/EGL_(API)" title="EGL (API)">EGL</a></li>
+<li><a href="/wiki/OpenCL" title="OpenCL">OpenCL</a></li>
+<li><a href="/wiki/OpenGL" title="OpenGL">OpenGL</a></li>
+<li><a href="/wiki/OpenGL_ES" title="OpenGL ES">OpenGL ES</a></li>
+<li><a href="/wiki/OpenGL_SC" title="OpenGL SC">OpenGL SC</a></li>
+<li><a href="/w/index.php?title=OpenKCam&amp;action=edit&amp;redlink=1" class="new" title="OpenKCam (page does not exist)">OpenKCam</a></li>
+<li><a href="/wiki/OpenKODE" title="OpenKODE">OpenKODE</a></li>
+<li><a href="/wiki/OpenMAX" title="OpenMAX">OpenMAX</a></li>
+<li><a href="/wiki/OpenML" title="OpenML">OpenML</a></li>
+<li><a href="/wiki/OpenSL_ES" title="OpenSL ES">OpenSL ES</a></li>
+<li><a href="/wiki/OpenVG" title="OpenVG">OpenVG</a></li>
+<li><a href="/wiki/OpenVX" title="OpenVX">OpenVX</a></li>
+<li><a href="/wiki/OpenWF" title="OpenWF">OpenWF</a></li>
+<li><a href="/w/index.php?title=StreamInput&amp;action=edit&amp;redlink=1" class="new" title="StreamInput (page does not exist)">StreamInput</a></li>
+<li><a href="/wiki/Standard_Portable_Intermediate_Representation" title="Standard Portable Intermediate Representation">SPIR</a></li>
+<li><a href="/wiki/Vulkan_(API)" title="Vulkan (API)">Vulkan</a></li>
+<li><a href="/wiki/WebCL" title="WebCL">WebCL</a></li>
+<li><a href="/wiki/WebGL" title="WebGL">WebGL</a></li>
+<li><a href="/w/index.php?title=SYCL&amp;action=edit&amp;redlink=1" class="new" title="SYCL (page does not exist)">SYCL</a></li>
+<li><a href="/wiki/GlTF" title="GlTF">glTF</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div role="navigation" class="navbox" aria-label="Navbox" style="padding:3px">
+<table class="nowraplinks hlist navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Help:Authority_control" title="Help:Authority control">Authority control</a></th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><span style="white-space:nowrap;"><a href="/wiki/Integrated_Authority_File" title="Integrated Authority File">GND</a>: <span class="uid"><a rel="nofollow" class="external text" href="http://d-nb.info/gnd/7673247-2">7673247-2</a></span></span></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1269
+Cached time: 20170116105646
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.164 seconds
+Real time usage: 0.198 seconds
+Preprocessor visited node count: 615/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 23436/2097152 bytes
+Template argument size: 227/2097152 bytes
+Highest expansion depth: 12/40
+Expensive parser function count: 0/500
+Lua time usage: 0.079/10.000 seconds
+Lua memory usage: 2.82 MB/50 MB
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  153.348      1 - -total
+ 60.73%   93.129      1 - Template:Reflist
+ 52.28%   80.164     12 - Template:Cite_web
+ 17.14%   26.290      1 - Template:Authority_control
+  9.28%   14.238      1 - Template:Khronos_Group_standards
+  7.37%   11.299      1 - Template:Wikibooks
+  6.95%   10.657      1 - Template:Navbox
+  6.30%    9.664      1 - Template:Sister_project
+  5.20%    7.981      1 - Template:Side_box
+  4.43%    6.795      2 - Template:Cite_book
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:2152476-0!*!0!!en!4!* and timestamp 20170116105646 and revision id 760025727
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=OpenGL_Shading_Language&amp;oldid=760025727">https://en.wikipedia.org/w/index.php?title=OpenGL_Shading_Language&amp;oldid=760025727</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:C_programming_language_family" title="Category:C programming language family">C programming language family</a></li><li><a href="/wiki/Category:OpenGL" title="Category:OpenGL">OpenGL</a></li><li><a href="/wiki/Category:Shading_languages" title="Category:Shading languages">Shading languages</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Wikipedia_articles_with_GND_identifiers" title="Category:Wikipedia articles with GND identifiers">Wikipedia articles with GND identifiers</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=OpenGL+Shading+Language" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=OpenGL+Shading+Language" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/OpenGL_Shading_Language"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:OpenGL_Shading_Language"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/OpenGL_Shading_Language" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=OpenGL_Shading_Language&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=OpenGL_Shading_Language&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/OpenGL_Shading_Language" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/OpenGL_Shading_Language" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=OpenGL_Shading_Language&amp;oldid=760025727" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=OpenGL_Shading_Language&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q779819" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=OpenGL_Shading_Language&amp;id=760025727" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=OpenGL+Shading+Language">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=OpenGL+Shading+Language&amp;returnto=OpenGL+Shading+Language&amp;oldid=760025727&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=OpenGL_Shading_Language&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-ar"><a href="https://ar.wikipedia.org/wiki/%D8%AC%D9%8A_%D8%A5%D9%84_%D8%A5%D8%B3_%D8%A5%D9%84" title="جي إل إس إل – Arabic" lang="ar" hreflang="ar" class="interlanguage-link-target">العربية</a></li><li class="interlanguage-link interwiki-cs"><a href="https://cs.wikipedia.org/wiki/OpenGL_Shading_Language" title="OpenGL Shading Language – Czech" lang="cs" hreflang="cs" class="interlanguage-link-target">Čeština</a></li><li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/OpenGL_Shading_Language" title="OpenGL Shading Language – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-es"><a href="https://es.wikipedia.org/wiki/GLSL" title="GLSL – Spanish" lang="es" hreflang="es" class="interlanguage-link-target">Español</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/OpenGL_Shading_Language" title="OpenGL Shading Language – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-ko"><a href="https://ko.wikipedia.org/wiki/GLSL" title="GLSL – Korean" lang="ko" hreflang="ko" class="interlanguage-link-target">한국어</a></li><li class="interlanguage-link interwiki-it"><a href="https://it.wikipedia.org/wiki/GLSL" title="GLSL – Italian" lang="it" hreflang="it" class="interlanguage-link-target">Italiano</a></li><li class="interlanguage-link interwiki-lv"><a href="https://lv.wikipedia.org/wiki/GLSL" title="GLSL – Latvian" lang="lv" hreflang="lv" class="interlanguage-link-target">Latviešu</a></li><li class="interlanguage-link interwiki-ja"><a href="https://ja.wikipedia.org/wiki/GLSL" title="GLSL – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target">日本語</a></li><li class="interlanguage-link interwiki-pl"><a href="https://pl.wikipedia.org/wiki/OpenGL_Shading_Language" title="OpenGL Shading Language – Polish" lang="pl" hreflang="pl" class="interlanguage-link-target">Polski</a></li><li class="interlanguage-link interwiki-pt"><a href="https://pt.wikipedia.org/wiki/GLSL" title="GLSL – Portuguese" lang="pt" hreflang="pt" class="interlanguage-link-target">Português</a></li><li class="interlanguage-link interwiki-ru"><a href="https://ru.wikipedia.org/wiki/OpenGL_Shading_Language" title="OpenGL Shading Language – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li><li class="interlanguage-link interwiki-tr"><a href="https://tr.wikipedia.org/wiki/GLSL" title="GLSL – Turkish" lang="tr" hreflang="tr" class="interlanguage-link-target">Türkçe</a></li><li class="interlanguage-link interwiki-uk"><a href="https://uk.wikipedia.org/wiki/GLSL" title="GLSL – Ukrainian" lang="uk" hreflang="uk" class="interlanguage-link-target">Українська</a></li><li class="interlanguage-link interwiki-zh"><a href="https://zh.wikipedia.org/wiki/GLSL" title="GLSL – Chinese" lang="zh" hreflang="zh" class="interlanguage-link-target">中文</a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q779819#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 14 January 2017, at 14:46.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=OpenGL_Shading_Language&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":64,"wgHostname":"mw1253"});});</script>
+	</body>
+</html>

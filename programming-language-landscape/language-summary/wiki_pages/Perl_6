@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Perl 6 - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Perl_6","wgTitle":"Perl 6","wgCurRevisionId":762827540,"wgRevisionId":762827540,"wgArticleId":1146638,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Pages using deprecated image syntax","All articles with unsourced statements","Articles with unsourced statements from May 2009","Articles with unsourced statements from November 2009","Articles containing potentially dated statements from 2015","All articles containing potentially dated statements","All accuracy disputes","Articles with disputed statements from October 2015","Articles with example Perl code","Pages using ISBN magic links","Perl 6","Cross-platform software","Free compilers and interpreters","High-level programming languages","Scripting languages"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Perl_6","wgRelevantArticleId":1146638,"wgRequestId":"WI-MwApAMFIAAFOIe8EAAAAI","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":true},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q2052676","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.cite.styles":"ready","ext.pygments":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.legacy.wikibits","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.pygments%2CwikimediaBadges%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.29.0-wmf.9"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Perl_6"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Perl_6&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Perl_6&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Perl_6"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Perl_6 rootpage-Perl_6 skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Perl 6</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><script>function mfTempOpenSection(id){var block=document.getElementById("mf-section-"+id);block.className+=" open-block";block.previousSibling.className+=" open-block";}</script><table class="infobox vevent" style="width:22em">
+<caption class="summary">Perl 6</caption>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/File:Camelia.svg" class="image"><img alt="Camelia.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/8/85/Camelia.svg/250px-Camelia.svg.png" width="250" height="183" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/85/Camelia.svg/375px-Camelia.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/8/85/Camelia.svg/500px-Camelia.svg.png 2x" data-file-width="948" data-file-height="693" /></a>
+<div>Camelia, the Perl 6 mascot<sup id="cite_ref-camelia_1-0" class="reference"><a href="#cite_note-camelia-1">[1]</a></sup></div>
+</td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Programming_paradigm" title="Programming paradigm">Paradigm</a></th>
+<td><a href="/wiki/Multi-paradigm" class="mw-redirect" title="Multi-paradigm">Multi-paradigm</a></td>
+</tr>
+<tr>
+<th scope="row">Family</th>
+<td><a href="/wiki/Perl" title="Perl">Perl</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_design" title="Software design">Designed&#160;by</a></th>
+<td><a href="/wiki/Larry_Wall" title="Larry Wall">Larry Wall</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_developer" title="Software developer">Developer</a></th>
+<td class="organiser">Perl 6 community</td>
+</tr>
+<tr>
+<th scope="row">First&#160;appeared</th>
+<td>December&#160;25, 2015<span class="noprint">; 12 months ago</span><span style="display:none">&#160;(<span class="bday dtstart published updated">2015-12-25</span>)</span></td>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Software_release_life_cycle" title="Software release life cycle">Stable release</a></th>
+<td>
+<div style="margin:0px;">Rakudo Star 2017.01 <sup id="cite_ref-2" class="reference"><a href="#cite_note-2">[2]</a></sup> / January&#160;30, 2017<span class="noprint">; 0 days ago</span><span style="display:none">&#160;(<span class="bday dtstart published updated">2017-01-30</span>)</span></div>
+</td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Type_system" title="Type system">Typing discipline</a></th>
+<td><a href="/wiki/Dynamic_typing" class="mw-redirect" title="Dynamic typing">dynamic</a>, <a href="/wiki/Gradual_typing" title="Gradual typing">gradual</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Operating_system" title="Operating system">OS</a></th>
+<td><a href="/wiki/Cross-platform" title="Cross-platform">Cross-platform</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_license" title="Software license">License</a></th>
+<td><a href="/wiki/GNU_General_Public_License" title="GNU General Public License">GNU General Public License</a> or <a href="/wiki/Artistic_License" title="Artistic License">Artistic License</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Filename_extension" title="Filename extension">Filename extensions</a></th>
+<td>.p6, .pl6, .pm6</td>
+</tr>
+<tr>
+<th scope="row">Website</th>
+<td><span class="url"><a rel="nofollow" class="external text" href="http://perl6.org">perl6<wbr />.org</a></span></td>
+</tr>
+<tr>
+<th colspan="2" style="text-align:center;background-color: #eee;">Major <a href="/wiki/Programming_language_implementation" title="Programming language implementation">implementations</a></th>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/Rakudo_Perl" class="mw-redirect" title="Rakudo Perl">Rakudo</a></td>
+</tr>
+<tr>
+<th colspan="2" style="text-align:center;background-color: #eee;">Influenced by</th>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/Haskell_(programming_language)" title="Haskell (programming language)">Haskell</a>,<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">[3]</a></sup> <a href="/wiki/JavaScript" title="JavaScript">JavaScript</a>, <a href="/wiki/Perl" title="Perl">Perl 5</a>, <a href="/wiki/Ruby_(programming_language)" title="Ruby (programming language)">Ruby</a>, <a href="/wiki/Smalltalk" title="Smalltalk">Smalltalk</a></td>
+</tr>
+<tr>
+<th colspan="2" style="text-align:center;background-color: #eee;">Influenced</th>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/Perl" title="Perl">Perl 5</a>,<sup id="cite_ref-Tang2010_4-0" class="reference"><a href="#cite_note-Tang2010-4">[4]</a></sup> <a href="/wiki/Haskell_(programming_language)" title="Haskell (programming language)">Haskell</a>,<sup id="cite_ref-Tang2010_4-1" class="reference"><a href="#cite_note-Tang2010-4">[4]</a></sup> AntLang</td>
+</tr>
+</table>
+<p><b>Perl 6</b> is a member of the <a href="/wiki/Perl" title="Perl">Perl</a> family of <a href="/wiki/Programming_language" title="Programming language">programming languages</a>.<sup id="cite_ref-5" class="reference"><a href="#cite_note-5">[5]</a></sup></p>
+<p>While historically several <a href="/wiki/Interpreter_(computing)" title="Interpreter (computing)">interpreter</a> and <a href="/wiki/Compiler" title="Compiler">compiler</a> implementations were being written, today only the <a href="/wiki/Rakudo_Perl" class="mw-redirect" title="Rakudo Perl">Rakudo Perl</a> implementation is in active development.</p>
+<p>It is introducing elements of many modern and historical languages. Compatibility with Perl 5 is not a goal, though a <a href="/wiki/Compatibility_mode" title="Compatibility mode">compatibility mode</a> is part of the specification. The design process for Perl 6 began in 2000. In February 2015 a post on The Perl Foundation blog stated that "The Perl6 team will attempt to get a development release of version 1.0 available for <a href="/wiki/Larry_Wall" title="Larry Wall">Larry</a>'s birthday in September and a Version 1.0 release by Christmas",<sup id="cite_ref-6" class="reference"><a href="#cite_note-6">[6]</a></sup> and on December 25, 2015, the first stable version of the specification was announced.<sup id="cite_ref-7" class="reference"><a href="#cite_note-7">[7]</a></sup></p>
+<p>Development on <a href="/wiki/Pugs" title="Pugs">Pugs</a>, the first high-traction implementation, began in 2005, and there have been multiple Perl 6 implementation projects. <a href="/wiki/Rakudo_Perl" class="mw-redirect" title="Rakudo Perl">Rakudo Perl</a> is based on NQP (Not Quite Perl) and can use <a href="/wiki/MoarVM" title="MoarVM">MoarVM</a> or the <a href="/wiki/Java_Virtual_Machine" class="mw-redirect" title="Java Virtual Machine">Java Virtual Machine</a> as a runtime environment, and releases a new version every month; in July 2010, the project released the first Rakudo Star distribution,<sup id="cite_ref-firststar_8-0" class="reference"><a href="#cite_note-firststar-8">[8]</a></sup> a useful and usable collection of a Perl 6 implementation and related materials. <a href="/wiki/Larry_Wall" title="Larry Wall">Larry Wall</a> maintains a reference grammar known as STD.pm6,<sup id="cite_ref-STD_9-0" class="reference"><a href="#cite_note-STD-9">[9]</a></sup> written in Perl 6 and <a href="/wiki/Bootstrapping_(compilers)" title="Bootstrapping (compilers)">bootstrapped</a> with Perl 5.</p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#History"><span class="tocnumber">1</span> <span class="toctext">History</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Goals"><span class="tocnumber">1.1</span> <span class="toctext">Goals</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Mascot"><span class="tocnumber">1.2</span> <span class="toctext">Mascot</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="#Implementations"><span class="tocnumber">2</span> <span class="toctext">Implementations</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="#Historical_Implementations"><span class="tocnumber">2.1</span> <span class="toctext">Historical Implementations</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="#Module_system"><span class="tocnumber">3</span> <span class="toctext">Module system</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#Major_changes_from_Perl_5"><span class="tocnumber">4</span> <span class="toctext">Major changes from Perl 5</span></a>
+<ul>
+<li class="toclevel-2 tocsection-8"><a href="#A_specification"><span class="tocnumber">4.1</span> <span class="toctext">A specification</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#A_type_system"><span class="tocnumber">4.2</span> <span class="toctext">A type system</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Formal_subroutine_parameter_lists"><span class="tocnumber">4.3</span> <span class="toctext">Formal subroutine parameter lists</span></a>
+<ul>
+<li class="toclevel-3 tocsection-11"><a href="#Parameter_passing_modes"><span class="tocnumber">4.3.1</span> <span class="toctext">Parameter passing modes</span></a></li>
+<li class="toclevel-3 tocsection-12"><a href="#Blocks_and_closures"><span class="tocnumber">4.3.2</span> <span class="toctext">Blocks and closures</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-13"><a href="#Sigil_invariance"><span class="tocnumber">4.4</span> <span class="toctext">Sigil invariance</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="#Object-oriented_programming"><span class="tocnumber">4.5</span> <span class="toctext">Object-oriented programming</span></a>
+<ul>
+<li class="toclevel-3 tocsection-15"><a href="#Roles"><span class="tocnumber">4.5.1</span> <span class="toctext">Roles</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-16"><a href="#Regular_expressions"><span class="tocnumber">4.6</span> <span class="toctext">Regular expressions</span></a></li>
+<li class="toclevel-2 tocsection-17"><a href="#Syntactic_simplification"><span class="tocnumber">4.7</span> <span class="toctext">Syntactic simplification</span></a></li>
+<li class="toclevel-2 tocsection-18"><a href="#Chained_comparisons"><span class="tocnumber">4.8</span> <span class="toctext">Chained comparisons</span></a></li>
+<li class="toclevel-2 tocsection-19"><a href="#Lazy_evaluation"><span class="tocnumber">4.9</span> <span class="toctext">Lazy evaluation</span></a></li>
+<li class="toclevel-2 tocsection-20"><a href="#Gather"><span class="tocnumber">4.10</span> <span class="toctext">Gather</span></a></li>
+<li class="toclevel-2 tocsection-21"><a href="#Junctions"><span class="tocnumber">4.11</span> <span class="toctext">Junctions</span></a></li>
+<li class="toclevel-2 tocsection-22"><a href="#Macros"><span class="tocnumber">4.12</span> <span class="toctext">Macros</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-23"><a href="#Examples"><span class="tocnumber">5</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2 tocsection-24"><a href="#Hello_world"><span class="tocnumber">5.1</span> <span class="toctext">Hello world</span></a></li>
+<li class="toclevel-2 tocsection-25"><a href="#Quicksort"><span class="tocnumber">5.2</span> <span class="toctext">Quicksort</span></a></li>
+<li class="toclevel-2 tocsection-26"><a href="#Tower_of_Hanoi"><span class="tocnumber">5.3</span> <span class="toctext">Tower of Hanoi</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-27"><a href="#Books"><span class="tocnumber">6</span> <span class="toctext">Books</span></a>
+<ul>
+<li class="toclevel-2 tocsection-28"><a href="#Books_published_before_Perl_6_version_1.0"><span class="tocnumber">6.1</span> <span class="toctext">Books published before Perl 6 version 1.0</span></a></li>
+<li class="toclevel-2 tocsection-29"><a href="#Books_published_after_Perl_6_version_1.0"><span class="tocnumber">6.2</span> <span class="toctext">Books published after Perl 6 version 1.0</span></a></li>
+<li class="toclevel-2 tocsection-30"><a href="#Books_to_be_published"><span class="tocnumber">6.3</span> <span class="toctext">Books to be published</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-31"><a href="#References"><span class="tocnumber">7</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-32"><a href="#External_links"><span class="tocnumber">8</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="History">History</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Perl_6&amp;action=edit&amp;section=1" title="Edit section: History">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<blockquote class="templatequote">
+<p>In Perl 6, we decided it would be better to fix the language than fix the user</p>
+<div class="templatequotecite"><cite>— Larry Wall<sup id="cite_ref-10" class="reference"><a href="#cite_note-10">[10]</a></sup></cite></div>
+</blockquote>
+<p>The Perl 6 design process was first announced on July 19, 2000, on the fourth day of that year's <a href="/wiki/O%27Reilly_Open_Source_Convention" title="O'Reilly Open Source Convention">Perl Conference</a>,<sup id="cite_ref-11" class="reference"><a href="#cite_note-11">[11]</a></sup> by <a href="/wiki/Larry_Wall" title="Larry Wall">Larry Wall</a> in his <i>State of the Onion 2000</i> talk.<sup id="cite_ref-12" class="reference"><a href="#cite_note-12">[12]</a></sup> At that time, the primary goals were to remove "historical warts" from the language; "easy things should stay easy, hard things should get easier, and impossible things should get hard;" a general cleanup of the internal design and <a href="/wiki/Application_programming_interface" title="Application programming interface">APIs</a>. The process began with a series of <a href="/wiki/Request_for_Comments" title="Request for Comments">requests for comments</a> or "RFCs". This process was open to all contributors, and left no aspect of the language closed to change.<sup id="cite_ref-13" class="reference"><a href="#cite_note-13">[13]</a></sup></p>
+<p>Once the RFC process was complete, Wall reviewed and classified each request (361 were received). He then began the process of writing several "<a href="/wiki/Apocalypse" title="Apocalypse">Apocalypses</a>", a term which means "revealing".<sup id="cite_ref-apoc1_14-0" class="reference"><a href="#cite_note-apoc1-14">[14]</a></sup> While the original goal was to write one Apocalypse for each chapter of <i>Programming Perl</i>, it became obvious that, as each Apocalypse was written, previous Apocalypses were being invalidated by later changes. For this reason, a set of Synopses were published, each one relating the contents of an Apocalypse, but with any subsequent changes reflected in updates. Today, Perl 6 specification continues almost entirely within the Synopses.<sup id="cite_ref-syn_15-0" class="reference"><a href="#cite_note-syn-15">[15]</a></sup></p>
+<p>There are also a series of Exegeses written by <a href="/wiki/Damian_Conway" title="Damian Conway">Damian Conway</a> that explain the content of each Apocalypse in terms of practical usage. Each Exegesis consists of code examples along with discussion of the usage and implications of the examples.<sup id="cite_ref-exegeses_16-0" class="reference"><a href="#cite_note-exegeses-16">[16]</a></sup></p>
+<p>There are three primary methods of communication used in the development of Perl 6 today. The first is the <span style="font-family: monospace,Courier; white-space: pre-wrap !important; word-wrap: break-word; max-width: 1200px; overflow: auto;"><a href="irc://irc.freenode.net/#perl6" class="extiw" title="freenode:">#perl6</a></span> <sup class="plainlinks"><a rel="nofollow" class="external text" href="//webchat.freenode.net/?channels=#perl6"><span style="color:green;">connect</span></a></sup> <a href="/wiki/Internet_Relay_Chat" title="Internet Relay Chat">IRC channel</a> on <a href="/wiki/Freenode" title="Freenode">freenode</a>. The second is a set of <a href="/wiki/Mailing_list" title="Mailing list">mailing lists</a> on <a href="/wiki/The_Perl_Foundation" class="mw-redirect" title="The Perl Foundation">The Perl Foundation</a>'s servers at <a rel="nofollow" class="external text" href="http://perl.org">perl.org</a>.<sup id="cite_ref-lists_17-0" class="reference"><a href="#cite_note-lists-17">[17]</a></sup> The third is the <a href="/wiki/Git_(software)" class="mw-redirect" title="Git (software)">Git</a> <a href="/wiki/Source_code_repository" class="mw-redirect" title="Source code repository">source code repository</a> hosted at <a rel="nofollow" class="external free" href="https://github.com/perl6">https://github.com/perl6</a>.</p>
+<h3><span class="mw-headline" id="Goals">Goals</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Perl_6&amp;action=edit&amp;section=2" title="Edit section: Goals">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The break in compatibility was mandated from the start of the project, and immediately allowed some of the changes that Larry Wall had suggested in his initial speech. "Historical warts" such as the confusion surrounding <a href="/wiki/Sigil_(computer_programming)" title="Sigil (computer programming)">sigil</a> usage for containers; the ambiguity between the <code>select</code> functions; the syntactic impact of bareword filehandles; and many other problems that Perl programmers had discussed fixing for years were some of the first issues addressed.</p>
+<p>Over the years, Perl 6 has undergone several alterations in its direction. The introduction of concepts from <a href="/wiki/Python_(programming_language)" title="Python (programming language)">Python</a> and <a href="/wiki/Ruby_programming_language" class="mw-redirect" title="Ruby programming language">Ruby</a> were early influences,<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (May 2009)">citation needed</span></a></i>]</sup> but as the Pugs interpreter was written in the <a href="/wiki/Haskell_(programming_language)" title="Haskell (programming language)">Haskell programming language</a>, many <a href="/wiki/Functional_programming" title="Functional programming">functional programming</a> influences were absorbed by the Perl 6 design team.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (November 2009)">citation needed</span></a></i>]</sup></p>
+<h3><span class="mw-headline" id="Mascot">Mascot</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Perl_6&amp;action=edit&amp;section=3" title="Edit section: Mascot">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;"><a href="/wiki/File:FOSDEM_2015_Larry_Wall_and_Camelia_the_Perl6_logo.jpg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/8/80/FOSDEM_2015_Larry_Wall_and_Camelia_the_Perl6_logo.jpg/220px-FOSDEM_2015_Larry_Wall_and_Camelia_the_Perl6_logo.jpg" width="220" height="159" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/80/FOSDEM_2015_Larry_Wall_and_Camelia_the_Perl6_logo.jpg/330px-FOSDEM_2015_Larry_Wall_and_Camelia_the_Perl6_logo.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/8/80/FOSDEM_2015_Larry_Wall_and_Camelia_the_Perl6_logo.jpg/440px-FOSDEM_2015_Larry_Wall_and_Camelia_the_Perl6_logo.jpg 2x" data-file-width="3450" data-file-height="2490" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:FOSDEM_2015_Larry_Wall_and_Camelia_the_Perl6_logo.jpg" class="internal" title="Enlarge"></a></div>
+Larry Wall and Camelia</div>
+</div>
+</div>
+<p>The language's <a href="/wiki/Mascot" title="Mascot">mascot</a> is "Camelia, the Perl 6 bug".<sup id="cite_ref-camelia_1-1" class="reference"><a href="#cite_note-camelia-1">[1]</a></sup> Her name is a nod to the camel mascot associated with <a href="/wiki/Perl" title="Perl">Perl</a>, and her form, in the pun-loving tradition of the Perl community, is a play on "<a href="/wiki/Software_bug" title="Software bug">software bug</a>". Spiral designs embedded in her butterfly-like wings resemble the characters "P6", the favored nickname for Perl 6.</p>
+<h2><span class="mw-headline" id="Implementations">Implementations</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Perl_6&amp;action=edit&amp;section=4" title="Edit section: Implementations">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>As of 2015<sup class="plainlinks noprint asof-tag update" style="display:none;"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Perl_6&amp;action=edit">[update]</a></sup>, only the <a href="/wiki/Rakudo_Perl" class="mw-redirect" title="Rakudo Perl">Rakudo Perl</a> implementation is under active development. No implementation will be designated as the official Perl 6 implementation; rather, "Perl 6 is anything that passes the official test suite."<sup id="cite_ref-syn01_18-0" class="reference"><a href="#cite_note-syn01-18">[18]</a></sup></p>
+<p>Rakudo Perl<sup id="cite_ref-19" class="reference"><a href="#cite_note-19">[19]</a></sup><sup id="cite_ref-20" class="reference"><a href="#cite_note-20">[20]</a></sup> targets a number of virtual machines, such as <a href="/wiki/MoarVM" title="MoarVM">MoarVM</a>, the <a href="/wiki/Java_Virtual_Machine" class="mw-redirect" title="Java Virtual Machine">Java Virtual Machine</a> and <a href="/wiki/JavaScript" title="JavaScript">JavaScript</a>. MoarVM is a <a href="/wiki/Virtual_machine" title="Virtual machine">virtual machine</a> designed for <a href="/wiki/Gradual_typing" title="Gradual typing">gradually typed programming languages</a>, primarily for Perl 6. There is a layer between Perl 6 and the virtual machines called Not Quite Perl 6, or NQP, which implements <a href="/wiki/Perl_6_rules" title="Perl 6 rules">Perl 6 rules</a> for parsing Perl 6, as well as an <a href="/wiki/Abstract_syntax_tree" title="Abstract syntax tree">Abstract syntax tree</a> and backend-specific <a href="/wiki/Code_generation_(compiler)" title="Code generation (compiler)">code generation</a>. Large portions of Rakudo are written in Perl 6 itself, or in its subset NQP. Rakudo is not a completely self-hosting implementation, nor are there concrete plans at this point to make Rakudo a bootstrapping compiler.</p>
+<h3><span class="mw-headline" id="Historical_Implementations">Historical Implementations</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Perl_6&amp;action=edit&amp;section=5" title="Edit section: Historical Implementations">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p><a href="/wiki/Pugs" title="Pugs">Pugs</a> was an initial implementation of Perl 6 written in <a href="/wiki/Haskell_(programming_language)" title="Haskell (programming language)">Haskell</a>. Pugs used to be the most advanced implementation of Perl 6, but since mid 2007 it is mostly dormant (with updates made only to track the current version of <a href="/wiki/Glasgow_Haskell_Compiler" title="Glasgow Haskell Compiler">GHC</a>). As of November 2014 Pugs is not being actively maintained.<sup id="cite_ref-21" class="reference"><a href="#cite_note-21">[21]</a></sup></p>
+<p>In 2007, v6-MiniPerl6 ("mp6") and its reimplementation, v6-KindaPerl6 ("kp6") were written as a means to bootstrap the Perl-6.0.0 STD, using Perl 5. The STD is a full grammar for Perl 6 and is written in Perl 6. In theory, anything capable of parsing the STD and generating executable code is a suitable bootstrapping system for Perl 6. kp6 is currently compiled by mp6 and can work with multiple backends.<sup id="cite_ref-STD_9-1" class="reference"><a href="#cite_note-STD-9">[9]</a></sup><sup id="cite_ref-22" class="reference"><a href="#cite_note-22">[22]</a></sup> mp6 and kp6 are not full Perl 6 implementations and are designed only to implement the minimum featureset required to bootstrap a full Perl 6 compiler.</p>
+<p>Yapsi is a Perl 6 compiler and runtime written in Perl 6 itself. As a result, it requires an existing Perl 6 interpreter, such as one of the Rakudo Star releases, in order to run.<sup id="cite_ref-23" class="reference"><a href="#cite_note-23">[23]</a></sup></p>
+<p>Niecza, another major Perl 6 implementation effort, focused on optimization and efficient implementation research. It targets the <a href="/wiki/Common_Language_Infrastructure" title="Common Language Infrastructure">Common Language Infrastructure</a>.<sup id="cite_ref-nieczareadme_24-0" class="reference"><a href="#cite_note-nieczareadme-24">[24]</a></sup></p>
+<h2><span class="mw-headline" id="Module_system">Module system</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Perl_6&amp;action=edit&amp;section=6" title="Edit section: Module system">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The Perl 6 specification requests that <a href="/wiki/Perl_module" title="Perl module">modules</a> are identified by name, version and authority.<sup id="cite_ref-25" class="reference"><a href="#cite_note-25">[25]</a></sup> It is possible to load only a specific version of a module, or even two modules of the same name that differ in version or authority. As a convenience, aliasing to a short name is provided.</p>
+<p><a href="/wiki/CPAN" title="CPAN">CPAN</a>, the Perl 5 module distribution system, does not yet handle Perl 6 modules. Instead a prototype module system is in use.<sup id="cite_ref-26" class="reference"><a href="#cite_note-26">[26]</a></sup></p>
+<h2><span class="mw-headline" id="Major_changes_from_Perl_5">Major changes from Perl 5</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Perl_6&amp;action=edit&amp;section=7" title="Edit section: Major changes from Perl 5">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Perl 5 and Perl 6 differ fundamentally, though in general the intent has been to "keep Perl 6 Perl", so that Perl 6 is clearly "a perl programming language". Most of the changes are intended to normalize the language, to make it easier for novice and expert programmers alike to understand, and to make "easy things easier and hard things more possible".</p>
+<h3><span class="mw-headline" id="A_specification">A specification</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Perl_6&amp;action=edit&amp;section=8" title="Edit section: A specification">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>A major, but non-technical difference between Perl 5 and Perl 6 is that Perl 6 began as a specification.<sup id="cite_ref-syn01_18-1" class="reference"><a href="#cite_note-syn01-18">[18]</a></sup> This means that Perl 6 can be re-implemented if needed, and it also means that programmers don't have to read the source code for the ultimate authority on any given feature. Perl 5's documentation is regarded as excellent,<sup id="cite_ref-devcom_27-0" class="reference"><a href="#cite_note-devcom-27">[27]</a></sup> even outside of the Perl community where even mixed reviews typically note its maturity and breadth. However, the documentation is not considered authoritative and only describes the behavior of the actual Perl 5 interpreter informally. Any discrepancies found between the documentation and the implementation may lead to either being changed to reflect the other, a dynamic which drives the continuing development and refinement of the Perl 5 releases.</p>
+<h3><span class="mw-headline" id="A_type_system">A type system</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Perl_6&amp;action=edit&amp;section=9" title="Edit section: A type system">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>In Perl 6, the <a href="/wiki/Dynamic_type" class="mw-redirect" title="Dynamic type">dynamic type system</a> of Perl 5 has been augmented by the addition of <a href="/wiki/Static_type" class="mw-redirect" title="Static type">static types</a>.<sup id="cite_ref-syn2_28-0" class="reference"><a href="#cite_note-syn2-28">[28]</a></sup> For example:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+ <span class="k">my</span> <span class="nb">Int</span> <span class="nv">$i</span> = <span class="mi">0</span>;
+ <span class="k">my</span> <span class="nb">Rat</span> <span class="nv">$r</span> = <span class="mf">3.142</span>;
+ <span class="k">my</span> <span class="nb">Str</span> <span class="nv">$s</span> = <span class="s">"Hello, world"</span>;
+</pre></div>
+<p>However, static typing remains <a href="/wiki/Type_system#Combining_static_and_dynamic_type-checking" title="Type system">optional</a>, so programmers can do most things without any explicit typing at all:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+ <span class="k">my</span> <span class="nv">$i</span> = <span class="s">"25"</span> + <span class="mi">10</span>; <span class="c c-Singleline"># $i is 35</span>
+</pre></div>
+<p>Perl 6 offers <a href="/wiki/Type_system#Gradual_typing" title="Type system">a gradual typing system</a> whereby the programmer may choose to use static typing, use dynamic typing, or mix the two.</p>
+<h3><span class="mw-headline" id="Formal_subroutine_parameter_lists">Formal subroutine parameter lists</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Perl_6&amp;action=edit&amp;section=10" title="Edit section: Formal subroutine parameter lists">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Perl 5 defines subroutines without <a href="/wiki/Parameter_(computer_science)" class="mw-redirect" title="Parameter (computer science)">formal parameter</a> lists at all (though simple parameter counting and some very loose type checking can be done using Perl 5's "prototypes"). Subroutine arguments passed in are aliased into the elements of the array <tt>@_</tt>. If the elements of <tt>@_</tt> are modified, the changes are reflected in the original data.</p>
+<p>Perl 6 introduces true formal parameters to the language.<sup id="cite_ref-syn6_29-0" class="reference"><a href="#cite_note-syn6-29">[29]</a></sup> In Perl 6, a subroutine declaration looks like this:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+ <span class="k">sub</span> <span class="n">do_something</span>(<span class="nb">Str</span> <span class="nv">$thing</span>, <span class="nb">Int</span> <span class="nv">$other</span>) {
+     . . .
+ }
+</pre></div>
+<p>As in Perl 5, the formal parameters (i.e., the variables in the parameter list) are aliases to the actual parameters (the values passed in), but by default, the aliases are <a href="/wiki/Constant_(programming)" class="mw-redirect" title="Constant (programming)">constant</a> so they cannot be modified. They may be declared explicitly as read-write aliases for the original value or as copies using the <code>is rw</code> or <code>is copy</code> directives should the programmer require them to be modified locally.</p>
+<h4><span class="mw-headline" id="Parameter_passing_modes">Parameter passing modes</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Perl_6&amp;action=edit&amp;section=11" title="Edit section: Parameter passing modes">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>Perl 6 provides three basic modes of parameter passing:</p>
+<ul>
+<li>Positional</li>
+<li>Named</li>
+<li>Slurpy</li>
+</ul>
+<p>Positional parameters are the typical ordered list of parameters that most programming languages use. All parameters may also be passed by using their name in an unordered way. A named-only parameter can only be passed by specifying its name (that is, it never captures a positional argument), and are indicated with a leading <code>:</code> character. Slurpy parameters (indicated by an <code>*</code> before the parameter name) are Perl 6's tool for creating <a href="/wiki/Variadic_function" title="Variadic function">variadic functions</a>. A slurpy hash will capture remaining passed-by-name parameters, whereas a slurpy array will capture remaining passed-by-position parameters.</p>
+<p>Here is an example of the use of all three parameter-passing modes:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+ <span class="k">sub</span> <span class="n">somefunction</span>(<span class="nv">$a</span>, <span class="nv">$b</span>, :<span class="nv">$c</span>, :<span class="nv">$d</span>, *<span class="nv">@e</span>) {
+   . . .
+ }
+
+ <span class="n">somefunction</span>(<span class="mi">1</span>, <span class="mi">2</span>, :<span class="n">d</span>(<span class="mi">3</span>), <span class="mi">4</span>, <span class="mi">5</span>, <span class="mi">6</span>); <span class="c c-Singleline"># $a=1, $b=2, $d=3, @e=(4,5,6)</span>
+ <span class="n">somefunction</span>(:<span class="n">b</span><span class="s">&lt;2&gt;, :a&lt;1&gt;</span>);         <span class="c c-Singleline"># $a="1", $b="2"</span>
+</pre></div>
+<p>Positional parameters, such as those used above are always required, unless followed by <code>?</code> to indicate that they are optional. Named parameters are optional by default, but may be marked as required by adding <code>!</code> after the variable name. Slurpy parameters are <i>always</i> optional.</p>
+<h4><span class="mw-headline" id="Blocks_and_closures">Blocks and closures</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Perl_6&amp;action=edit&amp;section=12" title="Edit section: Blocks and closures">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>Parameters can also be passed to arbitrary blocks, which act as <a href="/wiki/Closure_(computer_science)" class="mw-redirect" title="Closure (computer science)">closures</a>. This is how, for example, <code>for</code> and <code>while</code> loop iterators are named. In the following example, a list is traversed, 3 elements at a time, and passed to the loop's block as the variables, <code>$a, $b, $c</code>.<sup id="cite_ref-syn04_30-0" class="reference"><a href="#cite_note-syn04-30">[30]</a></sup></p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+ <span class="k">for</span> <span class="nv">@list</span> -&gt; <span class="nv">$a</span>, <span class="nv">$b</span>, <span class="nv">$c</span> {
+     . . .
+ }
+</pre></div>
+<p>This is generally referred to as a "pointy sub" or "pointy block", and the arrow behaves almost exactly like the <code>sub</code> keyword, introducing an anonymous closure (or anonymous subroutine in Perl 5 terminology).<sup id="cite_ref-syn6_29-1" class="reference"><a href="#cite_note-syn6-29">[29]</a></sup></p>
+<h3><span class="mw-headline" id="Sigil_invariance">Sigil invariance</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Perl_6&amp;action=edit&amp;section=13" title="Edit section: Sigil invariance">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>In Perl 5, <a href="/wiki/Sigil_(computer_programming)" title="Sigil (computer programming)"><i>sigils</i></a> – the punctuation characters that precede a variable name – change depending on how the variable is used:</p>
+<pre>
+# Perl 5 code
+my <span style="color:red;">@</span>array = ('a', 'b', 'c');
+my $element = <span style="color:red;">$</span>array[1];    # $element equals 'b', 
+my @extract = <span style="color:red;">@</span>array[1, 2]; # @extract equals ('b', 'c')
+my $element = <span style="color:red;">@</span>array[1];    # 'b' comes with a warning (5.10 option)
+</pre>
+<p>In Perl 6, sigils are invariant, which means that they do not change based on whether it is the array or the array element that is needed:<sup id="cite_ref-syn2_28-1" class="reference"><a href="#cite_note-syn2-28">[28]</a></sup></p>
+<pre>
+# Perl 6 code 
+my <span style="color:red;">@</span>array = 'a', 'b', 'c';
+my $element = <span style="color:red;">@</span>array[1];    # $element equals 'b'
+my @extract = <span style="color:red;">@</span>array[1];    # @extract equals ('b')
+my @extract = <span style="color:red;">@</span>array[1, 2]; # @extract equals ('b', 'c')
+</pre>
+<p>The variance in Perl 5 is inspired by number agreement in English and many other natural languages:</p>
+<pre>
+"<b>This</b> apple."                    # $a        CORRECT
+"<b>These</b> apples."                  # @a        CORRECT
+"<b>This</b> third apple."              # $a[3]     CORRECT
+"<b>These</b> third apple."             # @a[3]     WRONG
+</pre>
+<p>However, this conceptual mapping breaks down when references come into play, since they may refer to data structures even though they are scalars. Thus, dealing with nested data structures may require an expression of both singular and plural form in a single term:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="c1"># Perl 5 code: retrieve a list from the leaf of a hash containing hashes that contain arrays</span>
+<span class="k">my</span> <span class="nv">@trans_verbs</span> <span class="o">=</span> <span class="nv">@</span><span class="p">{</span> <span class="nv">$dictionary</span><span class="p">{</span> <span class="s">'verb'</span> <span class="p">}{</span> <span class="s">'transitive'</span> <span class="p">}</span> <span class="p">};</span>
+</pre></div>
+<p>This complexity has no equivalent either in common use of natural language or in other programming languages<sup class="noprint Inline-Template" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Accuracy_dispute#Disputed_statement" title="Wikipedia:Accuracy dispute"><span title="The material near this tag is possibly inaccurate or nonfactual. (October 2015)">dubious</span></a> <span class="metadata">– <a href="/wiki/Talk:Perl_6#Dubious" title="Talk:Perl 6">discuss</a></span></i>]</sup>, and it causes high <a href="/wiki/Cognitive_load" title="Cognitive load">cognitive load</a> when writing code to manipulate complex data structures. Compare this with Perl 6:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+ <span class="c c-Singleline"># Perl 6 code: retrieve a list from the leaf of a hash containing hashes that contain arrays</span>
+ <span class="k">my</span> <span class="nv">@trans_verbs</span> = <span class="nv">%dictionary</span>{ <span class="s">'verb'</span> }{ <span class="s">'transitive'</span> }.<span class="n">list</span>;
+</pre></div>
+<h3><span class="mw-headline" id="Object-oriented_programming">Object-oriented programming</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Perl_6&amp;action=edit&amp;section=14" title="Edit section: Object-oriented programming">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Perl 5 supports <a href="/wiki/Object-oriented_programming" title="Object-oriented programming">object-oriented programming</a> via a mechanism known as <i>blessing</i>. Any <a href="/wiki/Reference_(computer_science)" title="Reference (computer science)">reference</a> can be blessed into being an object of a particular class. A blessed object can have <a href="/wiki/Method_(computer_science)" class="mw-redirect" title="Method (computer science)">methods</a> invoked on it using the "arrow syntax" which will cause Perl to locate or "dispatch" an appropriate <a href="/wiki/Subroutine" title="Subroutine">subroutine</a> by name, and call it with the blessed variable as its first argument.</p>
+<p>While extremely powerful, it makes the most common case of object orientation, a <a href="/wiki/Struct_(disambiguation)" class="mw-redirect" title="Struct (disambiguation)">struct</a>-like object with some associated code, unnecessarily difficult. In addition, because Perl can make no assumptions about the object model in use, method invocation cannot be optimized very well.</p>
+<p>In the spirit of making the "easy things easy and hard things possible", Perl 6 retains the blessing model and supplies a more robust object model for the common cases.<sup id="cite_ref-31" class="reference"><a href="#cite_note-31">[31]</a></sup> For example, a class to encapsulate a <a href="/wiki/Cartesian_coordinate_system" title="Cartesian coordinate system">Cartesian</a> <a href="/wiki/Point_(geometry)" title="Point (geometry)">point</a> could be defined and used this way:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+ <span class="k">class</span> <span class="n">Point</span> <span class="k">is</span> <span class="k">rw</span> {
+   <span class="k">has</span> <span class="nv">$.x</span>;
+   <span class="k">has</span> <span class="nv">$.y</span>;
+ }
+
+ <span class="k">my</span> <span class="nv">$point</span> = <span class="n">Point</span>.<span class="nb">new</span>( <span class="o">x</span> =&gt; <span class="mf">1.2</span>, <span class="n">y</span> =&gt; -<span class="mf">3.7</span> );
+
+ <span class="c c-Singleline"># Now change x (note method "x" used as lvalue):</span>
+ <span class="nv">$point</span>.<span class="o">x</span> = <span class="mi">2</span>;
+ <span class="nb">say</span> <span class="s">"Point is at X location: "</span>, <span class="nv">$point</span>.<span class="o">x</span>;
+</pre></div>
+<p>The dot replaces the arrow in a nod to the many other languages (e.g. <a href="/wiki/Java_(programming_language)" title="Java (programming language)">Java</a>, <a href="/wiki/Python_(programming_language)" title="Python (programming language)">Python</a>, etc.) that have coalesced around dot as the syntax for method invocation.</p>
+<p>In the terminology of Perl 6, <code>$.x</code> is called an "attribute". Some languages call these <i>fields</i> or <i>members</i>. The method used to access an attribute is called an "accessor". Auto-accessors are methods that are created automatically, as the method <code>x</code> is in the example above. These accessor functions return the value of the attribute. When a class or individual attribute is declared with the <code>is rw</code> modifier (short for "read/write"), the auto-accessor can be passed a new value to set the attribute to, or it can be directly assigned to as an <a href="/wiki/Value_(computer_science)" title="Value (computer science)">lvalue</a> (as in the example). Auto-accessors can be replaced by user-defined methods, should the programmer desire a richer interface to an attribute. Attributes can only be accessed directly from within a class definition. All other access must go through the accessor methods.</p>
+<p>The Perl 6 object system has inspired the <a href="/wiki/Moose_(Perl)" title="Moose (Perl)">Moose</a> framework that introduces many of Perl 6's OOP features to <a href="/wiki/Perl" title="Perl">Perl 5</a>.</p>
+<h4><span class="mw-headline" id="Roles">Roles</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Perl_6&amp;action=edit&amp;section=15" title="Edit section: Roles">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>Roles in Perl 6 take on the function of <a href="/wiki/Interface_(Java)" title="Interface (Java)"><i>interfaces</i> in Java</a>, <i><a href="/wiki/Mixin" title="Mixin">mixins</a></i> in Ruby, and <i><a href="/wiki/Trait_(computer_science)" class="mw-redirect" title="Trait (computer science)">traits</a></i><sup id="cite_ref-32" class="reference"><a href="#cite_note-32">[32]</a></sup> in the <a href="/wiki/Smalltalk" title="Smalltalk">Smalltalk</a> variant <a href="/wiki/Squeak" title="Squeak">Squeak</a>. These are much like classes, but provide a safer composition mechanism.<sup id="cite_ref-33" class="reference"><a href="#cite_note-33">[33]</a></sup> These are used to perform composition when used with classes rather than adding to their <a href="/wiki/Inheritance_(computer_science)" class="mw-redirect" title="Inheritance (computer science)">inheritance</a> chain. Roles define nominal types; they provide semantic names for collections of behavior and state. The fundamental difference between a role and a class is that classes are instantiable; roles are not.<sup id="cite_ref-34" class="reference"><a href="#cite_note-34">[34]</a></sup></p>
+<p>Essentially, a role is a bundle of (possibly abstract) methods and attributes that can be added to a class without using inheritance. A role can even be added to an individual object; in this case, Perl 6 will create an anonymous subclass, add the role to the subclass, and change the object's class to the anonymous subclass.</p>
+<p>For example, a <a href="/wiki/Dog" title="Dog">Dog</a> is a <a href="/wiki/Mammal" title="Mammal">Mammal</a>. Dogs inherit certain characteristics from Mammals, such as <a href="/wiki/Mammary_gland" title="Mammary gland">mammary glands</a> and (through Mammal's parent, <a href="/wiki/Vertebrate" title="Vertebrate">Vertebrate</a>) a <a href="/wiki/Vertebral_column" title="Vertebral column">backbone</a>. Dogs may have one of several distinct types of behavior; for example, a Dog may be a <a href="/wiki/Pet" title="Pet">Pet</a>, a <a href="/wiki/Feral" class="mw-redirect" title="Feral">Stray</a>, or a <a href="/wiki/Guide_dog" title="Guide dog">Guide</a> for the blind. However, these are simply sets of additional behaviors that can be added to a Dog; a <a href="/wiki/Cat" title="Cat">Cat</a> can equally be a Pet or Stray, for example. Hence, Dog and Mammal are classes, while Pet, Stray, and Guide are roles.</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+ <span class="k">class</span> <span class="n">Mammal</span> <span class="k">is</span> <span class="n">Vertebrate</span> {
+     . . .
+ }
+ <span class="k">class</span> <span class="n">Dog</span> <span class="k">is</span> <span class="n">Mammal</span> {
+     . . .
+ }
+ <span class="k">role</span> <span class="n">Pet</span> {
+     . . .
+ }
+ <span class="k">role</span> <span class="n">Stray</span> {
+     . . .
+ }
+ <span class="k">role</span> <span class="n">Guide</span> {
+     . . .
+ }
+</pre></div>
+<p>Roles are added to a class or object with the <code>does</code> keyword, as opposed to inheritance's <code>is</code>. The keywords reflect the differing meanings of the two features: role composition gives a class the <i>behavior</i> of the role, but doesn't indicate that it is truly the <i>same thing</i> as the role.</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+ <span class="k">class</span> <span class="n">GuideDog</span> <span class="k">is</span> <span class="n">Dog</span> <span class="nb">does</span> <span class="n">Guide</span> {
+     . . .
+ }   <span class="c c-Singleline"># Subclass composes role</span>
+
+ <span class="k">my</span> <span class="nv">$dog</span> = <span class="nb">new</span> <span class="n">Dog</span>;
+ <span class="nv">$dog</span> <span class="nb">does</span> <span class="n">Guide</span>;                         <span class="c c-Singleline"># Individual object composes role</span>
+</pre></div>
+<p>Although roles are distinct from classes, both are types, so a role can appear in a variable declaration where one would normally put a class. For example, a Blind role for a Human could include an attribute of type Guide; this attribute could contain a Guide Dog, a <a href="/wiki/Guide_horse" title="Guide horse">Guide Horse</a>, a Guide Human, or even a Guide Machine.</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+ <span class="k">class</span> <span class="n">Human</span> {
+     <span class="k">has</span> <span class="n">Dog</span> <span class="nv">$dog</span>;                        <span class="c c-Singleline"># Can contain any kind of Dog, whether it does the</span>
+     ...                                  <span class="c c-Singleline"># Guide role or not</span>
+ }
+ <span class="k">role</span> <span class="n">Blind</span> {
+     <span class="k">has</span> <span class="n">Guide</span> <span class="nv">$guide</span>;                    <span class="c c-Singleline"># Can contain any object that does the Guide role,</span>
+     ...                                  <span class="c c-Singleline"># whether it is a Dog or something else</span>
+ }
+</pre></div>
+<h3><span class="mw-headline" id="Regular_expressions">Regular expressions</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Perl_6&amp;action=edit&amp;section=16" title="Edit section: Regular expressions">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div role="note" class="hatnote">Main article: <a href="/wiki/Perl_6_rules" title="Perl 6 rules">Perl 6 rules</a></div>
+<p>Perl's <a href="/wiki/Regular_expression" title="Regular expression">regular expression</a> and string-processing support has always been one of its defining features.<sup id="cite_ref-35" class="reference"><a href="#cite_note-35">[35]</a></sup> Since Perl's pattern-matching constructs have exceeded the capabilities of <a href="/wiki/Regular_language" title="Regular language">regular language</a> expressions for some time,<sup id="cite_ref-36" class="reference"><a href="#cite_note-36">[36]</a></sup> Perl 6 documentation will exclusively refer to them as <i>regexen</i>, distancing the term from the formal definition.</p>
+<p>Perl 6 provides a superset of Perl 5 features with respect to regexes, folding them into a larger framework called "<a href="/wiki/Perl_6_rules" title="Perl 6 rules">rules</a>" which provide the capabilities of <a href="/wiki/Context-sensitive_language" title="Context-sensitive language">context-sensitive</a> <a href="/wiki/Parsing" title="Parsing">parsing</a> formalisms (such as the <a href="/wiki/Syntactic_predicate" title="Syntactic predicate">syntactic predicates</a> of <a href="/wiki/Parsing_expression_grammar" title="Parsing expression grammar">parsing expression grammars</a> and <a href="/wiki/ANTLR" title="ANTLR">ANTLR</a>), as well as acting as a <a href="/wiki/Closure_(computer_science)" class="mw-redirect" title="Closure (computer science)">closure</a> with respect to their <a href="/wiki/Scope_(programming)" class="mw-redirect" title="Scope (programming)">lexical scope</a>.<sup id="cite_ref-37" class="reference"><a href="#cite_note-37">[37]</a></sup> Rules are introduced with the <code>rule</code> keyword which has a usage quite similar to subroutine definition. Anonymous rules can also be introduced with the <code>regex</code> (or <code>rx</code>) keyword, or they can simply be used inline as regexps were in Perl 5 via the <code>m</code> (matching) or <code>s</code> (substitute) operators.</p>
+<p>In <i>Apocalypse 5</i>, Larry Wall enumerated 20 problems with "current regex culture". Among these were that Perl's regexes were "too compact and 'cute'", had "too much reliance on too few metacharacters", "little support for named captures", "little support for grammars", and "poor integration with 'real' language".<sup id="cite_ref-38" class="reference"><a href="#cite_note-38">[38]</a></sup></p>
+<h3><span class="mw-headline" id="Syntactic_simplification">Syntactic simplification</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Perl_6&amp;action=edit&amp;section=17" title="Edit section: Syntactic simplification">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Some Perl 5 constructs have been changed in Perl 6, optimized for different syntactic cues for the most common cases. For example, the parentheses (round <a href="/wiki/Bracket" title="Bracket">brackets</a>) required in <a href="/wiki/Control_flow" title="Control flow">control flow</a> constructs in Perl 5 are now optional:<sup id="cite_ref-syn04_30-1" class="reference"><a href="#cite_note-syn04-30">[30]</a></sup></p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+ <span class="k">if</span> <span class="n">is_true</span>() {
+    <span class="k">for</span> <span class="nv">@array</span> {
+        ...
+    }
+ }
+</pre></div>
+<p>Also, the <code>,</code> (comma) operator is now a list constructor, so enclosing parentheses are no longer required around lists. The code</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+ <span class="nv">@array</span> = <span class="mi">1</span>, <span class="mi">2</span>, <span class="mi">3</span>, <span class="mi">4</span>;
+</pre></div>
+<p>now makes <code>@array</code> an array with exactly the elements '1', '2', '3', and '4'.</p>
+<h3><span class="mw-headline" id="Chained_comparisons">Chained comparisons</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Perl_6&amp;action=edit&amp;section=18" title="Edit section: Chained comparisons">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Perl 6 allows comparisons to "chain". That is, a sequence of comparisons such as the following are allowed:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+ <span class="k">if</span> <span class="mi">20</span> &lt;= <span class="nv">$temperature</span> &lt;= <span class="mi">25</span> {
+     <span class="nb">say</span> <span class="s">"Room temperature is between 20 and 25!"</span>
+ }
+</pre></div>
+<p>This is treated as if each left-to-right comparison were performed on its own, and the result is logically combined via the <code>and</code> operation.</p>
+<h3><span class="mw-headline" id="Lazy_evaluation">Lazy evaluation</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Perl_6&amp;action=edit&amp;section=19" title="Edit section: Lazy evaluation">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Perl 6 uses the technique of <a href="/wiki/Lazy_evaluation" title="Lazy evaluation">lazy evaluation</a> of lists that has been a feature of some <a href="/wiki/Functional_programming" title="Functional programming">functional programming</a> languages such as <a href="/wiki/Haskell_(programming_language)" title="Haskell (programming language)">Haskell</a>:<sup id="cite_ref-syn9_39-0" class="reference"><a href="#cite_note-syn9-39">[39]</a></sup></p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+ <span class="nv">@integers</span> = <span class="mi">0</span><span class="o">..</span><span class="n">Inf</span>; <span class="c c-Singleline"># integers from 0 to infinity</span>
+</pre></div>
+<p>The code above will not crash by attempting to assign a list of infinite size to the array <code>@integers</code>, nor will it hang indefinitely in attempting to expand the list if a limited number of slots are searched.</p>
+<p>This simplifies many common tasks in Perl 6 including input/output operations, list transformations and parameter passing.</p>
+<h3><span class="mw-headline" id="Gather">Gather</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Perl_6&amp;action=edit&amp;section=20" title="Edit section: Gather">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Related to lazy evaluation is the construction of lazy lists using <code>gather</code> and <code>take</code>, behaving somewhat like generators in languages like <a href="/wiki/Icon_(programming_language)" title="Icon (programming language)">Icon</a> or <a href="/wiki/Python_(programming_language)" title="Python (programming language)">Python</a>.</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+ <span class="k">my</span> <span class="nv">$squares</span> = <span class="nb">lazy</span> <span class="k">gather</span> <span class="k">for</span> <span class="mi">0</span><span class="o">..</span><span class="n">Inf</span> {
+     <span class="k">take</span> <span class="nv">$_</span> * <span class="nv">$_</span>;
+ };
+</pre></div>
+<p><code>$squares</code> will be an infinite list of square numbers, but lazy evaluation of the <code>gather</code> ensures that elements are only computed when they are accessed.</p>
+<h3><span class="mw-headline" id="Junctions">Junctions</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Perl_6&amp;action=edit&amp;section=21" title="Edit section: Junctions">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Perl 6 introduces the concept of <i>junctions</i>: values that are composites of other values.<sup id="cite_ref-syn9_39-1" class="reference"><a href="#cite_note-syn9-39">[39]</a></sup> In their simplest form, junctions are created by combining a set of values with junctive <a href="/wiki/Operator_(programming)" class="mw-redirect" title="Operator (programming)">operators</a>:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+ <span class="c c-Singleline"># Example for | ("any") Junction:</span>
+ <span class="k">my</span> <span class="nv">$color</span> = <span class="s">'white'</span>;
+ <span class="k">unless</span> <span class="nv">$color</span> <span class="o">eq</span> <span class="s">'white'</span> | <span class="s">'black'</span> | <span class="s">'gray'</span> | <span class="s">'grey'</span> {
+     <span class="k">die</span> <span class="s">"Color printing not supported\n"</span>;
+ }
+
+ <span class="c c-Singleline"># Example for &amp; ("all") Junction:</span>
+ <span class="k">my</span> <span class="nv">$password</span> = <span class="s">'secret!123'</span>;
+ <span class="k">if</span> <span class="nv">$password</span> ~~<span class="sr"> /&lt;:Letter&gt;/</span> &amp; /<span class="s">&lt;:Digit&gt;</span>/ &amp; /<span class="s">&lt;:Symbol&gt;</span>/ {
+     <span class="nb">say</span> <span class="s">"Your password is reasonably secure"</span>;
+ }
+</pre></div>
+<p><code>|</code> indicates a value which is equal to either its left <i>or</i> right-hand arguments. <code>&amp;</code> indicates a value which is equal to both its left <i>and</i> right-hand arguments. These values can be used in any code that would use a normal value. Operations performed on a junction act on all members of the junction equally, and combine according to the junctive operator. So, <code>("apple"|"banana") ~ "s"</code> would yield <code>"apples"|"bananas"</code>. In comparisons, junctions return a single true or false result for the comparison. "<code>any</code>" junctions return true if the comparison is true for any one of the elements of the junction. "<code>all</code>" junctions return true if the comparison is true for all of the elements of the junction.</p>
+<p>Junctions can also be used to more richly augment the type system by introducing a style of <a href="/wiki/Generic_programming" title="Generic programming">generic programming</a> that is constrained to junctions of types:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+ <span class="k">subset</span> <span class="n">Color</span> <span class="k">of</span> <span class="nb">Any</span> <span class="k">where</span> <span class="n">Color</span> | <span class="n">CMYK_Color</span>;
+ <span class="k">sub</span> <span class="n">get_tint</span>(<span class="n">Color</span> <span class="nv">$color</span>, <span class="nb">Num</span> <span class="nv">$opacity</span>) {
+     . . .
+ }
+</pre></div>
+<h3><span class="mw-headline" id="Macros">Macros</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Perl_6&amp;action=edit&amp;section=22" title="Edit section: Macros">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>In low-level languages, the concept of <a href="/wiki/Macro_(computer_science)" title="Macro (computer science)">macros</a> has become synonymous with textual substitution of source-code due to the widespread use of the <a href="/wiki/C_preprocessor" title="C preprocessor">C preprocessor</a>. However, high-level languages such as <a href="/wiki/Lisp_programming_language" class="mw-redirect" title="Lisp programming language">Lisp</a> pre-dated C in their use of macros that were far more powerful.<sup id="cite_ref-40" class="reference"><a href="#cite_note-40">[40]</a></sup> It is this Lisp-like macro concept that Perl 6 will take advantage of.<sup id="cite_ref-syn6_29-2" class="reference"><a href="#cite_note-syn6-29">[29]</a></sup> The power of this sort of macro stems from the fact that it operates on the program as a high-level <a href="/wiki/Data_structure" title="Data structure">data structure</a>, rather than as simple text, and has the full capabilities of the programming language at its disposal.</p>
+<p>A Perl 6 macro definition will look like a subroutine or method definition, and can operate on unparsed strings, an <a href="/wiki/Abstract_syntax_tree" title="Abstract syntax tree">AST</a> representing pre-parsed code, or a combination of the two. A macro definition would look like this:<sup id="cite_ref-macros_41-0" class="reference"><a href="#cite_note-macros-41">[41]</a></sup></p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+ <span class="k">macro</span> <span class="n">hello</span>(<span class="nv">$what</span>) {
+   <span class="nb">quasi</span> { <span class="nb">say</span> <span class="s">"Hello { {{{$what}}} }"</span> };
+ }
+</pre></div>
+<p>In this particular example, the macro is no more complex than a C-style textual substitution, but because parsing of the macro parameter occurs before the macro operates on the calling code, diagnostic messages would be far more informative. However, because the body of a macro is executed at <a href="/wiki/Compile_time" title="Compile time">compile time</a> each time it is used, many techniques of <a href="/wiki/Optimization_(computer_science)" class="mw-redirect" title="Optimization (computer science)">optimization</a> can be employed. It is even possible to entirely eliminate complex computations from resulting programs by performing the work at compile-time.</p>
+<h2><span class="mw-headline" id="Examples">Examples</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Perl_6&amp;action=edit&amp;section=23" title="Edit section: Examples">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="Hello_world">Hello world</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Perl_6&amp;action=edit&amp;section=24" title="Edit section: Hello world">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The <a href="/wiki/Hello_world_program" class="mw-redirect" title="Hello world program">hello world program</a> is a common program used to introduce a language. In Perl 6, hello world is:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+ <span class="nb">say</span> <span class="s">'Hello, world'</span>;
+</pre></div>
+<p>— though <a href="/wiki/There_is_more_than_one_way_to_do_it" class="mw-redirect" title="There is more than one way to do it">there is more than one way to do it</a>. The <code>say</code> function prints its arguments, like the <code>print</code> function, but with a trailing <a href="/wiki/Newline" title="Newline">newline</a>. (This feature was <a href="/wiki/Backporting" title="Backporting">backported</a> into Perl 5.10.)</p>
+<h3><span class="mw-headline" id="Quicksort">Quicksort</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Perl_6&amp;action=edit&amp;section=25" title="Edit section: Quicksort">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p><a href="/wiki/Quicksort" title="Quicksort">Quicksort</a> is a well-known sorting algorithm. A working implementation using the functional programming paradigm can be succinctly written in Perl 6:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+ <span class="c c-Singleline"># Empty list sorts to the empty list</span>
+ <span class="k">multi</span> <span class="n">quicksort</span>([]) { () }
+
+ <span class="c c-Singleline"># Otherwise, extract first item as pivot...</span>
+ <span class="k">multi</span> <span class="n">quicksort</span>([<span class="nv">$pivot</span>, *<span class="nv">@rest</span>]) {
+     <span class="c c-Singleline"># Partition.</span>
+     <span class="k">my</span> <span class="nv">@before</span> = <span class="nv">@rest</span>.<span class="nb">grep</span>(* <span class="o">before</span> <span class="nv">$pivot</span>);
+     <span class="k">my</span> <span class="nv">@after</span>  = <span class="nv">@rest</span>.<span class="nb">grep</span>(* !<span class="o">before</span> <span class="nv">$pivot</span>);
+
+     <span class="c c-Singleline"># Sort the partitions.</span>
+     <span class="n">flat</span> (<span class="n">quicksort</span>(<span class="nv">@before</span>), <span class="nv">$pivot</span>, <span class="n">quicksort</span>(<span class="nv">@after</span>))
+ }
+</pre></div>
+<h3><span class="mw-headline" id="Tower_of_Hanoi">Tower of Hanoi</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Perl_6&amp;action=edit&amp;section=26" title="Edit section: Tower of Hanoi">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p><a href="/wiki/Tower_of_Hanoi" title="Tower of Hanoi">Tower of Hanoi</a> is often used to introduce recursive programming in computer science. This implementation uses Perl 6's multi-dispatch mechanism and parametric constraints:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+ <span class="k">multi</span> <span class="k">sub</span> <span class="n">hanoi</span>(<span class="mi">0</span>, $, $, $) { }                         <span class="c c-Singleline"># No disk, so do not do anything</span>
+ <span class="k">multi</span> <span class="k">sub</span> <span class="n">hanoi</span>(<span class="nv">$n</span>, <span class="nv">$a</span> = <span class="s">'A'</span>, <span class="nv">$b</span> = <span class="s">'B'</span>, <span class="nv">$c</span> = <span class="s">'C'</span>) {     <span class="c c-Singleline"># Start with $n disks and three pegs A, B, C</span>
+     <span class="n">hanoi</span> <span class="nv">$n</span> - <span class="mi">1</span>, <span class="nv">$a</span>, <span class="nv">$c</span>, <span class="nv">$b</span>;                           <span class="c c-Singleline"># firstly move top $n - 1 disks from A to B</span>
+     <span class="nb">say</span> <span class="s">"Move disk $n from peg $a to peg $c"</span>;           <span class="c c-Singleline"># then move last disk from A to C</span>
+     <span class="n">hanoi</span> <span class="nv">$n</span> - <span class="mi">1</span>, <span class="nv">$b</span>, <span class="nv">$a</span>, <span class="nv">$c</span>;                           <span class="c c-Singleline"># lastly move $n - 1 disks from B to C</span>
+ }
+</pre></div>
+<h2><span class="mw-headline" id="Books">Books</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Perl_6&amp;action=edit&amp;section=27" title="Edit section: Books">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>In history of Perl 6, there were two waves, when authors had interest to write books. The first wave followed the initial announcement of Perl 6 in 2000. Those books reflect the state of the design of the language of that time, and contain mostly outdated material as of today. The second wave, that followed the announcement of the Version 1.0 in 2015, includes one book, which has already been published, and several books that are in the process of writing.</p>
+<h3><span class="mw-headline" id="Books_published_before_Perl_6_version_1.0">Books published before Perl 6 version 1.0</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Perl_6&amp;action=edit&amp;section=28" title="Edit section: Books published before Perl 6 version 1.0">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Before 2005, three books were published.</p>
+<ul>
+<li>A. Randal, D. Sugalski, L. Totsch. <i>Perl 6 and Parrot Essentials</i>, 1st edition, 2003, <a href="/wiki/Special:BookSources/9780596004996" class="internal mw-magiclink-isbn">ISBN 978-0596004996</a></li>
+<li>A. Randal, D. Sugalski, L. Totsch. <i>Perl 6 and Parrot Essentials</i>, Second Edition, 2nd edition, 2004. <a href="/wiki/Special:BookSources/9780596007379" class="internal mw-magiclink-isbn">ISBN 978-0596007379</a></li>
+<li>S. Walters. <i>Perl 6 Now: The Core Ideas Illustrated with Perl 5.</i> 2004. <a href="/wiki/Special:BookSources/9781590593950" class="internal mw-magiclink-isbn">ISBN 978-1590593950</a></li>
+</ul>
+<p>Also, a book dedicated to one of the first Perl 6's virtual machine, Parrot, was published in 2009.</p>
+<ul>
+<li>A. Randal, A. Whitworth. <i>Parrot Developer's Guide: Pir.</i> 2009. <a href="/wiki/Special:BookSources/9780977920129" class="internal mw-magiclink-isbn">ISBN 978-0977920129</a></li>
+</ul>
+<h3><span class="mw-headline" id="Books_published_after_Perl_6_version_1.0">Books published after Perl 6 version 1.0</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Perl_6&amp;action=edit&amp;section=29" title="Edit section: Books published after Perl 6 version 1.0">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>This is the only available book today:</p>
+<ul>
+<li>A. Shitov. <a rel="nofollow" class="external text" href="https://deeptext.media/perl6-at-a-glance"><i>Perl 6 at a Glance.</i></a> 2017. <a href="/wiki/Special:BookSources/9789082156836" class="internal mw-magiclink-isbn">ISBN 978-90-821568-3-6</a></li>
+</ul>
+<h3><span class="mw-headline" id="Books_to_be_published">Books to be published</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Perl_6&amp;action=edit&amp;section=30" title="Edit section: Books to be published">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>There are a few reports from different authors about the new books that they are going to be published soon, all based on the current version 1.0 of Perl 6.</p>
+<ul>
+<li>brian d foy. <a rel="nofollow" class="external text" href="https://www.learningperl6.com"><i>Learning Perl 6</i></a></li>
+<li>Moritz Lenz. <a rel="nofollow" class="external text" href="https://leanpub.com/perl6"><i>Perl 6 by example</i></a></li>
+<li>Laurent Rosenfeld, Allen B. Downey. <a rel="nofollow" class="external text" href="http://shop.oreilly.com/product/0636920065883.do"><i>Think Perl 6</i></a></li>
+</ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Perl_6&amp;action=edit&amp;section=31" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist columns references-column-width" style="-moz-column-width: 30em; -webkit-column-width: 30em; column-width: 30em; list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-camelia-1"><span class="mw-cite-backlink">^ <a href="#cite_ref-camelia_1-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-camelia_1-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><cite class="citation web">Jackson, Joab (23 July 2010). <a rel="nofollow" class="external text" href="http://www.infoworld.com/d/open-source/perl-creator-hints-imminent-release-long-awaited-perl-6-445">"Perl creator hints at imminent release of long-awaited Perl 6"</a>. IDG News Service<span class="reference-accessdate">. Retrieved <span class="nowrap">2015-02-08</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APerl+6&amp;rft.aufirst=Joab&amp;rft.aulast=Jackson&amp;rft.btitle=Perl+creator+hints+at+imminent+release+of+long-awaited+Perl+6&amp;rft.date=2010-07-23&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.infoworld.com%2Fd%2Fopen-source%2Fperl-creator-hints-imminent-release-long-awaited-perl-6-445&amp;rft.pub=IDG+News+Service&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://rakudo.org/2017/01/30/announce-rakudo-star-release-2017-01/">"Announce: Rakudo Star Release 2017.01"</a>. 2017-01-30<span class="reference-accessdate">. Retrieved <span class="nowrap">2017-01-31</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APerl+6&amp;rft.btitle=Announce%3A+Rakudo+Star+Release+2017.01&amp;rft.date=2017-01-30&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Frakudo.org%2F2017%2F01%2F30%2Fannounce-rakudo-star-release-2017-01%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.perlfoundation.org/perl6/index.cgi?glossary_of_terms_and_jargon">"Glossary of Terms and Jargon"</a>. <i>Perl Foundation Perl 6 Wiki</i>. <a href="/wiki/The_Perl_Foundation" class="mw-redirect" title="The Perl Foundation">The Perl Foundation</a>. 2011-02-28<span class="reference-accessdate">. Retrieved <span class="nowrap">2015-02-08</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APerl+6&amp;rft.atitle=Glossary+of+Terms+and+Jargon&amp;rft.date=2011-02-28&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.perlfoundation.org%2Fperl6%2Findex.cgi%3Fglossary_of_terms_and_jargon&amp;rft.jtitle=Perl+Foundation+Perl+6+Wiki&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-Tang2010-4"><span class="mw-cite-backlink">^ <a href="#cite_ref-Tang2010_4-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-Tang2010_4-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><cite class="citation web">唐鳳, a.k.a. <a href="/wiki/Audrey_Tang" title="Audrey Tang">Audrey Tang</a> (2010-04-21). <a rel="nofollow" class="external text" href="http://pugs.blogs.com/pugs/2010/04/how-to-implement-perl-6-in-10.html">"How to Implement Perl 6 in '10"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APerl+6&amp;rft.au=%E5%94%90%E9%B3%B3%2C+a.k.a.+Audrey+Tang&amp;rft.btitle=How+to+Implement+Perl+6+in+%2710&amp;rft.date=2010-04-21&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fpugs.blogs.com%2Fpugs%2F2010%2F04%2Fhow-to-implement-perl-6-in-10.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.perl.org/about.html">"About Perl"</a>. perl.org<span class="reference-accessdate">. Retrieved <span class="nowrap">2013-04-20</span></span>. <q>"Perl" is a family of languages, "Perl 6" is part of the family, but it is a separate language which has its own development team. Its existence has no significant impact on the continuing development of "Perl 5".</q></cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APerl+6&amp;rft.btitle=About+Perl&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.perl.org%2Fabout.html&amp;rft.pub=perl.org&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.perlfoundation.org/#yapcna2">"Perl Foundation"</a>. <q>The Perl6 team will attempt to get a development release of version 1.0 available for Larry's birthday in September and a Version 1.0 release by Christmas. So it looks like Christmas 2015 was the Christmas that we were expecting.</q></cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APerl+6&amp;rft.btitle=Perl+Foundation&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.perlfoundation.org%2F%23yapcna2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://perl6advent.wordpress.com/2015/12/25/christmas-is-here/">"Christmas is here."</a>. <i>Perl 6 Advent Calendar</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2015-12-27</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APerl+6&amp;rft.atitle=Christmas+is+here.&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fperl6advent.wordpress.com%2F2015%2F12%2F25%2Fchristmas-is-here%2F&amp;rft.jtitle=Perl+6+Advent+Calendar&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-firststar-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-firststar_8-0">^</a></b></span> <span class="reference-text"><cite class="citation web">Michaud, Patrick (29 July 2010). <a rel="nofollow" class="external text" href="http://rakudo.org/2010/07/29/rakudo-star-2010-07/">"Announce: Rakudo Star&#160;— a useful, usable, "early adopter" distribution of Perl 6"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2015-02-08</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APerl+6&amp;rft.aufirst=Patrick&amp;rft.aulast=Michaud&amp;rft.btitle=Announce%3A+Rakudo+Star+%94+a+useful%2C+usable%2C+%22early+adopter%22+distribution+of+Perl+6&amp;rft.date=2010-07-29&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Frakudo.org%2F2010%2F07%2F29%2Frakudo-star-2010-07%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-STD-9"><span class="mw-cite-backlink">^ <a href="#cite_ref-STD_9-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-STD_9-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><cite class="citation web">Wall, Larry; et al. (2007). <a rel="nofollow" class="external text" href="https://github.com/perl6/std/blob/master/STD.pm6">"Perl 6 STD"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APerl+6&amp;rft.au=Wall%2C+Larry&amp;rft.btitle=Perl+6+STD&amp;rft.date=2007&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fgithub.com%2Fperl6%2Fstd%2Fblob%2Fmaster%2FSTD.pm6&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-10">^</a></b></span> <span class="reference-text"><cite class="citation book">Federico Biancuzzi; Shane Warden. <i>Masterminds of Programming: Conversations with the Creators of Major Programming Languages</i>. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-0596515171" title="Special:BookSources/978-0596515171">978-0596515171</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APerl+6&amp;rft.au=Federico+Biancuzzi&amp;rft.au=Shane+Warden&amp;rft.btitle=Masterminds+of+Programming%3A+Conversations+with+the+Creators+of+Major+Programming+Languages&amp;rft.genre=book&amp;rft.isbn=978-0596515171&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-11"><span class="mw-cite-backlink"><b><a href="#cite_ref-11">^</a></b></span> <span class="reference-text"><cite class="citation web">Kline, Joe (2000-08-21). <a rel="nofollow" class="external text" href="http://www.perl.com/pub/a/2000/08/tpc4.html">"Report from the Perl Conference"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APerl+6&amp;rft.au=Kline%2C+Joe&amp;rft.btitle=Report+from+the+Perl+Conference&amp;rft.date=2000-08-21&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.perl.com%2Fpub%2Fa%2F2000%2F08%2Ftpc4.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-12"><span class="mw-cite-backlink"><b><a href="#cite_ref-12">^</a></b></span> <span class="reference-text"><cite class="citation web"><a href="/wiki/Larry_Wall" title="Larry Wall">Wall, Larry</a> (2000). <a rel="nofollow" class="external text" href="http://www.perl.com/pub/a/2000/10/23/soto2000.html">"State of the Onion 2000"</a>. O'Reilly Network.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APerl+6&amp;rft.au=Wall%2C+Larry&amp;rft.btitle=State+of+the+Onion+2000&amp;rft.date=2000&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.perl.com%2Fpub%2Fa%2F2000%2F10%2F23%2Fsoto2000.html&amp;rft.pub=O%27Reilly+Network&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-13"><span class="mw-cite-backlink"><b><a href="#cite_ref-13">^</a></b></span> <span class="reference-text"><cite class="citation web">The Perl Foundation (2000). <a rel="nofollow" class="external text" href="http://dev.perl.org/perl6/rfc/meta/">"About Perl 6 RFCs"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APerl+6&amp;rft.au=The+Perl+Foundation&amp;rft.btitle=About+Perl+6+RFCs&amp;rft.date=2000&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fdev.perl.org%2Fperl6%2Frfc%2Fmeta%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-apoc1-14"><span class="mw-cite-backlink"><b><a href="#cite_ref-apoc1_14-0">^</a></b></span> <span class="reference-text"><cite class="citation web">Wall, Larry (2001-04-02). <a rel="nofollow" class="external text" href="http://dev.perl.org/perl6/doc/design/apo/A01.html">"Apocalypse 1: The Ugly, the Bad, and the Good"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APerl+6&amp;rft.au=Wall%2C+Larry&amp;rft.btitle=Apocalypse+1%3A+The+Ugly%2C+the+Bad%2C+and+the+Good&amp;rft.date=2001-04-02&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fdev.perl.org%2Fperl6%2Fdoc%2Fdesign%2Fapo%2FA01.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-syn-15"><span class="mw-cite-backlink"><b><a href="#cite_ref-syn_15-0">^</a></b></span> <span class="reference-text"><cite class="citation web">Larry Wall and the Perl 6 designers (2015). <a rel="nofollow" class="external text" href="http://design.perl6.org/">"Perl 6 Design Documents"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APerl+6&amp;rft.au=Larry+Wall+and+the+Perl+6+designers&amp;rft.btitle=Perl+6+Design+Documents&amp;rft.date=2015&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fdesign.perl6.org%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-exegeses-16"><span class="mw-cite-backlink"><b><a href="#cite_ref-exegeses_16-0">^</a></b></span> <span class="reference-text"><cite class="citation web">The Perl Foundation (2001). <a rel="nofollow" class="external text" href="http://dev.perl.org/perl6/doc/exegesis.html">"Exegeses"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APerl+6&amp;rft.au=The+Perl+Foundation&amp;rft.btitle=Exegeses&amp;rft.date=2001&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fdev.perl.org%2Fperl6%2Fdoc%2Fexegesis.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-lists-17"><span class="mw-cite-backlink"><b><a href="#cite_ref-lists_17-0">^</a></b></span> <span class="reference-text"><cite class="citation web">The Perl Foundation (2002). <a rel="nofollow" class="external text" href="http://dev.perl.org/perl6/lists/">"Perl Development: Mailing Lists"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APerl+6&amp;rft.au=The+Perl+Foundation&amp;rft.btitle=Perl+Development%3A+Mailing+Lists&amp;rft.date=2002&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fdev.perl.org%2Fperl6%2Flists%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-syn01-18"><span class="mw-cite-backlink">^ <a href="#cite_ref-syn01_18-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-syn01_18-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><cite class="citation web">Wall, Larry (2004-08-10). <a rel="nofollow" class="external text" href="http://design.perl6.org/S01.html">"Synopsis 1: Overview"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APerl+6&amp;rft.au=Wall%2C+Larry&amp;rft.btitle=Synopsis+1%3A+Overview&amp;rft.date=2004-08-10&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fdesign.perl6.org%2FS01.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-19"><span class="mw-cite-backlink"><b><a href="#cite_ref-19">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://github.com/rakudo/rakudo/">"rakudo/rakudo - GitHub"</a>. Github.com<span class="reference-accessdate">. Retrieved <span class="nowrap">2013-09-21</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APerl+6&amp;rft.btitle=rakudo%2Frakudo+-+GitHub&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fgithub.com%2Frakudo%2Frakudo%2F&amp;rft.pub=Github.com&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-20"><span class="mw-cite-backlink"><b><a href="#cite_ref-20">^</a></b></span> <span class="reference-text"><cite class="citation web">Michaud, Patrick (2008-01-16). <a rel="nofollow" class="external text" href="http://use.perl.org/~pmichaud/journal/35400">"The compiler formerly known as 'perl6<span style="padding-right:0.2em;">'</span>"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APerl+6&amp;rft.au=Michaud%2C+Patrick&amp;rft.btitle=The+compiler+formerly+known+as+%27perl6%27&amp;rft.date=2008-01-16&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fuse.perl.org%2F~pmichaud%2Fjournal%2F35400&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-21"><span class="mw-cite-backlink"><b><a href="#cite_ref-21">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://perl6.org/compilers/features">"Feature comparison of Perl 6 compilers"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APerl+6&amp;rft.btitle=Feature+comparison+of+Perl+6+compilers&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fperl6.org%2Fcompilers%2Ffeatures&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-22"><span class="mw-cite-backlink"><b><a href="#cite_ref-22">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://darcs.pugscode.org/v6/v6-KindaPerl6/docs/FAQ.pod">"mp6/kp6 FAQ"</a>. Perl 6 development team. 2006.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APerl+6&amp;rft.btitle=mp6%2Fkp6+FAQ&amp;rft.date=2006&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fdarcs.pugscode.org%2Fv6%2Fv6-KindaPerl6%2Fdocs%2FFAQ.pod&amp;rft.pub=Perl+6+development+team&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-23"><span class="mw-cite-backlink"><b><a href="#cite_ref-23">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://github.com/masak/yapsi/blob/master/README">"Yapsi README"</a>. 2011.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APerl+6&amp;rft.btitle=Yapsi+README&amp;rft.date=2011&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fgithub.com%2Fmasak%2Fyapsi%2Fblob%2Fmaster%2FREADME&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-nieczareadme-24"><span class="mw-cite-backlink"><b><a href="#cite_ref-nieczareadme_24-0">^</a></b></span> <span class="reference-text"><cite class="citation web">O'Rear, Stefan (29 November 2011). <a rel="nofollow" class="external text" href="https://github.com/sorear/niecza/blob/master/README.pod">"Niecza README.pod"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2012-01-12</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APerl+6&amp;rft.aufirst=Stefan&amp;rft.aulast=O%27Rear&amp;rft.btitle=Niecza+README.pod&amp;rft.date=2011-11-29&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fgithub.com%2Fsorear%2Fniecza%2Fblob%2Fmaster%2FREADME.pod&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-25"><span class="mw-cite-backlink"><b><a href="#cite_ref-25">^</a></b></span> <span class="reference-text"><cite class="citation web">Wall, Larry (2004). <a rel="nofollow" class="external text" href="http://design.perl6.org/S11.html">"Synopsis 11: Modules"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APerl+6&amp;rft.au=Wall%2C+Larry&amp;rft.btitle=Synopsis+11%3A+Modules&amp;rft.date=2004&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fdesign.perl6.org%2FS11.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-26"><span class="mw-cite-backlink"><b><a href="#cite_ref-26">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://modules.perl6.org/">"Perl 6 Modules Directory"</a>. Modules.perl6.org<span class="reference-accessdate">. Retrieved <span class="nowrap">2013-09-21</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APerl+6&amp;rft.btitle=Perl+6+Modules+Directory&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fmodules.perl6.org%2F&amp;rft.pub=Modules.perl6.org&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-devcom-27"><span class="mw-cite-backlink"><b><a href="#cite_ref-devcom_27-0">^</a></b></span> <span class="reference-text"><cite class="citation web">Lhotsky, Brad (2004-03-10). <a rel="nofollow" class="external text" href="http://www.developer.com/lang/perl/article.php/10940_3323421_2/Thinking-In-Perl.htm">"Thinking In Perl"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APerl+6&amp;rft.au=Lhotsky%2C+Brad&amp;rft.btitle=Thinking+In+Perl&amp;rft.date=2004-03-10&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.developer.com%2Flang%2Fperl%2Farticle.php%2F10940_3323421_2%2FThinking-In-Perl.htm&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-syn2-28"><span class="mw-cite-backlink">^ <a href="#cite_ref-syn2_28-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-syn2_28-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><cite class="citation web">Wall, Larry (2009-05-20). <a rel="nofollow" class="external text" href="http://design.perl6.org/S02.html">"Synopsis 2: Bits and Pieces"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APerl+6&amp;rft.au=Wall%2C+Larry&amp;rft.btitle=Synopsis+2%3A+Bits+and+Pieces&amp;rft.date=2009-05-20&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fdesign.perl6.org%2FS02.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-syn6-29"><span class="mw-cite-backlink">^ <a href="#cite_ref-syn6_29-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-syn6_29-1"><sup><i><b>b</b></i></sup></a> <a href="#cite_ref-syn6_29-2"><sup><i><b>c</b></i></sup></a></span> <span class="reference-text"><cite class="citation web">Wall, Larry (2003-03-21). <a rel="nofollow" class="external text" href="http://design.perl6.org/S06.html">"Synopsis 6: Subroutines"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APerl+6&amp;rft.au=Wall%2C+Larry&amp;rft.btitle=Synopsis+6%3A+Subroutines&amp;rft.date=2003-03-21&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fdesign.perl6.org%2FS06.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-syn04-30"><span class="mw-cite-backlink">^ <a href="#cite_ref-syn04_30-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-syn04_30-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><cite class="citation web">Wall, Larry (2009-05-20). <a rel="nofollow" class="external text" href="http://design.perl6.org/S04.html">"Synopsis 4: Blocks and Statements"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APerl+6&amp;rft.au=Wall%2C+Larry&amp;rft.btitle=Synopsis+4%3A+Blocks+and+Statements&amp;rft.date=2009-05-20&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fdesign.perl6.org%2FS04.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-31"><span class="mw-cite-backlink"><b><a href="#cite_ref-31">^</a></b></span> <span class="reference-text"><cite class="citation web">Wall, Larry (2006-08-18). <a rel="nofollow" class="external text" href="http://design.perl6.org/S12.html">"Synopsis 12: Objects"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APerl+6&amp;rft.au=Wall%2C+Larry&amp;rft.btitle=Synopsis+12%3A+Objects&amp;rft.date=2006-08-18&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fdesign.perl6.org%2FS12.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-32"><span class="mw-cite-backlink"><b><a href="#cite_ref-32">^</a></b></span> <span class="reference-text"><cite class="citation web">The Software Composition Group (2003). <a rel="nofollow" class="external text" href="http://www.iam.unibe.ch/~scg/Research/Traits/">"Traits"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APerl+6&amp;rft.au=The+Software+Composition+Group&amp;rft.btitle=Traits&amp;rft.date=2003&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.iam.unibe.ch%2F~scg%2FResearch%2FTraits%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-33"><span class="mw-cite-backlink"><b><a href="#cite_ref-33">^</a></b></span> <span class="reference-text"><cite class="citation web">Jonathan Worthington (2009). <a rel="nofollow" class="external text" href="https://perl6advent.wordpress.com/2009/12/18/day-18-roles/">"Day 18: Roles"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APerl+6&amp;rft.au=Jonathan+Worthington&amp;rft.btitle=Day+18%3A+Roles&amp;rft.date=2009&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fperl6advent.wordpress.com%2F2009%2F12%2F18%2Fday-18-roles%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-34"><span class="mw-cite-backlink"><b><a href="#cite_ref-34">^</a></b></span> <span class="reference-text"><cite class="citation web"><a href="/wiki/Chromatic_(programmer)" title="Chromatic (programmer)">chromatic</a> (2009). <a rel="nofollow" class="external text" href="http://www.modernperlbooks.com/mt/2009/04/the-why-of-perl-roles.html">"The Why of Perl Roles"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APerl+6&amp;rft.au=chromatic&amp;rft.btitle=The+Why+of+Perl+Roles&amp;rft.date=2009&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.modernperlbooks.com%2Fmt%2F2009%2F04%2Fthe-why-of-perl-roles.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-35"><span class="mw-cite-backlink"><b><a href="#cite_ref-35">^</a></b></span> <span class="reference-text"><cite class="citation web">Parlante, Nick (2000). <a rel="nofollow" class="external text" href="http://cslibrary.stanford.edu/108/EssentialPerl.html#re">"Essential Perl: String Processing with Regular Expressions"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APerl+6&amp;rft.au=Parlante%2C+Nick&amp;rft.btitle=Essential+Perl%3A+String+Processing+with+Regular+Expressions&amp;rft.date=2000&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fcslibrary.stanford.edu%2F108%2FEssentialPerl.html%23re&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-36"><span class="mw-cite-backlink"><b><a href="#cite_ref-36">^</a></b></span> <span class="reference-text"><cite class="citation web">Christiansen, Tom (1996). <a rel="nofollow" class="external text" href="http://www.perl.com/doc/FMTEYEWTK/regexps.html">"PERL5 Regular Expression Description"</a>. <q>Perl's regexps "aren't" -- that is, they aren't "regular" because backreferences per sed and grep are also supported, which renders the language no longer strictly regular</q></cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APerl+6&amp;rft.au=Christiansen%2C+Tom&amp;rft.btitle=PERL5+Regular+Expression+Description&amp;rft.date=1996&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.perl.com%2Fdoc%2FFMTEYEWTK%2Fregexps.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-37"><span class="mw-cite-backlink"><b><a href="#cite_ref-37">^</a></b></span> <span class="reference-text"><cite class="citation web">Wall, Larry (2009-05-20). <a rel="nofollow" class="external text" href="http://design.perl6.org/S05.html">"Synopsis 5: Regexes and Rules"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APerl+6&amp;rft.au=Wall%2C+Larry&amp;rft.btitle=Synopsis+5%3A+Regexes+and+Rules&amp;rft.date=2009-05-20&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fdesign.perl6.org%2FS05.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-38"><span class="mw-cite-backlink"><b><a href="#cite_ref-38">^</a></b></span> <span class="reference-text"><cite class="citation web">Wall, Larry (2002-06-04). <a rel="nofollow" class="external text" href="http://dev.perl.org/perl6/doc/design/apo/A05.html">"Apocalypse 5: Pattern Matching"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APerl+6&amp;rft.au=Wall%2C+Larry&amp;rft.btitle=Apocalypse+5%3A+Pattern+Matching&amp;rft.date=2002-06-04&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fdev.perl.org%2Fperl6%2Fdoc%2Fdesign%2Fapo%2FA05.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-syn9-39"><span class="mw-cite-backlink">^ <a href="#cite_ref-syn9_39-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-syn9_39-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><cite class="citation web">Wall, Larry (2004-09-13). <a rel="nofollow" class="external text" href="http://design.perl6.org/S09.html">"Synopsis 9: Data Structures"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APerl+6&amp;rft.au=Wall%2C+Larry&amp;rft.btitle=Synopsis+9%3A+Data+Structures&amp;rft.date=2004-09-13&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fdesign.perl6.org%2FS09.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-40"><span class="mw-cite-backlink"><b><a href="#cite_ref-40">^</a></b></span> <span class="reference-text"><cite class="citation book">Lamkins, David B. (2004-12-08). <a rel="nofollow" class="external text" href="http://psg.com/~dlamkins/sl/chapter20.html"><i>Successful Lisp: How to Understand and Use Common Lisp</i></a>. bookfix.com.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APerl+6&amp;rft.au=Lamkins%2C+David+B.&amp;rft.btitle=Successful+Lisp%3A+How+to+Understand+and+Use+Common+Lisp&amp;rft.date=2004-12-08&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fpsg.com%2F~dlamkins%2Fsl%2Fchapter20.html&amp;rft.pub=bookfix.com&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-macros-41"><span class="mw-cite-backlink"><b><a href="#cite_ref-macros_41-0">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://design.perl6.org/S06.html#Macros">"Macros"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APerl+6&amp;rft.btitle=Macros&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fdesign.perl6.org%2FS06.html%23Macros&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Perl_6&amp;action=edit&amp;section=32" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<table role="presentation" class="mbox-small plainlinks sistersitebox" style="border:1px solid #aaa;background-color:#f9f9f9">
+<tr>
+<td class="mbox-image"><a href="/wiki/File:Wikibooks-logo-en-noslogan.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/40px-Wikibooks-logo-en-noslogan.svg.png" width="40" height="40" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/60px-Wikibooks-logo-en-noslogan.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/80px-Wikibooks-logo-en-noslogan.svg.png 2x" data-file-width="400" data-file-height="400" /></a></td>
+<td class="mbox-text plainlist">Wikibooks has a book on the topic of: <i><b><a href="https://en.wikibooks.org/wiki/Perl_6_Programming" class="extiw" title="wikibooks:Perl 6 Programming">Perl 6 Programming</a></b></i></td>
+</tr>
+</table>
+<ul>
+<li><span class="official-website"><span class="url"><a rel="nofollow" class="external text" href="http://perl6.org">Official website</a></span></span></li>
+<li><a rel="nofollow" class="external text" href="http://modules.perl6.org">Liste des modules</a></li>
+<li><a rel="nofollow" class="external text" href="http://design.perl6.org/">Official Perl 6 Design Documentation</a>. The Synopses (The official language specification). <i>While the Apocalypses and Exegeses are linked here for reference, note that the Synopses are kept very much more up-to-date and are the primary recommended reference.</i></li>
+<li><a rel="nofollow" class="external text" href="http://dev.perl.org/perl6/rfc">The original community RFCs</a> - <i>For historical interest only.</i></li>
+<li><a rel="nofollow" class="external text" href="http://doc.perl6.org/">Language and library documentation</a></li>
+<li><a rel="nofollow" class="external text" href="http://perlgeek.de/en/article/5-to-6">Perl5 to Perl 6</a> - Moritz Lenz's guide to Perl 6 syntax and features</li>
+<li><a rel="nofollow" class="external text" href="https://web.archive.org/web/20060704213227/http://wiki.osdc.org.il/index.php/Larry_Wall_-_Present_Continuous,_Future_Perfect">Present Continuous, Future Perfect</a> - Larry Wall's talk about Perl 5 and Perl 6 at Open Source Developer Conference 2006 in <a href="/wiki/Netanya" title="Netanya">Netanya</a>, Israel (archived HTML, with links to slides and audio recording)</li>
+<li><a rel="nofollow" class="external text" href="https://deeptext.media/perl6-at-a-glance">Perl 6 at a Glance</a> - The first book about modern Perl 6 (covering version 6.c)</li>
+</ul>
+<p><br /></p>
+<div role="navigation" class="navbox" aria-labelledby="Perl" style="padding:3px">
+<table class="nowraplinks hlist collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:Perl" title="Template:Perl"><abbr title="View this template" style=";;background:none transparent;border:none;">v</abbr></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:Perl" title="Template talk:Perl"><abbr title="Discuss this template" style=";;background:none transparent;border:none;">t</abbr></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:Perl&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;">e</abbr></a></li>
+</ul>
+</div>
+<div id="Perl" style="font-size:114%"><a href="/wiki/Perl" title="Perl">Perl</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">People</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Larry_Wall" title="Larry Wall">Larry Wall</a></li>
+<li><a href="/wiki/Randal_L._Schwartz" title="Randal L. Schwartz">Randal L. Schwartz</a></li>
+<li><a href="/wiki/Damian_Conway" title="Damian Conway">Damian Conway</a></li>
+<li><a href="/wiki/Allison_Randal" title="Allison Randal">Allison Randal</a></li>
+<li><a href="/wiki/Audrey_Tang" title="Audrey Tang">Audrey Tang</a></li>
+<li><a href="/wiki/Sean_M._Burke" title="Sean M. Burke">Sean M. Burke</a></li>
+<li><a href="/wiki/Chromatic_(programmer)" title="Chromatic (programmer)">chromatic</a></li>
+<li><a href="/wiki/Adam_Kennedy_(programmer)" title="Adam Kennedy (programmer)">Adam Kennedy</a></li>
+<li><a href="/wiki/Brian_d_foy" title="Brian d foy">brian d foy</a></li>
+<li><a href="/wiki/Jesse_Vincent" title="Jesse Vincent">Jesse Vincent</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Things</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/CPAN" title="CPAN">CPAN</a></li>
+<li><a href="/wiki/Perl_Foundation" title="Perl Foundation">Perl Foundation</a>
+<ul>
+<li><a href="/wiki/Perl_Mongers" title="Perl Mongers">Perl Mongers</a></li>
+<li><a href="/wiki/PerlMonks" title="PerlMonks">PerlMonks</a></li>
+<li><a href="/wiki/CPAN" title="CPAN">archives</a></li>
+</ul>
+</li>
+<li><a href="/wiki/Perl_module" title="Perl module">module</a></li>
+<li><a href="/wiki/Perl_virtual_machine" title="Perl virtual machine">Perl VM</a></li>
+<li><a href="/wiki/Parrot_virtual_machine" title="Parrot virtual machine">Parrot</a></li>
+<li><a href="/wiki/Yet_Another_Perl_Conference" title="Yet Another Perl Conference">YAPC</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Frameworks</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/BioPerl" title="BioPerl">Bioperl</a></li>
+<li><a href="/wiki/Catalyst_(software)" title="Catalyst (software)">Catalyst</a></li>
+<li><a href="/wiki/Dancer_(software)" title="Dancer (software)">Dancer</a></li>
+<li><a href="/wiki/Perl_DBI" title="Perl DBI">DBI</a></li>
+<li><a href="/wiki/DBIx::Class" title="DBIx::Class">DBIx::Class</a></li>
+<li><a href="/wiki/Library_for_WWW_in_Perl" title="Library for WWW in Perl">LWP</a></li>
+<li><a href="/wiki/Mason_(Perl)" title="Mason (Perl)">Mason</a></li>
+<li><a href="/wiki/Maypole_framework" class="mw-redirect" title="Maypole framework">Maypole</a></li>
+<li><a href="/wiki/Mojolicious" title="Mojolicious">Mojolicious</a></li>
+<li><a href="/wiki/Moose_(Perl)" title="Moose (Perl)">Moose</a></li>
+<li><a href="/wiki/Plack_(software)" title="Plack (software)">Plack</a></li>
+<li><a href="/wiki/PSGI" title="PSGI">PSGI</a></li>
+<li><a href="/wiki/Template_Toolkit" title="Template Toolkit">Template Toolkit</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Software</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Amavis" title="Amavis">Amavis</a></li>
+<li><a href="/wiki/Argus_(monitoring_software)" title="Argus (monitoring software)">Argus</a></li>
+<li><a href="/wiki/Anti-Spam_SMTP_Proxy" title="Anti-Spam SMTP Proxy">@SSP</a></li>
+<li><a href="/wiki/AWStats" title="AWStats">AWStats</a></li>
+<li><a href="/wiki/BackupPC" title="BackupPC">BackupPC</a></li>
+<li><a href="/wiki/Bricolage_(software)" title="Bricolage (software)">Bricolage</a></li>
+<li><a href="/wiki/Bugzilla" title="Bugzilla">Bugzilla</a></li>
+<li><a href="/wiki/Dada_Mail" title="Dada Mail">Dada Mail</a></li>
+<li><a href="/wiki/Ikiwiki" title="Ikiwiki">ikiwiki</a></li>
+<li><a href="/wiki/Make_(software)#Modern_versions" title="Make (software)">Makepp</a></li>
+<li><a href="/wiki/Movable_Type" title="Movable Type">Movable Type</a></li>
+<li><a href="/wiki/Munin_(software)" title="Munin (software)">Munin</a></li>
+<li><a href="/wiki/OTRS" title="OTRS">OTRS</a></li>
+<li><a href="/wiki/SpamAssassin" title="SpamAssassin">SpamAssassin</a></li>
+<li><a href="/wiki/TWiki" title="TWiki">TWiki</a>/<a href="/wiki/Foswiki" title="Foswiki">Foswiki</a></li>
+<li><a href="/wiki/W3Perl" title="W3Perl">W3Perl</a></li>
+<li><a href="/wiki/Webmin" title="Webmin">Webmin</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" colspan="2">
+<div>
+<ul>
+<li><b><a href="/wiki/Outline_of_Perl" title="Outline of Perl">Outline</a></b></li>
+<li><b><a href="/wiki/Category:Perl" title="Category:Perl">Category</a></b></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1204
+Cached time: 20170130232943
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.680 seconds
+Real time usage: 0.779 seconds
+Preprocessor visited node count: 3414/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 77956/2097152 bytes
+Template argument size: 4679/2097152 bytes
+Highest expansion depth: 25/40
+Expensive parser function count: 6/500
+Lua time usage: 0.319/10.000 seconds
+Lua memory usage: 5.66 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  639.603      1 -total
+ 44.40%  283.967      1 Template:Reflist
+ 33.03%  211.265     39 Template:Cite_web
+ 22.10%  141.328      2 Template:Infobox
+ 18.33%  117.238      1 Template:Infobox_programming_language
+ 12.01%   76.785      3 Template:Fix
+ 10.71%   68.506      2 Template:Citation_needed
+  5.98%   38.218      3 Template:Delink
+  5.41%   34.631      5 Template:Category_handler
+  5.28%   33.756      1 Template:Infobox_software/simple
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:1146638-0!*!0!!en!4!* and timestamp 20170130233048 and revision id 762827540
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Perl_6&amp;oldid=762827540">https://en.wikipedia.org/w/index.php?title=Perl_6&amp;oldid=762827540</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Perl_6" title="Category:Perl 6">Perl 6</a></li><li><a href="/wiki/Category:Cross-platform_software" title="Category:Cross-platform software">Cross-platform software</a></li><li><a href="/wiki/Category:Free_compilers_and_interpreters" title="Category:Free compilers and interpreters">Free compilers and interpreters</a></li><li><a href="/wiki/Category:High-level_programming_languages" title="Category:High-level programming languages">High-level programming languages</a></li><li><a href="/wiki/Category:Scripting_languages" title="Category:Scripting languages">Scripting languages</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Pages_using_deprecated_image_syntax" title="Category:Pages using deprecated image syntax">Pages using deprecated image syntax</a></li><li><a href="/wiki/Category:All_articles_with_unsourced_statements" title="Category:All articles with unsourced statements">All articles with unsourced statements</a></li><li><a href="/wiki/Category:Articles_with_unsourced_statements_from_May_2009" title="Category:Articles with unsourced statements from May 2009">Articles with unsourced statements from May 2009</a></li><li><a href="/wiki/Category:Articles_with_unsourced_statements_from_November_2009" title="Category:Articles with unsourced statements from November 2009">Articles with unsourced statements from November 2009</a></li><li><a href="/wiki/Category:Articles_containing_potentially_dated_statements_from_2015" title="Category:Articles containing potentially dated statements from 2015">Articles containing potentially dated statements from 2015</a></li><li><a href="/wiki/Category:All_articles_containing_potentially_dated_statements" title="Category:All articles containing potentially dated statements">All articles containing potentially dated statements</a></li><li><a href="/wiki/Category:All_accuracy_disputes" title="Category:All accuracy disputes">All accuracy disputes</a></li><li><a href="/wiki/Category:Articles_with_disputed_statements_from_October_2015" title="Category:Articles with disputed statements from October 2015">Articles with disputed statements from October 2015</a></li><li><a href="/wiki/Category:Articles_with_example_Perl_code" title="Category:Articles with example Perl code">Articles with example Perl code</a></li><li><a href="/wiki/Category:Pages_using_ISBN_magic_links" title="Category:Pages using ISBN magic links">Pages using ISBN magic links</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Perl+6" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Perl+6" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/Perl_6"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:Perl_6"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/Perl_6" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=Perl_6&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Perl_6&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Perl_6" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Perl_6" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Perl_6&amp;oldid=762827540" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Perl_6&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q2052676" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Perl_6&amp;id=762827540" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Perl+6">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Perl+6&amp;returnto=Perl+6&amp;oldid=762827540&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Perl_6&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-bg"><a href="https://bg.wikipedia.org/wiki/Perl_6" title="Perl 6 – Bulgarian" lang="bg" hreflang="bg" class="interlanguage-link-target">Български</a></li><li class="interlanguage-link interwiki-cs"><a href="https://cs.wikipedia.org/wiki/Perl_6" title="Perl 6 – Czech" lang="cs" hreflang="cs" class="interlanguage-link-target">Čeština</a></li><li class="interlanguage-link interwiki-es"><a href="https://es.wikipedia.org/wiki/Perl_6" title="Perl 6 – Spanish" lang="es" hreflang="es" class="interlanguage-link-target">Español</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/Perl_6" title="Perl 6 – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-ko"><a href="https://ko.wikipedia.org/wiki/%ED%8E%84_6" title="펄 6 – Korean" lang="ko" hreflang="ko" class="interlanguage-link-target">한국어</a></li><li class="interlanguage-link interwiki-nl"><a href="https://nl.wikipedia.org/wiki/Perl_6" title="Perl 6 – Dutch" lang="nl" hreflang="nl" class="interlanguage-link-target">Nederlands</a></li><li class="interlanguage-link interwiki-ja"><a href="https://ja.wikipedia.org/wiki/Perl_6" title="Perl 6 – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target">日本語</a></li><li class="interlanguage-link interwiki-no"><a href="https://no.wikipedia.org/wiki/Perl_6" title="Perl 6 – Norwegian" lang="no" hreflang="no" class="interlanguage-link-target">Norsk bokmål</a></li><li class="interlanguage-link interwiki-ru"><a href="https://ru.wikipedia.org/wiki/Perl_6" title="Perl 6 – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li><li class="interlanguage-link interwiki-fi"><a href="https://fi.wikipedia.org/wiki/Perl_6" title="Perl 6 – Finnish" lang="fi" hreflang="fi" class="interlanguage-link-target">Suomi</a></li><li class="interlanguage-link interwiki-uk"><a href="https://uk.wikipedia.org/wiki/Perl_6" title="Perl 6 – Ukrainian" lang="uk" hreflang="uk" class="interlanguage-link-target">Українська</a></li><li class="interlanguage-link interwiki-zh"><a href="https://zh.wikipedia.org/wiki/Perl_6" title="Perl 6 – Chinese" lang="zh" hreflang="zh" class="interlanguage-link-target">中文</a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q2052676#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 30 January 2017, at 23:30.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Perl_6&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.680","walltime":"0.779","ppvisitednodes":{"value":3414,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":77956,"limit":2097152},"templateargumentsize":{"value":4679,"limit":2097152},"expansiondepth":{"value":25,"limit":40},"expensivefunctioncount":{"value":6,"limit":500},"entityaccesscount":{"value":1,"limit":400},"timingprofile":["100.00%  639.603      1 -total"," 44.40%  283.967      1 Template:Reflist"," 33.03%  211.265     39 Template:Cite_web"," 22.10%  141.328      2 Template:Infobox"," 18.33%  117.238      1 Template:Infobox_programming_language"," 12.01%   76.785      3 Template:Fix"," 10.71%   68.506      2 Template:Citation_needed","  5.98%   38.218      3 Template:Delink","  5.41%   34.631      5 Template:Category_handler","  5.28%   33.756      1 Template:Infobox_software/simple"]},"scribunto":{"limitreport-timeusage":{"value":"0.319","limit":"10.000"},"limitreport-memusage":{"value":5934950,"limit":52428800}},"cachereport":{"origin":"mw1204","timestamp":"20170130232943","ttl":2592000,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":56,"wgHostname":"mw1247"});});</script>
+	</body>
+</html>

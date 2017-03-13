@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Clean (programming language) - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Clean_(programming_language)","wgTitle":"Clean (programming language)","wgCurRevisionId":761498141,"wgRevisionId":761498141,"wgArticleId":161878,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Pages with syntax highlighting errors","Pages using deprecated image syntax","All articles with unsourced statements","Articles with unsourced statements from January 2017","Functional languages","Term-rewriting programming languages","Free compilers and interpreters","Cross-platform free software"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Clean_(programming_language)","wgRelevantArticleId":161878,"wgRequestId":"WIuZHApAMF0AAEdVZ6IAAACY","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":true},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q377986","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.cite.styles":"ready","ext.pygments":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.legacy.wikibits","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.pygments%2CwikimediaBadges%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.29.0-wmf.9"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Clean_(programming_language)"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Clean_(programming_language)&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Clean_(programming_language)&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Clean_(programming_language)"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Clean_programming_language rootpage-Clean_programming_language skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Clean (programming language)</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><script>function mfTempOpenSection(id){var block=document.getElementById("mf-section-"+id);block.className+=" open-block";block.previousSibling.className+=" open-block";}</script><table class="infobox vevent" style="width:22em">
+<caption class="summary">Clean</caption>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/File:Cleanlang_logo.jpg" class="image"><img alt="Cleanlang logo.jpg" src="//upload.wikimedia.org/wikipedia/en/8/88/Cleanlang_logo.jpg" width="250" height="145" data-file-width="200" data-file-height="116" /></a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Programming_paradigm" title="Programming paradigm">Paradigm</a></th>
+<td><a href="/wiki/Functional_programming" title="Functional programming">functional</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_design" title="Software design">Designed&#160;by</a></th>
+<td>Software Technology Research Group of <a href="/wiki/Radboud_University_Nijmegen" title="Radboud University Nijmegen">Radboud University Nijmegen</a></td>
+</tr>
+<tr>
+<th scope="row">First&#160;appeared</th>
+<td>1987<span class="noprint">; 30&#160;years ago</span><span style="display:none">&#160;(<span class="bday dtstart published updated">1987</span>)</span></td>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Software_release_life_cycle" title="Software release life cycle">Stable release</a></th>
+<td>
+<div style="margin:0px;">2.4 / December&#160;23, 2011<span class="noprint">; 5 years ago</span><span style="display:none">&#160;(<span class="bday dtstart published updated">2011-12-23</span>)</span></div>
+</td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Type_system" title="Type system">Typing discipline</a></th>
+<td><a href="/wiki/Strong_typing" class="mw-redirect" title="Strong typing">strong</a>, <a href="/wiki/Static_typing" class="mw-redirect" title="Static typing">static</a>, <a href="/wiki/Dynamic_typing" class="mw-redirect" title="Dynamic typing">dynamic</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Operating_system" title="Operating system">OS</a></th>
+<td><a href="/wiki/Cross-platform" title="Cross-platform">Cross-platform</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_license" title="Software license">License</a></th>
+<td><a href="/wiki/GNU_LGPL" class="mw-redirect" title="GNU LGPL">GNU LGPL</a>, <a href="/wiki/Simplified_BSD_License" class="mw-redirect" title="Simplified BSD License">Simplified BSD</a>, <a href="/wiki/Commercial_software" title="Commercial software">commercial software</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Filename_extension" title="Filename extension">Filename extensions</a></th>
+<td>.icl, .dcl, .abc, .sapl</td>
+</tr>
+<tr>
+<th scope="row">Website</th>
+<td><span class="url"><a rel="nofollow" class="external text" href="http://clean.cs.ru.nl">clean<wbr />.cs<wbr />.ru<wbr />.nl</a></span></td>
+</tr>
+<tr>
+<th colspan="2" style="text-align:center;background-color: #eee;">Influenced by</th>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/w/index.php?title=Lean_(programming_language)&amp;action=edit&amp;redlink=1" class="new" title="Lean (programming language) (page does not exist)">Lean</a>, <a href="/wiki/Miranda_(programming_language)" title="Miranda (programming language)">Miranda</a>, <a href="/wiki/Haskell_(programming_language)" title="Haskell (programming language)">Haskell</a></td>
+</tr>
+<tr>
+<th colspan="2" style="text-align:center;background-color: #eee;">Influenced</th>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/Haskell_(programming_language)" title="Haskell (programming language)">Haskell</a></td>
+</tr>
+</table>
+<p><b>Clean</b> is a <a href="/wiki/General-purpose_programming_language" title="General-purpose programming language">general-purpose</a> <a href="/wiki/Purely_functional_language" class="mw-redirect" title="Purely functional language">purely functional</a> <a href="/wiki/Computer_programming_language" class="mw-redirect" title="Computer programming language">computer programming language</a>. For much of the language's active development history it was called <b>Concurrent Clean</b>, but this was dropped at some point.</p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Features"><span class="tocnumber">1</span> <span class="toctext">Features</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Examples"><span class="tocnumber">2</span> <span class="toctext">Examples</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#How_Clean_works"><span class="tocnumber">3</span> <span class="toctext">How Clean works</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Compiling"><span class="tocnumber">4</span> <span class="toctext">Compiling</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="#The_ABC-Machine"><span class="tocnumber">4.1</span> <span class="toctext">The ABC-Machine</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="#Platforms"><span class="tocnumber">5</span> <span class="toctext">Platforms</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#License"><span class="tocnumber">6</span> <span class="toctext">License</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#Versus_Haskell"><span class="tocnumber">7</span> <span class="toctext">Versus Haskell</span></a>
+<ul>
+<li class="toclevel-2 tocsection-9"><a href="#Speed"><span class="tocnumber">7.1</span> <span class="toctext">Speed</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Syntactic_differences"><span class="tocnumber">7.2</span> <span class="toctext">Syntactic differences</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-11"><a href="#Community"><span class="tocnumber">8</span> <span class="toctext">Community</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="#References"><span class="tocnumber">9</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="#External_links"><span class="tocnumber">10</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Features">Features</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Clean_(programming_language)&amp;action=edit&amp;section=1" title="Edit section: Features">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The language Clean first appeared in 1987 and is still being further developed.<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">[1]</a></sup> It shares many properties with <a href="/wiki/Haskell_(programming_language)" title="Haskell (programming language)">Haskell</a>: <a href="/wiki/Referential_transparency_(computer_science)" class="mw-redirect" title="Referential transparency (computer science)">referential transparency</a>, <a href="/wiki/List_comprehension" title="List comprehension">list comprehension</a>, <a href="/wiki/Guard_(computing)" class="mw-redirect" title="Guard (computing)">guards</a>, <a href="/wiki/Garbage_collection_(computer_science)" title="Garbage collection (computer science)">garbage collection</a>, <a href="/wiki/Higher_order_functions" class="mw-redirect" title="Higher order functions">higher order functions</a>, <a href="/wiki/Currying" title="Currying">currying</a> and <a href="/wiki/Lazy_evaluation" title="Lazy evaluation">lazy evaluation</a>.</p>
+<p>On Windows, an <a href="/wiki/Integrated_development_environment" title="Integrated development environment">integrated development environment</a> (IDE) is included in the Clean distribution.</p>
+<p>Clean's method for dealing with mutable state and I/O is done through a <a href="/wiki/Uniqueness_type" title="Uniqueness type">uniqueness typing system</a>, in contrast to Haskell's use of <a href="/wiki/Monads_in_functional_programming" class="mw-redirect" title="Monads in functional programming">monads</a>. The compiler takes advantage of the uniqueness type system to generate more efficient code, because it knows that anything with a uniqueness type can only be used once. Therefore, a unique value can be <a href="/wiki/Destructive_update" class="mw-redirect" title="Destructive update">changed in place</a>.<sup id="cite_ref-CleanHaskellGuide_2-0" class="reference"><a href="#cite_note-CleanHaskellGuide-2">[2]</a></sup></p>
+<h2><span class="mw-headline" id="Examples">Examples</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Clean_(programming_language)&amp;action=edit&amp;section=2" title="Edit section: Examples">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p><a href="/wiki/Hello_world_program" class="mw-redirect" title="Hello world program">Hello world</a>:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+ module hello
+ Start :: {#Char}
+ Start = "Hello, world!"
+</pre></div>
+<p><a href="/wiki/Factorial" title="Factorial">Factorial</a>:</p>
+<table>
+<tr valign="bottom">
+<td>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+  module factorial
+  import StdEnv
+  fac 0 = 1
+  fac n = n * fac (n-1)
+
+  // find the factorial of 10
+  Start = fac 10
+</pre></div>
+</td>
+<td>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+  module factorial2
+  import StdEnv
+  fac 0 = 1
+  fac n = prod [1..n] // The product of the numbers 1 to n
+
+  // find the factorial of 6
+  Start = fac 6
+</pre></div>
+</td>
+</tr>
+</table>
+<p><a href="/wiki/Fibonacci_sequence" class="mw-redirect" title="Fibonacci sequence">Fibonacci sequence</a>:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+  module fibonacci
+  fib 0 = 0
+  fib 1 = 1
+  fib n = fib (n - 2) + fib (n - 1) 
+  Start = fib 7
+</pre></div>
+<p><a href="/wiki/Infix_notation" title="Infix notation">Infix</a> operator:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+  (^) infixr 8 :: Int Int -&gt; Int
+  (^) x 0 = 1
+  (^) x n = x * x ^ (n-1)
+</pre></div>
+<p>The type declaration states that the function is a right associative infix operator with priority 8: this states that <code>x*x^(n-1)</code> is equivalent to <code>x*(x^(n-1))</code> as opposed to <code>(x*x)^(n-1)</code>. This operator is pre-defined in <a href="/w/index.php?title=StdEnv&amp;action=edit&amp;redlink=1" class="new" title="StdEnv (page does not exist)">StdEnv</a>, the Clean standard library.</p>
+<h2><span class="mw-headline" id="How_Clean_works">How Clean works</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Clean_(programming_language)&amp;action=edit&amp;section=3" title="Edit section: How Clean works">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Computation is based on <a href="/wiki/Graph_rewriting" title="Graph rewriting">graph rewriting</a> and <a href="/wiki/Graph_reduction" title="Graph reduction">reduction</a>. Constants such as numbers are graphs and functions are graph rewriting formulas. This, combined with compilation to native code, makes Clean programs run relatively fast, even with high abstraction.<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">[3]</a></sup></p>
+<h2><span class="mw-headline" id="Compiling">Compiling</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Clean_(programming_language)&amp;action=edit&amp;section=4" title="Edit section: Compiling">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ol>
+<li>Source files (.icl) and definition files (.dcl) are translated into Core Clean, a basic variant of Clean, in Clean.</li>
+<li>Core clean is converted into Clean's platform-independent bytecode (.abc), implemented in <a href="/wiki/C_(programming_language)" title="C (programming language)">C</a> and Clean.</li>
+<li>Bytecode is converted to object code (.o) using <a href="/wiki/C_(programming_language)" title="C (programming language)">C</a>.</li>
+<li>Object code is linked with other files in the module and the runtime system and converted into a normal executable in Clean.</li>
+</ol>
+<p>Earlier Clean system versions were written completely in <a href="/wiki/C_(programming_language)" title="C (programming language)">C</a>, thus avoiding bootstrapping issues.</p>
+<p>The <a href="/w/index.php?title=SAPL&amp;action=edit&amp;redlink=1" class="new" title="SAPL (page does not exist)">SAPL</a> system compiles Core Clean to JavaScript and does not use ABC code.</p>
+<h3><span class="mw-headline" id="The_ABC-Machine">The ABC-Machine</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Clean_(programming_language)&amp;action=edit&amp;section=5" title="Edit section: The ABC-Machine">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>To close the gap between Core Clean, a high-level functional language, and <a href="/wiki/Machine_code" title="Machine code">machine code</a>, the ABC-machine is used. This is an <a href="/wiki/Imperative_programming" title="Imperative programming">imperative</a> abstract <a href="/wiki/Graph_rewriting" title="Graph rewriting">graph rewriting</a> machine.<sup id="cite_ref-4" class="reference"><a href="#cite_note-4">[4]</a></sup> Generating concrete machine code from abstract ABC code is a relatively small step, so by using the ABC-machine it is much easier to target multiple architectures for code generation.</p>
+<p>The ABC-machine has a uncommon <a href="/wiki/Memory_address#Memory_models" title="Memory address">memory model</a>. It has a graph store to hold the Clean graph that is being rewritten. The A(rgument)-stack holds arguments that refer to nodes in the graph store. This way, a node's arguments can be rewritten, which is needed for pattern matching. The B(asic value)-stack holds basic values (integers, characters, reals, etc.). While not strictly necessary (all these elements could be nodes in the graph store as well), using a separate stack is much more efficient. The C(ontrol)-stack holds return addresses for flow control.</p>
+<p>The <a href="/wiki/Runtime_system" title="Runtime system">runtime system</a>, which is linked into every executable, has a <code>print</code> rule which prints a node to the output channel. When a program is executed, the <code>Start</code> node is printed. For this, it has to be rewritten to root normal form, after which its children are rewritten to root normal form, etc., until the whole node is printed.</p>
+<h2><span class="mw-headline" id="Platforms">Platforms</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Clean_(programming_language)&amp;action=edit&amp;section=6" title="Edit section: Platforms">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Clean is available for <a href="/wiki/Microsoft_Windows" title="Microsoft Windows">Microsoft Windows</a>, <a href="/wiki/Apple_Macintosh" class="mw-redirect" title="Apple Macintosh">Apple Macintosh</a>, <a href="/wiki/Solaris_(operating_system)" title="Solaris (operating system)">Solaris</a> and <a href="/wiki/Linux" title="Linux">Linux</a>.</p>
+<p>Some libraries are not available on all platforms, like <a href="/w/index.php?title=ObjectIO&amp;action=edit&amp;redlink=1" class="new" title="ObjectIO (page does not exist)">ObjectIO</a> which is only available on Windows and Mac. The feature to write dynamics to files is only available on Windows.</p>
+<h2><span class="mw-headline" id="License">License</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Clean_(programming_language)&amp;action=edit&amp;section=7" title="Edit section: License">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Clean is <a href="/wiki/Dual_license" class="mw-redirect" title="Dual license">dual licensed</a>: it is available under the terms of the <a href="/wiki/GNU_Lesser_General_Public_License" title="GNU Lesser General Public License">GNU LGPL</a>, and also under a proprietary license. For the libraries, runtime system and examples, not the GNU LGPL but the <a href="/wiki/Simplified_BSD_License" class="mw-redirect" title="Simplified BSD License">Simplified BSD License</a> applies.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (January 2017)">citation needed</span></a></i>]</sup></p>
+<h2><span class="mw-headline" id="Versus_Haskell">Versus Haskell</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Clean_(programming_language)&amp;action=edit&amp;section=8" title="Edit section: Versus Haskell">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="Speed">Speed</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Clean_(programming_language)&amp;action=edit&amp;section=9" title="Edit section: Speed">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>A benchmark from 2008 shows that Clean is faster than Haskell in most cases:<sup id="cite_ref-5" class="reference"><a href="#cite_note-5">[5]</a></sup></p>
+<table class="wikitable sortable">
+<caption>Speed comparison of five compilers (time in seconds)</caption>
+<tr>
+<th>Language</th>
+<th>Pri</th>
+<th>Sym</th>
+<th>Inter</th>
+<th>Fib</th>
+<th>Match</th>
+<th>Ham</th>
+<th>Twi</th>
+<th>Qns</th>
+<th>Kns</th>
+<th>Parse</th>
+<th>Plog</th>
+<th>Qsort</th>
+<th>Isort</th>
+<th>Msort</th>
+</tr>
+<tr>
+<td>SAPL Int</td>
+<td>6.1</td>
+<td>17.6</td>
+<td>7.8</td>
+<td>7.3</td>
+<td>8.5</td>
+<td>15.7</td>
+<td>7.9</td>
+<td>6.5</td>
+<td>47.1</td>
+<td>4.4</td>
+<td>4.0</td>
+<td>16.4</td>
+<td>9.4</td>
+<td>4.4</td>
+</tr>
+<tr>
+<td>SAPL Bas</td>
+<td>4.3</td>
+<td>13.2</td>
+<td>6.0</td>
+<td>6.5</td>
+<td>5.9</td>
+<td>9.8</td>
+<td>5.6</td>
+<td>5.1</td>
+<td>38.3</td>
+<td>3.8</td>
+<td>2.6</td>
+<td>10.1</td>
+<td>6.7</td>
+<td>2.6</td>
+</tr>
+<tr>
+<td>GHC</td>
+<td>2.0</td>
+<td>1.7</td>
+<td>8.2</td>
+<td>4.0</td>
+<td>4.1</td>
+<td>8.4</td>
+<td>6.6</td>
+<td>3.7</td>
+<td>17.7</td>
+<td>2.8</td>
+<td>0.7</td>
+<td>4.4</td>
+<td>2.3</td>
+<td>3.2</td>
+</tr>
+<tr>
+<td>GHC -O</td>
+<td>0.9</td>
+<td>1.5</td>
+<td>1.8</td>
+<td>0.2</td>
+<td>1.0</td>
+<td>4.0</td>
+<td>0.1</td>
+<td>0.4</td>
+<td>5.7</td>
+<td>1.9</td>
+<td>0.4</td>
+<td>3.2</td>
+<td>1.9</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>Clean</td>
+<td>0.9</td>
+<td>0.8</td>
+<td>0.8</td>
+<td>0.2</td>
+<td>1.4</td>
+<td>2.4</td>
+<td>2.4</td>
+<td>0.4</td>
+<td>3.0</td>
+<td>4.5</td>
+<td>0.4</td>
+<td>1.6</td>
+<td>1.0</td>
+<td>0.6</td>
+</tr>
+</table>
+<p>As can be seen, Clean outruns Haskell (GHC) on almost all test cases. Only parser combinators are faster in Haskell. Using GHC -O we get some optimisations, making pattern matching and higher order functions faster than in Clean as well. In most cases, however, Clean outperforms GHC -O or at least isn't slower.</p>
+<p>The programs used were:</p>
+<ul>
+<li>Pri: Prime sieve; <code>primes&#160;!! 5000</code></li>
+<li>Sym: Prime sieve using <a href="/wiki/Peano" class="mw-redirect" title="Peano">Peano</a> numbers; <code>sprimes&#160;!! p280</code></li>
+<li>Inter: A small <a href="/w/index.php?title=SAPL&amp;action=edit&amp;redlink=1" class="new" title="SAPL (page does not exist)">SAPL</a> interpreter, calculating the 100th prime number using a sieve</li>
+<li>Fib: Fibonacci; the naive <a href="/wiki/Fibonacci" title="Fibonacci">Fibonacci</a> function, calculating <code>fib 35</code></li>
+<li>Match: Nested <a href="/wiki/Pattern_matching" title="Pattern matching">pattern matching</a> (5 levels deep), repeated 2000000 times</li>
+<li>Ham: Hamming; the generation of the list of <a href="/wiki/Hamming_number" class="mw-redirect" title="Hamming number">Hamming numbers</a> and taking the 1000th number, 10000 times</li>
+<li>Twi: Twice; a <a href="/wiki/Higher_order_function" class="mw-redirect" title="Higher order function">higher order function</a> (<code>twice twice twice twice (add 1) 0</code>), repeated 400 times</li>
+<li>Qns: The <a href="/wiki/Queens_problem" class="mw-redirect" title="Queens problem">Queens problem</a>; number of placements of 11 queens on an 11 × 11 chess board</li>
+<li>Kns: Knights; finding all <a href="/wiki/Knight_tour" class="mw-redirect" title="Knight tour">knight tours</a> on a 5 × 5 chess board</li>
+<li>Parse: <a href="/wiki/Parser_combinator" title="Parser combinator">Parser combinators</a>; a parser for <a href="/wiki/Prolog" title="Prolog">Prolog</a> parsing a 17000 lines Prolog program</li>
+<li>Plog: Prolog; a small <a href="/wiki/Prolog" title="Prolog">Prolog</a> interpreter based on unification only (no arithmetic operations), calculating all descendants in a six generations family tree</li>
+<li>Sort: <a href="/wiki/Quicksort" title="Quicksort">Quicksort</a> (20000 elements), <a href="/wiki/Merge_sort" title="Merge sort">Merge sort</a> (200000 elements) and <a href="/wiki/Insertion_sort" title="Insertion sort">Insertion sort</a> (10000 elements)</li>
+</ul>
+<h3><span class="mw-headline" id="Syntactic_differences">Syntactic differences</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Clean_(programming_language)&amp;action=edit&amp;section=10" title="Edit section: Syntactic differences">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The syntax of Clean is very similar to Haskell, with some notable differences:<sup id="cite_ref-CleanHaskellGuide_2-1" class="reference"><a href="#cite_note-CleanHaskellGuide-2">[2]</a></sup></p>
+<table class="wikitable" border="1">
+<tr>
+<th>Haskell</th>
+<th>Clean</th>
+<th>Remarks</th>
+</tr>
+<tr>
+<td>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="p">[</span> <span class="n">x</span> <span class="o">|</span> <span class="n">x</span> <span class="ow">&lt;-</span> <span class="p">[</span><span class="mi">1</span><span class="o">..</span><span class="mi">10</span><span class="p">]</span> <span class="p">,</span> <span class="n">isOdd</span> <span class="n">x</span><span class="p">]</span>
+</pre></div>
+</td>
+<td>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+[ x \\ x &lt;- [1..10] | isOdd x]
+</pre></div>
+</td>
+<td><a href="/wiki/List_comprehension" title="List comprehension">list comprehension</a></td>
+</tr>
+<tr>
+<td>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="nf">x</span><span class="kt">:</span><span class="n">xs</span>
+</pre></div>
+</td>
+<td>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+[x:xs]
+</pre></div>
+</td>
+<td><a href="/wiki/Cons" title="Cons">cons</a> operator</td>
+</tr>
+<tr>
+<td>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="kr">data</span> <span class="kt">Tree</span> <span class="n">a</span>
+  <span class="ow">=</span> <span class="kt">Empty</span>
+  <span class="o">|</span> <span class="kt">Node</span> <span class="p">(</span><span class="kt">Tree</span> <span class="n">a</span><span class="p">)</span> <span class="n">a</span> <span class="p">(</span><span class="kt">Tree</span> <span class="n">a</span><span class="p">)</span>
+</pre></div>
+</td>
+<td>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+:: Tree a
+  = Empty
+  | Node (Tree a) a (Tree a)
+</pre></div>
+</td>
+<td><a href="/wiki/Algebraic_data_type" title="Algebraic data type">algebraic data type</a></td>
+</tr>
+<tr>
+<td>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="p">(</span><span class="kt">Eq</span> <span class="n">a</span><span class="p">,</span> <span class="kt">Eq</span> <span class="n">b</span><span class="p">)</span> <span class="ow">=&gt;</span> <span class="o">...</span>
+</pre></div>
+</td>
+<td>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+... | Eq a &amp; Eq b
+</pre></div>
+</td>
+<td>class assertions and contexts</td>
+</tr>
+<tr>
+<td>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="nf">fun</span> <span class="n">t</span><span class="o">@</span><span class="p">(</span><span class="kt">Node</span> <span class="n">l</span> <span class="n">x</span> <span class="n">r</span><span class="p">)</span> <span class="ow">=</span> <span class="o">...</span>
+</pre></div>
+</td>
+<td>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+fun t=:(Node l x r) = ...
+</pre></div>
+</td>
+<td>as-patterns</td>
+</tr>
+<tr>
+<td>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="kr">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">10</span> <span class="kr">then</span> <span class="mi">10</span> <span class="kr">else</span> <span class="n">x</span>
+</pre></div>
+</td>
+<td>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+if (x &gt; 10) 10 x
+</pre></div>
+</td>
+<td>if</td>
+</tr>
+</table>
+<p>In general, Haskell has introduced more syntactic sugar than Clean.</p>
+<h2><span class="mw-headline" id="Community">Community</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Clean_(programming_language)&amp;action=edit&amp;section=11" title="Edit section: Community">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li>IRC channel: #cleanlang on freenode</li>
+</ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Clean_(programming_language)&amp;action=edit&amp;section=12" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://wiki.clean.cs.ru.nl/FAQ">"FAQ - Clean"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AClean+%28programming+language%29&amp;rft.btitle=FAQ+-+Clean&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwiki.clean.cs.ru.nl%2FFAQ&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-CleanHaskellGuide-2"><span class="mw-cite-backlink">^ <a href="#cite_ref-CleanHaskellGuide_2-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-CleanHaskellGuide_2-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><a rel="nofollow" class="external free" href="ftp://ftp.cs.ru.nl/pub/Clean/papers/2007/achp2007-CleanHaskellQuickGuide.pdf">ftp://ftp.cs.ru.nl/pub/Clean/papers/2007/achp2007-CleanHaskellQuickGuide.pdf</a></span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://shootout.alioth.debian.org/u32/which-programming-languages-are-fastest.php?python=on&amp;jruby=on&amp;yarv=on&amp;perl=on&amp;php=on&amp;ruby=on">Boxplot Summary | Ubuntu&#160;: Intel Q6600 Computer Language Benchmarks Game</a></span></li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text"><cite class="citation book">Koopman, Pieter (December 10, 1990). <i>Functional Programs as Executable Specifications</i>. Meppel: Krips Repro. p.&#160;35. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/90-9003689-X" title="Special:BookSources/90-9003689-X">90-9003689-X</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AClean+%28programming+language%29&amp;rft.aufirst=Pieter&amp;rft.aulast=Koopman&amp;rft.btitle=Functional+Programs+as+Executable+Specifications&amp;rft.date=1990-12-10&amp;rft.genre=book&amp;rft.isbn=90-9003689-X&amp;rft.pages=35&amp;rft.place=Meppel&amp;rft.pub=Krips+Repro&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text"><cite class="citation journal">Jansen, Jan Martin; Koopman, Pieter; Plasmeijer, Rinus (2008). <a rel="nofollow" class="external text" href="ftp://ftp.cs.ru.nl/pub/Clean/papers/2008/janj08-CEFP07-InterpretationToCompilation.pdf">"From Interpretation to Compilation"</a> <span style="font-size:85%;">(PDF)</span><span class="reference-accessdate">. Retrieved <span class="nowrap">2016-05-21</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AClean+%28programming+language%29&amp;rft.atitle=From+Interpretation+to+Compilation&amp;rft.aufirst=Jan+Martin&amp;rft.au=Koopman%2C+Pieter&amp;rft.aulast=Jansen&amp;rft.au=Plasmeijer%2C+Rinus&amp;rft.date=2008&amp;rft.genre=article&amp;rft_id=ftp%3A%2F%2Fftp.cs.ru.nl%2Fpub%2FClean%2Fpapers%2F2008%2Fjanj08-CEFP07-InterpretationToCompilation.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Clean_(programming_language)&amp;action=edit&amp;section=13" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://wiki.clean.cs.ru.nl/">Clean Wiki</a></li>
+<li><a rel="nofollow" class="external text" href="http://cloogle.org">Cloogle: Clean function search engine</a></li>
+</ul>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1235
+Cached time: 20170127131041
+Cache expiry: 86400
+Dynamic content: true
+CPU time usage: 0.168 seconds
+Real time usage: 0.214 seconds
+Preprocessor visited node count: 1155/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 15993/2097152 bytes
+Template argument size: 2361/2097152 bytes
+Highest expansion depth: 25/40
+Expensive parser function count: 3/500
+Lua time usage: 0.071/10.000 seconds
+Lua memory usage: 2.45 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  173.961      1 -total
+ 48.62%   84.580      2 Template:Infobox
+ 38.41%   66.826      1 Template:Infobox_programming_language
+ 31.87%   55.449      1 Template:Reflist
+ 25.20%   43.836      1 Template:Cn
+ 22.00%   38.271      1 Template:Fix
+ 17.99%   31.304      1 Template:Cite_web
+ 14.52%   25.254      1 Template:Infobox_software/simple
+ 11.78%   20.496      2 Template:Category_handler
+ 11.50%   20.011      2 Template:Start_date_and_age
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:161878-0!*!0!!en!4!* and timestamp 20170127131041 and revision id 761498141
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Clean_(programming_language)&amp;oldid=761498141">https://en.wikipedia.org/w/index.php?title=Clean_(programming_language)&amp;oldid=761498141</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Functional_languages" title="Category:Functional languages">Functional languages</a></li><li><a href="/wiki/Category:Term-rewriting_programming_languages" title="Category:Term-rewriting programming languages">Term-rewriting programming languages</a></li><li><a href="/wiki/Category:Free_compilers_and_interpreters" title="Category:Free compilers and interpreters">Free compilers and interpreters</a></li><li><a href="/wiki/Category:Cross-platform_free_software" title="Category:Cross-platform free software">Cross-platform free software</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Pages_with_syntax_highlighting_errors" title="Category:Pages with syntax highlighting errors">Pages with syntax highlighting errors</a></li><li><a href="/wiki/Category:Pages_using_deprecated_image_syntax" title="Category:Pages using deprecated image syntax">Pages using deprecated image syntax</a></li><li><a href="/wiki/Category:All_articles_with_unsourced_statements" title="Category:All articles with unsourced statements">All articles with unsourced statements</a></li><li><a href="/wiki/Category:Articles_with_unsourced_statements_from_January_2017" title="Category:Articles with unsourced statements from January 2017">Articles with unsourced statements from January 2017</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Clean+%28programming+language%29" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Clean+%28programming+language%29" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/Clean_(programming_language)"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:Clean_(programming_language)"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/Clean_(programming_language)" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=Clean_(programming_language)&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Clean_(programming_language)&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Clean_(programming_language)" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Clean_(programming_language)" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Clean_(programming_language)&amp;oldid=761498141" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Clean_(programming_language)&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q377986" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Clean_%28programming_language%29&amp;id=761498141" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Clean+%28programming+language%29">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Clean+%28programming+language%29&amp;returnto=Clean+%28programming+language%29&amp;oldid=761498141&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Clean_(programming_language)&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-ca"><a href="https://ca.wikipedia.org/wiki/Clean" title="Clean – Catalan" lang="ca" hreflang="ca" class="interlanguage-link-target">Català</a></li><li class="interlanguage-link interwiki-cs"><a href="https://cs.wikipedia.org/wiki/Clean" title="Clean – Czech" lang="cs" hreflang="cs" class="interlanguage-link-target">Čeština</a></li><li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/Clean_(Programmiersprache)" title="Clean (Programmiersprache) – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-nl"><a href="https://nl.wikipedia.org/wiki/Clean_(programmeertaal)" title="Clean (programmeertaal) – Dutch" lang="nl" hreflang="nl" class="interlanguage-link-target">Nederlands</a></li><li class="interlanguage-link interwiki-ja"><a href="https://ja.wikipedia.org/wiki/Clean" title="Clean – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target">日本語</a></li><li class="interlanguage-link interwiki-pt"><a href="https://pt.wikipedia.org/wiki/Clean" title="Clean – Portuguese" lang="pt" hreflang="pt" class="interlanguage-link-target">Português</a></li><li class="interlanguage-link interwiki-ru"><a href="https://ru.wikipedia.org/wiki/Clean" title="Clean – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li><li class="interlanguage-link interwiki-fi"><a href="https://fi.wikipedia.org/wiki/Clean_(ohjelmointikieli)" title="Clean (ohjelmointikieli) – Finnish" lang="fi" hreflang="fi" class="interlanguage-link-target">Suomi</a></li><li class="interlanguage-link interwiki-tg"><a href="https://tg.wikipedia.org/wiki/Clean" title="Clean – Tajik" lang="tg" hreflang="tg" class="interlanguage-link-target">Тоҷикӣ</a></li><li class="interlanguage-link interwiki-zh"><a href="https://zh.wikipedia.org/wiki/Concurrent_Clean" title="Concurrent Clean – Chinese" lang="zh" hreflang="zh" class="interlanguage-link-target">中文</a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q377986#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 23 January 2017, at 07:46.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Clean_(programming_language)&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.168","walltime":"0.214","ppvisitednodes":{"value":1155,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":15993,"limit":2097152},"templateargumentsize":{"value":2361,"limit":2097152},"expansiondepth":{"value":25,"limit":40},"expensivefunctioncount":{"value":3,"limit":500},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  173.961      1 -total"," 48.62%   84.580      2 Template:Infobox"," 38.41%   66.826      1 Template:Infobox_programming_language"," 31.87%   55.449      1 Template:Reflist"," 25.20%   43.836      1 Template:Cn"," 22.00%   38.271      1 Template:Fix"," 17.99%   31.304      1 Template:Cite_web"," 14.52%   25.254      1 Template:Infobox_software/simple"," 11.78%   20.496      2 Template:Category_handler"," 11.50%   20.011      2 Template:Start_date_and_age"]},"scribunto":{"limitreport-timeusage":{"value":"0.071","limit":"10.000"},"limitreport-memusage":{"value":2573100,"limit":52428800}},"cachereport":{"origin":"mw1235","timestamp":"20170127131041","ttl":86400,"transientcontent":true}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":55,"wgHostname":"mw1258"});});</script>
+	</body>
+</html>

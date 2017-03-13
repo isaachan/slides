@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>newLISP - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"NewLISP","wgTitle":"NewLISP","wgCurRevisionId":730036035,"wgRevisionId":730036035,"wgArticleId":1964813,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["All articles lacking reliable references","Articles lacking reliable references from October 2013","Articles with topics of unclear notability from March 2013","All articles with topics of unclear notability","Articles needing additional references from March 2013","All articles needing additional references","Pages using deprecated image syntax","All articles with unsourced statements","Articles with unsourced statements from October 2013","Articles with unsourced statements from March 2013","Dynamically typed programming languages","Functional languages","Lisp programming language family","Scripting languages"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"NewLISP","wgRelevantArticleId":1964813,"wgRequestId":"WIntDApAMFEAAFVa@psAAAAL","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":true},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q827233","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.cite.styles":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.legacy.wikibits","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.29.0-wmf.8"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/NewLISP"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=NewLISP&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=NewLISP&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/NewLISP"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-NewLISP rootpage-NewLISP skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">newLISP</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><script>function mfTempOpenSection(id){var block=document.getElementById("mf-section-"+id);block.className+=" open-block";block.previousSibling.className+=" open-block";}</script><table class="plainlinks metadata ambox ambox-content ambox-multiple_issues compact-ambox" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ambox_important.svg/40px-Ambox_important.svg.png" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ambox_important.svg/60px-Ambox_important.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ambox_important.svg/80px-Ambox_important.svg.png 2x" data-file-width="40" data-file-height="40" /></div>
+</td>
+<td class="mbox-text">
+<div class="mw-collapsible" style="width:95%; margin: 0.2em 0;"><span class="mbox-text-span"><b>This article has multiple issues.</b> Please help <b><a class="external text" href="//en.wikipedia.org/w/index.php?title=NewLISP&amp;action=edit">improve it</a></b> or discuss these issues on the <b><a href="/wiki/Talk:NewLISP" title="Talk:NewLISP">talk page</a></b>. <small><i>(<a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove these template messages</a>)</i></small></span>
+<div class="mw-collapsible-content" style="margin-top: 0.3em;">
+<table class="plainlinks metadata ambox ambox-content ambox-Notability" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ambox_important.svg/40px-Ambox_important.svg.png" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ambox_important.svg/60px-Ambox_important.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ambox_important.svg/80px-Ambox_important.svg.png 2x" data-file-width="40" data-file-height="40" /></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">The topic of this article <b>may not meet Wikipedia's <a href="/wiki/Wikipedia:Notability_(organizations_and_companies)#Products_and_services" title="Wikipedia:Notability (organizations and companies)">notability guidelines for products and services</a></b>. <span class="hide-when-compact">Please help to establish notability by citing <a href="/wiki/Wikipedia:Identifying_reliable_sources" title="Wikipedia:Identifying reliable sources">reliable secondary sources</a> that are <a href="/wiki/Wikipedia:Independent_sources" class="mw-redirect" title="Wikipedia:Independent sources">independent</a> of the topic and provide significant coverage of it beyond its mere trivial mention. If notability cannot be established, the article is likely to be <a href="/wiki/Wikipedia:Merging" title="Wikipedia:Merging">merged</a>, <a href="/wiki/Wikipedia:Redirect" title="Wikipedia:Redirect">redirected</a>, or <a href="/wiki/Wikipedia:Deletion_policy" title="Wikipedia:Deletion policy">deleted</a>.<br />
+<small><span class="plainlinks"><i>Find sources:</i>&#160;<a rel="nofollow" class="external text" href="//www.google.com/search?as_eq=wikipedia&amp;q=%22NewLISP%22&amp;num=50">"NewLISP"</a>&#160;–&#160;<a rel="nofollow" class="external text" href="//www.google.com/search?q=%22NewLISP%22&amp;tbm=nws">news</a>&#160;<b>·</b> <a rel="nofollow" class="external text" href="//www.google.com/search?&amp;q=%22NewLISP%22+site:news.google.com/newspapers&amp;source=newspapers">newspapers</a>&#160;<b>·</b> <a rel="nofollow" class="external text" href="//www.google.com/search?tbs=bks:1&amp;q=%22NewLISP%22">books</a>&#160;<b>·</b> <a rel="nofollow" class="external text" href="//scholar.google.com/scholar?q=%22NewLISP%22">scholar</a>&#160;<b>·</b> <a rel="nofollow" class="external text" href="http://www.jstor.org/action/doBasicSearch?Query=%22NewLISP%22&amp;acc=on&amp;wc=on">JSTOR</a>&#160;<b>·</b> <a rel="nofollow" class="external text" href="//www.google.com/images?safe=off&amp;tbm=isch&amp;tbs=sur:fmc&amp;q=%22NewLISP%22+-site:wikipedia.org+-site:wikimedia.org">free images</a></span></small></span> <small><i>(March 2013)</i></small> <small class="hide-when-compact"><i>(<a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove this template message</a>)</i></small></span></td>
+</tr>
+</table>
+<table class="plainlinks metadata ambox ambox-content ambox-Refimprove" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><a href="/wiki/File:Question_book-new.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" width="50" height="39" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/75px-Question_book-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/100px-Question_book-new.svg.png 2x" data-file-width="512" data-file-height="399" /></a></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">This article <b>needs additional citations for <a href="/wiki/Wikipedia:Verifiability" title="Wikipedia:Verifiability">verification</a></b>. <span class="hide-when-compact">Please help <a class="external text" href="//en.wikipedia.org/w/index.php?title=NewLISP&amp;action=edit">improve this article</a> by <a href="/wiki/Help:Introduction_to_referencing_with_Wiki_Markup/1" title="Help:Introduction to referencing with Wiki Markup/1">adding citations to reliable sources</a>. Unsourced material may be challenged and removed.</span> <small><i>(March 2013)</i></small> <small class="hide-when-compact"><i>(<a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove this template message</a>)</i></small></span></td>
+</tr>
+</table>
+</div>
+</div>
+<small class="hide-when-compact"><i>(<a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove this template message</a>)</i></small></td>
+</tr>
+</table>
+<table class="infobox vevent" style="width:22em">
+<caption class="summary">newLISP</caption>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/File:Nl_logo_libel_side_color_240X100.png" class="image"><img alt="Nl logo libel side color 240X100.png" src="//upload.wikimedia.org/wikipedia/en/e/e7/Nl_logo_libel_side_color_240X100.png" width="240" height="100" data-file-width="240" data-file-height="100" /></a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Programming_paradigm" title="Programming paradigm">Paradigm</a></th>
+<td>Multi-paradigm</td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_design" title="Software design">Designed&#160;by</a></th>
+<td>Lutz Mueller</td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_developer" title="Software developer">Developer</a></th>
+<td class="organiser">Lutz Mueller</td>
+</tr>
+<tr>
+<th scope="row">First&#160;appeared</th>
+<td>1991</td>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Software_release_life_cycle" title="Software release life cycle">Stable release</a></th>
+<td>
+<div style="margin:0px;">10.7.0 / January&#160;21, 2016<span class="noprint">; 11 months ago</span><span style="display:none">&#160;(<span class="bday dtstart published updated">2016-01-21</span>)</span></div>
+</td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Software_release_life_cycle" title="Software release life cycle">Preview release</a></th>
+<td>
+<div style="margin:0px;">10.6.4 / September&#160;24, 2015<span class="noprint">; 15 months ago</span><span style="display:none">&#160;(<span class="bday dtstart published updated">2015-09-24</span>)</span></div>
+</td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Operating_system" title="Operating system">OS</a></th>
+<td><a href="/wiki/Cross-platform" title="Cross-platform">Cross-platform</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_license" title="Software license">License</a></th>
+<td><a href="/wiki/GNU_General_Public_License" title="GNU General Public License">GNU General Public License</a></td>
+</tr>
+<tr>
+<th scope="row">Website</th>
+<td><span class="url"><a rel="nofollow" class="external text" href="http://www.newlisp.org/">www<wbr />.newlisp<wbr />.org</a></span></td>
+</tr>
+</table>
+<p><b>newLISP</b> is an <a href="/wiki/Open_source" class="mw-redirect" title="Open source">open source</a> <a href="/wiki/Scripting_language" title="Scripting language">scripting language</a> in the <a href="/wiki/Lisp_(programming_language)" title="Lisp (programming language)">Lisp</a> family of programming languages developed by Lutz Mueller<sup id="cite_ref-Interview_1-0" class="reference"><a href="#cite_note-Interview-1">[1]</a></sup> and released under the <a href="/wiki/GNU_General_Public_License" title="GNU General Public License">GNU General Public License</a>.</p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#History"><span class="tocnumber">1</span> <span class="toctext">History</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Philosophy"><span class="tocnumber">2</span> <span class="toctext">Philosophy</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Language_features"><span class="tocnumber">3</span> <span class="toctext">Language features</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="#Contexts"><span class="tocnumber">3.1</span> <span class="toctext">Contexts</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Scoping"><span class="tocnumber">3.2</span> <span class="toctext">Scoping</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Memory_management"><span class="tocnumber">3.3</span> <span class="toctext">Memory management</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#GUI_options"><span class="tocnumber">3.4</span> <span class="toctext">GUI options</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Stand-alone_binaries"><span class="tocnumber">3.5</span> <span class="toctext">Stand-alone binaries</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Interaction_with_shared_libraries"><span class="tocnumber">3.6</span> <span class="toctext">Interaction with shared libraries</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-10"><a href="#References"><span class="tocnumber">4</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#External_links"><span class="tocnumber">5</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="History">History</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=NewLISP&amp;action=edit&amp;section=1" title="Edit section: History">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>newLISP design is influenced by <a href="/wiki/Common_Lisp" title="Common Lisp">Common Lisp</a> and <a href="/wiki/Scheme_(programming_language)" title="Scheme (programming language)">Scheme</a>, other <a href="/wiki/Lisp_(programming_language)" title="Lisp (programming language)">Lisp</a> dialects, and other languages like <a href="/wiki/Pascal_(programming_language)" title="Pascal (programming language)">Pascal</a> and <a href="/wiki/C_(programming_language)" title="C (programming language)">C</a>.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (October 2013)">citation needed</span></a></i>]</sup> newLISP originated in 1991 and was originally developed on a <a href="/wiki/Sun-4" title="Sun-4">Sun-4</a> workstation.<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">[2]</a></sup> It later moved to <a href="/wiki/Windows_3.0" title="Windows 3.0">Windows 3.0</a>, where version 1.3 was released on <a href="/wiki/CompuServe" title="CompuServe">CompuServe</a> around 1993, then became available as a Windows GUI graphics-capable application and a <a href="/wiki/DOS" title="DOS">DOS</a> console application (both 16-bit). In 1995, with the release of <a href="/wiki/Windows_95" title="Windows 95">Windows 95</a>, newLISP moved to 32-bit.</p>
+<p>In April 1999, newLISP was ported to Linux; some of its core algorithms were rewritten, and all Windows-specific code eliminated. newLISP was released as an <a href="/wiki/Open_Source" class="mw-redirect" title="Open Source">Open Source</a> project licensed under the <a href="/wiki/GNU_General_Public_License" title="GNU General Public License">GPL</a>, and development on Windows stopped after version 6.0.25. During the first half of 2001, newLISP was ported back to Windows on the <a href="/wiki/Cygwin" title="Cygwin">Cygwin</a> platform without graphics capabilities. A multi-platform <a href="/wiki/Tcl" title="Tcl">Tcl/Tk</a> frontend named newLISP-tk was released around version 6.3.0, during the second half of 2001. 64-bit precision was introduced for integer arithmetic and for some operations on files in version 9.0 in 2006.</p>
+<p>Since the release of 6.5 in mid-2002, development has been very active, and many new features have been added.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (March 2013)">citation needed</span></a></i>]</sup></p>
+<h2><span class="mw-headline" id="Philosophy">Philosophy</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=NewLISP&amp;action=edit&amp;section=2" title="Edit section: Philosophy">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>newLISP attempts to provide a fast, powerful, cross-platform, full-featured scripting version of the Lisp programming language while using only a modest amount of system resources such as disk space and memory.<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">[3]</a></sup></p>
+<p>It provides Lisp features such as lists, symbol processing, function mapping, anonymous functions (lambda expressions), <a href="/wiki/S-expression" title="S-expression">s-expressions</a> (excluding improper lists), and macros. It also provides the functions expected of a modern scripting language, including support for <a href="/wiki/Regular_expressions" class="mw-redirect" title="Regular expressions">regular expressions</a>, <a href="/wiki/XML" title="XML">XML</a>, Unicode (<a href="/wiki/UTF-8" title="UTF-8">UTF-8</a>), <a href="/wiki/Transmission_Control_Protocol" title="Transmission Control Protocol">TCP</a>/<a href="/wiki/Internet_Protocol" title="Internet Protocol">IP</a> and <a href="/wiki/User_Datagram_Protocol" title="User Datagram Protocol">UDP</a> networking, <a href="/wiki/Matrix_(mathematics)" title="Matrix (mathematics)">matrix</a> and array processing, advanced math, statistics and <a href="/wiki/Bayesian_inference" title="Bayesian inference">Bayesian</a> statistical analysis, <a href="/wiki/Mathematical_finance" title="Mathematical finance">financial mathematics</a>, and distributed computing support.</p>
+<p>newLISP runs on the <a href="/wiki/Berkeley_Software_Distribution" title="Berkeley Software Distribution">BSD</a>, <a href="/wiki/Linux" title="Linux">Linux</a>, <a href="/wiki/Microsoft_Windows" title="Microsoft Windows">Windows</a>, <a href="/wiki/Mac_OS_X" class="mw-redirect" title="Mac OS X">Mac OS X</a>, and <a href="/wiki/Solaris_(operating_system)" title="Solaris (operating system)">Solaris</a> operating systems. It provides support for <a href="/wiki/MYSQL" class="mw-redirect" title="MYSQL">MYSQL</a>, <a href="/wiki/SQLite" title="SQLite">SQLite</a> and <a href="/wiki/ODBC" class="mw-redirect" title="ODBC">ODBC</a> database access, <a href="/wiki/Common_Gateway_Interface" title="Common Gateway Interface">CGI</a>, <a href="/wiki/Simple_Mail_Transfer_Protocol" title="Simple Mail Transfer Protocol">SMTP</a>, <a href="/wiki/POP3" class="mw-redirect" title="POP3">POP3</a>, <a href="/wiki/File_Transfer_Protocol" title="File Transfer Protocol">FTP</a> and <a href="/wiki/XML-RPC" title="XML-RPC">XML-RPC</a>. It can run in server mode as a <a href="/wiki/Daemon_(computer_software)" class="mw-redirect" title="Daemon (computer software)">daemon</a>.</p>
+<h2><span class="mw-headline" id="Language_features">Language features</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=NewLISP&amp;action=edit&amp;section=3" title="Edit section: Language features">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<table class="plainlinks metadata ambox ambox-content ambox-Unreferenced" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><a href="/wiki/File:Question_book-new.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" width="50" height="39" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/75px-Question_book-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/100px-Question_book-new.svg.png 2x" data-file-width="512" data-file-height="399" /></a></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">This section <b>does not <a href="/wiki/Wikipedia:Citing_sources" title="Wikipedia:Citing sources">cite</a> any <a href="/wiki/Wikipedia:Verifiability" title="Wikipedia:Verifiability">sources</a></b>. <span class="hide-when-compact">Please help <a class="external text" href="//en.wikipedia.org/w/index.php?title=NewLISP&amp;action=edit">improve this section</a> by <a href="/wiki/Help:Introduction_to_referencing_with_Wiki_Markup/1" title="Help:Introduction to referencing with Wiki Markup/1">adding citations to reliable sources</a>. Unsourced material may be challenged and <a href="/wiki/Wikipedia:Verifiability#Burden_of_evidence" title="Wikipedia:Verifiability">removed</a>.</span> <small><i>(March 2013)</i></small> <small class="hide-when-compact"><i>(<a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove this template message</a>)</i></small></span></td>
+</tr>
+</table>
+<h3><span class="mw-headline" id="Contexts">Contexts</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=NewLISP&amp;action=edit&amp;section=4" title="Edit section: Contexts">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>newLISP supports <a href="/wiki/Namespace_(programming)" class="mw-redirect" title="Namespace (programming)">namespaces</a> called <i>contexts</i>, which can be assigned to variables and passed to functions, but which are associated with globally unique symbols, limiting their usage as first-class objects. A <a href="/wiki/Prototype-based_programming" title="Prototype-based programming">prototype-based</a> object-oriented style of programming is possible in newLISP, using contexts as prototypes for construction of objects. Variables inside contexts do not interfere with variables of the same name in other contexts, but inside a context, variables behave according to the rules of dynamic <a href="/wiki/Scope_(programming)" class="mw-redirect" title="Scope (programming)">scoping</a>.</p>
+<h3><span class="mw-headline" id="Scoping">Scoping</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=NewLISP&amp;action=edit&amp;section=5" title="Edit section: Scoping">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>newLISP uses dynamic <a href="/wiki/Scope_(programming)" class="mw-redirect" title="Scope (programming)">scoping</a>. When a function is called, that function can see all variables of its caller, its caller's caller, and so on, within the same context or name space. It supports both explicitly and implicitly defined local dynamic variables that shadow variables with the same name from the outer environment, so accidental use or change of the variables from caller environment is prevented. Parameter variables of the called function automatically shadow the caller's variable environment. Globally, variables can be grouped in separate namespaces.</p>
+<h3><span class="mw-headline" id="Memory_management">Memory management</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=NewLISP&amp;action=edit&amp;section=6" title="Edit section: Memory management">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>newLISP uses a method of automatic memory management different from traditional <a href="/wiki/Garbage_collection_(computer_science)" title="Garbage collection (computer science)">garbage collection</a> schemes, called One Reference Only (ORO) Memory Management. Each variable is referenced only by its context, and each context is referenced globally.</p>
+<p>Sharing of sub-objects among objects, cyclic structures, or multiple variables pointing to the same object are not supported in newLISP. Objects are copied when stored in data structures or passed to functions, except for particular built-in functions. The exceptions are symbols and contexts, which are shared instead of copied, and therefore can be used for indirection. Symbols and contexts are globally named and are deleted explicitly; deleting a symbol or context scans all other objects to replace references to it with <code>nil</code>.</p>
+<h3><span class="mw-headline" id="GUI_options">GUI options</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=NewLISP&amp;action=edit&amp;section=7" title="Edit section: GUI options">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>newLISP-GS (Gui Server) is a Java-based <a href="/wiki/TCP/IP" class="mw-redirect" title="TCP/IP">TCP/IP</a> server providing a graphical programming interface. A newLISP-GS based development environment is included in newLISP binary distributions, but <a href="/wiki/GTK-server" title="GTK-server">GTK-server</a>, <a href="/wiki/OpenGL" title="OpenGL">OpenGL</a> and <a href="/wiki/Tcl/Tk" class="mw-redirect" title="Tcl/Tk">Tcl/Tk</a>-based programming interfaces are also available.</p>
+<h3><span class="mw-headline" id="Stand-alone_binaries">Stand-alone binaries</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=NewLISP&amp;action=edit&amp;section=8" title="Edit section: Stand-alone binaries">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>It is possible to construct executable files for deployment using any version of newLISP. These files are self-contained and require no installation.</p>
+<h3><span class="mw-headline" id="Interaction_with_shared_libraries">Interaction with shared libraries</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=NewLISP&amp;action=edit&amp;section=9" title="Edit section: Interaction with shared libraries">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>newLISP has an import function, which allows importing functions from <a href="/wiki/Dynamic-link_library" title="Dynamic-link library">DLLs</a> (Dynamic Link Libraries) on <a href="/wiki/Win32" class="mw-redirect" title="Win32">Win32</a> or <a href="/wiki/Shared_library" class="mw-redirect" title="Shared library">shared libraries</a> on Linux/UNIX.</p>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=NewLISP&amp;action=edit&amp;section=10" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ol class="references">
+<li id="cite_note-Interview-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-Interview_1-0">^</a></b></span> <span class="reference-text"><cite class="citation news">Walling, Rob. <a rel="nofollow" class="external text" href="http://www.softwarebyrob.com/2007/04/19/interview-with-lutz-mueller-creator-of-newlisp/">"An Interview with Lutz Mueller, Creator of newLISP"</a>. <i>Softwarebyrob.com</i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANewLISP&amp;rft.atitle=An+Interview+with+Lutz+Mueller%2C+Creator+of+newLISP&amp;rft.aufirst=Rob&amp;rft.aulast=Walling&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fwww.softwarebyrob.com%2F2007%2F04%2F19%2Finterview-with-lutz-mueller-creator-of-newlisp%2F&amp;rft.jtitle=Softwarebyrob.com&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span><sup class="noprint Inline-Template" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Identifying_reliable_sources" title="Wikipedia:Identifying reliable sources"><span title="The material near this tag may rely on an unreliable source. (October 2013)">unreliable source?</span></a></i>]</sup></span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.donlucio.net/index.cgi?page=Projects">newLISP – a LISP Scripting Language</a></span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.osnews.com/story/20728/A_Look_at_newLISP">A look at newLISP</a></span></li>
+</ol>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=NewLISP&amp;action=edit&amp;section=11" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<table role="presentation" class="mbox-small plainlinks sistersitebox" style="border:1px solid #aaa;background-color:#f9f9f9">
+<tr>
+<td class="mbox-image"><a href="/wiki/File:Wikibooks-logo-en-noslogan.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/40px-Wikibooks-logo-en-noslogan.svg.png" width="40" height="40" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/60px-Wikibooks-logo-en-noslogan.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/80px-Wikibooks-logo-en-noslogan.svg.png 2x" data-file-width="400" data-file-height="400" /></a></td>
+<td class="mbox-text plainlist">Wikibooks has a book on the topic of: <i><b><a href="https://en.wikibooks.org/wiki/Introduction_to_newLISP" class="extiw" title="wikibooks:Introduction to newLISP">Introduction to newLISP</a></b></i></td>
+</tr>
+</table>
+<ul>
+<li><span class="official-website"><span class="url"><a rel="nofollow" class="external text" href="http://www.newlisp.org/">Official website</a></span></span></li>
+<li><a rel="nofollow" class="external text" href="http://dragonfly.apptruck.de/">Dragonfly – a newLISP web framework</a></li>
+<li><a rel="nofollow" class="external text" href="http://newlisponrockets.com/rockets-main.lsp">newLISP on Rockets web framework</a></li>
+<li><a rel="nofollow" class="external text" href="http://rosettacode.org/wiki/Category:NewLISP">Rosetta code, newLISP code</a></li>
+</ul>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1239
+Cached time: 20170119215628
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.196 seconds
+Real time usage: 0.274 seconds
+Preprocessor visited node count: 1702/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 56825/2097152 bytes
+Template argument size: 12273/2097152 bytes
+Highest expansion depth: 25/40
+Expensive parser function count: 7/500
+Lua time usage: 0.104/10.000 seconds
+Lua memory usage: 3.49 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  241.950      1 -total
+ 42.09%  101.847      4 Template:Ambox
+ 32.72%   79.177      2 Template:Infobox
+ 28.88%   69.882      1 Template:Multiple_issues
+ 23.03%   55.718      1 Template:Infobox_programming_language
+ 15.89%   38.448      3 Template:Fix
+ 14.77%   35.726      1 Template:Notability
+ 12.91%   31.242      2 Template:Citation_needed
+ 12.37%   29.931      1 Template:Infobox_software/simple
+ 10.36%   25.064      3 Template:Delink
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:1964813-0!*!0!!en!4!* and timestamp 20170119215628 and revision id 730036035
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=NewLISP&amp;oldid=730036035">https://en.wikipedia.org/w/index.php?title=NewLISP&amp;oldid=730036035</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Dynamically_typed_programming_languages" title="Category:Dynamically typed programming languages">Dynamically typed programming languages</a></li><li><a href="/wiki/Category:Functional_languages" title="Category:Functional languages">Functional languages</a></li><li><a href="/wiki/Category:Lisp_programming_language_family" title="Category:Lisp programming language family">Lisp programming language family</a></li><li><a href="/wiki/Category:Scripting_languages" title="Category:Scripting languages">Scripting languages</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:All_articles_lacking_reliable_references" title="Category:All articles lacking reliable references">All articles lacking reliable references</a></li><li><a href="/wiki/Category:Articles_lacking_reliable_references_from_October_2013" title="Category:Articles lacking reliable references from October 2013">Articles lacking reliable references from October 2013</a></li><li><a href="/wiki/Category:Articles_with_topics_of_unclear_notability_from_March_2013" title="Category:Articles with topics of unclear notability from March 2013">Articles with topics of unclear notability from March 2013</a></li><li><a href="/wiki/Category:All_articles_with_topics_of_unclear_notability" title="Category:All articles with topics of unclear notability">All articles with topics of unclear notability</a></li><li><a href="/wiki/Category:Articles_needing_additional_references_from_March_2013" title="Category:Articles needing additional references from March 2013">Articles needing additional references from March 2013</a></li><li><a href="/wiki/Category:All_articles_needing_additional_references" title="Category:All articles needing additional references">All articles needing additional references</a></li><li><a href="/wiki/Category:Pages_using_deprecated_image_syntax" title="Category:Pages using deprecated image syntax">Pages using deprecated image syntax</a></li><li><a href="/wiki/Category:All_articles_with_unsourced_statements" title="Category:All articles with unsourced statements">All articles with unsourced statements</a></li><li><a href="/wiki/Category:Articles_with_unsourced_statements_from_October_2013" title="Category:Articles with unsourced statements from October 2013">Articles with unsourced statements from October 2013</a></li><li><a href="/wiki/Category:Articles_with_unsourced_statements_from_March_2013" title="Category:Articles with unsourced statements from March 2013">Articles with unsourced statements from March 2013</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=NewLISP" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=NewLISP" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/NewLISP"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:NewLISP"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/NewLISP" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=NewLISP&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=NewLISP&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/NewLISP" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/NewLISP" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=NewLISP&amp;oldid=730036035" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=NewLISP&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q827233" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=NewLISP&amp;id=730036035" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=NewLISP">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=NewLISP&amp;returnto=NewLISP&amp;oldid=730036035&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=NewLISP&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-ar"><a href="https://ar.wikipedia.org/wiki/%D9%86%D9%8A%D9%88_%D9%84%D9%8A%D8%B3%D8%A8" title="نيو ليسب – Arabic" lang="ar" hreflang="ar" class="interlanguage-link-target">العربية</a></li><li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/NewLISP" title="NewLISP – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-it"><a href="https://it.wikipedia.org/wiki/NewLISP" title="NewLISP – Italian" lang="it" hreflang="it" class="interlanguage-link-target">Italiano</a></li><li class="interlanguage-link interwiki-ru"><a href="https://ru.wikipedia.org/wiki/NewLISP" title="NewLISP – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q827233#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 16 July 2016, at 08:43.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=NewLISP&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.196","walltime":"0.274","ppvisitednodes":{"value":1702,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":56825,"limit":2097152},"templateargumentsize":{"value":12273,"limit":2097152},"expansiondepth":{"value":25,"limit":40},"expensivefunctioncount":{"value":7,"limit":500},"entityaccesscount":{"value":1,"limit":400},"timingprofile":["100.00%  241.950      1 -total"," 42.09%  101.847      4 Template:Ambox"," 32.72%   79.177      2 Template:Infobox"," 28.88%   69.882      1 Template:Multiple_issues"," 23.03%   55.718      1 Template:Infobox_programming_language"," 15.89%   38.448      3 Template:Fix"," 14.77%   35.726      1 Template:Notability"," 12.91%   31.242      2 Template:Citation_needed"," 12.37%   29.931      1 Template:Infobox_software/simple"," 10.36%   25.064      3 Template:Delink"]},"scribunto":{"limitreport-timeusage":{"value":"0.104","limit":"10.000"},"limitreport-memusage":{"value":3655259,"limit":52428800}},"cachereport":{"origin":"mw1239","timestamp":"20170119215628","ttl":2592000,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":52,"wgHostname":"mw1246"});});</script>
+	</body>
+</html>

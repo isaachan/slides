@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Factor (programming language) - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Factor_(programming_language)","wgTitle":"Factor (programming language)","wgCurRevisionId":763055358,"wgRevisionId":763055358,"wgArticleId":891398,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Pages using deprecated image syntax","Concatenative programming languages","Function-level languages","Stack-oriented programming languages","Programming languages created in 2003","Extensible syntax programming languages"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Factor_(programming_language)","wgRelevantArticleId":891398,"wgRequestId":"WJTZlgpAAEMAAeLm8nkAAABH","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":true},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q1391724","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.cite.styles":"ready","ext.pygments":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.legacy.wikibits","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.pygments%2CwikimediaBadges%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.29.0-wmf.10"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/en/f/ff/NewFactorLogo.png"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Factor_(programming_language)"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Factor_(programming_language)&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Factor_(programming_language)&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Factor_(programming_language)"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Factor_programming_language rootpage-Factor_programming_language skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Factor (programming language)</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><table class="infobox vevent" style="width:22em">
+<caption class="summary">Factor</caption>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/File:NewFactorLogo.png" class="image"><img alt="NewFactorLogo.png" src="//upload.wikimedia.org/wikipedia/en/thumb/f/ff/NewFactorLogo.png/200px-NewFactorLogo.png" width="200" height="124" srcset="//upload.wikimedia.org/wikipedia/en/f/ff/NewFactorLogo.png 1.5x" data-file-width="295" data-file-height="183" /></a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Programming_paradigm" title="Programming paradigm">Paradigm</a></th>
+<td><a href="/wiki/Multi-paradigm_programming_language" class="mw-redirect" title="Multi-paradigm programming language">multi-paradigm</a>: <a href="/wiki/Functional_programming" title="Functional programming">functional</a>, <a href="/wiki/Concatenative_programming_language" title="Concatenative programming language">concatenative</a>, <a href="/wiki/Stack-oriented_programming_language" title="Stack-oriented programming language">stack-oriented</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_developer" title="Software developer">Developer</a></th>
+<td class="organiser">Slava Pestov</td>
+</tr>
+<tr>
+<th scope="row">First&#160;appeared</th>
+<td>2003</td>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Software_release_life_cycle" title="Software release life cycle">Stable release</a></th>
+<td>
+<div style="margin:0px;">0.97 / November&#160;2,&#160;2014<span style="display:none">&#160;(<span class="bday dtstart published updated">2014-11-02</span>)</span></div>
+</td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Type_system" title="Type system">Typing discipline</a></th>
+<td><a href="/wiki/Strong_typing" class="mw-redirect" title="Strong typing">strong</a>, <a href="/wiki/Dynamic_typing" class="mw-redirect" title="Dynamic typing">dynamic</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Operating_system" title="Operating system">OS</a></th>
+<td><a href="/wiki/Microsoft_Windows" title="Microsoft Windows">Windows</a>, <a href="/wiki/MacOS" title="MacOS">macOS</a>, <a href="/wiki/Linux" title="Linux">Linux</a>, others</td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_license" title="Software license">License</a></th>
+<td><a href="/wiki/BSD_license" class="mw-redirect" title="BSD license">BSD license</a></td>
+</tr>
+<tr>
+<th scope="row">Website</th>
+<td><a rel="nofollow" class="external text" href="http://factorcode.org/">factorcode.org</a></td>
+</tr>
+<tr>
+<th colspan="2" style="text-align:center;background-color: #eee;">Influenced by</th>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/Joy_(programming_language)" title="Joy (programming language)">Joy</a>, <a href="/wiki/Forth_(programming_language)" title="Forth (programming language)">Forth</a>, <a href="/wiki/Lisp_(programming_language)" title="Lisp (programming language)">Lisp</a>, <a href="/wiki/Self_(programming_language)" title="Self (programming language)">Self</a></td>
+</tr>
+<tr>
+<th colspan="2" style="text-align:center;background-color: #eee;">Influenced</th>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/w/index.php?title=Cat_(programming_language)&amp;action=edit&amp;redlink=1" class="new" title="Cat (programming language) (page does not exist)">Cat</a>,<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">[1]</a></sup> <a href="/w/index.php?title=Concat_(programming_language)&amp;action=edit&amp;redlink=1" class="new" title="Concat (programming language) (page does not exist)">Concat</a><sup id="cite_ref-2" class="reference"><a href="#cite_note-2">[2]</a></sup></td>
+</tr>
+</table>
+<p><b>Factor</b> is a <a href="/wiki/Stack-oriented_programming_language" title="Stack-oriented programming language">stack-oriented</a> <a href="/wiki/Programming_language" title="Programming language">programming language</a> created by Slava Pestov. Factor is <a href="/wiki/Dynamically_typed" class="mw-redirect" title="Dynamically typed">dynamically typed</a> and has <a href="/wiki/Automatic_memory_management" class="mw-redirect" title="Automatic memory management">automatic memory management</a>, as well as powerful metaprogramming features. The language has a single implementation featuring a self-hosted <a href="/wiki/Compiler_optimization" class="mw-redirect" title="Compiler optimization">optimizing compiler</a> and an <a href="/wiki/Integrated_development_environment" title="Integrated development environment">interactive development environment</a>. The Factor distribution includes a large <a href="/wiki/Standard_library" title="Standard library">standard library</a>.</p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#History"><span class="tocnumber">1</span> <span class="toctext">History</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Programming_paradigm"><span class="tocnumber">2</span> <span class="toctext">Programming paradigm</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Implementation_and_libraries"><span class="tocnumber">3</span> <span class="toctext">Implementation and libraries</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#References"><span class="tocnumber">4</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#External_links"><span class="tocnumber">5</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="History">History</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Factor_(programming_language)&amp;action=edit&amp;section=1" title="Edit section: History">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Slava Pestov created Factor in 2003 as a <a href="/wiki/Scripting_language" title="Scripting language">scripting language</a> for a <a href="/wiki/Video_game" title="Video game">video game</a>.<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">[3]</a></sup> The initial implementation, now referred to as JFactor, was implemented in <a href="/wiki/Java_(programming_language)" title="Java (programming language)">Java</a> and ran on the <a href="/wiki/Java_Virtual_Machine" class="mw-redirect" title="Java Virtual Machine">Java Virtual Machine</a>. Though the early language resembled modern Factor superficially in terms of <a href="/wiki/Syntax_(programming_languages)" title="Syntax (programming languages)">syntax</a>, the modern language is very different in practical terms and the current implementation is much faster.</p>
+<p>The language has changed significantly over time. Originally, Factor programs centered on manipulating Java objects with Java's <a href="/wiki/Reflection_(computer_science)" class="mw-redirect" title="Reflection (computer science)">reflection</a> capabilities. From the beginning, the design philosophy has been to modify the language to suit programs written in it. As the Factor implementation and standard libraries grew more detailed, the need for certain language features became clear, and they were added. JFactor did not have an <a href="/wiki/Object_system" class="mw-redirect" title="Object system">object system</a> where you could define your own <a href="/wiki/Class_(computer_science)" class="mw-redirect" title="Class (computer science)">classes</a>, and early versions of native Factor were the same; the language was similar to <a href="/wiki/Scheme_(programming_language)" title="Scheme (programming language)">Scheme</a> in this way. Today, the object system is a central part of Factor. Other important language features such as <a href="/wiki/Tuple" title="Tuple">tuple</a> classes, combinator inlining, <a href="/wiki/Macro_(computer_science)" title="Macro (computer science)">macros</a>, user-defined <a href="/wiki/Parsing" title="Parsing">parsing</a> words and the modern vocabulary system were only added in a piecemeal fashion as their utility became clear.</p>
+<p>The <a href="/wiki/Foreign_function_interface" title="Foreign function interface">foreign function interface</a> was present from very early versions to Factor, and an analogous system existed in JFactor. This was chosen over creating a plugin to the <a href="/wiki/C_(programming_language)" title="C (programming language)">C</a> part of the implementation for each external <a href="/wiki/Library_(computing)" title="Library (computing)">library</a> that Factor should communicate with, and has the benefit of being more <a href="/wiki/Declarative_programming" title="Declarative programming">declarative</a>, faster to compile and easier to write.</p>
+<p>The Java implementation initially consisted of just an <a href="/wiki/Interpreter_(computing)" title="Interpreter (computing)">interpreter</a>, but a compiler to <a href="/wiki/Java_bytecode" title="Java bytecode">Java bytecode</a> was later added. This compiler only worked on certain procedures. The Java version of Factor was replaced by a version written in C and Factor. Initially, this consisted of just an interpreter, but the interpreter was replaced by two compilers, used in different situations. Over time, the Factor implementation has grown significantly faster.<sup id="cite_ref-4" class="reference"><a href="#cite_note-4">[4]</a></sup></p>
+<h2><span class="mw-headline" id="Programming_paradigm">Programming paradigm</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Factor_(programming_language)&amp;action=edit&amp;section=2" title="Edit section: Programming paradigm">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Factor is a <a href="/wiki/Dynamically_typed" class="mw-redirect" title="Dynamically typed">dynamically typed</a>, <a href="/wiki/Functional_programming" title="Functional programming">functional</a> and <a href="/wiki/Object-oriented_programming" title="Object-oriented programming">object-oriented</a> <a href="/wiki/Programming_language" title="Programming language">programming language</a>. Code is structured around small procedures, called words. In typical code, these are 1-3 lines long, and a procedure more than 7 lines long is very rare. Something that would idiomatically be expressed with one procedure in another programming language would be written as several words in Factor.<sup id="cite_ref-dls_5-0" class="reference"><a href="#cite_note-dls-5">[5]</a></sup></p>
+<p>Each word takes a fixed number of arguments and has a fixed number of return values. Arguments to words are passed on a <a href="/wiki/Stack_(data_structure)" class="mw-redirect" title="Stack (data structure)">data stack</a>, using <a href="/wiki/Reverse_Polish_notation" title="Reverse Polish notation">reverse Polish notation</a>. The stack is used just to organize calls to words, and not as a datastructure. The stack in Factor is used in a similar way to the stack in <a href="/wiki/Forth_(programming_language)" title="Forth (programming language)">Forth</a>; for this, they are both considered <a href="/wiki/Stack-oriented_programming_language" title="Stack-oriented programming language">stack languages</a>. For example, below is a snippet of code that prints out "hello world" to the current output stream:</p>
+<pre>
+"hello world" print
+</pre>
+<p><code>print</code> is a word in the <code>io</code> vocabulary that takes a string from the stack and returns nothing. It prints the string to the current output stream (by default, the terminal or the graphical listener).<sup id="cite_ref-dls_5-1" class="reference"><a href="#cite_note-dls-5">[5]</a></sup></p>
+<p>Not all data has to be passed around only with the stack. <a href="/wiki/Lexical_scoping" class="mw-redirect" title="Lexical scoping">Lexically scoped</a> local variables let you store and access <a href="/wiki/Temporary_variable" title="Temporary variable">temporaries</a> used within a procedure. <a href="/wiki/Dynamic_scoping" class="mw-redirect" title="Dynamic scoping">Dynamically scoped</a> variables are used to pass things between procedure calls without using the stack. For example, the current input and output streams are stored in dynamically scoped variables.<sup id="cite_ref-dls_5-2" class="reference"><a href="#cite_note-dls-5">[5]</a></sup></p>
+<p>Factor emphasizes flexibility and the ability to extend the language.<sup id="cite_ref-dls_5-3" class="reference"><a href="#cite_note-dls-5">[5]</a></sup> There is a system for macros, as well as for arbitrary extension of Factor syntax. Factor's syntax is often extended to allow for new types of word definitions and new types of <a href="/wiki/Literal_(computer_science)" class="mw-redirect" title="Literal (computer science)">literals</a> for data structures. It is also used in the <a href="/wiki/XML" title="XML">XML</a> library to provide literal syntax for generating XML. For example, the following word takes a string and produces an XML document object which is an HTML document emphasizing the string:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+ <span class="k">:</span> <span class="nf">make-html</span> <span class="nf">( </span><span class="nv">string</span> <span class="nf">-- </span><span class="nv">xml</span> <span class="nf">)</span>
+    <span class="nb">dup</span>
+    &lt;XML
+        &lt;html&gt;
+            &lt;head&gt;&lt;title&gt;&lt;-&gt;&lt;/title&gt;&lt;/head&gt;
+            &lt;body&gt;&lt;h1&gt;&lt;-&gt;&lt;/h1&gt;&lt;/body&gt;
+        &lt;/html&gt;
+    XML&gt; <span class="k">;</span>
+</pre></div>
+<p>The word <code>dup</code> duplicates the top item on the stack. The <code>&lt;-&gt;</code> stands for filling in that part of the XML document with an item from the stack.</p>
+<h2><span class="mw-headline" id="Implementation_and_libraries">Implementation and libraries</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Factor_(programming_language)&amp;action=edit&amp;section=3" title="Edit section: Implementation and libraries">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Factor includes a large standard library, written entirely in the language. These include</p>
+<ul>
+<li>A cross-platform GUI toolkit, built on top of <a href="/wiki/OpenGL" title="OpenGL">OpenGL</a> and various windowing systems, used for the development environment.<sup id="cite_ref-6" class="reference"><a href="#cite_note-6">[6]</a></sup></li>
+<li>Bindings to several database libraries, including <a href="/wiki/PostgreSQL" title="PostgreSQL">PostgreSQL</a> and <a href="/wiki/SQLite" title="SQLite">SQLite</a>.<sup id="cite_ref-7" class="reference"><a href="#cite_note-7">[7]</a></sup></li>
+<li>An <a href="/wiki/HTTP" class="mw-redirect" title="HTTP">HTTP</a> server and client, with the Furnace web framework.<sup id="cite_ref-8" class="reference"><a href="#cite_note-8">[8]</a></sup></li>
+<li>Efficient homogeneous arrays of integers, floats and C structs.<sup id="cite_ref-9" class="reference"><a href="#cite_note-9">[9]</a></sup></li>
+<li>A library implementing regular expressions, generating machine code to do the matching.<sup id="cite_ref-10" class="reference"><a href="#cite_note-10">[10]</a></sup></li>
+</ul>
+<p>A <a href="/wiki/Foreign_function_interface" title="Foreign function interface">foreign function interface</a> is built into Factor, allowing for communication with <a href="/wiki/C_(programming_language)" title="C (programming language)">C</a>, <a href="/wiki/Objective-C" title="Objective-C">Objective-C</a> and <a href="/wiki/Fortran" title="Fortran">Fortran</a> programs. There is also support for executing and communicating with shaders written in <a href="/wiki/GLSL" class="mw-redirect" title="GLSL">GLSL</a>.<sup id="cite_ref-dls_5-4" class="reference"><a href="#cite_note-dls-5">[5]</a></sup><sup id="cite_ref-11" class="reference"><a href="#cite_note-11">[11]</a></sup></p>
+<p>Factor is implemented in Factor and <a href="/wiki/C%2B%2B" title="C++">C++</a>. It was originally bootstrapped from an earlier Java implementation. Today, the parser and the optimizing compiler are written in the language. Certain basic parts of the language are implemented in C++ such as the garbage collector and certain primitives.</p>
+<p>Factor uses an <a href="/wiki/System_image" title="System image">image</a>-based model, analogous to many <a href="/wiki/Smalltalk" title="Smalltalk">Smalltalk</a> implementations, where compiled code and data are stored in an image.<sup id="cite_ref-12" class="reference"><a href="#cite_note-12">[12]</a></sup> To compile a program, the program is loaded into an image and the image is saved. A special tool assists in the process of creating a minimal image to run a particular program, packaging the result into something that can be deployed as a standalone application.<sup id="cite_ref-dls_5-5" class="reference"><a href="#cite_note-dls-5">[5]</a></sup><sup id="cite_ref-13" class="reference"><a href="#cite_note-13">[13]</a></sup></p>
+<p>The Factor compiler implements many advanced optimizations and has been used as a target for research in new optimization techniques.<sup id="cite_ref-dls_5-6" class="reference"><a href="#cite_note-dls-5">[5]</a></sup><sup id="cite_ref-14" class="reference"><a href="#cite_note-14">[14]</a></sup></p>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Factor_(programming_language)&amp;action=edit&amp;section=4" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><cite class="citation web">Diggins, Christopher (2008). <a rel="nofollow" class="external text" href="https://web.archive.org/web/20131116070738/http://www.cat-language.com/Cat-TR-2008-001.pdf">"Simple Type Inference for Higher-Order Stack-Oriented Languages"</a> <span style="font-size:85%;">(PDF)</span>. Archived from <a rel="nofollow" class="external text" href="http://www.cat-language.com/Cat-TR-2008-001.pdf">the original</a> <span style="font-size:85%;">(PDF)</span> on 2013-11-16.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFactor+%28programming+language%29&amp;rft.aufirst=Christopher&amp;rft.aulast=Diggins&amp;rft.btitle=Simple+Type+Inference+for+Higher-Order+Stack-Oriented+Languages&amp;rft.date=2008&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.cat-language.com%2FCat-TR-2008-001.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><cite class="citation web">Herzberg, Dominikus; Reichert, Tim (2009). <a rel="nofollow" class="external text" href="https://web.archive.org/web/20100613092327/http://mitarbeiter.hs-heilbronn.de:80/~herzberg/Publications/ICSOFT.2009.pdf">"Concatenative Programming: An Overlooked Paradigm in Functional Programming"</a> <span style="font-size:85%;">(PDF)</span>. Archived from <a rel="nofollow" class="external text" href="http://mitarbeiter.hs-heilbronn.de/~herzberg/Publications/ICSOFT.2009.pdf">the original</a> <span style="font-size:85%;">(PDF)</span> on 2010-06-13.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFactor+%28programming+language%29&amp;rft.aufirst=Dominikus&amp;rft.aulast=Herzberg&amp;rft.au=Reichert%2C+Tim&amp;rft.btitle=Concatenative+Programming%3A+An+Overlooked+Paradigm+in+Functional+Programming&amp;rft.date=2009&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fmitarbeiter.hs-heilbronn.de%2F~herzberg%2FPublications%2FICSOFT.2009.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><cite class="citation web">Pestov, Slava. <a rel="nofollow" class="external text" href="http://factorcode.org/slava/">"Slava Pestov's corner of the web"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFactor+%28programming+language%29&amp;rft.aufirst=Slava&amp;rft.aulast=Pestov&amp;rft.btitle=Slava+Pestov%27s+corner+of+the+web&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Ffactorcode.org%2Fslava%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://concatenative.org/wiki/view/Factor/Implementation%20history">"Concatenative.org wiki: Factor/Implementation History"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFactor+%28programming+language%29&amp;rft.btitle=Concatenative.org+wiki%3A+Factor%2FImplementation+History&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fconcatenative.org%2Fwiki%2Fview%2FFactor%2FImplementation%2520history&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-dls-5"><span class="mw-cite-backlink">^ <a href="#cite_ref-dls_5-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-dls_5-1"><sup><i><b>b</b></i></sup></a> <a href="#cite_ref-dls_5-2"><sup><i><b>c</b></i></sup></a> <a href="#cite_ref-dls_5-3"><sup><i><b>d</b></i></sup></a> <a href="#cite_ref-dls_5-4"><sup><i><b>e</b></i></sup></a> <a href="#cite_ref-dls_5-5"><sup><i><b>f</b></i></sup></a> <a href="#cite_ref-dls_5-6"><sup><i><b>g</b></i></sup></a></span> <span class="reference-text"><cite class="citation journal">Pestov, Sviatoslav; Ehrenberg, Daniel (2010). "Factor: a dynamic stack-based programming language". <i>SIGPLAN Not</i>. ACM. <b>45</b> (12): 43–58. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1145%2F1899661.1869637">10.1145/1899661.1869637</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFactor+%28programming+language%29&amp;rft.atitle=Factor%3A+a+dynamic+stack-based+programming+language&amp;rft.au=Ehrenberg%2C+Daniel&amp;rft.aufirst=Sviatoslav&amp;rft.aulast=Pestov&amp;rft.date=2010&amp;rft.genre=article&amp;rft_id=info%3Adoi%2F10.1145%2F1899661.1869637&amp;rft.issue=12&amp;rft.jtitle=SIGPLAN+Not.&amp;rft.pages=43-58&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=45" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text"><cite class="citation web">Pestov, Slava. <a rel="nofollow" class="external text" href="http://docs.factorcode.org/content/article-ui.html">"Factor documentation: UI framework"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFactor+%28programming+language%29&amp;rft.aufirst=Slava&amp;rft.aulast=Pestov&amp;rft.btitle=Factor+documentation%3A+UI+framework&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fdocs.factorcode.org%2Fcontent%2Farticle-ui.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text"><cite class="citation web">Coleman, Doug. <a rel="nofollow" class="external text" href="http://docs.factorcode.org/content/article-db.html">"Factor documentation: Database library"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFactor+%28programming+language%29&amp;rft.aufirst=Doug&amp;rft.aulast=Coleman&amp;rft.btitle=Factor+documentation%3A+Database+library&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fdocs.factorcode.org%2Fcontent%2Farticle-db.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text"><cite class="citation web">Pestov, Slava. <a rel="nofollow" class="external text" href="http://docs.factorcode.org/content/article-http.server.html">"Factor documentation: HTTP server"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFactor+%28programming+language%29&amp;rft.aufirst=Slava&amp;rft.aulast=Pestov&amp;rft.btitle=Factor+documentation%3A+HTTP+server&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fdocs.factorcode.org%2Fcontent%2Farticle-http.server.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-9">^</a></b></span> <span class="reference-text"><cite class="citation web">Pestov, Slava. <a rel="nofollow" class="external text" href="http://docs.factorcode.org/content/article-specialized-arrays.html">"Factor documentation: Specialized arrays"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFactor+%28programming+language%29&amp;rft.aufirst=Slava&amp;rft.aulast=Pestov&amp;rft.btitle=Factor+documentation%3A+Specialized+arrays&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fdocs.factorcode.org%2Fcontent%2Farticle-specialized-arrays.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-10">^</a></b></span> <span class="reference-text"><cite class="citation web">Coleman, Doug; Ehrenberg, Daniel. <a rel="nofollow" class="external text" href="http://docs.factorcode.org/content/article-regexp.html">"Factor documentation: Regular expressions"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFactor+%28programming+language%29&amp;rft.au=Ehrenberg%2C+Daniel&amp;rft.aufirst=Doug&amp;rft.aulast=Coleman&amp;rft.btitle=Factor+documentation%3A+Regular+expressions&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fdocs.factorcode.org%2Fcontent%2Farticle-regexp.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-11"><span class="mw-cite-backlink"><b><a href="#cite_ref-11">^</a></b></span> <span class="reference-text"><cite class="citation web">Pestov, Slava. <a rel="nofollow" class="external text" href="http://factor-language.blogspot.com/2010/07/overhauling-factors-c-library-interface.html">"Overhauling Factor's C library interface"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFactor+%28programming+language%29&amp;rft.aufirst=Slava&amp;rft.aulast=Pestov&amp;rft.btitle=Overhauling+Factor%27s+C+library+interface&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Ffactor-language.blogspot.com%2F2010%2F07%2Foverhauling-factors-c-library-interface.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-12"><span class="mw-cite-backlink"><b><a href="#cite_ref-12">^</a></b></span> <span class="reference-text"><cite class="citation web">Pestov, Slava. <a rel="nofollow" class="external text" href="http://factor-language.blogspot.com/2010/01/factors-bootstrap-process-explained.html">"Factor's bootstrap process explained"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFactor+%28programming+language%29&amp;rft.aufirst=Slava&amp;rft.aulast=Pestov&amp;rft.btitle=Factor%27s+bootstrap+process+explained&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Ffactor-language.blogspot.com%2F2010%2F01%2Ffactors-bootstrap-process-explained.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-13"><span class="mw-cite-backlink"><b><a href="#cite_ref-13">^</a></b></span> <span class="reference-text"><cite class="citation web">Pestov, Slava. <a rel="nofollow" class="external text" href="http://factor-language.blogspot.com/2008/07/on-shaking-trees.html">"On shaking trees"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFactor+%28programming+language%29&amp;rft.aufirst=Slava&amp;rft.aulast=Pestov&amp;rft.btitle=On+shaking+trees&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Ffactor-language.blogspot.com%2F2008%2F07%2Fon-shaking-trees.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-14"><span class="mw-cite-backlink"><b><a href="#cite_ref-14">^</a></b></span> <span class="reference-text"><cite class="citation web">Ehrenberg, Daniel (2010). <a rel="nofollow" class="external text" href="https://web.archive.org/web/20110726044425/http://factorcode.org/littledan/abstract.pdf">"Closure elimination as constant propagation"</a> <span style="font-size:85%;">(PDF)</span>. Archived from <a rel="nofollow" class="external text" href="http://factorcode.org/littledan/abstract.pdf">the original</a> <span style="font-size:85%;">(PDF)</span> on 2011-07-26.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFactor+%28programming+language%29&amp;rft.aufirst=Daniel&amp;rft.aulast=Ehrenberg&amp;rft.btitle=Closure+elimination+as+constant+propagation&amp;rft.date=2010&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Ffactorcode.org%2Flittledan%2Fabstract.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Factor_(programming_language)&amp;action=edit&amp;section=5" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><span class="official-website"><span class="url"><a rel="nofollow" class="external text" href="http://factorcode.org">Official website</a></span></span></li>
+<li><cite class="citation audio-visual">Slava Pestov (October 27, 2008). <a rel="nofollow" class="external text" href="https://www.youtube.com/watch?v=f_0QlhYlS8g"><i>Factor: An Extensible Interactive Language</i></a> <span style="font-size:85%;">(flv)</span> (Tech talk). <a href="/wiki/Google" title="Google">Google</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFactor+%28programming+language%29&amp;rft.btitle=Factor%3A+An+Extensible+Interactive+Language&amp;rft.date=2008-10-27&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Df_0QlhYlS8g&amp;rft.pub=Google&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation audio-visual">Zed Shaw (2008). <a rel="nofollow" class="external text" href="http://vimeo.com/2723800"><i>The ACL is Dead</i></a> <span style="font-size:85%;">(flv)</span> (CUSEC 2008). <a href="/wiki/Canadian_University_Software_Engineering_Conference" title="Canadian University Software Engineering Conference">CUSEC</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFactor+%28programming+language%29&amp;rft.btitle=The+ACL+is+Dead&amp;rft.date=2008&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fvimeo.com%2F2723800&amp;rft.pub=CUSEC&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span> – a presentation written in Factor which mentions and praises Factor</li>
+</ul>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1222
+Cached time: 20170201023538
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.176 seconds
+Real time usage: 0.358 seconds
+Preprocessor visited node count: 1045/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 28829/2097152 bytes
+Template argument size: 1644/2097152 bytes
+Highest expansion depth: 25/40
+Expensive parser function count: 2/500
+Lua time usage: 0.087/10.000 seconds
+Lua memory usage: 3.24 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  330.521      1 -total
+ 27.46%   90.750      1 Template:Reflist
+ 20.57%   67.980      2 Template:Infobox
+ 18.95%   62.627     13 Template:Cite_web
+ 16.24%   53.690      1 Template:Infobox_programming_language
+  7.18%   23.746      1 Template:Official_website
+  6.37%   21.066      1 Template:Infobox_software/simple
+  2.23%    7.375      2 Template:Cite_video
+  1.89%    6.233      1 Template:Release_date
+  1.51%    4.990      1 Template:Cite_journal
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:891398-0!*!0!!en!4!* and timestamp 20170201023538 and revision id 763055358
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Factor_(programming_language)&amp;oldid=763055358">https://en.wikipedia.org/w/index.php?title=Factor_(programming_language)&amp;oldid=763055358</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Concatenative_programming_languages" title="Category:Concatenative programming languages">Concatenative programming languages</a></li><li><a href="/wiki/Category:Function-level_languages" title="Category:Function-level languages">Function-level languages</a></li><li><a href="/wiki/Category:Stack-oriented_programming_languages" title="Category:Stack-oriented programming languages">Stack-oriented programming languages</a></li><li><a href="/wiki/Category:Programming_languages_created_in_2003" title="Category:Programming languages created in 2003">Programming languages created in 2003</a></li><li><a href="/wiki/Category:Extensible_syntax_programming_languages" title="Category:Extensible syntax programming languages">Extensible syntax programming languages</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Pages_using_deprecated_image_syntax" title="Category:Pages using deprecated image syntax">Pages using deprecated image syntax</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Factor+%28programming+language%29" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Factor+%28programming+language%29" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/Factor_(programming_language)"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:Factor_(programming_language)"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/Factor_(programming_language)" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=Factor_(programming_language)&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Factor_(programming_language)&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Factor_(programming_language)" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Factor_(programming_language)" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Factor_(programming_language)&amp;oldid=763055358" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Factor_(programming_language)&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q1391724" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Factor_%28programming_language%29&amp;id=763055358" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Factor+%28programming+language%29">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Factor+%28programming+language%29&amp;returnto=Factor+%28programming+language%29&amp;oldid=763055358&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Factor_(programming_language)&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/Factor" title="Factor – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-et"><a href="https://et.wikipedia.org/wiki/Factor" title="Factor – Estonian" lang="et" hreflang="et" class="interlanguage-link-target">Eesti</a></li><li class="interlanguage-link interwiki-es"><a href="https://es.wikipedia.org/wiki/Lenguaje_Factor" title="Lenguaje Factor – Spanish" lang="es" hreflang="es" class="interlanguage-link-target">Español</a></li><li class="interlanguage-link interwiki-fa"><a href="https://fa.wikipedia.org/wiki/%D8%B2%D8%A8%D8%A7%D9%86_%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87_%D9%86%D9%88%DB%8C%D8%B3%DB%8C_%D9%81%DA%A9%D8%AA%D9%88%D8%B1" title="زبان برنامه نویسی فکتور – Persian" lang="fa" hreflang="fa" class="interlanguage-link-target">فارسی</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/Factor_(langage)" title="Factor (langage) – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-ja"><a href="https://ja.wikipedia.org/wiki/Factor" title="Factor – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target">日本語</a></li><li class="interlanguage-link interwiki-pt"><a href="https://pt.wikipedia.org/wiki/Factor_(linguagem_de_programa%C3%A7%C3%A3o)" title="Factor (linguagem de programação) – Portuguese" lang="pt" hreflang="pt" class="interlanguage-link-target">Português</a></li><li class="interlanguage-link interwiki-ru"><a href="https://ru.wikipedia.org/wiki/Factor_(%D1%8F%D0%B7%D1%8B%D0%BA_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F)" title="Factor (язык программирования) – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li><li class="interlanguage-link interwiki-sv"><a href="https://sv.wikipedia.org/wiki/Factor" title="Factor – Swedish" lang="sv" hreflang="sv" class="interlanguage-link-target">Svenska</a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q1391724#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 1 February 2017, at 02:35.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Factor_(programming_language)&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.176","walltime":"0.358","ppvisitednodes":{"value":1045,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":28829,"limit":2097152},"templateargumentsize":{"value":1644,"limit":2097152},"expansiondepth":{"value":25,"limit":40},"expensivefunctioncount":{"value":2,"limit":500},"entityaccesscount":{"value":1,"limit":400},"timingprofile":["100.00%  330.521      1 -total"," 27.46%   90.750      1 Template:Reflist"," 20.57%   67.980      2 Template:Infobox"," 18.95%   62.627     13 Template:Cite_web"," 16.24%   53.690      1 Template:Infobox_programming_language","  7.18%   23.746      1 Template:Official_website","  6.37%   21.066      1 Template:Infobox_software/simple","  2.23%    7.375      2 Template:Cite_video","  1.89%    6.233      1 Template:Release_date","  1.51%    4.990      1 Template:Cite_journal"]},"scribunto":{"limitreport-timeusage":{"value":"0.087","limit":"10.000"},"limitreport-memusage":{"value":3398950,"limit":52428800}},"cachereport":{"origin":"mw1222","timestamp":"20170201023538","ttl":2592000,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":53,"wgHostname":"mw1272"});});</script>
+	</body>
+</html>

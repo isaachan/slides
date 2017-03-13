@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Frege (programming language) - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Frege_(programming_language)","wgTitle":"Frege (programming language)","wgCurRevisionId":736653410,"wgRevisionId":736653410,"wgArticleId":35111228,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles lacking reliable references from August 2016","All articles lacking reliable references","Articles with topics of unclear notability from August 2016","All articles with topics of unclear notability","Haskell programming language family","Functional languages","JVM programming languages"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Frege_(programming_language)","wgRelevantArticleId":35111228,"wgRequestId":"WIiGnwpAADoAAKPwHiMAAACA","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":true},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q5501320","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.cite.styles":"ready","ext.pygments":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.legacy.wikibits","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.pygments%2CwikimediaBadges%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.29.0-wmf.8"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Frege_(programming_language)"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Frege_(programming_language)&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Frege_(programming_language)&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Frege_(programming_language)"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Frege_programming_language rootpage-Frege_programming_language skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Frege (programming language)</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><script>function mfTempOpenSection(id){var block=document.getElementById("mf-section-"+id);block.className+=" open-block";block.previousSibling.className+=" open-block";}</script><table class="plainlinks metadata ambox ambox-content ambox-multiple_issues compact-ambox" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ambox_important.svg/40px-Ambox_important.svg.png" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ambox_important.svg/60px-Ambox_important.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ambox_important.svg/80px-Ambox_important.svg.png 2x" data-file-width="40" data-file-height="40" /></div>
+</td>
+<td class="mbox-text">
+<div class="mw-collapsible" style="width:95%; margin: 0.2em 0;"><span class="mbox-text-span"><b>This article has multiple issues.</b> Please help <b><a class="external text" href="//en.wikipedia.org/w/index.php?title=Frege_(programming_language)&amp;action=edit">improve it</a></b> or discuss these issues on the <b><a href="/wiki/Talk:Frege_(programming_language)" title="Talk:Frege (programming language)">talk page</a></b>. <small><i>(<a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove these template messages</a>)</i></small></span>
+<div class="mw-collapsible-content" style="margin-top: 0.3em;">
+<table class="plainlinks metadata ambox ambox-content ambox-Primary_sources" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><a href="/wiki/File:Question_book-new.svg" class="image"><img alt="Question book-new.svg" src="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" width="50" height="39" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/75px-Question_book-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/100px-Question_book-new.svg.png 2x" data-file-width="512" data-file-height="399" /></a></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">This article <b>relies too much on <a href="/wiki/Wikipedia:Verifiability" title="Wikipedia:Verifiability">references</a> to <a href="/wiki/Wikipedia:No_original_research#Primary.2C_secondary_and_tertiary_sources" title="Wikipedia:No original research">primary sources</a></b>. <span class="hide-when-compact">Please improve this by adding <a href="/wiki/Wikipedia:No_original_research#Primary.2C_secondary_and_tertiary_sources" title="Wikipedia:No original research">secondary or tertiary sources</a>.</span> <small><i>(August 2016)</i></small> <small class="hide-when-compact"><i>(<a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove this template message</a>)</i></small></span></td>
+</tr>
+</table>
+<table class="plainlinks metadata ambox ambox-content ambox-Notability" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ambox_important.svg/40px-Ambox_important.svg.png" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ambox_important.svg/60px-Ambox_important.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ambox_important.svg/80px-Ambox_important.svg.png 2x" data-file-width="40" data-file-height="40" /></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">The topic of this article <b>may not meet Wikipedia's <a href="/wiki/Wikipedia:Notability" title="Wikipedia:Notability">general notability guideline</a></b>. <span class="hide-when-compact">Please help to establish notability by citing <a href="/wiki/Wikipedia:Identifying_reliable_sources" title="Wikipedia:Identifying reliable sources">reliable secondary sources</a> that are <a href="/wiki/Wikipedia:Independent_sources" class="mw-redirect" title="Wikipedia:Independent sources">independent</a> of the topic and provide significant coverage of it beyond its mere trivial mention. If notability cannot be established, the article is likely to be <a href="/wiki/Wikipedia:Merging" title="Wikipedia:Merging">merged</a>, <a href="/wiki/Wikipedia:Redirect" title="Wikipedia:Redirect">redirected</a>, or <a href="/wiki/Wikipedia:Deletion_policy" title="Wikipedia:Deletion policy">deleted</a>.<br />
+<small><span class="plainlinks"><i>Find sources:</i>&#160;<a rel="nofollow" class="external text" href="//www.google.com/search?as_eq=wikipedia&amp;q=%22Frege%22+programming+language&amp;num=50">"Frege"&#160;programming language</a>&#160;–&#160;<a rel="nofollow" class="external text" href="//www.google.com/search?q=%22Frege%22+programming+language&amp;tbm=nws">news</a>&#160;<b>·</b> <a rel="nofollow" class="external text" href="//www.google.com/search?&amp;q=%22Frege%22+programming+language+site:news.google.com/newspapers&amp;source=newspapers">newspapers</a>&#160;<b>·</b> <a rel="nofollow" class="external text" href="//www.google.com/search?tbs=bks:1&amp;q=%22Frege%22+programming+language">books</a>&#160;<b>·</b> <a rel="nofollow" class="external text" href="//scholar.google.com/scholar?q=%22Frege%22+programming+language">scholar</a>&#160;<b>·</b> <a rel="nofollow" class="external text" href="http://www.jstor.org/action/doBasicSearch?Query=%22Frege%22+programming+language&amp;acc=on&amp;wc=on">JSTOR</a>&#160;<b>·</b> <a rel="nofollow" class="external text" href="//www.google.com/images?safe=off&amp;tbm=isch&amp;tbs=sur:fmc&amp;q=%22Frege%22+programming+language+-site:wikipedia.org+-site:wikimedia.org">free images</a></span></small></span> <small><i>(August 2016)</i></small> <small class="hide-when-compact"><i>(<a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove this template message</a>)</i></small></span></td>
+</tr>
+</table>
+</div>
+</div>
+<small class="hide-when-compact"><i>(<a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove this template message</a>)</i></small></td>
+</tr>
+</table>
+<table class="infobox vevent" style="width:22em">
+<caption class="summary">Frege</caption>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/File:Frege_logo.svg" class="image"><img alt="Frege logo.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Frege_logo.svg/220px-Frege_logo.svg.png" width="220" height="156" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Frege_logo.svg/330px-Frege_logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Frege_logo.svg/440px-Frege_logo.svg.png 2x" data-file-width="1052" data-file-height="744" /></a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Programming_paradigm" title="Programming paradigm">Paradigm</a></th>
+<td><a href="/wiki/Functional_programming" title="Functional programming">functional</a>, lazy/<a href="/wiki/Non-strict_programming_language" class="mw-redirect" title="Non-strict programming language">non-strict</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_design" title="Software design">Designed&#160;by</a></th>
+<td>Ingo Wechsung</td>
+</tr>
+<tr>
+<th scope="row">First&#160;appeared</th>
+<td>2011<span class="noprint">; 6&#160;years ago</span><span style="display:none">&#160;(<span class="bday dtstart published updated">2011</span>)</span></td>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Software_release_life_cycle" title="Software release life cycle">Stable release</a></th>
+<td>
+<div style="margin:0px;">3.24 / 12&#160;March 2016<span class="noprint">; 10 months ago</span><span style="display:none">&#160;(<span class="bday dtstart published updated">2016-03-12</span>)</span></div>
+</td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Type_system" title="Type system">Typing discipline</a></th>
+<td><a href="/wiki/Static_typing" class="mw-redirect" title="Static typing">static</a>, <a href="/wiki/Strong_typing" class="mw-redirect" title="Strong typing">strong</a>, <a href="/wiki/Type_inference" title="Type inference">inferred</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Operating_system" title="Operating system">OS</a></th>
+<td><a href="/wiki/Cross-platform" title="Cross-platform">Cross-platform</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_license" title="Software license">License</a></th>
+<td>BSD</td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Filename_extension" title="Filename extension">Filename extensions</a></th>
+<td>.fr</td>
+</tr>
+<tr>
+<th scope="row">Website</th>
+<td><span class="url"><a rel="nofollow" class="external text" href="https://github.com/Frege/frege">github<wbr />.com<wbr />/Frege<wbr />/frege</a></span></td>
+</tr>
+<tr>
+<th colspan="2" style="text-align:center;background-color: #eee;">Influenced by</th>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/Haskell_(programming_language)" title="Haskell (programming language)">Haskell</a></td>
+</tr>
+</table>
+<p><b>Frege</b> is a <a href="/wiki/Evaluation_strategy#Non-strict_evaluation" title="Evaluation strategy">non-strict</a>, <a href="/wiki/Purely_functional_programming_language" class="mw-redirect" title="Purely functional programming language">purely functional programming language</a> for the <a href="/wiki/Java_virtual_machine" title="Java virtual machine">Java virtual machine</a> in the spirit of <a href="/wiki/Haskell_(programming_language)" title="Haskell (programming language)">Haskell</a>.</p>
+<p>It is considered a Haskell dialect or simply "a" Haskell for the <a href="/wiki/Java_(programming_language)" title="Java (programming language)">Java</a> virtual machine.<sup id="cite_ref-frege-project_1-0" class="reference"><a href="#cite_note-frege-project-1">[1]</a></sup></p>
+<p>Frege has a <a href="/wiki/Strong_typing" class="mw-redirect" title="Strong typing">strong</a> <a href="/wiki/Type_system#Static_typing" title="Type system">static type system</a> with <a href="/wiki/Type_inference" title="Type inference">type inference</a>. <a href="/wiki/Parametric_polymorphism#Higher-ranked_polymorphism" title="Parametric polymorphism">Higher rank types</a> are supported, though type annotations are required for that.<sup id="cite_ref-frege-project_1-1" class="reference"><a href="#cite_note-frege-project-1">[1]</a></sup> Frege programs are compiled to <a href="/wiki/Java_(programming_language)" title="Java (programming language)">Java</a> <a href="/wiki/Java_bytecode" title="Java bytecode">bytecode</a> and run in a Java virtual machine. Existing Java <a href="/wiki/Class_(computer_programming)" title="Class (computer programming)">classes</a> and <a href="/wiki/Method_(computer_programming)" title="Method (computer programming)">methods</a> can be used seamlessly from Frege after their types have been properly declared.</p>
+<p>The language was designed by <a href="/w/index.php?title=Ingo_Wechsung&amp;action=edit&amp;redlink=1" class="new" title="Ingo Wechsung (page does not exist)">Ingo Wechsung</a>,<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">[2]</a></sup> who named it after the German mathematician, logician and philosopher <a href="/wiki/Gottlob_Frege" title="Gottlob Frege">Gottlob Frege</a>.</p>
+<p><i>(Unrelated to the <a rel="nofollow" class="external text" href="http://psc.informatik.uni-jena.de/fpp/fpp-main.htm">Frege Program Prover</a>).</i></p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Comparison_with_Haskell"><span class="tocnumber">1</span> <span class="toctext">Comparison with Haskell</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Hello_World_program"><span class="tocnumber">2</span> <span class="toctext">Hello World program</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Compiling_Frege_programs"><span class="tocnumber">3</span> <span class="toctext">Compiling Frege programs</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="#At_the_console"><span class="tocnumber">3.1</span> <span class="toctext">At the console</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#At_the_Eclipse_devel._environment"><span class="tocnumber">3.2</span> <span class="toctext">At the Eclipse devel. environment</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="#More_involved_examples"><span class="tocnumber">4</span> <span class="toctext">More involved examples</span></a>
+<ul>
+<li class="toclevel-2 tocsection-7"><a href="#Records"><span class="tocnumber">4.1</span> <span class="toctext">Records</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Using_Java_classes_and_methods"><span class="tocnumber">4.2</span> <span class="toctext">Using Java classes and methods</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-9"><a href="#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#External_links"><span class="tocnumber">6</span> <span class="toctext">External links</span></a>
+<ul>
+<li class="toclevel-2 tocsection-11"><a href="#In_depth"><span class="tocnumber">6.1</span> <span class="toctext">In depth</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Comparison_with_Haskell">Comparison with Haskell</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Frege_(programming_language)&amp;action=edit&amp;section=1" title="Edit section: Comparison with Haskell">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>A summary of differences between Frege and <a href="/wiki/Haskell_(programming_language)" title="Haskell (programming language)">Haskell</a> is listed at the <a rel="nofollow" class="external text" href="https://github.com/Frege/frege/wiki/Differences-between-Frege-and-Haskell">Differences between Frege and Haskell</a>.</p>
+<p>The type String is custom defined as an interface with Java strings. String (++) is bound to Java's String (+).<sup id="cite_ref-prelude-base_3-0" class="reference"><a href="#cite_note-prelude-base-3">[3]</a></sup> Conversion functions to Haskell correspondent:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="nf">packed</span> <span class="ow">::</span> <span class="p">[</span><span class="kt">Char</span><span class="p">]</span> <span class="ow">-&gt;</span> <span class="kt">String</span>
+<span class="nf">unpacked</span> <span class="ow">::</span> <span class="kt">String</span> <span class="ow">-&gt;</span> <span class="p">[</span><span class="kt">Char</span><span class="p">]</span>
+</pre></div>
+<p>Literals:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="c1">-- boolean literals true false are not capitalized</span>
+</pre></div>
+<p>Frege's Monad class does not include the method <i>fail</i>, included in a separate class MonadFail.<sup id="cite_ref-4" class="reference"><a href="#cite_note-4">[4]</a></sup></p>
+<p>Numeric classes for floating point types are also different. Haskell's classes Fractional, RealFrac, RealFloat and Floating are not defined. Haskell's class Real defines <i>toRational</i> while Frege's defines (/):<sup id="cite_ref-prelude-base_3-1" class="reference"><a href="#cite_note-prelude-base-3">[3]</a></sup></p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="kr">class</span> <span class="kt">Real</span> <span class="p">(</span><span class="kt">Num</span> <span class="n">r</span><span class="p">)</span> <span class="ow">=&gt;</span> <span class="n">r</span> <span class="kr">where</span>     <span class="c1">-- classname precedes context</span>
+    <span class="c1">--- the division operator</span>
+    <span class="p">(</span><span class="o">/</span><span class="p">)</span> <span class="ow">::</span> <span class="n">r</span> <span class="ow">-&gt;</span> <span class="n">r</span> <span class="ow">-&gt;</span> <span class="n">r</span>
+</pre></div>
+<h2><span class="mw-headline" id="Hello_World_program">Hello World program</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Frege_(programming_language)&amp;action=edit&amp;section=2" title="Edit section: Hello World program">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="c1">-- file hello.fr</span>
+<span class="kr">module</span> <span class="nn">Hello</span> <span class="kr">where</span>  <span class="c1">-- moduleName maybe hierarchical as pkgdir.JavaClassname</span>
+
+<span class="nf">main</span> <span class="n">args</span> <span class="ow">=</span> <span class="n">println</span> <span class="o">$</span> <span class="s">"Hello world! your arguments are: "</span> <span class="o">++</span> <span class="n">show</span> <span class="n">args</span>
+</pre></div>
+<h2><span class="mw-headline" id="Compiling_Frege_programs">Compiling Frege programs</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Frege_(programming_language)&amp;action=edit&amp;section=3" title="Edit section: Compiling Frege programs">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Frege requires Java-7 JDK or higher to compile and run.</p>
+<h3><span class="mw-headline" id="At_the_console">At the console</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Frege_(programming_language)&amp;action=edit&amp;section=4" title="Edit section: At the console">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>As the "Getting started" page states,<sup id="cite_ref-5" class="reference"><a href="#cite_note-5">[5]</a></sup> to compile it:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="gp">$</span> mkdir classes
+<span class="gp">$</span> java -Xss1m -jar <span class="si">${</span><span class="nv">install_dir</span><span class="si">}</span>/fregec.jar -d classes src/hello.fr
+</pre></div>
+<p>This assumes the downloaded <i>frege3.xx.vvv.jar</i> has been renamed to <i>fregec.jar</i> for ease of use.</p>
+<p>To run the compiled program specify the package name as start class. On <a href="/wiki/Linux" title="Linux">Linux</a> and other <a href="/wiki/Unix" title="Unix">Unix</a> systems:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="gp">$</span> java -cp classes:<span class="si">${</span><span class="nv">install_dir</span><span class="si">}</span>/fregec.jar Hello arg1 arg2
+<span class="go">Hello world! your arguments are: ["arg1", "arg2"]</span>
+</pre></div>
+<p>On <a href="/wiki/Microsoft_Windows" title="Microsoft Windows">Microsoft Windows</a> the classpath separator has to be changed to ';'</p>
+<h3><span class="mw-headline" id="At_the_Eclipse_devel._environment">At the <a href="/wiki/Eclipse_(software)" title="Eclipse (software)">Eclipse</a> devel. environment</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Frege_(programming_language)&amp;action=edit&amp;section=5" title="Edit section: At the Eclipse devel. environment">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>There is a <a href="/wiki/Plug-in_(computing)" title="Plug-in (computing)">plug-in</a> for <a href="/wiki/Eclipse_(software)" title="Eclipse (software)">Eclipse</a> with instructions given at <a rel="nofollow" class="external text" href="https://github.com/Frege/frege/wiki/How-To-Install-Eclipse-FregIDE">How-to EclipseFregIDE</a>.</p>
+<h2><span class="mw-headline" id="More_involved_examples">More involved examples</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Frege_(programming_language)&amp;action=edit&amp;section=6" title="Edit section: More involved examples">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="Records">Records</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Frege_(programming_language)&amp;action=edit&amp;section=7" title="Edit section: Records">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="kr">data</span> <span class="kt">Person</span> <span class="ow">=</span> <span class="kt">P</span> <span class="p">{</span> <span class="n">name</span> <span class="ow">::</span> <span class="kt">String</span><span class="p">,</span> <span class="n">birthyear</span> <span class="ow">::</span> <span class="kt">Int</span> <span class="p">}</span>
+
+<span class="nf">frege</span> <span class="ow">=</span> <span class="kt">P</span> <span class="s">"Gottlob Frege"</span> <span class="mi">1848</span> 
+<span class="nf">smith</span> <span class="ow">=</span> <span class="kt">P</span> <span class="p">{</span> <span class="n">birthyear</span> <span class="ow">=</span> <span class="mi">1990</span><span class="p">,</span> <span class="n">name</span> <span class="ow">=</span> <span class="s">"Joe Smith"</span> <span class="p">}</span>
+
+<span class="c1">-- tell if first person is older than second</span>
+<span class="nf">older</span> <span class="ow">::</span> <span class="kt">Person</span> <span class="ow">-&gt;</span> <span class="kt">Person</span> <span class="ow">-&gt;</span> <span class="kt">Bool</span>
+<span class="nf">older</span> <span class="kt">P</span><span class="p">{</span><span class="n">birthyear</span><span class="p">}</span> <span class="n">p2</span> <span class="ow">=</span> <span class="n">birthyear</span> <span class="o">&lt;</span> <span class="n">p2</span><span class="o">.</span><span class="n">birthyear</span>
+
+<span class="nf">main</span> <span class="kr">_</span> <span class="ow">=</span> <span class="n">println</span> <span class="p">(</span><span class="n">frege</span> <span class="p">`</span><span class="n">older</span><span class="p">`</span> <span class="n">smith</span><span class="p">)</span>  <span class="c1">-- prints true</span>
+</pre></div>
+<p>Unlike in Haskell, the record fields do not appear in the global namespace. Thus it is possible to reuse the same field name in different types. The accessor functions in the example are known as Person.name and Person.birthyear</p>
+<p>The record syntax is really syntactic sugar, and the associated data constructor can be used with traditional or record syntax. The same holds for patterns.</p>
+<p>Record pattern syntax allows to check for a given constructor and check specific fields or bind them to local variables. This makes patterns independent from the number and order of fields in a constructor.</p>
+<h3><span class="mw-headline" id="Using_Java_classes_and_methods">Using Java classes and methods</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Frege_(programming_language)&amp;action=edit&amp;section=8" title="Edit section: Using Java classes and methods">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="cm">{-- </span>
+<span class="cm">    This program displays the</span>
+<span class="cm">    current time on standard output</span>
+<span class="cm">    every other second.</span>
+<span class="cm">    -}</span>
+    
+<span class="kr">module</span> <span class="err">examples.</span><span class="nn">CommandLineClock</span> <span class="kr">where</span>
+
+<span class="kr">data</span> <span class="kt">Date</span> <span class="ow">=</span> <span class="n">native</span> <span class="n">java</span><span class="o">.</span><span class="n">util</span><span class="o">.</span><span class="kt">Date</span> <span class="kr">where</span>
+    <span class="n">native</span> <span class="n">new</span> <span class="ow">::</span> <span class="nb">()</span> <span class="ow">-&gt;</span> <span class="kt">IO</span> <span class="p">(</span><span class="kt">MutableIO</span> <span class="kt">Date</span><span class="p">)</span>             <span class="c1">-- new Date()</span>
+    <span class="n">native</span> <span class="n">toString</span> <span class="ow">::</span> <span class="kt">Mutable</span> <span class="n">s</span> <span class="kt">Date</span> <span class="ow">-&gt;</span> <span class="kt">ST</span> <span class="n">s</span> <span class="kt">String</span>    <span class="c1">-- d.toString()</span>
+
+<span class="c1">--- 'IO' action to give us the current time as 'String'</span>
+<span class="nf">current</span> <span class="ow">::</span> <span class="kt">IO</span> <span class="kt">String</span>
+<span class="nf">current</span> <span class="ow">=</span> <span class="kr">do</span>
+    <span class="n">d</span> <span class="ow">&lt;-</span> <span class="kt">Date</span><span class="o">.</span><span class="n">new</span> <span class="nb">()</span>  <span class="c1">-- reads system timer, hence IO</span>
+    <span class="n">d</span><span class="o">.</span><span class="n">toString</span>
+
+<span class="nf">main</span> <span class="n">args</span> <span class="ow">=</span>  
+    <span class="n">forever</span> <span class="kr">do</span>
+        <span class="n">current</span> <span class="o">&gt;&gt;=</span> <span class="n">print</span>   <span class="c1">-- print formatted date</span>
+        <span class="n">print</span> <span class="s">"</span><span class="se">\r</span><span class="s">"</span>          <span class="c1">-- followed by carriage return</span>
+        <span class="n">stdout</span><span class="o">.</span><span class="n">flush</span>        <span class="c1">-- make sure it's shown</span>
+        <span class="kt">Thread</span><span class="o">.</span><span class="n">sleep</span> <span class="mi">999</span><span class="kt">L</span>   <span class="c1">-- wait 0.999 seconds</span>
+</pre></div>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Frege_(programming_language)&amp;action=edit&amp;section=9" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-frege-project-1"><span class="mw-cite-backlink">^ <a href="#cite_ref-frege-project_1-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-frege-project_1-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/Frege/frege">The Frege project</a></span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://fregepl.blogspot.com/2007/09/what-is-frege-or-what-will-it-be.html">What is frege (or what will it be)?</a> Historical post.</span></li>
+<li id="cite_note-prelude-base-3"><span class="mw-cite-backlink">^ <a href="#cite_ref-prelude-base_3-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-prelude-base_3-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/Frege/frege/blob/master/frege/prelude/PreludeBase.fr">PreludeBase.fr</a></span></li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/Frege/frege/blob/master/frege/prelude/PreludeMonad.fr">Monadic related functionality</a></span></li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/Frege/frege/wiki/Getting-Started">Frege project - Getting started</a></span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Frege_(programming_language)&amp;action=edit&amp;section=10" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="https://github.com/Frege/frege">Frege project home page</a></li>
+<li><a rel="nofollow" class="external text" href="http://fregepl.blogspot.com">Frege Programming Language Blog</a></li>
+<li><a rel="nofollow" class="external text" href="http://try.frege-lang.org">Frege online interpreter</a></li>
+<li><a rel="nofollow" class="external text" href="http://mmhelloworld.blogspot.com/2012/02/hello-world-frege.html">Hello World Frege!</a></li>
+</ul>
+<h3><span class="mw-headline" id="In_depth">In depth</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Frege_(programming_language)&amp;action=edit&amp;section=11" title="Edit section: In depth">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<ul>
+<li><a rel="nofollow" class="external text" href="https://github.com/Frege/frege/releases">downloads, including language reference</a></li>
+<li><a rel="nofollow" class="external text" href="https://github.com/Frege/frege/tree/master/examples">Frege examples</a></li>
+</ul>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1215
+Cached time: 20170124220232
+Cache expiry: 86400
+Dynamic content: true
+CPU time usage: 0.160 seconds
+Real time usage: 0.960 seconds
+Preprocessor visited node count: 1161/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 40182/2097152 bytes
+Template argument size: 10467/2097152 bytes
+Highest expansion depth: 25/40
+Expensive parser function count: 4/500
+Lua time usage: 0.067/10.000 seconds
+Lua memory usage: 2.1 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  930.458      1 -total
+ 14.99%  139.503      3 Template:Ambox
+ 10.71%   99.618      1 Template:Multiple_issues
+  9.28%   86.336      2 Template:Infobox
+  7.44%   69.207      1 Template:Infobox_programming_language
+  3.87%   36.002      1 Template:Notability
+  2.94%   27.351      1 Template:Find_sources_mainspace
+  2.87%   26.725      1 Template:Infobox_software/simple
+  2.17%   20.219      1 Template:Primary
+  2.17%   20.155      2 Template:Start_date_and_age
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:35111228-0!*!0!!en!4!* and timestamp 20170124220231 and revision id 736653410
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Frege_(programming_language)&amp;oldid=736653410">https://en.wikipedia.org/w/index.php?title=Frege_(programming_language)&amp;oldid=736653410</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Haskell_programming_language_family" title="Category:Haskell programming language family">Haskell programming language family</a></li><li><a href="/wiki/Category:Functional_languages" title="Category:Functional languages">Functional languages</a></li><li><a href="/wiki/Category:JVM_programming_languages" title="Category:JVM programming languages">JVM programming languages</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Articles_lacking_reliable_references_from_August_2016" title="Category:Articles lacking reliable references from August 2016">Articles lacking reliable references from August 2016</a></li><li><a href="/wiki/Category:All_articles_lacking_reliable_references" title="Category:All articles lacking reliable references">All articles lacking reliable references</a></li><li><a href="/wiki/Category:Articles_with_topics_of_unclear_notability_from_August_2016" title="Category:Articles with topics of unclear notability from August 2016">Articles with topics of unclear notability from August 2016</a></li><li><a href="/wiki/Category:All_articles_with_topics_of_unclear_notability" title="Category:All articles with topics of unclear notability">All articles with topics of unclear notability</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Frege+%28programming+language%29" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Frege+%28programming+language%29" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/Frege_(programming_language)"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:Frege_(programming_language)"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/Frege_(programming_language)" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=Frege_(programming_language)&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Frege_(programming_language)&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Frege_(programming_language)" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Frege_(programming_language)" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Frege_(programming_language)&amp;oldid=736653410" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Frege_(programming_language)&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q5501320" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Frege_%28programming_language%29&amp;id=736653410" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Frege+%28programming+language%29">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Frege+%28programming+language%29&amp;returnto=Frege+%28programming+language%29&amp;oldid=736653410&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Frege_(programming_language)&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-ca"><a href="https://ca.wikipedia.org/wiki/Frege_(llenguatge_de_programaci%C3%B3)" title="Frege (llenguatge de programació) – Catalan" lang="ca" hreflang="ca" class="interlanguage-link-target">Català</a></li><li class="interlanguage-link interwiki-ru"><a href="https://ru.wikipedia.org/wiki/Frege" title="Frege – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q5501320#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 28 August 2016, at 23:48.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Frege_(programming_language)&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.160","walltime":"0.960","ppvisitednodes":{"value":1161,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":40182,"limit":2097152},"templateargumentsize":{"value":10467,"limit":2097152},"expansiondepth":{"value":25,"limit":40},"expensivefunctioncount":{"value":4,"limit":500},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  930.458      1 -total"," 14.99%  139.503      3 Template:Ambox"," 10.71%   99.618      1 Template:Multiple_issues","  9.28%   86.336      2 Template:Infobox","  7.44%   69.207      1 Template:Infobox_programming_language","  3.87%   36.002      1 Template:Notability","  2.94%   27.351      1 Template:Find_sources_mainspace","  2.87%   26.725      1 Template:Infobox_software/simple","  2.17%   20.219      1 Template:Primary","  2.17%   20.155      2 Template:Start_date_and_age"]},"scribunto":{"limitreport-timeusage":{"value":"0.067","limit":"10.000"},"limitreport-memusage":{"value":2201703,"limit":52428800}},"cachereport":{"origin":"mw1215","timestamp":"20170124220232","ttl":86400,"transientcontent":true}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":59,"wgHostname":"mw1263"});});</script>
+	</body>
+</html>

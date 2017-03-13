@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Quantum programming - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Quantum_programming","wgTitle":"Quantum programming","wgCurRevisionId":754269110,"wgRevisionId":754269110,"wgArticleId":2137644,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Programming language classification","Quantum information science","Programming paradigms"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Quantum_programming","wgRelevantArticleId":2137644,"wgRequestId":"WIFN7wpAMEwAADFt3lAAAABN","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":false},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q4218497","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.cite.styles":"ready","ext.math.styles":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["ext.cite.a11y","ext.math.scripts","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.legacy.wikibits","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.math.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.29.0-wmf.8"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Quantum_programming"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Quantum_programming&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Quantum_programming&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Quantum_programming"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Quantum_programming rootpage-Quantum_programming skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Quantum programming</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><script>function mfTempOpenSection(id){var block=document.getElementById("mf-section-"+id);block.className+=" open-block";block.previousSibling.className+=" open-block";}</script><p><b>Quantum programming</b> is a set of computer <a href="/wiki/Programming_language" title="Programming language">programming languages</a> that allow the expression of <a href="/wiki/Quantum_algorithm" title="Quantum algorithm">quantum algorithms</a> using high-level constructs.<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">[1]</a></sup> The point of quantum languages is not so much to provide a tool for programmers, but to provide tools for researchers to understand better how quantum computation works and how to reason formally about quantum algorithms.</p>
+<p>One can single out two main groups of quantum programming languages: imperative quantum programming languages and functional quantum programming languages.</p>
+<p>The most prominent representatives of the first group are QCL<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">[2]</a></sup> and LanQ.<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">[3]</a></sup></p>
+<p>Efforts are underway to develop <a href="/wiki/Functional_programming_languages" class="mw-redirect" title="Functional programming languages">functional programming languages</a> for <a href="/wiki/Quantum_computing" title="Quantum computing">quantum computing</a>. Examples include Selinger's QPL,<sup id="cite_ref-qpl_4-0" class="reference"><a href="#cite_note-qpl-4">[4]</a></sup> and the <a href="/wiki/Haskell_(programming_language)" title="Haskell (programming language)">Haskell-like</a> language QML by Altenkirch and Grattage.<sup id="cite_ref-qml1_5-0" class="reference"><a href="#cite_note-qml1-5">[5]</a></sup><sup id="cite_ref-qml2_6-0" class="reference"><a href="#cite_note-qml2-6">[6]</a></sup> Higher-order quantum programming languages, based on <a href="/wiki/Lambda_calculus" title="Lambda calculus">lambda calculus</a>, have been proposed by van Tonder,<sup id="cite_ref-7" class="reference"><a href="#cite_note-7">[7]</a></sup> Selinger and Valiron <sup id="cite_ref-8" class="reference"><a href="#cite_note-8">[8]</a></sup> and by Arrighi and Dowek.<sup id="cite_ref-9" class="reference"><a href="#cite_note-9">[9]</a></sup></p>
+<p>Simon Gay's <a rel="nofollow" class="external text" href="http://www.dcs.gla.ac.uk/~simon/quantum">Quantum Programming Languages Survey</a> provides information on the state of research and a comprehensive bibliography of resources about quantum programming as of 2007.</p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Imperative_quantum_programming_languages"><span class="tocnumber">1</span> <span class="toctext">Imperative quantum programming languages</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Quantum_pseudocode"><span class="tocnumber">1.1</span> <span class="toctext">Quantum pseudocode</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Quantum_computing_language"><span class="tocnumber">1.2</span> <span class="toctext">Quantum computing language</span></a>
+<ul>
+<li class="toclevel-3 tocsection-4"><a href="#Syntax"><span class="tocnumber">1.2.1</span> <span class="toctext">Syntax</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-5"><a href="#Q_language"><span class="tocnumber">1.3</span> <span class="toctext">Q language</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#qGCL"><span class="tocnumber">1.4</span> <span class="toctext">qGCL</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a href="#Functional_quantum_programming_languages"><span class="tocnumber">2</span> <span class="toctext">Functional quantum programming languages</span></a>
+<ul>
+<li class="toclevel-2 tocsection-8"><a href="#QFC_and_QPL"><span class="tocnumber">2.1</span> <span class="toctext">QFC and QPL</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#QML"><span class="tocnumber">2.2</span> <span class="toctext">QML</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#LIQUi.7C.3E"><span class="tocnumber">2.3</span> <span class="toctext">LIQUi|&gt;</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#Quantum_lambda_calculi"><span class="tocnumber">2.4</span> <span class="toctext">Quantum lambda calculi</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#Quipper"><span class="tocnumber">2.5</span> <span class="toctext">Quipper</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-13"><a href="#References"><span class="tocnumber">3</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="#External_links"><span class="tocnumber">4</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Imperative_quantum_programming_languages">Imperative quantum programming languages</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quantum_programming&amp;action=edit&amp;section=1" title="Edit section: Imperative quantum programming languages">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="Quantum_pseudocode">Quantum pseudocode</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quantum_programming&amp;action=edit&amp;section=2" title="Edit section: Quantum pseudocode">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Quantum pseudocode proposed by E. Knill is the first formalized language for description of <a href="/wiki/Quantum_algorithm" title="Quantum algorithm">quantum algorithms</a>. It was introduced and, moreover, was tightly connected with a model of quantum machine called <a href="/wiki/Quantum_Random_Access_Machine" class="mw-redirect" title="Quantum Random Access Machine">Quantum Random Access Machine</a> (QRAM).</p>
+<h3><span class="mw-headline" id="Quantum_computing_language">Quantum computing language</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quantum_programming&amp;action=edit&amp;section=3" title="Edit section: Quantum computing language">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p><a rel="nofollow" class="external text" href="http://tph.tuwien.ac.at/~oemer/qcl.html">QCL</a> (Quantum Computation Language) is one of the first implemented quantum <a href="/wiki/Programming_languages" class="mw-redirect" title="Programming languages">programming languages</a>. Its <a href="/wiki/Syntax" title="Syntax">syntax</a> resembles the syntax of the <a href="/wiki/C_programming_language" class="mw-redirect" title="C programming language">C programming language</a> and its classical <a href="/wiki/Data_type" title="Data type">data types</a> are similar to primitive data types in C. One can combine classical code and quantum code in the same program.</p>
+<p>The basic built-in quantum data type in QCL is the qureg (quantum register). It can be interpreted as an array of qubits (quantum bits).</p>
+<pre>
+   qureg x1[2]; // 2-qubit quantum register x1
+   qureg x2[2]; // 2-qubit quantum register x2
+   H(x1); // Hadamard operation on x1
+   H(x2[1]); // Hadamard operation on the first qubit of the register x2
+</pre>
+<p>Since the qcl interpreter uses qlib simulation library, it is possible to observe the internal state of the quantum machine during execution of the quantum program.</p>
+<pre>
+   qcl&gt; dump
+   : STATE: 4 / 32 qubits allocated, 28 / 32 qubits free
+   0.35355 |0&gt; + 0.35355 |1&gt; + 0.35355 |2&gt; + 0.35355 |3&gt;
+   + 0.35355 |8&gt; + 0.35355 |9&gt; + 0.35355 |10&gt; + 0.35355 |11&gt;
+</pre>
+<p>Note that the dump operation is different from measurement, since it does not influence the state of the quantum machine and can be realized only using a simulator.</p>
+<p>The QCL standard library provides standard quantum operators used in quantum algorithms such as:</p>
+<ul>
+<li>controlled-not with many target qubits,</li>
+<li><a href="/wiki/Hadamard_operation" class="mw-redirect" title="Hadamard operation">Hadamard operation</a> on many qubits,</li>
+<li>parse and controlled phase.</li>
+</ul>
+<p>The most important feature of QCL is the support for user-defined operators and functions. Like in modern programming languages, it is possible to define new operations which can be used to manipulate quantum data. For example:</p>
+<pre>
+   operator diffuse (qureg q) {
+     H(q);                 // Hadamard Transform
+     Not(q);               // Invert q
+     CPhase(pi, q);        // Rotate if q=1111..
+     !Not(q);              // undo inversion
+     !H(q);                // undo Hadamard Transform
+   }
+</pre>
+<p>defines inverse about the mean operator used in <a href="/wiki/Grover%27s_algorithm" title="Grover's algorithm">Grover's algorithm</a>. This allows one to define algorithms on a higher level of abstraction and extend the library of functions available for programmers.</p>
+<h4><span class="mw-headline" id="Syntax">Syntax</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quantum_programming&amp;action=edit&amp;section=4" title="Edit section: Syntax">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<ul>
+<li>Data types
+<ul>
+<li>Quantum - qureg, quvoid, quconst, quscratch, qucond</li>
+<li>Classical - int, real, complex, boolean, string, vector, matrix, tensor</li>
+</ul>
+</li>
+<li>Function types
+<ul>
+<li>qufunct - Pseudo-classic operators. Can only change the permutation of basic states.</li>
+<li>operator - General unitary operators. Can change the amplitude.</li>
+<li>procedure - Can call measure, print, and dump inside this function. This function is non-invertible.</li>
+</ul>
+</li>
+<li>Built-in functions
+<ul>
+<li>Quantum
+<ul>
+<li>qufunct - Fanout, Swap, Perm2, Perm4, Perm8, Not, CNot</li>
+<li>operator - Matrix2x2, Matrix4x4, Matrix8x8, Rot, Mix, H, CPhase, SqrtNot, X, Y, Z, S, T</li>
+<li>procedure - measure, dump, reset</li>
+</ul>
+</li>
+<li>Classical
+<ul>
+<li>Arithmetic - sin, cos, tan, log, sqrt, ...</li>
+<li>Complex - Re, Im, conj</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3><span class="mw-headline" id="Q_language">Q language</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quantum_programming&amp;action=edit&amp;section=5" title="Edit section: Q language">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p><a rel="nofollow" class="external text" href="https://web.archive.org/web/20090620011647/http://sra.itc.it/people/serafini/qlang/">Q Language</a> is the second implemented imperative quantum programming language.</p>
+<p>Q Language was implemented as an extension of C++ programming language. It provides classes for basic quantum operations like QHadamard, QFourier, QNot, and QSwap, which are derived from the base class Qop. New operators can be defined using C++ class mechanism.</p>
+<p>Quantum memory is represented by class Qreg.</p>
+<pre>
+   Qreg x1; // 1-qubit quantum register with initial value 0
+   Qreg x2(2,0); // 2-qubit quantum register with initial value 0
+</pre>
+<p>The computation process is executed using a provided simulator. Noisy environment can be simulated using parameters of the simulator.</p>
+<h3><span class="mw-headline" id="qGCL">qGCL</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quantum_programming&amp;action=edit&amp;section=6" title="Edit section: qGCL">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Quantum Guarded Command Language (qGCL) was defined by P. Zuliani in his PhD thesis. It is based on <a href="/wiki/Guarded_Command_Language" title="Guarded Command Language">Guarded Command Language</a> created by <a href="/wiki/Edsger_Dijkstra" class="mw-redirect" title="Edsger Dijkstra">Edsger Dijkstra</a>.</p>
+<p>It can be described as a language of quantum programs specification.</p>
+<h2><span class="mw-headline" id="Functional_quantum_programming_languages">Functional quantum programming languages</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quantum_programming&amp;action=edit&amp;section=7" title="Edit section: Functional quantum programming languages">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>During the last few years many quantum programming languages based on the <a href="/wiki/Functional_programming" title="Functional programming">functional programming</a> paradigm were proposed. Functional programming languages are well-suited for reasoning about programs.</p>
+<h3><span class="mw-headline" id="QFC_and_QPL">QFC and QPL</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quantum_programming&amp;action=edit&amp;section=8" title="Edit section: QFC and QPL">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>QFC and QPL are two closely related quantum programming languages defined by Peter Selinger. They differ only in their syntax: QFC uses a flow chart syntax, whereas QPL uses a textual syntax. These languages have classical control flow but can operate on quantum or classical data. Selinger gives a denotational semantics for these languages in a category of <a href="/wiki/Superoperator" title="Superoperator">superoperators</a>.</p>
+<h3><span class="mw-headline" id="QML">QML</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quantum_programming&amp;action=edit&amp;section=9" title="Edit section: QML">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p><a rel="nofollow" class="external text" href="http://sneezy.cs.nott.ac.uk/QML/">QML</a> is a <a href="/wiki/Haskell_(programming_language)" title="Haskell (programming language)">Haskell</a>-like quantum programming language by Altenkirch and Grattage.<sup id="cite_ref-qml1_5-1" class="reference"><a href="#cite_note-qml1-5">[5]</a></sup> Unlike Selinger's QPL, this language takes duplication, rather than discarding, of quantum information as a primitive operation. Duplication in this context is understood to be the operation that maps <span><span class="mwe-math-mathml-inline mwe-math-mathml-a11y mw-math-element" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" >
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi>&#x03D5;<!-- ϕ --></mi>
+        <mo fence="false" stretchy="false">&#x27E9;<!-- ⟩ --></mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle |\phi \rangle }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/312d43de853a9e6ca74888e63394fc8081f56a43" class="mwe-math-fallback-image-inline mw-math-element" aria-hidden="true" style="vertical-align: -0.838ex; width:2.968ex; height:2.843ex;" alt="|\phi\rangle" /></span> to <span><span class="mwe-math-mathml-inline mwe-math-mathml-a11y mw-math-element" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" >
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi>&#x03D5;<!-- ϕ --></mi>
+        <mo fence="false" stretchy="false">&#x27E9;<!-- ⟩ --></mo>
+        <mo>&#x2297;<!-- ⊗ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi>&#x03D5;<!-- ϕ --></mi>
+        <mo fence="false" stretchy="false">&#x27E9;<!-- ⟩ --></mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle |\phi \rangle \otimes |\phi \rangle }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f829c95befccd04865f8e850ca65719f2b643a6d" class="mwe-math-fallback-image-inline mw-math-element" aria-hidden="true" style="vertical-align: -0.838ex; width:8.787ex; height:2.843ex;" alt="|\phi \rangle \otimes |\phi \rangle " /></span>, and is not to be confused with the impossible operation of <a href="/wiki/No_cloning_theorem" class="mw-redirect" title="No cloning theorem">cloning</a>; the authors claim it is akin to how sharing is modeled in classical languages. QML also introduces both classical and quantum control operators, whereas most other languages rely on classical control.</p>
+<p>An <a href="/wiki/Operational_semantics" title="Operational semantics">operational semantics</a> for QML is given in terms of <a href="/wiki/Quantum_circuit" title="Quantum circuit">quantum circuits</a>, while a <a href="/wiki/Denotational_semantics" title="Denotational semantics">denotational semantics</a> is presented in terms of <a href="/wiki/Superoperator" title="Superoperator">superoperators</a>, and these are shown to agree. Both the operational and denotational semantics have been implemented (classically) in Haskell.<sup id="cite_ref-10" class="reference"><a href="#cite_note-10">[10]</a></sup></p>
+<h3><span class="mw-headline" id="LIQUi.7C.3E">LIQUi|&gt;</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quantum_programming&amp;action=edit&amp;section=10" title="Edit section: LIQUi|&gt;">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p><a rel="nofollow" class="external text" href="http://stationq.github.io/Liquid/">LIQUi|&gt;</a> (pronounced 'liquid') is a quantum simulation extension on the <a href="/wiki/F" title="F">F#</a> programming language. It is currently being developed by the Quantum Architectures and Computation Group (QuArC) <sup id="cite_ref-11" class="reference"><a href="#cite_note-11">[11]</a></sup> part of the <a rel="nofollow" class="external text" href="https://stationq.microsoft.com/">StationQ</a> efforts at Microsoft Research. LIQUi|&gt; seeks to allow theorists to experiment with quantum algorithm design before physical quantum computers are available for use.</p>
+<p>It includes a programming language, optimization and scheduling algorithms, and quantum simulators. LIQUi|&gt; can be used to translate a quantum algorithm written in the form of a high-level program into the low-level machine instructions for a quantum device. <sup id="cite_ref-12" class="reference"><a href="#cite_note-12">[12]</a></sup></p>
+<h3><span class="mw-headline" id="Quantum_lambda_calculi">Quantum lambda calculi</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quantum_programming&amp;action=edit&amp;section=11" title="Edit section: Quantum lambda calculi">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Quantum lambda calculi are extensions of the classical <a href="/wiki/Lambda_calculus" title="Lambda calculus">lambda calculus</a> introduced by <a href="/wiki/Alonzo_Church" title="Alonzo Church">Alonzo Church</a> and <a href="/wiki/Stephen_Cole_Kleene" title="Stephen Cole Kleene">Stephen Cole Kleene</a> in the 1930s. The purpose of quantum lambda calculi is to extend quantum programming languages with a theory of <a href="/wiki/Higher-order_functions" class="mw-redirect" title="Higher-order functions">higher-order functions</a>.</p>
+<p>The first attempt to define a quantum lambda calculus was made by Philip Maymin in 1996.<sup id="cite_ref-13" class="reference"><a href="#cite_note-13">[13]</a></sup> His lambda-q calculus is powerful enough to express any quantum computation. However, this language can efficiently solve <a href="/wiki/NP-complete" class="mw-redirect" title="NP-complete">NP-complete</a> problems, and therefore appears to be strictly stronger than the standard quantum computational models (such as the <a href="/wiki/Quantum_Turing_machine" title="Quantum Turing machine">quantum Turing machine</a> or the <a href="/wiki/Quantum_circuit" title="Quantum circuit">quantum circuit</a> model). Therefore, Maymin's lambda-q calculus is probably not implementable on a physical device.</p>
+<p>In 2003, André van Tonder defined an extension of the <a href="/wiki/Lambda_calculus" title="Lambda calculus">lambda calculus</a> suitable for proving correctness of quantum programs. He also provided an implementation in the <a href="/wiki/Scheme_(programming_language)" title="Scheme (programming language)">Scheme</a> programming language.<sup id="cite_ref-14" class="reference"><a href="#cite_note-14">[14]</a></sup></p>
+<p>In 2004, Selinger and Valiron defined a <a href="/wiki/Strongly_typed" class="mw-redirect" title="Strongly typed">strongly typed</a> lambda calculus for quantum computation with a type system based on <a href="/wiki/Linear_logic" title="Linear logic">linear logic</a>.</p>
+<h3><span class="mw-headline" id="Quipper">Quipper</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quantum_programming&amp;action=edit&amp;section=12" title="Edit section: Quipper">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p><a rel="nofollow" class="external text" href="http://www.mathstat.dal.ca/~selinger/quipper/">Quipper</a> was published in 2013.<sup id="cite_ref-15" class="reference"><a href="#cite_note-15">[15]</a></sup> It is implemented as an embedded language, using <a href="/wiki/Haskell_(programming_language)" title="Haskell (programming language)">Haskell</a> as the host language.<sup id="cite_ref-16" class="reference"><a href="#cite_note-16">[16]</a></sup> For this reason, quantum programs written in Quipper are written in <a href="/wiki/Haskell_(programming_language)" title="Haskell (programming language)">Haskell</a> using provided libraries. For example, the following code implements preparation of a superposition</p>
+<pre>
+   import Quipper
+   
+   spos :: Bool -&gt; Circ Qubit
+   spos b = do q &lt;- qinit b
+               r &lt;- hadamard q
+               return r
+</pre>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quantum_programming&amp;action=edit&amp;section=13" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><cite class="citation web">Jarosław Adam Miszczak. <a rel="nofollow" class="external text" href="http://www.amazon.com/High-Level-Structures-Quantum-Computing/dp/1608458512/">"High-level Structures in Quantum Computing"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">12 December</span> 2015</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AQuantum+programming&amp;rft.au=Jaros%C5%82aw+Adam+Miszczak&amp;rft.btitle=High-level+Structures+in+Quantum+Computing&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.amazon.com%2FHigh-Level-Structures-Quantum-Computing%2Fdp%2F1608458512%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><cite class="citation web">Bernhard Omer. <a rel="nofollow" class="external text" href="http://tph.tuwien.ac.at/~oemer/qcl.html">"The QCL Programming Language"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AQuantum+programming&amp;rft.au=Bernhard+Omer&amp;rft.btitle=The+QCL+Programming+Language&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Ftph.tuwien.ac.at%2F~oemer%2Fqcl.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><cite class="citation web">Hynek Mlnařík. <a rel="nofollow" class="external text" href="http://lanq.sourceforge.net/">"LanQ – a quantum imperative programming language"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AQuantum+programming&amp;rft.au=Hynek+Mlna%C5%99%C3k&amp;rft.btitle=LanQ+%93+a+quantum+imperative+programming+language&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Flanq.sourceforge.net%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-qpl-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-qpl_4-0">^</a></b></span> <span class="reference-text">Peter Selinger, <a rel="nofollow" class="external text" href="http://www.mathstat.dal.ca/~selinger/papers.html#qpl">"Towards a quantum programming language"</a>, Mathematical Structures in Computer Science 14(4):527-586, 2004.</span></li>
+<li id="cite_note-qml1-5"><span class="mw-cite-backlink">^ <a href="#cite_ref-qml1_5-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-qml1_5-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.cs.nott.ac.uk/~jjg/qml.html">Jonathan Grattage: QML Research</a> (website)</span></li>
+<li id="cite_note-qml2-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-qml2_6-0">^</a></b></span> <span class="reference-text">T. Altenkirch, V. Belavkin, J. Grattage, A. Green, A. Sabry, J. K. Vizzotto, <a rel="nofollow" class="external text" href="http://sneezy.cs.nott.ac.uk/qml">QML: A Functional Quantum Programming Language</a> (website)</span></li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text">Andre van Tonder, <a rel="nofollow" class="external text" href="http://dx.doi.org/10.1137/S0097539703432165">"A Lambda Calculus for Quantum Computation"</a>, SIAM J. Comput., 33(5), 1109–1135. (27 pages), 2004. Also available from <a rel="nofollow" class="external text" href="http://arxiv.org/abs/quant-ph/0307150">arXiv:quant-ph/0307150</a></span></li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text">Peter Selinger and Benoît Valiron, <a rel="nofollow" class="external text" href="http://www.mathstat.dal.ca/~selinger/papers/#qlambda">"A lambda calculus for quantum computation with classical control"</a>, Mathematical Structures in Computer Science 16(3):527-552, 2006.</span></li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-9">^</a></b></span> <span class="reference-text">Pablo Arrighi, Gilles Dowek, <a rel="nofollow" class="external text" href="http://www.arxiv.org/abs/quant-ph/0612199">"Linear-algebraic lambda-calculus: higher-order, encodings and confluence"</a>, 2006</span></li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-10">^</a></b></span> <span class="reference-text">Jonathan Grattage, <a rel="nofollow" class="external text" href="http://sneezy.cs.nott.ac.uk/qml/compiler">QML: A Functional Quantum Programming Language (compiler)</a>, 2005–2008</span></li>
+<li id="cite_note-11"><span class="mw-cite-backlink"><b><a href="#cite_ref-11">^</a></b></span> <span class="reference-text">Quantum Architectures and Computation Group (QuArC), <a rel="nofollow" class="external free" href="https://www.microsoft.com/en-us/research/group/quantum-architectures-and-computation-group-quarc/">https://www.microsoft.com/en-us/research/group/quantum-architectures-and-computation-group-quarc/</a>, 2011</span></li>
+<li id="cite_note-12"><span class="mw-cite-backlink"><b><a href="#cite_ref-12">^</a></b></span> <span class="reference-text">Language-Integrated Quantum Operations: LIQUi|&gt;, <a rel="nofollow" class="external autonumber" href="https://www.microsoft.com/en-us/research/project/language-integrated-quantum-operations-liqui/">[1]</a>, 2016</span></li>
+<li id="cite_note-13"><span class="mw-cite-backlink"><b><a href="#cite_ref-13">^</a></b></span> <span class="reference-text">Philip Maymin, <a rel="nofollow" class="external text" href="http://arxiv.org/abs/quant-ph/9612052">"Extending the Lambda Calculus to Express Randomized and Quantumized Algorithms"</a>, 1996</span></li>
+<li id="cite_note-14"><span class="mw-cite-backlink"><b><a href="#cite_ref-14">^</a></b></span> <span class="reference-text"><cite class="citation web">André van Tonder. <a rel="nofollow" class="external text" href="http://www.het.brown.edu/people/andre/qlambda">"A lambda calculus for quantum computation (website)"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AQuantum+programming&amp;rft.au=Andr%C3%A9+van+Tonder&amp;rft.btitle=A+lambda+calculus+for+quantum+computation+%28website%29&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.het.brown.edu%2Fpeople%2Fandre%2Fqlambda&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-15"><span class="mw-cite-backlink"><b><a href="#cite_ref-15">^</a></b></span> <span class="reference-text"><cite class="citation web">Alexander S. Green; Peter LeFanu Lumsdaine; Neil J. Ross; Peter Selinger; Benoît Valiron. <a rel="nofollow" class="external text" href="http://www.mathstat.dal.ca/~selinger/quipper/">"The Quipper Language (website)"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AQuantum+programming&amp;rft.au=Alexander+S.+Green&amp;rft.au=Beno%C3%AEt+Valiron&amp;rft.au=Neil+J.+Ross&amp;rft.au=Peter+LeFanu+Lumsdaine&amp;rft.au=Peter+Selinger&amp;rft.btitle=The+Quipper+Language+%28website%29&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.mathstat.dal.ca%2F~selinger%2Fquipper%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-16"><span class="mw-cite-backlink"><b><a href="#cite_ref-16">^</a></b></span> <span class="reference-text"><cite class="citation arxiv">Alexander S. Green; Peter LeFanu Lumsdaine; Neil J. Ross; Peter Selinger; Benoît Valiron (2013). "An Introduction to Quantum Programming in Quipper". <a href="/wiki/ArXiv" title="ArXiv">arXiv</a>:<span class="plainlinks"><a rel="nofollow" class="external text" href="//arxiv.org/abs/1304.5485">1304.5485</a><span style="margin-left:0.1em"><img alt="Freely accessible" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/65/Lock-green.svg/9px-Lock-green.svg.png" title="Freely accessible" width="9" height="14" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/65/Lock-green.svg/14px-Lock-green.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/6/65/Lock-green.svg/18px-Lock-green.svg.png 2x" data-file-width="512" data-file-height="813" /></span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AQuantum+programming&amp;rft.atitle=An+Introduction+to+Quantum+Programming+in+Quipper&amp;rft.au=Alexander+S.+Green&amp;rft.au=Beno%C3%AEt+Valiron&amp;rft.au=Neil+J.+Ross&amp;rft.au=Peter+LeFanu+Lumsdaine&amp;rft.au=Peter+Selinger&amp;rft.date=2013&amp;rft.genre=preprint&amp;rft_id=info%3Aarxiv%2F1304.5485&amp;rft.jtitle=arXiv&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+</ol>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quantum_programming&amp;action=edit&amp;section=14" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.comlab.ox.ac.uk/people/bob.coecke/DCM_QPL_08.html">5th International Workshop on Quantum Physics and Logic</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.mathstat.dal.ca/~selinger/qpl2006/">4th International Workshop on Quantum Programming Languages</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.mathstat.dal.ca/~selinger/qpl2005/">3rd International Workshop on Quantum Programming Languages</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.mathstat.dal.ca/~selinger/qpl2004/">2nd International Workshop on Quantum Programming Languages</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.dcs.gla.ac.uk/~simon/quantum/">Bibliography on Quantum Programming Languages</a> (updated in May 2007)</li>
+<li><a rel="nofollow" class="external text" href="https://quantiki.org/wiki/quantum-programming-language">Quantum programming language</a> in <a rel="nofollow" class="external text" href="http://www.quantiki.org/">Quantiki</a></li>
+</ul>
+<div role="navigation" class="navbox" aria-labelledby="Quantum_information_science" style="padding:3px">
+<table class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="3">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:Quantum_information" title="Template:Quantum information"><abbr title="View this template" style=";;background:none transparent;border:none;">v</abbr></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:Quantum_information" title="Template talk:Quantum information"><abbr title="Discuss this template" style=";;background:none transparent;border:none;">t</abbr></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:Quantum_information&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;">e</abbr></a></li>
+</ul>
+</div>
+<div id="Quantum_information_science" style="font-size:114%"><a href="/wiki/Quantum_information_science" title="Quantum information science">Quantum information science</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">General</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Quantum_computer" class="mw-redirect" title="Quantum computer">Quantum computer</a></li>
+<li><a href="/wiki/Qubit" title="Qubit">Qubit</a></li>
+<li><a href="/wiki/DiVincenzo%27s_criteria" title="DiVincenzo's criteria">DiVincenzo's criteria</a></li>
+<li><a href="/wiki/Quantum_information" title="Quantum information">Quantum information</a></li>
+<li><a href="/wiki/Quantum_machine" title="Quantum machine">Quantum machine</a></li>
+<li><strong class="selflink">Quantum programming</strong></li>
+<li><a href="/wiki/Timeline_of_quantum_computing" title="Timeline of quantum computing">Timeline of quantum computing</a></li>
+</ul>
+</div>
+</td>
+<td class="navbox-image" rowspan="13" style="width:0%;padding:0px 0px 0px 2px">
+<div><a href="/wiki/File:Bloch_Sphere.svg" class="image"><img alt="Bloch Sphere.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Bloch_Sphere.svg/80px-Bloch_Sphere.svg.png" width="80" height="91" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Bloch_Sphere.svg/120px-Bloch_Sphere.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Bloch_Sphere.svg/160px-Bloch_Sphere.svg.png 2x" data-file-width="163" data-file-height="185" /></a></div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Quantum communication</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Quantum_capacity" title="Quantum capacity">Quantum capacity</a></li>
+<li><a href="/wiki/Classical_capacity" title="Classical capacity">Classical capacity</a></li>
+<li><a href="/wiki/Entanglement-assisted_classical_capacity" title="Entanglement-assisted classical capacity">Entanglement-assisted classical capacity</a></li>
+<li><a href="/wiki/Quantum_channel" title="Quantum channel">Quantum channel</a>
+<ul>
+<li><a href="/wiki/Quantum_network" title="Quantum network">Quantum network</a></li>
+</ul>
+</li>
+<li><a href="/wiki/Quantum_cryptography" title="Quantum cryptography">Quantum cryptography</a>
+<ul>
+<li><a href="/wiki/Quantum_key_distribution" title="Quantum key distribution">Quantum key distribution</a></li>
+</ul>
+</li>
+<li><a href="/wiki/Quantum_energy_teleportation" title="Quantum energy teleportation">Quantum energy teleportation</a></li>
+<li><a href="/wiki/Quantum_teleportation" title="Quantum teleportation">Quantum teleportation</a></li>
+<li><a href="/wiki/Superdense_coding" title="Superdense coding">Superdense coding</a></li>
+<li><a href="/wiki/LOCC" title="LOCC">LOCC</a></li>
+<li><a href="/wiki/Entanglement_distillation" title="Entanglement distillation">Entanglement distillation</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Quantum_algorithm" title="Quantum algorithm">Quantum algorithms</a></th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Universal_quantum_simulator" class="mw-redirect" title="Universal quantum simulator">Universal quantum simulator</a></li>
+<li><a href="/wiki/Deutsch%E2%80%93Jozsa_algorithm" title="Deutsch–Jozsa algorithm">Deutsch–Jozsa algorithm</a></li>
+<li><a href="/wiki/Grover%27s_algorithm" title="Grover's algorithm">Grover's algorithm</a></li>
+<li><a href="/wiki/Quantum_Fourier_transform" title="Quantum Fourier transform">Quantum Fourier transform</a></li>
+<li><a href="/wiki/Shor%27s_algorithm" title="Shor's algorithm">Shor's algorithm</a></li>
+<li><a href="/wiki/Simon%27s_problem" title="Simon's problem">Simon's problem</a></li>
+<li><a href="/wiki/Quantum_phase_estimation_algorithm" title="Quantum phase estimation algorithm">Quantum phase estimation algorithm</a></li>
+<li><a href="/wiki/Quantum_counting" class="mw-redirect" title="Quantum counting">Quantum counting</a></li>
+<li><a href="/wiki/Quantum_annealing" title="Quantum annealing">Quantum annealing</a></li>
+<li><a href="/wiki/Algorithmic_cooling" title="Algorithmic cooling">Algorithmic cooling</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Quantum_complexity_theory" title="Quantum complexity theory">Quantum complexity theory</a></th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Quantum_Turing_machine" title="Quantum Turing machine">Quantum Turing machine</a></li>
+<li><a href="/wiki/EQP_(complexity)" title="EQP (complexity)">EQP</a></li>
+<li><a href="/wiki/BQP" title="BQP">BQP</a></li>
+<li><a href="/wiki/QMA" title="QMA">QMA</a></li>
+<li><a href="/wiki/PostBQP" title="PostBQP">PostBQP</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Quantum computing models</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Quantum_circuit" title="Quantum circuit">Quantum circuit</a>
+<ul>
+<li><a href="/wiki/Quantum_gate" title="Quantum gate">Quantum gate</a></li>
+</ul>
+</li>
+<li><a href="/wiki/One-way_quantum_computer" title="One-way quantum computer">One-way quantum computer</a>
+<ul>
+<li><a href="/wiki/Cluster_state" title="Cluster state">cluster state</a></li>
+</ul>
+</li>
+<li><a href="/wiki/Adiabatic_quantum_computation" title="Adiabatic quantum computation">Adiabatic quantum computation</a></li>
+<li><a href="/wiki/Topological_quantum_computer" title="Topological quantum computer">Topological quantum computer</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Quantum_decoherence" title="Quantum decoherence">Decoherence</a> prevention</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Quantum_error_correction" title="Quantum error correction">Quantum error correction</a></li>
+<li><a href="/wiki/Stabilizer_code" title="Stabilizer code">Stabilizer codes</a></li>
+<li><a href="/wiki/Entanglement-assisted_stabilizer_formalism" title="Entanglement-assisted stabilizer formalism">Entanglement-Assisted Quantum Error Correction</a></li>
+<li><a href="/wiki/Quantum_convolutional_code" title="Quantum convolutional code">Quantum convolutional codes</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Physical implementations</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks navbox-subgroup" style="border-spacing:0">
+<tr>
+<th scope="row" class="navbox-group" style="padding-left:0;padding-right:0;">
+<div style="padding:0em 0.75em;"><a href="/wiki/Quantum_optics" title="Quantum optics">Quantum optics</a></div>
+</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Cavity_quantum_electrodynamics" title="Cavity quantum electrodynamics">Cavity QED</a></li>
+<li><a href="/wiki/Circuit_quantum_electrodynamics" title="Circuit quantum electrodynamics">Circuit QED</a></li>
+<li><a href="/wiki/Linear_optical_quantum_computing" title="Linear optical quantum computing">Linear optical quantum computing</a></li>
+<li><a href="/wiki/KLM_protocol" title="KLM protocol">KLM protocol</a></li>
+<li><a href="/wiki/Boson_sampling" title="Boson sampling">Boson sampling</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="padding-left:0;padding-right:0;">
+<div style="padding:0em 0.75em;"><a href="/wiki/Ultracold_atom" title="Ultracold atom">Ultracold atoms</a></div>
+</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Trapped_ion_quantum_computer" title="Trapped ion quantum computer">Trapped ion quantum computer</a></li>
+<li><a href="/wiki/Optical_lattice" title="Optical lattice">Optical lattice</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="padding-left:0;padding-right:0;">
+<div style="padding:0em 0.75em;"><a href="/wiki/Spin_(physics)" title="Spin (physics)">Spin</a>-based</div>
+</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Nuclear_magnetic_resonance_quantum_computer" title="Nuclear magnetic resonance quantum computer">Nuclear magnetic resonance QC</a></li>
+<li><a href="/wiki/Kane_quantum_computer" title="Kane quantum computer">Kane QC</a></li>
+<li><a href="/wiki/Loss%E2%80%93DiVincenzo_quantum_computer" title="Loss–DiVincenzo quantum computer">Loss–DiVincenzo QC</a></li>
+<li><a href="/wiki/Nitrogen-vacancy_center" title="Nitrogen-vacancy center">Nitrogen-vacancy center</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="padding-left:0;padding-right:0;">
+<div style="padding:0em 0.75em;"><a href="/wiki/Superconducting_quantum_computing" title="Superconducting quantum computing">Superconducting quantum computing</a></div>
+</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Charge_qubit" title="Charge qubit">Charge qubit</a></li>
+<li><a href="/wiki/Flux_qubit" title="Flux qubit">Flux qubit</a></li>
+<li><a href="/wiki/Phase_qubit" title="Phase qubit">Phase qubit</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1171
+Cached time: 20170118163957
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.116 seconds
+Real time usage: 0.176 seconds
+Preprocessor visited node count: 890/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 33876/2097152 bytes
+Template argument size: 751/2097152 bytes
+Highest expansion depth: 8/40
+Expensive parser function count: 0/500
+Lua time usage: 0.039/10.000 seconds
+Lua memory usage: 2.74 MB/50 MB
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%   89.748      1 - -total
+ 55.72%   50.006      5 - Template:Cite_web
+ 27.36%   24.556      2 - Template:Navbox
+ 26.36%   23.661      1 - Template:Quantum_computing
+ 10.59%    9.507      1 - Template:Navbox_subgroup
+  6.29%    5.644      1 - Template:Cite_arXiv
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:2137644-0!*!0!!en!4!*!math=5 and timestamp 20170118163957 and revision id 754269110
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Quantum_programming&amp;oldid=754269110">https://en.wikipedia.org/w/index.php?title=Quantum_programming&amp;oldid=754269110</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Programming_language_classification" title="Category:Programming language classification">Programming language classification</a></li><li><a href="/wiki/Category:Quantum_information_science" title="Category:Quantum information science">Quantum information science</a></li><li><a href="/wiki/Category:Programming_paradigms" title="Category:Programming paradigms">Programming paradigms</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Quantum+programming" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Quantum+programming" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/Quantum_programming"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:Quantum_programming"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/Quantum_programming" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=Quantum_programming&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Quantum_programming&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Quantum_programming" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Quantum_programming" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Quantum_programming&amp;oldid=754269110" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Quantum_programming&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q4218497" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Quantum_programming&amp;id=754269110" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Quantum+programming">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Quantum+programming&amp;returnto=Quantum+programming&amp;oldid=754269110&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Quantum_programming&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-ja"><a href="https://ja.wikipedia.org/wiki/%E9%87%8F%E5%AD%90%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E8%A8%80%E8%AA%9E" title="量子プログラミング言語 – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target">日本語</a></li><li class="interlanguage-link interwiki-pl"><a href="https://pl.wikipedia.org/wiki/QCL" title="QCL – Polish" lang="pl" hreflang="pl" class="interlanguage-link-target">Polski</a></li><li class="interlanguage-link interwiki-ru"><a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%B2%D0%B0%D0%BD%D1%82%D0%BE%D0%B2%D0%BE%D0%B5_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5" title="Квантовое программирование – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li><li class="interlanguage-link interwiki-fi"><a href="https://fi.wikipedia.org/wiki/Kvanttiohjelmointi" title="Kvanttiohjelmointi – Finnish" lang="fi" hreflang="fi" class="interlanguage-link-target">Suomi</a></li><li class="interlanguage-link interwiki-uk"><a href="https://uk.wikipedia.org/wiki/%D0%9A%D0%B2%D0%B0%D0%BD%D1%82%D0%BE%D0%B2%D0%B5_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F" title="Квантове програмування – Ukrainian" lang="uk" hreflang="uk" class="interlanguage-link-target">Українська</a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q4218497#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 11 December 2016, at 19:36.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Quantum_programming&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":54,"wgHostname":"mw1241"});});</script>
+	</body>
+</html>

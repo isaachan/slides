@@ -1,0 +1,1140 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>SystemVerilog - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"SystemVerilog","wgTitle":"SystemVerilog","wgCurRevisionId":760171812,"wgRevisionId":760171812,"wgArticleId":2540686,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Pages using ISBN magic links","Hardware description languages","Hardware verification languages","System description languages"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"SystemVerilog","wgRelevantArticleId":2540686,"wgRequestId":"WJM6@ApAMFwAABZHa3AAAAAM","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":true},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q1387402","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.math.styles":"ready","ext.cite.styles":"ready","ext.pygments":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.legacy.wikibits","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.math.scripts%2Cstyles%7Cext.pygments%2CwikimediaBadges%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.29.0-wmf.9"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/SystemVerilog"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=SystemVerilog&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=SystemVerilog&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/SystemVerilog"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-SystemVerilog rootpage-SystemVerilog skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">SystemVerilog</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><script>function mfTempOpenSection(id){var block=document.getElementById("mf-section-"+id);block.className+=" open-block";block.previousSibling.className+=" open-block";}</script><table class="infobox vevent" style="width:22em">
+<caption class="summary">SystemVerilog</caption>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/File:SystemVerilog_logo.png" class="image"><img alt="SystemVerilog logo.png" src="//upload.wikimedia.org/wikipedia/en/thumb/e/ef/SystemVerilog_logo.png/240px-SystemVerilog_logo.png" width="240" height="84" srcset="//upload.wikimedia.org/wikipedia/en/e/ef/SystemVerilog_logo.png 1.5x" data-file-width="294" data-file-height="103" /></a>
+<div>SystemVerilog logo</div>
+</td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Programming_paradigm" title="Programming paradigm">Paradigm</a></th>
+<td><a href="/wiki/Structured_programming" title="Structured programming">Structured</a> (design)<br />
+<a href="/wiki/Object-oriented_programming" title="Object-oriented programming">Object-oriented</a> (verification)</td>
+</tr>
+<tr>
+<th scope="row">First&#160;appeared</th>
+<td>2002<span class="noprint">; 15&#160;years ago</span><span style="display:none">&#160;(<span class="bday dtstart published updated">2002</span>)</span></td>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Software_release_life_cycle" title="Software release life cycle">Stable release</a></th>
+<td>
+<div style="margin:0px;">IEEE 1800-2012 / February&#160;21, 2013<span class="noprint">; 3 years ago</span><span style="display:none">&#160;(<span class="bday dtstart published updated">2013-02-21</span>)</span></div>
+</td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Type_system" title="Type system">Typing discipline</a></th>
+<td><a href="/wiki/Type_system" title="Type system">Static</a>, <a href="/wiki/Weak_typing" class="mw-redirect" title="Weak typing">weak</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Filename_extension" title="Filename extension">Filename extensions</a></th>
+<td>.sv</td>
+</tr>
+<tr>
+<th colspan="2" style="text-align:center;background-color: #eee;">Influenced by</th>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/Verilog" title="Verilog">Verilog</a>, <a href="/wiki/OpenVera" title="OpenVera">Vera</a>, <a href="/wiki/VHDL" title="VHDL">VHDL</a></td>
+</tr>
+</table>
+<p>In the <a href="/wiki/Semiconductor" title="Semiconductor">semiconductor</a> and electronic design industry, <b>SystemVerilog</b> is a combined <a href="/wiki/Hardware_description_language" title="Hardware description language">hardware description language</a> and <a href="/wiki/Hardware_verification_language" title="Hardware verification language">hardware verification language</a> based on extensions to <a href="/wiki/Verilog" title="Verilog">Verilog</a>.</p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#History"><span class="tocnumber">1</span> <span class="toctext">History</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Design_features"><span class="tocnumber">2</span> <span class="toctext">Design features</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Data_lifetime"><span class="tocnumber">2.1</span> <span class="toctext">Data lifetime</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#New_data_types"><span class="tocnumber">2.2</span> <span class="toctext">New data types</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Procedural_blocks"><span class="tocnumber">2.3</span> <span class="toctext">Procedural blocks</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="#Interfaces"><span class="tocnumber">3</span> <span class="toctext">Interfaces</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#Verification_features"><span class="tocnumber">4</span> <span class="toctext">Verification features</span></a>
+<ul>
+<li class="toclevel-2 tocsection-8"><a href="#New_data_types_2"><span class="tocnumber">4.1</span> <span class="toctext">New data types</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Classes"><span class="tocnumber">4.2</span> <span class="toctext">Classes</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Constrained_random_generation"><span class="tocnumber">4.3</span> <span class="toctext">Constrained random generation</span></a>
+<ul>
+<li class="toclevel-3 tocsection-11"><a href="#Randomization_methods"><span class="tocnumber">4.3.1</span> <span class="toctext">Randomization methods</span></a></li>
+<li class="toclevel-3 tocsection-12"><a href="#Controlling_constraints"><span class="tocnumber">4.3.2</span> <span class="toctext">Controlling constraints</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-13"><a href="#Assertions"><span class="tocnumber">4.4</span> <span class="toctext">Assertions</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="#Coverage"><span class="tocnumber">4.5</span> <span class="toctext">Coverage</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="#Synchronization"><span class="tocnumber">4.6</span> <span class="toctext">Synchronization</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-16"><a href="#General_improvements_to_classical_Verilog"><span class="tocnumber">5</span> <span class="toctext">General improvements to classical Verilog</span></a></li>
+<li class="toclevel-1 tocsection-17"><a href="#Verification_and_synthesis_software"><span class="tocnumber">6</span> <span class="toctext">Verification and synthesis software</span></a></li>
+<li class="toclevel-1 tocsection-18"><a href="#See_also"><span class="tocnumber">7</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-19"><a href="#References"><span class="tocnumber">8</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-20"><a href="#External_links"><span class="tocnumber">9</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="History">History</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=SystemVerilog&amp;action=edit&amp;section=1" title="Edit section: History">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>SystemVerilog started with the donation of the Superlog language to <a rel="nofollow" class="external text" href="http://www.accellera.org">Accellera</a> in 2002.<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">[1]</a></sup> The bulk of the verification functionality is based on the <a href="/wiki/OpenVera" title="OpenVera">OpenVera</a> language donated by <a href="/wiki/Synopsys" title="Synopsys">Synopsys</a>. In 2005, SystemVerilog was adopted as <a href="/wiki/IEEE" class="mw-redirect" title="IEEE">IEEE</a> Standard 1800-2005.<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">[2]</a></sup> In 2009, the standard was merged with the base Verilog (IEEE 1364-2005) standard, creating IEEE Standard 1800-2009. The current version is IEEE standard 1800-2012.<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">[3]</a></sup></p>
+<p>The feature-set of SystemVerilog can be divided into two distinct roles:</p>
+<ol>
+<li>SystemVerilog for <a href="/wiki/Register-transfer_level" title="Register-transfer level">RTL</a> design is an extension of <a href="/wiki/Verilog" title="Verilog">Verilog-2005</a>; all features of that language are available in SystemVerilog.</li>
+<li>SystemVerilog for verification uses extensive <a href="/wiki/Object-oriented_programming" title="Object-oriented programming">object-oriented programming</a> techniques and is more closely related to <a href="/wiki/C_(programming_language)" title="C (programming language)">Java</a> than Verilog.</li>
+</ol>
+<p>The remainder of this article discusses the features of SystemVerilog not present in <a href="/wiki/Verilog" title="Verilog">Verilog-2005</a>.</p>
+<h2><span class="mw-headline" id="Design_features">Design features</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=SystemVerilog&amp;action=edit&amp;section=2" title="Edit section: Design features">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="Data_lifetime">Data lifetime</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=SystemVerilog&amp;action=edit&amp;section=3" title="Edit section: Data lifetime">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>There are two types of data lifetime specified in SystemVerilog: static and automatic. Automatic variables are created the moment program execution comes to the scope of the variable. Static variables are created at the start of the program's execution and keep the same value during the entire program's lifespan, unless assigned a new value during execution.</p>
+<p>Any variable that is declared inside a task or function without specifying type will be considered automatic. To specify that a variable is automatic place the "automatic" keyword in the declaration before the type, e.g., "automatic int x;". The "static" keyword is used in the same way.</p>
+<h3><span class="mw-headline" id="New_data_types">New data types</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=SystemVerilog&amp;action=edit&amp;section=4" title="Edit section: New data types">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p><b>Enhanced variable types</b> add new capability to Verilog's "reg" type:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="k">logic</span> <span class="p">[</span><span class="mh">31</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span> <span class="n">my_var</span><span class="p">;</span>
+</pre></div>
+<p>Verilog-1995 and -2001 limit reg variables to behavioral statements such as RTL code. SystemVerilog extends the reg type so it can be driven by a single driver such as gate or module. SystemVerilog names this type "logic" to remind users that it has this extra capability and is not a hardware register. The names "logic" and "reg" are interchangeable. A signal with more than one driver needs to be declared a net type such as "wire" so SystemVerilog can resolve the final value.</p>
+<p><b>Multidimensional packed arrays</b> unify and extend Verilog's notion of "registers" and "memories":</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="k">logic</span> <span class="p">[</span><span class="mh">1</span><span class="o">:</span><span class="mh">0</span><span class="p">][</span><span class="mh">2</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span> <span class="n">my_pack</span><span class="p">[</span><span class="mh">32</span><span class="p">];</span>
+</pre></div>
+<p>Classical Verilog permitted only one dimension to be declared to the left of the variable name. SystemVerilog permits any number of such "packed" dimensions. A variable of packed array type maps 1:1 onto an integer arithmetic quantity. In the example above, each element of <code>my_pack</code> may be used in expressions as a five-bit integer. The dimensions to the right of the name (32 in this case) are referred to as "unpacked" dimensions. As in Verilog-2001, any number of unpacked dimensions is permitted.</p>
+<p><b>Enumerated data types</b> allow numeric quantities to be assigned meaningful names. Variables declared to be of enumerated type cannot be assigned to variables of a different enumerated type without casting. This is not true of parameters, which were the preferred implementation technique for enumerated quantities in Verilog-2005:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="k">typedef</span> <span class="k">enum</span> <span class="k">logic</span> <span class="p">[</span><span class="mh">2</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span> <span class="p">{</span>
+   <span class="no">RED</span><span class="p">,</span> <span class="no">GREEN</span><span class="p">,</span> <span class="no">BLUE</span><span class="p">,</span> <span class="no">CYAN</span><span class="p">,</span> <span class="no">MAGENTA</span><span class="p">,</span> <span class="no">YELLOW</span>
+<span class="p">}</span> <span class="n">color_t</span><span class="p">;</span>
+
+<span class="n">color_t</span>   <span class="n">my_color</span> <span class="o">=</span> <span class="no">GREEN</span><span class="p">;</span>
+<span class="k">initial</span> <span class="nb">$display</span><span class="p">(</span><span class="s">"The color is %s"</span><span class="p">,</span> <span class="n">my_color</span><span class="p">.</span><span class="n">name</span><span class="p">());</span>
+</pre></div>
+<p>As shown above, the designer can specify an underlying arithmetic type (<code>logic [2:0]</code> in this case) which is used to represent the enumeration value. The meta-values X and Z can be used here, possibly to represent illegal states. The built-in function <code>name()</code> returns an ASCII string for the current enumerated value.</p>
+<p><b>New integer types</b>: SystemVerilog defines <code>byte</code>, <code>shortint</code>, <code>int</code> and <code>longint</code> as two-state signed integral types having 8, 16, 32, and 64 bits respectively. A <code>bit</code> type is a variable-width two-state type that works much like <code>logic</code>. Two-state types lack the X and Z metavalues of classical Verilog; working with these types may result in faster simulation.</p>
+<p><b>Structures</b> and <b>unions</b> work much like they do in the <a href="/wiki/C_(programming_language)" title="C (programming language)">C programming language</a>. SystemVerilog enhancements include the <b>packed</b> attribute and the <b>tagged</b> attribute. The tagged attribute allows runtime tracking of which member(s) of a union are currently in use. The packed attribute causes the structure or union to be mapped 1:1 onto a packed array of bits. The contents of it occupy a continuous block of memory (with no gaps):</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="k">typedef</span> <span class="k">struct</span> <span class="k">packed</span> <span class="p">{</span>
+    <span class="k">bit</span> <span class="p">[</span><span class="mh">10</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span>  <span class="n">expo</span><span class="p">;</span>
+    <span class="k">bit</span>         <span class="n">sign</span><span class="p">;</span>
+    <span class="k">bit</span> <span class="p">[</span><span class="mh">51</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span>  <span class="n">mant</span><span class="p">;</span>
+<span class="p">}</span> <span class="no">FP</span><span class="p">;</span>
+
+<span class="no">FP</span>     <span class="n">zero</span> <span class="o">=</span> <span class="mh">64</span><span class="mb">'b0</span><span class="p">;</span>
+</pre></div>
+<h3><span class="mw-headline" id="Procedural_blocks">Procedural blocks</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=SystemVerilog&amp;action=edit&amp;section=5" title="Edit section: Procedural blocks">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>SystemVerilog introduces three new procedural blocks intended to model hardware: <code>always_comb</code>, <code>always_ff</code>, and <code>always_latch</code>. Whereas Verilog used a single, general-purpose <code>always</code> block to model different types of hardware structures, each of SystemVerilog's new blocks is intended to model a specific type of hardware, by imposing semantic restrictions to ensure that hardware described by the blocks matches the intended usage of the model.</p>
+<p>An <code>always_comb</code> block models combinational logic. The simulator infers the sensitivity list to be all variables from the contained statements:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="k">always_comb</span> <span class="k">begin</span>
+    <span class="n">tmp</span> <span class="o">=</span> <span class="n">b</span> <span class="o">*</span> <span class="n">b</span> <span class="o">-</span> <span class="mh">4</span> <span class="o">*</span> <span class="n">a</span> <span class="o">*</span> <span class="n">c</span><span class="p">;</span>
+    <span class="n">no_root</span> <span class="o">=</span> <span class="p">(</span><span class="n">tmp</span> <span class="o">&lt;</span> <span class="mh">0</span><span class="p">);</span>
+<span class="k">end</span>
+</pre></div>
+<p>An <code>always_ff</code> block is meant to infer synchronous logic:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="k">always_ff</span> <span class="p">@(</span><span class="k">posedge</span> <span class="n">clk</span><span class="p">)</span>
+    <span class="n">count</span> <span class="o">&lt;=</span> <span class="n">count</span> <span class="o">+</span> <span class="mh">1</span><span class="p">;</span>
+</pre></div>
+<p>An <code>always_latch</code> block is meant to infer a level-sensitive latch. Again, the sensitivity list is inferred from the code:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="k">always_latch</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">en</span><span class="p">)</span> <span class="n">q</span> <span class="o">&lt;=</span> <span class="n">d</span><span class="p">;</span>
+</pre></div>
+<p><a href="/wiki/Electronic_design_automation" title="Electronic design automation">Electronic design automation</a> (EDA) tools can verify the design's intent by checking that the hardware model does not violate any block usage semantics. For example, the new blocks restrict assignment to a variable by allowing only one source, whereas Verilog's <code>always</code> block permitted assignment from multiple procedural sources.</p>
+<h2><span class="mw-headline" id="Interfaces">Interfaces</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=SystemVerilog&amp;action=edit&amp;section=6" title="Edit section: Interfaces">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>For small designs, the Verilog <i>port</i> compactly describes a module's connectivity with the surrounding environment. But major blocks within a large design hierarchy typically possess port counts in the thousands. SystemVerilog introduces the interface concept, to both reduce the redundancy of port-name declarations between connected-modules, as well as group and abstract related signals into a user-declared bundle. Additional concept is modport, that shows direction of logic connections. Example:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="k">interface</span> <span class="n">intf</span><span class="p">;</span>
+  <span class="k">logic</span> <span class="n">a</span><span class="p">;</span>
+  <span class="k">logic</span> <span class="n">b</span><span class="p">;</span>
+  <span class="k">modport</span> <span class="n">in</span> <span class="p">(</span><span class="k">input</span> <span class="n">a</span><span class="p">,</span> <span class="k">output</span> <span class="n">b</span><span class="p">);</span>
+  <span class="k">modport</span> <span class="n">out</span> <span class="p">(</span><span class="k">input</span> <span class="n">b</span><span class="p">,</span> <span class="k">output</span> <span class="n">a</span><span class="p">);</span> 
+<span class="k">endinterface</span>
+
+<span class="k">module</span> <span class="n">top</span><span class="p">;</span>
+  <span class="n">intf</span> <span class="n">i</span> <span class="p">();</span>
+  <span class="n">u_a</span> <span class="n">m1</span> <span class="p">(.</span><span class="n">i1</span><span class="p">(</span><span class="n">i</span><span class="p">));</span>
+  <span class="n">u_b</span> <span class="n">m2</span> <span class="p">(.</span><span class="n">i2</span><span class="p">(</span><span class="n">i</span><span class="p">));</span>
+<span class="k">endmodule</span>
+
+<span class="k">module</span> <span class="n">u_a</span> <span class="p">(</span><span class="n">intf</span><span class="p">.</span><span class="n">in</span> <span class="n">i1</span><span class="p">);</span>
+<span class="k">endmodule</span>
+
+<span class="k">module</span> <span class="n">u_b</span> <span class="p">(</span><span class="n">intf</span><span class="p">.</span><span class="n">out</span> <span class="n">i2</span><span class="p">);</span>
+<span class="k">endmodule</span>
+</pre></div>
+<h2><span class="mw-headline" id="Verification_features">Verification features</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=SystemVerilog&amp;action=edit&amp;section=7" title="Edit section: Verification features">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The following verification features are typically not synthesizable. Instead, they assist in the creation of extensible, flexible test benches.</p>
+<h3><span class="mw-headline" id="New_data_types_2">New data types</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=SystemVerilog&amp;action=edit&amp;section=8" title="Edit section: New data types">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The <code>string</code> data type represents a variable-length text string. For example:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="k">string</span> <span class="n">s1</span> <span class="o">=</span> <span class="s">"Hello"</span><span class="p">;</span>
+<span class="k">string</span> <span class="n">s2</span> <span class="o">=</span> <span class="s">"world"</span><span class="p">;</span>
+<span class="k">string</span> <span class="n">p</span> <span class="o">=</span> <span class="s">".?!"</span><span class="p">;</span>
+<span class="k">string</span> <span class="n">s3</span> <span class="o">=</span> <span class="p">{</span><span class="n">s1</span><span class="p">,</span> <span class="s">", "</span><span class="p">,</span> <span class="n">s2</span><span class="p">,</span> <span class="n">p</span><span class="p">[</span><span class="mh">2</span><span class="p">]};</span> <span class="c1">// string concatenation</span>
+<span class="nb">$display</span><span class="p">(</span><span class="s">"[%d] %s"</span><span class="p">,</span> <span class="n">s3</span><span class="p">.</span><span class="n">len</span><span class="p">(),</span> <span class="n">s3</span><span class="p">);</span> <span class="c1">// simulation will print: "[13] Hello, world!"</span>
+</pre></div>
+<p>In addition to the static array used in design, SystemVerilog offers dynamic arrays, associative arrays and queues:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="k">int</span> <span class="n">cmdline_elements</span><span class="p">;</span> <span class="c1">// # elements for dynamic array</span>
+<span class="k">int</span> <span class="n">da</span><span class="p">[];</span>             <span class="c1">// dynamic array</span>
+<span class="k">int</span> <span class="n">ai</span><span class="p">[</span><span class="k">int</span><span class="p">];</span>          <span class="c1">// associative array, indexed by int</span>
+<span class="k">int</span> <span class="n">as</span><span class="p">[</span><span class="k">string</span><span class="p">];</span>       <span class="c1">// associative array, indexed by string</span>
+<span class="k">int</span> <span class="n">qa</span><span class="p">[</span><span class="err">$</span><span class="p">];</span>            <span class="c1">// queue, indexed as an array, or by built-in methods</span>
+
+<span class="k">initial</span> <span class="k">begin</span>
+    <span class="n">cmdline_elements</span> <span class="o">=</span> <span class="mh">16</span><span class="p">;</span>
+    <span class="n">da</span> <span class="o">=</span> <span class="k">new</span><span class="p">[</span> <span class="n">cmdline_elements</span> <span class="p">];</span> <span class="c1">// Allocate array with 16 elements</span>
+<span class="k">end</span>
+</pre></div>
+<p>A dynamic array works much like an unpacked array, but offers the advantage of being dynamically allocated at runtime (as shown above.) Whereas a packed array's size must be known at compile time (from a constant or expression of constants), the dynamic array size can be initialized from another runtime variable, allowing the array to be sized and resize arbitrarily as needed.</p>
+<p>An associative array can be thought of as a binary search tree with a user-specified key type and data type. The key implies an ordering; the elements of an associative array can be read out in lexicographic order. Finally, a queue provides much of the functionality of the C++ STL deque type: elements can be added and removed from either end efficiently. These primitives allow the creation of complex data structures required for scoreboarding a large design.</p>
+<h3><span class="mw-headline" id="Classes">Classes</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=SystemVerilog&amp;action=edit&amp;section=9" title="Edit section: Classes">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>SystemVerilog provides an <a href="/wiki/Object-oriented_programming" title="Object-oriented programming">object-oriented programming</a> model.</p>
+<p>In SystemVerilog, classes support a single-inheritance model. There is no facility that permits conformance of a class to multiple functional interfaces, such as the <code>interface</code> feature of Java. Classes can be parameterized by type, providing the basic function of C++ templates. However, template specialization and function templates are not supported.</p>
+<p>SystemVerilog's polymorphism features are similar to those of C++: the programmer may specifically write a <code>virtual</code> function to have a derived class gain control of the function.</p>
+<p>Encapsulation and data hiding is accomplished using the <code>local</code> and <code>protected</code> keywords, which must be applied to any item that is to be hidden. By default, all class properties are public.</p>
+<p>Class instances are dynamically created with the <code>new</code> keyword. A constructor denoted by <code>function new</code> can be defined. Garbage collection is automatic, so there is no language facility to explicitly destroy instances created by the new operator.</p>
+<p>Example:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="k">virtual</span> <span class="k">class</span> <span class="n">Memory</span><span class="p">;</span>
+    <span class="k">virtual</span> <span class="k">function</span> <span class="k">bit</span> <span class="p">[</span><span class="mh">31</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span> <span class="n">read</span><span class="p">(</span><span class="k">bit</span> <span class="p">[</span><span class="mh">31</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span> <span class="n">addr</span><span class="p">);</span> <span class="k">endfunction</span>
+    <span class="k">virtual</span> <span class="k">function</span> <span class="k">void</span> <span class="n">write</span><span class="p">(</span><span class="k">bit</span> <span class="p">[</span><span class="mh">31</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span> <span class="n">addr</span><span class="p">,</span> <span class="k">bit</span> <span class="p">[</span><span class="mh">31</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span> <span class="n">data</span><span class="p">);</span> <span class="k">endfunction</span>
+<span class="k">endclass</span>
+
+<span class="k">class</span> <span class="no">SRAM</span> <span class="p">#(</span><span class="k">parameter</span> <span class="no">AWIDTH</span><span class="o">=</span><span class="mh">10</span><span class="p">)</span> <span class="k">extends</span> <span class="n">Memory</span><span class="p">;</span>
+    <span class="k">bit</span> <span class="p">[</span><span class="mh">31</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span> <span class="n">mem</span> <span class="p">[</span><span class="mh">1</span><span class="o">&lt;&lt;</span><span class="no">AWIDTH</span><span class="p">];</span>
+
+    <span class="k">virtual</span> <span class="k">function</span> <span class="k">bit</span> <span class="p">[</span><span class="mh">31</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span> <span class="n">read</span><span class="p">(</span><span class="k">bit</span> <span class="p">[</span><span class="mh">31</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span> <span class="n">addr</span><span class="p">);</span>
+        <span class="k">return</span> <span class="n">mem</span><span class="p">[</span><span class="n">addr</span><span class="p">];</span>
+    <span class="k">endfunction</span>
+
+    <span class="k">virtual</span> <span class="k">function</span> <span class="k">void</span> <span class="n">write</span><span class="p">(</span><span class="k">bit</span> <span class="p">[</span><span class="mh">31</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span> <span class="n">addr</span><span class="p">,</span> <span class="k">bit</span> <span class="p">[</span><span class="mh">31</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span> <span class="n">data</span><span class="p">);</span>
+        <span class="n">mem</span><span class="p">[</span><span class="n">addr</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span><span class="p">;</span>
+    <span class="k">endfunction</span>
+<span class="k">endclass</span>
+</pre></div>
+<h3><span class="mw-headline" id="Constrained_random_generation">Constrained random generation</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=SystemVerilog&amp;action=edit&amp;section=10" title="Edit section: Constrained random generation">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Integer quantities, defined either in a class definition or as stand-alone variables in some lexical scope, can be assigned random values based on a set of constraints. This feature is useful for creating randomized scenarios for verification.</p>
+<p>Within class definitions, the <code>rand</code> and <code>randc</code> modifiers signal variables that are to undergo randomization. <code>randc</code> specifies permutation-based randomization, where a variable will take on all possible values once before any value is repeated. Variables without modifiers are not randomized.</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="k">class</span> <span class="n">eth_frame</span><span class="p">;</span>
+    <span class="k">rand</span> <span class="k">bit</span> <span class="p">[</span><span class="mh">47</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span> <span class="n">dest</span><span class="p">;</span>
+    <span class="k">rand</span> <span class="k">bit</span> <span class="p">[</span><span class="mh">47</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span> <span class="n">src</span><span class="p">;</span>
+    <span class="k">rand</span> <span class="k">bit</span> <span class="p">[</span><span class="mh">15</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span> <span class="n">f_type</span><span class="p">;</span>
+    <span class="k">rand</span> <span class="k">byte</span>       <span class="n">payload</span><span class="p">[];</span>
+    <span class="k">bit</span> <span class="p">[</span><span class="mh">31</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span>      <span class="n">fcs</span><span class="p">;</span>
+    <span class="k">rand</span> <span class="k">bit</span> <span class="p">[</span><span class="mh">31</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span> <span class="n">fcs_corrupt</span><span class="p">;</span>
+
+    <span class="k">constraint</span> <span class="n">basic</span> <span class="p">{</span>
+        <span class="n">payload</span><span class="p">.</span><span class="n">size</span> <span class="k">inside</span> <span class="p">{[</span><span class="mh">46</span><span class="o">:</span><span class="mh">1500</span><span class="p">]};</span>
+    <span class="p">}</span>
+
+    <span class="k">constraint</span> <span class="n">good_fr</span> <span class="p">{</span>
+        <span class="n">fcs_corrupt</span> <span class="o">==</span> <span class="mh">0</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="k">endclass</span>
+</pre></div>
+<p>In this example, the <code>fcs</code> field is not randomized; in practice it will be computed with a CRC generator, and the <code>fcs_corrupt</code> field used to corrupt it to inject FCS errors. The two constraints shown are applicable to conforming Ethernet frames. Constraints may be selectively enabled; this feature would be required in the example above to generate corrupt frames. Constraints may be arbitrarily complex, involving interrelationships among variables, implications, and iteration. The SystemVerilog constraint solver is required to find a solution if one exists, but makes no guarantees as to the time it will require to do so.</p>
+<h4><span class="mw-headline" id="Randomization_methods">Randomization methods</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=SystemVerilog&amp;action=edit&amp;section=11" title="Edit section: Randomization methods">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>In each SystemVerilog class there are 3 predefined methods for randomization: pre_randomize, randomize and post_randomize. The randomize method is called by the user for randomization of the class variables. The pre_randomize method is called by the randomize method before the randomization and the post_randomize method is called by the randomize method after randomization.</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="k">class</span> <span class="n">eth_frame</span><span class="p">;</span>
+    <span class="k">rand</span> <span class="k">bit</span> <span class="p">[</span><span class="mh">47</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span> <span class="n">dest</span><span class="p">;</span>
+    <span class="k">rand</span> <span class="k">bit</span> <span class="p">[</span><span class="mh">47</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span> <span class="n">src</span><span class="p">;</span>
+    <span class="k">rand</span> <span class="k">bit</span> <span class="p">[</span><span class="mh">15</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span> <span class="n">f_type</span><span class="p">;</span>
+    <span class="k">rand</span> <span class="k">byte</span>       <span class="n">payload</span><span class="p">[];</span>
+    <span class="k">bit</span> <span class="p">[</span><span class="mh">31</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span>      <span class="n">fcs</span><span class="p">;</span>
+    <span class="k">rand</span> <span class="k">bit</span>        <span class="n">corrupted_frame</span><span class="p">;</span>
+
+    <span class="k">constraint</span> <span class="n">basic</span> <span class="p">{</span>
+        <span class="n">payload</span><span class="p">.</span><span class="n">size</span> <span class="k">inside</span> <span class="p">{[</span><span class="mh">46</span><span class="o">:</span><span class="mh">1500</span><span class="p">]};</span>
+    <span class="p">}</span>
+
+    
+    <span class="k">function</span> <span class="k">void</span> <span class="n">post_randomize</span><span class="p">()</span>
+      <span class="k">this</span><span class="p">.</span><span class="n">calculate_fcs</span><span class="p">();</span> <span class="c1">// update the fcs field according to the randomized frame</span>
+      <span class="k">if</span><span class="p">(</span><span class="n">corrupted_frame</span><span class="p">)</span>   <span class="c1">// if this frame should be corrupted </span>
+        <span class="k">this</span><span class="p">.</span><span class="n">corrupt_fcs</span><span class="p">();</span> <span class="c1">// corrupt the fcs</span>
+    <span class="k">endfunction</span>
+<span class="k">endclass</span>
+</pre></div>
+<h4><span class="mw-headline" id="Controlling_constraints">Controlling constraints</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=SystemVerilog&amp;action=edit&amp;section=12" title="Edit section: Controlling constraints">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>The constraint_mode() and the random_mode() methods are used to control the randomization. constraint_mode() is used to turn a specific constraint on and off and the random_mode is used to turn a randomization of a specific variable on or off</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="k">class</span> <span class="n">eth_frame</span><span class="p">;</span>
+    <span class="k">rand</span> <span class="k">bit</span> <span class="p">[</span><span class="mh">47</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span> <span class="n">dest</span><span class="p">;</span>
+    <span class="k">rand</span> <span class="k">bit</span> <span class="p">[</span><span class="mh">47</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span> <span class="n">src</span><span class="p">;</span>
+    <span class="k">rand</span> <span class="k">bit</span> <span class="p">[</span><span class="mh">15</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span> <span class="n">f_type</span><span class="p">;</span>
+    <span class="k">rand</span> <span class="k">byte</span>       <span class="n">payload</span><span class="p">[];</span>
+    <span class="k">bit</span> <span class="p">[</span><span class="mh">31</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span>      <span class="n">fcs</span><span class="p">;</span>
+    <span class="k">rand</span> <span class="k">bit</span>        <span class="n">corrupted_frame</span><span class="p">;</span>
+
+    <span class="k">constraint</span> <span class="n">basic</span> <span class="p">{</span>
+        <span class="n">payload</span><span class="p">.</span><span class="n">size</span> <span class="k">inside</span> <span class="p">{[</span><span class="mh">46</span><span class="o">:</span><span class="mh">1500</span><span class="p">]};</span>
+    <span class="p">}</span>
+   
+    <span class="k">constraint</span> <span class="n">one_src_cst</span> <span class="p">{</span>
+        <span class="n">src</span> <span class="o">==</span> <span class="mh">48'h1f00</span>
+    <span class="p">}</span>
+
+    <span class="k">constraint</span> <span class="n">dist_to_fcs</span> <span class="p">{</span>
+     <span class="n">fcs</span> <span class="k">dist</span> <span class="p">{</span><span class="mh">0</span><span class="o">:/</span><span class="mh">30</span><span class="p">,[</span><span class="mh">1</span><span class="o">:</span><span class="mh">2500</span><span class="p">]</span><span class="o">:/</span><span class="mh">50</span><span class="p">};</span>  <span class="c1">// 30, and 50 are the weights (30/80 or  50/80, in this example) </span>
+    <span class="p">}</span>    
+
+<span class="k">endclass</span>
+<span class="p">.</span>
+<span class="p">.</span>
+<span class="p">.</span>
+<span class="n">eth_frame</span> <span class="n">my_frame</span><span class="p">;</span>
+
+<span class="n">my_frame</span><span class="p">.</span><span class="n">one_src_cst</span><span class="p">.</span><span class="n">constraint_mode</span><span class="p">(</span><span class="mh">0</span><span class="p">);</span> <span class="c1">// the constraint one_src_cst will not be taken into account</span>
+<span class="n">my_frame</span><span class="p">.</span><span class="n">f_type</span><span class="p">.</span><span class="n">random_mode</span><span class="p">(</span><span class="mh">0</span><span class="p">);</span>        <span class="c1">// the f_type variable will not be randomized for this frame instance.</span>
+<span class="n">my_frame</span><span class="p">.</span><span class="n">randomize</span><span class="p">();</span>
+</pre></div>
+<h3><span class="mw-headline" id="Assertions">Assertions</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=SystemVerilog&amp;action=edit&amp;section=13" title="Edit section: Assertions">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Assertions are useful for verifying properties of a design that manifest themselves after a specific condition or state is reached. SystemVerilog has its own assertion specification language, similar to <a href="/wiki/Property_Specification_Language" title="Property Specification Language">Property Specification Language</a>. The subset of SystemVerilog language constructs that serves assertion is commonly called SystemVerilog Assertion or SVA.<sup id="cite_ref-4" class="reference"><a href="#cite_note-4">[4]</a></sup></p>
+<p>SystemVerilog assertions are built from <b>sequences</b> and <b>properties</b>. Properties are a superset of sequences; any sequence may be used as if it were a property, although this is not typically useful.</p>
+<p>Sequences consist of boolean expressions augmented with temporal operators. The simplest temporal operator is the <code>##</code> operator which performs a concatenation:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="k">sequence</span> <span class="no">S1</span><span class="p">;</span>
+    <span class="p">@(</span><span class="k">posedge</span> <span class="n">clk</span><span class="p">)</span> <span class="n">req</span> <span class="p">##</span><span class="mh">1</span> <span class="n">gnt</span><span class="p">;</span>
+<span class="k">endsequence</span>
+</pre></div>
+<p>This sequence matches if the <code>gnt</code> signal goes high one clock cycle after <code>req</code> goes high. Note that all sequence operations are synchronous to a clock.</p>
+<p>Other sequential operators include repetition operators, as well as various conjunctions. These operators allow the designer to express complex relationships among design components.</p>
+<p>An assertion works by continually attempting to evaluate a sequence or property. An assertion fails if the property fails. The sequence above will fail whenever <code>req</code> is low. To accurately express the requirement that <code>gnt</code> follow <code>req</code> a property is required:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="k">property</span> <span class="n">req_gnt</span><span class="p">;</span>
+    <span class="p">@(</span><span class="k">posedge</span> <span class="n">clk</span><span class="p">)</span> <span class="n">req</span> <span class="o">|=&gt;</span> <span class="n">gnt</span><span class="p">;</span>
+<span class="k">endproperty</span>
+
+<span class="nl">assert_req_gnt:</span> <span class="k">assert</span> <span class="k">property</span> <span class="p">(</span><span class="n">req_gnt</span><span class="p">)</span> <span class="k">else</span> <span class="err">$</span><span class="n">error</span><span class="p">(</span><span class="s">"req not followed by gnt."</span><span class="p">);</span>
+</pre></div>
+<p>This example shows an <b>implication</b> operator <code>|=&gt;</code>. The clause to the left of the implication is called the <b>antecedent</b> and the clause to the right is called the <b>consequent</b>. Evaluation of an implication starts through repeated attempts to evaluate the antecedent. When the antecedent succeeds, the consequent is attempted, and the success of the assertion depends on the success of the consequent. In this example, the consequent won't be attempted until <code>req</code> goes high, after which the property will fail if <code>gnt</code> is not high on the following clock.</p>
+<p>In addition to assertions, SystemVerilog supports assumptions and coverage of properties. An assumption establishes a condition that a formal logic proving tool must assume to be true. An assertion specifies a property that must be proven true. In simulation, both assertions and assumptions are verified against test stimulus. Property coverage allows the verification engineer to verify that assertions are accurately monitoring the design.</p>
+<h3><span class="mw-headline" id="Coverage">Coverage</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=SystemVerilog&amp;action=edit&amp;section=14" title="Edit section: Coverage">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p><b>Coverage</b> as applied to hardware verification languages refers to the collection of statistics based on sampling events within the simulation. Coverage is used to determine when the <a href="/wiki/Device_under_test" title="Device under test">device under test</a> (DUT) has been exposed to a sufficient variety of stimuli that there is a high confidence that the DUT is functioning correctly. Note that this differs from <a href="/wiki/Code_coverage" title="Code coverage">code coverage</a> which instruments the design code to ensure that all lines of code in the design have been executed. Functional coverage ensures that all desired corner cases in the design space have been explored.</p>
+<p>A SystemVerilog coverage group creates a database of "bins" that store a histogram of values of an associated variable. Cross-coverage can also be defined, which creates a histogram representing the Cartesian cross-product of multiple variables.</p>
+<p>A sampling event controls when a sample is taken. The sampling event can be a Verilog event, the entry or exit of a block of code, or a call to the <code>sample</code> method of the coverage group. Care is required to ensure that data are sampled only when meaningful.</p>
+<p>For example:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="k">class</span> <span class="n">eth_frame</span><span class="p">;</span>
+   <span class="c1">// Definitions as above</span>
+   <span class="k">covergroup</span> <span class="n">cov</span><span class="p">;</span>
+      <span class="k">coverpoint</span> <span class="n">dest</span> <span class="p">{</span>
+          <span class="k">bins</span> <span class="n">bcast</span><span class="p">[</span><span class="mh">1</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="mh">48'hFFFFFFFFFFFF</span><span class="p">};</span>
+          <span class="k">bins</span> <span class="n">ucast</span><span class="p">[</span><span class="mh">1</span><span class="p">]</span> <span class="o">=</span> <span class="k">default</span><span class="p">;</span>
+      <span class="p">}</span>
+      <span class="k">coverpoint</span> <span class="n">f_type</span> <span class="p">{</span>
+          <span class="k">bins</span> <span class="n">length</span><span class="p">[</span><span class="mh">16</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span> <span class="p">[</span><span class="mh">0</span><span class="o">:</span><span class="mh">1535</span><span class="p">]</span> <span class="p">};</span>
+          <span class="k">bins</span> <span class="n">typed</span><span class="p">[</span><span class="mh">16</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span> <span class="p">[</span><span class="mh">1536</span><span class="o">:</span><span class="mh">32767</span><span class="p">]</span> <span class="p">};</span>
+          <span class="k">bins</span> <span class="n">other</span><span class="p">[</span><span class="mh">1</span><span class="p">]</span> <span class="o">=</span> <span class="k">default</span><span class="p">;</span>
+      <span class="p">}</span>
+      <span class="nl">psize:</span> <span class="k">coverpoint</span> <span class="n">payload</span><span class="p">.</span><span class="n">size</span> <span class="p">{</span>
+          <span class="k">bins</span> <span class="n">size</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span> <span class="mh">46</span><span class="p">,</span> <span class="p">[</span><span class="mh">47</span><span class="o">:</span><span class="mh">63</span><span class="p">],</span> <span class="mh">64</span><span class="p">,</span> <span class="p">[</span><span class="mh">65</span><span class="o">:</span><span class="mh">511</span><span class="p">],</span> <span class="p">[</span><span class="mh">512</span><span class="o">:</span><span class="mh">1023</span><span class="p">],</span> <span class="p">[</span><span class="mh">1024</span><span class="o">:</span><span class="mh">1499</span><span class="p">],</span> <span class="mh">1500</span> <span class="p">};</span>
+      <span class="p">}</span>
+
+      <span class="nl">sz_x_t:</span> <span class="k">cross</span> <span class="n">f_type</span><span class="p">,</span> <span class="n">psize</span><span class="p">;</span>
+   <span class="k">endgroup</span>
+<span class="k">endclass</span>
+</pre></div>
+<p>In this example, the verification engineer is interested in the distribution of broadcast and unicast frames, the size/f_type field and the payload size. The ranges in the payload size coverpoint reflect the interesting corner cases, including minimum and maximum size frames.</p>
+<h3><span class="mw-headline" id="Synchronization">Synchronization</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=SystemVerilog&amp;action=edit&amp;section=15" title="Edit section: Synchronization">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>A complex test environment consists of reusable verification components that must communicate with one another. Verilog's 'event' primitive allowed different blocks of procedural statements to trigger each other, but enforcing thread synchronization was up to the programmer's (clever) usage. SystemVerilog offers two primitives specifically for interthread synchronization: <i>mailbox</i> and <i>semaphore</i>. The mailbox is modeled as a FIFO. Optionally, the FIFO can be type-parameterized so that only objects of the specified type may be passed through it. Typically, objects are class instances representing <i>transactions</i>: elementary operations (for example, sending a frame) that are executed by the verification components. The semaphore is modeled as a counting semaphore.</p>
+<h2><span class="mw-headline" id="General_improvements_to_classical_Verilog">General improvements to classical Verilog</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=SystemVerilog&amp;action=edit&amp;section=16" title="Edit section: General improvements to classical Verilog">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>In addition to the new features above, SystemVerilog enhances the usability of Verilog's existing language features. The following are some of these enhancements:</p>
+<ul>
+<li>The procedural assignment operator(s) (&lt;=, =) can now operate directly on arrays.</li>
+<li>Port (inout, input, output) definitions are now expanded to support a wider variety of datatypes: struct, enum, real, and multi-dimensional types are supported.</li>
+<li>The for-loop construct now allows automatic variable declaration inside the for statement. And loop-control is improved by the <i>continue</i> and <i>break</i> statements.</li>
+<li>SystemVerilog adds a <i>do</i>/while to the while construct.</li>
+<li>Constant variables, i.e. those designated as non-changing during runtime, can be designated by use of <i>const</i>.</li>
+<li>Variable initialization can now operate on arrays.</li>
+<li>The preprocessor has improved `define macro-substitution capabilities, specifically substitution within literal-strings (""), as well as concatenation of multiple macro-tokens into a single word.</li>
+<li>The fork/join construct has been expanded with <i>join_none</i> and <i>join_any</i>.</li>
+<li>Additions to the `timescale directive allow simulation timescale to be controlled more predictably in a large simulation environment, with each source-file using a local timescale.</li>
+<li>Task ports can now be declared <i>ref</i>. A reference gives the task body direct access to the source arguments. in the caller's scope. Since it is operating on the original variable itself, rather than a copy of the argument's value, the task/function can modify variables (but not nets) in the caller's scope in realtime. The inout/output port-declarations pass variables by value, and defer updating the caller-scope variable until the moment the task exits.</li>
+<li>Functions can now be declared <i>void</i>, which means it returns no value.</li>
+<li>Parameters can be declared any type, including user-defined <i>typedef</i>s.</li>
+</ul>
+<p>Besides this, SystemVerilog allows convenient interface to foreign languages (like C/C++), by <a href="/wiki/SystemVerilog_DPI" title="SystemVerilog DPI">SystemVerilog DPI</a> (Direct Programming Interface).</p>
+<h2><span class="mw-headline" id="Verification_and_synthesis_software">Verification and synthesis software</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=SystemVerilog&amp;action=edit&amp;section=17" title="Edit section: Verification and synthesis software">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>In the design verification role, SystemVerilog is widely used in the chip-design industry. The three largest EDA vendors (Cadence, Mentor, Synopsys) have incorporated SystemVerilog into their mixed-language HDL-simulators. Although no simulator can yet claim support for the entire SystemVerilog LRM, making testbench interoperability a challenge, efforts to promote cross-vendor compatibility are underway. In 2008, Cadence and Mentor released the Open Verification Methodology, an open-source class-library and usage-framework to facilitate the development of re-usable testbenches and canned verification-IP. Synopsys, which had been the first to publish a SystemVerilog class-library (VMM), subsequently responded by opening its proprietary VMM to the general public. Many third-party providers have announced or already released SystemVerilog verification IP.</p>
+<p>In the design synthesis role (transformation of a hardware-design description into a gate-netlist), SystemVerilog adoption has been slow. Many design teams use design flows which involve multiple tools from different vendors. Most design teams cannot migrate to SystemVerilog RTL-design until their entire front-end tool suite (linters, formal verification and automated test structure generators) support a common language subset.</p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=SystemVerilog&amp;action=edit&amp;section=18" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a href="/wiki/List_of_Verilog_Simulators" class="mw-redirect" title="List of Verilog Simulators">List of SystemVerilog Simulators</a> (Search for SV2005)</li>
+<li><a href="/wiki/Verilog-AMS" title="Verilog-AMS">Verilog-AMS</a></li>
+<li><a href="/wiki/E_(verification_language)" title="E (verification language)">e (verification language)</a></li>
+<li><a href="/wiki/SpecC" title="SpecC">SpecC</a></li>
+<li><a href="/wiki/Accellera" title="Accellera">Accellera</a></li>
+<li><a href="/wiki/SystemC" title="SystemC">SystemC</a></li>
+<li><a href="/wiki/SystemRDL" title="SystemRDL">SystemRDL</a></li>
+</ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=SystemVerilog&amp;action=edit&amp;section=19" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text">Rich, D. “The evolution of SystemVerilog” IEEE Design and Test of Computers, July/August 2003</span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.eetimes.com/news/design/showArticle.jhtml;?articleID=173601060">IEEE approves SystemVerilog, revision of Verilog</a></span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://standards.ieee.org/findstds/standard/1800-2012.html,">1800-2012 - IEEE Standard for SystemVerilog--Unified Hardware Design, Specification, and Verification Language</a></span></li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.project-veripage.com/sva_1.php,">SystemVerilog Assertion: Introduction</a></span></li>
+</ol>
+</div>
+<ul>
+<li><cite class="citation book"><i>1800-2005 — IEEE Standard for System Verilog—Unified Hardware Design, Specification, and Verification Language</i>. 2005. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1109%2FIEEESTD.2005.97972">10.1109/IEEESTD.2005.97972</a>. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-7381-4810-5" title="Special:BookSources/0-7381-4810-5">0-7381-4810-5</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASystemVerilog&amp;rft.btitle=1800-2005+%94+IEEE+Standard+for+System+Verilog%94Unified+Hardware+Design%2C+Specification%2C+and+Verification+Language&amp;rft.date=2005&amp;rft.genre=book&amp;rft_id=info%3Adoi%2F10.1109%2FIEEESTD.2005.97972&amp;rft.isbn=0-7381-4810-5&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation book"><i>1800-2009 — IEEE Standard for SystemVerilog—Unified Hardware Design, Specification, and Verification Language</i>. 2009. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1109%2FIEEESTD.2009.5354441">10.1109/IEEESTD.2009.5354441</a>. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-0-7381-6130-3" title="Special:BookSources/978-0-7381-6130-3">978-0-7381-6130-3</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASystemVerilog&amp;rft.btitle=1800-2009+%94+IEEE+Standard+for+SystemVerilog%94Unified+Hardware+Design%2C+Specification%2C+and+Verification+Language&amp;rft.date=2009&amp;rft.genre=book&amp;rft_id=info%3Adoi%2F10.1109%2FIEEESTD.2009.5354441&amp;rft.isbn=978-0-7381-6130-3&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation book"><i>1800-2012 — IEEE Standard for SystemVerilog—Unified Hardware Design, Specification, and Verification Language</i>. 2013. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1109%2FIEEESTD.2013.6469140">10.1109/IEEESTD.2013.6469140</a>. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-0-7381-8110-3" title="Special:BookSources/978-0-7381-8110-3">978-0-7381-8110-3</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASystemVerilog&amp;rft.btitle=1800-2012+%94+IEEE+Standard+for+SystemVerilog%94Unified+Hardware+Design%2C+Specification%2C+and+Verification+Language&amp;rft.date=2013&amp;rft.genre=book&amp;rft_id=info%3Adoi%2F10.1109%2FIEEESTD.2013.6469140&amp;rft.isbn=978-0-7381-8110-3&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation news">McGrath, Dylan (2005-11-09). <a rel="nofollow" class="external text" href="http://www.eetimes.com/news/design/showArticle.jhtml;?articleID=173601060">"IEEE approves SystemVerilog, revision of Verilog"</a>. EE Times<span class="reference-accessdate">. Retrieved <span class="nowrap">2007-01-31</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASystemVerilog&amp;rft.atitle=IEEE+approves+SystemVerilog%2C+revision+of+Verilog&amp;rft.aufirst=Dylan&amp;rft.aulast=McGrath&amp;rft.date=2005-11-09&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fwww.eetimes.com%2Fnews%2Fdesign%2FshowArticle.jhtml%3B%3FarticleID%3D173601060&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation news">Puneet Kumar (2005-11-09). <a rel="nofollow" class="external text" href="http://asicguru.com/System-Verilog-Tutorial/1/3">"System Verilog Tutorial"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASystemVerilog&amp;rft.atitle=System+Verilog+Tutorial&amp;rft.au=Puneet+Kumar&amp;rft.date=2005-11-09&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fasicguru.com%2FSystem-Verilog-Tutorial%2F1%2F3&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation news">Gopi Krishna (2005-11-09). <a rel="nofollow" class="external text" href="http://www.testbench.in">"SystemVerilog ,SVA,SV DPI Tutorials"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASystemVerilog&amp;rft.atitle=SystemVerilog+%2CSVA%2CSV+DPI+Tutorials&amp;rft.au=Gopi+Krishna&amp;rft.date=2005-11-09&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fwww.testbench.in&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation news">HDVL. <a rel="nofollow" class="external text" href="http://hdvl.wordpress.com/category/systemverilog/">"More SystemVerilog Weblinks"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASystemVerilog&amp;rft.atitle=More+SystemVerilog+Weblinks&amp;rft.au=HDVL&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fhdvl.wordpress.com%2Fcategory%2Fsystemverilog%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li>Spear, Chris, <a rel="nofollow" class="external text" href="http://www.amazon.com/SystemVerilog-Verification-Learning-Testbench-Language/dp/0387765298/ref=sr_1_1?ie=UTF8&amp;s=books&amp;qid=1247578512&amp;sr=8-1">"SystemVerilog for Verification"</a> Springer, New York City, NY. <a href="/wiki/Special:BookSources/0387765298" class="internal mw-magiclink-isbn">ISBN 0-387-76529-8</a></li>
+<li>Stuart Sutherland, Simon Davidmann, Peter Flake, <a rel="nofollow" class="external text" href="http://www.amazon.com/SystemVerilog-Design-Second-Hardware-Modeling/dp/0387333991/ref=sr_1_4?ie=UTF8&amp;s=books&amp;qid=1247578512&amp;sr=8-4">"SystemVerilog for Design Second Edition: A Guide to Using SystemVerilog for Hardware Design and Modeling"</a> Springer, New York City, NY. <a href="/wiki/Special:BookSources/0387333991" class="internal mw-magiclink-isbn">ISBN 0-387-33399-1</a></li>
+<li>Ben Cohen <a rel="nofollow" class="external autonumber" href="http://SystemVerilog.us">[1]</a> SystemVerilog Assertions Handbook, 4th Edition, 2016- <a rel="nofollow" class="external free" href="http://SystemVerilog.us">http://SystemVerilog.us</a></li>
+<li>Ben Cohen <a rel="nofollow" class="external autonumber" href="http://SystemVerilog.us">[2]</a> A Pragmatic Approach to VMM Adoption, - <a rel="nofollow" class="external free" href="http://SystemVerilog.us">http://SystemVerilog.us</a></li>
+<li>Erik Seligman and Tom Schubert <a rel="nofollow" class="external autonumber" href="http://www.amazon.com/Formal-Verification-Essential-Toolkit-Modern-ebook/dp/B012VX1MW8/ref=sr_1_1?ie=UTF8&amp;qid=1451183481&amp;sr=8-1&amp;keywords=erik+seligman+formal+verification">[3]</a> Formal Verification: An Essential Toolkit for Modern VLSI Design, Jul 24, 2015,</li>
+</ul>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=SystemVerilog&amp;action=edit&amp;section=20" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<dl>
+<dt>IEEE Standard Reference</dt>
+</dl>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://standards.ieee.org/getieee/1800/download/1800-2012.pdf">Systemverilog 1800-2012 IEEE Standard for System Verilog-Unified Hardware Design, Specification, and Verification Language</a> (free)</li>
+<li><a rel="nofollow" class="external text" href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=5354441">Systemverilog 1800-2009 IEEE Standard for System Verilog-Unified Hardware Design, Specification, and Verification Language</a> (paid membership required)</li>
+</ul>
+<dl>
+<dt>Tutorials</dt>
+</dl>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.asic-world.com/systemverilog/tutorial.html">SystemVerilog Tutorial</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.project-veripage.com/sv_front.php">SystemVerilog Tutorial for Beginners</a></li>
+</ul>
+<dl>
+<dt>Standards Development</dt>
+</dl>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.eda.org/sv-ieee1800/">IEEE P1800</a> – Working group for SystemVerilog</li>
+<li>Sites used before IEEE 1800-2005
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.systemverilog.org/">SystemVerilog official website</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.vhdl.org/sv/">SystemVerilog Technical Committees</a></li>
+</ul>
+</li>
+</ul>
+<dl>
+<dt>Language Extensions</dt>
+</dl>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.veripool.org/verilog-mode">Verilog AUTOs</a> – An open source meta-comment system to simplify maintaining Verilog code</li>
+</ul>
+<dl>
+<dt>Online Tools</dt>
+</dl>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.edaplayground.com">EDA Playground</a> – Run SystemVerilog from a web browser (free online IDE)</li>
+<li><a rel="nofollow" class="external text" href="http://sven.xtreme-eda.com">SVeN</a> – A SystemVerilog BNF Navigator (current to IEEE 1800-2012)</li>
+</ul>
+<dl>
+<dt>Other Tools</dt>
+</dl>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://sourceforge.net/projects/svunit/">SVUnit</a> – unit test framework for developers writing code in SystemVerilog. Verify SystemVerilog modules, classes and interfaces in isolation. ]</li>
+</ul>
+<div role="navigation" class="navbox" aria-labelledby="IEEE_standards" style="padding:3px">
+<table class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:IEEE_standards" title="Template:IEEE standards"><abbr title="View this template" style=";;background:none transparent;border:none;">v</abbr></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:IEEE_standards" title="Template talk:IEEE standards"><abbr title="Discuss this template" style=";;background:none transparent;border:none;">t</abbr></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:IEEE_standards&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;">e</abbr></a></li>
+</ul>
+</div>
+<div id="IEEE_standards" style="font-size:114%"><a href="/wiki/IEEE_Standards_Association" title="IEEE Standards Association">IEEE standards</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Current</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/IEEE-488" title="IEEE-488">488</a></li>
+<li><a href="/wiki/Software_quality_assurance" title="Software quality assurance">730</a></li>
+<li><a href="/wiki/IEEE_floating_point" title="IEEE floating point">754</a>
+<ul>
+<li><a href="/wiki/IEEE_754_revision" title="IEEE 754 revision">Revision</a></li>
+</ul>
+</li>
+<li><a href="/wiki/IEEE_854-1987" title="IEEE 854-1987">854</a></li>
+<li><a href="/wiki/Software_configuration_management" title="Software configuration management">828</a></li>
+<li><a href="/wiki/Software_test_documentation" title="Software test documentation">829</a></li>
+<li><a href="/wiki/Futurebus" title="Futurebus">896</a></li>
+<li><a href="/wiki/Single_UNIX_Specification" title="Single UNIX Specification">1003</a></li>
+<li><a href="/wiki/VMEbus" title="VMEbus">1014</a></li>
+<li><a href="/wiki/Software_design_description" title="Software design description">1016</a></li>
+<li><a href="/wiki/VHDL" title="VHDL">1076</a></li>
+<li><a href="/wiki/Joint_Test_Action_Group" class="mw-redirect" title="Joint Test Action Group">1149.1</a></li>
+<li><a href="/wiki/PILOT" title="PILOT">1154</a></li>
+<li><a href="/wiki/IEEE_1164" title="IEEE 1164">1164</a></li>
+<li><a href="/wiki/Open_Firmware" title="Open Firmware">1275</a></li>
+<li><a href="/wiki/Distributed_Interactive_Simulation" title="Distributed Interactive Simulation">1278</a></li>
+<li><a href="/wiki/IEEE_1284" title="IEEE 1284">1284</a></li>
+<li><a href="/wiki/IEEE_1355" title="IEEE 1355">1355</a></li>
+<li><a href="/wiki/IEEE_1394" title="IEEE 1394">1394</a></li>
+<li><a href="/wiki/IEEE_1451" title="IEEE 1451">1451</a></li>
+<li><a href="/wiki/Standard_Delay_Format" title="Standard Delay Format">1497</a></li>
+<li><a href="/wiki/High-level_architecture_(simulation)" class="mw-redirect" title="High-level architecture (simulation)">1516</a></li>
+<li><a href="/wiki/IEEE_1541-2002" title="IEEE 1541-2002">1541</a></li>
+<li><a href="/wiki/IEEE_1547" title="IEEE 1547">1547</a></li>
+<li><a href="/wiki/IEEE_1584" title="IEEE 1584">1584</a></li>
+<li><a href="/wiki/Precision_Time_Protocol" title="Precision Time Protocol">1588</a></li>
+<li><a href="/wiki/Scalable_Coherent_Interface" title="Scalable Coherent Interface">1596</a></li>
+<li><a href="/wiki/Advanced_Library_Format" title="Advanced Library Format">1603</a></li>
+<li><a href="/wiki/IEEE_1613" title="IEEE 1613">1613</a></li>
+<li><a href="/wiki/SystemC" title="SystemC">1666</a></li>
+<li><a href="/wiki/IEEE_1667" title="IEEE 1667">1667</a></li>
+<li><a href="/wiki/IEEE_1675-2008" title="IEEE 1675-2008">1675</a></li>
+<li><a href="/wiki/IP-XACT" title="IP-XACT">1685</a></li>
+<li><strong class="selflink">1800</strong></li>
+<li><a href="/wiki/Unified_Power_Format" title="Unified Power Format">1801</a></li>
+<li><a href="/wiki/DNP3" title="DNP3">1815</a></li>
+<li><a href="/wiki/Property_Specification_Language" title="Property Specification Language">1850</a></li>
+<li><a href="/wiki/DySPAN" title="DySPAN">1900</a></li>
+<li><a href="/wiki/IEEE_1901" title="IEEE 1901">1901</a></li>
+<li><a href="/wiki/RuBee" title="RuBee">1902</a></li>
+<li><a href="/wiki/Service_Interoperability_in_Ethernet_Passive_Optical_Networks" title="Service Interoperability in Ethernet Passive Optical Networks">1904</a></li>
+<li><a href="/wiki/IEEE_1905" title="IEEE 1905">1905</a></li>
+<li><a href="/wiki/IEEE_2030" title="IEEE 2030">2030</a></li>
+<li><a href="/wiki/ISO/IEEE_11073" title="ISO/IEEE 11073">11073</a></li>
+<li><a href="/wiki/IEEE_12207" title="IEEE 12207">12207</a></li>
+<li><a href="/wiki/Software_maintenance" title="Software maintenance">14764</a></li>
+<li><a href="/wiki/Risk_management" title="Risk management">16085</a></li>
+<li><a href="/wiki/Project_management" title="Project management">16326</a></li>
+<li><a href="/wiki/Requirements_engineering" title="Requirements engineering">29148</a></li>
+<li><a href="/wiki/ISO/IEC_42010" title="ISO/IEC 42010">42010</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/IEEE_802" title="IEEE 802">802 series</a></th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks navbox-subgroup" style="border-spacing:0">
+<tr>
+<th scope="row" class="navbox-group" style="padding-left:0;padding-right:0;">
+<div style="padding:0em 0.75em;"><a href="/wiki/IEEE_802.1" title="IEEE 802.1">802.1</a></div>
+</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/IEEE_802.1D" title="IEEE 802.1D">D</a></li>
+<li><a href="/wiki/IEEE_P802.1p" title="IEEE P802.1p">p</a></li>
+<li><a href="/wiki/IEEE_802.1Q" title="IEEE 802.1Q">Q</a></li>
+<li><a href="/wiki/Stream_Reservation_Protocol" title="Stream Reservation Protocol">Qat</a></li>
+<li><a href="/wiki/Provider_Backbone_Bridge_Traffic_Engineering" title="Provider Backbone Bridge Traffic Engineering">Qay</a></li>
+<li><a href="/wiki/Spanning_Tree_Protocol" title="Spanning Tree Protocol">w</a></li>
+<li><a href="/wiki/IEEE_802.1X" title="IEEE 802.1X">X</a></li>
+<li><a href="/wiki/Link_Layer_Discovery_Protocol" title="Link Layer Discovery Protocol">ab</a></li>
+<li><a href="/wiki/IEEE_802.1ad" title="IEEE 802.1ad">ad</a></li>
+<li><a href="/wiki/IEEE_802.1AE" title="IEEE 802.1AE">AE</a></li>
+<li><a href="/wiki/IEEE_802.1ag" title="IEEE 802.1ag">ag</a></li>
+<li><a href="/wiki/IEEE_802.1ah-2008" title="IEEE 802.1ah-2008">ah</a></li>
+<li><a href="/wiki/Multiple_Registration_Protocol" title="Multiple Registration Protocol">ak</a></li>
+<li><a href="/wiki/IEEE_802.1aq" title="IEEE 802.1aq">aq</a></li>
+<li><a href="/wiki/Link_aggregation" title="Link aggregation">ax</a></li>
+<li><a href="/wiki/Data_center_bridging#IEEE_Task_Group" title="Data center bridging">az</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="padding-left:0;padding-right:0;">
+<div style="padding:0em 0.75em;"><a href="/wiki/IEEE_802.11" title="IEEE 802.11">802.11</a></div>
+</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/IEEE_802.11a-1999" title="IEEE 802.11a-1999">a</a></li>
+<li><a href="/wiki/IEEE_802.11b-1999" title="IEEE 802.11b-1999">b</a></li>
+<li><a href="/wiki/IEEE_802.11c" title="IEEE 802.11c">c</a></li>
+<li><a href="/wiki/IEEE_802.11d-2001" title="IEEE 802.11d-2001">d</a></li>
+<li><a href="/wiki/IEEE_802.11e-2005" title="IEEE 802.11e-2005">e</a></li>
+<li><a href="/wiki/Inter-Access_Point_Protocol" title="Inter-Access Point Protocol">f</a></li>
+<li><a href="/wiki/IEEE_802.11g-2003" title="IEEE 802.11g-2003">g</a></li>
+<li><a href="/wiki/IEEE_802.11h-2003" title="IEEE 802.11h-2003">h</a></li>
+<li><a href="/wiki/IEEE_802.11i-2004" title="IEEE 802.11i-2004">i</a></li>
+<li><a href="/wiki/IEEE_802.11j-2004" title="IEEE 802.11j-2004">j</a></li>
+<li><a href="/wiki/IEEE_802.11k-2008" title="IEEE 802.11k-2008">k</a></li>
+<li><a href="/wiki/IEEE_802.11n-2009" title="IEEE 802.11n-2009">n</a></li>
+<li><a href="/wiki/IEEE_802.11p" title="IEEE 802.11p">p</a></li>
+<li><a href="/wiki/IEEE_802.11r-2008" title="IEEE 802.11r-2008">r</a></li>
+<li><a href="/wiki/IEEE_802.11s" title="IEEE 802.11s">s</a></li>
+<li><a href="/wiki/IEEE_802.11u" title="IEEE 802.11u">u</a></li>
+<li><a href="/wiki/IEEE_802.11v" title="IEEE 802.11v">v</a></li>
+<li><a href="/wiki/IEEE_802.11w-2009" title="IEEE 802.11w-2009">w</a></li>
+<li><a href="/wiki/IEEE_802.11y-2008" title="IEEE 802.11y-2008">y</a></li>
+<li><a href="/wiki/IEEE_802.11ac" title="IEEE 802.11ac">ac</a></li>
+<li><a href="/wiki/Wireless_Gigabit_Alliance" title="Wireless Gigabit Alliance">ad</a></li>
+<li><a href="/wiki/IEEE_802.11af" title="IEEE 802.11af">af</a></li>
+<li><a href="/wiki/IEEE_802.11ah" title="IEEE 802.11ah">ah</a></li>
+<li><a href="/wiki/IEEE_802.11ai" title="IEEE 802.11ai">ai</a></li>
+<li><a href="/wiki/IEEE_802.11ax" title="IEEE 802.11ax">ax</a></li>
+<li><a href="/wiki/IEEE_802.11ay" title="IEEE 802.11ay">ay</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+<div>
+<ul>
+<li><a href="/wiki/IEEE_802.2" title="IEEE 802.2">.2</a></li>
+<li><a href="/wiki/IEEE_802.3" title="IEEE 802.3">.3</a></li>
+<li><a href="/wiki/Token_bus_network" title="Token bus network">.4</a></li>
+<li><a href="/wiki/Token_ring" title="Token ring">.5</a></li>
+<li><a href="/wiki/IEEE_802.6" title="IEEE 802.6">.6</a></li>
+<li><a href="/wiki/IEEE_802.7" title="IEEE 802.7">.7</a></li>
+<li><a href="/wiki/IEEE_802.8" title="IEEE 802.8">.8</a></li>
+<li><a href="/wiki/IEEE_802.9" title="IEEE 802.9">.9</a></li>
+<li><a href="/wiki/IEEE_802.10" title="IEEE 802.10">.10</a></li>
+<li><a href="/wiki/100BaseVG" title="100BaseVG">.12</a></li>
+<li><a href="/wiki/Cable_modem#IEEE_802.14" title="Cable modem">.14</a></li>
+<li><a href="/wiki/IEEE_802.15" title="IEEE 802.15">.15</a>
+<ul>
+<li><a href="/wiki/Bluetooth" title="Bluetooth">.1</a></li>
+<li><a href="/wiki/IEEE_802.15.4" title="IEEE 802.15.4">.4</a></li>
+<li><a href="/wiki/IEEE_802.15.4a" title="IEEE 802.15.4a">.4a</a></li>
+</ul>
+</li>
+<li><a href="/wiki/IEEE_802.16" title="IEEE 802.16">.16</a>
+<ul>
+<li><a href="/wiki/WiMAX" title="WiMAX">d · e</a></li>
+</ul>
+</li>
+<li><a href="/wiki/Resilient_Packet_Ring" title="Resilient Packet Ring">.17</a></li>
+<li><a href="/wiki/IEEE_802.18" title="IEEE 802.18">.18</a></li>
+<li><a href="/wiki/IEEE_802.20" title="IEEE 802.20">.20</a></li>
+<li><a href="/wiki/IEEE_802.21" title="IEEE 802.21">.21</a></li>
+<li><a href="/wiki/IEEE_802.22" title="IEEE 802.22">.22</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Proposed</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/IEEE_P1363" title="IEEE P1363">P1363</a></li>
+<li><a href="/wiki/IEEE_P1619" title="IEEE P1619">P1619</a></li>
+<li><a href="/wiki/Rosetta-lang" title="Rosetta-lang">P1699</a></li>
+<li><a href="/wiki/Universal_Power_Adapter_for_Mobile_Devices" title="Universal Power Adapter for Mobile Devices">P1823</a></li>
+<li><a href="/wiki/IEEE_P1906.1" title="IEEE P1906.1">P1906.1</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Superseded</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/IEEE_754-1985" title="IEEE 754-1985">754-1985</a></li>
+<li><a href="/wiki/Software_requirements_specification" title="Software requirements specification">830</a></li>
+<li><a href="/wiki/IEEE_1219" title="IEEE 1219">1219</a></li>
+<li><a href="/wiki/Software_requirements_specification" title="Software requirements specification">1233</a></li>
+<li><a href="/wiki/Concept_of_operations" title="Concept of operations">1362</a></li>
+<li><a href="/wiki/Verilog" title="Verilog">1364</a></li>
+<li><a href="/wiki/IEEE_1471" title="IEEE 1471">1471</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow hlist" colspan="2">
+<div>
+<dl>
+<dt><i>See also</i></dt>
+<dd><a href="/wiki/IEEE_Standards_Association" title="IEEE Standards Association">IEEE Standards Association</a></dd>
+<dd><a href="/wiki/Category:IEEE_standards" title="Category:IEEE standards">Category:IEEE standards</a></dd>
+</dl>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div role="navigation" class="navbox" aria-labelledby="Programmable_logic" style="padding:3px">
+<table class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:Programmable_Logic" title="Template:Programmable Logic"><abbr title="View this template" style=";;background:none transparent;border:none;">v</abbr></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:Programmable_Logic" title="Template talk:Programmable Logic"><abbr title="Discuss this template" style=";;background:none transparent;border:none;">t</abbr></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:Programmable_Logic&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;">e</abbr></a></li>
+</ul>
+</div>
+<div id="Programmable_logic" style="font-size:114%"><a href="/wiki/Programmable_logic_device" title="Programmable logic device">Programmable logic</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Concepts</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Application-specific_integrated_circuit" title="Application-specific integrated circuit">ASIC</a></li>
+<li><a href="/wiki/System_on_a_chip" title="System on a chip">SOC</a></li>
+<li><a href="/wiki/Field-programmable_gate_array" title="Field-programmable gate array">FPGA</a>
+<ul>
+<li><a href="/wiki/Logic_block" title="Logic block">Logic block</a></li>
+</ul>
+</li>
+<li><a href="/wiki/Complex_programmable_logic_device" title="Complex programmable logic device">CPLD</a></li>
+<li><a href="/wiki/Erasable_programmable_logic_device" title="Erasable programmable logic device">EPLD</a></li>
+<li><a href="/wiki/Programmable_logic_array" title="Programmable logic array">PLA</a></li>
+<li><a href="/wiki/Programmable_Array_Logic" title="Programmable Array Logic">PAL</a></li>
+<li><a href="/wiki/Generic_array_logic" title="Generic array logic">GAL</a></li>
+<li><a href="/wiki/PSoC" title="PSoC">PSoC</a></li>
+<li><a href="/wiki/Reconfigurable_computing" title="Reconfigurable computing">Reconfigurable computing</a>
+<ul>
+<li><a href="/wiki/Xputer" title="Xputer">Xputer</a></li>
+</ul>
+</li>
+<li><a href="/wiki/Soft_microprocessor" title="Soft microprocessor">Soft microprocessor</a></li>
+<li><a href="/wiki/Circuit_underutilization" title="Circuit underutilization">Circuit underutilization</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Hardware_description_language" title="Hardware description language">Languages</a></th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Verilog" title="Verilog">Verilog</a>
+<ul>
+<li><a href="/wiki/Verilog-A" title="Verilog-A">A</a></li>
+<li><a href="/wiki/Verilog-AMS" title="Verilog-AMS">AMS</a></li>
+</ul>
+</li>
+<li><a href="/wiki/VHDL" title="VHDL">VHDL</a>
+<ul>
+<li><a href="/wiki/VHDL-AMS" title="VHDL-AMS">AMS</a></li>
+<li><a href="/wiki/VHDL-VITAL" title="VHDL-VITAL">VITAL</a></li>
+</ul>
+</li>
+<li><strong class="selflink">SystemVerilog</strong>
+<ul>
+<li><a href="/wiki/SystemVerilog_DPI" title="SystemVerilog DPI">DPI</a></li>
+</ul>
+</li>
+<li><a href="/wiki/SystemC" title="SystemC">SystemC</a></li>
+<li><a href="/wiki/Altera_Hardware_Description_Language" title="Altera Hardware Description Language">AHDL</a></li>
+<li><a href="/wiki/Handel-C" title="Handel-C">Handel-C</a></li>
+<li><a href="/wiki/Property_Specification_Language" title="Property Specification Language">PSL</a></li>
+<li><a href="/wiki/Unified_Power_Format" title="Unified Power Format">UPF</a></li>
+<li><a href="/wiki/PALASM" title="PALASM">PALASM</a></li>
+<li><a href="/wiki/Advanced_Boolean_Expression_Language" title="Advanced Boolean Expression Language">ABEL</a></li>
+<li><a href="/wiki/Programmable_Array_Logic#CUPL" title="Programmable Array Logic">CUPL</a></li>
+<li><a href="/wiki/OpenVera" title="OpenVera">OpenVera</a></li>
+<li><a href="/wiki/C_to_HDL" title="C to HDL">C to HDL</a></li>
+<li><a href="/wiki/Flow_to_HDL" title="Flow to HDL">Flow to HDL</a></li>
+<li><a href="/wiki/MyHDL" title="MyHDL">MyHDL</a></li>
+<li><a href="/wiki/JHDL" title="JHDL">JHDL</a></li>
+<li><a href="/wiki/ELLA_(programming_language)" title="ELLA (programming language)">ELLA</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Companies</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Accellera" title="Accellera">Accellera</a></li>
+<li><a href="/wiki/Actel" title="Actel">Actel</a></li>
+<li><a href="/wiki/Achronix" title="Achronix">Achronix</a></li>
+<li><a href="/wiki/Advanced_Micro_Devices" title="Advanced Micro Devices">AMD</a></li>
+<li><a href="/wiki/Aldec" title="Aldec">Aldec</a></li>
+<li><a href="/wiki/Altera" title="Altera">Altera</a></li>
+<li><a href="/wiki/Atmel" title="Atmel">Atmel</a></li>
+<li><a href="/wiki/Cadence_Design_Systems" title="Cadence Design Systems">Cadence</a></li>
+<li><a href="/wiki/Cypress_Semiconductor" title="Cypress Semiconductor">Cypress</a></li>
+<li><a href="/wiki/Duolog" title="Duolog">Duolog</a></li>
+<li><a href="/wiki/Forte_Design_Systems" title="Forte Design Systems">Forte</a></li>
+<li><a href="/wiki/Intel" title="Intel">Intel</a></li>
+<li><a href="/wiki/Lattice_Semiconductor" title="Lattice Semiconductor">Lattice</a></li>
+<li><a href="/wiki/National_Semiconductor" title="National Semiconductor">National</a></li>
+<li><a href="/wiki/Mentor_Graphics" title="Mentor Graphics">Mentor Graphics</a></li>
+<li><a href="/wiki/Microsemi" title="Microsemi">Microsemi</a></li>
+<li><a href="/wiki/Signetics" title="Signetics">Signetics</a></li>
+<li><a href="/wiki/Synopsys" title="Synopsys">Synopsys</a>
+<ul>
+<li><a href="/wiki/Magma_Design_Automation" title="Magma Design Automation">Magma</a></li>
+<li><a href="/wiki/Virage_Logic" title="Virage Logic">Virage Logic</a></li>
+</ul>
+</li>
+<li><a href="/wiki/Texas_Instruments" title="Texas Instruments">Texas Instruments</a></li>
+<li><a href="/wiki/Tabula_(company)" title="Tabula (company)">Tabula</a></li>
+<li><a href="/wiki/Xilinx" title="Xilinx">Xilinx</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Products</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks navbox-subgroup" style="border-spacing:0">
+<tr>
+<th scope="row" class="navbox-group" style="padding-left:0;padding-right:0;">
+<div style="padding:0em 0.75em;">Hardware</div>
+</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/ICE_(FPGA)" title="ICE (FPGA)">iCE</a></li>
+<li><a href="/wiki/Stratix" title="Stratix">Stratix</a></li>
+<li><a href="/wiki/Virtex_(FPGA)" title="Virtex (FPGA)">Virtex</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="padding-left:0;padding-right:0;">
+<div style="padding:0em 0.75em;">Software</div>
+</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Altera_Quartus" title="Altera Quartus">Altera Quartus</a></li>
+<li><a href="/wiki/Xilinx_ISE" title="Xilinx ISE">Xilinx ISE</a></li>
+<li><a href="/wiki/Xilinx_Vivado" title="Xilinx Vivado">Xilinx Vivado</a></li>
+<li><a href="/wiki/ModelSim" title="ModelSim">ModelSim</a></li>
+<li><a href="/wiki/Verilog-to-Routing" title="Verilog-to-Routing">VTR</a></li>
+<li><a href="/wiki/List_of_HDL_simulators" title="List of HDL simulators">Simulators</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="padding-left:0;padding-right:0;">
+<div style="padding:0em 0.75em;">IP</div>
+</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks navbox-subgroup" style="border-spacing:0">
+<tr>
+<th scope="row" class="navbox-group" style="padding-left:0;padding-right:0;">
+<div style="padding:0em 0.75em;">Proprietary</div>
+</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/ARC_(processor)" title="ARC (processor)">ARC</a></li>
+<li><a href="/wiki/LEON" title="LEON">LEON</a></li>
+<li><a href="/wiki/LatticeMico8" title="LatticeMico8">LatticeMico8</a></li>
+<li><a href="/wiki/MicroBlaze" title="MicroBlaze">MicroBlaze</a></li>
+<li><a href="/wiki/PicoBlaze" title="PicoBlaze">PicoBlaze</a></li>
+<li><a href="/wiki/Nios_embedded_processor" title="Nios embedded processor">Nios</a></li>
+<li><a href="/wiki/Nios_II" title="Nios II">Nios II</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="padding-left:0;padding-right:0;">
+<div style="padding:0em 0.75em;">Open-source</div>
+</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/LatticeMico32" title="LatticeMico32">LatticeMico32</a></li>
+<li><a href="/wiki/OpenCores" title="OpenCores">OpenCores</a></li>
+<li><a href="/wiki/OpenRISC" title="OpenRISC">OpenRISC</a>
+<ul>
+<li><a href="/wiki/OpenRISC_1200" title="OpenRISC 1200">1200</a></li>
+</ul>
+</li>
+<li><a href="/wiki/RISC-V" title="RISC-V">RISC-V</a></li>
+<li><a href="/wiki/Java_Optimized_Processor" title="Java Optimized Processor">JOP</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1257
+Cached time: 20170202135817
+Cache expiry: 86400
+Dynamic content: true
+CPU time usage: 0.204 seconds
+Real time usage: 0.881 seconds
+Preprocessor visited node count: 2338/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 69773/2097152 bytes
+Template argument size: 4062/2097152 bytes
+Highest expansion depth: 25/40
+Expensive parser function count: 2/500
+Lua time usage: 0.068/10.000 seconds
+Lua memory usage: 2.72 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  804.420      1 -total
+ 14.53%  116.873      2 Template:Infobox
+ 10.98%   88.318      1 Template:Infobox_programming_language
+  5.89%   47.380      5 Template:Navbox
+  4.50%   36.160      3 Template:Cite_book
+  4.37%   35.132      1 Template:Infobox_software/simple
+  3.72%   29.890      2 Template:Start_date_and_age
+  2.90%   23.293      3 Template:Navbox_subgroup
+  2.38%   19.169      1 Template:IEEE_standards
+  2.21%   17.758      1 Template:Time_ago
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:2540686-0!*!0!!en!4!* and timestamp 20170202135816 and revision id 760171812
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=SystemVerilog&amp;oldid=760171812">https://en.wikipedia.org/w/index.php?title=SystemVerilog&amp;oldid=760171812</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Hardware_description_languages" title="Category:Hardware description languages">Hardware description languages</a></li><li><a href="/wiki/Category:Hardware_verification_languages" title="Category:Hardware verification languages">Hardware verification languages</a></li><li><a href="/wiki/Category:System_description_languages" title="Category:System description languages">System description languages</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Pages_using_ISBN_magic_links" title="Category:Pages using ISBN magic links">Pages using ISBN magic links</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=SystemVerilog" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=SystemVerilog" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/SystemVerilog"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:SystemVerilog"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/SystemVerilog" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=SystemVerilog&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=SystemVerilog&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/SystemVerilog" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/SystemVerilog" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=SystemVerilog&amp;oldid=760171812" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=SystemVerilog&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q1387402" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=SystemVerilog&amp;id=760171812" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=SystemVerilog">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=SystemVerilog&amp;returnto=SystemVerilog&amp;oldid=760171812&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=SystemVerilog&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/SystemVerilog" title="SystemVerilog – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/SystemVerilog" title="SystemVerilog – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-ja"><a href="https://ja.wikipedia.org/wiki/SystemVerilog" title="SystemVerilog – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target">日本語</a></li><li class="interlanguage-link interwiki-pl"><a href="https://pl.wikipedia.org/wiki/SystemVerilog" title="SystemVerilog – Polish" lang="pl" hreflang="pl" class="interlanguage-link-target">Polski</a></li><li class="interlanguage-link interwiki-ru"><a href="https://ru.wikipedia.org/wiki/SystemVerilog" title="SystemVerilog – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li><li class="interlanguage-link interwiki-zh"><a href="https://zh.wikipedia.org/wiki/SystemVerilog" title="SystemVerilog – Chinese" lang="zh" hreflang="zh" class="interlanguage-link-target">中文</a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q1387402#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 15 January 2017, at 11:21.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=SystemVerilog&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.204","walltime":"0.881","ppvisitednodes":{"value":2338,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":69773,"limit":2097152},"templateargumentsize":{"value":4062,"limit":2097152},"expansiondepth":{"value":25,"limit":40},"expensivefunctioncount":{"value":2,"limit":500},"entityaccesscount":{"value":1,"limit":400},"timingprofile":["100.00%  804.420      1 -total"," 14.53%  116.873      2 Template:Infobox"," 10.98%   88.318      1 Template:Infobox_programming_language","  5.89%   47.380      5 Template:Navbox","  4.50%   36.160      3 Template:Cite_book","  4.37%   35.132      1 Template:Infobox_software/simple","  3.72%   29.890      2 Template:Start_date_and_age","  2.90%   23.293      3 Template:Navbox_subgroup","  2.38%   19.169      1 Template:IEEE_standards","  2.21%   17.758      1 Template:Time_ago"]},"scribunto":{"limitreport-timeusage":{"value":"0.068","limit":"10.000"},"limitreport-memusage":{"value":2854127,"limit":52428800}},"cachereport":{"origin":"mw1257","timestamp":"20170202135817","ttl":86400,"transientcontent":true}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":950,"wgHostname":"mw1257"});});</script>
+	</body>
+</html>

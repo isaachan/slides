@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>MAD (programming language) - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"MAD_(programming_language)","wgTitle":"MAD (programming language)","wgCurRevisionId":732444915,"wgRevisionId":732444915,"wgArticleId":55579,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["ALGOL 58 dialect","Procedural programming languages","Programming languages created in 1959"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"MAD_(programming_language)","wgRelevantArticleId":55579,"wgRequestId":"WIlH6QpAIC0AABXY55MAAACS","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":true},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q4117854","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.cite.styles":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.legacy.wikibits","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.29.0-wmf.8"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/MAD_(programming_language)"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=MAD_(programming_language)&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=MAD_(programming_language)&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/MAD_(programming_language)"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-MAD_programming_language rootpage-MAD_programming_language skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">MAD (programming language)</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><script>function mfTempOpenSection(id){var block=document.getElementById("mf-section-"+id);block.className+=" open-block";block.previousSibling.className+=" open-block";}</script><table class="infobox vevent" style="width:22em">
+<caption class="summary">MAD</caption>
+<tr>
+<th scope="row"><a href="/wiki/Programming_paradigm" title="Programming paradigm">Paradigm</a></th>
+<td><a href="/wiki/Imperative_programming" title="Imperative programming">Imperative</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_developer" title="Software developer">Developer</a></th>
+<td class="organiser">Galler, Arden, and Graham</td>
+</tr>
+<tr>
+<th scope="row">First&#160;appeared</th>
+<td>1959</td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Operating_system" title="Operating system">OS</a></th>
+<td><a href="/wiki/University_of_Michigan_Executive_System" title="University of Michigan Executive System">UMES</a>, <a href="/wiki/Michigan_Terminal_System" title="Michigan Terminal System">MTS</a>, <a href="/wiki/Compatible_Time-Sharing_System" title="Compatible Time-Sharing System">CTSS</a>, others</td>
+</tr>
+<tr>
+<th colspan="2" style="text-align:center;background-color: #eee;">Major <a href="/wiki/Programming_language_implementation" title="Programming language implementation">implementations</a></th>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/IBM_704" title="IBM 704">IBM 704</a>, <a href="/wiki/IBM_7090" title="IBM 7090">IBM 7090</a>, <a href="/wiki/UNIVAC_1108" class="mw-redirect" title="UNIVAC 1108">UNIVAC 1108</a>, <a href="/wiki/Philco" title="Philco">Philco</a> 210-211, <a href="/wiki/S/360" class="mw-redirect" title="S/360">IBM S/360</a>, and <a href="/wiki/S/370" class="mw-redirect" title="S/370">IBM S/370</a></td>
+</tr>
+<tr>
+<th colspan="2" style="text-align:center;background-color: #eee;"><a href="/wiki/Dialect_(computing)" title="Dialect (computing)">Dialects</a></th>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center">MAD, MAD/I, GOM</td>
+</tr>
+<tr>
+<th colspan="2" style="text-align:center;background-color: #eee;">Influenced by</th>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/ALGOL_58" title="ALGOL 58">IAL</a>, <a href="/wiki/ALGOL_58" title="ALGOL 58">ALGOL 58</a></td>
+</tr>
+</table>
+<p><b>MAD</b> (<b>Michigan Algorithm Decoder</b>) is a <a href="/wiki/Programming_language" title="Programming language">programming language</a> and <a href="/wiki/Compiler" title="Compiler">compiler</a> for the <a href="/wiki/IBM_704" title="IBM 704">IBM 704</a> and later the <a href="/wiki/IBM_709" title="IBM 709">IBM 709</a>, <a href="/wiki/IBM_7090" title="IBM 7090">IBM 7090</a>, <a href="/wiki/IBM_7040" title="IBM 7040">IBM 7040</a>, <a href="/wiki/UNIVAC_1107" class="mw-redirect" title="UNIVAC 1107">UNIVAC 1107</a>, <a href="/wiki/UNIVAC_1108" class="mw-redirect" title="UNIVAC 1108">UNIVAC 1108</a>, <a href="/wiki/Philco" title="Philco">Philco 210-211</a>, and eventually the <a href="/wiki/S/370" class="mw-redirect" title="S/370">IBM S/370</a> mainframe computers. Developed in 1959 at the <a href="/wiki/University_of_Michigan" title="University of Michigan">University of Michigan</a> by <a href="/wiki/Bernard_Galler" title="Bernard Galler">Bernard Galler</a>, <a href="/wiki/Bruce_Arden" title="Bruce Arden">Bruce Arden</a> and <a href="/wiki/Robert_M._Graham" title="Robert M. Graham">Robert M. Graham</a>, MAD is a variant of the <a href="/wiki/ALGOL" title="ALGOL">ALGOL</a> language. It was widely used to teach programming at colleges and universities during the 1960s and played a minor role in the development of <a href="/wiki/Compatible_Time-Sharing_System" title="Compatible Time-Sharing System">CTSS</a>, <a href="/wiki/Multics" title="Multics">Multics</a>, and the <a href="/wiki/Michigan_Terminal_System" title="Michigan Terminal System">Michigan Terminal System</a> computer <a href="/wiki/Operating_system" title="Operating system">operating systems</a>.<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">[1]</a></sup></p>
+<p>The archives at the <a href="/wiki/Bentley_Historical_Library" title="Bentley Historical Library">Bentley Historical Library</a> of the University of Michigan contain reference materials on the development of MAD and MAD/I, including three linear feet of printouts with hand-written notations and original printed manuals.<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">[2]</a></sup><sup id="cite_ref-3" class="reference"><a href="#cite_note-3">[3]</a></sup><sup id="cite_ref-4" class="reference"><a href="#cite_note-4">[4]</a></sup><sup id="cite_ref-5" class="reference"><a href="#cite_note-5">[5]</a></sup></p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#MAD.2C_MAD.2FI.2C_and_GOM"><span class="tocnumber">1</span> <span class="toctext">MAD, MAD/I, and GOM</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#History"><span class="tocnumber">2</span> <span class="toctext">History</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#MAD.2C_MAD_Magazine.2C_and_Alfred_E._Neuman"><span class="tocnumber">3</span> <span class="toctext">MAD, MAD Magazine, and Alfred E. Neuman</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#.22Hello.2C_world.22_example"><span class="tocnumber">4</span> <span class="toctext">"Hello, world" example</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Language_elements"><span class="tocnumber">5</span> <span class="toctext">Language elements</span></a>
+<ul>
+<li class="toclevel-2 tocsection-6"><a href="#Input_format"><span class="tocnumber">5.1</span> <span class="toctext">Input format</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Names"><span class="tocnumber">5.2</span> <span class="toctext">Names</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Data_types"><span class="tocnumber">5.3</span> <span class="toctext">Data types</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Arrays_and_matrices"><span class="tocnumber">5.4</span> <span class="toctext">Arrays and matrices</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Operators"><span class="tocnumber">5.5</span> <span class="toctext">Operators</span></a>
+<ul>
+<li class="toclevel-3 tocsection-11"><a href="#Arithmetic_operators"><span class="tocnumber">5.5.1</span> <span class="toctext">Arithmetic operators</span></a></li>
+<li class="toclevel-3 tocsection-12"><a href="#Pointer_operators_.28GOM_only.29"><span class="tocnumber">5.5.2</span> <span class="toctext">Pointer operators (GOM only)</span></a></li>
+<li class="toclevel-3 tocsection-13"><a href="#Relational_operators"><span class="tocnumber">5.5.3</span> <span class="toctext">Relational operators</span></a></li>
+<li class="toclevel-3 tocsection-14"><a href="#Boolean_operators"><span class="tocnumber">5.5.4</span> <span class="toctext">Boolean operators</span></a></li>
+<li class="toclevel-3 tocsection-15"><a href="#Bit_operators_.28GOM_only.29"><span class="tocnumber">5.5.5</span> <span class="toctext">Bit operators (GOM only)</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-16"><a href="#Declaration_statements"><span class="tocnumber">5.6</span> <span class="toctext">Declaration statements</span></a></li>
+<li class="toclevel-2 tocsection-17"><a href="#Executable_statements"><span class="tocnumber">5.7</span> <span class="toctext">Executable statements</span></a></li>
+<li class="toclevel-2 tocsection-18"><a href="#Input_and_output_statements"><span class="tocnumber">5.8</span> <span class="toctext">Input and output statements</span></a></li>
+<li class="toclevel-2 tocsection-19"><a href="#Functions"><span class="tocnumber">5.9</span> <span class="toctext">Functions</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-20"><a href="#Operator_definition_and_redefinition"><span class="tocnumber">6</span> <span class="toctext">Operator definition and redefinition</span></a></li>
+<li class="toclevel-1 tocsection-21"><a href="#See_also"><span class="tocnumber">7</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-22"><a href="#Notes"><span class="tocnumber">8</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-23"><a href="#References"><span class="tocnumber">9</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-24"><a href="#External_links"><span class="tocnumber">10</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="MAD.2C_MAD.2FI.2C_and_GOM">MAD, MAD/I, and GOM</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=MAD_(programming_language)&amp;action=edit&amp;section=1" title="Edit section: MAD, MAD/I, and GOM">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>There are three MAD compilers:</p>
+<ol>
+<li>Original <b>MAD</b>, the compiler developed in 1959 at the University of Michigan for the <a href="/wiki/IBM_704" title="IBM 704">IBM 704</a> and later the <a href="/wiki/IBM_709" title="IBM 709">IBM 709</a> and <a href="/wiki/IBM_7090" title="IBM 7090">IBM 7090</a> <a href="/wiki/Mainframe_computer" title="Mainframe computer">mainframe</a> computers running the <a href="/wiki/University_of_Michigan_Executive_System" title="University of Michigan Executive System">University of Michigan Executive System</a> (UMES) and the <a href="/wiki/Compatible_Time-Sharing_System" title="Compatible Time-Sharing System">Compatible Time-Sharing System</a> (CTSS) <a href="/wiki/Operating_system" title="Operating system">operating systems</a>.<sup id="cite_ref-MADManual_6-0" class="reference"><a href="#cite_note-MADManual-6">[6]</a></sup><sup id="cite_ref-deepblue.lib.umich.edu_7-0" class="reference"><a href="#cite_note-deepblue.lib.umich.edu-7">[7]</a></sup> In the mid-1960s MAD was ported at the <a href="/wiki/University_of_Maryland" class="mw-redirect" title="University of Maryland">University of Maryland</a> to the <a href="/wiki/UNIVAC_1108" class="mw-redirect" title="UNIVAC 1108">UNIVAC 1108</a>.<sup id="cite_ref-UnisysMad_8-0" class="reference"><a href="#cite_note-UnisysMad-8">[8]</a></sup> Versions of MAD were also available for the <a href="/wiki/Philco" title="Philco">Philco</a> 210-211 and <a href="/wiki/UNIVAC_1107" class="mw-redirect" title="UNIVAC 1107">UNIVAC 1107</a>.<sup id="cite_ref-UnisysMad_8-1" class="reference"><a href="#cite_note-UnisysMad-8">[8]</a></sup></li>
+<li><b>MAD/I</b>, an "extended" version of MAD for the <a href="/wiki/IBM_S/360" class="mw-redirect" title="IBM S/360">IBM S/360</a> series of computers running under the <a href="/wiki/Michigan_Terminal_System" title="Michigan Terminal System">Michigan Terminal System</a> (MTS). Work on the new compiler started in 1965 as part of the <a href="/wiki/Defense_Advanced_Research_Projects_Agency" class="mw-redirect" title="Defense Advanced Research Projects Agency">ARPA</a> sponsored CONCOMP project at the University of Michigan. As work progressed it gradually became clear that MAD/I was a new language independent of the original 7090 version of MAD.<sup id="cite_ref-MADIManual_9-0" class="reference"><a href="#cite_note-MADIManual-9">[9]</a></sup></li>
+<li><b>GOM</b> (<b>G</b>ood <b>O</b>ld <b>M</b>AD), a reimplementation of the original 7090 MAD for the <a href="/wiki/S/370" class="mw-redirect" title="S/370">IBM S/370 series</a> of mainframe computers running the <a href="/wiki/Michigan_Terminal_System" title="Michigan Terminal System">Michigan Terminal System</a> (MTS). GOM was created in the early 1980s by Don Boettner at the University of Michigan Computing Center.<sup id="cite_ref-10" class="reference"><a href="#cite_note-10">[10]</a></sup><sup id="cite_ref-GOMManual_11-0" class="reference"><a href="#cite_note-GOMManual-11">[11]</a></sup></li>
+</ol>
+<h2><span class="mw-headline" id="History">History</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=MAD_(programming_language)&amp;action=edit&amp;section=2" title="Edit section: History">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>While <b>MAD</b> was motivated by <a href="/wiki/ALGOL_58" title="ALGOL 58">ALGOL 58</a>, it does not resemble ALGOL 58 in any significant way.<sup id="cite_ref-MADSammet_12-0" class="reference"><a href="#cite_note-MADSammet-12">[12]</a></sup><sup id="cite_ref-13" class="reference"><a href="#cite_note-13">[13]</a></sup></p>
+<p>Programs written in MAD included MAIL,<sup id="cite_ref-14" class="reference"><a href="#cite_note-14">[14]</a></sup> <a href="/wiki/RUNOFF" class="mw-redirect" title="RUNOFF">RUNOFF</a>, one of the first text processing systems, and several other utilities all under <a href="/wiki/Compatible_Time-Sharing_System" title="Compatible Time-Sharing System">Compatible Time-Sharing System</a>(CTSS).<sup id="cite_ref-BernieGallerInterview_15-0" class="reference"><a href="#cite_note-BernieGallerInterview-15">[15]</a></sup> Work was done on a design for a MAD compiler for <a href="/wiki/Multics" title="Multics">Multics</a>, but it was never implemented.<sup id="cite_ref-16" class="reference"><a href="#cite_note-16">[16]</a></sup></p>
+<p>The following is an interesting quote from <i>An Interview with <a href="/wiki/Brian_Kernighan" title="Brian Kernighan">Brian Kernighan</a></i><sup id="cite_ref-17" class="reference"><a href="#cite_note-17">[17]</a></sup> when he was asked "What hooked you on programming?":</p>
+<dl>
+<dd>I think that the most fun I had programming was a summer job at Project MAC at MIT in the summer of 1966, where I worked on a program that created a job tape for the brand new GE 645 in the earliest days of Multics. I was writing in MAD, which was much easier and more pleasant than the FORTRAN and COBOL that I had written earlier, and I was using CTSS, the first time-sharing system, which was infinitely easier and more pleasant than punch cards.</dd>
+</dl>
+<p>MAD was quite fast compared to some of the other compilers of its day. Because a number of people were interested in using the <a href="/wiki/FORTRAN" class="mw-redirect" title="FORTRAN">FORTRAN</a> language and yet wanted to obtain the speed of the MAD compiler, a system called MADTRAN (written in MAD) was developed. MADTRAN was simply a translator from FORTRAN to MAD, which then produced machine code. MADTRAN was distributed through <a href="/wiki/SHARE_(computing)" title="SHARE (computing)">SHARE</a>.<sup id="cite_ref-MADSammet_12-1" class="reference"><a href="#cite_note-MADSammet-12">[12]</a></sup></p>
+<p><b>MAD/I</b> has a syntactic structure similar to <a href="/wiki/ALGOL_60" title="ALGOL 60">ALGOL 60</a> together with important features from the original MAD and from <a href="/wiki/PL/I" title="PL/I">PL/I</a>.<sup id="cite_ref-MADIManual_9-1" class="reference"><a href="#cite_note-MADIManual-9">[9]</a></sup> MAD/I was designed as an extensible language. It was available for use under <a href="/wiki/Michigan_Terminal_System" title="Michigan Terminal System">MTS</a> and provided many new ideas which made their way into other languages, but MAD/I compilations were slow and MAD/I never extended itself into widespread use when compared to the original 7090 MAD.<sup id="cite_ref-GOMManual_11-1" class="reference"><a href="#cite_note-GOMManual-11">[11]</a></sup></p>
+<p><b>GOM</b> is essentially the 7090 MAD language modified and extended for the 360/370 architecture with some judicious tailoring to better fit current programming practices and problems.<sup id="cite_ref-GOMManual_11-2" class="reference"><a href="#cite_note-GOMManual-11">[11]</a></sup> The <a href="/wiki/Michigan_Terminal_System" title="Michigan Terminal System">MTS</a> Message System was written in GOM.</p>
+<h2><span class="mw-headline" id="MAD.2C_MAD_Magazine.2C_and_Alfred_E._Neuman">MAD, MAD Magazine, and Alfred E. Neuman</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=MAD_(programming_language)&amp;action=edit&amp;section=3" title="Edit section: MAD, MAD Magazine, and Alfred E. Neuman">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;"><a href="/wiki/File:MAD-alfie-1960.jpg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/95/MAD-alfie-1960.jpg/220px-MAD-alfie-1960.jpg" width="220" height="136" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/95/MAD-alfie-1960.jpg/330px-MAD-alfie-1960.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/9/95/MAD-alfie-1960.jpg/440px-MAD-alfie-1960.jpg 2x" data-file-width="4092" data-file-height="2538" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:MAD-alfie-1960.jpg" class="internal" title="Enlarge"></a></div>
+Line printer output following a MAD compiler error on an IBM 704 computer at the University of Michigan, c. 1960</div>
+</div>
+</div>
+<p>In a pre-release version of the original MAD, as a reference to MAD's namesake, <a href="/wiki/MAD_magazine" class="mw-redirect" title="MAD magazine">MAD magazine</a>, when a program contained too many compile time errors the compiler would print a full-page picture of <a href="/wiki/Alfred_E._Neuman" title="Alfred E. Neuman">Alfred E. Neuman</a> using <a href="/wiki/ASCII_art" title="ASCII art">ASCII art</a>. The caption read, "See this man about your program--He might want to publish it. He never worries--but from the looks of your program, you should."<sup id="cite_ref-UnisysMad_8-2" class="reference"><a href="#cite_note-UnisysMad-8">[8]</a></sup> This feature was not included in the final official version.<sup id="cite_ref-18" class="reference"><a href="#cite_note-18">[18]</a></sup> However, it was included in the production version for the IBM 7040.</p>
+<p>And Bernie Galler remembers:</p>
+<dl>
+<dd>By the time we designed the language that we thought would be worth doing and for which we could do a compiler, we couldn't call it Algol any more; it really was different. That's when we adopted the name MAD, for the Michigan Algorithm Decoder. We had some funny interaction with the Mad Magazine people, when we asked for permission to use the name MAD. In a very funny letter, they told us that they would take us to court and everything else, but ended the threat with a P.S. at the bottom - "Sure, go ahead." Unfortunately, that letter is lost.<sup id="cite_ref-BernieGallerInterview_15-1" class="reference"><a href="#cite_note-BernieGallerInterview-15">[15]</a></sup></dd>
+</dl>
+<h2><span class="mw-headline" id=".22Hello.2C_world.22_example">"Hello, world" example</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=MAD_(programming_language)&amp;action=edit&amp;section=4" title="Edit section: &quot;Hello, world&quot; example">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The "<a href="/wiki/Hello,_world" class="mw-redirect" title="Hello, world">hello, world</a>" example program prints the string "Hello, world" to a terminal or screen display.</p>
+<pre>
+PRINT FORMAT HELLOW
+VECTOR VALUES HELLOW=$13h0Hello, world*$
+END OF PROGRAM
+</pre>
+<p>The first character of the line is treated as <a href="/wiki/ASA_carriage_control_characters" title="ASA carriage control characters">logical carriage control</a>, in this example the character "0" which causes a double-spaced line to be printed.</p>
+<p>Or, if entering all of the keywords at your keypunch is too much work, you can use contractions and the compiler will expand them in the listing:</p>
+<pre>
+P'T HELLOW
+V'S HELLOW=$13h0Hello, world*$
+E'M
+</pre>
+<h2><span class="mw-headline" id="Language_elements">Language elements</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=MAD_(programming_language)&amp;action=edit&amp;section=5" title="Edit section: Language elements">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>MAD and GOM, but not MAD/I, are composed of the following elements:<sup id="cite_ref-deepblue.lib.umich.edu_7-1" class="reference"><a href="#cite_note-deepblue.lib.umich.edu-7">[7]</a></sup><sup id="cite_ref-GOMManual_11-3" class="reference"><a href="#cite_note-GOMManual-11">[11]</a></sup><sup id="cite_ref-MADSammet_12-2" class="reference"><a href="#cite_note-MADSammet-12">[12]</a></sup></p>
+<h3><span class="mw-headline" id="Input_format">Input format</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=MAD_(programming_language)&amp;action=edit&amp;section=6" title="Edit section: Input format">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>MAD programs are a series of statements written on punched cards, generally one statement per card, although a statement can be continued to multiple cards. Columns 1-10 contains an optional statement label, comments or remarks are flagged using the letter "R" in column 11, and columns 73-80 are unused and could contain a sequence identifier. Spaces are not significant anywhere other than within character constants. For GOM input is free form with no sequence field and lines may be up to 255 characters long; lines that start with an asterisk (*) are comments; and lines that start with a plus-sign (+) are continuation lines.</p>
+<h3><span class="mw-headline" id="Names">Names</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=MAD_(programming_language)&amp;action=edit&amp;section=7" title="Edit section: Names">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Variable names, function names, and statement labels have the same form, a letter followed by zero to five letters or digits. Function names end with a period. All names can be subscripted (the name followed by parentheses, with multiple subscripts separated by commas). For GOM names may be up to 24 characters long and may include the underscore (_) character.</p>
+<p>Few keywords in the language are reserved words since most are longer than six letters or are surrounded by periods. There is a standard set of abbreviations which can be used to replace the longer words. These consist of the first and last letters of the keywords with an apostrophe between them, such as W'R for WHENEVER and D'N for DIMENSION.</p>
+<h3><span class="mw-headline" id="Data_types">Data types</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=MAD_(programming_language)&amp;action=edit&amp;section=8" title="Edit section: Data types">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>MAD uses the term "mode" for its data types. Five basic modes are supported:</p>
+<ul>
+<li><b>Integer</b> written with or without a scale factor (1, +1, -1, 1K10, 1K) or as octal constants (to 7777777777777K);</li>
+<li><b>Floating Point</b> written with or without an exponent (0., 1.5, -0.05, +100.4, -4., .05E-2, -.05E2, 5E02, 5.E2);</li>
+<li><b>Boolean</b> (1B for true and 0B for false);</li>
+<li><b>Statement Label</b>, and</li>
+<li><b>Function Name</b> written as a name followed by a period (SQRT.).</li>
+</ul>
+<p>The mode of a constant can be redefined by adding the character M followed by a single digit at the end of the constant, where 0 indicates floating point, 1 integer, 2 boolean, 3 function name, and 4 statement label.</p>
+<p>For GOM six additional modes are added: CHARACTER, SHORT INTEGER, BYTE INTEGER, LONG INTEGER, POINTER, and DYNAMIC RECORD.</p>
+<p>Alphabetic or character constants are stored as integers and written using the dollar sign as a delimiter ($ABCDEF$) with double dollar-signs used to enter a true dollar sign ($$$.56$ is 56 cents). Strings longer than six characters are represented using arrays.</p>
+<h3><span class="mw-headline" id="Arrays_and_matrices">Arrays and matrices</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=MAD_(programming_language)&amp;action=edit&amp;section=9" title="Edit section: Arrays and matrices">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<ul>
+<li>There is no limit on the number of dimensions.</li>
+<li>Negative and zero as well as floating-point subscripts are allowed.</li>
+<li>Matrices are storied in consecutive memory locations in the order determined by varying the rightmost subscript first.</li>
+<li>Matrices may be referenced using a subscript for each dimension, NAME(s<sub>1</sub>,s<sub>2</sub>,s<sub>3</sub>), or using a single subscript, NAME(s<sub>1</sub>).</li>
+<li>Input-output lists, VECTOR VALUES statements, and some subroutines allow the use of block notation, which has the form A,...,B or A...B, which is a reference to the entire region from A to B. inclusive. In terms of a vector, A(1)...A(N) would be A(1), A(2), A(3), ..., A(N).</li>
+<li>There are facilities that allow changing dimensions at run-time; permitting the programmer to vary the location of the initial element in an array within the overall block which has been set aside for the array; and allowing an arbitrary storage mapping to be specified.</li>
+</ul>
+<div class="NavFrame collapsed" style="position:relative;width:100%;border:none;">
+<div class="NavHead" style="position:absolute;width:3.2em;background:transparent;"></div>
+<div style="font-size:100%;height:1.6em;background:transparent;padding-left:2.8em; text-align:left;font-weight:bold;">&#160;&#160;<big>List of operators, statements, and functions</big></div>
+<div class="NavContent" style="padding-left:0.3em;text-align:left;">
+<h3><span class="mw-headline" id="Operators">Operators</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=MAD_(programming_language)&amp;action=edit&amp;section=10" title="Edit section: Operators">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div>
+<table class="multicol" role="presentation" style="border-collapse: collapse; padding: 0; border: 0; background:transparent; width:100%;">
+<tr>
+<td style="width:50%; text-align:left; vertical-align:top;">
+<h4><span class="mw-headline" id="Arithmetic_operators">Arithmetic operators</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=MAD_(programming_language)&amp;action=edit&amp;section=11" title="Edit section: Arithmetic operators">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<ul>
+<li>.ABS. (unary absolute value)</li>
+<li>+ (unary identity)</li>
+<li>- (unary negation)</li>
+<li>+ (addition)</li>
+<li>- (subtraction)</li>
+<li>* (multiplication)</li>
+<li>/ (division)</li>
+<li>.P. (exponentiation)</li>
+<li>.N. (bitwise negation)</li>
+<li>.A. (bitwise and)</li>
+<li>.V. (bitwise or)</li>
+<li>.EV. (bitwise exclusive or)</li>
+<li>.LS. (left shift)</li>
+<li>.RS. (right shift)</li>
+<li>.REM. (remainder, GOM only)</li>
+</ul>
+<h4><span class="mw-headline" id="Pointer_operators_.28GOM_only.29">Pointer operators (GOM only)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=MAD_(programming_language)&amp;action=edit&amp;section=12" title="Edit section: Pointer operators (GOM only)">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<ul>
+<li>&#160;: (selection)</li>
+<li>.LOC. (location)</li>
+<li>.IND. (indirection)</li>
+</ul>
+</td>
+<td style="width:50%; text-align:left; vertical-align:top;">
+<h4><span class="mw-headline" id="Relational_operators">Relational operators</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=MAD_(programming_language)&amp;action=edit&amp;section=13" title="Edit section: Relational operators">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<ul>
+<li>.L. (less than)</li>
+<li>.LE. (less than or equal)</li>
+<li>.E. (equal)</li>
+<li>.NE. (not equal)</li>
+<li>.G. (greater than)</li>
+<li>.GE. (greater than or equal)</li>
+</ul>
+<h4><span class="mw-headline" id="Boolean_operators">Boolean operators</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=MAD_(programming_language)&amp;action=edit&amp;section=14" title="Edit section: Boolean operators">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<ul>
+<li>.NOT. (unary logical not)</li>
+<li>.OR. (logical or)</li>
+<li>.EXOR. (logical exclusive or)</li>
+<li>.AND. (logical and)</li>
+<li>.THEN. (implies)</li>
+<li>.EQV. (equivalence)</li>
+</ul>
+<h4><span class="mw-headline" id="Bit_operators_.28GOM_only.29">Bit operators (GOM only)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=MAD_(programming_language)&amp;action=edit&amp;section=15" title="Edit section: Bit operators (GOM only)">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<ul>
+<li>.SETBIT. (set bit to 1)</li>
+<li>.RESETBIT. (reset bit to 0)</li>
+<li>.BIT. (test bit)</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<h3><span class="mw-headline" id="Declaration_statements">Declaration statements</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=MAD_(programming_language)&amp;action=edit&amp;section=16" title="Edit section: Declaration statements">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Variables may be implicitly or explicitly declared. By default all implicitly declared variables are assumed to be floating point. The NORMAL MODE IS statement may be used to change this default.</p>
+<div>
+<table class="multicol" role="presentation" style="border-collapse: collapse; padding: 0; border: 0; background:transparent; width:100%;">
+<tr>
+<td style="width:50%; text-align:left; vertical-align:top;">
+<ul>
+<li>FLOATING POINT var<sub>1</sub>, var<sub>2</sub>, ... (may include dimension information)</li>
+<li>INTEGER var<sub>1</sub>, var<sub>2</sub>, ... (may include dimension information)</li>
+<li>BOOLEAN var<sub>1</sub>, var<sub>2</sub>, ... (may include dimension information)</li>
+<li>FUNCTION NAME <i>name</i><sub>1</sub>, <i>name</i><sub>2</sub>, ... (may include dimension information)</li>
+<li>STATEMENT LABEL <i>label</i><sub>1</sub>, <i>label</i><sub>2</sub>, ... (may include dimension information)</li>
+<li>MODE NUMBER <i>n</i>, var<sub>1</sub>, var<sub>2</sub>, ... (may include dimension information)</li>
+<li>NORMAL MODE IS <i>type-name</i> (INTEGER, BOOLEAN, FLOATING POINT, STATEMENT LABEL, or FUNCTION NAME)</li>
+<li>NORMAL MODE IS MODE NUMBER <i>n</i></li>
+<li>DIMENSION <i>variable</i>(<i>max-dimension</i>) (declares an array from 0...<i>max-dimension</i>)</li>
+<li>DIMENSION <i>variable</i>(<i>from</i>...<i>to</i>)</li>
+<li>DIMENSION <i>variable</i>(<i>subscript<sub>1</sub></i>, <i>subscript<sub>2</sub></i>, ..., <i>subscript<sub>n</sub></i>) (declares a multidimensional array)</li>
+</ul>
+</td>
+<td style="width:50%; text-align:left; vertical-align:top;">
+<ul>
+<li>VECTOR VALUES <i>array</i>(<i>n</i>) = c<sub>1</sub>, c<sub>2</sub>, c<sub>3</sub>, ...</li>
+<li>VECTOR VALUES <i>array</i>(<i>m</i>) ... <i>array</i>(<i>n</i>) = constant</li>
+<li>DOUBLE STORAGE MODE <i>mode-list</i> (doubles the amount of storage allocated for the modes listed)</li>
+<li>EQUIVALENCE (<i>a</i><sub>1</sub>, <i>a</i><sub>2</sub>, ..., <i>a</i><sub>m</sub>), ...</li>
+<li>PROGRAM COMMON <i>a</i>, <i>b</i>, <i>c</i>, ... (may include dimension information)</li>
+<li>ERASABLE <i>a</i>, <i>b</i>, <i>c</i>, ... (may include dimension information)</li>
+<li>PARAMETER <i>A</i><sub>1</sub>(<i>B</i><sub>1</sub>), <i>A</i><sub>2</sub>(<i>B</i><sub>2</sub>), ..., <i>A</i><sub>n</sub>(<i>B</i><sub>n</sub>)</li>
+<li>SYMBOL TABLE VECTOR <i>variable</i></li>
+<li>FULL SYMBOL TABLE VECTOR <i>variable</i></li>
+<li>LISTING ON (the default)</li>
+<li>LISTING OFF</li>
+<li>REFERENCES ON</li>
+<li>REFERENCES OFF (the default)</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<h3><span class="mw-headline" id="Executable_statements">Executable statements</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=MAD_(programming_language)&amp;action=edit&amp;section=17" title="Edit section: Executable statements">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div>
+<table class="multicol" role="presentation" style="border-collapse: collapse; padding: 0; border: 0; background:transparent; width:100%;">
+<tr>
+<td style="width:50%; text-align:left; vertical-align:top;">
+<ul>
+<li><i>variable</i> = <i>expression</i> (assignment)</li>
+<li>TRANSFER TO <i>statement-label</i></li>
+<li>WHENEVER <i>boolean-expression</i>, <i>executable-statement</i> (simple conditional)</li>
+<li>WHENEVER <i>boolean-expression</i> (compound conditional)
+<ul>
+<li>OR WHENEVER <i>boolean-expression</i></li>
+<li>OTHERWISE</li>
+<li>END OF CONDITIONAL</li>
+</ul>
+</li>
+<li>CONTINUE (do nothing statement, usually used to carry a statement label)</li>
+</ul>
+</td>
+<td style="width:50%; text-align:left; vertical-align:top;">
+<ul>
+<li>THROUGH <i>statement-label</i>, FOR VALUES OF <i>variable</i> = <i>expression-list</i> (iteration)</li>
+</ul>
+<dl>
+<dd>(where <i>variable</i> may be any mode including floating-point)</dd>
+</dl>
+<ul>
+<li>SET LIST TO <i>array-element</i>, [ <i>expression</i> ]</li>
+<li>SAVE DATA <i>list</i></li>
+<li>RESTORE DATA <i>list</i></li>
+<li>PAUSE NO. <i>octal-integer</i> (stop execution, print an octal number on the operators console, allow manual restart)</li>
+<li>END OF PROGRAM (the last statement in all MAD programs)</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<h3><span class="mw-headline" id="Input_and_output_statements">Input and output statements</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=MAD_(programming_language)&amp;action=edit&amp;section=18" title="Edit section: Input and output statements">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div>
+<table class="multicol" role="presentation" style="border-collapse: collapse; padding: 0; border: 0; background:transparent; width:100%;">
+<tr>
+<td style="width:50%; text-align:left; vertical-align:top;">
+<ul>
+<li>READ DATA (reads data using a self-defining format, <i>var1</i>=<i>value1</i>, <i>var2</i>=<i>value2</i>, ..., <i>varN</i>=<i>valueN</i></li>
+<li>READ AND PRINT DATA (similar to READ DATA, but data read is echoed to the printer)</li>
+<li>READ FORMAT <i>format</i>, <i>list</i></li>
+<li>READ BCD TAPE <i>n</i>, <i>format</i>, <i>list</i></li>
+<li>READ BINARY TAPE <i>n</i>, <i>list</i></li>
+<li>PRINT RESULTS <i>list</i></li>
+<li>PRINT BCD RESULTS <i>list</i></li>
+<li>PRINT OCTAL RESULTS <i>list</i></li>
+<li>PRINT COMMENT $<i>string</i>$ (first character of string is carriage control)</li>
+<li>PRINT FORMAT <i>format</i>, <i>list</i></li>
+<li>PRINT ON LINE FORMAT <i>format</i>, <i>list</i> (display a message for the machine operator)</li>
+<li>WRITE BCD TAPE <i>n</i>, <i>format</i>, <i>list</i></li>
+<li>WRITE BINARY TAPE <i>n</i>, <i>list</i></li>
+</ul>
+</td>
+<td style="width:50%; text-align:left; vertical-align:top;">
+<ul>
+<li>PUNCH FORMAT <i>format</i>, <i>list</i></li>
+<li>LOOK AT FORMAT <i>format</i>, <i>list</i> (read data without advancing to next record)</li>
+<li>REWIND TAPE <i>n</i></li>
+<li>END OF FILE TAPE <i>n</i></li>
+<li>BACKSPACE RECORD OF TAPE <i>n</i></li>
+<li>BACKSPACE RECORD OF TAPE <i>n</i>, IF LOAD POINT TRANSFER TO <i>statement</i></li>
+<li>BACKSPACE FILE OF TAPE <i>n</i></li>
+<li>BACKSPACE FILE OF TAPE <i>n</i>, IF LOAD POINT TRANSFER TO <i>statement</i></li>
+<li>SET LOW DENSITY TAPE <i>n</i></li>
+<li>SET HIGH DENSITY TABLE <i>n</i></li>
+<li>REWIND TAPE <i>n</i></li>
+<li>UNLOAD TAPE <i>n</i></li>
+<li>FORMAT VARIABLE <i>list</i> (declaration, may include dimension information)</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<h3><span class="mw-headline" id="Functions">Functions</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=MAD_(programming_language)&amp;action=edit&amp;section=19" title="Edit section: Functions">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Function names end with a period. Internal and external functions are supported. Internal functions are compiled as part of the program in which they are used and share declarations and variables with the main program. External functions are compiled separately and do not share declarations and variables. A one statement definition of internal functions is permitted. Recursive functions are permitted, although the function must do some of the required saving and restoring work itself.</p>
+<div>
+<table class="multicol" role="presentation" style="border-collapse: collapse; padding: 0; border: 0; background:transparent; width:100%;">
+<tr>
+<td style="width:50%; text-align:left; vertical-align:top;">
+<ul>
+<li>INTERNAL FUNCTION <i>function-name</i>.(<i>argument-list</i>) = <i>expression</i> (single statement definition)</li>
+<li>INTERNAL FUNCTION <i>function-name</i>.(<i>argument-list</i>)</li>
+<li>EXTERNAL FUNCTION <i>function-name</i>.(<i>argument-list</i>)</li>
+<li>ENTRY TO NAME <i>name</i>.</li>
+<li>END OF FUNCTION (last statement in a multiple line definition)</li>
+<li>FUNCTION RETURN [ <i>expression</i> ]</li>
+</ul>
+</td>
+<td style="width:50%; text-align:left; vertical-align:top;">
+<ul>
+<li>ERROR RETURN (force an error return to a statement or to the operating system, if no error statement is given as last argument of the call)</li>
+<li>SAVE RETURN</li>
+<li>RESTORE DATA</li>
+<li>RESTORE RETURN</li>
+<li>EXECUTE <i>procedure</i>.(<i>argument-list</i>) (call a non-single valued function)</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<h2><span class="mw-headline" id="Operator_definition_and_redefinition">Operator definition and redefinition</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=MAD_(programming_language)&amp;action=edit&amp;section=20" title="Edit section: Operator definition and redefinition">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>One of the most interesting features in MAD is the ability to extend the language by redefining existing operators, defining new operators, or defining new data types (modes). The definitions are made using MAD declaration statements and assembly language mnemonics included following the declaration up to the END pseudo-instruction that implement the operation.</p>
+<ul>
+<li>DEFINE BINARY OPERATOR <i>defined-op</i>, PRECEDENCE <i>rank</i> <i>existing-op</i> MODE STRUCTURE <i>mode-options</i></li>
+<li>DEFINE UNARY OPERATOR <i>defined-op</i>, PRECEDENCE <i>rank</i> <i>existing-op</i> MODE STRUCTURE <i>mode-options</i></li>
+<li>MODE STRUCTURE <i>mode-no</i> = <i>mode-no</i> <i>existing-op</i> <i>mode-no</i></li>
+<li>MODE STRUCTURE <i>mode-no</i> = <i>mode-no</i> <i>existing-op</i> <i>mode-no</i> SAME SEQUENCE AS <i>mode-no</i> <i>existing-op</i> <i>mode-no</i></li>
+</ul>
+<p>where:</p>
+<ul>
+<li><i>rank</i> is one of SAME AS, LOWER THAN, or HIGHER THAN; and</li>
+<li><i>mode-options</i> are the options that appear on the MODE STRUCTURE statement.</li>
+</ul>
+<p>Three pre-defined packages of definitions (MATRIX, DOUBLE PRECISION, and COMPLEX) are available for inclusion in MAD source programs using the INCLUDE statement.</p>
+<ul>
+<li>INCLUDE <i>package</i></li>
+</ul>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=MAD_(programming_language)&amp;action=edit&amp;section=21" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a href="/wiki/ALGOL_58" title="ALGOL 58">ALGOL 58</a></li>
+<li><a href="/wiki/ALGOL_60" title="ALGOL 60">ALGOL 60</a></li>
+</ul>
+<h2><span class="mw-headline" id="Notes">Notes</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=MAD_(programming_language)&amp;action=edit&amp;section=22" title="Edit section: Notes">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist columns references-column-width" style="-moz-column-width: 30em; -webkit-column-width: 30em; column-width: 30em; list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><cite class="citation book">Alt, Franz (1967). <i>Advances in Computers</i>. <a href="/wiki/Academic_Press" title="Academic Press">Academic Press</a>. p.&#160;143. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-12-012104-2" title="Special:BookSources/0-12-012104-2">0-12-012104-2</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMAD+%28programming+language%29&amp;rft.aufirst=Franz&amp;rft.aulast=Alt&amp;rft.btitle=Advances+in+Computers&amp;rft.date=1967&amp;rft.genre=book&amp;rft.isbn=0-12-012104-2&amp;rft.pages=143&amp;rft.pub=Academic+Press&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://quod.lib.umich.edu/cgi/f/findaid/findaid-idx?c=bhlead;cc=bhlead;type=simple;rgn=Entire%20Finding%20Aid;q1=MAD;view=reslist;subview=standard;sort=occur;start=1;size=25;didno=umich-bhl-0351;focusrgn=C01;byte=24555661">Technical Memos</a>, University of Michigan Computing Center publications, 1965-1999</span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://quod.lib.umich.edu/cgi/f/findaid/findaid-idx?c=bhlead;cc=bhlead;type=simple;rgn=Entire%20Finding%20Aid;q1=MAD;view=reslist;subview=standard;sort=occur;start=1;size=25;didno=umich-bhl-0351;focusrgn=C01;byte=24564725">Technical Reports</a>, University of Michigan Computing Center publications, 1965-1999</span></li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://quod.lib.umich.edu/cgi/f/findaid/findaid-idx?c=bhlead;cc=bhlead;type=simple;rgn=Entire%20Finding%20Aid;q1=MAD;view=reslist;subview=standard;sort=occur;start=1;size=25;didno=umich-bhl-9551;focusrgn=C01;byte=24604876">Topical File 1960-1986</a>, University of Michigan Computing Center records, 1952-1996</span></li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://quod.lib.umich.edu/cgi/f/findaid/findaid-idx?c=bhlead;cc=bhlead;type=simple;rgn=Entire%20Finding%20Aid;q1=MAD;view=reslist;subview=standard;sort=occur;start=1;size=25;didno=umich-bhl-9551;focusrgn=C01;byte=24695986">MAD (Michigan Algorithm Decoder) 1960-1979</a>, University of Michigan Computing Center records, 1952-1996</span></li>
+<li id="cite_note-MADManual-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-MADManual_6-0">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.bitsavers.org/pdf/univOfMichigan/mad/L2-UOI-MAD1-2-RX_MADum_62.pdf"><i>A User's Reference Manual For The Michigan Algorithm Decoder (MAD) For the IBM 7090</i></a>, Digital Computer Laboratory, Graduate College, University of Illinois, 1962, 221 pages</span></li>
+<li id="cite_note-deepblue.lib.umich.edu-7"><span class="mw-cite-backlink">^ <a href="#cite_ref-deepblue.lib.umich.edu_7-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-deepblue.lib.umich.edu_7-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://deepblue.lib.umich.edu/bitstream/2027.42/3292/5/bab2545.0001.001.pdf"><i>The Michigan Algorithm Decoder (The MAD Manual)</i></a>, Bruce W. Arden, Revised Edition 1966</span></li>
+<li id="cite_note-UnisysMad-8"><span class="mw-cite-backlink">^ <a href="#cite_ref-UnisysMad_8-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-UnisysMad_8-1"><sup><i><b>b</b></i></sup></a> <a href="#cite_ref-UnisysMad_8-2"><sup><i><b>c</b></i></sup></a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://wiki.cc.gatech.edu/folklore/index.php/UNIVAC_and_ALGOL#MAD">UNIVAC and ALGOL by George Gray in <i>Unisys History Newsletter</i></a>, Volume 6, Number 2 (June 2002), Georgia Tech</span></li>
+<li id="cite_note-MADIManual-9"><span class="mw-cite-backlink">^ <a href="#cite_ref-MADIManual_9-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-MADIManual_9-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://deepblue.lib.umich.edu/bitstream/2027.42/3709/5/abu9341.0001.001.pdf"><i>The MAD/I Manual</i></a>, Bolas, Springer, and Srodawa, CONCOMP Technical Report 32, 1970, University of Michigan, Ann Arbor, 194 pages</span></li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-10">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://hdl.handle.net/2027.42/79612"><i>MTS Volume 2: Public File Descriptions</i></a>, University of Michigan Computing Center, 1990, p. 14</span></li>
+<li id="cite_note-GOMManual-11"><span class="mw-cite-backlink">^ <a href="#cite_ref-GOMManual_11-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-GOMManual_11-1"><sup><i><b>b</b></i></sup></a> <a href="#cite_ref-GOMManual_11-2"><sup><i><b>c</b></i></sup></a> <a href="#cite_ref-GOMManual_11-3"><sup><i><b>d</b></i></sup></a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://hdl.handle.net/2027.42/79620"><i>GOM Manual</i></a>, Don Boettner, University of Michigan Computing Center, Ann Arbor, June 1989</span></li>
+<li id="cite_note-MADSammet-12"><span class="mw-cite-backlink">^ <a href="#cite_ref-MADSammet_12-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-MADSammet_12-1"><sup><i><b>b</b></i></sup></a> <a href="#cite_ref-MADSammet_12-2"><sup><i><b>c</b></i></sup></a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://hopl.murdoch.edu.au/showlanguage.prx?exp=92&amp;language=MAD"><i>Computer Languages - Principles and History</i></a>, Sammet, Jean E., Englewood Cliffs, N.J., Prentice-Hall 1969, p. 205</span></li>
+<li id="cite_note-13"><span class="mw-cite-backlink"><b><a href="#cite_ref-13">^</a></b></span> <span class="reference-text">In August 2010 when asked about Jean's Sammet's statement that "MAD does not resemble ALGOL 58 in any significant way", Bruce Arden wrote: "Regarding Jean Sammet, she may have conflated the two versions of IAL (58 and <a href="/wiki/ALGOL_60" title="ALGOL 60">60</a>). Unlike the later version, the 58 version said nothing about what words (or language) should be used to identify conditional and transfer statements, which led for parsing reasons to words like WHENEVER. Also there were some additional features in MAD that went beyond the 58 specs."</span></li>
+<li id="cite_note-14"><span class="mw-cite-backlink"><b><a href="#cite_ref-14">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.multicians.org/thvv/mail-details.html">Documentation and Source for Early Electronic Mail and Messaging</a>, Tom Van Vleck</span></li>
+<li id="cite_note-BernieGallerInterview-15"><span class="mw-cite-backlink">^ <a href="#cite_ref-BernieGallerInterview_15-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-BernieGallerInterview_15-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://hopl.murdoch.edu.au/showlanguage.prx?exp=92&amp;language=MAD">"A Career Interview with Bernie Galler"</a>, Galler and Galler, pp 22-33, IEEE Annals of the History of Computing, 23(1) January 2001</span></li>
+<li id="cite_note-16"><span class="mw-cite-backlink"><b><a href="#cite_ref-16">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.multicians.org/mgm.html">Glossary of Multics acronyms and terms</a> by Tom Van Vleck</span></li>
+<li id="cite_note-17"><span class="mw-cite-backlink"><b><a href="#cite_ref-17">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://broadcast.oreilly.com/2009/04/an-interview-with-brian-kernig.html">An Interview with Brian Kernighan: Breeding Little Languages</a>, by Allen Noren, 2009</span></li>
+<li id="cite_note-18"><span class="mw-cite-backlink"><b><a href="#cite_ref-18">^</a></b></span> <span class="reference-text"><cite class="citation book">Shneiderman, Ben; Plaisant, Catherine (2004-05-07). <i>Designing the user interface</i> (4th ed.). <a href="/wiki/Addison_Wesley" class="mw-redirect" title="Addison Wesley">Addison Wesley</a>. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-0-321-19786-3" title="Special:BookSources/978-0-321-19786-3">978-0-321-19786-3</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMAD+%28programming+language%29&amp;rft.aufirst=Ben&amp;rft.aulast=Shneiderman&amp;rft.au=Plaisant%2C+Catherine&amp;rft.btitle=Designing+the+user+interface&amp;rft.date=2004-05-07&amp;rft.edition=4th&amp;rft.genre=book&amp;rft.isbn=978-0-321-19786-3&amp;rft.pub=Addison+Wesley&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=MAD_(programming_language)&amp;action=edit&amp;section=23" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="refbegin" style="">
+<ul>
+<li><i>An Abbreviated description of the MAD compiler language</i>, Fernando J. Corbató, Jerome H. Saltzer, Neil Barta, and Thomas N. Hastings, M.I.T. Computation Center Memorandum CC-213, June, 1963.</li>
+<li><i>CLSYS, a program to facilitate the use of the MAD translator for large (class-size) batches</i>, Jerome H. Saltzer, M.I.T. Computation Center Memorandum CC-204. February, 1963.</li>
+<li><i>A Computer Primer for the Mad Language</i>, Elliott Irving Organick, 1961.</li>
+<li><a rel="nofollow" class="external text" href="http://hopl.murdoch.edu.au/showlanguage.prx?exp=92&amp;language=MAD"><i>Internal organization of the MAD translator</i></a>, Arden, B. W., Galler, B. A. and Graham, R. M., pp.&#160;28–31, CACM Volume 4 No. 1 (Jan 1961)</li>
+<li><i>An Introduction To Algorithmic Methods Using The MAD Language</i>, Alan B. Marcovitz and Earl J. Schweppe, Macmillan, 1966.</li>
+<li><a rel="nofollow" class="external text" href="http://deepblue.lib.umich.edu/bitstream/2027.42/4023/5/aca1743.0001.001.pdf"><i>An Introduction to Digital Computers and the MAD Language</i></a>, Brice Carnahan, University of Michigan.</li>
+<li><a rel="nofollow" class="external text" href="http://www.bitsavers.org/pdf/univOfMichigan/mad/Galler_TheLangOfComps_1962.pdf"><i>The Language of Computers</i></a>, Bernard A. Galler, University of Michigan, McGraw-Hill, 1962.</li>
+<li><a rel="nofollow" class="external text" href="http://hopl.murdoch.edu.au/showlanguage.prx?exp=92&amp;language=MAD"><i>MAD at Michigan: its function &amp; features</i></a>, Arden, B. W., Galler, B. A., and Graham, R. M., pp27–28, Datamation, Volume 7 No. 12 (Dec 1961)</li>
+</ul>
+</div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=MAD_(programming_language)&amp;action=edit&amp;section=24" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.catb.org/~esr/mad/">Eric Raymond's retrocompiler for MAD</a></li>
+<li><a rel="nofollow" class="external text" href="http://99-bottles-of-beer.net/language-michigan-algorithm-decoder-391.html">A trivial example of a MAD program</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.cozx.com/~dpitts/ibm7090.html">Dave Pitts' IBM 7094 support</a> – Has a CTSS environment that includes the MIT version of MAD.</li>
+</ul>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1211
+Cached time: 20170120061202
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.132 seconds
+Real time usage: 0.180 seconds
+Preprocessor visited node count: 839/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 9507/2097152 bytes
+Template argument size: 639/2097152 bytes
+Highest expansion depth: 10/40
+Expensive parser function count: 2/500
+Lua time usage: 0.032/10.000 seconds
+Lua memory usage: 1.53 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  141.672      1 -total
+ 40.25%   57.029      1 Template:Infobox_programming_language
+ 37.96%   53.772      1 Template:Reflist
+ 37.26%   52.786      1 Template:Infobox
+ 24.05%   34.069      2 Template:Cite_book
+  2.92%    4.134      1 Template:Infobox_software/simple
+  2.04%    2.885      1 Template:Hidden_begin
+  1.79%    2.532      5 Template:Col-1-of-2
+  1.34%    1.895      1 Template:Refbegin
+  1.07%    1.517      5 Template:Col-begin
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:55579-0!*!0!!en!4!* and timestamp 20170120061202 and revision id 732444915
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=MAD_(programming_language)&amp;oldid=732444915">https://en.wikipedia.org/w/index.php?title=MAD_(programming_language)&amp;oldid=732444915</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:ALGOL_58_dialect" title="Category:ALGOL 58 dialect">ALGOL 58 dialect</a></li><li><a href="/wiki/Category:Procedural_programming_languages" title="Category:Procedural programming languages">Procedural programming languages</a></li><li><a href="/wiki/Category:Programming_languages_created_in_1959" title="Category:Programming languages created in 1959">Programming languages created in 1959</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=MAD+%28programming+language%29" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=MAD+%28programming+language%29" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/MAD_(programming_language)"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:MAD_(programming_language)"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/MAD_(programming_language)" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=MAD_(programming_language)&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=MAD_(programming_language)&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/MAD_(programming_language)" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/MAD_(programming_language)" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=MAD_(programming_language)&amp;oldid=732444915" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=MAD_(programming_language)&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q4117854" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=MAD_%28programming_language%29&amp;id=732444915" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=MAD+%28programming+language%29">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=MAD+%28programming+language%29&amp;returnto=MAD+%28programming+language%29&amp;oldid=732444915&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=MAD_(programming_language)&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-ar"><a href="https://ar.wikipedia.org/wiki/%D9%85%D8%A7%D8%AF_(%D9%84%D8%BA%D8%A9_%D8%A8%D8%B1%D9%85%D8%AC%D8%A9)" title="ماد (لغة برمجة) – Arabic" lang="ar" hreflang="ar" class="interlanguage-link-target">العربية</a></li><li class="interlanguage-link interwiki-es"><a href="https://es.wikipedia.org/wiki/MAD_(lenguaje_de_programaci%C3%B3n)" title="MAD (lenguaje de programación) – Spanish" lang="es" hreflang="es" class="interlanguage-link-target">Español</a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q4117854#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 1 August 2016, at 01:23.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=MAD_(programming_language)&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.132","walltime":"0.180","ppvisitednodes":{"value":839,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":9507,"limit":2097152},"templateargumentsize":{"value":639,"limit":2097152},"expansiondepth":{"value":10,"limit":40},"expensivefunctioncount":{"value":2,"limit":500},"entityaccesscount":{"value":1,"limit":400},"timingprofile":["100.00%  141.672      1 -total"," 40.25%   57.029      1 Template:Infobox_programming_language"," 37.96%   53.772      1 Template:Reflist"," 37.26%   52.786      1 Template:Infobox"," 24.05%   34.069      2 Template:Cite_book","  2.92%    4.134      1 Template:Infobox_software/simple","  2.04%    2.885      1 Template:Hidden_begin","  1.79%    2.532      5 Template:Col-1-of-2","  1.34%    1.895      1 Template:Refbegin","  1.07%    1.517      5 Template:Col-begin"]},"scribunto":{"limitreport-timeusage":{"value":"0.032","limit":"10.000"},"limitreport-memusage":{"value":1605862,"limit":52428800}},"cachereport":{"origin":"mw1211","timestamp":"20170120061202","ttl":2592000,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":65,"wgHostname":"mw1175"});});</script>
+	</body>
+</html>

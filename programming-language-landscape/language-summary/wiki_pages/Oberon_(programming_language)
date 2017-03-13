@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Oberon (programming language) - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Oberon_(programming_language)","wgTitle":"Oberon (programming language)","wgCurRevisionId":746509145,"wgRevisionId":746509145,"wgArticleId":22496,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles needing additional references from April 2016","All articles needing additional references","Pages using deprecated image syntax","Wikipedia articles with GND identifiers","Modula programming language family","Class-based programming languages","Procedural programming languages","Oberon programming language family","Systems programming languages","Programming languages created in 1986","Statically typed programming languages"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Oberon_(programming_language)","wgRelevantArticleId":22496,"wgRequestId":"WI9wrwpAEKYAADVY0c4AAAAA","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":true},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q1323362","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.math.styles":"ready","ext.cite.styles":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.legacy.wikibits","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.math.scripts%2Cstyles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.29.0-wmf.9"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Oberon_(programming_language)"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Oberon_(programming_language)&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Oberon_(programming_language)&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Oberon_(programming_language)"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Oberon_programming_language rootpage-Oberon_programming_language skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Oberon (programming language)</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><script>function mfTempOpenSection(id){var block=document.getElementById("mf-section-"+id);block.className+=" open-block";block.previousSibling.className+=" open-block";}</script><table class="plainlinks metadata ambox ambox-content ambox-Refimprove" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><a href="/wiki/File:Question_book-new.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" width="50" height="39" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/75px-Question_book-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/100px-Question_book-new.svg.png 2x" data-file-width="512" data-file-height="399" /></a></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">This article <b>needs additional citations for <a href="/wiki/Wikipedia:Verifiability" title="Wikipedia:Verifiability">verification</a></b>. <span class="hide-when-compact">Please help <a class="external text" href="//en.wikipedia.org/w/index.php?title=Oberon_(programming_language)&amp;action=edit">improve this article</a> by <a href="/wiki/Help:Introduction_to_referencing_with_Wiki_Markup/1" title="Help:Introduction to referencing with Wiki Markup/1">adding citations to reliable sources</a>. Unsourced material may be challenged and removed.</span> <small><i>(April 2016)</i></small> <small class="hide-when-compact"><i>(<a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove this template message</a>)</i></small></span></td>
+</tr>
+</table>
+<table class="infobox vevent" style="width:22em">
+<caption class="summary">Oberon</caption>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/File:OberonLogo.png" class="image"><img alt="OberonLogo.png" src="//upload.wikimedia.org/wikipedia/commons/2/21/OberonLogo.png" width="173" height="73" data-file-width="173" data-file-height="73" /></a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Programming_paradigm" title="Programming paradigm">Paradigm</a></th>
+<td><a href="/wiki/Imperative_programming" title="Imperative programming">imperative</a>, <a href="/wiki/Structured_programming" title="Structured programming">structured</a>, <a href="/wiki/Modular_programming" title="Modular programming">modular</a>, <a href="/wiki/Object-oriented_programming" title="Object-oriented programming">object-oriented</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Software_design" title="Software design">Designed&#160;by</a></th>
+<td><a href="/wiki/Niklaus_Wirth" title="Niklaus Wirth">Niklaus Wirth</a></td>
+</tr>
+<tr>
+<th scope="row">First&#160;appeared</th>
+<td>1986</td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Type_system" title="Type system">Typing discipline</a></th>
+<td>strong, hybrid (static and dynamic)</td>
+</tr>
+<tr>
+<th scope="row">Website</th>
+<td><span class="url"><a rel="nofollow" class="external text" href="http://www.oberon.ethz.ch/">www<wbr />.oberon<wbr />.ethz<wbr />.ch</a></span></td>
+</tr>
+<tr>
+<th colspan="2" style="text-align:center;background-color: #eee;">Influenced by</th>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/Modula-2" title="Modula-2">Modula-2</a></td>
+</tr>
+<tr>
+<th colspan="2" style="text-align:center;background-color: #eee;">Influenced</th>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/Oberon-2" title="Oberon-2">Oberon-2</a>, <a href="/wiki/Zonnon" title="Zonnon">Zonnon</a>, <a href="/wiki/Go_(programming_language)" title="Go (programming language)">Go</a>, <a href="/wiki/Nim_(programming_language)" title="Nim (programming language)">Nim</a></td>
+</tr>
+</table>
+<p><b>Oberon</b> is a general-purpose <a href="/wiki/Programming_language" title="Programming language">programming language</a> created in 1986 by Professor <a href="/wiki/Niklaus_Wirth" title="Niklaus Wirth">Niklaus Wirth</a> and the latest member of the Wirthian family of <a href="/wiki/ALGOL" title="ALGOL">ALGOL</a>-like languages (<a href="/wiki/Euler_(programming_language)" title="Euler (programming language)">Euler</a>, <a href="/wiki/Algol_W" class="mw-redirect" title="Algol W">Algol-W</a>, <a href="/wiki/Pascal_(programming_language)" title="Pascal (programming language)">Pascal</a>, <a href="/wiki/Modula" title="Modula">Modula</a>, and <a href="/wiki/Modula-2" title="Modula-2">Modula-2</a>). Oberon was the result of a concentrated effort to increase the power of <a href="/wiki/Modula-2" title="Modula-2">Modula-2</a>, the direct successor of <a href="/wiki/Pascal_(programming_language)" title="Pascal (programming language)">Pascal</a>, and simultaneously to reduce its complexity. Its principal new feature is the concept of type extension of record types:<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">[1]</a></sup> It permits the construction of new data types on the basis of existing ones and to relate them, deviating from the dogma of strictly static data typing. Type extension is Wirth's way of inheritance reflecting the viewpoint of the parent site. Oberon was developed as part of the implementation of the <a href="/wiki/Oberon_operating_system" class="mw-redirect" title="Oberon operating system">Oberon operating system</a> at <a href="/wiki/ETH_Zurich" title="ETH Zurich">ETH Zurich</a> in <a href="/wiki/Switzerland" title="Switzerland">Switzerland</a>. The name is from the moon of <a href="/wiki/Uranus" title="Uranus">Uranus</a>, <a href="/wiki/Oberon_(moon)" title="Oberon (moon)">Oberon</a>.</p>
+<p>Oberon is still maintained by Wirth and the latest revision is dated May 3, 2016.</p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Design"><span class="tocnumber">1</span> <span class="toctext">Design</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Characteristics"><span class="tocnumber">2</span> <span class="toctext">Characteristics</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Object_orientation"><span class="tocnumber">3</span> <span class="toctext">Object orientation</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="#Method_suite"><span class="tocnumber">3.1</span> <span class="toctext">Method suite</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Message_handler"><span class="tocnumber">3.2</span> <span class="toctext">Message handler</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="#Implementations_and_variants"><span class="tocnumber">4</span> <span class="toctext">Implementations and variants</span></a>
+<ul>
+<li class="toclevel-2 tocsection-7"><a href="#Oberon"><span class="tocnumber">4.1</span> <span class="toctext">Oberon</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Oberon-2"><span class="tocnumber">4.2</span> <span class="toctext">Oberon-2</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Oberon-07"><span class="tocnumber">4.3</span> <span class="toctext">Oberon-07</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Active_Oberon"><span class="tocnumber">4.4</span> <span class="toctext">Active Oberon</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#Related_languages"><span class="tocnumber">4.5</span> <span class="toctext">Related languages</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-12"><a href="#See_also"><span class="tocnumber">5</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="#References"><span class="tocnumber">6</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="#External_links"><span class="tocnumber">7</span> <span class="toctext">External links</span></a>
+<ul>
+<li class="toclevel-2 tocsection-15"><a href="#General"><span class="tocnumber">7.1</span> <span class="toctext">General</span></a></li>
+<li class="toclevel-2 tocsection-16"><a href="#Evolution_of_Oberon"><span class="tocnumber">7.2</span> <span class="toctext">Evolution of Oberon</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Design">Design</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Oberon_(programming_language)&amp;action=edit&amp;section=1" title="Edit section: Design">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Oberon is designed with a motto attributed to <a href="/wiki/Albert_Einstein" title="Albert Einstein">Albert Einstein</a> in mind: “Make things as simple as possible, but not simpler.” The principal guideline was to concentrate on features that are basic and essential and to omit ephemeral issues. Another factor was recognition of the growth of complexity in languages such as <a href="/wiki/C%2B%2B" title="C++">C++</a> and <a href="/wiki/Ada_(programming_language)" title="Ada (programming language)">Ada</a>: in contrast to these, Oberon emphasizes the use of the library concept for extending the language. Enumeration and subrange types, which were present in Modula-2, have been removed; similarly, set types have been limited to small sets of integers, and the number of low-level facilities has been sharply reduced (most particularly, type transfer functions have been eliminated). Elimination of the remaining potentially-unsafe facilities concludes the most essential step toward obtaining a truly high-level language. Very close type-checking even across modules, strict index-checking at run time, <a href="/wiki/Null_pointer" title="Null pointer">null-pointer</a> checking, and the safe type extension concept largely allow the programmer to rely on the language rules alone.</p>
+<p>The intent of this strategy was to produce a language that is easier to learn, simpler to implement, and very efficient. Oberon compilers have been viewed as compact and fast, while providing adequate code quality compared to commercial compilers.<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">[2]</a></sup></p>
+<h2><span class="mw-headline" id="Characteristics">Characteristics</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Oberon_(programming_language)&amp;action=edit&amp;section=2" title="Edit section: Characteristics">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The following features characterise the Oberon language:</p>
+<ul>
+<li>Case sensitive syntax with uppercase keywords</li>
+<li>Type-extension with type test</li>
+<li>Modules and separate compilation</li>
+<li>String operations</li>
+<li>Isolation of unsafe code</li>
+<li>Support for system programming</li>
+</ul>
+<h2><span class="mw-headline" id="Object_orientation">Object orientation</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Oberon_(programming_language)&amp;action=edit&amp;section=3" title="Edit section: Object orientation">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Oberon supports extension of record types for the construction of abstractions and heterogeneous structures. In contrast to the later dialects—Oberon-2 and Active Oberon—the original Oberon doesn't have a dispatch mechanism as a language feature but rather as programming technique or design pattern. This gives great flexibility in the OOP world. In the <a href="/wiki/Oberon_operating_system" class="mw-redirect" title="Oberon operating system">Oberon operating system</a> two programming techniques have been used in conjunction for the dispatch call: Method suite and Message handler.</p>
+<h3><span class="mw-headline" id="Method_suite">Method suite</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Oberon_(programming_language)&amp;action=edit&amp;section=4" title="Edit section: Method suite">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>In this technique a table of procedure variables is defined and a global variable of this type is declared in the extended module and assigned back in the generic module:</p>
+<pre>
+<b>MODULE</b> Figures; <i><span style="color: gray">(* Abstract module *)</span></i>
+
+<b>TYPE</b>
+   Figure*    = <b>POINTER TO</b> FigureDesc;
+   Interface* = <b>POINTER TO</b> InterfaceDesc;
+
+   InterfaceDesc* = <b>RECORD</b>
+      draw*  : <b>PROCEDURE</b> (f : Figure);
+      clear* : <b>PROCEDURE</b> (f : Figure);
+      mark*  : <b>PROCEDURE</b> (f : Figure);
+      move*  : <b>PROCEDURE</b> (f : Figure; dx, dy : <b><span style="color: darkblue">INTEGER</span></b>);
+   <b>END</b>;
+
+   FigureDesc* = <b>RECORD</b>
+      if : Interface;
+   <b>END</b>;
+
+<b>PROCEDURE</b> Init* (f : Figure; if : Interface);
+<b>BEGIN</b>
+   f.if := if;
+<b>END</b> Init;
+
+<b>PROCEDURE</b> Draw* (f : Figure);
+<b>BEGIN</b>
+   f.if.draw(f);
+<b>END</b> Draw;
+
+<i><span style="color: gray">(* Other procedures here *)</span></i>
+
+<b>END</b> Figures.
+</pre>
+<p>We extend the generic type Figure to a specific shape:</p>
+<pre>
+<b>MODULE</b> Rectangles;
+
+<b>IMPORT</b> Figures;
+
+<b>TYPE</b>
+   Rectangle* = <b>POINTER TO</b> RectangleDesc;
+
+   RectangleDesc* = <b>RECORD</b>
+      (Figures.FigureDesc)
+      x, y, w, h : <b><span style="color: darkblue">INTEGER</span></b>;
+   <b>END</b>;
+
+<b>VAR</b>
+   if : Figures.Interface;
+
+<b>PROCEDURE</b> New* (<b>VAR</b> r : Rectangle);
+<b>BEGIN</b>
+   <b><span style="color: darkblue">NEW</span></b>(r);
+   Figures.Init(r, if);
+<b>END</b> New;
+
+<b>PROCEDURE</b> Draw* (f : Figure);
+   <b>VAR</b>
+      r : Rectangle;
+<b>BEGIN</b>
+   r := f(Rectangle); <i><span style="color: gray">(* f AS Rectangle *)</span></i>
+   <i><span style="color: gray">(* ... *)</span></i>
+<b>END</b> Draw;
+
+<span style="color: gray">(* Other procedures here *)</span>
+
+<b>BEGIN</b> <i><span style="color: gray">(* Module initialisation *)</span></i>
+   <b><span style="color: darkblue">NEW</span></b>(if);
+   if.draw  := Draw;
+   if.clear := Clear;
+   if.mark  := Mark;
+   if.move  := Move;
+<b>END</b> Rectangles.
+</pre>
+<p>Dynamic dispatch is only done via procedures in Figures module that is the generic module.</p>
+<h3><span class="mw-headline" id="Message_handler">Message handler</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Oberon_(programming_language)&amp;action=edit&amp;section=5" title="Edit section: Message handler">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>This technique consists of replacing the set of methods with a single procedure, which discriminates among the various methods:</p>
+<pre>
+<b>MODULE</b> Figures; <i><span style="color: gray">(* Abstract module *)</span></i>
+
+<b>TYPE</b>
+   Figure*    = <b>POINTER TO</b> FigureDesc;
+
+   Message*   = <b>RECORD END</b>;
+   DrawMsg*   = <b>RECORD</b> (Message) <b>END</b>;
+   ClearMsg*  = <b>RECORD</b> (Message) <b>END</b>;
+   MarkMsg*   = <b>RECORD</b> (Message) <b>END</b>;
+   MoveMsg*   = <b>RECORD</b> (Message) dx*, dy* : <b><span style="color: darkblue">INTEGER</span></b> <b>END</b>;
+
+   Handler*   = <b>PROCEDURE</b> (f : Figure; <b>VAR</b> msg : Message);
+
+   FigureDesc* = <b>RECORD</b>
+      <i><span style="color: gray">(* Abstract *)</span></i>
+      handle : Handler;
+   <b>END</b>;
+
+<b>PROCEDURE</b> Handle* (f : Figure; <b>VAR</b> msg : Message);
+<b>BEGIN</b>
+   f.handle(f, msg);
+<b>END</b> Handle;
+
+<b>PROCEDURE</b> Init* (f : Figure; handle : Handler);
+<b>BEGIN</b>
+   f.handle := handle;
+<b>END</b> Init;
+
+<b>END</b> Figures.
+</pre>
+<p>We extend the generic type Figure to a specific shape:</p>
+<pre>
+<b>MODULE</b> Rectangles;
+
+<b>IMPORT</b> Figures;
+
+<b>TYPE</b>
+   Rectangle* = <b>POINTER TO</b> RectangleDesc;
+
+   RectangleDesc* = <b>RECORD</b>
+      (Figures.FigureDesc)
+      x, y, w, h : INTEGER;
+   <b>END</b>;
+
+<b>PROCEDURE</b> Draw* (r : Rectangle);
+<b>BEGIN</b>
+  <i><span style="color: gray">(* ... *)</span></i>
+<b>END</b> Draw;
+
+<i><span style="color: gray">(* Other procedures here *)</span></i>
+
+<b>PROCEDURE</b> Handle* (f: Figure; <b>VAR</b> msg: Figures.Message);
+   <b>VAR</b>
+      r : Rectangle;
+<b>BEGIN</b>
+   r := f(Rectangle);
+   <b>IF</b>    msg <b>IS</b> Figures.DrawMsg <b>THEN</b> Draw(r)
+   <b>ELSIF</b> msg <b>IS</b> Figures.MarkMsg <b>THEN</b> Mark(r)
+   <b>ELSIF</b> msg <b>IS</b> Figures.MoveMsg <b>THEN</b> Move(r, msg(Figures.MoveMsg).dx, msg(Figures.MoveMsg).dy)
+   <b>ELSE</b>  <span style="color: gray">(* ignore *)</span>
+   <b>END</b>
+<b>END</b> Handle;
+
+<b>PROCEDURE</b> New* (<b>VAR</b> r : Rectangle);
+<b>BEGIN</b>
+   <b><span style="color: darkblue">NEW</span></b>(r);
+   Figures.Init(r, Handle);
+<b>END</b> New;
+
+<b>END</b> Rectangles.
+</pre>
+<p>In the Oberon operating system both of these techniques are used for dynamic dispatch. The first one is used for a known set of methods; the second is used for any new methods declared in the extension module. For example, if the extension module Rectangles were to implement a new Rotate() procedure, within the Figures module it could only be called via a message handler.</p>
+<h2><span class="mw-headline" id="Implementations_and_variants">Implementations and variants</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Oberon_(programming_language)&amp;action=edit&amp;section=6" title="Edit section: Implementations and variants">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="Oberon">Oberon</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Oberon_(programming_language)&amp;action=edit&amp;section=7" title="Edit section: Oberon">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>No-cost implementations of Oberon (the language) and Oberon (the operating system) can be found on the Internet (several are from ETHZ itself).</p>
+<h3><span class="mw-headline" id="Oberon-2">Oberon-2</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Oberon_(programming_language)&amp;action=edit&amp;section=8" title="Edit section: Oberon-2">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div role="note" class="hatnote">Main article: <a href="/wiki/Oberon-2_(programming_language)" class="mw-redirect" title="Oberon-2 (programming language)">Oberon-2 (programming language)</a></div>
+<p>A few changes were made to the first released specification (object-oriented programming features were added, the 'FOR' loop was reinstated, for instance); the result was <b><a href="/wiki/Oberon-2" title="Oberon-2">Oberon-2</a></b>, currently the most common implementation. There is a release called <i><a href="/wiki/Native_Oberon" class="mw-redirect" title="Native Oberon">Native Oberon</a></i> which includes an operating system, and can directly boot on PC class hardware. A <a href="/wiki/.NET_Framework" title=".NET Framework">.NET</a> implementation of Oberon with the addition of some minor .NET-related extensions has also been developed at ETHZ.</p>
+<p>Oberon-2 compilers maintained by ETH include versions for Windows, Linux, Solaris, and <a href="/wiki/MacOS" title="MacOS">macOS</a>. Furthermore, there are implementations for various other operating systems, such as <a href="/wiki/Atari_TOS" title="Atari TOS">Atari-TOS</a> or <a href="/wiki/AmigaOS" title="AmigaOS">AmigaOS</a>.</p>
+<p>There is an Oberon-2 <a href="/wiki/Lex_(software)" title="Lex (software)">Lex</a> scanner and <a href="/wiki/Yacc" title="Yacc">Yacc</a> <a href="/wiki/Parser" class="mw-redirect" title="Parser">parser</a> by Stephen J Bevan of Manchester University, UK, based on the one in the Mössenböck and Wirth reference. It is at version 1.4.</p>
+<h3><span class="mw-headline" id="Oberon-07">Oberon-07</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Oberon_(programming_language)&amp;action=edit&amp;section=9" title="Edit section: Oberon-07">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Oberon-07, defined by Niklaus Wirth in 2007 and revised in 2011, 2013, 2014, 2015 and 2016 is based on the original version of Oberon rather than Oberon-2. The main changes are: explicit numeric conversion functions (e.g. FLOOR and FLT) must be used, the LOOP and EXIT statements have been eliminated, WHILE statements have been extended, CASE statements can be used for type extension tests, RETURN statements can only be connected to the end of a function, imported variables and structured value parameters are read-only and arrays can be assigned without using COPY. For full details, see <a rel="nofollow" class="external text" href="http://www.inf.ethz.ch/personal/wirth/Oberon/Oberon07.Report.pdf">The Programming Language Oberon-07</a>.</p>
+<p>Oberon-07 compilers have been developed for use with 32-bit Windows <a rel="nofollow" class="external text" href="http://www.exaprog.com/">Oberon-07M</a> (<a rel="nofollow" class="external text" href="http://exaprog.com/Oberon07.Report.pdf">Oberon-07 language revision 2008</a>), <a rel="nofollow" class="external text" href="https://sites.google.com/site/oberon07compiler/versii">Akron's</a> (compiles code for both Windows and Linux), <a rel="nofollow" class="external text" href="http://oberspace.dyndns.org/oberonjs.html">oberonjs</a> (produces JavaScript code), 32-bit <a href="/wiki/ARM_architecture" title="ARM architecture">ARM</a>, Cortex-M3 and Cortex-M4 microcontrollers, and a Wirth-designed RISC processor implemented using a Xilinx FPGA Spartan-3 board. Ports to FPGA Spartan-6, Artix-7 and a RISC emulator for Windows (compilable on Linux and OS X, as well as binaries available for Windows) also exist.</p>
+<h3><span class="mw-headline" id="Active_Oberon">Active Oberon</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Oberon_(programming_language)&amp;action=edit&amp;section=10" title="Edit section: Active Oberon">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p><a href="/wiki/Active_Oberon" title="Active Oberon">Active Oberon</a> is yet another variant of Oberon, which adds objects (with object-centered access protection and local activity control), system-guarded assertions, preemptive priority scheduling and a changed syntax for methods (- type-bound procedures in the Oberon world). Objects may be active, which means that they may be threads or processes. Additionally, Active Oberon has a way to implement operators (including overloading), an advanced syntax for using arrays (see <a rel="nofollow" class="external text" href="http://www.ethoberon.ethz.ch/native/compiler/x.index.html">OberonX language extensions</a> and Proceedings<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">[3]</a></sup> of the 7th Joint Modular Languages Conference 2006 Oxford, UK), and knows about <a href="/wiki/Namespace" title="Namespace">namespaces</a> (see <a rel="nofollow" class="external text" href="http://www.ocp.inf.ethz.ch/wiki/Documentation/Language?action=download&amp;upname=contexts.pdf">Proposal for Module Contexts</a>). The operating system A2 - Bluebottle, especially the kernel, synchronizes and coordinates different active objects.</p>
+<h3><span class="mw-headline" id="Related_languages">Related languages</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Oberon_(programming_language)&amp;action=edit&amp;section=11" title="Edit section: Related languages">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Development has continued on languages in this family. A further extension of Oberon-2 produced <a href="/wiki/Component_Pascal" title="Component Pascal">Component Pascal</a> which was developed for Windows and <a href="/wiki/Classic_Mac_OS" title="Classic Mac OS">classic Mac OS</a> by Oberon microsystems, a commercial company spin-off from ETHZ, and for .NET by <a href="/wiki/Queensland_University_of_Technology" title="Queensland University of Technology">Queensland University of Technology</a>. In addition, the <a href="/wiki/Lagoona_programming_language" class="mw-redirect" title="Lagoona programming language">Lagoona</a> and <a href="/wiki/Obliq" title="Obliq">Obliq</a> languages carry the Oberon spirit into specialized areas.</p>
+<p>ETHZ has released <a href="/wiki/Active_Oberon" title="Active Oberon">Active Oberon</a> which supports active objects, and the <a href="/wiki/Bluebottle_operating_system" class="mw-redirect" title="Bluebottle operating system">Bluebottle operating system</a> and environment (JDK, HTTP, FTP, etc.) for the language. As with many prior designs from ETHZ, versions of both are available for download on the Internet. As this is written, both single and dual <a href="/wiki/X86" title="X86">x86</a> CPUs and the <a href="/wiki/StrongARM" title="StrongARM">StrongARM</a> family are supported.</p>
+<p>Recent .NET development efforts at ETHZ have been focused on a new language called <a href="/wiki/Zonnon" title="Zonnon">Zonnon</a>. This includes the features of Oberon and restores some from Pascal (enumerated types, built-in IO) but has some syntactic differences. Additional features include support for active objects, operator overloading and exception handling. Zonnon is available as a plug-in language for the <a href="/wiki/Microsoft_Visual_Studio" title="Microsoft Visual Studio">Microsoft Visual Studio</a> for .NET development environment.</p>
+<p>Oberon-V (originally called Seneca, after <a href="/wiki/Seneca_the_Younger" title="Seneca the Younger">Seneca the Younger</a>) is a descendant of Oberon designed for numerical applications on <a href="/wiki/Supercomputer" title="Supercomputer">supercomputers</a>, especially vector or pipelined architectures. It includes array constructors and an ALL statement. (See "Seneca - A Language for Numerical Applications on Vectorcomputers", Proc CONPAR 90 - VAPP IV Conf. R. Griesemer, Diss Nr. 10277, ETH Zurich.)</p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Oberon_(programming_language)&amp;action=edit&amp;section=12" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a href="/wiki/Oberon_(operating_system)" title="Oberon (operating system)">Oberon (operating system)</a></li>
+</ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Oberon_(programming_language)&amp;action=edit&amp;section=13" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://archive.org/stream/byte-magazine-1991-03/1991_03_BYTE_16-03_Network_Management#page/n187/">D. Pountain, Modula's Children, Part II: Oberon - BYTE 16(3), 135-142, Mar. 1991.</a></span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><cite class="citation web">Mössenböck, Hanspeter. <a rel="nofollow" class="external text" href="ftp://ftp.ssw.uni-linz.ac.at/pub/Papers/Moe00b.pdf">"Compiler Construction: The Art of Niklaus Wirth"</a> <span style="font-size:85%;">(Pdf)</span>. Ftp.ssw.uni-linz.ac.at.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AOberon+%28programming+language%29&amp;rft.aufirst=Hanspeter&amp;rft.aulast=M%C3%B6ssenb%C3%B6ck&amp;rft.btitle=Compiler+Construction%3A+The+Art+of+Niklaus+Wirth&amp;rft.genre=unknown&amp;rft_id=ftp%3A%2F%2Fftp.ssw.uni-linz.ac.at%2Fpub%2FPapers%2FMoe00b.pdf&amp;rft.pub=Ftp.ssw.uni-linz.ac.at&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><cite class="citation encyclopaedia">Friedrich, Felix; Gutknecht, Jürg (2006). <a rel="nofollow" class="external text" href="http://dx.doi.org/10.1007/11860990_13">"Array-Structured Object Types for Mathematical Programming"</a>. In Lightfoot, David E.; Szyperski, Clemens. <i>"Modular Programming Languages"</i>. Springer, Berlin Heidelberg. pp.&#160;195–210. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-3-540-40927-4" title="Special:BookSources/978-3-540-40927-4">978-3-540-40927-4</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AOberon+%28programming+language%29&amp;rft.atitle=Array-Structured+Object+Types+for+Mathematical+Programming&amp;rft.aufirst=Felix&amp;rft.au=Gutknecht%2C+J%C3%BCrg&amp;rft.aulast=Friedrich&amp;rft.btitle=%22Modular+Programming+Languages%22&amp;rft.date=2006&amp;rft.genre=bookitem&amp;rft_id=http%3A%2F%2Fdx.doi.org%2F10.1007%2F11860990_13&amp;rft.isbn=978-3-540-40927-4&amp;rft.pages=195-210&amp;rft.pub=Springer%2C+Berlin+Heidelberg&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+</ol>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Oberon_(programming_language)&amp;action=edit&amp;section=14" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="General">General</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Oberon_(programming_language)&amp;action=edit&amp;section=15" title="Edit section: General">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<ul>
+<li><i><a rel="nofollow" class="external text" href="http://people.inf.ethz.ch/wirth/Oberon/index.html">Niklaus Wirth's Oberon Page</a></i> at ETH-Zürich</li>
+<li><i><a rel="nofollow" class="external text" href="http://www.oberon.ethz.ch">Oberon Page</a></i> at ETH-Zürich</li>
+<li><i><a rel="nofollow" class="external text" href="http://www.ssw.uni-linz.ac.at/Research/Projects/Oberon.html">Oberon Page</a></i> at SSW, Linz</li>
+<li><i><a rel="nofollow" class="external text" href="http://people.inf.ethz.ch/wirth/ProjectOberon1992.pdf">Project Oberon, The Design of an Operating System and a Compiler</a></i>, book in PDF by Niklaus Wirth and Jürg Gutknecht, 2005 Edition</li>
+<li><i><a rel="nofollow" class="external text" href="http://www.oberon.ethz.ch/language/genealogy">Oberon Language Genealogy</a></i></li>
+<li><i><a rel="nofollow" class="external text" href="http://www.astrobe.com">Astrobe</a></i> ARM Oberon-07 Development System</li>
+<li><i><a rel="nofollow" class="external text" href="http://modulaware.com/mwovms.htm">Oberon System V4 for HP OpenVMS Alpha</a></i> with source code upward-compatible 64 bit addressing</li>
+<li><i><a rel="nofollow" class="external text" href="http://modulaware.com/mwcvms.htm">64 bit Oberon-2 compiler</a></i> for HP OpenVMS Alpha</li>
+</ul>
+<h3><span class="mw-headline" id="Evolution_of_Oberon">Evolution of Oberon</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Oberon_(programming_language)&amp;action=edit&amp;section=16" title="Edit section: Evolution of Oberon">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<ul>
+<li><i><a rel="nofollow" class="external text" href="http://people.inf.ethz.ch/wirth/Articles/Modula-Oberon-June.pdf">Modula-2 and Oberon</a></i> Wirth (2005)</li>
+<li><i><a rel="nofollow" class="external text" href="http://people.inf.ethz.ch/wirth/Oberon/Oberon.Report.pdf">The Programming Language Oberon</a></i> Wirth, (1988/90)</li>
+<li><i><a rel="nofollow" class="external text" href="http://people.inf.ethz.ch/wirth/Oberon/Oberon07.Report.pdf">The Programming Language Oberon (Oberon-7, Revised Oberon)</a></i> Wirth, (2016, most current language report)</li>
+<li><i><a rel="nofollow" class="external text" href="http://people.inf.ethz.ch/wirth/Oberon/Oberon07.pdf">Differences between Oberon-07 and Oberon</a></i> Wirth (2011)</li>
+<li><i><a rel="nofollow" class="external text" href="ftp://ftp.ethoberon.ethz.ch/Oberon/OberonV4/Docu/Oberon2.Report.ps">The Programming Language Oberon-2</a></i> H. Mössenböck, N. Wirth, Institut für Computersysteme, ETH Zürich, January 1992</li>
+<li><i><a rel="nofollow" class="external text" href="ftp://ftp.ethoberon.ethz.ch/Oberon/OberonV4/Docu/Oberon2.Differences.ps">Differences between Oberon and Oberon-2</a></i> Mössenböck and Wirth (1991)</li>
+<li><i><a rel="nofollow" class="external text" href="http://www.oberon.ch/pdf/CP-New.pdf">What's New in Component Pascal</a></i> (Changes from Oberon-2 to CP), Pfister (2001)</li>
+</ul>
+<div role="navigation" class="navbox" aria-labelledby="Programming_languages" style="padding:3px">
+<table class="nowraplinks hlist collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:Programming_languages" title="Template:Programming languages"><abbr title="View this template" style=";;background:none transparent;border:none;">v</abbr></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:Programming_languages" title="Template talk:Programming languages"><abbr title="Discuss this template" style=";;background:none transparent;border:none;">t</abbr></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:Programming_languages&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;">e</abbr></a></li>
+</ul>
+</div>
+<div id="Programming_languages" style="font-size:114%"><a href="/wiki/Programming_language" title="Programming language">Programming languages</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" colspan="2">
+<div>
+<ul>
+<li><a href="/wiki/Comparison_of_programming_languages" title="Comparison of programming languages">Comparison</a></li>
+<li><a href="/wiki/Timeline_of_programming_languages" title="Timeline of programming languages">Timeline</a></li>
+<li><a href="/wiki/History_of_programming_languages" title="History of programming languages">History</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Assembly_language" title="Assembly language">Assembly</a></li>
+<li><a href="/wiki/BASIC" title="BASIC">BASIC</a></li>
+<li><a href="/wiki/C_(programming_language)" title="C (programming language)">C</a></li>
+<li><a href="/wiki/C%2B%2B" title="C++">C++</a></li>
+<li><a href="/wiki/C_Sharp_(programming_language)" title="C Sharp (programming language)">C#</a></li>
+<li><a href="/wiki/COBOL" title="COBOL">COBOL</a></li>
+<li><a href="/wiki/Fortran" title="Fortran">Fortran</a></li>
+<li><a href="/wiki/Go_(programming_language)" title="Go (programming language)">Go</a></li>
+<li><a href="/wiki/Haskell_(programming_language)" title="Haskell (programming language)">Haskell</a></li>
+<li><a href="/wiki/Java_(programming_language)" title="Java (programming language)">Java</a></li>
+<li><a href="/wiki/JavaScript" title="JavaScript">JavaScript</a> (JS)</li>
+<li><a href="/wiki/Lisp_(programming_language)" title="Lisp (programming language)">Lisp</a></li>
+<li><a href="/wiki/Lua_(programming_language)" title="Lua (programming language)">Lua</a></li>
+<li><a href="/wiki/Objective-C" title="Objective-C">Objective-C</a></li>
+<li><a href="/wiki/Pascal_(programming_language)" title="Pascal (programming language)">Pascal</a></li>
+<li><a href="/wiki/Perl" title="Perl">Perl</a></li>
+<li><a href="/wiki/PHP" title="PHP">PHP</a></li>
+<li><a href="/wiki/Python_(programming_language)" title="Python (programming language)">Python</a></li>
+<li><a href="/wiki/Ruby_(programming_language)" title="Ruby (programming language)">Ruby</a></li>
+<li><a href="/wiki/Shell_script" title="Shell script">Shell</a></li>
+<li><a href="/wiki/Smalltalk" title="Smalltalk">Smalltalk</a></li>
+<li><a href="/wiki/Swift_(programming_language)" title="Swift (programming language)">Swift</a></li>
+<li><a href="/wiki/Visual_Basic_.NET" title="Visual Basic .NET">Visual Basic .NET</a> (VB.NET)</li>
+<li><i><a href="/wiki/List_of_programming_languages" title="List of programming languages">more...</a></i></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" colspan="2">
+<div>
+<ul>
+<li><img alt="Category" src="//upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/16px-Folder_Hexagonal_Icon.svg.png" title="Category" width="16" height="14" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/24px-Folder_Hexagonal_Icon.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/32px-Folder_Hexagonal_Icon.svg.png 2x" data-file-width="36" data-file-height="31" /> <b><a href="/wiki/Category:Programming_languages" title="Category:Programming languages">Category</a></b></li>
+<li><img alt="Non-article page" src="//upload.wikimedia.org/wikipedia/en/thumb/8/89/Symbol_neutral_vote.svg/16px-Symbol_neutral_vote.svg.png" title="Non-article page" width="16" height="16" srcset="//upload.wikimedia.org/wikipedia/en/thumb/8/89/Symbol_neutral_vote.svg/23px-Symbol_neutral_vote.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/8/89/Symbol_neutral_vote.svg/31px-Symbol_neutral_vote.svg.png 2x" data-file-width="180" data-file-height="185" /> <b><a href="/wiki/Comparison_of_programming_languages" title="Comparison of programming languages">Comparison</a></b></li>
+<li><img alt="List-Class article" src="//upload.wikimedia.org/wikipedia/en/thumb/d/db/Symbol_list_class.svg/16px-Symbol_list_class.svg.png" title="List-Class article" width="16" height="16" srcset="//upload.wikimedia.org/wikipedia/en/thumb/d/db/Symbol_list_class.svg/23px-Symbol_list_class.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/d/db/Symbol_list_class.svg/31px-Symbol_list_class.svg.png 2x" data-file-width="180" data-file-height="185" /> <b>Lists</b>
+<ul>
+<li><a href="/wiki/List_of_programming_languages" title="List of programming languages">Alphabetical</a></li>
+<li><a href="/wiki/Categorical_list_of_programming_languages" class="mw-redirect" title="Categorical list of programming languages">Categorical</a></li>
+<li><a href="/wiki/Generational_list_of_programming_languages" title="Generational list of programming languages">Generational</a></li>
+<li><a href="/wiki/Non-English-based_programming_languages" title="Non-English-based programming languages">Non-English-based</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div role="navigation" class="navbox" aria-label="Navbox" style="padding:3px">
+<table class="nowraplinks hlist navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Help:Authority_control" title="Help:Authority control">Authority control</a></th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><span style="white-space:nowrap;"><a href="/wiki/Integrated_Authority_File" title="Integrated Authority File">GND</a>: <span class="uid"><a rel="nofollow" class="external text" href="http://d-nb.info/gnd/4248282-3">4248282-3</a></span></span></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1211
+Cached time: 20170130165824
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.140 seconds
+Real time usage: 0.196 seconds
+Preprocessor visited node count: 610/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 21813/2097152 bytes
+Template argument size: 551/2097152 bytes
+Highest expansion depth: 10/40
+Expensive parser function count: 3/500
+Lua time usage: 0.058/10.000 seconds
+Lua memory usage: 2.89 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  155.629      1 -total
+ 27.19%   42.314      1 Template:Infobox_programming_language
+ 24.84%   38.657      1 Template:Infobox
+ 24.38%   37.937      1 Template:Refimprove
+ 17.95%   27.934      1 Template:Cite_web
+ 15.97%   24.851      1 Template:Ambox
+ 10.66%   16.586      1 Template:Programming_languages
+  9.64%   15.008      1 Template:Navbox
+  6.58%   10.244      1 Template:Authority_control
+  5.71%    8.891      3 Template:Icon
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:22496-0!*!0!!en!4!* and timestamp 20170130165823 and revision id 746509145
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Oberon_(programming_language)&amp;oldid=746509145">https://en.wikipedia.org/w/index.php?title=Oberon_(programming_language)&amp;oldid=746509145</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Modula_programming_language_family" title="Category:Modula programming language family">Modula programming language family</a></li><li><a href="/wiki/Category:Class-based_programming_languages" title="Category:Class-based programming languages">Class-based programming languages</a></li><li><a href="/wiki/Category:Procedural_programming_languages" title="Category:Procedural programming languages">Procedural programming languages</a></li><li><a href="/wiki/Category:Oberon_programming_language_family" title="Category:Oberon programming language family">Oberon programming language family</a></li><li><a href="/wiki/Category:Systems_programming_languages" title="Category:Systems programming languages">Systems programming languages</a></li><li><a href="/wiki/Category:Programming_languages_created_in_1986" title="Category:Programming languages created in 1986">Programming languages created in 1986</a></li><li><a href="/wiki/Category:Statically_typed_programming_languages" title="Category:Statically typed programming languages">Statically typed programming languages</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Articles_needing_additional_references_from_April_2016" title="Category:Articles needing additional references from April 2016">Articles needing additional references from April 2016</a></li><li><a href="/wiki/Category:All_articles_needing_additional_references" title="Category:All articles needing additional references">All articles needing additional references</a></li><li><a href="/wiki/Category:Pages_using_deprecated_image_syntax" title="Category:Pages using deprecated image syntax">Pages using deprecated image syntax</a></li><li><a href="/wiki/Category:Wikipedia_articles_with_GND_identifiers" title="Category:Wikipedia articles with GND identifiers">Wikipedia articles with GND identifiers</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Oberon+%28programming+language%29" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Oberon+%28programming+language%29" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/Oberon_(programming_language)"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:Oberon_(programming_language)"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/Oberon_(programming_language)" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=Oberon_(programming_language)&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Oberon_(programming_language)&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Oberon_(programming_language)" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Oberon_(programming_language)" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Oberon_(programming_language)&amp;oldid=746509145" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Oberon_(programming_language)&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q1323362" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Oberon_%28programming_language%29&amp;id=746509145" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Oberon+%28programming+language%29">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Oberon+%28programming+language%29&amp;returnto=Oberon+%28programming+language%29&amp;oldid=746509145&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Oberon_(programming_language)&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-be-x-old"><a href="https://be-x-old.wikipedia.org/wiki/Oberon" title="Oberon – беларуская (тарашкевіца)‎" lang="be-x-old" hreflang="be-x-old" class="interlanguage-link-target">Беларуская (тарашкевіца)‎</a></li><li class="interlanguage-link interwiki-cs"><a href="https://cs.wikipedia.org/wiki/Oberon_(programovac%C3%AD_jazyk)" title="Oberon (programovací jazyk) – Czech" lang="cs" hreflang="cs" class="interlanguage-link-target">Čeština</a></li><li class="interlanguage-link interwiki-da"><a href="https://da.wikipedia.org/wiki/Oberon_(programmeringssprog)" title="Oberon (programmeringssprog) – Danish" lang="da" hreflang="da" class="interlanguage-link-target">Dansk</a></li><li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/Oberon_(Programmiersprache)" title="Oberon (Programmiersprache) – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-es"><a href="https://es.wikipedia.org/wiki/Oberon_(lenguaje_de_programaci%C3%B3n)" title="Oberon (lenguaje de programación) – Spanish" lang="es" hreflang="es" class="interlanguage-link-target">Español</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/Oberon_(langage)" title="Oberon (langage) – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-hy"><a href="https://hy.wikipedia.org/wiki/Oberon_(%D5%AE%D6%80%D5%A1%D5%A3%D6%80%D5%A1%D5%BE%D5%B8%D6%80%D5%B4%D5%A1%D5%B6_%D5%AC%D5%A5%D5%A6%D5%B8%D6%82)" title="Oberon (ծրագրավորման լեզու) – Armenian" lang="hy" hreflang="hy" class="interlanguage-link-target">Հայերեն</a></li><li class="interlanguage-link interwiki-it"><a href="https://it.wikipedia.org/wiki/Oberon_(linguaggio)" title="Oberon (linguaggio) – Italian" lang="it" hreflang="it" class="interlanguage-link-target">Italiano</a></li><li class="interlanguage-link interwiki-he"><a href="https://he.wikipedia.org/wiki/%D7%90%D7%95%D7%91%D7%A8%D7%95%D7%9F_(%D7%A9%D7%A4%D7%AA_%D7%AA%D7%9B%D7%A0%D7%95%D7%AA)" title="אוברון (שפת תכנות) – Hebrew" lang="he" hreflang="he" class="interlanguage-link-target">עברית</a></li><li class="interlanguage-link interwiki-nl"><a href="https://nl.wikipedia.org/wiki/Oberon_(programmeertaal)" title="Oberon (programmeertaal) – Dutch" lang="nl" hreflang="nl" class="interlanguage-link-target">Nederlands</a></li><li class="interlanguage-link interwiki-ja"><a href="https://ja.wikipedia.org/wiki/Oberon" title="Oberon – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target">日本語</a></li><li class="interlanguage-link interwiki-pl"><a href="https://pl.wikipedia.org/wiki/Oberon_(j%C4%99zyk_programowania)" title="Oberon (język programowania) – Polish" lang="pl" hreflang="pl" class="interlanguage-link-target">Polski</a></li><li class="interlanguage-link interwiki-pt"><a href="https://pt.wikipedia.org/wiki/Oberon_(linguagem_de_programa%C3%A7%C3%A3o)" title="Oberon (linguagem de programação) – Portuguese" lang="pt" hreflang="pt" class="interlanguage-link-target">Português</a></li><li class="interlanguage-link interwiki-ru"><a href="https://ru.wikipedia.org/wiki/%D0%9E%D0%B1%D0%B5%D1%80%D0%BE%D0%BD_(%D1%8F%D0%B7%D1%8B%D0%BA_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F)" title="Оберон (язык программирования) – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li><li class="interlanguage-link interwiki-tg"><a href="https://tg.wikipedia.org/wiki/%D0%9E%D0%B1%D0%B5%D1%80%D0%BE%D0%BD_(%D0%B7%D0%B0%D0%B1%D0%BE%D0%BD%D0%B8_%D0%B1%D0%B0%D1%80%D0%BD%D0%BE%D0%BC%D0%B0%D0%BD%D0%B0%D0%B2%D0%B8%D1%81%D3%A3)" title="Оберон (забони барноманависӣ) – Tajik" lang="tg" hreflang="tg" class="interlanguage-link-target">Тоҷикӣ</a></li><li class="interlanguage-link interwiki-tr"><a href="https://tr.wikipedia.org/wiki/Oberon_(programlama_dili)" title="Oberon (programlama dili) – Turkish" lang="tr" hreflang="tr" class="interlanguage-link-target">Türkçe</a></li><li class="interlanguage-link interwiki-uk"><a href="https://uk.wikipedia.org/wiki/%D0%9E%D0%B1%D0%B5%D1%80%D0%BE%D0%BD_(%D0%BC%D0%BE%D0%B2%D0%B0_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F)" title="Оберон (мова програмування) – Ukrainian" lang="uk" hreflang="uk" class="interlanguage-link-target">Українська</a></li><li class="interlanguage-link interwiki-zh"><a href="https://zh.wikipedia.org/wiki/Oberon" title="Oberon – Chinese" lang="zh" hreflang="zh" class="interlanguage-link-target">中文</a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q1323362#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 27 October 2016, at 21:06.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Oberon_(programming_language)&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.140","walltime":"0.196","ppvisitednodes":{"value":610,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":21813,"limit":2097152},"templateargumentsize":{"value":551,"limit":2097152},"expansiondepth":{"value":10,"limit":40},"expensivefunctioncount":{"value":3,"limit":500},"entityaccesscount":{"value":1,"limit":400},"timingprofile":["100.00%  155.629      1 -total"," 27.19%   42.314      1 Template:Infobox_programming_language"," 24.84%   38.657      1 Template:Infobox"," 24.38%   37.937      1 Template:Refimprove"," 17.95%   27.934      1 Template:Cite_web"," 15.97%   24.851      1 Template:Ambox"," 10.66%   16.586      1 Template:Programming_languages","  9.64%   15.008      1 Template:Navbox","  6.58%   10.244      1 Template:Authority_control","  5.71%    8.891      3 Template:Icon"]},"scribunto":{"limitreport-timeusage":{"value":"0.058","limit":"10.000"},"limitreport-memusage":{"value":3029018,"limit":52428800}},"cachereport":{"origin":"mw1211","timestamp":"20170130165824","ttl":2592000,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":270,"wgHostname":"mw1211"});});</script>
+	</body>
+</html>
